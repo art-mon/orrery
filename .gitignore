@@ -1,0 +1,15 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# Server cache + database
+server/.cache/
+server/nasa.db
+
+# macOS
+.DS_Store

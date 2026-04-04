@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NASA Dashboard — 64×32 Matrix Mockup</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: #0d0d0d;
+    color: #ccc;
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+    gap: 32px;
+  }
+
+  h1 { color: #888; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
+
+  /* The matrix wrapper — adds bezel + glow */
+  .matrix-wrap {
+    background: #111;
+    border: 3px solid #222;
+    border-radius: 6px;
+    padding: 12px;
+    box-shadow: 0 0 60px rgba(0,0,0,0.8), inset 0 0 20px rgba(0,0,0,0.5);
+    position: relative;
+  }
+
+  canvas#matrix {
+    display: block;
+    image-rendering: pixelated;
+  }
+
+  /* Controls */
+  .controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  .scene-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  button {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #aaa;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: all 0.15s;
+  }
+  button:hover { background: #252525; color: #fff; border-color: #555; }
+  button.active { background: #1c2a1c; border-color: #3a6b3a; color: #7fc97f; }
+
+  .label { font-size: 11px; color: #555; letter-spacing: 1px; }
+
+  /* Scale slider */
+  .scale-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    color: #555;
+  }
+  input[type=range] { accent-color: #3a6b3a; }
+
+  #view-bar-track {
+    width: 80px; height: 4px;
+    background: #222; border-radius: 2px; overflow: hidden;
+  }
+  #view-bar {
+    height: 100%; width: 0%;
+    background: #3a6b3a; border-radius: 2px;
+    transition: width 0.08s linear;
+  }
+
+  /* Info panel */
+  .info {
+    max-width: 700px;
+    width: 100%;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 4px;
+    padding: 14px 18px;
+    font-size: 11px;
+    line-height: 1.7;
+    color: #666;
+  }
+  .info strong { color: #999; }
+</style>
+</head>
+<body>
+
+<h1>64 × 32 LED Matrix — Layout Mockup</h1>
+
+<div class="matrix-wrap">
+  <canvas id="matrix"></canvas>
+</div>
+
+<div class="controls">
+  <div class="label">SCENE</div>
+  <div class="scene-buttons">
+    <button data-scene="morning" class="active">Morning</button>
+    <button data-scene="day">Daytime</button>
+    <button data-scene="asteroid">Asteroid</button>
+    <button data-scene="event">Earth Event</button>
+    <button data-scene="night">Night / Moon</button>
+<button data-scene="tomorrow">Tomorrow</button>
+    <button data-scene="apod_live">APOD Live</button>
+  </div>
+
+  <div class="scale-row">
+    <button id="pause-btn">⏸ Pause</button>
+    <span style="color:#444">|</span>
+    <span class="label">Scene <span id="scene-idx">1/7</span></span>
+    <span class="label">View <span id="view-idx">1/3</span></span>
+    <div id="view-bar-track"><div id="view-bar"></div></div>
+  </div>
+
+  <div class="scale-row">
+    <span>Scale:</span>
+    <input type="range" id="scale" min="6" max="18" value="11">
+    <span id="scale-val">11×</span>
+  </div>
+</div>
+
+<div class="info" id="info-panel"></div>
+
+<script>
+// ─── Pixel font (3×5, uppercase + digits + symbols) ──────────────────────────
+const FONT = {
+  '0': [[1,1,1],[1,0,1],[1,0,1],[1,0,1],[1,1,1]],
+  '1': [[0,1,0],[1,1,0],[0,1,0],[0,1,0],[1,1,1]],
+  '2': [[1,1,1],[0,0,1],[1,1,1],[1,0,0],[1,1,1]],
+  '3': [[1,1,1],[0,0,1],[0,1,1],[0,0,1],[1,1,1]],
+  '4': [[1,0,1],[1,0,1],[1,1,1],[0,0,1],[0,0,1]],
+  '5': [[1,1,1],[1,0,0],[1,1,1],[0,0,1],[1,1,1]],
+  '6': [[1,1,1],[1,0,0],[1,1,1],[1,0,1],[1,1,1]],
+  '7': [[1,1,1],[0,0,1],[0,1,0],[0,1,0],[0,1,0]],
+  '8': [[1,1,1],[1,0,1],[1,1,1],[1,0,1],[1,1,1]],
+  '9': [[1,1,1],[1,0,1],[1,1,1],[0,0,1],[1,1,1]],
+  ':': [[0],[1],[0],[1],[0]],
+  '.': [[0],[0],[0],[0],[1]],
+  '°': [[1,1],[1,1],[0,0],[0,0],[0,0]],
+  ' ': [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]],
+  'A': [[0,1,0],[1,0,1],[1,1,1],[1,0,1],[1,0,1]],
+  'B': [[1,1,0],[1,0,1],[1,1,0],[1,0,1],[1,1,0]],
+  'C': [[0,1,1],[1,0,0],[1,0,0],[1,0,0],[0,1,1]],
+  'D': [[1,1,0],[1,0,1],[1,0,1],[1,0,1],[1,1,0]],
+  'E': [[1,1,1],[1,0,0],[1,1,0],[1,0,0],[1,1,1]],
+  'F': [[1,1,1],[1,0,0],[1,1,0],[1,0,0],[1,0,0]],
+  'G': [[0,1,1],[1,0,0],[1,0,1],[1,0,1],[0,1,1]],
+  'H': [[1,0,1],[1,0,1],[1,1,1],[1,0,1],[1,0,1]],
+  'I': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[1,1,1]],
+  'J': [[0,0,1],[0,0,1],[0,0,1],[1,0,1],[0,1,0]],
+  'K': [[1,0,1],[1,1,0],[1,0,0],[1,1,0],[1,0,1]],
+  'L': [[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,1,1]],
+  'M': [[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1]],
+  'N': [[1,0,1],[1,1,1],[1,1,1],[1,0,1],[1,0,1]],
+  'O': [[0,1,0],[1,0,1],[1,0,1],[1,0,1],[0,1,0]],
+  'P': [[1,1,0],[1,0,1],[1,1,0],[1,0,0],[1,0,0]],
+  'Q': [[0,1,0],[1,0,1],[1,0,1],[1,1,1],[0,1,1]],
+  'R': [[1,1,0],[1,0,1],[1,1,0],[1,0,1],[1,0,1]],
+  'S': [[0,1,1],[1,0,0],[0,1,0],[0,0,1],[1,1,0]],
+  'T': [[1,1,1],[0,1,0],[0,1,0],[0,1,0],[0,1,0]],
+  'U': [[1,0,1],[1,0,1],[1,0,1],[1,0,1],[0,1,0]],
+  'V': [[1,0,1],[1,0,1],[1,0,1],[0,1,0],[0,1,0]],
+  'W': [[1,0,1],[1,0,1],[1,0,1],[1,1,1],[1,0,1]],
+  'X': [[1,0,1],[1,0,1],[0,1,0],[1,0,1],[1,0,1]],
+  'Y': [[1,0,1],[1,0,1],[0,1,0],[0,1,0],[0,1,0]],
+  'Z': [[1,1,1],[0,0,1],[0,1,0],[1,0,0],[1,1,1]],
+  '/': [[0,0,1],[0,0,1],[0,1,0],[1,0,0],[1,0,0]],
+  '-': [[0,0,0],[0,0,0],[1,1,1],[0,0,0],[0,0,0]],
+  '!': [[0,1],[0,1],[0,1],[0,0],[0,1]],
+  '~': [[0,1,0,1],[1,0,1,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+};
+
+// ─── Canvas setup ─────────────────────────────────────────────────────────────
+const W = 64, H = 32;
+let SCALE = 11;
+const canvas = document.getElementById('matrix');
+const ctx = canvas.getContext('2d');
+
+function resize(s) {
+  SCALE = s;
+  canvas.width  = W * SCALE;
+  canvas.height = H * SCALE;
+}
+resize(SCALE);
+
+// ─── Drawing primitives ───────────────────────────────────────────────────────
+let fb = new Array(H).fill(null).map(() => new Array(W).fill([0,0,0]));
+
+function px(x, y, r, g, b) {
+  if (x < 0 || x >= W || y < 0 || y >= H) return;
+  fb[y][x] = [r, g, b];
+}
+
+function rect(x, y, w, h, r, g, b) {
+  for (let dy = 0; dy < h; dy++)
+    for (let dx = 0; dx < w; dx++)
+      px(x+dx, y+dy, r, g, b);
+}
+
+function text(str, x, y, r, g, b) {
+  let cx = x;
+  for (const ch of str.toUpperCase()) {
+    const glyph = FONT[ch] || FONT[' '];
+    const gw = glyph[0].length;
+    for (let row = 0; row < glyph.length; row++)
+      for (let col = 0; col < gw; col++)
+        if (glyph[row][col]) px(cx+col, y+row, r, g, b);
+    cx += gw + 1;
+  }
+}
+
+function textWidth(str) {
+  let w = 0;
+  for (const ch of str.toUpperCase()) {
+    const glyph = FONT[ch] || FONT[' '];
+    w += glyph[0].length + 1;
+  }
+  return w - 1;
+}
+
+function flush() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const [r,g,b] = fb[y][x];
+      if (r === 0 && g === 0 && b === 0) {
+        // dark pixel — draw subtle dot
+        ctx.fillStyle = '#1a1a1a';
+        const gap = Math.max(1, Math.floor(SCALE * 0.1));
+        const s = SCALE - gap;
+        ctx.beginPath();
+        ctx.arc(x*SCALE + SCALE/2, y*SCALE + SCALE/2, s/2 * 0.45, 0, Math.PI*2);
+        ctx.fill();
+      } else {
+        // lit pixel — glow effect
+        const hex = `rgb(${r},${g},${b})`;
+        const gap = Math.max(1, Math.floor(SCALE * 0.12));
+        const s = SCALE - gap;
+        // glow
+        const grad = ctx.createRadialGradient(
+          x*SCALE + SCALE/2, y*SCALE + SCALE/2, 0,
+          x*SCALE + SCALE/2, y*SCALE + SCALE/2, SCALE * 0.8
+        );
+        grad.addColorStop(0, `rgba(${r},${g},${b},0.4)`);
+        grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(x*SCALE - SCALE*0.3, y*SCALE - SCALE*0.3, SCALE*1.6, SCALE*1.6);
+        // core dot
+        ctx.fillStyle = hex;
+        ctx.beginPath();
+        ctx.arc(x*SCALE + SCALE/2, y*SCALE + SCALE/2, s/2 * 0.72, 0, Math.PI*2);
+        ctx.fill();
+        // highlight
+        ctx.fillStyle = `rgba(255,255,255,0.35)`;
+        ctx.beginPath();
+        ctx.arc(x*SCALE + SCALE/2 - s*0.12, y*SCALE + SCALE/2 - s*0.12, s/2*0.3, 0, Math.PI*2);
+        ctx.fill();
+      }
+    }
+  }
+}
+
+// ─── Drawing helpers ──────────────────────────────────────────────────────────
+function clear(r=0, g=0, b=0) {
+  fb = new Array(H).fill(null).map(() => new Array(W).fill([r, g, b]));
+}
+
+function hline(y, x0, x1, r, g, b) {
+  for (let x = x0; x <= x1; x++) px(x, y, r, g, b);
+}
+
+function circle(cx, cy, rad, r, g, b, fill=false) {
+  for (let y = -rad; y <= rad; y++)
+    for (let x = -rad; x <= rad; x++) {
+      const d = Math.sqrt(x*x + y*y);
+      if (fill ? d <= rad : Math.abs(d - rad) < 0.7)
+        px(cx+x, cy+y, r, g, b);
+    }
+}
+
+function stars(seed, count, r=180, g=180, b=180) {
+  let s = seed;
+  const rand = () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
+  for (let i = 0; i < count; i++) {
+    const x = Math.floor(rand() * W);
+    const y = Math.floor(rand() * H);
+    const br = Math.floor(rand() * 2) + 1;
+    px(x, y, Math.floor(r*br/2), Math.floor(g*br/2), Math.floor(b*br/2));
+  }
+}
+
+// ─── Info ticker state ────────────────────────────────────────────────────────
+let tickerOffset = 0;
+
+// ─── Live data from server ────────────────────────────────────────────────────
+let apodTickerStr    = '';
+let eventsTickerStr  = '';
+let asteroidTickerStr = '';
+
+fetch('http://localhost:5001/apod')
+  .then(r => r.json())
+  .then(d => { apodTickerStr = 'APOD: ' + (d.title || '').toUpperCase(); })
+  .catch(() => {});
+
+let currentWeather = null;
+fetch('http://localhost:5001/weather')
+  .then(r => r.json())
+  .then(d => { currentWeather = d; })
+  .catch(() => {});
+
+function timeStr() {
+  const n = new Date();
+  return String(n.getHours()).padStart(2,'0') + ':' + String(n.getMinutes()).padStart(2,'0');
+}
+
+function tempStr() {
+  if (!currentWeather || currentWeather.error) return '--°C';
+  return Math.round(currentWeather.temp_c) + '°C';
+}
+
+function dayStr() {
+  return ['SUN','MON','TUE','WED','THU','FRI','SAT'][new Date().getDay()];
+}
+
+fetch('http://localhost:5001/events')
+  .then(r => r.json())
+  .then(d => {
+    const evts = d.events || [];
+    eventsTickerStr = evts.length
+      ? evts.map(e => e.title.toUpperCase()).join('  ~  ')
+      : 'NO ACTIVE EVENTS';
+  })
+  .catch(() => {});
+
+fetch('http://localhost:5001/asteroids')
+  .then(r => r.json())
+  .then(d => {
+    const rocks = d.asteroids || [];
+    asteroidTickerStr = rocks.length
+      ? rocks.map(a =>
+          a.name.replace(/[()]/g, '').trim().toUpperCase() +
+          '  ' + (a.miss_distance_km / 1000).toFixed(0) + 'K KM' +
+          (a.hazardous ? ' (!)' : '')
+        ).join('  ~  ')
+      : 'NO CLOSE APPROACHES THIS WEEK';
+  })
+  .catch(() => {});
+
+function drawTicker(str, y, r, g, b, bg_r=0, bg_g=0, bg_b=0) {
+  // Fill ticker bg
+  rect(0, y, W, 7, bg_r, bg_g, bg_b);
+  const full = str + '   ';
+  const fw = textWidth(full) + 4;
+  const x = W - (tickerOffset % (fw + W));
+  text(full, x, y+1, r, g, b);
+}
+
+// ─── Scenes ───────────────────────────────────────────────────────────────────
+
+function textOutlined(str, x, y, r, g, b) {
+  // Dark outline pass — 8 neighbors, then main text on top
+  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
+    text(str, x+dx, y+dy, 0, 0, 0);
+  text(str, x, y, r, g, b);
+}
+
+function drawTimeWeather(timeStr, tempStr, timeColor, tempColor) {
+  textOutlined(timeStr, 1, 1, ...timeColor);
+  const wp = textWidth(tempStr);
+  textOutlined(tempStr, W-wp-1, 1, ...tempColor);
+}
+
+function sceneMorning(tick) {
+  clear();
+
+  // Gradient sky: deep blue → orange horizon
+  for (let y = 0; y < H; y++) {
+    const t = y / (H-1);
+    const r = Math.floor(10  + t * 200);
+    const g = Math.floor(10  + t * 80);
+    const b = Math.floor(60  + t * (y < 20 ? 120 : -40));
+    hline(y, 0, W-1, r, g, Math.max(0,b));
+  }
+
+  // Sun peeking over horizon
+  for (let i = 0; i < 5; i++) {
+    const rad = 4 - i;
+    const alpha = 1 - i * 0.15;
+    const yr = Math.floor(255 * alpha);
+    const yg = Math.floor((140 + i*20) * alpha);
+    circle(48, 29-i, rad, yr, yg, 0, true);
+  }
+
+  // Horizon line
+  hline(27, 0, W-1, 220, 90, 20);
+
+  // Ground (dark silhouette)
+  rect(0, 28, W, 4, 15, 8, 5);
+
+  // Stars fading
+  stars(7, 8, 100, 100, 140);
+
+  // Moon (crescent, morning)
+  circle(10, 6, 4, 220, 220, 180, true);
+  circle(12, 5, 3, 20, 12, 50, true); // occlude for crescent
+
+  // Overlay: time + weather
+  drawTimeWeather(timeStr(), tempStr(), [255,200,100], [100,200,255]);
+
+  // NASA ticker
+  drawTicker(apodTickerStr || 'LOADING...', 25, 255, 200, 100, 10, 5, 0);
+}
+
+function sceneDay(tick) {
+  clear();
+
+  // Sky: deep blue gradient
+  for (let y = 0; y < H - 8; y++) {
+    const t = y / (H - 8);
+    hline(y, 0, W-1, Math.floor(10 + t*20), Math.floor(40 + t*30), Math.floor(120 + t*40));
+  }
+
+  // Ground
+  rect(0, H-8, W, 8, 20, 45, 20);
+
+  // Sun
+  circle(52, 7, 4, 255, 220, 50, true);
+  // Sun rays
+  for (let a = 0; a < 8; a++) {
+    const angle = (a / 8) * Math.PI * 2 + tick * 0.02;
+    const x = Math.round(52 + Math.cos(angle) * 7);
+    const y = Math.round(7  + Math.sin(angle) * 7);
+    px(x, y, 255, 180, 0);
+  }
+
+  // Clouds (simple pixel blobs)
+  const co = Math.floor(tick * 0.3) % (W + 20) - 10;
+  for (const [dx,dy] of [[0,0],[2,0],[4,0],[1,-1],[3,-1],[2,-2]])
+    rect(co+dx*2, 10+dy, 4, 2, 220, 220, 230);
+  for (const [dx,dy] of [[0,0],[2,0],[4,0],[1,-1]])
+    rect(co+dx*2+28, 14+dy, 4, 2, 210, 210, 225);
+
+  drawTimeWeather(timeStr(), tempStr(), [255,255,200], [100,220,255]);
+
+  drawTicker(eventsTickerStr || asteroidTickerStr || 'LOADING...', 25, 100, 220, 255, 0, 8, 15);
+}
+
+function sceneAsteroid(tick) {
+  clear();
+
+  stars(42, 30);
+
+  // Deep space bg — subtle nebula
+  for (let i = 0; i < 20; i++) {
+    let s = 42 + i * 137;
+    const rand = () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
+    const x = Math.floor(rand() * W);
+    const y = Math.floor(rand() * (H-8));
+    const r = Math.floor(rand() * 40);
+    const g = Math.floor(rand() * 20);
+    const b = Math.floor(rand() * 60 + 20);
+    px(x, y, r, g, b);
+  }
+
+  // Earth (small, left)
+  circle(8, 22, 5, 20, 60, 200, true);
+  circle(8, 22, 5, 0, 100, 50, false);
+  // continent blobs
+  px(7, 21, 40, 160, 60); px(8, 20, 30, 150, 50); px(9, 22, 40, 160, 60);
+
+  // Asteroid path — dashed line
+  for (let x = 15; x < 55; x += 3)
+    px(x, Math.floor(18 - (x-15) * 0.2), 120, 100, 60);
+
+  // Asteroid
+  const ax = 20 + Math.floor((tick * 0.4) % 40);
+  const ay = Math.floor(18 - (ax-15) * 0.18);
+  circle(ax, ay, 2, 180, 150, 100, true);
+  px(ax-1, ay-1, 220, 200, 160); // highlight
+
+  // Hazard indicator
+  const hz = tick % 80 < 40;
+  if (hz) rect(56, 2, 7, 7, 200, 30, 0);
+  else     rect(56, 2, 7, 7, 80, 10, 0);
+  text('!', 58, 3, 255, 220, 0);
+
+  // Time
+  textOutlined(timeStr(), 1, 1, 180, 180, 180);
+
+  // Info block
+  drawTicker('2024 BX1  ~  42800 KM  ~  APR 07  ~  ~800M DIAM', H-7, 255, 160, 0, 0, 0, 0);
+}
+
+function sceneEvent(tick) {
+  clear();
+
+  // World map (very simplified pixel silhouette)
+  // Blue ocean base
+  rect(0, 0, W, H, 0, 20, 60);
+
+  // Landmasses — very rough pixel art
+  const land = [
+    // North America
+    [10,4,16,10],[11,10,14,14],[12,14,11,4],
+    // South America
+    [14,15,8,10],[13,25,7,5],
+    // Europe/Africa
+    [28,4,8,8],[27,10,6,6],[28,14,7,6],[27,16,8,12],
+    // Asia
+    [34,3,20,10],[36,11,16,8],[38,13,10,6],
+    // Australia
+    [46,18,9,6],
+  ];
+  for (const [x,y,w,h] of land)
+    rect(x, y, w, h, 30, 90, 30);
+
+  // Event marker (pulsing)
+  const pulse = Math.floor(tick * 0.15) % 4;
+  // Wildfire in California area
+  const ex = 8, ey = 9;
+  if (pulse < 3) circle(ex, ey, pulse, 255, 80, 0, false);
+  px(ex, ey, 255, 200, 0);
+
+  // Storm in Atlantic
+  const sx = 20, sy = 12;
+  const sr = (Math.floor(tick * 0.1) % 3) + 1;
+  circle(sx, sy, sr, 200, 200, 255, false);
+  px(sx, sy, 255, 255, 255);
+
+  // Volcano in Indonesia
+  circle(48, 16, Math.floor(tick*0.08)%2+1, 255, 60, 0, false);
+  px(48, 16, 255, 150, 0);
+
+  // Time overlay
+  const _day = dayStr();
+  textOutlined(timeStr(), 1, 1, 255, 255, 255);
+  textOutlined(_day, W-textWidth(_day)-1, 1, 200, 200, 200);
+
+  // Event ticker
+  rect(0, H-8, W, 8, 0, 0, 20);
+  drawTicker(eventsTickerStr || 'LOADING...', 25, 255, 160, 60, 0, 0, 20);
+}
+
+// ─── Moon phase ───────────────────────────────────────────────────────────────
+const LUNAR_CYCLE = 29.53059;
+// Reference: new moon on Jan 6 2000 18:14 UTC (well-established epoch)
+const KNOWN_NEW_MOON = new Date('2000-01-06T18:14:00Z');
+
+function moonPhase(date = new Date()) {
+  const days = (date - KNOWN_NEW_MOON) / 86400000;
+  return ((days % LUNAR_CYCLE) + LUNAR_CYCLE) % LUNAR_CYCLE;
+}
+
+function moonPhaseName(phase) {
+  if (phase <  1.85) return 'NEW MOON';
+  if (phase <  7.38) return 'WAXING CRESCENT';
+  if (phase <  9.22) return 'FIRST QUARTER';
+  if (phase < 14.77) return 'WAXING GIBBOUS';
+  if (phase < 16.61) return 'FULL MOON';
+  if (phase < 22.15) return 'WANING GIBBOUS';
+  if (phase < 24.00) return 'LAST QUARTER';
+  return 'WANING CRESCENT';
+}
+
+function drawMoon(cx, cy, rad, phase) {
+  const halfCycle = LUNAR_CYCLE / 2;
+  const waxing    = phase <= halfCycle;
+  const halfPhase = waxing ? phase / halfCycle : (phase - halfCycle) / halfCycle;
+  const f         = (1 - Math.cos(Math.PI * halfPhase)) / 2; // 0=new, 1=full
+  const shadowEdge = 1 - 2 * f; // terminator x (normalized -1..1)
+
+  for (let dy = -rad; dy <= rad; dy++) {
+    const hw = Math.sqrt(rad * rad - dy * dy);
+    for (let dx = -rad; dx <= rad; dx++) {
+      if (dx * dx + dy * dy > rad * rad) continue;
+      const nx  = hw > 0 ? dx / hw : 0;
+      const lit = waxing ? nx > shadowEdge : nx < shadowEdge;
+      if (lit) {
+        px(cx + dx, cy + dy, 240, 235, 200);
+      } else {
+        px(cx + dx, cy + dy, 12, 12, 24); // earthshine — barely visible
+      }
+    }
+  }
+  // Mare detail (only meaningful when mostly lit)
+  if (f > 0.7) {
+    px(cx-2,cy-2, 180,175,145); px(cx-1,cy-1,175,170,140); px(cx+2,cy-2,185,180,150);
+    px(cx-3,cy,   170,165,135); px(cx+1,cy+1,180,175,145); px(cx-1,cy+2,175,170,140);
+  }
+  // Glow scales with illumination
+  const glow = Math.floor(70 * f);
+  for (let d = rad + 2; d <= rad + 4; d++)
+    circle(cx, cy, d, glow, glow, Math.floor(glow * 0.5), false);
+}
+
+// compute once per session
+const todayPhase = moonPhase();
+
+function sceneNight(tick) {
+  clear();
+
+  // Deep night sky
+  for (let y = 0; y < H; y++) {
+    const r = Math.floor(2 + y * 0.3);
+    const g = Math.floor(2 + y * 0.2);
+    const b = Math.floor(15 + y * 0.5);
+    hline(y, 0, W-1, r, g, b);
+  }
+
+  stars(13, 35, 200, 200, 255);
+
+  // Milky Way haze — diagonal band across upper sky
+  for (let i = 0; i < 25; i++) {
+    let s = i * 7919;
+    const rand = () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
+    const x = Math.floor(rand() * W);
+    const y = Math.floor(x * 0.25 + rand() * 5 - 2);
+    const br = Math.floor(rand() * 30 + 8);
+    px(x, y, br, br, Math.floor(br * 1.3));
+  }
+
+  drawMoon(48, 10, 7, todayPhase);
+
+  // Horizon / ground
+  hline(27, 0, W-1, 30, 25, 40);
+  rect(0, 28, W, 4, 10, 8, 15);
+
+  // Tree silhouettes
+  for (const tx of [4, 12, 18, 58]) {
+    px(tx, 27, 5,5,8); px(tx,26,5,5,8); px(tx-1,26,5,5,8); px(tx+1,26,5,5,8);
+    px(tx,25,5,5,8); px(tx-1,25,5,5,8); px(tx+1,25,5,5,8);
+  }
+
+  // Time (dim, non-invasive)
+  textOutlined(timeStr(), 1, 1, 100, 80, 160);
+  const _temp = tempStr();
+  textOutlined(_temp, W - textWidth(_temp) - 1, 1, 80, 80, 120);
+
+  // Moon phase label
+  drawTicker(moonPhaseName(todayPhase), H-6, 160, 160, 120, 0, 0, 0);
+}
+
+
+// ─── APOD live frame ─────────────────────────────────────────────────────────
+let apodPixels = null;
+let apodLoading = false;
+let apodTitle = '';
+
+function loadApodFrame() {
+  if (apodLoading) return;
+  apodLoading = true;
+
+  // fetch title
+  fetch('http://localhost:5001/apod')
+    .then(r => r.json())
+    .then(d => { apodTitle = d.title || ''; })
+    .catch(() => {});
+
+  // fetch pixels
+  fetch('http://localhost:5001/apod/frame')
+    .then(r => r.json())
+    .then(data => { apodPixels = data.pixels; apodLoading = false; })
+    .catch(e => { apodLoading = false; console.error('frame fetch failed', e); });
+}
+
+function sceneApodLive(tick) {
+  clear();
+
+  if (!apodPixels) {
+    // Loading state
+    stars(1, 20);
+    const msg = apodLoading ? 'LOADING...' : 'NO DATA';
+    text(msg, Math.floor((W - textWidth(msg)) / 2), 13, 80, 80, 80);
+    if (!apodLoading) loadApodFrame();
+    return;
+  }
+
+  // Render pixel frame
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const [r, g, b] = apodPixels[y * W + x];
+      px(x, y, r, g, b);
+    }
+  }
+
+  // Title — scrolling ticker at bottom
+  drawTicker(apodTitle || 'ASTRONOMY PICTURE OF THE DAY', H - 7, 255, 220, 100, 0, 0, 0);
+}
+
+// ─── Tomorrow forecast scene ──────────────────────────────────────────────────
+let forecastData = null;
+
+fetch('http://localhost:5001/weather/forecast')
+  .then(r => r.json())
+  .then(d => { forecastData = d; })
+  .catch(() => {});
+
+function sceneTomorrow(tick) {
+  clear();
+
+  // Sky gradient based on condition
+  const cond = (forecastData?.condition || '').toLowerCase();
+  const isClear  = cond.includes('clear');
+  const isRain   = cond.includes('rain') || cond.includes('drizzle');
+  const isSnow   = cond.includes('snow');
+  const isStorm  = cond.includes('thunder');
+
+  for (let y = 0; y < H; y++) {
+    const t = y / (H - 1);
+    let r, g, b;
+    if (isClear)       { r = Math.floor(20+t*60);  g = Math.floor(60+t*80);  b = Math.floor(160+t*60); }
+    else if (isRain)   { r = Math.floor(30+t*20);  g = Math.floor(40+t*20);  b = Math.floor(70+t*30); }
+    else if (isSnow)   { r = Math.floor(80+t*80);  g = Math.floor(90+t*80);  b = Math.floor(120+t*80); }
+    else if (isStorm)  { r = Math.floor(10+t*20);  g = Math.floor(10+t*15);  b = Math.floor(30+t*20); }
+    else               { r = Math.floor(40+t*30);  g = Math.floor(50+t*30);  b = Math.floor(80+t*40); } // cloudy
+    hline(y, 0, W-1, r, g, b);
+  }
+
+  if (!forecastData) {
+    text('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 13, 120, 120, 120);
+    flush(); return;
+  }
+
+  // Weather icon (pixel art, center-left)
+  const ix = 10, iy = 10;
+  if (isClear) {
+    circle(ix, iy, 4, 255, 200, 50, true);
+  } else if (isRain) {
+    rect(ix-4, iy-2, 9, 4, 160, 160, 180, true);
+    circle(ix, iy-2, 3, 160, 160, 180, true);
+    for (let d = 0; d < 4; d++)
+      px(ix - 3 + d*2, iy + 3 + (tick+d*5)%4, 100, 150, 255);
+  } else if (isSnow) {
+    circle(ix, iy-1, 3, 200, 200, 220, true);
+    for (let d = 0; d < 4; d++) {
+      const sx = ix - 2 + (d%2)*4, sy = iy + 3 + Math.floor(d/2)*2;
+      px(sx, sy, 220, 230, 255);
+    }
+  } else if (isStorm) {
+    rect(ix-4, iy-3, 9, 4, 100, 100, 120, true);
+    // lightning bolt
+    px(ix,   iy+1, 255, 220, 0); px(ix-1, iy+2, 255, 220, 0);
+    px(ix,   iy+3, 255, 220, 0); px(ix+1, iy+4, 255, 220, 0);
+  } else {
+    // cloudy
+    circle(ix-1, iy,   3, 180, 180, 200, true);
+    circle(ix+2, iy-1, 3, 190, 190, 210, true);
+    circle(ix+1, iy+1, 3, 200, 200, 220, true);
+  }
+
+  // "TOMORROW" label
+  text('TOMORROW', 22, 1, 200, 200, 200);
+
+  // Condition description
+  const desc = (forecastData.description || forecastData.condition).toUpperCase();
+  text(desc, 22, 8, 255, 255, 255);
+
+  // Temp range
+  const tmin = forecastData.temp_min_c + '\xb0';
+  const tmax = forecastData.temp_max_c + '\xb0';
+  text(tmin + 'C', 22, 15, 100, 180, 255);       // min in blue
+  const sep = '-';
+  const sepX = 22 + textWidth(tmin + 'C') + 2;
+  text(sep, sepX, 15, 180, 180, 180);
+  text(tmax + 'C', sepX + textWidth(sep) + 2, 15, 255, 140, 60); // max in orange
+
+  // Humidity + wind bottom strip
+  const city  = forecastData.city || '';
+  const humid = 'HUM ' + forecastData.humidity + '%';
+  const wind  = 'WIND ' + forecastData.wind_kmh + 'KMH';
+  drawTicker(city + '  ~  ' + humid + '  ~  ' + wind, H-7, 100, 180, 255, 0, 0, 0);
+}
+
+// ─── Animation loop ───────────────────────────────────────────────────────────
+const SCENES = ['morning', 'day', 'tomorrow', 'asteroid', 'event', 'night', 'apod_live'];
+const TICKS_PER_VIEW  = 50;   // ~4 seconds per view at 80ms
+const VIEWS_PER_SCENE = 3;
+
+let currentScene = 'morning';
+let sceneIndex   = 0;
+let tick         = 0;
+let viewTick     = 0;
+let viewCount    = 0;
+let paused       = false;
+
+const SCENE_INFO = {
+  morning: {
+    label: 'Morning (6–9am)',
+    desc: `<strong>Art:</strong> Warm sky gradient, crescent moon setting, sun rising over horizon.<br>
+           <strong>Always on:</strong> Time (top-left), temperature (top-right).<br>
+           <strong>Bottom strip:</strong> APOD title + ISS pass time if overhead.<br>
+           <strong>Feel:</strong> Warm, calm, good morning ritual.`,
+  },
+  day: {
+    label: 'Daytime (9am–6pm)',
+    desc: `<strong>Art:</strong> Blue sky, drifting clouds, sun with slow rays.<br>
+           <strong>Always on:</strong> Time, temperature.<br>
+           <strong>Bottom strip:</strong> Active EONET events or asteroid close approach.<br>
+           <strong>Feel:</strong> Light and airy, informational without being busy.`,
+  },
+  asteroid: {
+    label: 'Asteroid Alert',
+    desc: `<strong>Trigger:</strong> NeoWs close approach within 7 days.<br>
+           <strong>Art:</strong> Deep space, Earth in corner, asteroid trajectory arc.<br>
+           <strong>Info:</strong> Name, miss distance (km), diameter (m), date.<br>
+           <strong>Hazard indicator:</strong> Pulsing red badge (top-right) if potentially hazardous.<br>
+           <strong>Feel:</strong> Dramatic, curiosity-sparking.`,
+  },
+  event: {
+    label: 'Earth Events',
+    desc: `<strong>Art:</strong> Pixel world map with pulsing event markers.<br>
+           <strong>Markers:</strong> Orange = wildfire, white spiral = storm, red = volcanic.<br>
+           <strong>Bottom strip:</strong> Scrolling EONET event names + location.<br>
+           <strong>Feel:</strong> Situational awareness, like a live mission display.`,
+  },
+  night: {
+    label: 'Night (10pm–midnight)',
+    desc: `<strong>Art:</strong> Moon phase art (full moon shown here), tree silhouettes, starfield.<br>
+           <strong>Moon:</strong> Art changes nightly to match actual phase.<br>
+           <strong>Info:</strong> Dim time + temperature overlay, moon phase label.<br>
+           <strong>Feel:</strong> Peaceful, observatory-like.`,
+  },
+
+  tomorrow: {
+    label: 'Tomorrow Forecast',
+    desc: `<strong>Source:</strong> OpenWeatherMap 5-day/3h forecast, filtered to tomorrow.<br>
+           <strong>Info:</strong> Condition, min/max temperature, humidity, wind speed, city.<br>
+           <strong>Icon:</strong> Pixel art adapts to condition (clear, rain, snow, storm, clouds).<br>
+           <strong>Requires:</strong> Server running at localhost:5001.`,
+  },
+  apod_live: {
+    label: 'APOD Live',
+    desc: `<strong>Source:</strong> Today's Astronomy Picture of the Day, fetched live from the server.<br>
+           <strong>Processing:</strong> Downloaded, cropped to 2:1, resized to 64×32, contrast/color boosted for LED.<br>
+           <strong>Overlay:</strong> Title strip at bottom.<br>
+           <strong>Requires:</strong> Server running at localhost:5001.`,
+  },
+};
+
+function advanceScene() {
+  sceneIndex   = (sceneIndex + 1) % SCENES.length;
+  currentScene = SCENES[sceneIndex];
+  viewTick     = 0;
+  viewCount    = 0;
+  tickerOffset = 0;
+  document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-scene="${currentScene}"]`)?.classList.add('active');
+  document.getElementById('info-panel').innerHTML = SCENE_INFO[currentScene]?.desc || '';
+  updateProgress();
+}
+
+function updateProgress() {
+  document.getElementById('scene-idx').textContent  = `${sceneIndex + 1}/${SCENES.length}`;
+  document.getElementById('view-idx').textContent   = `${viewCount + 1}/${VIEWS_PER_SCENE}`;
+  const pct = (viewTick / TICKS_PER_VIEW) * 100;
+  document.getElementById('view-bar').style.width = pct + '%';
+}
+
+function drawScene() {
+  switch(currentScene) {
+    case 'morning':    sceneMorning(tick);   break;
+    case 'day':        sceneDay(tick);       break;
+    case 'asteroid':   sceneAsteroid(tick);  break;
+    case 'event':      sceneEvent(tick);     break;
+    case 'night':      sceneNight(tick);     break;
+case 'apod_live':  sceneApodLive(tick);  break;
+    case 'tomorrow':   sceneTomorrow(tick);  break;
+  }
+  flush();
+  tick++;
+  tickerOffset++;
+
+  if (!paused) {
+    viewTick++;
+    if (viewTick >= TICKS_PER_VIEW) {
+      viewTick = 0;
+      viewCount++;
+      if (viewCount >= VIEWS_PER_SCENE) advanceScene();
+    }
+    updateProgress();
+  }
+}
+
+setInterval(drawScene, 80);
+
+// ─── Controls ─────────────────────────────────────────────────────────────────
+document.querySelectorAll('[data-scene]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    currentScene = btn.dataset.scene;
+    sceneIndex   = SCENES.indexOf(currentScene);
+    viewTick     = 0;
+    viewCount    = 0;
+    tickerOffset = 0;
+    document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('info-panel').innerHTML = SCENE_INFO[currentScene]?.desc || '';
+    updateProgress();
+  });
+});
+
+document.getElementById('pause-btn').addEventListener('click', () => {
+  paused = !paused;
+  document.getElementById('pause-btn').textContent = paused ? '▶ Play' : '⏸ Pause';
+});
+
+const scaleInput = document.getElementById('scale');
+const scaleVal   = document.getElementById('scale-val');
+scaleInput.addEventListener('input', () => {
+  resize(+scaleInput.value);
+  scaleVal.textContent = scaleInput.value + '×';
+});
+
+// init info panel
+document.getElementById('info-panel').innerHTML = SCENE_INFO['morning'].desc;
+</script>
+</body>
+</html>
