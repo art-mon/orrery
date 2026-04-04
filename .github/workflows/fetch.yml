@@ -1,0 +1,39 @@
+name: Fetch Data
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:          # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r server/requirements.txt
+
+      - name: Generate data
+        env:
+          NASA_API_KEY:          ${{ secrets.NASA_API_KEY }}
+          OPENWEATHER_API_KEY:   ${{ secrets.OPENWEATHER_API_KEY }}
+          LATITUDE:              ${{ secrets.LATITUDE }}
+          LONGITUDE:             ${{ secrets.LONGITUDE }}
+        run: python server/generate.py
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "chore: update data [skip ci]"
+          git push

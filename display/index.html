@@ -317,15 +317,39 @@ let apodTickerStr    = '';
 let eventsTickerStr  = '';
 let asteroidTickerStr = '';
 
-fetch('http://localhost:5001/apod')
-  .then(r => r.json())
-  .then(d => { apodTickerStr = 'APOD: ' + (d.title || '').toUpperCase(); })
-  .catch(() => {});
-
 let currentWeather = null;
-fetch('http://localhost:5001/weather')
+
+// Single fetch — daily.json is written by GitHub Actions (or generate.py locally)
+fetch('../data/daily.json')
   .then(r => r.json())
-  .then(d => { currentWeather = d; })
+  .then(d => {
+    // APOD
+    const apod = d.apod || {};
+    apodTickerStr = 'APOD: ' + (apod.title || '').toUpperCase();
+    apodTitle     = apod.title || '';
+
+    // Weather
+    currentWeather = d.weather || null;
+
+    // Forecast
+    forecastData = d.forecast || null;
+
+    // Events
+    const evts = (d.events || {}).events || [];
+    eventsTickerStr = evts.length
+      ? evts.map(e => e.title.toUpperCase()).join('  ~  ')
+      : 'NO ACTIVE EVENTS';
+
+    // Asteroids
+    const rocks = (d.asteroids || {}).asteroids || [];
+    asteroidTickerStr = rocks.length
+      ? rocks.map(a =>
+          a.name.replace(/[()]/g, '').trim().toUpperCase() +
+          '  ' + (a.miss_distance_km / 1000).toFixed(0) + 'K KM' +
+          (a.hazardous ? ' (!)' : '')
+        ).join('  ~  ')
+      : 'NO CLOSE APPROACHES THIS WEEK';
+  })
   .catch(() => {});
 
 function timeStr() {
@@ -341,30 +365,6 @@ function tempStr() {
 function dayStr() {
   return ['SUN','MON','TUE','WED','THU','FRI','SAT'][new Date().getDay()];
 }
-
-fetch('http://localhost:5001/events')
-  .then(r => r.json())
-  .then(d => {
-    const evts = d.events || [];
-    eventsTickerStr = evts.length
-      ? evts.map(e => e.title.toUpperCase()).join('  ~  ')
-      : 'NO ACTIVE EVENTS';
-  })
-  .catch(() => {});
-
-fetch('http://localhost:5001/asteroids')
-  .then(r => r.json())
-  .then(d => {
-    const rocks = d.asteroids || [];
-    asteroidTickerStr = rocks.length
-      ? rocks.map(a =>
-          a.name.replace(/[()]/g, '').trim().toUpperCase() +
-          '  ' + (a.miss_distance_km / 1000).toFixed(0) + 'K KM' +
-          (a.hazardous ? ' (!)' : '')
-        ).join('  ~  ')
-      : 'NO CLOSE APPROACHES THIS WEEK';
-  })
-  .catch(() => {});
 
 function drawTicker(str, y, r, g, b, bg_r=0, bg_g=0, bg_b=0) {
   // Fill ticker bg
@@ -670,14 +670,9 @@ function loadApodFrame() {
   if (apodLoading) return;
   apodLoading = true;
 
-  // fetch title
-  fetch('http://localhost:5001/apod')
-    .then(r => r.json())
-    .then(d => { apodTitle = d.title || ''; })
-    .catch(() => {});
-
+  // title already populated from daily.json fetch above
   // fetch pixels
-  fetch('http://localhost:5001/apod/frame')
+  fetch('../data/frame.json')
     .then(r => r.json())
     .then(data => { apodPixels = data.pixels; apodLoading = false; })
     .catch(e => { apodLoading = false; console.error('frame fetch failed', e); });
@@ -708,12 +703,7 @@ function sceneApodLive(tick) {
 }
 
 // ─── Tomorrow forecast scene ──────────────────────────────────────────────────
-let forecastData = null;
-
-fetch('http://localhost:5001/weather/forecast')
-  .then(r => r.json())
-  .then(d => { forecastData = d; })
-  .catch(() => {});
+let forecastData = null; // populated from daily.json fetch
 
 function sceneTomorrow(tick) {
   clear();

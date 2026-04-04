@@ -1,0 +1,118 @@
+{
+  "apod": {
+    "title": "Hello World",
+    "date": "2026-04-04",
+    "explanation": "From pole to pole our fair planet is captured in this snapshot from space, an evocative image from a window of the Orion spacecraft Integrity. From the spacecraft's perspective the Sun is moving behind Earth's bright limb along the lower right. Africa and the Iberian peninsula are in view on the pale blue planet's surface, while aurorae crown Earth's south and north poles at top right and bottom left. Commander Reid Wiseman took the historic picture on Artemis II mission flight day 2 (April 2), after the completion of the planned translunar injection burn. That burn boosted the spacecraft out of Earth orbit, sending Integrity and crew on a trajectory that will take them around the Moon and back again. That's a journey humans last made over 50 years ago. (Editor's note: Venus is photobombing Wiseman's historic pic. Currently appearing in our western skies after sunset, the inner planet is in the frame below and right of Earth's bright limb, immersed in a faint band of zodiacal light.)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/art002e000192_1050.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/art002e000192.jpg"
+  },
+  "events": {
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+  },
+  "asteroids": {
+    "asteroids": [
+      {
+        "name": "(2023 DZ2)",
+        "hazardous": false,
+        "diameter_m": 83,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 1012422,
+        "velocity_kmh": 26062
+      },
+      {
+        "name": "(2026 FF7)",
+        "hazardous": false,
+        "diameter_m": 19,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 1771463,
+        "velocity_kmh": 47047
+      },
+      {
+        "name": "(2026 FG5)",
+        "hazardous": false,
+        "diameter_m": 58,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 3296996,
+        "velocity_kmh": 89661
+      },
+      {
+        "name": "(2026 FB6)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 4819928,
+        "velocity_kmh": 24645
+      },
+      {
+        "name": "(2026 FH6)",
+        "hazardous": false,
+        "diameter_m": 61,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 6934107,
+        "velocity_kmh": 29241
+      },
+      {
+        "name": "(2021 SH1)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 10607502,
+        "velocity_kmh": 36049
+      },
+      {
+        "name": "(2026 FZ5)",
+        "hazardous": false,
+        "diameter_m": 173,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 14601075,
+        "velocity_kmh": 67586
+      },
+      {
+        "name": "(2026 FL5)",
+        "hazardous": false,
+        "diameter_m": 225,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 14995391,
+        "velocity_kmh": 83763
+      },
+      {
+        "name": "(2023 EF)",
+        "hazardous": false,
+        "diameter_m": 35,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 23559209,
+        "velocity_kmh": 16968
+      },
+      {
+        "name": "(2019 FY1)",
+        "hazardous": false,
+        "diameter_m": 14,
+        "close_approach_date": "2026-04-04",
+        "miss_distance_km": 24073359,
+        "velocity_kmh": 27731
+      }
+    ]
+  },
+  "weather": {
+    "city": "Donji grad",
+    "temp_c": 13.7,
+    "feels_c": 12.4,
+    "humidity": 51,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 1.8
+  },
+  "forecast": {
+    "date": "2026-04-05",
+    "city": "Donji grad",
+    "temp_min_c": 8.2,
+    "temp_max_c": 20.5,
+    "humidity": 60,
+    "condition": "Clouds",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.8
+  }
+}
