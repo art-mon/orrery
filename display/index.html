@@ -316,6 +316,8 @@ let tickerOffset = 0;
 let apodTickerStr    = '';
 let eventsTickerStr  = '';
 let asteroidTickerStr = '';
+let asteroidList = [];
+let eventList    = [];
 
 let currentWeather = null;
 
@@ -342,6 +344,7 @@ fetch('../data/daily.json')
 
     // Asteroids
     const rocks = (d.asteroids || {}).asteroids || [];
+    asteroidList = rocks;
     asteroidTickerStr = rocks.length
       ? rocks.map(a =>
           a.name.replace(/[()]/g, '').trim().toUpperCase() +
@@ -349,6 +352,9 @@ fetch('../data/daily.json')
           (a.hazardous ? ' (!)' : '')
         ).join('  ~  ')
       : 'NO CLOSE APPROACHES THIS WEEK';
+
+    // Events
+    eventList = (d.events || {}).events || [];
   })
   .catch(() => {});
 
@@ -498,17 +504,31 @@ function sceneAsteroid(tick) {
   circle(ax, ay, 2, 180, 150, 100, true);
   px(ax-1, ay-1, 220, 200, 160); // highlight
 
-  // Hazard indicator
-  const hz = tick % 80 < 40;
-  if (hz) rect(56, 2, 7, 7, 200, 30, 0);
-  else     rect(56, 2, 7, 7, 80, 10, 0);
-  text('!', 58, 3, 255, 220, 0);
+  // Hazard indicator — only show if top asteroid is hazardous
+  const rock = asteroidList[0];
+  const isHazardous = rock && rock.hazardous;
+  if (isHazardous) {
+    const hz = tick % 80 < 40;
+    if (hz) rect(56, 2, 7, 7, 200, 30, 0);
+    else     rect(56, 2, 7, 7, 80, 10, 0);
+    text('!', 58, 3, 255, 220, 0);
+  }
 
   // Time
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  // Info block
-  drawTicker('2024 BX1  ~  42800 KM  ~  APR 07  ~  ~800M DIAM', H-7, 255, 160, 0, 0, 0, 0);
+  // Ticker — real asteroid data or fallback
+  if (rock) {
+    const name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
+    const dist = 'MISS ' + (rock.miss_distance_km / 1000).toFixed(0) + 'K KM';
+    const diam = 'DIA ~' + Math.round(rock.diameter_m) + 'M';
+    const _d = new Date(rock.close_approach_date + 'T12:00:00Z');
+    const date = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][_d.getUTCMonth()] + ' ' + _d.getUTCDate();
+    const vel  = 'VEL ' + Math.round(rock.velocity_kmh / 1000) + 'K KMH';
+    drawTicker('ASTEROID  ~  ' + name + '  ~  ' + dist + '  ~  ' + diam + '  ~  ' + date + '  ~  ' + vel, H-7, 255, 160, 0, 0, 0, 0);
+  } else {
+    drawTicker('ASTEROID  ~  NO CLOSE APPROACHES THIS WEEK', H-7, 100, 120, 160, 0, 0, 0);
+  }
 }
 
 function sceneEvent(tick) {
@@ -534,22 +554,29 @@ function sceneEvent(tick) {
   for (const [x,y,w,h] of land)
     rect(x, y, w, h, 30, 90, 30);
 
-  // Event marker (pulsing)
+  // Event markers from real EONET data
   const pulse = Math.floor(tick * 0.15) % 4;
-  // Wildfire in California area
-  const ex = 8, ey = 9;
-  if (pulse < 3) circle(ex, ey, pulse, 255, 80, 0, false);
-  px(ex, ey, 255, 200, 0);
-
-  // Storm in Atlantic
-  const sx = 20, sy = 12;
-  const sr = (Math.floor(tick * 0.1) % 3) + 1;
-  circle(sx, sy, sr, 200, 200, 255, false);
-  px(sx, sy, 255, 255, 255);
-
-  // Volcano in Indonesia
-  circle(48, 16, Math.floor(tick*0.08)%2+1, 255, 60, 0, false);
-  px(48, 16, 255, 150, 0);
+  const mapH = H - 8; // map area excludes ticker strip
+  const markers = eventList.length > 0 ? eventList : [];
+  for (const evt of markers) {
+    if (!evt.coordinates) continue;
+    const [lon, lat] = evt.coordinates;
+    const mx = Math.floor((lon + 180) / 360 * W);
+    const my = Math.floor((90 - lat) / 180 * mapH);
+    const cat = (evt.category || '').toLowerCase();
+    let r = 255, g = 160, b = 60; // default orange
+    if (cat.includes('volcano'))        { r=255; g=80;  b=0;   }
+    else if (cat.includes('storm'))     { r=180; g=180; b=255; }
+    else if (cat.includes('wildfire') || cat.includes('fire')) { r=255; g=60; b=0; }
+    else if (cat.includes('flood'))     { r=60;  g=160; b=255; }
+    else if (cat.includes('ice') || cat.includes('snow')) { r=200; g=230; b=255; }
+    if (pulse < 3) circle(mx, my, pulse, r, g, b, false);
+    px(mx, my, 255, 255, 200);
+  }
+  // No events fallback — draw a quiet globe indicator
+  if (markers.length === 0) {
+    textOutlined('QUIET', Math.floor((W - textWidth('QUIET'))/2), 11, 80, 180, 100);
+  }
 
   // Time overlay
   const _day = dayStr();
@@ -558,7 +585,10 @@ function sceneEvent(tick) {
 
   // Event ticker
   rect(0, H-8, W, 8, 0, 0, 20);
-  drawTicker(eventsTickerStr || 'LOADING...', 25, 255, 160, 60, 0, 0, 20);
+  const evtStr = eventList.length
+    ? 'EARTH EVENTS  ~  ' + eventList.map(e => e.title.toUpperCase()).join('  ~  ')
+    : 'EARTH EVENTS  ~  ALL QUIET';
+  drawTicker(evtStr, 25, 255, 160, 60, 0, 0, 20);
 }
 
 // ─── Moon phase ───────────────────────────────────────────────────────────────
@@ -657,7 +687,8 @@ function sceneNight(tick) {
   textOutlined(_temp, W - textWidth(_temp) - 1, 1, 80, 80, 120);
 
   // Moon phase label
-  drawTicker(moonPhaseName(todayPhase), H-6, 160, 160, 120, 0, 0, 0);
+  const illum = Math.round((1 - Math.cos(todayPhase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
+  drawTicker('MOON  ~  ' + moonPhaseName(todayPhase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
 }
 
 
@@ -699,7 +730,7 @@ function sceneApodLive(tick) {
   }
 
   // Title — scrolling ticker at bottom
-  drawTicker(apodTitle || 'ASTRONOMY PICTURE OF THE DAY', H - 7, 255, 220, 100, 0, 0, 0);
+  drawTicker('APOD  ~  ' + (apodTitle || 'ASTRONOMY PICTURE OF THE DAY'), H - 7, 255, 220, 100, 0, 0, 0);
 }
 
 // ─── Tomorrow forecast scene ──────────────────────────────────────────────────
@@ -847,8 +878,17 @@ const SCENE_INFO = {
   },
 };
 
+function sceneEnabled(name) {
+  if (name === 'asteroid') return asteroidList.length > 0;
+  if (name === 'event')    return eventList.length > 0;
+  return true;
+}
+
 function advanceScene() {
-  sceneIndex   = (sceneIndex + 1) % SCENES.length;
+  for (let i = 0; i < SCENES.length; i++) {
+    sceneIndex = (sceneIndex + 1) % SCENES.length;
+    if (sceneEnabled(SCENES[sceneIndex])) break;
+  }
   currentScene = SCENES[sceneIndex];
   viewTick     = 0;
   viewCount    = 0;
