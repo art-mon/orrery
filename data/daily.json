@@ -13,96 +13,96 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 FW6)",
+        "name": "399325 (1999 GY5)",
         "hazardous": false,
-        "diameter_m": 45,
+        "diameter_m": 547,
         "close_approach_date": "2026-04-05",
-        "miss_distance_km": 5899224,
-        "velocity_kmh": 71347
+        "miss_distance_km": 10534194,
+        "velocity_kmh": 76988
       },
       {
-        "name": "(2023 GC2)",
-        "hazardous": false,
-        "diameter_m": 21,
+        "name": "(2006 GC1)",
+        "hazardous": true,
+        "diameter_m": 472,
         "close_approach_date": "2026-04-05",
-        "miss_distance_km": 12308413,
-        "velocity_kmh": 25985
+        "miss_distance_km": 13278869,
+        "velocity_kmh": 110381
       },
       {
-        "name": "(2026 FM5)",
+        "name": "(2010 GC35)",
         "hazardous": false,
-        "diameter_m": 68,
+        "diameter_m": 70,
         "close_approach_date": "2026-04-05",
-        "miss_distance_km": 23461626,
-        "velocity_kmh": 21112
+        "miss_distance_km": 20748942,
+        "velocity_kmh": 18935
       },
       {
-        "name": "(2025 WL5)",
+        "name": "(2019 SP2)",
         "hazardous": false,
-        "diameter_m": 92,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 28486630,
-        "velocity_kmh": 14378
-      },
-      {
-        "name": "(2023 SK3)",
-        "hazardous": false,
-        "diameter_m": 40,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 31706461,
-        "velocity_kmh": 36225
-      },
-      {
-        "name": "(2021 GH13)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 36721034,
-        "velocity_kmh": 31013
-      },
-      {
-        "name": "(2021 RF2)",
-        "hazardous": false,
-        "diameter_m": 42,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 41024561,
-        "velocity_kmh": 29454
-      },
-      {
-        "name": "(2020 HK6)",
-        "hazardous": false,
-        "diameter_m": 18,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 68065650,
-        "velocity_kmh": 102928
-      },
-      {
-        "name": "(2023 GQ1)",
-        "hazardous": false,
-        "diameter_m": 5,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 69262006,
-        "velocity_kmh": 56088
-      },
-      {
-        "name": "(2021 GN6)",
-        "hazardous": false,
-        "diameter_m": 24,
+        "diameter_m": 93,
         "close_approach_date": "2026-04-06",
-        "miss_distance_km": 2218034,
-        "velocity_kmh": 25376
+        "miss_distance_km": 12933516,
+        "velocity_kmh": 38179
+      },
+      {
+        "name": "(2013 LB)",
+        "hazardous": false,
+        "diameter_m": 164,
+        "close_approach_date": "2026-04-06",
+        "miss_distance_km": 23528644,
+        "velocity_kmh": 22411
+      },
+      {
+        "name": "(2017 WY27)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-04-06",
+        "miss_distance_km": 44258070,
+        "velocity_kmh": 23044
+      },
+      {
+        "name": "(2014 JS54)",
+        "hazardous": true,
+        "diameter_m": 340,
+        "close_approach_date": "2026-04-06",
+        "miss_distance_km": 65809377,
+        "velocity_kmh": 73601
+      },
+      {
+        "name": "(2011 FT9)",
+        "hazardous": false,
+        "diameter_m": 34,
+        "close_approach_date": "2026-04-07",
+        "miss_distance_km": 1321174,
+        "velocity_kmh": 21137
+      },
+      {
+        "name": "(2002 TB70)",
+        "hazardous": true,
+        "diameter_m": 274,
+        "close_approach_date": "2026-04-07",
+        "miss_distance_km": 5148850,
+        "velocity_kmh": 33271
+      },
+      {
+        "name": "515049 (2010 FL)",
+        "hazardous": false,
+        "diameter_m": 820,
+        "close_approach_date": "2026-04-07",
+        "miss_distance_km": 24074793,
+        "velocity_kmh": 78199
       }
     ]
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 20.4,
-    "feels_c": 19.6,
-    "humidity": 42,
+    "temp_c": 19.8,
+    "feels_c": 18.8,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 9.3
   },
   "forecast": {
     "date": "2026-04-06",
