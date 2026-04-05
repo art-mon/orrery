@@ -831,7 +831,7 @@ function startRadio() {
   // Web Audio analyser for waveform viz
   audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   analyser = audioCtx.createAnalyser();
-  analyser.fftSize = 128;          // 128 time-domain samples, smoothed
+  analyser.fftSize = 256;          // 256 time-domain samples → 64px = 2× more waveform visible
   analyser.smoothingTimeConstant = 0.82;
   freqData = new Uint8Array(analyser.fftSize);
 
@@ -880,15 +880,15 @@ function sceneRadio(tick) {
     for (let x = 0; x < W; x++) {
       const idx  = Math.floor(x / W * freqData.length);
       const v    = (freqData[idx] - 128) / 128;   // -1..+1
-      waveY[x]   = cy + Math.round(v * 10);        // ±10 pixels around centre
+      waveY[x]   = cy + Math.round(v * 20);        // ±20 pixels — 2× taller
     }
   } else {
     // Animated fallback — two overlapping sines for a Lissajous feel
     for (let x = 0; x < W; x++) {
       const t  = x / W;
-      const v  = Math.sin(t * Math.PI * 3 + tick * 0.12)
-               * Math.cos(t * Math.PI * 1.3 + tick * 0.07);
-      waveY[x] = cy + Math.round(v * 9);
+      const v  = Math.sin(t * Math.PI * 6 + tick * 0.12)
+               * Math.cos(t * Math.PI * 2.6 + tick * 0.07);
+      waveY[x] = cy + Math.round(v * 18);
     }
   }
 
