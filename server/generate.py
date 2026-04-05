@@ -14,6 +14,7 @@ load_dotenv()
 import nasa
 import weather
 import image
+import briefing
 
 OUT = Path(__file__).parent.parent / "data"
 OUT.mkdir(exist_ok=True)
@@ -65,6 +66,14 @@ def run():
             print("✓ data/frame.json")
     else:
         print("  APOD is not an image today — skipping frame")
+
+    # Daily briefing (TTS) — only regenerate once per day
+    print("Briefing (ElevenLabs TTS)...")
+    safe(briefing.generate, daily, OUT)
+    if (OUT / "briefing.mp3").exists():
+        print("✓ data/briefing.mp3")
+    if (OUT / "briefing.txt").exists():
+        print("✓ data/briefing.txt")
 
     print("=== done ===")
 

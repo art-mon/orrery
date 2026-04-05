@@ -125,6 +125,8 @@
   </div>
 
   <div class="scale-row">
+    <button id="radio-btn">📻 Briefing</button>
+    <span style="color:#444">|</span>
     <button id="pause-btn">⏸ Pause</button>
     <span style="color:#444">|</span>
     <span class="label">Scene <span id="scene-idx">1/7</span></span>
@@ -812,6 +814,104 @@ function sceneTomorrow(tick) {
   drawTicker(city + '  ~  ' + humid + '  ~  ' + wind, H-7, 100, 180, 255, 0, 0, 0);
 }
 
+// ─── Radio / briefing scene ───────────────────────────────────────────────────
+let radioAudio    = null;   // HTMLAudioElement
+let audioCtx      = null;   // AudioContext
+let analyser      = null;   // AnalyserNode
+let freqData      = null;   // Uint8Array
+let radioPlaying  = false;
+let radioLabel    = 'ORRERY RADIO';
+
+function startRadio() {
+  if (radioAudio) { radioAudio.pause(); radioAudio = null; }
+
+  radioAudio = new Audio('../data/briefing.mp3');
+  radioAudio.crossOrigin = 'anonymous';
+
+  // Web Audio analyser for waveform viz
+  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  analyser = audioCtx.createAnalyser();
+  analyser.fftSize = 64;           // 32 frequency bins — maps nicely to 64px wide display
+  freqData = new Uint8Array(analyser.frequencyBinCount);
+
+  const src = audioCtx.createMediaElementSource(radioAudio);
+  src.connect(analyser);
+  analyser.connect(audioCtx.destination);
+
+  radioAudio.play().then(() => {
+    radioPlaying = true;
+    paused = true;              // pause scene auto-cycling while radio plays
+    currentScene = 'radio';
+    document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
+    document.getElementById('radio-btn').textContent = '⏹ Stop';
+  }).catch(e => {
+    console.warn('Radio playback failed:', e);
+    radioPlaying = false;
+  });
+
+  radioAudio.onended = stopRadio;
+}
+
+function stopRadio() {
+  if (radioAudio) { radioAudio.pause(); radioAudio = null; }
+  if (audioCtx)   { audioCtx.close();   audioCtx  = null; }
+  radioPlaying = false;
+  paused = false;
+  currentScene = SCENES[sceneIndex];
+  document.getElementById('radio-btn').textContent = '📻 Briefing';
+  document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
+  document.querySelector(`[data-scene="${currentScene}"]`)?.classList.add('active');
+}
+
+function sceneRadio(tick) {
+  clear();
+
+  // Deep space background
+  stars(7, 25, 80, 80, 180);
+
+  // Horizontal centre line
+  const cy = Math.floor(H / 2) - 2;
+
+  if (analyser) {
+    analyser.getByteFrequencyData(freqData);
+
+    // Map 32 frequency bins across 64 pixels (2px each)
+    const bins = analyser.frequencyBinCount;  // 32
+    for (let i = 0; i < bins; i++) {
+      const amp   = freqData[i] / 255;              // 0..1
+      const barH  = Math.max(1, Math.floor(amp * 12));
+      const x     = i * 2;
+      // Colour: low freq = warm, high = cool
+      const r = Math.floor(255 * (1 - i / bins));
+      const g = Math.floor(80 + 100 * amp);
+      const b = Math.floor(255 * (i / bins));
+
+      for (let dy = 0; dy < barH; dy++) {
+        if (cy - dy >= 0) px(x,     cy - dy, r, g, b);
+        if (cy - dy >= 0) px(x + 1, cy - dy, r, g, b);
+        if (cy + dy < H - 8) px(x,     cy + dy, r, g, b);
+        if (cy + dy < H - 8) px(x + 1, cy + dy, r, g, b);
+      }
+    }
+  } else {
+    // Fallback static waveform (no audio context yet)
+    for (let x = 0; x < W; x++) {
+      const amp = Math.abs(Math.sin((x + tick * 0.4) * 0.35)) * 8;
+      for (let dy = 0; dy <= amp; dy++) {
+        const t = dy / 8;
+        px(x, cy - dy, Math.floor(255*(1-t)), Math.floor(120*t+80), Math.floor(255*t));
+        px(x, cy + dy, Math.floor(255*(1-t)), Math.floor(120*t+80), Math.floor(255*t));
+      }
+    }
+  }
+
+  // Time (top left, dim)
+  textOutlined(timeStr(), 1, 1, 80, 80, 120);
+
+  // Scrolling label + script excerpt
+  drawTicker(radioLabel, H - 7, 180, 140, 255, 0, 0, 20);
+}
+
 // ─── Animation loop ───────────────────────────────────────────────────────────
 const SCENES = ['morning', 'day', 'tomorrow', 'asteroid', 'event', 'night', 'apod_live'];
 const TICKS_PER_VIEW  = 50;   // ~4 seconds per view at 80ms
@@ -913,8 +1013,9 @@ function drawScene() {
     case 'asteroid':   sceneAsteroid(tick);  break;
     case 'event':      sceneEvent(tick);     break;
     case 'night':      sceneNight(tick);     break;
-case 'apod_live':  sceneApodLive(tick);  break;
+    case 'apod_live':  sceneApodLive(tick);  break;
     case 'tomorrow':   sceneTomorrow(tick);  break;
+    case 'radio':      sceneRadio(tick);     break;
   }
   flush();
   tick++;
@@ -952,6 +1053,24 @@ document.getElementById('pause-btn').addEventListener('click', () => {
   paused = !paused;
   document.getElementById('pause-btn').textContent = paused ? '▶ Play' : '⏸ Pause';
 });
+
+document.getElementById('radio-btn').addEventListener('click', () => {
+  if (radioPlaying) {
+    stopRadio();
+  } else {
+    startRadio();
+  }
+});
+
+// Populate radioLabel from briefing.txt if available
+fetch('../data/briefing.txt')
+  .then(r => r.text())
+  .then(t => {
+    // Use first sentence as the scrolling label
+    const first = t.split('.')[0].trim();
+    if (first) radioLabel = first.toUpperCase();
+  })
+  .catch(() => {});
 
 const scaleInput = document.getElementById('scale');
 const scaleVal   = document.getElementById('scale-val');
