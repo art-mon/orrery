@@ -1,47 +1,42 @@
 """
 orrery — daily briefing generator
-Builds a ~90s English script from daily data, calls ElevenLabs TTS,
+Builds a ~90s English script from daily data, converts to speech via
+edge-tts (Microsoft Edge neural TTS — free, no API key required),
 writes data/briefing.mp3 and data/briefing.txt.
 """
 
-import os
-import json
-import requests
-from pathlib import Path
+import asyncio
+import math
 from datetime import datetime
-from typing import Optional
+from pathlib import Path
 
-ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
-
-# ElevenLabs voice — "Adam" (warm, clear, radio-presenter quality)
-# Replace with any voice ID from your ElevenLabs account
-VOICE_ID = "pNInz6obpgDQGcFmaJgB"
-
-# Model — eleven_turbo_v2 is fast + cheap; eleven_multilingual_v2 for best quality
-MODEL_ID = "eleven_turbo_v2"
+# Voice options (all free, no key needed):
+#   en-GB-RyanNeural    — British male, warm, radio-presenter quality  ← default
+#   en-US-GuyNeural     — American male, clear and neutral
+#   en-US-JennyNeural   — American female, friendly
+#   en-AU-WilliamNeural — Australian male, distinctive
+VOICE = "en-GB-RyanNeural"
 
 
 def build_script(daily: dict) -> str:
     """Build a ~90s briefing script from daily.json data."""
 
-    now = datetime.now()
+    now        = datetime.now()
     day_names  = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     month_names = ["January","February","March","April","May","June",
                    "July","August","September","October","November","December"]
-    day_str   = day_names[now.weekday()]
-    month_str = month_names[now.month - 1]
-    date_str  = f"{day_str}, {month_str} {now.day}"
+    date_str = f"{day_names[now.weekday()]}, {month_names[now.month - 1]} {now.day}"
 
     lines = [f"Good morning. Today is {date_str}."]
 
     # Weather
     w = daily.get("weather") or {}
     if w and not w.get("error"):
-        temp   = round(w.get("temp_c", 0))
-        cond   = w.get("condition", "").lower()
-        city   = w.get("city", "your location")
-        humid  = w.get("humidity", "")
-        wind   = round(w.get("wind_kmh", 0))
+        temp  = round(w.get("temp_c", 0))
+        cond  = w.get("condition", "").lower()
+        city  = w.get("city", "your location")
+        humid = w.get("humidity", "")
+        wind  = round(w.get("wind_kmh", 0))
         lines.append(
             f"In {city}, it is {temp} degrees and {cond}. "
             f"Humidity at {humid} percent, wind at {wind} kilometres per hour."
@@ -50,22 +45,21 @@ def build_script(daily: dict) -> str:
     # Tomorrow forecast
     f = daily.get("forecast") or {}
     if f and not f.get("error"):
-        tmin = round(f.get("temp_min_c", 0))
-        tmax = round(f.get("temp_max_c", 0))
+        tmin  = round(f.get("temp_min_c", 0))
+        tmax  = round(f.get("temp_max_c", 0))
         fcond = f.get("condition", "").lower()
         lines.append(
-            f"Tomorrow expects {fcond}, with a low of {tmin} and a high of {tmax} degrees."
+            f"Tomorrow expects {fcond}, with a low of {tmin} "
+            f"and a high of {tmax} degrees."
         )
 
     lines.append("Now, looking up.")
 
-    # Moon phase
-    # Compute phase from known epoch (matches display logic)
-    KNOWN_NEW_MOON_TS = 947182440  # Jan 6 2000 18:14 UTC in seconds
-    LUNAR_CYCLE = 29.53059 * 86400
-    phase_days = ((now.timestamp() - KNOWN_NEW_MOON_TS) % LUNAR_CYCLE) / 86400
-    phase_frac = phase_days / 29.53059
-    illum = round((1 - __import__('math').cos(phase_frac * 2 * __import__('math').pi)) / 2 * 100)
+    # Moon phase (matches display logic exactly)
+    KNOWN_NEW_MOON_TS = 947182440  # Jan 6 2000 18:14 UTC
+    LUNAR_CYCLE_S     = 29.53059 * 86400
+    phase_frac = ((now.timestamp() - KNOWN_NEW_MOON_TS) % LUNAR_CYCLE_S) / LUNAR_CYCLE_S
+    illum      = round((1 - math.cos(phase_frac * 2 * math.pi)) / 2 * 100)
 
     if   phase_frac < 0.02:  phase_name = "new moon"
     elif phase_frac < 0.23:  phase_name = "waxing crescent"
@@ -85,7 +79,6 @@ def build_script(daily: dict) -> str:
     if apod and not apod.get("error"):
         title = apod.get("title", "")
         expl  = apod.get("explanation", "")
-        # First sentence of explanation only
         first_sentence = expl.split(".")[0].strip() + "." if expl else ""
         if title:
             lines.append(
@@ -100,11 +93,11 @@ def build_script(daily: dict) -> str:
         name = rock.get("name", "").replace("(","").replace(")","").strip()
         dist = round(rock.get("miss_distance_km", 0) / 1000)
         diam = round(rock.get("diameter_m", 0))
-        hazardous = rock.get("hazardous", False)
-        hazard_str = " It is classified as potentially hazardous." if hazardous else " No hazard."
+        hazard = " It is classified as potentially hazardous." \
+                 if rock.get("hazardous") else " No hazard."
         lines.append(
             f"One asteroid is making a close pass this week — {name}, "
-            f"at {dist} thousand kilometres, approximately {diam} metres across.{hazard_str}"
+            f"at {dist} thousand kilometres, approximately {diam} metres across.{hazard}"
         )
     else:
         lines.append("No asteroid close approaches are expected this week.")
@@ -112,10 +105,11 @@ def build_script(daily: dict) -> str:
     # Earth events
     events = (daily.get("events") or {}).get("events", [])
     if events:
-        titles = [e.get("title","") for e in events[:3]]
+        titles    = [e.get("title", "") for e in events[:3]]
         event_str = "; ".join(titles)
+        plural    = "s" if len(events) > 1 else ""
         lines.append(
-            f"Earth event{'s' if len(events) > 1 else ''} currently tracked by NASA: {event_str}."
+            f"Earth event{plural} currently tracked by NASA: {event_str}."
         )
     else:
         lines.append("No active Earth events are currently tracked.")
@@ -125,37 +119,28 @@ def build_script(daily: dict) -> str:
     return " ".join(lines)
 
 
+async def _synthesise(script: str, out_path: Path) -> None:
+    """Call edge-tts and save MP3."""
+    import edge_tts
+    communicate = edge_tts.Communicate(script, VOICE)
+    await communicate.save(str(out_path))
+
+
 def generate(daily: dict, out_dir: Path) -> bool:
     """Generate briefing.txt and briefing.mp3. Returns True on success."""
-
-    if not ELEVENLABS_API_KEY:
-        print("  WARNING: ELEVENLABS_API_KEY not set — skipping audio")
+    try:
+        import edge_tts  # noqa — just check it's installed
+    except ImportError:
+        print("  WARNING: edge-tts not installed — run: pip install edge-tts")
         return False
 
     script = build_script(daily)
     (out_dir / "briefing.txt").write_text(script, encoding="utf-8")
     print(f"  script: {len(script.split())} words")
 
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}"
-    headers = {
-        "xi-api-key": ELEVENLABS_API_KEY,
-        "Content-Type": "application/json",
-    }
-    payload = {
-        "text": script,
-        "model_id": MODEL_ID,
-        "voice_settings": {
-            "stability": 0.55,
-            "similarity_boost": 0.80,
-            "style": 0.20,
-            "use_speaker_boost": True,
-        },
-    }
+    mp3_path = out_dir / "briefing.mp3"
+    asyncio.run(_synthesise(script, mp3_path))
 
-    resp = requests.post(url, headers=headers, json=payload, timeout=60)
-    resp.raise_for_status()
-
-    (out_dir / "briefing.mp3").write_bytes(resp.content)
-    size_kb = len(resp.content) // 1024
-    print(f"  audio: {size_kb} KB")
+    size_kb = mp3_path.stat().st_size // 1024
+    print(f"  audio: {size_kb} KB  ({VOICE})")
     return True

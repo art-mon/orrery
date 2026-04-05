@@ -26,7 +26,6 @@ jobs:
         env:
           NASA_API_KEY:          ${{ secrets.NASA_API_KEY }}
           OPENWEATHER_API_KEY:   ${{ secrets.OPENWEATHER_API_KEY }}
-          ELEVENLABS_API_KEY:    ${{ secrets.ELEVENLABS_API_KEY }}
           LATITUDE:              ${{ secrets.LATITUDE }}
           LONGITUDE:             ${{ secrets.LONGITUDE }}
         run: python server/generate.py
