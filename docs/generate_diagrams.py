@@ -78,37 +78,40 @@ graph TD
         WIFI["WiFi 802.11 b/g/n"]
         BT["Bluetooth 5"]
         NVRAM["NVS Flash<br/>WiFi creds · config"]
-        BTN["GPIO — Buttons<br/>next · brightness · WiFi setup"]
+        BTN["GPIO 33 34 35<br/>next · brightness · WiFi setup"]
+        UART["GPIO 43 44<br/>UART debug TX RX"]
     end
 
-    subgraph hub75 [" HUB75E connector "]
-        RGB["R1 G1 B1<br/>R2 G2 B2<br/>6× color data"]
-        ADDR["A B C D E<br/>5× row select"]
-        CTRL["CLK · LAT · OE<br/>3× control"]
+    subgraph hub75 [" HUB75 connector (13 pins) "]
+        RGB["R1 G1 B1  →  GPIO 4 5 6<br/>R2 G2 B2  →  GPIO 7 15 16<br/>6× color data (top + bottom half)"]
+        ADDR["A B C D  →  GPIO 36 37 38 39<br/>4× row select  ·  2⁴ = 16 rows"]
+        CTRL["CLK → GPIO 2  ·  LAT → GPIO 47  ·  OE → GPIO 48<br/>3× timing control"]
     end
 
     subgraph panel [" 64×32 LED Panel "]
-        LEDS["2048 RGB LEDs<br/>~20W peak"]
+        LEDS["2048 RGB LEDs<br/>~20W peak @ full white"]
     end
 
     USB --> REG
-    USB --> LEDS
-    REG --> CPU
+    USB -->|"5V direct"| LEDS
+    REG -->|"3.3V"| CPU
     CPU --> WIFI
     CPU --> BT
     CPU --> NVRAM
     CPU --> BTN
-    CPU -->|"GPIO 11–17 (data)"| RGB
-    CPU -->|"GPIO 1–5  (addr)"| ADDR
-    CPU -->|"GPIO 6–8  (ctrl)"| CTRL
+    CPU --> UART
+    CPU -->|"6 pins"| RGB
+    CPU -->|"4 pins"| ADDR
+    CPU -->|"3 pins"| CTRL
     RGB  --> panel
     ADDR --> panel
     CTRL --> panel
 """
 
 HW_DESC = (
-    "Hardware block diagram. GPIO pin numbers are illustrative — final mapping depends on "
-    "PCB layout and HUB75 library pin configuration."
+    "ESP32-S3 driving a 64×32 HUB75 LED panel. The panel uses 1:16 multiplexed scanning "
+    "(top and bottom 16 rows driven simultaneously), so only 4 address lines are needed. "
+    "Total GPIO usage is 18 pins out of 45 available."
 )
 
 
