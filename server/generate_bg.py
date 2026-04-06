@@ -12,6 +12,7 @@ Current weather condition adjusts the prompt mood.
 import io
 import json
 import os
+import random
 import requests
 from datetime import datetime
 from pathlib import Path
@@ -173,11 +174,11 @@ def generate(daily: dict, out_dir: Path) -> bool:
 
     client  = OpenAI(api_key=api_key)
     week    = datetime.now().isocalendar()[1]
-    style   = get_style(week)
+    style   = random.choice(STYLES)
     mood    = get_weather_mood(daily)
     prompt  = build_prompt(style, mood)
 
-    print(f"  style : {style['name']}  (week {week})")
+    print(f"  style : {style['name']}  (random)")
     print(f"  mood  : {mood}")
 
     img     = generate_image(prompt, client)
