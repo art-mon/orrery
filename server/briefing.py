@@ -19,7 +19,7 @@ except ImportError:
 
 import requests
 
-OPENAI_TTS_VOICE  = "onyx"     # deep, calm, thoughtful
+OPENAI_TTS_VOICE  = "fable"    # British, warm, expressive
 FALLBACK_TTS_VOICE = "en-GB-RyanNeural"  # edge-tts fallback
 
 NASA_RSS_URLS = [
@@ -45,6 +45,8 @@ Guidelines:
   pause, and move to the next
 - No forced transitions, no "meanwhile" or "turning now to"
 - Weather and forecast are worth a sentence if notable, otherwise skip
+- Open with a greeting appropriate to the time of day provided in the \
+  context — do not say good morning if it is afternoon, evening, or night
 - End with a short thought — something quiet and true about the sky, \
   space, or the day
 - Plain sentences only, no markdown, no lists
@@ -90,8 +92,9 @@ def build_context(daily: dict, rss: list[dict]) -> str:
     month_names = ["January","February","March","April","May","June",
                    "July","August","September","October","November","December"]
     date_str = f"{day_names[now.weekday()]}, {month_names[now.month-1]} {now.day}"
+    time_str = now.strftime("%H:%M")
 
-    lines = [f"TODAY — {date_str}\n"]
+    lines = [f"TODAY — {date_str}, {time_str} local time\n"]
 
     # Weather
     w = daily.get("weather") or {}
