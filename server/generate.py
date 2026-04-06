@@ -82,12 +82,23 @@ def run():
     if (OUT / "briefing.txt").exists():
         print("✓ data/briefing.txt")
 
-    # AI background — regenerate on every run (week guard disabled for now)
-    bg_path = OUT / "bg_weekly.json"
-    print("Background (DALL-E 3)...")
-    safe(generate_bg.generate, daily, OUT)
+    # AI background — regenerate once per day
+    bg_path  = OUT / "bg_weekly.json"
+    today    = datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).date().isoformat()
+    need_bg  = True
     if bg_path.exists():
-        print("✓ data/bg_weekly.json")
+        try:
+            stored_date = json.loads(bg_path.read_text()).get("generated", "")[:10]
+            if stored_date == today:
+                need_bg = False
+                print(f"Background already generated today ({today}) — skipping")
+        except Exception:
+            pass
+    if need_bg:
+        print("Background (DALL-E 3)...")
+        safe(generate_bg.generate, daily, OUT)
+        if bg_path.exists():
+            print("✓ data/bg_weekly.json")
 
     print("=== done ===")
 
