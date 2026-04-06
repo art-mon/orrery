@@ -1174,6 +1174,7 @@ function stopRadio() {
 
 function sceneRadio(tick) {
   clear();
+  drawBgTransformed();   // AI background behind the bars
 
   const barH  = H - 8;                // 24 rows for bars
   const cy    = Math.floor(barH / 2); // vertical centre = row 12
