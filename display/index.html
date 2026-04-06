@@ -113,32 +113,38 @@
 </div>
 
 <div class="controls">
-  <div class="label">SCENE</div>
+
+  <div class="label">DAILY — TIME OF DAY</div>
+  <div class="scale-row" style="gap:12px; width:100%; justify-content:center;">
+    <span class="label">0h</span>
+    <input type="range" id="tod-slider" min="0" max="23.9" step="0.1" value="12" style="width:260px;">
+    <span class="label">24h</span>
+    <span id="tod-val" style="color:#7fc97f; min-width:36px;">12:00</span>
+    <button id="tod-live-btn" style="font-size:11px; padding:4px 10px;">Live</button>
+  </div>
+
+  <div class="label" style="margin-top:4px;">SCENES</div>
   <div class="scene-buttons">
-    <button data-scene="morning" class="active">Morning</button>
-    <button data-scene="day">Daytime</button>
-    <button data-scene="asteroid">Asteroid</button>
+    <button data-scene="daily" class="active">Daily</button>
+    <button data-scene="moon">Moon</button>
+    <button id="broadcast-btn">📻 Broadcast</button>
     <button data-scene="event">Earth Event</button>
-    <button data-scene="night">Night / Moon</button>
-<button data-scene="tomorrow">Tomorrow</button>
+    <button data-scene="asteroid">Asteroid</button>
     <button data-scene="apod_live">APOD Live</button>
   </div>
 
-  <div class="scale-row">
-    <button id="radio-btn">📻 Briefing</button>
-    <span style="color:#444">|</span>
+  <div class="scale-row" style="margin-top:4px;">
     <button id="pause-btn">⏸ Pause</button>
     <span style="color:#444">|</span>
-    <span class="label">Scene <span id="scene-idx">1/7</span></span>
+    <span class="label">Scene <span id="scene-idx">1/5</span></span>
     <span class="label">View <span id="view-idx">1/3</span></span>
     <div id="view-bar-track"><div id="view-bar"></div></div>
-  </div>
-
-  <div class="scale-row">
+    <span style="color:#444">|</span>
     <span>Scale:</span>
     <input type="range" id="scale" min="6" max="18" value="11">
     <span id="scale-val">11×</span>
   </div>
+
 </div>
 
 <div class="info" id="info-panel"></div>
@@ -313,8 +319,9 @@ function stars(seed, count, r=180, g=180, b=180) {
 
 // ─── AI background + time-of-day HSL transform ───────────────────────────────
 
-let bgPixels  = null;
-let bgLoading = false;
+let bgPixels   = null;
+let bgLoading  = false;
+let previewHour = null;   // null = real clock; number = mockup slider override
 
 function loadBgFrame() {
   if (bgLoading) return;
@@ -339,9 +346,11 @@ const TOD_KF = [
   [23.5,  130, 0.20, 0.06],  // late night — fading
 ];
 
-function getTimeTransform() {
+function getTimeTransform(overrideHour) {
   const now = new Date();
-  const hr  = now.getHours() + now.getMinutes() / 60;
+  const hr  = (overrideHour !== null && overrideHour !== undefined)
+    ? +overrideHour
+    : now.getHours() + now.getMinutes() / 60;
   let a = TOD_KF[TOD_KF.length - 1], b = TOD_KF[0];
   for (let i = 0; i < TOD_KF.length - 1; i++) {
     if (hr >= TOD_KF[i][0] && hr < TOD_KF[i + 1][0]) {
@@ -391,9 +400,9 @@ function hslToRgb(h, s, l) {
 
 // Draw the AI background with current time-of-day colour transform.
 // Returns true if painted, false if bg not yet loaded (caller draws fallback).
-function drawBgTransformed() {
+function drawBgTransformed(overrideHour) {
   if (!bgPixels) { loadBgFrame(); return false; }
-  const tod = getTimeTransform();
+  const tod = getTimeTransform(overrideHour);
   for (let y = 0; y < H; y++) {
     for (let x = 0; x < W; x++) {
       const [r, g, b] = bgPixels[y * W + x];
@@ -641,6 +650,49 @@ function sceneDay(tick) {
   drawTicker(eventsTickerStr || asteroidTickerStr || 'LOADING...', 25, 100, 220, 255, 0, 8, 15);
 }
 
+// ─── Daily scene (replaces Morning / Daytime / Night as main time scene) ─────
+
+let _dailyFeedPrev = -1;
+
+function dailyTickerStr(tick) {
+  const phase = Math.floor(tick / 375) % 3;
+  if (phase === 1) return asteroidTickerStr || 'NO ASTEROIDS NEAR EARTH';
+  if (phase === 2) {
+    if (forecastData) {
+      const city = (forecastData.city || '').toUpperCase();
+      const cond = (forecastData.condition || '').toUpperCase();
+      const lo   = forecastData.temp_min_c + '\xb0';
+      const hi   = forecastData.temp_max_c + '\xb0';
+      return 'TOMORROW  ~  ' + city + '  ~  ' + cond + '  ~  ' + lo + ' / ' + hi + 'C';
+    }
+  }
+  return eventsTickerStr || apodTickerStr || 'LOADING...';
+}
+
+function sceneDaily(tick) {
+  clear();
+
+  const hasBg = drawBgTransformed(previewHour);
+  if (!hasBg) {
+    // Procedural fallback — simple gradient tinted by TOD
+    const tod = getTimeTransform(previewHour);
+    for (let y = 0; y < H; y++) {
+      const t = y / (H - 1);
+      const b = Math.floor(tod.dl * (20 + t * 80));
+      const r = Math.floor(tod.dl * (8  + t * 30));
+      const g = Math.floor(tod.dl * (12 + t * 40));
+      hline(y, 0, W - 1, r, g, Math.max(0, b));
+    }
+  }
+
+  // Rotating ticker — switches feed every ~30 s (375 ticks × 80 ms)
+  const feed = Math.floor(tick / 375) % 3;
+  if (feed !== _dailyFeedPrev) { tickerOffset = 0; _dailyFeedPrev = feed; }
+
+  drawTimeWeather(timeStr(), tempStr(), [255, 230, 140], [140, 225, 255]);
+  drawTicker(dailyTickerStr(tick), 25, 220, 215, 170, 0, 0, 0);
+}
+
 function sceneAsteroid(tick) {
   clear();
 
@@ -872,44 +924,26 @@ const todayPhase = moonPhase();
 function sceneNight(tick) {
   clear();
 
-  // Deep night sky
-  for (let y = 0; y < H; y++) {
-    const r = Math.floor(2 + y * 0.3);
-    const g = Math.floor(2 + y * 0.2);
-    const b = Math.floor(15 + y * 0.5);
-    hline(y, 0, W-1, r, g, b);
+  // AI background with fixed night hue (hour 22 — deep indigo)
+  const hasBg = drawBgTransformed(22);
+  if (!hasBg) {
+    for (let y = 0; y < H; y++) {
+      const r = Math.floor(2 + y * 0.3);
+      const g = Math.floor(2 + y * 0.2);
+      const b = Math.floor(15 + y * 0.5);
+      hline(y, 0, W-1, r, g, b);
+    }
   }
 
-  stars(13, 35, 200, 200, 255);
-
-  // Milky Way haze — diagonal band across upper sky
-  for (let i = 0; i < 25; i++) {
-    let s = i * 7919;
-    const rand = () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
-    const x = Math.floor(rand() * W);
-    const y = Math.floor(x * 0.25 + rand() * 5 - 2);
-    const br = Math.floor(rand() * 30 + 8);
-    px(x, y, br, br, Math.floor(br * 1.3));
-  }
-
+  // Moon — the only animation over the background
   drawMoon(48, 10, 7, todayPhase);
 
-  // Horizon / ground
-  hline(27, 0, W-1, 30, 25, 40);
-  rect(0, 28, W, 4, 10, 8, 15);
-
-  // Tree silhouettes
-  for (const tx of [4, 12, 18, 58]) {
-    px(tx, 27, 5,5,8); px(tx,26,5,5,8); px(tx-1,26,5,5,8); px(tx+1,26,5,5,8);
-    px(tx,25,5,5,8); px(tx-1,25,5,5,8); px(tx+1,25,5,5,8);
-  }
-
-  // Time (dim, non-invasive)
+  // Dim time + temp
   textOutlined(timeStr(), 1, 1, 100, 80, 160);
   const _temp = tempStr();
   textOutlined(_temp, W - textWidth(_temp) - 1, 1, 80, 80, 120);
 
-  // Moon phase label
+  // Phase info ticker
   const illum = Math.round((1 - Math.cos(todayPhase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
   drawTicker('MOON  ~  ' + moonPhaseName(todayPhase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
 }
@@ -1141,11 +1175,11 @@ function sceneRadio(tick) {
 }
 
 // ─── Animation loop ───────────────────────────────────────────────────────────
-const SCENES = ['morning', 'day', 'tomorrow', 'asteroid', 'event', 'night', 'apod_live'];
+const SCENES = ['daily', 'moon', 'asteroid', 'event', 'apod_live'];
 const TICKS_PER_VIEW  = 50;   // ~4 seconds per view at 80ms
 const VIEWS_PER_SCENE = 3;
 
-let currentScene = 'morning';
+let currentScene = 'daily';
 let sceneIndex   = 0;
 let tick         = 0;
 let viewTick     = 0;
@@ -1153,62 +1187,45 @@ let viewCount    = 0;
 let paused       = false;
 
 const SCENE_INFO = {
-  morning: {
-    label: 'Morning (6–9am)',
-    desc: `<strong>Art:</strong> Warm sky gradient, crescent moon setting, sun rising over horizon.<br>
+  daily: {
+    label: 'Daily',
+    desc: `<strong>Art:</strong> AI weekly background with live time-of-day HSL transform — hue cycles from amber dawn through neutral midday to deep indigo night.<br>
            <strong>Always on:</strong> Time (top-left), temperature (top-right).<br>
-           <strong>Bottom strip:</strong> APOD title + ISS pass time if overhead.<br>
-           <strong>Feel:</strong> Warm, calm, good morning ritual.`,
+           <strong>Bottom strip:</strong> Rotates every 30 s — NASA events → asteroid approaches → tomorrow's forecast.<br>
+           <strong>Slider:</strong> Preview any hour's colour palette in the mockup.`,
   },
-  day: {
-    label: 'Daytime (9am–6pm)',
-    desc: `<strong>Art:</strong> Blue sky, drifting clouds, sun with slow rays.<br>
-           <strong>Always on:</strong> Time, temperature.<br>
-           <strong>Bottom strip:</strong> Active EONET events or asteroid close approach.<br>
-           <strong>Feel:</strong> Light and airy, informational without being busy.`,
+  moon: {
+    label: 'Moon',
+    desc: `<strong>Art:</strong> AI weekly background with fixed night hue (hour 22 — deep indigo).<br>
+           <strong>Moon:</strong> Phase-accurate disc, updates nightly.<br>
+           <strong>Info:</strong> Dim time + temperature, moon phase name + illumination %.<br>
+           <strong>Feel:</strong> Peaceful, observatory-like.`,
   },
   asteroid: {
-    label: 'Asteroid Alert',
+    label: 'Asteroid',
     desc: `<strong>Trigger:</strong> NeoWs close approach within 7 days.<br>
            <strong>Art:</strong> Deep space, Earth in corner, asteroid trajectory arc.<br>
            <strong>Info:</strong> Name, miss distance (km), diameter (m), date.<br>
-           <strong>Hazard indicator:</strong> Pulsing red badge (top-right) if potentially hazardous.<br>
-           <strong>Feel:</strong> Dramatic, curiosity-sparking.`,
+           <strong>Hazard indicator:</strong> Pulsing red badge if potentially hazardous.`,
   },
   event: {
-    label: 'Earth Events',
+    label: 'Earth Event',
     desc: `<strong>Art:</strong> Pixel world map with pulsing event markers.<br>
            <strong>Markers:</strong> Orange = wildfire, white spiral = storm, red = volcanic.<br>
-           <strong>Bottom strip:</strong> Scrolling EONET event names + location.<br>
-           <strong>Feel:</strong> Situational awareness, like a live mission display.`,
-  },
-  night: {
-    label: 'Night (10pm–midnight)',
-    desc: `<strong>Art:</strong> Moon phase art (full moon shown here), tree silhouettes, starfield.<br>
-           <strong>Moon:</strong> Art changes nightly to match actual phase.<br>
-           <strong>Info:</strong> Dim time + temperature overlay, moon phase label.<br>
-           <strong>Feel:</strong> Peaceful, observatory-like.`,
-  },
-
-  tomorrow: {
-    label: 'Tomorrow Forecast',
-    desc: `<strong>Source:</strong> OpenWeatherMap 5-day/3h forecast, filtered to tomorrow.<br>
-           <strong>Info:</strong> Condition, min/max temperature, humidity, wind speed, city.<br>
-           <strong>Icon:</strong> Pixel art adapts to condition (clear, rain, snow, storm, clouds).<br>
-           <strong>Requires:</strong> Server running at localhost:5001.`,
+           <strong>Bottom strip:</strong> Scrolling EONET event names + location.`,
   },
   apod_live: {
     label: 'APOD Live',
-    desc: `<strong>Source:</strong> Today's Astronomy Picture of the Day, fetched live from the server.<br>
-           <strong>Processing:</strong> Downloaded, cropped to 2:1, resized to 64×32, contrast/color boosted for LED.<br>
-           <strong>Overlay:</strong> Title strip at bottom.<br>
-           <strong>Requires:</strong> Server running at localhost:5001.`,
+    desc: `<strong>Source:</strong> Today's Astronomy Picture of the Day.<br>
+           <strong>Processing:</strong> Downloaded, cropped to 2:1, resized to 64×32.<br>
+           <strong>Overlay:</strong> Title strip at bottom.`,
   },
 };
 
 function sceneEnabled(name) {
   if (name === 'asteroid') return asteroidList.length > 0;
   if (name === 'event')    return eventList.length > 0;
+  if (name === 'radio')    return false;   // triggered manually only
   return true;
 }
 
@@ -1236,13 +1253,11 @@ function updateProgress() {
 
 function drawScene() {
   switch(currentScene) {
-    case 'morning':    sceneMorning(tick);   break;
-    case 'day':        sceneDay(tick);       break;
+    case 'daily':      sceneDaily(tick);     break;
+    case 'moon':       sceneNight(tick);     break;
     case 'asteroid':   sceneAsteroid(tick);  break;
     case 'event':      sceneEvent(tick);     break;
-    case 'night':      sceneNight(tick);     break;
     case 'apod_live':  sceneApodLive(tick);  break;
-    case 'tomorrow':   sceneTomorrow(tick);  break;
     case 'radio':      sceneRadio(tick);     break;
   }
   flush();
@@ -1282,7 +1297,37 @@ document.getElementById('pause-btn').addEventListener('click', () => {
   document.getElementById('pause-btn').textContent = paused ? '▶ Play' : '⏸ Pause';
 });
 
-document.getElementById('radio-btn').addEventListener('click', () => {
+// ── TOD slider ────────────────────────────────────────────────────────────────
+const todSlider  = document.getElementById('tod-slider');
+const todVal     = document.getElementById('tod-val');
+const todLiveBtn = document.getElementById('tod-live-btn');
+
+function fmtHour(h) {
+  const hh = Math.floor(h);
+  const mm = Math.round((h - hh) * 60);
+  return String(hh).padStart(2,'0') + ':' + String(mm).padStart(2,'0');
+}
+
+todSlider.addEventListener('input', () => {
+  previewHour = +todSlider.value;
+  todVal.textContent = fmtHour(previewHour);
+  // switch to daily so the user sees the hue preview immediately
+  currentScene = 'daily';
+  sceneIndex   = SCENES.indexOf('daily');
+  document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
+  document.querySelector('[data-scene="daily"]').classList.add('active');
+  document.getElementById('info-panel').innerHTML = SCENE_INFO['daily'].desc;
+});
+
+todLiveBtn.addEventListener('click', () => {
+  previewHour = null;
+  const now = new Date();
+  todSlider.value = now.getHours() + now.getMinutes() / 60;
+  todVal.textContent = fmtHour(+todSlider.value);
+});
+
+// ── Broadcast button ──────────────────────────────────────────────────────────
+document.getElementById('broadcast-btn').addEventListener('click', () => {
   if (radioPlaying) {
     stopRadio();
   } else {
@@ -1299,7 +1344,7 @@ scaleInput.addEventListener('input', () => {
 });
 
 // init info panel
-document.getElementById('info-panel').innerHTML = SCENE_INFO['morning'].desc;
+document.getElementById('info-panel').innerHTML = SCENE_INFO['daily'].desc;
 </script>
 </body>
 </html>
