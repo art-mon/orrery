@@ -120,7 +120,7 @@ def get_weather_mood(daily: dict) -> str:
 
 def build_prompt(style: dict, weather_mood: str) -> str:
     return (
-        f"Background artwork in the style of {style['name']}. "
+        f"Background landscape artwork. "
         f"{style['prompt']}. "
         f"Lighting and atmosphere: {weather_mood}. "
         f"Wide 2:1 landscape format. No text, no letters, no people, no characters. "
