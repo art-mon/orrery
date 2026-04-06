@@ -184,12 +184,24 @@ def generate(daily: dict, out_dir: Path) -> bool:
     img     = crop_and_resize(img)
     pixels  = to_frame(img)
 
+    now = datetime.now()
     payload = {
         "pixels":    pixels,
         "style":     style["name"],
         "week":      week,
-        "generated": datetime.now().date().isoformat(),
+        "generated": now.isoformat(timespec="seconds"),
     }
+
+    # Write current background
     (out_dir / "bg_weekly.json").write_text(json.dumps(payload))
     print(f"  ✓ data/bg_weekly.json  ({style['name']})")
+
+    # Archive every generated image
+    archive_dir = out_dir / "bg_archive"
+    archive_dir.mkdir(exist_ok=True)
+    slug = style["name"].lower().replace(" ", "_")
+    filename = f"bg_{now.strftime('%Y-%m-%d_%H-%M-%S')}_{slug}.json"
+    (archive_dir / filename).write_text(json.dumps(payload))
+    print(f"  ✓ data/bg_archive/{filename}")
+
     return True
