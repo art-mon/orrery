@@ -1171,47 +1171,48 @@ function stopRadio() {
 function sceneRadio(tick) {
   clear();
 
-  const barH  = H - 8;   // 24 rows available for bars
-  const bins  = freqZoom; // how many FFT bins map to W columns
+  const barH  = H - 8;                // 24 rows for bars
+  const cy    = Math.floor(barH / 2); // vertical centre = row 12
+  const maxH  = cy - 1;              // max half-height each side = 11 px
+  const nBars = Math.floor(W / 2);   // 32 bars — 1 px wide, 1 px gap → x = i*2
 
   if (analyser) {
-    analyser.getByteFrequencyData(freqData);  // 0–255 magnitude per bin
+    analyser.getByteFrequencyData(freqData);
 
-    for (let x = 0; x < W; x++) {
-      // Average bins that fall in this column's slice
-      const binStart = Math.floor(x / W * bins);
-      const binEnd   = Math.max(binStart + 1, Math.floor((x + 1) / W * bins));
+    for (let i = 0; i < nBars; i++) {
+      const x        = i * 2;
+      const binStart = Math.floor(i / nBars * freqZoom);
+      const binEnd   = Math.max(binStart + 1, Math.floor((i + 1) / nBars * freqZoom));
       let sum = 0;
-      for (let b = binStart; b < binEnd; b++) sum += freqData[b];
-      const mag = sum / (binEnd - binStart) / 255;  // 0..1
+      for (let b = binStart; b < binEnd && b < freqData.length; b++) sum += freqData[b];
+      const mag  = sum / (binEnd - binStart) / 255;
+      const half = Math.round(mag * maxH);
+      if (half === 0) continue;
 
-      const barLen = Math.round(mag * barH);
-      if (barLen === 0) continue;
+      const hx = i / nBars;
+      const r0 = Math.floor(220 - hx * 160);
+      const g0 = Math.floor(80  + hx * 80 + mag * 80);
+      const b0 = Math.floor(40  + hx * 210);
 
-      // Colour: position across spectrum (x) → hue; magnitude → brightness
-      const hx = x / W;  // 0 = low freq (warm), 1 = high freq (cool)
-      for (let dy = 0; dy < barLen; dy++) {
-        const y  = barH - 1 - dy;
-        const br = 1 - dy / barH * 0.4;   // brighter at top of bar
-        const r  = Math.floor(br * (220 - hx * 160));
-        const g  = Math.floor(br * (80  + hx * 80 + mag * 100));
-        const b  = Math.floor(br * (40  + hx * 210));
-        px(x, y, r, g, b);
+      for (let dy = -half; dy <= half; dy++) {
+        const y = cy + dy;
+        if (y < 0 || y >= barH) continue;
+        const tip = 1 - Math.abs(dy) / (half + 1) * 0.35;
+        px(x, y, Math.floor(r0 * tip), Math.floor(g0 * tip), Math.floor(b0 * tip));
       }
     }
   } else {
-    // Fallback — animated sine bars
-    for (let x = 0; x < W; x++) {
-      const mag    = (Math.sin(x * 0.3 + tick * 0.08) * 0.5 + 0.5)
-                   * (Math.sin(x * 0.11 + tick * 0.05) * 0.3 + 0.7);
-      const barLen = Math.round(mag * barH * 0.7);
-      const hx     = x / W;
-      for (let dy = 0; dy < barLen; dy++) {
-        const y = barH - 1 - dy;
-        px(x, y,
-          Math.floor(180 - hx * 120),
-          Math.floor(80  + hx * 80),
-          Math.floor(40  + hx * 200));
+    // Animated fallback
+    for (let i = 0; i < nBars; i++) {
+      const x    = i * 2;
+      const mag  = (Math.sin(i * 0.3 + tick * 0.08) * 0.5 + 0.5)
+                 * (Math.sin(i * 0.11 + tick * 0.05) * 0.3 + 0.7) * 0.7;
+      const half = Math.round(mag * maxH);
+      const hx   = i / nBars;
+      for (let dy = -half; dy <= half; dy++) {
+        const y = cy + dy;
+        if (y < 0 || y >= barH) continue;
+        px(x, y, Math.floor(180 - hx * 120), Math.floor(80 + hx * 80), Math.floor(40 + hx * 200));
       }
     }
   }
