@@ -944,9 +944,8 @@ function drawMoon(cx, cy, rad, phase) {
       const lit = waxing ? nx > shadowEdge : nx < shadowEdge;
       if (lit) {
         px(cx + dx, cy + dy, 240, 235, 200);
-      } else {
-        px(cx + dx, cy + dy, 12, 12, 24); // earthshine — barely visible
       }
+      // shadow side: skip — background shows through naturally
     }
   }
   // Mare detail (only meaningful when mostly lit)
@@ -954,10 +953,7 @@ function drawMoon(cx, cy, rad, phase) {
     px(cx-2,cy-2, 180,175,145); px(cx-1,cy-1,175,170,140); px(cx+2,cy-2,185,180,150);
     px(cx-3,cy,   170,165,135); px(cx+1,cy+1,180,175,145); px(cx-1,cy+2,175,170,140);
   }
-  // Glow scales with illumination
-  const glow = Math.floor(70 * f);
-  for (let d = rad + 2; d <= rad + 4; d++)
-    circle(cx, cy, d, glow, glow, Math.floor(glow * 0.5), false);
+  // glow rings removed — LED bloom on individual pixels is sufficient
 }
 
 // compute once per session
