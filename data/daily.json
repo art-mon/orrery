@@ -38,6 +38,22 @@
         "velocity_kmh": 22411
       },
       {
+        "name": "(2023 XH)",
+        "hazardous": false,
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-06",
+        "miss_distance_km": 25571673,
+        "velocity_kmh": 20201
+      },
+      {
+        "name": "(2026 FP6)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-04-06",
+        "miss_distance_km": 26530839,
+        "velocity_kmh": 16786
+      },
+      {
         "name": "(2022 GR2)",
         "hazardous": false,
         "diameter_m": 117,
@@ -76,38 +92,22 @@
         "close_approach_date": "2026-04-06",
         "miss_distance_km": 71350629,
         "velocity_kmh": 72599
-      },
-      {
-        "name": "(2021 VY4)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-04-06",
-        "miss_distance_km": 71548954,
-        "velocity_kmh": 71903
-      },
-      {
-        "name": "(2011 FT9)",
-        "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-04-07",
-        "miss_distance_km": 1321189,
-        "velocity_kmh": 21137
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 19.6,
-    "humidity": 42,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.1
+    "temp_c": 20.7,
+    "feels_c": 19.9,
+    "humidity": 40,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast": {
     "date": "2026-04-07",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 9.9,
     "temp_max_c": 20.1,
     "humidity": 55,
