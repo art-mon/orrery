@@ -324,9 +324,13 @@ let eventList    = [];
 let currentWeather = null;
 
 // Single fetch — daily.json is written by GitHub Actions (or generate.py locally)
+let dailyGenerated = '';   // "YYYY-MM-DD" — used to cache-bust audio files
+
 fetch('../data/daily.json')
   .then(r => r.json())
   .then(d => {
+    dailyGenerated = d.generated || '';
+
     // APOD
     const apod = d.apod || {};
     apodTickerStr = 'APOD: ' + (apod.title || '').toUpperCase();
@@ -357,6 +361,12 @@ fetch('../data/daily.json')
 
     // Events
     eventList = (d.events || {}).events || [];
+
+    // Fetch briefing text here so dailyGenerated is available for cache-busting
+    fetch('../data/briefing.txt?v=' + (dailyGenerated || Date.now()))
+      .then(r => r.text())
+      .then(t => { const text = t.trim(); if (text) radioLabel = text.toUpperCase(); })
+      .catch(() => {});
   })
   .catch(() => {});
 
@@ -825,7 +835,8 @@ let radioLabel    = 'ORRERY RADIO';
 function startRadio() {
   if (radioAudio) { radioAudio.pause(); radioAudio = null; }
 
-  radioAudio = new Audio('../data/briefing.mp3');
+  const v = dailyGenerated || Date.now();
+  radioAudio = new Audio('../data/briefing.mp3?v=' + v);
   radioAudio.crossOrigin = 'anonymous';
 
   // Web Audio analyser for waveform viz
@@ -1068,14 +1079,6 @@ document.getElementById('radio-btn').addEventListener('click', () => {
   }
 });
 
-// Populate radioLabel from briefing.txt — scroll the full briefing text
-fetch('../data/briefing.txt')
-  .then(r => r.text())
-  .then(t => {
-    const text = t.trim();
-    if (text) radioLabel = text.toUpperCase();
-  })
-  .catch(() => {});
 
 const scaleInput = document.getElementById('scale');
 const scaleVal   = document.getElementById('scale-val');
