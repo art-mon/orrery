@@ -311,6 +311,103 @@ function stars(seed, count, r=180, g=180, b=180) {
   }
 }
 
+// ─── AI background + time-of-day HSL transform ───────────────────────────────
+
+let bgPixels  = null;
+let bgLoading = false;
+
+function loadBgFrame() {
+  if (bgLoading) return;
+  bgLoading = true;
+  fetch('../data/bg_weekly.json')
+    .then(r => r.json())
+    .then(d => { bgPixels = d.pixels; bgLoading = false; })
+    .catch(() => { bgLoading = false; });
+}
+
+// Keyframes: [hour, hueShift°, satMul, lightMul]
+const TOD_KF = [
+  [ 0,    150, 0.15, 0.05],  // midnight   — near-black indigo
+  [ 4,    120, 0.20, 0.08],  // deep night — prussian blue
+  [ 6,    -20, 0.80, 0.50],  // sunrise    — amber wash
+  [ 8,     -5, 0.95, 0.85],  // morning    — warm light
+  [12,      0, 1.00, 1.00],  // midday     — base image (reference)
+  [15,     -8, 1.05, 0.95],  // afternoon  — warm
+  [18,    -15, 1.10, 0.75],  // golden hr  — rich amber
+  [20,     30, 0.70, 0.45],  // dusk       — purple-amber
+  [22,     90, 0.35, 0.18],  // night      — blue-violet
+  [23.5,  130, 0.20, 0.06],  // late night — fading
+];
+
+function getTimeTransform() {
+  const now = new Date();
+  const hr  = now.getHours() + now.getMinutes() / 60;
+  let a = TOD_KF[TOD_KF.length - 1], b = TOD_KF[0];
+  for (let i = 0; i < TOD_KF.length - 1; i++) {
+    if (hr >= TOD_KF[i][0] && hr < TOD_KF[i + 1][0]) {
+      a = TOD_KF[i]; b = TOD_KF[i + 1]; break;
+    }
+  }
+  const span = b[0] > a[0] ? b[0] - a[0] : 24 - a[0] + b[0];
+  const pos  = hr  >= a[0] ? hr   - a[0] : 24 - a[0] + hr;
+  const t    = span > 0 ? pos / span : 0;
+  return {
+    dh: a[1] + (b[1] - a[1]) * t,
+    ds: a[2] + (b[2] - a[2]) * t,
+    dl: a[3] + (b[3] - a[3]) * t,
+  };
+}
+
+function _hue2rgb(p, q, t) {
+  if (t < 0) t += 1; if (t > 1) t -= 1;
+  if (t < 1/6) return p + (q - p) * 6 * t;
+  if (t < 1/2) return q;
+  if (t < 2/3) return p + (q - p) * (2/3 - t) * 6;
+  return p;
+}
+function rgbToHsl(r, g, b) {
+  r /= 255; g /= 255; b /= 255;
+  const mx = Math.max(r,g,b), mn = Math.min(r,g,b);
+  let h, s, l = (mx + mn) / 2;
+  if (mx === mn) { h = s = 0; } else {
+    const d = mx - mn;
+    s = l > 0.5 ? d / (2 - mx - mn) : d / (mx + mn);
+    if      (mx === r) h = ((g - b) / d + (g < b ? 6 : 0)) / 6;
+    else if (mx === g) h = ((b - r) / d + 2) / 6;
+    else               h = ((r - g) / d + 4) / 6;
+  }
+  return [h * 360, s, l];
+}
+function hslToRgb(h, s, l) {
+  h = ((h % 360) + 360) % 360 / 360;
+  if (s === 0) { const v = Math.round(l * 255); return [v, v, v]; }
+  const q = l < 0.5 ? l * (1 + s) : l + s - l * s, p = 2 * l - q;
+  return [
+    Math.round(_hue2rgb(p, q, h + 1/3) * 255),
+    Math.round(_hue2rgb(p, q, h)       * 255),
+    Math.round(_hue2rgb(p, q, h - 1/3) * 255),
+  ];
+}
+
+// Draw the AI background with current time-of-day colour transform.
+// Returns true if painted, false if bg not yet loaded (caller draws fallback).
+function drawBgTransformed() {
+  if (!bgPixels) { loadBgFrame(); return false; }
+  const tod = getTimeTransform();
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      const [r, g, b] = bgPixels[y * W + x];
+      let [h, s, l]   = rgbToHsl(r, g, b);
+      h = (h + tod.dh + 360) % 360;
+      s = Math.min(1, Math.max(0, s * tod.ds));
+      l = Math.min(1, Math.max(0, l * tod.dl));
+      const [nr, ng, nb] = hslToRgb(h, s, l);
+      px(x, y, nr, ng, nb);
+    }
+  }
+  return true;
+}
+
 // ─── Info ticker state ────────────────────────────────────────────────────────
 let tickerOffset = 0;
 
@@ -411,19 +508,20 @@ function drawTimeWeather(timeStr, tempStr, timeColor, tempColor) {
 function sceneMorning(tick) {
   clear();
 
-  // ── Dawn sky: deep indigo top → crimson → amber horizon ──────────
-  for (let y = 0; y < H; y++) {
-    const t = y / (H - 1);
-    const r = Math.floor(8   + t * 225);
-    const g = Math.floor(4   + t * 85);
-    const b = Math.floor(55  + (t < 0.55 ? t * 110 : (1 - t) * 50));
-    hline(y, 0, W - 1, r, g, Math.max(0, b));
-  }
-
-  // ── Horizon bloom — wide diffuse orange glow ──────────────────────
-  for (let y = 21; y < 29; y++) {
-    const s = 1 - (y - 21) / 8;
-    hline(y, 0, W - 1, Math.floor(240 * s), Math.floor(90 * s), Math.floor(5 * s));
+  // ── Background: AI weekly image (time-transformed) or procedural ──
+  const hasBg = drawBgTransformed();
+  if (!hasBg) {
+    for (let y = 0; y < H; y++) {
+      const t = y / (H - 1);
+      const r = Math.floor(8   + t * 225);
+      const g = Math.floor(4   + t * 85);
+      const b = Math.floor(55  + (t < 0.55 ? t * 110 : (1 - t) * 50));
+      hline(y, 0, W - 1, r, g, Math.max(0, b));
+    }
+    for (let y = 21; y < 29; y++) {
+      const s = 1 - (y - 21) / 8;
+      hline(y, 0, W - 1, Math.floor(240 * s), Math.floor(90 * s), Math.floor(5 * s));
+    }
   }
 
   // ── Sun corona rising ─────────────────────────────────────────────
@@ -441,13 +539,6 @@ function sceneMorning(tick) {
   // ── Moon (phase-accurate) ─────────────────────────────────────────
   drawMoon(9, 6, 4, todayPhase);
 
-  // ── Terrain silhouette with gentle hills ─────────────────────────
-  for (let x = 0; x < W; x++) {
-    const gy = 27 + Math.round(Math.sin(x * 0.22) + Math.sin(x * 0.07) * 0.6);
-    px(x, gy, 18, 8, 4);
-    for (let y = gy + 1; y < H; y++) px(x, y, 10, 5, 3);
-  }
-
   drawTimeWeather(timeStr(), tempStr(), [255, 200, 100], [100, 200, 255]);
   drawTicker(apodTickerStr || 'LOADING...', 25, 255, 200, 100, 10, 5, 0);
 }
@@ -464,16 +555,19 @@ function sceneDay(tick) {
   const isMist  = cond.includes('mist') || cond.includes('fog') || cond.includes('haze');
   const isClear = !isRain && !isCloudy && !isStorm && !isSnow && !isMist;
 
-  // ── Sky gradient ──────────────────────────────────────────────────
-  for (let y = 0; y < H - 8; y++) {
-    const t = y / (H - 9);
-    let r, g, b;
-    if      (isStorm)  { r=Math.floor(12+t*12); g=Math.floor(12+t*10); b=Math.floor(25+t*18); }
-    else if (isRain)   { r=Math.floor(32+t*22); g=Math.floor(48+t*22); b=Math.floor(88+t*32); }
-    else if (isCloudy) { r=Math.floor(52+t*38); g=Math.floor(62+t*38); b=Math.floor(98+t*42); }
-    else if (isMist)   { r=Math.floor(128+t*28);g=Math.floor(135+t*22);b=Math.floor(150+t*16); }
-    else               { r=Math.floor(8+t*42);  g=Math.floor(22+t*68); b=Math.floor(108+t*95); }
-    hline(y, 0, W - 1, r, g, b);
+  // ── Background: AI weekly image (time-transformed) or procedural ──
+  const hasBg = drawBgTransformed();
+  if (!hasBg) {
+    for (let y = 0; y < H - 8; y++) {
+      const t = y / (H - 9);
+      let r, g, b;
+      if      (isStorm)  { r=Math.floor(12+t*12); g=Math.floor(12+t*10); b=Math.floor(25+t*18); }
+      else if (isRain)   { r=Math.floor(32+t*22); g=Math.floor(48+t*22); b=Math.floor(88+t*32); }
+      else if (isCloudy) { r=Math.floor(52+t*38); g=Math.floor(62+t*38); b=Math.floor(98+t*42); }
+      else if (isMist)   { r=Math.floor(128+t*28);g=Math.floor(135+t*22);b=Math.floor(150+t*16); }
+      else               { r=Math.floor(8+t*42);  g=Math.floor(22+t*68); b=Math.floor(108+t*95); }
+      hline(y, 0, W - 1, r, g, b);
+    }
   }
 
   // ── Sun (hidden in storms/heavy rain) ────────────────────────────

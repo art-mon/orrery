@@ -29,6 +29,7 @@ jobs:
           LATITUDE:              ${{ secrets.LATITUDE }}
           LONGITUDE:             ${{ secrets.LONGITUDE }}
           TIMEZONE:              ${{ secrets.TIMEZONE }}
+          OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
         run: python server/generate.py
 
       - name: Commit and push

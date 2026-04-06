@@ -20,6 +20,7 @@ import nasa
 import weather
 import image
 import briefing
+import generate_bg
 
 OUT = Path(__file__).parent.parent / "data"
 OUT.mkdir(exist_ok=True)
@@ -80,6 +81,24 @@ def run():
         print("✓ data/briefing.mp3")
     if (OUT / "briefing.txt").exists():
         print("✓ data/briefing.txt")
+
+    # Weekly AI background — only regenerates when the ISO week changes
+    bg_path   = OUT / "bg_weekly.json"
+    curr_week = datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).isocalendar()[1]
+    need_bg   = True
+    if bg_path.exists():
+        try:
+            stored = json.loads(bg_path.read_text()).get("week")
+            if stored == curr_week:
+                need_bg = False
+                print(f"Background already current (week {curr_week}) — skipping")
+        except Exception:
+            pass
+    if need_bg:
+        print("Background (DALL-E 3)...")
+        safe(generate_bg.generate, daily, OUT)
+        if bg_path.exists():
+            print("✓ data/bg_weekly.json")
 
     print("=== done ===")
 
