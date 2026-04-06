@@ -550,18 +550,71 @@ function sceneEvent(tick) {
   // Blue ocean base
   rect(0, 0, W, H, 0, 20, 60);
 
-  // Landmasses — very rough pixel art
+  // Landmasses — pixel art, Mercator 64×24
+  // col = (lon+180)/360*64,  row = (90-lat)/180*24
   const land = [
-    // North America
-    [10,4,16,10],[11,10,14,14],[12,14,11,4],
-    // South America
-    [14,15,8,10],[13,25,7,5],
-    // Europe/Africa
-    [28,4,8,8],[27,10,6,6],[28,14,7,6],[27,16,8,12],
-    // Asia
-    [34,3,20,10],[36,11,16,8],[38,13,10,6],
-    // Australia
-    [46,18,9,6],
+    // ── North America ──────────────────────────
+    [0,  2,  6,  3],  // Alaska
+    [5,  3, 16,  3],  // Canada N
+    [17, 1,  5,  3],  // Arctic islands
+    [19, 1, 11,  5],  // Greenland
+    [28, 3,  2,  2],  // Iceland
+    [9,  5, 12,  3],  // US + S Canada
+    [2,  6,  9,  2],  // Western US
+    [14, 7,  5,  2],  // SE USA
+    [11, 8,  5,  2],  // Mexico N
+    [13, 9,  4,  2],  // Mexico S + Central America
+    [15, 9,  3,  1],  // Cuba
+    // ── South America ──────────────────────────
+    [16, 10, 8,  2],  // N coast
+    [15, 11, 9,  4],  // Broad
+    [14, 14, 8,  4],  // S central
+    [13, 17, 5,  2],  // Patagonia
+    // ── Europe ─────────────────────────────────
+    [30, 4,  3,  2],  // UK + Ireland
+    [30, 5,  4,  2],  // France + N Iberia
+    [30, 6,  3,  2],  // Iberia
+    [33, 3,  5,  3],  // Scandinavia
+    [32, 5,  6,  2],  // Central Europe
+    [35, 6,  3,  2],  // Balkans
+    [33, 7,  2,  2],  // Italy
+    // ── Africa ─────────────────────────────────
+    [29, 7, 13,  4],  // N Africa / Sahara
+    [29, 10, 9,  2],  // W Africa
+    [34, 11, 7,  2],  // Central Africa
+    [38, 9,  4,  4],  // E Africa + Horn
+    [33, 12, 7,  3],  // S Central Africa
+    [34, 14, 5,  3],  // Southern Africa
+    [36, 16, 3,  2],  // S Africa tip
+    [40, 13, 2,  4],  // Madagascar
+    // ── Middle East ────────────────────────────
+    [37, 6,  4,  2],  // Turkey
+    [38, 7,  5,  2],  // Syria / Iraq / Iran N
+    [38, 8,  5,  3],  // Arabia + Iran S
+    // ── Russia / Siberia ───────────────────────
+    [0,  2,  2,  2],  // Chukotka (far east wrap)
+    [37, 2, 27,  3],  // Siberia
+    // ── Central / S Asia ───────────────────────
+    [40, 5, 13,  3],  // Kazakhstan / Central Asia
+    [43, 6,  5,  2],  // Afghanistan / Pakistan
+    [44, 7,  5,  4],  // India
+    [44, 10, 3,  2],  // S India
+    // ── East Asia ──────────────────────────────
+    [45, 5, 12,  5],  // China
+    [51, 9,  4,  2],  // S China / Vietnam
+    [54, 6,  2,  2],  // Korea
+    [55, 5,  3,  4],  // Japan
+    // ── SE Asia ────────────────────────────────
+    [49, 8,  4,  4],  // Indochina
+    [50, 11, 2,  2],  // Malay Peninsula
+    [51, 11, 3,  2],  // Borneo
+    [53, 9,  2,  3],  // Philippines
+    [55, 11, 4,  2],  // New Guinea
+    // ── Australia ──────────────────────────────
+    [52, 13, 8,  5],  // Australia N+W+E
+    [52, 16, 7,  2],  // Australia S
+    // ── Antarctica ─────────────────────────────
+    [0,  21, 64, 3],
   ];
   for (const [x,y,w,h] of land)
     rect(x, y, w, h, 30, 90, 30);
