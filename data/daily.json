@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-06",
+  "generated": "2026-04-07",
   "apod": {
     "title": "The Path of Artemis II",
     "date": "2026-04-06",
@@ -97,18 +97,18 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.5,
-    "feels_c": 9.5,
-    "humidity": 71,
+    "temp_c": 10.2,
+    "feels_c": 9.0,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 5.3
+    "wind_kmh": 4.8
   },
   "forecast": {
     "date": "2026-04-07",
     "city": "Zagreb",
-    "temp_min_c": 9.6,
+    "temp_min_c": 9.5,
     "temp_max_c": 19.9,
     "humidity": 53,
     "condition": "Clouds",
