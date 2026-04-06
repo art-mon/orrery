@@ -13,30 +13,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "399325 (1999 GY5)",
-        "hazardous": false,
-        "diameter_m": 547,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 10534194,
-        "velocity_kmh": 76988
-      },
-      {
-        "name": "(2006 GC1)",
-        "hazardous": true,
-        "diameter_m": 472,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 13278869,
-        "velocity_kmh": 110381
-      },
-      {
-        "name": "(2010 GC35)",
-        "hazardous": false,
-        "diameter_m": 70,
-        "close_approach_date": "2026-04-05",
-        "miss_distance_km": 20748942,
-        "velocity_kmh": 18935
-      },
-      {
         "name": "(2019 SP2)",
         "hazardous": false,
         "diameter_m": 93,
@@ -91,28 +67,52 @@
         "close_approach_date": "2026-04-07",
         "miss_distance_km": 24074793,
         "velocity_kmh": 78199
+      },
+      {
+        "name": "302831 (2003 FH)",
+        "hazardous": true,
+        "diameter_m": 891,
+        "close_approach_date": "2026-04-07",
+        "miss_distance_km": 27762567,
+        "velocity_kmh": 93249
+      },
+      {
+        "name": "(2016 QA2)",
+        "hazardous": false,
+        "diameter_m": 57,
+        "close_approach_date": "2026-04-07",
+        "miss_distance_km": 31786064,
+        "velocity_kmh": 45775
+      },
+      {
+        "name": "(2018 PG21)",
+        "hazardous": false,
+        "diameter_m": 769,
+        "close_approach_date": "2026-04-08",
+        "miss_distance_km": 15335426,
+        "velocity_kmh": 54374
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.3,
-    "humidity": 59,
+    "city": "City of Zagreb",
+    "temp_c": 12.6,
+    "feels_c": 11.5,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 11.1
+    "wind_kmh": 7.4
   },
   "forecast": {
-    "date": "2026-04-06",
+    "date": "2026-04-07",
     "city": "Zagreb",
-    "temp_min_c": 11.5,
-    "temp_max_c": 21.2,
+    "temp_min_c": 12.2,
+    "temp_max_c": 18.8,
     "humidity": 58,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.9
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.5
   }
 }
