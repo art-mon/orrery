@@ -6,6 +6,7 @@ Called by GitHub Actions on a schedule, or locally to test without the server.
 import json
 import os
 import sys
+from datetime import date
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -47,6 +48,7 @@ def run():
     forecast_data = safe(weather.forecast_tomorrow)
 
     daily = {
+        "generated": date.today().isoformat(),   # YYYY-MM-DD — used for cache invalidation
         "apod":      apod_data,
         "events":    events_data,
         "asteroids": asteroids_data,
@@ -67,8 +69,8 @@ def run():
     else:
         print("  APOD is not an image today — skipping frame")
 
-    # Daily briefing (TTS) — only regenerate once per day
-    print("Briefing (ElevenLabs TTS)...")
+    # Daily briefing (TTS) — regenerated from live data on every run
+    print("Briefing (edge-tts)...")
     safe(briefing.generate, daily, OUT)
     if (OUT / "briefing.mp3").exists():
         print("✓ data/briefing.mp3")

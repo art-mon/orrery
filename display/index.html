@@ -1068,13 +1068,12 @@ document.getElementById('radio-btn').addEventListener('click', () => {
   }
 });
 
-// Populate radioLabel from briefing.txt if available
+// Populate radioLabel from briefing.txt — scroll the full briefing text
 fetch('../data/briefing.txt')
   .then(r => r.text())
   .then(t => {
-    // Use first sentence as the scrolling label
-    const first = t.split('.')[0].trim();
-    if (first) radioLabel = first.toUpperCase();
+    const text = t.trim();
+    if (text) radioLabel = text.toUpperCase();
   })
   .catch(() => {});
 
