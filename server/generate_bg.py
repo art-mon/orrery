@@ -29,7 +29,7 @@ W, H = 64, 32
 
 STYLES = [
     {
-        "name": "Roger Dean",
+        "name": "floating_islands",
         "prompt": (
             "floating alien rock formations, impossible gravity, massive organic shapes "
             "in jade and burnt sienna, layered atmospheric depth planes, "
@@ -38,16 +38,16 @@ STYLES = [
         ),
     },
     {
-        "name": "Moebius",
+        "name": "graphic_desert",
         "prompt": (
             "clean architectural line work, flat colour fills, vast empty sky, "
             "tiny observatory dome dwarfed by scale, extremely graphic quality, "
-            "desert alien landscape, Heavy Metal magazine but serene, "
+            "desert alien landscape, serene and minimal, "
             "Croatian highland setting"
         ),
     },
     {
-        "name": "Hyper Light Drifter",
+        "name": "neon_ruins",
         "prompt": (
             "neon ruins, abstract geometric landscape, glowing atmosphere, "
             "extremely bold saturated colour, ancient civilisation aesthetic, "
@@ -56,16 +56,16 @@ STYLES = [
         ),
     },
     {
-        "name": "Hiroshi Nagai",
+        "name": "city_pop_flat",
         "prompt": (
             "flat graphic illustration, geometric architecture under vivid sky, "
-            "Japanese city pop 1980s aesthetic, very disciplined palette, "
+            "1980s retro aesthetic, very disciplined palette, "
             "observatory dome on hillside, Croatian highland valley, "
             "bold flat colour planes, retro"
         ),
     },
     {
-        "name": "Beksiński",
+        "name": "dark_surreal",
         "prompt": (
             "dark organic architecture fused with landscape, haunting abstract texture, "
             "bold immediately-readable forms, observatory dome integrated into "
@@ -74,16 +74,16 @@ STYLES = [
         ),
     },
     {
-        "name": "Simon Stålenhag",
+        "name": "retrofuturist_pastoral",
         "prompt": (
             "retrofuturistic pastoral landscape, a massive monolithic observatory "
             "structure sitting quietly in misty Croatian highland fields, "
-            "melancholic and cinematic, Scandinavian light quality, "
+            "melancholic and cinematic, northern European light quality, "
             "scale contrast between vast landscape and single imposing object"
         ),
     },
     {
-        "name": "Eyvind Earle",
+        "name": "art_deco_landscape",
         "prompt": (
             "geometric Art Deco landscape, perfectly flat razor-sharp silhouettes, "
             "decorative repetition of stylised tree and hill forms, "
