@@ -28,6 +28,7 @@ jobs:
           OPENWEATHER_API_KEY:   ${{ secrets.OPENWEATHER_API_KEY }}
           LATITUDE:              ${{ secrets.LATITUDE }}
           LONGITUDE:             ${{ secrets.LONGITUDE }}
+          TIMEZONE:              ${{ secrets.TIMEZONE }}
         run: python server/generate.py
 
       - name: Commit and push

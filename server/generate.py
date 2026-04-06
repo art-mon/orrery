@@ -6,8 +6,12 @@ Called by GitHub Actions on a schedule, or locally to test without the server.
 import json
 import os
 import sys
-from datetime import date
+from datetime import datetime
 from pathlib import Path
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:
+    from backports.zoneinfo import ZoneInfo
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -48,7 +52,7 @@ def run():
     forecast_data = safe(weather.forecast_tomorrow)
 
     daily = {
-        "generated": date.today().isoformat(),   # YYYY-MM-DD — used for cache invalidation
+        "generated": datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).strftime("%Y-%m-%d"),  # local date, cache key
         "apod":      apod_data,
         "events":    events_data,
         "asteroids": asteroids_data,

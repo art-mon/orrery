@@ -7,8 +7,13 @@ writes data/briefing.mp3 and data/briefing.txt.
 
 import asyncio
 import math
+import os
 from datetime import datetime
 from pathlib import Path
+try:
+    from zoneinfo import ZoneInfo          # Python 3.9+
+except ImportError:
+    from backports.zoneinfo import ZoneInfo  # pip install backports.zoneinfo
 
 # Voice options (all free, no key needed):
 #   en-GB-RyanNeural    — British male, warm, radio-presenter quality  ← default
@@ -21,7 +26,8 @@ VOICE = "en-GB-RyanNeural"
 def build_script(daily: dict) -> str:
     """Build a ~90s briefing script from daily.json data."""
 
-    now        = datetime.now()
+    tz         = ZoneInfo(os.getenv("TIMEZONE", "UTC"))
+    now        = datetime.now(tz)
     day_names  = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
     month_names = ["January","February","March","April","May","June",
                    "July","August","September","October","November","December"]
