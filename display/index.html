@@ -156,6 +156,13 @@
     <span id="ticker-spd-val" style="min-width:28px;">1.0×</span>
   </div>
 
+  <div class="scale-row" style="margin-top:4px;">
+    <span class="label">Freq zoom:</span>
+    <input type="range" id="freq-zoom" min="16" max="512" step="8" value="80" style="width:180px;">
+    <span id="freq-zoom-val" style="min-width:60px; color:#7fc97f;">80 bins</span>
+    <span style="color:#555; font-size:10px; margin-left:4px;" id="freq-hz-range"></span>
+  </div>
+
 </div>
 
 <div class="info" id="info-panel"></div>
@@ -1114,6 +1121,7 @@ let analyser      = null;   // AnalyserNode
 let freqData      = null;   // Uint8Array
 let radioPlaying  = false;
 let radioLabel    = 'ORRERY RADIO';
+let freqZoom      = 80;   // number of FFT bins mapped to 64 columns (1 bin ≈ 21.5 Hz)
 
 function startRadio() {
   if (radioAudio) { radioAudio.pause(); radioAudio = null; }
@@ -1122,12 +1130,12 @@ function startRadio() {
   radioAudio = new Audio('../data/briefing.mp3?v=' + v);
   radioAudio.crossOrigin = 'anonymous';
 
-  // Web Audio analyser for waveform viz
+  // Web Audio analyser — frequency domain
   audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   analyser = audioCtx.createAnalyser();
-  analyser.fftSize = 256;          // 256 time-domain samples → 64px = 2× more waveform visible
-  analyser.smoothingTimeConstant = 0.82;
-  freqData = new Uint8Array(analyser.fftSize);
+  analyser.fftSize = 2048;                  // 1024 frequency bins, ~21.5 Hz each @ 44.1 kHz
+  analyser.smoothingTimeConstant = 0.80;
+  freqData = new Uint8Array(analyser.frequencyBinCount);  // 1024 bins
 
   const src = audioCtx.createMediaElementSource(radioAudio);
   src.connect(analyser);
@@ -1163,54 +1171,55 @@ function stopRadio() {
 function sceneRadio(tick) {
   clear();
 
-  // Deep space background
-  stars(7, 25, 80, 80, 180);
+  const barH  = H - 8;   // 24 rows available for bars
+  const bins  = freqZoom; // how many FFT bins map to W columns
 
-  // Horizontal centre line
-  const cy = Math.floor(H / 2) - 2;
-
-  // Wave: sample 64 points evenly from 128 time-domain values
-  const waveY = new Array(W);
   if (analyser) {
-    analyser.getByteTimeDomainData(freqData);  // 0–255, 128 = silence
+    analyser.getByteFrequencyData(freqData);  // 0–255 magnitude per bin
+
     for (let x = 0; x < W; x++) {
-      const idx  = Math.floor(x / W * freqData.length);
-      const v    = (freqData[idx] - 128) / 128;   // -1..+1
-      waveY[x]   = cy + Math.round(v * 20);        // ±20 pixels — 2× taller
+      // Average bins that fall in this column's slice
+      const binStart = Math.floor(x / W * bins);
+      const binEnd   = Math.max(binStart + 1, Math.floor((x + 1) / W * bins));
+      let sum = 0;
+      for (let b = binStart; b < binEnd; b++) sum += freqData[b];
+      const mag = sum / (binEnd - binStart) / 255;  // 0..1
+
+      const barLen = Math.round(mag * barH);
+      if (barLen === 0) continue;
+
+      // Colour: position across spectrum (x) → hue; magnitude → brightness
+      const hx = x / W;  // 0 = low freq (warm), 1 = high freq (cool)
+      for (let dy = 0; dy < barLen; dy++) {
+        const y  = barH - 1 - dy;
+        const br = 1 - dy / barH * 0.4;   // brighter at top of bar
+        const r  = Math.floor(br * (220 - hx * 160));
+        const g  = Math.floor(br * (80  + hx * 80 + mag * 100));
+        const b  = Math.floor(br * (40  + hx * 210));
+        px(x, y, r, g, b);
+      }
     }
   } else {
-    // Animated fallback — two overlapping sines for a Lissajous feel
+    // Fallback — animated sine bars
     for (let x = 0; x < W; x++) {
-      const t  = x / W;
-      const v  = Math.sin(t * Math.PI * 6 + tick * 0.12)
-               * Math.cos(t * Math.PI * 2.6 + tick * 0.07);
-      waveY[x] = cy + Math.round(v * 18);
-    }
-  }
-
-  // Draw the wave: connect each x to the next with a vertical fill
-  for (let x = 0; x < W; x++) {
-    const y0  = waveY[x];
-    const y1  = x < W - 1 ? waveY[x + 1] : y0;
-    const ylo = Math.min(y0, y1, cy);
-    const yhi = Math.max(y0, y1, cy);
-
-    for (let y = ylo; y <= yhi; y++) {
-      if (y < 0 || y >= H - 8) continue;
-      // Colour: distance from centre → brightness; x position → hue shift
-      const dist = Math.abs(y - cy) / 10;           // 0..1
-      const hx   = x / W;                           // 0..1 left→right
-      const r = Math.floor(60  + 180 * (1 - dist) * (1 - hx));
-      const g = Math.floor(120 + 100 * (1 - dist));
-      const b = Math.floor(80  + 170 * hx * (1 - dist * 0.5));
-      px(x, y, r, g, b);
+      const mag    = (Math.sin(x * 0.3 + tick * 0.08) * 0.5 + 0.5)
+                   * (Math.sin(x * 0.11 + tick * 0.05) * 0.3 + 0.7);
+      const barLen = Math.round(mag * barH * 0.7);
+      const hx     = x / W;
+      for (let dy = 0; dy < barLen; dy++) {
+        const y = barH - 1 - dy;
+        px(x, y,
+          Math.floor(180 - hx * 120),
+          Math.floor(80  + hx * 80),
+          Math.floor(40  + hx * 200));
+      }
     }
   }
 
   // Time (top left, dim)
   textOutlined(timeStr(), 1, 1, 80, 80, 120);
 
-  // Scrolling label + script excerpt
+  // Scrolling label
   drawTicker(radioLabel, H - 7, 180, 140, 255, 0, 0, 20);
 }
 
@@ -1411,6 +1420,26 @@ tickerSpdSlider.addEventListener('input', () => {
   tickerSpeed = +tickerSpdSlider.value;
   tickerSpdVal.textContent = tickerSpeed.toFixed(1) + '×';
 });
+
+// ── Freq zoom slider ──────────────────────────────────────────────────────────
+const freqZoomSlider = document.getElementById('freq-zoom');
+const freqZoomVal    = document.getElementById('freq-zoom-val');
+const freqHzRange    = document.getElementById('freq-hz-range');
+
+function updateFreqZoomLabel() {
+  const bins   = +freqZoomSlider.value;
+  const sampleRate = audioCtx ? audioCtx.sampleRate : 44100;
+  const maxHz  = Math.round(bins * sampleRate / 2048);
+  freqZoomVal.textContent  = bins + ' bins';
+  freqHzRange.textContent  = '0 – ' + (maxHz >= 1000 ? (maxHz/1000).toFixed(1) + ' kHz' : maxHz + ' Hz');
+}
+
+freqZoomSlider.addEventListener('input', () => {
+  freqZoom = +freqZoomSlider.value;
+  updateFreqZoomLabel();
+});
+
+updateFreqZoomLabel();
 
 
 const scaleInput = document.getElementById('scale');
