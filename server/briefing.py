@@ -312,4 +312,14 @@ def generate(daily: dict, out_dir: Path) -> bool:
 
     size_kb = mp3_path.stat().st_size // 1024
     print(f"  audio: {size_kb} KB  ({voice_label})")
+
+    # Archive the script as a timestamped text file
+    tz       = ZoneInfo(os.getenv("TIMEZONE", "UTC"))
+    now      = datetime.now(tz)
+    archive_dir = out_dir / "briefing_archive"
+    archive_dir.mkdir(exist_ok=True)
+    filename = f"briefing_{now.strftime('%Y-%m-%d_%H-%M-%S')}.txt"
+    (archive_dir / filename).write_text(script, encoding="utf-8")
+    print(f"  ✓ data/briefing_archive/{filename}")
+
     return True
