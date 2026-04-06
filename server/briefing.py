@@ -2,7 +2,7 @@
 orrery — daily briefing generator
 Builds a ~90s English script from daily data + NASA RSS headlines,
 using GPT-4o for natural writing (falls back to template if key missing).
-Converts to speech via edge-tts (free, no API key required).
+Converts to speech via OpenAI TTS (onyx voice), falling back to edge-tts.
 Writes data/briefing.mp3 and data/briefing.txt.
 """
 
@@ -19,12 +19,8 @@ except ImportError:
 
 import requests
 
-# Voice options (all free, no key needed):
-#   en-GB-RyanNeural    — British male, warm, radio-presenter quality  ← default
-#   en-US-GuyNeural     — American male, clear and neutral
-#   en-US-JennyNeural   — American female, friendly
-#   en-AU-WilliamNeural — Australian male, distinctive
-VOICE = "en-GB-RyanNeural"
+OPENAI_TTS_VOICE  = "onyx"     # deep, calm, thoughtful
+FALLBACK_TTS_VOICE = "en-GB-RyanNeural"  # edge-tts fallback
 
 NASA_RSS_URLS = [
     "https://www.nasa.gov/rss/dyn/breaking_news.rss",
@@ -32,21 +28,26 @@ NASA_RSS_URLS = [
 ]
 
 SYSTEM_PROMPT = """\
-You write the daily morning broadcast for a personal space observatory \
-dashboard called Orrery.
+You are the voice of Orrery — a personal space observatory dashboard \
+that sits quietly in someone's home.
 
-Rules:
-- Warm, curious British radio-presenter tone
+Each morning you share a short spoken note: what is happening in the sky \
+today, what NASA is working on, and a few words about the day ahead. \
+Think of it less as a broadcast and more as a calm, thoughtful companion \
+speaking to one person.
+
+Guidelines:
+- Conversational and unhurried — as if speaking to a friend over coffee
 - 60 to 90 seconds when read aloud (roughly 150–200 words)
-- Lead with the most interesting space or astronomy news
-- Weave in weather, moon phase, and Earth events naturally — \
-  but keep space as the main subject
-- Good news bias: frame things with wonder and optimism
-- Natural flowing sentences only — no bullet points, no headers, \
-  no markdown, no lists
-- Close with one short poetic or reflective observation about the universe
-- Do not start with "Good morning" — find a more original opening \
-  related to what is happening in the sky today
+- Pick the most genuinely interesting things from the data — \
+  don't mention everything just to cover it
+- Topics don't need to be connected — it's fine to say one thing, \
+  pause, and move to the next
+- No forced transitions, no "meanwhile" or "turning now to"
+- Weather and forecast are worth a sentence if notable, otherwise skip
+- End with a short thought — something quiet and true about the sky, \
+  space, or the day
+- Plain sentences only, no markdown, no lists
 """
 
 
@@ -247,9 +248,22 @@ def build_script_template(daily: dict) -> str:
 
 # ── TTS ───────────────────────────────────────────────────────────────────────
 
-async def _synthesise(script: str, out_path: Path) -> None:
+def _synthesise_openai(script: str, out_path: Path) -> None:
+    """OpenAI TTS — onyx voice. Requires OPENAI_API_KEY."""
+    from openai import OpenAI
+    client   = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+    response = client.audio.speech.create(
+        model  = "tts-1",
+        voice  = OPENAI_TTS_VOICE,
+        input  = script,
+    )
+    response.stream_to_file(str(out_path))
+
+
+async def _synthesise_edge(script: str, out_path: Path) -> None:
+    """edge-tts fallback — free, no API key needed."""
     import edge_tts
-    communicate = edge_tts.Communicate(script, VOICE)
+    communicate = edge_tts.Communicate(script, FALLBACK_TTS_VOICE)
     await communicate.save(str(out_path))
 
 
@@ -257,12 +271,6 @@ async def _synthesise(script: str, out_path: Path) -> None:
 
 def generate(daily: dict, out_dir: Path) -> bool:
     """Generate briefing.txt and briefing.mp3. Returns True on success."""
-    try:
-        import edge_tts  # noqa
-    except ImportError:
-        print("  WARNING: edge-tts not installed — run: pip install edge-tts")
-        return False
-
     # Fetch NASA RSS headlines
     print("  Fetching NASA RSS...")
     rss = fetch_nasa_rss()
@@ -284,8 +292,21 @@ def generate(daily: dict, out_dir: Path) -> bool:
     print(f"  script: {len(script.split())} words")
 
     mp3_path = out_dir / "briefing.mp3"
-    asyncio.run(_synthesise(script, mp3_path))
+
+    if os.getenv("OPENAI_API_KEY"):
+        try:
+            print(f"  TTS: OpenAI ({OPENAI_TTS_VOICE})...")
+            _synthesise_openai(script, mp3_path)
+            voice_label = f"openai/{OPENAI_TTS_VOICE}"
+        except Exception as e:
+            print(f"  WARNING: OpenAI TTS failed ({e}) — falling back to edge-tts")
+            asyncio.run(_synthesise_edge(script, mp3_path))
+            voice_label = FALLBACK_TTS_VOICE
+    else:
+        print(f"  TTS: edge-tts ({FALLBACK_TTS_VOICE})...")
+        asyncio.run(_synthesise_edge(script, mp3_path))
+        voice_label = FALLBACK_TTS_VOICE
 
     size_kb = mp3_path.stat().st_size // 1024
-    print(f"  audio: {size_kb} KB  ({VOICE})")
+    print(f"  audio: {size_kb} KB  ({voice_label})")
     return True
