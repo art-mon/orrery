@@ -1181,6 +1181,12 @@ function sceneRadio(tick) {
   const maxH  = cy - 1;              // max half-height each side = 11 px
   const nBars = Math.floor(W / 2);   // 32 bars — 1 px wide, 1 px gap → x = i*2
 
+  // Derive bar colour from current TOD + weather so it matches the background mood
+  const tod = getTimeTransform(previewHour);
+  const wm  = getWeatherMod();
+  const barHue = (tod.dh + wm[0] + 360) % 360;
+  const barSat = Math.min(1, 0.55 * wm[1]);
+
   if (analyser) {
     analyser.getByteFrequencyData(freqData);
 
@@ -1193,16 +1199,12 @@ function sceneRadio(tick) {
       const mag  = sum / (binEnd - binStart) / 255;
       const half = Math.round(mag * maxH);
 
-      const hx = i / nBars;
-      const r0 = Math.floor(220 - hx * 160);
-      const g0 = Math.floor(80  + hx * 80 + mag * 80);
-      const b0 = Math.floor(40  + hx * 210);
-
       for (let dy = -half; dy <= half; dy++) {
         const y = cy + dy;
         if (y < 0 || y >= barH) continue;
         const tip = 1 - Math.abs(dy) / (half + 1) * 0.35;
-        px(x, y, Math.floor(r0 * tip), Math.floor(g0 * tip), Math.floor(b0 * tip));
+        const [r, g, b] = hslToRgb(barHue, barSat, (0.45 + mag * 0.45) * tip);
+        px(x, y, r, g, b);
       }
     }
   } else {
@@ -1212,18 +1214,19 @@ function sceneRadio(tick) {
       const mag  = (Math.sin(i * 0.3 + tick * 0.08) * 0.5 + 0.5)
                  * (Math.sin(i * 0.11 + tick * 0.05) * 0.3 + 0.7) * 0.7;
       const half = Math.round(mag * maxH);
-      const hx   = i / nBars;
       for (let dy = -half; dy <= half; dy++) {
         const y = cy + dy;
         if (y < 0 || y >= barH) continue;
-        px(x, y, Math.floor(180 - hx * 120), Math.floor(80 + hx * 80), Math.floor(40 + hx * 200));
+        const [r, g, b] = hslToRgb(barHue, barSat, 0.45 + mag * 0.45);
+        px(x, y, r, g, b);
       }
     }
   }
 
   // Always-on axis — centre dot on every bar position
+  const [ar, ag, ab] = hslToRgb(barHue, barSat * 0.5, 0.25);
   for (let i = 0; i < nBars; i++) {
-    px(i * 2, cy, 60, 60, 80);
+    px(i * 2, cy, ar, ag, ab);
   }
 
   // Time (top left, dim)
