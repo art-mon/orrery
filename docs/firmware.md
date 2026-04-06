@@ -18,8 +18,11 @@ stateDiagram-v2
     FetchData --> ParseJSON    : 200 OK
     FetchData --> DisplayCached : error / offline
 
-    ParseJSON --> DisplayScenes : valid data
+    ParseJSON --> AudioSync    : valid data
     ParseJSON --> DisplayCached : parse error
+
+    AudioSync --> DisplayScenes : mp3 current or downloaded
+    AudioSync --> DisplayScenes : download failed (use cached)
 
     DisplayCached --> DisplayScenes : always continues
 
@@ -36,11 +39,19 @@ stateDiagram-v2
     BLEProvision --> WiFiConnect : creds saved
     BLEProvision --> DisplayScenes : cancelled
 
+    note right of AudioSync
+        Reads daily.json "generated" date.
+        Compares to date stored in NVS.
+        If different: GET briefing.mp3 → LittleFS.
+        Update NVS date. ~350KB, once per day.
+    end note
+
     note right of DisplayScenes
         Scene rotation:
         Morning → Day → Tomorrow
         → Asteroid* → Event* → Night → APOD
         (* skipped if no data)
+        Radio scene: plays briefing.mp3 from LittleFS.
     end note
 
     note right of OTACheck
@@ -78,27 +89,62 @@ stateDiagram-v2
 
 ## Partition table
 
-Standard dual-OTA layout. Leaves room for the UF2 bootloader and NVS config.
+Dual-OTA layout on the ESP32-S3 N16R8 (16MB flash). OTA slots are sized at
+1.5MB each to leave headroom for future growth; the remaining ~13MB is a
+LittleFS filesystem partition used to cache audio assets.
 
 ```
-# Name       Type  SubType   Offset    Size      Notes
-nvs          data  nvs       0x9000    0x6000    WiFi creds, config, OTA state
-otadata      data  ota       0xf000    0x2000    Tracks which OTA slot is active
-phy_init     data  phy       0x11000   0x1000    RF calibration data
-ota_0        app   ota_0     0x20000   0xC0000   Slot A — 768KB
-ota_1        app   ota_1     0xE0000   0xC0000   Slot B — 768KB
+# Name       Type  SubType   Offset    Size        Notes
+nvs          data  nvs       0x9000    0x6000      WiFi creds, config, OTA state (24KB)
+otadata      data  ota       0xf000    0x2000      Tracks which OTA slot is active (8KB)
+phy_init     data  phy       0x11000   0x1000      RF calibration data (4KB)
+ota_0        app   ota_0     0x20000   0x180000    Slot A — 1.5MB
+ota_1        app   ota_1     0x1A0000  0x180000    Slot B — 1.5MB
+storage      data  spiffs    0x320000  0xCE0000    LittleFS — ~13MB (audio assets)
 ```
 
-768KB per slot is comfortable for the firmware image (estimated 300–450KB for
-ESP-IDF + wifi_provisioning + OTA + HUB75 driver + JSON parser + scene logic).
-If we add audio or more complex assets, bump each slot to 0x100000 (1MB) and
-use the N16R8 module (16MB flash) instead of N8R2.
+Memory budget (estimated):
+| Region | Size | Contents |
+|--------|------|----------|
+| OTA slot | 1.5MB | ESP-IDF + wifi_provisioning + OTA + HUB75 driver + JSON + scene logic |
+| LittleFS | ~13MB | `briefing.mp3` (~350KB), `frame.bin` (future), room to grow |
 
 **Slot switching:**
 - `ota_0` is the factory slot (first flash via UF2)
 - OTA downloads new firmware into `ota_1`, validates, reboots
 - `otadata` partition records which slot to boot from
 - If `ota_1` crashes on first boot → bootloader rolls back to `ota_0`
+
+---
+
+## Audio storage
+
+The daily briefing MP3 is downloaded once and cached in the LittleFS
+`storage` partition. It is never streamed live — playback reads from flash.
+
+**Flow:**
+1. After a successful `FetchData`, firmware reads the `generated` field from
+   `daily.json` (e.g. `"2026-04-06"`) and compares it to the date stored in NVS.
+2. If the date differs (new day), firmware downloads `data/briefing.mp3` from
+   GitHub Pages and writes it to `/storage/briefing.mp3` on LittleFS.
+3. NVS is updated with the new date so the file is not re-downloaded until
+   tomorrow.
+4. On button press (or scheduled morning play), the firmware reads the cached
+   MP3 from LittleFS and streams it to the MAX98357A over I2S.
+
+**Why this approach:**
+- No mid-sentence network dropout risk
+- Instant start (no buffer fill delay)
+- Works while WiFi is reconnecting or momentarily offline
+- ~350KB is well within the 13MB partition
+
+**Cache invalidation key in `daily.json`:**
+```json
+{
+  "generated": "2026-04-06",
+  ...
+}
+```
 
 ---
 
