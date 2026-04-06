@@ -92,8 +92,8 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.9,
-    "feels_c": 20.1,
+    "temp_c": 20.8,
+    "feels_c": 20.0,
     "humidity": 41,
     "condition": "Clouds",
     "description": "few clouds",
