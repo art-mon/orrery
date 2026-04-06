@@ -411,75 +411,143 @@ function drawTimeWeather(timeStr, tempStr, timeColor, tempColor) {
 function sceneMorning(tick) {
   clear();
 
-  // Gradient sky: deep blue → orange horizon
+  // ── Dawn sky: deep indigo top → crimson → amber horizon ──────────
   for (let y = 0; y < H; y++) {
-    const t = y / (H-1);
-    const r = Math.floor(10  + t * 200);
-    const g = Math.floor(10  + t * 80);
-    const b = Math.floor(60  + t * (y < 20 ? 120 : -40));
-    hline(y, 0, W-1, r, g, Math.max(0,b));
+    const t = y / (H - 1);
+    const r = Math.floor(8   + t * 225);
+    const g = Math.floor(4   + t * 85);
+    const b = Math.floor(55  + (t < 0.55 ? t * 110 : (1 - t) * 50));
+    hline(y, 0, W - 1, r, g, Math.max(0, b));
   }
 
-  // Sun peeking over horizon
-  for (let i = 0; i < 5; i++) {
-    const rad = 4 - i;
-    const alpha = 1 - i * 0.15;
-    const yr = Math.floor(255 * alpha);
-    const yg = Math.floor((140 + i*20) * alpha);
-    circle(48, 29-i, rad, yr, yg, 0, true);
+  // ── Horizon bloom — wide diffuse orange glow ──────────────────────
+  for (let y = 21; y < 29; y++) {
+    const s = 1 - (y - 21) / 8;
+    hline(y, 0, W - 1, Math.floor(240 * s), Math.floor(90 * s), Math.floor(5 * s));
   }
 
-  // Horizon line
-  hline(27, 0, W-1, 220, 90, 20);
+  // ── Sun corona rising ─────────────────────────────────────────────
+  for (let ring = 5; ring >= 0; ring--) {
+    const fade = ring / 5;
+    circle(48, 30 - ring, Math.max(1, 4 - Math.floor(ring / 2)),
+      Math.floor(255 * (1 - fade * 0.35)),
+      Math.floor(180 * (1 - fade * 0.6)),
+      Math.floor(10  * (1 - fade)), true);
+  }
 
-  // Ground (dark silhouette)
-  rect(0, 28, W, 4, 15, 8, 5);
+  // ── Stars (upper sky, fading out) ────────────────────────────────
+  stars(7, 9, 90, 90, 130);
 
-  // Stars fading
-  stars(7, 8, 100, 100, 140);
+  // ── Moon (phase-accurate) ─────────────────────────────────────────
+  drawMoon(9, 6, 4, todayPhase);
 
-  // Moon (crescent, morning)
-  circle(10, 6, 4, 220, 220, 180, true);
-  circle(12, 5, 3, 20, 12, 50, true); // occlude for crescent
+  // ── Terrain silhouette with gentle hills ─────────────────────────
+  for (let x = 0; x < W; x++) {
+    const gy = 27 + Math.round(Math.sin(x * 0.22) + Math.sin(x * 0.07) * 0.6);
+    px(x, gy, 18, 8, 4);
+    for (let y = gy + 1; y < H; y++) px(x, y, 10, 5, 3);
+  }
 
-  // Overlay: time + weather
-  drawTimeWeather(timeStr(), tempStr(), [255,200,100], [100,200,255]);
-
-  // NASA ticker
+  drawTimeWeather(timeStr(), tempStr(), [255, 200, 100], [100, 200, 255]);
   drawTicker(apodTickerStr || 'LOADING...', 25, 255, 200, 100, 10, 5, 0);
 }
 
 function sceneDay(tick) {
   clear();
 
-  // Sky: deep blue gradient
+  // ── Weather classification ────────────────────────────────────────
+  const cond    = (currentWeather?.condition || '').toLowerCase();
+  const isRain  = cond.includes('rain') || cond.includes('drizzle');
+  const isCloudy= cond.includes('cloud') || cond.includes('overcast');
+  const isStorm = cond.includes('thunder');
+  const isSnow  = cond.includes('snow');
+  const isMist  = cond.includes('mist') || cond.includes('fog') || cond.includes('haze');
+  const isClear = !isRain && !isCloudy && !isStorm && !isSnow && !isMist;
+
+  // ── Sky gradient ──────────────────────────────────────────────────
   for (let y = 0; y < H - 8; y++) {
-    const t = y / (H - 8);
-    hline(y, 0, W-1, Math.floor(10 + t*20), Math.floor(40 + t*30), Math.floor(120 + t*40));
+    const t = y / (H - 9);
+    let r, g, b;
+    if      (isStorm)  { r=Math.floor(12+t*12); g=Math.floor(12+t*10); b=Math.floor(25+t*18); }
+    else if (isRain)   { r=Math.floor(32+t*22); g=Math.floor(48+t*22); b=Math.floor(88+t*32); }
+    else if (isCloudy) { r=Math.floor(52+t*38); g=Math.floor(62+t*38); b=Math.floor(98+t*42); }
+    else if (isMist)   { r=Math.floor(128+t*28);g=Math.floor(135+t*22);b=Math.floor(150+t*16); }
+    else               { r=Math.floor(8+t*42);  g=Math.floor(22+t*68); b=Math.floor(108+t*95); }
+    hline(y, 0, W - 1, r, g, b);
   }
 
-  // Ground
-  rect(0, H-8, W, 8, 20, 45, 20);
-
-  // Sun
-  circle(52, 7, 4, 255, 220, 50, true);
-  // Sun rays
-  for (let a = 0; a < 8; a++) {
-    const angle = (a / 8) * Math.PI * 2 + tick * 0.02;
-    const x = Math.round(52 + Math.cos(angle) * 7);
-    const y = Math.round(7  + Math.sin(angle) * 7);
-    px(x, y, 255, 180, 0);
+  // ── Sun (hidden in storms/heavy rain) ────────────────────────────
+  if (!isStorm) {
+    const sx = 52, sy = 6;
+    const bright = isRain ? 0.35 : isCloudy ? 0.5 : isMist ? 0.65 : 1.0;
+    for (let ring = 7; ring >= 3; ring--) {
+      const fade = (ring - 3) / 4.5;
+      circle(sx, sy, ring,
+        Math.floor(255 * bright * (1 - fade * 0.55)),
+        Math.floor(210 * bright * (1 - fade * 0.4)),
+        Math.floor(20  * bright * (1 - fade * 0.9)), true);
+    }
+    if (isClear) {
+      for (let a = 0; a < 8; a++) {
+        const angle = a / 8 * Math.PI * 2 + tick * 0.025;
+        for (let d = 9; d <= 11; d++) {
+          const rx = Math.round(sx + Math.cos(angle) * d);
+          const ry = Math.round(sy + Math.sin(angle) * d);
+          if (rx >= 0 && rx < W && ry >= 0 && ry < H - 8) px(rx, ry, 255, 195, 0);
+        }
+      }
+    }
   }
 
-  // Clouds (simple pixel blobs)
-  const co = Math.floor(tick * 0.3) % (W + 20) - 10;
-  for (const [dx,dy] of [[0,0],[2,0],[4,0],[1,-1],[3,-1],[2,-2]])
-    rect(co+dx*2, 10+dy, 4, 2, 220, 220, 230);
-  for (const [dx,dy] of [[0,0],[2,0],[4,0],[1,-1]])
-    rect(co+dx*2+28, 14+dy, 4, 2, 210, 210, 225);
+  // ── Clouds (fluffy circle-based, speed varies) ────────────────────
+  const cloud = (cx, cy, r, cr, cg, cb) => {
+    circle(cx,     cy,     r,     cr, cg, cb, true);
+    circle(cx + r, cy,     r - 1, cr, cg, cb, true);
+    circle(cx - r, cy,     r - 1, cr, cg, cb, true);
+    circle(cx,     cy - 1, r - 1, cr, cg, cb, true);
+  };
+  const spd = isStorm ? 0.5 : isRain ? 0.35 : isCloudy ? 0.22 : 0.15;
+  const off = Math.floor(tick * spd) % (W + 48);
+  if (isStorm || isRain) {
+    cloud(off - 8,  7, 5, isStorm ? 45 : 95,  isStorm ? 45 : 100, isStorm ? 60 : 125);
+    cloud(off + 24, 10, 4, isStorm ? 40 : 88,  isStorm ? 40 : 92,  isStorm ? 55 : 118);
+    cloud(off - 24, 12, 4, isStorm ? 38 : 85,  isStorm ? 38 : 88,  isStorm ? 52 : 115);
+  } else if (isCloudy) {
+    cloud(off - 8,  8, 4, 148, 155, 180);
+    cloud(off + 26, 11, 3, 138, 145, 172);
+    cloud(off - 22, 13, 3, 133, 140, 168);
+  } else {
+    cloud(off - 15, 9,  2, 220, 228, 255);
+    cloud(off + 28, 12, 2, 212, 222, 252);
+  }
 
-  drawTimeWeather(timeStr(), tempStr(), [255,255,200], [100,220,255]);
+  // ── Precipitation ─────────────────────────────────────────────────
+  if (isRain || isStorm) {
+    for (let d = 0; d < 16; d++) {
+      const rx = (d * 5 + tick) % W;
+      const ry = 16 + (d * 7 + tick * 2) % 8;
+      if (ry < H - 8) px(rx, ry, 75, 115, 210);
+    }
+    // lightning flash on storm
+    if (isStorm && tick % 130 < 2) rect(0, 0, W, H - 8, 180, 180, 160);
+  }
+  if (isSnow) {
+    cloud(off, 9, 3, 192, 198, 215);
+    for (let d = 0; d < 9; d++) {
+      const sx = (d * 8 + Math.floor(tick * 0.4)) % W;
+      const sy = 16 + (d * 3 + Math.floor(tick * 0.3)) % 7;
+      if (sy < H - 8) px(sx, sy, 228, 234, 255);
+    }
+  }
 
+  // ── Rolling terrain silhouette ────────────────────────────────────
+  for (let x = 0; x < W; x++) {
+    const gy = H - 9 + Math.round(Math.sin(x * 0.18) * 1.5 + Math.sin(x * 0.07));
+    px(x, gy, 35, 95, 35);
+    for (let y = gy + 1; y < H; y++) px(x, y, 22, 58, 22);
+  }
+
+  drawTimeWeather(timeStr(), tempStr(), [255, 255, 200], [100, 220, 255]);
   drawTicker(eventsTickerStr || asteroidTickerStr || 'LOADING...', 25, 100, 220, 255, 0, 8, 15);
 }
 
