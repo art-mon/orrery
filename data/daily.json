@@ -18,7 +18,7 @@
         "hazardous": false,
         "diameter_m": 34,
         "close_approach_date": "2026-04-07",
-        "miss_distance_km": 1321189,
+        "miss_distance_km": 1321186,
         "velocity_kmh": 21137
       },
       {
@@ -66,7 +66,7 @@
         "hazardous": true,
         "diameter_m": 891,
         "close_approach_date": "2026-04-07",
-        "miss_distance_km": 27762567,
+        "miss_distance_km": 27762562,
         "velocity_kmh": 93249
       },
       {
@@ -97,23 +97,23 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.3,
-    "feels_c": 17,
-    "humidity": 33,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "temp_c": 17.9,
+    "feels_c": 16.8,
+    "humidity": 40,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.3
   },
   "forecast": {
     "date": "2026-04-08",
-    "city": "Donji grad",
-    "temp_min_c": 8.5,
-    "temp_max_c": 15.4,
+    "city": "Zagreb",
+    "temp_min_c": 7.9,
+    "temp_max_c": 14.8,
     "humidity": 38,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 9.1
+    "wind_kmh": 8.9
   }
 }
