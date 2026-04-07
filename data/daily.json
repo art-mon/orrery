@@ -1,12 +1,12 @@
 {
   "generated": "2026-04-07",
   "apod": {
-    "title": "The Path of Artemis II",
-    "date": "2026-04-06",
-    "explanation": "Why doesn't Artemis II land on the Moon? The main reason is that Artemis II is primarily a test mission designed to make a future Artemis missions -- which will land humans on the Moon -- better prepared.  Similarly, NASA's Apollo 8 and Apollo 10 went right near the Moon as tests before Apollo 11 -- which landed.  As the trajectory in the featured animated video shows, Artemis II will loop around both the Earth and the Moon before returning to the Earth about 10 days after launch. The Artemis II mission will take humans outside the Earth's magnetosphere for the first time since the Apollo missions 50 years ago.  In the video, particles from the solar wind are shown as streaks, while the Earth's reacting magnetosphere is shown in flickering green.  The Earth's magnetosphere is important in deflecting powerful particles arriving from the Sun as well as creating picturesque auroras visible from the Earth's surface.    Explore the Universe: Random APOD Generator",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2604/moonGamera_velHighRes_3-3-2026c_artemisII_wind_1080p30_2.mp4",
-    "hdurl": null
+    "title": "IC 4592: The Blue Horsehead Reflection Nebula",
+    "date": "2026-04-07",
+    "explanation": "Do you see the horse's head?   What you are seeing is not the famous Horsehead nebula toward Orion, but rather a fainter nebula that only takes on a familiar form with deeper imaging.  The main part of the here-imaged molecular cloud complex is  reflection nebula IC 4592.  Reflection nebulas are made up of very fine dust that normally appears dark but can look quite blue when reflecting the visible light of energetic nearby stars.  In this case, the source of much of the reflected light is a star at the eye of the horse.  That star is part of Nu Scorpii, one of the brighter star systems toward the constellation of the Scorpion (Scorpius).   A second reflection nebula dubbed IC 4601 is visible surrounding two stars just below the image center.  The featured picture was taken from  Sawda Natheel in  Qatar.   Jigsaw Nebula: Astronomy Puzzle of the Day",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/BlueHorse_Alkuwari_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/BlueHorse_Alkuwari_1620.JPG"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -96,18 +96,18 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 8.4,
-    "feels_c": 7.7,
-    "humidity": 71,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 6.1
+    "city": "City of Zagreb",
+    "temp_c": 12.6,
+    "feels_c": 11.2,
+    "humidity": 48,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast": {
     "date": "2026-04-08",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 9.3,
     "temp_max_c": 15.0,
     "humidity": 39,
