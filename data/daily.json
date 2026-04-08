@@ -9,20 +9,28 @@
   "asteroids": {
     "asteroids": [
       {
+        "name": "(2026 GE)",
+        "hazardous": false,
+        "diameter_m": 13,
+        "close_approach_date": "2026-04-08",
+        "miss_distance_km": 176709,
+        "velocity_kmh": 39060
+      },
+      {
         "name": "(2026 FX6)",
         "hazardous": false,
         "diameter_m": 33,
         "close_approach_date": "2026-04-08",
-        "miss_distance_km": 7966569,
-        "velocity_kmh": 22217
+        "miss_distance_km": 7961145,
+        "velocity_kmh": 22202
       },
       {
         "name": "(2026 FH13)",
         "hazardous": false,
-        "diameter_m": 100,
+        "diameter_m": 101,
         "close_approach_date": "2026-04-08",
-        "miss_distance_km": 9498059,
-        "velocity_kmh": 103774
+        "miss_distance_km": 9500791,
+        "velocity_kmh": 103805
       },
       {
         "name": "(2018 PG21)",
@@ -79,36 +87,28 @@
         "close_approach_date": "2026-04-08",
         "miss_distance_km": 66627537,
         "velocity_kmh": 29278
-      },
-      {
-        "name": "(2026 GD)",
-        "hazardous": false,
-        "diameter_m": 29,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 250816,
-        "velocity_kmh": 45562
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 13.1,
-    "feels_c": 11.4,
-    "humidity": 38,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 6.9
+    "city": "Zagreb",
+    "temp_c": 16.5,
+    "feels_c": 14.9,
+    "humidity": 29,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast": {
     "date": "2026-04-09",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 5.3,
-    "temp_max_c": 14.2,
-    "humidity": 46,
+    "temp_max_c": 14.0,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.7
+    "wind_kmh": 6.3
   }
 }
