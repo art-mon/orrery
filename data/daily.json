@@ -12,108 +12,27 @@
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
-    "asteroids": [
-      {
-        "name": "(2026 GD)",
-        "hazardous": false,
-        "diameter_m": 29,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 250686,
-        "velocity_kmh": 45565
-      },
-      {
-        "name": "(2026 AV6)",
-        "hazardous": false,
-        "diameter_m": 118,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 21833873,
-        "velocity_kmh": 18018
-      },
-      {
-        "name": "(2025 DJ29)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 21924257,
-        "velocity_kmh": 31218
-      },
-      {
-        "name": "(2022 GO3)",
-        "hazardous": false,
-        "diameter_m": 25,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 34256087,
-        "velocity_kmh": 61073
-      },
-      {
-        "name": "(2020 HD5)",
-        "hazardous": false,
-        "diameter_m": 261,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 34356565,
-        "velocity_kmh": 54229
-      },
-      {
-        "name": "(2024 TO2)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 59446486,
-        "velocity_kmh": 75540
-      },
-      {
-        "name": "(2015 VE106)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 65835720,
-        "velocity_kmh": 27769
-      },
-      {
-        "name": "(2015 SB)",
-        "hazardous": false,
-        "diameter_m": 28,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 68849212,
-        "velocity_kmh": 32155
-      },
-      {
-        "name": "(2016 GE135)",
-        "hazardous": false,
-        "diameter_m": 148,
-        "close_approach_date": "2026-04-09",
-        "miss_distance_km": 69567436,
-        "velocity_kmh": 31690
-      },
-      {
-        "name": "(2022 GE2)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 4612750,
-        "velocity_kmh": 32980
-      }
-    ]
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 14.6,
-    "feels_c": 13.1,
+    "city": "Zagreb",
+    "temp_c": 15.6,
+    "feels_c": 14.2,
     "humidity": 39,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.7
-  },
-  "forecast": {
-    "date": "2026-04-10",
-    "city": "Donji grad",
-    "temp_min_c": 4.2,
-    "temp_max_c": 13.9,
-    "humidity": 58,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.4
+  },
+  "forecast": {
+    "date": "2026-04-10",
+    "city": "Zagreb",
+    "temp_min_c": 2.4,
+    "temp_max_c": 14.2,
+    "humidity": 56,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.2
   }
 }
