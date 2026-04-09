@@ -1,38 +1,114 @@
 {
   "generated": "2026-04-09",
   "apod": {
-    "title": "Destruction of Comet C/2026 A1 (MAPS)",
-    "date": "2026-04-09",
-    "explanation": "As the crew of Artemis II travelled towards the Moon this week, Comet C/2026 A1 (MAPS) was expected to have its closest approach to the Sun on Monday. At this point, comet and Sun would be closer than half the distance separating the Earth and Moon. The comet did not survive; the featured video was made with 40 hours of data and shows the comet plunging toward the Sun, like a moth to a flame. Observing the comet so close to our bright star requires a coronagraph, an instrument that blocks the Sun and is used for studies of its corona. This composite video combines, starting from the outside, views from: the wider angle coronagraph (blue) and the narrower angle coronagraph (red), both on NASA's Solar and Heliospheric Observatory, and NASA's Solar Dynamics Observatory (black). We can see the comet approaching the sun, stretching, disappearing behind the coronagraph's occulting disk and reappearing as a cloud of debris that dissipates.",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2604/comet_plunge.mp4",
-    "hdurl": null
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "asteroids": [
+      {
+        "name": "(2026 GD)",
+        "hazardous": false,
+        "diameter_m": 29,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 250686,
+        "velocity_kmh": 45565
+      },
+      {
+        "name": "(2026 AV6)",
+        "hazardous": false,
+        "diameter_m": 118,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 21833873,
+        "velocity_kmh": 18018
+      },
+      {
+        "name": "(2025 DJ29)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 21924257,
+        "velocity_kmh": 31218
+      },
+      {
+        "name": "(2022 GO3)",
+        "hazardous": false,
+        "diameter_m": 25,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 34256087,
+        "velocity_kmh": 61073
+      },
+      {
+        "name": "(2020 HD5)",
+        "hazardous": false,
+        "diameter_m": 261,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 34356565,
+        "velocity_kmh": 54229
+      },
+      {
+        "name": "(2024 TO2)",
+        "hazardous": false,
+        "diameter_m": 38,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 59446486,
+        "velocity_kmh": 75540
+      },
+      {
+        "name": "(2015 VE106)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 65835720,
+        "velocity_kmh": 27769
+      },
+      {
+        "name": "(2015 SB)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 68849212,
+        "velocity_kmh": 32155
+      },
+      {
+        "name": "(2016 GE135)",
+        "hazardous": false,
+        "diameter_m": 148,
+        "close_approach_date": "2026-04-09",
+        "miss_distance_km": 69567436,
+        "velocity_kmh": 31690
+      },
+      {
+        "name": "(2022 GE2)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-04-10",
+        "miss_distance_km": 4612750,
+        "velocity_kmh": 32980
+      }
+    ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.8,
-    "feels_c": 8.8,
-    "humidity": 63,
+    "temp_c": 6.3,
+    "feels_c": 6.3,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.2
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 4.6
   },
   "forecast": {
     "date": "2026-04-10",
     "city": "Zagreb",
-    "temp_min_c": 2.6,
+    "temp_min_c": 3.8,
     "temp_max_c": 14.2,
     "humidity": 56,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.8
+    "wind_kmh": 5.9
   }
 }
