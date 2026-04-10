@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-10",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Exploring the Antennae",
+    "date": "2026-04-10",
+    "explanation": "Some 60 million light-years away in the southerly constellation Corvus, two large galaxies are colliding. Stars in the two galaxies, cataloged as NGC 4038 and NGC 4039, very rarely collide in the course of the ponderous cataclysm that lasts for hundreds of millions of years. But the galaxies' large clouds of molecular gas and dust often do, triggering furious episodes of star formation near the center of the cosmic wreckage. Spanning over 50 thousand light-years, this stunning telescopic frame also reveals new star clusters and matter flung far from the scene of the accident by gravitational tidal forces. The remarkably sharp ground-based image follows the faint tidal tails and distant background galaxies in the field of view. The suggestive overall visual appearance of the extended arcing structures gives the galaxy pair, also known as Arp 244, its popular name - The Antennae.   Artemis II: mission updates",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/n4038_n4039_antennaeSelbyColombari1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/n4038_n4039_antennaeSelbyColombari.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -9,27 +14,11 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2022 GE2)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 4612750,
-        "velocity_kmh": 32980
-      },
-      {
-        "name": "(2021 HE1)",
-        "hazardous": false,
-        "diameter_m": 10,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 10070728,
-        "velocity_kmh": 35094
-      },
-      {
         "name": "(2003 GX)",
         "hazardous": false,
         "diameter_m": 90,
         "close_approach_date": "2026-04-10",
-        "miss_distance_km": 10631446,
+        "miss_distance_km": 10631458,
         "velocity_kmh": 23080
       },
       {
@@ -57,14 +46,6 @@
         "velocity_kmh": 64660
       },
       {
-        "name": "(2022 UP6)",
-        "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 58641028,
-        "velocity_kmh": 29008
-      },
-      {
         "name": "(2012 QG49)",
         "hazardous": false,
         "diameter_m": 178,
@@ -81,24 +62,48 @@
         "velocity_kmh": 80044
       },
       {
-        "name": "(2021 QV1)",
+        "name": "363599 (2004 FG11)",
+        "hazardous": true,
+        "diameter_m": 366,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 8454616,
+        "velocity_kmh": 90257
+      },
+      {
+        "name": "(2019 GK3)",
         "hazardous": false,
-        "diameter_m": 28,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 73671280,
-        "velocity_kmh": 71289
+        "diameter_m": 7,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 12895114,
+        "velocity_kmh": 19939
+      },
+      {
+        "name": "(2020 FW5)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 19969989,
+        "velocity_kmh": 39648
+      },
+      {
+        "name": "330659 (2008 GG2)",
+        "hazardous": false,
+        "diameter_m": 149,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 22056554,
+        "velocity_kmh": 25885
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 12.9,
-    "humidity": 45,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.5
+    "temp_c": 14.0,
+    "feels_c": 12.7,
+    "humidity": 44,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 4.8
   },
   "forecast": {
     "date": "2026-04-11",
