@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-10",
   "apod": {
-    "title": "Exploring the Antennae",
-    "date": "2026-04-10",
-    "explanation": "Some 60 million light-years away in the southerly constellation Corvus, two large galaxies are colliding. Stars in the two galaxies, cataloged as NGC 4038 and NGC 4039, very rarely collide in the course of the ponderous cataclysm that lasts for hundreds of millions of years. But the galaxies' large clouds of molecular gas and dust often do, triggering furious episodes of star formation near the center of the cosmic wreckage. Spanning over 50 thousand light-years, this stunning telescopic frame also reveals new star clusters and matter flung far from the scene of the accident by gravitational tidal forces. The remarkably sharp ground-based image follows the faint tidal tails and distant background galaxies in the field of view. The suggestive overall visual appearance of the extended arcing structures gives the galaxy pair, also known as Arp 244, its popular name - The Antennae.   Artemis II: mission updates",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/n4038_n4039_antennaeSelbyColombari1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/n4038_n4039_antennaeSelbyColombari.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -96,21 +91,21 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 8.2,
-    "feels_c": 7.8,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_c": 7.1,
+    "feels_c": 7.1,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 4.8
+    "wind_kmh": 3.0
   },
   "forecast": {
     "date": "2026-04-11",
-    "city": "Zagreb",
-    "temp_min_c": 1.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 3.4,
     "temp_max_c": 15.5,
-    "humidity": 70,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
