@@ -96,21 +96,21 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 11.6,
-    "feels_c": 10.3,
-    "humidity": 56,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 14.2
+    "city": "Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.3,
+    "humidity": 66,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 15.7
   },
   "forecast": {
     "date": "2026-04-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 1.7,
     "temp_max_c": 15.5,
-    "humidity": 70,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
