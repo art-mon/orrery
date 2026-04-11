@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-11",
+  "generated": "2026-04-12",
   "apod": {
     "title": "Artemis II: Flight Day 6",
     "date": "2026-04-11",
@@ -97,9 +97,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.1,
-    "feels_c": 9.2,
-    "humidity": 80,
+    "temp_c": 9.5,
+    "feels_c": 9.1,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02n",
@@ -107,7 +107,7 @@
   },
   "forecast": {
     "date": "2026-04-12",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 8.8,
     "temp_max_c": 19.2,
     "humidity": 68,
