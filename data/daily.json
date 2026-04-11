@@ -9,12 +9,60 @@
   "asteroids": {
     "asteroids": [
       {
+        "name": "(2026 FE7)",
+        "hazardous": false,
+        "diameter_m": 48,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 3394522,
+        "velocity_kmh": 28184
+      },
+      {
+        "name": "(2026 GC)",
+        "hazardous": false,
+        "diameter_m": 64,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 5214250,
+        "velocity_kmh": 29520
+      },
+      {
         "name": "363599 (2004 FG11)",
         "hazardous": true,
         "diameter_m": 366,
         "close_approach_date": "2026-04-11",
         "miss_distance_km": 8454616,
         "velocity_kmh": 90257
+      },
+      {
+        "name": "(2026 GC1)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 9422741,
+        "velocity_kmh": 20076
+      },
+      {
+        "name": "(2019 GK3)",
+        "hazardous": false,
+        "diameter_m": 7,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 12895114,
+        "velocity_kmh": 19939
+      },
+      {
+        "name": "(2020 FW5)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 19969989,
+        "velocity_kmh": 39648
+      },
+      {
+        "name": "(2024 OU)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 21869025,
+        "velocity_kmh": 38849
       },
       {
         "name": "330659 (2008 GG2)",
@@ -25,80 +73,32 @@
         "velocity_kmh": 25885
       },
       {
-        "name": "(2009 DC12)",
+        "name": "(2024 TP17)",
         "hazardous": false,
-        "diameter_m": 156,
-        "close_approach_date": "2026-04-12",
-        "miss_distance_km": 49813208,
-        "velocity_kmh": 53672
+        "diameter_m": 86,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 26175839,
+        "velocity_kmh": 32117
       },
       {
-        "name": "(2001 WJ4)",
+        "name": "(2020 QL2)",
         "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-04-12",
-        "miss_distance_km": 61184500,
-        "velocity_kmh": 25411
-      },
-      {
-        "name": "(2006 HV5)",
-        "hazardous": true,
-        "diameter_m": 780,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 73421658,
-        "velocity_kmh": 61778
-      },
-      {
-        "name": "(2004 GD)",
-        "hazardous": false,
-        "diameter_m": 108,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 19750710,
-        "velocity_kmh": 50571
-      },
-      {
-        "name": "192559 (1998 VO)",
-        "hazardous": true,
-        "diameter_m": 488,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 48958075,
-        "velocity_kmh": 63355
-      },
-      {
-        "name": "(2008 NP3)",
-        "hazardous": false,
-        "diameter_m": 161,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 46853090,
-        "velocity_kmh": 29797
-      },
-      {
-        "name": "467336 (2002 LT38)",
-        "hazardous": true,
-        "diameter_m": 449,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 46387138,
-        "velocity_kmh": 60233
-      },
-      {
-        "name": "(2011 PU1)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 49572900,
-        "velocity_kmh": 52524
+        "diameter_m": 120,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 55778835,
+        "velocity_kmh": 25995
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 11.6,
-    "humidity": 60,
+    "temp_c": 13.1,
+    "feels_c": 12.0,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast": {
     "date": "2026-04-12",
