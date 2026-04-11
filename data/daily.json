@@ -1,7 +1,7 @@
 {
   "generated": "2026-04-11",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -9,106 +9,106 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 GW)",
+        "name": "(2026 FE7)",
         "hazardous": false,
-        "diameter_m": 17,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 1408059,
-        "velocity_kmh": 30748
+        "diameter_m": 48,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 3394522,
+        "velocity_kmh": 28184
       },
       {
-        "name": "(2022 GE2)",
+        "name": "(2026 GC)",
         "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 4612750,
-        "velocity_kmh": 32980
+        "diameter_m": 65,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 5214020,
+        "velocity_kmh": 29518
       },
       {
-        "name": "(2021 HE1)",
-        "hazardous": false,
-        "diameter_m": 10,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 10070728,
-        "velocity_kmh": 35094
+        "name": "363599 (2004 FG11)",
+        "hazardous": true,
+        "diameter_m": 366,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 8454616,
+        "velocity_kmh": 90257
       },
       {
-        "name": "(2003 GX)",
+        "name": "(2026 GC1)",
         "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 10631458,
-        "velocity_kmh": 23080
+        "diameter_m": 41,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 9422741,
+        "velocity_kmh": 20076
       },
       {
-        "name": "(2014 GC49)",
+        "name": "(2019 GK3)",
         "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 20904480,
-        "velocity_kmh": 49938
+        "diameter_m": 7,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 12895114,
+        "velocity_kmh": 19939
       },
       {
-        "name": "(2010 JO33)",
+        "name": "(2020 FW5)",
         "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 23091079,
-        "velocity_kmh": 45433
+        "diameter_m": 43,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 19969989,
+        "velocity_kmh": 39648
       },
       {
-        "name": "(2019 TE3)",
+        "name": "(2024 OU)",
         "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 53382612,
-        "velocity_kmh": 64660
+        "diameter_m": 82,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 21869025,
+        "velocity_kmh": 38849
       },
       {
-        "name": "(2022 UP6)",
+        "name": "330659 (2008 GG2)",
         "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 58641028,
-        "velocity_kmh": 29008
+        "diameter_m": 149,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 22056554,
+        "velocity_kmh": 25885
       },
       {
-        "name": "(2012 QG49)",
+        "name": "(2024 TP17)",
         "hazardous": false,
-        "diameter_m": 178,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 59609172,
-        "velocity_kmh": 26127
+        "diameter_m": 86,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 26175839,
+        "velocity_kmh": 32117
       },
       {
-        "name": "(2014 JG55)",
+        "name": "(2020 QL2)",
         "hazardous": false,
-        "diameter_m": 9,
-        "close_approach_date": "2026-04-10",
-        "miss_distance_km": 65362889,
-        "velocity_kmh": 80044
+        "diameter_m": 120,
+        "close_approach_date": "2026-04-11",
+        "miss_distance_km": 55778835,
+        "velocity_kmh": 25995
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 5.0,
-    "feels_c": 3.5,
-    "humidity": 84,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 6.7
+    "city": "Zagreb",
+    "temp_c": 7.6,
+    "feels_c": 6.8,
+    "humidity": 80,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 5.5
   },
   "forecast": {
-    "date": "2026-04-11",
+    "date": "2026-04-12",
     "city": "Zagreb",
-    "temp_min_c": 4.3,
-    "temp_max_c": 15.5,
-    "humidity": 69,
+    "temp_min_c": 7.6,
+    "temp_max_c": 19.6,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.6
+    "wind_kmh": 6.4
   }
 }
