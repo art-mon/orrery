@@ -1,18 +1,37 @@
 {
   "generated": "2026-04-12",
   "apod": {
-    "title": "Comet R3 (PanSTARRS) Brightens",
-    "date": "2026-04-12",
-    "explanation": "Comet R3 is brightening rapidly -- will it survive?  C/2025 R3 (PanSTARRS) has been slowly brightening and extending an ion tail since its discovery last year.  This shedding mountain of dirty ice puts on its best sky show this month, though, because it passes its closest to both the Sun (April 19) and the Earth (April 25).  The featured image, showing R3 already sporting a tail extending over 10 degrees, was taken two nights ago from Sion, Switzerland with the big mountain Bietschhorn on the left.  Comet R3 will be visible during mid-April before sunrise. Although the future brightness of any comet is hard to predict, the brightness of R3 makes it already a good camera comet and it may become visible to the unaided eye in the next week.  Comet R3's physical future is also unknown because, like Comet A1 (MAPS) earlier this month, it may disintegrate when it passes its closest to the Sun.  Or it may live to leave the Solar System.    Growing Gallery: Comet R3 in 2026",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/R3Panstarrs_Rodrigues_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/R3Panstarrs_Rodrigues_1707.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
+      {
+        "name": "(2026 GR1)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 326301,
+        "velocity_kmh": 23943
+      },
+      {
+        "name": "(2023 HB4)",
+        "hazardous": false,
+        "diameter_m": 25,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 6434060,
+        "velocity_kmh": 31401
+      },
+      {
+        "name": "(2020 DC)",
+        "hazardous": false,
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 25765267,
+        "velocity_kmh": 37461
+      },
       {
         "name": "(2009 DC12)",
         "hazardous": false,
@@ -30,68 +49,60 @@
         "velocity_kmh": 25411
       },
       {
-        "name": "(2006 HV5)",
-        "hazardous": true,
-        "diameter_m": 780,
+        "name": "(2026 GW1)",
+        "hazardous": false,
+        "diameter_m": 24,
         "close_approach_date": "2026-04-13",
-        "miss_distance_km": 73421658,
-        "velocity_kmh": 61778
+        "miss_distance_km": 1187477,
+        "velocity_kmh": 49119
       },
       {
-        "name": "(2004 GD)",
+        "name": "(2026 FV6)",
         "hazardous": false,
-        "diameter_m": 108,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 19750710,
-        "velocity_kmh": 50571
+        "diameter_m": 49,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 2862967,
+        "velocity_kmh": 40159
       },
       {
-        "name": "192559 (1998 VO)",
-        "hazardous": true,
-        "diameter_m": 488,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 48958075,
-        "velocity_kmh": 63355
-      },
-      {
-        "name": "(2008 NP3)",
+        "name": "(2012 TB53)",
         "hazardous": false,
-        "diameter_m": 161,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 46853090,
-        "velocity_kmh": 29797
+        "diameter_m": 143,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 29381533,
+        "velocity_kmh": 34099
       },
       {
-        "name": "467336 (2002 LT38)",
-        "hazardous": true,
-        "diameter_m": 449,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 46387138,
-        "velocity_kmh": 60233
+        "name": "(2017 UA)",
+        "hazardous": false,
+        "diameter_m": 12,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 35581733,
+        "velocity_kmh": 52239
       },
       {
-        "name": "90416 (2003 YK118)",
-        "hazardous": true,
-        "diameter_m": 1019,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 26906591,
-        "velocity_kmh": 35304
+        "name": "(2022 EF5)",
+        "hazardous": false,
+        "diameter_m": 193,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 54133903,
+        "velocity_kmh": 60314
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.1,
-    "feels_c": 17.3,
-    "humidity": 49,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "temp_c": 19.0,
+    "feels_c": 18.4,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.4
   },
   "forecast": {
     "date": "2026-04-13",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.7,
     "temp_max_c": 18.5,
     "humidity": 66,
