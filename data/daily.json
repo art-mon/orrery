@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-12",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Comet R3 (PanSTARRS) Brightens",
+    "date": "2026-04-12",
+    "explanation": "Comet R3 is brightening rapidly -- will it survive?  C/2025 R3 (PanSTARRS) has been slowly brightening and extending an ion tail since its discovery last year.  This shedding mountain of dirty ice puts on its best sky show this month, though, because it passes its closest to both the Sun (April 19) and the Earth (April 25).  The featured image, showing R3 already sporting a tail extending over 10 degrees, was taken two nights ago from Sion, Switzerland with the big mountain Bietschhorn on the left.  Comet R3 will be visible during mid-April before sunrise. Although the future brightness of any comet is hard to predict, the brightness of R3 makes it already a good camera comet and it may become visible to the unaided eye in the next week.  Comet R3's physical future is also unknown because, like Comet A1 (MAPS) earlier this month, it may disintegrate when it passes its closest to the Sun.  Or it may live to leave the Solar System.    Growing Gallery: Comet R3 in 2026",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/R3Panstarrs_Rodrigues_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/R3Panstarrs_Rodrigues_1707.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,19 +96,19 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.0,
-    "feels_c": 18.4,
-    "humidity": 52,
+    "city": "Zagreb",
+    "temp_c": 19.5,
+    "feels_c": 18.8,
+    "humidity": 49,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.4
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.3
   },
   "forecast": {
     "date": "2026-04-13",
-    "city": "Donji grad",
-    "temp_min_c": 9.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 6.7,
     "temp_max_c": 18.5,
     "humidity": 66,
     "condition": "Clouds",
