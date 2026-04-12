@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-12",
   "apod": {
-    "title": "Artemis II: Flight Day 6",
-    "date": "2026-04-11",
-    "explanation": "On flight day 6 (April 6) the Artemis II mission achieved a historic lunar flyby. Rounding the lunar far side, the deep space maneuver marked humanity's first venture to the Moon since Apollo 17 in 1972. The Orion spacecraft Integrity reached a maximum distance of nearly 407,000 kilometers, and the Artemis II crew, Reid Wiseman, Victor Glover, and Christina Koch, and Jeremy Hansen, set the record for the farthest distance from Earth traveled by any human since the Apollo 13 crew in 1970. From behind the Moon on flight day 6, a solar array wing camera recorded this space age selfie, framing the spacecraft and lunar far side. Planet Earth, home to the Artemis II crew, is the small, bright crescent beyond the lunar limb. The crew safely returned home on Artemis II mission flight day 10.   Artemis II: Splashdown",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/art002e009567_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/art002e009567_1920.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -14,106 +9,106 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 FE7)",
+        "name": "(2023 HB4)",
         "hazardous": false,
-        "diameter_m": 48,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 3394522,
-        "velocity_kmh": 28184
+        "diameter_m": 25,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 6434060,
+        "velocity_kmh": 31401
       },
       {
-        "name": "(2026 GC)",
+        "name": "(2020 DC)",
         "hazardous": false,
-        "diameter_m": 64,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 5214250,
-        "velocity_kmh": 29520
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 25765267,
+        "velocity_kmh": 37461
       },
       {
-        "name": "363599 (2004 FG11)",
-        "hazardous": true,
-        "diameter_m": 366,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 8454616,
-        "velocity_kmh": 90257
+        "name": "(2009 DC12)",
+        "hazardous": false,
+        "diameter_m": 156,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 49813208,
+        "velocity_kmh": 53672
       },
       {
-        "name": "(2026 GC1)",
+        "name": "(2001 WJ4)",
         "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 9422741,
-        "velocity_kmh": 20076
+        "diameter_m": 20,
+        "close_approach_date": "2026-04-12",
+        "miss_distance_km": 61184500,
+        "velocity_kmh": 25411
       },
       {
-        "name": "(2019 GK3)",
+        "name": "(2026 FV6)",
         "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 12895114,
-        "velocity_kmh": 19939
+        "diameter_m": 49,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 2863847,
+        "velocity_kmh": 40171
       },
       {
-        "name": "(2020 FW5)",
+        "name": "(2012 TB53)",
         "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 19969989,
-        "velocity_kmh": 39648
+        "diameter_m": 143,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 29381533,
+        "velocity_kmh": 34099
       },
       {
-        "name": "(2024 OU)",
+        "name": "(2017 UA)",
         "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 21869025,
-        "velocity_kmh": 38849
+        "diameter_m": 12,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 35581733,
+        "velocity_kmh": 52239
       },
       {
-        "name": "330659 (2008 GG2)",
+        "name": "(2022 EF5)",
         "hazardous": false,
-        "diameter_m": 149,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 22056555,
-        "velocity_kmh": 25885
+        "diameter_m": 193,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 54133903,
+        "velocity_kmh": 60314
       },
       {
-        "name": "(2024 TP17)",
+        "name": "(2018 SE2)",
         "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 26175839,
-        "velocity_kmh": 32117
+        "diameter_m": 68,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 54138670,
+        "velocity_kmh": 36525
       },
       {
-        "name": "(2020 QL2)",
+        "name": "(2016 JQ5)",
         "hazardous": false,
-        "diameter_m": 120,
-        "close_approach_date": "2026-04-11",
-        "miss_distance_km": 55778835,
-        "velocity_kmh": 25995
+        "diameter_m": 14,
+        "close_approach_date": "2026-04-13",
+        "miss_distance_km": 58232989,
+        "velocity_kmh": 77105
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 7.2,
-    "humidity": 71,
+    "city": "City of Zagreb",
+    "temp_c": 9.8,
+    "feels_c": 9.4,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 9.3
+    "wind_kmh": 5.5
   },
   "forecast": {
-    "date": "2026-04-12",
+    "date": "2026-04-13",
     "city": "Zagreb",
-    "temp_min_c": 8.5,
-    "temp_max_c": 19.2,
-    "humidity": 66,
+    "temp_min_c": 10.1,
+    "temp_max_c": 18.1,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.3
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.7
   }
 }
