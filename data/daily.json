@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-13",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NGC 602 and Beyond",
+    "date": "2026-04-13",
+    "explanation": "The clouds may look like an oyster, and the stars like pearls, but look beyond. Near the outskirts of the Small Magellanic Cloud, a satellite galaxy some 200 thousand light-years distant, lies 5 million year young star cluster NGC 602. Surrounded by natal gas and dust, NGC 602 is featured in this stunning Hubble image of the region. Fantastic ridges and swept back shapes strongly suggest that energetic radiation and shock waves from NGC 602's massive young stars have eroded the dusty material and triggered a progression of star formation moving away from the cluster's center. At the estimated distance of the Small Magellanic Cloud, the featured picture spans about 200 light-years, but a tantalizing assortment of background galaxies are also visible in this sharp multi-colored view. The background galaxies are hundreds of millions of light-years or more beyond NGC 602.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/Ngc602_Hubble_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/Ngc602_Hubble_3749.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -13,16 +18,16 @@
         "hazardous": false,
         "diameter_m": 24,
         "close_approach_date": "2026-04-13",
-        "miss_distance_km": 1187477,
-        "velocity_kmh": 49119
+        "miss_distance_km": 1187181,
+        "velocity_kmh": 49107
       },
       {
         "name": "(2026 FV6)",
         "hazardous": false,
         "diameter_m": 49,
         "close_approach_date": "2026-04-13",
-        "miss_distance_km": 2862967,
-        "velocity_kmh": 40159
+        "miss_distance_km": 2863531,
+        "velocity_kmh": 40167
       },
       {
         "name": "(2012 TB53)",
@@ -92,13 +97,13 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.4,
-    "feels_c": 14.4,
-    "humidity": 50,
+    "temp_c": 17.5,
+    "feels_c": 16.4,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.2
+    "wind_kmh": 9.8
   },
   "forecast": {
     "date": "2026-04-14",
