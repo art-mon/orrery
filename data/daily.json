@@ -17,38 +17,6 @@
         "velocity_kmh": 26674
       },
       {
-        "name": "(2026 FX13)",
-        "hazardous": false,
-        "diameter_m": 48,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 2716523,
-        "velocity_kmh": 42295
-      },
-      {
-        "name": "(2026 GX1)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 5018944,
-        "velocity_kmh": 16933
-      },
-      {
-        "name": "(2026 GU)",
-        "hazardous": true,
-        "diameter_m": 315,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 14800338,
-        "velocity_kmh": 41092
-      },
-      {
-        "name": "(2023 HK3)",
-        "hazardous": false,
-        "diameter_m": 15,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 19010076,
-        "velocity_kmh": 35642
-      },
-      {
         "name": "(2004 GD)",
         "hazardous": false,
         "diameter_m": 108,
@@ -57,48 +25,80 @@
         "velocity_kmh": 50571
       },
       {
-        "name": "(2021 CD8)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 26727463,
-        "velocity_kmh": 9072
-      },
-      {
-        "name": "(2023 SS6)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 34522987,
-        "velocity_kmh": 57488
-      },
-      {
-        "name": "(2021 TH1)",
-        "hazardous": false,
-        "diameter_m": 15,
-        "close_approach_date": "2026-04-14",
-        "miss_distance_km": 36364867,
-        "velocity_kmh": 51031
-      },
-      {
         "name": "192559 (1998 VO)",
         "hazardous": true,
         "diameter_m": 488,
         "close_approach_date": "2026-04-14",
         "miss_distance_km": 48958075,
         "velocity_kmh": 63355
+      },
+      {
+        "name": "(2018 LG4)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-04-15",
+        "miss_distance_km": 37920245,
+        "velocity_kmh": 22820
+      },
+      {
+        "name": "(2020 BR16)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-04-16",
+        "miss_distance_km": 65009758,
+        "velocity_kmh": 48810
+      },
+      {
+        "name": "(2020 FW6)",
+        "hazardous": false,
+        "diameter_m": 135,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 28943509,
+        "velocity_kmh": 51060
+      },
+      {
+        "name": "(2008 NP3)",
+        "hazardous": false,
+        "diameter_m": 161,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 46853090,
+        "velocity_kmh": 29797
+      },
+      {
+        "name": "(2017 VV13)",
+        "hazardous": false,
+        "diameter_m": 99,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 51409410,
+        "velocity_kmh": 24220
+      },
+      {
+        "name": "(2015 KJ122)",
+        "hazardous": true,
+        "diameter_m": 237,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 8649242,
+        "velocity_kmh": 73527
+      },
+      {
+        "name": "(2012 SL8)",
+        "hazardous": false,
+        "diameter_m": 404,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 27438569,
+        "velocity_kmh": 59393
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.4,
-    "feels_c": 11.8,
-    "humidity": 80,
+    "temp_c": 13.7,
+    "feels_c": 13,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.5
+    "wind_kmh": 7.2
   },
   "forecast": {
     "date": "2026-04-15",
