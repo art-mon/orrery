@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-14",
   "apod": {
-    "title": "NGC 602 and Beyond",
-    "date": "2026-04-13",
-    "explanation": "The clouds may look like an oyster, and the stars like pearls, but look beyond. Near the outskirts of the Small Magellanic Cloud, a satellite galaxy some 200 thousand light-years distant, lies 5 million year young star cluster NGC 602. Surrounded by natal gas and dust, NGC 602 is featured in this stunning Hubble image of the region. Fantastic ridges and swept back shapes strongly suggest that energetic radiation and shock waves from NGC 602's massive young stars have eroded the dusty material and triggered a progression of star formation moving away from the cluster's center. At the estimated distance of the Small Magellanic Cloud, the featured picture spans about 200 light-years, but a tantalizing assortment of background galaxies are also visible in this sharp multi-colored view. The background galaxies are hundreds of millions of light-years or more beyond NGC 602.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/Ngc602_Hubble_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/Ngc602_Hubble_3749.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -14,106 +9,106 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 GW1)",
+        "name": "(2013 GM3)",
         "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 1187181,
-        "velocity_kmh": 49107
+        "diameter_m": 33,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 260528,
+        "velocity_kmh": 26674
       },
       {
-        "name": "(2026 FV6)",
+        "name": "(2026 FX13)",
         "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 2863531,
-        "velocity_kmh": 40167
+        "diameter_m": 48,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 2716523,
+        "velocity_kmh": 42295
       },
       {
-        "name": "(2012 TB53)",
+        "name": "(2026 GX1)",
         "hazardous": false,
-        "diameter_m": 143,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 29381533,
-        "velocity_kmh": 34099
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 5018944,
+        "velocity_kmh": 16933
       },
       {
-        "name": "(2017 UA)",
+        "name": "(2026 GU)",
+        "hazardous": true,
+        "diameter_m": 315,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 14800338,
+        "velocity_kmh": 41092
+      },
+      {
+        "name": "(2023 HK3)",
+        "hazardous": false,
+        "diameter_m": 15,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 19010076,
+        "velocity_kmh": 35642
+      },
+      {
+        "name": "(2004 GD)",
+        "hazardous": false,
+        "diameter_m": 108,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 19750710,
+        "velocity_kmh": 50571
+      },
+      {
+        "name": "(2021 CD8)",
         "hazardous": false,
         "diameter_m": 12,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 35581733,
-        "velocity_kmh": 52239
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 26727463,
+        "velocity_kmh": 9072
       },
       {
-        "name": "(2022 EF5)",
+        "name": "(2023 SS6)",
         "hazardous": false,
-        "diameter_m": 193,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 54133903,
-        "velocity_kmh": 60314
+        "diameter_m": 49,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 34522987,
+        "velocity_kmh": 57488
       },
       {
-        "name": "(2018 SE2)",
+        "name": "(2021 TH1)",
         "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 54138670,
-        "velocity_kmh": 36525
+        "diameter_m": 15,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 36364867,
+        "velocity_kmh": 51031
       },
       {
-        "name": "(2016 JQ5)",
-        "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 58232989,
-        "velocity_kmh": 77105
-      },
-      {
-        "name": "(2013 ML3)",
-        "hazardous": false,
-        "diameter_m": 197,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 64901426,
-        "velocity_kmh": 74461
-      },
-      {
-        "name": "(2023 JK)",
-        "hazardous": false,
-        "diameter_m": 65,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 67594783,
-        "velocity_kmh": 80863
-      },
-      {
-        "name": "(2023 XL)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-04-13",
-        "miss_distance_km": 71812527,
-        "velocity_kmh": 64102
+        "name": "192559 (1998 VO)",
+        "hazardous": true,
+        "diameter_m": 488,
+        "close_approach_date": "2026-04-14",
+        "miss_distance_km": 48958075,
+        "velocity_kmh": 63355
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.0,
-    "feels_c": 11.3,
-    "humidity": 77,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 8.4
+    "temp_c": 11.7,
+    "feels_c": 10.5,
+    "humidity": 62,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 9.3
   },
   "forecast": {
-    "date": "2026-04-14",
+    "date": "2026-04-15",
     "city": "Zagreb",
-    "temp_min_c": 10.4,
-    "temp_max_c": 14.1,
-    "humidity": 78,
-    "condition": "Rain",
+    "temp_min_c": 10.3,
+    "temp_max_c": 12.5,
+    "humidity": 90,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.8
+    "wind_kmh": 3.6
   }
 }
