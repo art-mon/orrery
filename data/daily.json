@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-14",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "The Long Wispy Tail of Comet R3 (PanSTARRS)",
+    "date": "2026-04-14",
+    "explanation": "Why does Comet R3 (PanSTARRS) have a wispy tail?  The newest bright member of the inner Solar System, Comet C/2025 R3 (PanSTARRS) is already extending an impressive stream of glowing gas. This tail starts from an unseen central nucleus of dirty ice that is likely a few kilometers across. The nucleus is warmed by the Sun and emits a cloud of neutral gas into a coma that glows light green. Nuclear gas ionized by energetic sunlight is pushed away from the Sun by the solar wind into an ion tail that glows light blue.  The wispy nature of the ion tail is caused by the constantly changing structure of the solar wind.  Pictured from Rhode Island, USA two days ago, Comet R3 (PanSTARRS) shows off a many-degree ion tail.  Comet R3 (PanSTARRS) is best seen before dawn from northern skies for another 10 days, after which it will be best visible from southern skies.    Growing Gallery: Comet R3 in 2026",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/CometR3_Hamdi_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/CometR3_Hamdi_2710.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -92,23 +97,23 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.1,
-    "feels_c": 9.2,
-    "humidity": 80,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.3
+    "temp_c": 11.7,
+    "feels_c": 11,
+    "humidity": 79,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 6.9
   },
   "forecast": {
     "date": "2026-04-15",
     "city": "Zagreb",
-    "temp_min_c": 10.3,
-    "temp_max_c": 12.5,
-    "humidity": 90,
+    "temp_min_c": 10.2,
+    "temp_max_c": 14.5,
+    "humidity": 86,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 3.6
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.7
   }
 }
