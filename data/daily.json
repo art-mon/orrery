@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-15",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The ISS Transits the Moon",
+    "date": "2026-04-15",
+    "explanation": "Nope, that is not an alien spaceship landing on the Moon! This is an image of the International Space Station (ISS) as it begins to transit in front of the Moon. The ISS is in low-Earth orbit (LEO) where it wizzes around the Earth every 90 minutes. Orbiting the Earth 16 times per day\t for 25 years, the ISS has photobombed many familiar celestial objects including Venus, Mars, Saturn, and the Sun. Thousands of experiments led by researchers from over one hundred countries have been conducted on the ISS. Growing protein crystals in low-gravity was one of the first experiments onboard the ISS and continues to contribute to new medical treatments. ISS astronauts study plant growth, water recycling, human health, and more to support the Artemis missions which will take humans farther than they\u2019ve ever gone before. Next time you are out and about at night, try to  spot the ISS zooming across the sky!",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/iss_moon_transit_zoom.jpeg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/iss_moon_transit.jpeg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,24 +96,24 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.8,
-    "feels_c": 15.2,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_c": 17.6,
+    "feels_c": 17.3,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.4
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.4
   },
   "forecast": {
     "date": "2026-04-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 19.8,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_min_c": 13.1,
+    "temp_max_c": 19.0,
+    "humidity": 71,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 5.6
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.5
   }
 }
