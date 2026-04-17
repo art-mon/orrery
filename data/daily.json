@@ -1,82 +1,13 @@
 {
   "generated": "2026-04-17",
   "apod": {
-    "title": "M82: Starburst Galaxy with a Superwind",
-    "date": "2026-04-17",
-    "explanation": "Messier 82 is a starburst galaxy with a superwind. In fact, through supernova explosions and powerful winds from massive stars, the burst of star formation in M82 is driving a prodigious outflow. Evidence for the superwind from the galaxy's central regions is clear in the sharp telescopic portrait. The composite image includes 33 hours of narrowband data, highlighting emission from long outflow filaments of atomic hydrogen gas in reddish hues. Some of the gas in the superwind, enriched in heavy elements forged in the massive stars, will eventually escape into intergalactic space. Triggered by a close encounter with nearby large galaxy M81, the furious burst of star formation in M82 should last about 100 million years or so. Also known as the Cigar Galaxy for its elongated visual appearance, M82 is about 30,000 light-years across. It lies 12 million light-years away near the northern boundary of Ursa Major.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/M82_V3_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/M82_V3.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2026 GA1)",
-        "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 4687883,
-        "velocity_kmh": 27972
-      },
-      {
-        "name": "(2026 BU7)",
-        "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 15262624,
-        "velocity_kmh": 13817
-      },
-      {
-        "name": "(2021 JK2)",
-        "hazardous": false,
-        "diameter_m": 66,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 15653725,
-        "velocity_kmh": 20578
-      },
-      {
-        "name": "(2023 GL2)",
-        "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 16975986,
-        "velocity_kmh": 27212
-      },
-      {
-        "name": "(2023 HU3)",
-        "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 18238532,
-        "velocity_kmh": 63996
-      },
-      {
-        "name": "(2024 WU3)",
-        "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 21474263,
-        "velocity_kmh": 26168
-      },
-      {
-        "name": "(2026 FS8)",
-        "hazardous": false,
-        "diameter_m": 69,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 22982189,
-        "velocity_kmh": 19482
-      },
-      {
-        "name": "(2021 KS1)",
-        "hazardous": false,
-        "diameter_m": 13,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 23716114,
-        "velocity_kmh": 27623
-      },
       {
         "name": "(2020 FW6)",
         "hazardous": false,
@@ -86,24 +17,88 @@
         "velocity_kmh": 51060
       },
       {
-        "name": "(2021 UC74)",
+        "name": "(2008 NP3)",
         "hazardous": false,
-        "diameter_m": 18,
+        "diameter_m": 161,
         "close_approach_date": "2026-04-17",
-        "miss_distance_km": 37920418,
-        "velocity_kmh": 17051
+        "miss_distance_km": 46853090,
+        "velocity_kmh": 29797
+      },
+      {
+        "name": "(2017 VV13)",
+        "hazardous": false,
+        "diameter_m": 99,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 51409410,
+        "velocity_kmh": 24220
+      },
+      {
+        "name": "(2015 KJ122)",
+        "hazardous": true,
+        "diameter_m": 237,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 8649242,
+        "velocity_kmh": 73527
+      },
+      {
+        "name": "(2012 SL8)",
+        "hazardous": false,
+        "diameter_m": 404,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 27438569,
+        "velocity_kmh": 59393
+      },
+      {
+        "name": "(2015 HH)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 29130338,
+        "velocity_kmh": 35802
+      },
+      {
+        "name": "(2019 HS2)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 43057289,
+        "velocity_kmh": 66139
+      },
+      {
+        "name": "467336 (2002 LT38)",
+        "hazardous": true,
+        "diameter_m": 449,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 46387138,
+        "velocity_kmh": 60233
+      },
+      {
+        "name": "(2018 PZ21)",
+        "hazardous": false,
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 49561969,
+        "velocity_kmh": 35314
+      },
+      {
+        "name": "(2011 PU1)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 49572900,
+        "velocity_kmh": 52524
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 20.0,
-    "feels_c": 19.6,
-    "humidity": 61,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.5
+    "city": "Zagreb",
+    "temp_c": 23.8,
+    "feels_c": 23.6,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 11.8
   },
   "forecast": {
     "date": "2026-04-18",
