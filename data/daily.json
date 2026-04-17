@@ -1,77 +1,18 @@
 {
   "generated": "2026-04-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "South Celestial Tree",
+    "date": "2026-04-16",
+    "explanation": "If you live in the northern hemisphere, you may have learned how to locate the North Star, Polaris, in the night sky. It can be used to find north, and it approximately marks the northern celestial pole. If you live in the southern hemisphere, there is no bright star marking the southern celestial pole, but the Southern Cross can be used to find south. The featured image was taken in Padre Bernardo (GO), Brazil. It shows the apparent motion of the stars around the apparently empty southern celestial pole over 2 hours, on August 20, 2018. Each star takes about 24 hours to make a complete turn around the pole in the sky. Padre Bernardo is located in the Cerrado region, a tropical savanna that occupies most of central Brazil and supports rich biodiversity. The barren branch that apparently supports this sky wheel of rotating stars is a common sight there in the dry season during the southern winter.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/Southern_Celestial_Pole_800.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/Southern_Celestial_Pole.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2026 GA2)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 1365130,
-        "velocity_kmh": 37852
-      },
-      {
-        "name": "(2026 GT)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 4472724,
-        "velocity_kmh": 57659
-      },
-      {
-        "name": "(2022 GP3)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 13800011,
-        "velocity_kmh": 24590
-      },
-      {
-        "name": "(2024 JP16)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 19857169,
-        "velocity_kmh": 28702
-      },
-      {
-        "name": "(2021 UD6)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 51890318,
-        "velocity_kmh": 29908
-      },
-      {
-        "name": "(2020 BR16)",
-        "hazardous": false,
-        "diameter_m": 70,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 65009758,
-        "velocity_kmh": 48810
-      },
-      {
-        "name": "(2022 UL6)",
-        "hazardous": false,
-        "diameter_m": 70,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 72498714,
-        "velocity_kmh": 29118
-      },
-      {
-        "name": "(2022 YF1)",
-        "hazardous": false,
-        "diameter_m": 58,
-        "close_approach_date": "2026-04-16",
-        "miss_distance_km": 73921924,
-        "velocity_kmh": 27524
-      },
       {
         "name": "(2026 GA1)",
         "hazardous": false,
@@ -87,28 +28,92 @@
         "close_approach_date": "2026-04-17",
         "miss_distance_km": 15262624,
         "velocity_kmh": 13817
+      },
+      {
+        "name": "(2021 JK2)",
+        "hazardous": false,
+        "diameter_m": 66,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 15653725,
+        "velocity_kmh": 20578
+      },
+      {
+        "name": "(2023 GL2)",
+        "hazardous": false,
+        "diameter_m": 77,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 16975986,
+        "velocity_kmh": 27212
+      },
+      {
+        "name": "(2023 HU3)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 18238532,
+        "velocity_kmh": 63996
+      },
+      {
+        "name": "(2024 WU3)",
+        "hazardous": false,
+        "diameter_m": 14,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 21474263,
+        "velocity_kmh": 26168
+      },
+      {
+        "name": "(2026 FS8)",
+        "hazardous": false,
+        "diameter_m": 69,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 22982189,
+        "velocity_kmh": 19482
+      },
+      {
+        "name": "(2021 KS1)",
+        "hazardous": false,
+        "diameter_m": 13,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 23716114,
+        "velocity_kmh": 27623
+      },
+      {
+        "name": "(2020 FW6)",
+        "hazardous": false,
+        "diameter_m": 135,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 28943509,
+        "velocity_kmh": 51060
+      },
+      {
+        "name": "(2021 UC74)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-04-17",
+        "miss_distance_km": 37920418,
+        "velocity_kmh": 17051
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 10.7,
-    "feels_c": 10.2,
-    "humidity": 93,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "city": "Zagreb",
+    "temp_c": 9.9,
+    "feels_c": 9.9,
+    "humidity": 90,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.2
   },
   "forecast": {
-    "date": "2026-04-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.6,
-    "temp_max_c": 24.9,
-    "humidity": 66,
+    "date": "2026-04-18",
+    "city": "Zagreb",
+    "temp_min_c": 12.2,
+    "temp_max_c": 19.9,
+    "humidity": 54,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.6
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.9
   }
 }
