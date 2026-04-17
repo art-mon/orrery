@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-17",
+  "generated": "2026-04-18",
   "apod": {
     "title": "M82: Starburst Galaxy with a Superwind",
     "date": "2026-04-17",
@@ -96,19 +96,19 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.4,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_c": 12.0,
+    "feels_c": 11.2,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 5.0
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.6
   },
   "forecast": {
     "date": "2026-04-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.3,
+    "city": "Donji grad",
+    "temp_min_c": 11.0,
     "temp_max_c": 24.8,
     "humidity": 54,
     "condition": "Clouds",
