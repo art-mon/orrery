@@ -1096,10 +1096,47 @@ const GALAXY_TRIVIA = [
   'WE ORBIT AT 828,000 KM/H',
 ];
 
+// Galaxy sprite — loaded once from data/galaxy_sprite.json (produced by
+// scripts/video_to_sprites.py). Format: { frames, fps, width, height, pixels[frame][i] }
+let galaxySprite  = null;
+let galaxyLoading = false;
+let galaxyMissing = false;
+
+function loadGalaxySprite() {
+  if (galaxyLoading || galaxySprite || galaxyMissing) return;
+  galaxyLoading = true;
+  fetch('../data/galaxy_sprite.json')
+    .then(r => r.ok ? r.json() : Promise.reject('404'))
+    .then(d => { galaxySprite = d; galaxyLoading = false; })
+    .catch(() => { galaxyMissing = true; galaxyLoading = false; });
+}
+
 function sceneGalaxy(tick) {
   clear();
 
-  // Starfield backdrop
+  // ── Sprite playback path ────────────────────────────────────────────────
+  if (!galaxySprite && !galaxyMissing) loadGalaxySprite();
+
+  if (galaxySprite) {
+    const { frames, fps, pixels } = galaxySprite;
+    // tick is 80 ms per frame → ticksPerSpriteFrame = (1000 / fps) / 80
+    const ticksPerSpriteFrame = Math.max(1, Math.round((1000 / fps) / 80));
+    const idx = Math.floor(tick / ticksPerSpriteFrame) % frames;
+    const frame = pixels[idx];
+    for (let y = 0; y < H; y++) {
+      for (let x = 0; x < W; x++) {
+        const [r, g, b] = frame[y * W + x];
+        px(x, y, r, g, b);
+      }
+    }
+    // Time overlay + ticker
+    textOutlined(timeStr(), 1, 1, 200, 220, 240);
+    const tIdx = Math.floor(tick / 375) % GALAXY_TRIVIA.length;
+    drawTicker(GALAXY_TRIVIA[tIdx], H-6, 200, 220, 235, 0, 0, 0);
+    return;
+  }
+
+  // ── Fallback (no sprite yet): procedural placeholder + hint ─────────────
   stars(99, 35, 100, 115, 160);
 
   // Galaxy parameters — concentric elliptical rings, gentle twist
@@ -1188,9 +1225,11 @@ function sceneGalaxy(tick) {
   // Time overlay (cyan-dim)
   textOutlined(timeStr(), 1, 1, 130, 180, 200);
 
-  // Rotating trivia ticker — new fact every ~30 s (375 ticks @ 80 ms)
-  const idx = Math.floor(tick / 375) % GALAXY_TRIVIA.length;
-  drawTicker(GALAXY_TRIVIA[idx], H-6, 160, 210, 225, 0, 0, 0);
+  // Hint to run the sprite script if the JSON is missing
+  const tickerStr = galaxyMissing
+    ? 'DROP VIDEO IN /VIDEOS  ~  RUN VIDEO_TO_SPRITES.PY'
+    : GALAXY_TRIVIA[Math.floor(tick / 375) % GALAXY_TRIVIA.length];
+  drawTicker(tickerStr, H-6, 160, 210, 225, 0, 0, 0);
 }
 
 
@@ -1461,10 +1500,10 @@ const SCENE_INFO = {
   },
   galaxy: {
     label: 'Galaxy',
-    desc: `<strong>Art:</strong> Procedural cartoon spiral galaxy — two rotating arms with dust lanes, warm core, cool blue tips.<br>
-           <strong>Animation:</strong> Full rotation every ~30 s, twinkle sparkles in the disc.<br>
+    desc: `<strong>Art:</strong> Video-sprite animation — a short clip downsampled to 64×32 and played back as frames.<br>
+           <strong>Source:</strong> Drop any .mp4 in <code>videos/</code>, run <code>scripts/video_to_sprites.py</code>, commit the resulting <code>data/galaxy_sprite.json</code>.<br>
            <strong>Bottom strip:</strong> Rotating astronomy trivia (Milky Way, Andromeda, galactic facts).<br>
-           <strong>Feel:</strong> Dreamy, kid-friendly cosmos.`,
+           <strong>Fallback:</strong> Procedural nested rings if no sprite is available.`,
   },
   asteroid: {
     label: 'Asteroid',

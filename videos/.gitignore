@@ -1,0 +1,3 @@
+# Ignore every source video — we only commit the generated sprite JSON in data/
+*
+!.gitignore
