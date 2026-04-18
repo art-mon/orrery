@@ -96,24 +96,24 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 21.2,
-    "feels_c": 20.4,
-    "humidity": 38,
+    "city": "Zagreb",
+    "temp_c": 21.9,
+    "feels_c": 21.0,
+    "humidity": 35,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 9.8
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 11.1
   },
   "forecast": {
     "date": "2026-04-19",
     "city": "Donji grad",
-    "temp_min_c": 10.2,
+    "temp_min_c": 6.2,
     "temp_max_c": 21.5,
-    "humidity": 62,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.9
+    "wind_kmh": 6.6
   }
 }
