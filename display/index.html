@@ -21,6 +21,15 @@
 
   h1 { color: #888; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; }
 
+  .tagline {
+    max-width: 620px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #555;
+  }
+  .tagline strong { color: #888; }
+
   /* Matrix bezel */
   .matrix-wrap {
     background: #111;
@@ -177,6 +186,8 @@
 <body>
 
 <h1>64 × 32 LED Matrix — Layout Mockup</h1>
+
+<p class="tagline"><strong>Orrery</strong> is a 64×32 LED matrix dashboard powered by NASA's open APIs. It displays live weather, asteroid approaches, Earth events, and the Astronomy Picture of the Day — with an AI-generated background that shifts hue through the day. Hit <strong>📻 Broadcast</strong> to hear a daily space briefing written by GPT-4o and read aloud using OpenAI TTS.</p>
 
 <div class="matrix-wrap">
   <canvas id="matrix"></canvas>
