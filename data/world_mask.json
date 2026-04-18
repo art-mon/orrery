@@ -1,0 +1,7 @@
+{
+  "width": 64,
+  "height": 32,
+  "projection": "equirectangular",
+  "land_b64": "AAAAAAAAAAAAAPf8AAAAAAAbB/AAEHCAHA3z4AgP//A//zGIPf///xn+OABv//+IAP+8A3///4AAP/YB////gAA/4AO5//4AAD/gAMP//oAAH8AD7//8AAAGAAf9n/gAAAYAB//GcAAAAIAH/oRkAAAAeAP/gEAAAAA+AD8ASAAAAD+APgApgAAAP8A+AA4AAAA/gD4AA0AAAA+APIAHwAAAHgAcAA/gAAAeABgAB+AAABwAAAAAYAAAEAAAAAACAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAd/f/+AP/8A/////4D//wf/////j//////////w==",
+  "source": "Natural Earth 110m land (public domain)"
+}

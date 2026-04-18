@@ -893,91 +893,59 @@ function sceneAsteroid(tick) {
   }
 }
 
+// ─── World mask (Natural Earth land polygons → 64×32 bitmask) ────────────────
+// Produced by scripts/build_world_mask.py. Loaded once on startup.
+// land_bits is a Uint8Array of 256 bytes; bit 7 of byte[y*8 + x//8] is pixel (x, y)
+// for y in 0..31, x in 0..63. Row-major, MSB = leftmost.
+let worldMaskLand = null;  // Uint8Array(256) or null until loaded
+
+function loadWorldMask() {
+  if (worldMaskLand) return;
+  fetch('../data/world_mask.json')
+    .then(r => r.json())
+    .then(d => {
+      const raw = atob(d.land_b64);
+      const arr = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+      worldMaskLand = arr;
+    })
+    .catch(e => console.warn('world_mask.json missing:', e));
+}
+
+function isLand(x, y) {
+  if (!worldMaskLand) return false;
+  const bitIdx = y * W + x;
+  const byte = worldMaskLand[bitIdx >> 3];
+  const bit  = 7 - (bitIdx & 7);
+  return (byte & (1 << bit)) !== 0;
+}
+
 function sceneEvent(tick) {
   clear();
 
-  // World map (very simplified pixel silhouette)
-  // Blue ocean base
-  rect(0, 0, W, H, 0, 20, 60);
+  // Lazy-load the mask on first draw
+  if (!worldMaskLand) loadWorldMask();
 
-  // Landmasses — pixel art, Mercator 64×24
-  // col = (lon+180)/360*64,  row = (90-lat)/180*24
-  const land = [
-    // ── North America ──────────────────────────
-    [0,  2,  6,  3],  // Alaska
-    [5,  3, 16,  3],  // Canada N
-    [17, 1,  5,  3],  // Arctic islands
-    [19, 1, 11,  5],  // Greenland
-    [28, 3,  2,  2],  // Iceland
-    [9,  5, 12,  3],  // US + S Canada
-    [2,  6,  9,  2],  // Western US
-    [14, 7,  5,  2],  // SE USA
-    [11, 8,  5,  2],  // Mexico N
-    [13, 9,  4,  2],  // Mexico S + Central America
-    [15, 9,  3,  1],  // Cuba
-    // ── South America ──────────────────────────
-    [16, 10, 8,  2],  // N coast
-    [15, 11, 9,  4],  // Broad
-    [14, 14, 8,  4],  // S central
-    [13, 17, 5,  2],  // Patagonia
-    // ── Europe ─────────────────────────────────
-    [30, 4,  3,  2],  // UK + Ireland
-    [30, 5,  4,  2],  // France + N Iberia
-    [30, 6,  3,  2],  // Iberia
-    [33, 3,  5,  3],  // Scandinavia
-    [32, 5,  6,  2],  // Central Europe
-    [35, 6,  3,  2],  // Balkans
-    [33, 7,  2,  2],  // Italy
-    // ── Africa ─────────────────────────────────
-    [29, 7, 13,  4],  // N Africa / Sahara
-    [29, 10, 9,  2],  // W Africa
-    [34, 11, 7,  2],  // Central Africa
-    [38, 9,  4,  4],  // E Africa + Horn
-    [33, 12, 7,  3],  // S Central Africa
-    [34, 14, 5,  3],  // Southern Africa
-    [36, 16, 3,  2],  // S Africa tip
-    [40, 13, 2,  4],  // Madagascar
-    // ── Middle East ────────────────────────────
-    [37, 6,  4,  2],  // Turkey
-    [38, 7,  5,  2],  // Syria / Iraq / Iran N
-    [38, 8,  5,  3],  // Arabia + Iran S
-    // ── Russia / Siberia ───────────────────────
-    [0,  2,  2,  2],  // Chukotka (far east wrap)
-    [37, 2, 27,  3],  // Siberia
-    // ── Central / S Asia ───────────────────────
-    [40, 5, 13,  3],  // Kazakhstan / Central Asia
-    [43, 6,  5,  2],  // Afghanistan / Pakistan
-    [44, 7,  5,  4],  // India
-    [44, 10, 3,  2],  // S India
-    // ── East Asia ──────────────────────────────
-    [45, 5, 12,  5],  // China
-    [51, 9,  4,  2],  // S China / Vietnam
-    [54, 6,  2,  2],  // Korea
-    [55, 5,  3,  4],  // Japan
-    // ── SE Asia ────────────────────────────────
-    [49, 8,  4,  4],  // Indochina
-    [50, 11, 2,  2],  // Malay Peninsula
-    [51, 11, 3,  2],  // Borneo
-    [53, 9,  2,  3],  // Philippines
-    [55, 11, 4,  2],  // New Guinea
-    // ── Australia ──────────────────────────────
-    [52, 13, 8,  5],  // Australia N+W+E
-    [52, 16, 7,  2],  // Australia S
-    // ── Antarctica ─────────────────────────────
-    [0,  21, 64, 3],
-  ];
-  for (const [x,y,w,h] of land)
-    rect(x, y, w, h, 30, 90, 30);
+  // Paint base: land (muted green) + ocean (muted navy). Bottom strip reserved
+  // for the ticker, so skip rows covered by it.
+  for (let y = 0; y < H - 7; y++) {
+    for (let x = 0; x < W; x++) {
+      if (isLand(x, y)) {
+        px(x, y, 40, 95, 55);     // land
+      } else {
+        px(x, y, 10, 30, 60);     // ocean
+      }
+    }
+  }
 
   // Event markers from real EONET data
   const pulse = Math.floor(tick * 0.15) % 4;
-  const mapH = H - 8; // map area excludes ticker strip
   const markers = eventList.length > 0 ? eventList : [];
   for (const evt of markers) {
     if (!evt.coordinates) continue;
     const [lon, lat] = evt.coordinates;
     const mx = Math.floor((lon + 180) / 360 * W);
-    const my = Math.floor((90 - lat) / 180 * mapH);
+    const my = Math.floor((90 - lat) / 180 * H);
     const cat = (evt.category || '').toLowerCase();
     let r = 255, g = 160, b = 60; // default orange
     if (cat.includes('volcano'))        { r=255; g=80;  b=0;   }
