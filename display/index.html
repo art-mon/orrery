@@ -1096,18 +1096,79 @@ const GALAXY_TRIVIA = [
   'WE ORBIT AT 828,000 KM/H',
 ];
 
-// Galaxy sprite — loaded once from data/galaxy_sprite.json (produced by
-// scripts/video_to_sprites.py). Format: { frames, fps, width, height, pixels[frame][i] }
-let galaxySprite  = null;
+// Galaxy sprite — produced by scripts/video_to_sprites.py.
+// Modern format (RGB565 binary):
+//   data/galaxy_sprite.json  — metadata {frames, fps, width, height, format, bin}
+//   data/galaxy_sprite.bin   — raw RGB565 big-endian bytes
+// Legacy format (RGB888 JSON pixels[]) still supported as fallback.
+let galaxySprite  = null;        // { frames, fps, width, height, framesRGB888: Uint8ClampedArray[] }
 let galaxyLoading = false;
 let galaxyMissing = false;
+
+function _rgb565beToRgb888(bin, width, height, frameCount) {
+  // Returns an array of Uint8ClampedArray, one per frame, length W*H*3
+  const bytesPerFrame = width * height * 2;
+  const out = [];
+  for (let f = 0; f < frameCount; f++) {
+    const src = new DataView(bin, f * bytesPerFrame, bytesPerFrame);
+    const dst = new Uint8ClampedArray(width * height * 3);
+    for (let i = 0; i < width * height; i++) {
+      const v = src.getUint16(i * 2, false); // big-endian
+      const r = (v >> 11) & 0x1F;
+      const g = (v >> 5)  & 0x3F;
+      const b =  v        & 0x1F;
+      // Expand 5/6/5 → 8/8/8 with replicated high bits (standard trick)
+      dst[i * 3]     = (r << 3) | (r >> 2);
+      dst[i * 3 + 1] = (g << 2) | (g >> 4);
+      dst[i * 3 + 2] = (b << 3) | (b >> 2);
+    }
+    out.push(dst);
+  }
+  return out;
+}
 
 function loadGalaxySprite() {
   if (galaxyLoading || galaxySprite || galaxyMissing) return;
   galaxyLoading = true;
+
   fetch('../data/galaxy_sprite.json')
     .then(r => r.ok ? r.json() : Promise.reject('404'))
-    .then(d => { galaxySprite = d; galaxyLoading = false; })
+    .then(meta => {
+      if (meta.format === 'rgb565_be' && meta.bin) {
+        // Modern binary path
+        return fetch('../data/' + meta.bin)
+          .then(r => r.ok ? r.arrayBuffer() : Promise.reject('bin 404'))
+          .then(buf => {
+            galaxySprite = {
+              frames: meta.frames,
+              fps:    meta.fps,
+              width:  meta.width,
+              height: meta.height,
+              framesRGB888: _rgb565beToRgb888(buf, meta.width, meta.height, meta.frames),
+            };
+            galaxyLoading = false;
+          });
+      } else if (meta.pixels) {
+        // Legacy RGB888 JSON path
+        const flat = meta.pixels.map(frame => {
+          const dst = new Uint8ClampedArray(meta.width * meta.height * 3);
+          for (let i = 0; i < frame.length; i++) {
+            dst[i * 3]     = frame[i][0];
+            dst[i * 3 + 1] = frame[i][1];
+            dst[i * 3 + 2] = frame[i][2];
+          }
+          return dst;
+        });
+        galaxySprite = {
+          frames: meta.frames, fps: meta.fps,
+          width:  meta.width,  height: meta.height,
+          framesRGB888: flat,
+        };
+        galaxyLoading = false;
+      } else {
+        return Promise.reject('unknown sprite format');
+      }
+    })
     .catch(() => { galaxyMissing = true; galaxyLoading = false; });
 }
 
@@ -1118,15 +1179,15 @@ function sceneGalaxy(tick) {
   if (!galaxySprite && !galaxyMissing) loadGalaxySprite();
 
   if (galaxySprite) {
-    const { frames, fps, pixels } = galaxySprite;
+    const { frames, fps, framesRGB888 } = galaxySprite;
     // tick is 80 ms per frame → ticksPerSpriteFrame = (1000 / fps) / 80
     const ticksPerSpriteFrame = Math.max(1, Math.round((1000 / fps) / 80));
     const idx = Math.floor(tick / ticksPerSpriteFrame) % frames;
-    const frame = pixels[idx];
+    const frame = framesRGB888[idx];
     for (let y = 0; y < H; y++) {
       for (let x = 0; x < W; x++) {
-        const [r, g, b] = frame[y * W + x];
-        px(x, y, r, g, b);
+        const i = (y * W + x) * 3;
+        px(x, y, frame[i], frame[i + 1], frame[i + 2]);
       }
     }
     // Time overlay + ticker
