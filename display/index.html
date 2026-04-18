@@ -208,6 +208,7 @@
   <div class="scene-buttons">
     <button data-scene="daily" class="active">Daily</button>
     <button data-scene="moon">🌙 Moon</button>
+    <button data-scene="galaxy">🌀 Galaxy</button>
     <button id="broadcast-btn">📻 Broadcast</button>
     <button id="mute-btn" disabled>🔇 Mute</button>
     <button data-scene="event">🌍 Earth Event</button>
@@ -1083,6 +1084,104 @@ function sceneNight(tick) {
   drawTicker('MOON  ~  ' + moonPhaseName(todayPhase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
 }
 
+// ─── Galaxy scene ─────────────────────────────────────────────────────────────
+const GALAXY_TRIVIA = [
+  'MILKY WAY  ~  100 BILLION STARS',
+  'ANDROMEDA  ~  2.5 MILLION LY AWAY',
+  'OBSERVABLE UNIVERSE  ~  2 TRILLION GALAXIES',
+  'MILKY WAY CORE  ~  SAGITTARIUS A*',
+  'GALACTIC YEAR  ~  225 MILLION EARTH YEARS',
+  'LIGHT CROSSES MILKY WAY IN 100,000 YEARS',
+  'SPIRAL ARMS  ~  PERSEUS, ORION, SAGITTARIUS, NORMA',
+  'WE ORBIT AT 828,000 KM/H',
+];
+
+function sceneGalaxy(tick) {
+  clear();
+
+  // Starfield backdrop
+  stars(99, 40, 120, 130, 180);
+
+  // Galaxy parameters
+  const cx = 32, cy = 14;
+  const rotSpeed = 0.012;    // radians per tick
+  const rot = tick * rotSpeed;
+  const armTurns = 2.6;      // how many turns each arm makes
+  const maxR = 15;           // max radius before tapering
+  const squash = 0.62;       // vertical squash for elliptical tilt
+  const arms = 2;            // number of spiral arms
+  const armStep = (Math.PI * 2) / arms;
+
+  // Helper: colour along the arm (core warm → tips cool)
+  function armColor(t) {
+    // t: 0 = core, 1 = tip
+    if (t < 0.2) return [255, 235, 170];        // warm core glow
+    if (t < 0.45) return [255, 200, 130];       // yellow-amber
+    if (t < 0.7) return [200, 170, 210];        // lilac
+    return [130, 150, 220];                     // blue tips
+  }
+
+  // Draw spiral arms — many small samples along each arm
+  const samples = 160;
+  for (let a = 0; a < arms; a++) {
+    const armBase = a * armStep + rot;
+    for (let i = 0; i < samples; i++) {
+      const t     = i / samples;                 // 0..1 along arm
+      const theta = t * armTurns * Math.PI * 2 + armBase;
+      // Log spiral: tighter near core, opens outward
+      const r     = maxR * Math.pow(t, 0.7);
+      // Add a little wiggle so the arm isn't geometrically clean (cartoon feel)
+      const wig   = Math.sin(theta * 3 + tick * 0.05) * 0.7;
+      const rx    = (r + wig) * Math.cos(theta);
+      const ry    = (r + wig) * Math.sin(theta) * squash;
+      const px_x  = Math.round(cx + rx);
+      const px_y  = Math.round(cy + ry);
+      const [cr, cg, cb] = armColor(t);
+      // Fade tips so they don't hard-cut
+      const fade = t > 0.85 ? (1 - (t - 0.85) / 0.15) : 1;
+      px(px_x, px_y, Math.round(cr * fade), Math.round(cg * fade), Math.round(cb * fade));
+
+      // Dust lane: slightly offset darker pixels for depth
+      if (t > 0.15 && t < 0.85 && i % 3 === 0) {
+        const dTheta = theta + 0.28;
+        const drx = r * Math.cos(dTheta);
+        const dry = r * Math.sin(dTheta) * squash;
+        px(Math.round(cx + drx), Math.round(cy + dry), 40, 30, 55);
+      }
+    }
+  }
+
+  // Bright core — radial falloff
+  for (let dy = -2; dy <= 2; dy++) {
+    for (let dx = -3; dx <= 3; dx++) {
+      const d = Math.sqrt(dx*dx + (dy/squash)*(dy/squash));
+      if (d <= 1.2) px(cx+dx, cy+dy, 255, 245, 200);
+      else if (d <= 2.2) px(cx+dx, cy+dy, 255, 220, 150);
+      else if (d <= 3.0) px(cx+dx, cy+dy, 230, 180, 120);
+    }
+  }
+
+  // Sparkle — a few random bright pixels in the disc that twinkle
+  for (let s = 0; s < 5; s++) {
+    const twinkle = (tick + s * 23) % 40 < 4;
+    if (!twinkle) continue;
+    let seed = s * 9173 + Math.floor(tick / 40);
+    const rand = () => { seed = (seed * 1664525 + 1013904223) & 0xffffffff; return (seed >>> 0) / 0xffffffff; };
+    const ang = rand() * Math.PI * 2;
+    const rr  = 3 + rand() * (maxR - 4);
+    px(Math.round(cx + Math.cos(ang) * rr),
+       Math.round(cy + Math.sin(ang) * rr * squash),
+       255, 245, 220);
+  }
+
+  // Time overlay (dim)
+  textOutlined(timeStr(), 1, 1, 140, 130, 200);
+
+  // Rotating trivia ticker — new fact every ~30 s (375 ticks @ 80 ms)
+  const idx = Math.floor(tick / 375) % GALAXY_TRIVIA.length;
+  drawTicker(GALAXY_TRIVIA[idx], H-6, 180, 170, 220, 0, 0, 0);
+}
+
 
 // ─── APOD live frame ─────────────────────────────────────────────────────────
 let apodPixels = null;
@@ -1323,7 +1422,7 @@ function sceneRadio(tick) {
 }
 
 // ─── Animation loop ───────────────────────────────────────────────────────────
-const SCENES = ['daily', 'moon', 'asteroid', 'event', 'apod_live'];
+const SCENES = ['daily', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
 const VIEWS_PER_SCENE = 3;
 
@@ -1348,6 +1447,13 @@ const SCENE_INFO = {
            <strong>Moon:</strong> Phase-accurate disc, updates nightly.<br>
            <strong>Info:</strong> Dim time + temperature, moon phase name + illumination %.<br>
            <strong>Feel:</strong> Peaceful, observatory-like.`,
+  },
+  galaxy: {
+    label: 'Galaxy',
+    desc: `<strong>Art:</strong> Procedural cartoon spiral galaxy — two rotating arms with dust lanes, warm core, cool blue tips.<br>
+           <strong>Animation:</strong> Full rotation every ~30 s, twinkle sparkles in the disc.<br>
+           <strong>Bottom strip:</strong> Rotating astronomy trivia (Milky Way, Andromeda, galactic facts).<br>
+           <strong>Feel:</strong> Dreamy, kid-friendly cosmos.`,
   },
   asteroid: {
     label: 'Asteroid',
@@ -1403,6 +1509,7 @@ function drawScene() {
   switch(currentScene) {
     case 'daily':      sceneDaily(tick);     break;
     case 'moon':       sceneNight(tick);     break;
+    case 'galaxy':     sceneGalaxy(tick);    break;
     case 'asteroid':   sceneAsteroid(tick);  break;
     case 'event':      sceneEvent(tick);     break;
     case 'apod_live':  sceneApodLive(tick);  break;
