@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-18",
+  "generated": "2026-04-19",
   "apod": {
     "title": "PanSTARRS and Planets",
     "date": "2026-04-18",
@@ -97,20 +97,20 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.0,
-    "feels_c": 8.9,
-    "humidity": 69,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 1.7
+    "temp_c": 13.1,
+    "feels_c": 12.1,
+    "humidity": 60,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast": {
     "date": "2026-04-19",
-    "city": "Zagreb",
-    "temp_min_c": 7.6,
+    "city": "Donji grad",
+    "temp_min_c": 10.9,
     "temp_max_c": 21.5,
-    "humidity": 62,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
