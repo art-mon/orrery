@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-18",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "PanSTARRS and Planets",
+    "date": "2026-04-18",
+    "explanation": "Near the eastern horizon before sunrise, Comet C/2025 R3 PanSTARRS is getting brighter. Readily visible in binoculars and small telescopes, the comet may be just on the verge of naked-eye visibility from dark sky sites. Though it was not quite apparent to the eye, PanSTARRS is still easy to spot in this camera image taken on April 16. In the view from a volcanic peak overlooking France's Reunion Island, planet Earth, the comet shares eastern predawn skies with naked-eye planets Mars and Mercury and fainter Neptune. Saturn is hiding behind the low cloudbank that doesn't quite hide an old crescent Moon. This is a good weekend for northern hemisphere comet watchers to try to catch PanSTARRS an hour or so before sunrise, as the comet grows brighter approaching its perihelion on April 19. On April 26 the comet makes its closest approach to our fair planet but by then will be difficult to see in the solar glare. Good views of this comet PanSTARRS in late April and early May will be from the southern hemisphere.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/PanstarrsPlanetsPerrotLab1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/PanstarrsPlanetsPerrot.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -92,13 +97,13 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.3,
-    "feels_c": 17.4,
-    "humidity": 48,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.4
+    "temp_c": 20.9,
+    "feels_c": 20.1,
+    "humidity": 40,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 13.0
   },
   "forecast": {
     "date": "2026-04-19",
