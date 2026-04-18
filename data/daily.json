@@ -9,106 +9,106 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HE)",
+        "name": "(2026 GM1)",
         "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 4225395,
-        "velocity_kmh": 24452
+        "diameter_m": 47,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 1329720,
+        "velocity_kmh": 20262
       },
       {
-        "name": "(2026 GA1)",
+        "name": "(2026 GR2)",
         "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 4686587,
-        "velocity_kmh": 27965
+        "diameter_m": 21,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 2945867,
+        "velocity_kmh": 23553
       },
       {
-        "name": "(2026 GO2)",
+        "name": "(2026 FJ6)",
         "hazardous": false,
-        "diameter_m": 83,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 6806961,
-        "velocity_kmh": 73750
+        "diameter_m": 150,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 6039397,
+        "velocity_kmh": 35441
       },
       {
-        "name": "(2026 BU7)",
+        "name": "(2026 GF1)",
         "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 15262624,
-        "velocity_kmh": 13817
+        "diameter_m": 42,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 8139928,
+        "velocity_kmh": 15477
       },
       {
-        "name": "(2021 JK2)",
-        "hazardous": false,
-        "diameter_m": 66,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 15653725,
-        "velocity_kmh": 20578
+        "name": "(2015 KJ122)",
+        "hazardous": true,
+        "diameter_m": 237,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 8649242,
+        "velocity_kmh": 73527
       },
       {
-        "name": "(2023 GL2)",
+        "name": "(2024 TX13)",
         "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 16975986,
-        "velocity_kmh": 27212
+        "diameter_m": 73,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 16870739,
+        "velocity_kmh": 16059
       },
       {
-        "name": "(2023 HU3)",
+        "name": "(2021 VE4)",
         "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 18238532,
-        "velocity_kmh": 63996
+        "diameter_m": 94,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 23602447,
+        "velocity_kmh": 43982
       },
       {
-        "name": "(2024 WU3)",
+        "name": "(2026 FU4)",
         "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 21474263,
-        "velocity_kmh": 26168
+        "diameter_m": 41,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 24324567,
+        "velocity_kmh": 9975
       },
       {
-        "name": "(2026 FS8)",
+        "name": "(2023 QD)",
         "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 22961600,
-        "velocity_kmh": 19464
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 27118453,
+        "velocity_kmh": 38072
       },
       {
-        "name": "(2021 KS1)",
+        "name": "(2012 SL8)",
         "hazardous": false,
-        "diameter_m": 13,
-        "close_approach_date": "2026-04-17",
-        "miss_distance_km": 23716114,
-        "velocity_kmh": 27623
+        "diameter_m": 404,
+        "close_approach_date": "2026-04-18",
+        "miss_distance_km": 27438569,
+        "velocity_kmh": 59393
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 11.4,
-    "feels_c": 10.5,
-    "humidity": 76,
+    "city": "Zagreb",
+    "temp_c": 9.4,
+    "feels_c": 9,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 4.5
+    "wind_kmh": 5.5
   },
   "forecast": {
-    "date": "2026-04-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.7,
-    "temp_max_c": 24.8,
-    "humidity": 55,
+    "date": "2026-04-19",
+    "city": "Zagreb",
+    "temp_min_c": 10.0,
+    "temp_max_c": 21.4,
+    "humidity": 62,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.8
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 4.9
   }
 }
