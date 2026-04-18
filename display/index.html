@@ -1100,86 +1100,97 @@ function sceneGalaxy(tick) {
   clear();
 
   // Starfield backdrop
-  stars(99, 40, 120, 130, 180);
+  stars(99, 35, 100, 115, 160);
 
-  // Galaxy parameters
+  // Galaxy parameters — concentric elliptical rings, gentle twist
   const cx = 32, cy = 14;
-  const rotSpeed = 0.012;    // radians per tick
+  const rotSpeed = 0.005;    // radians per tick — ~1 turn / 60 s
   const rot = tick * rotSpeed;
-  const armTurns = 2.6;      // how many turns each arm makes
-  const maxR = 15;           // max radius before tapering
-  const squash = 0.62;       // vertical squash for elliptical tilt
-  const arms = 2;            // number of spiral arms
-  const armStep = (Math.PI * 2) / arms;
+  const maxR = 16;
+  const squash = 0.58;       // vertical squash for tilted disc
+  const twistPerRing = 0.35; // each ring is rotated slightly more than the last
 
-  // Helper: colour along the arm (core warm → tips cool)
-  function armColor(t) {
-    // t: 0 = core, 1 = tip
-    if (t < 0.2) return [255, 235, 170];        // warm core glow
-    if (t < 0.45) return [255, 200, 130];       // yellow-amber
-    if (t < 0.7) return [200, 170, 210];        // lilac
-    return [130, 150, 220];                     // blue tips
+  // Palette: warm core → cyan-white → teal → deep blue-teal
+  function ringColor(t) {
+    // t: 0 = inner, 1 = outermost
+    if (t < 0.14) return [255, 225, 170];       // warm core halo
+    if (t < 0.28) return [240, 235, 210];       // cream
+    if (t < 0.45) return [200, 230, 235];       // icy cyan-white
+    if (t < 0.65) return [130, 200, 215];       // cyan
+    if (t < 0.82) return [80,  155, 180];       // teal
+    return [45, 100, 135];                       // deep blue-teal
   }
 
-  // Draw spiral arms — many small samples along each arm
-  const samples = 160;
-  for (let a = 0; a < arms; a++) {
-    const armBase = a * armStep + rot;
-    for (let i = 0; i < samples; i++) {
-      const t     = i / samples;                 // 0..1 along arm
-      const theta = t * armTurns * Math.PI * 2 + armBase;
-      // Log spiral: tighter near core, opens outward
-      const r     = maxR * Math.pow(t, 0.7);
-      // Add a little wiggle so the arm isn't geometrically clean (cartoon feel)
-      const wig   = Math.sin(theta * 3 + tick * 0.05) * 0.7;
-      const rx    = (r + wig) * Math.cos(theta);
-      const ry    = (r + wig) * Math.sin(theta) * squash;
-      const px_x  = Math.round(cx + rx);
-      const px_y  = Math.round(cy + ry);
-      const [cr, cg, cb] = armColor(t);
-      // Fade tips so they don't hard-cut
-      const fade = t > 0.85 ? (1 - (t - 0.85) / 0.15) : 1;
-      px(px_x, px_y, Math.round(cr * fade), Math.round(cg * fade), Math.round(cb * fade));
+  // Deterministic pseudo-random for ring dithering (stable per tick)
+  function hash(i, j) {
+    let s = (i * 73856093) ^ (j * 19349663);
+    s = (s * 1664525 + 1013904223) & 0xffffffff;
+    return ((s >>> 0) / 0xffffffff);
+  }
 
-      // Dust lane: slightly offset darker pixels for depth
-      if (t > 0.15 && t < 0.85 && i % 3 === 0) {
-        const dTheta = theta + 0.28;
-        const drx = r * Math.cos(dTheta);
-        const dry = r * Math.sin(dTheta) * squash;
-        px(Math.round(cx + drx), Math.round(cy + dry), 40, 30, 55);
-      }
+  // Draw nested rings from outside in (so inner rings overpaint outer tips)
+  const nRings = 11;
+  for (let ringIdx = nRings - 1; ringIdx >= 0; ringIdx--) {
+    const t = ringIdx / (nRings - 1);           // 0 = innermost, 1 = outermost
+    const r = 2 + t * (maxR - 2);
+    const ringRot = rot + ringIdx * twistPerRing;
+    const [cr, cg, cb] = ringColor(t);
+
+    // Sampling density — more points on outer rings so they don't look sparse
+    const steps = Math.max(28, Math.round(r * 7));
+    for (let s = 0; s < steps; s++) {
+      const theta = (s / steps) * Math.PI * 2 + ringRot;
+
+      // Soft radial jitter → nebulous, not a hard outline
+      const jitter = (hash(ringIdx, s) - 0.5) * 1.4;
+      const rr = r + jitter;
+
+      // Dither: skip some pixels so rings feel wispy, more so on outer rings
+      const keepProb = 0.55 + (1 - t) * 0.35;    // inner rings denser
+      if (hash(ringIdx * 13, s * 7) > keepProb) continue;
+
+      const px_x = Math.round(cx + Math.cos(theta) * rr);
+      const px_y = Math.round(cy + Math.sin(theta) * rr * squash);
+
+      // Slight brightness variation along the ring
+      const bright = 0.75 + hash(ringIdx * 17, s * 31) * 0.25;
+      px(px_x, px_y,
+         Math.round(cr * bright),
+         Math.round(cg * bright),
+         Math.round(cb * bright));
     }
   }
 
-  // Bright core — radial falloff
+  // Bright warm oval core — hot white inside, warm halo
   for (let dy = -2; dy <= 2; dy++) {
     for (let dx = -3; dx <= 3; dx++) {
       const d = Math.sqrt(dx*dx + (dy/squash)*(dy/squash));
-      if (d <= 1.2) px(cx+dx, cy+dy, 255, 245, 200);
-      else if (d <= 2.2) px(cx+dx, cy+dy, 255, 220, 150);
-      else if (d <= 3.0) px(cx+dx, cy+dy, 230, 180, 120);
+      if (d <= 0.9)      px(cx+dx, cy+dy, 255, 250, 230);  // hot white
+      else if (d <= 1.8) px(cx+dx, cy+dy, 255, 235, 185);  // warm
+      else if (d <= 2.6) px(cx+dx, cy+dy, 250, 210, 155);  // amber halo
+      else if (d <= 3.2) px(cx+dx, cy+dy, 220, 180, 130);  // dim amber edge
     }
   }
 
-  // Sparkle — a few random bright pixels in the disc that twinkle
-  for (let s = 0; s < 5; s++) {
-    const twinkle = (tick + s * 23) % 40 < 4;
+  // Twinkle — a few disc stars that pop briefly
+  for (let s = 0; s < 4; s++) {
+    const twinkle = (tick + s * 23) % 50 < 4;
     if (!twinkle) continue;
-    let seed = s * 9173 + Math.floor(tick / 40);
+    let seed = s * 9173 + Math.floor(tick / 50);
     const rand = () => { seed = (seed * 1664525 + 1013904223) & 0xffffffff; return (seed >>> 0) / 0xffffffff; };
     const ang = rand() * Math.PI * 2;
-    const rr  = 3 + rand() * (maxR - 4);
+    const rr  = 4 + rand() * (maxR - 5);
     px(Math.round(cx + Math.cos(ang) * rr),
        Math.round(cy + Math.sin(ang) * rr * squash),
-       255, 245, 220);
+       240, 245, 255);
   }
 
-  // Time overlay (dim)
-  textOutlined(timeStr(), 1, 1, 140, 130, 200);
+  // Time overlay (cyan-dim)
+  textOutlined(timeStr(), 1, 1, 130, 180, 200);
 
   // Rotating trivia ticker — new fact every ~30 s (375 ticks @ 80 ms)
   const idx = Math.floor(tick / 375) % GALAXY_TRIVIA.length;
-  drawTicker(GALAXY_TRIVIA[idx], H-6, 180, 170, 220, 0, 0, 0);
+  drawTicker(GALAXY_TRIVIA[idx], H-6, 160, 210, 225, 0, 0, 0);
 }
 
 
