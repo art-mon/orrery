@@ -982,7 +982,7 @@ function sceneEvent(tick) {
         const hash = (h ^ (h >>> 16)) >>> 0;
 
         // Dark-side city lights — NASA's Black Marble vibe.
-        if (dayMix < 0.05 && (hash & 3) === 0) {
+        if (dayMix < 0.05 && (hash & 1) === 0) {
           const flick = 0.75 + 0.25 * Math.sin(tick * 0.35 + (hash & 0xff) * 0.1);
           px(x, y,
              Math.round(255 * flick),
@@ -1030,10 +1030,8 @@ function sceneEvent(tick) {
     px(mx, my, 255, 255, 200);
   }
 
-  // Time overlay — time in bottom-left (just above ticker), day in top-right
-  const _day = dayStr();
+  // Time overlay — bottom-left (just above ticker)
   textOutlined(timeStr(), 1, H-14, 255, 255, 255);
-  textOutlined(_day, W-textWidth(_day)-1, 1, 200, 200, 200);
 
   // Event ticker
   rect(0, H-8, W, 8, 0, 0, 20);
