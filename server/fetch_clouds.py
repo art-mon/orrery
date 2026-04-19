@@ -54,8 +54,10 @@ MAX_CHROMA = 45     # max - min must be below this
 
 # True-color reflectance can't tell snow/ice from clouds, so permanently-icy
 # latitudes read as 100% cloudy. Clamp to |lat| <= POLAR_CUTOFF so we don't
-# render fake clouds over the Arctic/Antarctic year-round.
-POLAR_CUTOFF = 65.0  # degrees; |lat| > this → force "not cloud"
+# render fake clouds over the core Arctic/Antarctic ice caps.
+# 75° keeps only the permanent ice masked; real sub-Arctic weather systems
+# (northern Scandinavia, Siberia, Alaska, northern Canada) still register.
+POLAR_CUTOFF = 75.0  # degrees; |lat| > this → force "not cloud"
 
 
 def fetch_image(d: date) -> Image.Image:
