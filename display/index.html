@@ -1177,7 +1177,43 @@ function sampleMoonTint(dx, dy, rad) {
   return MOON_PALETTE[MOON_TINT[ty * 15 + tx]] || MOON_PALETTE[0];
 }
 
+// ─── Real moon texture (baked from a photo via scripts/build_moon_texture.py) ─
+// Lazy-loaded. Falls back to the hand-crafted MOON_TEX + MOON_TINT above while
+// the JSON is fetching or if the file is missing.
+let moonTex     = null;   // Uint8Array — N*N*3 row-major RGB bytes
+let moonTexSize = 0;
+
+function loadMoonTexture() {
+  if (moonTex) return;
+  fetch('../data/moon_texture.json')
+    .then(r => r.json())
+    .then(d => {
+      const raw = atob(d.rgb_b64);
+      const arr = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+      moonTex     = arr;
+      moonTexSize = d.size;
+      console.log('moon texture loaded:', d.size + '×' + d.size, d.source);
+    })
+    .catch(e => console.warn('moon_texture.json missing — using synthetic fallback:', e));
+}
+
+// Sample the baked photo texture. Returns [r,g,b] or null if not loaded.
+function sampleMoonPhoto(dx, dy, rad) {
+  if (!moonTex) return null;
+  const N    = moonTexSize;
+  const half = N / 2;
+  let tx = Math.floor((dx / rad) * half + half);
+  let ty = Math.floor((dy / rad) * half + half);
+  if (tx < 0) tx = 0; else if (tx >= N) tx = N - 1;
+  if (ty < 0) ty = 0; else if (ty >= N) ty = N - 1;
+  const idx = (ty * N + tx) * 3;
+  return [moonTex[idx], moonTex[idx + 1], moonTex[idx + 2]];
+}
+
 function drawMoon(cx, cy, rad, phase) {
+  if (!moonTex) loadMoonTexture();
+
   const halfCycle = LUNAR_CYCLE / 2;
   const waxing    = phase <= halfCycle;
   const halfPhase = waxing ? phase / halfCycle : (phase - halfCycle) / halfCycle;
@@ -1196,33 +1232,40 @@ function drawMoon(cx, cy, rad, phase) {
       const nx  = hw > 0 ? dx / hw : 0;
       const lit = waxing ? nx > shadowEdge : nx < shadowEdge;
 
-      const intensity = sampleMoonTex(dx, dy, rad);
-
-      const tint = sampleMoonTint(dx, dy, rad);
+      // Prefer the baked real-photo texture; fall back to the synthetic
+      // tex × tint path if the JSON hasn't loaded yet.
+      let baseR, baseG, baseB;
+      const photo = sampleMoonPhoto(dx, dy, rad);
+      if (photo) {
+        baseR = photo[0];
+        baseG = photo[1];
+        baseB = photo[2];
+      } else {
+        const intensity = sampleMoonTex(dx, dy, rad);
+        const tint      = sampleMoonTint(dx, dy, rad);
+        baseR = intensity * tint[0];
+        baseG = intensity * tint[1];
+        baseB = intensity * tint[2];
+      }
 
       if (lit) {
         // Soft terminator: dim pixels right on the shadow edge
         const termDist = Math.abs(nx - shadowEdge);
         const term     = termDist < 0.15 ? 0.55 + termDist / 0.15 * 0.45 : 1.0;
-        const i        = intensity * term * lumScale;
-        // Apply mineral-moon tint (blue Ti mare, orange Fe mare, etc.)
+        const s        = term * lumScale;
         px(cx + dx, cy + dy,
-           Math.min(255, Math.round(i * tint[0])),
-           Math.min(255, Math.round(i * tint[1])),
-           Math.min(255, Math.round(i * tint[2])));
+           Math.min(255, Math.round(baseR * s)),
+           Math.min(255, Math.round(baseG * s)),
+           Math.min(255, Math.round(baseB * s)));
       } else {
         // Earthshine: the whole shadow disc glows softly so the moon stays
-        // fully visible even at thin crescent. Carries most of the mineral
-        // tint with a subtle cool-blue bias (Earth's reflected light leans
-        // blue). Bright enough to clearly show mare vs highlands.
-        const i = intensity * 0.45;
-        const r = i * (tint[0] * 0.70 + 0.15);
-        const g = i * (tint[1] * 0.70 + 0.25);
-        const b = i * (tint[2] * 0.70 + 0.40);
+        // fully visible even at thin crescent. Cool-blue bias (Earth's
+        // reflected light leans blue) keeps the dark side from looking grey.
+        const s = 0.45;
         px(cx + dx, cy + dy,
-           Math.min(255, Math.round(r)),
-           Math.min(255, Math.round(g)),
-           Math.min(255, Math.round(b)));
+           Math.min(255, Math.round(baseR * 0.75 * s)),
+           Math.min(255, Math.round(baseG * 0.85 * s)),
+           Math.min(255, Math.round(baseB * 1.05 * s)));
       }
     }
   }
