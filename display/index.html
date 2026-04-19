@@ -1205,13 +1205,14 @@ function drawMoon(cx, cy, rad, phase) {
            Math.min(255, Math.round(i * tint[1])),
            Math.min(255, Math.round(i * tint[2])));
       } else {
-        // Earthshine: dim disc on the shadow side, bumped to 22% so mare
-        // contrast stays visible at low phases. Tint desaturated toward cool
-        // blue (Earth's reflected light is blue-tinted).
-        const i = intensity * 0.22;
-        const r = i * (tint[0] * 0.35 + 0.30);
-        const g = i * (tint[1] * 0.35 + 0.45);
-        const b = i * (tint[2] * 0.35 + 0.65);
+        // Earthshine: the whole shadow disc glows softly so the moon stays
+        // fully visible even at thin crescent. Carries most of the mineral
+        // tint with a subtle cool-blue bias (Earth's reflected light leans
+        // blue). Bright enough to clearly show mare vs highlands.
+        const i = intensity * 0.45;
+        const r = i * (tint[0] * 0.70 + 0.15);
+        const g = i * (tint[1] * 0.70 + 0.25);
+        const b = i * (tint[2] * 0.70 + 0.40);
         px(cx + dx, cy + dy,
            Math.min(255, Math.round(r)),
            Math.min(255, Math.round(g)),
