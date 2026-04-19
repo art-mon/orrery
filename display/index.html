@@ -1292,24 +1292,33 @@ const NIGHT_STARS = [
 function sceneNight(tick) {
   clear();  // pure black — this scene belongs to the moon
 
-  // Subtly twinkling starfield (confined to the left side)
+  // Subtly twinkling starfield (stars under the moon will be overdrawn —
+  // that's fine, we keep the full layout so the left side stays populated).
   for (const s of NIGHT_STARS) {
     const ph = Math.sin(tick * 0.08 + s.x * 0.4 + s.y * 0.6);
     const v  = Math.round(95 + ph * 75);                // 20..170
     px(s.x, s.y, v, v, Math.min(255, v + 20));
   }
 
-  // Moon — large, right-aligned, radius 11 → 23px diameter fills most
-  // of the vertical space above the ticker.
+  // Moon — full-screen hero. Centered horizontally, radius 15 → 31px
+  // diameter fills the display vertically. Time and ticker sit on top.
   const phase = effectiveMoonPhase();
-  drawMoon(50, 13, 11, phase);
+  drawMoon(32, 16, 15, phase);
 
-  // Time overlay, top-left (kept small so the moon stays the hero)
+  // Time overlay, top-left (outlined so it reads over the moon edge)
   textOutlined(timeStr(), 1, 1, 140, 125, 195);
 
-  // Phase info ticker at the bottom
+  // Phase info ticker at the bottom — NO background band, outlined text
+  // scrolls transparently over the moon so the hero isn't clipped.
   const illum = Math.round((1 - Math.cos(phase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
-  drawTicker('MOON  ~  ' + moonPhaseName(phase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
+  const msg   = 'MOON  ~  ' + moonPhaseName(phase).toUpperCase() + '  ~  ' + illum + '% LIT';
+  const full  = msg + '   ';
+  const fw    = textWidth(full) + 4;
+  const tx    = W - (tickerOffset % (fw + W));
+  // Dark outline + warm-yellow glyphs
+  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
+    text(full, tx+dx, H-5+dy, 0, 0, 0);
+  text(full, tx, H-5, 160, 160, 120);
 }
 
 // ─── Galaxy scene ─────────────────────────────────────────────────────────────
