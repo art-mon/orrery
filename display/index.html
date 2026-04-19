@@ -992,7 +992,8 @@ function sceneEvent(tick) {
         const hash = (h ^ (h >>> 16)) >>> 0;
 
         // Dark-side city lights — NASA's Black Marble vibe.
-        if (dayMix < 0.05 && (hash & 1) === 0) {
+        // Skip Antarctica (lat < -60°): uninhabited ice sheet, no lights.
+        if (dayMix < 0.05 && lat > -60 && (hash & 1) === 0) {
           const flick = 0.75 + 0.25 * Math.sin(tick * 0.35 + (hash & 0xff) * 0.1);
           px(x, y,
              Math.round(255 * flick),
