@@ -252,6 +252,12 @@
       <input type="range" id="fft-smooth" min="0" max="0.95" step="0.05" value="0">
       <span class="val" id="fft-smooth-val">0.00</span>
     </div>
+    <div class="setting-row">
+      <span>Moon phase</span>
+      <input type="range" id="moon-phase" min="0" max="29.53" step="0.1" value="0">
+      <span class="val" id="moon-phase-val" style="min-width:110px;">Live</span>
+      <button id="moon-phase-live-btn" style="min-height:28px; padding:4px 10px; font-size:11px;">Live</button>
+    </div>
   </div>
 
 </div>
@@ -1225,6 +1231,12 @@ function drawMoon(cx, cy, rad, phase) {
 // compute once per session
 const todayPhase = moonPhase();
 
+// Demo override: null = use live todayPhase; number = forced phase from slider
+let phaseOverride = null;
+function effectiveMoonPhase() {
+  return phaseOverride !== null ? phaseOverride : todayPhase;
+}
+
 // Fixed starfield for the moon scene — hand-placed to fill the left side
 // without running into the big moon on the right.
 const NIGHT_STARS = [
@@ -1246,14 +1258,15 @@ function sceneNight(tick) {
 
   // Moon — large, right-aligned, radius 11 → 23px diameter fills most
   // of the vertical space above the ticker.
-  drawMoon(50, 13, 11, todayPhase);
+  const phase = effectiveMoonPhase();
+  drawMoon(50, 13, 11, phase);
 
   // Time overlay, top-left (kept small so the moon stays the hero)
   textOutlined(timeStr(), 1, 1, 140, 125, 195);
 
   // Phase info ticker at the bottom
-  const illum = Math.round((1 - Math.cos(todayPhase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
-  drawTicker('MOON  ~  ' + moonPhaseName(todayPhase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
+  const illum = Math.round((1 - Math.cos(phase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
+  drawTicker('MOON  ~  ' + moonPhaseName(phase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120, 0, 0, 0);
 }
 
 // ─── Galaxy scene ─────────────────────────────────────────────────────────────
@@ -1946,6 +1959,33 @@ scaleInput.addEventListener('input', () => {
   resize(+scaleInput.value);
   scaleVal.textContent = scaleInput.value + '×';
 });
+
+// ── Moon phase slider ─────────────────────────────────────────────────────────
+const moonPhaseSlider  = document.getElementById('moon-phase');
+const moonPhaseVal     = document.getElementById('moon-phase-val');
+const moonPhaseLiveBtn = document.getElementById('moon-phase-live-btn');
+
+function updateMoonPhaseLabel() {
+  if (phaseOverride === null) {
+    moonPhaseVal.textContent = 'Live (' + Math.round(todayPhase * 10) / 10 + 'd)';
+  } else {
+    const illum = Math.round((1 - Math.cos(phaseOverride / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
+    moonPhaseVal.textContent = illum + '% · ' + moonPhaseName(phaseOverride);
+  }
+}
+
+moonPhaseSlider.addEventListener('input', () => {
+  phaseOverride = +moonPhaseSlider.value;
+  updateMoonPhaseLabel();
+});
+
+moonPhaseLiveBtn.addEventListener('click', () => {
+  phaseOverride = null;
+  moonPhaseSlider.value = todayPhase.toFixed(2);
+  updateMoonPhaseLabel();
+});
+
+updateMoonPhaseLabel();
 
 // ── Settings panel toggle ─────────────────────────────────────────────────────
 document.getElementById('settings-toggle').addEventListener('click', () => {
