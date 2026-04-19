@@ -1025,7 +1025,7 @@ function sceneEvent(tick) {
         // a calm sea, not glitter. Different hash window from shimmer
         // so the two effects don't pile on the same pixels.
         if (dayMix > 0.40 && ((shim >> 4) & 15) === 0) {
-          const flick    = 0.55 + 0.45 * Math.sin(tick * 0.25 + (shim & 0xff) * 0.08);
+          const flick    = 0.55 + 0.45 * Math.sin(tick * 0.125 + (shim & 0xff) * 0.08);
           const strength = flick * dayMix;
           r += 55  * strength;
           g += 95  * strength;
