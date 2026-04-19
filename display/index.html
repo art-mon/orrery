@@ -954,7 +954,10 @@ function sceneEvent(tick) {
 
   const sub = subsolarPoint();
 
-  // Paint base: land (muted green) + ocean (muted navy), modulated by sun angle.
+  // Paint base: land (vibrant green by day, slate blue by night) +
+  // ocean (bright navy by day, near-black by night). Night-side land is
+  // tinted cool-blue rather than just darkened, so continents stay
+  // visible as silhouettes even in the dark.
   // Bottom strip reserved for ticker, so skip rows covered by it.
   for (let y = 0; y < H - 7; y++) {
     // Pixel-centre lat (matches build_world_mask.py formula)
@@ -962,37 +965,48 @@ function sceneEvent(tick) {
     for (let x = 0; x < W; x++) {
       const lon = (x + 0.5) / W * 360 - 180;
       const sf  = solarFactor(lon, lat, sub);
-      // Twilight curve: full day (sf >= 0.2) → dusk (-0.1) → deep night (< -0.1)
-      let b;
-      if      (sf >=  0.20) b = 1.00;
-      else if (sf >= -0.05) b = 0.45 + (sf + 0.05) / 0.25 * 0.55;  // dusk ramp
-      else if (sf >= -0.25) b = 0.25 + (sf + 0.25) / 0.20 * 0.20;  // civil twilight
-      else                  b = 0.22;                              // night floor
+
+      // dayMix: 1 = full sun, 0 = full night, smooth ramp across terminator.
+      let dayMix;
+      if      (sf >=  0.20) dayMix = 1.0;
+      else if (sf >= -0.10) dayMix = (sf + 0.10) / 0.30;
+      else                  dayMix = 0.0;
+      // Warm dusk boost along the terminator band
+      const warm = sf > -0.05 && sf < 0.2 ? 1 : 0;
 
       if (isLand(x, y)) {
-        // Hash-based pseudo-random so "cities" are stable per-pixel
-        const hash = ((x * 2654435761) ^ (y * 40503)) >>> 0;
-        // Dark-side city lights — like NASA's Black Marble imagery.
-        // Only kick in once the pixel is well past the terminator (sf < -0.10).
-        if (sf < -0.10 && (hash & 7) === 0) {
+        // Scrambled hash: two Math.imul + xorshift mixer so bit pattern
+        // is actually random-looking (no diagonal moire).
+        let h = Math.imul(x | 0, 374761393) + Math.imul(y | 0, 668265263) | 0;
+        h = Math.imul(h ^ (h >>> 13), 1274126177);
+        const hash = (h ^ (h >>> 16)) >>> 0;
+
+        // Dark-side city lights — NASA's Black Marble vibe.
+        if (dayMix < 0.05 && (hash & 7) === 0) {
           const flick = 0.75 + 0.25 * Math.sin(tick * 0.35 + (hash & 0xff) * 0.1);
           px(x, y,
              Math.round(255 * flick),
              Math.round(175 * flick),
              Math.round( 60 * flick));
         } else {
-          // Warm dusk tint when low sun
-          const warm = sf > -0.05 && sf < 0.2 ? 1 : 0;
+          // Lerp day-land (bright green, warmer near dusk) → night-land (slate blue)
+          const dayR = 60  + warm * 35;
+          const dayG = 135 - warm * 15;
+          const dayB = 75  - warm * 10;
+          const nightR = 25, nightG = 45, nightB = 85;
           px(x, y,
-             Math.round((40 + warm * 35)  * b),
-             Math.round((95 + warm * -10) * b),
-             Math.round((55 + warm * -15) * b));
+             Math.round(dayR * dayMix + nightR * (1 - dayMix)),
+             Math.round(dayG * dayMix + nightG * (1 - dayMix)),
+             Math.round(dayB * dayMix + nightB * (1 - dayMix)));
         }
       } else {
+        // Ocean: lerp day (brighter navy) → night (near-black indigo)
+        const dayR = 15,  dayG = 45,  dayB = 95;
+        const nightR = 3, nightG = 8, nightB = 22;
         px(x, y,
-           Math.round(10 * b),
-           Math.round(30 * b),
-           Math.round(60 * b));
+           Math.round(dayR * dayMix + nightR * (1 - dayMix)),
+           Math.round(dayG * dayMix + nightG * (1 - dayMix)),
+           Math.round(dayB * dayMix + nightB * (1 - dayMix)));
       }
     }
   }
