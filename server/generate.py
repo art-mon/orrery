@@ -6,7 +6,7 @@ Called by GitHub Actions on a schedule, or locally to test without the server.
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 try:
     from zoneinfo import ZoneInfo
@@ -21,6 +21,7 @@ import weather
 import image
 import briefing
 import generate_bg
+import fetch_clouds
 
 OUT = Path(__file__).parent.parent / "data"
 OUT.mkdir(exist_ok=True)
@@ -104,6 +105,26 @@ def run():
         safe(generate_bg.generate, daily, OUT)
         if bg_path.exists():
             print("✓ data/bg_weekly.json")
+
+    # Cloud coverage mask — refresh when the target date changes.
+    # GIBS MODIS Terra has ~1 day latency, so target = yesterday. The
+    # hourly workflow only downloads a new PNG once per day.
+    clouds_path  = OUT / "world_clouds.json"
+    target_cloud = (datetime.now(tz) - timedelta(days=1)).date().isoformat()
+    need_clouds  = True
+    if clouds_path.exists():
+        try:
+            stored = json.loads(clouds_path.read_text()).get("date", "")
+            if stored >= target_cloud:
+                need_clouds = False
+                print(f"Clouds already at {stored} — skipping")
+        except Exception:
+            pass
+    if need_clouds:
+        print("Clouds (NASA GIBS MODIS Terra)...")
+        safe(fetch_clouds.generate, OUT)
+        if clouds_path.exists():
+            print("✓ data/world_clouds.json")
 
     print("=== done ===")
 

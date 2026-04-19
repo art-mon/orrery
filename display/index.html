@@ -930,6 +930,31 @@ function isLand(x, y) {
   return (byte & (1 << bit)) !== 0;
 }
 
+// Cloud mask — fetched from NASA GIBS MODIS Terra (~1 day latency).
+// Same 64×32 bitfield layout as world_mask.
+let worldClouds = null;
+function loadWorldClouds() {
+  if (worldClouds) return;
+  fetch('../data/world_clouds.json')
+    .then(r => r.json())
+    .then(d => {
+      const raw = atob(d.clouds_b64);
+      const arr = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+      worldClouds = arr;
+      console.log('cloud mask loaded:', d.date, '(' + d.source + ')');
+    })
+    .catch(e => console.warn('world_clouds.json missing — skipping cloud overlay:', e));
+}
+
+function isCloud(x, y) {
+  if (!worldClouds) return false;
+  const bitIdx = y * W + x;
+  const byte = worldClouds[bitIdx >> 3];
+  const bit  = 7 - (bitIdx & 7);
+  return (byte & (1 << bit)) !== 0;
+}
+
 // Compute the subsolar point (lat, lon where the sun is directly overhead)
 // in degrees. Uses a simple approximation accurate to ~0.5° — plenty for
 // lighting a 64×32 map.
@@ -959,8 +984,9 @@ function solarFactor(lon, lat, sub) {
 function sceneEvent(tick) {
   clear();
 
-  // Lazy-load the mask on first draw
+  // Lazy-load the masks on first draw
   if (!worldMaskLand) loadWorldMask();
+  if (!worldClouds)   loadWorldClouds();
 
   const sub = subsolarPoint();
 
@@ -1057,6 +1083,40 @@ function sceneEvent(tick) {
            Math.min(255, Math.round(r)),
            Math.min(255, Math.round(g)),
            Math.min(255, Math.round(b)));
+      }
+    }
+  }
+
+  // Cloud overlay — real MODIS Terra coverage from ~1 day ago.
+  // Day side: blend strongly toward bright white (clouds catch sunlight).
+  // Night side: barely visible (only faint moonlight would show clouds).
+  // Event markers are drawn AFTER this pass so volcanoes/storms punch
+  // through the overcast.
+  if (worldClouds) {
+    for (let y = 0; y < H; y++) {
+      const lat = 90 - (y + 0.5) / H * 180;
+      for (let x = 0; x < W; x++) {
+        if (!isCloud(x, y)) continue;
+        const lon = (x + 0.5) / W * 360 - 180;
+        const sf  = solarFactor(lon, lat, sub);
+        let dayMix;
+        if      (sf >=  0.20) dayMix = 1.0;
+        else if (sf >= -0.10) dayMix = (sf + 0.10) / 0.30;
+        else                  dayMix = 0.0;
+
+        // Alpha: strong on day side, whisper on night side
+        const a = 0.15 + 0.65 * dayMix;
+        // Cloud colour: bright white with slight cool tint by day,
+        // dim blue-grey by night (Earth's own scattered starlight vibe)
+        const cR = 200 * dayMix + 35  * (1 - dayMix);
+        const cG = 215 * dayMix + 45  * (1 - dayMix);
+        const cB = 235 * dayMix + 65  * (1 - dayMix);
+
+        const [pr, pg, pb] = fb[y][x];
+        px(x, y,
+           Math.round(pr * (1 - a) + cR * a),
+           Math.round(pg * (1 - a) + cG * a),
+           Math.round(pb * (1 - a) + cB * a));
       }
     }
   }
