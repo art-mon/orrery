@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-19",
   "apod": {
-    "title": "PanSTARRS and Planets",
-    "date": "2026-04-18",
-    "explanation": "Near the eastern horizon before sunrise, Comet C/2025 R3 PanSTARRS is getting brighter. Readily visible in binoculars and small telescopes, the comet may be just on the verge of naked-eye visibility from dark sky sites. Though it was not quite apparent to the eye, PanSTARRS is still easy to spot in this camera image taken on April 16. In the view from a volcanic peak overlooking France's Reunion Island, planet Earth, the comet shares eastern predawn skies with naked-eye planets Mars and Mercury and fainter Neptune. Saturn is hiding behind the low cloudbank that doesn't quite hide an old crescent Moon. This is a good weekend for northern hemisphere comet watchers to try to catch PanSTARRS an hour or so before sunrise, as the comet grows brighter approaching its perihelion on April 19. On April 26 the comet makes its closest approach to our fair planet but by then will be difficult to see in the solar glare. Good views of this comet PanSTARRS in late April and early May will be from the southern hemisphere.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/PanstarrsPlanetsPerrotLab1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/PanstarrsPlanetsPerrot.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -14,106 +9,106 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HQ)",
+        "name": "(2026 HJ)",
         "hazardous": false,
-        "diameter_m": 4,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 165015,
-        "velocity_kmh": 13395
+        "diameter_m": 5,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 113515,
+        "velocity_kmh": 23332
       },
       {
-        "name": "(2026 GM1)",
+        "name": "(2026 HN)",
         "hazardous": false,
-        "diameter_m": 48,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 1329731,
-        "velocity_kmh": 20262
+        "diameter_m": 29,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 618986,
+        "velocity_kmh": 41097
       },
       {
-        "name": "(2026 GR2)",
+        "name": "(2026 GH1)",
         "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 2946052,
-        "velocity_kmh": 23545
+        "diameter_m": 54,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 8749520,
+        "velocity_kmh": 25327
       },
       {
-        "name": "(2026 FJ6)",
-        "hazardous": false,
-        "diameter_m": 150,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 6039750,
-        "velocity_kmh": 35443
-      },
-      {
-        "name": "(2026 GF1)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 8140575,
-        "velocity_kmh": 15478
-      },
-      {
-        "name": "(2015 KJ122)",
+        "name": "(2024 JX17)",
         "hazardous": true,
-        "diameter_m": 237,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 8649242,
-        "velocity_kmh": 73527
+        "diameter_m": 492,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 14925813,
+        "velocity_kmh": 73188
       },
       {
-        "name": "(2024 TX13)",
-        "hazardous": false,
-        "diameter_m": 73,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 16870739,
-        "velocity_kmh": 16059
-      },
-      {
-        "name": "(2021 VE4)",
+        "name": "(2019 HV3)",
         "hazardous": false,
         "diameter_m": 94,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 23602447,
-        "velocity_kmh": 43982
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 17659778,
+        "velocity_kmh": 33643
       },
       {
-        "name": "(2026 FU4)",
+        "name": "(2017 BF29)",
         "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 24324567,
-        "velocity_kmh": 9975
+        "diameter_m": 45,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 21563372,
+        "velocity_kmh": 2026
       },
       {
-        "name": "(2023 QD)",
+        "name": "90416 (2003 YK118)",
+        "hazardous": true,
+        "diameter_m": 1019,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 26906591,
+        "velocity_kmh": 35304
+      },
+      {
+        "name": "(2024 FE1)",
         "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-04-18",
-        "miss_distance_km": 27118453,
-        "velocity_kmh": 38072
+        "diameter_m": 35,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 28828760,
+        "velocity_kmh": 20336
+      },
+      {
+        "name": "(2023 KU)",
+        "hazardous": false,
+        "diameter_m": 208,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 29823906,
+        "velocity_kmh": 86667
+      },
+      {
+        "name": "(2021 RW99)",
+        "hazardous": false,
+        "diameter_m": 183,
+        "close_approach_date": "2026-04-19",
+        "miss_distance_km": 46436340,
+        "velocity_kmh": 60784
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.7,
-    "feels_c": 7.7,
-    "humidity": 75,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 1.9
+    "temp_c": 11.0,
+    "feels_c": 10.0,
+    "humidity": 70,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast": {
-    "date": "2026-04-19",
+    "date": "2026-04-20",
     "city": "City of Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 21.5,
-    "humidity": 64,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.6
+    "temp_min_c": 9.3,
+    "temp_max_c": 13.5,
+    "humidity": 92,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 6.1
   }
 }
