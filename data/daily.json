@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-19",
+  "generated": "2026-04-20",
   "apod": {
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
@@ -92,18 +92,18 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.8,
-    "feels_c": 10.2,
-    "humidity": 85,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 0.3
+    "temp_c": 9.8,
+    "feels_c": 9.8,
+    "humidity": 89,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 4.3
   },
   "forecast": {
     "date": "2026-04-20",
     "city": "Zagreb",
-    "temp_min_c": 7.8,
+    "temp_min_c": 8.1,
     "temp_max_c": 11,
     "humidity": 90,
     "condition": "Rain",
