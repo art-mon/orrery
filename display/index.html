@@ -187,7 +187,7 @@
 
 <h1>64 × 32 LED Matrix — Layout Mockup</h1>
 
-<p class="tagline"><strong>Orrery</strong> is a 64×32 LED matrix dashboard powered by NASA's open APIs. It displays live weather, asteroid approaches, Earth events, and the Astronomy Picture of the Day — with an AI-generated background that shifts hue through the day. Hit <strong>📻 Broadcast</strong> to hear a daily space briefing written by GPT-4o and read aloud using OpenAI TTS.</p>
+<p class="tagline"><strong>Orrery</strong> is a 64×32 LED matrix dashboard powered by NASA's open APIs. It displays live weather, the current <strong>moon phase</strong>, asteroid approaches, Earth events with day/night illumination, and the Astronomy Picture of the Day — all over an AI-generated background that shifts hue through the day. Hit <strong>📻 Broadcast</strong> to hear a daily space briefing written by GPT-4o and read aloud using OpenAI TTS.</p>
 
 <div class="matrix-wrap">
   <canvas id="matrix"></canvas>
@@ -920,20 +920,67 @@ function isLand(x, y) {
   return (byte & (1 << bit)) !== 0;
 }
 
+// Compute the subsolar point (lat, lon where the sun is directly overhead)
+// in degrees. Uses a simple approximation accurate to ~0.5° — plenty for
+// lighting a 64×32 map.
+function subsolarPoint(date) {
+  const d    = date || new Date();
+  // Day of year (1..365/366)
+  const start = Date.UTC(d.getUTCFullYear(), 0, 0);
+  const doy  = Math.floor((d.getTime() - start) / 86400000);
+  // Solar declination (axial tilt × sin of orbital angle)
+  const decl = 23.44 * Math.sin(2 * Math.PI * (doy - 80) / 365.25);
+  // Subsolar longitude — noon UTC is at 0°, sweeps west at 15°/hr
+  const ut   = d.getUTCHours() + d.getUTCMinutes()/60 + d.getUTCSeconds()/3600;
+  const sLon = ((180 - ut * 15) + 540) % 360 - 180;   // wrap to -180..180
+  return { lat: decl, lon: sLon };
+}
+
+// Return solar elevation factor at (lon, lat): 1 = overhead, 0 = at horizon,
+// < 0 = below horizon (night).
+function solarFactor(lon, lat, sub) {
+  const φ1 = lat   * Math.PI / 180;
+  const φ2 = sub.lat * Math.PI / 180;
+  const Δλ = (lon - sub.lon) * Math.PI / 180;
+  // cos(zenith) = sin φ₁ sin φ₂ + cos φ₁ cos φ₂ cos Δλ
+  return Math.sin(φ1) * Math.sin(φ2) + Math.cos(φ1) * Math.cos(φ2) * Math.cos(Δλ);
+}
+
 function sceneEvent(tick) {
   clear();
 
   // Lazy-load the mask on first draw
   if (!worldMaskLand) loadWorldMask();
 
-  // Paint base: land (muted green) + ocean (muted navy). Bottom strip reserved
-  // for the ticker, so skip rows covered by it.
+  const sub = subsolarPoint();
+
+  // Paint base: land (muted green) + ocean (muted navy), modulated by sun angle.
+  // Bottom strip reserved for ticker, so skip rows covered by it.
   for (let y = 0; y < H - 7; y++) {
+    // Pixel-centre lat (matches build_world_mask.py formula)
+    const lat = 90 - (y + 0.5) / H * 180;
     for (let x = 0; x < W; x++) {
+      const lon = (x + 0.5) / W * 360 - 180;
+      const sf  = solarFactor(lon, lat, sub);
+      // Twilight curve: full day (sf >= 0.2) → dusk (-0.1) → deep night (< -0.1)
+      let b;
+      if      (sf >=  0.20) b = 1.00;
+      else if (sf >= -0.05) b = 0.45 + (sf + 0.05) / 0.25 * 0.55;  // dusk ramp
+      else if (sf >= -0.25) b = 0.25 + (sf + 0.25) / 0.20 * 0.20;  // civil twilight
+      else                  b = 0.22;                              // night floor
+
       if (isLand(x, y)) {
-        px(x, y, 40, 95, 55);     // land
+        // Warm dusk tint when low sun
+        const warm = sf > -0.05 && sf < 0.2 ? 1 : 0;
+        px(x, y,
+           Math.round((40 + warm * 35)  * b),
+           Math.round((95 + warm * -10) * b),
+           Math.round((55 + warm * -15) * b));
       } else {
-        px(x, y, 10, 30, 60);     // ocean
+        px(x, y,
+           Math.round(10 * b),
+           Math.round(30 * b),
+           Math.round(60 * b));
       }
     }
   }
@@ -955,10 +1002,6 @@ function sceneEvent(tick) {
     else if (cat.includes('ice') || cat.includes('snow')) { r=200; g=230; b=255; }
     if (pulse < 3) circle(mx, my, pulse, r, g, b, false);
     px(mx, my, 255, 255, 200);
-  }
-  // No events fallback — draw a quiet globe indicator
-  if (markers.length === 0) {
-    textOutlined('QUIET', Math.floor((W - textWidth('QUIET'))/2), 11, 80, 180, 100);
   }
 
   // Time overlay
