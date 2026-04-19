@@ -1579,6 +1579,10 @@ const GALAXY_TRIVIA = [
 let galaxySprite  = null;        // { frames, fps, width, height, framesRGB888: Uint8ClampedArray[] }
 let galaxyLoading = false;
 let galaxyMissing = false;
+// Local frame tick for the sprite — reset on scene entry so every visit
+// starts at frame 0, avoiding the "few frames of the old animation" jump
+// that happens when a global tick indexes into a non-seamless loop.
+let galaxyFrameTick = 0;
 
 function _rgb565beToRgb888(bin, width, height, frameCount) {
   // Returns an array of Uint8ClampedArray, one per frame, length W*H*3
@@ -1657,7 +1661,10 @@ function sceneGalaxy(tick) {
     const { frames, fps, framesRGB888 } = galaxySprite;
     // tick is 80 ms per frame → ticksPerSpriteFrame = (1000 / fps) / 80
     const ticksPerSpriteFrame = Math.max(1, Math.round((1000 / fps) / 80));
-    const idx = Math.floor(tick / ticksPerSpriteFrame) % frames;
+    // Drive from the local scene-entry counter (reset in advanceScene /
+    // manual scene selection) so playback always starts at frame 0.
+    const idx = Math.floor(galaxyFrameTick / ticksPerSpriteFrame) % frames;
+    galaxyFrameTick++;
     const frame = framesRGB888[idx];
     for (let y = 0; y < H; y++) {
       for (let x = 0; x < W; x++) {
@@ -2069,6 +2076,14 @@ function sceneEnabled(name) {
   return true;
 }
 
+// Per-scene entry hook — reset any local playback counters so a scene
+// always starts from its beginning rather than wherever the global tick
+// happens to land. Called from advanceScene() and manual scene selection.
+function onSceneEnter(name) {
+  if (name === 'galaxy') galaxyFrameTick = 0;
+  // Add future per-scene counters here.
+}
+
 function advanceScene() {
   for (let i = 0; i < SCENES.length; i++) {
     sceneIndex = (sceneIndex + 1) % SCENES.length;
@@ -2078,6 +2093,7 @@ function advanceScene() {
   viewTick     = 0;
   viewCount    = 0;
   tickerOffset = 0;
+  onSceneEnter(currentScene);
   document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
   document.querySelector(`[data-scene="${currentScene}"]`)?.classList.add('active');
   document.getElementById('info-panel').innerHTML = SCENE_INFO[currentScene]?.desc || '';
@@ -2127,6 +2143,7 @@ document.querySelectorAll('[data-scene]').forEach(btn => {
     viewTick     = 0;
     viewCount    = 0;
     tickerOffset = 0; _tickerAccum = 0;
+    onSceneEnter(currentScene);
     document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     document.getElementById('info-panel').innerHTML = SCENE_INFO[currentScene]?.desc || '';
@@ -2156,6 +2173,7 @@ todSlider.addEventListener('input', () => {
   // switch to daily so the user sees the hue preview immediately
   currentScene = 'daily';
   sceneIndex   = SCENES.indexOf('daily');
+  onSceneEnter(currentScene);
   document.querySelectorAll('[data-scene]').forEach(b => b.classList.remove('active'));
   document.querySelector('[data-scene="daily"]').classList.add('active');
   document.getElementById('info-panel').innerHTML = SCENE_INFO['daily'].desc;
