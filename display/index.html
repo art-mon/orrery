@@ -1284,20 +1284,26 @@ function effectiveMoonPhase() {
   return phaseOverride !== null ? phaseOverride : todayPhase;
 }
 
-// Fixed starfield for the moon scene — hand-placed to fill the left side
-// without running into the big moon on the right.
+// Fixed starfield for the moon scene — hand-placed so most stars live
+// in the wider left gap (moon shifted right to x≈38) with a handful
+// peeking out on the narrow right side too.
 const NIGHT_STARS = [
-  {x:  3, y:  3}, {x: 11, y:  2}, {x: 20, y:  5}, {x:  7, y:  7},
-  {x: 16, y: 10}, {x: 25, y:  9}, {x:  4, y: 13}, {x: 13, y: 15},
-  {x: 22, y: 14}, {x: 29, y: 17}, {x:  9, y: 20}, {x: 18, y: 22},
-  {x:  2, y: 23}, {x: 26, y: 21},
+  // Left region — generous coverage
+  {x:  2, y:  2}, {x:  8, y:  4}, {x: 14, y:  1}, {x: 20, y:  6},
+  {x:  5, y:  9}, {x: 11, y: 11}, {x: 17, y: 13}, {x: 22, y: 10},
+  {x:  3, y: 16}, {x:  9, y: 18}, {x: 15, y: 20}, {x: 20, y: 17},
+  {x:  6, y: 23}, {x: 12, y: 27}, {x: 19, y: 25}, {x:  2, y: 29},
+  {x: 23, y: 22}, {x: 17, y: 29}, {x: 21, y:  2}, {x:  7, y: 14},
+  // Right sliver — sparse highlights
+  {x: 58, y:  3}, {x: 62, y:  9}, {x: 60, y: 18}, {x: 57, y: 26},
+  {x: 61, y: 29},
 ];
 
 // ─── Cloud field (drifts across the moon scene) ───────────────────────────────
 // Two stacked sine-noise layers, different frequencies + scroll speeds,
 // gives convincing parallax without any texture data. Alpha is thresholded
 // with a soft gradient so clouds have fluffy edges, not blocky cutouts.
-const MOON_CX = 32, MOON_CY = 16, MOON_R = 15;
+const MOON_CX = 38, MOON_CY = 16, MOON_R = 15;
 
 function cloudAlpha(x, y, tick) {
   const off1 = tick * 0.12;   // back layer — slow
