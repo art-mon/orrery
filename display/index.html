@@ -1133,6 +1133,44 @@ function sampleMoonTex(dx, dy, rad) {
   return v > 0 ? v : 200;   // fallback for disc-edge gaps
 }
 
+// 15×15 mineral-moon tint map (aligned with MOON_TEX). Each value indexes
+// MOON_PALETTE: 0 = neutral highland grey, 1 = blue Ti-rich mare
+// (Tranquillitatis / Serenitatis / Crisium), 2 = orange Fe-rich mare
+// (Imbrium / Nubium / Humorum / Fecunditatis / Nectaris / Procellarum),
+// 3 = Tycho bright rays.
+const MOON_TINT = new Uint8Array([
+  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  0,0,0,0,0,2,2,2,1,1,0,0,0,0,0,
+  0,0,0,0,2,2,2,2,1,1,1,1,0,0,0,
+  0,0,0,0,2,2,2,2,1,1,1,1,0,0,0,
+  0,0,0,2,2,2,2,0,1,1,0,1,0,0,0,
+  0,0,0,2,2,2,2,0,0,1,1,0,0,0,0,
+  0,0,2,2,0,0,0,0,0,0,2,0,0,0,0,
+  0,0,0,2,0,0,0,0,0,2,2,0,0,0,0,
+  0,0,0,2,2,2,0,0,0,2,0,0,0,0,0,
+  0,0,0,2,2,2,0,0,3,3,0,0,0,0,0,
+  0,0,0,0,0,0,0,3,3,3,0,0,0,0,0,
+  0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,
+  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+  0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+]);
+
+// RGB multipliers — applied to the per-pixel texture intensity
+const MOON_PALETTE = [
+  [1.00, 0.97, 0.82],   // 0: neutral warm-grey highland
+  [0.55, 0.80, 1.20],   // 1: Ti-rich BLUE mare
+  [1.30, 0.80, 0.45],   // 2: Fe-rich ORANGE mare
+  [1.10, 1.05, 0.95],   // 3: Tycho bright rays (near-white)
+];
+
+function sampleMoonTint(dx, dy, rad) {
+  const tx = Math.round((dx / rad) * 7 + 7);
+  const ty = Math.round((dy / rad) * 7 + 7);
+  if (tx < 0 || tx > 14 || ty < 0 || ty > 14) return MOON_PALETTE[0];
+  return MOON_PALETTE[MOON_TINT[ty * 15 + tx]] || MOON_PALETTE[0];
+}
+
 function drawMoon(cx, cy, rad, phase) {
   const halfCycle = LUNAR_CYCLE / 2;
   const waxing    = phase <= halfCycle;
@@ -1154,24 +1192,30 @@ function drawMoon(cx, cy, rad, phase) {
 
       const intensity = sampleMoonTex(dx, dy, rad);
 
+      const tint = sampleMoonTint(dx, dy, rad);
+
       if (lit) {
         // Soft terminator: dim pixels right on the shadow edge
         const termDist = Math.abs(nx - shadowEdge);
         const term     = termDist < 0.15 ? 0.55 + termDist / 0.15 * 0.45 : 1.0;
         const i        = intensity * term * lumScale;
-        // Warm lunar grey tint
+        // Apply mineral-moon tint (blue Ti mare, orange Fe mare, etc.)
         px(cx + dx, cy + dy,
-           Math.min(255, Math.round(i * 1.00)),
-           Math.min(255, Math.round(i * 0.97)),
-           Math.min(255, Math.round(i * 0.82)));
+           Math.min(255, Math.round(i * tint[0])),
+           Math.min(255, Math.round(i * tint[1])),
+           Math.min(255, Math.round(i * tint[2])));
       } else {
-        // Earthshine: the dark side faintly reflects Earth's glow, cool blue.
-        // Keeps the whole lunar disc visible as a ghostly circle at low phases.
-        const i = intensity * 0.10;
+        // Earthshine: dim disc on the shadow side, bumped to 22% so mare
+        // contrast stays visible at low phases. Tint desaturated toward cool
+        // blue (Earth's reflected light is blue-tinted).
+        const i = intensity * 0.22;
+        const r = i * (tint[0] * 0.35 + 0.30);
+        const g = i * (tint[1] * 0.35 + 0.45);
+        const b = i * (tint[2] * 0.35 + 0.65);
         px(cx + dx, cy + dy,
-           Math.round(i * 0.55),
-           Math.round(i * 0.70),
-           Math.round(i * 1.00));
+           Math.min(255, Math.round(r)),
+           Math.min(255, Math.round(g)),
+           Math.min(255, Math.round(b)));
       }
     }
   }
