@@ -1020,14 +1020,14 @@ function sceneEvent(tick) {
           b += boost * 1.0;
         }
 
-        // Sun glint: bright specular highlight near the subsolar point,
-        // falls off sharply so it reads as a reflected disc on the sea.
-        if (sf > 0.90) {
-          const gl = (sf - 0.90) / 0.10;
-          const g2 = gl * gl;
-          r += g2 * 120;
-          g += g2 * 160;
-          b += g2 * 180;
+        // Sun glint: soft broad halo around the subsolar point — think
+        // diffuse sunlight on the sea, not a laser spot. Linear falloff
+        // over a wide band so the highlight blends into the day-side blue.
+        if (sf > 0.55) {
+          const gl = (sf - 0.55) / 0.45;     // 0..1 across a wide band
+          r += gl * 80;
+          g += gl * 120;
+          b += gl * 150;
         }
 
         px(x, y,
