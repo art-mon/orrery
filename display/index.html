@@ -970,12 +970,24 @@ function sceneEvent(tick) {
       else                  b = 0.22;                              // night floor
 
       if (isLand(x, y)) {
-        // Warm dusk tint when low sun
-        const warm = sf > -0.05 && sf < 0.2 ? 1 : 0;
-        px(x, y,
-           Math.round((40 + warm * 35)  * b),
-           Math.round((95 + warm * -10) * b),
-           Math.round((55 + warm * -15) * b));
+        // Hash-based pseudo-random so "cities" are stable per-pixel
+        const hash = ((x * 2654435761) ^ (y * 40503)) >>> 0;
+        // Dark-side city lights — like NASA's Black Marble imagery.
+        // Only kick in once the pixel is well past the terminator (sf < -0.10).
+        if (sf < -0.10 && (hash & 7) === 0) {
+          const flick = 0.75 + 0.25 * Math.sin(tick * 0.35 + (hash & 0xff) * 0.1);
+          px(x, y,
+             Math.round(255 * flick),
+             Math.round(175 * flick),
+             Math.round( 60 * flick));
+        } else {
+          // Warm dusk tint when low sun
+          const warm = sf > -0.05 && sf < 0.2 ? 1 : 0;
+          px(x, y,
+             Math.round((40 + warm * 35)  * b),
+             Math.round((95 + warm * -10) * b),
+             Math.round((55 + warm * -15) * b));
+        }
       } else {
         px(x, y,
            Math.round(10 * b),
@@ -1004,9 +1016,9 @@ function sceneEvent(tick) {
     px(mx, my, 255, 255, 200);
   }
 
-  // Time overlay
+  // Time overlay — time in bottom-left (just above ticker), day in top-right
   const _day = dayStr();
-  textOutlined(timeStr(), 1, 1, 255, 255, 255);
+  textOutlined(timeStr(), 1, H-14, 255, 255, 255);
   textOutlined(_day, W-textWidth(_day)-1, 1, 200, 200, 200);
 
   // Event ticker
