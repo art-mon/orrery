@@ -1303,16 +1303,17 @@ function cloudAlpha(x, y, tick) {
   const off1 = tick * 0.12;   // back layer — slow
   const off2 = tick * 0.28;   // front layer — faster
 
-  // Back layer: big, slow wisps — stretched horizontally (y freq << x freq)
-  // so wisps read as flat bands like real cirrus, not vertical columns.
+  // Separable product form: y-only factor carves horizontal bands (so the
+  // "stripe direction" is truly horizontal), x-only factor (with scroll
+  // offset) gives along-band structure that slides sideways as tick grows.
+  // Net effect: horizontal wisps drifting purely horizontally.
   const n1 = 0.5
-    + 0.35 * Math.sin((x + off1) * 0.11 + y * 0.018)
-    + 0.25 * Math.sin((x + off1) * 0.18 - y * 0.030 + 1.7);
+    + 0.35 * Math.sin(y * 0.28 + 0.3) * Math.cos((x + off1) * 0.09)
+    + 0.25 * Math.sin(y * 0.22 - 0.7) * Math.cos((x + off1) * 0.15 + 1.7);
 
-  // Front layer: thinner horizontal streaks
   const n2 = 0.5
-    + 0.30 * Math.sin((x + off2) * 0.23 + y * 0.022 + 3.1)
-    + 0.20 * Math.sin((x + off2) * 0.41 - y * 0.045 + 0.4);
+    + 0.30 * Math.sin(y * 0.32 + 2.1) * Math.cos((x + off2) * 0.13 + 3.1)
+    + 0.20 * Math.sin(y * 0.38 + 0.4) * Math.cos((x + off2) * 0.21 + 0.4);
 
   // Combine and soft-threshold. Raising the threshold = sparser sky.
   const n = (n1 * 0.6 + n2 * 0.4);
