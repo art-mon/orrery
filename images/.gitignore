@@ -1,0 +1,3 @@
+# Ignore every source image — we only commit the generated texture JSON in data/
+*
+!.gitignore
