@@ -82,16 +82,21 @@ def run():
     if (OUT / "briefing.txt").exists():
         print("✓ data/briefing.txt")
 
-    # AI background — regenerate once per day
+    # AI background — regenerate once per ISO week (bg_weekly.json lives up to its name)
     bg_path  = OUT / "bg_weekly.json"
-    today    = datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).date().isoformat()
+    tz       = ZoneInfo(os.getenv("TIMEZONE", "UTC"))
+    today    = datetime.now(tz).date()
+    this_wk  = today.isocalendar()[:2]    # (iso_year, iso_week)
     need_bg  = True
     if bg_path.exists():
         try:
-            stored_date = json.loads(bg_path.read_text()).get("generated", "")[:10]
-            if stored_date == today:
+            stored_raw = json.loads(bg_path.read_text()).get("generated", "")
+            # "generated" is an ISO timestamp — take the date part (YYYY-MM-DD)
+            stored_date = datetime.fromisoformat(stored_raw[:10]).date()
+            if stored_date.isocalendar()[:2] == this_wk:
                 need_bg = False
-                print(f"Background already generated today ({today}) — skipping")
+                yr, wk = this_wk
+                print(f"Background already generated this week ({yr}-W{wk:02d}) — skipping")
         except Exception:
             pass
     if need_bg:
