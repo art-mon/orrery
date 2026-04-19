@@ -1020,16 +1020,16 @@ function sceneEvent(tick) {
           b += boost * 1.0;
         }
 
-        // Day-side wave sparkles — brighter cyan-white "crests" flicker
-        // across sunlit water, mirroring the city-light pattern on land
-        // at night. Different hash-bit window so they don't pile on top
-        // of shimmer pixels.
-        if (dayMix > 0.30 && ((shim >> 4) & 3) === 0) {
-          const flick    = 0.65 + 0.35 * Math.sin(tick * 0.40 + (shim & 0xff) * 0.08);
+        // Day-side wave sparkles — occasional cyan-white "crests" catch
+        // the sun. Sparse and slow so they feel like real highlights on
+        // a calm sea, not glitter. Different hash window from shimmer
+        // so the two effects don't pile on the same pixels.
+        if (dayMix > 0.40 && ((shim >> 4) & 15) === 0) {
+          const flick    = 0.55 + 0.45 * Math.sin(tick * 0.25 + (shim & 0xff) * 0.08);
           const strength = flick * dayMix;
-          r += 90  * strength;
-          g += 140 * strength;
-          b += 170 * strength;
+          r += 55  * strength;
+          g += 95  * strength;
+          b += 125 * strength;
         }
 
         // Sun glint: soft broad halo around the subsolar point — diffuse
