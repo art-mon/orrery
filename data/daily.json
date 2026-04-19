@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Eye on the Milky Way",
+    "date": "2026-04-19",
+    "explanation": "Have you ever had stars in your eyes? It appears that the eye on the left does, and moreover, it appears to be gazing at even more stars. The featured 27-frame mosaic was taken in 2019 from Ojas de Salar in the Atacama Desert of Chile.  The eye is actually a small lagoon captured reflecting the dark night sky as the Milky Way Galaxy arched overhead. The seemingly smooth band of the Milky Way is really composed of billions of stars, but decorated with filaments of light-absorbing dust and red-glowing nebulas. Additionally, both Jupiter (slightly left the galactic arch) and Saturn (slightly to the right) are visible.  The lights of small towns dot the unusual vertical horizon.  The rocky terrain around the lagoon appears to some more like the surface of Mars than our Earth.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_1380.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,24 +96,24 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 21.0,
-    "feels_c": 20.1,
-    "humidity": 34,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "city": "Zagreb",
+    "temp_c": 19.0,
+    "feels_c": 17.9,
+    "humidity": 36,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 8.4
   },
   "forecast": {
     "date": "2026-04-20",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 12.4,
-    "humidity": 89,
+    "temp_min_c": 6.3,
+    "temp_max_c": 10.0,
+    "humidity": 94,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 7.7
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 6.4
   }
 }
