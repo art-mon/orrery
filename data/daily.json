@@ -1,61 +1,18 @@
 {
   "generated": "2026-04-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Eye on the Milky Way",
+    "date": "2026-04-19",
+    "explanation": "Have you ever had stars in your eyes? It appears that the eye on the left does, and moreover, it appears to be gazing at even more stars. The featured 27-frame mosaic was taken in 2019 from Ojas de Salar in the Atacama Desert of Chile.  The eye is actually a small lagoon captured reflecting the dark night sky as the Milky Way Galaxy arched overhead. The seemingly smooth band of the Milky Way is really composed of billions of stars, but decorated with filaments of light-absorbing dust and red-glowing nebulas. Additionally, both Jupiter (slightly left the galactic arch) and Saturn (slightly to the right) are visible.  The lights of small towns dot the unusual vertical horizon.  The rocky terrain around the lagoon appears to some more like the surface of Mars than our Earth.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_1380.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2026 HJ)",
-        "hazardous": false,
-        "diameter_m": 5,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 113515,
-        "velocity_kmh": 23332
-      },
-      {
-        "name": "(2026 HN)",
-        "hazardous": false,
-        "diameter_m": 29,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 618986,
-        "velocity_kmh": 41097
-      },
-      {
-        "name": "(2026 GH1)",
-        "hazardous": false,
-        "diameter_m": 54,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 8749520,
-        "velocity_kmh": 25327
-      },
-      {
-        "name": "(2024 JX17)",
-        "hazardous": true,
-        "diameter_m": 492,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 14925813,
-        "velocity_kmh": 73188
-      },
-      {
-        "name": "(2019 HV3)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 17659778,
-        "velocity_kmh": 33643
-      },
-      {
-        "name": "(2017 BF29)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 21563372,
-        "velocity_kmh": 2026
-      },
       {
         "name": "90416 (2003 YK118)",
         "hazardous": true,
@@ -65,50 +22,98 @@
         "velocity_kmh": 35304
       },
       {
-        "name": "(2024 FE1)",
+        "name": "(2009 UC19)",
         "hazardous": false,
-        "diameter_m": 35,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 28828760,
-        "velocity_kmh": 20336
+        "diameter_m": 54,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 15047308,
+        "velocity_kmh": 31565
       },
       {
-        "name": "(2023 KU)",
-        "hazardous": false,
-        "diameter_m": 208,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 29823906,
-        "velocity_kmh": 86667
+        "name": "(2004 PJ2)",
+        "hazardous": true,
+        "diameter_m": 288,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 10093295,
+        "velocity_kmh": 22631
       },
       {
-        "name": "(2021 RW99)",
+        "name": "612786 (2004 PJ2)",
+        "hazardous": true,
+        "diameter_m": 303,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 10093329,
+        "velocity_kmh": 22631
+      },
+      {
+        "name": "434196 (2003 HG2)",
+        "hazardous": true,
+        "diameter_m": 290,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 22877261,
+        "velocity_kmh": 36684
+      },
+      {
+        "name": "54071 (2000 GQ146)",
         "hazardous": false,
-        "diameter_m": 183,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 46436340,
-        "velocity_kmh": 60784
+        "diameter_m": 1959,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 23600402,
+        "velocity_kmh": 48094
+      },
+      {
+        "name": "(2005 YO128)",
+        "hazardous": false,
+        "diameter_m": 71,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 66482726,
+        "velocity_kmh": 49367
+      },
+      {
+        "name": "(2011 TK5)",
+        "hazardous": false,
+        "diameter_m": 156,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 73640984,
+        "velocity_kmh": 72682
+      },
+      {
+        "name": "(2009 UZ87)",
+        "hazardous": false,
+        "diameter_m": 39,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 32391664,
+        "velocity_kmh": 22771
+      },
+      {
+        "name": "(2011 UK10)",
+        "hazardous": false,
+        "diameter_m": 57,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 51372869,
+        "velocity_kmh": 22255
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.0,
-    "feels_c": 20.4,
-    "humidity": 46,
+    "city": "Donji grad",
+    "temp_c": 22.2,
+    "feels_c": 21.5,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 5.5
   },
   "forecast": {
     "date": "2026-04-20",
-    "city": "Zagreb",
-    "temp_min_c": 6.8,
-    "temp_max_c": 13,
-    "humidity": 88,
+    "city": "Donji grad",
+    "temp_min_c": 6.5,
+    "temp_max_c": 12.4,
+    "humidity": 89,
     "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.0
+    "wind_kmh": 7.7
   }
 }
