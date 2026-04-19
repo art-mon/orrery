@@ -637,12 +637,16 @@ function dayStr() {
 }
 
 function drawTicker(str, y, r, g, b, bg_r=0, bg_g=0, bg_b=0) {
-  // Fill ticker bg
-  rect(0, y, W, 7, bg_r, bg_g, bg_b);
+  // Transparent ticker: no background band — text is drawn outlined so it
+  // stays legible over whatever scene art is underneath. bg_r/g/b kept
+  // for backward-compat with older call sites but intentionally ignored.
   const full = str + '   ';
-  const fw = textWidth(full) + 4;
-  const x = W - (tickerOffset % (fw + W));
-  text(full, x, y+1, r, g, b);
+  const fw   = textWidth(full) + 4;
+  const x    = W - (tickerOffset % (fw + W));
+  const ty   = y + 1;
+  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
+    text(full, x+dx, ty+dy, 0, 0, 0);
+  text(full, x, ty, r, g, b);
 }
 
 // ─── Scenes ───────────────────────────────────────────────────────────────────
@@ -1308,17 +1312,10 @@ function sceneNight(tick) {
   // Time overlay, top-left (outlined so it reads over the moon edge)
   textOutlined(timeStr(), 1, 1, 140, 125, 195);
 
-  // Phase info ticker at the bottom — NO background band, outlined text
-  // scrolls transparently over the moon so the hero isn't clipped.
+  // Phase info ticker at the bottom — drawTicker is globally transparent
+  // + outlined now, so it rides on top of the moon without clipping it.
   const illum = Math.round((1 - Math.cos(phase / LUNAR_CYCLE * 2 * Math.PI)) / 2 * 100);
-  const msg   = 'MOON  ~  ' + moonPhaseName(phase).toUpperCase() + '  ~  ' + illum + '% LIT';
-  const full  = msg + '   ';
-  const fw    = textWidth(full) + 4;
-  const tx    = W - (tickerOffset % (fw + W));
-  // Dark outline + warm-yellow glyphs
-  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
-    text(full, tx+dx, H-5+dy, 0, 0, 0);
-  text(full, tx, H-5, 160, 160, 120);
+  drawTicker('MOON  ~  ' + moonPhaseName(phase).toUpperCase() + '  ~  ' + illum + '% LIT', H-6, 160, 160, 120);
 }
 
 // ─── Galaxy scene ─────────────────────────────────────────────────────────────
