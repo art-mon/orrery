@@ -1359,6 +1359,105 @@ const NIGHT_STARS = [
   {x: 61, y: 29},
 ];
 
+// ─── Shooting star ────────────────────────────────────────────────────────────
+// Rare meteor streaks across the moon scene. Head is bright white, short
+// trail dims behind it. One in flight at a time, spawned every ~45-90 s.
+let shootingStar     = null;   // {x, y, vx, vy, life}
+let nextShootingTick = 450;    // ticks (80 ms each) → ~36 s for first one
+
+function updateShootingStar(tick) {
+  if (shootingStar) {
+    shootingStar.x += shootingStar.vx;
+    shootingStar.y += shootingStar.vy;
+    shootingStar.life--;
+    if (shootingStar.life <= 0
+        || shootingStar.x < -4 || shootingStar.x > W + 4
+        || shootingStar.y < -4 || shootingStar.y > H + 4) {
+      shootingStar = null;
+      // Next meteor in 45-90 s (~560-1125 ticks at 80 ms)
+      nextShootingTick = tick + 560 + Math.floor(Math.random() * 565);
+    }
+  } else if (tick >= nextShootingTick) {
+    // Spawn from upper-left/upper edge, heading down-right at a shallow angle
+    const fromLeft = Math.random() < 0.5;
+    shootingStar = fromLeft
+      ? { x: -2, y: 2 + Math.random() * 8,  vx: 2.0, vy: 0.6, life: 14 }
+      : { x: 4 + Math.random() * 20, y: -2, vx: 1.7, vy: 0.9, life: 14 };
+  }
+}
+
+function drawShootingStar() {
+  if (!shootingStar) return;
+  const { x, y, vx, vy } = shootingStar;
+  // Head + 4-pixel trail dimming behind the direction of travel
+  const steps = [
+    { k: 0, r: 255, g: 255, b: 255 },
+    { k: 1, r: 200, g: 215, b: 245 },
+    { k: 2, r: 130, g: 160, b: 210 },
+    { k: 3, r:  70, g:  95, b: 150 },
+    { k: 4, r:  35, g:  50, b:  90 },
+  ];
+  for (const s of steps) {
+    const tx = Math.round(x - vx * s.k);
+    const ty = Math.round(y - vy * s.k);
+    px(tx, ty, s.r, s.g, s.b);
+  }
+}
+
+// ─── Spacecraft flyby ─────────────────────────────────────────────────────────
+// Tiny satellite silhouette drifts across the scene every minute or so,
+// sometimes passing the moon for silhouette drama.
+// Sprite: 7×3 satellite with two solar panels and a body. 0 = transparent,
+// 1 = body (white-ish), 2 = panel (cool grey), 3 = nav light (blinks red).
+const SHIP_SPRITE = [
+  [0, 0, 2, 1, 2, 0, 0],
+  [2, 2, 1, 1, 1, 2, 2],
+  [0, 0, 2, 3, 2, 0, 0],
+];
+
+let spacecraft     = null;     // {x, y, vx, life}
+let nextShipTick   = 300;      // first flyby ~24 s in
+
+function updateSpacecraft(tick) {
+  if (spacecraft) {
+    spacecraft.x += spacecraft.vx;
+    if (spacecraft.x < -10 || spacecraft.x > W + 10) {
+      spacecraft = null;
+      // Next flyby in 60-120 s
+      nextShipTick = tick + 750 + Math.floor(Math.random() * 750);
+    }
+  } else if (tick >= nextShipTick) {
+    const leftToRight = Math.random() < 0.5;
+    // y-range clusters around the moon so flybys look dramatic against it
+    const y = 8 + Math.floor(Math.random() * 16);  // 8..23
+    spacecraft = leftToRight
+      ? { x: -8,    y, vx:  0.35 }
+      : { x: W + 7, y, vx: -0.35 };
+  }
+}
+
+function drawSpacecraft(tick) {
+  if (!spacecraft) return;
+  const baseX = Math.round(spacecraft.x);
+  const baseY = spacecraft.y;
+  // Nav light blinks about once per second (every ~12 ticks)
+  const blinkOn = (tick % 12) < 6;
+  for (let row = 0; row < SHIP_SPRITE.length; row++) {
+    for (let col = 0; col < SHIP_SPRITE[row].length; col++) {
+      const cell = SHIP_SPRITE[row][col];
+      if (!cell) continue;
+      const dx = baseX + col - 3;   // centre the sprite on its x
+      const dy = baseY + row - 1;
+      let r, g, b;
+      if      (cell === 1) { r = 220; g = 225; b = 235; }   // body
+      else if (cell === 2) { r =  95; g = 115; b = 150; }   // solar panel
+      else                 { if (!blinkOn) continue;
+                             r = 255; g =  40; b =  40; }   // nav light
+      px(dx, dy, r, g, b);
+    }
+  }
+}
+
 // ─── Cloud field (drifts across the moon scene) ───────────────────────────────
 // Two stacked sine-noise layers, different frequencies + scroll speeds,
 // gives convincing parallax without any texture data. Alpha is thresholded
@@ -1442,6 +1541,14 @@ function sceneNight(tick) {
          Math.round(pb * (1 - a) + cB * a));
     }
   }
+
+  // ── Shooting star + spacecraft ──────────────────────────────────────────
+  // Drawn AFTER clouds so both punch through overcast patches cleanly.
+  // Spacecraft first (craft passes in front of meteor trails is weird).
+  updateShootingStar(tick);
+  updateSpacecraft(tick);
+  drawShootingStar();
+  drawSpacecraft(tick);
 
   // Time overlay, top-left (outlined so it reads over the moon edge)
   textOutlined(timeStr(), 1, 1, 140, 125, 195);
