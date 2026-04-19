@@ -1,7 +1,7 @@
 {
   "generated": "2026-04-19",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,13 +91,13 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.2,
-    "feels_c": 20.2,
+    "city": "Donji grad",
+    "temp_c": 21.0,
+    "feels_c": 20.1,
     "humidity": 34,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 8.4
   },
   "forecast": {
