@@ -1293,6 +1293,32 @@ const NIGHT_STARS = [
   {x:  2, y: 23}, {x: 26, y: 21},
 ];
 
+// ─── Cloud field (drifts across the moon scene) ───────────────────────────────
+// Two stacked sine-noise layers, different frequencies + scroll speeds,
+// gives convincing parallax without any texture data. Alpha is thresholded
+// with a soft gradient so clouds have fluffy edges, not blocky cutouts.
+const MOON_CX = 32, MOON_CY = 16, MOON_R = 15;
+
+function cloudAlpha(x, y, tick) {
+  const off1 = tick * 0.12;   // back layer — slow
+  const off2 = tick * 0.28;   // front layer — faster
+
+  // Back layer: big, slow wisps
+  const n1 = 0.5
+    + 0.35 * Math.sin((x + off1) * 0.11 + y * 0.07)
+    + 0.25 * Math.sin((x + off1) * 0.18 - y * 0.12 + 1.7);
+
+  // Front layer: thinner streaks
+  const n2 = 0.5
+    + 0.30 * Math.sin((x + off2) * 0.23 + y * 0.09 + 3.1)
+    + 0.20 * Math.sin((x + off2) * 0.41 - y * 0.18 + 0.4);
+
+  // Combine and soft-threshold. Raising the threshold = sparser sky.
+  const n = (n1 * 0.6 + n2 * 0.4);
+  const a = Math.max(0, Math.min(1, (n - 0.55) / 0.20));
+  return a;   // 0..1
+}
+
 function sceneNight(tick) {
   clear();  // pure black — this scene belongs to the moon
 
@@ -1307,7 +1333,47 @@ function sceneNight(tick) {
   // Moon — full-screen hero. Centered horizontally, radius 15 → 31px
   // diameter fills the display vertically. Time and ticker sit on top.
   const phase = effectiveMoonPhase();
-  drawMoon(32, 16, 15, phase);
+  drawMoon(MOON_CX, MOON_CY, MOON_R, phase);
+
+  // ── Cloud composite pass ────────────────────────────────────────────────
+  // Blend the sine-noise cloud field over whatever was drawn (sky, stars,
+  // moon). Cloud colour shifts from cool-dark in open sky to warm-bright
+  // near the moon, so clouds catching moonlight pop. Alpha is capped over
+  // the lunar disc so the hero is never fully occluded.
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      let a = cloudAlpha(x, y, tick);
+      if (a <= 0) continue;
+
+      // Distance to moon centre → moonlight tint on the cloud
+      const dx = x - MOON_CX, dy = y - MOON_CY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      // Over the disc: keep clouds semi-transparent (≤0.55) so the moon
+      // always stays faintly visible through even the thickest patches.
+      if (dist <= MOON_R) a = Math.min(a, 0.55);
+
+      // Moonlit halo: clouds within ~8 px of the edge brighten toward
+      // the moon's lit side. Outside that, clouds stay cool-blue.
+      const halo = Math.max(0, 1 - dist / (MOON_R + 8));
+      const lit  = halo * halo;  // stronger falloff = tighter glow
+
+      // Base cloud palette: cool blue-grey in open sky
+      const baseR = 50,  baseG = 70,  baseB = 110;
+      // Moonlit cloud: near-white with a blue bias
+      const litR  = 195, litG = 210, litB = 240;
+
+      const cR = baseR + (litR - baseR) * lit;
+      const cG = baseG + (litG - baseG) * lit;
+      const cB = baseB + (litB - baseB) * lit;
+
+      const [pr, pg, pb] = fb[y][x];
+      px(x, y,
+         Math.round(pr * (1 - a) + cR * a),
+         Math.round(pg * (1 - a) + cG * a),
+         Math.round(pb * (1 - a) + cB * a));
+    }
+  }
 
   // Time overlay, top-left (outlined so it reads over the moon edge)
   textOutlined(timeStr(), 1, 1, 140, 125, 195);
