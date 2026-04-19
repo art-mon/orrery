@@ -968,8 +968,8 @@ function sceneEvent(tick) {
   // ocean (bright navy by day, near-black by night). Night-side land is
   // tinted cool-blue rather than just darkened, so continents stay
   // visible as silhouettes even in the dark.
-  // Bottom strip reserved for ticker, so skip rows covered by it.
-  for (let y = 0; y < H - 7; y++) {
+  // Ticker is transparent + outlined, so paint the map all the way down.
+  for (let y = 0; y < H; y++) {
     // Pixel-centre lat (matches build_world_mask.py formula)
     const lat = 90 - (y + 0.5) / H * 180;
     for (let x = 0; x < W; x++) {
@@ -1082,8 +1082,7 @@ function sceneEvent(tick) {
   // Time overlay — bottom-left (just above ticker)
   textOutlined(timeStr(), 1, H-14, 255, 255, 255);
 
-  // Event ticker
-  rect(0, H-8, W, 8, 0, 0, 20);
+  // Event ticker (transparent + outlined via drawTicker — no bg band)
   const evtStr = eventList.length
     ? 'EARTH EVENTS  ~  ' + eventList.map(e => e.title.toUpperCase()).join('  ~  ')
     : 'EARTH EVENTS  ~  ALL QUIET';
