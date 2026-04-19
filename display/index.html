@@ -930,29 +930,28 @@ function isLand(x, y) {
   return (byte & (1 << bit)) !== 0;
 }
 
-// Cloud mask — fetched from NASA GIBS MODIS Terra (~1 day latency).
-// Same 64×32 bitfield layout as world_mask.
-let worldClouds = null;
+// Cloud density — fetched from NASA GIBS MODIS Terra (~1 day latency).
+// One byte per pixel (0..255), row-major. 0 = clear, 255 = solid overcast.
+// Grayscale instead of a binary mask so thin cirrus renders subtly.
+let worldClouds = null;   // Uint8Array(W*H) or null
 function loadWorldClouds() {
   if (worldClouds) return;
   fetch('../data/world_clouds.json')
     .then(r => r.json())
     .then(d => {
-      const raw = atob(d.clouds_b64);
+      const raw = atob(d.alpha_b64 || d.clouds_b64 || '');
       const arr = new Uint8Array(raw.length);
       for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
       worldClouds = arr;
-      console.log('cloud mask loaded:', d.date, '(' + d.source + ')');
+      console.log('cloud density loaded:', d.date, '(' + d.source + ')');
     })
     .catch(e => console.warn('world_clouds.json missing — skipping cloud overlay:', e));
 }
 
-function isCloud(x, y) {
-  if (!worldClouds) return false;
-  const bitIdx = y * W + x;
-  const byte = worldClouds[bitIdx >> 3];
-  const bit  = 7 - (bitIdx & 7);
-  return (byte & (1 << bit)) !== 0;
+// 0..1 cloud density at pixel (x, y). 0 for unknown/missing.
+function cloudAlphaAt(x, y) {
+  if (!worldClouds || worldClouds.length !== W * H) return 0;
+  return worldClouds[y * W + x] / 255;
 }
 
 // Compute the subsolar point (lat, lon where the sun is directly overhead)
@@ -1019,7 +1018,10 @@ function sceneEvent(tick) {
 
         // Dark-side city lights — NASA's Black Marble vibe.
         // Skip Antarctica (lat < -60°): uninhabited ice sheet, no lights.
-        if (dayMix < 0.05 && lat > -60 && (hash & 1) === 0) {
+        // Also suppress under thick real-world cloud cover (can't see city
+        // lights through overcast from orbit).
+        const cloudHere = cloudAlphaAt(x, y);
+        if (dayMix < 0.05 && lat > -60 && cloudHere < 0.45 && (hash & 1) === 0) {
           const flick = 0.75 + 0.25 * Math.sin(tick * 0.35 + (hash & 0xff) * 0.1);
           px(x, y,
              Math.round(255 * flick),
@@ -1088,15 +1090,17 @@ function sceneEvent(tick) {
   }
 
   // Cloud overlay — real MODIS Terra coverage from ~1 day ago.
-  // Day side: blend strongly toward bright white (clouds catch sunlight).
-  // Night side: barely visible (only faint moonlight would show clouds).
-  // Event markers are drawn AFTER this pass so volcanoes/storms punch
-  // through the overcast.
+  // Grayscale density × day/night → per-pixel alpha with a gentle ceiling
+  // so continents are never wiped out. Event markers are drawn AFTER this
+  // pass so volcanoes/storms still punch through the overcast.
   if (worldClouds) {
+    const MAX_ALPHA_DAY   = 0.55;   // even fully-solid overcast tops out here
+    const MAX_ALPHA_NIGHT = 0.20;
     for (let y = 0; y < H; y++) {
       const lat = 90 - (y + 0.5) / H * 180;
       for (let x = 0; x < W; x++) {
-        if (!isCloud(x, y)) continue;
+        const density = cloudAlphaAt(x, y);
+        if (density <= 0.02) continue;     // skip near-clear pixels
         const lon = (x + 0.5) / W * 360 - 180;
         const sf  = solarFactor(lon, lat, sub);
         let dayMix;
@@ -1104,13 +1108,13 @@ function sceneEvent(tick) {
         else if (sf >= -0.10) dayMix = (sf + 0.10) / 0.30;
         else                  dayMix = 0.0;
 
-        // Alpha: strong on day side, whisper on night side
-        const a = 0.15 + 0.65 * dayMix;
-        // Cloud colour: bright white with slight cool tint by day,
-        // dim blue-grey by night (Earth's own scattered starlight vibe)
-        const cR = 200 * dayMix + 35  * (1 - dayMix);
-        const cG = 215 * dayMix + 45  * (1 - dayMix);
-        const cB = 235 * dayMix + 65  * (1 - dayMix);
+        const ceiling = MAX_ALPHA_NIGHT + (MAX_ALPHA_DAY - MAX_ALPHA_NIGHT) * dayMix;
+        const a = density * ceiling;
+
+        // Cloud colour: bright white-ish by day, dim blue-grey by night
+        const cR = 195 * dayMix + 30  * (1 - dayMix);
+        const cG = 210 * dayMix + 40  * (1 - dayMix);
+        const cB = 230 * dayMix + 60  * (1 - dayMix);
 
         const [pr, pg, pb] = fb[y][x];
         px(x, y,
