@@ -1020,14 +1020,26 @@ function sceneEvent(tick) {
           b += boost * 1.0;
         }
 
-        // Sun glint: soft broad halo around the subsolar point — think
-        // diffuse sunlight on the sea, not a laser spot. Linear falloff
-        // over a wide band so the highlight blends into the day-side blue.
+        // Day-side wave sparkles — brighter cyan-white "crests" flicker
+        // across sunlit water, mirroring the city-light pattern on land
+        // at night. Different hash-bit window so they don't pile on top
+        // of shimmer pixels.
+        if (dayMix > 0.30 && ((shim >> 4) & 3) === 0) {
+          const flick    = 0.65 + 0.35 * Math.sin(tick * 0.40 + (shim & 0xff) * 0.08);
+          const strength = flick * dayMix;
+          r += 90  * strength;
+          g += 140 * strength;
+          b += 170 * strength;
+        }
+
+        // Sun glint: soft broad halo around the subsolar point — diffuse
+        // sunlight on the sea. Halved intensity so it blends rather than
+        // dominates.
         if (sf > 0.55) {
           const gl = (sf - 0.55) / 0.45;     // 0..1 across a wide band
-          r += gl * 80;
-          g += gl * 120;
-          b += gl * 150;
+          r += gl * 40;
+          g += gl * 60;
+          b += gl * 75;
         }
 
         px(x, y,
