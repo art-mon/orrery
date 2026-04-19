@@ -1000,13 +1000,40 @@ function sceneEvent(tick) {
              Math.round(dayB * dayMix + nightB * (1 - dayMix)));
         }
       } else {
-        // Ocean: lerp day (brighter navy) → night (near-black indigo)
+        // Ocean base: lerp day (brighter navy) → night (near-black indigo)
         const dayR = 15,  dayG = 45,  dayB = 95;
         const nightR = 3, nightG = 8, nightB = 22;
+        let r = dayR * dayMix + nightR * (1 - dayMix);
+        let g = dayG * dayMix + nightG * (1 - dayMix);
+        let b = dayB * dayMix + nightB * (1 - dayMix);
+
+        // Shimmer: ~1-in-8 ocean pixels gently breathe in brightness,
+        // phased per-pixel so the whole surface feels alive.
+        let sh = Math.imul(x | 0, 2246822519) + Math.imul(y | 0, 3266489917) | 0;
+        sh = Math.imul(sh ^ (sh >>> 15), 2246822507);
+        const shim = (sh ^ (sh >>> 13)) >>> 0;
+        if ((shim & 7) === 0) {
+          const wave  = 0.5 + 0.5 * Math.sin(tick * 0.12 + (shim & 0x3ff) * 0.01);
+          const boost = 6 + wave * 16;     // 6..22 extra
+          r += boost * 0.3;
+          g += boost * 0.6;
+          b += boost * 1.0;
+        }
+
+        // Sun glint: bright specular highlight near the subsolar point,
+        // falls off sharply so it reads as a reflected disc on the sea.
+        if (sf > 0.90) {
+          const gl = (sf - 0.90) / 0.10;
+          const g2 = gl * gl;
+          r += g2 * 120;
+          g += g2 * 160;
+          b += g2 * 180;
+        }
+
         px(x, y,
-           Math.round(dayR * dayMix + nightR * (1 - dayMix)),
-           Math.round(dayG * dayMix + nightG * (1 - dayMix)),
-           Math.round(dayB * dayMix + nightB * (1 - dayMix)));
+           Math.min(255, Math.round(r)),
+           Math.min(255, Math.round(g)),
+           Math.min(255, Math.round(b)));
       }
     }
   }
