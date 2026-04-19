@@ -1101,6 +1101,38 @@ function moonPhaseName(phase) {
   return 'WANING CRESCENT';
 }
 
+// 15×15 lunar near-side texture (intensity 0-255, 0 = outside disc).
+// Hand-crafted from real feature positions: Mare Imbrium (NW),
+// Serenitatis / Tranquillitatis (NE), Crisium (east limb),
+// Oceanus Procellarum (W), Nubium / Humorum (SW), Fecunditatis /
+// Nectaris (SE), Tycho crater + bright rays (south).
+const MOON_TEX = new Uint8Array([
+  0,  0,  0,  0,  0,  0,  0,210,  0,  0,  0,  0,  0,  0,  0,
+  0,  0,  0,  0,210,215,215,215,215,215,210,  0,  0,  0,  0,
+  0,  0,  0,205,200,170,175,180,200,210,205,200,  0,  0,  0,
+  0,  0,200,205,180,140,130,150,180,170,165,180,200,  0,  0,
+  0,195,200,190,130,115,120,115,150,130,140,175,190,195,  0,
+  0,195,185,165,120,125,130,155,140,125,135,170,180,190,  0,
+  0,190,175,145,125,135,140,185,160,140,155,175,190,195,  0,
+200,180,155,140,130,140,175,200,175,150,140,155,185,200,215,
+  0,190,170,155,140,150,165,175,160,140,135,155,180,200,  0,
+  0,200,180,165,155,160,170,175,155,140,150,175,185,200,  0,
+  0,205,195,185,175,170,175,180,240,230,175,185,200,210,  0,
+  0,  0,205,195,185,180,185,245,250,245,180,190,210,  0,  0,
+  0,  0,  0,210,205,200,195,215,230,215,195,205,  0,  0,  0,
+  0,  0,  0,  0,215,210,210,210,210,210,215,  0,  0,  0,  0,
+  0,  0,  0,  0,  0,  0,  0,210,  0,  0,  0,  0,  0,  0,  0,
+]);
+
+function sampleMoonTex(dx, dy, rad) {
+  // Scale (dx,dy) in pixel-space to 15×15 texture coords
+  const tx = Math.round((dx / rad) * 7 + 7);
+  const ty = Math.round((dy / rad) * 7 + 7);
+  if (tx < 0 || tx > 14 || ty < 0 || ty > 14) return 200;
+  const v = MOON_TEX[ty * 15 + tx];
+  return v > 0 ? v : 200;   // fallback for disc-edge gaps
+}
+
 function drawMoon(cx, cy, rad, phase) {
   const halfCycle = LUNAR_CYCLE / 2;
   const waxing    = phase <= halfCycle;
@@ -1114,18 +1146,22 @@ function drawMoon(cx, cy, rad, phase) {
       if (dx * dx + dy * dy > rad * rad) continue;
       const nx  = hw > 0 ? dx / hw : 0;
       const lit = waxing ? nx > shadowEdge : nx < shadowEdge;
-      if (lit) {
-        px(cx + dx, cy + dy, 240, 235, 200);
-      }
-      // shadow side: skip — background shows through naturally
+      if (!lit) continue;                // shadow side: background shows through
+
+      // Sample lunar texture for realistic mare/highland contrast
+      const intensity = sampleMoonTex(dx, dy, rad);
+      // Soft terminator: dim the pixels sitting right on the shadow edge
+      const termDist = Math.abs(nx - shadowEdge);
+      const term     = termDist < 0.15 ? 0.55 + termDist / 0.15 * 0.45 : 1.0;
+      const i        = intensity * term;
+
+      // Subtle warm lunar tint (moon is slightly yellow-grey, not pure white)
+      px(cx + dx, cy + dy,
+         Math.min(255, Math.round(i * 1.00)),
+         Math.min(255, Math.round(i * 0.97)),
+         Math.min(255, Math.round(i * 0.82)));
     }
   }
-  // Mare detail (only meaningful when mostly lit)
-  if (f > 0.7) {
-    px(cx-2,cy-2, 180,175,145); px(cx-1,cy-1,175,170,140); px(cx+2,cy-2,185,180,150);
-    px(cx-3,cy,   170,165,135); px(cx+1,cy+1,180,175,145); px(cx-1,cy+2,175,170,140);
-  }
-  // glow rings removed — LED bloom on individual pixels is sufficient
 }
 
 // compute once per session
