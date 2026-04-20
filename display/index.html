@@ -953,7 +953,7 @@ function sceneAsteroid(tick) {
   if (t > T_FLY_START) {
     const u  = Math.min(1, (t - T_FLY_START) / (T_FLY_END - T_FLY_START));
     const ue = ease(u);
-    const sx = W + 6, sy = 16;
+    const sx = W + 1, sy = 16;
     const ex = 32,    ey = -6;
     const body = rock && rock.hazardous ? [255, 80, 40] : [255, 220, 160];
     const cool = [30, 50, 90];
