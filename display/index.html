@@ -1010,6 +1010,41 @@ function sceneAsteroid(tick) {
 
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
+  // Intro title "CLOSE APPROACHES" — split-flap in, hold, flap out, all
+  // before the Earth pan kicks off. Fits inside EARTH_DELAY_TICKS.
+  {
+    const INTRO = 'CLOSE APPROACHES';
+    const I_IN   = 6;    // simultaneous roll-in ticks
+    const I_HOLD = 10;
+    const I_OUT  = 6;
+    const introEnd = I_IN + I_HOLD + I_OUT;
+    if (vt < introEnd) {
+      const DECK = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+      const rnd = (slot, tk) => {
+        const r = Math.sin((slot + 1) * 37.3 + tk * 7.1) * 43758.5453;
+        const f = r - Math.floor(r);
+        return DECK[Math.floor(f * DECK.length)];
+      };
+      let out = '';
+      if (vt < I_IN) {
+        // roll-in: random chars, then locked after I_IN
+        for (let i = 0; i < INTRO.length; i++) {
+          out += INTRO[i] === ' ' ? ' ' : rnd(i, vt);
+        }
+      } else if (vt < I_IN + I_HOLD) {
+        out = INTRO;
+      } else {
+        // roll-out: random chars again
+        const tk = vt - (I_IN + I_HOLD);
+        for (let i = 0; i < INTRO.length; i++) {
+          out += INTRO[i] === ' ' ? ' ' : rnd(i + 13, tk);
+        }
+      }
+      const tx = Math.max(0, Math.round((W - textWidth(out)) / 2));
+      textOutlined(out, tx, H - 6, 255, 200, 120);
+    }
+  }
+
   // Callouts — split-flap: each slot rolls through A-Z0-9, locks left→right,
   // holds, then flips to the value with the same rolling effect.
   if (rock) {
