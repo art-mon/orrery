@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "orrery display",
+      "runtimeExecutable": "/Users/arturo/Documents/Repos/NASA/server/.venv/bin/python",
+      "runtimeArgs": ["-c", "import os; os.chdir('/Users/arturo/Documents/Repos/NASA'); from http.server import HTTPServer,SimpleHTTPRequestHandler; HTTPServer(('',8787),SimpleHTTPRequestHandler).serve_forever()"],
+      "port": 8787
+    }
+  ]
+}

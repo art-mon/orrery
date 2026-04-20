@@ -855,29 +855,46 @@ function sceneDaily(tick) {
   drawTicker(dailyTickerStr(tick), 25, 220, 215, 170, 0, 0, 0);
 }
 
-// Pixel-art Earth disc for the asteroid scale-zoom scene. Draws a
-// shaded sphere (sunlit from upper-left) with continent dithering and
-// a 1-px atmosphere halo. Radius can be fractional; below ~1 px we
-// drop to a single pixel so it still reads at extreme zoom.
+// Earth sphere from a baked NASA photo (data/earth_texture.json, 64×64 RGB).
+// Loaded lazily; falls back to a flat blue disc until the texture arrives.
+let earthTexture = null;   // { size, rgb: Uint8Array(size*size*3) } or null
+function loadEarthTexture() {
+  if (earthTexture) return;
+  fetch('../data/earth_texture.json')
+    .then(r => r.json())
+    .then(d => {
+      const raw = atob(d.rgb_b64);
+      const arr = new Uint8Array(raw.length);
+      for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
+      earthTexture = { size: d.size, rgb: arr };
+    })
+    .catch(e => console.warn('earth_texture.json missing:', e));
+}
+
 function drawEarthSprite(cx, cy, r) {
   if (r < 0.7) { px(cx, cy, 100, 140, 220); return; }
-  const LX = -0.55, LY = -0.45;   // sun direction (upper-left)
-  const R  = Math.ceil(r);
+  const R = Math.ceil(r);
+  const tex = earthTexture;
+  if (!tex) {
+    // Flat fallback while texture still loads
+    for (let dy = -R; dy <= R; dy++)
+      for (let dx = -R; dx <= R; dx++)
+        if (dx*dx + dy*dy <= r*r) px(cx+dx, cy+dy, 60, 110, 180);
+    return;
+  }
+  const S = tex.size;
+  const half = (S - 1) / 2;
+  const scale = half / r;
   for (let dy = -R; dy <= R; dy++) {
     for (let dx = -R; dx <= R; dx++) {
-      const d = Math.sqrt(dx*dx + dy*dy);
-      if (d > r) continue;
+      if (dx*dx + dy*dy > r*r) continue;
       const x = cx + dx, y = cy + dy;
       if (x < 0 || x >= W || y < 0 || y >= H) continue;
-      const nx = dx / Math.max(r, 0.01);
-      const ny = dy / Math.max(r, 0.01);
-      const shade = Math.max(0.15, Math.min(1, nx*LX + ny*LY + 0.65));
-      // Pseudo-continent pattern from low-freq trig — stable across frames.
-      const land = (Math.sin(dx*0.75 + dy*0.55) + Math.cos(dx*0.35 - dy*0.85)) > 0.35;
-      const br = (land ? 60  : 25)  * shade;
-      const bg = (land ? 150 : 85)  * shade;
-      const bb = (land ? 60  : 210) * shade;
-      px(x, y, br|0, bg|0, bb|0);
+      const sx = Math.round(half + dx * scale);
+      const sy = Math.round(half + dy * scale);
+      if (sx < 0 || sx >= S || sy < 0 || sy >= S) continue;
+      const i = (sy * S + sx) * 3;
+      px(x, y, tex.rgb[i], tex.rgb[i+1], tex.rgb[i+2]);
     }
   }
   if (r >= 3.5) {
@@ -894,6 +911,7 @@ function drawEarthSprite(cx, cy, r) {
 function sceneAsteroid(tick) {
   clear();
   stars(30, 25);
+  if (!earthTexture) loadEarthTexture();
 
   const rock   = asteroidList[0];
   const missKm = (rock && rock.miss_distance_km) || 384400;
@@ -965,16 +983,13 @@ function sceneAsteroid(tick) {
     }
   }
 
-  // Miss-distance callout (pulses during flyby, holds after)
-  if (t > T_OPEN + 0.1) {
+  // Miss-distance callout — appears after asteroid has flown past.
+  if (t > T_FLY_END) {
     const km = missKm >= 10000
       ? (missKm / 1000).toFixed(0) + 'K KM'
       : Math.round(missKm) + ' KM';
-    const pulse = t > T_FLY_END || (tick % 10 < 7);
-    if (pulse) {
-      const lw = textWidth(km);
-      textOutlined(km, W - lw - 1, 8, 255, 200, 120);
-    }
+    const lw = textWidth(km);
+    textOutlined(km, W - lw - 1, 13, 255, 200, 120);
   }
 
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
