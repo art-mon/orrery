@@ -893,114 +893,87 @@ function drawEarthSprite(cx, cy, r) {
 
 function sceneAsteroid(tick) {
   clear();
-  stars(42, 30);
+  stars(30, 25);
 
-  const rock     = asteroidList[0];
-  const missKm   = (rock && rock.miss_distance_km) || 384400;  // default: lunar
-  const EARTH_KM = 12742;
+  const rock   = asteroidList[0];
+  const missKm = (rock && rock.miss_distance_km) || 384400;
+  const TMAX   = ticksPerView;
+  const t      = Math.min(1, viewTick / TMAX);
 
-  // Zoom factor S: 1 = Earth fills the frame. S_end puts the closest-approach
-  // point at ~targetEndPx from Earth's centre. Clamped so extreme passes
-  // (millions of km) don't shrink Earth below visibility; the numeric
-  // distance label carries the true scale.
-  const earthR0    = 11;
-  const targetEnd  = 22;
-  const S_target   = (missKm * earthR0) / (targetEnd * (EARTH_KM / 2));
-  const S_end      = Math.max(4, Math.min(60, S_target));
+  // Beats: Earth zooms from centered-small to bottom-left horizon limb,
+  // then an asteroid sweeps right-to-left leaving a persistent trail.
+  const T_OPEN    = 0.14;
+  const T_FLY_END = 0.88;
+  const ease = (x) => x < 0.5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
 
-  const TMAX = ticksPerView;
-  const t    = Math.min(1, viewTick / TMAX);
+  // Earth limb pan/zoom
+  const o   = ease(Math.min(1, t / T_OPEN));
+  const cx0 = 32, cy0 = 16, r0 = 11;
+  const cx1 = -2, cy1 = 38, r1 = 32;
+  const ecx = cx0 + (cx1 - cx0) * o;
+  const ecy = cy0 + (cy1 - cy0) * o;
+  const er  = r0 + (r1 - r0) * o;
+  drawEarthSprite(ecx, ecy, er);
 
-  // Beat timings: hold → zoom-out → asteroid streak → closest-approach hold.
-  const T_HOLD_IN  = 0.10;
-  const T_ZOOM_END = 0.60;
-  const T_AST_END  = 0.75;
-  let S;
-  if (t < T_HOLD_IN)       S = 1;
-  else if (t < T_ZOOM_END) S = Math.pow(S_end, (t - T_HOLD_IN) / (T_ZOOM_END - T_HOLD_IN));
-  else                     S = S_end;
-
-  // Clamp Earth to a minimum visible size so it always reads as the
-  // scale anchor — at extreme zoom the true radius goes sub-pixel and
-  // the trajectory looks like it's heading at nothing.
-  const earthR = Math.max(1.2, earthR0 / S);
-  const cx = 20;
-  const cy = 13;
-
-  drawEarthSprite(cx, cy, earthR);
-
-  // Moon as scale anchor — at 60.3 Earth-radii. Only drawn once zoom is
-  // far enough that its position lands on-frame.
-  const moonPx = 60.3 * earthR;
-  const moonAng = 2.4;
-  const mx = Math.round(cx + Math.cos(moonAng) * moonPx);
-  const my = Math.round(cy + Math.sin(moonAng) * moonPx);
-  if (S > 3 && mx >= 0 && mx < W && my >= 0 && my < H) {
-    px(mx, my, 210, 210, 190);
-  }
-
-  // Asteroid trajectory — enters from upper-right, decelerates into the
-  // closest-approach point. Tail is 3 px, fades behind.
-  if (t > T_ZOOM_END) {
-    const u = Math.min(1, (t - T_ZOOM_END) / (T_AST_END - T_ZOOM_END));
-    const astPxDist = Math.min(targetEnd, missKm * earthR / (EARTH_KM / 2));
-    const approachAng = -0.4;
-    const endX = cx + Math.cos(approachAng) * astPxDist;
-    const endY = cy + Math.sin(approachAng) * astPxDist;
-    const startX = W + 6, startY = 2;
-    // Ease-out (slow down as it reaches closest approach)
-    const eu = 1 - Math.pow(1 - u, 2);
-    const ax = Math.round(startX + (endX - startX) * eu);
-    const ay = Math.round(startY + (endY - startY) * eu);
+  // Asteroid flyby — right-to-left, slight downward tilt above the limb.
+  if (t > T_OPEN) {
+    const u  = Math.min(1, (t - T_OPEN) / (T_FLY_END - T_OPEN));
+    const ue = ease(u);
+    const sx = W + 6, sy = 3;
+    const ex = -8,    ey = 11;
     const body = rock && rock.hazardous ? [255, 80, 40] : [255, 220, 160];
-    for (let i = 1; i <= 3; i++) {
-      const tx = ax + i, ty = ay - Math.round(i * 0.3);
-      if (tx >= 0 && tx < W && ty >= 0 && ty < H) {
-        const a = 1 - i * 0.28;
-        px(tx, ty, (body[0]*a)|0, (body[1]*a)|0, (body[2]*a)|0);
+    const cool = [30, 50, 90];
+
+    // Persistent trail: sample path from 0 to current ue. Colour cools and
+    // dims toward the tail (further from head = further in the past).
+    const N = 80;
+    for (let i = 0; i <= N; i++) {
+      const tu = (i / N) * ue;
+      const tx = Math.round(sx + (ex - sx) * tu);
+      const ty = Math.round(sy + (ey - sy) * tu);
+      if (tx < 0 || tx >= W || ty < 0 || ty >= H) continue;
+      const f  = ue > 0 ? tu / ue : 1;               // 0 at tail, 1 at head
+      const f2 = f * f;
+      const r = Math.round(body[0]*f2 + cool[0]*(1-f2)) * (0.35 + 0.65*f);
+      const g = Math.round(body[1]*f2 + cool[1]*(1-f2)) * (0.35 + 0.65*f);
+      const b = Math.round(body[2]*f2 + cool[2]*(1-f2)) * (0.35 + 0.65*f);
+      px(tx, ty, r|0, g|0, b|0);
+    }
+
+    // Asteroid body: 3-px cluster at head
+    const ax = Math.round(sx + (ex - sx) * ue);
+    const ay = Math.round(sy + (ey - sy) * ue);
+    if (ax   >= 0 && ax   < W && ay   >= 0 && ay   < H) px(ax,   ay,   ...body);
+    if (ax-1 >= 0 && ax-1 < W && ay+1 >= 0 && ay+1 < H) px(ax-1, ay+1, (body[0]*0.45)|0, (body[1]*0.45)|0, (body[2]*0.45)|0);
+    if (ax+1 >= 0 && ax+1 < W && ay-1 >= 0 && ay-1 < H) px(ax+1, ay-1, 255, 255, 220);
+
+    // Closest-approach tick: perpendicular from asteroid to Earth limb.
+    if (u > 0.45 && u < 0.95) {
+      const dx = ax - ecx, dy = ay - ecy;
+      const d  = Math.sqrt(dx*dx + dy*dy);
+      if (d > er + 1) {
+        const nx = dx / d, ny = dy / d;
+        // tick on the limb
+        const lx = Math.round(ecx + nx * (er + 1));
+        const ly = Math.round(ecy + ny * (er + 1));
+        if (lx >= 0 && lx < W && ly >= 0 && ly < H) px(lx, ly, 180, 200, 230);
+        // midpoint dot
+        const mxm = Math.round(ecx + nx * ((d + er + 1) * 0.5));
+        const mym = Math.round(ecy + ny * ((d + er + 1) * 0.5));
+        if (mxm >= 0 && mxm < W && mym >= 0 && mym < H) px(mxm, mym, 110, 130, 170);
       }
     }
-    if (ax >= 0 && ax < W && ay >= 0 && ay < H) px(ax, ay, ...body);
-
-    // Miss-distance ruler at closest approach: ticks near Earth and near the
-    // asteroid, plus a couple of sparse dots between. Looks like a measurement,
-    // not a trajectory trail.
-    if (t > T_AST_END) {
-      const vx = ax - cx, vy = ay - cy;
-      const vlen = Math.max(1, Math.sqrt(vx*vx + vy*vy));
-      const ux = vx / vlen, uy = vy / vlen;
-      // perpendicular unit for tick marks
-      const pxu = -uy, pyu = ux;
-      const tick = (ex, ey) => {
-        for (let k = -1; k <= 1; k++) {
-          const tx = Math.round(ex + pxu * k);
-          const ty = Math.round(ey + pyu * k);
-          if (tx >= 0 && tx < W && ty >= 0 && ty < H) px(tx, ty, 140, 160, 200);
-        }
-      };
-      // near-Earth tick (just outside the disc)
-      tick(cx + ux * (earthR + 1), cy + uy * (earthR + 1));
-      // near-asteroid tick (just back from the rock)
-      tick(ax - ux * 2, ay - uy * 2);
-      // one middle marker
-      const mxm = Math.round(cx + vx * 0.5);
-      const mym = Math.round(cy + vy * 0.5);
-      if (mxm >= 0 && mxm < W && mym >= 0 && mym < H) px(mxm, mym, 90, 110, 150);
-    }
   }
 
-  // Zoom readout (top-right), pulses once at the end.
-  const zoomStr = '\xd7' + Math.round(S);
-  textOutlined(zoomStr, W - textWidth(zoomStr) - 1, 1, 120, 200, 255);
-
-  // Miss-distance callout during the hold, pulsing on entry.
-  if (t > T_AST_END) {
-    const pulse = t < T_AST_END + 0.05 ? (tick % 8 < 4) : true;
+  // Miss-distance callout (pulses during flyby, holds after)
+  if (t > T_OPEN + 0.1) {
+    const km = missKm >= 10000
+      ? (missKm / 1000).toFixed(0) + 'K KM'
+      : Math.round(missKm) + ' KM';
+    const pulse = t > T_FLY_END || (tick % 10 < 7);
     if (pulse) {
-      const km = missKm >= 10000
-        ? (missKm / 1000).toFixed(0) + 'K KM'
-        : Math.round(missKm) + ' KM';
-      textOutlined(km, 1, H - 14, 255, 200, 120);
+      const lw = textWidth(km);
+      textOutlined(km, W - lw - 1, 8, 255, 200, 120);
     }
   }
 
