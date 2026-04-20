@@ -912,7 +912,7 @@ function sceneAsteroid(tick) {
   // Beats: Earth pans → split-flap callouts (label rolls in, holds, flips
   // to value) → asteroid flyby. Callout timing is tick-based for crisp
   // per-slot locking; Earth & flyby use scene-fraction.
-  const T_OPEN    = 0.14;
+  const T_OPEN    = 0.28;
   const T_FLY_END = 0.95;
   const vt        = viewTick;
   const openT     = Math.round(TMAX * T_OPEN);
@@ -935,7 +935,8 @@ function sceneAsteroid(tick) {
     name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
   }
   const L1 = 'DISTANCE', L2 = 'DIAMETER', L3 = 'ASTEROID NAME';
-  const lineDur = (L, V) => lineTicks(L) + HOLD + lineTicks(V);
+  const POST = 12;  // hold the final value ~1 s before moving to the next line
+  const lineDur = (L, V) => lineTicks(L) + HOLD + lineTicks(V) + POST;
   const s1 = openT;
   const s2 = s1 + (rock ? lineDur(L1, km)   : 0);
   const s3 = s2 + (rock ? lineDur(L2, diam) : 0);
