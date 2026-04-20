@@ -1,7 +1,7 @@
 {
-  "generated": "2026-04-20",
+  "generated": "2026-04-21",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,36 +91,36 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_c": 10.4,
     "feels_c": 9.9,
     "humidity": 92,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "light rain",
     "icon": "10n",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
-    "date": "2026-04-20",
-    "city": "Zagreb",
-    "temp_min_c": 10.4,
-    "temp_max_c": 10.4,
-    "humidity": 92,
+    "date": "2026-04-21",
+    "city": "City of Zagreb",
+    "temp_min_c": 8.0,
+    "temp_max_c": 14.9,
+    "humidity": 76,
     "condition": "Rain",
     "description": "rain",
     "icon": "10n",
-    "wind_kmh": 5.5,
-    "samples": 1
+    "wind_kmh": 8.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-04-21",
-    "city": "Zagreb",
-    "temp_min_c": 8.0,
-    "temp_max_c": 14.9,
-    "humidity": 74,
-    "condition": "Rain",
+    "date": "2026-04-22",
+    "city": "City of Zagreb",
+    "temp_min_c": 5.8,
+    "temp_max_c": 12.7,
+    "humidity": 63,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.6
+    "wind_kmh": 7.3
   }
 }
