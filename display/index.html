@@ -913,8 +913,8 @@ function sceneAsteroid(tick) {
   // to value) → asteroid flyby. Callout timing is tick-based for crisp
   // per-slot locking; Earth & flyby use scene-fraction.
   const T_OPEN    = 0.22;
-  const T_FLY_END = 0.50;
-  const EARTH_DELAY_TICKS = 25; // ~2s asteroid head start before earth pan
+  const T_FLY_END = 0.70;
+  const EARTH_DELAY_TICKS = 37; // ~3s asteroid head start before earth pan
   const earthDelay = EARTH_DELAY_TICKS / TMAX;
   const vt        = viewTick;
   const openT     = EARTH_DELAY_TICKS + Math.round(TMAX * T_OPEN);
@@ -1015,7 +1015,7 @@ function sceneAsteroid(tick) {
   {
     const INTRO = 'CLOSE APPROACHES';
     const I_IN   = 6;    // simultaneous roll-in ticks
-    const I_HOLD = 10;
+    const I_HOLD = 22;
     const I_OUT  = 6;
     const introEnd = I_IN + I_HOLD + I_OUT;
     if (vt < introEnd) {
@@ -2315,7 +2315,7 @@ const SCENES = ['daily', 'forecast', 'moon', 'galaxy', 'asteroid', 'event', 'apo
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
 // Scene-specific duration multipliers — applied on top of ticksPerView for
 // scenes whose animation budget needs more room than the global default.
-const SCENE_TICK_MULT = { asteroid: 1.2 };
+const SCENE_TICK_MULT = { asteroid: 1.27 };
 const effectiveTPV = () => Math.round(ticksPerView * (SCENE_TICK_MULT[currentScene] || 1));
 const VIEWS_PER_SCENE = 3;
 
