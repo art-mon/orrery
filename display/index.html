@@ -909,10 +909,12 @@ function sceneAsteroid(tick) {
   const TMAX   = ticksPerView;
   const t      = Math.min(1, viewTick / TMAX);
 
-  // Beats: Earth zooms from centered-small to bottom-left horizon limb,
-  // then an asteroid sweeps right-to-left leaving a persistent trail.
-  const T_OPEN    = 0.14;
-  const T_FLY_END = 0.88;
+  // Beats: Earth pans to bottom-left, data types in right column,
+  // then the asteroid sweeps past.
+  const T_OPEN     = 0.14;
+  const T_TYPE_END = 0.45;
+  const T_FLY_START = T_TYPE_END;
+  const T_FLY_END   = 0.95;
   const ease = (x) => x < 0.5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
 
   // Earth limb pan/zoom
@@ -924,9 +926,9 @@ function sceneAsteroid(tick) {
   const er  = r0 + (r1 - r0) * o;
   drawEarthSprite(ecx, ecy, er);
 
-  // Asteroid flyby — right-to-left, slight downward tilt above the limb.
-  if (t > T_OPEN) {
-    const u  = Math.min(1, (t - T_OPEN) / (T_FLY_END - T_OPEN));
+  // Asteroid flyby — starts only after the data has finished typing.
+  if (t > T_FLY_START) {
+    const u  = Math.min(1, (t - T_FLY_START) / (T_FLY_END - T_FLY_START));
     const ue = ease(u);
     const sx = W + 6, sy = 16;
     const ex = 32,    ey = -6;
@@ -982,17 +984,32 @@ function sceneAsteroid(tick) {
 
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  // Static callouts — fade in after the asteroid has flown past.
-  if (t > T_FLY_END && rock) {
+  // Callouts — typewriter-reveal between T_OPEN and T_TYPE_END, then
+  // stay visible for the rest of the scene (including the flyby).
+  if (t > T_OPEN && rock) {
     const km   = missKm >= 10000
       ? (missKm / 1000).toFixed(0) + 'K KM'
       : Math.round(missKm) + ' KM';
     const diam = '~' + Math.round(rock.diameter_m) + 'M';
     const name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
 
-    textOutlined(km,   W - textWidth(km)   - 1, 13, 255, 200, 120);
-    textOutlined(diam, W - textWidth(diam) - 1, 20, 200, 220, 255);
-    textOutlined(name, W - textWidth(name) - 1, H - 6, 255, 160,  80);
+    const typeT = Math.min(1, (t - T_OPEN) / (T_TYPE_END - T_OPEN));
+    const total = km.length + diam.length + name.length;
+    let shown = Math.floor(typeT * total);
+    const s1 = km.slice(0, Math.min(km.length, shown));
+    shown -= km.length;
+    const s2 = shown > 0 ? diam.slice(0, Math.min(diam.length, shown)) : '';
+    shown -= diam.length;
+    const s3 = shown > 0 ? name.slice(0, Math.min(name.length, shown)) : '';
+    // Caret: blink on the currently-typing line while typing is in progress.
+    const caret = (typeT < 1 && tick % 8 < 4) ? '_' : '';
+    const line1 = s1 + (s1.length < km.length   ? caret : '');
+    const line2 = s2 + (s2 && s2.length < diam.length ? caret : '');
+    const line3 = s3 + (s3 && s3.length < name.length ? caret : '');
+
+    if (line1) textOutlined(line1, W - textWidth(km)   - 1, 13,    255, 200, 120);
+    if (line2) textOutlined(line2, W - textWidth(diam) - 1, 20,    200, 220, 255);
+    if (line3) textOutlined(line3, W - textWidth(name) - 1, H - 6, 255, 160,  80);
   } else if (!rock) {
     const msg = 'NO CLOSE APPROACHES';
     textOutlined(msg, W - textWidth(msg) - 1, H - 6, 140, 160, 200);
