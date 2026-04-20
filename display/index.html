@@ -914,8 +914,10 @@ function sceneAsteroid(tick) {
   // per-slot locking; Earth & flyby use scene-fraction.
   const T_OPEN    = 0.22;
   const T_FLY_END = 0.30;
+  const EARTH_DELAY_TICKS = 12; // ~1s asteroid head start before earth pan
+  const earthDelay = EARTH_DELAY_TICKS / TMAX;
   const vt        = viewTick;
-  const openT     = Math.round(TMAX * T_OPEN);
+  const openT     = EARTH_DELAY_TICKS + Math.round(TMAX * T_OPEN);
   const flyEndT   = Math.round(TMAX * T_FLY_END);
   const ease = (x) => x < 0.5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
 
@@ -940,8 +942,9 @@ function sceneAsteroid(tick) {
   const s1 = openT, s2 = openT, s3 = openT;
   const T_FLY_START = 0;
 
-  // Earth limb pan/zoom
-  const o   = ease(Math.min(1, t / T_OPEN));
+  // Earth limb pan/zoom — delayed by EARTH_DELAY_TICKS so the asteroid
+  // enters first.
+  const o   = ease(Math.min(1, Math.max(0, t - earthDelay) / T_OPEN));
   const cx0 = 32, cy0 = 16, r0 = 11;
   const cx1 = -2, cy1 = 46, r1 = 32;
   const ecx = Math.round(cx0 + (cx1 - cx0) * o);
