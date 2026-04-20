@@ -897,15 +897,6 @@ function drawEarthSprite(cx, cy, r) {
       px(x, y, tex.rgb[i], tex.rgb[i+1], tex.rgb[i+2]);
     }
   }
-  if (r >= 3.5) {
-    const steps = Math.max(24, Math.round(r * 6));
-    for (let i = 0; i < steps; i++) {
-      const ang = (i / steps) * Math.PI * 2;
-      const hx = Math.round(cx + Math.cos(ang) * (r + 1));
-      const hy = Math.round(cy + Math.sin(ang) * (r + 1));
-      if (hx >= 0 && hx < W && hy >= 0 && hy < H) px(hx, hy, 40, 90, 160);
-    }
-  }
 }
 
 function sceneAsteroid(tick) {
@@ -927,7 +918,7 @@ function sceneAsteroid(tick) {
   // Earth limb pan/zoom
   const o   = ease(Math.min(1, t / T_OPEN));
   const cx0 = 32, cy0 = 16, r0 = 11;
-  const cx1 = -2, cy1 = 38, r1 = 32;
+  const cx1 = -2, cy1 = 46, r1 = 32;
   const ecx = Math.round(cx0 + (cx1 - cx0) * o);
   const ecy = Math.round(cy0 + (cy1 - cy0) * o);
   const er  = r0 + (r1 - r0) * o;
@@ -958,12 +949,18 @@ function sceneAsteroid(tick) {
       px(tx, ty, r|0, g|0, b|0);
     }
 
-    // Asteroid body: 3-px cluster at head
+    // Asteroid head — single bright pixel, with a dimmer rock-body pixel
+    // one step behind (opposite the velocity vector) so the shape reads
+    // as a head+core rather than a perpendicular bar.
     const ax = Math.round(sx + (ex - sx) * ue);
     const ay = Math.round(sy + (ey - sy) * ue);
-    if (ax   >= 0 && ax   < W && ay   >= 0 && ay   < H) px(ax,   ay,   ...body);
-    if (ax-1 >= 0 && ax-1 < W && ay+1 >= 0 && ay+1 < H) px(ax-1, ay+1, (body[0]*0.45)|0, (body[1]*0.45)|0, (body[2]*0.45)|0);
-    if (ax+1 >= 0 && ax+1 < W && ay-1 >= 0 && ay-1 < H) px(ax+1, ay-1, 255, 255, 220);
+    const dxv = ex - sx, dyv = ey - sy;
+    const vlen = Math.max(1e-3, Math.sqrt(dxv*dxv + dyv*dyv));
+    const vx = dxv / vlen, vy = dyv / vlen;
+    const bx = Math.round(ax - vx), by = Math.round(ay - vy);
+    if (bx >= 0 && bx < W && by >= 0 && by < H)
+      px(bx, by, (body[0]*0.55)|0, (body[1]*0.55)|0, (body[2]*0.55)|0);
+    if (ax >= 0 && ax < W && ay >= 0 && ay < H) px(ax, ay, 255, 245, 210);
 
     // Closest-approach tick: perpendicular from asteroid to Earth limb.
     if (u > 0.45 && u < 0.95) {
