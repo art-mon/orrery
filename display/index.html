@@ -913,7 +913,7 @@ function sceneAsteroid(tick) {
   // to value) → asteroid flyby. Callout timing is tick-based for crisp
   // per-slot locking; Earth & flyby use scene-fraction.
   const T_OPEN    = 0.22;
-  const T_FLY_END = 0.95;
+  const T_FLY_END = 0.70;
   const vt        = viewTick;
   const openT     = Math.round(TMAX * T_OPEN);
   const flyEndT   = Math.round(TMAX * T_FLY_END);
