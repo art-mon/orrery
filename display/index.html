@@ -980,27 +980,22 @@ function sceneAsteroid(tick) {
     }
   }
 
-  // Miss-distance callout — appears after asteroid has flown past.
-  if (t > T_FLY_END) {
-    const km = missKm >= 10000
-      ? (missKm / 1000).toFixed(0) + 'K KM'
-      : Math.round(missKm) + ' KM';
-    const lw = textWidth(km);
-    textOutlined(km, W - lw - 1, 13, 255, 200, 120);
-  }
-
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  if (rock) {
+  // Static callouts — fade in after the asteroid has flown past.
+  if (t > T_FLY_END && rock) {
+    const km   = missKm >= 10000
+      ? (missKm / 1000).toFixed(0) + 'K KM'
+      : Math.round(missKm) + ' KM';
+    const diam = '~' + Math.round(rock.diameter_m) + 'M';
     const name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
-    const dist = 'MISS ' + (rock.miss_distance_km / 1000).toFixed(0) + 'K KM';
-    const diam = 'DIA ~' + Math.round(rock.diameter_m) + 'M';
-    const _d = new Date(rock.close_approach_date + 'T12:00:00Z');
-    const date = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'][_d.getUTCMonth()] + ' ' + _d.getUTCDate();
-    const vel  = 'VEL ' + Math.round(rock.velocity_kmh / 1000) + 'K KMH';
-    drawTicker('ASTEROID  ~  ' + name + '  ~  ' + dist + '  ~  ' + diam + '  ~  ' + date + '  ~  ' + vel, H-7, 255, 160, 0, 0, 0, 0);
-  } else {
-    drawTicker('ASTEROID  ~  NO CLOSE APPROACHES THIS WEEK', H-7, 100, 120, 160, 0, 0, 0);
+
+    textOutlined(km,   W - textWidth(km)   - 1, 13, 255, 200, 120);
+    textOutlined(diam, W - textWidth(diam) - 1, 20, 200, 220, 255);
+    textOutlined(name, W - textWidth(name) - 1, H - 6, 255, 160,  80);
+  } else if (!rock) {
+    const msg = 'NO CLOSE APPROACHES';
+    textOutlined(msg, W - textWidth(msg) - 1, H - 6, 140, 160, 200);
   }
 }
 
