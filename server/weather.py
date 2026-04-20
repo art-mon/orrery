@@ -1,4 +1,6 @@
 import os
+from datetime import date, datetime, timedelta, time as dtime
+from zoneinfo import ZoneInfo
 import requests
 import cache
 import db
@@ -6,6 +8,7 @@ import db
 OWM_KEY = os.getenv("OPENWEATHER_API_KEY")
 LAT     = os.getenv("LATITUDE",  "40.7128")
 LON     = os.getenv("LONGITUDE", "-74.0060")
+TZ      = ZoneInfo(os.getenv("TIMEZONE", "UTC"))
 BASE          = "https://api.openweathermap.org/data/2.5/weather"
 BASE_FORECAST = "https://api.openweathermap.org/data/2.5/forecast"
 
@@ -90,16 +93,31 @@ def _summarize(entries: list, city: str, day_iso: str) -> dict:
     }
 
 
+def _entries_on_local_date(raw: dict, target_date: date) -> list:
+    """Filter forecast entries whose *local-time* date matches target_date.
+
+    The /forecast endpoint stamps dt_txt in UTC, but users perceive
+    "today" / "tomorrow" in local time. Using the unix `dt` with the
+    configured TIMEZONE avoids off-by-one-day errors near midnight
+    UTC (e.g. Europe in the afternoon).
+    """
+    out = []
+    for e in raw.get("list", []):
+        local_dt = datetime.fromtimestamp(e["dt"], tz=TZ)
+        if local_dt.date() == target_date:
+            out.append(e)
+    return out
+
+
 def forecast_tomorrow() -> dict:
     data = _fetch_forecast_raw()
     if "error" in data:
         return data
-    from datetime import date, timedelta
-    tomorrow = (date.today() + timedelta(days=1)).isoformat()
-    entries = [e for e in data["list"] if e["dt_txt"].startswith(tomorrow)]
+    tomorrow = datetime.now(TZ).date() + timedelta(days=1)
+    entries = _entries_on_local_date(data, tomorrow)
     if not entries:
         return {"error": "no forecast data for tomorrow"}
-    return _summarize(entries, data["city"]["name"], tomorrow)
+    return _summarize(entries, data["city"]["name"], tomorrow.isoformat())
 
 
 def forecast_today() -> dict:
@@ -111,21 +129,17 @@ def forecast_today() -> dict:
     the forecast endpoint has no today-slots left, so the DB history
     carries the whole range — which is the realistic min/max anyway.
     """
-    from datetime import date, datetime, time as dtime
-    import time
+    today_local = datetime.now(TZ).date()
+    today       = today_local.isoformat()
+    data        = _fetch_forecast_raw()
+    city        = data.get("city", {}).get("name") if "error" not in data else None
 
-    today = date.today().isoformat()
-    data  = _fetch_forecast_raw()
-    city  = data.get("city", {}).get("name") if "error" not in data else None
+    # Past: real observations from our own polling history (since local midnight)
+    midnight_local = datetime.combine(today_local, dtime.min, tzinfo=TZ)
+    past = db.get_weather_since(int(midnight_local.timestamp()))
 
-    # Past: real observations from our own polling history
-    midnight = int(datetime.combine(date.today(), dtime.min).timestamp())
-    past = db.get_weather_since(midnight)
-
-    # Future: any forecast slots still stamped with today's date
-    future_entries = []
-    if "error" not in data:
-        future_entries = [e for e in data["list"] if e["dt_txt"].startswith(today)]
+    # Future: forecast slots whose local-time date is still today.
+    future_entries = _entries_on_local_date(data, today_local) if "error" not in data else []
 
     temps      = [r["temp_c"] for r in past]
     humidities = []
