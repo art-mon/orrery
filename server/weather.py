@@ -103,12 +103,36 @@ def forecast_tomorrow() -> dict:
 
 
 def forecast_today() -> dict:
+    """Summary of today's weather.
+
+    The /forecast endpoint returns future 3-hour slots, so late in the
+    day there may be zero slots still stamped with today's date. In
+    that case we fall back to the current observation, which at least
+    represents "right now" even if there's no remaining window to
+    average over.
+    """
     data = _fetch_forecast_raw()
     if "error" in data:
         return data
     from datetime import date
     today = date.today().isoformat()
     entries = [e for e in data["list"] if e["dt_txt"].startswith(today)]
-    if not entries:
-        return {"error": "no forecast data for today"}
-    return _summarize(entries, data["city"]["name"], today)
+    city = data["city"]["name"]
+    if entries:
+        return _summarize(entries, city, today)
+
+    cur = current()
+    if "error" in cur:
+        return {"error": "no forecast data for today and no current reading"}
+    return {
+        "date":        today,
+        "city":        cur.get("city") or city,
+        "temp_min_c":  cur["temp_c"],
+        "temp_max_c":  cur["temp_c"],
+        "humidity":    cur["humidity"],
+        "condition":   cur["condition"],
+        "description": cur.get("description", cur["condition"]),
+        "icon":        cur.get("icon", ""),
+        "wind_kmh":    cur["wind_kmh"],
+        "fallback":    "current",
+    }

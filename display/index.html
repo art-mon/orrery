@@ -219,8 +219,10 @@
 
   <div class="progress-row">
     <button id="pause-btn" style="min-height:36px; padding:6px 14px;">⏸ Pause</button>
+    <button id="prev-view-btn" style="min-height:36px; padding:6px 10px;" title="Previous view">◀</button>
     <span>Scene <span id="scene-idx">1/5</span></span>
     <span>View <span id="view-idx">1/3</span></span>
+    <button id="next-view-btn" style="min-height:36px; padding:6px 10px;" title="Next view">▶</button>
     <div id="view-bar-track"><div id="view-bar"></div></div>
   </div>
 
@@ -2268,6 +2270,19 @@ document.querySelectorAll('[data-scene]').forEach(btn => {
 document.getElementById('pause-btn').addEventListener('click', () => {
   paused = !paused;
   document.getElementById('pause-btn').textContent = paused ? '▶ Play' : '⏸ Pause';
+});
+
+document.getElementById('prev-view-btn').addEventListener('click', () => {
+  viewCount   = (viewCount - 1 + VIEWS_PER_SCENE) % VIEWS_PER_SCENE;
+  viewTick    = 0;
+  tickerOffset = 0; _tickerAccum = 0;
+  updateProgress();
+});
+document.getElementById('next-view-btn').addEventListener('click', () => {
+  viewCount   = (viewCount + 1) % VIEWS_PER_SCENE;
+  viewTick    = 0;
+  tickerOffset = 0; _tickerAccum = 0;
+  updateProgress();
 });
 
 // ── TOD slider ────────────────────────────────────────────────────────────────
