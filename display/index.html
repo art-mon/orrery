@@ -207,6 +207,7 @@
   <div class="label">Scenes</div>
   <div class="scene-buttons">
     <button data-scene="daily" class="active">Daily</button>
+    <button data-scene="forecast">⛅ Forecast</button>
     <button data-scene="moon">🌙 Moon</button>
     <button data-scene="galaxy">🌀 Galaxy</button>
     <button id="broadcast-btn">📻 Broadcast</button>
@@ -593,6 +594,7 @@ fetch('../data/daily.json')
 
     // Forecast
     forecastData = d.forecast || null;
+    forecastTodayData = d.forecast_today || null;
 
     // Events
     const evts = (d.events || {}).events || [];
@@ -1823,6 +1825,107 @@ function sceneApodLive(tick) {
 
 // ─── Tomorrow forecast scene ──────────────────────────────────────────────────
 let forecastData = null; // populated from daily.json fetch
+let forecastTodayData = null;
+
+// Shared weather icon renderer (used by sceneTomorrow + sceneForecast).
+function drawWeatherIcon(ix, iy, cond, tick) {
+  const c = (cond || '').toLowerCase();
+  const isClear = c.includes('clear');
+  const isRain  = c.includes('rain') || c.includes('drizzle');
+  const isSnow  = c.includes('snow');
+  const isStorm = c.includes('thunder');
+  if (isClear) {
+    circle(ix, iy, 4, 255, 200, 50, true);
+  } else if (isRain) {
+    rect(ix-4, iy-2, 9, 4, 160, 160, 180, true);
+    circle(ix, iy-2, 3, 160, 160, 180, true);
+    for (let d = 0; d < 4; d++)
+      px(ix - 3 + d*2, iy + 3 + (tick+d*5)%4, 100, 150, 255);
+  } else if (isSnow) {
+    circle(ix, iy-1, 3, 200, 200, 220, true);
+    for (let d = 0; d < 4; d++) {
+      const sx = ix - 2 + (d%2)*4, sy = iy + 3 + Math.floor(d/2)*2;
+      px(sx, sy, 220, 230, 255);
+    }
+  } else if (isStorm) {
+    rect(ix-4, iy-3, 9, 4, 100, 100, 120, true);
+    px(ix,   iy+1, 255, 220, 0); px(ix-1, iy+2, 255, 220, 0);
+    px(ix,   iy+3, 255, 220, 0); px(ix+1, iy+4, 255, 220, 0);
+  } else {
+    circle(ix-1, iy,   3, 180, 180, 200, true);
+    circle(ix+2, iy-1, 3, 190, 190, 210, true);
+    circle(ix+1, iy+1, 3, 200, 200, 220, true);
+  }
+}
+
+function drawForecastSky(cond) {
+  const c = (cond || '').toLowerCase();
+  const isClear = c.includes('clear');
+  const isRain  = c.includes('rain') || c.includes('drizzle');
+  const isSnow  = c.includes('snow');
+  const isStorm = c.includes('thunder');
+  for (let y = 0; y < H; y++) {
+    const t = y / (H - 1);
+    let r, g, b;
+    if (isClear)      { r = 20+t*60;  g = 60+t*80;  b = 160+t*60; }
+    else if (isRain)  { r = 30+t*20;  g = 40+t*20;  b = 70+t*30; }
+    else if (isSnow)  { r = 80+t*80;  g = 90+t*80;  b = 120+t*80; }
+    else if (isStorm) { r = 10+t*20;  g = 10+t*15;  b = 30+t*20; }
+    else              { r = 40+t*30;  g = 50+t*30;  b = 80+t*40; }
+    hline(y, 0, W-1, r|0, g|0, b|0);
+  }
+}
+
+// Three-view weather forecast: NOW → TODAY → TOMORROW.
+function sceneForecast(tick) {
+  clear();
+
+  const view = viewCount % 3;
+  let data, label, isNow = false;
+  if (view === 0) {
+    data = currentWeather; label = 'NOW'; isNow = true;
+  } else if (view === 1) {
+    data = forecastTodayData; label = 'TODAY';
+  } else {
+    data = forecastData; label = 'TMRW';
+  }
+
+  drawForecastSky(data?.condition);
+
+  if (!data || data.error) {
+    text(label, 22, 1, 200, 200, 200);
+    text('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 13, 120, 120, 120);
+    return;
+  }
+
+  drawWeatherIcon(10, 10, data.condition, tick);
+  text(label, 22, 1, 200, 200, 200);
+
+  const desc = (data.description || data.condition || '').toUpperCase();
+  text(desc, 22, 8, 255, 255, 255);
+
+  // Temperature line: NOW shows single temp, TODAY/TMRW show min–max.
+  if (isNow) {
+    const t = Math.round(data.temp_c) + '\xb0C';
+    text(t, 22, 15, 255, 220, 120);
+    if (data.feels_c != null) {
+      const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
+      text(fl, 22 + textWidth(t) + 3, 15, 160, 160, 180);
+    }
+  } else {
+    const tmin = data.temp_min_c + '\xb0';
+    const tmax = data.temp_max_c + '\xb0';
+    text(tmin + 'C', 22, 15, 100, 180, 255);
+    const sepX = 22 + textWidth(tmin + 'C') + 2;
+    text('-', sepX, 15, 180, 180, 180);
+    text(tmax + 'C', sepX + textWidth('-') + 2, 15, 255, 140, 60);
+  }
+
+  const city  = (data.city || '').toUpperCase();
+  const humid = 'HUM ' + data.humidity + '%';
+  const wind  = 'WIND ' + data.wind_kmh + 'KMH';
+  drawTicker(city + '  ~  ' + humid + '  ~  ' + wind, H-7, 100, 180, 255, 0, 0, 0);
+}
 
 function sceneTomorrow(tick) {
   clear();
@@ -2019,7 +2122,7 @@ function sceneRadio(tick) {
 }
 
 // ─── Animation loop ───────────────────────────────────────────────────────────
-const SCENES = ['daily', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
+const SCENES = ['daily', 'forecast', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
 const VIEWS_PER_SCENE = 3;
 
@@ -2037,6 +2140,12 @@ const SCENE_INFO = {
            <strong>Always on:</strong> Time (top-left), temperature (top-right).<br>
            <strong>Bottom strip:</strong> Rotates every 30 s — NASA events → asteroid approaches → tomorrow's forecast.<br>
            <strong>Slider:</strong> Preview any hour's colour palette in the mockup.`,
+  },
+  forecast: {
+    label: 'Forecast',
+    desc: `<strong>Art:</strong> Condition-reactive sky gradient (clear/rain/snow/storm/cloud) with pixel-art weather icon.<br>
+           <strong>Rotation:</strong> Three views — NOW (current temp + feels-like), TODAY (min–max + dominant), TOMORROW (min–max + dominant).<br>
+           <strong>Bottom strip:</strong> City, humidity, wind.`,
   },
   moon: {
     label: 'Moon',
@@ -2114,6 +2223,7 @@ function updateProgress() {
 function drawScene() {
   switch(currentScene) {
     case 'daily':      sceneDaily(tick);     break;
+    case 'forecast':   sceneForecast(tick);  break;
     case 'moon':       sceneNight(tick);     break;
     case 'galaxy':     sceneGalaxy(tick);    break;
     case 'asteroid':   sceneAsteroid(tick);  break;

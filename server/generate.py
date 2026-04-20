@@ -50,7 +50,10 @@ def run():
     print("Weather (current)...")
     weather_data = safe(weather.current)
 
-    print("Weather (forecast)...")
+    print("Weather (today forecast)...")
+    forecast_today_data = safe(weather.forecast_today)
+
+    print("Weather (tomorrow forecast)...")
     forecast_data = safe(weather.forecast_tomorrow)
 
     daily = {
@@ -59,6 +62,7 @@ def run():
         "events":    events_data,
         "asteroids": asteroids_data,
         "weather":   weather_data,
+        "forecast_today": forecast_today_data,
         "forecast":  forecast_data,
     }
 
