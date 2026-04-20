@@ -906,13 +906,13 @@ function sceneAsteroid(tick) {
 
   const rock   = asteroidList[0];
   const missKm = (rock && rock.miss_distance_km) || 384400;
-  const TMAX   = ticksPerView;
+  const TMAX   = effectiveTPV();
   const t      = Math.min(1, viewTick / TMAX);
 
   // Beats: Earth pans → split-flap callouts (label rolls in, holds, flips
   // to value) → asteroid flyby. Callout timing is tick-based for crisp
   // per-slot locking; Earth & flyby use scene-fraction.
-  const T_OPEN    = 0.28;
+  const T_OPEN    = 0.32;
   const T_FLY_END = 0.95;
   const vt        = viewTick;
   const openT     = Math.round(TMAX * T_OPEN);
@@ -2278,6 +2278,10 @@ function sceneRadio(tick) {
 // ─── Animation loop ───────────────────────────────────────────────────────────
 const SCENES = ['daily', 'forecast', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
+// Scene-specific duration multipliers — applied on top of ticksPerView for
+// scenes whose animation budget needs more room than the global default.
+const SCENE_TICK_MULT = { asteroid: 1.8 };
+const effectiveTPV = () => Math.round(ticksPerView * (SCENE_TICK_MULT[currentScene] || 1));
 const VIEWS_PER_SCENE = 3;
 
 let currentScene = 'daily';
@@ -2370,7 +2374,7 @@ function advanceScene() {
 function updateProgress() {
   document.getElementById('scene-idx').textContent  = `${sceneIndex + 1}/${SCENES.length}`;
   document.getElementById('view-idx').textContent   = `${viewCount + 1}/${VIEWS_PER_SCENE}`;
-  const pct = (viewTick / ticksPerView) * 100;
+  const pct = (viewTick / effectiveTPV()) * 100;
   document.getElementById('view-bar').style.width = pct + '%';
 }
 
@@ -2392,7 +2396,7 @@ function drawScene() {
 
   if (!paused) {
     viewTick++;
-    if (viewTick >= ticksPerView) {
+    if (viewTick >= effectiveTPV()) {
       viewTick = 0;
       viewCount++;
       if (viewCount >= VIEWS_PER_SCENE) advanceScene();
