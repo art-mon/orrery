@@ -118,14 +118,14 @@
   },
   "forecast_today": {
     "date": "2026-04-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.7,
     "temp_max_c": 13.7,
     "humidity": 88,
     "condition": "Clear",
-    "description": "clear sky",
+    "description": "clear",
     "icon": "01n",
     "wind_kmh": 3.7,
-    "fallback": "current"
+    "samples": 1
   }
 }

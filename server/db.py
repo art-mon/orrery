@@ -165,5 +165,14 @@ def get_weather_history(limit: int = 48) -> list:
         return [dict(r) for r in rows]
 
 
+def get_weather_since(timestamp: int) -> list:
+    with _conn() as conn:
+        rows = conn.execute(
+            "SELECT * FROM weather WHERE timestamp >= ? ORDER BY timestamp ASC",
+            (timestamp,),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+
 # Init on import
 init()

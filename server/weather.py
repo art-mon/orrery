@@ -105,34 +105,67 @@ def forecast_tomorrow() -> dict:
 def forecast_today() -> dict:
     """Summary of today's weather.
 
-    The /forecast endpoint returns future 3-hour slots, so late in the
-    day there may be zero slots still stamped with today's date. In
-    that case we fall back to the current observation, which at least
-    represents "right now" even if there's no remaining window to
-    average over.
+    Combines real observations already taken today (stored in the DB
+    every time `current()` refreshes) with any remaining 3-hour
+    forecast slots still stamped with today's date. Late in the day
+    the forecast endpoint has no today-slots left, so the DB history
+    carries the whole range — which is the realistic min/max anyway.
     """
-    data = _fetch_forecast_raw()
-    if "error" in data:
-        return data
-    from datetime import date
-    today = date.today().isoformat()
-    entries = [e for e in data["list"] if e["dt_txt"].startswith(today)]
-    city = data["city"]["name"]
-    if entries:
-        return _summarize(entries, city, today)
+    from datetime import date, datetime, time as dtime
+    import time
 
+    today = date.today().isoformat()
+    data  = _fetch_forecast_raw()
+    city  = data.get("city", {}).get("name") if "error" not in data else None
+
+    # Past: real observations from our own polling history
+    midnight = int(datetime.combine(date.today(), dtime.min).timestamp())
+    past = db.get_weather_since(midnight)
+
+    # Future: any forecast slots still stamped with today's date
+    future_entries = []
+    if "error" not in data:
+        future_entries = [e for e in data["list"] if e["dt_txt"].startswith(today)]
+
+    temps      = [r["temp_c"] for r in past]
+    humidities = []
+    winds      = []
+    conditions = [r["condition"] for r in past if r.get("condition")]
+    icon       = past[-1]["icon"] if past else None
+
+    for e in future_entries:
+        temps.append(e["main"]["temp"])
+        humidities.append(e["main"]["humidity"])
+        winds.append(e["wind"]["speed"])
+        conditions.append(e["weather"][0]["main"])
+
+    # Fill in humidity/wind from current reading if we only have DB history
     cur = current()
-    if "error" in cur:
-        return {"error": "no forecast data for today and no current reading"}
+    if "error" not in cur:
+        humidities.append(cur["humidity"])
+        winds.append(cur["wind_kmh"] / 3.6)   # back to m/s for averaging
+        if not conditions:
+            conditions.append(cur["condition"])
+        if not temps:
+            temps.append(cur["temp_c"])
+        if icon is None:
+            icon = cur.get("icon")
+        if city is None:
+            city = cur.get("city")
+
+    if not temps:
+        return {"error": "no weather data for today"}
+
+    dominant = max(set(conditions), key=conditions.count) if conditions else "Unknown"
     return {
         "date":        today,
-        "city":        cur.get("city") or city,
-        "temp_min_c":  cur["temp_c"],
-        "temp_max_c":  cur["temp_c"],
-        "humidity":    cur["humidity"],
-        "condition":   cur["condition"],
-        "description": cur.get("description", cur["condition"]),
-        "icon":        cur.get("icon", ""),
-        "wind_kmh":    cur["wind_kmh"],
-        "fallback":    "current",
+        "city":        city or "",
+        "temp_min_c":  round(min(temps), 1),
+        "temp_max_c":  round(max(temps), 1),
+        "humidity":    round(sum(humidities) / len(humidities)) if humidities else 0,
+        "condition":   dominant,
+        "description": dominant.lower(),
+        "icon":        icon or "",
+        "wind_kmh":    round((sum(winds) / len(winds)) * 3.6, 1) if winds else 0,
+        "samples":     len(temps),
     }

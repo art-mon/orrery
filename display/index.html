@@ -1914,9 +1914,13 @@ function sceneForecast(tick) {
       const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
       text(fl, 22 + textWidth(t) + 3, 15, 160, 160, 180);
     }
+  } else if (data.temp_min_c === data.temp_max_c) {
+    // Degenerate range (only one sample so far today) — show single temp.
+    const t = Math.round(data.temp_min_c) + '\xb0C';
+    text(t, 22, 15, 255, 220, 120);
   } else {
-    const tmin = data.temp_min_c + '\xb0';
-    const tmax = data.temp_max_c + '\xb0';
+    const tmin = Math.round(data.temp_min_c) + '\xb0';
+    const tmax = Math.round(data.temp_max_c) + '\xb0';
     text(tmin + 'C', 22, 15, 100, 180, 255);
     const sepX = 22 + textWidth(tmin + 'C') + 2;
     text('-', sepX, 15, 180, 180, 180);
