@@ -910,8 +910,8 @@ function sceneAsteroid(tick) {
   const o   = ease(Math.min(1, t / T_OPEN));
   const cx0 = 32, cy0 = 16, r0 = 11;
   const cx1 = -2, cy1 = 38, r1 = 32;
-  const ecx = cx0 + (cx1 - cx0) * o;
-  const ecy = cy0 + (cy1 - cy0) * o;
+  const ecx = Math.round(cx0 + (cx1 - cx0) * o);
+  const ecy = Math.round(cy0 + (cy1 - cy0) * o);
   const er  = r0 + (r1 - r0) * o;
   drawEarthSprite(ecx, ecy, er);
 
