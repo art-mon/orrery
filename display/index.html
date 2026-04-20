@@ -305,7 +305,7 @@ const FONT = {
   'K': [[1,0,1],[1,1,0],[1,0,0],[1,1,0],[1,0,1]],
   'L': [[1,0,0],[1,0,0],[1,0,0],[1,0,0],[1,1,1]],
   'M': [[1,0,1],[1,1,1],[1,0,1],[1,0,1],[1,0,1]],
-  'N': [[1,0,1],[1,1,1],[1,1,1],[1,0,1],[1,0,1]],
+  'N': [[1,0,0,1],[1,1,0,1],[1,0,1,1],[1,0,0,1],[1,0,0,1]],
   'O': [[0,1,0],[1,0,1],[1,0,1],[1,0,1],[0,1,0]],
   'P': [[1,1,0],[1,0,1],[1,1,0],[1,0,0],[1,0,0]],
   'Q': [[0,1,0],[1,0,1],[1,0,1],[1,1,1],[0,1,1]],
@@ -909,13 +909,21 @@ function sceneAsteroid(tick) {
   const TMAX   = ticksPerView;
   const t      = Math.min(1, viewTick / TMAX);
 
-  // Beats: Earth pans → labelled typewriter (LABEL, erase, VALUE) per line
-  // → asteroid flyby. T_FLY_START depends on how much text there is.
+  // Beats: Earth pans → split-flap callouts (label rolls in, holds, flips
+  // to value) → asteroid flyby. Callout timing is tick-based for crisp
+  // per-slot locking; Earth & flyby use scene-fraction.
   const T_OPEN    = 0.14;
   const T_FLY_END = 0.95;
-  const CHAR      = 0.008;   // scene-fraction per typed char
-  const HOLD      = 0.024;   // pause holding label / full value
+  const vt        = viewTick;
+  const openT     = Math.round(TMAX * T_OPEN);
+  const flyEndT   = Math.round(TMAX * T_FLY_END);
   const ease = (x) => x < 0.5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
+
+  // Split-flap parameters
+  const ROLL = 5;   // ticks a slot rolls before locking
+  const STAG = 2;   // tick offset between adjacent slots
+  const HOLD = 5;   // ticks holding the full label before flipping to value
+  const lineTicks = s => s.length ? (s.length - 1) * STAG + ROLL : 0;
 
   // Callout strings
   let km = '', diam = '', name = '';
@@ -926,12 +934,13 @@ function sceneAsteroid(tick) {
     diam = '~' + Math.round(rock.diameter_m) + 'M';
     name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
   }
-  const L1 = 'DISTANCE', L2 = 'DIAMETER', L3 = 'NAME';
-  const lineDur = (L, V) => 2*L.length*CHAR + HOLD + V.length*CHAR;
-  const s1 = T_OPEN;
+  const L1 = 'DISTANCE', L2 = 'DIAMETER', L3 = 'ASTEROID NAME';
+  const lineDur = (L, V) => lineTicks(L) + HOLD + lineTicks(V);
+  const s1 = openT;
   const s2 = s1 + (rock ? lineDur(L1, km)   : 0);
   const s3 = s2 + (rock ? lineDur(L2, diam) : 0);
-  const T_FLY_START = rock ? (s3 + lineDur(L3, name)) : T_OPEN;
+  const flyStartT = rock ? (s3 + lineDur(L3, name)) : openT;
+  const T_FLY_START = flyStartT / TMAX;
 
   // Earth limb pan/zoom
   const o   = ease(Math.min(1, t / T_OPEN));
@@ -1000,23 +1009,42 @@ function sceneAsteroid(tick) {
 
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  // Callouts — label-then-value typewriter per line, sequential.
+  // Callouts — split-flap: each slot rolls through A-Z0-9, locks left→right,
+  // holds, then flips to the value with the same rolling effect.
   if (rock) {
-    const reveal = (L, V, start) => {
-      const endA = start + L.length * CHAR;            // typing label
-      const endH = endA  + HOLD;                       // hold full label
-      const endB = endH  + L.length * CHAR;            // erasing label
-      const endC = endB  + V.length * CHAR;            // typing value
-      if (t < start) return '';
-      if (t < endA) return L.slice(0, Math.floor((t - start) / CHAR));
-      if (t < endH) return L;
-      if (t < endB) return L.slice(0, Math.max(0, L.length - Math.floor((t - endH) / CHAR)));
-      if (t < endC) return V.slice(0, Math.floor((t - endB) / CHAR));
-      return V;
+    const DECK = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+    const rollChar = (slot, tk) => {
+      // Deterministic per-slot pseudo-random advancing every tick
+      const r = Math.sin((slot + 1) * 37.3 + tk * 7.1) * 43758.5453;
+      const f = r - Math.floor(r);
+      return DECK[Math.floor(f * DECK.length)];
     };
-    const x1 = reveal(L1, km,   s1);
-    const x2 = reveal(L2, diam, s2);
-    const x3 = reveal(L3, name, s3);
+    const flap = (L, V, startTick) => {
+      const labEnd  = startTick + lineTicks(L);
+      const holdEnd = labEnd + HOLD;
+      const valStart = holdEnd;
+      const valEnd  = valStart + lineTicks(V);
+      let target, phaseStart;
+      if (vt < startTick) return '';
+      else if (vt < labEnd) { target = L; phaseStart = startTick; }
+      else if (vt < holdEnd) return L;
+      else if (vt < valEnd) { target = V; phaseStart = valStart; }
+      else return V;
+      let out = '';
+      for (let i = 0; i < target.length; i++) {
+        const ch = target[i];
+        if (ch === ' ') { out += ' '; continue; }
+        const sStart = phaseStart + i * STAG;
+        const sLock  = sStart + ROLL;
+        if (vt < sStart)      out += ' ';
+        else if (vt < sLock)  out += rollChar(i, vt);
+        else                  out += ch;
+      }
+      return out;
+    };
+    const x1 = flap(L1, km,   s1);
+    const x2 = flap(L2, diam, s2);
+    const x3 = flap(L3, name, s3);
     if (x1) textOutlined(x1, W - textWidth(x1) - 1, 13,    255, 200, 120);
     if (x2) textOutlined(x2, W - textWidth(x2) - 1, 20,    200, 220, 255);
     if (x3) textOutlined(x3, W - textWidth(x3) - 1, H - 6, 255, 160,  80);
