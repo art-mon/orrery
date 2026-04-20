@@ -920,7 +920,10 @@ function sceneAsteroid(tick) {
   else if (t < T_ZOOM_END) S = Math.pow(S_end, (t - T_HOLD_IN) / (T_ZOOM_END - T_HOLD_IN));
   else                     S = S_end;
 
-  const earthR = earthR0 / S;
+  // Clamp Earth to a minimum visible size so it always reads as the
+  // scale anchor — at extreme zoom the true radius goes sub-pixel and
+  // the trajectory looks like it's heading at nothing.
+  const earthR = Math.max(1.2, earthR0 / S);
   const cx = 20;
   const cy = 13;
 
@@ -959,14 +962,30 @@ function sceneAsteroid(tick) {
     }
     if (ax >= 0 && ax < W && ay >= 0 && ay < H) px(ax, ay, ...body);
 
-    // Dotted line from Earth to asteroid at closest approach (hold phase)
+    // Miss-distance ruler at closest approach: ticks near Earth and near the
+    // asteroid, plus a couple of sparse dots between. Looks like a measurement,
+    // not a trajectory trail.
     if (t > T_AST_END) {
-      const segs = Math.max(3, Math.round(astPxDist / 2));
-      for (let i = 2; i < segs; i += 2) {
-        const dx = Math.round(cx + (ax - cx) * (i / segs));
-        const dy = Math.round(cy + (ay - cy) * (i / segs));
-        if (dx >= 0 && dx < W && dy >= 0 && dy < H) px(dx, dy, 110, 130, 170);
-      }
+      const vx = ax - cx, vy = ay - cy;
+      const vlen = Math.max(1, Math.sqrt(vx*vx + vy*vy));
+      const ux = vx / vlen, uy = vy / vlen;
+      // perpendicular unit for tick marks
+      const pxu = -uy, pyu = ux;
+      const tick = (ex, ey) => {
+        for (let k = -1; k <= 1; k++) {
+          const tx = Math.round(ex + pxu * k);
+          const ty = Math.round(ey + pyu * k);
+          if (tx >= 0 && tx < W && ty >= 0 && ty < H) px(tx, ty, 140, 160, 200);
+        }
+      };
+      // near-Earth tick (just outside the disc)
+      tick(cx + ux * (earthR + 1), cy + uy * (earthR + 1));
+      // near-asteroid tick (just back from the rock)
+      tick(ax - ux * 2, ay - uy * 2);
+      // one middle marker
+      const mxm = Math.round(cx + vx * 0.5);
+      const mym = Math.round(cy + vy * 0.5);
+      if (mxm >= 0 && mxm < W && mym >= 0 && mym < H) px(mxm, mym, 90, 110, 150);
     }
   }
 
