@@ -912,7 +912,7 @@ function sceneAsteroid(tick) {
   // Beats: Earth pans → split-flap callouts (label rolls in, holds, flips
   // to value) → asteroid flyby. Callout timing is tick-based for crisp
   // per-slot locking; Earth & flyby use scene-fraction.
-  const T_OPEN    = 0.32;
+  const T_OPEN    = 0.22;
   const T_FLY_END = 0.95;
   const vt        = viewTick;
   const openT     = Math.round(TMAX * T_OPEN);
@@ -935,13 +935,10 @@ function sceneAsteroid(tick) {
     name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
   }
   const L1 = 'DISTANCE', L2 = 'DIAMETER', L3 = 'ASTEROID NAME';
-  const POST = 12;  // hold the final value ~1 s before moving to the next line
-  const lineDur = (L, V) => lineTicks(L) + HOLD + lineTicks(V) + POST;
-  const s1 = openT;
-  const s2 = s1 + (rock ? lineDur(L1, km)   : 0);
-  const s3 = s2 + (rock ? lineDur(L2, diam) : 0);
-  const flyStartT = rock ? (s3 + lineDur(L3, name)) : openT;
-  const T_FLY_START = flyStartT / TMAX;
+  // All three lines animate in parallel, and the asteroid flies during
+  // the callouts too — everything starts as soon as Earth has settled.
+  const s1 = openT, s2 = openT, s3 = openT;
+  const T_FLY_START = T_OPEN;
 
   // Earth limb pan/zoom
   const o   = ease(Math.min(1, t / T_OPEN));
@@ -2280,7 +2277,7 @@ const SCENES = ['daily', 'forecast', 'moon', 'galaxy', 'asteroid', 'event', 'apo
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
 // Scene-specific duration multipliers — applied on top of ticksPerView for
 // scenes whose animation budget needs more room than the global default.
-const SCENE_TICK_MULT = { asteroid: 1.8 };
+const SCENE_TICK_MULT = { asteroid: 1.2 };
 const effectiveTPV = () => Math.round(ticksPerView * (SCENE_TICK_MULT[currentScene] || 1));
 const VIEWS_PER_SCENE = 3;
 
