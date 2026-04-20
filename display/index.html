@@ -1895,36 +1895,36 @@ function sceneForecast(tick) {
   drawForecastSky(data?.condition);
 
   if (!data || data.error) {
-    text(label, 22, 1, 200, 200, 200);
-    text('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 13, 120, 120, 120);
+    textOutlined(label, 22, 1, 200, 200, 200);
+    textOutlined('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 13, 120, 120, 120);
     return;
   }
 
   drawWeatherIcon(10, 10, data.condition, tick);
-  text(label, 22, 1, 200, 200, 200);
+  textOutlined(label, 22, 1, 200, 200, 200);
 
   const desc = (data.description || data.condition || '').toUpperCase();
-  text(desc, 22, 8, 255, 255, 255);
+  textOutlined(desc, 22, 8, 255, 255, 255);
 
   // Temperature line: NOW shows single temp, TODAY/TMRW show min–max.
   if (isNow) {
     const t = Math.round(data.temp_c) + '\xb0C';
-    text(t, 22, 15, 255, 220, 120);
+    textOutlined(t, 22, 15, 255, 220, 120);
     if (data.feels_c != null) {
       const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
-      text(fl, 22 + textWidth(t) + 3, 15, 160, 160, 180);
+      textOutlined(fl, 22 + textWidth(t) + 3, 15, 160, 160, 180);
     }
   } else if (data.temp_min_c === data.temp_max_c) {
     // Degenerate range (only one sample so far today) — show single temp.
     const t = Math.round(data.temp_min_c) + '\xb0C';
-    text(t, 22, 15, 255, 220, 120);
+    textOutlined(t, 22, 15, 255, 220, 120);
   } else {
     const tmin = Math.round(data.temp_min_c) + '\xb0';
     const tmax = Math.round(data.temp_max_c) + '\xb0';
-    text(tmin + 'C', 22, 15, 100, 180, 255);
+    textOutlined(tmin + 'C', 22, 15, 100, 180, 255);
     const sepX = 22 + textWidth(tmin + 'C') + 2;
-    text('-', sepX, 15, 180, 180, 180);
-    text(tmax + 'C', sepX + textWidth('-') + 2, 15, 255, 140, 60);
+    textOutlined('-', sepX, 15, 180, 180, 180);
+    textOutlined(tmax + 'C', sepX + textWidth('-') + 2, 15, 255, 140, 60);
   }
 
   const city  = (data.city || '').toUpperCase();
