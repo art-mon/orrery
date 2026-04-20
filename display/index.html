@@ -855,53 +855,138 @@ function sceneDaily(tick) {
   drawTicker(dailyTickerStr(tick), 25, 220, 215, 170, 0, 0, 0);
 }
 
+// Pixel-art Earth disc for the asteroid scale-zoom scene. Draws a
+// shaded sphere (sunlit from upper-left) with continent dithering and
+// a 1-px atmosphere halo. Radius can be fractional; below ~1 px we
+// drop to a single pixel so it still reads at extreme zoom.
+function drawEarthSprite(cx, cy, r) {
+  if (r < 0.7) { px(cx, cy, 100, 140, 220); return; }
+  const LX = -0.55, LY = -0.45;   // sun direction (upper-left)
+  const R  = Math.ceil(r);
+  for (let dy = -R; dy <= R; dy++) {
+    for (let dx = -R; dx <= R; dx++) {
+      const d = Math.sqrt(dx*dx + dy*dy);
+      if (d > r) continue;
+      const x = cx + dx, y = cy + dy;
+      if (x < 0 || x >= W || y < 0 || y >= H) continue;
+      const nx = dx / Math.max(r, 0.01);
+      const ny = dy / Math.max(r, 0.01);
+      const shade = Math.max(0.15, Math.min(1, nx*LX + ny*LY + 0.65));
+      // Pseudo-continent pattern from low-freq trig — stable across frames.
+      const land = (Math.sin(dx*0.75 + dy*0.55) + Math.cos(dx*0.35 - dy*0.85)) > 0.35;
+      const br = (land ? 60  : 25)  * shade;
+      const bg = (land ? 150 : 85)  * shade;
+      const bb = (land ? 60  : 210) * shade;
+      px(x, y, br|0, bg|0, bb|0);
+    }
+  }
+  if (r >= 3.5) {
+    const steps = Math.max(24, Math.round(r * 6));
+    for (let i = 0; i < steps; i++) {
+      const ang = (i / steps) * Math.PI * 2;
+      const hx = Math.round(cx + Math.cos(ang) * (r + 1));
+      const hy = Math.round(cy + Math.sin(ang) * (r + 1));
+      if (hx >= 0 && hx < W && hy >= 0 && hy < H) px(hx, hy, 40, 90, 160);
+    }
+  }
+}
+
 function sceneAsteroid(tick) {
   clear();
-
   stars(42, 30);
 
-  // Deep space bg — subtle nebula
-  for (let i = 0; i < 20; i++) {
-    let s = 42 + i * 137;
-    const rand = () => { s = (s * 1664525 + 1013904223) & 0xffffffff; return (s >>> 0) / 0xffffffff; };
-    const x = Math.floor(rand() * W);
-    const y = Math.floor(rand() * (H-8));
-    const r = Math.floor(rand() * 40);
-    const g = Math.floor(rand() * 20);
-    const b = Math.floor(rand() * 60 + 20);
-    px(x, y, r, g, b);
+  const rock     = asteroidList[0];
+  const missKm   = (rock && rock.miss_distance_km) || 384400;  // default: lunar
+  const EARTH_KM = 12742;
+
+  // Zoom factor S: 1 = Earth fills the frame. S_end puts the closest-approach
+  // point at ~targetEndPx from Earth's centre. Clamped so extreme passes
+  // (millions of km) don't shrink Earth below visibility; the numeric
+  // distance label carries the true scale.
+  const earthR0    = 11;
+  const targetEnd  = 22;
+  const S_target   = (missKm * earthR0) / (targetEnd * (EARTH_KM / 2));
+  const S_end      = Math.max(4, Math.min(60, S_target));
+
+  const TMAX = ticksPerView;
+  const t    = Math.min(1, viewTick / TMAX);
+
+  // Beat timings: hold → zoom-out → asteroid streak → closest-approach hold.
+  const T_HOLD_IN  = 0.10;
+  const T_ZOOM_END = 0.60;
+  const T_AST_END  = 0.75;
+  let S;
+  if (t < T_HOLD_IN)       S = 1;
+  else if (t < T_ZOOM_END) S = Math.pow(S_end, (t - T_HOLD_IN) / (T_ZOOM_END - T_HOLD_IN));
+  else                     S = S_end;
+
+  const earthR = earthR0 / S;
+  const cx = 20;
+  const cy = 13;
+
+  drawEarthSprite(cx, cy, earthR);
+
+  // Moon as scale anchor — at 60.3 Earth-radii. Only drawn once zoom is
+  // far enough that its position lands on-frame.
+  const moonPx = 60.3 * earthR;
+  const moonAng = 2.4;
+  const mx = Math.round(cx + Math.cos(moonAng) * moonPx);
+  const my = Math.round(cy + Math.sin(moonAng) * moonPx);
+  if (S > 3 && mx >= 0 && mx < W && my >= 0 && my < H) {
+    px(mx, my, 210, 210, 190);
   }
 
-  // Earth (small, left)
-  circle(8, 22, 5, 20, 60, 200, true);
-  circle(8, 22, 5, 0, 100, 50, false);
-  // continent blobs
-  px(7, 21, 40, 160, 60); px(8, 20, 30, 150, 50); px(9, 22, 40, 160, 60);
+  // Asteroid trajectory — enters from upper-right, decelerates into the
+  // closest-approach point. Tail is 3 px, fades behind.
+  if (t > T_ZOOM_END) {
+    const u = Math.min(1, (t - T_ZOOM_END) / (T_AST_END - T_ZOOM_END));
+    const astPxDist = Math.min(targetEnd, missKm * earthR / (EARTH_KM / 2));
+    const approachAng = -0.4;
+    const endX = cx + Math.cos(approachAng) * astPxDist;
+    const endY = cy + Math.sin(approachAng) * astPxDist;
+    const startX = W + 6, startY = 2;
+    // Ease-out (slow down as it reaches closest approach)
+    const eu = 1 - Math.pow(1 - u, 2);
+    const ax = Math.round(startX + (endX - startX) * eu);
+    const ay = Math.round(startY + (endY - startY) * eu);
+    const body = rock && rock.hazardous ? [255, 80, 40] : [255, 220, 160];
+    for (let i = 1; i <= 3; i++) {
+      const tx = ax + i, ty = ay - Math.round(i * 0.3);
+      if (tx >= 0 && tx < W && ty >= 0 && ty < H) {
+        const a = 1 - i * 0.28;
+        px(tx, ty, (body[0]*a)|0, (body[1]*a)|0, (body[2]*a)|0);
+      }
+    }
+    if (ax >= 0 && ax < W && ay >= 0 && ay < H) px(ax, ay, ...body);
 
-  // Asteroid path — dashed line
-  for (let x = 15; x < 55; x += 3)
-    px(x, Math.floor(18 - (x-15) * 0.2), 120, 100, 60);
-
-  // Asteroid
-  const ax = 20 + Math.floor((tick * 0.4) % 40);
-  const ay = Math.floor(18 - (ax-15) * 0.18);
-  circle(ax, ay, 2, 180, 150, 100, true);
-  px(ax-1, ay-1, 220, 200, 160); // highlight
-
-  // Hazard indicator — only show if top asteroid is hazardous
-  const rock = asteroidList[0];
-  const isHazardous = rock && rock.hazardous;
-  if (isHazardous) {
-    const hz = tick % 80 < 40;
-    if (hz) rect(56, 2, 7, 7, 200, 30, 0);
-    else     rect(56, 2, 7, 7, 80, 10, 0);
-    text('!', 58, 3, 255, 220, 0);
+    // Dotted line from Earth to asteroid at closest approach (hold phase)
+    if (t > T_AST_END) {
+      const segs = Math.max(3, Math.round(astPxDist / 2));
+      for (let i = 2; i < segs; i += 2) {
+        const dx = Math.round(cx + (ax - cx) * (i / segs));
+        const dy = Math.round(cy + (ay - cy) * (i / segs));
+        if (dx >= 0 && dx < W && dy >= 0 && dy < H) px(dx, dy, 110, 130, 170);
+      }
+    }
   }
 
-  // Time
+  // Zoom readout (top-right), pulses once at the end.
+  const zoomStr = '\xd7' + Math.round(S);
+  textOutlined(zoomStr, W - textWidth(zoomStr) - 1, 1, 120, 200, 255);
+
+  // Miss-distance callout during the hold, pulsing on entry.
+  if (t > T_AST_END) {
+    const pulse = t < T_AST_END + 0.05 ? (tick % 8 < 4) : true;
+    if (pulse) {
+      const km = missKm >= 10000
+        ? (missKm / 1000).toFixed(0) + 'K KM'
+        : Math.round(missKm) + ' KM';
+      textOutlined(km, 1, H - 14, 255, 200, 120);
+    }
+  }
+
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  // Ticker — real asteroid data or fallback
   if (rock) {
     const name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
     const dist = 'MISS ' + (rock.miss_distance_km / 1000).toFixed(0) + 'K KM';
@@ -2178,9 +2263,9 @@ const SCENE_INFO = {
   asteroid: {
     label: 'Asteroid',
     desc: `<strong>Trigger:</strong> NeoWs close approach within 7 days.<br>
-           <strong>Art:</strong> Deep space, Earth in corner, asteroid trajectory arc.<br>
-           <strong>Info:</strong> Name, miss distance (km), diameter (m), date.<br>
-           <strong>Hazard indicator:</strong> Pulsing red badge if potentially hazardous.`,
+           <strong>Animation:</strong> Earth fills the frame, then the camera pulls back exponentially until the asteroid's closest approach is visible — the moon slides in as a scale anchor, then the rock streaks in and parks at the miss-distance point.<br>
+           <strong>Zoom readout:</strong> Live ×N factor (top-right) climbs as we zoom out; the true miss distance appears on the hold.<br>
+           <strong>Hazard:</strong> Asteroid glows red if potentially hazardous, warm white otherwise.`,
   },
   event: {
     label: 'Earth Event',
