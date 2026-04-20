@@ -187,7 +187,21 @@
 
 <h1>64 × 32 LED Matrix — Layout Mockup</h1>
 
-<p class="tagline"><strong>Orrery</strong> is a 64×32 LED matrix dashboard powered by NASA's open APIs. It displays live weather, the current <strong>moon phase</strong>, asteroid approaches, Earth events with day/night illumination, and the Astronomy Picture of the Day — all over an AI-generated background that shifts hue through the day. Hit <strong>📻 Broadcast</strong> to hear a daily space briefing written by GPT-4o and read aloud using OpenAI TTS.</p>
+<p class="tagline">
+  <strong>Orrery</strong> is a 64×32 RGB LED matrix dashboard driven by an ESP32, rendering live data from NASA, NOAA, and OpenWeatherMap.
+  This page is a pixel-accurate browser mockup of that hardware — every scene you see here runs on the physical matrix in the exact same resolution and palette.
+  <br><br>
+  <strong>Rotating scenes:</strong>
+  <strong>Daily</strong> (time + temp over an AI background that hue-shifts from amber dawn to indigo night) →
+  <strong>⛅ Forecast</strong> (NOW / TODAY / TOMORROW — current reading, today's real min–max from polled history, and tomorrow's aggregated forecast) →
+  <strong>🌙 Moon</strong> (phase-accurate disc with drifting cloud wisps) →
+  <strong>🌀 Galaxy</strong> (video-sprite animation from <code>videos/</code>) →
+  <strong>☄️ Asteroid</strong> (NeoWs close approaches, hazard badge pulsing if PHA) →
+  <strong>🌍 Earth Event</strong> (pixel world map with EONET wildfire / storm / volcano markers, day-night terminator, and a real MODIS Terra cloud overlay from ~24h ago) →
+  <strong>🔭 APOD Live</strong> (today's Astronomy Picture of the Day downsampled to 64×32).
+  <br><br>
+  Use the <strong>scene buttons</strong> to jump directly, <strong>◀ ▶</strong> to step through views inside a scene, the <strong>time-of-day slider</strong> to preview any hour's colour palette, and <strong>📻 Broadcast</strong> to hear a daily space briefing written by GPT-4o and read aloud via OpenAI TTS, visualised as a live FFT spectrum.
+</p>
 
 <div class="matrix-wrap">
   <canvas id="matrix"></canvas>
