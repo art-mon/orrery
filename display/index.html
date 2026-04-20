@@ -909,13 +909,29 @@ function sceneAsteroid(tick) {
   const TMAX   = ticksPerView;
   const t      = Math.min(1, viewTick / TMAX);
 
-  // Beats: Earth pans to bottom-left, data types in right column,
-  // then the asteroid sweeps past.
-  const T_OPEN     = 0.14;
-  const T_TYPE_END = 0.45;
-  const T_FLY_START = T_TYPE_END;
-  const T_FLY_END   = 0.95;
+  // Beats: Earth pans → labelled typewriter (LABEL, erase, VALUE) per line
+  // → asteroid flyby. T_FLY_START depends on how much text there is.
+  const T_OPEN    = 0.14;
+  const T_FLY_END = 0.95;
+  const CHAR      = 0.008;   // scene-fraction per typed char
+  const HOLD      = 0.024;   // pause holding label / full value
   const ease = (x) => x < 0.5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
+
+  // Callout strings
+  let km = '', diam = '', name = '';
+  if (rock) {
+    km   = missKm >= 10000
+      ? (missKm / 1000).toFixed(0) + 'K KM'
+      : Math.round(missKm) + ' KM';
+    diam = '~' + Math.round(rock.diameter_m) + 'M';
+    name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
+  }
+  const L1 = 'DISTANCE', L2 = 'DIAMETER', L3 = 'NAME';
+  const lineDur = (L, V) => 2*L.length*CHAR + HOLD + V.length*CHAR;
+  const s1 = T_OPEN;
+  const s2 = s1 + (rock ? lineDur(L1, km)   : 0);
+  const s3 = s2 + (rock ? lineDur(L2, diam) : 0);
+  const T_FLY_START = rock ? (s3 + lineDur(L3, name)) : T_OPEN;
 
   // Earth limb pan/zoom
   const o   = ease(Math.min(1, t / T_OPEN));
@@ -984,33 +1000,27 @@ function sceneAsteroid(tick) {
 
   textOutlined(timeStr(), 1, 1, 180, 180, 180);
 
-  // Callouts — typewriter-reveal between T_OPEN and T_TYPE_END, then
-  // stay visible for the rest of the scene (including the flyby).
-  if (t > T_OPEN && rock) {
-    const km   = missKm >= 10000
-      ? (missKm / 1000).toFixed(0) + 'K KM'
-      : Math.round(missKm) + ' KM';
-    const diam = '~' + Math.round(rock.diameter_m) + 'M';
-    const name = rock.name.replace(/[()]/g, '').trim().toUpperCase();
-
-    const typeT = Math.min(1, (t - T_OPEN) / (T_TYPE_END - T_OPEN));
-    const total = km.length + diam.length + name.length;
-    let shown = Math.floor(typeT * total);
-    const s1 = km.slice(0, Math.min(km.length, shown));
-    shown -= km.length;
-    const s2 = shown > 0 ? diam.slice(0, Math.min(diam.length, shown)) : '';
-    shown -= diam.length;
-    const s3 = shown > 0 ? name.slice(0, Math.min(name.length, shown)) : '';
-    // Caret: blink on the currently-typing line while typing is in progress.
-    const caret = (typeT < 1 && tick % 8 < 4) ? '_' : '';
-    const line1 = s1 + (s1.length < km.length   ? caret : '');
-    const line2 = s2 + (s2 && s2.length < diam.length ? caret : '');
-    const line3 = s3 + (s3 && s3.length < name.length ? caret : '');
-
-    if (line1) textOutlined(line1, W - textWidth(km)   - 1, 13,    255, 200, 120);
-    if (line2) textOutlined(line2, W - textWidth(diam) - 1, 20,    200, 220, 255);
-    if (line3) textOutlined(line3, W - textWidth(name) - 1, H - 6, 255, 160,  80);
-  } else if (!rock) {
+  // Callouts — label-then-value typewriter per line, sequential.
+  if (rock) {
+    const reveal = (L, V, start) => {
+      const endA = start + L.length * CHAR;            // typing label
+      const endH = endA  + HOLD;                       // hold full label
+      const endB = endH  + L.length * CHAR;            // erasing label
+      const endC = endB  + V.length * CHAR;            // typing value
+      if (t < start) return '';
+      if (t < endA) return L.slice(0, Math.floor((t - start) / CHAR));
+      if (t < endH) return L;
+      if (t < endB) return L.slice(0, Math.max(0, L.length - Math.floor((t - endH) / CHAR)));
+      if (t < endC) return V.slice(0, Math.floor((t - endB) / CHAR));
+      return V;
+    };
+    const x1 = reveal(L1, km,   s1);
+    const x2 = reveal(L2, diam, s2);
+    const x3 = reveal(L3, name, s3);
+    if (x1) textOutlined(x1, W - textWidth(x1) - 1, 13,    255, 200, 120);
+    if (x2) textOutlined(x2, W - textWidth(x2) - 1, 20,    200, 220, 255);
+    if (x3) textOutlined(x3, W - textWidth(x3) - 1, H - 6, 255, 160,  80);
+  } else {
     const msg = 'NO CLOSE APPROACHES';
     textOutlined(msg, W - textWidth(msg) - 1, H - 6, 140, 160, 200);
   }
