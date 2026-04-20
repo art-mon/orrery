@@ -1094,7 +1094,7 @@ function sceneEvent(tick) {
   // so continents are never wiped out. Event markers are drawn AFTER this
   // pass so volcanoes/storms still punch through the overcast.
   if (worldClouds) {
-    const MAX_ALPHA_DAY   = 0.55;   // even fully-solid overcast tops out here
+    const MAX_ALPHA_DAY   = 0.40;   // even fully-solid overcast tops out here
     const MAX_ALPHA_NIGHT = 0.20;
     for (let y = 0; y < H; y++) {
       const lat = 90 - (y + 0.5) / H * 180;

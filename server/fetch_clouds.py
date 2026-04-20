@@ -83,16 +83,21 @@ def fetch_image(d: date) -> Image.Image:
 
 
 def build_alpha(img: Image.Image) -> bytearray:
-    """Threshold brightness at full res, then Lanczos-downsample to 64×32.
+    """Threshold at full res, AVERAGE-downsample to 64×32, then gamma-curve.
 
-    Thresholding first at 512×256 preserves thin cirrus structure. Feeding
-    the 0/255 binary image into Lanczos resize produces soft intermediate
-    density values at the target resolution — near-0 over mostly-clear
-    blocks, ~80-120 over partial cloud, 200+ over solid overcast — which
-    looks dramatically better than a binary 64×32 mask.
+    Lanczos overshoots/smears and leaves a baseline haze over genuinely
+    clear sky — that washes out continents on the display. Instead:
+
+      1. Threshold at 512×256 → binary cloud/clear mask.
+      2. BOX resize (area average) → each 64×32 pixel gets the true
+         fraction of its full-res block that was cloudy, 0..1.
+      3. Gamma curve (pow 1.8) → partial coverage reads as *less* cloud,
+         not more. A block that's 30% cloudy → 12% alpha instead of 30%;
+         a block that's 100% cloudy stays at 1.0. This keeps clear
+         sky genuinely clear while preserving solid overcast.
     """
     px = img.load()
-    # Build the full-res binary mask
+    # Full-res binary mask
     mask = Image.new("L", (img.width, img.height), 0)
     mpx  = mask.load()
     for y in range(img.height):
@@ -102,9 +107,11 @@ def build_alpha(img: Image.Image) -> bytearray:
                     and (max(r, g, b) - min(r, g, b)) < MAX_CHROMA):
                 mpx[x, y] = 255
 
-    # Down to 64×32 — Lanczos averages into smooth density
-    small = mask.resize((W, H), Image.LANCZOS)
+    # Area-average downsample → clean "fraction of block that was cloudy"
+    small = mask.resize((W, H), Image.BOX)
     spx   = small.load()
+
+    GAMMA = 1.8
 
     out = bytearray(W * H)
     total_alpha = 0
@@ -113,10 +120,13 @@ def build_alpha(img: Image.Image) -> bytearray:
         lat = 90.0 - (y + 0.5) / H * 180.0
         polar = abs(lat) > POLAR_CUTOFF
         for x in range(W):
-            a = 0 if polar else int(spx[x, y])
-            # Clamp — Lanczos can overshoot outside 0..255
-            if a < 0:   a = 0
-            elif a > 255: a = 255
+            if polar:
+                a = 0
+            else:
+                frac = spx[x, y] / 255.0
+                a = int(round((frac ** GAMMA) * 255))
+                if a < 0:   a = 0
+                elif a > 255: a = 255
             out[y * W + x] = a
             total_alpha += a
             if a > 40: cloudy_pixels += 1
