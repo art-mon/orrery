@@ -938,7 +938,7 @@ function sceneAsteroid(tick) {
   // All three lines animate in parallel, and the asteroid flies during
   // the callouts too — everything starts as soon as Earth has settled.
   const s1 = openT, s2 = openT, s3 = openT;
-  const T_FLY_START = T_OPEN;
+  const T_FLY_START = 0;
 
   // Earth limb pan/zoom
   const o   = ease(Math.min(1, t / T_OPEN));
