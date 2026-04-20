@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-20",
   "apod": {
-    "title": "Eye on the Milky Way",
-    "date": "2026-04-19",
-    "explanation": "Have you ever had stars in your eyes? It appears that the eye on the left does, and moreover, it appears to be gazing at even more stars. The featured 27-frame mosaic was taken in 2019 from Ojas de Salar in the Atacama Desert of Chile.  The eye is actually a small lagoon captured reflecting the dark night sky as the Milky Way Galaxy arched overhead. The seemingly smooth band of the Milky Way is really composed of billions of stars, but decorated with filaments of light-absorbing dust and red-glowing nebulas. Additionally, both Jupiter (slightly left the galactic arch) and Saturn (slightly to the right) are visible.  The lights of small towns dot the unusual vertical horizon.  The rocky terrain around the lagoon appears to some more like the surface of Mars than our Earth.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/EyeOnMW_Claro_1380.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -14,100 +9,112 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HJ)",
+        "name": "(2026 HG1)",
+        "hazardous": false,
+        "diameter_m": 21,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 1252052,
+        "velocity_kmh": 21663
+      },
+      {
+        "name": "(2026 HF)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 3753794,
+        "velocity_kmh": 19971
+      },
+      {
+        "name": "(2026 AC4)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 4102232,
+        "velocity_kmh": 4214
+      },
+      {
+        "name": "(2022 UG2)",
+        "hazardous": false,
+        "diameter_m": 22,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 6236992,
+        "velocity_kmh": 37160
+      },
+      {
+        "name": "(2026 GV2)",
+        "hazardous": false,
+        "diameter_m": 87,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 18038489,
+        "velocity_kmh": 28586
+      },
+      {
+        "name": "(2022 HE)",
+        "hazardous": false,
+        "diameter_m": 212,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 34101699,
+        "velocity_kmh": 95416
+      },
+      {
+        "name": "(2024 SQ4)",
+        "hazardous": false,
+        "diameter_m": 196,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 45251386,
+        "velocity_kmh": 68691
+      },
+      {
+        "name": "(2021 VF11)",
+        "hazardous": false,
+        "diameter_m": 21,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 47269211,
+        "velocity_kmh": 18789
+      },
+      {
+        "name": "(2022 SK4)",
         "hazardous": false,
         "diameter_m": 5,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 113523,
-        "velocity_kmh": 23336
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 65756570,
+        "velocity_kmh": 61537
       },
       {
-        "name": "(2026 HK1)",
+        "name": "(2024 BO3)",
         "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 298821,
-        "velocity_kmh": 43235
-      },
-      {
-        "name": "(2026 HN)",
-        "hazardous": false,
-        "diameter_m": 29,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 619049,
-        "velocity_kmh": 41099
-      },
-      {
-        "name": "(2026 HH1)",
-        "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 688572,
-        "velocity_kmh": 68976
-      },
-      {
-        "name": "(2026 HD1)",
-        "hazardous": false,
-        "diameter_m": 42,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 4634314,
-        "velocity_kmh": 66289
-      },
-      {
-        "name": "(2026 HF1)",
-        "hazardous": false,
-        "diameter_m": 40,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 5366969,
-        "velocity_kmh": 49943
-      },
-      {
-        "name": "(2026 GH1)",
-        "hazardous": false,
-        "diameter_m": 55,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 8749058,
-        "velocity_kmh": 25326
-      },
-      {
-        "name": "(2024 JX17)",
-        "hazardous": true,
-        "diameter_m": 492,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 14925813,
-        "velocity_kmh": 73188
-      },
-      {
-        "name": "(2019 HV3)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 17659778,
-        "velocity_kmh": 33643
-      },
-      {
-        "name": "(2017 BF29)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-04-19",
-        "miss_distance_km": 21563372,
-        "velocity_kmh": 2026
+        "diameter_m": 27,
+        "close_approach_date": "2026-04-20",
+        "miss_distance_km": 71615914,
+        "velocity_kmh": 43793
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.1,
-    "feels_c": 9.1,
-    "humidity": 88,
+    "city": "Donji grad",
+    "temp_c": 8.5,
+    "feels_c": 8.5,
+    "humidity": 95,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.1
+  },
+  "forecast_today": {
+    "date": "2026-04-20",
+    "city": "Donji grad",
+    "temp_min_c": 8.5,
+    "temp_max_c": 11.1,
+    "humidity": 94,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04n",
+    "wind_kmh": 7.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-04-21",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.3,
     "temp_max_c": 12.7,
     "humidity": 85,
@@ -115,17 +122,5 @@
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 4.2
-  },
-  "forecast_today": {
-    "date": "2026-04-20",
-    "city": "Zagreb",
-    "temp_min_c": 8.5,
-    "temp_max_c": 13.7,
-    "humidity": 91,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "01n",
-    "wind_kmh": 7.5,
-    "samples": 8
   }
 }
