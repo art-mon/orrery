@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-20",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Comet R3 PanSTARRS over a Himalayan Valley",
+    "date": "2026-04-20",
+    "explanation": "The best way to see comet R3 PanSTARRS\u2019s long tail is with a camera. This week, the recently brightened comet appears in northern skies to the east just before dawn, but is only barely visible to the unaided eye. The many-degree ion tail captured on long duration camera exposures is not unusual for a comet - it is primarily due to the Earth's nearly sideways view of the tail as it points away from the Sun.  In the featured image taken last week, Comet C/2025 R3 (PanSTARRS) showed off its flowing tail through a valley between two peaks in the Himalayan mountains of India. \u00a0 The comet passed its closest to the Sun yesterday. As it nears its closest approach to Earth next week, a bushy dust tail may become visible.  The comet is slowly moving out of northern skies and by the end of the month will be visible after sunset in southern skies as it fades and leaves our Solar System.\u00a0   Growing Gallery: Comet R3 PanSTARRS in 2026",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/ValleyComet_Chakrabarti_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/ValleyComet_Chakrabarti_3900.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,30 +96,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 8.5,
-    "feels_c": 8.5,
-    "humidity": 95,
+    "city": "Zagreb",
+    "temp_c": 9.1,
+    "feels_c": 7.6,
+    "humidity": 94,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.1
+    "icon": "04d",
+    "wind_kmh": 9.8
   },
   "forecast_today": {
     "date": "2026-04-20",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 8.5,
-    "temp_max_c": 11.1,
+    "temp_max_c": 10.8,
     "humidity": 94,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04n",
-    "wind_kmh": 7.5,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 8.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-04-21",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 8.3,
     "temp_max_c": 12.7,
     "humidity": 85,
