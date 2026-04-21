@@ -2291,24 +2291,24 @@ function sceneWeatherNow(tick) {
     return;
   }
 
-  // Medium temperature — left side, below top bar
+  // Medium temperature
   const tempStr = Math.round(data.temp_c) + '\xb0C';
   const tw = medWidth(tempStr);
-  const tx = 2, ty = 9;
+  const tx = 12, ty = 9;
   drawMedOutlined(tempStr, tx, ty, 255, 220, 120);
 
   // Feels like — right of temperature, vertically centred in med text (8px tall)
   if (data.feels_c != null) {
     const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
-    textOutlined(fl, tx + tw + 4, ty + 2, 170, 170, 200);
+    textOutlined(fl, tx + tw + 16, ty + 2, 170, 170, 200);
   }
 
   // Humidity and wind — labels on one row, values on the next
   const col2 = Math.floor(W / 2) + 1;
-  textOutlined('HUM',              2,     21, 100, 180, 255);
-  textOutlined('WIND',             col2,  21, 120, 210, 180);
-  textOutlined(Math.round(data.humidity) + '%',          2,     27, 100, 180, 255);
-  textOutlined(Math.round(data.wind_kmh) + 'KMH',        col2,  27, 120, 210, 180);
+  textOutlined('HUM',                              6,     20, 100, 180, 255);
+  textOutlined('WIND',                             col2,  20, 120, 210, 180);
+  textOutlined(Math.round(data.humidity) + '%',    6,     26, 100, 180, 255);
+  textOutlined(Math.round(data.wind_kmh) + 'KMH',  col2,  26, 120, 210, 180);
 }
 
 // ─── Weather: 3-day forecast panel ────────────────────────────────────────────
