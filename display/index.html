@@ -2214,20 +2214,24 @@ function sceneForecast(tick) {
     const isSnow  = c.includes('snow');
     const isStorm = c.includes('thunder');
     const cx   = x0 + Math.floor(COL_W / 2);
-    const AREA_Y = 7;   // particles fill full column height
-    const AREA_H = H - AREA_Y;
+    const AREA_Y = 7;   // below day label
+    const AREA_H = 19 - AREA_Y;  // stop just before max temp at y=20
 
     if (isClear) {
       // Slow breathing glow radiating from sun centre — brightness pulses
+      const cy2  = Math.round(AREA_Y + AREA_H / 2);
       const pulse = 0.55 + 0.45 * Math.sin(tick * 0.06);
+      // Filled sun core
+      circle(cx, cy2, 3, 255, 210, 80, true);
+      // Breathing halo rings
       for (let r = 4; r <= 7; r++) {
         const step = Math.max(1, Math.round(Math.PI * r / 4));
         for (let s = 0; s < Math.round(2 * Math.PI * r); s += step) {
           const a  = s / r;
           const rx = Math.round(cx + Math.cos(a) * r);
-          const ry = Math.round(10 + Math.sin(a) * r);
+          const ry = Math.round(cy2 + Math.sin(a) * r);
           const br = Math.round(pulse * (8 - r) * 28);
-          if (rx >= x0 && rx < x0 + COL_W && ry >= 0 && ry < H)
+          if (rx >= x0 && rx < x0 + COL_W && ry >= AREA_Y && ry < AREA_Y + AREA_H)
             px(rx, ry, br + 80, br + 50, 0);
         }
       }
@@ -2249,7 +2253,7 @@ function sceneForecast(tick) {
       // Storm: occasional full-column flash
       if (isStorm && tick % 20 < 2) {
         const fx = x0 + 1 + Math.floor(nhash(tick, colIdx) * (COL_W - 2));
-        for (let y = AREA_Y; y < H; y++) px(fx, y, 220, 230, 255);
+        for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) px(fx, y, 220, 230, 255);
       }
     } else if (isSnow) {
       // 6 flakes with noise-seeded positions, slow diagonal drift
@@ -2281,7 +2285,6 @@ function sceneForecast(tick) {
   for (let i = 0; i < 3; i++) {
     const { dow, data } = cols[i];
     const x0   = X0[i];
-    const cx   = x0 + Math.floor(COL_W / 2);
     const cond = condOf(data);
 
     colSky(x0, cond);
@@ -2295,7 +2298,6 @@ function sceneForecast(tick) {
     }
 
     colParticles(x0, cond, i);
-    drawWeatherIcon(cx, 10, cond, tick);
 
     const tmax = Math.round(data.temp_max_c) + '\xb0';
     textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 20, 255, 160, 60);
