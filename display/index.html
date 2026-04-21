@@ -2209,23 +2209,25 @@ function sceneForecast(tick) {
   // Organic noise-driven particles, clipped to column
   const colParticles = (x0, cond, colIdx) => {
     const c    = (cond || '').toLowerCase();
-    const isClear = c.includes('clear');
-    const isRain  = c.includes('rain') || c.includes('drizzle');
-    const isSnow  = c.includes('snow');
-    const isStorm = c.includes('thunder');
+    const isClear   = c.includes('clear');
+    const isDrizzle = c.includes('drizzle');
+    const isRain    = c.includes('rain') && !isDrizzle;
+    const isSnow    = c.includes('snow');
+    const isStorm   = c.includes('thunder');
     const cx   = x0 + Math.floor(COL_W / 2);
     const AREA_Y = 7;   // below day label
     const AREA_H = 19 - AREA_Y;  // stop just before max temp at y=20
 
     if (isClear) {
-      // Sky shimmer: per-pixel brightness from layered sin noise, slow drift
+      // Sky shimmer: every pixel painted — brightness varies but never drops to zero
       for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) {
         for (let x = x0; x < x0 + COL_W; x++) {
           const lx = x - x0, ly = y - AREA_Y;
           const n = Math.sin(lx * 0.6 + tick * 0.03) * Math.sin(ly * 0.8 + tick * 0.02)
                   + Math.sin(lx * 0.3 - tick * 0.015 + 1.7) * 0.4;
-          const br = Math.max(0, Math.round((n + 0.3) * 40));
-          if (br > 0) px(x, y, br + 40, br + 30, 0);
+          // base=6 ensures a faint glow even at the noise trough (n≈-1)
+          const br = Math.max(0, Math.round(6 + n * 18));
+          px(x, y, br + 40, br + 30, 0);
         }
       }
       // Sun core + pulsing halo on top
@@ -2244,19 +2246,22 @@ function sceneForecast(tick) {
         }
       }
     } else if (isRain || isStorm) {
-      // Per-pixel rain curtain: every x lane has noise-seeded phase + speed
+      // Two staggered streaks per lane so the full AREA_H is always covered
       for (let x = x0; x < x0 + COL_W; x++) {
         const lx    = x - x0;
-        const speed = 2 + nhash(lx, colIdx) * 3;          // 2–5 px/tick
+        const speed = 2 + nhash(lx, colIdx) * 3;
         const phase = nhash(lx + 50, colIdx) * AREA_H;
-        const len   = 2 + Math.floor(nhash(lx + 100, colIdx) * 3); // 2–4px streak
-        const top   = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
-        for (let l = 0; l < len; l++) {
-          const ry = top + l;
-          if (ry < AREA_Y + AREA_H) {
-            const fade = 1 - l / len;
-            const br   = Math.round((120 + nhash(lx, colIdx + 7) * 80) * fade);
-            px(x, ry, br * 0.35 | 0, br * 0.55 | 0, br);
+        const len   = 2 + Math.floor(nhash(lx + 100, colIdx) * 3);
+        const br0   = 120 + Math.round(nhash(lx, colIdx + 7) * 80);
+        for (let s = 0; s < 2; s++) {
+          const top = AREA_Y + Math.floor((phase + tick * speed + s * (AREA_H / 2)) % AREA_H);
+          for (let l = 0; l < len; l++) {
+            const ry = top + l;
+            if (ry < AREA_Y + AREA_H) {
+              const fade = 1 - l / len;
+              const br   = Math.round(br0 * fade);
+              px(x, ry, br * 0.35 | 0, br * 0.55 | 0, br);
+            }
           }
         }
       }
@@ -2265,18 +2270,36 @@ function sceneForecast(tick) {
         const fx = x0 + 1 + Math.floor(nhash(tick, colIdx) * (COL_W - 2));
         for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) px(fx, y, 230, 240, 255);
       }
-    } else if (isSnow) {
-      // Per-pixel snow field: sparse, slow, with horizontal sine drift per lane
+    } else if (isDrizzle) {
+      // Lighter than rain: ~half the lanes active, single-pixel drops, dimmer
       for (let x = x0; x < x0 + COL_W; x++) {
-        const lx    = x - x0;
-        const speed = 0.3 + nhash(lx, colIdx) * 0.5;
+        const lx = x - x0;
+        if (nhash(lx + 200, colIdx) < 0.5) continue;  // skip ~half the lanes
+        const speed = 1.2 + nhash(lx, colIdx) * 1.5;
         const phase = nhash(lx + 50, colIdx) * AREA_H;
-        const drift = Math.sin(tick * 0.04 + lx * 0.7) * 1.5;
-        const rx    = Math.round(x + drift);
-        const ry    = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
-        if (rx >= x0 && rx < x0 + COL_W && ry < AREA_Y + AREA_H) {
-          const br = 180 + Math.floor(nhash(lx, Math.floor(tick * 0.05)) * 60);
-          px(rx, ry, br, br, 255);
+        const br    = 70 + Math.round(nhash(lx, colIdx + 7) * 50);
+        const top   = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
+        px(x, top, br * 0.4 | 0, br * 0.55 | 0, br);
+        // second sparse drop offset by ~60% of zone so coverage is spread
+        if (nhash(lx + 300, colIdx) > 0.35) {
+          const top2 = AREA_Y + Math.floor((phase + tick * speed + AREA_H * 0.6) % AREA_H);
+          px(x, top2, br * 0.4 | 0, br * 0.55 | 0, br);
+        }
+      }
+    } else if (isSnow) {
+      // Two flakes per lane so the full zone is well covered
+      for (let x = x0; x < x0 + COL_W; x++) {
+        const lx = x - x0;
+        for (let s = 0; s < 2; s++) {
+          const speed = 0.3 + nhash(lx + s * 77, colIdx) * 0.5;
+          const phase = nhash(lx + 50 + s * 33, colIdx) * AREA_H;
+          const drift = Math.sin(tick * 0.04 + lx * 0.7 + s * 1.3) * 1.5;
+          const rx    = Math.round(x + drift);
+          const ry    = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
+          if (rx >= x0 && rx < x0 + COL_W && ry < AREA_Y + AREA_H) {
+            const br = 180 + Math.floor(nhash(lx + s * 11, Math.floor(tick * 0.05)) * 60);
+            px(rx, ry, br, br, 255);
+          }
         }
       }
     } else {
