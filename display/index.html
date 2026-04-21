@@ -671,39 +671,6 @@ function textOutlined(str, x, y, r, g, b) {
   text(str, x, y, r, g, b);
 }
 
-// Scale-2 text — used for big temperature readouts.
-function drawBig(str, x, y, r, g, b) {
-  let cx = x;
-  for (const ch of str.toUpperCase()) {
-    const gl = FONT[ch] || FONT[' '];
-    const gw = gl[0].length;
-    for (let row = 0; row < gl.length; row++) {
-      for (let col = 0; col < gw; col++) {
-        if (gl[row][col]) {
-          px(cx+col*2,   y+row*2,   r, g, b);
-          px(cx+col*2+1, y+row*2,   r, g, b);
-          px(cx+col*2,   y+row*2+1, r, g, b);
-          px(cx+col*2+1, y+row*2+1, r, g, b);
-        }
-      }
-    }
-    cx += (gw + 1) * 2;
-  }
-}
-function bigWidth(str) {
-  let w = 0;
-  for (const ch of str.toUpperCase()) {
-    const gl = FONT[ch] || FONT[' '];
-    w += (gl[0].length + 1) * 2;
-  }
-  return w - 2;
-}
-function drawBigOutlined(str, x, y, r, g, b) {
-  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
-    drawBig(str, x+dx, y+dy, 0, 0, 0);
-  drawBig(str, x, y, r, g, b);
-}
-
 function drawTimeWeather(timeStr, tempStr, timeColor, tempColor) {
   textOutlined(timeStr, 1, 1, ...timeColor);
   const wp = textWidth(tempStr);
@@ -2147,32 +2114,27 @@ function sceneForecast(tick) {
   // Animated icon (12×12 centred at (7, 12))
   drawWeatherIcon(7, 12, data.condition, tick);
 
-  // Primary temperature — scale-2 digits. NOW shows current, TODAY/TMRW max.
-  // Secondary temperature (feels-like or min) renders small next to it.
-  let primary, primaryC, secondary, secondaryC;
+  // Two lines on the right — both at the normal font size.
+  let line1, line1C, line2, line2C;
   if (isNow) {
-    primary  = Math.round(data.temp_c) + '°';
-    primaryC = [255, 220, 120];
+    line1  = Math.round(data.temp_c) + '°';
+    line1C = [255, 220, 120];
     if (data.feels_c != null) {
-      secondary  = 'FL' + Math.round(data.feels_c) + '°';
-      secondaryC = [160, 160, 180];
+      line2  = 'FEELS ' + Math.round(data.feels_c) + '°';
+      line2C = [160, 160, 180];
     }
   } else if (data.temp_min_c === data.temp_max_c) {
-    primary  = Math.round(data.temp_min_c) + '°';
-    primaryC = [255, 220, 120];
+    line1  = Math.round(data.temp_min_c) + '°';
+    line1C = [255, 220, 120];
   } else {
-    primary    = Math.round(data.temp_max_c) + '°';
-    primaryC   = [255, 160,  60];
-    secondary  = Math.round(data.temp_min_c) + '°';
-    secondaryC = [100, 180, 255];
+    line1  = 'MAX ' + Math.round(data.temp_max_c) + '°';
+    line1C = [255, 160,  60];
+    line2  = 'MIN ' + Math.round(data.temp_min_c) + '°';
+    line2C = [100, 180, 255];
   }
-
   const tx = 16;
-  drawBigOutlined(primary, tx, 6, ...primaryC);
-  if (secondary) {
-    const sx = Math.min(W - textWidth(secondary) - 1, tx + bigWidth(primary) + 3);
-    textOutlined(secondary, sx, 12, ...secondaryC);
-  }
+  textOutlined(line1, tx, 8, ...line1C);
+  if (line2) textOutlined(line2, tx, 14, ...line2C);
 
   // Condition description — centered if it fits, auto-ticker otherwise.
   const desc = (data.description || data.condition || '').toUpperCase();
@@ -2183,17 +2145,11 @@ function sceneForecast(tick) {
     drawTicker(desc, 20, 235, 235, 235);
   }
 
-  // Bottom stats row: humidity + wind + city (tickers only when it overflows).
-  const humid = Math.round(data.humidity) + '%';
-  const wind  = Math.round(data.wind_kmh) + 'KMH';
-  const city  = (data.city || '').toUpperCase();
-  const stats = 'H' + humid + '   W' + wind + (city ? '   ' + city : '');
-  if (textWidth(stats) <= W - 2) {
-    const sx = Math.floor((W - textWidth(stats)) / 2);
-    textOutlined(stats, sx, 27, ...accent);
-  } else {
-    drawTicker(stats, 27, ...accent);
-  }
+  // Bottom stats row: static "HUM:##%" left, "WIND:##KMH" right.
+  const humid = 'HUM:' + Math.round(data.humidity) + '%';
+  const wind  = 'WIND:' + Math.round(data.wind_kmh) + 'KMH';
+  textOutlined(humid, 1, 27, ...accent);
+  textOutlined(wind, W - textWidth(wind) - 1, 27, ...accent);
 }
 
 function sceneTomorrow(tick) {
