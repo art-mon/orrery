@@ -271,6 +271,11 @@
       <button id="moon-phase-live-btn" style="min-height:28px; padding:4px 10px; font-size:11px;">Live</button>
     </div>
     <div class="setting-row">
+      <span>Event override</span>
+      <button id="events-random-btn" style="min-height:28px; padding:4px 10px; font-size:11px;">🌍 Randomise</button>
+      <button id="events-clear-btn"  style="min-height:28px; padding:4px 10px; font-size:11px;">✕ Live</button>
+    </div>
+    <div class="setting-row">
       <span>Weather override</span>
       <select id="weather-override" style="flex:1; background:#1a1a1a; color:#ccc; border:1px solid #333; padding:4px 8px; font-size:12px;">
         <option value="">Live</option>
@@ -1393,9 +1398,9 @@ function sceneEvent(tick) {
     }
   }
 
-  // Event markers from real EONET data
+  // Event markers — use override if set, otherwise live data
   const pulse = Math.floor(tick * 0.15) % 4;
-  const markers = eventList.length > 0 ? eventList : [];
+  const markers = eventListOverride ?? (eventList.length > 0 ? eventList : []);
   for (const evt of markers) {
     if (!evt.coordinates) continue;
     const [lon, lat] = evt.coordinates;
@@ -2818,6 +2823,43 @@ moonPhaseLiveBtn.addEventListener('click', () => {
 });
 
 updateMoonPhaseLabel();
+
+// ── Event override — random test markers ─────────────────────────────────────
+let eventListOverride = null;  // null = use live data
+
+const EVENT_CATEGORIES = [
+  { label: 'Earthquake',        r:255, g:220, b:50  },
+  { label: 'Volcano',           r:255, g:80,  b:0   },
+  { label: 'Wildfire',          r:255, g:60,  b:0   },
+  { label: 'Severe Storm',      r:180, g:180, b:255 },
+  { label: 'Flood',             r:60,  g:160, b:255 },
+  { label: 'Sea and Lake Ice',  r:200, g:230, b:255 },
+];
+
+function randomEvents(n = 12) {
+  const out = [];
+  for (let i = 0; i < n; i++) {
+    const cat  = EVENT_CATEGORIES[Math.floor(Math.random() * EVENT_CATEGORIES.length)];
+    const lon  = (Math.random() * 360 - 180).toFixed(2);
+    const lat  = (Math.random() * 160 - 80).toFixed(2);   // avoid poles
+    const mag  = cat.label === 'Earthquake' ? ` M${(5 + Math.random() * 3).toFixed(1)}` : '';
+    out.push({
+      id:          `test-${i}`,
+      title:       `${cat.label}${mag} (test)`,
+      category:    cat.label,
+      date:        new Date().toISOString(),
+      coordinates: [parseFloat(lon), parseFloat(lat)],
+    });
+  }
+  return out;
+}
+
+document.getElementById('events-random-btn').addEventListener('click', () => {
+  eventListOverride = randomEvents();
+});
+document.getElementById('events-clear-btn').addEventListener('click', () => {
+  eventListOverride = null;
+});
 
 // ── Weather condition override ────────────────────────────────────────────────
 let weatherCondOverride = null;  // null = use live data
