@@ -2132,11 +2132,120 @@ function drawForecastSky(cond) {
   }
 }
 
+// ─── Shared weather animation helpers ─────────────────────────────────────────
+// nhash: deterministic [0,1) noise from two integers
+function nhash(a, b) { const v = Math.sin(a * 127.1 + b * 311.7) * 43758.5; return v - Math.floor(v); }
+
+// Sky gradient fill for a column of width colW starting at x0
+function drawWeatherSky(x0, cond, colW) {
+  const c = (cond || '').toLowerCase();
+  const isClear = c.includes('clear');
+  const isRain  = c.includes('rain') || c.includes('drizzle');
+  const isSnow  = c.includes('snow');
+  const isStorm = c.includes('thunder');
+  for (let y = 0; y < H; y++) {
+    const t = y / (H - 1);
+    let r, g, b;
+    if (isClear)      { r = 20+t*60;  g = 60+t*80;  b = 160+t*60; }
+    else if (isRain)  { r = 30+t*20;  g = 40+t*20;  b = 70+t*30;  }
+    else if (isSnow)  { r = 80+t*80;  g = 90+t*80;  b = 120+t*80; }
+    else if (isStorm) { r = 10+t*20;  g = 10+t*15;  b = 30+t*20;  }
+    else              { r = 40+t*30;  g = 50+t*30;  b = 80+t*40;  }
+    for (let x = x0; x < x0 + colW; x++) px(x, y, r|0, g|0, b|0);
+  }
+}
+
+// Organic weather particles for a column of width colW starting at x0
+function drawWeatherParticles(x0, cond, colIdx, colW, tick) {
+  const c = (cond || '').toLowerCase();
+  const isClear   = c.includes('clear');
+  const isDrizzle = c.includes('drizzle');
+  const isRain    = c.includes('rain') && !isDrizzle;
+  const isSnow    = c.includes('snow');
+  const isStorm   = c.includes('thunder');
+  const AREA_H    = H;
+
+  if (isClear) {
+    // sky gradient is sufficient — nothing to add
+  } else if (isRain || isStorm) {
+    for (let x = x0; x < x0 + colW; x++) {
+      const lx = x - x0;
+      if (isRain && nhash(lx + 400, colIdx) < 0.33) continue;
+      const speed = 2 + nhash(lx, colIdx) * 3;
+      const phase = nhash(lx + 50, colIdx) * AREA_H;
+      const len   = 2 + Math.floor(nhash(lx + 100, colIdx) * 3);
+      const br0   = isRain
+        ? 70  + Math.round(nhash(lx, colIdx + 7) * 50)
+        : 120 + Math.round(nhash(lx, colIdx + 7) * 80);
+      for (let s = 0; s < 2; s++) {
+        const top = Math.floor((phase + tick * speed + s * (AREA_H / 2)) % AREA_H);
+        for (let l = 0; l < len; l++) {
+          const ry = top + l;
+          if (ry < AREA_H) {
+            const fade = 1 - l / len;
+            const br   = Math.round(br0 * fade);
+            px(x, ry, br * 0.35 | 0, br * 0.55 | 0, br);
+          }
+        }
+      }
+    }
+    if (isStorm && tick % 22 < 2) {
+      const fx = x0 + 1 + Math.floor(nhash(tick, colIdx) * (colW - 2));
+      for (let y = 0; y < AREA_H; y++) px(fx, y, 230, 240, 255);
+    }
+  } else if (isDrizzle) {
+    for (let x = x0; x < x0 + colW; x++) {
+      const lx = x - x0;
+      if (nhash(lx + 200, colIdx) < 0.5) continue;
+      const speed = 1.2 + nhash(lx, colIdx) * 1.5;
+      const phase = nhash(lx + 50, colIdx) * AREA_H;
+      const br    = 70 + Math.round(nhash(lx, colIdx + 7) * 50);
+      const top   = Math.floor((phase + tick * speed) % AREA_H);
+      px(x, top, br * 0.4 | 0, br * 0.55 | 0, br);
+      if (nhash(lx + 300, colIdx) > 0.35) {
+        const top2 = Math.floor((phase + tick * speed + AREA_H * 0.6) % AREA_H);
+        px(x, top2, br * 0.4 | 0, br * 0.55 | 0, br);
+      }
+    }
+  } else if (isSnow) {
+    for (let x = x0; x < x0 + colW; x++) {
+      const lx = x - x0;
+      for (let s = 0; s < 2; s++) {
+        const speed = 0.3 + nhash(lx + s * 77, colIdx) * 0.5;
+        const phase = nhash(lx + 50 + s * 33, colIdx) * AREA_H;
+        const drift = Math.sin(tick * 0.04 + lx * 0.7 + s * 1.3) * 1.5;
+        const rx    = Math.round(x + drift);
+        const ry    = Math.floor((phase + tick * speed) % AREA_H);
+        if (rx >= x0 && rx < x0 + colW && ry < AREA_H) {
+          const br = 180 + Math.floor(nhash(lx + s * 11, Math.floor(tick * 0.05)) * 60);
+          px(rx, ry, br, br, 255);
+        }
+      }
+    }
+  } else {
+    // Cloudy: 2D noise field gives organic horizontal blob shapes
+    for (let y = 0; y < AREA_H; y++) {
+      for (let x = x0; x < x0 + colW; x++) {
+        const lx = x - x0, ly = y;
+        const t2 = tick * 0.018;
+        const n  = Math.sin(lx * 0.28 + t2)       * Math.sin(ly * 0.45 + t2 * 0.7)
+                 + Math.sin(lx * 0.16 - t2 * 0.8 + 1.9) * Math.sin(ly * 0.28 + 0.9) * 0.7;
+        if (n > 0.2) {
+          const br = Math.round(80 + (n - 0.2) * 160);
+          px(x, y, br, br + 8, br + 25);
+        }
+      }
+    }
+  }
+}
+
 // ─── Weather: NOW ─────────────────────────────────────────────────────────────
 // Current conditions: big temp + feels like + humidity + wind.
 function sceneWeatherNow(tick) {
   clear();
-  drawForecastSky(currentWeather?.condition);
+  const cond = condOf(currentWeather);
+  drawWeatherSky(0, cond, W);
+  drawWeatherParticles(0, cond, 0, W, tick);
 
   // Top bar
   textOutlined('NOW', 1, 1, 255, 210, 100);
@@ -2150,13 +2259,13 @@ function sceneWeatherNow(tick) {
   }
 
   // Icon left (12×12 centered at x=7, y=12)
-  drawWeatherIcon(7, 12, condOf(data), tick);
+  drawWeatherIcon(7, 12, cond, tick);
 
-  // Big scale-2 temperature, right of icon
+  // Big scale-2 temperature, right of icon — shifted 7px left, 4px up
   const tempStr = Math.round(data.temp_c) + '\xb0C';
   const tw = bigWidth(tempStr);
-  const tx = Math.max(16, Math.round((W + 16 - tw) / 2));
-  drawBigOutlined(tempStr, tx, 6, 255, 220, 120);
+  const tx = Math.max(16, Math.round((W + 16 - tw) / 2)) - 7;
+  drawBigOutlined(tempStr, tx, 2, 255, 220, 120);
 
   // Feels like / humidity / wind — stacked, starting below icon
   if (data.feels_c != null) {
@@ -2173,9 +2282,6 @@ function sceneWeatherNow(tick) {
 function sceneForecast(tick) {
   clear();
 
-  // Deterministic noise helpers (same sin-hash pattern as split-flap)
-  const nhash = (a, b) => { const v = Math.sin(a * 127.1 + b * 311.7) * 43758.5; return v - Math.floor(v); };
-
   const DAYS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
   const todayDow = new Date().getDay();
 
@@ -2188,117 +2294,9 @@ function sceneForecast(tick) {
   const COL_W = 20;
   const X0    = [1, 22, 43];
 
-  // Per-column sky gradient
-  const colSky = (x0, cond) => {
-    const c = (cond || '').toLowerCase();
-    const isClear = c.includes('clear');
-    const isRain  = c.includes('rain') || c.includes('drizzle');
-    const isSnow  = c.includes('snow');
-    const isStorm = c.includes('thunder');
-    for (let y = 0; y < H; y++) {
-      const t = y / (H - 1);
-      let r, g, b;
-      if (isClear)      { r = 20+t*60;  g = 60+t*80;  b = 160+t*60; }
-      else if (isRain)  { r = 30+t*20;  g = 40+t*20;  b = 70+t*30;  }
-      else if (isSnow)  { r = 80+t*80;  g = 90+t*80;  b = 120+t*80; }
-      else if (isStorm) { r = 10+t*20;  g = 10+t*15;  b = 30+t*20;  }
-      else              { r = 40+t*30;  g = 50+t*30;  b = 80+t*40;  }
-      for (let x = x0; x < x0 + COL_W; x++) px(x, y, r|0, g|0, b|0);
-    }
-  };
-
-  // Organic noise-driven particles, clipped to column
-  const colParticles = (x0, cond, colIdx) => {
-    const c    = (cond || '').toLowerCase();
-    const isClear   = c.includes('clear');
-    const isDrizzle = c.includes('drizzle');
-    const isRain    = c.includes('rain') && !isDrizzle;
-    const isSnow    = c.includes('snow');
-    const isStorm   = c.includes('thunder');
-    const cx   = x0 + Math.floor(COL_W / 2);
-    const AREA_Y = 0;   // full column from top
-    const AREA_H = H;   // full display height
-
-    if (isClear) {
-      // colSky already painted the clean blue gradient — nothing extra needed
-    } else if (isRain || isStorm) {
-      // Two staggered streaks per lane so the full AREA_H is always covered
-      for (let x = x0; x < x0 + COL_W; x++) {
-        const lx    = x - x0;
-        // Rain: skip ~1 in 3 lanes; storm keeps every lane
-        if (isRain && nhash(lx + 400, colIdx) < 0.33) continue;
-        const speed = 2 + nhash(lx, colIdx) * 3;
-        const phase = nhash(lx + 50, colIdx) * AREA_H;
-        const len   = 2 + Math.floor(nhash(lx + 100, colIdx) * 3);
-        // Rain: dimmer streaks; storm: full brightness
-        const br0   = isRain
-          ? 70 + Math.round(nhash(lx, colIdx + 7) * 50)
-          : 120 + Math.round(nhash(lx, colIdx + 7) * 80);
-        for (let s = 0; s < 2; s++) {
-          const top = AREA_Y + Math.floor((phase + tick * speed + s * (AREA_H / 2)) % AREA_H);
-          for (let l = 0; l < len; l++) {
-            const ry = top + l;
-            if (ry < AREA_Y + AREA_H) {
-              const fade = 1 - l / len;
-              const br   = Math.round(br0 * fade);
-              px(x, ry, br * 0.35 | 0, br * 0.55 | 0, br);
-            }
-          }
-        }
-      }
-      // Storm: occasional bright lightning streak across full area
-      if (isStorm && tick % 22 < 2) {
-        const fx = x0 + 1 + Math.floor(nhash(tick, colIdx) * (COL_W - 2));
-        for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) px(fx, y, 230, 240, 255);
-      }
-    } else if (isDrizzle) {
-      // Lighter than rain: ~half the lanes active, single-pixel drops, dimmer
-      for (let x = x0; x < x0 + COL_W; x++) {
-        const lx = x - x0;
-        if (nhash(lx + 200, colIdx) < 0.5) continue;  // skip ~half the lanes
-        const speed = 1.2 + nhash(lx, colIdx) * 1.5;
-        const phase = nhash(lx + 50, colIdx) * AREA_H;
-        const br    = 70 + Math.round(nhash(lx, colIdx + 7) * 50);
-        const top   = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
-        px(x, top, br * 0.4 | 0, br * 0.55 | 0, br);
-        // second sparse drop offset by ~60% of zone so coverage is spread
-        if (nhash(lx + 300, colIdx) > 0.35) {
-          const top2 = AREA_Y + Math.floor((phase + tick * speed + AREA_H * 0.6) % AREA_H);
-          px(x, top2, br * 0.4 | 0, br * 0.55 | 0, br);
-        }
-      }
-    } else if (isSnow) {
-      // Two flakes per lane so the full zone is well covered
-      for (let x = x0; x < x0 + COL_W; x++) {
-        const lx = x - x0;
-        for (let s = 0; s < 2; s++) {
-          const speed = 0.3 + nhash(lx + s * 77, colIdx) * 0.5;
-          const phase = nhash(lx + 50 + s * 33, colIdx) * AREA_H;
-          const drift = Math.sin(tick * 0.04 + lx * 0.7 + s * 1.3) * 1.5;
-          const rx    = Math.round(x + drift);
-          const ry    = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
-          if (rx >= x0 && rx < x0 + COL_W && ry < AREA_Y + AREA_H) {
-            const br = 180 + Math.floor(nhash(lx + s * 11, Math.floor(tick * 0.05)) * 60);
-            px(rx, ry, br, br, 255);
-          }
-        }
-      }
-    } else {
-      // Cloudy: per-pixel 2D noise field scrolling slowly — gives organic blob shapes
-      for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) {
-        for (let x = x0; x < x0 + COL_W; x++) {
-          const lx = x - x0, ly = y - AREA_Y;
-          const t2 = tick * 0.018;
-          const n  = Math.sin(lx * 0.28 + t2)       * Math.sin(ly * 0.45 + t2 * 0.7)
-                   + Math.sin(lx * 0.16 - t2 * 0.8 + 1.9) * Math.sin(ly * 0.28 + 0.9) * 0.7;
-          if (n > 0.2) {
-            const br = Math.round(80 + (n - 0.2) * 160);
-            px(x, y, br, br + 8, br + 25);
-          }
-        }
-      }
-    }
-  };
+  // Thin wrappers binding COL_W and tick into the shared helpers
+  const colSky       = (x0, cond)         => drawWeatherSky(x0, cond, COL_W);
+  const colParticles = (x0, cond, colIdx) => drawWeatherParticles(x0, cond, colIdx, COL_W, tick);
 
   // Draw each column
   for (let i = 0; i < 3; i++) {
