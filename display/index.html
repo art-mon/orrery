@@ -2288,8 +2288,8 @@ function sceneForecast(tick) {
         for (let x = x0; x < x0 + COL_W; x++) {
           const lx = x - x0, ly = y - AREA_Y;
           const t2 = tick * 0.018;
-          const n  = Math.sin(lx * 0.55 + t2)       * Math.sin(ly * 0.28 + t2 * 0.7)
-                   + Math.sin(lx * 0.28 - t2 * 0.8 + 1.9) * Math.sin(ly * 0.16 + 0.9) * 0.7;
+          const n  = Math.sin(lx * 0.28 + t2)       * Math.sin(ly * 0.45 + t2 * 0.7)
+                   + Math.sin(lx * 0.16 - t2 * 0.8 + 1.9) * Math.sin(ly * 0.28 + 0.9) * 0.7;
           if (n > 0.2) {
             const br = Math.round(80 + (n - 0.2) * 160);
             px(x, y, br, br + 8, br + 25);
