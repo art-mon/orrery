@@ -2155,52 +2155,118 @@ function sceneWeatherNow(tick) {
 }
 
 // ─── Weather: 3-day forecast panel ────────────────────────────────────────────
-// Three vertical columns: today / tomorrow / day-after, each showing the
-// day-of-week abbreviation, a small weather icon, orange max and blue min.
+// Three vertical columns: today / tomorrow / day-after.
+// Each column gets its own sky gradient + animated weather particles.
 function sceneForecast(tick) {
   clear();
-  drawForecastSky(forecastTodayData?.condition);
 
   const DAYS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
   const todayDow = new Date().getDay();
 
   const cols = [
-    { dow: DAYS[todayDow],              data: forecastTodayData   },
-    { dow: DAYS[(todayDow + 1) % 7],    data: forecastData        },
-    { dow: DAYS[(todayDow + 2) % 7],    data: forecastDayAfterData },
+    { dow: DAYS[todayDow],           data: forecastTodayData    },
+    { dow: DAYS[(todayDow+1) % 7],   data: forecastData         },
+    { dow: DAYS[(todayDow+2) % 7],   data: forecastDayAfterData },
   ];
 
   // Column geometry: 3 × 20px with 1px dividers at x=21 and x=42
   const COL_W = 20;
   const X0    = [1, 22, 43];
 
+  // Helper: per-column sky gradient clipped to [x0, x0+COL_W)
+  const colSky = (x0, cond) => {
+    const c = (cond || '').toLowerCase();
+    const isClear = c.includes('clear');
+    const isRain  = c.includes('rain') || c.includes('drizzle');
+    const isSnow  = c.includes('snow');
+    const isStorm = c.includes('thunder');
+    for (let y = 0; y < H; y++) {
+      const t = y / (H - 1);
+      let r, g, b;
+      if (isClear)      { r = 20+t*60;  g = 60+t*80;  b = 160+t*60; }
+      else if (isRain)  { r = 30+t*20;  g = 40+t*20;  b = 70+t*30;  }
+      else if (isSnow)  { r = 80+t*80;  g = 90+t*80;  b = 120+t*80; }
+      else if (isStorm) { r = 10+t*20;  g = 10+t*15;  b = 30+t*20;  }
+      else              { r = 40+t*30;  g = 50+t*30;  b = 80+t*40;  }
+      for (let x = x0; x < x0 + COL_W; x++) px(x, y, r|0, g|0, b|0);
+    }
+  };
+
+  // Helper: animated particles clipped to column [x0, x0+COL_W), below icon (y≥19)
+  const colParticles = (x0, cond) => {
+    const c = (cond || '').toLowerCase();
+    const isClear = c.includes('clear');
+    const isRain  = c.includes('rain') || c.includes('drizzle');
+    const isSnow  = c.includes('snow');
+    const isStorm = c.includes('thunder');
+    const cx = x0 + Math.floor(COL_W / 2);
+
+    if (isClear) {
+      // Slow rotating halo of dots around icon centre
+      const rot = tick / 12;
+      for (let i = 0; i < 6; i++) {
+        const a  = (i / 6) * Math.PI * 2 + rot;
+        const rx = Math.round(cx + Math.cos(a) * 6);
+        const ry = Math.round(11  + Math.sin(a) * 6);
+        if (rx >= x0 && rx < x0 + COL_W) px(rx, ry, 255, 200, 60);
+      }
+    } else if (isRain || isStorm) {
+      // Falling rain streaks — 4 lanes within the column
+      for (let d = 0; d < 4; d++) {
+        const rx = x0 + 2 + d * 4;
+        const ry = 19 + ((tick * 2 + d * 5) % (H - 19));
+        px(rx, ry,     80, 130, 220);
+        if (ry + 1 < H) px(rx, ry + 1, 60, 100, 180);
+      }
+    } else if (isSnow) {
+      // Drifting snowflakes
+      for (let d = 0; d < 3; d++) {
+        const rx = x0 + 2 + d * 6 + Math.floor(Math.sin(tick * 0.05 + d) * 2);
+        const ry = 19 + ((tick + d * 7) % (H - 19));
+        if (rx >= x0 && rx < x0 + COL_W) px(rx, ry, 220, 235, 255);
+      }
+    } else {
+      // Cloudy — slow drifting bright speck
+      const rx = x0 + 2 + ((tick + x0) % (COL_W - 4));
+      px(rx, 19, 160, 170, 200);
+    }
+  };
+
+  // Draw each column
   for (let i = 0; i < 3; i++) {
     const { dow, data } = cols[i];
     const x0 = X0[i];
     const cx = x0 + Math.floor(COL_W / 2);
+    const cond = data?.condition;
 
-    // Day-of-week label, centered in column
+    // Per-column sky
+    colSky(x0, cond);
+
+    // Day-of-week label, centered
     const lw = textWidth(dow);
-    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 1, 200, 210, 230);
+    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 1, 210, 220, 240);
 
     if (!data || data.error) {
       textOutlined('--', x0 + Math.floor((COL_W - textWidth('--')) / 2), 13, 80, 80, 80);
       continue;
     }
 
-    // Small weather icon centered in column (6px radius budget)
-    drawWeatherIcon(cx, 13, data.condition, tick);
+    // Animated particles for this column's condition
+    colParticles(x0, cond);
 
-    // Max temp (orange), centered
+    // Icon centered in column
+    drawWeatherIcon(cx, 11, data.condition, tick);
+
+    // Max temp (orange) — y=23 gives a clear gap below the icon
     const tmax = Math.round(data.temp_max_c) + '\xb0';
     textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 22, 255, 160, 60);
 
-    // Min temp (blue), centered
+    // Min temp (blue) — y=28, one clear row below max
     const tmin = Math.round(data.temp_min_c) + '\xb0';
     textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 27, 100, 180, 255);
   }
 
-  // Vertical dividers
+  // Vertical dividers drawn last so they sit on top of the gradients
   for (let y = 0; y < H; y++) {
     px(21, y, 50, 60, 90);
     px(42, y, 50, 60, 90);
