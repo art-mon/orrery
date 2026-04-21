@@ -2318,20 +2318,20 @@ function sceneWeatherNow(tick) {
   // Medium temperature
   const tempStr = Math.round(data.temp_c) + '\xb0C';
   const tw = medWidth(tempStr);
-  const tx = 12, ty = 9;
+  const tx = 10, ty = 9;
   drawMedOutlined(tempStr, tx, ty, ...tempCol);
 
   // Feels like — right of temperature, vertically centred in med text (8px tall)
   if (data.feels_c != null) {
     const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
-    textOutlined(fl, tx + tw + 16, ty + 2, ...flCol);
+    textOutlined(fl, tx + tw + 6, ty + 2, ...flCol);
   }
 
   // Humidity and wind — labels on one row, values on the next
   const col2 = Math.floor(W / 2) + 1;
-  textOutlined('HUM',                              6,    20, ...humCol);
+  textOutlined('HUM',                              9,    20, ...humCol);
   textOutlined('WIND',                             col2, 20, ...windCol);
-  textOutlined(Math.round(data.humidity) + '%',    6,    26, ...humCol);
+  textOutlined(Math.round(data.humidity) + '%',    9,    26, ...humCol);
   textOutlined(Math.round(data.wind_kmh) + 'KMH',  col2, 26, ...windCol);
 }
 
