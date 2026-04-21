@@ -2323,7 +2323,7 @@ function sceneWeatherNow(tick) {
 
   // Feels like — right of temperature, vertically centred in med text (8px tall)
   if (data.feels_c != null) {
-    const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
+    const fl = '(FL ' + Math.round(data.feels_c) + '\xb0)';
     textOutlined(fl, tx + tw + 6, ty + 2, ...flCol);
   }
 
