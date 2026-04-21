@@ -322,6 +322,7 @@ const FONT = {
   '-': [[0,0,0],[0,0,0],[1,1,1],[0,0,0],[0,0,0]],
   '!': [[0,1],[0,1],[0,1],[0,0],[0,1]],
   '~': [[0,1,0,1],[1,0,1,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]],
+  '%': [[1,0,1],[0,0,1],[0,1,0],[1,0,0],[1,0,1]],
 };
 
 // ─── Canvas setup ─────────────────────────────────────────────────────────────
@@ -668,6 +669,39 @@ function textOutlined(str, x, y, r, g, b) {
   for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
     text(str, x+dx, y+dy, 0, 0, 0);
   text(str, x, y, r, g, b);
+}
+
+// Scale-2 text — used for big temperature readouts.
+function drawBig(str, x, y, r, g, b) {
+  let cx = x;
+  for (const ch of str.toUpperCase()) {
+    const gl = FONT[ch] || FONT[' '];
+    const gw = gl[0].length;
+    for (let row = 0; row < gl.length; row++) {
+      for (let col = 0; col < gw; col++) {
+        if (gl[row][col]) {
+          px(cx+col*2,   y+row*2,   r, g, b);
+          px(cx+col*2+1, y+row*2,   r, g, b);
+          px(cx+col*2,   y+row*2+1, r, g, b);
+          px(cx+col*2+1, y+row*2+1, r, g, b);
+        }
+      }
+    }
+    cx += (gw + 1) * 2;
+  }
+}
+function bigWidth(str) {
+  let w = 0;
+  for (const ch of str.toUpperCase()) {
+    const gl = FONT[ch] || FONT[' '];
+    w += (gl[0].length + 1) * 2;
+  }
+  return w - 2;
+}
+function drawBigOutlined(str, x, y, r, g, b) {
+  for (const [dx, dy] of [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]])
+    drawBig(str, x+dx, y+dy, 0, 0, 0);
+  drawBig(str, x, y, r, g, b);
 }
 
 function drawTimeWeather(timeStr, tempStr, timeColor, tempColor) {
@@ -2012,34 +2046,58 @@ function sceneApodLive(tick) {
 let forecastData = null; // populated from daily.json fetch
 let forecastTodayData = null;
 
-// Shared weather icon renderer (used by sceneTomorrow + sceneForecast).
-function drawWeatherIcon(ix, iy, cond, tick) {
+// 12×12 weather icon centered at (cx, cy). Animated where it makes sense
+// (sun rays rotate, rain drops fall, storm flashes).
+function drawWeatherIcon(cx, cy, cond, tick) {
   const c = (cond || '').toLowerCase();
   const isClear = c.includes('clear');
   const isRain  = c.includes('rain') || c.includes('drizzle');
   const isSnow  = c.includes('snow');
   const isStorm = c.includes('thunder');
+
   if (isClear) {
-    circle(ix, iy, 4, 255, 200, 50, true);
+    circle(cx, cy, 3, 255, 210, 80, true);
+    const rot = tick / 10;
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2 + rot;
+      const rx = Math.round(cx + Math.cos(a) * 5);
+      const ry = Math.round(cy + Math.sin(a) * 5);
+      px(rx, ry, 255, 190, 60);
+    }
   } else if (isRain) {
-    rect(ix-4, iy-2, 9, 4, 160, 160, 180, true);
-    circle(ix, iy-2, 3, 160, 160, 180, true);
-    for (let d = 0; d < 4; d++)
-      px(ix - 3 + d*2, iy + 3 + (tick+d*5)%4, 100, 150, 255);
+    circle(cx - 2, cy - 2, 3, 170, 180, 200, true);
+    circle(cx + 2, cy - 2, 3, 170, 180, 200, true);
+    circle(cx,     cy - 3, 3, 170, 180, 200, true);
+    rect(cx - 4, cy - 1, 9, 2, 170, 180, 200);
+    for (let d = 0; d < 5; d++) {
+      const rx = cx - 4 + d * 2;
+      const ry = cy + 2 + ((tick + d * 3) % 4);
+      px(rx, ry,     100, 150, 255);
+      px(rx, ry + 1,  80, 130, 230);
+    }
   } else if (isSnow) {
-    circle(ix, iy-1, 3, 200, 200, 220, true);
+    circle(cx - 2, cy - 2, 3, 210, 210, 230, true);
+    circle(cx + 2, cy - 2, 3, 210, 210, 230, true);
+    rect(cx - 4, cy - 1, 9, 2, 210, 210, 230);
     for (let d = 0; d < 4; d++) {
-      const sx = ix - 2 + (d%2)*4, sy = iy + 3 + Math.floor(d/2)*2;
-      px(sx, sy, 220, 230, 255);
+      const sx = cx - 3 + d * 2;
+      const sy = cy + 2 + ((d + Math.floor(tick/4)) % 3);
+      px(sx, sy, 230, 240, 255);
     }
   } else if (isStorm) {
-    rect(ix-4, iy-3, 9, 4, 100, 100, 120, true);
-    px(ix,   iy+1, 255, 220, 0); px(ix-1, iy+2, 255, 220, 0);
-    px(ix,   iy+3, 255, 220, 0); px(ix+1, iy+4, 255, 220, 0);
+    circle(cx - 2, cy - 2, 3, 100, 110, 130, true);
+    circle(cx + 2, cy - 2, 3, 100, 110, 130, true);
+    rect(cx - 4, cy - 1, 9, 2, 100, 110, 130);
+    const flash = (tick % 10) < 2 ? [255, 240, 120] : [210, 180, 40];
+    px(cx,     cy + 2, ...flash);
+    px(cx - 1, cy + 3, ...flash);
+    px(cx,     cy + 4, ...flash);
+    px(cx + 1, cy + 5, ...flash);
   } else {
-    circle(ix-1, iy,   3, 180, 180, 200, true);
-    circle(ix+2, iy-1, 3, 190, 190, 210, true);
-    circle(ix+1, iy+1, 3, 200, 200, 220, true);
+    circle(cx - 3, cy,     3, 160, 170, 200, true);
+    circle(cx + 2, cy - 1, 3, 200, 210, 230, true);
+    circle(cx - 1, cy - 3, 3, 190, 200, 220, true);
+    circle(cx + 3, cy + 2, 2, 170, 180, 210, true);
   }
 }
 
@@ -2061,59 +2119,81 @@ function drawForecastSky(cond) {
   }
 }
 
-// Three-view weather forecast: NOW → TODAY → TOMORROW.
+// Three-view weather forecast: NOW → TODAY → TMRW. Each view has the same
+// layout — big icon + big temperature — distinguished by an accent colour
+// and the primary temperature (current vs. max).
 function sceneForecast(tick) {
   clear();
 
   const view = viewCount % 3;
-  let data, label, isNow = false;
-  if (view === 0) {
-    data = currentWeather; label = 'NOW'; isNow = true;
-  } else if (view === 1) {
-    data = forecastTodayData; label = 'TODAY';
-  } else {
-    data = forecastData; label = 'TMRW';
-  }
+  let data, label, accent, isNow = false;
+  if (view === 0)      { data = currentWeather;    label = 'NOW';   accent = [255, 210, 100]; isNow = true; }
+  else if (view === 1) { data = forecastTodayData; label = 'TODAY'; accent = [120, 210, 255]; }
+  else                 { data = forecastData;      label = 'TMRW';  accent = [255, 160,  80]; }
 
   drawForecastSky(data?.condition);
 
+  // Top bar: accent-coloured label left, dim clock right.
+  textOutlined(label, 1, 1, ...accent);
+  const clock = timeStr();
+  textOutlined(clock, W - textWidth(clock) - 1, 1, 170, 170, 170);
+
   if (!data || data.error) {
-    textOutlined(label, 22, 1, 200, 200, 200);
-    textOutlined('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 13, 120, 120, 120);
+    const msg = 'NO DATA';
+    textOutlined(msg, Math.floor((W - textWidth(msg)) / 2), 14, 120, 120, 120);
     return;
   }
 
-  drawWeatherIcon(10, 10, data.condition, tick);
-  textOutlined(label, 22, 1, 200, 200, 200);
+  // Animated icon (12×12 centred at (7, 12))
+  drawWeatherIcon(7, 12, data.condition, tick);
 
-  const desc = (data.description || data.condition || '').toUpperCase();
-  textOutlined(desc, 22, 8, 255, 255, 255);
-
-  // Temperature line: NOW shows single temp, TODAY/TMRW show min–max.
+  // Primary temperature — scale-2 digits. NOW shows current, TODAY/TMRW max.
+  // Secondary temperature (feels-like or min) renders small next to it.
+  let primary, primaryC, secondary, secondaryC;
   if (isNow) {
-    const t = Math.round(data.temp_c) + '\xb0C';
-    textOutlined(t, 22, 15, 255, 220, 120);
+    primary  = Math.round(data.temp_c) + '°';
+    primaryC = [255, 220, 120];
     if (data.feels_c != null) {
-      const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
-      textOutlined(fl, 22 + textWidth(t) + 3, 15, 160, 160, 180);
+      secondary  = 'FL' + Math.round(data.feels_c) + '°';
+      secondaryC = [160, 160, 180];
     }
   } else if (data.temp_min_c === data.temp_max_c) {
-    // Degenerate range (only one sample so far today) — show single temp.
-    const t = Math.round(data.temp_min_c) + '\xb0C';
-    textOutlined(t, 22, 15, 255, 220, 120);
+    primary  = Math.round(data.temp_min_c) + '°';
+    primaryC = [255, 220, 120];
   } else {
-    const tmin = Math.round(data.temp_min_c) + '\xb0';
-    const tmax = Math.round(data.temp_max_c) + '\xb0';
-    textOutlined(tmin + 'C', 22, 15, 100, 180, 255);
-    const sepX = 22 + textWidth(tmin + 'C') + 2;
-    textOutlined('-', sepX, 15, 180, 180, 180);
-    textOutlined(tmax + 'C', sepX + textWidth('-') + 2, 15, 255, 140, 60);
+    primary    = Math.round(data.temp_max_c) + '°';
+    primaryC   = [255, 160,  60];
+    secondary  = Math.round(data.temp_min_c) + '°';
+    secondaryC = [100, 180, 255];
   }
 
+  const tx = 16;
+  drawBigOutlined(primary, tx, 6, ...primaryC);
+  if (secondary) {
+    const sx = Math.min(W - textWidth(secondary) - 1, tx + bigWidth(primary) + 3);
+    textOutlined(secondary, sx, 12, ...secondaryC);
+  }
+
+  // Condition description — centered if it fits, auto-ticker otherwise.
+  const desc = (data.description || data.condition || '').toUpperCase();
+  if (textWidth(desc) <= W - 2) {
+    const dx = Math.floor((W - textWidth(desc)) / 2);
+    textOutlined(desc, dx, 20, 235, 235, 235);
+  } else {
+    drawTicker(desc, 20, 235, 235, 235);
+  }
+
+  // Bottom stats row: humidity + wind + city (tickers only when it overflows).
+  const humid = Math.round(data.humidity) + '%';
+  const wind  = Math.round(data.wind_kmh) + 'KMH';
   const city  = (data.city || '').toUpperCase();
-  const humid = 'HUM ' + data.humidity + '%';
-  const wind  = 'WIND ' + data.wind_kmh + 'KMH';
-  drawTicker(city + '  ~  ' + humid + '  ~  ' + wind, H-7, 100, 180, 255, 0, 0, 0);
+  const stats = 'H' + humid + '   W' + wind + (city ? '   ' + city : '');
+  if (textWidth(stats) <= W - 2) {
+    const sx = Math.floor((W - textWidth(stats)) / 2);
+    textOutlined(stats, sx, 27, ...accent);
+  } else {
+    drawTicker(stats, 27, ...accent);
+  }
 }
 
 function sceneTomorrow(tick) {
