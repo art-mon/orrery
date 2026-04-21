@@ -2254,16 +2254,16 @@ function sceneForecast(tick) {
     // Animated particles for this column's condition
     colParticles(x0, cond);
 
-    // Icon centered in column
-    drawWeatherIcon(cx, 11, data.condition, tick);
+    // Icon centered in column (y=10 keeps it clear of both label and temps)
+    drawWeatherIcon(cx, 10, data.condition, tick);
 
-    // Max temp (orange) — y=23 gives a clear gap below the icon
+    // Max temp (orange) — y=19, two clear rows below icon bottom
     const tmax = Math.round(data.temp_max_c) + '\xb0';
-    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 22, 255, 160, 60);
+    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 19, 255, 160, 60);
 
-    // Min temp (blue) — y=28, one clear row below max
+    // Min temp (blue) — y=25, one clear row gap after max (ends y=23+gap=25)
     const tmin = Math.round(data.temp_min_c) + '\xb0';
-    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 27, 100, 180, 255);
+    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 25, 100, 180, 255);
   }
 
   // Vertical dividers drawn last so they sit on top of the gradients
