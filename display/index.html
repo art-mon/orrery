@@ -2215,8 +2215,8 @@ function sceneForecast(tick) {
     const isSnow    = c.includes('snow');
     const isStorm   = c.includes('thunder');
     const cx   = x0 + Math.floor(COL_W / 2);
-    const AREA_Y = 7;   // below day label
-    const AREA_H = 19 - AREA_Y;  // stop just before max temp at y=20
+    const AREA_Y = 0;   // full column from top
+    const AREA_H = H;   // full display height
 
     if (isClear) {
       // Sky shimmer: every pixel painted — brightness varies but never drops to zero
@@ -2249,10 +2249,15 @@ function sceneForecast(tick) {
       // Two staggered streaks per lane so the full AREA_H is always covered
       for (let x = x0; x < x0 + COL_W; x++) {
         const lx    = x - x0;
+        // Rain: skip ~1 in 3 lanes; storm keeps every lane
+        if (isRain && nhash(lx + 400, colIdx) < 0.33) continue;
         const speed = 2 + nhash(lx, colIdx) * 3;
         const phase = nhash(lx + 50, colIdx) * AREA_H;
         const len   = 2 + Math.floor(nhash(lx + 100, colIdx) * 3);
-        const br0   = 120 + Math.round(nhash(lx, colIdx + 7) * 80);
+        // Rain: dimmer streaks; storm: full brightness
+        const br0   = isRain
+          ? 70 + Math.round(nhash(lx, colIdx + 7) * 50)
+          : 120 + Math.round(nhash(lx, colIdx + 7) * 80);
         for (let s = 0; s < 2; s++) {
           const top = AREA_Y + Math.floor((phase + tick * speed + s * (AREA_H / 2)) % AREA_H);
           for (let l = 0; l < len; l++) {
