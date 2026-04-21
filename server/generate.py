@@ -41,8 +41,16 @@ def run():
     print("APOD...")
     apod_data = safe(nasa.apod)
 
-    print("Events...")
+    print("Events (EONET)...")
     events_data = safe(nasa.events)
+
+    print("Earthquakes (USGS M5.0+)...")
+    quake_data = safe(nasa.earthquakes)
+    # Merge earthquakes into the shared events list
+    if not events_data.get("error") and not quake_data.get("error"):
+        events_data["events"] = (events_data.get("events") or []) + (quake_data.get("events") or [])
+    elif events_data.get("error") and not quake_data.get("error"):
+        events_data = quake_data
 
     print("Asteroids...")
     asteroids_data = safe(nasa.asteroids)

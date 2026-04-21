@@ -19,7 +19,13 @@ def route_apod():
 
 @app.route("/events")
 def route_events():
-    return jsonify(nasa.events())
+    events = nasa.events()
+    quakes = nasa.earthquakes()
+    if not events.get("error") and not quakes.get("error"):
+        events["events"] = (events.get("events") or []) + (quakes.get("events") or [])
+    elif events.get("error") and not quakes.get("error"):
+        events = quakes
+    return jsonify(events)
 
 
 @app.route("/asteroids")
@@ -55,7 +61,10 @@ def route_daily():
 
     return jsonify({
         "apod":      safe(nasa.apod),
-        "events":    safe(nasa.events),
+        "events":    safe(lambda: {
+            "events": (safe(nasa.events).get("events") or []) +
+                      (safe(nasa.earthquakes).get("events") or [])
+        }),
         "asteroids": safe(nasa.asteroids),
         "weather":            safe(weather.current),
         "forecast_today":     safe(weather.forecast_today),

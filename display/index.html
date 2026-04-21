@@ -1403,7 +1403,8 @@ function sceneEvent(tick) {
     const my = Math.floor((90 - lat) / 180 * H);
     const cat = (evt.category || '').toLowerCase();
     let r = 255, g = 160, b = 60; // default orange
-    if (cat.includes('volcano'))        { r=255; g=80;  b=0;   }
+    if (cat.includes('earthquake'))     { r=255; g=220; b=50;  }
+    else if (cat.includes('volcano'))   { r=255; g=80;  b=0;   }
     else if (cat.includes('storm'))     { r=180; g=180; b=255; }
     else if (cat.includes('wildfire') || cat.includes('fire')) { r=255; g=60; b=0; }
     else if (cat.includes('flood'))     { r=60;  g=160; b=255; }

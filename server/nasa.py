@@ -59,6 +59,48 @@ def events() -> dict:
     return result
 
 
+USGS_BASE = "https://earthquake.usgs.gov/fdsnws/event/1/query"
+
+def earthquakes() -> dict:
+    """Recent significant earthquakes (M5.0+, last 7 days) from USGS."""
+    cached = cache.get("earthquakes", SIX_HOURS)
+    if cached:
+        return cached
+
+    from datetime import datetime, timedelta
+    start = (datetime.utcnow() - timedelta(days=7)).strftime("%Y-%m-%d")
+    r = requests.get(USGS_BASE, params={
+        "format":         "geojson",
+        "minmagnitude":   5.0,
+        "orderby":        "time",
+        "limit":          15,
+        "starttime":      start,
+    }, timeout=10)
+    r.raise_for_status()
+    data = r.json()
+
+    events = []
+    for f in data.get("features", []):
+        props  = f.get("properties", {})
+        coords = (f.get("geometry") or {}).get("coordinates", [])
+        mag    = props.get("mag")
+        place  = props.get("place") or "Unknown location"
+        time_ms = props.get("time") or 0
+        if mag is None or len(coords) < 2:
+            continue
+        events.append({
+            "id":          f.get("id"),
+            "title":       f"M{mag:.1f} Earthquake - {place}",
+            "category":    "Earthquake",
+            "date":        datetime.utcfromtimestamp(time_ms / 1000).isoformat() + "Z",
+            "coordinates": [coords[0], coords[1]],   # [lon, lat]
+        })
+
+    result = {"events": events}
+    cache.set("earthquakes", result)
+    return result
+
+
 def asteroids() -> dict:
     cached = cache.get("asteroids", ONE_DAY)
     if cached:
