@@ -57,7 +57,10 @@ def route_daily():
         "apod":      safe(nasa.apod),
         "events":    safe(nasa.events),
         "asteroids": safe(nasa.asteroids),
-        "weather":   safe(weather.current),
+        "weather":            safe(weather.current),
+        "forecast_today":     safe(weather.forecast_today),
+        "forecast":           safe(weather.forecast_tomorrow),
+        "forecast_day_after": safe(weather.forecast_day_after_tomorrow),
     })
 
 

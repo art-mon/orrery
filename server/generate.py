@@ -56,14 +56,18 @@ def run():
     print("Weather (tomorrow forecast)...")
     forecast_data = safe(weather.forecast_tomorrow)
 
+    print("Weather (day-after-tomorrow forecast)...")
+    forecast_day_after_data = safe(weather.forecast_day_after_tomorrow)
+
     daily = {
         "generated": datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).strftime("%Y-%m-%d"),  # local date, cache key
         "apod":      apod_data,
         "events":    events_data,
         "asteroids": asteroids_data,
         "weather":   weather_data,
-        "forecast_today": forecast_today_data,
-        "forecast":  forecast_data,
+        "forecast_today":     forecast_today_data,
+        "forecast":           forecast_data,
+        "forecast_day_after": forecast_day_after_data,
     }
 
     (OUT / "daily.json").write_text(json.dumps(daily, indent=2))

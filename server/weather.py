@@ -120,6 +120,17 @@ def forecast_tomorrow() -> dict:
     return _summarize(entries, data["city"]["name"], tomorrow.isoformat())
 
 
+def forecast_day_after_tomorrow() -> dict:
+    data = _fetch_forecast_raw()
+    if "error" in data:
+        return data
+    day = datetime.now(TZ).date() + timedelta(days=2)
+    entries = _entries_on_local_date(data, day)
+    if not entries:
+        return {"error": "no forecast data for day after tomorrow"}
+    return _summarize(entries, data["city"]["name"], day.isoformat())
+
+
 def forecast_today() -> dict:
     """Summary of today's weather.
 
