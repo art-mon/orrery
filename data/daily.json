@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-21",
   "apod": {
-    "title": "Comet R3 PanSTARRS over a Himalayan Valley",
-    "date": "2026-04-20",
-    "explanation": "The best way to see comet R3 PanSTARRS\u2019s long tail is with a camera. This week, the recently brightened comet appears in northern skies to the east just before dawn, but is only barely visible to the unaided eye. The many-degree ion tail captured on long duration camera exposures is not unusual for a comet - it is primarily due to the Earth's nearly sideways view of the tail as it points away from the Sun.  In the featured image taken last week, Comet C/2025 R3 (PanSTARRS) showed off its flowing tail through a valley between two peaks in the Himalayan mountains of India. \u00a0 The comet passed its closest to the Sun yesterday. As it nears its closest approach to Earth next week, a bushy dust tail may become visible.  The comet is slowly moving out of northern skies and by the end of the month will be visible after sunset in southern skies as it fades and leaves our Solar System.\u00a0   Growing Gallery: Comet R3 PanSTARRS in 2026",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/ValleyComet_Chakrabarti_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/ValleyComet_Chakrabarti_3900.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -97,25 +92,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.0,
-    "feels_c": 8.0,
-    "humidity": 96,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.0
+    "temp_c": 7.6,
+    "feels_c": 7.6,
+    "humidity": 95,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-04-21",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
+    "temp_min_c": 7.6,
     "temp_max_c": 15,
-    "humidity": 77,
+    "humidity": 75,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04n",
-    "wind_kmh": 8.1,
-    "samples": 8
+    "icon": "10d",
+    "wind_kmh": 8.9,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-04-22",
@@ -127,5 +122,16 @@
     "description": "broken clouds",
     "icon": "04d",
     "wind_kmh": 8.0
+  },
+  "forecast_day_after": {
+    "date": "2026-04-23",
+    "city": "Zagreb",
+    "temp_min_c": 5.5,
+    "temp_max_c": 17.9,
+    "humidity": 51,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.2
   }
 }
