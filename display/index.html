@@ -2280,8 +2280,32 @@ function sceneWeatherNow(tick) {
   drawWeatherSky(0, cond, W);
   drawWeatherParticles(0, cond, 0, W, tick);
 
+  // Condition-derived palette
+  const cc = (cond || '').toLowerCase();
+  let tempCol, flCol, humCol, windCol, nowCol;
+  if (cc.includes('clear')) {
+    tempCol = [255, 220,  80];  flCol  = [230, 180,  60];
+    humCol  = [ 80, 170, 255];  windCol= [100, 220, 200];  nowCol = [255, 210, 100];
+  } else if (cc.includes('thunder')) {
+    tempCol = [200, 200, 255];  flCol  = [160, 160, 230];
+    humCol  = [ 80, 130, 255];  windCol= [150, 140, 255];  nowCol = [180, 180, 255];
+  } else if (cc.includes('rain') || cc.includes('drizzle')) {
+    tempCol = [120, 190, 255];  flCol  = [100, 160, 230];
+    humCol  = [ 80, 170, 255];  windCol= [ 80, 210, 220];  nowCol = [130, 190, 255];
+  } else if (cc.includes('snow')) {
+    tempCol = [220, 235, 255];  flCol  = [180, 210, 255];
+    humCol  = [140, 190, 255];  windCol= [200, 225, 255];  nowCol = [210, 230, 255];
+  } else if (cc.includes('mist') || cc.includes('fog') || cc.includes('haze')) {
+    tempCol = [200, 210, 215];  flCol  = [170, 180, 185];
+    humCol  = [140, 175, 200];  windCol= [160, 195, 195];  nowCol = [190, 200, 210];
+  } else {
+    // Cloudy / overcast
+    tempCol = [190, 205, 230];  flCol  = [155, 170, 200];
+    humCol  = [100, 155, 215];  windCol= [110, 190, 185];  nowCol = [180, 195, 220];
+  }
+
   // Top bar
-  textOutlined('NOW', 1, 1, 255, 210, 100);
+  textOutlined('NOW', 1, 1, ...nowCol);
   const clock = timeStr();
   textOutlined(clock, W - textWidth(clock) - 1, 1, 170, 170, 170);
 
@@ -2295,20 +2319,20 @@ function sceneWeatherNow(tick) {
   const tempStr = Math.round(data.temp_c) + '\xb0C';
   const tw = medWidth(tempStr);
   const tx = 12, ty = 9;
-  drawMedOutlined(tempStr, tx, ty, 255, 220, 120);
+  drawMedOutlined(tempStr, tx, ty, ...tempCol);
 
   // Feels like — right of temperature, vertically centred in med text (8px tall)
   if (data.feels_c != null) {
     const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
-    textOutlined(fl, tx + tw + 16, ty + 2, 170, 170, 200);
+    textOutlined(fl, tx + tw + 16, ty + 2, ...flCol);
   }
 
   // Humidity and wind — labels on one row, values on the next
   const col2 = Math.floor(W / 2) + 1;
-  textOutlined('HUM',                              6,     20, 100, 180, 255);
-  textOutlined('WIND',                             col2,  20, 120, 210, 180);
-  textOutlined(Math.round(data.humidity) + '%',    6,     26, 100, 180, 255);
-  textOutlined(Math.round(data.wind_kmh) + 'KMH',  col2,  26, 120, 210, 180);
+  textOutlined('HUM',                              6,    20, ...humCol);
+  textOutlined('WIND',                             col2, 20, ...windCol);
+  textOutlined(Math.round(data.humidity) + '%',    6,    26, ...humCol);
+  textOutlined(Math.round(data.wind_kmh) + 'KMH',  col2, 26, ...windCol);
 }
 
 // ─── Weather: 3-day forecast panel ────────────────────────────────────────────
