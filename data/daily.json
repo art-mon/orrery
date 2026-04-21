@@ -1,18 +1,53 @@
 {
   "generated": "2026-04-21",
   "apod": {
-    "title": "Three Sky Arches over Snowy Alps",
-    "date": "2026-04-21",
-    "explanation": "Why are there three arches across the sky instead of two? Last month, after being dropped off by a helicopter at a high mountain peak in the Alps near the Swiss Italian border, an adventurous astrophotographer expected two arches of our Milky Way galaxy to be visible during the night. These were the inner arch looking in toward the center of our galaxy on the left, visible just before sunrise, and the outer arch on the right visible just after sunset.  But there were three arches. The surprised astrophotographer soon realized that the sky was so dark that an entire arc of faint zodiacal light was also noticeable -- sunlight scattered by inner Solar System dust.  And it artfully connected the two Milky Way arches!  The next morning a helicopter picked the astrophotographer back up, and after 40 hours of processing and combining that night's images, the featured triple-arch 360-degree panorama resulted.    Jigsaw Vistas: Astronomy Puzzle of the Day",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_7500.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
+      {
+        "name": "(2026 HF2)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 117089,
+        "velocity_kmh": 65098
+      },
+      {
+        "name": "(2026 HJ1)",
+        "hazardous": false,
+        "diameter_m": 12,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 643432,
+        "velocity_kmh": 38182
+      },
+      {
+        "name": "(2026 GJ1)",
+        "hazardous": false,
+        "diameter_m": 111,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 3338126,
+        "velocity_kmh": 79967
+      },
+      {
+        "name": "(2026 GZ1)",
+        "hazardous": false,
+        "diameter_m": 84,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 5954130,
+        "velocity_kmh": 36890
+      },
+      {
+        "name": "(2025 HQ4)",
+        "hazardous": false,
+        "diameter_m": 37,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 6266754,
+        "velocity_kmh": 45162
+      },
       {
         "name": "(2009 UC19)",
         "hazardous": false,
@@ -22,121 +57,81 @@
         "velocity_kmh": 31565
       },
       {
+        "name": "(2021 JG3)",
+        "hazardous": false,
+        "diameter_m": 164,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 15371160,
+        "velocity_kmh": 31589
+      },
+      {
+        "name": "(2023 HM)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 39132425,
+        "velocity_kmh": 99697
+      },
+      {
+        "name": "(2023 SL8)",
+        "hazardous": false,
+        "diameter_m": 78,
+        "close_approach_date": "2026-04-21",
+        "miss_distance_km": 39548887,
+        "velocity_kmh": 31594
+      },
+      {
         "name": "(2016 NR)",
         "hazardous": false,
         "diameter_m": 103,
         "close_approach_date": "2026-04-21",
         "miss_distance_km": 45792477,
         "velocity_kmh": 27748
-      },
-      {
-        "name": "(2016 AH164)",
-        "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 63505420,
-        "velocity_kmh": 28655
-      },
-      {
-        "name": "(2020 GX2)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 71651144,
-        "velocity_kmh": 75198
-      },
-      {
-        "name": "(2004 PJ2)",
-        "hazardous": true,
-        "diameter_m": 288,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 10093295,
-        "velocity_kmh": 22631
-      },
-      {
-        "name": "612786 (2004 PJ2)",
-        "hazardous": true,
-        "diameter_m": 303,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 10093329,
-        "velocity_kmh": 22631
-      },
-      {
-        "name": "434196 (2003 HG2)",
-        "hazardous": true,
-        "diameter_m": 290,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 22877261,
-        "velocity_kmh": 36684
-      },
-      {
-        "name": "54071 (2000 GQ146)",
-        "hazardous": false,
-        "diameter_m": 1959,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 23600402,
-        "velocity_kmh": 48094
-      },
-      {
-        "name": "(2019 RL3)",
-        "hazardous": false,
-        "diameter_m": 279,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 30064365,
-        "velocity_kmh": 71426
-      },
-      {
-        "name": "(2014 BG25)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 36114053,
-        "velocity_kmh": 44154
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.2,
+    "city": "Donji grad",
+    "temp_c": 13.4,
+    "feels_c": 12.4,
     "humidity": 60,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 10.9
+    "wind_kmh": 10.5
   },
   "forecast_today": {
     "date": "2026-04-21",
     "city": "Zagreb",
-    "temp_min_c": 9.5,
-    "temp_max_c": 14.2,
-    "humidity": 63,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 9.3,
+    "temp_max_c": 14.1,
+    "humidity": 62,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "04d",
-    "wind_kmh": 9.7,
-    "samples": 5
+    "wind_kmh": 9.2,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-04-22",
     "city": "Zagreb",
-    "temp_min_c": 6.1,
-    "temp_max_c": 14.0,
-    "humidity": 57,
+    "temp_min_c": 7.8,
+    "temp_max_c": 14.2,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 8.3
+    "wind_kmh": 8.9
   },
   "forecast_day_after": {
     "date": "2026-04-23",
     "city": "Zagreb",
     "temp_min_c": 5.7,
-    "temp_max_c": 18.1,
+    "temp_max_c": 18.2,
     "humidity": 50,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 5.3
   }
 }
