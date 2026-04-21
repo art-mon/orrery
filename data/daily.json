@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-22",
   "apod": {
-    "title": "Three Sky Arches over Snowy Alps",
-    "date": "2026-04-21",
-    "explanation": "Why are there three arches across the sky instead of two? Last month, after being dropped off by a helicopter at a high mountain peak in the Alps near the Swiss Italian border, an adventurous astrophotographer expected two arches of our Milky Way galaxy to be visible during the night. These were the inner arch looking in toward the center of our galaxy on the left, visible just before sunrise, and the outer arch on the right visible just after sunset.  But there were three arches. The surprised astrophotographer soon realized that the sky was so dark that an entire arc of faint zodiacal light was also noticeable -- sunlight scattered by inner Solar System dust.  And it artfully connected the two Milky Way arches!  The next morning a helicopter picked the astrophotographer back up, and after 40 hours of processing and combining that night's images, the featured triple-arch 360-degree panorama resulted.    Jigsaw Vistas: Astronomy Puzzle of the Day",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_7500.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -248,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 6.7,
-    "feels_c": 5.3,
-    "humidity": 81,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 7.4
+    "temp_c": 7.8,
+    "feels_c": 6.7,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 6.7
   },
   "forecast_today": {
     "date": "2026-04-22",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
+    "city": "Donji grad",
+    "temp_min_c": 7.8,
     "temp_max_c": 15.1,
-    "humidity": 61,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
+    "humidity": 60,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
     "wind_kmh": 8.4,
     "samples": 9
   },
   "forecast": {
     "date": "2026-04-23",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 5.6,
     "temp_max_c": 18.5,
     "humidity": 50,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-24",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 7.6,
     "temp_max_c": 19.5,
     "humidity": 55,
