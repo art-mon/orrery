@@ -1,7 +1,12 @@
 {
   "generated": "2026-04-21",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Three Sky Arches over Snowy Alps",
+    "date": "2026-04-21",
+    "explanation": "Why are there three arches across the sky instead of two? Last month, after being dropped off by a helicopter at a high mountain peak in the Alps near the Swiss Italian border, an adventurous astrophotographer expected two arches of our Milky Way galaxy to be visible during the night. These were the inner arch looking in toward the center of our galaxy on the left, visible just before sunrise, and the outer arch on the right visible just after sunset.  But there were three arches. The surprised astrophotographer soon realized that the sky was so dark that an entire arc of faint zodiacal light was also noticeable -- sunlight scattered by inner Solar System dust.  And it artfully connected the two Milky Way arches!  The next morning a helicopter picked the astrophotographer back up, and after 40 hours of processing and combining that night's images, the featured triple-arch 360-degree panorama resulted.    Jigsaw Vistas: Astronomy Puzzle of the Day",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/TripleArchAlps_Fux_7500.jpg"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -91,47 +96,47 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 7.6,
-    "feels_c": 7.6,
-    "humidity": 95,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 4.1
+    "city": "Donji grad",
+    "temp_c": 11.4,
+    "feels_c": 10.7,
+    "humidity": 79,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 9.0
   },
   "forecast_today": {
     "date": "2026-04-21",
     "city": "Zagreb",
-    "temp_min_c": 7.6,
-    "temp_max_c": 15,
-    "humidity": 75,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 8.9,
-    "samples": 7
+    "temp_min_c": 9.5,
+    "temp_max_c": 13.6,
+    "humidity": 70,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 9.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-04-22",
     "city": "Zagreb",
-    "temp_min_c": 6.0,
-    "temp_max_c": 13.6,
-    "humidity": 60,
+    "temp_min_c": 6.1,
+    "temp_max_c": 14.0,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 8.0
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.3
   },
   "forecast_day_after": {
     "date": "2026-04-23",
     "city": "Zagreb",
-    "temp_min_c": 5.5,
-    "temp_max_c": 17.9,
-    "humidity": 51,
+    "temp_min_c": 5.7,
+    "temp_max_c": 18.1,
+    "humidity": 50,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.2
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.3
   }
 }
