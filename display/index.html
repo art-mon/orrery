@@ -2219,32 +2219,7 @@ function sceneForecast(tick) {
     const AREA_H = H;   // full display height
 
     if (isClear) {
-      // Sky shimmer: every pixel painted — brightness varies but never drops to zero
-      for (let y = AREA_Y; y < AREA_Y + AREA_H; y++) {
-        for (let x = x0; x < x0 + COL_W; x++) {
-          const lx = x - x0, ly = y - AREA_Y;
-          const n = Math.sin(lx * 0.6 + tick * 0.03) * Math.sin(ly * 0.8 + tick * 0.02)
-                  + Math.sin(lx * 0.3 - tick * 0.015 + 1.7) * 0.4;
-          // base=6 ensures a faint glow even at the noise trough (n≈-1)
-          const br = Math.max(0, Math.round(6 + n * 18));
-          px(x, y, br + 40, br + 30, 0);
-        }
-      }
-      // Sun core + pulsing halo on top
-      const cy2   = Math.round(AREA_Y + AREA_H / 2);
-      const pulse = 0.55 + 0.45 * Math.sin(tick * 0.06);
-      circle(cx, cy2, 3, 255, 210, 80, true);
-      for (let r = 4; r <= 6; r++) {
-        const step = Math.max(1, Math.round(Math.PI * r / 4));
-        for (let s = 0; s < Math.round(2 * Math.PI * r); s += step) {
-          const a  = s / r;
-          const rx = Math.round(cx + Math.cos(a) * r);
-          const ry = Math.round(cy2 + Math.sin(a) * r);
-          const br = Math.round(pulse * (7 - r) * 32);
-          if (rx >= x0 && rx < x0 + COL_W && ry >= AREA_Y && ry < AREA_Y + AREA_H)
-            px(rx, ry, Math.min(255, br + 90), Math.min(255, br + 60), 0);
-        }
-      }
+      // colSky already painted the clean blue gradient — nothing extra needed
     } else if (isRain || isStorm) {
       // Two staggered streaks per lane so the full AREA_H is always covered
       for (let x = x0; x < x0 + COL_W; x++) {
