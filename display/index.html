@@ -269,6 +269,18 @@
       <span class="val" id="moon-phase-val" style="min-width:110px;">Live</span>
       <button id="moon-phase-live-btn" style="min-height:28px; padding:4px 10px; font-size:11px;">Live</button>
     </div>
+    <div class="setting-row">
+      <span>Weather override</span>
+      <select id="weather-override" style="flex:1; background:#1a1a1a; color:#ccc; border:1px solid #333; padding:4px 8px; font-size:12px;">
+        <option value="">Live</option>
+        <option value="Clear">Clear</option>
+        <option value="Clouds">Clouds</option>
+        <option value="Rain">Rain</option>
+        <option value="Drizzle">Drizzle</option>
+        <option value="Thunderstorm">Thunderstorm</option>
+        <option value="Snow">Snow</option>
+      </select>
+    </div>
   </div>
 
 </div>
@@ -2137,7 +2149,7 @@ function sceneWeatherNow(tick) {
   }
 
   // Icon left (12×12 centered at x=7, y=12)
-  drawWeatherIcon(7, 12, data.condition, tick);
+  drawWeatherIcon(7, 12, condOf(data), tick);
 
   // Big scale-2 temperature, right of icon
   const tempStr = Math.round(data.temp_c) + '\xb0C';
@@ -2156,9 +2168,12 @@ function sceneWeatherNow(tick) {
 
 // ─── Weather: 3-day forecast panel ────────────────────────────────────────────
 // Three vertical columns: today / tomorrow / day-after.
-// Each column gets its own sky gradient + animated weather particles.
+// Each column gets its own sky gradient + organic noise-driven particles.
 function sceneForecast(tick) {
   clear();
+
+  // Deterministic noise helpers (same sin-hash pattern as split-flap)
+  const nhash = (a, b) => { const v = Math.sin(a * 127.1 + b * 311.7) * 43758.5; return v - Math.floor(v); };
 
   const DAYS = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
   const todayDow = new Date().getDay();
@@ -2169,11 +2184,10 @@ function sceneForecast(tick) {
     { dow: DAYS[(todayDow+2) % 7],   data: forecastDayAfterData },
   ];
 
-  // Column geometry: 3 × 20px with 1px dividers at x=21 and x=42
   const COL_W = 20;
   const X0    = [1, 22, 43];
 
-  // Helper: per-column sky gradient clipped to [x0, x0+COL_W)
+  // Per-column sky gradient
   const colSky = (x0, cond) => {
     const c = (cond || '').toLowerCase();
     const isClear = c.includes('clear');
@@ -2192,57 +2206,86 @@ function sceneForecast(tick) {
     }
   };
 
-  // Helper: animated particles clipped to column [x0, x0+COL_W), below icon (y≥19)
-  const colParticles = (x0, cond) => {
-    const c = (cond || '').toLowerCase();
+  // Organic noise-driven particles, clipped to column
+  const colParticles = (x0, cond, colIdx) => {
+    const c    = (cond || '').toLowerCase();
     const isClear = c.includes('clear');
     const isRain  = c.includes('rain') || c.includes('drizzle');
     const isSnow  = c.includes('snow');
     const isStorm = c.includes('thunder');
-    const cx = x0 + Math.floor(COL_W / 2);
+    const cx   = x0 + Math.floor(COL_W / 2);
+    const AREA_Y = 7;   // particles fill full column height
+    const AREA_H = H - AREA_Y;
 
     if (isClear) {
-      // Slow rotating halo of dots around icon centre
-      const rot = tick / 12;
-      for (let i = 0; i < 6; i++) {
-        const a  = (i / 6) * Math.PI * 2 + rot;
-        const rx = Math.round(cx + Math.cos(a) * 6);
-        const ry = Math.round(11  + Math.sin(a) * 6);
-        if (rx >= x0 && rx < x0 + COL_W) px(rx, ry, 255, 200, 60);
+      // Slow breathing glow radiating from sun centre — brightness pulses
+      const pulse = 0.55 + 0.45 * Math.sin(tick * 0.06);
+      for (let r = 4; r <= 7; r++) {
+        const step = Math.max(1, Math.round(Math.PI * r / 4));
+        for (let s = 0; s < Math.round(2 * Math.PI * r); s += step) {
+          const a  = s / r;
+          const rx = Math.round(cx + Math.cos(a) * r);
+          const ry = Math.round(10 + Math.sin(a) * r);
+          const br = Math.round(pulse * (8 - r) * 28);
+          if (rx >= x0 && rx < x0 + COL_W && ry >= 0 && ry < H)
+            px(rx, ry, br + 80, br + 50, 0);
+        }
       }
     } else if (isRain || isStorm) {
-      // Falling rain streaks — 4 lanes within the column
-      for (let d = 0; d < 4; d++) {
-        const rx = x0 + 2 + d * 4;
-        const ry = 19 + ((tick * 2 + d * 5) % (H - 19));
-        px(rx, ry,     80, 130, 220);
-        if (ry + 1 < H) px(rx, ry + 1, 60, 100, 180);
+      // 8 noise-placed streaks, each with its own speed and length
+      for (let d = 0; d < 8; d++) {
+        const xOff  = Math.floor(nhash(d, colIdx) * (COL_W - 2));
+        const speed = 1 + Math.floor(nhash(d + 10, colIdx) * 3);   // 1–3 px/tick
+        const len   = 1 + Math.floor(nhash(d + 20, colIdx) * 3);   // 1–3 px tall
+        const phase = Math.floor(nhash(d + 30, colIdx) * AREA_H);
+        const rx    = x0 + 1 + xOff;
+        const ry    = AREA_Y + (phase + tick * speed) % AREA_H;
+        const bright = isStorm && (tick % 14 < 2) ? 200 : 80 + Math.floor(nhash(d, tick) * 60);
+        for (let l = 0; l < len; l++) {
+          const py2 = ry + l;
+          if (py2 < H) px(rx, py2, bright * 0.4 | 0, bright * 0.6 | 0, bright);
+        }
+      }
+      // Storm: occasional full-column flash
+      if (isStorm && tick % 20 < 2) {
+        const fx = x0 + 1 + Math.floor(nhash(tick, colIdx) * (COL_W - 2));
+        for (let y = AREA_Y; y < H; y++) px(fx, y, 220, 230, 255);
       }
     } else if (isSnow) {
-      // Drifting snowflakes
-      for (let d = 0; d < 3; d++) {
-        const rx = x0 + 2 + d * 6 + Math.floor(Math.sin(tick * 0.05 + d) * 2);
-        const ry = 19 + ((tick + d * 7) % (H - 19));
-        if (rx >= x0 && rx < x0 + COL_W) px(rx, ry, 220, 235, 255);
+      // 6 flakes with noise-seeded positions, slow diagonal drift
+      for (let d = 0; d < 6; d++) {
+        const xBase = Math.floor(nhash(d, colIdx) * (COL_W - 2));
+        const speed = 0.4 + nhash(d + 5, colIdx) * 0.6;
+        const phase = Math.floor(nhash(d + 15, colIdx) * AREA_H);
+        const drift = Math.sin(tick * 0.04 + d * 1.3) * 2;
+        const rx    = Math.round(x0 + 1 + xBase + drift);
+        const ry    = AREA_Y + Math.floor((phase + tick * speed) % AREA_H);
+        const br    = 180 + Math.floor(nhash(d, tick * 0.1) * 60);
+        if (rx >= x0 && rx < x0 + COL_W && ry < H) px(rx, ry, br, br, 255);
       }
     } else {
-      // Cloudy — slow drifting bright speck
-      const rx = x0 + 2 + ((tick + x0) % (COL_W - 4));
-      px(rx, 19, 160, 170, 200);
+      // Cloudy: 3 slow-drifting pixel clusters scrolling horizontally
+      for (let d = 0; d < 3; d++) {
+        const yBase  = AREA_Y + Math.floor(nhash(d, colIdx) * (AREA_H * 0.6));
+        const xPhase = (tick * (0.3 + nhash(d + 1, colIdx) * 0.4) + nhash(d + 2, colIdx) * COL_W) % COL_W;
+        for (let s = 0; s < 3; s++) {
+          const rx = x0 + Math.floor((xPhase + s * 2) % COL_W);
+          const br = 120 + Math.floor(nhash(d, s) * 60);
+          if (rx >= x0 && rx < x0 + COL_W) px(rx, yBase, br, br + 10, br + 30);
+        }
+      }
     }
   };
 
   // Draw each column
   for (let i = 0; i < 3; i++) {
     const { dow, data } = cols[i];
-    const x0 = X0[i];
-    const cx = x0 + Math.floor(COL_W / 2);
-    const cond = data?.condition;
+    const x0   = X0[i];
+    const cx   = x0 + Math.floor(COL_W / 2);
+    const cond = condOf(data);
 
-    // Per-column sky
     colSky(x0, cond);
 
-    // Day-of-week label, centered
     const lw = textWidth(dow);
     textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 1, 210, 220, 240);
 
@@ -2251,22 +2294,17 @@ function sceneForecast(tick) {
       continue;
     }
 
-    // Animated particles for this column's condition
-    colParticles(x0, cond);
+    colParticles(x0, cond, i);
+    drawWeatherIcon(cx, 10, cond, tick);
 
-    // Icon centered in column (y=10 keeps it clear of both label and temps)
-    drawWeatherIcon(cx, 10, data.condition, tick);
-
-    // Max temp (orange) — y=19, two clear rows below icon bottom
     const tmax = Math.round(data.temp_max_c) + '\xb0';
     textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 20, 255, 160, 60);
 
-    // Min temp (blue)
     const tmin = Math.round(data.temp_min_c) + '\xb0';
     textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 26, 100, 180, 255);
   }
 
-  // Vertical dividers drawn last so they sit on top of the gradients
+  // Vertical dividers on top
   for (let y = 0; y < H; y++) {
     px(21, y, 50, 60, 90);
     px(42, y, 50, 60, 90);
@@ -2696,6 +2734,18 @@ moonPhaseLiveBtn.addEventListener('click', () => {
 });
 
 updateMoonPhaseLabel();
+
+// ── Weather condition override ────────────────────────────────────────────────
+let weatherCondOverride = null;  // null = use live data
+document.getElementById('weather-override').addEventListener('change', function() {
+  weatherCondOverride = this.value || null;
+});
+// Helper used by sceneForecast / sceneWeatherNow: returns condition string,
+// replacing all three forecast slots when an override is active.
+function condOf(data) {
+  if (weatherCondOverride) return weatherCondOverride;
+  return data?.condition || '';
+}
 
 // ── Settings panel toggle ─────────────────────────────────────────────────────
 document.getElementById('settings-toggle').addEventListener('click', () => {
