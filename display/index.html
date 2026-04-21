@@ -2290,7 +2290,7 @@ function sceneForecast(tick) {
     colSky(x0, cond);
 
     const lw = textWidth(dow);
-    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 1, 210, 220, 240);
+    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 2, 210, 220, 240);
 
     if (!data || data.error) {
       textOutlined('--', x0 + Math.floor((COL_W - textWidth('--')) / 2), 13, 80, 80, 80);
@@ -2300,10 +2300,10 @@ function sceneForecast(tick) {
     colParticles(x0, cond, i);
 
     const tmax = Math.round(data.temp_max_c) + '\xb0';
-    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 20, 255, 160, 60);
+    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 17, 255, 160, 60);
 
     const tmin = Math.round(data.temp_min_c) + '\xb0';
-    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 26, 100, 180, 255);
+    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 25, 100, 180, 255);
   }
 
   // Vertical dividers on top
