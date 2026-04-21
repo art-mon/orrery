@@ -4,7 +4,158 @@
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "events": [
+      {
+        "id": "us6000sru5",
+        "title": "M5.0 Earthquake - 12 km SSW of Santiago Quiavicuzas, Mexico",
+        "category": "Earthquake",
+        "date": "2026-04-21T14:52:17.411000Z",
+        "coordinates": [
+          -95.7767,
+          16.7709
+        ]
+      },
+      {
+        "id": "us6000srtd",
+        "title": "M5.7 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-21T10:30:27.397000Z",
+        "coordinates": [
+          164.998,
+          -62.0123
+        ]
+      },
+      {
+        "id": "us6000srs6",
+        "title": "M5.4 Earthquake - 146 km E of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-21T05:29:09.335000Z",
+        "coordinates": [
+          143.6273,
+          39.8481
+        ]
+      },
+      {
+        "id": "us6000srrc",
+        "title": "M5.5 Earthquake - 35 km WNW of Pante Makasar, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-04-21T03:17:07.811000Z",
+        "coordinates": [
+          124.0863,
+          -9.068
+        ]
+      },
+      {
+        "id": "us6000srr2",
+        "title": "M5.2 Earthquake - 7 km WNW of Cotacachi, Ecuador",
+        "category": "Earthquake",
+        "date": "2026-04-21T02:22:21.410000Z",
+        "coordinates": [
+          -78.3232,
+          0.3364
+        ]
+      },
+      {
+        "id": "us6000srqj",
+        "title": "M5.0 Earthquake - 53 km E of W\u0101ngjing, India",
+        "category": "Earthquake",
+        "date": "2026-04-21T00:29:35.894000Z",
+        "coordinates": [
+          94.5961,
+          24.6039
+        ]
+      },
+      {
+        "id": "us6000srn6",
+        "title": "M5.3 Earthquake - 166 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-04-20T18:47:05.797000Z",
+        "coordinates": [
+          139.1482,
+          -2.374
+        ]
+      },
+      {
+        "id": "us6000srjx",
+        "title": "M5.1 Earthquake - 129 km E of Yamada, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-20T12:56:45.171000Z",
+        "coordinates": [
+          143.4485,
+          39.5889
+        ]
+      },
+      {
+        "id": "us6000srj9",
+        "title": "M5.0 Earthquake - 111 km E of Yamada, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-20T10:44:16.040000Z",
+        "coordinates": [
+          143.2471,
+          39.4819
+        ]
+      },
+      {
+        "id": "us6000sriv",
+        "title": "M5.1 Earthquake - 115 km E of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-20T09:49:43.363000Z",
+        "coordinates": [
+          143.2807,
+          39.7888
+        ]
+      },
+      {
+        "id": "us6000srih",
+        "title": "M5.6 Earthquake - 113 km E of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-20T08:32:46.679000Z",
+        "coordinates": [
+          143.2591,
+          39.6393
+        ]
+      },
+      {
+        "id": "us6000sri7",
+        "title": "M7.4 Earthquake - 100 km ENE of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-20T07:53:00.185000Z",
+        "coordinates": [
+          143.0462,
+          39.9532
+        ]
+      },
+      {
+        "id": "us6000srhw",
+        "title": "M5.1 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-04-20T07:04:23.455000Z",
+        "coordinates": [
+          -178.3141,
+          -32.4235
+        ]
+      },
+      {
+        "id": "us6000srhi",
+        "title": "M5.2 Earthquake - 122 km NW of Maubara, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-04-20T05:19:35.993000Z",
+        "coordinates": [
+          124.3047,
+          -7.9677
+        ]
+      },
+      {
+        "id": "us6000srgj",
+        "title": "M5.4 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-04-20T01:21:17.359000Z",
+        "coordinates": [
+          117.3139,
+          -49.6804
+        ]
+      }
+    ]
   },
   "asteroids": {
     "asteroids": [
@@ -92,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.6,
+    "temp_c": 13.5,
     "feels_c": 12.7,
-    "humidity": 66,
+    "humidity": 68,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 11.2
+    "wind_kmh": 13.5
   },
   "forecast_today": {
     "date": "2026-04-21",
-    "city": "Donji grad",
-    "temp_min_c": 10.8,
-    "temp_max_c": 13.6,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 11.0,
+    "temp_max_c": 13.5,
+    "humidity": 68,
     "condition": "Rain",
     "description": "rain",
     "icon": "10d",
-    "wind_kmh": 8.8,
+    "wind_kmh": 9.6,
     "samples": 3
   },
   "forecast": {
     "date": "2026-04-22",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 7.8,
     "temp_max_c": 14.2,
     "humidity": 55,
@@ -125,11 +276,11 @@
   },
   "forecast_day_after": {
     "date": "2026-04-23",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 5.7,
     "temp_max_c": 18.2,
     "humidity": 50,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 5.3
