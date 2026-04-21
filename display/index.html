@@ -2332,15 +2332,18 @@ function sceneForecast(tick) {
 
     colSky(x0, cond);
 
-    const lw = textWidth(dow);
-    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 2, 210, 220, 240);
-
     if (!data || data.error) {
+      const lw = textWidth(dow);
+      textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 2, 210, 220, 240);
       textOutlined('--', x0 + Math.floor((COL_W - textWidth('--')) / 2), 13, 80, 80, 80);
       continue;
     }
 
     colParticles(x0, cond, i);
+
+    // Text on top of animation
+    const lw = textWidth(dow);
+    textOutlined(dow, x0 + Math.floor((COL_W - lw) / 2), 2, 210, 220, 240);
 
     const tmax = Math.round(data.temp_max_c) + '\xb0';
     textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 17, 255, 160, 60);
