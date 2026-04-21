@@ -2258,22 +2258,21 @@ function sceneWeatherNow(tick) {
     return;
   }
 
-  // Icon left (12×12 centered at x=7, y=12)
-  drawWeatherIcon(7, 12, cond, tick);
-
-  // Big scale-2 temperature, right of icon — shifted 7px left, 4px up
+  // Big temperature — left side, below top bar
   const tempStr = Math.round(data.temp_c) + '\xb0C';
   const tw = bigWidth(tempStr);
-  const tx = Math.max(16, Math.round((W + 16 - tw) / 2)) - 7;
-  drawBigOutlined(tempStr, tx, 2, 255, 220, 120);
+  const tx = 2, ty = 10;
+  drawBigOutlined(tempStr, tx, ty, 255, 220, 120);
 
-  // Feels like / humidity / wind — stacked, starting below icon
+  // Feels like — right of temperature, vertically centred in big text
   if (data.feels_c != null) {
-    const fl = 'FEELS ' + Math.round(data.feels_c) + '\xb0';
-    textOutlined(fl, 16, 18, 170, 170, 200);
+    const fl = 'FL ' + Math.round(data.feels_c) + '\xb0';
+    textOutlined(fl, tx + tw + 3, ty + 5, 170, 170, 200);
   }
-  textOutlined('HUM: ' + Math.round(data.humidity) + '%',       16, 24, 100, 180, 255);
-  textOutlined('WIND: ' + Math.round(data.wind_kmh) + 'KMH',    16, 28, 120, 210, 180);
+
+  // Humidity and wind — spread across bottom two rows
+  textOutlined('HUM ' + Math.round(data.humidity) + '%',       2, 23, 100, 180, 255);
+  textOutlined('WIND ' + Math.round(data.wind_kmh) + 'KMH',   2, 28, 120, 210, 180);
 }
 
 // ─── Weather: 3-day forecast panel ────────────────────────────────────────────
