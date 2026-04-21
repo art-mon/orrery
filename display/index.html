@@ -2259,11 +2259,11 @@ function sceneForecast(tick) {
 
     // Max temp (orange) — y=19, two clear rows below icon bottom
     const tmax = Math.round(data.temp_max_c) + '\xb0';
-    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 19, 255, 160, 60);
+    textOutlined(tmax, x0 + Math.floor((COL_W - textWidth(tmax)) / 2), 20, 255, 160, 60);
 
-    // Min temp (blue) — y=25, one clear row gap after max (ends y=23+gap=25)
+    // Min temp (blue)
     const tmin = Math.round(data.temp_min_c) + '\xb0';
-    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 25, 100, 180, 255);
+    textOutlined(tmin, x0 + Math.floor((COL_W - textWidth(tmin)) / 2), 26, 100, 180, 255);
   }
 
   // Vertical dividers drawn last so they sit on top of the gradients
