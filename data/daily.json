@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000ss20",
+        "title": "M5.0 Earthquake - 31 km ENE of Luganville, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-04-22T13:20:45.869000Z",
+        "coordinates": [
+          167.4412,
+          -15.4409
+        ]
+      },
+      {
         "id": "us6000ss1u",
         "title": "M5.0 Earthquake - 93 km ENE of Miyako, Japan",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           143.2591,
           39.6393
         ]
-      },
-      {
-        "id": "us6000sri7",
-        "title": "M7.4 Earthquake - 100 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-20T07:53:00.185000Z",
-        "coordinates": [
-          143.0462,
-          39.9532
-        ]
       }
     ]
   },
@@ -243,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.2,
-    "feels_c": 13.8,
-    "humidity": 38,
+    "temp_c": 14.9,
+    "feels_c": 13.5,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 15.6
+    "wind_kmh": 13.9
   },
   "forecast_today": {
     "date": "2026-04-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.9,
-    "temp_max_c": 15.2,
-    "humidity": 46,
+    "city": "Zagreb",
+    "temp_min_c": 10.9,
+    "temp_max_c": 14.9,
+    "humidity": 44,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 9.9,
-    "samples": 4
+    "wind_kmh": 8.0,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-04-23",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 5.8,
     "temp_max_c": 18.1,
     "humidity": 50,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-24",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 7.6,
     "temp_max_c": 19.6,
     "humidity": 54,
