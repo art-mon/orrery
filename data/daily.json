@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-22",
   "apod": {
-    "title": "Earthset with an iPhone",
-    "date": "2026-04-22",
-    "explanation": "What does it mean for the Earth to set? Artemis II Commander Reid Wiseman gave us another spectacular view of Earth from their historic flyby of the Moon. Commander Wiseman's video, taken with an iPhone at 8x zoom, shows our entire planet gradually blocked from view by the Moon. On the Earth, the 24-hour planetary rotation causes the Sun to set below your horizon every night. However, on Artemis II the Earthset was caused not by the Moon\u2019s rotation but by the spacecraft moving behind the Moon (at about 55 seconds in this video). Once rare, views of Earth are now taken many times a day from many spacecraft, including NASA\u2019s SWOT (Surface Water and Ocean Topography) satellite tracking freshwater resources and USGS Landsat 8 and 9 satellites supporting water management for farmers, for example. Space agencies around our home planet now work together to provide unique and ever-improving views of our Earth.   Celebrate: Earth Day",
-    "media_type": "video",
-    "url": "https://youtube.com/embed/MT8tg5b3b8E?si=46r2TF9THNvtq1ep",
-    "hdurl": null
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,46 +243,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 11.7,
-    "feels_c": 10.0,
-    "humidity": 43,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
+    "temp_c": 8.8,
+    "feels_c": 8.8,
+    "humidity": 64,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.5
   },
   "forecast_today": {
     "date": "2026-04-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.0,
-    "temp_max_c": 11.7,
-    "humidity": 45,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 7.5,
+    "city": "Zagreb",
+    "temp_min_c": 8.8,
+    "temp_max_c": 9.1,
+    "humidity": 62,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 4.9,
     "samples": 2
   },
   "forecast": {
     "date": "2026-04-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 5.8,
-    "temp_max_c": 18.1,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_min_c": 7.4,
+    "temp_max_c": 19.0,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.3
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-04-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.6,
+    "city": "Zagreb",
+    "temp_min_c": 7.8,
     "temp_max_c": 19.6,
     "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.6
   }
 }
