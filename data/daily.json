@@ -160,38 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HY1)",
-        "hazardous": false,
-        "diameter_m": 37,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 1499899,
-        "velocity_kmh": 33450
-      },
-      {
-        "name": "(2026 GL2)",
-        "hazardous": false,
-        "diameter_m": 53,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 2721417,
-        "velocity_kmh": 37438
-      },
-      {
-        "name": "(2026 BK2)",
-        "hazardous": true,
-        "diameter_m": 366,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 3843499,
-        "velocity_kmh": 29268
-      },
-      {
-        "name": "(2026 HK)",
-        "hazardous": false,
-        "diameter_m": 44,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 4145796,
-        "velocity_kmh": 67262
-      },
-      {
         "name": "(2004 PJ2)",
         "hazardous": true,
         "diameter_m": 288,
@@ -206,14 +174,6 @@
         "close_approach_date": "2026-04-22",
         "miss_distance_km": 10093329,
         "velocity_kmh": 22631
-      },
-      {
-        "name": "(2021 KJ1)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-04-22",
-        "miss_distance_km": 22692751,
-        "velocity_kmh": 55168
       },
       {
         "name": "434196 (2003 HG2)",
@@ -232,51 +192,91 @@
         "velocity_kmh": 48094
       },
       {
-        "name": "(2024 UJ1)",
+        "name": "(2019 RL3)",
         "hazardous": false,
-        "diameter_m": 27,
+        "diameter_m": 279,
         "close_approach_date": "2026-04-22",
-        "miss_distance_km": 25344819,
-        "velocity_kmh": 50888
+        "miss_distance_km": 30064365,
+        "velocity_kmh": 71426
+      },
+      {
+        "name": "(2014 BG25)",
+        "hazardous": false,
+        "diameter_m": 52,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 36114053,
+        "velocity_kmh": 44154
+      },
+      {
+        "name": "(2017 TG4)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 43140040,
+        "velocity_kmh": 70818
+      },
+      {
+        "name": "(2020 OA6)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 47889222,
+        "velocity_kmh": 73323
+      },
+      {
+        "name": "(2020 DR4)",
+        "hazardous": false,
+        "diameter_m": 7,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 58265409,
+        "velocity_kmh": 68284
+      },
+      {
+        "name": "(2005 YO128)",
+        "hazardous": false,
+        "diameter_m": 71,
+        "close_approach_date": "2026-04-22",
+        "miss_distance_km": 66482726,
+        "velocity_kmh": 49367
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 13.2,
-    "feels_c": 11.7,
-    "humidity": 43,
+    "city": "City of Zagreb",
+    "temp_c": 14.4,
+    "feels_c": 12.9,
+    "humidity": 39,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 14.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 17.0
   },
   "forecast_today": {
     "date": "2026-04-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 8.8,
-    "temp_max_c": 13.8,
-    "humidity": 46,
+    "temp_max_c": 14.7,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 11.4,
+    "icon": "03d",
+    "wind_kmh": 11.9,
     "samples": 5
   },
   "forecast": {
     "date": "2026-04-23",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 5.4,
     "temp_max_c": 18.3,
     "humidity": 50,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-04-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 7.6,
     "temp_max_c": 19.9,
     "humidity": 54,
