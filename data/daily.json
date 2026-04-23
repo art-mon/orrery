@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-23",
   "apod": {
-    "title": "Large Scale Structure of the Universe",
-    "date": "2026-04-23",
-    "explanation": "This is a map of the universe. The Dark Energy Spectroscopic Instrument (DESI) at Kitt Peak National Observatory, Arizona, has finished its five-year survey. It observed more than 47 million galaxies and quasars and created a 3D map centered on the Earth. Today's featured image shows a thin slice of these data: the black gaps indicate where our Galaxy obscures distant objects. The feathery web in the inset shows the large scale structure of the universe. Light of the most distant galaxies shown here travelled for 11 billion years to reach the Earth. Galaxies cluster throughout cosmic history under the competing influences of gravity and dark energy, responsible for the accelerated expansion of the universe. Analysis of early DESI results hinted at the possibility that dark energy, described as a cosmological constant by Albert Einstein, may not be constant after all. But we still have to wait for the analysis of the now complete dataset. The nature of dark energy is the biggest mystery of cosmology.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/noirlab2610c_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/noirlab2610c.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -165,6 +160,30 @@
   "asteroids": {
     "asteroids": [
       {
+        "name": "(2026 HZ2)",
+        "hazardous": false,
+        "diameter_m": 5,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 85440,
+        "velocity_kmh": 34526
+      },
+      {
+        "name": "(2026 HR2)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 399510,
+        "velocity_kmh": 42197
+      },
+      {
+        "name": "(2026 HO2)",
+        "hazardous": false,
+        "diameter_m": 46,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 4649811,
+        "velocity_kmh": 30186
+      },
+      {
         "name": "(2019 FP2)",
         "hazardous": false,
         "diameter_m": 213,
@@ -189,6 +208,14 @@
         "velocity_kmh": 22771
       },
       {
+        "name": "(2024 HB)",
+        "hazardous": false,
+        "diameter_m": 15,
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 33997153,
+        "velocity_kmh": 64707
+      },
+      {
         "name": "(2016 WF7)",
         "hazardous": false,
         "diameter_m": 10,
@@ -205,89 +232,57 @@
         "velocity_kmh": 22255
       },
       {
-        "name": "(2004 KB)",
-        "hazardous": true,
-        "diameter_m": 344,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 27046659,
-        "velocity_kmh": 43680
-      },
-      {
-        "name": "376879 (2001 WW1)",
-        "hazardous": false,
-        "diameter_m": 201,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 49916527,
-        "velocity_kmh": 41347
-      },
-      {
-        "name": "(2018 RF2)",
+        "name": "(2023 AX)",
         "hazardous": false,
         "diameter_m": 14,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 54121833,
-        "velocity_kmh": 75025
-      },
-      {
-        "name": "(2020 OY4)",
-        "hazardous": false,
-        "diameter_m": 5,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 55842120,
-        "velocity_kmh": 33578
-      },
-      {
-        "name": "(2018 AB12)",
-        "hazardous": false,
-        "diameter_m": 78,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 57645145,
-        "velocity_kmh": 22534
+        "close_approach_date": "2026-04-23",
+        "miss_distance_km": 58034618,
+        "velocity_kmh": 19659
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.8,
-    "feels_c": 16.5,
-    "humidity": 32,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 10.4
+    "temp_c": 18.7,
+    "feels_c": 17.4,
+    "humidity": 30,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-04-23",
-    "city": "Donji grad",
-    "temp_min_c": 11.6,
-    "temp_max_c": 18.3,
+    "city": "Zagreb",
+    "temp_min_c": 11.5,
+    "temp_max_c": 18.9,
     "humidity": 39,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 7.2,
-    "samples": 5
+    "icon": "01d",
+    "wind_kmh": 6.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-04-24",
-    "city": "Donji grad",
-    "temp_min_c": 8.1,
-    "temp_max_c": 20.1,
-    "humidity": 54,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 4.4,
+    "temp_max_c": 20.4,
+    "humidity": 52,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-04-25",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 9.2,
-    "temp_max_c": 22.4,
-    "humidity": 54,
+    "temp_max_c": 22.7,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.7
   }
 }
