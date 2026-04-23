@@ -1,15 +1,20 @@
 {
   "generated": "2026-04-24",
   "apod": {
-    "title": "Large Scale Structure of the Universe",
-    "date": "2026-04-23",
-    "explanation": "This is a map of the universe. The Dark Energy Spectroscopic Instrument (DESI) at Kitt Peak National Observatory, Arizona, has finished its five-year survey. It observed more than 47 million galaxies and quasars and created a 3D map centered on the Earth. Today's featured image shows a thin slice of these data: the black gaps indicate where our Galaxy obscures distant objects. The feathery web in the inset shows the large scale structure of the universe. Light of the most distant galaxies shown here travelled for 11 billion years to reach the Earth. Galaxies cluster throughout cosmic history under the competing influences of gravity and dark energy, responsible for the accelerated expansion of the universe. Analysis of early DESI results hinted at the possibility that dark energy, described as a cosmological constant by Albert Einstein, may not be constant after all. But we still have to wait for the analysis of the now complete dataset. The nature of dark energy is the biggest mystery of cosmology.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/noirlab2610c_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/noirlab2610c.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ssga",
+        "title": "M5.0 Earthquake - 147 km E of Tatsug\u014d, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-23T22:52:54.569000Z",
+        "coordinates": [
+          131.0964,
+          28.3412
+        ]
+      },
       {
         "id": "us6000ss9m",
         "title": "M5.2 Earthquake - southern Mid-Atlantic Ridge",
@@ -149,16 +154,6 @@
           139.1482,
           -2.374
         ]
-      },
-      {
-        "id": "us6000srjx",
-        "title": "M5.1 Earthquake - 129 km E of Yamada, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-20T12:56:45.171000Z",
-        "coordinates": [
-          143.4485,
-          39.5889
-        ]
       }
     ]
   },
@@ -247,32 +242,32 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 11.5,
-    "feels_c": 10.0,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_c": 11.0,
+    "feels_c": 9.5,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-04-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 9.0,
-    "temp_max_c": 20.4,
+    "temp_max_c": 20.9,
     "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.2,
+    "wind_kmh": 5.4,
     "samples": 9
   },
   "forecast": {
     "date": "2026-04-25",
-    "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 22.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 9.7,
+    "temp_max_c": 23.3,
     "humidity": 52,
     "condition": "Clear",
     "description": "scattered clouds",
@@ -281,9 +276,9 @@
   },
   "forecast_day_after": {
     "date": "2026-04-26",
-    "city": "Zagreb",
-    "temp_min_c": 11.4,
-    "temp_max_c": 21.6,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.0,
+    "temp_max_c": 22.2,
     "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
