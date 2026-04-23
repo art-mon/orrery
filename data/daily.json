@@ -1,10 +1,25 @@
 {
   "generated": "2026-04-23",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Large Scale Structure of the Universe",
+    "date": "2026-04-23",
+    "explanation": "This is a map of the universe. The Dark Energy Spectroscopic Instrument (DESI) at Kitt Peak National Observatory, Arizona, has finished its five-year survey. It observed more than 47 million galaxies and quasars and created a 3D map centered on the Earth. Today's featured image shows a thin slice of these data: the black gaps indicate where our Galaxy obscures distant objects. The feathery web in the inset shows the large scale structure of the universe. Light of the most distant galaxies shown here travelled for 11 billion years to reach the Earth. Galaxies cluster throughout cosmic history under the competing influences of gravity and dark energy, responsible for the accelerated expansion of the universe. Analysis of early DESI results hinted at the possibility that dark energy, described as a cosmological constant by Albert Einstein, may not be constant after all. But we still have to wait for the analysis of the now complete dataset. The nature of dark energy is the biggest mystery of cosmology.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/noirlab2610c_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/noirlab2610c.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ss9m",
+        "title": "M5.2 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-04-23T10:07:48.736000Z",
+        "coordinates": [
+          -18.4093,
+          -42.2859
+        ]
+      },
       {
         "id": "us6000ss90",
         "title": "M5.2 Earthquake - 108 km WNW of Houma, Tonga",
@@ -144,29 +159,11 @@
           143.4485,
           39.5889
         ]
-      },
-      {
-        "id": "us6000srj9",
-        "title": "M5.0 Earthquake - 111 km E of Yamada, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-20T10:44:16.040000Z",
-        "coordinates": [
-          143.2471,
-          39.4819
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2026 HO2)",
-        "hazardous": false,
-        "diameter_m": 46,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 4649811,
-        "velocity_kmh": 30186
-      },
       {
         "name": "(2019 FP2)",
         "hazardous": false,
@@ -180,8 +177,8 @@
         "hazardous": false,
         "diameter_m": 86,
         "close_approach_date": "2026-04-23",
-        "miss_distance_km": 17934016,
-        "velocity_kmh": 37920
+        "miss_distance_km": 17936114,
+        "velocity_kmh": 37932
       },
       {
         "name": "(2009 UZ87)",
@@ -190,14 +187,6 @@
         "close_approach_date": "2026-04-23",
         "miss_distance_km": 32391664,
         "velocity_kmh": 22771
-      },
-      {
-        "name": "(2024 HB)",
-        "hazardous": false,
-        "diameter_m": 15,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 33997153,
-        "velocity_kmh": 64707
       },
       {
         "name": "(2016 WF7)",
@@ -216,56 +205,72 @@
         "velocity_kmh": 22255
       },
       {
-        "name": "(2023 AX)",
+        "name": "(2004 KB)",
+        "hazardous": true,
+        "diameter_m": 344,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 27046659,
+        "velocity_kmh": 43680
+      },
+      {
+        "name": "376879 (2001 WW1)",
+        "hazardous": false,
+        "diameter_m": 201,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 49916527,
+        "velocity_kmh": 41347
+      },
+      {
+        "name": "(2018 RF2)",
         "hazardous": false,
         "diameter_m": 14,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 58034618,
-        "velocity_kmh": 19659
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 54121833,
+        "velocity_kmh": 75025
       },
       {
-        "name": "(2026 HZ1)",
+        "name": "(2020 OY4)",
         "hazardous": false,
-        "diameter_m": 30,
+        "diameter_m": 5,
         "close_approach_date": "2026-04-24",
-        "miss_distance_km": 5347620,
-        "velocity_kmh": 25568
+        "miss_distance_km": 55842120,
+        "velocity_kmh": 33578
       },
       {
-        "name": "(2022 KS)",
+        "name": "(2018 AB12)",
         "hazardous": false,
-        "diameter_m": 26,
+        "diameter_m": 78,
         "close_approach_date": "2026-04-24",
-        "miss_distance_km": 10724234,
-        "velocity_kmh": 17399
+        "miss_distance_km": 57645145,
+        "velocity_kmh": 22534
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.7,
-    "feels_c": 14.2,
-    "humidity": 33,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 18.5
+    "city": "Zagreb",
+    "temp_c": 17.8,
+    "feels_c": 16.5,
+    "humidity": 32,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 10.4
   },
   "forecast_today": {
     "date": "2026-04-23",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 11.6,
     "temp_max_c": 18.3,
-    "humidity": 41,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 8.9,
+    "icon": "03d",
+    "wind_kmh": 7.2,
     "samples": 5
   },
   "forecast": {
     "date": "2026-04-24",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.1,
     "temp_max_c": 20.1,
     "humidity": 54,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-25",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.2,
     "temp_max_c": 22.4,
     "humidity": 54,
