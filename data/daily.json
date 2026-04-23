@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-23",
   "apod": {
-    "title": "Large Scale Structure of the Universe",
-    "date": "2026-04-23",
-    "explanation": "This is a map of the universe. The Dark Energy Spectroscopic Instrument (DESI) at Kitt Peak National Observatory, Arizona, has finished its five-year survey. It observed more than 47 million galaxies and quasars and created a 3D map centered on the Earth. Today's featured image shows a thin slice of these data: the black gaps indicate where our Galaxy obscures distant objects. The feathery web in the inset shows the large scale structure of the universe. Light of the most distant galaxies shown here travelled for 11 billion years to reach the Earth. Galaxies cluster throughout cosmic history under the competing influences of gravity and dark energy, responsible for the accelerated expansion of the universe. Analysis of early DESI results hinted at the possibility that dark energy, described as a cosmological constant by Albert Einstein, may not be constant after all. But we still have to wait for the analysis of the now complete dataset. The nature of dark energy is the biggest mystery of cosmology.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/noirlab2610c_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/noirlab2610c.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,32 +243,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 12.0,
-    "humidity": 33,
+    "temp_c": 8.7,
+    "feels_c": 8.7,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 13.0
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-04-23",
     "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 13.7,
-    "humidity": 37,
+    "temp_min_c": 8.7,
+    "temp_max_c": 8.7,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.8,
+    "wind_kmh": 4.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-04-24",
     "city": "Zagreb",
-    "temp_min_c": 4.2,
+    "temp_min_c": 5.7,
     "temp_max_c": 20.4,
-    "humidity": 50,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -285,7 +280,7 @@
     "temp_min_c": 9.2,
     "temp_max_c": 22.7,
     "humidity": 52,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 2.5
