@@ -1,15 +1,30 @@
 {
   "generated": "2026-04-23",
   "apod": {
-    "title": "Large Scale Structure of the Universe",
-    "date": "2026-04-23",
-    "explanation": "This is a map of the universe. The Dark Energy Spectroscopic Instrument (DESI) at Kitt Peak National Observatory, Arizona, has finished its five-year survey. It observed more than 47 million galaxies and quasars and created a 3D map centered on the Earth. Today's featured image shows a thin slice of these data: the black gaps indicate where our Galaxy obscures distant objects. The feathery web in the inset shows the large scale structure of the universe. Light of the most distant galaxies shown here travelled for 11 billion years to reach the Earth. Galaxies cluster throughout cosmic history under the competing influences of gravity and dark energy, responsible for the accelerated expansion of the universe. Analysis of early DESI results hinted at the possibility that dark energy, described as a cosmological constant by Albert Einstein, may not be constant after all. But we still have to wait for the analysis of the now complete dataset. The nature of dark energy is the biggest mystery of cosmology.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/noirlab2610c_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/noirlab2610c.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ss90",
+        "title": "M5.2 Earthquake - 108 km WNW of Houma, Tonga",
+        "category": "Earthquake",
+        "date": "2026-04-23T06:31:10.762000Z",
+        "coordinates": [
+          -176.2603,
+          -20.7822
+        ]
+      },
+      {
+        "id": "us6000ss8w",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-23T05:30:59.775000Z",
+        "coordinates": [
+          -24.5095,
+          -57.1
+        ]
+      },
       {
         "id": "us6000ss20",
         "title": "M5.0 Earthquake - 31 km ENE of Luganville, Vanuatu",
@@ -139,26 +154,6 @@
           143.2471,
           39.4819
         ]
-      },
-      {
-        "id": "us6000sriv",
-        "title": "M5.1 Earthquake - 115 km E of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-20T09:49:43.363000Z",
-        "coordinates": [
-          143.2807,
-          39.7888
-        ]
-      },
-      {
-        "id": "us6000srih",
-        "title": "M5.6 Earthquake - 113 km E of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-20T08:32:46.679000Z",
-        "coordinates": [
-          143.2591,
-          39.6393
-        ]
       }
     ]
   },
@@ -247,47 +242,47 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 5.8,
-    "feels_c": 4.7,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_c": 14.5,
+    "feels_c": 13.4,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.9
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 7.2
   },
   "forecast_today": {
     "date": "2026-04-23",
     "city": "Zagreb",
-    "temp_min_c": 5.8,
-    "temp_max_c": 19.8,
-    "humidity": 56,
+    "temp_min_c": 11.6,
+    "temp_max_c": 18.4,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 6.9,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 7.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-04-24",
     "city": "Zagreb",
-    "temp_min_c": 7.9,
-    "temp_max_c": 20.0,
+    "temp_min_c": 8.1,
+    "temp_max_c": 20.1,
     "humidity": 54,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.3
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-04-25",
     "city": "Zagreb",
-    "temp_min_c": 9.0,
-    "temp_max_c": 22.5,
-    "humidity": 55,
+    "temp_min_c": 9.2,
+    "temp_max_c": 22.4,
+    "humidity": 54,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.8
   }
 }
