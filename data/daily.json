@@ -6,6 +6,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000sshp",
+        "title": "M5.0 Earthquake - 86 km E of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-24T05:13:10.736000Z",
+        "coordinates": [
+          142.8333,
+          40.095
+        ]
+      },
+      {
+        "id": "us6000sshk",
+        "title": "M5.3 Earthquake - 119 km WNW of Ternate, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-04-24T04:45:20.134000Z",
+        "coordinates": [
+          126.3665,
+          1.1341
+        ]
+      },
+      {
+        "id": "us6000sshc",
+        "title": "M5.8 Earthquake - 11 km SE of Ier\u00e1petra, Greece",
+        "category": "Earthquake",
+        "date": "2026-04-24T03:18:53.476000Z",
+        "coordinates": [
+          25.8274,
+          34.9345
+        ]
+      },
+      {
         "id": "us6000ssgv",
         "title": "M5.4 Earthquake - south of the Kermadec Islands",
         "category": "Earthquake",
@@ -124,36 +154,6 @@
           143.6273,
           39.8481
         ]
-      },
-      {
-        "id": "us6000srrc",
-        "title": "M5.5 Earthquake - 35 km WNW of Pante Makasar, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-04-21T03:17:07.811000Z",
-        "coordinates": [
-          124.0863,
-          -9.068
-        ]
-      },
-      {
-        "id": "us6000srr2",
-        "title": "M5.2 Earthquake - 7 km WNW of Cotacachi, Ecuador",
-        "category": "Earthquake",
-        "date": "2026-04-21T02:22:21.410000Z",
-        "coordinates": [
-          -78.3232,
-          0.3364
-        ]
-      },
-      {
-        "id": "us6000srqj",
-        "title": "M5.0 Earthquake - 53 km E of W\u0101ngjing, India",
-        "category": "Earthquake",
-        "date": "2026-04-21T00:29:35.894000Z",
-        "coordinates": [
-          94.5961,
-          24.6039
-        ]
       }
     ]
   },
@@ -242,43 +242,43 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.2,
+    "city": "Zagreb",
+    "temp_c": 8.8,
     "feels_c": 8.3,
-    "humidity": 62,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 7.4
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-04-24",
-    "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 20.7,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_min_c": 8.8,
+    "temp_max_c": 21.3,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.7,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-04-25",
-    "city": "Donji grad",
-    "temp_min_c": 9.7,
-    "temp_max_c": 22.9,
-    "humidity": 55,
-    "condition": "Clear",
+    "city": "Zagreb",
+    "temp_min_c": 10.3,
+    "temp_max_c": 23.5,
+    "humidity": 54,
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 2.2
   },
   "forecast_day_after": {
     "date": "2026-04-26",
-    "city": "Donji grad",
-    "temp_min_c": 11.7,
-    "temp_max_c": 21.4,
+    "city": "Zagreb",
+    "temp_min_c": 12.3,
+    "temp_max_c": 22.0,
     "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
