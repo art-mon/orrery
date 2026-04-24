@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000ssik",
+        "title": "M5.3 Earthquake - 167 km E of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-04-24T08:59:28.540000Z",
+        "coordinates": [
+          161.1117,
+          52.9231
+        ]
+      },
+      {
+        "id": "us6000ssij",
+        "title": "M5.0 Earthquake - 24 km S of Sitia, Greece",
+        "category": "Earthquake",
+        "date": "2026-04-24T08:58:17.508000Z",
+        "coordinates": [
+          26.1319,
+          34.9902
+        ]
+      },
+      {
         "id": "us6000sshp",
         "title": "M5.0 Earthquake - 86 km E of Noda, Japan",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           -95.7767,
           16.7709
         ]
-      },
-      {
-        "id": "us6000srtd",
-        "title": "M5.7 Earthquake - Balleny Islands region",
-        "category": "Earthquake",
-        "date": "2026-04-21T10:30:27.397000Z",
-        "coordinates": [
-          164.998,
-          -62.0123
-        ]
-      },
-      {
-        "id": "us6000srs6",
-        "title": "M5.4 Earthquake - 146 km E of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-21T05:29:09.335000Z",
-        "coordinates": [
-          143.6273,
-          39.8481
-        ]
       }
     ]
   },
@@ -242,10 +242,10 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 16.6,
-    "feels_c": 15.5,
-    "humidity": 47,
+    "city": "Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 18.2,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -253,22 +253,22 @@
   },
   "forecast_today": {
     "date": "2026-04-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 19.9,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 9.5,
+    "temp_max_c": 20.4,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.9,
-    "samples": 6
+    "wind_kmh": 5.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-04-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 23.7,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_min_c": 8.3,
+    "temp_max_c": 23.1,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -276,9 +276,9 @@
   },
   "forecast_day_after": {
     "date": "2026-04-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.4,
-    "temp_max_c": 22.2,
+    "city": "Zagreb",
+    "temp_min_c": 11.8,
+    "temp_max_c": 21.7,
     "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
