@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000ssjg",
+        "title": "M5.0 Earthquake - 76 km NNW of Vallenar, Chile",
+        "category": "Earthquake",
+        "date": "2026-04-24T13:49:41.138000Z",
+        "coordinates": [
+          -70.9962,
+          -27.92
+        ]
+      },
+      {
         "id": "us6000ssja",
         "title": "M5.1 Earthquake - 164 km E of Petropavlovsk-Kamchatsky, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           142.9285,
           39.9953
         ]
-      },
-      {
-        "id": "us6000srxu",
-        "title": "M5.3 Earthquake - 112 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-22T00:01:12.294000Z",
-        "coordinates": [
-          143.2055,
-          39.9179
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 22.9,
-    "humidity": 29,
+    "temp_c": 22.8,
+    "feels_c": 21.8,
+    "humidity": 23,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.8
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-04-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.4,
-    "temp_max_c": 23.7,
-    "humidity": 45,
+    "city": "Donji grad",
+    "temp_min_c": 14.3,
+    "temp_max_c": 22.8,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.9,
+    "wind_kmh": 5.3,
     "samples": 4
   },
   "forecast": {
     "date": "2026-04-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 5.4,
-    "temp_max_c": 22.8,
-    "humidity": 58,
-    "condition": "Clear",
+    "city": "Donji grad",
+    "temp_min_c": 5.9,
+    "temp_max_c": 23.4,
+    "humidity": 57,
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 2.5
   },
   "forecast_day_after": {
     "date": "2026-04-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 21.2,
+    "city": "Donji grad",
+    "temp_min_c": 12.5,
+    "temp_max_c": 21.8,
     "humidity": 57,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 8.9
+    "wind_kmh": 9.0
   }
 }
