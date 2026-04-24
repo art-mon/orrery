@@ -3,7 +3,7 @@
   "apod": {
     "title": "Young Moon and Sister Stars",
     "date": "2026-04-24",
-    "explanation": "Sunlit arms of a crescent moon seem to embrace the faint lunar night side in this dramatic celestial view from planet Earth. The single telephoto exposure tracking the sky was captured on the night of April 19, when a two day old Moon was near perigee in its elliptical orbit. On that date, the young Moon was also close on the sky to the lovely Pleiades Star Cluster. With the moonlight dimmed by clouds the Pleiades sister stars gather below the Moon's bright crescent, seen through a faint but colorful lunar corona. The lunar night side is illuminated by earthshine, sunlight reflected from the Earth itself. The Moon's ashen glow, also known as the \"old moon in the young moon's arms,\" tends to be bright in the northern hemisphere spring. And for now, the Moon's orbit takes it near the Pleiades stars each month in planet Earth's sky, though their close conjunctions are easiest to see when the Moon is near a crescent phase.",
+    "explanation": "Sunlit arms of a crescent moon seem to embrace the faint lunar night side in this dramatic celestial scene from planet Earth. The single telephoto exposure tracking the sky was captured on the night of April 19, when a two day old Moon was near perigee in its elliptical orbit. On that date, the young Moon was also close on the sky to the lovely Pleiades Star Cluster. With the moonlight dimmed by clouds the Pleiades sister stars gather below the Moon's bright crescent, seen through a faint but colorful lunar corona. The lunar night side is illuminated by earthshine, sunlight reflected from the Earth itself. The Moon's ashen glow, also known as the \"old moon in the young moon's arms\", tends to be brighter in the northern hemisphere spring. And for now, the Moon's orbit takes it near the Pleiades stars each month in planet Earth's sky, though their close conjunctions are easiest to see when the Moon is near a crescent phase.",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400_1024.jpg",
     "hdurl": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400.jpg"
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 13.8,
-    "feels_c": 12.7,
+    "temp_c": 13.1,
+    "feels_c": 11.9,
     "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-04-25",
-    "city": "Donji grad",
-    "temp_min_c": 11.1,
+    "city": "Zagreb",
+    "temp_min_c": 10.7,
     "temp_max_c": 22.9,
     "humidity": 51,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 2.7,
+    "wind_kmh": 2.9,
     "samples": 9
   },
   "forecast": {
     "date": "2026-04-26",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 11.7,
     "temp_max_c": 21.0,
     "humidity": 56,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-27",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 10.6,
     "temp_max_c": 17.4,
     "humidity": 47,
