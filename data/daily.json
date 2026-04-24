@@ -11,16 +11,6 @@
   "events": {
     "events": [
       {
-        "id": "us6000ssn7",
-        "title": "M5.0 Earthquake - Kermadec Islands, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-04-24T18:22:29.134000Z",
-        "coordinates": [
-          -178.0653,
-          -30.8443
-        ]
-      },
-      {
         "id": "us6000ssjg",
         "title": "M5.0 Earthquake - 76 km NNW of Vallenar, Chile",
         "category": "Earthquake",
@@ -159,6 +149,16 @@
           167.4412,
           -15.4409
         ]
+      },
+      {
+        "id": "us6000ss1u",
+        "title": "M5.0 Earthquake - 93 km ENE of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-22T12:18:37.573000Z",
+        "coordinates": [
+          142.9285,
+          39.9953
+        ]
       }
     ]
   },
@@ -247,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.8,
-    "feels_c": 14.6,
-    "humidity": 44,
+    "city": "Zagreb",
+    "temp_c": 11.7,
+    "feels_c": 10.5,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-04-24",
     "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 15.8,
-    "humidity": 48,
+    "temp_min_c": 11.7,
+    "temp_max_c": 11.7,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.4,
+    "wind_kmh": 2.6,
     "samples": 2
   },
   "forecast": {
     "date": "2026-04-25",
     "city": "Zagreb",
-    "temp_min_c": 5.4,
-    "temp_max_c": 22.8,
-    "humidity": 55,
-    "condition": "Clear",
+    "temp_min_c": 7.5,
+    "temp_max_c": 22.9,
+    "humidity": 54,
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.6
   },
   "forecast_day_after": {
     "date": "2026-04-26",
     "city": "Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 21.2,
-    "humidity": 57,
+    "temp_min_c": 11.7,
+    "temp_max_c": 21.0,
+    "humidity": 56,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 8.9
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.1
   }
 }
