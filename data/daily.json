@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000ssgv",
+        "title": "M5.4 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-04-24T01:51:59.835000Z",
+        "coordinates": [
+          -179.1959,
+          -34.7235
+        ]
+      },
+      {
         "id": "us6000ssga",
         "title": "M5.0 Earthquake - 147 km E of Tatsug\u014d, Japan",
         "category": "Earthquake",
@@ -144,145 +154,135 @@
           94.5961,
           24.6039
         ]
-      },
-      {
-        "id": "us6000srn6",
-        "title": "M5.3 Earthquake - 166 km W of Abepura, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-04-20T18:47:05.797000Z",
-        "coordinates": [
-          139.1482,
-          -2.374
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HZ2)",
+        "name": "(2026 HZ1)",
         "hazardous": false,
-        "diameter_m": 5,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 85440,
-        "velocity_kmh": 34526
+        "diameter_m": 29,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 5348674,
+        "velocity_kmh": 25575
       },
       {
-        "name": "(2026 HR2)",
+        "name": "(2022 KS)",
         "hazardous": false,
-        "diameter_m": 17,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 399510,
-        "velocity_kmh": 42197
+        "diameter_m": 26,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 10724234,
+        "velocity_kmh": 17399
       },
       {
-        "name": "(2026 HO2)",
-        "hazardous": false,
-        "diameter_m": 46,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 4649811,
-        "velocity_kmh": 30186
+        "name": "(2004 KB)",
+        "hazardous": true,
+        "diameter_m": 344,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 27046659,
+        "velocity_kmh": 43680
       },
       {
-        "name": "(2019 FP2)",
+        "name": "(2024 PY)",
         "hazardous": false,
-        "diameter_m": 213,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 9532916,
-        "velocity_kmh": 24563
+        "diameter_m": 8,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 36063870,
+        "velocity_kmh": 54154
       },
       {
-        "name": "(2017 HX)",
+        "name": "376879 (2001 WW1)",
         "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 17936114,
-        "velocity_kmh": 37932
+        "diameter_m": 201,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 49916527,
+        "velocity_kmh": 41347
       },
       {
-        "name": "(2009 UZ87)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 32391664,
-        "velocity_kmh": 22771
-      },
-      {
-        "name": "(2024 HB)",
-        "hazardous": false,
-        "diameter_m": 15,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 33997153,
-        "velocity_kmh": 64707
-      },
-      {
-        "name": "(2016 WF7)",
-        "hazardous": false,
-        "diameter_m": 10,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 37751974,
-        "velocity_kmh": 21508
-      },
-      {
-        "name": "(2011 UK10)",
-        "hazardous": false,
-        "diameter_m": 57,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 51372869,
-        "velocity_kmh": 22255
-      },
-      {
-        "name": "(2023 AX)",
+        "name": "(2018 RF2)",
         "hazardous": false,
         "diameter_m": 14,
-        "close_approach_date": "2026-04-23",
-        "miss_distance_km": 58034618,
-        "velocity_kmh": 19659
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 54121833,
+        "velocity_kmh": 75025
+      },
+      {
+        "name": "(2020 OY4)",
+        "hazardous": false,
+        "diameter_m": 5,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 55842120,
+        "velocity_kmh": 33578
+      },
+      {
+        "name": "(2018 AB12)",
+        "hazardous": false,
+        "diameter_m": 78,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 57645145,
+        "velocity_kmh": 22534
+      },
+      {
+        "name": "(2008 JN)",
+        "hazardous": false,
+        "diameter_m": 435,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 65080940,
+        "velocity_kmh": 151120
+      },
+      {
+        "name": "(2023 VJ2)",
+        "hazardous": false,
+        "diameter_m": 44,
+        "close_approach_date": "2026-04-24",
+        "miss_distance_km": 70355265,
+        "velocity_kmh": 68605
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 11.0,
-    "feels_c": 9.5,
-    "humidity": 50,
+    "city": "City of Zagreb",
+    "temp_c": 9.2,
+    "feels_c": 8.3,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-04-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.0,
-    "temp_max_c": 20.9,
-    "humidity": 49,
+    "city": "Donji grad",
+    "temp_min_c": 8.7,
+    "temp_max_c": 20.7,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.4,
-    "samples": 9
+    "wind_kmh": 5.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-04-25",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.7,
-    "temp_max_c": 23.3,
-    "humidity": 52,
+    "temp_max_c": 22.9,
+    "humidity": 55,
     "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 2.5
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.2
   },
   "forecast_day_after": {
     "date": "2026-04-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.0,
-    "temp_max_c": 22.2,
-    "humidity": 58,
+    "city": "Donji grad",
+    "temp_min_c": 11.7,
+    "temp_max_c": 21.4,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.6
+    "wind_kmh": 9.2
   }
 }
