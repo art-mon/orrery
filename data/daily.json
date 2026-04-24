@@ -1,10 +1,25 @@
 {
   "generated": "2026-04-24",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Young Moon and Sister Stars",
+    "date": "2026-04-24",
+    "explanation": "Sunlit arms of a crescent moon seem to embrace the faint lunar night side in this dramatic celestial scene from planet Earth. The single telephoto exposure tracking the sky was captured on the night of April 19, when a two day old Moon was near perigee in its elliptical orbit. On that date, the young Moon was also close on the sky to the lovely Pleiades Star Cluster. With the moonlight dimmed by clouds the Pleiades sister stars gather below the Moon's bright crescent, seen through a faint but colorful lunar corona. The lunar night side is illuminated by earthshine, sunlight reflected from the Earth itself. The Moon's ashen glow, also known as the \"old moon in the young moon's arms\", tends to be brighter in the northern hemisphere spring. And for now, the Moon's orbit takes it near the Pleiades stars each month in planet Earth's sky, though their close conjunctions are easiest to see when the Moon is near a crescent phase.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ssiy",
+        "title": "M5.4 Earthquake - 156 km E of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-04-24T10:04:37.607000Z",
+        "coordinates": [
+          160.9481,
+          52.9131
+        ]
+      },
       {
         "id": "us6000ssik",
         "title": "M5.3 Earthquake - 167 km E of Petropavlovsk-Kamchatsky, Russia",
@@ -144,16 +159,6 @@
           143.4599,
           40.1562
         ]
-      },
-      {
-        "id": "us6000sru5",
-        "title": "M5.0 Earthquake - 12 km SSW of Santiago Quiavicuzas, Mexico",
-        "category": "Earthquake",
-        "date": "2026-04-21T14:52:17.411000Z",
-        "coordinates": [
-          -95.7767,
-          16.7709
-        ]
       }
     ]
   },
@@ -162,10 +167,10 @@
       {
         "name": "(2026 HZ1)",
         "hazardous": false,
-        "diameter_m": 29,
+        "diameter_m": 28,
         "close_approach_date": "2026-04-24",
-        "miss_distance_km": 5348674,
-        "velocity_kmh": 25575
+        "miss_distance_km": 5346883,
+        "velocity_kmh": 25569
       },
       {
         "name": "(2022 KS)",
@@ -243,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 18.2,
-    "humidity": 39,
+    "temp_c": 20.9,
+    "feels_c": 19.9,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-04-24",
     "city": "Zagreb",
     "temp_min_c": 9.5,
-    "temp_max_c": 20.4,
-    "humidity": 48,
+    "temp_max_c": 20.9,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.8,
+    "wind_kmh": 6.1,
     "samples": 5
   },
   "forecast": {
