@@ -1,5 +1,5 @@
 {
-  "generated": "2026-04-25",
+  "generated": "2026-04-26",
   "apod": {
     "title": "The Persistence of Sunlight",
     "date": "2026-04-25",
@@ -247,9 +247,9 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.7,
-    "feels_c": 9.7,
+    "city": "Zagreb",
+    "temp_c": 8.7,
+    "feels_c": 8.7,
     "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
@@ -257,31 +257,20 @@
     "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-04-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 9.7,
-    "humidity": 87,
+    "date": "2026-04-26",
+    "city": "Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 20.9,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 1.8,
-    "samples": 1
+    "wind_kmh": 8.2,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-04-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 20.9,
-    "humidity": 57,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.0
-  },
-  "forecast_day_after": {
     "date": "2026-04-27",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 10.1,
     "temp_max_c": 19.6,
     "humidity": 51,
@@ -289,5 +278,16 @@
     "description": "broken clouds",
     "icon": "04d",
     "wind_kmh": 6.5
+  },
+  "forecast_day_after": {
+    "date": "2026-04-28",
+    "city": "Zagreb",
+    "temp_min_c": 9.8,
+    "temp_max_c": 20.7,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.7
   }
 }
