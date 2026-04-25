@@ -3,7 +3,7 @@
   "apod": {
     "title": "Young Moon and Sister Stars",
     "date": "2026-04-24",
-    "explanation": "Sunlit arms of a crescent moon seem to embrace the faint lunar night side in this dramatic celestial scene from planet Earth. The single telephoto exposure tracking the sky was captured on the night of April 19, when a two day old Moon was near perigee in its elliptical orbit. On that date, the young Moon was also close on the sky to the lovely Pleiades Star Cluster. With the moonlight dimmed by clouds the Pleiades sister stars gather below the Moon's bright crescent, seen through a faint but colorful lunar corona. The lunar night side is illuminated by earthshine, sunlight reflected from the Earth itself. The Moon's ashen glow, also known as the \"old moon in the young moon's arms\", tends to be brighter in the northern hemisphere spring. And for now, the Moon's orbit takes it near the Pleiades stars each month in planet Earth's sky, though their close conjunctions are easiest to see when the Moon is near a crescent phase.",
+    "explanation": "Sunlit arms of a crescent moon seem to embrace the faint lunar night side in this dramatic celestial view from planet Earth. The single telephoto exposure tracking the sky was captured on the night of April 19, when a two day old Moon was near perigee in its elliptical orbit. On that date, the young Moon was also close on the sky to the lovely Pleiades Star Cluster. With the moonlight dimmed by clouds the Pleiades sister stars gather below the Moon's bright crescent, seen through a faint but colorful lunar corona. The lunar night side is illuminated by earthshine, sunlight reflected from the Earth itself. The Moon's ashen glow, also known as the \"old moon in the young moon's arms,\" tends to be bright in the northern hemisphere spring. And for now, the Moon's orbit takes it near the Pleiades stars each month in planet Earth's sky, though their close conjunctions are easiest to see when the Moon is near a crescent phase.",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400_1024.jpg",
     "hdurl": "https://apod.nasa.gov/apod/image/2604/GHR3777LunaPleiadi_101400.jpg"
@@ -165,92 +165,92 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HZ1)",
+        "name": "(2022 UU8)",
         "hazardous": false,
-        "diameter_m": 28,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 5346883,
-        "velocity_kmh": 25569
+        "diameter_m": 15,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 3343117,
+        "velocity_kmh": 14550
       },
       {
-        "name": "(2022 KS)",
+        "name": "(2026 HC)",
         "hazardous": false,
-        "diameter_m": 26,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 10724234,
-        "velocity_kmh": 17399
+        "diameter_m": 60,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 9902562,
+        "velocity_kmh": 41892
       },
       {
-        "name": "(2004 KB)",
-        "hazardous": true,
-        "diameter_m": 344,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 27046659,
-        "velocity_kmh": 43680
+        "name": "(2023 TV9)",
+        "hazardous": false,
+        "diameter_m": 67,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 17978105,
+        "velocity_kmh": 30079
       },
       {
-        "name": "(2024 PY)",
+        "name": "(2022 HR3)",
         "hazardous": false,
-        "diameter_m": 8,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 36063870,
-        "velocity_kmh": 54154
+        "diameter_m": 20,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 30050509,
+        "velocity_kmh": 54577
       },
       {
-        "name": "376879 (2001 WW1)",
+        "name": "(2020 UU5)",
         "hazardous": false,
-        "diameter_m": 201,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 49916527,
-        "velocity_kmh": 41347
+        "diameter_m": 21,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 36381053,
+        "velocity_kmh": 32039
       },
       {
-        "name": "(2018 RF2)",
+        "name": "(2015 HQ10)",
         "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 54121833,
-        "velocity_kmh": 75025
+        "diameter_m": 124,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 37552339,
+        "velocity_kmh": 118525
       },
       {
-        "name": "(2020 OY4)",
+        "name": "(2018 AG12)",
         "hazardous": false,
-        "diameter_m": 5,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 55842120,
-        "velocity_kmh": 33578
+        "diameter_m": 108,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 41425237,
+        "velocity_kmh": 33704
       },
       {
-        "name": "(2018 AB12)",
+        "name": "(2020 HE5)",
         "hazardous": false,
-        "diameter_m": 78,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 57645145,
-        "velocity_kmh": 22534
+        "diameter_m": 17,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 55451242,
+        "velocity_kmh": 47508
       },
       {
-        "name": "(2008 JN)",
+        "name": "(2020 JE2)",
         "hazardous": false,
-        "diameter_m": 435,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 65080940,
-        "velocity_kmh": 151120
+        "diameter_m": 17,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 72149721,
+        "velocity_kmh": 101053
       },
       {
-        "name": "(2023 VJ2)",
+        "name": "(2022 OX)",
         "hazardous": false,
-        "diameter_m": 44,
-        "close_approach_date": "2026-04-24",
-        "miss_distance_km": 70355265,
-        "velocity_kmh": 68605
+        "diameter_m": 181,
+        "close_approach_date": "2026-04-25",
+        "miss_distance_km": 73155168,
+        "velocity_kmh": 42680
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 11.9,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_c": 10.9,
+    "feels_c": 9.9,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -258,22 +258,22 @@
   },
   "forecast_today": {
     "date": "2026-04-25",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 10.7,
-    "temp_max_c": 22.9,
-    "humidity": 51,
+    "temp_max_c": 23.2,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 2.9,
-    "samples": 9
+    "wind_kmh": 4.0,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-04-26",
-    "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 21.0,
-    "humidity": 56,
+    "city": "Donji grad",
+    "temp_min_c": 11.9,
+    "temp_max_c": 20.8,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -281,13 +281,13 @@
   },
   "forecast_day_after": {
     "date": "2026-04-27",
-    "city": "Zagreb",
-    "temp_min_c": 10.6,
-    "temp_max_c": 17.4,
-    "humidity": 47,
+    "city": "Donji grad",
+    "temp_min_c": 11.1,
+    "temp_max_c": 17.9,
+    "humidity": 48,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.5
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 8.3
   }
 }
