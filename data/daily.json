@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sst4",
+        "title": "M5.2 Earthquake - 34 km SE of Vilyuchinsk, Russia",
+        "category": "Earthquake",
+        "date": "2026-04-25T10:20:21.431000Z",
+        "coordinates": [
+          158.6924,
+          52.6755
+        ]
+      },
+      {
         "id": "us6000sssg",
         "title": "M5.4 Earthquake - 83 km SE of Akutan, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -24.5095,
           -57.1
         ]
-      },
-      {
-        "id": "us6000ss20",
-        "title": "M5.0 Earthquake - 31 km ENE of Luganville, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-04-22T13:20:45.869000Z",
-        "coordinates": [
-          167.4412,
-          -15.4409
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.0,
-    "feels_c": 21.3,
-    "humidity": 39,
+    "temp_c": 23.1,
+    "feels_c": 22.4,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-04-25",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 11.9,
-    "temp_max_c": 22.8,
-    "humidity": 47,
+    "temp_max_c": 23.1,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.6,
+    "wind_kmh": 3.9,
     "samples": 5
   },
   "forecast": {
     "date": "2026-04-26",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 8.9,
     "temp_max_c": 20.8,
     "humidity": 57,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-27",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 10.8,
     "temp_max_c": 19.1,
     "humidity": 50,
