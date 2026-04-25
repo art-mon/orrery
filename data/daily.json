@@ -248,29 +248,20 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 23.6,
-    "humidity": 35,
+    "temp_c": 26.1,
+    "feels_c": 26.1,
+    "humidity": 22,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 9.3
   },
   "forecast_today": {
-    "date": "2026-04-25",
-    "city": "Zagreb",
-    "temp_min_c": 11.9,
-    "temp_max_c": 24.2,
-    "humidity": 44,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.2,
-    "samples": 5
+    "error": "HTTPSConnectionPool(host='api.openweathermap.org', port=443): Read timed out. (read timeout=10)"
   },
   "forecast": {
     "date": "2026-04-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 8.9,
     "temp_max_c": 20.8,
     "humidity": 57,
@@ -281,7 +272,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 10.8,
     "temp_max_c": 19.1,
     "humidity": 50,
