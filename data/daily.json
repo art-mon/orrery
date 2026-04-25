@@ -1,10 +1,25 @@
 {
   "generated": "2026-04-25",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Persistence of Sunlight",
+    "date": "2026-04-25",
+    "explanation": "This seaside sunset offered a surreal experience, captured in a sea and skyscape from the west coast of Sardinia, Italy, planet Earth. The Daliesque scene is a composition of sequential exposures made with a camera and long telephoto lens. The Sun is not melting, though. Its shifting and fluid appearance as it nears the horizon is caused as refraction along the line of sight changes and creates distorted images or mirages of the reddened solar disk. The changes in atmospheric refraction correspond to atmospheric layers with sharply different temperatures and densities. Another famous but fleeting effect of atmospheric refraction produced by a long sight-line to the setting (or rising) Sun is often called the green flash.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000sssg",
+        "title": "M5.4 Earthquake - 83 km SE of Akutan, Alaska",
+        "category": "Earthquake",
+        "date": "2026-04-25T08:05:56.204000Z",
+        "coordinates": [
+          -164.9144,
+          53.5884
+        ]
+      },
       {
         "id": "us6000ssjg",
         "title": "M5.0 Earthquake - 76 km NNW of Vallenar, Chile",
@@ -144,16 +159,6 @@
           167.4412,
           -15.4409
         ]
-      },
-      {
-        "id": "us6000ss1u",
-        "title": "M5.0 Earthquake - 93 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-22T12:18:37.573000Z",
-        "coordinates": [
-          142.9285,
-          39.9953
-        ]
       }
     ]
   },
@@ -242,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15,
-    "humidity": 55,
+    "city": "City of Zagreb",
+    "temp_c": 19.8,
+    "feels_c": 18.9,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.8
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-04-25",
     "city": "Zagreb",
     "temp_min_c": 11.9,
-    "temp_max_c": 23.2,
-    "humidity": 51,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_max_c": 22.0,
+    "humidity": 48,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.5,
+    "wind_kmh": 4.1,
     "samples": 6
   },
   "forecast": {
