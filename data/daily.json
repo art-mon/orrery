@@ -1,12 +1,7 @@
 {
   "generated": "2026-04-25",
   "apod": {
-    "title": "The Persistence of Sunlight",
-    "date": "2026-04-25",
-    "explanation": "This seaside sunset offered a surreal experience, captured in a sea and skyscape from the west coast of Sardinia, Italy, planet Earth. The Daliesque scene is a composition of sequential exposures made with a camera and long telephoto lens. The Sun is not melting, though. Its shifting and fluid appearance as it nears the horizon is caused as refraction along the line of sight changes and creates distorted images or mirages of the reddened solar disk. The changes in atmospheric refraction correspond to atmospheric layers with sharply different temperatures and densities. Another famous but fleeting effect of atmospheric refraction produced by a long sight-line to the setting (or rising) Sun is often called the green flash.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,31 +242,31 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.2,
-    "feels_c": 8.8,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_c": 15.9,
+    "feels_c": 15,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-04-25",
     "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 22.9,
-    "humidity": 61,
+    "temp_min_c": 11.9,
+    "temp_max_c": 23.2,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 3.9,
-    "samples": 7
+    "wind_kmh": 3.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-04-26",
     "city": "Zagreb",
-    "temp_min_c": 11.9,
+    "temp_min_c": 8.9,
     "temp_max_c": 20.8,
     "humidity": 57,
     "condition": "Clear",
@@ -282,12 +277,12 @@
   "forecast_day_after": {
     "date": "2026-04-27",
     "city": "Zagreb",
-    "temp_min_c": 11.1,
-    "temp_max_c": 17.9,
-    "humidity": 48,
+    "temp_min_c": 10.8,
+    "temp_max_c": 19.1,
+    "humidity": 50,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 8.3
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 7.3
   }
 }
