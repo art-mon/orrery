@@ -167,10 +167,10 @@
       {
         "name": "(2026 HP2)",
         "hazardous": false,
-        "diameter_m": 47,
+        "diameter_m": 49,
         "close_approach_date": "2026-04-26",
-        "miss_distance_km": 5089475,
-        "velocity_kmh": 39271
+        "miss_distance_km": 5092022,
+        "velocity_kmh": 39291
       },
       {
         "name": "(2023 HJ4)",
@@ -215,10 +215,10 @@
       {
         "name": "(2026 HO3)",
         "hazardous": false,
-        "diameter_m": 131,
+        "diameter_m": 130,
         "close_approach_date": "2026-04-26",
-        "miss_distance_km": 27181485,
-        "velocity_kmh": 30464
+        "miss_distance_km": 27043480,
+        "velocity_kmh": 30306
       },
       {
         "name": "(2018 HP)",
@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 21.8,
-    "humidity": 35,
+    "city": "City of Zagreb",
+    "temp_c": 23.7,
+    "feels_c": 23.0,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -260,8 +260,8 @@
     "date": "2026-04-26",
     "city": "Zagreb",
     "temp_min_c": 9.6,
-    "temp_max_c": 22.6,
-    "humidity": 44,
+    "temp_max_c": 23.7,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
