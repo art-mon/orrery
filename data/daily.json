@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000ssxt",
-        "title": "M5.9 Earthquake - 168 km SE of Khovd, Mongolia",
+        "title": "M5.5 Earthquake - 163 km SE of Khovd, Mongolia",
         "category": "Earthquake",
-        "date": "2026-04-26T04:23:24.102000Z",
+        "date": "2026-04-26T04:23:24.394000Z",
         "coordinates": [
-          92.9681,
-          46.7887
+          93.0122,
+          46.8638
         ]
       },
       {
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 21.8,
-    "humidity": 31,
+    "city": "Donji grad",
+    "temp_c": 20.7,
+    "feels_c": 19.7,
+    "humidity": 35,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 16.7
+    "wind_kmh": 24.1
   },
   "forecast_today": {
     "date": "2026-04-26",
     "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 22.7,
+    "temp_min_c": 17.1,
+    "temp_max_c": 20.7,
     "humidity": 37,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 12.5,
+    "wind_kmh": 15.0,
     "samples": 3
   },
   "forecast": {
