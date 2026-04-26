@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000st11",
+        "title": "M5.0 Earthquake - 77 km ENE of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-04-26T16:57:22.275000Z",
+        "coordinates": [
+          142.7328,
+          39.9892
+        ]
+      },
+      {
         "id": "us6000ssxt",
         "title": "M5.5 Earthquake - 163 km SE of Khovd, Mongolia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           131.0964,
           28.3412
         ]
-      },
-      {
-        "id": "us6000ss9m",
-        "title": "M5.2 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-04-23T10:07:48.736000Z",
-        "coordinates": [
-          -18.4093,
-          -42.2859
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 20.7,
-    "feels_c": 19.7,
-    "humidity": 35,
+    "city": "Zagreb",
+    "temp_c": 17.7,
+    "feels_c": 16.5,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 24.1
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-04-26",
-    "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 20.7,
-    "humidity": 37,
+    "city": "Donji grad",
+    "temp_min_c": 15.1,
+    "temp_max_c": 17.7,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 15.0,
+    "wind_kmh": 14.4,
     "samples": 3
   },
   "forecast": {
     "date": "2026-04-27",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 6.4,
     "temp_max_c": 19.0,
     "humidity": 49,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-28",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.9,
     "temp_max_c": 19.9,
     "humidity": 64,
