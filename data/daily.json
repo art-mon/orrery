@@ -1,15 +1,25 @@
 {
   "generated": "2026-04-26",
   "apod": {
-    "title": "The Persistence of Sunlight",
-    "date": "2026-04-25",
-    "explanation": "This seaside sunset offered a surreal experience, captured in a sea and skyscape from the west coast of Sardinia, Italy, planet Earth. The Daliesque scene is a composition of sequential exposures made with a camera and long telephoto lens. The Sun is not melting, though. Its shifting and fluid appearance as it nears the horizon is caused as refraction along the line of sight changes and creates distorted images or mirages of the reddened solar disk. The changes in atmospheric refraction correspond to atmospheric layers with sharply different temperatures and densities. Another famous but fleeting effect of atmospheric refraction produced by a long sight-line to the setting (or rising) Sun is often called the green flash.",
+    "title": "Mystic Mountain Monster being Destroyed",
+    "date": "2026-04-26",
+    "explanation": "Inside the head of this interstellar monster is a star that is slowly destroying it.  The huge monster, actually an inanimate series of pillars of gas and dust, measures light years in length.  The in-head star is not itself visible through the opaque interstellar dust but is bursting out partly by ejecting opposing beams of energetic particles called Herbig-Haro jets.  Located about 7,500 light years away in the Carina Nebula and known informally as Mystic Mountain, the appearance of these pillars is dominated by dark dust even though they are composed mostly of clear hydrogen gas.  The featured image was taken with the Hubble Space Telescope. All over these pillars, the energetic light and winds from massive newly formed stars are evaporating and dispersing the dusty stellar nurseries in which they formed.  Within a few million years, the head of this giant, as well as most of its body, will have been completely evaporated by internal and surrounding stars.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2604/sequenzasunsetnebida.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2604/MysticPillar_HubbleSchmidt_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2604/MysticPillar_HubbleSchmidt_1433.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ssxt",
+        "title": "M5.9 Earthquake - 168 km SE of Khovd, Mongolia",
+        "category": "Earthquake",
+        "date": "2026-04-26T04:23:24.102000Z",
+        "coordinates": [
+          92.9681,
+          46.7887
+        ]
+      },
       {
         "id": "us6000ssvq",
         "title": "M5.0 Earthquake - 82 km SSW of Paracas, Peru",
@@ -149,16 +159,6 @@
           -18.4093,
           -42.2859
         ]
-      },
-      {
-        "id": "us6000ss90",
-        "title": "M5.2 Earthquake - 108 km WNW of Houma, Tonga",
-        "category": "Earthquake",
-        "date": "2026-04-23T06:31:10.762000Z",
-        "coordinates": [
-          -176.2603,
-          -20.7822
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 6.6,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_c": 14.8,
+    "feels_c": 14.0,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 13.0
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-04-26",
-    "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 21.6,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.6,
+    "temp_max_c": 19.4,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 10.0,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 9.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-04-27",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 9.8,
     "temp_max_c": 19.3,
     "humidity": 50,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-04-28",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 9.6,
     "temp_max_c": 20.1,
     "humidity": 62,
