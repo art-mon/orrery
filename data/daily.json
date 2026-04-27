@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000st3s",
+        "title": "M5.1 Earthquake - 26 km SW of Khorugh, Tajikistan",
+        "category": "Earthquake",
+        "date": "2026-04-27T06:46:08.014000Z",
+        "coordinates": [
+          71.3121,
+          37.3466
+        ]
+      },
+      {
         "id": "us6000st1m",
         "title": "M6.1 Earthquake - 18 km W of Sarabetsu, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           25.8274,
           34.9345
         ]
-      },
-      {
-        "id": "us6000ssgv",
-        "title": "M5.4 Earthquake - south of the Kermadec Islands",
-        "category": "Earthquake",
-        "date": "2026-04-24T01:51:59.835000Z",
-        "coordinates": [
-          -179.1959,
-          -34.7235
-        ]
       }
     ]
   },
@@ -248,31 +248,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 12.8,
-    "humidity": 39,
+    "temp_c": 14.7,
+    "feels_c": 13.3,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-04-27",
     "city": "Zagreb",
-    "temp_min_c": 11.9,
-    "temp_max_c": 19.3,
-    "humidity": 46,
+    "temp_min_c": 9.7,
+    "temp_max_c": 17.8,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 6.9,
-    "samples": 7
+    "wind_kmh": 7.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-04-28",
     "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 20.0,
+    "temp_min_c": 6.8,
+    "temp_max_c": 19.6,
     "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
@@ -282,12 +282,12 @@
   "forecast_day_after": {
     "date": "2026-04-29",
     "city": "Zagreb",
-    "temp_min_c": 6.4,
-    "temp_max_c": 11.4,
-    "humidity": 89,
+    "temp_min_c": 6.2,
+    "temp_max_c": 11.1,
+    "humidity": 90,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.9
+    "wind_kmh": 6.6
   }
 }
