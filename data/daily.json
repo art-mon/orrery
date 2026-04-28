@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.7,
-    "feels_c": 16.7,
-    "humidity": 45,
+    "temp_c": 14.7,
+    "feels_c": 13.7,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 9.3
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-04-28",
     "city": "Zagreb",
-    "temp_min_c": 16.0,
-    "temp_max_c": 17.7,
-    "humidity": 50,
+    "temp_min_c": 14.7,
+    "temp_max_c": 14.7,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 9.9,
+    "wind_kmh": 9.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-04-29",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
-    "temp_max_c": 12.1,
-    "humidity": 89,
+    "temp_min_c": 7.2,
+    "temp_max_c": 13.1,
+    "humidity": 86,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.9
+    "wind_kmh": 6.4
   },
   "forecast_day_after": {
     "date": "2026-04-30",
     "city": "Zagreb",
-    "temp_min_c": 3.5,
+    "temp_min_c": 3.8,
     "temp_max_c": 13.6,
-    "humidity": 53,
-    "condition": "Clouds",
+    "humidity": 50,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 10.2
+    "wind_kmh": 10.5
   }
 }
