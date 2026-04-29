@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us7000sh55",
-        "title": "M5.0 Earthquake - 32 km E of Aras-asan, Philippines",
+        "title": "M5.0 Earthquake - 26 km E of Aras-asan, Philippines",
         "category": "Earthquake",
-        "date": "2026-04-29T22:04:37.950000Z",
+        "date": "2026-04-29T22:04:37.689000Z",
         "coordinates": [
-          126.6077,
-          8.9018
+          126.5538,
+          8.9171
         ]
       },
       {
@@ -249,28 +249,28 @@
   "weather": {
     "city": "Donji grad",
     "temp_c": 7.6,
-    "feels_c": 7.6,
-    "humidity": 88,
+    "feels_c": 6.3,
+    "humidity": 80,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.8
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-04-30",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 6.4,
     "temp_max_c": 14.1,
-    "humidity": 59,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 9.8,
+    "wind_kmh": 10.4,
     "samples": 9
   },
   "forecast": {
     "date": "2026-05-01",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 4.2,
     "temp_max_c": 16.7,
     "humidity": 49,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-02",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.4,
     "temp_max_c": 20.1,
     "humidity": 59,
