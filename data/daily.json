@@ -11,13 +11,53 @@
   "events": {
     "events": [
       {
+        "id": "us7000sh1g",
+        "title": "M5.2 Earthquake - Prince Edward Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-29T16:41:45.200000Z",
+        "coordinates": [
+          37.2902,
+          -44.6333
+        ]
+      },
+      {
+        "id": "us7000sh1d",
+        "title": "M5.1 Earthquake - Prince Edward Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-29T16:31:05.172000Z",
+        "coordinates": [
+          37.2759,
+          -44.6347
+        ]
+      },
+      {
+        "id": "us7000sh1c",
+        "title": "M5.0 Earthquake - Prince Edward Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-29T16:27:36.033000Z",
+        "coordinates": [
+          37.4117,
+          -44.5433
+        ]
+      },
+      {
+        "id": "us7000sh18",
+        "title": "M5.1 Earthquake - Prince Edward Islands region",
+        "category": "Earthquake",
+        "date": "2026-04-29T16:11:26.657000Z",
+        "coordinates": [
+          37.4301,
+          -44.652
+        ]
+      },
+      {
         "id": "us7000sgp4",
         "title": "M5.2 Earthquake - Fiji region",
         "category": "Earthquake",
-        "date": "2026-04-28T15:28:16.421000Z",
+        "date": "2026-04-28T15:28:11.539000Z",
         "coordinates": [
-          -177.5758,
-          -18.492
+          -177.6086,
+          -18.6197
         ]
       },
       {
@@ -119,46 +159,6 @@
           160.9481,
           52.9131
         ]
-      },
-      {
-        "id": "us6000ssik",
-        "title": "M5.3 Earthquake - 167 km E of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-04-24T08:59:28.540000Z",
-        "coordinates": [
-          161.1117,
-          52.9231
-        ]
-      },
-      {
-        "id": "us6000ssij",
-        "title": "M5.0 Earthquake - 24 km S of Sitia, Greece",
-        "category": "Earthquake",
-        "date": "2026-04-24T08:58:17.508000Z",
-        "coordinates": [
-          26.1319,
-          34.9902
-        ]
-      },
-      {
-        "id": "us6000sshp",
-        "title": "M5.0 Earthquake - 86 km E of Noda, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-24T05:13:10.736000Z",
-        "coordinates": [
-          142.8333,
-          40.095
-        ]
-      },
-      {
-        "id": "us6000sshk",
-        "title": "M5.3 Earthquake - 119 km WNW of Ternate, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-04-24T04:45:20.134000Z",
-        "coordinates": [
-          126.3665,
-          1.1341
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 10.1,
-    "humidity": 79,
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 86,
     "condition": "Rain",
     "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 9.3
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-04-29",
     "city": "Zagreb",
-    "temp_min_c": 9.0,
-    "temp_max_c": 10.9,
-    "humidity": 83,
+    "temp_min_c": 9.8,
+    "temp_max_c": 10.4,
+    "humidity": 87,
     "condition": "Rain",
     "description": "rain",
     "icon": "10d",
-    "wind_kmh": 5.4,
+    "wind_kmh": 4.2,
     "samples": 3
   },
   "forecast": {
