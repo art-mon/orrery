@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000sh8r",
+        "title": "M5.7 Earthquake - 234 km SE of Lorengau, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-04-30T13:27:01.741000Z",
+        "coordinates": [
+          148.8139,
+          -3.4749
+        ]
+      },
+      {
         "id": "us7000sh7l",
         "title": "M5.0 Earthquake - 135 km WNW of Neiafu, Tonga",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -164.9144,
           53.5884
         ]
-      },
-      {
-        "id": "us6000ssjg",
-        "title": "M5.0 Earthquake - 76 km NNW of Vallenar, Chile",
-        "category": "Earthquake",
-        "date": "2026-04-24T13:49:41.138000Z",
-        "coordinates": [
-          -70.9962,
-          -27.92
-        ]
       }
     ]
   },
@@ -249,45 +249,45 @@
   "weather": {
     "city": "Zagreb",
     "temp_c": 15.9,
-    "feels_c": 14.5,
-    "humidity": 35,
+    "feels_c": 14.3,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 14.8
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-04-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.9,
+    "city": "Zagreb",
+    "temp_min_c": 9.8,
     "temp_max_c": 15.9,
-    "humidity": 41,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 10.6,
-    "samples": 4
+    "wind_kmh": 8.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-01",
-    "city": "City of Zagreb",
-    "temp_min_c": 4.2,
-    "temp_max_c": 16.7,
-    "humidity": 48,
+    "city": "Zagreb",
+    "temp_min_c": 5.2,
+    "temp_max_c": 16.9,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.0
+    "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-05-02",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 20.2,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_min_c": 7.3,
+    "temp_max_c": 20.3,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.2
+    "wind_kmh": 4.1
   }
 }
