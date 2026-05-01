@@ -31,6 +31,16 @@
         ]
       },
       {
+        "id": "nn00916980",
+        "title": "M5.2 Earthquake - 19 km SE of Silver Springs, Nevada",
+        "category": "Earthquake",
+        "date": "2026-05-01T08:17:19.870000Z",
+        "coordinates": [
+          -119.0467,
+          39.3066
+        ]
+      },
+      {
         "id": "us7000shh1",
         "title": "M5.1 Earthquake - 70 km ENE of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           142.9615,
           42.6311
         ]
-      },
-      {
-        "id": "us6000st11",
-        "title": "M5.0 Earthquake - 77 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-04-26T16:57:22.275000Z",
-        "coordinates": [
-          142.7328,
-          39.9892
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 20.4,
-    "feels_c": 19.2,
-    "humidity": 29,
+    "city": "City of Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 17.3,
+    "humidity": 27,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-01",
     "city": "Zagreb",
-    "temp_min_c": 8.6,
-    "temp_max_c": 20.4,
-    "humidity": 44,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 12.0,
+    "temp_max_c": 18.7,
+    "humidity": 36,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.4,
+    "wind_kmh": 7.8,
     "samples": 4
   },
   "forecast": {
