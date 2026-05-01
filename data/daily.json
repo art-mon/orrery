@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000shj5",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-01T11:04:39.548000Z",
+        "coordinates": [
+          -25.3328,
+          -57.7679
+        ]
+      },
+      {
         "id": "us7000shh1",
         "title": "M5.1 Earthquake - 70 km ENE of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           93.0122,
           46.8638
         ]
-      },
-      {
-        "id": "us6000ssvq",
-        "title": "M5.0 Earthquake - 82 km SSW of Paracas, Peru",
-        "category": "Earthquake",
-        "date": "2026-04-25T20:14:39.279000Z",
-        "coordinates": [
-          -76.4954,
-          -14.5752
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 18.1,
-    "feels_c": 16.7,
-    "humidity": 28,
+    "city": "City of Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 17.9,
+    "humidity": 27,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 20.4
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-01",
     "city": "Zagreb",
     "temp_min_c": 8.4,
-    "temp_max_c": 19.3,
-    "humidity": 43,
+    "temp_max_c": 19.5,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 10.1,
+    "wind_kmh": 8.6,
     "samples": 5
   },
   "forecast": {
