@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000shsi",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-02T10:31:40.811000Z",
+        "coordinates": [
+          -25.0767,
+          -59.3027
+        ]
+      },
+      {
+        "id": "us7000shsh",
+        "title": "M5.2 Earthquake - 217 km W of Tual, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-02T10:27:07.609000Z",
+        "coordinates": [
+          130.8204,
+          -5.9589
+        ]
+      },
+      {
+        "id": "us7000shs2",
+        "title": "M5.7 Earthquake - 17 km SW of K\u014dya, Japan",
+        "category": "Earthquake",
+        "date": "2026-05-02T09:28:40.989000Z",
+        "coordinates": [
+          135.4857,
+          34.107
+        ]
+      },
+      {
         "id": "us7000shps",
         "title": "M5.0 Earthquake - 43 km NNW of Chamical, Argentina",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           37.2759,
           -44.6347
         ]
-      },
-      {
-        "id": "us7000sh1c",
-        "title": "M5.0 Earthquake - Prince Edward Islands region",
-        "category": "Earthquake",
-        "date": "2026-04-29T16:27:36.033000Z",
-        "coordinates": [
-          37.4117,
-          -44.5433
-        ]
-      },
-      {
-        "id": "us7000sh18",
-        "title": "M5.1 Earthquake - Prince Edward Islands region",
-        "category": "Earthquake",
-        "date": "2026-04-29T16:11:26.657000Z",
-        "coordinates": [
-          37.4301,
-          -44.652
-        ]
-      },
-      {
-        "id": "us7000sgp4",
-        "title": "M5.2 Earthquake - Fiji region",
-        "category": "Earthquake",
-        "date": "2026-04-28T15:28:11.539000Z",
-        "coordinates": [
-          -177.6086,
-          -18.6197
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 19.7,
-    "feels_c": 18.8,
-    "humidity": 42,
+    "city": "Zagreb",
+    "temp_c": 20.7,
+    "feels_c": 19.8,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.8
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-02",
     "city": "Zagreb",
     "temp_min_c": 11.0,
-    "temp_max_c": 22.1,
-    "humidity": 51,
+    "temp_max_c": 21.6,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.6,
+    "wind_kmh": 5.7,
     "samples": 5
   },
   "forecast": {
