@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-02",
+  "generated": "2026-05-03",
   "apod": {
     "title": "Seeing Titan",
     "date": "2026-05-02",
@@ -10,6 +10,16 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000shut",
+        "title": "M5.1 Earthquake - 9 km WNW of Hicks Bay, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-05-02T21:19:13.344000Z",
+        "coordinates": [
+          178.2023,
+          -37.5613
+        ]
+      },
       {
         "id": "us7000shsi",
         "title": "M5.0 Earthquake - South Sandwich Islands region",
@@ -149,16 +159,6 @@
           37.2902,
           -44.6333
         ]
-      },
-      {
-        "id": "us7000sh1d",
-        "title": "M5.1 Earthquake - Prince Edward Islands region",
-        "category": "Earthquake",
-        "date": "2026-04-29T16:31:05.172000Z",
-        "coordinates": [
-          37.2759,
-          -44.6347
-        ]
       }
     ]
   },
@@ -247,41 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.7,
-    "feels_c": 9.7,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_c": 8.7,
+    "feels_c": 8.1,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.8
+    "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-05-02",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 9.7,
-    "humidity": 81,
+    "date": "2026-05-03",
+    "city": "Donji grad",
+    "temp_min_c": 8.1,
+    "temp_max_c": 24.1,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 1.8,
-    "samples": 1
+    "wind_kmh": 5.6,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-05-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.5,
-    "temp_max_c": 24.1,
-    "humidity": 59,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.6
-  },
-  "forecast_day_after": {
     "date": "2026-05-04",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.8,
     "temp_max_c": 24.2,
     "humidity": 57,
@@ -289,5 +278,16 @@
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 8.7
+  },
+  "forecast_day_after": {
+    "date": "2026-05-05",
+    "city": "Donji grad",
+    "temp_min_c": 13.0,
+    "temp_max_c": 19.8,
+    "humidity": 68,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 11.2
   }
 }
