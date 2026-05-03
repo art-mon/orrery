@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000shze",
+        "title": "M5.0 Earthquake - 190 km W of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-03T16:36:14.963000Z",
+        "coordinates": [
+          -175.7821,
+          -18.5355
+        ]
+      },
+      {
         "id": "us7000shy4",
         "title": "M5.1 Earthquake - 111 km SW of Turpan, China",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -175.1974,
           -18.2522
         ]
-      },
-      {
-        "id": "us7000sh55",
-        "title": "M5.0 Earthquake - 26 km E of Aras-asan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-04-29T22:04:37.689000Z",
-        "coordinates": [
-          126.5538,
-          8.9171
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 21.9,
-    "humidity": 35,
+    "temp_c": 20.7,
+    "feels_c": 19.9,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 13.0
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.0,
-    "temp_max_c": 22.7,
-    "humidity": 39,
+    "city": "Zagreb",
+    "temp_min_c": 17.7,
+    "temp_max_c": 20.7,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 9.2,
+    "wind_kmh": 7.9,
     "samples": 3
   },
   "forecast": {
     "date": "2026-05-04",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 6.6,
     "temp_max_c": 25.1,
-    "humidity": 54,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-05",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 11.9,
     "temp_max_c": 20.7,
     "humidity": 66,
