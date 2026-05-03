@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000shy4",
+        "title": "M5.1 Earthquake - 111 km SW of Turpan, China",
+        "category": "Earthquake",
+        "date": "2026-05-03T10:00:34.729000Z",
+        "coordinates": [
+          88.2014,
+          42.2525
+        ]
+      },
+      {
         "id": "us7000shut",
         "title": "M5.1 Earthquake - 9 km WNW of Hicks Bay, New Zealand",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           126.5538,
           8.9171
         ]
-      },
-      {
-        "id": "us7000sh1g",
-        "title": "M5.2 Earthquake - Prince Edward Islands region",
-        "category": "Earthquake",
-        "date": "2026-04-29T16:41:45.200000Z",
-        "coordinates": [
-          37.2902,
-          -44.6333
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.1,
-    "humidity": 49,
+    "temp_c": 23.7,
+    "feels_c": 23.1,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-05-03",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 11.2,
-    "temp_max_c": 23.9,
-    "humidity": 53,
+    "temp_max_c": 24.1,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.8,
+    "wind_kmh": 8.9,
     "samples": 5
   },
   "forecast": {
     "date": "2026-05-04",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 9.0,
     "temp_max_c": 24.7,
     "humidity": 56,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-05",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 12.1,
     "temp_max_c": 19.7,
     "humidity": 65,
