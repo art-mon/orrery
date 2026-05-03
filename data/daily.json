@@ -165,22 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2016 GA221)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-05-02",
-        "miss_distance_km": 15573485,
-        "velocity_kmh": 48288
-      },
-      {
-        "name": "(2000 EM26)",
-        "hazardous": false,
-        "diameter_m": 187,
-        "close_approach_date": "2026-05-02",
-        "miss_distance_km": 40026913,
-        "velocity_kmh": 75399
-      },
-      {
         "name": "(2016 UY56)",
         "hazardous": false,
         "diameter_m": 97,
@@ -243,51 +227,67 @@
         "close_approach_date": "2026-05-04",
         "miss_distance_km": 41896719,
         "velocity_kmh": 42309
+      },
+      {
+        "name": "(1999 SG10)",
+        "hazardous": true,
+        "diameter_m": 419,
+        "close_approach_date": "2026-05-04",
+        "miss_distance_km": 46498997,
+        "velocity_kmh": 106088
+      },
+      {
+        "name": "(2017 HH)",
+        "hazardous": false,
+        "diameter_m": 725,
+        "close_approach_date": "2026-05-04",
+        "miss_distance_km": 65092396,
+        "velocity_kmh": 97095
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 7.7,
-    "feels_c": 7.7,
-    "humidity": 87,
+    "city": "City of Zagreb",
+    "temp_c": 6.7,
+    "feels_c": 5.3,
+    "humidity": 93,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-03",
     "city": "Zagreb",
-    "temp_min_c": 7.5,
-    "temp_max_c": 24.1,
-    "humidity": 64,
+    "temp_min_c": 6.7,
+    "temp_max_c": 25.2,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.4,
-    "samples": 9
+    "wind_kmh": 6.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-04",
     "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 24.2,
-    "humidity": 57,
+    "temp_min_c": 10.1,
+    "temp_max_c": 24.6,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 8.7
+    "wind_kmh": 8.5
   },
   "forecast_day_after": {
     "date": "2026-05-05",
     "city": "Zagreb",
-    "temp_min_c": 13.0,
+    "temp_min_c": 12.1,
     "temp_max_c": 19.8,
-    "humidity": 68,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 11.2
+    "wind_kmh": 12.0
   }
 }
