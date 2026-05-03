@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-03",
+  "generated": "2026-05-04",
   "apod": {
     "title": "Trifid Pillars and Jets",
     "date": "2026-05-03",
@@ -247,41 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 11.9,
-    "humidity": 71,
+    "city": "City of Zagreb",
+    "temp_c": 11.7,
+    "feels_c": 10.9,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 11.1
   },
   "forecast_today": {
-    "date": "2026-05-03",
-    "city": "Zagreb",
-    "temp_min_c": 12.7,
-    "temp_max_c": 12.7,
-    "humidity": 71,
-    "condition": "Clear",
-    "description": "clear",
+    "date": "2026-05-04",
+    "city": "City of Zagreb",
+    "temp_min_c": 10.2,
+    "temp_max_c": 25.1,
+    "humidity": 58,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 7.4,
-    "samples": 1
+    "wind_kmh": 7.2,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-05-04",
-    "city": "Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 25.1,
-    "humidity": 55,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 6.7
-  },
-  "forecast_day_after": {
     "date": "2026-05-05",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 11.9,
     "temp_max_c": 20.3,
     "humidity": 62,
@@ -289,5 +278,16 @@
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 12.5
+  },
+  "forecast_day_after": {
+    "date": "2026-05-06",
+    "city": "City of Zagreb",
+    "temp_min_c": 12.6,
+    "temp_max_c": 19.9,
+    "humidity": 73,
+    "condition": "Clouds",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 10.9
   }
 }
