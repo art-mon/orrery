@@ -254,7 +254,7 @@
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 14.8
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-05-04",
@@ -265,8 +265,8 @@
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 11.5,
-    "samples": 2
+    "wind_kmh": 11.1,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-05-05",
