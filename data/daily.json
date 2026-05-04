@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000si2z",
+        "title": "M6.0 Earthquake - 5 km WNW of Nena, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-04T06:09:50.058000Z",
+        "coordinates": [
+          125.3718,
+          11.7774
+        ]
+      },
+      {
         "id": "us7000shze",
         "title": "M5.0 Earthquake - 190 km W of Neiafu, Tonga",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           148.8139,
           -3.4749
         ]
-      },
-      {
-        "id": "us7000sh7l",
-        "title": "M5.0 Earthquake - 135 km WNW of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-04-30T09:07:09.663000Z",
-        "coordinates": [
-          -175.1974,
-          -18.2522
-        ]
       }
     ]
   },
@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 13.7,
-    "feels_c": 12.6,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.0,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -258,36 +258,36 @@
   },
   "forecast_today": {
     "date": "2026-05-04",
-    "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 25.5,
-    "humidity": 50,
+    "city": "Donji grad",
+    "temp_min_c": 13.8,
+    "temp_max_c": 23.4,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 8.7,
-    "samples": 6
+    "wind_kmh": 8.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-05",
-    "city": "Zagreb",
-    "temp_min_c": 12.3,
-    "temp_max_c": 21.9,
-    "humidity": 60,
+    "city": "Donji grad",
+    "temp_min_c": 9.3,
+    "temp_max_c": 21.7,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 13.4
+    "wind_kmh": 13.5
   },
   "forecast_day_after": {
     "date": "2026-05-06",
-    "city": "Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 19.8,
-    "humidity": 74,
-    "condition": "Rain",
+    "city": "Donji grad",
+    "temp_min_c": 13.2,
+    "temp_max_c": 19.4,
+    "humidity": 71,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 10.7
+    "wind_kmh": 12.2
   }
 }
