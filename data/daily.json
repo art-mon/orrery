@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000si51",
+        "title": "M5.7 Earthquake - 2 km SE of Zocoteaca de Le\u00f3n, Mexico",
+        "category": "Earthquake",
+        "date": "2026-05-04T15:19:26.467000Z",
+        "coordinates": [
+          -97.9846,
+          16.6223
+        ]
+      },
+      {
         "id": "us7000si2z",
         "title": "M6.0 Earthquake - 5 km WNW of Nena, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -18.4175,
           -42.2007
         ]
-      },
-      {
-        "id": "us7000sh8r",
-        "title": "M5.7 Earthquake - 234 km SE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-04-30T13:27:01.741000Z",
-        "coordinates": [
-          148.8139,
-          -3.4749
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 26.7,
-    "feels_c": 26.0,
-    "humidity": 24,
+    "feels_c": 26.1,
+    "humidity": 26,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 11.1
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-05-04",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.4,
     "temp_max_c": 26.7,
-    "humidity": 33,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 10.4,
-    "samples": 4
+    "wind_kmh": 12.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-05",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 9.4,
     "temp_max_c": 20.4,
     "humidity": 60,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-06",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.6,
     "temp_max_c": 21.0,
     "humidity": 70,
