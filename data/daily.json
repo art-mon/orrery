@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svc4",
+        "title": "M5.0 Earthquake - 13 km NW of Tumbes, Peru",
+        "category": "Earthquake",
+        "date": "2026-05-05T15:58:27.768000Z",
+        "coordinates": [
+          -80.5487,
+          -3.5014
+        ]
+      },
+      {
         "id": "us6000svbv",
         "title": "M5.1 Earthquake - Mid-Indian Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -66.5123,
           -30.0095
         ]
-      },
-      {
-        "id": "us7000shnl",
-        "title": "M5.1 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-02T02:06:36.139000Z",
-        "coordinates": [
-          178.8233,
-          -24.4373
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_c": 18.7,
-    "feels_c": 18.1,
-    "humidity": 55,
+    "feels_c": 18.0,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 27.8
+    "wind_kmh": 24.1
   },
   "forecast_today": {
     "date": "2026-05-05",
-    "city": "Zagreb",
-    "temp_min_c": 16.9,
+    "city": "Donji grad",
+    "temp_min_c": 17.9,
     "temp_max_c": 18.7,
-    "humidity": 59,
-    "condition": "Clouds",
-    "description": "clouds",
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01d",
-    "wind_kmh": 16.2,
+    "wind_kmh": 15.0,
     "samples": 3
   },
   "forecast": {
     "date": "2026-05-06",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 10.4,
     "temp_max_c": 21.4,
-    "humidity": 68,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-07",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 11.8,
     "temp_max_c": 14.6,
     "humidity": 91,
