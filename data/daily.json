@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-05",
+  "generated": "2026-05-06",
   "apod": {
     "title": "Orion over Mount Teide",
     "date": "2026-05-05",
@@ -248,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.7,
-    "feels_c": 14.0,
-    "humidity": 67,
+    "temp_c": 12.7,
+    "feels_c": 12,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 18.5
+    "wind_kmh": 14.8
   },
   "forecast_today": {
-    "date": "2026-05-05",
-    "city": "Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 14.7,
-    "humidity": 67,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 18.5,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-05-06",
     "city": "Zagreb",
-    "temp_min_c": 11.5,
+    "temp_min_c": 11.2,
     "temp_max_c": 21.7,
-    "humidity": 68,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 10.1
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 10.6,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-07",
     "city": "Zagreb",
     "temp_min_c": 11.8,
@@ -289,5 +278,16 @@
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 6.7
+  },
+  "forecast_day_after": {
+    "date": "2026-05-08",
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 16.6,
+    "humidity": 87,
+    "condition": "Clouds",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.3
   }
 }
