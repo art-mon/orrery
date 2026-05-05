@@ -1,12 +1,7 @@
 {
   "generated": "2026-05-06",
   "apod": {
-    "title": "Orion over Mount Teide",
-    "date": "2026-05-05",
-    "explanation": "Orion is rarely seen like this.  To achieve this majestic vista, you need a camera capable of taking such long duration exposures that faint features in the night sky become revealed.  Iconic nebulas that appear include the Orion Nebula, the Flame Nebula, and Barnard's Loop. For contrast, it also helps to have a volcano on the foreground, in this case the Teide volcano on Tenerife on the Canary Islands of Spain.  But if you want your Teide volcano snow-covered, you also need good timing -- because that only happens, typically, for a few days each year.  Good timing also includes waiting for Orion to appear just behind Teide, which occurred late last year after sunset.  The featured image is the result of a series of images taken consecutively with the same camera from the same location.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/OrionTeide_Rosadzinski_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/OrionTeide_Rosadzinski_4247.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,24 +243,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 12,
+    "temp_c": 11.7,
+    "feels_c": 10.9,
     "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 14.8
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-05-06",
     "city": "Zagreb",
-    "temp_min_c": 11.2,
+    "temp_min_c": 11.3,
     "temp_max_c": 21.7,
     "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 10.6,
+    "wind_kmh": 10.2,
     "samples": 9
   },
   "forecast": {
@@ -274,7 +269,7 @@
     "temp_min_c": 11.8,
     "temp_max_c": 15.1,
     "humidity": 92,
-    "condition": "Clouds",
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 6.7
