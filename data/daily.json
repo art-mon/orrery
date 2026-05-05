@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000sicu",
+        "title": "M5.8 Earthquake - 76 km S of Tambolaka, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-05T06:44:51.479000Z",
+        "coordinates": [
+          119.3245,
+          -10.1135
+        ]
+      },
+      {
         "id": "us7000siat",
         "title": "M5.3 Earthquake - Banda Sea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -25.3328,
           -57.7679
         ]
-      },
-      {
-        "id": "nn00916980",
-        "title": "M5.2 Earthquake - 19 km SE of Silver Springs, Nevada",
-        "category": "Earthquake",
-        "date": "2026-05-01T08:17:19.870000Z",
-        "coordinates": [
-          -119.0467,
-          39.3066
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.7,
-    "feels_c": 7.7,
-    "humidity": 87,
+    "temp_c": 17.7,
+    "feels_c": 16.9,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-05",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
-    "temp_max_c": 21.3,
-    "humidity": 65,
+    "temp_min_c": 16.1,
+    "temp_max_c": 20.1,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 13.2,
-    "samples": 7
+    "wind_kmh": 15.8,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-06",
     "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 21.9,
+    "temp_min_c": 12.0,
+    "temp_max_c": 21.0,
     "humidity": 68,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 11.2
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 11.7
   },
   "forecast_day_after": {
     "date": "2026-05-07",
     "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 17.2,
-    "humidity": 89,
+    "temp_min_c": 12.1,
+    "temp_max_c": 16.2,
+    "humidity": 90,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.5
+    "wind_kmh": 6.6
   }
 }
