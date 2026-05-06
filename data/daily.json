@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svm3",
+        "title": "M5.2 Earthquake - 134 km WNW of Panguna, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-06T09:43:13.683000Z",
+        "coordinates": [
+          154.4199,
+          -5.7284
+        ]
+      },
+      {
         "id": "us6000svc4",
         "title": "M5.0 Earthquake - 13 km NW of Tumbes, Peru",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           135.4857,
           34.107
         ]
-      },
-      {
-        "id": "us7000shps",
-        "title": "M5.0 Earthquake - 43 km NNW of Chamical, Argentina",
-        "category": "Earthquake",
-        "date": "2026-05-02T05:04:56.485000Z",
-        "coordinates": [
-          -66.5123,
-          -30.0095
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_c": 19.7,
-    "feels_c": 19.1,
-    "humidity": 52,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 11.1
+    "feels_c": 19.2,
+    "humidity": 56,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-05-06",
     "city": "Zagreb",
     "temp_min_c": 15.6,
     "temp_max_c": 19.7,
-    "humidity": 62,
+    "humidity": 64,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 12.5,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 13.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-07",
