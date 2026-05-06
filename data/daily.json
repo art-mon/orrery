@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svrl",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-06T19:19:17.896000Z",
+        "coordinates": [
+          -24.0873,
+          -59.5634
+        ]
+      },
+      {
         "id": "us6000svp9",
         "title": "M5.5 Earthquake - 25 km ENE of Baganga, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           88.2014,
           42.2525
         ]
-      },
-      {
-        "id": "us7000shut",
-        "title": "M5.1 Earthquake - 9 km WNW of Hicks Bay, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-05-02T21:19:13.344000Z",
-        "coordinates": [
-          178.2023,
-          -37.5613
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.7,
-    "feels_c": 17.4,
-    "humidity": 72,
+    "temp_c": 14.7,
+    "feels_c": 14.2,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 13.0
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-06",
-    "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 17.7,
-    "humidity": 74,
+    "city": "Donji grad",
+    "temp_min_c": 14.7,
+    "temp_max_c": 14.7,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 10.4,
+    "wind_kmh": 8.9,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-07",
-    "city": "Zagreb",
-    "temp_min_c": 11.4,
+    "city": "Donji grad",
+    "temp_min_c": 11.7,
     "temp_max_c": 17.9,
-    "humidity": 84,
+    "humidity": 86,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.0
   },
   "forecast_day_after": {
     "date": "2026-05-08",
-    "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 19.6,
+    "city": "Donji grad",
+    "temp_min_c": 9.7,
+    "temp_max_c": 21.8,
     "humidity": 72,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.3
   }
 }
