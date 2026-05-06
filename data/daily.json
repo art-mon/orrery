@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-06",
+  "generated": "2026-05-07",
   "apod": {
     "title": "The Retrograde Dance of Saturn and Neptune",
     "date": "2026-05-06",
@@ -247,39 +247,28 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 14.7,
-    "feels_c": 14.1,
-    "humidity": 72,
+    "city": "Zagreb",
+    "temp_c": 13.7,
+    "feels_c": 13.1,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
-    "date": "2026-05-06",
-    "city": "Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 14.7,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.5,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-05-07",
     "city": "Zagreb",
     "temp_min_c": 11.7,
     "temp_max_c": 17.9,
-    "humidity": 86,
+    "humidity": 84,
     "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 7.0
+    "description": "rain",
+    "icon": "01n",
+    "wind_kmh": 7.0,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-08",
     "city": "Zagreb",
     "temp_min_c": 9.7,
@@ -289,5 +278,16 @@
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 4.3
+  },
+  "forecast_day_after": {
+    "date": "2026-05-09",
+    "city": "Zagreb",
+    "temp_min_c": 11.5,
+    "temp_max_c": 23.3,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.0
   }
 }
