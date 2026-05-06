@@ -1,15 +1,30 @@
 {
   "generated": "2026-05-06",
   "apod": {
-    "title": "The Retrograde Dance of Saturn and Neptune",
-    "date": "2026-05-06",
-    "explanation": "What does it mean for Saturn and Neptune to be in retrograde? Featured is a composite of images taken over 34 nights from May 2025 to February 2026 tracing Saturn (brighter, foreground) and Neptune (dimmer, background). Over that time, the two planets exhibited retrograde motion, meaning they appeared to move backward in the sky. This apparent backwards motion occurs when Earth overtakes the slower outer planets as they orbit the Sun. Imagine the Solar System is a running track. Earth \"runs\" faster along the inside of the track compared to the outer planets. As Earth approaches, aligns, and then \"laps\" the outer planets, they change position from ahead to behind from the Earth's perspective. This perspective shift is what causes the outer planets to change position in the night sky. An animation corresponding to today\u2019s image shows Saturn and Neptune\u2019s months-long dance across the northern night sky. Saturn stepped from the Pisces constellation into Aquarius and back again while Neptune remained in Pisces. This is the closest Saturn and Neptune have been in the sky since their last conjunction in 1989.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/saturn_neptune_retrograde_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/saturn_neptune_retrograde.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000svp9",
+        "title": "M5.5 Earthquake - 25 km ENE of Baganga, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-06T15:35:46.736000Z",
+        "coordinates": [
+          126.7818,
+          7.6333
+        ]
+      },
+      {
+        "id": "us6000svnr",
+        "title": "M5.8 Earthquake - 235 km ESE of Attu Station, Alaska",
+        "category": "Earthquake",
+        "date": "2026-05-06T14:15:32.254000Z",
+        "coordinates": [
+          176.518,
+          52.2595
+        ]
+      },
       {
         "id": "us6000svmz",
         "title": "M5.6 Earthquake - south of the Kermadec Islands",
@@ -32,22 +47,22 @@
       },
       {
         "id": "us6000svc4",
-        "title": "M5.0 Earthquake - 13 km NW of Tumbes, Peru",
+        "title": "M5.1 Earthquake - 14 km N of Zorritos, Peru",
         "category": "Earthquake",
-        "date": "2026-05-05T15:58:27.768000Z",
+        "date": "2026-05-05T15:58:27.033000Z",
         "coordinates": [
-          -80.5487,
-          -3.5014
+          -80.6705,
+          -3.547
         ]
       },
       {
         "id": "us6000svbv",
         "title": "M5.1 Earthquake - Mid-Indian Ridge",
         "category": "Earthquake",
-        "date": "2026-05-05T15:09:37.607000Z",
+        "date": "2026-05-05T15:09:37.443000Z",
         "coordinates": [
-          78.6258,
-          -35.235
+          78.5793,
+          -35.269
         ]
       },
       {
@@ -139,26 +154,6 @@
           178.2023,
           -37.5613
         ]
-      },
-      {
-        "id": "us7000shsi",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-02T10:31:40.811000Z",
-        "coordinates": [
-          -25.0767,
-          -59.3027
-        ]
-      },
-      {
-        "id": "us7000shsh",
-        "title": "M5.2 Earthquake - 217 km W of Tual, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-02T10:27:07.609000Z",
-        "coordinates": [
-          130.8204,
-          -5.9589
-        ]
       }
     ]
   },
@@ -247,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 19.7,
     "feels_c": 19.4,
     "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-05-06",
-    "city": "Zagreb",
-    "temp_min_c": 16.9,
+    "city": "Donji grad",
+    "temp_min_c": 17.2,
     "temp_max_c": 19.7,
     "humidity": 69,
-    "condition": "Rain",
-    "description": "rain",
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 9.4,
-    "samples": 4
+    "wind_kmh": 10.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-07",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 11.4,
     "temp_max_c": 17.9,
     "humidity": 84,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-08",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.9,
     "temp_max_c": 19.6,
     "humidity": 72,
