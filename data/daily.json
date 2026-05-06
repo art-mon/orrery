@@ -1,7 +1,12 @@
 {
   "generated": "2026-05-06",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Retrograde Dance of Saturn and Neptune",
+    "date": "2026-05-06",
+    "explanation": "What does it mean for Saturn and Neptune to be in retrograde? Featured is a composite of images taken over 34 nights from May 2025 to February 2026 tracing Saturn (brighter, foreground) and Neptune (dimmer, background). Over that time, the two planets exhibited retrograde motion, meaning they appeared to move backward in the sky. This apparent backwards motion occurs when Earth overtakes the slower outer planets as they orbit the Sun. Imagine the Solar System is a running track. Earth \"runs\" faster along the inside of the track compared to the outer planets. As Earth approaches, aligns, and then \"laps\" the outer planets, they change position from ahead to behind from the Earth's perspective. This perspective shift is what causes the outer planets to change position in the night sky. An animation corresponding to today\u2019s image shows Saturn and Neptune\u2019s months-long dance across the northern night sky. Saturn stepped from the Pisces constellation into Aquarius and back again while Neptune remained in Pisces. This is the closest Saturn and Neptune have been in the sky since their last conjunction in 1989.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/saturn_neptune_retrograde_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/saturn_neptune_retrograde.jpg"
   },
   "events": {
     "events": [
@@ -243,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.4,
-    "humidity": 64,
+    "temp_c": 17.7,
+    "feels_c": 17.4,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 16.7
+    "icon": "01n",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-06",
-    "city": "Donji grad",
-    "temp_min_c": 17.2,
-    "temp_max_c": 19.7,
-    "humidity": 69,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 10.6,
-    "samples": 3
+    "city": "Zagreb",
+    "temp_min_c": 17.1,
+    "temp_max_c": 17.7,
+    "humidity": 74,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 10.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-07",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 11.4,
     "temp_max_c": 17.9,
     "humidity": 84,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-08",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 9.9,
     "temp_max_c": 19.6,
     "humidity": 72,
