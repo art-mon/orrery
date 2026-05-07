@@ -5,7 +5,7 @@
     "date": "2026-05-07",
     "explanation": "A long time ago, in a distant galaxy, a massive star was destroyed in a supernova explosion. The light of this event travelled for tens of millions of years and reached Earth last week as Supernova 2026kid. The featured video shows a time-lapse over three nights of the host galaxy NGC 5907, an edge-on spiral also known as the Splinter or Knife Edge Galaxy, as the supernova appears and becomes brighter. (The occasional streaks are satellites in Earth orbit.) At its brightest, a supernova can outshine the sum of all other stars in its galaxy. Supernova 2026kid appears relatively dim, probably because we are seeing it through the edge-on disk of the galaxy. Such explosions typically happen about once per century in galaxies similar to the Milky Way, and their light can take months to fade away. The brightest supernova in recorded history was SN 1006; it is reported to have been brighter than Venus, and even visible in the sky during daytime.",
     "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2605/supernova.mp4",
+    "url": "https://apod.nasa.gov/apod/image/2605/sn_2025kid_low.mp4",
     "hdurl": null
   },
   "events": {
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.3,
-    "humidity": 74,
+    "temp_c": 15.4,
+    "feels_c": 15.1,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-07",
     "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 17.6,
-    "humidity": 74,
+    "temp_min_c": 15.4,
+    "temp_max_c": 15.4,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.5,
+    "wind_kmh": 7.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-08",
     "city": "Zagreb",
-    "temp_min_c": 10.6,
-    "temp_max_c": 22.4,
+    "temp_min_c": 12.2,
+    "temp_max_c": 22.2,
     "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-05-09",
     "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 23.6,
-    "humidity": 58,
+    "temp_min_c": 12.2,
+    "temp_max_c": 24.2,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 4.4
   }
 }
