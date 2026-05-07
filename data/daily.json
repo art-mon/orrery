@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svu7",
+        "title": "M5.1 Earthquake - 151 km WNW of Panguna, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-07T01:23:05.220000Z",
+        "coordinates": [
+          154.2368,
+          -5.7445
+        ]
+      },
+      {
         "id": "us6000svrl",
         "title": "M5.0 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -149,45 +159,11 @@
           -175.7821,
           -18.5355
         ]
-      },
-      {
-        "id": "us7000shy4",
-        "title": "M5.1 Earthquake - 111 km SW of Turpan, China",
-        "category": "Earthquake",
-        "date": "2026-05-03T10:00:34.729000Z",
-        "coordinates": [
-          88.2014,
-          42.2525
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2009 KR4)",
-        "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-05-06",
-        "miss_distance_km": 37886629,
-        "velocity_kmh": 46169
-      },
-      {
-        "name": "(2019 SX)",
-        "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-05-06",
-        "miss_distance_km": 73106912,
-        "velocity_kmh": 104977
-      },
-      {
-        "name": "(2016 VB1)",
-        "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-05-06",
-        "miss_distance_km": 73751737,
-        "velocity_kmh": 65040
-      },
       {
         "name": "(2002 VU114)",
         "hazardous": false,
@@ -243,51 +219,75 @@
         "close_approach_date": "2026-05-09",
         "miss_distance_km": 63181204,
         "velocity_kmh": 26419
+      },
+      {
+        "name": "(2004 XA45)",
+        "hazardous": false,
+        "diameter_m": 375,
+        "close_approach_date": "2026-05-09",
+        "miss_distance_km": 68753396,
+        "velocity_kmh": 112524
+      },
+      {
+        "name": "326290 Akhenaten (1998 HE3)",
+        "hazardous": true,
+        "diameter_m": 256,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 11003044,
+        "velocity_kmh": 38924
+      },
+      {
+        "name": "(2024 FT15)",
+        "hazardous": false,
+        "diameter_m": 152,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 32265447,
+        "velocity_kmh": 4980
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 13.8,
-    "feels_c": 13.3,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_c": 11.7,
+    "feels_c": 11.2,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02n",
-    "wind_kmh": 9.3
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-07",
     "city": "Zagreb",
     "temp_min_c": 11.7,
-    "temp_max_c": 17.9,
-    "humidity": 84,
+    "temp_max_c": 20.7,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02n",
-    "wind_kmh": 7.3,
-    "samples": 9
+    "wind_kmh": 8.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-08",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 21.8,
-    "humidity": 72,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.3
-  },
-  "forecast_day_after": {
-    "date": "2026-05-09",
-    "city": "Zagreb",
-    "temp_min_c": 11.5,
-    "temp_max_c": 23.3,
+    "temp_min_c": 10.2,
+    "temp_max_c": 21.9,
     "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.0
+    "wind_kmh": 4.6
+  },
+  "forecast_day_after": {
+    "date": "2026-05-09",
+    "city": "Zagreb",
+    "temp_min_c": 12.6,
+    "temp_max_c": 23.9,
+    "humidity": 63,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.5
   }
 }
