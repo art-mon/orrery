@@ -233,7 +233,7 @@
         "hazardous": true,
         "diameter_m": 256,
         "close_approach_date": "2026-05-10",
-        "miss_distance_km": 11003044,
+        "miss_distance_km": 11003045,
         "velocity_kmh": 38924
       },
       {
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.4,
-    "feels_c": 15.2,
-    "humidity": 87,
+    "temp_c": 16.5,
+    "feels_c": 16.4,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -260,8 +260,8 @@
     "date": "2026-05-07",
     "city": "Zagreb",
     "temp_min_c": 14.0,
-    "temp_max_c": 19.2,
-    "humidity": 79,
+    "temp_max_c": 18.0,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
