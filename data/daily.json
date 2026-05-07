@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svw1",
+        "title": "M5.3 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-07T08:53:28.180000Z",
+        "coordinates": [
+          -176.6255,
+          -27.3997
+        ]
+      },
+      {
         "id": "us6000svu7",
         "title": "M5.1 Earthquake - 151 km WNW of Panguna, Papua New Guinea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           125.3718,
           11.7774
         ]
-      },
-      {
-        "id": "us7000shze",
-        "title": "M5.0 Earthquake - 190 km W of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-03T16:36:14.963000Z",
-        "coordinates": [
-          -175.7821,
-          -18.5355
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.6,
-    "humidity": 94,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 1.8
+    "temp_c": 15.4,
+    "feels_c": 15.2,
+    "humidity": 87,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-07",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.0,
-    "temp_max_c": 20.6,
-    "humidity": 82,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 8.8,
-    "samples": 6
+    "city": "Zagreb",
+    "temp_min_c": 14.0,
+    "temp_max_c": 19.2,
+    "humidity": 79,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 10.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-08",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.2,
-    "temp_max_c": 21.9,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 9.9,
+    "temp_max_c": 21.8,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-05-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 23.9,
-    "humidity": 63,
+    "city": "Zagreb",
+    "temp_min_c": 12.7,
+    "temp_max_c": 24.0,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.5
+    "wind_kmh": 4.1
   }
 }
