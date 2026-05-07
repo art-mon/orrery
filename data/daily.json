@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000svwn",
+        "title": "M5.1 Earthquake - 281 km E of Levuka, Fiji",
+        "category": "Earthquake",
+        "date": "2026-05-07T11:48:41.636000Z",
+        "coordinates": [
+          -178.0277,
+          -17.9613
+        ]
+      },
+      {
         "id": "us6000svw1",
         "title": "M5.3 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -97.9846,
           16.6223
         ]
-      },
-      {
-        "id": "us7000si2z",
-        "title": "M6.0 Earthquake - 5 km WNW of Nena, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-04T06:09:50.058000Z",
-        "coordinates": [
-          125.3718,
-          11.7774
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.4,
-    "humidity": 83,
+    "temp_c": 18.1,
+    "feels_c": 18.0,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 9.3
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-05-07",
     "city": "Zagreb",
-    "temp_min_c": 14.0,
-    "temp_max_c": 18.0,
-    "humidity": 80,
+    "temp_min_c": 15.4,
+    "temp_max_c": 18.1,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 10.2,
-    "samples": 5
+    "wind_kmh": 11.3,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-08",
     "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 21.8,
-    "humidity": 62,
+    "temp_min_c": 10.6,
+    "temp_max_c": 22.4,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.0
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-05-09",
     "city": "Zagreb",
-    "temp_min_c": 12.7,
-    "temp_max_c": 24.0,
-    "humidity": 56,
+    "temp_min_c": 12.6,
+    "temp_max_c": 23.6,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.1
+    "wind_kmh": 4.4
   }
 }
