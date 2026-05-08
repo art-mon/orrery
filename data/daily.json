@@ -61,16 +61,6 @@
         ]
       },
       {
-        "id": "us6000svrl",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-06T19:19:17.896000Z",
-        "coordinates": [
-          -24.0873,
-          -59.5634
-        ]
-      },
-      {
         "id": "us6000svp9",
         "title": "M5.5 Earthquake - 25 km ENE of Baganga, Philippines",
         "category": "Earthquake",
@@ -158,6 +148,16 @@
         "coordinates": [
           130.1627,
           -6.4335
+        ]
+      },
+      {
+        "id": "us7000si9t",
+        "title": "M5.2 Earthquake - 98 km ENE of Miyako, Japan",
+        "category": "Earthquake",
+        "date": "2026-05-04T23:54:06.749000Z",
+        "coordinates": [
+          143.0076,
+          39.9667
         ]
       }
     ]
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.1,
-    "humidity": 47,
+    "city": "City of Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.1,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-08",
-    "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 22.6,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.0,
+    "temp_max_c": 18.7,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 4.6,
-    "samples": 3
+    "wind_kmh": 4.0,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-09",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 10.9,
     "temp_max_c": 23.7,
     "humidity": 59,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-10",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 12.1,
     "temp_max_c": 22.8,
     "humidity": 62,
