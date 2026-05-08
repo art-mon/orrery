@@ -11,13 +11,23 @@
   "events": {
     "events": [
       {
-        "id": "us6000sw5q",
-        "title": "M5.4 Earthquake - southeast Indian Ridge",
+        "id": "us6000sw6y",
+        "title": "M5.6 Earthquake - 109 km SSE of Lorengau, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-05-08T07:17:43.284000Z",
+        "date": "2026-05-08T12:22:31.861000Z",
         "coordinates": [
-          91.4835,
-          -43.51
+          147.7321,
+          -2.9127
+        ]
+      },
+      {
+        "id": "us6000sw5q",
+        "title": "M5.9 Earthquake - southeast Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-08T07:17:43.055000Z",
+        "coordinates": [
+          91.7023,
+          -43.412
         ]
       },
       {
@@ -149,16 +159,6 @@
           130.1627,
           -6.4335
         ]
-      },
-      {
-        "id": "us7000si9t",
-        "title": "M5.2 Earthquake - 98 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-05-04T23:54:06.749000Z",
-        "coordinates": [
-          143.0076,
-          39.9667
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 23.3,
-    "feels_c": 22.8,
-    "humidity": 45,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
+    "temp_c": 23.1,
+    "feels_c": 22.7,
+    "humidity": 46,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-08",
-    "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 23.4,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 4.4,
-    "samples": 5
+    "city": "City of Zagreb",
+    "temp_min_c": 18.2,
+    "temp_max_c": 23.1,
+    "humidity": 51,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 4.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-09",
-    "city": "Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 24.2,
-    "humidity": 57,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.9,
+    "temp_max_c": 23.7,
+    "humidity": 59,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.6
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.8
   },
   "forecast_day_after": {
     "date": "2026-05-10",
-    "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 24.1,
-    "humidity": 64,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.1,
+    "temp_max_c": 22.8,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.5
+    "wind_kmh": 6.8
   }
 }
