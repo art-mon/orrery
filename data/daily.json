@@ -1,7 +1,12 @@
 {
   "generated": "2026-05-08",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Comet R3 PanSTARRS Before Rigel",
+    "date": "2026-05-08",
+    "explanation": "Which way is Comet R3 PanSTARRS going? Not towards the star at the top of the image, because that is Rigel, which, being far in the background, is unrelated to the comet. Not through the nebula in the image middle, because that is the Witch Head Nebula and it, too, is far in the distance -- but not far from Rigel.\u00a0 Not into northern skies because over the past week Comet C/2025 R3 (PanSTARRS) has moved into southern skies and is now best visible in Earth's Southern Hemisphere toward the west after sunset.\u00a0 Angularly, Comet R3 PanSTARRS is slowly moving toward the upper right, night by night, and will soon be in the constellation Orion. Spatially, the comet is now headed out of our Solar System but should remain visible to cameras in southern skies for about a week.  The featured image was captured last week near Cerro Paranal in Chile.   Growing Gallery: Comet R3 PanSTARRS in 2026",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/CometRigel_Karuk_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/CometRigel_Karuk_2851.jpg"
   },
   "events": {
     "events": [
@@ -204,7 +209,7 @@
         "hazardous": true,
         "diameter_m": 256,
         "close_approach_date": "2026-05-10",
-        "miss_distance_km": 11003045,
+        "miss_distance_km": 11003044,
         "velocity_kmh": 38924
       },
       {
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 18.8,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_c": 20.9,
+    "feels_c": 20.4,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 1.8
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-08",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.5,
-    "temp_max_c": 22.0,
-    "humidity": 58,
+    "temp_max_c": 22.3,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 4.3,
-    "samples": 6
+    "wind_kmh": 4.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-09",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 14.0,
     "temp_max_c": 23.6,
     "humidity": 58,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-10",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 12.4,
     "temp_max_c": 23.5,
     "humidity": 65,
