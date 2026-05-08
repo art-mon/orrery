@@ -1,15 +1,20 @@
 {
   "generated": "2026-05-08",
   "apod": {
-    "title": "Comet R3 PanSTARRS Before Rigel",
-    "date": "2026-05-08",
-    "explanation": "Which way is Comet R3 PanSTARRS going? Not towards the star at the top of the image, because that is Rigel, which, being far in the background, is unrelated to the comet. Not through the nebula in the image middle, because that is the Witch Head Nebula and it, too, is far in the distance -- but not far from Rigel.\u00a0 Not into northern skies because over the past week Comet C/2025 R3 (PanSTARRS) has moved into southern skies and is now best visible in Earth's Southern Hemisphere toward the west after sunset.\u00a0 Angularly, Comet R3 PanSTARRS is slowly moving toward the upper right, night by night, and will soon be in the constellation Orion. Spatially, the comet is now headed out of our Solar System but should remain visible to cameras in southern skies for about a week.  The featured image was captured last week near Cerro Paranal in Chile.   Growing Gallery: Comet R3 PanSTARRS in 2026",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/CometRigel_Karuk_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/CometRigel_Karuk_2851.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000sw5q",
+        "title": "M5.4 Earthquake - southeast Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-08T07:17:43.284000Z",
+        "coordinates": [
+          91.4835,
+          -43.51
+        ]
+      },
       {
         "id": "us6000svwn",
         "title": "M5.1 Earthquake - 281 km E of Levuka, Fiji",
@@ -149,16 +154,6 @@
           143.0076,
           39.9667
         ]
-      },
-      {
-        "id": "us7000si51",
-        "title": "M5.7 Earthquake - 2 km SE of Zocoteaca de Le\u00f3n, Mexico",
-        "category": "Earthquake",
-        "date": "2026-05-04T15:19:26.467000Z",
-        "coordinates": [
-          -97.9846,
-          16.6223
-        ]
       }
     ]
   },
@@ -247,47 +242,47 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15.4,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "city": "City of Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 18.8,
+    "humidity": 58,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-05-08",
-    "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 23.3,
-    "humidity": 60,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.5,
+    "temp_max_c": 22.0,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
+    "icon": "02d",
     "wind_kmh": 4.3,
     "samples": 6
   },
   "forecast": {
     "date": "2026-05-09",
-    "city": "Zagreb",
-    "temp_min_c": 13.5,
-    "temp_max_c": 22.5,
-    "humidity": 60,
+    "city": "City of Zagreb",
+    "temp_min_c": 14.0,
+    "temp_max_c": 23.6,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 3.4
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-05-10",
-    "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 23.9,
-    "humidity": 62,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.4,
+    "temp_max_c": 23.5,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.5
+    "wind_kmh": 7.3
   }
 }
