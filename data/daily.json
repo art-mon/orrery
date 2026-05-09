@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000swf4",
+        "title": "M5.8 Earthquake - 292 km WSW of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-05-09T04:42:23.298000Z",
+        "coordinates": [
+          179.349,
+          51.0818
+        ]
+      },
+      {
+        "id": "aka2026jcufoy",
+        "title": "M6.1 Earthquake - Rat Islands, Aleutian Islands, Alaska",
+        "category": "Earthquake",
+        "date": "2026-05-09T04:42:21.975000Z",
+        "coordinates": [
+          179.214,
+          50.981
+        ]
+      },
+      {
         "id": "us6000sw6y",
         "title": "M5.6 Earthquake - 109 km SSE of Lorengau, Papua New Guinea",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           119.3245,
           -10.1135
         ]
-      },
-      {
-        "id": "us7000siat",
-        "title": "M5.3 Earthquake - Banda Sea",
-        "category": "Earthquake",
-        "date": "2026-05-05T02:38:49.853000Z",
-        "coordinates": [
-          130.1627,
-          -6.4335
-        ]
-      },
-      {
-        "id": "us7000si9t",
-        "title": "M5.2 Earthquake - 98 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-05-04T23:54:06.749000Z",
-        "coordinates": [
-          143.0076,
-          39.9667
-        ]
       }
     ]
   },
@@ -248,40 +248,40 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.2,
-    "humidity": 79,
+    "temp_c": 20.9,
+    "feels_c": 20.5,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-05-09",
-    "city": "Donji grad",
-    "temp_min_c": 13.6,
-    "temp_max_c": 24.2,
-    "humidity": 63,
+    "city": "Zagreb",
+    "temp_min_c": 13.0,
+    "temp_max_c": 23.1,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 6.8,
-    "samples": 7
+    "wind_kmh": 5.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-10",
-    "city": "Donji grad",
-    "temp_min_c": 12,
+    "city": "Zagreb",
+    "temp_min_c": 10.6,
     "temp_max_c": 22.5,
-    "humidity": 61,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.0
+    "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-05-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 13.1,
     "temp_max_c": 22.2,
     "humidity": 63,
