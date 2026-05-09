@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000swh0",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-09T14:22:52.509000Z",
+        "coordinates": [
+          -25.6886,
+          -58.024
+        ]
+      },
+      {
         "id": "us6000swg6",
         "title": "M5.0 Earthquake - 113 km SSE of Lorengau, Papua New Guinea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           78.5793,
           -35.269
         ]
-      },
-      {
-        "id": "us7000sidq",
-        "title": "M5.8 Earthquake - 127 km ENE of Pauanui, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-05-05T08:00:43.579000Z",
-        "coordinates": [
-          177.2617,
-          -36.7452
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.1,
-    "humidity": 52,
+    "city": "Donji grad",
+    "temp_c": 16.7,
+    "feels_c": 16.1,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 24.1
   },
   "forecast_today": {
     "date": "2026-05-09",
-    "city": "Donji grad",
-    "temp_min_c": 17.4,
-    "temp_max_c": 19.7,
-    "humidity": 58,
-    "condition": "Rain",
-    "description": "rain",
+    "city": "Zagreb",
+    "temp_min_c": 16.7,
+    "temp_max_c": 16.7,
+    "humidity": 63,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01n",
-    "wind_kmh": 6.2,
+    "wind_kmh": 14.5,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-10",
-    "city": "Donji grad",
-    "temp_min_c": 8.2,
+    "city": "Zagreb",
+    "temp_min_c": 11.0,
     "temp_max_c": 24.3,
-    "humidity": 63,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,13 +281,13 @@
   },
   "forecast_day_after": {
     "date": "2026-05-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 12.4,
     "temp_max_c": 22.0,
-    "humidity": 62,
-    "condition": "Rain",
+    "humidity": 60,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 16.1
+    "wind_kmh": 16.9
   }
 }
