@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000swg6",
+        "title": "M5.0 Earthquake - 113 km SSE of Lorengau, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-09T09:12:13.117000Z",
+        "coordinates": [
+          147.7678,
+          -2.9287
+        ]
+      },
+      {
         "id": "us6000swf4",
         "title": "M5.8 Earthquake - 292 km WSW of Adak, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           177.2617,
           -36.7452
         ]
-      },
-      {
-        "id": "us7000sicu",
-        "title": "M5.8 Earthquake - 76 km S of Tambolaka, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-05T06:44:51.479000Z",
-        "coordinates": [
-          119.3245,
-          -10.1135
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.2,
-    "humidity": 40,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
+    "temp_c": 24.8,
+    "feels_c": 24.3,
+    "humidity": 37,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-09",
     "city": "Zagreb",
     "temp_min_c": 13.0,
-    "temp_max_c": 23.7,
-    "humidity": 50,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 6.0,
+    "temp_max_c": 24.8,
+    "humidity": 48,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 6.8,
     "samples": 5
   },
   "forecast": {
