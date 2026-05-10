@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sws5",
+        "title": "M5.0 Earthquake - 74 km W of Yenangyaung, Burma (Myanmar)",
+        "category": "Earthquake",
+        "date": "2026-05-10T19:36:36.864000Z",
+        "coordinates": [
+          94.1576,
+          20.495
+        ]
+      },
+      {
         "id": "us6000swr8",
         "title": "M5.3 Earthquake - 101 km SSE of Hihifo, Tonga",
         "category": "Earthquake",
@@ -149,48 +159,119 @@
           154.2368,
           -5.7445
         ]
-      },
-      {
-        "id": "us6000svp9",
-        "title": "M5.5 Earthquake - 25 km ENE of Baganga, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-06T15:35:46.736000Z",
-        "coordinates": [
-          126.7818,
-          7.6333
-        ]
       }
     ]
   },
   "asteroids": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "asteroids": [
+      {
+        "name": "326290 Akhenaten (1998 HE3)",
+        "hazardous": true,
+        "diameter_m": 256,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 11003044,
+        "velocity_kmh": 38924
+      },
+      {
+        "name": "(2024 FT15)",
+        "hazardous": false,
+        "diameter_m": 152,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 32265447,
+        "velocity_kmh": 4980
+      },
+      {
+        "name": "(2015 EZ6)",
+        "hazardous": false,
+        "diameter_m": 11,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 34214467,
+        "velocity_kmh": 35183
+      },
+      {
+        "name": "(2016 JX24)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 57251094,
+        "velocity_kmh": 61420
+      },
+      {
+        "name": "(2017 WG15)",
+        "hazardous": false,
+        "diameter_m": 259,
+        "close_approach_date": "2026-05-10",
+        "miss_distance_km": 74755075,
+        "velocity_kmh": 52073
+      },
+      {
+        "name": "(2007 VV83)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-05-11",
+        "miss_distance_km": 17143472,
+        "velocity_kmh": 22839
+      },
+      {
+        "name": "(2018 DB2)",
+        "hazardous": false,
+        "diameter_m": 225,
+        "close_approach_date": "2026-05-11",
+        "miss_distance_km": 19435434,
+        "velocity_kmh": 19775
+      },
+      {
+        "name": "(2014 UN114)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-05-11",
+        "miss_distance_km": 38299000,
+        "velocity_kmh": 27242
+      },
+      {
+        "name": "(2017 KN27)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-05-11",
+        "miss_distance_km": 47581106,
+        "velocity_kmh": 50479
+      },
+      {
+        "name": "(2018 YO2)",
+        "hazardous": false,
+        "diameter_m": 7,
+        "close_approach_date": "2026-05-11",
+        "miss_distance_km": 71011205,
+        "velocity_kmh": 27800
+      }
+    ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_c": 18.7,
     "feels_c": 18.6,
-    "humidity": 76,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-05-10",
-    "city": "Zagreb",
-    "temp_min_c": 18.0,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.1,
     "temp_max_c": 18.7,
-    "humidity": 75,
-    "condition": "Clouds",
-    "description": "clouds",
+    "humidity": 76,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.0,
+    "wind_kmh": 9.8,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-11",
-    "city": "Zagreb",
-    "temp_min_c": 10.9,
+    "city": "City of Zagreb",
+    "temp_min_c": 13.3,
     "temp_max_c": 21.2,
     "humidity": 62,
     "condition": "Clouds",
@@ -200,13 +281,13 @@
   },
   "forecast_day_after": {
     "date": "2026-05-12",
-    "city": "Zagreb",
-    "temp_min_c": 5.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 5.1,
     "temp_max_c": 15.3,
-    "humidity": 84,
+    "humidity": 87,
     "condition": "Rain",
     "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 10.5
+    "wind_kmh": 10.8
   }
 }
