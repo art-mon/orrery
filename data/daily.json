@@ -1,15 +1,35 @@
 {
   "generated": "2026-05-10",
   "apod": {
-    "title": "Messier Craters in Stereo",
-    "date": "2026-05-09",
-    "explanation": "Many bright nebulae and star clusters in planet Earth's sky are associated with the name of astronomer Charles Messier from his famous 18th century catalog. His name is also given to these two large and remarkable craters on the Moon. Standouts in the dark, smooth lunar Sea of Fertility or Mare Fecunditatis, Messier (left) and Messier A have dimensions of 15 by 8 and 16 by 11 kilometers respectively. Their elongated shapes are explained by the extremely shallow-angle trajectory followed by an impactor, moving left to right, that gouged out the craters. The shallow impact also resulted in two bright rays of material extending along the surface to the right, beyond the picture. Intended to be viewed with red/blue glasses (red for the left eye), this striking stereo picture of the crater pair was recently created from high resolution scans of two images (AS11-42-6304, AS11-42-6305) taken during the Apollo 11 mission to the Moon.",
+    "title": "Comet R3 PanSTARRS and Orion",
+    "date": "2026-05-10",
+    "explanation": "Orion never had a sword like this. As Comet C/2025 R3 (PanSTARRS) heads out of the inner Solar System, it is putting on quite a show for long exposure cameras.  Currently seen toward the constellation of Orion the Hunter, the distant Orion Nebula is visible on the upper right. Comet R3 PanSTARRS is now showing two distinct tails: a short dust tail pointing toward the top of the image and a long and wavy ion tail trailing off toward the upper left.  The ion tail points away from the Sun and glows blue from excited carbon monoxide.  Large particles in the dust tail somewhat resist the radiation pressure that push them away from the Sun and so retain a bit of the comet's orbit.  The dust tail shines by reflected sunlight. The featured image was taken a few days ago from France's Reunion Island in the southern Indian Ocean.   Growing Gallery: Comet R3 PanSTARRS in 2026",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/MessierCrater3d_vantuyne1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/MessierCrater3d_vantuyne.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/CometOrion_Perrot_960_annotated.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/CometOrion_Perrot_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000swk8",
+        "title": "M5.0 Earthquake - 174 km SSW of Tual, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-10T02:42:23.775000Z",
+        "coordinates": [
+          132.0136,
+          -7.0242
+        ]
+      },
+      {
+        "id": "us6000swk0",
+        "title": "M5.5 Earthquake - 27 km ENE of Ca\u00f1ete, Chile",
+        "category": "Earthquake",
+        "date": "2026-05-10T02:34:07.249000Z",
+        "coordinates": [
+          -73.1062,
+          -37.7219
+        ]
+      },
       {
         "id": "us6000swhy",
         "title": "M5.3 Earthquake - south of the Fiji Islands",
@@ -139,26 +159,6 @@
           -177.9339,
           -32.1671
         ]
-      },
-      {
-        "id": "us6000svm3",
-        "title": "M5.2 Earthquake - 134 km WNW of Panguna, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-06T09:43:13.683000Z",
-        "coordinates": [
-          154.4199,
-          -5.7284
-        ]
-      },
-      {
-        "id": "us6000svc4",
-        "title": "M5.1 Earthquake - 14 km N of Zorritos, Peru",
-        "category": "Earthquake",
-        "date": "2026-05-05T15:58:27.033000Z",
-        "coordinates": [
-          -80.6705,
-          -3.547
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 8.7,
-    "humidity": 100,
+    "temp_c": 16.5,
+    "feels_c": 16.1,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-10",
-    "city": "Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 21.8,
-    "humidity": 71,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.1,
+    "temp_max_c": 21.4,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 6.4,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 8.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-11",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.5,
     "temp_max_c": 21.7,
     "humidity": 64,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-12",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 4.5,
     "temp_max_c": 14.3,
     "humidity": 88,
