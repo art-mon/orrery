@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000swr6",
+        "title": "M5.2 Earthquake - 27 km WSW of Madang, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-10T16:34:33.326000Z",
+        "coordinates": [
+          145.5539,
+          -5.3168
+        ]
+      },
+      {
         "id": "us6000swk8",
         "title": "M5.0 Earthquake - 174 km SSW of Tual, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           176.518,
           52.2595
         ]
-      },
-      {
-        "id": "us6000svmz",
-        "title": "M5.6 Earthquake - south of the Kermadec Islands",
-        "category": "Earthquake",
-        "date": "2026-05-06T11:46:48.851000Z",
-        "coordinates": [
-          -177.9339,
-          -32.1671
-        ]
       }
     ]
   },
@@ -166,25 +166,25 @@
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.3,
-    "humidity": 41,
+    "city": "Donji grad",
+    "temp_c": 23.7,
+    "feels_c": 23.2,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-10",
     "city": "Zagreb",
-    "temp_min_c": 19.0,
-    "temp_max_c": 24.7,
-    "humidity": 51,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 21.3,
+    "temp_max_c": 23.7,
+    "humidity": 46,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01d",
-    "wind_kmh": 6.8,
+    "wind_kmh": 8.6,
     "samples": 3
   },
   "forecast": {
@@ -192,7 +192,7 @@
     "city": "Zagreb",
     "temp_min_c": 10.3,
     "temp_max_c": 22.0,
-    "humidity": 63,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
