@@ -166,25 +166,25 @@
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.3,
-    "humidity": 53,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "city": "Donji grad",
+    "temp_c": 23.7,
+    "feels_c": 23.4,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-10",
     "city": "Zagreb",
     "temp_min_c": 16.5,
-    "temp_max_c": 22.6,
-    "humidity": 55,
+    "temp_max_c": 23.7,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 8.3,
+    "icon": "02d",
+    "wind_kmh": 9.1,
     "samples": 5
   },
   "forecast": {
