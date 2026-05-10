@@ -163,130 +163,49 @@
     ]
   },
   "asteroids": {
-    "asteroids": [
-      {
-        "name": "326290 Akhenaten (1998 HE3)",
-        "hazardous": true,
-        "diameter_m": 256,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 11003044,
-        "velocity_kmh": 38924
-      },
-      {
-        "name": "(2024 FT15)",
-        "hazardous": false,
-        "diameter_m": 152,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 32265447,
-        "velocity_kmh": 4980
-      },
-      {
-        "name": "(2015 EZ6)",
-        "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 34214467,
-        "velocity_kmh": 35183
-      },
-      {
-        "name": "(2016 JX24)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 57251094,
-        "velocity_kmh": 61420
-      },
-      {
-        "name": "(2017 WG15)",
-        "hazardous": false,
-        "diameter_m": 259,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 74755075,
-        "velocity_kmh": 52073
-      },
-      {
-        "name": "(2007 VV83)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-05-11",
-        "miss_distance_km": 17143472,
-        "velocity_kmh": 22839
-      },
-      {
-        "name": "(2018 DB2)",
-        "hazardous": false,
-        "diameter_m": 225,
-        "close_approach_date": "2026-05-11",
-        "miss_distance_km": 19435434,
-        "velocity_kmh": 19775
-      },
-      {
-        "name": "(2014 UN114)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-05-11",
-        "miss_distance_km": 38299000,
-        "velocity_kmh": 27242
-      },
-      {
-        "name": "(2017 KN27)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-05-11",
-        "miss_distance_km": 47581106,
-        "velocity_kmh": 50479
-      },
-      {
-        "name": "(2018 YO2)",
-        "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-05-11",
-        "miss_distance_km": 71011205,
-        "velocity_kmh": 27800
-      }
-    ]
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.1,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.5
+    "city": "City of Zagreb",
+    "temp_c": 19.8,
+    "feels_c": 19.4,
+    "humidity": 59,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.1,
-    "temp_max_c": 21.4,
-    "humidity": 59,
+    "city": "Zagreb",
+    "temp_min_c": 16.5,
+    "temp_max_c": 20.4,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 8.0,
+    "icon": "02d",
+    "wind_kmh": 7.8,
     "samples": 6
   },
   "forecast": {
     "date": "2026-05-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.5,
-    "temp_max_c": 21.7,
-    "humidity": 64,
-    "condition": "Rain",
+    "city": "Zagreb",
+    "temp_min_c": 11.8,
+    "temp_max_c": 21.8,
+    "humidity": 60,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 16.1
+    "wind_kmh": 16.8
   },
   "forecast_day_after": {
     "date": "2026-05-12",
-    "city": "City of Zagreb",
-    "temp_min_c": 4.5,
-    "temp_max_c": 14.3,
-    "humidity": 88,
+    "city": "Zagreb",
+    "temp_min_c": 5.1,
+    "temp_max_c": 12.4,
+    "humidity": 86,
     "condition": "Rain",
-    "description": "heavy intensity rain",
+    "description": "moderate rain",
     "icon": "10d",
     "wind_kmh": 11.9
   }
