@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-11",
+  "generated": "2026-05-12",
   "apod": {
     "title": "Moon Setting Behind Teide Volcano",
     "date": "2026-05-11",
@@ -248,40 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.4,
-    "feels_c": 15.2,
-    "humidity": 84,
-    "condition": "Thunderstorm",
-    "description": "thunderstorm with light rain",
-    "icon": "11n",
+    "temp_c": 14.2,
+    "feels_c": 14.0,
+    "humidity": 86,
+    "condition": "Rain",
+    "description": "heavy intensity rain",
+    "icon": "10n",
     "wind_kmh": 13.0
   },
   "forecast_today": {
-    "date": "2026-05-11",
-    "city": "Zagreb",
-    "temp_min_c": 15.4,
-    "temp_max_c": 15.4,
-    "humidity": 84,
-    "condition": "Thunderstorm",
-    "description": "thunderstorm",
-    "icon": "11n",
-    "wind_kmh": 13.3,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-05-12",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 4.9,
-    "temp_max_c": 15.3,
+    "temp_max_c": 14.7,
     "humidity": 90,
     "condition": "Rain",
-    "description": "heavy intensity rain",
-    "icon": "10d",
-    "wind_kmh": 10.8
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 11.1,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-13",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 3.2,
     "temp_max_c": 15.8,
     "humidity": 64,
@@ -289,5 +278,16 @@
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 5.2
+  },
+  "forecast_day_after": {
+    "date": "2026-05-14",
+    "city": "City of Zagreb",
+    "temp_min_c": 6.1,
+    "temp_max_c": 16.0,
+    "humidity": 77,
+    "condition": "Rain",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9
   }
 }
