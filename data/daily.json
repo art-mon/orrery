@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000swvm",
+        "title": "M5.2 Earthquake - 72 km NW of Malango, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-11T09:48:51.604000Z",
+        "coordinates": [
+          159.1915,
+          -9.2967
+        ]
+      },
+      {
         "id": "us6000swtz",
         "title": "M5.0 Earthquake - 60 km ESE of Isen, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           147.7321,
           -2.9127
         ]
-      },
-      {
-        "id": "us6000sw5q",
-        "title": "M5.9 Earthquake - southeast Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-08T07:17:43.055000Z",
-        "coordinates": [
-          91.7023,
-          -43.412
-        ]
       }
     ]
   },
@@ -247,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.4,
-    "feels_c": 19.1,
-    "humidity": 66,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 20.4
+    "city": "City of Zagreb",
+    "temp_c": 17.7,
+    "feels_c": 17.5,
+    "humidity": 77,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-05-11",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.6,
-    "temp_max_c": 19.4,
-    "humidity": 62,
+    "temp_max_c": 18.4,
+    "humidity": 70,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 19.3,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 21.6,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-12",
-    "city": "Zagreb",
-    "temp_min_c": 4.6,
-    "temp_max_c": 14.9,
-    "humidity": 87,
+    "city": "City of Zagreb",
+    "temp_min_c": 5.2,
+    "temp_max_c": 14.0,
+    "humidity": 86,
     "condition": "Rain",
     "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 11.4
+    "wind_kmh": 11.7
   },
   "forecast_day_after": {
     "date": "2026-05-13",
-    "city": "Zagreb",
-    "temp_min_c": 3.4,
-    "temp_max_c": 15.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 3.0,
+    "temp_max_c": 15.2,
     "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.5
+    "wind_kmh": 4.6
   }
 }
