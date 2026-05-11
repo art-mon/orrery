@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000swtz",
+        "title": "M5.0 Earthquake - 60 km ESE of Isen, Japan",
+        "category": "Earthquake",
+        "date": "2026-05-11T01:41:17.815000Z",
+        "coordinates": [
+          129.4593,
+          27.3989
+        ]
+      },
+      {
+        "id": "us6000swte",
+        "title": "M5.0 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-05-10T23:20:53.931000Z",
+        "coordinates": [
+          -179.8403,
+          -23.4524
+        ]
+      },
+      {
         "id": "us6000swtd",
         "title": "M5.1 Earthquake - south of the Fiji Islands",
         "category": "Earthquake",
@@ -139,71 +159,11 @@
           91.7023,
           -43.412
         ]
-      },
-      {
-        "id": "us6000svwn",
-        "title": "M5.1 Earthquake - 281 km E of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-05-07T11:48:41.636000Z",
-        "coordinates": [
-          -178.0277,
-          -17.9613
-        ]
-      },
-      {
-        "id": "us6000svw1",
-        "title": "M5.3 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-07T08:53:28.180000Z",
-        "coordinates": [
-          -176.6255,
-          -27.3997
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "326290 Akhenaten (1998 HE3)",
-        "hazardous": true,
-        "diameter_m": 256,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 11003044,
-        "velocity_kmh": 38924
-      },
-      {
-        "name": "(2024 FT15)",
-        "hazardous": false,
-        "diameter_m": 152,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 32265447,
-        "velocity_kmh": 4980
-      },
-      {
-        "name": "(2015 EZ6)",
-        "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 34214467,
-        "velocity_kmh": 35183
-      },
-      {
-        "name": "(2016 JX24)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 57251094,
-        "velocity_kmh": 61420
-      },
-      {
-        "name": "(2017 WG15)",
-        "hazardous": false,
-        "diameter_m": 259,
-        "close_approach_date": "2026-05-10",
-        "miss_distance_km": 74755075,
-        "velocity_kmh": 52073
-      },
       {
         "name": "(2007 VV83)",
         "hazardous": false,
@@ -243,51 +203,91 @@
         "close_approach_date": "2026-05-11",
         "miss_distance_km": 71011205,
         "velocity_kmh": 27800
+      },
+      {
+        "name": "318411 (2005 AH14)",
+        "hazardous": false,
+        "diameter_m": 2260,
+        "close_approach_date": "2026-05-12",
+        "miss_distance_km": 14065559,
+        "velocity_kmh": 47205
+      },
+      {
+        "name": "(2018 VB10)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-05-12",
+        "miss_distance_km": 19716420,
+        "velocity_kmh": 26340
+      },
+      {
+        "name": "(2010 JR34)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-05-12",
+        "miss_distance_km": 21531521,
+        "velocity_kmh": 31261
+      },
+      {
+        "name": "(2010 KC)",
+        "hazardous": false,
+        "diameter_m": 87,
+        "close_approach_date": "2026-05-12",
+        "miss_distance_km": 62234661,
+        "velocity_kmh": 109324
+      },
+      {
+        "name": "(2010 GZ33)",
+        "hazardous": false,
+        "diameter_m": 197,
+        "close_approach_date": "2026-05-12",
+        "miss_distance_km": 70809537,
+        "velocity_kmh": 60612
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 15.7,
-    "feels_c": 15.3,
-    "humidity": 77,
+    "city": "City of Zagreb",
+    "temp_c": 13.8,
+    "feels_c": 13.5,
+    "humidity": 88,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 11.1
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-11",
     "city": "Zagreb",
-    "temp_min_c": 14.3,
-    "temp_max_c": 21.2,
-    "humidity": 65,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 13.8,
+    "temp_max_c": 19.7,
+    "humidity": 70,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01n",
-    "wind_kmh": 16.0,
-    "samples": 9
+    "wind_kmh": 16.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-12",
     "city": "Zagreb",
-    "temp_min_c": 5.1,
-    "temp_max_c": 15.3,
+    "temp_min_c": 5.0,
+    "temp_max_c": 15.7,
     "humidity": 87,
     "condition": "Rain",
     "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 10.8
+    "wind_kmh": 11.4
   },
   "forecast_day_after": {
     "date": "2026-05-13",
     "city": "Zagreb",
-    "temp_min_c": 3.1,
-    "temp_max_c": 15.0,
+    "temp_min_c": 4,
+    "temp_max_c": 16.0,
     "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.9
+    "wind_kmh": 3.4
   }
 }
