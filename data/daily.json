@@ -9,158 +9,7 @@
     "hdurl": null
   },
   "events": {
-    "events": [
-      {
-        "id": "us6000swvm",
-        "title": "M5.2 Earthquake - 72 km NW of Malango, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-05-11T09:48:51.604000Z",
-        "coordinates": [
-          159.1915,
-          -9.2967
-        ]
-      },
-      {
-        "id": "us6000swtz",
-        "title": "M5.0 Earthquake - 60 km ESE of Isen, Japan",
-        "category": "Earthquake",
-        "date": "2026-05-11T01:41:17.815000Z",
-        "coordinates": [
-          129.4593,
-          27.3989
-        ]
-      },
-      {
-        "id": "us6000swte",
-        "title": "M5.0 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-10T23:20:55.111000Z",
-        "coordinates": [
-          -179.8206,
-          -23.4697
-        ]
-      },
-      {
-        "id": "us6000swtd",
-        "title": "M5.1 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-10T23:15:43.825000Z",
-        "coordinates": [
-          -179.9969,
-          -23.3618
-        ]
-      },
-      {
-        "id": "us6000sws5",
-        "title": "M5.0 Earthquake - 74 km W of Yenangyaung, Burma (Myanmar)",
-        "category": "Earthquake",
-        "date": "2026-05-10T19:36:36.864000Z",
-        "coordinates": [
-          94.1576,
-          20.495
-        ]
-      },
-      {
-        "id": "us6000swr8",
-        "title": "M5.3 Earthquake - 101 km SSE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-10T16:41:43.464000Z",
-        "coordinates": [
-          -173.4234,
-          -16.8014
-        ]
-      },
-      {
-        "id": "us6000swr6",
-        "title": "M5.2 Earthquake - 27 km WSW of Madang, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-10T16:34:33.326000Z",
-        "coordinates": [
-          145.5539,
-          -5.3168
-        ]
-      },
-      {
-        "id": "us6000swk8",
-        "title": "M5.0 Earthquake - 174 km SSW of Tual, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-10T02:42:23.775000Z",
-        "coordinates": [
-          132.0136,
-          -7.0242
-        ]
-      },
-      {
-        "id": "us6000swk0",
-        "title": "M5.5 Earthquake - 27 km ENE of Ca\u00f1ete, Chile",
-        "category": "Earthquake",
-        "date": "2026-05-10T02:34:07.249000Z",
-        "coordinates": [
-          -73.1062,
-          -37.7219
-        ]
-      },
-      {
-        "id": "us6000swhy",
-        "title": "M5.3 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-09T20:39:49.843000Z",
-        "coordinates": [
-          -176.7692,
-          -26.8393
-        ]
-      },
-      {
-        "id": "us6000swh0",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-09T14:22:52.509000Z",
-        "coordinates": [
-          -25.6886,
-          -58.024
-        ]
-      },
-      {
-        "id": "us6000swg6",
-        "title": "M5.0 Earthquake - 113 km SSE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-09T09:12:13.117000Z",
-        "coordinates": [
-          147.7678,
-          -2.9287
-        ]
-      },
-      {
-        "id": "us6000swf4",
-        "title": "M5.8 Earthquake - 292 km WSW of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-09T04:42:23.298000Z",
-        "coordinates": [
-          179.349,
-          51.0818
-        ]
-      },
-      {
-        "id": "aka2026jcufoy",
-        "title": "M6.1 Earthquake - Rat Islands, Aleutian Islands, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-09T04:42:21.975000Z",
-        "coordinates": [
-          179.214,
-          50.981
-        ]
-      },
-      {
-        "id": "us6000sw6y",
-        "title": "M5.6 Earthquake - 109 km SSE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-08T12:22:31.861000Z",
-        "coordinates": [
-          147.7321,
-          -2.9127
-        ]
-      }
-    ]
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
@@ -247,33 +96,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.4,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 20.4
+    "city": "Zagreb",
+    "temp_c": 20.4,
+    "feels_c": 20.1,
+    "humidity": 63,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 29.6
   },
   "forecast_today": {
     "date": "2026-05-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 22.6,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 20.2,
-    "samples": 4
+    "city": "Zagreb",
+    "temp_min_c": 19.1,
+    "temp_max_c": 20.4,
+    "humidity": 63,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10d",
+    "wind_kmh": 22.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 5.2,
-    "temp_max_c": 15.2,
-    "humidity": 91,
+    "temp_max_c": 16.9,
+    "humidity": 90,
     "condition": "Rain",
     "description": "heavy intensity rain",
     "icon": "10d",
@@ -281,7 +130,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-13",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 3.1,
     "temp_max_c": 15.5,
     "humidity": 67,
