@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000sx3v",
+        "title": "M5.0 Earthquake - 224 km SE of Pondaguitan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-12T08:53:56.666000Z",
+        "coordinates": [
+          127.5121,
+          4.8333
+        ]
+      },
+      {
+        "id": "us6000sx3h",
+        "title": "M5.1 Earthquake - 79 km S of Hualien City, Taiwan",
+        "category": "Earthquake",
+        "date": "2026-05-12T06:53:32.598000Z",
+        "coordinates": [
+          121.4893,
+          23.2629
+        ]
+      },
+      {
         "id": "us6000sx2s",
         "title": "M5.0 Earthquake - 81 km WNW of Kirakira, Solomon Islands",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           147.7678,
           -2.9287
         ]
-      },
-      {
-        "id": "us6000swf4",
-        "title": "M5.8 Earthquake - 292 km WSW of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-09T04:42:23.298000Z",
-        "coordinates": [
-          179.349,
-          51.0818
-        ]
-      },
-      {
-        "id": "aka2026jcufoy",
-        "title": "M6.1 Earthquake - Rat Islands, Aleutian Islands, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-09T04:42:21.975000Z",
-        "coordinates": [
-          179.214,
-          50.981
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.4,
-    "feels_c": 14.1,
-    "humidity": 85,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.5
+    "temp_c": 18.7,
+    "feels_c": 18.4,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-05-12",
-    "city": "City of Zagreb",
-    "temp_min_c": 5.0,
-    "temp_max_c": 14.7,
-    "humidity": 89,
+    "city": "Zagreb",
+    "temp_min_c": 6.9,
+    "temp_max_c": 18.7,
+    "humidity": 80,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 12.9,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 14.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 3.5,
-    "temp_max_c": 16.2,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 3.4,
+    "temp_max_c": 15.8,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.8
+    "wind_kmh": 5.2
   },
   "forecast_day_after": {
     "date": "2026-05-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.6,
-    "temp_max_c": 17.4,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_min_c": 6.8,
+    "temp_max_c": 17.1,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.2
+    "wind_kmh": 5.3
   }
 }
