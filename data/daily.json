@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-12",
   "apod": {
-    "title": "Moon Setting Behind Teide Volcano",
-    "date": "2026-05-11",
-    "explanation": "These people are not in danger. What is coming down from the left is just the Moon, far in the distance. Luna appears so large here because she is being photographed through a telescopic lens.  What is moving is mostly the Earth, whose spin causes the Moon to slowly disappear behind Mount Teide, a volcano in the Canary Islands of Spain  off the northwest coast of Africa. The people pictured are 16 kilometers away and  many are facing the camera because they are watching the Sun rise behind the photographer. It is not a coincidence that a full moon sets just when the Sun rises because the Sun is always on the opposite side of the sky from a full moon. The featured video was made in 2018 during a full Milk Moon.  The video is not time-lapse -- this was really how fast the Moon was setting.",
-    "media_type": "video",
-    "url": "https://www.youtube.com/embed/afHfMMC-MJE?rel=0",
-    "hdurl": null
+    "title": "The Conjunction of Comet R3 PanSTARRS and the Orion Nebula",
+    "date": "2026-05-12",
+    "explanation": "Today\u2019s composite image features something old, something new, something borrowed, and something blue! Comet R3 PanSTARRS, streaking across the right of the image, likely originated from the Oort Cloud, meaning it is an old Solar System relic from billions of years ago. It\u2019s bright extended ion tail glows blue  as the gas escaping the comet\u2019s core is ionized by sunlight. Astronomers are fascinated by comets for all sorts of reasons: comet compositions are untouched time capsules containing the building blocks of Solar System planets; comets may have delivered water to the young Earth; the behavior of cometary tails shed light on solar wind and radiation interactions. The background mosaic, featuring the Orion Nebula (M42), was taken over two nights of observation with the comet captured on the third night. The Orion Nebula is our nearest stellar nursery and, at about 2 million years old, is our something (relatively) new! Now at around 127.5 million kilometers from Earth, we wave goodbye to the borrowed Comet R3 PanSTARRS as it leaves the Solar System.   Growing Gallery: Comet R3 in 2026",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/CometR3_Orion.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/CometR3_Orion.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000sx2s",
+        "title": "M5.0 Earthquake - 81 km WNW of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-12T03:45:42.646000Z",
+        "coordinates": [
+          161.21,
+          -10.2288
+        ]
+      },
       {
         "id": "us6000swvm",
         "title": "M5.2 Earthquake - 72 km NW of Malango, Solomon Islands",
@@ -149,16 +159,6 @@
           179.214,
           50.981
         ]
-      },
-      {
-        "id": "us6000sw6y",
-        "title": "M5.6 Earthquake - 109 km SSE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-08T12:22:31.861000Z",
-        "coordinates": [
-          147.7321,
-          -2.9127
-        ]
       }
     ]
   },
@@ -248,46 +248,46 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 12.2,
-    "humidity": 89,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10n",
-    "wind_kmh": 9.3
+    "temp_c": 14.4,
+    "feels_c": 14.1,
+    "humidity": 85,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-12",
     "city": "City of Zagreb",
-    "temp_min_c": 4.2,
-    "temp_max_c": 14.5,
-    "humidity": 91,
+    "temp_min_c": 5.0,
+    "temp_max_c": 14.7,
+    "humidity": 89,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 11.4,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 12.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-13",
     "city": "City of Zagreb",
-    "temp_min_c": 2.9,
-    "temp_max_c": 15.6,
-    "humidity": 65,
+    "temp_min_c": 3.5,
+    "temp_max_c": 16.2,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.8
   },
   "forecast_day_after": {
     "date": "2026-05-14",
     "city": "City of Zagreb",
-    "temp_min_c": 6.0,
-    "temp_max_c": 16.9,
+    "temp_min_c": 6.6,
+    "temp_max_c": 17.4,
     "humidity": 74,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.1
+    "wind_kmh": 5.2
   }
 }
