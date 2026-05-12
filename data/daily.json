@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-12",
+  "generated": "2026-05-13",
   "apod": {
     "title": "The Conjunction of Comet R3 PanSTARRS and the Orion Nebula",
     "date": "2026-05-12",
@@ -10,6 +10,26 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us6000sxaj",
+        "title": "M5.1 Earthquake - 62 km E of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-12T21:53:48.536000Z",
+        "coordinates": [
+          -174.3689,
+          -21.2349
+        ]
+      },
+      {
+        "id": "us6000sx9x",
+        "title": "M5.7 Earthquake - 275 km SW of Houma, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-12T21:19:36.870000Z",
+        "coordinates": [
+          -176.8485,
+          -23.2041
+        ]
+      },
       {
         "id": "us6000sx5k",
         "title": "M5.6 Earthquake - 96 km W of Lata, Solomon Islands",
@@ -139,26 +159,6 @@
           -73.1062,
           -37.7219
         ]
-      },
-      {
-        "id": "us6000swhy",
-        "title": "M5.3 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-09T20:39:49.843000Z",
-        "coordinates": [
-          -176.7692,
-          -26.8393
-        ]
-      },
-      {
-        "id": "us6000swh0",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-09T14:22:52.509000Z",
-        "coordinates": [
-          -25.6886,
-          -58.024
-        ]
       }
     ]
   },
@@ -248,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 5.9,
-    "feels_c": 3.5,
-    "humidity": 89,
+    "temp_c": 5.4,
+    "feels_c": 3.3,
+    "humidity": 90,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 11.1
+    "wind_kmh": 9.3
   },
   "forecast_today": {
-    "date": "2026-05-12",
-    "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 5.9,
-    "humidity": 89,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 11.1,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-05-13",
     "city": "Zagreb",
-    "temp_min_c": 4.5,
+    "temp_min_c": 4.9,
     "temp_max_c": 16.2,
-    "humidity": 64,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.8
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 5.3,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-14",
     "city": "Zagreb",
     "temp_min_c": 7.2,
@@ -289,5 +278,16 @@
     "description": "broken clouds",
     "icon": "04d",
     "wind_kmh": 5.3
+  },
+  "forecast_day_after": {
+    "date": "2026-05-15",
+    "city": "Zagreb",
+    "temp_min_c": 9.9,
+    "temp_max_c": 19.3,
+    "humidity": 70,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 11.0
   }
 }
