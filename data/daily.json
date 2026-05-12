@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sx5k",
+        "title": "M5.6 Earthquake - 96 km W of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-12T15:39:30.763000Z",
+        "coordinates": [
+          164.9205,
+          -10.6279
+        ]
+      },
+      {
         "id": "us6000sx3v",
         "title": "M5.0 Earthquake - 224 km SE of Pondaguitan, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -25.6886,
           -58.024
         ]
-      },
-      {
-        "id": "us6000swg6",
-        "title": "M5.0 Earthquake - 113 km SSE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-09T09:12:13.117000Z",
-        "coordinates": [
-          147.7678,
-          -2.9287
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 5.9,
-    "feels_c": 3.5,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 11.1
+    "temp_c": 7.6,
+    "feels_c": 5.3,
+    "humidity": 88,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-12",
-    "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 6.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 7.3,
+    "temp_max_c": 7.6,
     "humidity": 89,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 9.9,
-    "samples": 4
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 9.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-13",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 3.8,
     "temp_max_c": 15.8,
     "humidity": 64,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-14",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 7.3,
     "temp_max_c": 18.9,
     "humidity": 72,
