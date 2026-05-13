@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sxk1",
+        "title": "M5.3 Earthquake - 65 km N of Namuac, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-13T22:01:06.994000Z",
+        "coordinates": [
+          121.2697,
+          19.1928
+        ]
+      },
+      {
         "id": "us6000sxdf",
         "title": "M5.1 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           94.1576,
           20.495
         ]
-      },
-      {
-        "id": "us6000swr8",
-        "title": "M5.3 Earthquake - 101 km SSE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-10T16:41:43.464000Z",
-        "coordinates": [
-          -173.4234,
-          -16.8014
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.8,
-    "feels_c": 9.4,
-    "humidity": 68,
+    "temp_c": 5.7,
+    "feels_c": 4.7,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -259,9 +259,9 @@
   "forecast_today": {
     "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_min_c": 7.9,
+    "temp_min_c": 5.7,
     "temp_max_c": 17.9,
-    "humidity": 67,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
