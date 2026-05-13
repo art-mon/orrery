@@ -1,0 +1,3 @@
+dependencies:
+  idf: ">=5.1"
+  mrfaptastic/esp32-hub75-matrixpanel-i2s-dma: "^3.0.11"
