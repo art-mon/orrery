@@ -1,23 +1,33 @@
 {
   "generated": "2026-05-13",
   "apod": {
-    "title": "The Conjunction of Comet R3 PanSTARRS and the Orion Nebula",
-    "date": "2026-05-12",
-    "explanation": "Today\u2019s composite image features something old, something new, something borrowed, and something blue! Comet R3 PanSTARRS, streaking across the right of the image, likely originated from the Oort Cloud, meaning it is an old Solar System relic from billions of years ago. It\u2019s bright extended ion tail glows blue  as the gas escaping the comet\u2019s core is ionized by sunlight. Astronomers are fascinated by comets for all sorts of reasons: comet compositions are untouched time capsules containing the building blocks of Solar System planets; comets may have delivered water to the young Earth; the behavior of cometary tails shed light on solar wind and radiation interactions. The background mosaic, featuring the Orion Nebula (M42), was taken over two nights of observation with the comet captured on the third night. The Orion Nebula is our nearest stellar nursery and, at about 2 million years old, is our something (relatively) new! Now at around 127.5 million kilometers from Earth, we wave goodbye to the borrowed Comet R3 PanSTARRS as it leaves the Solar System.   Growing Gallery: Comet R3 in 2026",
+    "title": "NGC 188: Old Cluster in the New General Catalog",
+    "date": "2026-05-13",
+    "explanation": "The New General Catalog of star clusters and nebulae really isn't so new. In fact, it was published in 1888 - an effort by J. L. E. Dreyer to consolidate the work of astronomers William, Caroline, and John Herschel along with others into a useful single, complete catalog of astronomical discoveries and measurements. Dreyer's work was largely successful and is still important today, as this famous catalog continues to lend its \"NGC\" to bright clusters, galaxies, and nebulae. Take for example the star cluster known as NGC 188 (item number 188 in the NGC compilation). It lies about 6,000 light-years distant in the northern constellation Cepheus and represents a galactic or open star cluster. With an age of about 7 billion years, NGC 188 is old for an open cluster. Its old, evolved red giant stars have yellowish hues in this colorful, deep sky view. NGC 188 also enjoys the designation Caldwell 1 in a modern compilation of deep sky objects. Located well above the plane of the Milky Way and seen in the direction of planet Earth's north celestial pole, the ancient stellar group is known to some as the Polarissima Cluster.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/CometR3_Orion.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/CometR3_Orion.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/Polarissima1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/Polarissima.jpg"
   },
   "events": {
     "events": [
       {
-        "id": "us6000sxaj",
-        "title": "M5.1 Earthquake - 62 km E of \u2018Ohonua, Tonga",
+        "id": "us6000sxc0",
+        "title": "M5.1 Earthquake - Izu Islands, Japan region",
         "category": "Earthquake",
-        "date": "2026-05-12T21:53:48.536000Z",
+        "date": "2026-05-13T03:08:33.276000Z",
         "coordinates": [
-          -174.3689,
-          -21.2349
+          138.4279,
+          30.3722
+        ]
+      },
+      {
+        "id": "us6000sxaj",
+        "title": "M5.1 Earthquake - 55 km ENE of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-12T21:53:44.573000Z",
+        "coordinates": [
+          -174.4653,
+          -21.1489
         ]
       },
       {
@@ -149,16 +159,6 @@
           132.0136,
           -7.0242
         ]
-      },
-      {
-        "id": "us6000swk0",
-        "title": "M5.5 Earthquake - 27 km ENE of Ca\u00f1ete, Chile",
-        "category": "Earthquake",
-        "date": "2026-05-10T02:34:07.249000Z",
-        "coordinates": [
-          -73.1062,
-          -37.7219
-        ]
       }
     ]
   },
@@ -247,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 4.8,
-    "feels_c": 2.6,
-    "humidity": 90,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
+    "city": "Donji grad",
+    "temp_c": 3.1,
+    "feels_c": 1.1,
+    "humidity": 92,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-13",
     "city": "Zagreb",
-    "temp_min_c": 4.5,
-    "temp_max_c": 16.2,
-    "humidity": 64,
+    "temp_min_c": 3.1,
+    "temp_max_c": 15.9,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 5.2,
-    "samples": 8
+    "icon": "50d",
+    "wind_kmh": 4.9,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 17.4,
-    "humidity": 66,
+    "temp_min_c": 5.9,
+    "temp_max_c": 15.6,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.3
+    "wind_kmh": 3.7
   },
   "forecast_day_after": {
     "date": "2026-05-15",
     "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 19.3,
-    "humidity": 70,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 11.0
+    "temp_min_c": 9.7,
+    "temp_max_c": 18.1,
+    "humidity": 79,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.7
   }
 }
