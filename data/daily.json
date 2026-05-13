@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-13",
+  "generated": "2026-05-14",
   "apod": {
     "title": "NGC 188: Old Cluster in the New General Catalog",
     "date": "2026-05-13",
@@ -248,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 6.7,
-    "feels_c": 6.7,
-    "humidity": 81,
+    "temp_c": 9.8,
+    "feels_c": 9.4,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-05-13",
+    "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 6.7,
-    "humidity": 81,
+    "temp_min_c": 7.9,
+    "temp_max_c": 17.9,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.3,
-    "samples": 2
+    "wind_kmh": 3.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-05-14",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 17.9,
-    "humidity": 69,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.1
-  },
-  "forecast_day_after": {
     "date": "2026-05-15",
     "city": "Zagreb",
     "temp_min_c": 8.9,
@@ -289,5 +278,16 @@
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 8.3
+  },
+  "forecast_day_after": {
+    "date": "2026-05-16",
+    "city": "Zagreb",
+    "temp_min_c": 7.5,
+    "temp_max_c": 11.4,
+    "humidity": 96,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.8
   }
 }
