@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sxd4",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-13T06:36:37.861000Z",
+        "coordinates": [
+          -28.3706,
+          -55.3734
+        ]
+      },
+      {
         "id": "us6000sxc0",
         "title": "M5.1 Earthquake - Izu Islands, Japan region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           145.5539,
           -5.3168
         ]
-      },
-      {
-        "id": "us6000swk8",
-        "title": "M5.0 Earthquake - 174 km SSW of Tual, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-10T02:42:23.775000Z",
-        "coordinates": [
-          132.0136,
-          -7.0242
-        ]
       }
     ]
   },
@@ -247,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 3.1,
-    "feels_c": 1.1,
-    "humidity": 92,
-    "condition": "Fog",
-    "description": "fog",
-    "icon": "50d",
+    "city": "Zagreb",
+    "temp_c": 4.7,
+    "feels_c": 3.0,
+    "humidity": 93,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
     "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-13",
     "city": "Zagreb",
-    "temp_min_c": 3.1,
-    "temp_max_c": 15.9,
-    "humidity": 68,
+    "temp_min_c": 4.7,
+    "temp_max_c": 13,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "50d",
-    "wind_kmh": 4.9,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 5.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 15.6,
-    "humidity": 72,
+    "temp_min_c": 5.7,
+    "temp_max_c": 17.3,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-05-15",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 18.1,
+    "temp_min_c": 10.1,
+    "temp_max_c": 17.5,
     "humidity": 79,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.7
+    "wind_kmh": 9.5
   }
 }
