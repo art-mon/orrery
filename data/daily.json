@@ -1,7 +1,12 @@
 {
   "generated": "2026-05-13",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NGC 188: Old Cluster in the New General Catalog",
+    "date": "2026-05-13",
+    "explanation": "The New General Catalog of star clusters and nebulae really isn't so new. In fact, it was published in 1888 - an effort by J. L. E. Dreyer to consolidate the work of astronomers William, Caroline, and John Herschel along with others into a useful single, complete catalog of astronomical discoveries and measurements. Dreyer's work was largely successful and is still important today, as this famous catalog continues to lend its \"NGC\" to bright clusters, galaxies, and nebulae. Take for example the star cluster known as NGC 188 (item number 188 in the NGC compilation). It lies about 6,000 light-years distant in the northern constellation Cepheus and represents a galactic or open star cluster. With an age of about 7 billion years, NGC 188 is old for an open cluster. Its old, evolved red giant stars have yellowish hues in this colorful, deep sky view. NGC 188 also enjoys the designation Caldwell 1 in a modern compilation of deep sky objects. Located well above the plane of the Milky Way and seen in the direction of planet Earth's north celestial pole, the ancient stellar group is known to some as the Polarissima Cluster.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/Polarissima1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/Polarissima.jpg"
   },
   "events": {
     "events": [
@@ -242,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 11.7,
-    "feels_c": 10.4,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_c": 6.7,
+    "feels_c": 6.7,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 11.7,
-    "humidity": 59,
+    "city": "Zagreb",
+    "temp_min_c": 6.7,
+    "temp_max_c": 6.7,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.1,
+    "wind_kmh": 3.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-14",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 6.7,
     "temp_max_c": 17.9,
-    "humidity": 63,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.2
+    "wind_kmh": 3.1
   },
   "forecast_day_after": {
     "date": "2026-05-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.6,
-    "temp_max_c": 18.3,
-    "humidity": 80,
+    "city": "Zagreb",
+    "temp_min_c": 8.9,
+    "temp_max_c": 16.3,
+    "humidity": 84,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 8.2
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 8.3
   }
 }
