@@ -3,6 +3,7 @@
 #include "daily.h"
 #include "clock.h"
 #include "scenes.h"
+#include "world.h"
 #include "wifi_creds.h"
 
 #include <string.h>
@@ -52,7 +53,7 @@ extern "C" void app_main(void) {
     ESP_LOGI(TAG, "orrery boot — milestone 4: scene rotation");
 
     panel_init();
-    panel_set_brightness(80);
+    panel_set_brightness(25);
     draw_status("BOOT", 200, 200, 200);
 
     draw_status("WIFI..", 255, 200, 0);
@@ -71,6 +72,10 @@ extern "C" void app_main(void) {
         draw_status("RETRY", 255, 80, 0);
         vTaskDelay(pdMS_TO_TICKS(2000));
     }
+
+    // World map data (mask + clouds) for the Earth Event scene
+    draw_status("MAP...", 80, 180, 255);
+    world_fetch();
 
     xTaskCreate(fetch_task, "fetch", 8192, NULL, 4, NULL);
 

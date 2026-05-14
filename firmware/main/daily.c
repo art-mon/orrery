@@ -89,10 +89,50 @@ bool daily_fetch(daily_data_t *out) {
         cJSON *t  = cJSON_GetObjectItemCaseSensitive(w, "temp_c");
         cJSON *fl = cJSON_GetObjectItemCaseSensitive(w, "feels_c");
         cJSON *h  = cJSON_GetObjectItemCaseSensitive(w, "humidity");
+        cJSON *wk = cJSON_GetObjectItemCaseSensitive(w, "wind_kmh");
         if (cJSON_IsNumber(t))  out->temp_c   = (float)t->valuedouble;
         if (cJSON_IsNumber(fl)) out->feels_c  = (float)fl->valuedouble;
         if (cJSON_IsNumber(h))  out->humidity = h->valueint;
+        if (cJSON_IsNumber(wk)) out->wind_kmh = (float)wk->valuedouble;
         out->has_weather = out->city[0] != '\0';
+    }
+
+    // Forecast columns: today, tomorrow, day-after
+    static const char *FC_KEYS[3] = { "forecast_today", "forecast", "forecast_day_after" };
+    for (int i = 0; i < 3; ++i) {
+        cJSON *f = cJSON_GetObjectItemCaseSensitive(root, FC_KEYS[i]);
+        if (!cJSON_IsObject(f) || cJSON_GetObjectItemCaseSensitive(f, "error")) continue;
+        copy_str(out->fc[i].condition, sizeof(out->fc[i].condition),
+                 cJSON_GetObjectItemCaseSensitive(f, "condition"));
+        cJSON *tmin = cJSON_GetObjectItemCaseSensitive(f, "temp_min_c");
+        cJSON *tmax = cJSON_GetObjectItemCaseSensitive(f, "temp_max_c");
+        if (cJSON_IsNumber(tmin)) out->fc[i].temp_min_c = (float)tmin->valuedouble;
+        if (cJSON_IsNumber(tmax)) out->fc[i].temp_max_c = (float)tmax->valuedouble;
+        out->fc[i].valid = out->fc[i].condition[0] != '\0';
+    }
+
+    // Events (EONET + USGS quakes) — array under "events.events"
+    cJSON *evroot = cJSON_GetObjectItemCaseSensitive(root, "events");
+    cJSON *evlist = cJSON_GetObjectItemCaseSensitive(evroot, "events");
+    if (cJSON_IsArray(evlist)) {
+        int n = cJSON_GetArraySize(evlist);
+        int kept = 0;
+        for (int i = 0; i < n && kept < 10; ++i) {
+            cJSON *e = cJSON_GetArrayItem(evlist, i);
+            cJSON *c = cJSON_GetObjectItemCaseSensitive(e, "coordinates");
+            if (!cJSON_IsArray(c) || cJSON_GetArraySize(c) < 2) continue;
+            cJSON *lon = cJSON_GetArrayItem(c, 0);
+            cJSON *lat = cJSON_GetArrayItem(c, 1);
+            if (!cJSON_IsNumber(lon) || !cJSON_IsNumber(lat)) continue;
+            out->events[kept].lon = (float)lon->valuedouble;
+            out->events[kept].lat = (float)lat->valuedouble;
+            copy_str(out->events[kept].title,    sizeof(out->events[kept].title),
+                     cJSON_GetObjectItemCaseSensitive(e, "title"));
+            copy_str(out->events[kept].category, sizeof(out->events[kept].category),
+                     cJSON_GetObjectItemCaseSensitive(e, "category"));
+            kept++;
+        }
+        out->event_count = kept;
     }
 
     // Asteroids — server sorts ascending by approach date then miss distance,

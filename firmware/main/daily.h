@@ -7,13 +7,33 @@ extern "C" {
 #endif
 
 typedef struct {
+    bool   valid;
+    char   condition[16];
+    float  temp_min_c;
+    float  temp_max_c;
+} daily_forecast_t;
+
+typedef struct {
     // Weather (current conditions)
     bool   has_weather;
     char   city[32];
     float  temp_c;
     float  feels_c;
     int    humidity;
+    float  wind_kmh;
     char   condition[16];
+
+    // 3-day forecast columns: 0=today, 1=tomorrow, 2=day-after
+    daily_forecast_t fc[3];
+
+    // Earth events (EONET + USGS quakes merged) — up to 10
+    int event_count;
+    struct {
+        char  title[48];
+        char  category[16];
+        float lon;
+        float lat;
+    } events[10];
 
     // Closest asteroid this week
     bool   has_asteroids;

@@ -12,6 +12,7 @@ void panel_init(void) {
     cfg.panel_height = PANEL_H;
     cfg.scan_wiring  = Hub75ScanWiring::STANDARD_TWO_SCAN;  // panel marked "16s" = 1:16 scan
     cfg.shift_driver = Hub75ShiftDriver::FM6126A;           // try FM6126A first; fall back to GENERIC
+    cfg.double_buffer = true;                               // tear-free animation
 
     cfg.pins.r1  = PIN_R1;
     cfg.pins.g1  = PIN_G1;
@@ -35,6 +36,10 @@ void panel_init(void) {
 
 void panel_clear(void) {
     if (s_panel) s_panel->clear();
+}
+
+void panel_flip(void) {
+    if (s_panel) s_panel->flip_buffer();
 }
 
 void panel_set_brightness(uint8_t b) {

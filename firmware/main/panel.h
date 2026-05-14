@@ -11,6 +11,11 @@ void panel_clear(void);
 void panel_set_brightness(uint8_t b);
 void panel_draw_test_pattern(void);
 
+// Atomically swap the back buffer (what we've been drawing into) with the
+// front buffer (what the DMA is scanning out). Call once per frame, after
+// all drawing is done, to avoid tearing.
+void panel_flip(void);
+
 // Draw a single pixel (RGB888). Coordinates outside the panel are clipped.
 void panel_pixel(int x, int y, uint8_t r, uint8_t g, uint8_t b);
 
