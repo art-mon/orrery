@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sxn9",
+        "title": "M5.3 Earthquake - 32 km WNW of Darien, Colombia",
+        "category": "Earthquake",
+        "date": "2026-05-14T12:48:22.202000Z",
+        "coordinates": [
+          -76.7348,
+          4.0895
+        ]
+      },
+      {
         "id": "us6000sxmm",
         "title": "M5.1 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -179.8206,
           -23.4697
         ]
-      },
-      {
-        "id": "us6000swtd",
-        "title": "M5.1 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-10T23:15:43.825000Z",
-        "coordinates": [
-          -179.9969,
-          -23.3618
-        ]
       }
     ]
   },
@@ -247,47 +247,47 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 17.0,
-    "feels_c": 16.0,
-    "humidity": 48,
+    "city": "Zagreb",
+    "temp_c": 17.6,
+    "feels_c": 16.8,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 14.8
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-14",
     "city": "Donji grad",
-    "temp_min_c": 13.9,
-    "temp_max_c": 18.4,
-    "humidity": 56,
+    "temp_min_c": 15.0,
+    "temp_max_c": 17.7,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 10.2,
-    "samples": 5
+    "wind_kmh": 9.3,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-15",
     "city": "Donji grad",
-    "temp_min_c": 9.2,
-    "temp_max_c": 17.1,
-    "humidity": 83,
+    "temp_min_c": 10.4,
+    "temp_max_c": 15.7,
+    "humidity": 89,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 7.9
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-05-16",
     "city": "Donji grad",
-    "temp_min_c": 8.5,
-    "temp_max_c": 11.5,
+    "temp_min_c": 8.8,
+    "temp_max_c": 9.8,
     "humidity": 97,
     "condition": "Rain",
-    "description": "light rain",
+    "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 10.2
+    "wind_kmh": 6.7
   }
 }
