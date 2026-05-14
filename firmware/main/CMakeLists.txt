@@ -1,5 +1,5 @@
 idf_component_register(
-    SRCS "app_main.cpp"
+    SRCS "scenes.c" "clock.c" "app_main.cpp"
          "panel.cpp"
          "font.c"
          "wifi.c"
@@ -12,4 +12,5 @@ idf_component_register(
         esp_http_client
         esp-tls
         nvs_flash
+        lwip
 )
