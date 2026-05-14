@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sxnw",
+        "title": "M5.2 Earthquake - Volcano Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-05-14T15:34:06.382000Z",
+        "coordinates": [
+          141.443,
+          25.1362
+        ]
+      },
+      {
         "id": "us6000sxn9",
         "title": "M5.3 Earthquake - 32 km WNW of Darien, Colombia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           129.4593,
           27.3989
         ]
-      },
-      {
-        "id": "us6000swte",
-        "title": "M5.0 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-05-10T23:20:55.111000Z",
-        "coordinates": [
-          -179.8206,
-          -23.4697
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 16.8,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.7
+    "city": "City of Zagreb",
+    "temp_c": 18.1,
+    "feels_c": 17.5,
+    "humidity": 58,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-14",
-    "city": "Donji grad",
-    "temp_min_c": 15.0,
-    "temp_max_c": 17.7,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 9.3,
-    "samples": 4
+    "city": "City of Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 18.1,
+    "humidity": 61,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "01d",
+    "wind_kmh": 9.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-15",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 10.4,
     "temp_max_c": 15.7,
-    "humidity": 89,
+    "humidity": 87,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-16",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 8.8,
     "temp_max_c": 9.8,
     "humidity": 97,
