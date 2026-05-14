@@ -22,3 +22,4 @@ firmware/managed_components/
 firmware/dependencies.lock
 .claude/scheduled_tasks.lock
 .vscode/
+firmware/main/wifi_creds.h

@@ -1,5 +1,6 @@
 #include "panel.h"
 #include "pins.h"
+#include "font.h"
 
 #include "hub75.h"
 
@@ -59,4 +60,25 @@ void panel_draw_test_pattern(void) {
     for (int i = 0; i < PANEL_H; ++i) {
         s_panel->set_pixel(i * 2, i, 255, 200, 0);
     }
+}
+
+void panel_pixel(int x, int y, uint8_t r, uint8_t g, uint8_t b) {
+    if (!s_panel) return;
+    if (x < 0 || y < 0 || x >= PANEL_W || y >= PANEL_H) return;
+    s_panel->set_pixel((uint16_t)x, (uint16_t)y, r, g, b);
+}
+
+int panel_draw_text(int x, int y, const char *s, uint8_t r, uint8_t g, uint8_t b) {
+    if (!s_panel || !s) return x;
+    for (const char *p = s; *p; ++p) {
+        const uint8_t *g5 = font_glyph(*p);
+        for (int col = 0; col < FONT_W; ++col) {
+            uint8_t bits = g5[col];
+            for (int row = 0; row < FONT_H; ++row) {
+                if (bits & (1u << row)) panel_pixel(x + col, y + row, r, g, b);
+            }
+        }
+        x += FONT_ADVANCE;
+    }
+    return x;
 }

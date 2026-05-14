@@ -1,0 +1,9 @@
+// Copy this file to wifi_creds.h and fill in your network.
+// wifi_creds.h is gitignored so credentials don't get committed.
+#pragma once
+
+#define WIFI_SSID "your-wifi-ssid"
+#define WIFI_PASS "your-wifi-password"
+
+// URL of the dashboard's daily.json (GitHub Pages or your own host).
+#define DAILY_JSON_URL "https://art-mon.github.io/orrery/data/daily.json"
