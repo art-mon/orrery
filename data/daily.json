@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000sxk1",
-        "title": "M5.3 Earthquake - 65 km N of Namuac, Philippines",
+        "title": "M5.3 Earthquake - 51 km NNE of Namuac, Philippines",
         "category": "Earthquake",
-        "date": "2026-05-13T22:01:06.994000Z",
+        "date": "2026-05-13T22:01:06.478000Z",
         "coordinates": [
-          121.2697,
-          19.1928
+          121.2754,
+          19.0659
         ]
       },
       {
@@ -165,129 +165,129 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2001 MS3)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 7938230,
-        "velocity_kmh": 27905
-      },
-      {
-        "name": "(2026 GF)",
-        "hazardous": false,
-        "diameter_m": 97,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 7980113,
-        "velocity_kmh": 27439
-      },
-      {
-        "name": "(2019 PG)",
-        "hazardous": false,
-        "diameter_m": 44,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 12598620,
-        "velocity_kmh": 33170
-      },
-      {
-        "name": "375103 (2007 TD71)",
-        "hazardous": true,
-        "diameter_m": 1186,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 13084897,
-        "velocity_kmh": 96065
-      },
-      {
-        "name": "(2019 UF7)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 23796892,
-        "velocity_kmh": 47088
-      },
-      {
-        "name": "(2019 MG2)",
-        "hazardous": false,
-        "diameter_m": 222,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 41312670,
-        "velocity_kmh": 37781
-      },
-      {
-        "name": "(2018 KL)",
-        "hazardous": false,
-        "diameter_m": 254,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 54204672,
-        "velocity_kmh": 25476
-      },
-      {
-        "name": "(2013 EL28)",
-        "hazardous": false,
-        "diameter_m": 197,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 58866498,
-        "velocity_kmh": 14654
-      },
-      {
-        "name": "(2015 NU2)",
-        "hazardous": true,
-        "diameter_m": 391,
-        "close_approach_date": "2026-05-13",
-        "miss_distance_km": 69437751,
-        "velocity_kmh": 58448
-      },
-      {
         "name": "(2011 GH3)",
         "hazardous": false,
         "diameter_m": 1253,
         "close_approach_date": "2026-05-14",
         "miss_distance_km": 24078870,
         "velocity_kmh": 83006
+      },
+      {
+        "name": "(2019 WP4)",
+        "hazardous": false,
+        "diameter_m": 78,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 35289540,
+        "velocity_kmh": 53106
+      },
+      {
+        "name": "(2018 HW1)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 48507253,
+        "velocity_kmh": 47212
+      },
+      {
+        "name": "(2019 SE9)",
+        "hazardous": false,
+        "diameter_m": 55,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 53158120,
+        "velocity_kmh": 19321
+      },
+      {
+        "name": "(2015 VE65)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 8146554,
+        "velocity_kmh": 50993
+      },
+      {
+        "name": "467351 (2003 KO2)",
+        "hazardous": true,
+        "diameter_m": 504,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 33607735,
+        "velocity_kmh": 49657
+      },
+      {
+        "name": "(2013 LB2)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 34907547,
+        "velocity_kmh": 53496
+      },
+      {
+        "name": "(2018 XC)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 73698985,
+        "velocity_kmh": 79645
+      },
+      {
+        "name": "679756 (2020 KP1)",
+        "hazardous": false,
+        "diameter_m": 141,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 18033059,
+        "velocity_kmh": 60451
+      },
+      {
+        "name": "(2020 KP1)",
+        "hazardous": false,
+        "diameter_m": 143,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 18033069,
+        "velocity_kmh": 60451
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 5.7,
-    "feels_c": 4.7,
-    "humidity": 87,
+    "temp_c": 7.6,
+    "feels_c": 7.6,
+    "humidity": 78,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_min_c": 5.7,
-    "temp_max_c": 17.9,
-    "humidity": 73,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 7.6,
+    "temp_max_c": 16.9,
+    "humidity": 69,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 3.4,
-    "samples": 9
+    "wind_kmh": 2.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-15",
     "city": "Zagreb",
-    "temp_min_c": 8.9,
-    "temp_max_c": 16.3,
-    "humidity": 84,
+    "temp_min_c": 10.1,
+    "temp_max_c": 17.9,
+    "humidity": 78,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.3
+    "wind_kmh": 7.7
   },
   "forecast_day_after": {
     "date": "2026-05-16",
     "city": "Zagreb",
-    "temp_min_c": 7.5,
-    "temp_max_c": 11.4,
-    "humidity": 96,
+    "temp_min_c": 8.9,
+    "temp_max_c": 11.1,
+    "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.8
+    "wind_kmh": 13.1
   }
 }
