@@ -2842,7 +2842,7 @@ function randomEvents(n = 12) {
     const cat  = EVENT_CATEGORIES[Math.floor(Math.random() * EVENT_CATEGORIES.length)];
     const lon  = (Math.random() * 360 - 180).toFixed(2);
     const lat  = (Math.random() * 160 - 80).toFixed(2);   // avoid poles
-    const mag  = cat.label === 'Earthquake' ? ` M${(5 + Math.random() * 3).toFixed(1)}` : '';
+    const mag  = cat.label === 'Earthquake' ? ` M${(6 + Math.random() * 2).toFixed(1)}` : '';
     out.push({
       id:          `test-${i}`,
       title:       `${cat.label}${mag} (test)`,

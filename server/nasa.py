@@ -62,7 +62,7 @@ def events() -> dict:
 USGS_BASE = "https://earthquake.usgs.gov/fdsnws/event/1/query"
 
 def earthquakes() -> dict:
-    """Recent significant earthquakes (M5.0+, last 7 days) from USGS."""
+    """Recent significant earthquakes (M6.0+, last 7 days) from USGS."""
     cached = cache.get("earthquakes", SIX_HOURS)
     if cached:
         return cached
@@ -71,7 +71,7 @@ def earthquakes() -> dict:
     start = (datetime.utcnow() - timedelta(days=7)).strftime("%Y-%m-%d")
     r = requests.get(USGS_BASE, params={
         "format":         "geojson",
-        "minmagnitude":   5.0,
+        "minmagnitude":   6.0,
         "orderby":        "time",
         "limit":          15,
         "starttime":      start,
