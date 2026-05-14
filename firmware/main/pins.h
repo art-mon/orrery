@@ -7,10 +7,12 @@
 #define PIN_R2   7
 #define PIN_G2   15
 #define PIN_B2   16
-#define PIN_A    36
-#define PIN_B    37
-#define PIN_C    38
-#define PIN_D    39
+// Address pins live in the 1-21 range so they don't clash with the
+// integrated octal PSRAM (which consumes GPIO 26-37 on N16R8 modules).
+#define PIN_A    17
+#define PIN_B    18
+#define PIN_C    21
+#define PIN_D    14
 #define PIN_E    -1   // unused on 64x32 1:16
 #define PIN_CLK  2
 #define PIN_LAT  47

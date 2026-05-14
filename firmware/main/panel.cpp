@@ -9,8 +9,8 @@ void panel_init(void) {
     Hub75Config cfg{};
     cfg.panel_width  = PANEL_W;
     cfg.panel_height = PANEL_H;
-    cfg.scan_wiring  = Hub75ScanWiring::STANDARD_TWO_SCAN;
-    cfg.shift_driver = Hub75ShiftDriver::GENERIC;
+    cfg.scan_wiring  = Hub75ScanWiring::STANDARD_TWO_SCAN;  // panel marked "16s" = 1:16 scan
+    cfg.shift_driver = Hub75ShiftDriver::FM6126A;           // try FM6126A first; fall back to GENERIC
 
     cfg.pins.r1  = PIN_R1;
     cfg.pins.g1  = PIN_G1;

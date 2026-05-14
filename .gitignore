@@ -21,3 +21,4 @@ firmware/sdkconfig.old
 firmware/managed_components/
 firmware/dependencies.lock
 .claude/scheduled_tasks.lock
+.vscode/
