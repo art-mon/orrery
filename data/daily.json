@@ -1,137 +1,293 @@
 {
-  "generated": "2026-04-21",
+  "generated": "2026-05-14",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Messier Catalog at Uniform Scale",
+    "date": "2026-05-14",
+    "explanation": "What are some of the most interesting astronomical objects you can see in the night sky?   Armed with a good pair of binoculars or a small telescope, if you live in the Northern Hemisphere, you can look for the very popular objects in the Messier Catalog.   Most of them, but not all, are also visible from the southern half of the Earth.   The featured image shows all 110 objects in the catalog at uniform scale -- the same magnification.   Charles Messier created the catalog in the 18th century.   He was interested in comets, and his catalog was a list of known comet-like \"objects to avoid\" in the sky when observing or hunting for comets.   The deep sky objects in the catalog include a supernova remnant (the Crab Nebula, M1), other galaxies (such as Andromeda, M31), nebulae (e.g. the Orion Nebula, M42, a star-forming region) and stellar clusters (such as the Pleiades, M45, a bright young open cluster).",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/messier_portrait_100px_160h.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/messier_portrait_300px_160h.jpg"
   },
   "events": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "events": [
+      {
+        "id": "us6000sxqf",
+        "title": "M6.2 Earthquake - 271 km WSW of Tual, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-14T17:53:14.710000Z",
+        "coordinates": [
+          130.3702,
+          -6.198
+        ]
+      },
+      {
+        "id": "us6000sxnw",
+        "title": "M5.2 Earthquake - Volcano Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-05-14T15:34:06.382000Z",
+        "coordinates": [
+          141.443,
+          25.1362
+        ]
+      },
+      {
+        "id": "us6000sxn9",
+        "title": "M5.3 Earthquake - 32 km WNW of Darien, Colombia",
+        "category": "Earthquake",
+        "date": "2026-05-14T12:48:22.202000Z",
+        "coordinates": [
+          -76.7348,
+          4.0895
+        ]
+      },
+      {
+        "id": "us6000sxmm",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-14T09:55:47.289000Z",
+        "coordinates": [
+          -25.63,
+          -58.3477
+        ]
+      },
+      {
+        "id": "us6000sxk1",
+        "title": "M5.3 Earthquake - 51 km NNE of Namuac, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-13T22:01:06.478000Z",
+        "coordinates": [
+          121.2754,
+          19.0659
+        ]
+      },
+      {
+        "id": "us6000sxdf",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-13T08:12:59.760000Z",
+        "coordinates": [
+          -28.2611,
+          -55.3924
+        ]
+      },
+      {
+        "id": "us6000sxd4",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-13T06:36:37.861000Z",
+        "coordinates": [
+          -28.3706,
+          -55.3734
+        ]
+      },
+      {
+        "id": "us6000sxc0",
+        "title": "M5.1 Earthquake - Izu Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-05-13T03:08:33.276000Z",
+        "coordinates": [
+          138.4279,
+          30.3722
+        ]
+      },
+      {
+        "id": "us6000sxaj",
+        "title": "M5.1 Earthquake - 55 km ENE of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-12T21:53:44.573000Z",
+        "coordinates": [
+          -174.4653,
+          -21.1489
+        ]
+      },
+      {
+        "id": "us6000sx9x",
+        "title": "M5.7 Earthquake - 275 km SW of Houma, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-12T21:19:36.870000Z",
+        "coordinates": [
+          -176.8485,
+          -23.2041
+        ]
+      },
+      {
+        "id": "us6000sx5k",
+        "title": "M5.6 Earthquake - 88 km W of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-12T15:39:31.100000Z",
+        "coordinates": [
+          164.9925,
+          -10.649
+        ]
+      },
+      {
+        "id": "us6000sx3v",
+        "title": "M5.0 Earthquake - 224 km SE of Pondaguitan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-12T08:53:56.666000Z",
+        "coordinates": [
+          127.5121,
+          4.8333
+        ]
+      },
+      {
+        "id": "us6000sx3h",
+        "title": "M5.1 Earthquake - 79 km S of Hualien City, Taiwan",
+        "category": "Earthquake",
+        "date": "2026-05-12T06:53:32.598000Z",
+        "coordinates": [
+          121.4893,
+          23.2629
+        ]
+      },
+      {
+        "id": "us6000sx2s",
+        "title": "M5.0 Earthquake - 81 km WNW of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-12T03:45:42.646000Z",
+        "coordinates": [
+          161.21,
+          -10.2288
+        ]
+      },
+      {
+        "id": "us6000swvm",
+        "title": "M5.2 Earthquake - 72 km NW of Malango, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-05-11T09:48:51.604000Z",
+        "coordinates": [
+          159.1915,
+          -9.2967
+        ]
+      }
+    ]
   },
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2026 HF2)",
+        "name": "(2011 GH3)",
         "hazardous": false,
-        "diameter_m": 18,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 117089,
-        "velocity_kmh": 65098
+        "diameter_m": 1253,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 24078870,
+        "velocity_kmh": 83006
       },
       {
-        "name": "(2026 HJ1)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 643432,
-        "velocity_kmh": 38182
-      },
-      {
-        "name": "(2026 GJ1)",
-        "hazardous": false,
-        "diameter_m": 111,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 3338126,
-        "velocity_kmh": 79967
-      },
-      {
-        "name": "(2026 GZ1)",
-        "hazardous": false,
-        "diameter_m": 84,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 5954130,
-        "velocity_kmh": 36890
-      },
-      {
-        "name": "(2025 HQ4)",
-        "hazardous": false,
-        "diameter_m": 37,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 6266754,
-        "velocity_kmh": 45162
-      },
-      {
-        "name": "(2009 UC19)",
-        "hazardous": false,
-        "diameter_m": 54,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 15047308,
-        "velocity_kmh": 31565
-      },
-      {
-        "name": "(2021 JG3)",
-        "hazardous": false,
-        "diameter_m": 164,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 15371160,
-        "velocity_kmh": 31589
-      },
-      {
-        "name": "(2023 HM)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 39132425,
-        "velocity_kmh": 99697
-      },
-      {
-        "name": "(2023 SL8)",
+        "name": "(2019 WP4)",
         "hazardous": false,
         "diameter_m": 78,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 39548887,
-        "velocity_kmh": 31594
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 35289540,
+        "velocity_kmh": 53106
       },
       {
-        "name": "(2016 NR)",
+        "name": "(2018 HW1)",
         "hazardous": false,
-        "diameter_m": 103,
-        "close_approach_date": "2026-04-21",
-        "miss_distance_km": 45792477,
-        "velocity_kmh": 27748
+        "diameter_m": 41,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 48507253,
+        "velocity_kmh": 47212
+      },
+      {
+        "name": "(2019 SE9)",
+        "hazardous": false,
+        "diameter_m": 55,
+        "close_approach_date": "2026-05-14",
+        "miss_distance_km": 53158120,
+        "velocity_kmh": 19321
+      },
+      {
+        "name": "(2015 VE65)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 8146554,
+        "velocity_kmh": 50993
+      },
+      {
+        "name": "467351 (2003 KO2)",
+        "hazardous": true,
+        "diameter_m": 504,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 33607735,
+        "velocity_kmh": 49657
+      },
+      {
+        "name": "(2013 LB2)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 34907547,
+        "velocity_kmh": 53496
+      },
+      {
+        "name": "(2018 XC)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-05-15",
+        "miss_distance_km": 73698985,
+        "velocity_kmh": 79645
+      },
+      {
+        "name": "679756 (2020 KP1)",
+        "hazardous": false,
+        "diameter_m": 141,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 18033059,
+        "velocity_kmh": 60451
+      },
+      {
+        "name": "(2020 KP1)",
+        "hazardous": false,
+        "diameter_m": 143,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 18033069,
+        "velocity_kmh": 60451
       }
     ]
   },
   "weather": {
+    "city": "Donji grad",
+    "temp_c": 11.7,
+    "feels_c": 11.1,
+    "humidity": 82,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 1.8
+  },
+  "forecast_today": {
+    "date": "2026-05-14",
     "city": "Zagreb",
-    "temp_c": 13.6,
-    "feels_c": 12.7,
-    "humidity": 66,
+    "temp_min_c": 11.7,
+    "temp_max_c": 11.7,
+    "humidity": 82,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 5.2,
+    "samples": 2
+  },
+  "forecast": {
+    "date": "2026-05-15",
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 17.9,
+    "humidity": 88,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 11.2
-  },
-  "forecast_today": {
-    "date": "2026-04-21",
-    "city": "Donji grad",
-    "temp_min_c": 10.8,
-    "temp_max_c": 13.6,
-    "humidity": 67,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 8.8,
-    "samples": 3
-  },
-  "forecast": {
-    "date": "2026-04-22",
-    "city": "Donji grad",
-    "temp_min_c": 7.8,
-    "temp_max_c": 14.2,
-    "humidity": 55,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.9
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
-    "date": "2026-04-23",
-    "city": "Donji grad",
-    "temp_min_c": 5.7,
-    "temp_max_c": 18.2,
-    "humidity": 50,
-    "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.3
+    "date": "2026-05-16",
+    "city": "Zagreb",
+    "temp_min_c": 9.3,
+    "temp_max_c": 10.2,
+    "humidity": 95,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 9.1
   }
 }
