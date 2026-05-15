@@ -2328,7 +2328,7 @@ const UV_PLANET_CX = 32;
 const UV_PLANET_CY = 74;
 const UV_PLANET_R  = 50;
 const UV_ATM_R     = 52;   // outer atmosphere arc — 2px above the surface at the apex
-const UV_HALO_MAX  = 2;    // additional rows of fading outer halo past the atmosphere rim
+const UV_HALO_MAX  = 4;    // additional rows of fading outer halo past the atmosphere rim
 
 // Per-column y of the planet surface and atmosphere top. Off-canvas
 // columns store a sentinel (>= H) so we don't draw a band there.
@@ -2425,8 +2425,9 @@ function sceneUV(tick) {
 
   // ── Atmosphere band: bluish-grey haze between atmTop and planetTop ────────
   // Slight slow shimmer along the band to feel alive, like the cloud scene.
-  // Rim brightness decays with UV — the haze "burns through" at extreme UV.
-  const rimDim = 1 - 0.55 * uvStrength;     // 1.0 at no UV → 0.45 at full UV
+  // Rim stays bright (and gets slightly brighter at high UV — atmosphere
+  // catches more light, matching the reference photo).
+  const rimDim = 1 + 0.15 * uvStrength;     // 1.0 at no UV → 1.15 at full UV
   for (let x = 0; x < W; x++) {
     const aT = atmTop[x], pT = planetTop[x];
     if (aT >= H) continue;
@@ -2446,10 +2447,12 @@ function sceneUV(tick) {
       px(x, aT, Math.round(150 * rimDim), Math.round(200 * rimDim), Math.round(245 * rimDim));
     }
     // Soft halo above the rim — fades into space so the limb doesn't end flat.
+    // Quadratic falloff over UV_HALO_MAX rows for a smoother exosphere glow.
     for (let i = 1; i <= UV_HALO_MAX; i++) {
       const yy = aT - i;
       if (yy < 1) break;
-      const f = rimDim * (0.55 - 0.25 * (i - 1));  // i=1 → 0.55, i=2 → 0.30
+      const t = 1 - i / (UV_HALO_MAX + 1);          // 1 at rim → 0 past edge
+      const f = rimDim * 0.65 * t * t;
       const hr = Math.round(150 * f);
       const hg = Math.round(200 * f);
       const hb = Math.round(245 * f);
@@ -2460,9 +2463,42 @@ function sceneUV(tick) {
     }
   }
 
-  // ── Planet — textured globe via the existing earth sprite ─────────────────
-  // drawEarthSprite respects canvas bounds, so only the visible cap renders.
-  drawEarthSprite(UV_PLANET_CX, UV_PLANET_CY, UV_PLANET_R);
+  // ── Planet — procedural ocean + land cap ──────────────────────────────────
+  // At this radius the sphere-texture sample sits at the polar cap, which
+  // reads as uniform. Drawing the cap procedurally lets us show a clear
+  // ocean gradient (lighter near the rim, deeper toward the bottom) plus
+  // irregular land patches via a noise-mask threshold.
+  for (let x = 0; x < W; x++) {
+    const pT = planetTop[x];
+    if (pT >= H) continue;
+    const dx = x - UV_PLANET_CX;
+    // Ocean blue: brighter near the rim, deeper below
+    for (let y = pT; y < H; y++) {
+      const d = (y - pT) / Math.max(1, H - pT);   // 0 at surface → 1 at bottom
+      // Land mask — two-octave value noise, biased so land is sparse
+      const n = nhash(x * 3 + 11, y * 5 + 7) * 0.55
+              + nhash(Math.floor(x / 3) + 71, Math.floor(y / 2) + 23) * 0.45;
+      const isLand = n > 0.62 - d * 0.15;          // a bit more land near bottom
+      let r, g, b;
+      if (isLand) {
+        // Mottled dark teal/green land
+        const lv = nhash(x * 7, y * 11);
+        r = Math.round(28 + lv * 26);
+        g = Math.round(55 + lv * 40);
+        b = Math.round(60 + lv * 38);
+      } else {
+        // Ocean — vertical brightness gradient with subtle horizontal variation
+        const horiz = 0.85 + 0.15 * Math.sin(dx * 0.18 + tick * 0.012);
+        const baseR = 30  + (1 - d) * 75;
+        const baseG = 90  + (1 - d) * 95;
+        const baseB = 160 + (1 - d) * 75;
+        r = Math.min(255, Math.round(baseR * horiz));
+        g = Math.min(255, Math.round(baseG * horiz));
+        b = Math.min(255, Math.round(baseB * horiz));
+      }
+      px(x, y, r, g, b);
+    }
+  }
 
   // ── NOW / MX text — dim a backdrop so saturated rays don't drown it ──────
   const dimBackdrop = (x0, y0, w, h) => {
