@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-15",
+  "generated": "2026-05-16",
   "apod": {
     "title": "R3 PanSTARRS: An Orion Comet",
     "date": "2026-05-15",
@@ -247,39 +247,28 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 12.6,
-    "feels_c": 12.2,
-    "humidity": 89,
+    "city": "Zagreb",
+    "temp_c": 11.5,
+    "feels_c": 11.0,
+    "humidity": 90,
     "condition": "Rain",
     "description": "moderate rain",
     "icon": "10n",
     "wind_kmh": 7.4
   },
   "forecast_today": {
-    "date": "2026-05-15",
-    "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 12.6,
-    "humidity": 89,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 7.4,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-05-16",
     "city": "Zagreb",
     "temp_min_c": 9.2,
     "temp_max_c": 13.2,
-    "humidity": 92,
+    "humidity": 91,
     "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 6.8
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 6.9,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-17",
     "city": "Zagreb",
     "temp_min_c": 7.5,
@@ -290,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 7.6
   },
+  "forecast_day_after": {
+    "date": "2026-05-18",
+    "city": "Zagreb",
+    "temp_min_c": 10.3,
+    "temp_max_c": 21.4,
+    "humidity": 58,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.0
+  },
   "uv": {
-    "uv": 0.8,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 7.0,
-    "peak_time": "2026-05-15T17:00",
-    "safe_minutes": 222,
+    "daily_max": 4.3,
+    "peak_time": "2026-05-16T12:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-05-15T00:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-05-15T01:00",
+        "time": "2026-05-16T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T02:00",
+        "time": "2026-05-16T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T03:00",
+        "time": "2026-05-16T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T04:00",
+        "time": "2026-05-16T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T05:00",
+        "time": "2026-05-16T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T06:00",
+        "time": "2026-05-16T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T07:00",
+        "time": "2026-05-16T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-15T08:00",
-        "uv": 0.0
+        "time": "2026-05-16T07:00",
+        "uv": 0.5
       },
       {
-        "time": "2026-05-15T09:00",
-        "uv": 0.0
+        "time": "2026-05-16T08:00",
+        "uv": 1.1
       },
       {
-        "time": "2026-05-15T10:00",
-        "uv": 0.0
+        "time": "2026-05-16T09:00",
+        "uv": 2.1
       },
       {
-        "time": "2026-05-15T11:00",
+        "time": "2026-05-16T10:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-05-16T11:00",
+        "uv": 2.4
+      },
+      {
+        "time": "2026-05-16T12:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-05-16T13:00",
+        "uv": 1.3
+      },
+      {
+        "time": "2026-05-16T14:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-05-16T15:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-05-16T16:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-05-16T17:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-05-16T18:00",
         "uv": 0.4
       },
       {
-        "time": "2026-05-15T12:00",
-        "uv": 1.4
+        "time": "2026-05-16T19:00",
+        "uv": 0.8
       },
       {
-        "time": "2026-05-15T13:00",
-        "uv": 2.8
+        "time": "2026-05-16T20:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-05-15T14:00",
-        "uv": 4.4
+        "time": "2026-05-16T21:00",
+        "uv": 0.0
       },
       {
-        "time": "2026-05-15T15:00",
-        "uv": 5.0
+        "time": "2026-05-16T22:00",
+        "uv": 0.0
       },
       {
-        "time": "2026-05-15T16:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-05-15T17:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-05-15T18:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-05-15T19:00",
-        "uv": 6.6
-      },
-      {
-        "time": "2026-05-15T20:00",
-        "uv": 5.5
-      },
-      {
-        "time": "2026-05-15T21:00",
-        "uv": 4.0
-      },
-      {
-        "time": "2026-05-15T22:00",
-        "uv": 1.9
-      },
-      {
-        "time": "2026-05-15T23:00",
-        "uv": 0.5
+        "time": "2026-05-16T23:00",
+        "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-15T22:56:44+00:00"
+    "fetched_at": "2026-05-16T00:58:39+02:00"
   }
 }
