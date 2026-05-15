@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sxu9",
+        "title": "M5.4 Earthquake - 119 km SSE of Lorengau, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-15T01:13:58.659000Z",
+        "coordinates": [
+          147.7607,
+          -2.9915
+        ]
+      },
+      {
         "id": "us6000sxqf",
         "title": "M6.2 Earthquake - 271 km WSW of Tual, Indonesia",
         "category": "Earthquake",
@@ -149,53 +159,11 @@
           161.21,
           -10.2288
         ]
-      },
-      {
-        "id": "us6000swvm",
-        "title": "M5.2 Earthquake - 72 km NW of Malango, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-05-11T09:48:51.604000Z",
-        "coordinates": [
-          159.1915,
-          -9.2967
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2011 GH3)",
-        "hazardous": false,
-        "diameter_m": 1253,
-        "close_approach_date": "2026-05-14",
-        "miss_distance_km": 24078870,
-        "velocity_kmh": 83006
-      },
-      {
-        "name": "(2019 WP4)",
-        "hazardous": false,
-        "diameter_m": 78,
-        "close_approach_date": "2026-05-14",
-        "miss_distance_km": 35289540,
-        "velocity_kmh": 53106
-      },
-      {
-        "name": "(2018 HW1)",
-        "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-05-14",
-        "miss_distance_km": 48507253,
-        "velocity_kmh": 47212
-      },
-      {
-        "name": "(2019 SE9)",
-        "hazardous": false,
-        "diameter_m": 55,
-        "close_approach_date": "2026-05-14",
-        "miss_distance_km": 53158120,
-        "velocity_kmh": 19321
-      },
       {
         "name": "(2015 VE65)",
         "hazardous": false,
@@ -243,51 +211,83 @@
         "close_approach_date": "2026-05-16",
         "miss_distance_km": 18033069,
         "velocity_kmh": 60451
+      },
+      {
+        "name": "141495 (2002 EZ11)",
+        "hazardous": true,
+        "diameter_m": 1208,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 23386607,
+        "velocity_kmh": 83071
+      },
+      {
+        "name": "(2019 KA3)",
+        "hazardous": false,
+        "diameter_m": 15,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 44107871,
+        "velocity_kmh": 40830
+      },
+      {
+        "name": "(2020 BV14)",
+        "hazardous": false,
+        "diameter_m": 122,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 52524618,
+        "velocity_kmh": 64064
+      },
+      {
+        "name": "(2018 KX1)",
+        "hazardous": false,
+        "diameter_m": 151,
+        "close_approach_date": "2026-05-16",
+        "miss_distance_km": 66998213,
+        "velocity_kmh": 82882
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.0,
-    "feels_c": 11.3,
-    "humidity": 79,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 16.7
+    "temp_c": 9.7,
+    "feels_c": 9.2,
+    "humidity": 93,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 17.9,
-    "humidity": 85,
+    "city": "Zagreb",
+    "temp_min_c": 9.7,
+    "temp_max_c": 15.6,
+    "humidity": 89,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10n",
+    "icon": "02d",
     "wind_kmh": 6.2,
-    "samples": 9
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.3,
-    "temp_max_c": 10.2,
-    "humidity": 95,
+    "city": "Zagreb",
+    "temp_min_c": 8.2,
+    "temp_max_c": 10.5,
+    "humidity": 97,
     "condition": "Rain",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 9.1
+    "wind_kmh": 5.3
   },
   "forecast_day_after": {
     "date": "2026-05-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.9,
-    "temp_max_c": 19.2,
-    "humidity": 62,
+    "city": "Zagreb",
+    "temp_min_c": 6.8,
+    "temp_max_c": 19.3,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.7
   }
 }
