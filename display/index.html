@@ -2390,27 +2390,32 @@ function sceneUV(tick) {
   // ── Top "source" line (band-colored) ──────────────────────────────────────
   for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
 
-  // ── Falling UV rays — smooth vertical streaks (no hard threshold) ─────────
-  // Two additive sine layers along Y give continuous streaks; the per-column
-  // envelope still picks "which columns are lit right now". Intensity scales
-  // colour linearly toward a near-white core at high a, so streaks fade in
-  // and out smoothly instead of forming gridded clumps.
+  // ── Falling UV rays ───────────────────────────────────────────────────────
+  // Per-column "personality": a fixed random hash desyncs each column's phase
+  // and gives some columns a permanently weaker envelope. Combined with three
+  // drifting sine layers + a small per-pixel jitter, the result reads as
+  // irregular streaks instead of a flat curtain.
   const uvStrength = Math.max(0.10, Math.min(1.0, uvNow / 11));
   for (let x = 0; x < W; x++) {
-    const colBase = 0.5
-      + 0.30 * Math.sin(x * 0.42 + tick * 0.022)
-      + 0.20 * Math.sin(x * 0.13 - tick * 0.041 + 1.7);
-    const I = Math.max(0, colBase) * uvStrength;
+    const colHash   = nhash(x, 11);                 // fixed per-column phase seed
+    const colWeight = 0.45 + 0.55 * nhash(x, 23);   // 0.45..1.00 — some columns naturally dim
+    const po        = colHash * 6.2832;
+    const colBase = 0.30
+      + 0.30 * Math.sin(x * 0.42 + tick * 0.022 + po)
+      + 0.22 * Math.sin(x * 0.71 - tick * 0.041 + po * 1.9)
+      + 0.18 * Math.sin(x * 0.17 + tick * 0.013 + po * 0.6);
+    const I = Math.max(0, colBase) * colWeight * uvStrength;
     if (I <= 0.04) continue;
 
     const stop = Math.min(H - 1, (atmTop[x] < H ? atmTop[x] : H) - 1);
     for (let y = 1; y <= stop; y++) {
-      const n1 = 0.5 + 0.5 * Math.sin(y * 0.45 - tick * 0.32 + x * 0.21);
-      const n2 = 0.5 + 0.5 * Math.sin(y * 0.32 + tick * 0.18 + x * 0.13 + 1.7);
-      const along = n1 * 0.60 + n2 * 0.40;       // [0..1], continuous
-      const a = Math.min(1, I * along * 1.35);   // gentle gain so mid-UV reads
-      if (a < 0.04) continue;
-      const core = Math.max(0, (a - 0.62) / 0.38);  // 0..1 above a=0.62
+      const n1 = 0.5 + 0.5 * Math.sin(y * 0.45 - tick * 0.32 + x * 0.21 + po);
+      const n2 = 0.5 + 0.5 * Math.sin(y * 0.32 + tick * 0.18 + x * 0.13 + po * 1.3);
+      const along  = n1 * 0.60 + n2 * 0.40;
+      const jitter = (nhash(x * 13 + 7, y * 17 + 3) - 0.5) * 0.22;
+      const a = Math.max(0, Math.min(1, I * along * 1.35 + jitter));
+      if (a < 0.06) continue;
+      const core = Math.max(0, (a - 0.62) / 0.38);
       const r = Math.round(cr * a + (255 - cr) * core * 0.6);
       const g = Math.round(cg * a + (255 - cg) * core * 0.6);
       const b = Math.round(cb * a + (255 - cb) * core * 0.6);
