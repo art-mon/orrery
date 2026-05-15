@@ -2325,9 +2325,9 @@ const UV_STARS = [
 // texture, small enough that the atmosphere fits above. Center sits just
 // below the canvas so the cap fills the lower third with continents.
 const UV_PLANET_CX = 32;
-const UV_PLANET_CY = 74;
-const UV_PLANET_R  = 50;
-const UV_ATM_R     = 52;   // outer atmosphere arc — 2px above the surface at the apex
+const UV_PLANET_CY = 84;
+const UV_PLANET_R  = 60;
+const UV_ATM_R     = 62;   // outer atmosphere arc — 2px above the surface at the apex
 const UV_HALO_MAX  = 4;    // additional rows of fading outer halo past the atmosphere rim
 
 // Per-column y of the planet surface and atmosphere top. Off-canvas
@@ -2389,6 +2389,23 @@ function sceneUV(tick) {
 
   // ── Top "source" line (band-colored) ──────────────────────────────────────
   for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
+
+  // ── Atmospheric haze clouds — soft complementary wash behind the rays ────
+  // Cloud colour = desaturated complement of the ray colour, so the layer
+  // always reads as "different hue from rays + different from planet" via
+  // basic colour theory. Density scales with UV (more scatter at high UV).
+  const cloudR = Math.round((255 - cr) * 0.55 + 60);
+  const cloudG = Math.round((255 - cg) * 0.55 + 60);
+  const cloudB = Math.round((255 - cb) * 0.55 + 60);
+  const cloudDensity = 0.30 + 0.30 * uvStrength;
+  for (let y = 1; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      if (atmTop[x] < H && y >= atmTop[x]) continue;   // stop at atmosphere edge
+      const a = cloudAlpha(x, y, tick) * cloudDensity;
+      if (a < 0.08) continue;
+      px(x, y, Math.round(cloudR * a), Math.round(cloudG * a), Math.round(cloudB * a));
+    }
+  }
 
   // ── Falling UV rays ───────────────────────────────────────────────────────
   // Per-column "personality": a fixed random hash desyncs each column's phase
