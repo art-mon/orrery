@@ -7,6 +7,7 @@ import nasa
 import image
 import db
 import weather
+import uv
 
 app = Flask(__name__)
 CORS(app)
@@ -51,6 +52,17 @@ def route_weather_forecast():
     return jsonify(weather.forecast_tomorrow())
 
 
+@app.route("/uv")
+def route_uv():
+    from flask import request
+    try:
+        skin = int(request.args.get("skin", 2))
+    except ValueError:
+        skin = 2
+    skin = max(1, min(6, skin))
+    return jsonify(uv.current(skin))
+
+
 @app.route("/daily")
 def route_daily():
     def safe(fn):
@@ -70,6 +82,7 @@ def route_daily():
         "forecast_today":     safe(weather.forecast_today),
         "forecast":           safe(weather.forecast_tomorrow),
         "forecast_day_after": safe(weather.forecast_day_after_tomorrow),
+        "uv":                 safe(uv.current),
     })
 
 
