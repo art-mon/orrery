@@ -217,6 +217,7 @@
     <button data-scene="daily" class="active">Daily</button>
     <button data-scene="weather_now">🌡️ Now</button>
     <button data-scene="forecast">⛅ Forecast</button>
+    <button data-scene="uv">☀️ UV</button>
     <button data-scene="moon">🌙 Moon</button>
     <button data-scene="galaxy">🌀 Galaxy</button>
     <button id="broadcast-btn">📻 Broadcast</button>
@@ -606,6 +607,7 @@ let asteroidList = [];
 let eventList    = [];
 
 let currentWeather = null;
+let uvData         = null;
 
 // Single fetch — daily.json is written by GitHub Actions (or generate.py locally)
 let dailyGenerated = '';   // "YYYY-MM-DD" — used to cache-bust audio files
@@ -627,6 +629,9 @@ fetch('../data/daily.json')
     forecastData        = d.forecast           || null;
     forecastTodayData   = d.forecast_today     || null;
     forecastDayAfterData = d.forecast_day_after || null;
+
+    // UV
+    uvData = d.uv || null;
 
     // Events
     const evts = (d.events || {}).events || [];
@@ -2282,6 +2287,101 @@ function drawWeatherParticles(x0, cond, colIdx, colW, tick) {
 
 // ─── Weather: NOW ─────────────────────────────────────────────────────────────
 // Current conditions: big temp + feels like + humidity + wind.
+// ─── UV index panel ───────────────────────────────────────────────────────────
+// Big current UV + WHO band, with a 24-hour sparkline along the bottom.
+const UV_BANDS = [
+  { max: 3,    name: 'LOW',     col: [ 90, 200, 110] },
+  { max: 6,    name: 'MOD',     col: [240, 220,  80] },
+  { max: 8,    name: 'HIGH',    col: [240, 150,  60] },
+  { max: 11,   name: 'V.HIGH',  col: [230,  80,  80] },
+  { max: 999,  name: 'EXTREME', col: [200, 110, 220] },
+];
+function uvBand(v) {
+  for (const b of UV_BANDS) if (v < b.max) return b;
+  return UV_BANDS[UV_BANDS.length - 1];
+}
+
+function sceneUV(tick) {
+  clear();
+
+  // Soft dark sky background
+  for (let y = 0; y < H; y++) {
+    const t = y / (H - 1);
+    const r = Math.round(8  + t * 6);
+    const g = Math.round(10 + t * 10);
+    const b = Math.round(28 + t * 18);
+    for (let x = 0; x < W; x++) px(x, y, r, g, b);
+  }
+
+  // Top bar
+  textOutlined('UV', 1, 1, 230, 200, 100);
+  const clock = timeStr();
+  textOutlined(clock, W - textWidth(clock) - 1, 1, 170, 170, 170);
+
+  if (!uvData || uvData.error) {
+    textOutlined('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 14, 120, 120, 120);
+    return;
+  }
+
+  const uvNow = Number(uvData.uv) || 0;
+  const band  = uvBand(uvNow);
+
+  // Big number — use medium font if available, else regular
+  const numStr = uvNow.toFixed(1);
+  const hasMed = typeof drawMedOutlined === 'function' && typeof medWidth === 'function';
+  if (hasMed) {
+    const nw = medWidth(numStr);
+    drawMedOutlined(numStr, Math.floor((W - nw) / 2) - 6, 8, ...band.col);
+  } else {
+    textOutlined(numStr, Math.floor((W - textWidth(numStr)) / 2) - 6, 9, ...band.col);
+  }
+  // Band label to the right of the number
+  textOutlined(band.name, W - textWidth(band.name) - 1, 9, ...band.col);
+
+  // Sparkline of today's hourly UV across the bottom strip
+  const hourly = Array.isArray(uvData.hourly) ? uvData.hourly : [];
+  if (hourly.length) {
+    const baseY = H - 1;             // bottom row
+    const barH  = 7;                 // max bar height — leaves caption row clear
+    const maxUV = Math.max(1, ...hourly.map(h => Number(h.uv) || 0));
+    const nowHr = new Date().getHours();
+    const cols  = Math.min(24, hourly.length);
+    const slot  = Math.floor(W / cols);
+    const x0    = Math.floor((W - slot * cols) / 2);
+
+    for (let i = 0; i < cols; i++) {
+      const u  = Number(hourly[i].uv) || 0;
+      const h  = Math.max(0, Math.round((u / maxUV) * barH));
+      const bx = x0 + i * slot;
+      const c  = uvBand(u).col;
+      for (let dy = 0; dy < h; dy++) {
+        for (let dx = 0; dx < Math.max(1, slot - 1); dx++) {
+          px(bx + dx, baseY - dy, ...c);
+        }
+      }
+      // Current hour marker — bright dot above the bar
+      const hr = (() => {
+        const t = hourly[i].time;
+        if (typeof t !== 'string') return -1;
+        const m = t.match(/T(\d{2})/);
+        return m ? parseInt(m[1], 10) : -1;
+      })();
+      if (hr === nowHr) {
+        for (let dx = 0; dx < Math.max(1, slot - 1); dx++) {
+          px(bx + dx, baseY - barH - 1, 255, 255, 255);
+        }
+      }
+    }
+  }
+
+  // Bottom caption: max + safe minutes
+  const maxStr  = uvData.daily_max != null ? 'MX' + Math.round(uvData.daily_max) : '';
+  const safeStr = uvData.safe_minutes != null ? Math.round(uvData.safe_minutes) + 'M' : '--';
+  // Caption row sits just above the sparkline (bars occupy bottom 7 rows: y=25..31)
+  textOutlined(maxStr,  1,                          18, 200, 200, 200);
+  textOutlined(safeStr, W - textWidth(safeStr) - 1, 18, 180, 230, 180);
+}
+
 function sceneWeatherNow(tick) {
   clear();
   const cond = condOf(currentWeather);
@@ -2519,7 +2619,7 @@ function sceneRadio(tick) {
 }
 
 // ─── Animation loop ───────────────────────────────────────────────────────────
-const SCENES = ['daily', 'weather_now', 'forecast', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
+const SCENES = ['daily', 'weather_now', 'forecast', 'uv', 'moon', 'galaxy', 'asteroid', 'event', 'apod_live'];
 let   ticksPerView    = 187;  // default ~15 s per view at 80 ms; adjustable via slider
 // Scene-specific duration multipliers — applied on top of ticksPerView for
 // scenes whose animation budget needs more room than the global default.
@@ -2547,6 +2647,13 @@ const SCENE_INFO = {
     desc: `<strong>Art:</strong> Condition-reactive sky gradient (clear/rain/snow/storm/cloud) with pixel-art weather icon.<br>
            <strong>Rotation:</strong> Three views — NOW (current temp + feels-like), TODAY (min–max + dominant), TOMORROW (min–max + dominant).<br>
            <strong>Bottom strip:</strong> City, humidity, wind.`,
+  },
+  uv: {
+    label: 'UV',
+    desc: `<strong>Source:</strong> Open-Meteo UV index for the configured city.<br>
+           <strong>Top:</strong> Current UV index (big), WHO band label (low → extreme).<br>
+           <strong>Sparkline:</strong> Today's hourly forecast across the bottom; current hour marked. Bars are colour-coded by band.<br>
+           <strong>Bottom strip:</strong> Daily max + safe-exposure minutes (Fitzpatrick II default).`,
   },
   moon: {
     label: 'Moon',
@@ -2626,6 +2733,7 @@ function drawScene() {
     case 'daily':      sceneDaily(tick);     break;
     case 'weather_now': sceneWeatherNow(tick); break;
     case 'forecast':    sceneForecast(tick);   break;
+    case 'uv':         sceneUV(tick);         break;
     case 'moon':       sceneNight(tick);     break;
     case 'galaxy':     sceneGalaxy(tick);    break;
     case 'asteroid':   sceneAsteroid(tick);  break;

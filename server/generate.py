@@ -18,6 +18,7 @@ load_dotenv()
 
 import nasa
 import weather
+import uv as uv_mod
 import image
 import briefing
 import generate_bg
@@ -67,6 +68,9 @@ def run():
     print("Weather (day-after-tomorrow forecast)...")
     forecast_day_after_data = safe(weather.forecast_day_after_tomorrow)
 
+    print("UV index (Open-Meteo)...")
+    uv_data = safe(uv_mod.current)
+
     daily = {
         "generated": datetime.now(ZoneInfo(os.getenv("TIMEZONE", "UTC"))).strftime("%Y-%m-%d"),  # local date, cache key
         "apod":      apod_data,
@@ -76,6 +80,7 @@ def run():
         "forecast_today":     forecast_today_data,
         "forecast":           forecast_data,
         "forecast_day_after": forecast_day_after_data,
+        "uv":                 uv_data,
     }
 
     (OUT / "daily.json").write_text(json.dumps(daily, indent=2))
