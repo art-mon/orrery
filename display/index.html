@@ -2326,8 +2326,9 @@ const UV_STARS = [
 // below the canvas so the cap fills the lower third with continents.
 const UV_PLANET_CX = 32;
 const UV_PLANET_CY = 44;
-const UV_PLANET_R  = 24;
-const UV_ATM_R     = 28;   // outer atmosphere arc — 4px above the surface at the apex
+const UV_PLANET_R  = 27;
+const UV_ATM_R     = 30;   // outer atmosphere arc — 3px above the surface at the apex
+const UV_HALO_MAX  = 2;    // additional rows of fading outer halo past the atmosphere rim
 
 // Per-column y of the planet surface and atmosphere top. Off-canvas
 // columns store a sentinel (>= H) so we don't draw a band there.
@@ -2389,44 +2390,46 @@ function sceneUV(tick) {
   // ── Top "source" line (band-colored) ──────────────────────────────────────
   for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
 
-  // ── Falling UV rays — terminate at the atmosphere edge ────────────────────
-  const uvStrength = Math.max(0.12, Math.min(1.0, uvNow / 11));
-  const threshold  = 0.30;
+  // ── Falling UV rays — smooth vertical streaks (no hard threshold) ─────────
+  // Two additive sine layers along Y give continuous streaks; the per-column
+  // envelope still picks "which columns are lit right now". Intensity scales
+  // colour linearly toward a near-white core at high a, so streaks fade in
+  // and out smoothly instead of forming gridded clumps.
+  const uvStrength = Math.max(0.10, Math.min(1.0, uvNow / 11));
   for (let x = 0; x < W; x++) {
     const colBase = 0.5
       + 0.30 * Math.sin(x * 0.42 + tick * 0.022)
       + 0.20 * Math.sin(x * 0.13 - tick * 0.041 + 1.7);
-    const I = colBase * uvStrength;
-    if (I <= 0.05) continue;
+    const I = Math.max(0, colBase) * uvStrength;
+    if (I <= 0.04) continue;
 
     const stop = Math.min(H - 1, (atmTop[x] < H ? atmTop[x] : H) - 1);
     for (let y = 1; y <= stop; y++) {
-      const vMod = 0.5 + 0.5 * Math.sin(y * 0.55 + x * 0.31 - tick * 0.34);
-      const a = I * (0.50 + 0.50 * vMod);
-      if (a < threshold) continue;
-      const k    = Math.min(1, (a - threshold) / (1 - threshold));
-      const core = Math.max(0, k - 0.55) * 2.2;
-      const dim  = 0.55 + k * 0.45;
-      const r = Math.round((cr + (255 - cr) * core * 0.7) * dim);
-      const g = Math.round((cg + (255 - cg) * core * 0.7) * dim);
-      const b = Math.round((cb + (255 - cb) * core * 0.7) * dim);
+      const n1 = 0.5 + 0.5 * Math.sin(y * 0.45 - tick * 0.32 + x * 0.21);
+      const n2 = 0.5 + 0.5 * Math.sin(y * 0.32 + tick * 0.18 + x * 0.13 + 1.7);
+      const along = n1 * 0.60 + n2 * 0.40;       // [0..1], continuous
+      const a = Math.min(1, I * along * 1.35);   // gentle gain so mid-UV reads
+      if (a < 0.04) continue;
+      const core = Math.max(0, (a - 0.62) / 0.38);  // 0..1 above a=0.62
+      const r = Math.round(cr * a + (255 - cr) * core * 0.6);
+      const g = Math.round(cg * a + (255 - cg) * core * 0.6);
+      const b = Math.round(cb * a + (255 - cb) * core * 0.6);
       px(x, y, r, g, b);
     }
   }
 
   // ── Atmosphere band: bluish-grey haze between atmTop and planetTop ────────
   // Slight slow shimmer along the band to feel alive, like the cloud scene.
+  // Rim brightness decays with UV — the haze "burns through" at extreme UV.
+  const rimDim = 1 - 0.55 * uvStrength;     // 1.0 at no UV → 0.45 at full UV
   for (let x = 0; x < W; x++) {
     const aT = atmTop[x], pT = planetTop[x];
     if (aT >= H) continue;
     const bandH = Math.max(1, pT - aT);
     for (let y = aT; y < Math.min(H, pT); y++) {
-      // 0 at outer atmosphere edge, 1 at planet surface
-      const t = (y - aT) / bandH;
-      // Soft drift so the haze isn't dead-flat
+      const t = (y - aT) / bandH;                // 0 at outer edge, 1 at surface
       const shimmer = 0.5 + 0.5 * Math.sin(x * 0.18 + y * 0.22 + tick * 0.045);
-      const lift    = 0.85 + shimmer * 0.30;        // 0.85..1.15
-      // Greyish-blue, brighter near the surface (Rayleigh-ish gradient)
+      const lift    = 0.85 + shimmer * 0.30;
       const baseR = 70  + 40 * t;
       const baseG = 95  + 55 * t;
       const baseB = 135 + 60 * t;
@@ -2434,9 +2437,21 @@ function sceneUV(tick) {
               Math.min(255, Math.round(baseG * lift)),
               Math.min(255, Math.round(baseB * lift)));
     }
-    // Outer rim — brighter cyan line right at the atmosphere edge
     if (aT >= 0 && aT < H) {
-      px(x, aT, 150, 200, 245);
+      px(x, aT, Math.round(150 * rimDim), Math.round(200 * rimDim), Math.round(245 * rimDim));
+    }
+    // Soft halo above the rim — fades into space so the limb doesn't end flat.
+    for (let i = 1; i <= UV_HALO_MAX; i++) {
+      const yy = aT - i;
+      if (yy < 1) break;
+      const f = rimDim * (0.55 - 0.25 * (i - 1));  // i=1 → 0.55, i=2 → 0.30
+      const hr = Math.round(150 * f);
+      const hg = Math.round(200 * f);
+      const hb = Math.round(245 * f);
+      const cur = fb[yy][x];
+      if (hr + hg + hb > cur[0] + cur[1] + cur[2]) {
+        fb[yy][x] = [hr, hg, hb];
+      }
     }
   }
 
@@ -2444,16 +2459,32 @@ function sceneUV(tick) {
   // drawEarthSprite respects canvas bounds, so only the visible cap renders.
   drawEarthSprite(UV_PLANET_CX, UV_PLANET_CY, UV_PLANET_R);
 
-  // ── NOW / MX text — drawn last so the art doesn't obscure ─────────────────
+  // ── NOW / MX text — dim a backdrop so saturated rays don't drown it ──────
+  const dimBackdrop = (x0, y0, w, h) => {
+    for (let yy = y0; yy < y0 + h && yy < H; yy++) {
+      if (yy < 0) continue;
+      for (let xx = x0; xx < x0 + w && xx < W; xx++) {
+        if (xx < 0) continue;
+        const c = fb[yy][xx];
+        fb[yy][xx] = [Math.round(c[0] * 0.28), Math.round(c[1] * 0.28), Math.round(c[2] * 0.28)];
+      }
+    }
+  };
   const nowVal = uvNow.toFixed(1);
-  textOutlined('NOW',  1, 1, 170, 170, 170);
+  const nowW   = Math.max(textWidth('NOW'), textWidth(nowVal));
+  dimBackdrop(0, 0, nowW + 2, 12);
+  textOutlined('NOW',  1, 1, 200, 200, 200);
   textOutlined(nowVal, 1, 7, cr, cg, cb);
   if (data.daily_max != null) {
     const mxVal = String(Math.round(data.daily_max));
     const mxLbl = 'MX';
-    textOutlined(mxLbl, W - textWidth(mxLbl) - 1, 1, 170, 170, 170);
+    const mxLblW = textWidth(mxLbl);
+    const mxValW = textWidth(mxVal);
+    const mxBlockW = Math.max(mxLblW, mxValW) + 2;
+    dimBackdrop(W - mxBlockW, 0, mxBlockW, 12);
+    textOutlined(mxLbl, W - mxLblW - 1, 1, 200, 200, 200);
     const mxC = uvBand(data.daily_max).col;
-    textOutlined(mxVal, W - textWidth(mxVal) - 1, 7, ...mxC);
+    textOutlined(mxVal, W - mxValW - 1, 7, ...mxC);
   }
 }
 
