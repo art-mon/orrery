@@ -295,17 +295,6 @@
       <button id="uv-override-live-btn" style="min-height:28px; padding:4px 10px; font-size:11px;">Live</button>
     </div>
     <div class="setting-row">
-      <span>Skin type</span>
-      <select id="uv-skin" style="flex:1; background:#1a1a1a; color:#ccc; border:1px solid #333; padding:4px 8px; font-size:12px;">
-        <option value="1">I — very fair (always burns)</option>
-        <option value="2" selected>II — fair</option>
-        <option value="3">III — medium</option>
-        <option value="4">IV — olive</option>
-        <option value="5">V — brown</option>
-        <option value="6">VI — dark brown / black</option>
-      </select>
-    </div>
-    <div class="setting-row">
       <span>Hour preview</span>
       <input type="range" id="uv-hour" min="-1" max="23" step="1" value="-1">
       <span class="val" id="uv-hour-val" style="min-width:64px;">Live</span>
@@ -2311,7 +2300,8 @@ function drawWeatherParticles(x0, cond, colIdx, colW, tick) {
 // ─── Weather: NOW ─────────────────────────────────────────────────────────────
 // Current conditions: big temp + feels like + humidity + wind.
 // ─── UV index panel ───────────────────────────────────────────────────────────
-// Big current UV + WHO band, with a 24-hour sparkline along the bottom.
+// Vertical UV rays falling onto an Earth arc at the bottom of the panel.
+// Ray density + brightness scales with UV; color = WHO band.
 const UV_BANDS = [
   { max: 3,    name: 'LOW',     col: [ 90, 200, 110] },
   { max: 6,    name: 'MOD',     col: [240, 220,  80] },
@@ -2324,102 +2314,124 @@ function uvBand(v) {
   return UV_BANDS[UV_BANDS.length - 1];
 }
 
-function sceneUV(tick) {
-  clear();
+// Sparse fixed starfield — twinkles with tick.
+const UV_STARS = [
+  {x: 4,  y: 6},  {x: 11, y: 3},  {x: 17, y: 10},
+  {x: 23, y: 5},  {x: 29, y: 14}, {x: 38, y: 4},
+  {x: 44, y: 11}, {x: 50, y: 6},  {x: 57, y: 13},
+  {x: 60, y: 3},  {x: 8,  y: 17}, {x: 53, y: 17},
+];
 
-  // Soft dark sky background
-  for (let y = 0; y < H; y++) {
-    const t = y / (H - 1);
-    const r = Math.round(8  + t * 6);
-    const g = Math.round(10 + t * 10);
-    const b = Math.round(28 + t * 18);
-    for (let x = 0; x < W; x++) px(x, y, r, g, b);
+// Planet arc: center far below the canvas so the visible cap is gentle.
+const UV_PLANET_CX = 32;
+const UV_PLANET_CY = 104;
+const UV_PLANET_R  = 80;
+let _uvSurfaceY = null;
+function _uvSurfaceFor(x) {
+  if (!_uvSurfaceY) {
+    _uvSurfaceY = new Array(W);
+    for (let i = 0; i < W; i++) {
+      const dx = i - UV_PLANET_CX;
+      _uvSurfaceY[i] = Math.round(UV_PLANET_CY - Math.sqrt(UV_PLANET_R*UV_PLANET_R - dx*dx));
+    }
   }
+  return _uvSurfaceY[x];
+}
 
-  // Top bar
-  textOutlined('UV', 1, 1, 230, 200, 100);
-  const clock = timeStr();
-  textOutlined(clock, W - textWidth(clock) - 1, 1, 170, 170, 170);
+function sceneUV(tick) {
+  clear();  // pure black space
 
-  if (!uvData || uvData.error) {
+  // ── Resolve displayed UV (slider override > hour preview > live) ──────────
+  const data = uvData;
+  if (!data || data.error) {
+    textOutlined('UV', 1, 1, 230, 200, 100);
     textOutlined('NO DATA', Math.floor((W - textWidth('NO DATA')) / 2), 14, 120, 120, 120);
     return;
   }
-
-  // Resolve the displayed UV: explicit slider override > hour-preview from
-  // hourly[] > live `uv` field. Same precedence for the caption/safe minutes.
-  const hourly   = Array.isArray(uvData.hourly) ? uvData.hourly : [];
-  const liveHr   = new Date().getHours();
+  const hourly    = Array.isArray(data.hourly) ? data.hourly : [];
+  const liveHr    = new Date().getHours();
   const previewHr = (uvHourOverride >= 0) ? uvHourOverride : liveHr;
   const hourFromIdx = (() => {
-    if (!hourly.length) return null;
     for (const h of hourly) {
       const m = typeof h.time === 'string' ? h.time.match(/T(\d{2})/) : null;
       if (m && parseInt(m[1], 10) === previewHr) return Number(h.uv) || 0;
     }
     return null;
   })();
-  const liveUV = Number(uvData.uv) || 0;
+  const liveUV = Number(data.uv) || 0;
   let uvNow;
-  if (uvIndexOverride >= 0)        uvNow = uvIndexOverride;
+  if (uvIndexOverride >= 0)                            uvNow = uvIndexOverride;
   else if (uvHourOverride >= 0 && hourFromIdx != null) uvNow = hourFromIdx;
-  else                              uvNow = liveUV;
-  const band  = uvBand(uvNow);
+  else                                                 uvNow = liveUV;
+  const band = uvBand(uvNow);
+  const [cr, cg, cb] = band.col;
 
-  // Big number — use medium font if available, else regular
-  const numStr = uvNow.toFixed(1);
-  const hasMed = typeof drawMedOutlined === 'function' && typeof medWidth === 'function';
-  if (hasMed) {
-    const nw = medWidth(numStr);
-    drawMedOutlined(numStr, Math.floor((W - nw) / 2) - 6, 8, ...band.col);
-  } else {
-    textOutlined(numStr, Math.floor((W - textWidth(numStr)) / 2) - 6, 9, ...band.col);
+  // ── Subtle twinkling stars (drawn first, get overdrawn by bright rays) ────
+  for (const s of UV_STARS) {
+    const ph = Math.sin(tick * 0.07 + s.x * 0.5 + s.y * 0.4);
+    const v  = Math.round(55 + ph * 35);
+    px(s.x, s.y, v, v, Math.min(255, v + 18));
   }
-  // Band label to the right of the number
-  textOutlined(band.name, W - textWidth(band.name) - 1, 9, ...band.col);
 
-  // Sparkline of today's hourly UV across the bottom strip
-  if (hourly.length) {
-    const baseY = H - 1;             // bottom row
-    const barH  = 7;                 // max bar height — leaves caption row clear
-    const maxUV = Math.max(1, ...hourly.map(h => Number(h.uv) || 0));
-    const nowHr = previewHr;         // marker follows the hour-preview override
-    const cols  = Math.min(24, hourly.length);
-    const slot  = Math.floor(W / cols);
-    const x0    = Math.floor((W - slot * cols) / 2);
+  // ── Top "source" line (band-colored) ──────────────────────────────────────
+  for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
 
-    for (let i = 0; i < cols; i++) {
-      const u  = Number(hourly[i].uv) || 0;
-      const h  = Math.max(0, Math.round((u / maxUV) * barH));
-      const bx = x0 + i * slot;
-      const c  = uvBand(u).col;
-      for (let dy = 0; dy < h; dy++) {
-        for (let dx = 0; dx < Math.max(1, slot - 1); dx++) {
-          px(bx + dx, baseY - dy, ...c);
-        }
-      }
-      // Current hour marker — bright dot above the bar
-      const hr = (() => {
-        const t = hourly[i].time;
-        if (typeof t !== 'string') return -1;
-        const m = t.match(/T(\d{2})/);
-        return m ? parseInt(m[1], 10) : -1;
-      })();
-      if (hr === nowHr) {
-        for (let dx = 0; dx < Math.max(1, slot - 1); dx++) {
-          px(bx + dx, baseY - barH - 1, 255, 255, 255);
-        }
-      }
+  // ── Falling UV rays ───────────────────────────────────────────────────────
+  // Per-column envelope drifts slowly (which columns are "lit" right now);
+  // along-ray modulation scrolls downward so light visibly rains.
+  const uvStrength = Math.max(0.12, Math.min(1.0, uvNow / 11));
+  const threshold  = 0.30;
+  for (let x = 0; x < W; x++) {
+    const colBase = 0.5
+      + 0.30 * Math.sin(x * 0.42 + tick * 0.022)
+      + 0.20 * Math.sin(x * 0.13 - tick * 0.041 + 1.7);
+    const I = colBase * uvStrength;
+    if (I <= 0.05) continue;
+
+    const yTop = 1;
+    const yEnd = Math.min(H - 1, _uvSurfaceFor(x) - 1);
+    for (let y = yTop; y <= yEnd; y++) {
+      const vMod = 0.5 + 0.5 * Math.sin(y * 0.55 + x * 0.31 - tick * 0.34);
+      const a = I * (0.50 + 0.50 * vMod);
+      if (a < threshold) continue;
+      const k    = Math.min(1, (a - threshold) / (1 - threshold));     // 0..1
+      const core = Math.max(0, k - 0.55) * 2.2;                         // bright core
+      const dim  = 0.55 + k * 0.45;
+      const r = Math.round((cr + (255 - cr) * core * 0.7) * dim);
+      const g = Math.round((cg + (255 - cg) * core * 0.7) * dim);
+      const b = Math.round((cb + (255 - cb) * core * 0.7) * dim);
+      px(x, y, r, g, b);
     }
   }
 
-  // Bottom caption: max + safe minutes (recomputed from current UV + skin)
-  const maxStr  = uvData.daily_max != null ? 'MX' + Math.round(uvData.daily_max) : '';
-  const safeMin = uvSafeMinutes(uvNow, uvSkinType);
-  const safeStr = safeMin != null ? safeMin + 'M' : '--';
-  // Caption row sits just above the sparkline (bars occupy bottom 7 rows: y=25..31)
-  textOutlined(maxStr,  1,                          18, 200, 200, 200);
-  textOutlined(safeStr, W - textWidth(safeStr) - 1, 18, 180, 230, 180);
+  // ── Earth arc: bright atmosphere rim + dark body ──────────────────────────
+  for (let x = 0; x < W; x++) {
+    const ys = _uvSurfaceFor(x);
+    if (ys < 0 || ys >= H) continue;
+    // Atmosphere rim — cool cyan glow
+    px(x, ys, 130, 190, 255);
+    // Body — darkens with depth
+    for (let y = ys + 1; y < H; y++) {
+      const depth = (y - ys) / Math.max(1, H - ys);
+      const r = Math.round(10 + (1 - depth) * 12);
+      const g = Math.round(22 + (1 - depth) * 22);
+      const b = Math.round(50 + (1 - depth) * 35);
+      px(x, y, r, g, b);
+    }
+  }
+
+  // ── NOW / MX text — drawn last so rays don't obscure ──────────────────────
+  // 'NOW' label + value left, 'MX' label + value right.
+  const nowVal = uvNow.toFixed(1);
+  textOutlined('NOW',  1, 1, 170, 170, 170);
+  textOutlined(nowVal, 1, 7, cr, cg, cb);
+  if (data.daily_max != null) {
+    const mxVal = String(Math.round(data.daily_max));
+    const mxLbl = 'MX';
+    textOutlined(mxLbl, W - textWidth(mxLbl) - 1, 1, 170, 170, 170);
+    const mxC = uvBand(data.daily_max).col;
+    textOutlined(mxVal, W - textWidth(mxVal) - 1, 7, ...mxC);
+  }
 }
 
 function sceneWeatherNow(tick) {
@@ -2690,10 +2702,9 @@ const SCENE_INFO = {
   },
   uv: {
     label: 'UV',
-    desc: `<strong>Source:</strong> Open-Meteo UV index for the configured city.<br>
-           <strong>Top:</strong> Current UV index (big), WHO band label (low → extreme).<br>
-           <strong>Sparkline:</strong> Today's hourly forecast across the bottom; current hour marked. Bars are colour-coded by band.<br>
-           <strong>Bottom strip:</strong> Daily max + safe-exposure minutes (Fitzpatrick II default).`,
+    desc: `<strong>Art:</strong> Vertical UV rays falling from a band-coloured source line at the top onto Earth's atmosphere arc at the bottom. Ray density + core brightness scale with the current UV index; colour shifts through the WHO bands (green → yellow → orange → red → purple).<br>
+           <strong>Animation:</strong> Two-layer sine-noise field — slow horizontal envelope decides which columns are "lit", faster vertical phase scrolls downward so the light appears to rain.<br>
+           <strong>Readouts:</strong> NOW (current UV) top-left, MX (today's forecast peak) top-right, each tinted by its own band.`,
   },
   moon: {
     label: 'Moon',
@@ -3025,7 +3036,6 @@ function condOf(data) {
 // -1 = live, otherwise force the displayed UV to this value
 let uvIndexOverride = -1;
 let uvHourOverride  = -1;   // -1 = use real clock, 0..23 = preview that hour
-let uvSkinType      = 2;
 
 const uvOverrideSlider = document.getElementById('uv-override');
 const uvOverrideVal    = document.getElementById('uv-override-val');
@@ -3040,10 +3050,6 @@ document.getElementById('uv-override-live-btn').addEventListener('click', () => 
   uvOverrideVal.textContent = 'Live';
 });
 
-document.getElementById('uv-skin').addEventListener('change', function() {
-  uvSkinType = parseInt(this.value, 10) || 2;
-});
-
 const uvHourSlider = document.getElementById('uv-hour');
 const uvHourVal    = document.getElementById('uv-hour-val');
 uvHourSlider.addEventListener('input', () => {
@@ -3056,14 +3062,6 @@ document.getElementById('uv-hour-live-btn').addEventListener('click', () => {
   uvHourSlider.value = -1;
   uvHourVal.textContent = 'Live';
 });
-
-// Recompute safe-exposure minutes (mirror of server-side formula)
-function uvSafeMinutes(uv, skin) {
-  if (uv <= 0.1) return null;
-  const med = {1:200, 2:250, 3:350, 4:450, 5:600, 6:1000}[skin] || 250;
-  const irradiance = uv * 0.025;
-  return Math.max(1, Math.round(med / irradiance / 60));
-}
 
 // ── Settings panel toggle ─────────────────────────────────────────────────────
 document.getElementById('settings-toggle').addEventListener('click', () => {
