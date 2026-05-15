@@ -2317,29 +2317,39 @@ function uvBand(v) {
 // Sparse fixed starfield — twinkles with tick.
 const UV_STARS = [
   {x: 4,  y: 6},  {x: 11, y: 3},  {x: 17, y: 10},
-  {x: 23, y: 5},  {x: 29, y: 14}, {x: 38, y: 4},
-  {x: 44, y: 11}, {x: 50, y: 6},  {x: 57, y: 13},
-  {x: 60, y: 3},  {x: 8,  y: 17}, {x: 53, y: 17},
+  {x: 23, y: 5},  {x: 38, y: 4},  {x: 44, y: 11},
+  {x: 50, y: 6},  {x: 57, y: 13}, {x: 60, y: 3},
 ];
 
-// Planet arc: center far below the canvas so the visible cap is gentle.
+// Planet geometry — large enough to show globe curvature with surface
+// texture, small enough that the atmosphere fits above. Center sits just
+// below the canvas so the cap fills the lower third with continents.
 const UV_PLANET_CX = 32;
-const UV_PLANET_CY = 104;
-const UV_PLANET_R  = 80;
-let _uvSurfaceY = null;
-function _uvSurfaceFor(x) {
-  if (!_uvSurfaceY) {
-    _uvSurfaceY = new Array(W);
-    for (let i = 0; i < W; i++) {
-      const dx = i - UV_PLANET_CX;
-      _uvSurfaceY[i] = Math.round(UV_PLANET_CY - Math.sqrt(UV_PLANET_R*UV_PLANET_R - dx*dx));
-    }
+const UV_PLANET_CY = 44;
+const UV_PLANET_R  = 24;
+const UV_ATM_R     = 28;   // outer atmosphere arc — 4px above the surface at the apex
+
+// Per-column y of the planet surface and atmosphere top. Off-canvas
+// columns store a sentinel (>= H) so we don't draw a band there.
+let _uvArcs = null;
+function _uvComputeArcs() {
+  if (_uvArcs) return _uvArcs;
+  const planetTop = new Int16Array(W);
+  const atmTop    = new Int16Array(W);
+  for (let x = 0; x < W; x++) {
+    const dx = x - UV_PLANET_CX;
+    const pSq = UV_PLANET_R*UV_PLANET_R - dx*dx;
+    const aSq = UV_ATM_R*UV_ATM_R    - dx*dx;
+    planetTop[x] = pSq >= 0 ? Math.round(UV_PLANET_CY - Math.sqrt(pSq)) : 32767;
+    atmTop[x]    = aSq >= 0 ? Math.round(UV_PLANET_CY - Math.sqrt(aSq)) : 32767;
   }
-  return _uvSurfaceY[x];
+  _uvArcs = { planetTop, atmTop };
+  return _uvArcs;
 }
 
 function sceneUV(tick) {
   clear();  // pure black space
+  if (!earthTexture) loadEarthTexture();
 
   // ── Resolve displayed UV (slider override > hour preview > live) ──────────
   const data = uvData;
@@ -2366,8 +2376,11 @@ function sceneUV(tick) {
   const band = uvBand(uvNow);
   const [cr, cg, cb] = band.col;
 
-  // ── Subtle twinkling stars (drawn first, get overdrawn by bright rays) ────
+  const { planetTop, atmTop } = _uvComputeArcs();
+
+  // ── Subtle twinkling stars (skip columns that fall under the atmosphere) ──
   for (const s of UV_STARS) {
+    if (atmTop[s.x] <= s.y) continue;
     const ph = Math.sin(tick * 0.07 + s.x * 0.5 + s.y * 0.4);
     const v  = Math.round(55 + ph * 35);
     px(s.x, s.y, v, v, Math.min(255, v + 18));
@@ -2376,9 +2389,7 @@ function sceneUV(tick) {
   // ── Top "source" line (band-colored) ──────────────────────────────────────
   for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
 
-  // ── Falling UV rays ───────────────────────────────────────────────────────
-  // Per-column envelope drifts slowly (which columns are "lit" right now);
-  // along-ray modulation scrolls downward so light visibly rains.
+  // ── Falling UV rays — terminate at the atmosphere edge ────────────────────
   const uvStrength = Math.max(0.12, Math.min(1.0, uvNow / 11));
   const threshold  = 0.30;
   for (let x = 0; x < W; x++) {
@@ -2388,14 +2399,13 @@ function sceneUV(tick) {
     const I = colBase * uvStrength;
     if (I <= 0.05) continue;
 
-    const yTop = 1;
-    const yEnd = Math.min(H - 1, _uvSurfaceFor(x) - 1);
-    for (let y = yTop; y <= yEnd; y++) {
+    const stop = Math.min(H - 1, (atmTop[x] < H ? atmTop[x] : H) - 1);
+    for (let y = 1; y <= stop; y++) {
       const vMod = 0.5 + 0.5 * Math.sin(y * 0.55 + x * 0.31 - tick * 0.34);
       const a = I * (0.50 + 0.50 * vMod);
       if (a < threshold) continue;
-      const k    = Math.min(1, (a - threshold) / (1 - threshold));     // 0..1
-      const core = Math.max(0, k - 0.55) * 2.2;                         // bright core
+      const k    = Math.min(1, (a - threshold) / (1 - threshold));
+      const core = Math.max(0, k - 0.55) * 2.2;
       const dim  = 0.55 + k * 0.45;
       const r = Math.round((cr + (255 - cr) * core * 0.7) * dim);
       const g = Math.round((cg + (255 - cg) * core * 0.7) * dim);
@@ -2404,24 +2414,37 @@ function sceneUV(tick) {
     }
   }
 
-  // ── Earth arc: bright atmosphere rim + dark body ──────────────────────────
+  // ── Atmosphere band: bluish-grey haze between atmTop and planetTop ────────
+  // Slight slow shimmer along the band to feel alive, like the cloud scene.
   for (let x = 0; x < W; x++) {
-    const ys = _uvSurfaceFor(x);
-    if (ys < 0 || ys >= H) continue;
-    // Atmosphere rim — cool cyan glow
-    px(x, ys, 130, 190, 255);
-    // Body — darkens with depth
-    for (let y = ys + 1; y < H; y++) {
-      const depth = (y - ys) / Math.max(1, H - ys);
-      const r = Math.round(10 + (1 - depth) * 12);
-      const g = Math.round(22 + (1 - depth) * 22);
-      const b = Math.round(50 + (1 - depth) * 35);
-      px(x, y, r, g, b);
+    const aT = atmTop[x], pT = planetTop[x];
+    if (aT >= H) continue;
+    const bandH = Math.max(1, pT - aT);
+    for (let y = aT; y < Math.min(H, pT); y++) {
+      // 0 at outer atmosphere edge, 1 at planet surface
+      const t = (y - aT) / bandH;
+      // Soft drift so the haze isn't dead-flat
+      const shimmer = 0.5 + 0.5 * Math.sin(x * 0.18 + y * 0.22 + tick * 0.045);
+      const lift    = 0.85 + shimmer * 0.30;        // 0.85..1.15
+      // Greyish-blue, brighter near the surface (Rayleigh-ish gradient)
+      const baseR = 70  + 40 * t;
+      const baseG = 95  + 55 * t;
+      const baseB = 135 + 60 * t;
+      px(x, y, Math.min(255, Math.round(baseR * lift)),
+              Math.min(255, Math.round(baseG * lift)),
+              Math.min(255, Math.round(baseB * lift)));
+    }
+    // Outer rim — brighter cyan line right at the atmosphere edge
+    if (aT >= 0 && aT < H) {
+      px(x, aT, 150, 200, 245);
     }
   }
 
-  // ── NOW / MX text — drawn last so rays don't obscure ──────────────────────
-  // 'NOW' label + value left, 'MX' label + value right.
+  // ── Planet — textured globe via the existing earth sprite ─────────────────
+  // drawEarthSprite respects canvas bounds, so only the visible cap renders.
+  drawEarthSprite(UV_PLANET_CX, UV_PLANET_CY, UV_PLANET_R);
+
+  // ── NOW / MX text — drawn last so the art doesn't obscure ─────────────────
   const nowVal = uvNow.toFixed(1);
   textOutlined('NOW',  1, 1, 170, 170, 170);
   textOutlined(nowVal, 1, 7, cr, cg, cb);
