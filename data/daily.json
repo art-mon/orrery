@@ -185,7 +185,7 @@
         "hazardous": true,
         "diameter_m": 1208,
         "close_approach_date": "2026-05-16",
-        "miss_distance_km": 23386608,
+        "miss_distance_km": 23386610,
         "velocity_kmh": 83071
       },
       {
@@ -249,24 +249,24 @@
   "weather": {
     "city": "Zagreb",
     "temp_c": 12.7,
-    "feels_c": 12.3,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 9.3
+    "feels_c": 12.2,
+    "humidity": 82,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-05-16",
     "city": "Zagreb",
     "temp_min_c": 11.7,
-    "temp_max_c": 14.4,
-    "humidity": 90,
+    "temp_max_c": 14.3,
+    "humidity": 88,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 11.8,
-    "samples": 6
+    "icon": "04d",
+    "wind_kmh": 13.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-17",
@@ -291,11 +291,11 @@
     "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 1.8,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 2.0,
     "peak_time": "2026-05-16T17:00",
-    "safe_minutes": 93,
+    "safe_minutes": 278,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-16T10:46:19+02:00"
+    "fetched_at": "2026-05-16T12:12:27+02:00"
   }
 }
