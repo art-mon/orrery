@@ -2330,6 +2330,41 @@ const UV_PLANET_R  = 60;
 const UV_ATM_R     = 62;   // outer atmosphere arc — 2px above the surface at the apex
 const UV_HALO_MAX  = 4;    // additional rows of fading outer halo past the atmosphere rim
 
+// Pre-baked land map for the UV scene's Earth cap. A handful of jittered
+// ellipses give the visible cap a few continent-sized landmasses instead of
+// the scattered-island look of per-pixel noise.
+let _uvLandMap = null;
+function _uvBuildLandMap() {
+  if (_uvLandMap) return _uvLandMap;
+  const map = new Uint8Array(W * H);
+  // (cx, cy, rx, ry) ellipse seeds — all expressed in display coords.
+  // Coverage roughly fills the visible cap region (x≈4..60, y≈24..31).
+  const continents = [
+    { cx: 13, cy: 28, rx: 8,  ry: 3 },
+    { cx: 30, cy: 27, rx: 11, ry: 4 },
+    { cx: 47, cy: 28, rx: 7,  ry: 3 },
+    { cx: 22, cy: 30, rx: 4,  ry: 2 },
+    { cx: 38, cy: 30, rx: 3,  ry: 2 },
+    { cx: 56, cy: 31, rx: 3,  ry: 1 },
+  ];
+  for (let y = 0; y < H; y++) {
+    for (let x = 0; x < W; x++) {
+      let land = false;
+      for (const c of continents) {
+        const dx = (x - c.cx) / c.rx;
+        const dy = (y - c.cy) / c.ry;
+        const r2 = dx * dx + dy * dy;
+        // Edge jitter so blobs aren't perfect ellipses
+        const jitter = (nhash(x + c.cx * 7, y + c.cy * 13) - 0.5) * 0.45;
+        if (r2 + jitter < 1) { land = true; break; }
+      }
+      map[y * W + x] = land ? 1 : 0;
+    }
+  }
+  _uvLandMap = map;
+  return _uvLandMap;
+}
+
 // Per-column y of the planet surface and atmosphere top. Off-canvas
 // columns store a sentinel (>= H) so we don't draw a band there.
 let _uvArcs = null;
@@ -2486,25 +2521,17 @@ function sceneUV(tick) {
     }
   }
 
-  // ── Planet — procedural ocean + land cap ──────────────────────────────────
-  // At this radius the sphere-texture sample sits at the polar cap, which
-  // reads as uniform. Drawing the cap procedurally lets us show a clear
-  // ocean gradient (lighter near the rim, deeper toward the bottom) plus
-  // irregular land patches via a noise-mask threshold.
+  // ── Planet — procedural ocean + pre-baked continent land mask ────────────
+  const land = _uvBuildLandMap();
   for (let x = 0; x < W; x++) {
     const pT = planetTop[x];
     if (pT >= H) continue;
     const dx = x - UV_PLANET_CX;
-    // Ocean blue: brighter near the rim, deeper below
     for (let y = pT; y < H; y++) {
       const d = (y - pT) / Math.max(1, H - pT);   // 0 at surface → 1 at bottom
-      // Land mask — two-octave value noise, biased so land is sparse
-      const n = nhash(x * 3 + 11, y * 5 + 7) * 0.55
-              + nhash(Math.floor(x / 3) + 71, Math.floor(y / 2) + 23) * 0.45;
-      const isLand = n > 0.62 - d * 0.15;          // a bit more land near bottom
       let r, g, b;
-      if (isLand) {
-        // Mottled dark teal/green land
+      if (land[y * W + x]) {
+        // Mottled dark teal/green land with a touch of variation per pixel
         const lv = nhash(x * 7, y * 11);
         r = Math.round(28 + lv * 26);
         g = Math.round(55 + lv * 40);
