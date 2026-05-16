@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sy76",
+        "title": "M5.0 Earthquake - 5 km WSW of Badak, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-16T11:25:43.857000Z",
+        "coordinates": [
+          124.6816,
+          6.8241
+        ]
+      },
+      {
         "id": "us6000sy5x",
         "title": "M5.0 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           164.9925,
           -10.649
         ]
-      },
-      {
-        "id": "us6000sx3v",
-        "title": "M5.0 Earthquake - 224 km SE of Pondaguitan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-12T08:53:56.666000Z",
-        "coordinates": [
-          127.5121,
-          4.8333
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 12.2,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 16.7
+    "temp_c": 11.7,
+    "feels_c": 11.2,
+    "humidity": 87,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-05-16",
     "city": "Zagreb",
     "temp_min_c": 11.7,
-    "temp_max_c": 14.3,
-    "humidity": 88,
+    "temp_max_c": 12.9,
+    "humidity": 89,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 13.5,
+    "icon": "10d",
+    "wind_kmh": 14.6,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.4,
     "band": "low",
     "daily_max": 2.0,
     "peak_time": "2026-05-16T17:00",
-    "safe_minutes": 278,
+    "safe_minutes": 417,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-16T12:12:27+02:00"
+    "fetched_at": "2026-05-16T13:48:51+02:00"
   }
 }
