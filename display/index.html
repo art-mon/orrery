@@ -2330,6 +2330,37 @@ const UV_PLANET_R  = 60;
 const UV_ATM_R     = 62;   // outer atmosphere arc — 2px above the surface at the apex
 const UV_HALO_MAX  = 4;    // additional rows of fading outer halo past the atmosphere rim
 
+// Pre-baked drifting cloud sprites — each one is a small Float32Array of
+// alpha values, generated once at first scene entry and then blitted at a
+// time-shifted x offset each frame. Cheap: a few hundred pixel writes per
+// frame total, no trig per pixel.
+const UV_CLOUDS = [];
+function _initUvClouds() {
+  if (UV_CLOUDS.length) return;
+  const seeds = [
+    { w: 22, h: 3, y: 4,  speed: 0.16 },
+    { w: 26, h: 4, y: 7,  speed: 0.10 },
+    { w: 18, h: 2, y: 11, speed: 0.22 },
+    { w: 24, h: 3, y: 14, speed: 0.13 },
+    { w: 20, h: 4, y: 17, speed: 0.08 },
+  ];
+  for (let i = 0; i < seeds.length; i++) {
+    const s = seeds[i];
+    const data = new Float32Array(s.w * s.h);
+    for (let y = 0; y < s.h; y++) {
+      for (let x = 0; x < s.w; x++) {
+        const ex = Math.min(x, s.w - 1 - x) / (s.w / 2);  // 0 at edges → 1 mid
+        const ey = Math.min(y, s.h - 1 - y) / (s.h / 2);
+        const edge = Math.min(1, ex * 1.4) * Math.min(1, ey * 1.6);
+        const n = nhash(x + i * 17,        y + i * 31) * 0.6
+                + nhash(Math.floor(x / 2) + i * 5 + 100, y + i * 7) * 0.4;
+        data[y * s.w + x] = Math.max(0, edge * (n * 0.95 - 0.10));
+      }
+    }
+    UV_CLOUDS.push({ ...s, data });
+  }
+}
+
 // Per-column y of the planet surface and atmosphere top. Off-canvas
 // columns store a sentinel (>= H) so we don't draw a band there.
 let _uvArcs = null;
@@ -2351,6 +2382,7 @@ function _uvComputeArcs() {
 function sceneUV(tick) {
   clear();  // pure black space
   if (!earthTexture) loadEarthTexture();
+  _initUvClouds();
 
   // ── Resolve displayed UV (slider override > hour preview > live) ──────────
   const data = uvData;
@@ -2389,6 +2421,34 @@ function sceneUV(tick) {
 
   // ── Top "source" line (band-colored) ──────────────────────────────────────
   for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
+
+  // ── Drifting cloud sprites — complementary tint behind the rays ───────────
+  // Pre-baked alpha masks blitted at a tick-shifted x offset. Cost is just
+  // the sprite footprint per frame, not the full screen.
+  const cloudR = Math.round((255 - cr) * 0.55 + 60);
+  const cloudG = Math.round((255 - cg) * 0.55 + 60);
+  const cloudB = Math.round((255 - cb) * 0.55 + 60);
+  const cloudOpacity = 0.50 + 0.20 * uvStrength;     // 0.50..0.70
+  for (const c of UV_CLOUDS) {
+    const period = W + c.w;
+    const xOff   = ((tick * c.speed) % period + period) % period - c.w;
+    for (let dy = 0; dy < c.h; dy++) {
+      const py = c.y + dy;
+      if (py < 1 || py >= H) continue;
+      for (let dx = 0; dx < c.w; dx++) {
+        const xx = xOff + dx;
+        if (xx < 0 || xx >= W) continue;
+        if (atmTop[xx] < H && py >= atmTop[xx]) continue;   // skip planet/atm region
+        const a = c.data[dy * c.w + dx] * cloudOpacity;
+        if (a < 0.15) continue;
+        const cur = fb[py][xx];
+        const r = Math.round(cur[0] * (1 - a) + cloudR * a);
+        const g = Math.round(cur[1] * (1 - a) + cloudG * a);
+        const b = Math.round(cur[2] * (1 - a) + cloudB * a);
+        fb[py][xx] = [r, g, b];
+      }
+    }
+  }
 
   // ── Falling UV rays ───────────────────────────────────────────────────────
   // Per-column "personality": a fixed random hash desyncs each column's phase
