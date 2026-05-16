@@ -53,7 +53,7 @@ extern "C" void app_main(void) {
     ESP_LOGI(TAG, "orrery boot — milestone 4: scene rotation");
 
     panel_init();
-    panel_set_brightness(25);
+    panel_set_brightness(40);
     draw_status("BOOT", 200, 200, 200);
 
     draw_status("WIFI..", 255, 200, 0);
