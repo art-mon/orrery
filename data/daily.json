@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sy7u",
+        "title": "M5.2 Earthquake - 86 km E of Port-Vila, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-05-16T14:07:55.193000Z",
+        "coordinates": [
+          169.1278,
+          -17.7887
+        ]
+      },
+      {
         "id": "us6000sy7l",
         "title": "M5.3 Earthquake - 94 km E of Port-Vila, Vanuatu",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -174.4653,
           -21.1489
         ]
-      },
-      {
-        "id": "us6000sx9x",
-        "title": "M5.7 Earthquake - 275 km SW of Houma, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-12T21:19:36.870000Z",
-        "coordinates": [
-          -176.8485,
-          -23.2041
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 11.7,
-    "feels_c": 11.2,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 16.7
+    "city": "City of Zagreb",
+    "temp_c": 13.1,
+    "feels_c": 12.7,
+    "humidity": 83,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-16",
-    "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 12.9,
-    "humidity": 88,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.2,
+    "temp_max_c": 13.3,
+    "humidity": 84,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 11.3,
+    "icon": "02d",
+    "wind_kmh": 9.0,
     "samples": 4
   },
   "forecast": {
     "date": "2026-05-17",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 7.5,
     "temp_max_c": 20.0,
     "humidity": 60,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-18",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 10.3,
     "temp_max_c": 21.0,
     "humidity": 61,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 2.6,
     "band": "low",
     "daily_max": 2.6,
     "peak_time": "2026-05-16T17:00",
-    "safe_minutes": 185,
+    "safe_minutes": 63,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-16T15:17:03+02:00"
+    "fetched_at": "2026-05-16T16:54:45+02:00"
   }
 }
