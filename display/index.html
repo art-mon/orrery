@@ -2387,27 +2387,25 @@ function sceneUV(tick) {
     px(s.x, s.y, v, v, Math.min(255, v + 18));
   }
 
-  // ── Top "source" line (band-colored) ──────────────────────────────────────
-  for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
-
-  // ── Drifting cloud field — mirrors the moon-scene approach ────────────────
-  // cloudAlpha is sparse (returns 0 below an internal threshold), so most
-  // pixels early-exit cheaply. Where clouds exist we alpha-blend a
-  // desaturated complement of the band colour over whatever was drawn,
-  // so the cloud layer always contrasts both the rays and the planet.
-  const cloudR = Math.round((255 - cr) * 0.55 + 60);
-  const cloudG = Math.round((255 - cg) * 0.55 + 60);
-  const cloudB = Math.round((255 - cb) * 0.55 + 60);
-  for (let y = 1; y < H; y++) {
+  // ── Top "source" band — bright at y=0, fading downward over a few rows ───
+  // Mirrors the planet's atmosphere: a hard rim with a soft halo bleeding
+  // into the surrounding space.
+  const TOP_HALO = 3;
+  for (let yy = 0; yy <= TOP_HALO; yy++) {
+    if (yy === 0) {
+      for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
+      continue;
+    }
+    const t = 1 - yy / (TOP_HALO + 1);
+    const f = t * t;
+    const tr = Math.round(cr * f);
+    const tg = Math.round(cg * f);
+    const tb = Math.round(cb * f);
     for (let x = 0; x < W; x++) {
-      if (atmTop[x] < H && y >= atmTop[x]) continue;   // skip planet/atmosphere
-      const a = cloudAlpha(x, y, tick);
-      if (a <= 0) continue;
-      const cur = fb[y][x];
-      px(x, y,
-         Math.round(cur[0] * (1 - a) + cloudR * a),
-         Math.round(cur[1] * (1 - a) + cloudG * a),
-         Math.round(cur[2] * (1 - a) + cloudB * a));
+      const cur = fb[yy][x];
+      if (tr + tg + tb > cur[0] + cur[1] + cur[2]) {
+        fb[yy][x] = [tr, tg, tb];
+      }
     }
   }
 
@@ -2539,7 +2537,7 @@ function sceneUV(tick) {
   textOutlined(nowVal, 1, 7, cr, cg, cb);
   if (data.daily_max != null) {
     const mxVal = String(Math.round(data.daily_max));
-    const mxLbl = 'MX';
+    const mxLbl = 'MAX';
     const mxLblW = textWidth(mxLbl);
     const mxValW = textWidth(mxVal);
     const mxBlockW = Math.max(mxLblW, mxValW) + 2;
