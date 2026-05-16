@@ -162,6 +162,16 @@ bool daily_fetch(daily_data_t *out) {
         out->has_apod = out->apod_title[0] != '\0';
     }
 
+    // UV index (Open-Meteo)
+    cJSON *uv = cJSON_GetObjectItemCaseSensitive(root, "uv");
+    if (cJSON_IsObject(uv) && !cJSON_GetObjectItemCaseSensitive(uv, "error")) {
+        cJSON *u = cJSON_GetObjectItemCaseSensitive(uv, "uv");
+        cJSON *m = cJSON_GetObjectItemCaseSensitive(uv, "daily_max");
+        if (cJSON_IsNumber(u)) out->uv_index     = (float)u->valuedouble;
+        if (cJSON_IsNumber(m)) out->uv_daily_max = (float)m->valuedouble;
+        out->has_uv = cJSON_IsNumber(u);
+    }
+
     cJSON_Delete(root);
-    return out->has_weather || out->has_asteroids || out->has_apod;
+    return out->has_weather || out->has_asteroids || out->has_apod || out->has_uv;
 }

@@ -768,6 +768,281 @@ static void scene_asteroid(const daily_data_t *d, uint32_t vt) {
     }
 }
 
+// ─── scene_uv (UV index — rays falling onto Earth) ──────────────────────
+
+#define UV_PLANET_CX  32
+#define UV_PLANET_CY  84
+#define UV_PLANET_R   60
+#define UV_ATM_R      62
+#define UV_HALO_MAX   4
+#define UV_TOP_HALO   3
+
+typedef struct { float upper; const char *name; uint8_t r, g, b; } uv_band_t;
+static const uv_band_t UV_BANDS[] = {
+    {   3.0f, "LOW",      90, 200, 110 },
+    {   6.0f, "MOD",     240, 220,  80 },
+    {   8.0f, "HIGH",    240, 150,  60 },
+    {  11.0f, "V.HIGH",  230,  80,  80 },
+    { 1e9f,   "EXTREME", 200, 110, 220 },
+};
+
+static const uv_band_t *uv_band_for(float v) {
+    for (size_t i = 0; i < sizeof(UV_BANDS)/sizeof(UV_BANDS[0]); ++i) {
+        if (v < UV_BANDS[i].upper) return &UV_BANDS[i];
+    }
+    return &UV_BANDS[sizeof(UV_BANDS)/sizeof(UV_BANDS[0]) - 1];
+}
+
+// Pre-computed per-column planet/atmosphere top Ys. 32767 means off-arc.
+static int16_t s_uv_planet_top[PANEL_W];
+static int16_t s_uv_atm_top[PANEL_W];
+static bool    s_uv_arcs_ready = false;
+
+static void uv_compute_arcs(void) {
+    if (s_uv_arcs_ready) return;
+    for (int x = 0; x < PANEL_W; ++x) {
+        float dx = (float)(x - UV_PLANET_CX);
+        float ps = (float)(UV_PLANET_R * UV_PLANET_R) - dx * dx;
+        float as = (float)(UV_ATM_R    * UV_ATM_R)    - dx * dx;
+        s_uv_planet_top[x] = (ps >= 0) ? (int16_t)(UV_PLANET_CY - sqrtf(ps) + 0.5f) : 32767;
+        s_uv_atm_top[x]    = (as >= 0) ? (int16_t)(UV_PLANET_CY - sqrtf(as) + 0.5f) : 32767;
+    }
+    s_uv_arcs_ready = true;
+}
+
+// Pre-baked land map: jittered ellipses give a few continent-sized blobs
+// across the visible cap, instead of speckled per-pixel noise.
+static uint8_t s_uv_land[PANEL_W * PANEL_H];
+static bool    s_uv_land_ready = false;
+
+static void uv_build_land(void) {
+    if (s_uv_land_ready) return;
+    static const struct { int cx, cy, rx, ry; } CONT[] = {
+        { 13, 28,  8, 3 },
+        { 30, 27, 11, 4 },
+        { 47, 28,  7, 3 },
+        { 22, 30,  4, 2 },
+        { 38, 30,  3, 2 },
+        { 56, 31,  3, 1 },
+    };
+    int n = sizeof(CONT) / sizeof(CONT[0]);
+    for (int y = 0; y < PANEL_H; ++y) {
+        for (int x = 0; x < PANEL_W; ++x) {
+            uint8_t land = 0;
+            for (int i = 0; i < n; ++i) {
+                float dx = (float)(x - CONT[i].cx) / CONT[i].rx;
+                float dy = (float)(y - CONT[i].cy) / CONT[i].ry;
+                float r2 = dx * dx + dy * dy;
+                float jit = ((pix_hash(x + CONT[i].cx * 7, y + CONT[i].cy * 13) & 0xffff)
+                             / 65535.0f - 0.5f) * 0.45f;
+                if (r2 + jit < 1.0f) { land = 1; break; }
+            }
+            s_uv_land[y * PANEL_W + x] = land;
+        }
+    }
+    s_uv_land_ready = true;
+}
+
+static float frac_hash01(int x, int y) {
+    return (float)(pix_hash(x, y) & 0xffff) / 65535.0f;
+}
+
+static void scene_uv(const daily_data_t *d, uint32_t tick) {
+    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+    uv_compute_arcs();
+    uv_build_land();
+
+    if (!d->has_uv) {
+        gfx_text_outlined(1, 1, "UV", 230, 200, 100);
+        const char *msg = "NO DATA";
+        int w = gfx_text_width(msg);
+        gfx_text_outlined((PANEL_W - w) / 2, 14, msg, 120, 120, 120);
+        return;
+    }
+
+    float uv_now = d->uv_index;
+    const uv_band_t *band = uv_band_for(uv_now);
+    uint8_t cr = band->r, cg = band->g, cb = band->b;
+
+    // ── Twinkling stars (skip atmosphere-occluded columns) ────────────────
+    static const uint8_t UV_STARS[][2] = {
+        { 4,  6}, {11,  3}, {17, 10}, {23,  5},
+        {38,  4}, {44, 11}, {50,  6}, {57, 13}, {60,  3},
+    };
+    for (size_t i = 0; i < sizeof(UV_STARS) / sizeof(UV_STARS[0]); ++i) {
+        int sx = UV_STARS[i][0], sy = UV_STARS[i][1];
+        if (s_uv_atm_top[sx] <= sy) continue;
+        float ph = sinf(tick * 0.07f + sx * 0.5f + sy * 0.4f);
+        int v = (int)(55 + ph * 35);
+        if (v < 0) v = 0;
+        if (v > 255) v = 255;
+        int bv = v + 18;
+        if (bv > 255) bv = 255;
+        panel_pixel(sx, sy, (uint8_t)v, (uint8_t)v, (uint8_t)bv);
+    }
+
+    // ── Top "source" gradient band ────────────────────────────────────────
+    // Brightness scales with UV: faint hint at night, full glow at peak.
+    float source_i = 0.15f + 0.85f * fminf(1.0f, fmaxf(0.0f, uv_now / 11.0f));
+    for (int yy = 0; yy <= UV_TOP_HALO; ++yy) {
+        float f = (yy == 0) ? source_i
+                            : (1.0f - (float)yy / (UV_TOP_HALO + 1)) *
+                              (1.0f - (float)yy / (UV_TOP_HALO + 1)) * source_i;
+        uint8_t tr = (uint8_t)(cr * f);
+        uint8_t tg = (uint8_t)(cg * f);
+        uint8_t tb = (uint8_t)(cb * f);
+        for (int x = 0; x < PANEL_W; ++x) panel_pixel(x, yy, tr, tg, tb);
+    }
+
+    // ── Falling UV rays ───────────────────────────────────────────────────
+    float uv_strength = fminf(1.0f, fmaxf(0.10f, uv_now / 11.0f));
+    for (int x = 0; x < PANEL_W; ++x) {
+        float col_hash    = frac_hash01(x, 11);
+        float col_weight  = 0.45f + 0.55f * frac_hash01(x, 23);
+        float po          = col_hash * 6.2832f;
+        float col_base    = 0.30f
+            + 0.30f * sinf(x * 0.42f + tick * 0.022f + po)
+            + 0.22f * sinf(x * 0.71f - tick * 0.041f + po * 1.9f)
+            + 0.18f * sinf(x * 0.17f + tick * 0.013f + po * 0.6f);
+        if (col_base < 0) col_base = 0;
+        float I = col_base * col_weight * uv_strength;
+        if (I <= 0.04f) continue;
+
+        int stop = (s_uv_atm_top[x] < PANEL_H) ? s_uv_atm_top[x] - 1 : PANEL_H - 1;
+        if (stop > PANEL_H - 1) stop = PANEL_H - 1;
+
+        for (int y = 1; y <= stop; ++y) {
+            float n1 = 0.5f + 0.5f * sinf(y * 0.45f - tick * 0.32f + x * 0.21f + po);
+            float n2 = 0.5f + 0.5f * sinf(y * 0.32f + tick * 0.18f + x * 0.13f + po * 1.3f);
+            float along  = n1 * 0.60f + n2 * 0.40f;
+            float jitter = (frac_hash01(x * 13 + 7, y * 17 + 3) - 0.5f) * 0.22f;
+            float a = I * along * 1.35f + jitter;
+            if (a < 0.06f) continue;
+            if (a > 1.0f)  a = 1.0f;
+            float core = (a - 0.62f) / 0.38f;
+            if (core < 0) core = 0;
+            int rr = (int)(cr * a + (255 - cr) * core * 0.6f);
+            int gg = (int)(cg * a + (255 - cg) * core * 0.6f);
+            int bb = (int)(cb * a + (255 - cb) * core * 0.6f);
+            if (rr > 255) rr = 255;
+            if (gg > 255) gg = 255;
+            if (bb > 255) bb = 255;
+            panel_pixel(x, y, (uint8_t)rr, (uint8_t)gg, (uint8_t)bb);
+        }
+    }
+
+    // ── Atmosphere band: bluish-grey haze with shimmer, bright cyan rim ───
+    float rim_dim = 1.0f + 0.15f * uv_strength;
+    for (int x = 0; x < PANEL_W; ++x) {
+        int aT = s_uv_atm_top[x], pT = s_uv_planet_top[x];
+        if (aT >= PANEL_H) continue;
+        int band_h = (pT - aT);
+        if (band_h < 1) band_h = 1;
+        int y_end = (pT < PANEL_H) ? pT : PANEL_H;
+        for (int y = aT; y < y_end; ++y) {
+            float t = (float)(y - aT) / band_h;
+            float shimmer = 0.5f + 0.5f * sinf(x * 0.18f + y * 0.22f + tick * 0.045f);
+            float lift = 0.85f + shimmer * 0.30f;
+            int rr = (int)((70  + 40 * t) * lift);
+            int gg = (int)((95  + 55 * t) * lift);
+            int bb = (int)((135 + 60 * t) * lift);
+            if (rr > 255) rr = 255;
+            if (gg > 255) gg = 255;
+            if (bb > 255) bb = 255;
+            panel_pixel(x, y, (uint8_t)rr, (uint8_t)gg, (uint8_t)bb);
+        }
+        // Outer cyan rim (slightly boosted by UV)
+        if (aT >= 0 && aT < PANEL_H) {
+            int rr = (int)(150 * rim_dim);
+            int gg = (int)(200 * rim_dim);
+            int bbb = (int)(245 * rim_dim);
+            if (rr > 255) rr = 255;
+            if (gg > 255) gg = 255;
+            if (bbb > 255) bbb = 255;
+            panel_pixel(x, aT, (uint8_t)rr, (uint8_t)gg, (uint8_t)bbb);
+        }
+        // Soft exosphere halo above the rim (quadratic falloff).
+        for (int i = 1; i <= UV_HALO_MAX; ++i) {
+            int yy = aT - i;
+            if (yy < 1) break;
+            float t = 1.0f - (float)i / (UV_HALO_MAX + 1);
+            float f = rim_dim * 0.65f * t * t;
+            int rr  = (int)(150 * f);
+            int gg  = (int)(200 * f);
+            int bbb = (int)(245 * f);
+            // No read access to the framebuffer in firmware; halo overwrites
+            // whatever's underneath. Rays beneath are usually brighter so we
+            // lose some detail vs the simulator's max-blend, but the limb's
+            // outer falloff still reads correctly.
+            panel_pixel(x, yy, (uint8_t)rr, (uint8_t)gg, (uint8_t)bbb);
+        }
+    }
+
+    // ── Planet — ocean gradient + pre-baked continent land mask ───────────
+    for (int x = 0; x < PANEL_W; ++x) {
+        int pT = s_uv_planet_top[x];
+        if (pT >= PANEL_H) continue;
+        float dxf = (float)(x - UV_PLANET_CX);
+        for (int y = pT; y < PANEL_H; ++y) {
+            float d = (float)(y - pT) / fmaxf(1.0f, (float)(PANEL_H - pT));
+            int rr, gg, bb;
+            if (s_uv_land[y * PANEL_W + x]) {
+                float lv = frac_hash01(x * 7, y * 11);
+                rr = (int)(28 + lv * 26);
+                gg = (int)(55 + lv * 40);
+                bb = (int)(60 + lv * 38);
+            } else {
+                float horiz = 0.85f + 0.15f * sinf(dxf * 0.18f + tick * 0.012f);
+                float baseR = 30  + (1 - d) * 75;
+                float baseG = 90  + (1 - d) * 95;
+                float baseB = 160 + (1 - d) * 75;
+                rr = (int)(baseR * horiz);
+                gg = (int)(baseG * horiz);
+                bb = (int)(baseB * horiz);
+            }
+            if (rr > 255) rr = 255;
+            if (gg > 255) gg = 255;
+            if (bb > 255) bb = 255;
+            panel_pixel(x, y, (uint8_t)rr, (uint8_t)gg, (uint8_t)bb);
+        }
+    }
+
+    // ── NOW / MAX text — dark backdrop + outlined glyphs ──────────────────
+    // Firmware can't read the framebuffer to dim what's underneath, so paint
+    // a solid black rectangle where the text will land. ESP-IDF nano-printf
+    // doesn't support %f, so format the decimal manually.
+    char nbuf[16];
+    {
+        float v = uv_now < 0 ? 0 : (uv_now > 99.9f ? 99.9f : uv_now);
+        int whole = (int)v;
+        int frac  = (int)((v - whole) * 10.0f + 0.5f);
+        if (frac >= 10) { whole++; frac = 0; }
+        snprintf(nbuf, sizeof(nbuf), "%d.%d", whole, frac);
+    }
+    int now_lblw = gfx_text_width("NOW");
+    int now_valw = gfx_text_width(nbuf);
+    int now_w    = (now_lblw > now_valw ? now_lblw : now_valw) + 2;
+    gfx_rect(0, 5, now_w, 12, 0, 0, 0);
+    gfx_text_outlined(1, 6,  "NOW", 200, 200, 200);
+    gfx_text_outlined(1, 12, nbuf, cr, cg, cb);
+
+    char mbuf[16];
+    {
+        float v = d->uv_daily_max < 0 ? 0 : (d->uv_daily_max > 99.9f ? 99.9f : d->uv_daily_max);
+        int whole = (int)v;
+        int frac  = (int)((v - whole) * 10.0f + 0.5f);
+        if (frac >= 10) { whole++; frac = 0; }
+        snprintf(mbuf, sizeof(mbuf), "%d.%d", whole, frac);
+    }
+    int max_lblw = gfx_text_width("MAX");
+    int max_valw = gfx_text_width(mbuf);
+    int max_w    = (max_lblw > max_valw ? max_lblw : max_valw) + 2;
+    gfx_rect(PANEL_W - max_w, 5, max_w, 12, 0, 0, 0);
+    gfx_text_outlined(PANEL_W - max_lblw - 1, 6,  "MAX", 200, 200, 200);
+    const uv_band_t *mb = uv_band_for(d->uv_daily_max);
+    gfx_text_outlined(PANEL_W - max_valw - 1, 12, mbuf, mb->r, mb->g, mb->b);
+}
+
 // ─── rotator ─────────────────────────────────────────────────────────────
 // Adds scenes one at a time as each is verified on hardware.
 
@@ -781,6 +1056,7 @@ typedef struct {
 static const scene_def_t SCENES[] = {
     { scene_now,      SCENE_TICKS         },
     { scene_forecast, SCENE_TICKS         },
+    { scene_uv,       SCENE_TICKS         },
     { scene_moon,     SCENE_TICKS         },
     { scene_event,    SCENE_TICKS         },
     { scene_asteroid, ASTEROID_SCENE_TICKS },

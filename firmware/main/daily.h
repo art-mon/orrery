@@ -45,6 +45,11 @@ typedef struct {
     // APOD
     bool   has_apod;
     char   apod_title[96];
+
+    // UV index (Open-Meteo)
+    bool   has_uv;
+    float  uv_index;       // current UV
+    float  uv_daily_max;   // today's forecast peak
 } daily_data_t;
 
 // Fetch daily.json over HTTPS and populate `out`. Returns true if at
