@@ -2532,19 +2532,19 @@ function sceneUV(tick) {
   };
   const nowVal = uvNow.toFixed(1);
   const nowW   = Math.max(textWidth('NOW'), textWidth(nowVal));
-  dimBackdrop(0, 0, nowW + 2, 12);
-  textOutlined('NOW',  1, 1, 200, 200, 200);
-  textOutlined(nowVal, 1, 7, cr, cg, cb);
+  dimBackdrop(0, 5, nowW + 2, 12);
+  textOutlined('NOW',  1, 6,  200, 200, 200);
+  textOutlined(nowVal, 1, 12, cr, cg, cb);
   if (data.daily_max != null) {
     const mxVal = String(Math.round(data.daily_max));
     const mxLbl = 'MAX';
     const mxLblW = textWidth(mxLbl);
     const mxValW = textWidth(mxVal);
     const mxBlockW = Math.max(mxLblW, mxValW) + 2;
-    dimBackdrop(W - mxBlockW, 0, mxBlockW, 12);
-    textOutlined(mxLbl, W - mxLblW - 1, 1, 200, 200, 200);
+    dimBackdrop(W - mxBlockW, 5, mxBlockW, 12);
+    textOutlined(mxLbl, W - mxLblW - 1, 6,  200, 200, 200);
     const mxC = uvBand(data.daily_max).col;
-    textOutlined(mxVal, W - mxValW - 1, 7, ...mxC);
+    textOutlined(mxVal, W - mxValW - 1, 12, ...mxC);
   }
 }
 
