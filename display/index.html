@@ -2388,16 +2388,20 @@ function sceneUV(tick) {
   }
 
   // ── Top "source" band — bright at y=0, fading downward over a few rows ───
-  // Mirrors the planet's atmosphere: a hard rim with a soft halo bleeding
-  // into the surrounding space.
+  // Brightness scales with UV: a faint hint at night (UV ~0) and a full-
+  // strength glow at noon. Mirrors the planet atmosphere halo pattern.
+  const sourceI = 0.15 + 0.85 * Math.min(1.0, Math.max(0, uvNow / 11));
   const TOP_HALO = 3;
   for (let yy = 0; yy <= TOP_HALO; yy++) {
     if (yy === 0) {
-      for (let x = 0; x < W; x++) px(x, 0, cr, cg, cb);
+      const r0 = Math.round(cr * sourceI);
+      const g0 = Math.round(cg * sourceI);
+      const b0 = Math.round(cb * sourceI);
+      for (let x = 0; x < W; x++) px(x, 0, r0, g0, b0);
       continue;
     }
     const t = 1 - yy / (TOP_HALO + 1);
-    const f = t * t;
+    const f = t * t * sourceI;
     const tr = Math.round(cr * f);
     const tg = Math.round(cg * f);
     const tb = Math.round(cb * f);
