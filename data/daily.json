@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000syfk",
+        "title": "M5.0 Earthquake - 31 km WNW of Finschhafen, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-17T22:58:32.187000Z",
+        "coordinates": [
+          147.5796,
+          -6.4496
+        ]
+      },
+      {
         "id": "us6000sye4",
         "title": "M5.0 Earthquake - 24 km NW of Liuzhou, China",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           141.443,
           25.1362
         ]
-      },
-      {
-        "id": "us6000sxn9",
-        "title": "M5.3 Earthquake - 32 km WNW of Darien, Colombia",
-        "category": "Earthquake",
-        "date": "2026-05-14T12:48:22.202000Z",
-        "coordinates": [
-          -76.7348,
-          4.0895
-        ]
       }
     ]
   },
@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 12.7,
-    "feels_c": 11.9,
-    "humidity": 71,
+    "city": "Zagreb",
+    "temp_c": 14.2,
+    "feels_c": 13.3,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -258,10 +258,10 @@
   },
   "forecast_today": {
     "date": "2026-05-18",
-    "city": "Zagreb",
-    "temp_min_c": 12.2,
+    "city": "Donji grad",
+    "temp_min_c": 13.2,
     "temp_max_c": 23.5,
-    "humidity": 62,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
@@ -270,7 +270,7 @@
   },
   "forecast": {
     "date": "2026-05-19",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.7,
     "temp_max_c": 22.3,
     "humidity": 66,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-20",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 11.7,
     "temp_max_c": 21.6,
     "humidity": 70,
@@ -348,7 +348,7 @@
       },
       {
         "time": "2026-05-18T12:00",
-        "uv": 5.8
+        "uv": 5.7
       },
       {
         "time": "2026-05-18T13:00",
@@ -360,27 +360,27 @@
       },
       {
         "time": "2026-05-18T15:00",
-        "uv": 6.2
+        "uv": 5.7
       },
       {
         "time": "2026-05-18T16:00",
-        "uv": 4.5
+        "uv": 3.6
       },
       {
         "time": "2026-05-18T17:00",
-        "uv": 2.3
+        "uv": 1.8
       },
       {
         "time": "2026-05-18T18:00",
-        "uv": 1.6
+        "uv": 1.9
       },
       {
         "time": "2026-05-18T19:00",
-        "uv": 0.5
+        "uv": 1.1
       },
       {
         "time": "2026-05-18T20:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-05-18T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-18T00:51:57+02:00"
+    "fetched_at": "2026-05-18T01:55:33+02:00"
   }
 }
