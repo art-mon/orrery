@@ -22,12 +22,12 @@
       },
       {
         "id": "us6000syc2",
-        "title": "M5.7 Earthquake - 86 km ENE of Severo-Kuril\u2019sk, Russia",
+        "title": "M5.4 Earthquake - 84 km ENE of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
-        "date": "2026-05-17T08:04:18.719000Z",
+        "date": "2026-05-17T08:04:17.461000Z",
         "coordinates": [
-          157.3229,
-          50.8432
+          157.2919,
+          50.8582
         ]
       },
       {
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 14.7,
-    "feels_c": 13.7,
-    "humidity": 55,
+    "city": "Zagreb",
+    "temp_c": 12.7,
+    "feels_c": 11.8,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 13.0
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 14.7,
-    "humidity": 55,
+    "city": "Donji grad",
+    "temp_min_c": 12.7,
+    "temp_max_c": 12.7,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.6,
-    "samples": 2
+    "wind_kmh": 7.4,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-05-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.5,
+    "city": "Donji grad",
+    "temp_min_c": 11.9,
     "temp_max_c": 23.5,
-    "humidity": 59,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-19",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 9.7,
     "temp_max_c": 22.3,
     "humidity": 66,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-17T22:03:19+02:00"
+    "fetched_at": "2026-05-17T23:53:22+02:00"
   }
 }
