@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 19.4,
-    "humidity": 37,
+    "temp_c": 22.6,
+    "feels_c": 21.8,
+    "humidity": 35,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -259,25 +259,25 @@
   "forecast_today": {
     "date": "2026-05-17",
     "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 20.5,
-    "humidity": 50,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 13.5,
+    "temp_max_c": 22.6,
+    "humidity": 54,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 9.1,
-    "samples": 5
+    "wind_kmh": 9.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-18",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
+    "temp_min_c": 11.9,
     "temp_max_c": 21.0,
-    "humidity": 64,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 3.9
+    "wind_kmh": 3.7
   },
   "forecast_day_after": {
     "date": "2026-05-19",
@@ -291,11 +291,11 @@
     "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 5.9,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-05-17T13:00",
-    "safe_minutes": 24,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-05-17T11:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-05-17T12:00",
@@ -364,19 +364,19 @@
       },
       {
         "time": "2026-05-17T16:00",
-        "uv": 5.1
+        "uv": 5.0
       },
       {
         "time": "2026-05-17T17:00",
-        "uv": 3.8
+        "uv": 3.7
       },
       {
         "time": "2026-05-17T18:00",
-        "uv": 2.2
+        "uv": 1.4
       },
       {
         "time": "2026-05-17T19:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-05-17T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-17T13:03:43+02:00"
+    "fetched_at": "2026-05-17T15:15:28+02:00"
   }
 }
