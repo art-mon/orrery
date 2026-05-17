@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000syc2",
+        "title": "M5.7 Earthquake - 86 km ENE of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-05-17T08:04:18.719000Z",
+        "coordinates": [
+          157.3229,
+          50.8432
+        ]
+      },
+      {
+        "id": "us6000syby",
+        "title": "M5.1 Earthquake - 109 km SSE of Lorengau, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-05-17T07:51:56.627000Z",
+        "coordinates": [
+          147.7681,
+          -2.8876
+        ]
+      },
+      {
         "id": "us6000sy90",
         "title": "M5.4 Earthquake - 92 km E of Port-Vila, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -25.63,
           -58.3477
         ]
-      },
-      {
-        "id": "us6000sxk1",
-        "title": "M5.3 Earthquake - 51 km NNE of Namuac, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-13T22:01:06.478000Z",
-        "coordinates": [
-          121.2754,
-          19.0659
-        ]
-      },
-      {
-        "id": "us6000sxdf",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-13T08:12:59.760000Z",
-        "coordinates": [
-          -28.2611,
-          -55.3924
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 11.5,
-    "humidity": 58,
+    "temp_c": 17.7,
+    "feels_c": 16.5,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 14.8
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-05-17",
     "city": "City of Zagreb",
-    "temp_min_c": 10.2,
-    "temp_max_c": 21.1,
-    "humidity": 55,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 14.2,
+    "temp_max_c": 19.9,
+    "humidity": 52,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01d",
-    "wind_kmh": 7.9,
-    "samples": 6
+    "wind_kmh": 10.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-18",
     "city": "City of Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 20.6,
-    "humidity": 63,
+    "temp_min_c": 9.7,
+    "temp_max_c": 21.0,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 3.1
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-05-19",
     "city": "City of Zagreb",
-    "temp_min_c": 10.4,
-    "temp_max_c": 22.2,
-    "humidity": 68,
+    "temp_min_c": 9.9,
+    "temp_max_c": 22.0,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.9
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 1.8,
-    "band": "low",
+    "uv": 5.5,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-05-17T13:00",
-    "safe_minutes": 95,
+    "safe_minutes": 31,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-17T08:21:11+02:00"
+    "fetched_at": "2026-05-17T11:03:16+02:00"
   }
 }
