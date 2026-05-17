@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sye4",
+        "title": "M5.0 Earthquake - 24 km NW of Liuzhou, China",
+        "category": "Earthquake",
+        "date": "2026-05-17T16:21:06.387000Z",
+        "coordinates": [
+          109.2182,
+          24.457
+        ]
+      },
+      {
         "id": "us6000syc2",
         "title": "M5.7 Earthquake - 86 km ENE of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -76.7348,
           4.0895
         ]
-      },
-      {
-        "id": "us6000sxmm",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-14T09:55:47.289000Z",
-        "coordinates": [
-          -25.63,
-          -58.3477
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 18.9,
-    "humidity": 39,
+    "temp_c": 16.7,
+    "feels_c": 15.8,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 11.1
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-17",
-    "city": "Zagreb",
-    "temp_min_c": 15.6,
-    "temp_max_c": 19.8,
-    "humidity": 52,
-    "condition": "Clear",
-    "description": "clear",
+    "city": "Donji grad",
+    "temp_min_c": 16.0,
+    "temp_max_c": 16.8,
+    "humidity": 54,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01d",
-    "wind_kmh": 8.0,
+    "wind_kmh": 7.7,
     "samples": 3
   },
   "forecast": {
     "date": "2026-05-18",
-    "city": "Zagreb",
-    "temp_min_c": 11.9,
-    "temp_max_c": 20.7,
-    "humidity": 66,
+    "city": "Donji grad",
+    "temp_min_c": 12.3,
+    "temp_max_c": 21.3,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-05-19",
-    "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 22.5,
+    "city": "Donji grad",
+    "temp_min_c": 10.2,
+    "temp_max_c": 23.0,
     "humidity": 68,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 2.3
   },
   "uv": {
-    "uv": 1.9,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-05-17T13:00",
-    "safe_minutes": 85,
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-17T17:57:19+02:00"
+    "fetched_at": "2026-05-17T19:00:21+02:00"
   }
 }
