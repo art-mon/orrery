@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 16.8,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_c": 22.1,
+    "feels_c": 21.6,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -259,31 +259,31 @@
   "forecast_today": {
     "date": "2026-05-18",
     "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 20.6,
-    "humidity": 59,
+    "temp_min_c": 16.9,
+    "temp_max_c": 22.1,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 4.5,
-    "samples": 6
+    "wind_kmh": 4.0,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-19",
     "city": "City of Zagreb",
-    "temp_min_c": 10.0,
-    "temp_max_c": 21.9,
+    "temp_min_c": 10.6,
+    "temp_max_c": 22.3,
     "humidity": 72,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-05-20",
     "city": "City of Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 20.6,
+    "temp_min_c": 11.8,
+    "temp_max_c": 21.0,
     "humidity": 79,
     "condition": "Rain",
     "description": "light rain",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 4.2,
-    "band": "moderate",
-    "daily_max": 6.5,
+    "uv": 6.7,
+    "band": "high",
+    "daily_max": 6.7,
     "peak_time": "2026-05-18T14:00",
-    "safe_minutes": 40,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,11 +344,11 @@
       },
       {
         "time": "2026-05-18T11:00",
-        "uv": 5.3
+        "uv": 5.2
       },
       {
         "time": "2026-05-18T12:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-05-18T13:00",
@@ -356,15 +356,15 @@
       },
       {
         "time": "2026-05-18T14:00",
-        "uv": 6.5
+        "uv": 6.7
       },
       {
         "time": "2026-05-18T15:00",
-        "uv": 5.4
+        "uv": 6.0
       },
       {
         "time": "2026-05-18T16:00",
-        "uv": 3.8
+        "uv": 3.7
       },
       {
         "time": "2026-05-18T17:00",
@@ -372,15 +372,15 @@
       },
       {
         "time": "2026-05-18T18:00",
-        "uv": 1.4
+        "uv": 0.6
       },
       {
         "time": "2026-05-18T19:00",
-        "uv": 1.1
+        "uv": 0.6
       },
       {
         "time": "2026-05-18T20:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-05-18T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-18T10:00:24+02:00"
+    "fetched_at": "2026-05-18T13:52:08+02:00"
   }
 }
