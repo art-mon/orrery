@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-18",
   "apod": {
-    "title": "NGC 1300: Barred Spiral Galaxy",
-    "date": "2026-05-17",
-    "explanation": "Across the center of this spiral galaxy is a bar.  And at the center of this bar is smaller spiral.  And at the center of that spiral is a supermassive black hole.  This all happens in the big, beautiful, barred spiral galaxy cataloged as NGC 1300, a galaxy that lies some 70 million light-years away toward the constellation of the river Eridanus. This Hubble Space Telescope composite view of the gorgeous island universe is one of the most detailed Hubble images ever made of a complete galaxy.  NGC 1300 spans over 100,000 light-years and the Hubble image reveals striking details of the galaxy's dominant central bar and majestic spiral arms. How the giant bar formed, how it remains, and how it affects star formation remains an active topic of research.   Jigsaw Universe: Astronomy Puzzle of the Day",
+    "title": "Unraveling NGC 3169",
+    "date": "2026-05-18",
+    "explanation": "Spiral galaxy NGC 3169 looks to be unraveling like a ball of cosmic yarn. It lies some 70 million light-years away, south of bright star Regulus toward the faint constellation Sextans. Wound up spiral arms are pulled out into sweeping tidal tails as NGC 3169 (left) and neighboring NGC 3166 interact gravitationally. Eventually the galaxies will merge into one, a common fate even for bright galaxies in the local universe. Drawn out stellar arcs and plumes are clear indications of the ongoing gravitational interactions across the deep and colorful galaxy group photo. The telescopic frame spans about 20 arc minutes or about 400,000 light-years at the group's estimated distance, and includes smaller, bluish NGC 3165 to the right. NGC 3169 is also known to shine across the spectrum from radio to X-rays, harboring an active galactic nucleus that is the site of a supermassive black hole.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/NGC1300_HST_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/NGC1300_HST_6637.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/ngc3169_ngc3166_ngc3165px1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/ngc3169_ngc3166_ngc3165.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000syh2",
+        "title": "M5.2 Earthquake - Mid-Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-18T07:34:30.448000Z",
+        "coordinates": [
+          74.2599,
+          -28.5299
+        ]
+      },
       {
         "id": "us6000syg1",
         "title": "M5.4 Earthquake - West Chile Rise",
@@ -149,16 +159,6 @@
           142.2498,
           38.9127
         ]
-      },
-      {
-        "id": "us6000sxu9",
-        "title": "M5.4 Earthquake - 119 km SSE of Lorengau, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-15T01:13:58.659000Z",
-        "coordinates": [
-          147.7607,
-          -2.9915
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 10,
-    "humidity": 74,
+    "city": "City of Zagreb",
+    "temp_c": 17.6,
+    "feels_c": 16.8,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-18",
-    "city": "Zagreb",
-    "temp_min_c": 10.9,
-    "temp_max_c": 23.5,
-    "humidity": 62,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 20.6,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 3.6,
-    "samples": 7
+    "wind_kmh": 4.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-19",
-    "city": "Zagreb",
-    "temp_min_c": 10.2,
-    "temp_max_c": 22.4,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.6
+    "city": "City of Zagreb",
+    "temp_min_c": 10.0,
+    "temp_max_c": 21.9,
+    "humidity": 72,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.6
   },
   "forecast_day_after": {
     "date": "2026-05-20",
-    "city": "Zagreb",
-    "temp_min_c": 11.6,
-    "temp_max_c": 21.8,
-    "humidity": 71,
-    "condition": "Clouds",
+    "city": "City of Zagreb",
+    "temp_min_c": 11.2,
+    "temp_max_c": 20.6,
+    "humidity": 79,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.1
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 6.8,
-    "peak_time": "2026-05-18T13:00",
-    "safe_minutes": null,
+    "uv": 4.2,
+    "band": "moderate",
+    "daily_max": 6.5,
+    "peak_time": "2026-05-18T14:00",
+    "safe_minutes": 40,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-05-18T11:00",
-        "uv": 5.2
+        "uv": 5.3
       },
       {
         "time": "2026-05-18T12:00",
@@ -352,27 +352,27 @@
       },
       {
         "time": "2026-05-18T13:00",
-        "uv": 6.8
+        "uv": 6.3
       },
       {
         "time": "2026-05-18T14:00",
-        "uv": 6.8
+        "uv": 6.5
       },
       {
         "time": "2026-05-18T15:00",
-        "uv": 5.7
+        "uv": 5.4
       },
       {
         "time": "2026-05-18T16:00",
-        "uv": 3.6
+        "uv": 3.8
       },
       {
         "time": "2026-05-18T17:00",
-        "uv": 1.8
+        "uv": 1.4
       },
       {
         "time": "2026-05-18T18:00",
-        "uv": 1.9
+        "uv": 1.4
       },
       {
         "time": "2026-05-18T19:00",
@@ -380,7 +380,7 @@
       },
       {
         "time": "2026-05-18T20:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-05-18T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-18T05:31:09+02:00"
+    "fetched_at": "2026-05-18T10:00:24+02:00"
   }
 }
