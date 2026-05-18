@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000syik",
+        "title": "M5.1 Earthquake - 26 km NW of Liuzhou, China",
+        "category": "Earthquake",
+        "date": "2026-05-18T13:44:26.230000Z",
+        "coordinates": [
+          109.2073,
+          24.4799
+        ]
+      },
+      {
         "id": "us6000syh2",
         "title": "M5.2 Earthquake - Mid-Indian Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -178.203,
           -31.9282
         ]
-      },
-      {
-        "id": "us6000sxwq",
-        "title": "M6.7 Earthquake - 49 km ESE of \u014cfunato, Japan",
-        "category": "Earthquake",
-        "date": "2026-05-15T11:22:01.649000Z",
-        "coordinates": [
-          142.2498,
-          38.9127
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.1,
-    "feels_c": 21.6,
-    "humidity": 45,
+    "temp_c": 22.0,
+    "feels_c": 21.5,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -258,44 +258,44 @@
   },
   "forecast_today": {
     "date": "2026-05-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.9,
-    "temp_max_c": 22.1,
+    "city": "Zagreb",
+    "temp_min_c": 18.7,
+    "temp_max_c": 22.0,
     "humidity": 54,
-    "condition": "Clouds",
-    "description": "clouds",
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.0,
-    "samples": 5
+    "wind_kmh": 3.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.6,
-    "temp_max_c": 22.3,
-    "humidity": 72,
-    "condition": "Rain",
+    "city": "Zagreb",
+    "temp_min_c": 11.9,
+    "temp_max_c": 20.6,
+    "humidity": 75,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.6
   },
   "forecast_day_after": {
     "date": "2026-05-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 21.0,
-    "humidity": 79,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 4.5
+    "city": "Zagreb",
+    "temp_min_c": 10.7,
+    "temp_max_c": 22.3,
+    "humidity": 76,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 6.7,
-    "band": "high",
+    "uv": 1.1,
+    "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-05-18T14:00",
-    "safe_minutes": 25,
+    "safe_minutes": 152,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-18T13:52:08+02:00"
+    "fetched_at": "2026-05-18T17:26:50+02:00"
   }
 }
