@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 20.9,
-    "feels_c": 20.5,
-    "humidity": 54,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.5
+    "city": "Zagreb",
+    "temp_c": 22.2,
+    "feels_c": 22.1,
+    "humidity": 63,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-19",
     "city": "Zagreb",
     "temp_min_c": 15.5,
-    "temp_max_c": 22.9,
-    "humidity": 62,
+    "temp_max_c": 22.5,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 5.7,
-    "samples": 6
+    "icon": "10d",
+    "wind_kmh": 6.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-20",
@@ -291,11 +291,11 @@
     "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 4.8,
-    "band": "moderate",
+    "uv": 6.7,
+    "band": "high",
     "daily_max": 6.8,
     "peak_time": "2026-05-19T13:00",
-    "safe_minutes": 35,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -372,11 +372,11 @@
       },
       {
         "time": "2026-05-19T18:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-05-19T19:00",
-        "uv": 1.1
+        "uv": 1.2
       },
       {
         "time": "2026-05-19T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-19T10:32:14+02:00"
+    "fetched_at": "2026-05-19T14:08:04+02:00"
   }
 }
