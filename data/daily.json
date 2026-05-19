@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-19",
+  "generated": "2026-05-20",
   "apod": {
     "title": "NGC 2170: The Angel Nebula",
     "date": "2026-05-19",
@@ -11,13 +11,23 @@
   "events": {
     "events": [
       {
-        "id": "us6000syt5",
-        "title": "M5.9 Earthquake - 25 km ESE of Pampa de Tate, Peru",
+        "id": "us6000syu7",
+        "title": "M5.0 Earthquake - 35 km WNW of Gazli, Uzbekistan",
         "category": "Earthquake",
-        "date": "2026-05-19T17:57:54.757000Z",
+        "date": "2026-05-19T20:40:43.474000Z",
         "coordinates": [
-          -75.4795,
-          -14.2425
+          63.0858,
+          40.2711
+        ]
+      },
+      {
+        "id": "us6000syt5",
+        "title": "M5.8 Earthquake - 20 km ESE of Pampa de Tate, Peru",
+        "category": "Earthquake",
+        "date": "2026-05-19T17:57:54.220000Z",
+        "coordinates": [
+          -75.5167,
+          -14.2075
         ]
       },
       {
@@ -122,42 +132,32 @@
       },
       {
         "id": "us6000sy90",
-        "title": "M5.4 Earthquake - 92 km E of Port-Vila, Vanuatu",
+        "title": "M5.5 Earthquake - 84 km ESE of Port-Vila, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-05-16T15:58:04.288000Z",
+        "date": "2026-05-16T15:58:04.517000Z",
         "coordinates": [
-          169.1752,
-          -17.8726
+          169.0942,
+          -17.9035
         ]
       },
       {
         "id": "us6000sy8k",
-        "title": "M5.7 Earthquake - 33 km NE of Auki, Solomon Islands",
+        "title": "M5.7 Earthquake - 27 km NE of Auki, Solomon Islands",
         "category": "Earthquake",
-        "date": "2026-05-16T15:17:56.098000Z",
+        "date": "2026-05-16T15:17:58.214000Z",
         "coordinates": [
-          160.9161,
-          -8.5526
+          160.8774,
+          -8.5885
         ]
       },
       {
         "id": "us6000sy84",
-        "title": "M6.0 Earthquake - 70 km ESE of Codrington, Antigua and Barbuda",
+        "title": "M6.0 Earthquake - 60 km ESE of Codrington, Antigua and Barbuda",
         "category": "Earthquake",
-        "date": "2026-05-16T14:50:03.503000Z",
+        "date": "2026-05-16T14:50:05.948000Z",
         "coordinates": [
-          -61.1771,
-          17.5127
-        ]
-      },
-      {
-        "id": "us6000sy7u",
-        "title": "M5.2 Earthquake - 94 km E of Port-Vila, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-05-16T14:07:54.649000Z",
-        "coordinates": [
-          169.2036,
-          -17.7708
+          -61.2938,
+          17.4295
         ]
       }
     ]
@@ -247,41 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 12.7,
-    "feels_c": 12.3,
-    "humidity": 88,
+    "city": "Zagreb",
+    "temp_c": 15.4,
+    "feels_c": 14.8,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
-    "date": "2026-05-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.7,
-    "temp_max_c": 16.5,
-    "humidity": 79,
-    "condition": "Clear",
-    "description": "clear",
+    "date": "2026-05-20",
+    "city": "Zagreb",
+    "temp_min_c": 13.7,
+    "temp_max_c": 25.9,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 4.6,
-    "samples": 2
+    "wind_kmh": 4.2,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-05-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 25.9,
-    "humidity": 64,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
-  },
-  "forecast_day_after": {
     "date": "2026-05-21",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.2,
     "temp_max_c": 23.4,
     "humidity": 57,
@@ -290,111 +279,122 @@
     "icon": "03d",
     "wind_kmh": 9.9
   },
+  "forecast_day_after": {
+    "date": "2026-05-22",
+    "city": "Zagreb",
+    "temp_min_c": 13.8,
+    "temp_max_c": 22.8,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 12.1
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
-    "peak_time": "2026-05-19T13:00",
+    "daily_max": 7.0,
+    "peak_time": "2026-05-20T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-05-19T00:00",
+        "time": "2026-05-20T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T01:00",
+        "time": "2026-05-20T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T02:00",
+        "time": "2026-05-20T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T03:00",
+        "time": "2026-05-20T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T04:00",
+        "time": "2026-05-20T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T05:00",
+        "time": "2026-05-20T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T06:00",
+        "time": "2026-05-20T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-05-19T07:00",
-        "uv": 0.5
+        "time": "2026-05-20T07:00",
+        "uv": 0.6
       },
       {
-        "time": "2026-05-19T08:00",
-        "uv": 1.4
+        "time": "2026-05-20T08:00",
+        "uv": 1.6
       },
       {
-        "time": "2026-05-19T09:00",
-        "uv": 2.8
+        "time": "2026-05-20T09:00",
+        "uv": 2.9
       },
       {
-        "time": "2026-05-19T10:00",
+        "time": "2026-05-20T10:00",
         "uv": 4.2
       },
       {
-        "time": "2026-05-19T11:00",
-        "uv": 5.4
+        "time": "2026-05-20T11:00",
+        "uv": 5.5
       },
       {
-        "time": "2026-05-19T12:00",
-        "uv": 6.3
+        "time": "2026-05-20T12:00",
+        "uv": 6.5
       },
       {
-        "time": "2026-05-19T13:00",
+        "time": "2026-05-20T13:00",
+        "uv": 7.0
+      },
+      {
+        "time": "2026-05-20T14:00",
         "uv": 6.8
       },
       {
-        "time": "2026-05-19T14:00",
-        "uv": 6.7
+        "time": "2026-05-20T15:00",
+        "uv": 5.8
       },
       {
-        "time": "2026-05-19T15:00",
-        "uv": 6.2
+        "time": "2026-05-20T16:00",
+        "uv": 2.6
       },
       {
-        "time": "2026-05-19T16:00",
-        "uv": 5.0
+        "time": "2026-05-20T17:00",
+        "uv": 1.4
       },
       {
-        "time": "2026-05-19T17:00",
-        "uv": 3.2
+        "time": "2026-05-20T18:00",
+        "uv": 2.2
       },
       {
-        "time": "2026-05-19T18:00",
-        "uv": 2.1
-      },
-      {
-        "time": "2026-05-19T19:00",
+        "time": "2026-05-20T19:00",
         "uv": 1.2
       },
       {
-        "time": "2026-05-19T20:00",
-        "uv": 0.4
+        "time": "2026-05-20T20:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-05-19T21:00",
+        "time": "2026-05-20T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T22:00",
+        "time": "2026-05-20T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-19T23:00",
+        "time": "2026-05-20T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-19T22:47:02+02:00"
+    "fetched_at": "2026-05-20T00:14:11+02:00"
   }
 }
