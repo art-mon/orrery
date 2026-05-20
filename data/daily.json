@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-20",
   "apod": {
-    "title": "NGC 2170: The Angel Nebula",
-    "date": "2026-05-19",
-    "explanation": "Is this a painting or a photograph? In this celestial abstract art composed with a cosmic brush, dusty nebula NGC 2170, also known as the Angel Nebula, shines just above the image center. Reflecting the light of nearby hot stars, NGC 2170 is joined by other bluish reflection nebulae, a red emission region, many dark absorption nebulae, and a backdrop of colorful stars. Like the common household items that abstract painters often choose for their subjects, the clouds of gas, dust, and hot stars featured here are also commonly found in a setting like this one --  a massive, star-forming molecular cloud in the constellation of the Unicorn (Monoceros). The giant molecular cloud Mon R2, is impressively close, estimated to be only 2,400 light-years or so away. At that distance, this canvas would be over 60 light-years across.   Almost Hyperspace: Random APOD Generator",
+    "title": "The Dark Wolf Nebula",
+    "date": "2026-05-20",
+    "explanation": "A dark wolf lies in gum. No, this isn\u2019t a riddle! Today's image features the Dark Wolf Nebula (Sandqvist\u2013Lindroos 17), a spooky dust cloud embedded within the Gum 55 (RCW 113) Nebula in the Scorpius constellation. While dust is a pest to us, it serves a vital role in creating the necessary conditions for stars to be born. The Dark Wolf absorbs the intense ultraviolet and visible light emitted by young stars in Gum 55 and re-emits it at longer, mainly infrared, wavelengths. This prevents the higher energy light from heating up the gas in the region. When a region of gas is cool enough, gravity takes over and causes the gas to collapse into a star. Not only does dust act as an interstellar thermostat, but it is also the meet-cute for single hydrogen atoms forming molecular hydrogen, the building block for stars. The seemingly sinister Dark Wolf is actually a harbinger of cosmic life.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/Angel_Marriott_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/Angel_Marriott_1707.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/dark_wolf_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/dark_wolf.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000syw4",
+        "title": "M5.9 Earthquake - 8 km E of Wadomari, Japan",
+        "category": "Earthquake",
+        "date": "2026-05-20T02:46:24.884000Z",
+        "coordinates": [
+          128.7336,
+          27.392
+        ]
+      },
       {
         "id": "us6000syu7",
         "title": "M5.0 Earthquake - 35 km WNW of Gazli, Uzbekistan",
@@ -149,16 +159,6 @@
           160.8774,
           -8.5885
         ]
-      },
-      {
-        "id": "us6000sy84",
-        "title": "M6.0 Earthquake - 60 km ESE of Codrington, Antigua and Barbuda",
-        "category": "Earthquake",
-        "date": "2026-05-16T14:50:05.948000Z",
-        "coordinates": [
-          -61.2938,
-          17.4295
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.8,
-    "humidity": 78,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
-  },
-  "forecast_today": {
-    "date": "2026-05-20",
-    "city": "Zagreb",
-    "temp_min_c": 13.8,
-    "temp_max_c": 25.9,
-    "humidity": 64,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 4.5,
-    "samples": 8
-  },
-  "forecast": {
-    "date": "2026-05-21",
-    "city": "Zagreb",
-    "temp_min_c": 13.2,
-    "temp_max_c": 23.4,
-    "humidity": 57,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 9.9
-  },
-  "forecast_day_after": {
-    "date": "2026-05-22",
-    "city": "Zagreb",
-    "temp_min_c": 13.8,
-    "temp_max_c": 22.8,
-    "humidity": 54,
+    "city": "Donji grad",
+    "temp_c": 13.3,
+    "feels_c": 12.7,
+    "humidity": 80,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 12.1
+    "wind_kmh": 5.5
+  },
+  "forecast_today": {
+    "date": "2026-05-20",
+    "city": "Donji grad",
+    "temp_min_c": 13.1,
+    "temp_max_c": 23.0,
+    "humidity": 66,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
+    "wind_kmh": 4.8,
+    "samples": 7
+  },
+  "forecast": {
+    "date": "2026-05-21",
+    "city": "Donji grad",
+    "temp_min_c": 12.5,
+    "temp_max_c": 23.4,
+    "humidity": 58,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.5
+  },
+  "forecast_day_after": {
+    "date": "2026-05-22",
+    "city": "Donji grad",
+    "temp_min_c": 12.5,
+    "temp_max_c": 23.0,
+    "humidity": 57,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 11.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-05-20T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-20T02:02:37+02:00"
+    "fetched_at": "2026-05-20T07:02:13+02:00"
   }
 }
