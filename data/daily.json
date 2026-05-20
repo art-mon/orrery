@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000sz1t",
+        "title": "M5.0 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-05-20T18:36:39.636000Z",
+        "coordinates": [
+          -118.6332,
+          -54.7912
+        ]
+      },
+      {
+        "id": "us6000sz1d",
+        "title": "M6.6 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-05-20T17:43:02.034000Z",
+        "coordinates": [
+          -122.26,
+          -56.0302
+        ]
+      },
+      {
         "id": "us6000syy1",
         "title": "M5.2 Earthquake - 45 km NE of Sape, Indonesia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           147.5796,
           -6.4496
         ]
-      },
-      {
-        "id": "us6000sye4",
-        "title": "M5.0 Earthquake - 24 km NW of Liuzhou, China",
-        "category": "Earthquake",
-        "date": "2026-05-17T16:21:06.387000Z",
-        "coordinates": [
-          109.2182,
-          24.457
-        ]
-      },
-      {
-        "id": "us6000syc2",
-        "title": "M5.4 Earthquake - 84 km ENE of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-05-17T08:04:17.461000Z",
-        "coordinates": [
-          157.2919,
-          50.8582
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 24.4,
-    "feels_c": 23.9,
-    "humidity": 41,
+    "city": "Zagreb",
+    "temp_c": 16.7,
+    "feels_c": 16.3,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-20",
     "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 24.4,
-    "humidity": 47,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 5.9,
-    "samples": 3
+    "temp_min_c": 16.7,
+    "temp_max_c": 17.0,
+    "humidity": 70,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 6.0,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-21",
     "city": "Zagreb",
-    "temp_min_c": 15.8,
-    "temp_max_c": 24.0,
-    "humidity": 57,
+    "temp_min_c": 15.1,
+    "temp_max_c": 24.5,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-05-22",
     "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 24.2,
+    "temp_min_c": 12.1,
+    "temp_max_c": 23.5,
     "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 11.1
+    "wind_kmh": 10.5
   },
   "uv": {
-    "uv": 1.9,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-05-20T13:00",
-    "safe_minutes": 85,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,19 +360,19 @@
       },
       {
         "time": "2026-05-20T15:00",
-        "uv": 3.5
+        "uv": 3.8
       },
       {
         "time": "2026-05-20T16:00",
-        "uv": 2.5
+        "uv": 2.6
       },
       {
         "time": "2026-05-20T17:00",
-        "uv": 3.9
+        "uv": 3.6
       },
       {
         "time": "2026-05-20T18:00",
-        "uv": 2.2
+        "uv": 2.4
       },
       {
         "time": "2026-05-20T19:00",
@@ -380,7 +380,7 @@
       },
       {
         "time": "2026-05-20T20:00",
-        "uv": 0.4
+        "uv": 0.2
       },
       {
         "time": "2026-05-20T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-20T18:23:42+02:00"
+    "fetched_at": "2026-05-20T21:22:40+02:00"
   }
 }
