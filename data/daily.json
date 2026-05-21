@@ -24,20 +24,20 @@
         "id": "us6000sz1t",
         "title": "M5.0 Earthquake - southern East Pacific Rise",
         "category": "Earthquake",
-        "date": "2026-05-20T18:36:39.636000Z",
+        "date": "2026-05-20T18:36:39.632000Z",
         "coordinates": [
-          -118.6332,
-          -54.7912
+          -118.6623,
+          -54.7454
         ]
       },
       {
         "id": "us6000sz1d",
         "title": "M6.6 Earthquake - southern East Pacific Rise",
         "category": "Earthquake",
-        "date": "2026-05-20T17:43:02.034000Z",
+        "date": "2026-05-20T17:43:01.910000Z",
         "coordinates": [
-          -122.26,
-          -56.0302
+          -122.2988,
+          -55.984
         ]
       },
       {
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.3,
-    "humidity": 38,
+    "temp_c": 21.7,
+    "feels_c": 21.0,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 18.5
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-21",
     "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 24.8,
-    "humidity": 46,
+    "temp_min_c": 19.7,
+    "temp_max_c": 21.7,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 11.2,
+    "wind_kmh": 8.2,
     "samples": 3
   },
   "forecast": {
@@ -273,7 +273,7 @@
     "city": "Zagreb",
     "temp_min_c": 13.8,
     "temp_max_c": 23.9,
-    "humidity": 58,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -291,11 +291,11 @@
     "wind_kmh": 7.5
   },
   "uv": {
-    "uv": 3.5,
-    "band": "moderate",
+    "uv": 0.6,
+    "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-05-21T12:00",
-    "safe_minutes": 48,
+    "safe_minutes": 278,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-05-21T15:00",
-        "uv": 5.0
+        "uv": 4.8
       },
       {
         "time": "2026-05-21T16:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-05-21T18:00",
-        "uv": 2.1
+        "uv": 2.5
       },
       {
         "time": "2026-05-21T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-21T17:19:00+02:00"
+    "fetched_at": "2026-05-21T19:55:30+02:00"
   }
 }
