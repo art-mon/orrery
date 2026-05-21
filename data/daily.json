@@ -1,12 +1,12 @@
 {
   "generated": "2026-05-21",
   "apod": {
-    "title": "The Dark Wolf Nebula",
-    "date": "2026-05-20",
-    "explanation": "A dark wolf lies in gum. No, this isn\u2019t a riddle! Today's image features the Dark Wolf Nebula (Sandqvist\u2013Lindroos 17), a spooky dust cloud embedded within the Gum 55 (RCW 113) Nebula in the Scorpius constellation. While dust is a pest to us, it serves a vital role in creating the necessary conditions for stars to be born. The Dark Wolf absorbs the intense ultraviolet and visible light emitted by young stars in Gum 55 and re-emits it at longer, mainly infrared, wavelengths. This prevents the higher energy light from heating up the gas in the region. When a region of gas is cool enough, gravity takes over and causes the gas to collapse into a star. Not only does dust act as an interstellar thermostat, but it is also the meet-cute for single hydrogen atoms forming molecular hydrogen, the building block for stars. The seemingly sinister Dark Wolf is actually a harbinger of cosmic life.",
+    "title": "A Collision of Galaxy Clusters",
+    "date": "2026-05-21",
+    "explanation": "This big beautiful spiral shines in X-ray light. It is about 20 times larger than our Galaxy.   It belongs to Abell 2029, a galaxy cluster one billion light-years away.   (To see only the galaxies, hover your cursor over the image, or follow this link.)      Galaxy clusters are the largest structures in the universe that are supported by gravity.     Abell 2029 is formed by thousands of galaxies, surrounded by a huge cloud of hot gas and the equivalent of hundreds of trillions times the mass of the Sun in dark matter.     The spiral is made of gas, mostly hydrogen and helium, heated to tens of millions of degrees.     It was found in a recent study that used data from NASA's Chandra X-ray Observatory to show that Abell 2029 had a collision with a smaller cluster four billion years ago.     The collision affected the gravitational field and caused the intracluster gas to slosh, like wine moving in a wine glass, shaping the spiral.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/dark_wolf_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/dark_wolf.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/a2029.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/a2029_lg.jpg"
   },
   "events": {
     "events": [
@@ -14,10 +14,10 @@
         "id": "us6000sz3x",
         "title": "M5.7 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
-        "date": "2026-05-20T23:00:58.715000Z",
+        "date": "2026-05-20T23:01:01.063000Z",
         "coordinates": [
-          -28.0502,
-          -56.113
+          -28.1034,
+          -56.1584
         ]
       },
       {
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 11.7,
-    "feels_c": 10.9,
-    "humidity": 76,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
-  },
-  "forecast_today": {
-    "date": "2026-05-21",
-    "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 26.2,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 9.2,
-    "samples": 7
-  },
-  "forecast": {
-    "date": "2026-05-22",
-    "city": "Zagreb",
-    "temp_min_c": 12.4,
-    "temp_max_c": 23.5,
+    "temp_c": 19.8,
+    "feels_c": 19.3,
     "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 10.6
+    "wind_kmh": 13.0
+  },
+  "forecast_today": {
+    "date": "2026-05-21",
+    "city": "Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 24.4,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 11.9,
+    "samples": 6
+  },
+  "forecast": {
+    "date": "2026-05-22",
+    "city": "Zagreb",
+    "temp_min_c": 12.5,
+    "temp_max_c": 23.8,
+    "humidity": 57,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 10.8
   },
   "forecast_day_after": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 24.0,
-    "humidity": 62,
+    "temp_min_c": 13.4,
+    "temp_max_c": 24.1,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.3
+    "wind_kmh": 8.4
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.9,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-05-21T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 43,
     "skin_type": 2,
     "hourly": [
       {
@@ -324,7 +324,7 @@
       },
       {
         "time": "2026-05-21T06:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-05-21T07:00",
@@ -332,7 +332,7 @@
       },
       {
         "time": "2026-05-21T08:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-05-21T09:00",
@@ -352,11 +352,11 @@
       },
       {
         "time": "2026-05-21T13:00",
-        "uv": 5.4
+        "uv": 5.1
       },
       {
         "time": "2026-05-21T14:00",
-        "uv": 2.5
+        "uv": 3.0
       },
       {
         "time": "2026-05-21T15:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-05-21T17:00",
-        "uv": 3.0
+        "uv": 3.9
       },
       {
         "time": "2026-05-21T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-21T05:26:46+02:00"
+    "fetched_at": "2026-05-21T09:48:11+02:00"
   }
 }
