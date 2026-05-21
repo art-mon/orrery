@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000sz3x",
+        "title": "M5.7 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-20T23:00:58.715000Z",
+        "coordinates": [
+          -28.0502,
+          -56.113
+        ]
+      },
+      {
         "id": "us6000sz1t",
         "title": "M5.0 Earthquake - southern East Pacific Rise",
         "category": "Earthquake",
@@ -149,53 +159,11 @@
           96.3164,
           16.4431
         ]
-      },
-      {
-        "id": "us6000syfk",
-        "title": "M5.0 Earthquake - 31 km WNW of Finschhafen, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-17T22:58:32.187000Z",
-        "coordinates": [
-          147.5796,
-          -6.4496
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2013 TT5)",
-        "hazardous": false,
-        "diameter_m": 33,
-        "close_approach_date": "2026-05-20",
-        "miss_distance_km": 26524716,
-        "velocity_kmh": 13357
-      },
-      {
-        "name": "(2015 HC1)",
-        "hazardous": false,
-        "diameter_m": 23,
-        "close_approach_date": "2026-05-20",
-        "miss_distance_km": 31352307,
-        "velocity_kmh": 27171
-      },
-      {
-        "name": "(2015 XK351)",
-        "hazardous": true,
-        "diameter_m": 535,
-        "close_approach_date": "2026-05-20",
-        "miss_distance_km": 49720111,
-        "velocity_kmh": 48062
-      },
-      {
-        "name": "(2019 WN6)",
-        "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-05-20",
-        "miss_distance_km": 71143889,
-        "velocity_kmh": 30199
-      },
       {
         "name": "374038 (2004 HW)",
         "hazardous": true,
@@ -243,57 +211,89 @@
         "close_approach_date": "2026-05-22",
         "miss_distance_km": 13514373,
         "velocity_kmh": 71073
+      },
+      {
+        "name": "(2020 BQ12)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-05-22",
+        "miss_distance_km": 46880608,
+        "velocity_kmh": 32834
+      },
+      {
+        "name": "(2018 XM2)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-05-22",
+        "miss_distance_km": 49846239,
+        "velocity_kmh": 42467
+      },
+      {
+        "name": "(2011 UD256)",
+        "hazardous": false,
+        "diameter_m": 622,
+        "close_approach_date": "2026-05-22",
+        "miss_distance_km": 62094973,
+        "velocity_kmh": 128184
+      },
+      {
+        "name": "(2006 CL10)",
+        "hazardous": false,
+        "diameter_m": 319,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 16029149,
+        "velocity_kmh": 37250
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.4,
-    "humidity": 88,
+    "temp_c": 11.7,
+    "feels_c": 10.9,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-21",
     "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 24.5,
-    "humidity": 66,
+    "temp_min_c": 11.7,
+    "temp_max_c": 26.2,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 6.5,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 9.2,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-22",
     "city": "Zagreb",
-    "temp_min_c": 12.1,
+    "temp_min_c": 12.4,
     "temp_max_c": 23.5,
-    "humidity": 58,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 10.5
+    "wind_kmh": 10.6
   },
   "forecast_day_after": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 24.1,
-    "humidity": 63,
+    "temp_min_c": 12.9,
+    "temp_max_c": 24.0,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.8
+    "wind_kmh": 8.3
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.4,
+    "daily_max": 6.5,
     "peak_time": "2026-05-21T12:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -324,15 +324,15 @@
       },
       {
         "time": "2026-05-21T06:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-05-21T07:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-05-21T08:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-05-21T09:00",
@@ -348,19 +348,19 @@
       },
       {
         "time": "2026-05-21T12:00",
-        "uv": 6.4
+        "uv": 6.5
       },
       {
         "time": "2026-05-21T13:00",
-        "uv": 3.4
+        "uv": 5.4
       },
       {
         "time": "2026-05-21T14:00",
-        "uv": 2.8
+        "uv": 2.5
       },
       {
         "time": "2026-05-21T15:00",
-        "uv": 4.8
+        "uv": 4.5
       },
       {
         "time": "2026-05-21T16:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-05-21T17:00",
-        "uv": 1.6
+        "uv": 3.0
       },
       {
         "time": "2026-05-21T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-21T01:10:57+02:00"
+    "fetched_at": "2026-05-21T05:26:46+02:00"
   }
 }
