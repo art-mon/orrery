@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000szjs",
+        "title": "M5.1 Earthquake - 296 km NW of Nagqu, China",
+        "category": "Earthquake",
+        "date": "2026-05-22T17:16:27.912000Z",
+        "coordinates": [
+          90.147,
+          33.6084
+        ]
+      },
+      {
         "id": "us6000szgm",
         "title": "M5.6 Earthquake - 173 km E of Atka, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -75.5167,
           -14.2075
         ]
-      },
-      {
-        "id": "us6000synm",
-        "title": "M5.7 Earthquake - 51 km SSW of Port-Vila, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-05-19T02:29:24.366000Z",
-        "coordinates": [
-          168.0931,
-          -18.1511
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.4,
-    "humidity": 39,
+    "temp_c": 19.8,
+    "feels_c": 19.2,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 20.4
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-22",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 24.8,
-    "humidity": 46,
+    "temp_min_c": 19.3,
+    "temp_max_c": 19.8,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 11.0,
-    "samples": 3
+    "icon": "01n",
+    "wind_kmh": 7.2,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 24.9,
-    "humidity": 62,
+    "temp_min_c": 15.2,
+    "temp_max_c": 25.4,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.9
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 26.3,
+    "temp_min_c": 14.7,
+    "temp_max_c": 26.9,
     "humidity": 60,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 8.3
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-05-22T13:00",
-    "safe_minutes": 76,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-22T18:23:40+02:00"
+    "fetched_at": "2026-05-22T20:52:11+02:00"
   }
 }
