@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000sze1",
+        "title": "M5.1 Earthquake - northern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-22T01:06:52.614000Z",
+        "coordinates": [
+          -46.5899,
+          16.5411
+        ]
+      },
+      {
+        "id": "us6000szdy",
+        "title": "M5.8 Earthquake - 116 km ESE of Bitung, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-22T01:05:09.595000Z",
+        "coordinates": [
+          126.114,
+          1.0936
+        ]
+      },
+      {
         "id": "us6000sz3x",
         "title": "M5.7 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -81,6 +101,16 @@
         ]
       },
       {
+        "id": "us6000syx0",
+        "title": "M5.0 Earthquake - southeast of Easter Island",
+        "category": "Earthquake",
+        "date": "2026-05-20T02:46:19.106000Z",
+        "coordinates": [
+          -89.5644,
+          -41.3229
+        ]
+      },
+      {
         "id": "us6000syu7",
         "title": "M5.0 Earthquake - 35 km WNW of Gazli, Uzbekistan",
         "category": "Earthquake",
@@ -129,81 +159,11 @@
           109.2073,
           24.4799
         ]
-      },
-      {
-        "id": "us6000syh2",
-        "title": "M5.2 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-18T07:34:30.448000Z",
-        "coordinates": [
-          74.2599,
-          -28.5299
-        ]
-      },
-      {
-        "id": "us6000syg1",
-        "title": "M5.4 Earthquake - West Chile Rise",
-        "category": "Earthquake",
-        "date": "2026-05-18T02:10:41.745000Z",
-        "coordinates": [
-          -82.4593,
-          -43.4009
-        ]
-      },
-      {
-        "id": "us6000syg0",
-        "title": "M5.2 Earthquake - 36 km SSE of Syriam, Burma (Myanmar)",
-        "category": "Earthquake",
-        "date": "2026-05-18T02:05:24.327000Z",
-        "coordinates": [
-          96.3164,
-          16.4431
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "374038 (2004 HW)",
-        "hazardous": true,
-        "diameter_m": 2158,
-        "close_approach_date": "2026-05-21",
-        "miss_distance_km": 17014980,
-        "velocity_kmh": 49299
-      },
-      {
-        "name": "136818 Selqet (1997 MW1)",
-        "hazardous": false,
-        "diameter_m": 951,
-        "close_approach_date": "2026-05-21",
-        "miss_distance_km": 20041440,
-        "velocity_kmh": 34309
-      },
-      {
-        "name": "(2018 VB)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-05-21",
-        "miss_distance_km": 43889663,
-        "velocity_kmh": 22228
-      },
-      {
-        "name": "(2003 YS70)",
-        "hazardous": false,
-        "diameter_m": 9,
-        "close_approach_date": "2026-05-21",
-        "miss_distance_km": 69549303,
-        "velocity_kmh": 25312
-      },
-      {
-        "name": "(2015 TG24)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-05-21",
-        "miss_distance_km": 73835652,
-        "velocity_kmh": 55317
-      },
       {
         "name": "(2011 YE6)",
         "hazardous": true,
@@ -243,52 +203,92 @@
         "close_approach_date": "2026-05-23",
         "miss_distance_km": 16029149,
         "velocity_kmh": 37250
+      },
+      {
+        "name": "(2016 GP220)",
+        "hazardous": false,
+        "diameter_m": 234,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 22905400,
+        "velocity_kmh": 45035
+      },
+      {
+        "name": "(2002 FW1)",
+        "hazardous": false,
+        "diameter_m": 74,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 26585648,
+        "velocity_kmh": 45473
+      },
+      {
+        "name": "(2008 KV2)",
+        "hazardous": true,
+        "diameter_m": 333,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 27744387,
+        "velocity_kmh": 31779
+      },
+      {
+        "name": "(2016 AF2)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 32983858,
+        "velocity_kmh": 17032
+      },
+      {
+        "name": "(2018 SF3)",
+        "hazardous": false,
+        "diameter_m": 52,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 56751108,
+        "velocity_kmh": 54801
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 10.7,
-    "feels_c": 10.1,
+    "city": "Zagreb",
+    "temp_c": 9.7,
+    "feels_c": 8.8,
     "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "icon": "01d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-22",
     "city": "Zagreb",
-    "temp_min_c": 10.7,
-    "temp_max_c": 23.7,
-    "humidity": 65,
+    "temp_min_c": 9.7,
+    "temp_max_c": 25.6,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 9.6,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 10.9,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 13.2,
-    "temp_max_c": 24.1,
-    "humidity": 64,
+    "temp_min_c": 13.3,
+    "temp_max_c": 24.5,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.3
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 13.6,
-    "temp_max_c": 25.7,
+    "temp_min_c": 13.7,
+    "temp_max_c": 25.9,
     "humidity": 62,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 8.0
   },
   "uv": {
     "uv": 0.0,
@@ -356,7 +356,7 @@
       },
       {
         "time": "2026-05-22T14:00",
-        "uv": 6.9
+        "uv": 7.0
       },
       {
         "time": "2026-05-22T15:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-22T01:04:26+02:00"
+    "fetched_at": "2026-05-22T05:26:23+02:00"
   }
 }
