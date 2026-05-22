@@ -1,12 +1,12 @@
 {
   "generated": "2026-05-22",
   "apod": {
-    "title": "A Collision of Galaxy Clusters",
-    "date": "2026-05-21",
-    "explanation": "This big beautiful spiral shines in X-ray light. It is about 20 times larger than our Galaxy.   It belongs to Abell 2029, a galaxy cluster one billion light-years away.   (To see only the galaxies, hover your cursor over the image, or follow this link.)      Galaxy clusters are the largest structures in the universe that are supported by gravity.     Abell 2029 is formed by thousands of galaxies, surrounded by a huge cloud of hot gas and the equivalent of hundreds of trillions times the mass of the Sun in dark matter.     The spiral is made of gas, mostly hydrogen and helium, heated to tens of millions of degrees.     It was found in a recent study that used data from NASA's Chandra X-ray Observatory to show that Abell 2029 had a collision with a smaller cluster four billion years ago.     The collision affected the gravitational field and caused the intracluster gas to slosh, like wine moving in a wine glass, shaping the spiral.",
+    "title": "The Nebulous Realm of WR 134",
+    "date": "2026-05-22",
+    "explanation": "This cosmic snapshot covers a field of view over twice as wide as the full Moon within the boundaries of the high-flying constellation Cygnus. Made using astronomical narrowband filters, the image highlights the bright edge of a ring-like nebula traced by the glow of ionized hydrogen and oxygen gas. Embedded in the region's expanse of interstellar clouds, the complex, glowing arcs are sections of shells of material swept up by the wind from Wolf-Rayet star WR 134, the brightest star near image center. Distance estimates put WR 134 about 6,000 light-years away, making this telescopic frame over 100 light-years across. Shedding their outer envelopes in powerful stellar winds, massive Wolf-Rayet stars have burned through their nuclear fuel at a prodigious rate and end their final phase of massive star evolution in a spectacular supernova. Their stellar winds and final supernova explosion enrich the interstellar material with heavy elements to be incorporated in future generations of stars.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/a2029.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/a2029_lg.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/WR134morrone1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/WR134morrone2048.jpg"
   },
   "events": {
     "events": [
@@ -14,20 +14,20 @@
         "id": "us6000sze1",
         "title": "M5.1 Earthquake - northern Mid-Atlantic Ridge",
         "category": "Earthquake",
-        "date": "2026-05-22T01:06:52.614000Z",
+        "date": "2026-05-22T01:06:52.610000Z",
         "coordinates": [
-          -46.5899,
-          16.5411
+          -46.6299,
+          16.5273
         ]
       },
       {
         "id": "us6000szdy",
-        "title": "M5.8 Earthquake - 116 km ESE of Bitung, Indonesia",
+        "title": "M5.9 Earthquake - 113 km ESE of Bitung, Indonesia",
         "category": "Earthquake",
-        "date": "2026-05-22T01:05:09.595000Z",
+        "date": "2026-05-22T01:05:08.540000Z",
         "coordinates": [
-          126.114,
-          1.0936
+          126.067,
+          1.0433
         ]
       },
       {
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.7,
-    "feels_c": 8.8,
-    "humidity": 87,
+    "temp_c": 22.6,
+    "feels_c": 21.9,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 25.9
   },
   "forecast_today": {
     "date": "2026-05-22",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 25.6,
-    "humidity": 62,
+    "temp_min_c": 16.6,
+    "temp_max_c": 24.6,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 10.9,
-    "samples": 7
+    "wind_kmh": 14.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 13.3,
-    "temp_max_c": 24.5,
+    "temp_min_c": 13.1,
+    "temp_max_c": 24.6,
     "humidity": 63,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.9
+    "wind_kmh": 7.7
   },
   "forecast_day_after": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 13.7,
+    "temp_min_c": 13.8,
     "temp_max_c": 25.9,
     "humidity": 62,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 8.0
+    "wind_kmh": 7.7
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.6,
+    "band": "moderate",
     "daily_max": 7.0,
     "peak_time": "2026-05-22T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 46,
     "skin_type": 2,
     "hourly": [
       {
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-05-22T19:00",
-        "uv": 1.3
+        "uv": 1.2
       },
       {
         "time": "2026-05-22T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-22T05:26:23+02:00"
+    "fetched_at": "2026-05-22T09:41:45+02:00"
   }
 }
