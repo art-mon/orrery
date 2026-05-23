@@ -165,38 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2011 YE6)",
-        "hazardous": true,
-        "diameter_m": 394,
-        "close_approach_date": "2026-05-22",
-        "miss_distance_km": 13514373,
-        "velocity_kmh": 71073
-      },
-      {
-        "name": "(2020 BQ12)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-05-22",
-        "miss_distance_km": 46880608,
-        "velocity_kmh": 32834
-      },
-      {
-        "name": "(2018 XM2)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-05-22",
-        "miss_distance_km": 49846239,
-        "velocity_kmh": 42467
-      },
-      {
-        "name": "(2011 UD256)",
-        "hazardous": false,
-        "diameter_m": 622,
-        "close_approach_date": "2026-05-22",
-        "miss_distance_km": 62094973,
-        "velocity_kmh": 128184
-      },
-      {
         "name": "(2006 CL10)",
         "hazardous": false,
         "diameter_m": 319,
@@ -243,34 +211,66 @@
         "close_approach_date": "2026-05-23",
         "miss_distance_km": 56751108,
         "velocity_kmh": 54801
+      },
+      {
+        "name": "(2000 UR16)",
+        "hazardous": false,
+        "diameter_m": 99,
+        "close_approach_date": "2026-05-23",
+        "miss_distance_km": 74457407,
+        "velocity_kmh": 74366
+      },
+      {
+        "name": "(2017 UL44)",
+        "hazardous": false,
+        "diameter_m": 103,
+        "close_approach_date": "2026-05-24",
+        "miss_distance_km": 51651197,
+        "velocity_kmh": 70754
+      },
+      {
+        "name": "(2010 SX11)",
+        "hazardous": false,
+        "diameter_m": 65,
+        "close_approach_date": "2026-05-24",
+        "miss_distance_km": 61675247,
+        "velocity_kmh": 26751
+      },
+      {
+        "name": "(2019 WV)",
+        "hazardous": false,
+        "diameter_m": 60,
+        "close_approach_date": "2026-05-24",
+        "miss_distance_km": 70125937,
+        "velocity_kmh": 68695
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.7,
-    "feels_c": 14.0,
-    "humidity": 67,
+    "temp_c": 11.7,
+    "feels_c": 11.2,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.3,
+    "city": "Zagreb",
+    "temp_min_c": 11.7,
     "temp_max_c": 25.4,
-    "humidity": 61,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 7.3,
-    "samples": 9
+    "wind_kmh": 6.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-24",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 14.1,
     "temp_max_c": 26.3,
     "humidity": 61,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-25",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 15.6,
     "temp_max_c": 29,
     "humidity": 59,
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.7,
-    "peak_time": "2026-05-23T14:00",
+    "daily_max": 6.9,
+    "peak_time": "2026-05-23T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -340,7 +340,7 @@
       },
       {
         "time": "2026-05-23T10:00",
-        "uv": 3.7
+        "uv": 3.6
       },
       {
         "time": "2026-05-23T11:00",
@@ -348,35 +348,35 @@
       },
       {
         "time": "2026-05-23T12:00",
-        "uv": 6.2
+        "uv": 6.0
       },
       {
         "time": "2026-05-23T13:00",
-        "uv": 6.6
+        "uv": 6.9
       },
       {
         "time": "2026-05-23T14:00",
-        "uv": 6.7
+        "uv": 6.8
       },
       {
         "time": "2026-05-23T15:00",
-        "uv": 6.3
+        "uv": 6.1
       },
       {
         "time": "2026-05-23T16:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-05-23T17:00",
-        "uv": 4.0
+        "uv": 3.9
       },
       {
         "time": "2026-05-23T18:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-05-23T19:00",
-        "uv": 1.3
+        "uv": 1.1
       },
       {
         "time": "2026-05-23T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T00:06:10+02:00"
+    "fetched_at": "2026-05-23T02:04:45+02:00"
   }
 }
