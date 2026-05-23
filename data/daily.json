@@ -1,12 +1,12 @@
 {
   "generated": "2026-05-23",
   "apod": {
-    "title": "The Nebulous Realm of WR 134",
-    "date": "2026-05-22",
-    "explanation": "This cosmic snapshot covers a field of view over twice as wide as the full Moon within the boundaries of the high-flying constellation Cygnus. Made using astronomical narrowband filters, the image highlights the bright edge of a ring-like nebula traced by the glow of ionized hydrogen and oxygen gas. Embedded in the region's expanse of interstellar clouds, the complex, glowing arcs are sections of shells of material swept up by the wind from Wolf-Rayet star WR 134, the brightest star near image center. Distance estimates put WR 134 about 6,000 light-years away, making this telescopic frame over 100 light-years across. Shedding their outer envelopes in powerful stellar winds, massive Wolf-Rayet stars have burned through their nuclear fuel at a prodigious rate and end their final phase of massive star evolution in a spectacular supernova. Their stellar winds and final supernova explosion enrich the interstellar material with heavy elements to be incorporated in future generations of stars.",
+    "title": "Messier 2",
+    "date": "2026-05-23",
+    "explanation": "After the Crab Nebula, this giant star cluster is the second entry in 18th century astronomer Charles Messier's famous list of things that are not comets. M2 is one of the largest globular star clusters now known to roam the halo of our Milky Way galaxy. Though Messier originally described it as a nebula without stars, this stunning Hubble image resolves stars across the cluster's central 40 light-years. Its population of stars numbers close to 150,000, concentrated within a total diameter of around 175 light-years. About 55,000 light-years distant toward the constellation Aquarius, this ancient denizen of the Milky Way, also known as NGC 7089, is 13 billion years old. An extended stellar debris stream, a signature of past gravitational tidal disruption, was recently found to be associated with Messier 2.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/WR134morrone1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/WR134morrone2048.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/potw1913aM2_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/potw1913aa.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 11.7,
-    "feels_c": 11.2,
-    "humidity": 87,
+    "temp_c": 16.6,
+    "feels_c": 16.1,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 25.4,
-    "humidity": 65,
+    "temp_min_c": 16.6,
+    "temp_max_c": 26.7,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 6.7,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 7.2,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 26.3,
-    "humidity": 61,
+    "temp_min_c": 15.0,
+    "temp_max_c": 27.2,
+    "humidity": 59,
     "condition": "Clear",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.0
   },
   "forecast_day_after": {
     "date": "2026-05-25",
     "city": "Zagreb",
-    "temp_min_c": 15.6,
-    "temp_max_c": 29,
-    "humidity": 59,
+    "temp_min_c": 16.4,
+    "temp_max_c": 29.6,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.5
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 7.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.2,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-05-23T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 667,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T02:04:45+02:00"
+    "fetched_at": "2026-05-23T06:38:16+02:00"
   }
 }
