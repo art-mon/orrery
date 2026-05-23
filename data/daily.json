@@ -1,12 +1,7 @@
 {
   "generated": "2026-05-23",
   "apod": {
-    "title": "Messier 2",
-    "date": "2026-05-23",
-    "explanation": "After the Crab Nebula, this giant star cluster is the second entry in 18th century astronomer Charles Messier's famous list of things that are not comets. M2 is one of the largest globular star clusters now known to roam the halo of our Milky Way galaxy. Though Messier originally described it as a nebula without stars, this stunning Hubble image resolves stars across the cluster's central 40 light-years. Its population of stars numbers close to 150,000, concentrated within a total diameter of around 175 light-years. About 55,000 light-years distant toward the constellation Aquarius, this ancient denizen of the Milky Way, also known as NGC 7089, is 13 billion years old. An extended stellar debris stream, a signature of past gravitational tidal disruption, was recently found to be associated with Messier 2.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/potw1913aM2_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/potw1913aa.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,24 +243,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 25.7,
-    "humidity": 42,
+    "temp_c": 23.7,
+    "feels_c": 23.2,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 14.8
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 25.9,
-    "humidity": 50,
+    "temp_min_c": 21.6,
+    "temp_max_c": 23.7,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.9,
+    "wind_kmh": 6.1,
     "samples": 3
   },
   "forecast": {
@@ -273,7 +268,7 @@
     "city": "Zagreb",
     "temp_min_c": 12.1,
     "temp_max_c": 26.7,
-    "humidity": 60,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -291,11 +286,11 @@
     "wind_kmh": 7.8
   },
   "uv": {
-    "uv": 2.5,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-05-23T13:00",
-    "safe_minutes": 65,
+    "safe_minutes": 278,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T18:05:39+02:00"
+    "fetched_at": "2026-05-23T19:59:42+02:00"
   }
 }
