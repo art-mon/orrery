@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000szq3",
+        "title": "M5.2 Earthquake - 100 km SSE of Bengkulu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-23T12:40:25.493000Z",
+        "coordinates": [
+          102.5556,
+          -4.6647
+        ]
+      },
+      {
         "id": "hv74966427",
         "title": "M6.0 Earthquake - 13 km S of Honaunau-Napoopoo, Hawaii",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           38.6061,
           38.2157
         ]
-      },
-      {
-        "id": "us6000syw4",
-        "title": "M5.9 Earthquake - 8 km E of Wadomari, Japan",
-        "category": "Earthquake",
-        "date": "2026-05-20T02:46:24.884000Z",
-        "coordinates": [
-          128.7336,
-          27.392
-        ]
       }
     ]
   },
@@ -248,40 +248,40 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 25.6,
-    "humidity": 40,
+    "temp_c": 27.0,
+    "feels_c": 26.9,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 14.8
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-05-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 26.2,
-    "humidity": 51,
+    "city": "Zagreb",
+    "temp_min_c": 16.5,
+    "temp_max_c": 27.0,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 8.0,
-    "samples": 5
+    "wind_kmh": 9.5,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.5,
+    "city": "Zagreb",
+    "temp_min_c": 12.1,
     "temp_max_c": 26.9,
     "humidity": 60,
     "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.6
+    "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-05-25",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.1,
     "temp_max_c": 28.4,
     "humidity": 58,
@@ -291,11 +291,11 @@
     "wind_kmh": 7.6
   },
   "uv": {
-    "uv": 6.8,
+    "uv": 6.1,
     "band": "high",
-    "daily_max": 6.8,
+    "daily_max": 6.5,
     "peak_time": "2026-05-23T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,27 +336,27 @@
       },
       {
         "time": "2026-05-23T09:00",
-        "uv": 2.7
+        "uv": 2.5
       },
       {
         "time": "2026-05-23T10:00",
-        "uv": 3.9
+        "uv": 3.7
       },
       {
         "time": "2026-05-23T11:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-05-23T12:00",
-        "uv": 6.0
+        "uv": 6.2
       },
       {
         "time": "2026-05-23T13:00",
-        "uv": 6.8
+        "uv": 6.5
       },
       {
         "time": "2026-05-23T14:00",
-        "uv": 6.7
+        "uv": 6.5
       },
       {
         "time": "2026-05-23T15:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T13:09:19+02:00"
+    "fetched_at": "2026-05-23T15:19:54+02:00"
   }
 }
