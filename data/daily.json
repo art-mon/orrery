@@ -42,12 +42,12 @@
       },
       {
         "id": "us6000szk5",
-        "title": "M5.4 Earthquake - 160 km W of Lata, Solomon Islands",
+        "title": "M5.3 Earthquake - 156 km W of Lata, Solomon Islands",
         "category": "Earthquake",
-        "date": "2026-05-22T19:30:39.121000Z",
+        "date": "2026-05-22T19:30:38.517000Z",
         "coordinates": [
-          164.335,
-          -10.6778
+          164.3652,
+          -10.7482
         ]
       },
       {
@@ -250,52 +250,52 @@
     "city": "Zagreb",
     "temp_c": 27.0,
     "feels_c": 26.9,
-    "humidity": 41,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 18.5
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-23",
-    "city": "Zagreb",
-    "temp_min_c": 16.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 20,
     "temp_max_c": 27.0,
-    "humidity": 54,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 9.5,
+    "wind_kmh": 8.1,
     "samples": 4
   },
   "forecast": {
     "date": "2026-05-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 12.1,
-    "temp_max_c": 26.9,
+    "temp_max_c": 26.7,
     "humidity": 60,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.5
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-05-25",
-    "city": "Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 28.4,
-    "humidity": 58,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.0,
+    "temp_max_c": 29.2,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.8
   },
   "uv": {
-    "uv": 6.1,
-    "band": "high",
+    "uv": 4.3,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-05-23T13:00",
-    "safe_minutes": 27,
+    "safe_minutes": 39,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T15:19:54+02:00"
+    "fetched_at": "2026-05-23T16:58:39+02:00"
   }
 }
