@@ -1,7 +1,12 @@
 {
   "generated": "2026-05-23",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Messier 2",
+    "date": "2026-05-23",
+    "explanation": "After the Crab Nebula, this giant star cluster is the second entry in 18th century astronomer Charles Messier's famous list of things that are not comets. M2 is one of the largest globular star clusters now known to roam the halo of our Milky Way galaxy. Though Messier originally described it as a nebula without stars, this stunning Hubble image resolves stars across the cluster's central 40 light-years. Its population of stars numbers close to 150,000, concentrated within a total diameter of around 175 light-years. About 55,000 light-years distant toward the constellation Aquarius, this ancient denizen of the Milky Way, also known as NGC 7089, is 13 billion years old. An extended stellar debris stream, a signature of past gravitational tidal disruption, was recently found to be associated with Messier 2.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/potw1913aM2_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/potw1913aa.jpg"
   },
   "events": {
     "events": [
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.2,
-    "humidity": 43,
+    "temp_c": 19.7,
+    "feels_c": 19.3,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-23",
     "city": "Zagreb",
-    "temp_min_c": 21.6,
-    "temp_max_c": 23.7,
-    "humidity": 46,
+    "temp_min_c": 19.0,
+    "temp_max_c": 19.7,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 6.1,
-    "samples": 3
+    "icon": "01n",
+    "wind_kmh": 4.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 12.1,
-    "temp_max_c": 26.7,
-    "humidity": 58,
-    "condition": "Clouds",
+    "temp_min_c": 12.2,
+    "temp_max_c": 28.3,
+    "humidity": 59,
+    "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.9
+    "wind_kmh": 7.6
   },
   "forecast_day_after": {
     "date": "2026-05-25",
     "city": "Zagreb",
-    "temp_min_c": 16.0,
+    "temp_min_c": 16.2,
     "temp_max_c": 29.2,
     "humidity": 56,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.7
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-05-23T13:00",
-    "safe_minutes": 278,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-23T19:59:42+02:00"
+    "fetched_at": "2026-05-23T21:23:13+02:00"
   }
 }
