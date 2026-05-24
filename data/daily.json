@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000szxh",
+        "title": "M5.0 Earthquake - 31 km ENE of La Paz, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-24T13:19:06.469000Z",
+        "coordinates": [
+          126.5259,
+          9.1087
+        ]
+      },
+      {
         "id": "us6000szt5",
         "title": "M5.3 Earthquake - 168 km SW of Nikolski, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           119.2187,
           -8.2248
         ]
-      },
-      {
-        "id": "us6000syxz",
-        "title": "M5.1 Earthquake - 159 km WNW of Lautoka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-05-20T09:40:32.226000Z",
-        "coordinates": [
-          175.9863,
-          -17.312
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 28.2,
-    "humidity": 39,
+    "city": "City of Zagreb",
+    "temp_c": 29.4,
+    "feels_c": 28.6,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 13.0
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 28.7,
-    "humidity": 51,
+    "temp_min_c": 21.3,
+    "temp_max_c": 29.4,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 8.5,
-    "samples": 4
+    "wind_kmh": 7.5,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-25",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 6.2,
-    "band": "high",
+    "uv": 4.0,
+    "band": "moderate",
     "daily_max": 7.0,
     "peak_time": "2026-05-24T13:00",
-    "safe_minutes": 27,
+    "safe_minutes": 42,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-24T15:21:11+02:00"
+    "fetched_at": "2026-05-24T17:01:13+02:00"
   }
 }
