@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000szxz",
-        "title": "M5.8 Earthquake - 12 km ENE of Cortes, Philippines",
+        "title": "M5.5 Earthquake - 13 km E of Cortes, Philippines",
         "category": "Earthquake",
-        "date": "2026-05-24T16:48:37.556000Z",
+        "date": "2026-05-24T16:48:40.754000Z",
         "coordinates": [
-          126.3038,
-          9.3137
+          126.3113,
+          9.3032
         ]
       },
       {
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.7,
-    "feels_c": 25.5,
-    "humidity": 44,
+    "temp_c": 18.8,
+    "feels_c": 18.5,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 23.1,
-    "temp_max_c": 25.7,
-    "humidity": 48,
+    "temp_min_c": 18.8,
+    "temp_max_c": 18.8,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 5.3,
+    "icon": "01n",
+    "wind_kmh": 3.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-25",
     "city": "Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 29.7,
-    "humidity": 56,
+    "temp_min_c": 15.8,
+    "temp_max_c": 31.1,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.8
+    "wind_kmh": 6.4
   },
   "forecast_day_after": {
     "date": "2026-05-26",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 29.4,
+    "temp_min_c": 18.0,
+    "temp_max_c": 30.2,
     "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-05-24T13:00",
-    "safe_minutes": 370,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-24T20:00:37+02:00"
+    "fetched_at": "2026-05-24T22:03:00+02:00"
   }
 }
