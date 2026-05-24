@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000szxz",
+        "title": "M5.8 Earthquake - 12 km ENE of Cortes, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-24T16:48:37.556000Z",
+        "coordinates": [
+          126.3038,
+          9.3137
+        ]
+      },
+      {
         "id": "us6000szxh",
         "title": "M5.0 Earthquake - 31 km ENE of La Paz, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -118.6623,
           -54.7454
         ]
-      },
-      {
-        "id": "us6000sz1d",
-        "title": "M6.6 Earthquake - southern East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-05-20T17:43:01.910000Z",
-        "coordinates": [
-          -122.2988,
-          -55.984
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.7,
-    "feels_c": 26.7,
-    "humidity": 41,
+    "temp_c": 25.7,
+    "feels_c": 25.5,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 11.1
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-24",
     "city": "Zagreb",
-    "temp_min_c": 23.8,
-    "temp_max_c": 26.7,
-    "humidity": 44,
+    "temp_min_c": 23.1,
+    "temp_max_c": 25.7,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.2,
-    "samples": 3
+    "wind_kmh": 5.3,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-05-25",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 1.6,
+    "uv": 0.5,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-05-24T13:00",
-    "safe_minutes": 101,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-24T18:58:06+02:00"
+    "fetched_at": "2026-05-24T20:00:37+02:00"
   }
 }
