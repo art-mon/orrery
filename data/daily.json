@@ -1,12 +1,12 @@
 {
   "generated": "2026-05-24",
   "apod": {
-    "title": "Messier 2",
-    "date": "2026-05-23",
-    "explanation": "After the Crab Nebula, this giant star cluster is the second entry in 18th century astronomer Charles Messier's famous list of things that are not comets. M2 is one of the largest globular star clusters now known to roam the halo of our Milky Way galaxy. Though Messier originally described it as a nebula without stars, this stunning Hubble image resolves stars across the cluster's central 40 light-years. Its population of stars numbers close to 150,000, concentrated within a total diameter of around 175 light-years. About 55,000 light-years distant toward the constellation Aquarius, this ancient denizen of the Milky Way, also known as NGC 7089, is 13 billion years old. An extended stellar debris stream, a signature of past gravitational tidal disruption, was recently found to be associated with Messier 2.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/potw1913aM2_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/potw1913aa.jpg"
+    "title": "A Martian Eclipse: Phobos Crosses the Sun",
+    "date": "2026-05-24",
+    "explanation": "What's that passing in front of the Sun? It looks like a moon, but it can't be Earth's Moon, because it isn't round. It's the Martian moon Phobos.  The featured video was taken from the surface of Mars in 2022 by the Perseverance rover. Phobos, at 11.5 kilometers across, is 150 times smaller than Luna (our moon) in diameter, but also 50 times closer to its parent planet.  In fact, Phobos is so close to Mars that it is expected to break up and crash into Mars within the next 50 million years.  In the near term, the low orbit of Phobos results in more rapid solar eclipses than seen from Earth. The featured video is shown in real time -- the transit really took about 40 seconds, as shown. The videographer -- the robotic rover Perseverance (Percy) -- continues to explore Jezero Crater on Mars, searching not only for clues to the watery history of the now dry world, but evidence of ancient microbial life.",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2605/MarsEclipse_perseverance.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
@@ -247,41 +247,41 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.0,
-    "feels_c": 16.7,
-    "humidity": 73,
+    "city": "City of Zagreb",
+    "temp_c": 23.7,
+    "feels_c": 23.6,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-24",
-    "city": "Donji grad",
-    "temp_min_c": 17.0,
-    "temp_max_c": 28.8,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_min_c": 17.8,
+    "temp_max_c": 28.6,
+    "humidity": 53,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 7.1,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 8.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-25",
-    "city": "Donji grad",
-    "temp_min_c": 16.6,
+    "city": "Zagreb",
+    "temp_min_c": 15.9,
     "temp_max_c": 29.6,
     "humidity": 58,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.4
+    "wind_kmh": 7.3
   },
   "forecast_day_after": {
     "date": "2026-05-26",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.0,
     "temp_max_c": 28.7,
     "humidity": 55,
@@ -291,11 +291,11 @@
     "wind_kmh": 6.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 7.0,
-    "peak_time": "2026-05-24T14:00",
-    "safe_minutes": null,
+    "peak_time": "2026-05-24T13:00",
+    "safe_minutes": 74,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-05-24T11:00",
-        "uv": 5.5
+        "uv": 5.6
       },
       {
         "time": "2026-05-24T12:00",
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-05-24T13:00",
-        "uv": 6.7
+        "uv": 7.0
       },
       {
         "time": "2026-05-24T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-24T04:58:32+02:00"
+    "fetched_at": "2026-05-24T08:41:19+02:00"
   }
 }
