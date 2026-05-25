@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t015",
+        "title": "M5.0 Earthquake - south of Africa",
+        "category": "Earthquake",
+        "date": "2026-05-25T09:25:39.358000Z",
+        "coordinates": [
+          25.0096,
+          -53.4118
+        ]
+      },
+      {
         "id": "us6000szzw",
         "title": "M5.0 Earthquake - 54 km E of Santa Maria, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           126.067,
           1.0433
         ]
-      },
-      {
-        "id": "us6000sz3x",
-        "title": "M5.7 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-20T23:01:01.063000Z",
-        "coordinates": [
-          -28.1034,
-          -56.1584
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 29.0,
-    "humidity": 47,
+    "temp_c": 31.5,
+    "feels_c": 31.2,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-25",
     "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 30.2,
-    "humidity": 50,
+    "temp_min_c": 19.5,
+    "temp_max_c": 31.5,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.0,
-    "samples": 6
+    "wind_kmh": 8.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-05-26",
     "city": "Zagreb",
-    "temp_min_c": 17,
-    "temp_max_c": 30.1,
-    "humidity": 53,
+    "temp_min_c": 16.6,
+    "temp_max_c": 29.4,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -282,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 18.1,
-    "temp_max_c": 32.3,
+    "temp_min_c": 17.5,
+    "temp_max_c": 31.6,
     "humidity": 62,
     "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 5.4,
-    "band": "moderate",
+    "uv": 6.9,
+    "band": "high",
     "daily_max": 7.1,
     "peak_time": "2026-05-25T13:00",
-    "safe_minutes": 31,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-05-25T15:00",
-        "uv": 6.5
+        "uv": 6.2
       },
       {
         "time": "2026-05-25T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-25T10:54:38+02:00"
+    "fetched_at": "2026-05-25T14:28:02+02:00"
   }
 }
