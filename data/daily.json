@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-25",
   "apod": {
-    "title": "A Martian Eclipse: Phobos Crosses the Sun",
-    "date": "2026-05-24",
-    "explanation": "What's that passing in front of the Sun? It looks like a moon, but it can't be Earth's Moon, because it isn't round. It's the Martian moon Phobos.  The featured video was taken from the surface of Mars in 2022 by the Perseverance rover. Phobos, at 11.5 kilometers across, is 150 times smaller than Luna (our moon) in diameter, but also 50 times closer to its parent planet.  In fact, Phobos is so close to Mars that it is expected to break up and crash into Mars within the next 50 million years.  In the near term, the low orbit of Phobos results in more rapid solar eclipses than seen from Earth. The featured video is shown in real time -- the transit really took about 40 seconds, as shown. The videographer -- the robotic rover Perseverance (Percy) -- continues to explore Jezero Crater on Mars, searching not only for clues to the watery history of the now dry world, but evidence of ancient microbial life.",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2605/MarsEclipse_perseverance.mp4",
-    "hdurl": null
+    "title": "Thackeray's Globules",
+    "date": "2026-05-25",
+    "explanation": "What are these strange space globs?  Situated in rich star fields and glowing hydrogen gas, these opaque clouds of interstellar dust and gas are so large they might be able to form stars. Their home is known as IC 2944, a bright stellar nursery located about 7,600 light years away toward the constellation of the Centaur (Centaurus). The largest of these  dark globules, first spotted by A. D. Thackeray in 1950 using a telescope in South Africa, is likely two separate but overlapping clouds, each more than one light-year wide. Along with other data, the featured Hubble palette image from the El Sauce Observatory in Chile, indicates that Thackeray's globules are fractured and churning as a result of intense ultraviolet radiation from young, hot stars already energizing and heating the bright emission nebula. These and similar dark globules known to be associated with other star forming regions may ultimately be dissipated by their hostile environment -- like cosmic lumps of butter in a hot frying pan.   Interstellar Jigsaw: Astronomy Puzzle of the Day",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/ThackerayGlobs_Hayes_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/ThackerayGlobs_Hayes_2664.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000szzw",
+        "title": "M5.0 Earthquake - 54 km E of Santa Maria, Philippines",
+        "category": "Earthquake",
+        "date": "2026-05-25T02:32:38.428000Z",
+        "coordinates": [
+          126.9336,
+          8.0315
+        ]
+      },
       {
         "id": "us6000szxz",
         "title": "M5.5 Earthquake - 13 km E of Cortes, Philippines",
@@ -149,45 +159,11 @@
           -28.1034,
           -56.1584
         ]
-      },
-      {
-        "id": "us6000sz1t",
-        "title": "M5.0 Earthquake - southern East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-05-20T18:36:39.632000Z",
-        "coordinates": [
-          -118.6623,
-          -54.7454
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 UL44)",
-        "hazardous": false,
-        "diameter_m": 103,
-        "close_approach_date": "2026-05-24",
-        "miss_distance_km": 51651197,
-        "velocity_kmh": 70754
-      },
-      {
-        "name": "(2010 SX11)",
-        "hazardous": false,
-        "diameter_m": 65,
-        "close_approach_date": "2026-05-24",
-        "miss_distance_km": 61675247,
-        "velocity_kmh": 26751
-      },
-      {
-        "name": "(2019 WV)",
-        "hazardous": false,
-        "diameter_m": 60,
-        "close_approach_date": "2026-05-24",
-        "miss_distance_km": 70125937,
-        "velocity_kmh": 68695
-      },
       {
         "name": "(2012 KZ41)",
         "hazardous": false,
@@ -243,59 +219,83 @@
         "close_approach_date": "2026-05-26",
         "miss_distance_km": 63894313,
         "velocity_kmh": 50438
+      },
+      {
+        "name": "(2015 HA10)",
+        "hazardous": false,
+        "diameter_m": 449,
+        "close_approach_date": "2026-05-26",
+        "miss_distance_km": 71044841,
+        "velocity_kmh": 39606
+      },
+      {
+        "name": "(2018 CX)",
+        "hazardous": false,
+        "diameter_m": 54,
+        "close_approach_date": "2026-05-27",
+        "miss_distance_km": 23236361,
+        "velocity_kmh": 35190
+      },
+      {
+        "name": "(2019 AD)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-05-27",
+        "miss_distance_km": 25562622,
+        "velocity_kmh": 30939
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 19.8,
-    "feels_c": 19.6,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 19.1,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-25",
     "city": "Zagreb",
-    "temp_min_c": 18.0,
-    "temp_max_c": 30.7,
-    "humidity": 58,
+    "temp_min_c": 19.2,
+    "temp_max_c": 29.7,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 6.7,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 6.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-26",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 29.5,
-    "humidity": 55,
+    "temp_min_c": 17.5,
+    "temp_max_c": 29.3,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
+    "temp_min_c": 17.3,
     "temp_max_c": 31.5,
-    "humidity": 62,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.2,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-05-25T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 667,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-25T01:58:56+02:00"
+    "fetched_at": "2026-05-25T06:39:08+02:00"
   }
 }
