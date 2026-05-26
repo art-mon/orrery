@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-26",
   "apod": {
-    "title": "Thackeray's Globules",
-    "date": "2026-05-25",
-    "explanation": "What are these strange space globs?  Situated in rich star fields and glowing hydrogen gas, these opaque clouds of interstellar dust and gas are so large they might be able to form stars. Their home is known as IC 2944, a bright stellar nursery located about 7,600 light years away toward the constellation of the Centaur (Centaurus). The largest of these  dark globules, first spotted by A. D. Thackeray in 1950 using a telescope in South Africa, is likely two separate but overlapping clouds, each more than one light-year wide. Along with other data, the featured Hubble palette image from the El Sauce Observatory in Chile, indicates that Thackeray's globules are fractured and churning as a result of intense ultraviolet radiation from young, hot stars already energizing and heating the bright emission nebula. These and similar dark globules known to be associated with other star forming regions may ultimately be dissipated by their hostile environment -- like cosmic lumps of butter in a hot frying pan.   Interstellar Jigsaw: Astronomy Puzzle of the Day",
+    "title": "NGC 3660 and Bur\u00e7in's Galaxy",
+    "date": "2026-05-26",
+    "explanation": "The upper galaxy might be more photogenic, but the lower galaxy is more unusual.  The galaxy up top is NGC 3660, a spiral galaxy similar to our own Milky Way galaxy in that it has several bright blue spiral arms and a central bar of stars, dust, and gas. Captured by chance in the featured deep and colorful image, surprisingly, is SN 2026cff, a supernova found just to the right of the central bar.  Farther in the distance is the bottom galaxy, known informally as Bur\u00e7in\u2019s galaxy, but formally cataloged as LEDA 1000714. The center of this galaxy appears to be an old elliptical galaxy, but it is strangely surrounded by not one but two rings of stars.  What created Bur\u00e7in's galaxy is a mystery and remains a continuing topic of research, but it likely involves the accretion of one or more smaller galaxies.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/ThackerayGlobs_Hayes_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/ThackerayGlobs_Hayes_2664.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/Ngc3660Burcin_Block_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/Ngc3660Burcin_Block_1176.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t05n",
+        "title": "M5.3 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-26T02:08:03.420000Z",
+        "coordinates": [
+          -176.5972,
+          -28.3135
+        ]
+      },
       {
         "id": "us6000t04s",
         "title": "M6.9 Earthquake - 29 km ENE of Calama, Chile",
@@ -149,16 +159,6 @@
           90.147,
           33.6084
         ]
-      },
-      {
-        "id": "us6000szgm",
-        "title": "M5.6 Earthquake - 173 km E of Atka, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-22T12:16:14.095000Z",
-        "coordinates": [
-          -171.7064,
-          52.5074
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.7,
-    "feels_c": 17.8,
-    "humidity": 88,
+    "temp_c": 20.9,
+    "feels_c": 20.9,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-26",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 31.1,
-    "humidity": 60,
+    "temp_min_c": 20.9,
+    "temp_max_c": 30.4,
+    "humidity": 58,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.2,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 6.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 31.5,
-    "humidity": 64,
+    "temp_min_c": 17.6,
+    "temp_max_c": 31.4,
+    "humidity": 66,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-05-28",
     "city": "Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 24.3,
-    "humidity": 65,
+    "temp_min_c": 15.9,
+    "temp_max_c": 24.4,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.1
+    "wind_kmh": 7.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.7,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-05-26T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 256,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-26T02:12:30+02:00"
+    "fetched_at": "2026-05-26T07:01:34+02:00"
   }
 }
