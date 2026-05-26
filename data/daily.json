@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000snpf",
+        "title": "M5.0 Earthquake - 152 km SSW of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-26T19:25:11.739000Z",
+        "coordinates": [
+          -174.2097,
+          -17.2705
+        ]
+      },
+      {
+        "id": "us7000snpe",
+        "title": "M5.4 Earthquake - 180 km NE of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-26T19:12:31.037000Z",
+        "coordinates": [
+          -172.621,
+          -17.6654
+        ]
+      },
+      {
+        "id": "us7000snpd",
+        "title": "M5.1 Earthquake - Owen Fracture Zone region",
+        "category": "Earthquake",
+        "date": "2026-05-26T18:56:36.969000Z",
+        "coordinates": [
+          57.6465,
+          13.0008
+        ]
+      },
+      {
         "id": "us6000t05n",
         "title": "M5.3 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           -155.8425,
           19.3403333333333
         ]
-      },
-      {
-        "id": "us6000szmu",
-        "title": "M5.7 Earthquake - southeast Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-23T05:41:34.889000Z",
-        "coordinates": [
-          99.9967,
-          -47.488
-        ]
-      },
-      {
-        "id": "us6000szk5",
-        "title": "M5.3 Earthquake - 156 km W of Lata, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-05-22T19:30:38.517000Z",
-        "coordinates": [
-          164.3652,
-          -10.7482
-        ]
-      },
-      {
-        "id": "us6000szjs",
-        "title": "M5.1 Earthquake - 296 km NW of Nagqu, China",
-        "category": "Earthquake",
-        "date": "2026-05-22T17:16:27.912000Z",
-        "coordinates": [
-          90.147,
-          33.6084
-        ]
       }
     ]
   },
@@ -248,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.5,
-    "humidity": 56,
+    "temp_c": 23.1,
+    "feels_c": 23.0,
+    "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-26",
     "city": "Zagreb",
-    "temp_min_c": 21.8,
-    "temp_max_c": 22.7,
-    "humidity": 57,
+    "temp_min_c": 23.1,
+    "temp_max_c": 23.1,
+    "humidity": 58,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.4,
-    "samples": 2
+    "wind_kmh": 5.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 15.9,
+    "temp_min_c": 17.4,
     "temp_max_c": 32.4,
     "humidity": 62,
     "condition": "Clear",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-26T21:17:58+02:00"
+    "fetched_at": "2026-05-26T23:42:37+02:00"
   }
 }
