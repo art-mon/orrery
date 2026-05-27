@@ -1,15 +1,35 @@
 {
   "generated": "2026-05-27",
   "apod": {
-    "title": "NGC 3660 and Bur\u00e7in's Galaxy",
-    "date": "2026-05-26",
-    "explanation": "The upper galaxy might be more photogenic, but the lower galaxy is more unusual.  The galaxy up top is NGC 3660, a spiral galaxy similar to our own Milky Way galaxy in that it has several bright blue spiral arms and a central bar of stars, dust, and gas. Captured by chance in the featured deep and colorful image, surprisingly, is SN 2026cff, a supernova found just to the right of the central bar.  Farther in the distance is the bottom galaxy, known informally as Bur\u00e7in\u2019s galaxy, but formally cataloged as LEDA 1000714. The center of this galaxy appears to be an old elliptical galaxy, but it is strangely surrounded by not one but two rings of stars.  What created Bur\u00e7in's galaxy is a mystery and remains a continuing topic of research, but it likely involves the accretion of one or more smaller galaxies.",
+    "title": "PK 164 +31.1: The Headphone Nebula",
+    "date": "2026-05-27",
+    "explanation": "What is a pair of headphones doing in the sky? Today\u2019s image features the Headphone Nebula, also known as PK 164 +31.1 or Jones-Emberson 1. This planetary nebula, the remnant of a dying Sun-like star, faintly occupies an angular region of the Lynx constellation about 1/5th the diameter of the full moon. The red and blue-ish green colors trace hydrogen and oxygen atoms, respectively, that have been excited and ionized by the nebula's central white dwarf. The headphone shape, where two lobes of hydrogen puncture the inner region of oxygen, adds this object to a long list of oddly shaped nebulae. The morphology of such strange nebulae hint at the presence of a stellar or planetary companion, which can stir the material flowing out from the dying star. You can listen to Hubble and JWST sonifications of planetary nebulae through your very own headphones!",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/Ngc3660Burcin_Block_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/Ngc3660Burcin_Block_1176.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/headphone_nebula_900.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/headphone_nebula.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sntr",
+        "title": "M5.1 Earthquake - 131 km SE of Bitung, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-27T06:24:16.451000Z",
+        "coordinates": [
+          125.8106,
+          0.4707
+        ]
+      },
+      {
+        "id": "us7000snt8",
+        "title": "M5.1 Earthquake - 26 km NE of Calama, Chile",
+        "category": "Earthquake",
+        "date": "2026-05-27T05:23:30.376000Z",
+        "coordinates": [
+          -68.7512,
+          -22.282
+        ]
+      },
       {
         "id": "us7000snpf",
         "title": "M5.0 Earthquake - 152 km SSW of Hihifo, Tonga",
@@ -139,26 +159,6 @@
           -104.9788,
           -35.7131
         ]
-      },
-      {
-        "id": "us6000szq3",
-        "title": "M5.2 Earthquake - 100 km SSE of Bengkulu, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-23T12:40:25.493000Z",
-        "coordinates": [
-          102.5556,
-          -4.6647
-        ]
-      },
-      {
-        "id": "hv74966427",
-        "title": "M6.0 Earthquake - 13 km S of Honaunau-Napoopoo, Hawaii",
-        "category": "Earthquake",
-        "date": "2026-05-23T07:46:01.480000Z",
-        "coordinates": [
-          -155.8425,
-          19.3403333333333
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 19.2,
-    "humidity": 76,
+    "temp_c": 27.6,
+    "feels_c": 28.7,
+    "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -259,43 +259,43 @@
   "forecast_today": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 31.8,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 16.8,
+    "temp_max_c": 28.9,
+    "humidity": 68,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01d",
-    "wind_kmh": 7.0,
-    "samples": 7
+    "wind_kmh": 10.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-28",
     "city": "Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 24.7,
-    "humidity": 60,
+    "temp_min_c": 15.4,
+    "temp_max_c": 22.8,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 14.5,
-    "temp_max_c": 26.1,
-    "humidity": 47,
+    "temp_min_c": 13.3,
+    "temp_max_c": 24.9,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.5,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-05-27T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,23 +364,23 @@
       },
       {
         "time": "2026-05-27T16:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-05-27T17:00",
-        "uv": 2.0
+        "uv": 2.6
       },
       {
         "time": "2026-05-27T18:00",
-        "uv": 0.4
+        "uv": 1.0
       },
       {
         "time": "2026-05-27T19:00",
-        "uv": 0.6
+        "uv": 0.1
       },
       {
         "time": "2026-05-27T20:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-05-27T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-27T05:33:42+02:00"
+    "fetched_at": "2026-05-27T10:01:11+02:00"
   }
 }
