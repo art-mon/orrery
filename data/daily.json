@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000snvt",
+        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-27T15:01:11.567000Z",
+        "coordinates": [
+          139.3037,
+          -50.5213
+        ]
+      },
+      {
+        "id": "us7000snvr",
+        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-27T14:51:04.419000Z",
+        "coordinates": [
+          139.3678,
+          -50.5174
+        ]
+      },
+      {
         "id": "us7000sntr",
         "title": "M5.1 Earthquake - 131 km SE of Bitung, Indonesia",
         "category": "Earthquake",
@@ -58,6 +78,16 @@
         "coordinates": [
           57.6465,
           13.0008
+        ]
+      },
+      {
+        "id": "us7000sntl",
+        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-26T16:22:50.365000Z",
+        "coordinates": [
+          -152.5127,
+          -58.6442
         ]
       },
       {
@@ -128,36 +158,6 @@
         "coordinates": [
           126.3113,
           9.3032
-        ]
-      },
-      {
-        "id": "us6000szxh",
-        "title": "M5.0 Earthquake - 31 km ENE of La Paz, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-24T13:19:06.469000Z",
-        "coordinates": [
-          126.5259,
-          9.1087
-        ]
-      },
-      {
-        "id": "us6000szt5",
-        "title": "M5.3 Earthquake - 168 km SW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-23T21:49:16.864000Z",
-        "coordinates": [
-          -170.3491,
-          51.7344
-        ]
-      },
-      {
-        "id": "us6000szx2",
-        "title": "M5.3 Earthquake - southeast of Easter Island",
-        "category": "Earthquake",
-        "date": "2026-05-23T19:19:06.642000Z",
-        "coordinates": [
-          -104.9788,
-          -35.7131
         ]
       }
     ]
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 28.7,
-    "humidity": 58,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "city": "City of Zagreb",
+    "temp_c": 28.7,
+    "feels_c": 29.1,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-27",
     "city": "Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 28.9,
-    "humidity": 68,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 10.4,
-    "samples": 6
+    "temp_min_c": 24.7,
+    "temp_max_c": 28.7,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 4.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-28",
     "city": "Zagreb",
-    "temp_min_c": 15.4,
-    "temp_max_c": 22.8,
-    "humidity": 64,
+    "temp_min_c": 13.2,
+    "temp_max_c": 24.1,
+    "humidity": 55,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.7
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.6
   },
   "forecast_day_after": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 13.3,
-    "temp_max_c": 24.9,
-    "humidity": 55,
+    "temp_min_c": 13.5,
+    "temp_max_c": 26.3,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 4.5,
-    "band": "moderate",
+    "uv": 0.8,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-05-27T13:00",
-    "safe_minutes": 37,
+    "safe_minutes": 222,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,27 +364,27 @@
       },
       {
         "time": "2026-05-27T16:00",
-        "uv": 5.4
+        "uv": 3.6
       },
       {
         "time": "2026-05-27T17:00",
-        "uv": 2.6
+        "uv": 0.7
       },
       {
         "time": "2026-05-27T18:00",
-        "uv": 1.0
+        "uv": 0.8
       },
       {
         "time": "2026-05-27T19:00",
-        "uv": 0.1
+        "uv": 0.6
       },
       {
         "time": "2026-05-27T20:00",
-        "uv": 0.0
+        "uv": 0.3
       },
       {
         "time": "2026-05-27T21:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-05-27T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-27T10:01:11+02:00"
+    "fetched_at": "2026-05-27T18:35:21+02:00"
   }
 }
