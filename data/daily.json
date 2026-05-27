@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000snxg",
+        "title": "M5.3 Earthquake - 280 km WNW of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-27T19:09:53.521000Z",
+        "coordinates": [
+          -176.5652,
+          -18.0781
+        ]
+      },
+      {
         "id": "us7000snvt",
         "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           126.9336,
           8.0315
         ]
-      },
-      {
-        "id": "us6000szxz",
-        "title": "M5.5 Earthquake - 13 km E of Cortes, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-24T16:48:40.754000Z",
-        "coordinates": [
-          126.3113,
-          9.3032
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.7,
-    "feels_c": 21.7,
-    "humidity": 68,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 13.0
+    "city": "City of Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.9,
+    "humidity": 88,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-05-27",
-    "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 21.7,
-    "humidity": 70,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 9.5,
-    "samples": 2
+    "city": "Donji grad",
+    "temp_min_c": 18.7,
+    "temp_max_c": 18.7,
+    "humidity": 88,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 5.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-05-28",
-    "city": "Zagreb",
-    "temp_min_c": 13.6,
+    "city": "Donji grad",
+    "temp_min_c": 15.3,
     "temp_max_c": 25.0,
-    "humidity": 59,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-29",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 12.9,
     "temp_max_c": 26.0,
     "humidity": 46,
@@ -291,7 +291,7 @@
     "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-05-27T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-27T21:22:28+02:00"
+    "fetched_at": "2026-05-27T23:51:59+02:00"
   }
 }
