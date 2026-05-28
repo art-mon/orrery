@@ -1,12 +1,12 @@
 {
   "generated": "2026-05-28",
   "apod": {
-    "title": "PK 164 +31.1: The Headphone Nebula",
-    "date": "2026-05-27",
-    "explanation": "What is a pair of headphones doing in the sky? Today\u2019s image features the Headphone Nebula, also known as PK 164 +31.1 or Jones-Emberson 1. This planetary nebula, the remnant of a dying Sun-like star, faintly occupies an angular region of the Lynx constellation about 1/5th the diameter of the full moon. The red and blue-ish green colors trace hydrogen and oxygen atoms, respectively, that have been excited and ionized by the nebula's central white dwarf. The headphone shape, where two lobes of hydrogen puncture the inner region of oxygen, adds this object to a long list of oddly shaped nebulae. The morphology of such strange nebulae hint at the presence of a stellar or planetary companion, which can stir the material flowing out from the dying star. You can listen to Hubble and JWST sonifications of planetary nebulae through your very own headphones!",
+    "title": "NGC 1514: The Crystal Ball Nebula",
+    "date": "2026-05-28",
+    "explanation": "What do you see in this crystal ball?   The featured image shows NGC 1514, known as the Crystal Ball Nebula, observed by the Gemini North telescope on Maunakea, in Hawai'i.   NGC 1514 is 1,500 light-years away and was discovered by William Herschel in 1790.   This planetary nebula is formed when a star becomes a red giant and ejects its outer gas layers.   The ejected shell of gas is heated up by the core of the star to temperatures hotter than the surface of our Sun: that makes the gas shine, creating beautiful images like this one.       The slightly asymmetrical shape of the Crystal Ball Nebula reveals a secret: the bright star in the center has a companion.   As the two stars orbit each other with a period of about nine years, they shape the gas around them.   In about 10,000 - 25,000 years the nebula will be dissipated by their stellar winds.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/headphone_nebula_900.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/headphone_nebula.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/noirlab2613a.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/noirlab2613a_large.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.9,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 3.7
+    "temp_c": 23.1,
+    "feels_c": 22.6,
+    "humidity": 41,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-05-28",
     "city": "Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 26.0,
-    "humidity": 63,
+    "temp_min_c": 17,
+    "temp_max_c": 25.0,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 8.1,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 10.2,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 13.6,
-    "temp_max_c": 25.4,
-    "humidity": 47,
+    "temp_min_c": 13.0,
+    "temp_max_c": 24.9,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 14.0,
-    "temp_max_c": 29.3,
-    "humidity": 53,
+    "temp_min_c": 13.4,
+    "temp_max_c": 28.7,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.6,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-05-28T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 64,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,23 +364,23 @@
       },
       {
         "time": "2026-05-28T16:00",
-        "uv": 5.4
+        "uv": 5.5
       },
       {
         "time": "2026-05-28T17:00",
-        "uv": 4.0
+        "uv": 3.9
       },
       {
         "time": "2026-05-28T18:00",
-        "uv": 2.2
+        "uv": 1.9
       },
       {
         "time": "2026-05-28T19:00",
-        "uv": 1.4
+        "uv": 1.1
       },
       {
         "time": "2026-05-28T20:00",
-        "uv": 0.5
+        "uv": 0.3
       },
       {
         "time": "2026-05-28T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-28T04:53:12+02:00"
+    "fetched_at": "2026-05-28T08:53:34+02:00"
   }
 }
