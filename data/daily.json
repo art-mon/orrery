@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000snzn",
+        "title": "M5.1 Earthquake - 68 km SSE of Soe, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-28T01:46:18.726000Z",
+        "coordinates": [
+          124.473,
+          -10.451
+        ]
+      },
+      {
+        "id": "us7000snz9",
+        "title": "M5.2 Earthquake - 49 km ESE of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-05-28T00:25:21.947000Z",
+        "coordinates": [
+          -175.9331,
+          51.7852
+        ]
+      },
+      {
         "id": "us7000snxg",
         "title": "M5.3 Earthquake - 280 km WNW of Neiafu, Tonga",
         "category": "Earthquake",
@@ -139,55 +159,11 @@
           153.126,
           -4.7343
         ]
-      },
-      {
-        "id": "us6000t015",
-        "title": "M5.0 Earthquake - south of Africa",
-        "category": "Earthquake",
-        "date": "2026-05-25T09:25:39.358000Z",
-        "coordinates": [
-          25.0096,
-          -53.4118
-        ]
-      },
-      {
-        "id": "us6000szzw",
-        "title": "M5.0 Earthquake - 54 km E of Santa Maria, Philippines",
-        "category": "Earthquake",
-        "date": "2026-05-25T02:32:38.428000Z",
-        "coordinates": [
-          126.9336,
-          8.0315
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2018 CX)",
-        "hazardous": false,
-        "diameter_m": 54,
-        "close_approach_date": "2026-05-27",
-        "miss_distance_km": 23236361,
-        "velocity_kmh": 35190
-      },
-      {
-        "name": "(2019 AD)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-05-27",
-        "miss_distance_km": 25562622,
-        "velocity_kmh": 30939
-      },
-      {
-        "name": "(2019 WX5)",
-        "hazardous": false,
-        "diameter_m": 111,
-        "close_approach_date": "2026-05-27",
-        "miss_distance_km": 39291447,
-        "velocity_kmh": 12274
-      },
       {
         "name": "(2018 WX1)",
         "hazardous": false,
@@ -243,6 +219,30 @@
         "close_approach_date": "2026-05-30",
         "miss_distance_km": 38746314,
         "velocity_kmh": 42865
+      },
+      {
+        "name": "(2015 LJ)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-05-30",
+        "miss_distance_km": 56997351,
+        "velocity_kmh": 46414
+      },
+      {
+        "name": "(2018 CS2)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-05-31",
+        "miss_distance_km": 42414671,
+        "velocity_kmh": 16129
+      },
+      {
+        "name": "(2015 KJ)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-05-31",
+        "miss_distance_km": 57653713,
+        "velocity_kmh": 23185
       }
     ]
   },
@@ -250,45 +250,45 @@
     "city": "Zagreb",
     "temp_c": 18.7,
     "feels_c": 18.9,
-    "humidity": 88,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02n",
-    "wind_kmh": 20.4
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-05-28",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 25.0,
+    "temp_min_c": 17.6,
+    "temp_max_c": 26.0,
     "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02n",
-    "wind_kmh": 9.2,
-    "samples": 9
+    "wind_kmh": 8.1,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 26.0,
-    "humidity": 46,
+    "temp_min_c": 13.6,
+    "temp_max_c": 25.4,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 13.6,
-    "temp_max_c": 30.4,
-    "humidity": 52,
+    "temp_min_c": 14.0,
+    "temp_max_c": 29.3,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.5
+    "wind_kmh": 5.2
   },
   "uv": {
     "uv": 0.0,
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-05-28T16:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-05-28T17:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-05-28T18:00",
-        "uv": 2.6
+        "uv": 2.2
       },
       {
         "time": "2026-05-28T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-28T01:14:44+02:00"
+    "fetched_at": "2026-05-28T04:53:12+02:00"
   }
 }
