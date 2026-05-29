@@ -1,5 +1,5 @@
 {
-  "generated": "2026-05-29",
+  "generated": "2026-05-30",
   "apod": {
     "title": "Messier 104",
     "date": "2026-05-29",
@@ -10,6 +10,16 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000spfj",
+        "title": "M5.2 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-29T21:21:44.016000Z",
+        "coordinates": [
+          -29.1814,
+          0.9071
+        ]
+      },
       {
         "id": "us7000spd9",
         "title": "M5.2 Earthquake - 250 km ESE of Severo-Kuril\u2019sk, Russia",
@@ -149,16 +159,6 @@
           57.6465,
           13.0008
         ]
-      },
-      {
-        "id": "us7000sntl",
-        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-26T16:22:50.365000Z",
-        "coordinates": [
-          -152.5127,
-          -58.6442
-        ]
       }
     ]
   },
@@ -248,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.8,
-    "feels_c": 15.3,
-    "humidity": 72,
+    "temp_c": 18.1,
+    "feels_c": 17.5,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-05-29",
-    "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 15.8,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.4,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 12.4,
+    "temp_min_c": 13.4,
     "temp_max_c": 29.0,
-    "humidity": 54,
+    "humidity": 53,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 4.7
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 4.4,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-05-31",
     "city": "Zagreb",
     "temp_min_c": 15.7,
@@ -290,111 +279,122 @@
     "icon": "04d",
     "wind_kmh": 4.7
   },
+  "forecast_day_after": {
+    "date": "2026-06-01",
+    "city": "Zagreb",
+    "temp_min_c": 14.4,
+    "temp_max_c": 21.0,
+    "humidity": 92,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 3.6
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
-    "peak_time": "2026-05-29T13:00",
+    "peak_time": "2026-05-30T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-05-29T00:00",
+        "time": "2026-05-30T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T01:00",
+        "time": "2026-05-30T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T02:00",
+        "time": "2026-05-30T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T03:00",
+        "time": "2026-05-30T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T04:00",
+        "time": "2026-05-30T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T05:00",
+        "time": "2026-05-30T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T06:00",
+        "time": "2026-05-30T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-05-29T07:00",
+        "time": "2026-05-30T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-05-29T08:00",
+        "time": "2026-05-30T08:00",
         "uv": 1.6
       },
       {
-        "time": "2026-05-29T09:00",
+        "time": "2026-05-30T09:00",
         "uv": 3.0
       },
       {
-        "time": "2026-05-29T10:00",
-        "uv": 4.4
+        "time": "2026-05-30T10:00",
+        "uv": 4.5
       },
       {
-        "time": "2026-05-29T11:00",
-        "uv": 5.7
+        "time": "2026-05-30T11:00",
+        "uv": 5.8
       },
       {
-        "time": "2026-05-29T12:00",
-        "uv": 6.7
+        "time": "2026-05-30T12:00",
+        "uv": 6.6
       },
       {
-        "time": "2026-05-29T13:00",
+        "time": "2026-05-30T13:00",
         "uv": 7.1
       },
       {
-        "time": "2026-05-29T14:00",
+        "time": "2026-05-30T14:00",
         "uv": 7.0
       },
       {
-        "time": "2026-05-29T15:00",
-        "uv": 6.5
+        "time": "2026-05-30T15:00",
+        "uv": 6.2
       },
       {
-        "time": "2026-05-29T16:00",
-        "uv": 5.5
+        "time": "2026-05-30T16:00",
+        "uv": 5.0
       },
       {
-        "time": "2026-05-29T17:00",
-        "uv": 4.1
+        "time": "2026-05-30T17:00",
+        "uv": 2.2
       },
       {
-        "time": "2026-05-29T18:00",
-        "uv": 2.7
+        "time": "2026-05-30T18:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-05-29T19:00",
-        "uv": 1.4
+        "time": "2026-05-30T19:00",
+        "uv": 1.3
       },
       {
-        "time": "2026-05-29T20:00",
+        "time": "2026-05-30T20:00",
         "uv": 0.5
       },
       {
-        "time": "2026-05-29T21:00",
+        "time": "2026-05-30T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-05-29T22:00",
+        "time": "2026-05-30T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-05-29T23:00",
+        "time": "2026-05-30T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-29T22:21:49+02:00"
+    "fetched_at": "2026-05-30T00:27:39+02:00"
   }
 }
