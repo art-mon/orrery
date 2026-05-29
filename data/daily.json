@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000spd9",
+        "title": "M5.2 Earthquake - 250 km ESE of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-05-29T16:05:58.630000Z",
+        "coordinates": [
+          159.5123,
+          50.0568
+        ]
+      },
+      {
         "id": "us7000sp82",
         "title": "M5.3 Earthquake - 106 km SW of Turpan, China",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -152.5127,
           -58.6442
         ]
-      },
-      {
-        "id": "us6000t05n",
-        "title": "M5.3 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-26T02:08:03.420000Z",
-        "coordinates": [
-          -176.5972,
-          -28.3135
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.2,
-    "feels_c": 26.6,
-    "humidity": 32,
+    "temp_c": 22.7,
+    "feels_c": 22.1,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-29",
-    "city": "Zagreb",
-    "temp_min_c": 19.4,
-    "temp_max_c": 27.2,
-    "humidity": 40,
+    "city": "Donji grad",
+    "temp_min_c": 20.3,
+    "temp_max_c": 22.7,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.5,
-    "samples": 4
+    "wind_kmh": 5.4,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-05-30",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 10.8,
     "temp_max_c": 29.4,
-    "humidity": 54,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-05-31",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 15.3,
     "temp_max_c": 29.6,
     "humidity": 70,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.5
   },
   "uv": {
-    "uv": 5.8,
-    "band": "moderate",
+    "uv": 0.9,
+    "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-05-29T13:00",
-    "safe_minutes": 29,
+    "safe_minutes": 185,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-29T15:58:33+02:00"
+    "fetched_at": "2026-05-29T19:37:16+02:00"
   }
 }
