@@ -9,7 +9,158 @@
     "hdurl": "https://apod.nasa.gov/apod/image/2605/M104noirlab2612a.jpg"
   },
   "events": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "events": [
+      {
+        "id": "us7000sp82",
+        "title": "M5.3 Earthquake - 106 km SW of Turpan, China",
+        "category": "Earthquake",
+        "date": "2026-05-29T06:55:52.924000Z",
+        "coordinates": [
+          88.3187,
+          42.2295
+        ]
+      },
+      {
+        "id": "us7000sp7p",
+        "title": "M5.1 Earthquake - 86 km S of Pacocha, Peru",
+        "category": "Earthquake",
+        "date": "2026-05-29T05:32:39.548000Z",
+        "coordinates": [
+          -71.4602,
+          -18.4158
+        ]
+      },
+      {
+        "id": "us7000sp4a",
+        "title": "M5.3 Earthquake - Revilla Gigedo Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-28T16:18:09.965000Z",
+        "coordinates": [
+          -109.4358,
+          19.6577
+        ]
+      },
+      {
+        "id": "us7000snzn",
+        "title": "M5.1 Earthquake - 68 km SSE of Soe, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-28T01:46:18.726000Z",
+        "coordinates": [
+          124.473,
+          -10.451
+        ]
+      },
+      {
+        "id": "us7000snz9",
+        "title": "M5.2 Earthquake - 49 km ESE of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-05-28T00:25:21.947000Z",
+        "coordinates": [
+          -175.9331,
+          51.7852
+        ]
+      },
+      {
+        "id": "us7000snxg",
+        "title": "M5.3 Earthquake - 280 km WNW of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-27T19:09:53.651000Z",
+        "coordinates": [
+          -176.563,
+          -18.0405
+        ]
+      },
+      {
+        "id": "us7000snvt",
+        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-27T15:01:11.567000Z",
+        "coordinates": [
+          139.3037,
+          -50.5213
+        ]
+      },
+      {
+        "id": "us7000snvr",
+        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-27T14:51:04.419000Z",
+        "coordinates": [
+          139.3678,
+          -50.5174
+        ]
+      },
+      {
+        "id": "us7000sntr",
+        "title": "M5.1 Earthquake - 131 km SE of Bitung, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-05-27T06:24:16.451000Z",
+        "coordinates": [
+          125.8106,
+          0.4707
+        ]
+      },
+      {
+        "id": "us7000snt8",
+        "title": "M5.1 Earthquake - 26 km NE of Calama, Chile",
+        "category": "Earthquake",
+        "date": "2026-05-27T05:23:30.376000Z",
+        "coordinates": [
+          -68.7512,
+          -22.282
+        ]
+      },
+      {
+        "id": "us7000snpf",
+        "title": "M5.0 Earthquake - 152 km SSW of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-26T19:25:11.739000Z",
+        "coordinates": [
+          -174.2097,
+          -17.2705
+        ]
+      },
+      {
+        "id": "us7000snpe",
+        "title": "M5.4 Earthquake - 180 km NE of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-05-26T19:12:31.037000Z",
+        "coordinates": [
+          -172.621,
+          -17.6654
+        ]
+      },
+      {
+        "id": "us7000snpd",
+        "title": "M5.1 Earthquake - Owen Fracture Zone region",
+        "category": "Earthquake",
+        "date": "2026-05-26T18:56:36.969000Z",
+        "coordinates": [
+          57.6465,
+          13.0008
+        ]
+      },
+      {
+        "id": "us7000sntl",
+        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-05-26T16:22:50.365000Z",
+        "coordinates": [
+          -152.5127,
+          -58.6442
+        ]
+      },
+      {
+        "id": "us6000t05n",
+        "title": "M5.3 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-26T02:08:03.420000Z",
+        "coordinates": [
+          -176.5972,
+          -28.3135
+        ]
+      }
+    ]
   },
   "asteroids": {
     "asteroids": [
@@ -97,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 18.8,
-    "humidity": 40,
+    "temp_c": 24.8,
+    "feels_c": 24.2,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.3
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 16.3,
-    "temp_max_c": 24.9,
-    "humidity": 46,
+    "temp_min_c": 16.2,
+    "temp_max_c": 25,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.2,
-    "samples": 6
+    "wind_kmh": 5.3,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 13.5,
+    "temp_min_c": 13.9,
     "temp_max_c": 29.3,
-    "humidity": 54,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-05-31",
     "city": "Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 28.6,
+    "temp_min_c": 15.5,
+    "temp_max_c": 29.9,
     "humidity": 72,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.2
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 2.6,
-    "band": "low",
+    "uv": 7.1,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-05-29T13:00",
-    "safe_minutes": 63,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -244,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-29T08:56:35+02:00"
+    "fetched_at": "2026-05-29T12:46:48+02:00"
   }
 }
