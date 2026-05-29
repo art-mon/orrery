@@ -1,161 +1,15 @@
 {
   "generated": "2026-05-29",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Messier 104",
+    "date": "2026-05-29",
+    "explanation": "A gorgeous spiral galaxy, Messier 104 is famous for its nearly edge-on profile featuring a broad ring of obscuring dust lanes. Seen in silhouette against an extensive central bulge of stars, the swath of cosmic dust lends a broad brimmed hat-like appearance to the galaxy suggesting a more popular moniker, the Sombrero Galaxy. Also known as NGC 4594, the Sombrero galaxy can be seen across the spectrum and is host to a central supermassive black hole. About 50,000 light-years across and 28 million light-years away, M104 is one of the largest galaxies at the southern edge of the Virgo Galaxy Cluster. Still, the spiky foreground stars in this field of view lie well within our own Milky Way. This broad view of the well-known galaxy was processed to reveal M104's extended halo, as well as a faint tidal stellar stream. It was captured by the Dark Energy Camera (DECam) on the Blanco 4-meter telescope at the Cerro Tololo Inter-American Observatory.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/M104noirlab2612a_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/M104noirlab2612a.jpg"
   },
   "events": {
-    "events": [
-      {
-        "id": "us7000sp4a",
-        "title": "M5.3 Earthquake - Revilla Gigedo Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-28T16:18:09.965000Z",
-        "coordinates": [
-          -109.4358,
-          19.6577
-        ]
-      },
-      {
-        "id": "us7000snzn",
-        "title": "M5.1 Earthquake - 68 km SSE of Soe, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-28T01:46:18.726000Z",
-        "coordinates": [
-          124.473,
-          -10.451
-        ]
-      },
-      {
-        "id": "us7000snz9",
-        "title": "M5.2 Earthquake - 49 km ESE of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-05-28T00:25:21.947000Z",
-        "coordinates": [
-          -175.9331,
-          51.7852
-        ]
-      },
-      {
-        "id": "us7000snxg",
-        "title": "M5.3 Earthquake - 280 km WNW of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-27T19:09:53.651000Z",
-        "coordinates": [
-          -176.563,
-          -18.0405
-        ]
-      },
-      {
-        "id": "us7000snvt",
-        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-27T15:01:11.567000Z",
-        "coordinates": [
-          139.3037,
-          -50.5213
-        ]
-      },
-      {
-        "id": "us7000snvr",
-        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-27T14:51:04.419000Z",
-        "coordinates": [
-          139.3678,
-          -50.5174
-        ]
-      },
-      {
-        "id": "us7000sntr",
-        "title": "M5.1 Earthquake - 131 km SE of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-27T06:24:16.451000Z",
-        "coordinates": [
-          125.8106,
-          0.4707
-        ]
-      },
-      {
-        "id": "us7000snt8",
-        "title": "M5.1 Earthquake - 26 km NE of Calama, Chile",
-        "category": "Earthquake",
-        "date": "2026-05-27T05:23:30.376000Z",
-        "coordinates": [
-          -68.7512,
-          -22.282
-        ]
-      },
-      {
-        "id": "us7000snpf",
-        "title": "M5.0 Earthquake - 152 km SSW of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-26T19:25:11.739000Z",
-        "coordinates": [
-          -174.2097,
-          -17.2705
-        ]
-      },
-      {
-        "id": "us7000snpe",
-        "title": "M5.4 Earthquake - 180 km NE of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-26T19:12:31.037000Z",
-        "coordinates": [
-          -172.621,
-          -17.6654
-        ]
-      },
-      {
-        "id": "us7000snpd",
-        "title": "M5.1 Earthquake - Owen Fracture Zone region",
-        "category": "Earthquake",
-        "date": "2026-05-26T18:56:36.969000Z",
-        "coordinates": [
-          57.6465,
-          13.0008
-        ]
-      },
-      {
-        "id": "us7000sntl",
-        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-26T16:22:50.365000Z",
-        "coordinates": [
-          -152.5127,
-          -58.6442
-        ]
-      },
-      {
-        "id": "us6000t05n",
-        "title": "M5.3 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-05-26T02:08:03.420000Z",
-        "coordinates": [
-          -176.5972,
-          -28.3135
-        ]
-      },
-      {
-        "id": "us6000t04s",
-        "title": "M6.9 Earthquake - 29 km ENE of Calama, Chile",
-        "category": "Earthquake",
-        "date": "2026-05-25T21:52:20.043000Z",
-        "coordinates": [
-          -68.6422,
-          -22.3883
-        ]
-      },
-      {
-        "id": "us6000t04f",
-        "title": "M5.6 Earthquake - 113 km ESE of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-05-25T20:39:20.664000Z",
-        "coordinates": [
-          126.0911,
-          1.1115
-        ]
-      }
-    ]
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
@@ -242,26 +96,26 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 9.7,
-    "feels_c": 9.7,
-    "humidity": 87,
+    "city": "Zagreb",
+    "temp_c": 19.7,
+    "feels_c": 18.8,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-29",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 25.0,
-    "humidity": 63,
+    "temp_min_c": 16.3,
+    "temp_max_c": 24.9,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.0,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.2,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-05-30",
@@ -286,11 +140,11 @@
     "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.6,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-05-29T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 63,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +244,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-29T04:57:10+02:00"
+    "fetched_at": "2026-05-29T08:56:35+02:00"
   }
 }
