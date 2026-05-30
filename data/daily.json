@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000spkc",
+        "title": "M5.6 Earthquake - 137 km SSE of Oistins, Barbados",
+        "category": "Earthquake",
+        "date": "2026-05-30T21:27:25.699000Z",
+        "coordinates": [
+          -59.1029,
+          11.9084
+        ]
+      },
+      {
         "id": "us7000spie",
         "title": "M5.0 Earthquake - 195 km NNW of Kilmia, Yemen",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -68.7512,
           -22.282
         ]
-      },
-      {
-        "id": "us7000snpf",
-        "title": "M5.0 Earthquake - 152 km SSW of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-05-26T19:25:11.739000Z",
-        "coordinates": [
-          -174.2097,
-          -17.2705
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.6,
-    "humidity": 77,
+    "temp_c": 19.7,
+    "feels_c": 19.5,
+    "humidity": 68,
     "condition": "Rain",
-    "description": "very heavy rain",
+    "description": "heavy intensity rain",
     "icon": "10n",
-    "wind_kmh": 9.3
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 18.7,
-    "humidity": 77,
+    "temp_min_c": 19.7,
+    "temp_max_c": 19.7,
+    "humidity": 68,
     "condition": "Rain",
     "description": "rain",
     "icon": "10n",
-    "wind_kmh": 8.1,
-    "samples": 2
+    "wind_kmh": 16.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-05-31",
     "city": "Zagreb",
-    "temp_min_c": 14.4,
+    "temp_min_c": 14.8,
     "temp_max_c": 29.3,
-    "humidity": 72,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-30T22:53:25+02:00"
+    "fetched_at": "2026-05-30T23:59:27+02:00"
   }
 }
