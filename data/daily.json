@@ -1,15 +1,25 @@
 {
   "generated": "2026-05-30",
   "apod": {
-    "title": "Messier 104",
-    "date": "2026-05-29",
-    "explanation": "A gorgeous spiral galaxy, Messier 104 is famous for its nearly edge-on profile featuring a broad ring of obscuring dust lanes. Seen in silhouette against an extensive central bulge of stars, the swath of cosmic dust lends a broad brimmed hat-like appearance to the galaxy suggesting a more popular moniker, the Sombrero Galaxy. Also known as NGC 4594, the Sombrero galaxy can be seen across the spectrum and is host to a central supermassive black hole. About 50,000 light-years across and 28 million light-years away, M104 is one of the largest galaxies at the southern edge of the Virgo Galaxy Cluster. Still, the spiky foreground stars in this field of view lie well within our own Milky Way. This broad view of the well-known galaxy was processed to reveal M104's extended halo, as well as a faint tidal stellar stream. It was captured by the Dark Energy Camera (DECam) on the Blanco 4-meter telescope at the Cerro Tololo Inter-American Observatory.",
+    "title": "Supermoon Versus Micromoon",
+    "date": "2026-05-30",
+    "explanation": "What is so micro about tonight's blue micromoon?  Just after sunset, a full moon will appear slightly smaller and dimmer than usual.  The reason is that the Moon's fully illuminated phase occurs within a short time of apogee - when the Moon is farthest from the Earth in its elliptical orbit.  In fact, tonight's micromoon will be the farthest, smallest, and dimmest Moon this year.  But tonight's micromoon is notable for yet another reason: it is also a blue moon, meaning that it is the second full moon in the same month (moon-th).  Pictured here, a supermoon -- when the full moon appears near its largest -- is compared to a micromoon as photographed from Kolkata, India in May and December of 2021.  Although the next micromoon occurs next month, and the next blue moon at the end of 2028, the next blue micromoon will not occur until 2053.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/M104noirlab2612a_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/M104noirlab2612a.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2605/SuperMicroMoon_Mukherjee_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/SuperMicroMoon_Mukherjee_3000.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000spgb",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-30T00:38:14.852000Z",
+        "coordinates": [
+          -26.3858,
+          -59.1715
+        ]
+      },
       {
         "id": "us7000spfj",
         "title": "M5.2 Earthquake - central Mid-Atlantic Ridge",
@@ -149,16 +159,6 @@
           -172.621,
           -17.6654
         ]
-      },
-      {
-        "id": "us7000snpd",
-        "title": "M5.1 Earthquake - Owen Fracture Zone region",
-        "category": "Earthquake",
-        "date": "2026-05-26T18:56:36.969000Z",
-        "coordinates": [
-          57.6465,
-          13.0008
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.0,
-    "humidity": 60,
+    "temp_c": 15.4,
+    "feels_c": 14.9,
+    "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "icon": "01d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-30",
     "city": "Zagreb",
     "temp_min_c": 15.4,
-    "temp_max_c": 29.0,
-    "humidity": 52,
+    "temp_max_c": 28.0,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 4.9,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 4.7,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-05-31",
     "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 29.2,
-    "humidity": 70,
+    "temp_min_c": 14.9,
+    "temp_max_c": 29.4,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.7
+    "wind_kmh": 6.3
   },
   "forecast_day_after": {
     "date": "2026-06-01",
     "city": "Zagreb",
-    "temp_min_c": 14.4,
-    "temp_max_c": 21.0,
-    "humidity": 92,
-    "condition": "Clouds",
+    "temp_min_c": 13.0,
+    "temp_max_c": 16.1,
+    "humidity": 97,
+    "condition": "Rain",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 3.6
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.5,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-05-30T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-30T02:07:43+02:00"
+    "fetched_at": "2026-05-30T06:51:36+02:00"
   }
 }
