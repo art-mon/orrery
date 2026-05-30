@@ -1,7 +1,12 @@
 {
   "generated": "2026-05-30",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Supermoon Versus Micromoon",
+    "date": "2026-05-30",
+    "explanation": "What is so micro about tonight's blue micromoon?  Just after sunset, a full moon will appear slightly smaller and dimmer than usual.  The reason is that the Moon's fully illuminated phase occurs within a short time of apogee - when the Moon is farthest from the Earth in its elliptical orbit.  In fact, tonight's micromoon will be the farthest, smallest, and dimmest Moon this year.  But tonight's micromoon is notable for yet another reason: it is also a blue moon, meaning that it is the second full moon in the same month (moon-th).  Pictured here, a supermoon -- when the full moon appears near its largest -- is compared to a micromoon as photographed from Kolkata, India in May and December of 2021.  Although the next micromoon occurs next month, and the next blue moon at the end of 2028, the next blue micromoon will not occur until 2053.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/SuperMicroMoon_Mukherjee_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/SuperMicroMoon_Mukherjee_3000.jpg"
   },
   "events": {
     "events": [
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.6,
-    "humidity": 68,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "temp_c": 18.7,
+    "feels_c": 18.6,
+    "humidity": 77,
+    "condition": "Rain",
+    "description": "very heavy rain",
+    "icon": "10n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-05-30",
     "city": "Zagreb",
-    "temp_min_c": 19,
-    "temp_max_c": 20.7,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 6.2,
+    "temp_min_c": 18.7,
+    "temp_max_c": 18.7,
+    "humidity": 77,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 8.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-05-31",
     "city": "Zagreb",
-    "temp_min_c": 12.3,
+    "temp_min_c": 14.4,
     "temp_max_c": 29.3,
-    "humidity": 73,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -286,7 +291,7 @@
     "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-05-30T14:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-30T21:09:22+02:00"
+    "fetched_at": "2026-05-30T22:53:25+02:00"
   }
 }
