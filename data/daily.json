@@ -1,10 +1,25 @@
 {
   "generated": "2026-05-31",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Eagle Nebula Pillars in Infrared from Hubble",
+    "date": "2026-05-31",
+    "explanation": "Newborn stars are forming in the Eagle Nebula.  They are gravitationally contracting in pillars of dense gas and dust.  The intense radiation of these newly-formed bright stars is causing surrounding material to boil away. This image, taken with the Hubble Space Telescope in near infrared light, allows the viewer to see through much of the thick dust that makes the pillars opaque in visible light.  The giant structures are light years in length and dubbed informally the Pillars of Creation.  Associated with the open star cluster M16, the Eagle Nebula lies about 6,500 light years away.  The Eagle Nebula is a satisfying target for small telescopes in a nebula-rich part of the sky toward the split constellation Serpens Cauda (the tail of the snake).    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2605/M16Ir_HubbleRomero_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2605/M16Ir_HubbleRomero_2786.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sppt",
+        "title": "M5.0 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-05-31T19:15:39.818000Z",
+        "coordinates": [
+          -179.0432,
+          -30.5996
+        ]
+      },
       {
         "id": "us7000splv",
         "title": "M5.0 Earthquake - south of the Fiji Islands",
@@ -144,16 +159,6 @@
           -176.563,
           -18.0405
         ]
-      },
-      {
-        "id": "us7000snvt",
-        "title": "M6.0 Earthquake - western Indian-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-05-27T15:01:11.567000Z",
-        "coordinates": [
-          139.3037,
-          -50.5213
-        ]
       }
     ]
   },
@@ -247,50 +252,50 @@
     "feels_c": 18.8,
     "humidity": 82,
     "condition": "Rain",
-    "description": "heavy intensity rain",
-    "icon": "10d",
+    "description": "light rain",
+    "icon": "10n",
     "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-05-31",
-    "city": "Zagreb",
-    "temp_min_c": 18.0,
+    "city": "Donji grad",
+    "temp_min_c": 18.7,
     "temp_max_c": 18.7,
-    "humidity": 83,
+    "humidity": 82,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 11.2,
-    "samples": 3
+    "icon": "10n",
+    "wind_kmh": 10.0,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-01",
-    "city": "Zagreb",
-    "temp_min_c": 13.5,
-    "temp_max_c": 16.7,
-    "humidity": 96,
+    "city": "Donji grad",
+    "temp_min_c": 13.4,
+    "temp_max_c": 17.9,
+    "humidity": 95,
     "condition": "Rain",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 4.9
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-06-02",
-    "city": "Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 26.0,
-    "humidity": 72,
+    "city": "Donji grad",
+    "temp_min_c": 11.6,
+    "temp_max_c": 25.9,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
+    "description": "broken clouds",
+    "icon": "04d",
     "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-05-31T13:00",
-    "safe_minutes": 333,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-31T19:59:48+02:00"
+    "fetched_at": "2026-05-31T21:37:04+02:00"
   }
 }
