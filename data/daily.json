@@ -242,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 27.9,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_c": 29.9,
+    "feels_c": 30.4,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-31",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 16.8,
-    "temp_max_c": 28.0,
-    "humidity": 68,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_max_c": 29.9,
+    "humidity": 67,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "01d",
-    "wind_kmh": 11.9,
-    "samples": 5
+    "wind_kmh": 12.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-01",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 13.8,
     "temp_max_c": 17.4,
     "humidity": 93,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-02",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 12.2,
     "temp_max_c": 25.7,
     "humidity": 70,
@@ -286,11 +286,11 @@
     "wind_kmh": 5.8
   },
   "uv": {
-    "uv": 6.7,
+    "uv": 7.0,
     "band": "high",
     "daily_max": 7.1,
     "peak_time": "2026-05-31T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,7 +343,7 @@
       },
       {
         "time": "2026-05-31T12:00",
-        "uv": 6.7
+        "uv": 6.6
       },
       {
         "time": "2026-05-31T13:00",
@@ -363,19 +363,19 @@
       },
       {
         "time": "2026-05-31T17:00",
-        "uv": 4.0
+        "uv": 1.0
       },
       {
         "time": "2026-05-31T18:00",
-        "uv": 0.9
+        "uv": 0.2
       },
       {
         "time": "2026-05-31T19:00",
-        "uv": 0.1
+        "uv": 0.5
       },
       {
         "time": "2026-05-31T20:00",
-        "uv": 0.2
+        "uv": 0.5
       },
       {
         "time": "2026-05-31T21:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-31T12:13:26+02:00"
+    "fetched_at": "2026-05-31T14:10:03+02:00"
   }
 }
