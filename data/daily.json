@@ -1,12 +1,7 @@
 {
   "generated": "2026-05-31",
   "apod": {
-    "title": "Eagle Nebula Pillars in Infrared from Hubble",
-    "date": "2026-05-31",
-    "explanation": "Newborn stars are forming in the Eagle Nebula.  They are gravitationally contracting in pillars of dense gas and dust.  The intense radiation of these newly-formed bright stars is causing surrounding material to boil away. This image, taken with the Hubble Space Telescope in near infrared light, allows the viewer to see through much of the thick dust that makes the pillars opaque in visible light.  The giant structures are light years in length and dubbed informally the Pillars of Creation.  Associated with the open star cluster M16, the Eagle Nebula lies about 6,500 light years away.  The Eagle Nebula is a satisfying target for small telescopes in a nebula-rich part of the sky toward the split constellation Serpens Cauda (the tail of the snake).    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2605/M16Ir_HubbleRomero_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2605/M16Ir_HubbleRomero_2786.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_c": 18.7,
     "feels_c": 18.8,
     "humidity": 82,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10n",
-    "wind_kmh": 14.8
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-05-31",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 18.7,
     "temp_max_c": 18.7,
     "humidity": 82,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 10.0,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 6.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-01",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 13.4,
     "temp_max_c": 17.9,
     "humidity": 95,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-02",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 11.6,
     "temp_max_c": 25.9,
     "humidity": 70,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-05-31T21:37:04+02:00"
+    "fetched_at": "2026-05-31T22:56:50+02:00"
   }
 }
