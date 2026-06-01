@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us7000spqc",
-        "title": "M6.0 Earthquake - 36 km NW of Valpara\u00edso, Chile",
+        "title": "M6.0 Earthquake - 33 km NW of Valpara\u00edso, Chile",
         "category": "Earthquake",
-        "date": "2026-05-31T21:34:17.122000Z",
+        "date": "2026-05-31T21:34:18.009000Z",
         "coordinates": [
-          -71.8524,
-          -32.7679
+          -71.8658,
+          -32.8136
         ]
       },
       {
@@ -165,46 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2018 CS2)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-05-31",
-        "miss_distance_km": 42414671,
-        "velocity_kmh": 16129
-      },
-      {
-        "name": "(2015 KJ)",
-        "hazardous": false,
-        "diameter_m": 113,
-        "close_approach_date": "2026-05-31",
-        "miss_distance_km": 57653713,
-        "velocity_kmh": 23185
-      },
-      {
-        "name": "(2013 LC7)",
-        "hazardous": false,
-        "diameter_m": 798,
-        "close_approach_date": "2026-05-31",
-        "miss_distance_km": 67049663,
-        "velocity_kmh": 163863
-      },
-      {
-        "name": "(2016 JN)",
-        "hazardous": false,
-        "diameter_m": 124,
-        "close_approach_date": "2026-05-31",
-        "miss_distance_km": 67066793,
-        "velocity_kmh": 65302
-      },
-      {
-        "name": "(2013 LE1)",
-        "hazardous": false,
-        "diameter_m": 183,
-        "close_approach_date": "2026-05-31",
-        "miss_distance_km": 69617299,
-        "velocity_kmh": 99956
-      },
-      {
         "name": "(2017 HE49)",
         "hazardous": false,
         "diameter_m": 108,
@@ -243,34 +203,74 @@
         "close_approach_date": "2026-06-02",
         "miss_distance_km": 51047781,
         "velocity_kmh": 42704
+      },
+      {
+        "name": "(2019 US10)",
+        "hazardous": true,
+        "diameter_m": 435,
+        "close_approach_date": "2026-06-02",
+        "miss_distance_km": 58252786,
+        "velocity_kmh": 51366
+      },
+      {
+        "name": "(2010 XD25)",
+        "hazardous": false,
+        "diameter_m": 419,
+        "close_approach_date": "2026-06-02",
+        "miss_distance_km": 63172497,
+        "velocity_kmh": 104649
+      },
+      {
+        "name": "(2011 SF108)",
+        "hazardous": false,
+        "diameter_m": 578,
+        "close_approach_date": "2026-06-02",
+        "miss_distance_km": 65479736,
+        "velocity_kmh": 56387
+      },
+      {
+        "name": "141531 (2002 GB)",
+        "hazardous": false,
+        "diameter_m": 879,
+        "close_approach_date": "2026-06-02",
+        "miss_distance_km": 69798317,
+        "velocity_kmh": 52573
+      },
+      {
+        "name": "(2008 JV2)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-06-02",
+        "miss_distance_km": 74684560,
+        "velocity_kmh": 81031
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.9,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 14.8
+    "city": "Donji grad",
+    "temp_c": 18.1,
+    "feels_c": 18.2,
+    "humidity": 83,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-06-01",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.4,
-    "temp_max_c": 18.7,
-    "humidity": 94,
+    "temp_max_c": 18.1,
+    "humidity": 93,
     "condition": "Rain",
     "description": "rain",
-    "icon": "02n",
-    "wind_kmh": 5.4,
-    "samples": 9
+    "icon": "01n",
+    "wind_kmh": 5.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-02",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 11.6,
     "temp_max_c": 25.9,
     "humidity": 70,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-03",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 12.9,
     "temp_max_c": 17.2,
     "humidity": 95,
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 2.5,
-    "peak_time": "2026-06-01T18:00",
+    "daily_max": 2.6,
+    "peak_time": "2026-06-01T17:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -328,11 +328,11 @@
       },
       {
         "time": "2026-06-01T07:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-06-01T08:00",
-        "uv": 0.3
+        "uv": 0.5
       },
       {
         "time": "2026-06-01T09:00",
@@ -340,43 +340,43 @@
       },
       {
         "time": "2026-06-01T10:00",
-        "uv": 0.7
+        "uv": 0.2
       },
       {
         "time": "2026-06-01T11:00",
-        "uv": 0.3
+        "uv": 0.8
       },
       {
         "time": "2026-06-01T12:00",
-        "uv": 0.7
+        "uv": 0.5
       },
       {
         "time": "2026-06-01T13:00",
-        "uv": 0.8
+        "uv": 0.7
       },
       {
         "time": "2026-06-01T14:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-06-01T15:00",
-        "uv": 0.8
+        "uv": 2.0
       },
       {
         "time": "2026-06-01T16:00",
-        "uv": 0.6
+        "uv": 1.3
       },
       {
         "time": "2026-06-01T17:00",
-        "uv": 2.1
+        "uv": 2.6
       },
       {
         "time": "2026-06-01T18:00",
-        "uv": 2.5
+        "uv": 1.4
       },
       {
         "time": "2026-06-01T19:00",
-        "uv": 1.3
+        "uv": 1.4
       },
       {
         "time": "2026-06-01T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-01T00:00:40+02:00"
+    "fetched_at": "2026-06-01T02:04:09+02:00"
   }
 }
