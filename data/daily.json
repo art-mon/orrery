@@ -1,10 +1,30 @@
 {
-  "generated": "2026-06-01",
+  "generated": "2026-06-02",
   "apod": {
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000spya",
+        "title": "M5.4 Earthquake - 205 km WNW of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-01T23:01:17.415000Z",
+        "coordinates": [
+          138.8609,
+          -2.0733
+        ]
+      },
+      {
+        "id": "us7000spxm",
+        "title": "M6.2 Earthquake - 17 km WSW of Scarcelli, Italy",
+        "category": "Earthquake",
+        "date": "2026-06-01T22:12:36.686000Z",
+        "coordinates": [
+          15.8201,
+          39.3549
+        ]
+      },
       {
         "id": "us7000sps9",
         "title": "M5.0 Earthquake - 264 km E of Levuka, Fiji",
@@ -134,26 +154,6 @@
           159.5123,
           50.0568
         ]
-      },
-      {
-        "id": "us7000sp82",
-        "title": "M5.3 Earthquake - 106 km SW of Turpan, China",
-        "category": "Earthquake",
-        "date": "2026-05-29T06:55:52.924000Z",
-        "coordinates": [
-          88.3187,
-          42.2295
-        ]
-      },
-      {
-        "id": "us7000sp7p",
-        "title": "M5.1 Earthquake - 86 km S of Pacocha, Peru",
-        "category": "Earthquake",
-        "date": "2026-05-29T05:32:39.548000Z",
-        "coordinates": [
-          -71.4602,
-          -18.4158
-        ]
       }
     ]
   },
@@ -243,40 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.4,
-    "humidity": 85,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
+    "temp_c": 15.4,
+    "feels_c": 15.2,
+    "humidity": 87,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50n",
     "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-06-01",
-    "city": "Donji grad",
-    "temp_min_c": 16.5,
-    "temp_max_c": 16.5,
-    "humidity": 85,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.7,
-    "samples": 1
+    "date": "2026-06-02",
+    "city": "Zagreb",
+    "temp_min_c": 14.6,
+    "temp_max_c": 26.7,
+    "humidity": 69,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "50n",
+    "wind_kmh": 5.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-02",
-    "city": "Donji grad",
-    "temp_min_c": 14.1,
-    "temp_max_c": 26.7,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.8
-  },
-  "forecast_day_after": {
     "date": "2026-06-03",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 11.7,
     "temp_max_c": 16.9,
     "humidity": 95,
@@ -285,7 +274,122 @@
     "icon": "10d",
     "wind_kmh": 6.3
   },
+  "forecast_day_after": {
+    "date": "2026-06-04",
+    "city": "Zagreb",
+    "temp_min_c": 9.9,
+    "temp_max_c": 24.6,
+    "humidity": 73,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.0
+  },
   "uv": {
-    "error": "open-meteo request failed: 502 Server Error: Bad Gateway for url: https://api.open-meteo.com/v1/forecast?latitude=45.8150&longitude=15.9819&hourly=uv_index&daily=uv_index_max&current=uv_index&timezone=Europe%2FZagreb&forecast_days=1"
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 6.7,
+    "peak_time": "2026-06-02T13:00",
+    "safe_minutes": null,
+    "skin_type": 2,
+    "hourly": [
+      {
+        "time": "2026-06-02T00:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T01:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T02:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T03:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T04:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T05:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T06:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-06-02T07:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-06-02T08:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-06-02T09:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-06-02T10:00",
+        "uv": 4.4
+      },
+      {
+        "time": "2026-06-02T11:00",
+        "uv": 5.4
+      },
+      {
+        "time": "2026-06-02T12:00",
+        "uv": 6.5
+      },
+      {
+        "time": "2026-06-02T13:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-06-02T14:00",
+        "uv": 6.5
+      },
+      {
+        "time": "2026-06-02T15:00",
+        "uv": 6.3
+      },
+      {
+        "time": "2026-06-02T16:00",
+        "uv": 5.5
+      },
+      {
+        "time": "2026-06-02T17:00",
+        "uv": 4.1
+      },
+      {
+        "time": "2026-06-02T18:00",
+        "uv": 2.6
+      },
+      {
+        "time": "2026-06-02T19:00",
+        "uv": 1.4
+      },
+      {
+        "time": "2026-06-02T20:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-06-02T21:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-06-02T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-06-02T23:00",
+        "uv": 0.0
+      }
+    ],
+    "fetched_at": "2026-06-02T01:25:22+02:00"
   }
 }
