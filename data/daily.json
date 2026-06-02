@@ -7,22 +7,22 @@
     "events": [
       {
         "id": "us7000spya",
-        "title": "M5.4 Earthquake - 205 km WNW of Abepura, Indonesia",
+        "title": "M5.4 Earthquake - 207 km WNW of Abepura, Indonesia",
         "category": "Earthquake",
-        "date": "2026-06-01T23:01:17.415000Z",
+        "date": "2026-06-01T23:01:17.102000Z",
         "coordinates": [
-          138.8609,
-          -2.0733
+          138.8427,
+          -2.0575
         ]
       },
       {
         "id": "us7000spxm",
-        "title": "M6.2 Earthquake - 17 km WSW of Scarcelli, Italy",
+        "title": "M6.2 Earthquake - 22 km WSW of Scarcelli, Italy",
         "category": "Earthquake",
-        "date": "2026-06-01T22:12:36.686000Z",
+        "date": "2026-06-01T22:12:36.284000Z",
         "coordinates": [
-          15.8201,
-          39.3549
+          15.7796,
+          39.325
         ]
       },
       {
@@ -160,30 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2017 HE49)",
-        "hazardous": false,
-        "diameter_m": 108,
-        "close_approach_date": "2026-06-01",
-        "miss_distance_km": 25541099,
-        "velocity_kmh": 15909
-      },
-      {
-        "name": "(2017 YV3)",
-        "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-06-01",
-        "miss_distance_km": 39307756,
-        "velocity_kmh": 23585
-      },
-      {
-        "name": "(2018 VO3)",
-        "hazardous": false,
-        "diameter_m": 23,
-        "close_approach_date": "2026-06-01",
-        "miss_distance_km": 39584552,
-        "velocity_kmh": 19615
-      },
-      {
         "name": "(2008 SY150)",
         "hazardous": false,
         "diameter_m": 68,
@@ -238,58 +214,82 @@
         "close_approach_date": "2026-06-02",
         "miss_distance_km": 74684560,
         "velocity_kmh": 81031
+      },
+      {
+        "name": "(2018 VQ3)",
+        "hazardous": false,
+        "diameter_m": 461,
+        "close_approach_date": "2026-06-03",
+        "miss_distance_km": 22434618,
+        "velocity_kmh": 66119
+      },
+      {
+        "name": "437844 (1999 MN)",
+        "hazardous": true,
+        "diameter_m": 373,
+        "close_approach_date": "2026-06-03",
+        "miss_distance_km": 24168540,
+        "velocity_kmh": 74084
+      },
+      {
+        "name": "(2019 RH)",
+        "hazardous": false,
+        "diameter_m": 38,
+        "close_approach_date": "2026-06-03",
+        "miss_distance_km": 65192919,
+        "velocity_kmh": 43132
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.4,
-    "feels_c": 15.2,
-    "humidity": 87,
+    "temp_c": 14.2,
+    "feels_c": 14.1,
+    "humidity": 90,
     "condition": "Fog",
     "description": "fog",
-    "icon": "50n",
-    "wind_kmh": 3.7
+    "icon": "50d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-06-02",
     "city": "Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 26.7,
-    "humidity": 69,
+    "temp_min_c": 14.2,
+    "temp_max_c": 26.1,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "50n",
-    "wind_kmh": 5.5,
-    "samples": 9
+    "icon": "50d",
+    "wind_kmh": 5.9,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-03",
     "city": "Zagreb",
-    "temp_min_c": 11.7,
+    "temp_min_c": 11.6,
     "temp_max_c": 16.9,
     "humidity": 95,
     "condition": "Rain",
-    "description": "heavy intensity rain",
+    "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 6.3
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-06-04",
     "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 24.6,
-    "humidity": 73,
+    "temp_min_c": 10.0,
+    "temp_max_c": 24.9,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.0
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
-    "daily_max": 6.7,
-    "peak_time": "2026-06-02T13:00",
+    "daily_max": 6.8,
+    "peak_time": "2026-06-02T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -335,7 +335,7 @@
       },
       {
         "time": "2026-06-02T10:00",
-        "uv": 4.4
+        "uv": 4.2
       },
       {
         "time": "2026-06-02T11:00",
@@ -351,11 +351,11 @@
       },
       {
         "time": "2026-06-02T14:00",
-        "uv": 6.5
+        "uv": 6.8
       },
       {
         "time": "2026-06-02T15:00",
-        "uv": 6.3
+        "uv": 6.5
       },
       {
         "time": "2026-06-02T16:00",
@@ -363,11 +363,11 @@
       },
       {
         "time": "2026-06-02T17:00",
-        "uv": 4.1
+        "uv": 3.9
       },
       {
         "time": "2026-06-02T18:00",
-        "uv": 2.6
+        "uv": 2.8
       },
       {
         "time": "2026-06-02T19:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-02T01:25:22+02:00"
+    "fetched_at": "2026-06-02T05:41:56+02:00"
   }
 }
