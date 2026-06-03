@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-03",
+  "generated": "2026-06-04",
   "apod": {
     "title": "Andromeda Through Gas and Dust",
     "date": "2026-06-03",
@@ -247,39 +247,28 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 15.4,
-    "feels_c": 15.2,
-    "humidity": 86,
+    "city": "City of Zagreb",
+    "temp_c": 14.8,
+    "feels_c": 14.6,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 6.6
+    "wind_kmh": 6.5
   },
   "forecast_today": {
-    "date": "2026-06-03",
+    "date": "2026-06-04",
     "city": "Zagreb",
-    "temp_min_c": 15.4,
-    "temp_max_c": 15.4,
-    "humidity": 86,
+    "temp_min_c": 13.9,
+    "temp_max_c": 26.2,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.6,
-    "samples": 1
+    "wind_kmh": 6.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-04",
-    "city": "Zagreb",
-    "temp_min_c": 13.1,
-    "temp_max_c": 26.2,
-    "humidity": 69,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.4
-  },
-  "forecast_day_after": {
     "date": "2026-06-05",
     "city": "Zagreb",
     "temp_min_c": 13.0,
@@ -290,111 +279,122 @@
     "icon": "04d",
     "wind_kmh": 5.6
   },
+  "forecast_day_after": {
+    "date": "2026-06-06",
+    "city": "Zagreb",
+    "temp_min_c": 11.5,
+    "temp_max_c": 23.9,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.7
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.0,
-    "peak_time": "2026-06-03T15:00",
+    "daily_max": 7.1,
+    "peak_time": "2026-06-04T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-03T00:00",
+        "time": "2026-06-04T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T01:00",
+        "time": "2026-06-04T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T02:00",
+        "time": "2026-06-04T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T03:00",
+        "time": "2026-06-04T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T04:00",
+        "time": "2026-06-04T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T05:00",
+        "time": "2026-06-04T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T06:00",
+        "time": "2026-06-04T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-03T07:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-03T08:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-03T09:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-06-03T10:00",
+        "time": "2026-06-04T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-03T11:00",
-        "uv": 0.7
+        "time": "2026-06-04T08:00",
+        "uv": 1.6
       },
       {
-        "time": "2026-06-03T12:00",
-        "uv": 0.6
+        "time": "2026-06-04T09:00",
+        "uv": 2.9
       },
       {
-        "time": "2026-06-03T13:00",
-        "uv": 0.5
+        "time": "2026-06-04T10:00",
+        "uv": 4.2
       },
       {
-        "time": "2026-06-03T14:00",
-        "uv": 0.8
+        "time": "2026-06-04T11:00",
+        "uv": 5.8
       },
       {
-        "time": "2026-06-03T15:00",
-        "uv": 1.0
+        "time": "2026-06-04T12:00",
+        "uv": 6.7
       },
       {
-        "time": "2026-06-03T16:00",
-        "uv": 0.2
+        "time": "2026-06-04T13:00",
+        "uv": 7.1
       },
       {
-        "time": "2026-06-03T17:00",
-        "uv": 0.3
+        "time": "2026-06-04T14:00",
+        "uv": 7.1
       },
       {
-        "time": "2026-06-03T18:00",
-        "uv": 0.3
+        "time": "2026-06-04T15:00",
+        "uv": 6.2
       },
       {
-        "time": "2026-06-03T19:00",
-        "uv": 0.6
+        "time": "2026-06-04T16:00",
+        "uv": 5.1
       },
       {
-        "time": "2026-06-03T20:00",
+        "time": "2026-06-04T17:00",
+        "uv": 4.2
+      },
+      {
+        "time": "2026-06-04T18:00",
+        "uv": 2.5
+      },
+      {
+        "time": "2026-06-04T19:00",
+        "uv": 1.2
+      },
+      {
+        "time": "2026-06-04T20:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-06-04T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-03T21:00",
+        "time": "2026-06-04T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-03T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-03T23:00",
+        "time": "2026-06-04T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-03T23:46:57+02:00"
+    "fetched_at": "2026-06-04T01:41:04+02:00"
   }
 }
