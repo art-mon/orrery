@@ -1,18 +1,43 @@
 {
   "generated": "2026-06-03",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Andromeda Through Gas and Dust",
+    "date": "2026-06-03",
+    "explanation": "Over 1000 years ago, Persian astronomer Abd al-Rahman al-Sufi published humanity\u2019s oldest known record of the Andromeda Galaxy in \"The Book of Fixed Stars\" (Bodleian Library MS. Marsh 144 p. 167). 800 years later, Andromeda became the 31st entry in Charles Messier\u2019s \"Catalogue of Nebulae and Star Clusters\". From \u201ca small cloud\u201d to \u201cnebula\u201d and now known to be our nearest major galaxy, Andromeda has remained a fundamental astronomical object. Today\u2019s image, taken over 202 hours, shows how far we have come in our ability to observe our neighbor. The diffuse red and blue clouds are mostly foreground ionized hydrogen and oxygen well within our Milky Way. Pink-red clouds of hydrogen ionized by the energetic light of young stars trace the galaxy\u2019s dusty spiral arms. M32 and M110 are satellite galaxies pictured orbiting the larger Andromeda. Despite its long history of observation through ancient unaided eyes to modern telescopes, Andromeda still holds countless secrets that astronomers will continue to search for, including how galaxies merge and evolve, as well as the nature of the dark matter that galaxies reside in.   Teachers! the NASA/IPAC Teacher Archive Research Program is officially open for applications!",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/andromeda_1024.png",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/andromeda.png"
   },
   "events": {
     "events": [
       {
-        "id": "nc75370186",
-        "title": "M5.1 Earthquake - 64 km W of Petrolia, CA",
+        "id": "us7000sqcw",
+        "title": "M5.2 Earthquake - 202 km SSE of Vilyuchinsk, Russia",
         "category": "Earthquake",
-        "date": "2026-06-03T12:45:35.090000Z",
+        "date": "2026-06-03T17:23:30.992000Z",
         "coordinates": [
-          -125.044502258301,
-          40.3601684570312
+          159.6858,
+          51.2954
+        ]
+      },
+      {
+        "id": "us7000sqcu",
+        "title": "M5.2 Earthquake - 39 km NE of San Fernando, Peru",
+        "category": "Earthquake",
+        "date": "2026-06-03T17:21:24.203000Z",
+        "coordinates": [
+          -74.2436,
+          -8.2012
+        ]
+      },
+      {
+        "id": "nc75370186",
+        "title": "M5.1 Earthquake - 62 km W of Petrolia, CA",
+        "category": "Earthquake",
+        "date": "2026-06-03T12:45:36.790000Z",
+        "coordinates": [
+          -125.017833333333,
+          40.3646666666667
         ]
       },
       {
@@ -134,26 +159,6 @@
           167.751,
           -17.3616
         ]
-      },
-      {
-        "id": "us7000spkp",
-        "title": "M5.0 Earthquake - 81 km SE of Lae, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-05-30T22:45:51.647000Z",
-        "coordinates": [
-          147.4544,
-          -7.2968
-        ]
-      },
-      {
-        "id": "us7000spkc",
-        "title": "M5.6 Earthquake - 137 km SSE of Oistins, Barbados",
-        "category": "Earthquake",
-        "date": "2026-05-30T21:27:25.699000Z",
-        "coordinates": [
-          -59.1029,
-          11.9084
-        ]
       }
     ]
   },
@@ -242,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 15.9,
-    "feels_c": 15.9,
-    "humidity": 88,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 21.1
+    "city": "Zagreb",
+    "temp_c": 16.5,
+    "feels_c": 16.4,
+    "humidity": 83,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.3
   },
   "forecast_today": {
     "date": "2026-06-03",
     "city": "Zagreb",
-    "temp_min_c": 15.0,
-    "temp_max_c": 17.1,
-    "humidity": 92,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 10.3,
-    "samples": 4
+    "temp_min_c": 16.1,
+    "temp_max_c": 16.5,
+    "humidity": 85,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 6.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-04",
     "city": "Zagreb",
     "temp_min_c": 11.4,
     "temp_max_c": 26.4,
-    "humidity": 71,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -286,11 +291,11 @@
     "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 1.2,
+    "daily_max": 1.0,
     "peak_time": "2026-06-03T15:00",
-    "safe_minutes": 278,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,7 +360,7 @@
       },
       {
         "time": "2026-06-03T15:00",
-        "uv": 1.2
+        "uv": 1.0
       },
       {
         "time": "2026-06-03T16:00",
@@ -371,11 +376,11 @@
       },
       {
         "time": "2026-06-03T19:00",
-        "uv": 1.0
+        "uv": 0.6
       },
       {
         "time": "2026-06-03T20:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-06-03T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-03T15:15:10+02:00"
+    "fetched_at": "2026-06-03T20:21:25+02:00"
   }
 }
