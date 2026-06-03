@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-03",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Vela Supernova Remnant",
+    "date": "2026-06-02",
+    "explanation": "The explosion is over, but the consequences continue.  About twelve thousand years ago, a relatively normal star in the constellation Vela suddenly exploded, creating a strange point of light briefly visible to humans living near the beginning of recorded history.  The outer layers of the star crashed into the interstellar medium, driving a shock wave that is still visible today.  The featured image, taken piecemeal over 60 hours from the Khomas Region of Namibia, captures some of that filamentary and gigantic shock in visible light, with details highlighted by hydrogen (red) and oxygen (blue) emissions. As gas flies away from the detonated star, it decays and reacts with the interstellar medium, producing light in many different colors and energy bands. Remaining at the center of the Vela Supernova Remnant is a pulsar, a star as dense as nuclear matter that spins around more than ten times in a single second.   Explore the Universe: Random APOD Generator",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/Vela_Mtanous_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Vela_Mtanous_2900.jpg"
   },
   "events": {
     "events": [
@@ -160,62 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2008 SY150)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 21740610,
-        "velocity_kmh": 37913
-      },
-      {
-        "name": "(2014 OL339)",
-        "hazardous": false,
-        "diameter_m": 165,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 51047781,
-        "velocity_kmh": 42704
-      },
-      {
-        "name": "(2019 US10)",
-        "hazardous": true,
-        "diameter_m": 435,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 58252786,
-        "velocity_kmh": 51366
-      },
-      {
-        "name": "(2010 XD25)",
-        "hazardous": false,
-        "diameter_m": 419,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 63172497,
-        "velocity_kmh": 104649
-      },
-      {
-        "name": "(2011 SF108)",
-        "hazardous": false,
-        "diameter_m": 578,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 65479736,
-        "velocity_kmh": 56387
-      },
-      {
-        "name": "141531 (2002 GB)",
-        "hazardous": false,
-        "diameter_m": 879,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 69798317,
-        "velocity_kmh": 52573
-      },
-      {
-        "name": "(2008 JV2)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-06-02",
-        "miss_distance_km": 74684560,
-        "velocity_kmh": 81031
-      },
-      {
         "name": "(2018 VQ3)",
         "hazardous": false,
         "diameter_m": 461,
@@ -238,58 +187,114 @@
         "close_approach_date": "2026-06-03",
         "miss_distance_km": 65192919,
         "velocity_kmh": 43132
+      },
+      {
+        "name": "(2014 WD201)",
+        "hazardous": true,
+        "diameter_m": 859,
+        "close_approach_date": "2026-06-03",
+        "miss_distance_km": 66550320,
+        "velocity_kmh": 71909
+      },
+      {
+        "name": "(2017 QM18)",
+        "hazardous": false,
+        "diameter_m": 1133,
+        "close_approach_date": "2026-06-04",
+        "miss_distance_km": 36580752,
+        "velocity_kmh": 76576
+      },
+      {
+        "name": "(2019 ER)",
+        "hazardous": false,
+        "diameter_m": 23,
+        "close_approach_date": "2026-06-04",
+        "miss_distance_km": 37813910,
+        "velocity_kmh": 37029
+      },
+      {
+        "name": "(2014 KG39)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-06-05",
+        "miss_distance_km": 13311906,
+        "velocity_kmh": 28780
+      },
+      {
+        "name": "(2008 QV11)",
+        "hazardous": false,
+        "diameter_m": 321,
+        "close_approach_date": "2026-06-05",
+        "miss_distance_km": 18818980,
+        "velocity_kmh": 54758
+      },
+      {
+        "name": "(2014 MG6)",
+        "hazardous": false,
+        "diameter_m": 34,
+        "close_approach_date": "2026-06-05",
+        "miss_distance_km": 20668983,
+        "velocity_kmh": 30192
+      },
+      {
+        "name": "(2019 NX5)",
+        "hazardous": false,
+        "diameter_m": 9,
+        "close_approach_date": "2026-06-05",
+        "miss_distance_km": 21154730,
+        "velocity_kmh": 22409
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 17.4,
-    "feels_c": 17.1,
-    "humidity": 70,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 7.0
+    "city": "City of Zagreb",
+    "temp_c": 18.1,
+    "feels_c": 18.1,
+    "humidity": 82,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-06-03",
-    "city": "Donji grad",
-    "temp_min_c": 14.2,
-    "temp_max_c": 17.4,
-    "humidity": 89,
+    "city": "Zagreb",
+    "temp_min_c": 14.6,
+    "temp_max_c": 18.1,
+    "humidity": 93,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04n",
-    "wind_kmh": 5.8,
-    "samples": 9
+    "icon": "10d",
+    "wind_kmh": 6.7,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-04",
-    "city": "Donji grad",
-    "temp_min_c": 11.5,
-    "temp_max_c": 24.7,
+    "city": "Zagreb",
+    "temp_min_c": 11.7,
+    "temp_max_c": 26.3,
     "humidity": 72,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.1
   },
   "forecast_day_after": {
     "date": "2026-06-05",
-    "city": "Donji grad",
-    "temp_min_c": 13.1,
-    "temp_max_c": 22.4,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_min_c": 12.0,
+    "temp_max_c": 22.1,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
-    "daily_max": 0.5,
-    "peak_time": "2026-06-03T11:00",
+    "daily_max": 1.4,
+    "peak_time": "2026-06-03T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -323,11 +328,11 @@
       },
       {
         "time": "2026-06-03T07:00",
-        "uv": 0.4
+        "uv": 0.2
       },
       {
         "time": "2026-06-03T08:00",
-        "uv": 0.1
+        "uv": 0.3
       },
       {
         "time": "2026-06-03T09:00",
@@ -335,19 +340,19 @@
       },
       {
         "time": "2026-06-03T10:00",
-        "uv": 0.2
+        "uv": 0.8
       },
       {
         "time": "2026-06-03T11:00",
-        "uv": 0.5
+        "uv": 1.2
       },
       {
         "time": "2026-06-03T12:00",
-        "uv": 0.2
+        "uv": 1.4
       },
       {
         "time": "2026-06-03T13:00",
-        "uv": 0.4
+        "uv": 0.1
       },
       {
         "time": "2026-06-03T14:00",
@@ -355,27 +360,27 @@
       },
       {
         "time": "2026-06-03T15:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-06-03T16:00",
-        "uv": 0.5
+        "uv": 1.1
       },
       {
         "time": "2026-06-03T17:00",
-        "uv": 0.5
+        "uv": 1.4
       },
       {
         "time": "2026-06-03T18:00",
-        "uv": 0.5
+        "uv": 0.3
       },
       {
         "time": "2026-06-03T19:00",
-        "uv": 0.3
+        "uv": 0.1
       },
       {
         "time": "2026-06-03T20:00",
-        "uv": 0.3
+        "uv": 0.1
       },
       {
         "time": "2026-06-03T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-03T01:00:51+02:00"
+    "fetched_at": "2026-06-03T05:51:15+02:00"
   }
 }
