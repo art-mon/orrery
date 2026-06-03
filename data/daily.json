@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-03",
   "apod": {
-    "title": "The Vela Supernova Remnant",
-    "date": "2026-06-02",
-    "explanation": "The explosion is over, but the consequences continue.  About twelve thousand years ago, a relatively normal star in the constellation Vela suddenly exploded, creating a strange point of light briefly visible to humans living near the beginning of recorded history.  The outer layers of the star crashed into the interstellar medium, driving a shock wave that is still visible today.  The featured image, taken piecemeal over 60 hours from the Khomas Region of Namibia, captures some of that filamentary and gigantic shock in visible light, with details highlighted by hydrogen (red) and oxygen (blue) emissions. As gas flies away from the detonated star, it decays and reacts with the interstellar medium, producing light in many different colors and energy bands. Remaining at the center of the Vela Supernova Remnant is a pulsar, a star as dense as nuclear matter that spins around more than ten times in a single second.   Explore the Universe: Random APOD Generator",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Vela_Mtanous_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Vela_Mtanous_2900.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sq7x",
+        "title": "M5.1 Earthquake - 76 km S of Daroot-Korgon, Kyrgyzstan",
+        "category": "Earthquake",
+        "date": "2026-06-03T06:58:56.791000Z",
+        "coordinates": [
+          72.278,
+          38.8658
+        ]
+      },
       {
         "id": "us7000spya",
         "title": "M5.4 Earthquake - 207 km WNW of Abepura, Indonesia",
@@ -149,16 +154,6 @@
           -29.1814,
           0.9071
         ]
-      },
-      {
-        "id": "us7000spd9",
-        "title": "M5.2 Earthquake - 250 km ESE of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-05-29T16:05:58.630000Z",
-        "coordinates": [
-          159.5123,
-          50.0568
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 18.1,
-    "feels_c": 18.1,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_c": 17.6,
+    "feels_c": 17.8,
+    "humidity": 90,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.5
+    "wind_kmh": 4.9
   },
   "forecast_today": {
     "date": "2026-06-03",
     "city": "Zagreb",
     "temp_min_c": 14.6,
-    "temp_max_c": 18.1,
-    "humidity": 93,
+    "temp_max_c": 17.8,
+    "humidity": 94,
     "condition": "Rain",
     "description": "rain",
     "icon": "10d",
-    "wind_kmh": 6.7,
-    "samples": 7
+    "wind_kmh": 8.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-04",
     "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 26.3,
+    "temp_min_c": 11.8,
+    "temp_max_c": 26.1,
     "humidity": 72,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.1
+    "wind_kmh": 6.6
   },
   "forecast_day_after": {
     "date": "2026-06-05",
     "city": "Zagreb",
-    "temp_min_c": 12.0,
-    "temp_max_c": 22.1,
-    "humidity": 79,
+    "temp_min_c": 12.8,
+    "temp_max_c": 21.6,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.0
+    "wind_kmh": 5.8
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.5,
     "band": "low",
-    "daily_max": 1.4,
-    "peak_time": "2026-06-03T12:00",
-    "safe_minutes": null,
+    "daily_max": 1.3,
+    "peak_time": "2026-06-03T14:00",
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,47 +323,47 @@
       },
       {
         "time": "2026-06-03T07:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-06-03T08:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-06-03T09:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-06-03T10:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-06-03T11:00",
-        "uv": 1.2
-      },
-      {
-        "time": "2026-06-03T12:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-06-03T13:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-03T14:00",
-        "uv": 0.5
+        "time": "2026-06-03T08:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-06-03T15:00",
-        "uv": 0.2
+        "time": "2026-06-03T09:00",
+        "uv": 0.3
       },
       {
-        "time": "2026-06-03T16:00",
+        "time": "2026-06-03T10:00",
         "uv": 1.1
       },
       {
+        "time": "2026-06-03T11:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-06-03T12:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-06-03T13:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-06-03T14:00",
+        "uv": 1.3
+      },
+      {
+        "time": "2026-06-03T15:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-06-03T16:00",
+        "uv": 0.3
+      },
+      {
         "time": "2026-06-03T17:00",
-        "uv": 1.4
+        "uv": 0.3
       },
       {
         "time": "2026-06-03T18:00",
@@ -376,7 +371,7 @@
       },
       {
         "time": "2026-06-03T19:00",
-        "uv": 0.1
+        "uv": 0.8
       },
       {
         "time": "2026-06-03T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-03T05:51:15+02:00"
+    "fetched_at": "2026-06-03T10:53:23+02:00"
   }
 }
