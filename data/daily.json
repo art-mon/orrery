@@ -1,12 +1,12 @@
 {
   "generated": "2026-06-04",
   "apod": {
-    "title": "Andromeda Through Gas and Dust",
-    "date": "2026-06-03",
-    "explanation": "Over 1000 years ago, Persian astronomer Abd al-Rahman al-Sufi published humanity\u2019s oldest known record of the Andromeda Galaxy in \"The Book of Fixed Stars\" (Bodleian Library MS. Marsh 144 p. 167). 800 years later, Andromeda became the 31st entry in Charles Messier\u2019s \"Catalogue of Nebulae and Star Clusters\". From \u201ca small cloud\u201d to \u201cnebula\u201d and now known to be our nearest major galaxy, Andromeda has remained a fundamental astronomical object. Today\u2019s image, taken over 202 hours, shows how far we have come in our ability to observe our neighbor. The diffuse red and blue clouds are mostly foreground ionized hydrogen and oxygen well within our Milky Way. Pink-red clouds of hydrogen ionized by the energetic light of young stars trace the galaxy\u2019s dusty spiral arms. M32 and M110 are satellite galaxies pictured orbiting the larger Andromeda. Despite its long history of observation through ancient unaided eyes to modern telescopes, Andromeda still holds countless secrets that astronomers will continue to search for, including how galaxies merge and evolve, as well as the nature of the dark matter that galaxies reside in.   Teachers! the NASA/IPAC Teacher Archive Research Program is officially open for applications!",
+    "title": "A Planetary Nebula with Cosmic Buckyballs",
+    "date": "2026-06-04",
+    "explanation": "What is happening inside this unusual nebula?   Planetary nebula Tc 1, captured here in exquisite detail by the James Webb Space Telescope, is the celestial site where buckyballs were first identified in 2010.     Buckminsterfullerene \u2014 as buckyballs are officially called \u2014 is a molecule with 60 carbon atoms (C60) arranged in the shape of a soccer ball.   The molecule is named for architect Buckminster Fuller because of its resemblance to the geodesic dome he helped popularize.   Webb\u2019s new data reveal where the C60 molecules live in this nebula, and the geometry is striking: they populate a thin spherical shell around the central star, visible here as the bright edge of the nebula\u2019s glowing orange central region.   Look closely near the nebula\u2019s heart and a more perplexing feature emerges: a delicate structure shaped uncannily like an upside-down question mark, fitting punctuation for the many questions this nebula still poses.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/andromeda_1024.png",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/andromeda.png"
+    "url": "https://apod.nasa.gov/apod/image/2606/buckyballs_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/buckyballs.jpg"
   },
   "events": {
     "events": [
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 12.2,
-    "humidity": 90,
+    "city": "Donji grad",
+    "temp_c": 20.4,
+    "feels_c": 20.3,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.2
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.2
   },
   "forecast_today": {
     "date": "2026-06-04",
-    "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 29.0,
-    "humidity": 68,
+    "city": "Donji grad",
+    "temp_min_c": 18.9,
+    "temp_max_c": 25.8,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 5.8,
-    "samples": 7
+    "icon": "03d",
+    "wind_kmh": 5.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-05",
-    "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 21.6,
-    "humidity": 80,
-    "condition": "Clouds",
+    "city": "Donji grad",
+    "temp_min_c": 14.9,
+    "temp_max_c": 23.7,
+    "humidity": 81,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-06-06",
-    "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 23.2,
-    "humidity": 74,
+    "city": "Donji grad",
+    "temp_min_c": 12.9,
+    "temp_max_c": 22.4,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.5
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
-    "daily_max": 7.2,
+    "uv": 5.2,
+    "band": "moderate",
+    "daily_max": 7.1,
     "peak_time": "2026-06-04T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,7 +336,7 @@
       },
       {
         "time": "2026-06-04T09:00",
-        "uv": 2.9
+        "uv": 3.0
       },
       {
         "time": "2026-06-04T10:00",
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-06-04T13:00",
-        "uv": 7.2
+        "uv": 7.1
       },
       {
         "time": "2026-06-04T14:00",
@@ -360,15 +360,15 @@
       },
       {
         "time": "2026-06-04T15:00",
-        "uv": 6.2
+        "uv": 6.5
       },
       {
         "time": "2026-06-04T16:00",
-        "uv": 5.3
+        "uv": 5.4
       },
       {
         "time": "2026-06-04T17:00",
-        "uv": 4.0
+        "uv": 4.2
       },
       {
         "time": "2026-06-04T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-04T05:44:23+02:00"
+    "fetched_at": "2026-06-04T10:18:34+02:00"
   }
 }
