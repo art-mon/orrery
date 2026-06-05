@@ -1,15 +1,30 @@
 {
   "generated": "2026-06-05",
   "apod": {
-    "title": "The Hydra Cluster of Galaxies",
-    "date": "2026-06-05",
-    "explanation": "Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels in the foreground of this cosmic snapshot. Far beyond them are the galaxies of the Hydra Cluster. In fact, while the spiky foreground stars are hundreds of light-years distant, the Hydra Cluster galaxies are well over 100 million light-years away. Three large galaxies near the cluster center, two yellow ellipticals (NGC 3311, NGC 3309) and one prominent blue spiral (NGC 3312), are the dominant galaxies, each about 150,000 light-years in diameter. An intriguing overlapping galaxy pair cataloged as NGC 3314 lies above and left of NGC 3312. Also known as Abell 1060, the Hydra galaxy cluster is one of three large galaxy clusters within 200 million light-years of the Milky Way. In the nearby universe, galaxies are gravitationally bound into clusters which themselves are loosely bound into superclusters. Superclusters in turn are seen to align over even larger scales.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/HydraClusterSampaio1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/HydraClusterSampaio.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sqzx",
+        "title": "M5.6 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-06-05T20:58:09.553000Z",
+        "coordinates": [
+          161.168,
+          -61.8467
+        ]
+      },
+      {
+        "id": "us7000sqzv",
+        "title": "M5.1 Earthquake - 0 km SSW of Quetzalapa, Mexico",
+        "category": "Earthquake",
+        "date": "2026-06-05T20:55:05.129000Z",
+        "coordinates": [
+          -98.5044,
+          16.7782
+        ]
+      },
       {
         "id": "us7000sqvk",
         "title": "M5.3 Earthquake - 97 km NNE of Lospalos, Timor Leste",
@@ -139,26 +154,6 @@
           15.7796,
           39.325
         ]
-      },
-      {
-        "id": "us7000sps9",
-        "title": "M5.0 Earthquake - 264 km E of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-06-01T05:16:15.532000Z",
-        "coordinates": [
-          -178.1836,
-          -18.1208
-        ]
-      },
-      {
-        "id": "us7000sprv",
-        "title": "M5.3 Earthquake - southeast of Easter Island",
-        "category": "Earthquake",
-        "date": "2026-06-01T03:40:11.053000Z",
-        "coordinates": [
-          -104.6576,
-          -35.387
-        ]
       }
     ]
   },
@@ -247,31 +242,31 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15.8,
-    "humidity": 84,
+    "city": "Donji grad",
+    "temp_c": 15.4,
+    "feels_c": 15.1,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 3.2
+    "wind_kmh": 2.7
   },
   "forecast_today": {
     "date": "2026-06-05",
-    "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 15.9,
-    "humidity": 84,
+    "city": "Donji grad",
+    "temp_min_c": 15.4,
+    "temp_max_c": 15.4,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.0,
-    "samples": 2
+    "wind_kmh": 2.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-06",
-    "city": "Zagreb",
-    "temp_min_c": 13.4,
+    "city": "Donji grad",
+    "temp_min_c": 13.2,
     "temp_max_c": 25.2,
     "humidity": 76,
     "condition": "Clouds",
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-07",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 14.9,
     "temp_max_c": 27.6,
     "humidity": 68,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-05T21:51:14+02:00"
+    "fetched_at": "2026-06-05T23:23:29+02:00"
   }
 }
