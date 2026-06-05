@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-05",
   "apod": {
-    "title": "The Hydra Cluster of Galaxies",
-    "date": "2026-06-05",
-    "explanation": "Within our own Milky Way galaxy, two bright, spiky stars stand like sentinels in the foreground of this cosmic snapshot. Far beyond them are the galaxies of the Hydra Cluster. In fact, while the spiky foreground stars are hundreds of light-years distant, the Hydra Cluster galaxies are well over 100 million light-years away. Three large galaxies near the cluster center, two yellow ellipticals (NGC 3311, NGC 3309) and one prominent blue spiral (NGC 3312), are the dominant galaxies, each about 150,000 light-years in diameter. An intriguing overlapping galaxy pair cataloged as NGC 3314 lies above and left of NGC 3312. Also known as Abell 1060, the Hydra galaxy cluster is one of three large galaxy clusters within 200 million light-years of the Milky Way. In the nearby universe, galaxies are gravitationally bound into clusters which themselves are loosely bound into superclusters. Superclusters in turn are seen to align over even larger scales.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/HydraClusterSampaio1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/HydraClusterSampaio.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sqvk",
+        "title": "M5.3 Earthquake - 97 km NNE of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-06-05T15:57:05.030000Z",
+        "coordinates": [
+          127.2652,
+          -7.6807
+        ]
+      },
       {
         "id": "us7000squy",
         "title": "M5.3 Earthquake - 7 km NNW of Manito, Philippines",
@@ -62,12 +67,12 @@
       },
       {
         "id": "us7000sqcu",
-        "title": "M5.2 Earthquake - 39 km NE of San Fernando, Peru",
+        "title": "M5.2 Earthquake - 35 km ENE of San Fernando, Peru",
         "category": "Earthquake",
-        "date": "2026-06-03T17:21:24.203000Z",
+        "date": "2026-06-03T17:21:25.301000Z",
         "coordinates": [
-          -74.2436,
-          -8.2012
+          -74.263,
+          -8.2249
         ]
       },
       {
@@ -148,16 +153,6 @@
         "coordinates": [
           -104.6576,
           -35.387
-        ]
-      },
-      {
-        "id": "us7000spru",
-        "title": "M5.7 Earthquake - Izu Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-06-01T03:34:30.871000Z",
-        "coordinates": [
-          141.7476,
-          30.7158
         ]
       }
     ]
@@ -247,25 +242,25 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 16.0,
-    "feels_c": 16.0,
-    "humidity": 89,
+    "city": "Zagreb",
+    "temp_c": 15.9,
+    "feels_c": 15.7,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.7
+    "wind_kmh": 2.4
   },
   "forecast_today": {
     "date": "2026-06-05",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
-    "temp_max_c": 16.2,
-    "humidity": 90,
+    "temp_min_c": 15.7,
+    "temp_max_c": 15.9,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 4.4,
+    "wind_kmh": 2.9,
     "samples": 3
   },
   "forecast": {
@@ -291,11 +286,11 @@
     "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-06-05T12:00",
-    "safe_minutes": 833,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -380,7 +375,7 @@
       },
       {
         "time": "2026-06-05T20:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-06-05T21:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-05T17:51:42+02:00"
+    "fetched_at": "2026-06-05T19:51:54+02:00"
   }
 }
