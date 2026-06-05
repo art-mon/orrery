@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-05",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "A Planetary Nebula with Cosmic Buckyballs",
+    "date": "2026-06-04",
+    "explanation": "What is happening inside this unusual nebula?   Planetary nebula Tc 1, captured here in exquisite detail by the James Webb Space Telescope, is the celestial site where buckyballs were first identified in 2010.     Buckminsterfullerene \u2014 as buckyballs are officially called \u2014 is a molecule with 60 carbon atoms (C60) arranged in the shape of a soccer ball.   The molecule is named for architect Buckminster Fuller because of its resemblance to the geodesic dome he helped popularize.   Webb\u2019s new data reveal where the C60 molecules live in this nebula, and the geometry is striking: they populate a thin spherical shell around the central star, visible here as the bright edge of the nebula\u2019s glowing orange central region.   Look closely near the nebula\u2019s heart and a more perplexing feature emerges: a delicate structure shaped uncannily like an upside-down question mark, fitting punctuation for the many questions this nebula still poses.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/buckyballs_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/buckyballs.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sqrh",
+        "title": "M5.2 Earthquake - 77 km S of Gorontalo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-04T23:28:32.786000Z",
+        "coordinates": [
+          123.0614,
+          -0.1639
+        ]
+      },
       {
         "id": "us7000sqcw",
         "title": "M5.2 Earthquake - 202 km SSE of Vilyuchinsk, Russia",
@@ -144,37 +159,11 @@
           -179.7084,
           -24.0984
         ]
-      },
-      {
-        "id": "us7000splm",
-        "title": "M5.0 Earthquake - 72 km NW of Port-Vila, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-05-31T02:48:01.280000Z",
-        "coordinates": [
-          167.751,
-          -17.3616
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 QM18)",
-        "hazardous": false,
-        "diameter_m": 1133,
-        "close_approach_date": "2026-06-04",
-        "miss_distance_km": 36580752,
-        "velocity_kmh": 76576
-      },
-      {
-        "name": "(2019 ER)",
-        "hazardous": false,
-        "diameter_m": 23,
-        "close_approach_date": "2026-06-04",
-        "miss_distance_km": 37813910,
-        "velocity_kmh": 37029
-      },
       {
         "name": "(2014 KG39)",
         "hazardous": false,
@@ -238,34 +227,50 @@
         "close_approach_date": "2026-06-06",
         "miss_distance_km": 16795040,
         "velocity_kmh": 62425
+      },
+      {
+        "name": "(2019 UK13)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-06-06",
+        "miss_distance_km": 59095712,
+        "velocity_kmh": 21813
+      },
+      {
+        "name": "478784 (2012 UV136)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-06-06",
+        "miss_distance_km": 62319856,
+        "velocity_kmh": 57882
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.3,
-    "feels_c": 17.0,
-    "humidity": 75,
+    "city": "Zagreb",
+    "temp_c": 18.1,
+    "feels_c": 17.9,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 3.0
+    "wind_kmh": 2.7
   },
   "forecast_today": {
     "date": "2026-06-05",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 16.3,
     "temp_max_c": 23.0,
     "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 4.9,
-    "samples": 9
+    "wind_kmh": 5.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-06",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 14.7,
     "temp_max_c": 24.6,
     "humidity": 74,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-07",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 14.2,
     "temp_max_c": 27.2,
     "humidity": 66,
@@ -288,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.7,
-    "peak_time": "2026-06-05T12:00",
+    "daily_max": 5.5,
+    "peak_time": "2026-06-05T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -331,55 +336,55 @@
       },
       {
         "time": "2026-06-05T09:00",
-        "uv": 2.5
-      },
-      {
-        "time": "2026-06-05T10:00",
-        "uv": 3.2
-      },
-      {
-        "time": "2026-06-05T11:00",
-        "uv": 3.4
-      },
-      {
-        "time": "2026-06-05T12:00",
-        "uv": 4.7
-      },
-      {
-        "time": "2026-06-05T13:00",
-        "uv": 3.9
-      },
-      {
-        "time": "2026-06-05T14:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-05T15:00",
-        "uv": 3.4
-      },
-      {
-        "time": "2026-06-05T16:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-06-05T17:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-06-05T18:00",
         "uv": 2.1
       },
       {
-        "time": "2026-06-05T19:00",
+        "time": "2026-06-05T10:00",
+        "uv": 2.6
+      },
+      {
+        "time": "2026-06-05T11:00",
+        "uv": 4.2
+      },
+      {
+        "time": "2026-06-05T12:00",
+        "uv": 4.9
+      },
+      {
+        "time": "2026-06-05T13:00",
+        "uv": 5.5
+      },
+      {
+        "time": "2026-06-05T14:00",
+        "uv": 2.0
+      },
+      {
+        "time": "2026-06-05T15:00",
+        "uv": 0.6
+      },
+      {
+        "time": "2026-06-05T16:00",
         "uv": 1.2
       },
       {
-        "time": "2026-06-05T20:00",
+        "time": "2026-06-05T17:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-06-05T18:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-06-05T19:00",
         "uv": 0.5
       },
       {
-        "time": "2026-06-05T21:00",
+        "time": "2026-06-05T20:00",
         "uv": 0.1
+      },
+      {
+        "time": "2026-06-05T21:00",
+        "uv": 0.0
       },
       {
         "time": "2026-06-05T22:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-05T00:19:16+02:00"
+    "fetched_at": "2026-06-05T02:04:44+02:00"
   }
 }
