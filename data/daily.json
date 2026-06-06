@@ -34,10 +34,10 @@
         "id": "us7000sqzx",
         "title": "M5.6 Earthquake - Balleny Islands region",
         "category": "Earthquake",
-        "date": "2026-06-05T20:58:09.553000Z",
+        "date": "2026-06-05T20:58:09.571000Z",
         "coordinates": [
-          161.168,
-          -61.8467
+          161.3301,
+          -61.7682
         ]
       },
       {
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.7,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_c": 21.5,
+    "feels_c": 21.5,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.9
+    "wind_kmh": 0.9
   },
   "forecast_today": {
     "date": "2026-06-06",
     "city": "City of Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 22.7,
-    "humidity": 70,
+    "temp_min_c": 20.7,
+    "temp_max_c": 21.5,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 2.2,
+    "wind_kmh": 1.5,
     "samples": 3
   },
   "forecast": {
@@ -273,8 +273,8 @@
     "city": "City of Zagreb",
     "temp_min_c": 17.0,
     "temp_max_c": 29.5,
-    "humidity": 65,
-    "condition": "Clouds",
+    "humidity": 64,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.6
@@ -291,11 +291,11 @@
     "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 2.7,
+    "uv": 0.9,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-06-06T14:00",
-    "safe_minutes": 62,
+    "safe_minutes": 175,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-06T17:13:06+02:00"
+    "fetched_at": "2026-06-06T19:10:17+02:00"
   }
 }
