@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-06",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Charon: Moon of Pluto",
+    "date": "2026-06-06",
+    "explanation": "A darkened and mysterious north polar region known to some as Mordor Macula caps this premier view of Charon, Pluto's largest moon. The high-resolution image was captured by the interplanetary space probe New Horizons near its closest approach to distant Pluto on July 14, 2015. The combined blue, red, and infrared image data was processed to enhance colors and follow variations in Charon's surface properties with a resolution of about 2.9 kilometers (1.8 miles). A stunning image of Charon's Pluto-facing hemisphere, it also features a clear view of an apparently moon-girdling belt of fractures and canyons that seems to separate smooth southern plains from varied northern terrain. Charon is 1,214 kilometers (754 miles) across. That's about 1/10th the size of planet Earth but a whopping 1/2 the diameter of Pluto itself, and makes it the largest satellite relative to its parent body in the Solar System. Still, the moon appears as a small bump at about the 1 o'clock position on Pluto's disk in the grainy, negative, telescopic picture inset at upper left. That image was used by James Christy and Robert Harrington at the U.S. Naval Observatory in Flagstaff to discover Charon in June of 1978.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/charon_then_now_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Charon-Neutral-Bright-Release.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr3u",
+        "title": "M5.3 Earthquake - 221 km ENE of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-06-06T14:09:45.001000Z",
+        "coordinates": [
+          -172.2247,
+          -17.5707
+        ]
+      },
       {
         "id": "us7000sr0g",
         "title": "M5.0 Earthquake - Kermadec Islands region",
@@ -27,12 +42,12 @@
       },
       {
         "id": "us7000sqzv",
-        "title": "M5.1 Earthquake - 0 km SSW of Quetzalapa, Mexico",
+        "title": "M5.2 Earthquake - 2 km WSW of Santa Mar\u00eda, Mexico",
         "category": "Earthquake",
-        "date": "2026-06-05T20:55:05.129000Z",
+        "date": "2026-06-05T20:55:03.336000Z",
         "coordinates": [
-          -98.5044,
-          16.7782
+          -98.4106,
+          16.7654
         ]
       },
       {
@@ -144,16 +159,6 @@
           72.278,
           38.8658
         ]
-      },
-      {
-        "id": "us7000spya",
-        "title": "M5.4 Earthquake - 207 km WNW of Abepura, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-01T23:01:17.102000Z",
-        "coordinates": [
-          138.8427,
-          -2.0575
-        ]
       }
     ]
   },
@@ -242,41 +247,41 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.7,
-    "feels_c": 23.6,
-    "humidity": 58,
+    "city": "City of Zagreb",
+    "temp_c": 22.7,
+    "feels_c": 22.7,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.2
+    "wind_kmh": 2.9
   },
   "forecast_today": {
     "date": "2026-06-06",
-    "city": "Zagreb",
-    "temp_min_c": 18.6,
-    "temp_max_c": 24.0,
-    "humidity": 66,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 22.7,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 2.7,
-    "samples": 4
+    "wind_kmh": 2.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-07",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.0,
     "temp_max_c": 29.5,
     "humidity": 65,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.6
   },
   "forecast_day_after": {
     "date": "2026-06-08",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.7,
     "temp_max_c": 28.4,
     "humidity": 58,
@@ -286,11 +291,11 @@
     "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 4.6,
-    "band": "moderate",
+    "uv": 2.7,
+    "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-06-06T14:00",
-    "safe_minutes": 36,
+    "safe_minutes": 62,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-06T15:26:48+02:00"
+    "fetched_at": "2026-06-06T17:13:06+02:00"
   }
 }
