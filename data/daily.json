@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-06",
   "apod": {
-    "title": "Charon: Moon of Pluto",
-    "date": "2026-06-06",
-    "explanation": "A darkened and mysterious north polar region known to some as Mordor Macula caps this premier view of Charon, Pluto's largest moon. The high-resolution image was captured by the interplanetary space probe New Horizons near its closest approach to distant Pluto on July 14, 2015. The combined blue, red, and infrared image data was processed to enhance colors and follow variations in Charon's surface properties with a resolution of about 2.9 kilometers (1.8 miles). A stunning image of Charon's Pluto-facing hemisphere, it also features a clear view of an apparently moon-girdling belt of fractures and canyons that seems to separate smooth southern plains from varied northern terrain. Charon is 1,214 kilometers (754 miles) across. That's about 1/10th the size of planet Earth but a whopping 1/2 the diameter of Pluto itself, and makes it the largest satellite relative to its parent body in the Solar System. Still, the moon appears as a small bump at about the 1 o'clock position on Pluto's disk in the grainy, negative, telescopic picture inset at upper left. That image was used by James Christy and Robert Harrington at the U.S. Naval Observatory in Flagstaff to discover Charon in June of 1978.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/charon_then_now_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Charon-Neutral-Bright-Release.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,32 +242,32 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 16.8,
-    "feels_c": 16.6,
-    "humidity": 80,
+    "city": "Zagreb",
+    "temp_c": 22.0,
+    "feels_c": 21.8,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 0.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 1.6
   },
   "forecast_today": {
     "date": "2026-06-06",
-    "city": "Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 26.6,
-    "humidity": 74,
+    "city": "Donji grad",
+    "temp_min_c": 18.5,
+    "temp_max_c": 24.7,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 2.4,
-    "samples": 6
+    "icon": "03d",
+    "wind_kmh": 2.3,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-07",
-    "city": "Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 31.1,
+    "city": "Donji grad",
+    "temp_min_c": 13.9,
+    "temp_max_c": 31.6,
     "humidity": 67,
     "condition": "Clear",
     "description": "clear sky",
@@ -281,8 +276,8 @@
   },
   "forecast_day_after": {
     "date": "2026-06-08",
-    "city": "Zagreb",
-    "temp_min_c": 16.4,
+    "city": "Donji grad",
+    "temp_min_c": 16.3,
     "temp_max_c": 28.4,
     "humidity": 58,
     "condition": "Clouds",
@@ -291,11 +286,11 @@
     "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 2.4,
-    "band": "low",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-06-06T14:00",
-    "safe_minutes": 69,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-06T08:28:55+02:00"
+    "fetched_at": "2026-06-06T11:24:10+02:00"
   }
 }
