@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_c": 23.7,
     "feels_c": 23.6,
-    "humidity": 57,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.2
   },
   "forecast_today": {
     "date": "2026-06-06",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 24.3,
+    "temp_min_c": 18.6,
+    "temp_max_c": 24.0,
     "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 2.9,
-    "samples": 5
+    "wind_kmh": 2.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-07",
     "city": "Zagreb",
-    "temp_min_c": 13.9,
-    "temp_max_c": 31.6,
-    "humidity": 67,
+    "temp_min_c": 17.0,
+    "temp_max_c": 29.5,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-06-08",
     "city": "Zagreb",
-    "temp_min_c": 16.3,
+    "temp_min_c": 16.7,
     "temp_max_c": 28.4,
     "humidity": 58,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 6.2,
-    "band": "high",
+    "uv": 4.6,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-06-06T14:00",
-    "safe_minutes": 27,
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,15 +339,15 @@
       },
       {
         "time": "2026-06-06T11:00",
-        "uv": 5.5
+        "uv": 5.3
       },
       {
         "time": "2026-06-06T12:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-06-06T13:00",
-        "uv": 5.2
+        "uv": 5.9
       },
       {
         "time": "2026-06-06T14:00",
@@ -355,19 +355,19 @@
       },
       {
         "time": "2026-06-06T15:00",
-        "uv": 5.5
+        "uv": 5.7
       },
       {
         "time": "2026-06-06T16:00",
-        "uv": 4.4
+        "uv": 4.0
       },
       {
         "time": "2026-06-06T17:00",
-        "uv": 3.8
+        "uv": 2.8
       },
       {
         "time": "2026-06-06T18:00",
-        "uv": 2.5
+        "uv": 2.6
       },
       {
         "time": "2026-06-06T19:00",
@@ -375,7 +375,7 @@
       },
       {
         "time": "2026-06-06T20:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-06-06T21:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-06T13:24:29+02:00"
+    "fetched_at": "2026-06-06T15:26:48+02:00"
   }
 }
