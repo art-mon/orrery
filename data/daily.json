@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-06",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -243,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.0,
-    "feels_c": 21.8,
+    "temp_c": 23.7,
+    "feels_c": 23.6,
     "humidity": 57,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 1.6
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 4.4
   },
   "forecast_today": {
     "date": "2026-06-06",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 18.5,
-    "temp_max_c": 24.7,
+    "temp_max_c": 24.3,
     "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 2.3,
+    "icon": "04d",
+    "wind_kmh": 2.9,
     "samples": 5
   },
   "forecast": {
     "date": "2026-06-07",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 13.9,
     "temp_max_c": 31.6,
     "humidity": 67,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-08",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 16.3,
     "temp_max_c": 28.4,
     "humidity": 58,
@@ -286,11 +286,11 @@
     "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 5.7,
-    "band": "moderate",
+    "uv": 6.2,
+    "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-06-06T14:00",
-    "safe_minutes": 29,
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-06T11:24:10+02:00"
+    "fetched_at": "2026-06-06T13:24:29+02:00"
   }
 }
