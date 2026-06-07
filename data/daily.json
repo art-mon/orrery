@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "title": "Charon: Moon of Pluto",
-    "date": "2026-06-06",
-    "explanation": "A darkened and mysterious north polar region known to some as Mordor Macula caps this premier view of Charon, Pluto's largest moon. The high-resolution image was captured by the interplanetary space probe New Horizons near its closest approach to distant Pluto on July 14, 2015. The combined blue, red, and infrared image data was processed to enhance colors and follow variations in Charon's surface properties with a resolution of about 2.9 kilometers (1.8 miles). A stunning image of Charon's Pluto-facing hemisphere, it also features a clear view of an apparently moon-girdling belt of fractures and canyons that seems to separate smooth southern plains from varied northern terrain. Charon is 1,214 kilometers (754 miles) across. That's about 1/10th the size of planet Earth but a whopping 1/2 the diameter of Pluto itself, and makes it the largest satellite relative to its parent body in the Solar System. Still, the moon appears as a small bump at about the 1 o'clock position on Pluto's disk in the grainy, negative, telescopic picture inset at upper left. That image was used by James Christy and Robert Harrington at the U.S. Naval Observatory in Flagstaff to discover Charon in June of 1978.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/charon_then_now_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Charon-Neutral-Bright-Release.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr6c",
+        "title": "M5.4 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-06-07T03:56:57.053000Z",
+        "coordinates": [
+          -179.849,
+          -24.3729
+        ]
+      },
       {
         "id": "us7000sr64",
         "title": "M5.1 Earthquake - 196 km NE of Lospalos, Timor Leste",
@@ -149,16 +154,6 @@
           -74.263,
           -8.2249
         ]
-      },
-      {
-        "id": "nc75370186",
-        "title": "M5.1 Earthquake - 62 km W of Petrolia, CA",
-        "category": "Earthquake",
-        "date": "2026-06-03T12:45:36.790000Z",
-        "coordinates": [
-          -125.017833333333,
-          40.3646666666667
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15.9,
-    "humidity": 88,
+    "city": "Zagreb",
+    "temp_c": 24.2,
+    "feels_c": 24.4,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 0.6
   },
   "forecast_today": {
     "date": "2026-06-07",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 27.9,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 20.9,
+    "temp_max_c": 26.6,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.9,
-    "samples": 7
+    "wind_kmh": 5.2,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-08",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.7,
+    "city": "Zagreb",
+    "temp_min_c": 18.4,
     "temp_max_c": 29.2,
-    "humidity": 59,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-06-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.9,
-    "temp_max_c": 29.5,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 17.1,
+    "temp_max_c": 29.0,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.3
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 4.6,
+    "band": "moderate",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,7 +327,7 @@
       },
       {
         "time": "2026-06-07T08:00",
-        "uv": 1.7
+        "uv": 1.6
       },
       {
         "time": "2026-06-07T09:00",
@@ -348,7 +343,7 @@
       },
       {
         "time": "2026-06-07T12:00",
-        "uv": 6.7
+        "uv": 6.6
       },
       {
         "time": "2026-06-07T13:00",
@@ -376,7 +371,7 @@
       },
       {
         "time": "2026-06-07T19:00",
-        "uv": 1.4
+        "uv": 1.5
       },
       {
         "time": "2026-06-07T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T05:38:23+02:00"
+    "fetched_at": "2026-06-07T09:52:34+02:00"
   }
 }
