@@ -1,10 +1,20 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr9r",
+        "title": "M5.8 Earthquake - Easter Island region",
+        "category": "Earthquake",
+        "date": "2026-06-07T18:01:20.966000Z",
+        "coordinates": [
+          -112.2108,
+          -29.1847
+        ]
+      },
       {
         "id": "us7000sr9j",
         "title": "M5.6 Earthquake - 15 km WNW of Pun\u0101kha, Bhutan",
@@ -144,16 +154,6 @@
           123.8507,
           13.1856
         ]
-      },
-      {
-        "id": "us7000squw",
-        "title": "M5.3 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-05T13:40:20.252000Z",
-        "coordinates": [
-          -135.6401,
-          -54.6462
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.8,
-    "feels_c": 24.0,
-    "humidity": 68,
+    "temp_c": 20.2,
+    "feels_c": 20.4,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.4
+    "icon": "03n",
+    "wind_kmh": 6.0
   },
   "forecast_today": {
     "date": "2026-06-07",
     "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 23.8,
-    "humidity": 68,
+    "temp_min_c": 20.2,
+    "temp_max_c": 20.5,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 5.5,
+    "icon": "03n",
+    "wind_kmh": 6.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-08",
     "city": "Zagreb",
-    "temp_min_c": 17.9,
-    "temp_max_c": 28.9,
+    "temp_min_c": 18.4,
+    "temp_max_c": 28.8,
     "humidity": 61,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.4
   },
   "forecast_day_after": {
     "date": "2026-06-09",
     "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 29.0,
-    "humidity": 69,
+    "temp_min_c": 17.9,
+    "temp_max_c": 29.2,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.3
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T20:01:54+02:00"
+    "fetched_at": "2026-06-07T22:09:19+02:00"
   }
 }
