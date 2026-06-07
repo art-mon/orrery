@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Charon: Moon of Pluto",
+    "date": "2026-06-06",
+    "explanation": "A darkened and mysterious north polar region known to some as Mordor Macula caps this premier view of Charon, Pluto's largest moon. The high-resolution image was captured by the interplanetary space probe New Horizons near its closest approach to distant Pluto on July 14, 2015. The combined blue, red, and infrared image data was processed to enhance colors and follow variations in Charon's surface properties with a resolution of about 2.9 kilometers (1.8 miles). A stunning image of Charon's Pluto-facing hemisphere, it also features a clear view of an apparently moon-girdling belt of fractures and canyons that seems to separate smooth southern plains from varied northern terrain. Charon is 1,214 kilometers (754 miles) across. That's about 1/10th the size of planet Earth but a whopping 1/2 the diameter of Pluto itself, and makes it the largest satellite relative to its parent body in the Solar System. Still, the moon appears as a small bump at about the 1 o'clock position on Pluto's disk in the grainy, negative, telescopic picture inset at upper left. That image was used by James Christy and Robert Harrington at the U.S. Naval Observatory in Flagstaff to discover Charon in June of 1978.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/charon_then_now_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Charon-Neutral-Bright-Release.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr64",
+        "title": "M5.1 Earthquake - 196 km NE of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-06-07T02:53:05.880000Z",
+        "coordinates": [
+          128.439,
+          -7.4742
+        ]
+      },
       {
         "id": "us7000sr5i",
         "title": "M5.2 Earthquake - 22 km E of Venilale, Timor Leste",
@@ -144,61 +159,11 @@
           -125.017833333333,
           40.3646666666667
         ]
-      },
-      {
-        "id": "us7000sq93",
-        "title": "M5.7 Earthquake - 154 km WSW of Pistol River, Oregon",
-        "category": "Earthquake",
-        "date": "2026-06-03T10:53:54.074000Z",
-        "coordinates": [
-          -126.1861,
-          41.8967
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2005 WR2)",
-        "hazardous": false,
-        "diameter_m": 741,
-        "close_approach_date": "2026-06-06",
-        "miss_distance_km": 14925563,
-        "velocity_kmh": 52111
-      },
-      {
-        "name": "662203 (2005 WR2)",
-        "hazardous": false,
-        "diameter_m": 759,
-        "close_approach_date": "2026-06-06",
-        "miss_distance_km": 14925574,
-        "velocity_kmh": 52111
-      },
-      {
-        "name": "(2013 MR)",
-        "hazardous": false,
-        "diameter_m": 282,
-        "close_approach_date": "2026-06-06",
-        "miss_distance_km": 16795040,
-        "velocity_kmh": 62425
-      },
-      {
-        "name": "(2019 UK13)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-06-06",
-        "miss_distance_km": 59095712,
-        "velocity_kmh": 21813
-      },
-      {
-        "name": "478784 (2012 UV136)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-06-06",
-        "miss_distance_km": 62319856,
-        "velocity_kmh": 57882
-      },
       {
         "name": "(2018 GE)",
         "hazardous": false,
@@ -238,37 +203,77 @@
         "close_approach_date": "2026-06-08",
         "miss_distance_km": 18129603,
         "velocity_kmh": 26895
+      },
+      {
+        "name": "(2019 MT3)",
+        "hazardous": false,
+        "diameter_m": 154,
+        "close_approach_date": "2026-06-08",
+        "miss_distance_km": 43357282,
+        "velocity_kmh": 25176
+      },
+      {
+        "name": "(2015 LC21)",
+        "hazardous": false,
+        "diameter_m": 149,
+        "close_approach_date": "2026-06-08",
+        "miss_distance_km": 51769293,
+        "velocity_kmh": 56380
+      },
+      {
+        "name": "(2024 BY15)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-06-08",
+        "miss_distance_km": 73426936,
+        "velocity_kmh": 53916
+      },
+      {
+        "name": "(2004 VJ1)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-06-09",
+        "miss_distance_km": 27614593,
+        "velocity_kmh": 18253
+      },
+      {
+        "name": "(2019 UX6)",
+        "hazardous": false,
+        "diameter_m": 25,
+        "close_approach_date": "2026-06-09",
+        "miss_distance_km": 66948122,
+        "velocity_kmh": 25266
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.6,
-    "humidity": 83,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 3.4
+    "temp_c": 15.9,
+    "feels_c": 15.9,
+    "humidity": 88,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.5
   },
   "forecast_today": {
     "date": "2026-06-07",
     "city": "City of Zagreb",
-    "temp_min_c": 17.3,
-    "temp_max_c": 29.4,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02n",
+    "temp_min_c": 15.9,
+    "temp_max_c": 27.9,
+    "humidity": 65,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
     "wind_kmh": 4.9,
-    "samples": 9
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-08",
     "city": "City of Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 30.1,
-    "humidity": 60,
+    "temp_min_c": 18.7,
+    "temp_max_c": 29.2,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -277,16 +282,16 @@
   "forecast_day_after": {
     "date": "2026-06-09",
     "city": "City of Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 30.0,
-    "humidity": 65,
+    "temp_min_c": 16.9,
+    "temp_max_c": 29.5,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 4.3
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
@@ -343,7 +348,7 @@
       },
       {
         "time": "2026-06-07T12:00",
-        "uv": 6.6
+        "uv": 6.7
       },
       {
         "time": "2026-06-07T13:00",
@@ -363,11 +368,11 @@
       },
       {
         "time": "2026-06-07T17:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-06-07T18:00",
-        "uv": 2.7
+        "uv": 2.8
       },
       {
         "time": "2026-06-07T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T01:02:02+02:00"
+    "fetched_at": "2026-06-07T05:38:23+02:00"
   }
 }
