@@ -1,10 +1,20 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr9j",
+        "title": "M5.6 Earthquake - 15 km WNW of Pun\u0101kha, Bhutan",
+        "category": "Earthquake",
+        "date": "2026-06-07T17:36:39.953000Z",
+        "coordinates": [
+          89.7236,
+          27.6243
+        ]
+      },
       {
         "id": "us7000sr8v",
         "title": "M5.5 Earthquake - 139 km SE of Severo-Kuril\u2019sk, Russia",
@@ -144,16 +154,6 @@
           -135.6401,
           -54.6462
         ]
-      },
-      {
-        "id": "us7000sqtb",
-        "title": "M5.1 Earthquake - 103 km NNW of Villa General Roca, Argentina",
-        "category": "Earthquake",
-        "date": "2026-06-05T06:54:49.152000Z",
-        "coordinates": [
-          -67.0453,
-          -31.8817
-        ]
       }
     ]
   },
@@ -243,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 27.6,
-    "humidity": 44,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.0
+    "temp_c": 23.8,
+    "feels_c": 24.0,
+    "humidity": 68,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.4
   },
   "forecast_today": {
     "date": "2026-06-07",
     "city": "Zagreb",
-    "temp_min_c": 23.4,
-    "temp_max_c": 27.6,
-    "humidity": 51,
+    "temp_min_c": 23.0,
+    "temp_max_c": 23.8,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 6.4,
-    "samples": 3
+    "icon": "03d",
+    "wind_kmh": 5.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-08",
@@ -286,11 +286,11 @@
     "wind_kmh": 6.3
   },
   "uv": {
-    "uv": 2.3,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
-    "safe_minutes": 72,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T18:12:49+02:00"
+    "fetched_at": "2026-06-07T20:01:54+02:00"
   }
 }
