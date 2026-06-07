@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -17,12 +17,12 @@
       },
       {
         "id": "us7000sr7d",
-        "title": "M5.1 Earthquake - 5 km WNW of Prok\u00f3pi, Greece",
+        "title": "M5.2 Earthquake - 7 km W of Prok\u00f3pi, Greece",
         "category": "Earthquake",
-        "date": "2026-06-07T10:02:48.761000Z",
+        "date": "2026-06-07T10:02:48.827000Z",
         "coordinates": [
-          23.4383,
-          38.761
+          23.4046,
+          38.7304
         ]
       },
       {
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 28.1,
-    "feels_c": 28.2,
-    "humidity": 45,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.0
+    "city": "Donji grad",
+    "temp_c": 28.7,
+    "feels_c": 28.4,
+    "humidity": 41,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 9.5
   },
   "forecast_today": {
     "date": "2026-06-07",
     "city": "Zagreb",
-    "temp_min_c": 20.9,
-    "temp_max_c": 28.1,
-    "humidity": 54,
+    "temp_min_c": 23.5,
+    "temp_max_c": 28.7,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 7.3,
+    "icon": "02d",
+    "wind_kmh": 7.5,
     "samples": 4
   },
   "forecast": {
     "date": "2026-06-08",
     "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 29.2,
+    "temp_min_c": 17.9,
+    "temp_max_c": 28.9,
     "humidity": 61,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-06-09",
     "city": "Zagreb",
-    "temp_min_c": 17.1,
+    "temp_min_c": 18.2,
     "temp_max_c": 29.0,
-    "humidity": 67,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.5
+    "wind_kmh": 6.3
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 4.0,
+    "band": "moderate",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 41,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T14:19:14+02:00"
+    "fetched_at": "2026-06-07T16:49:55+02:00"
   }
 }
