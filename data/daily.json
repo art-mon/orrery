@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Jupiter and Venus from Earth",
+    "date": "2026-06-07",
+    "explanation": "It was visible around the world. The sunset conjunction of Jupiter (left) and Venus (right) in 2012 was visible almost no matter where you lived on Earth.  Anyone on our planet with a clear western horizon at sunset could see them. That year, a creative photographer traveled away from the town lights of Szubin, Poland to photograph  a near closest approach of the two planets. The bright planets were then separated by only  three degrees and his daughter struck a humorous pose. A faint red sunset still glowed in the background. Jupiter and Venus are together again this week after sunset, passing within a degree of each other about two days from today.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/JupiterPersonVenus_Nikodem_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/JupiterPersonVenus_Nikodem_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sr7d",
+        "title": "M5.1 Earthquake - 5 km WNW of Prok\u00f3pi, Greece",
+        "category": "Earthquake",
+        "date": "2026-06-07T10:02:48.761000Z",
+        "coordinates": [
+          23.4383,
+          38.761
+        ]
+      },
       {
         "id": "us7000sr6c",
         "title": "M5.4 Earthquake - south of the Fiji Islands",
@@ -144,16 +159,6 @@
           159.7076,
           51.3903
         ]
-      },
-      {
-        "id": "us7000sqcu",
-        "title": "M5.2 Earthquake - 35 km ENE of San Fernando, Peru",
-        "category": "Earthquake",
-        "date": "2026-06-03T17:21:25.301000Z",
-        "coordinates": [
-          -74.263,
-          -8.2249
-        ]
       }
     ]
   },
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.4,
-    "humidity": 64,
+    "temp_c": 27.6,
+    "feels_c": 28.2,
+    "humidity": 53,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 0.6
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-06-07",
     "city": "Zagreb",
     "temp_min_c": 20.9,
-    "temp_max_c": 26.6,
-    "humidity": 61,
+    "temp_max_c": 27.6,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.2,
-    "samples": 6
+    "wind_kmh": 6.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-08",
@@ -286,11 +291,11 @@
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 4.6,
-    "band": "moderate",
+    "uv": 7.0,
+    "band": "high",
     "daily_max": 7.1,
     "peak_time": "2026-06-07T13:00",
-    "safe_minutes": 36,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T09:52:34+02:00"
+    "fetched_at": "2026-06-07T12:26:44+02:00"
   }
 }
