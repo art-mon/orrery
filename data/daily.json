@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-07",
+  "generated": "2026-06-08",
   "apod": {
     "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
@@ -242,41 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 20.2,
-    "feels_c": 20.4,
-    "humidity": 81,
+    "city": "Donji grad",
+    "temp_c": 19.1,
+    "feels_c": 19.1,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 6.0
+    "wind_kmh": 5.6
   },
   "forecast_today": {
-    "date": "2026-06-07",
-    "city": "Zagreb",
-    "temp_min_c": 20.2,
-    "temp_max_c": 20.5,
-    "humidity": 77,
-    "condition": "Clouds",
-    "description": "clouds",
+    "date": "2026-06-08",
+    "city": "Donji grad",
+    "temp_min_c": 17.9,
+    "temp_max_c": 28.8,
+    "humidity": 64,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "03n",
-    "wind_kmh": 6.1,
-    "samples": 2
+    "wind_kmh": 5.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-08",
-    "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 28.8,
-    "humidity": 61,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.4
-  },
-  "forecast_day_after": {
     "date": "2026-06-09",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 17.9,
     "temp_max_c": 29.2,
     "humidity": 68,
@@ -285,111 +274,122 @@
     "icon": "04d",
     "wind_kmh": 4.6
   },
+  "forecast_day_after": {
+    "date": "2026-06-10",
+    "city": "Donji grad",
+    "temp_min_c": 14.7,
+    "temp_max_c": 26.5,
+    "humidity": 74,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 4.8
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.1,
-    "peak_time": "2026-06-07T13:00",
+    "daily_max": 7.2,
+    "peak_time": "2026-06-08T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-07T00:00",
+        "time": "2026-06-08T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T01:00",
+        "time": "2026-06-08T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T02:00",
+        "time": "2026-06-08T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T03:00",
+        "time": "2026-06-08T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T04:00",
+        "time": "2026-06-08T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T05:00",
+        "time": "2026-06-08T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T06:00",
+        "time": "2026-06-08T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-07T07:00",
+        "time": "2026-06-08T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-07T08:00",
-        "uv": 1.6
+        "time": "2026-06-08T08:00",
+        "uv": 1.7
       },
       {
-        "time": "2026-06-07T09:00",
+        "time": "2026-06-08T09:00",
         "uv": 3.0
       },
       {
-        "time": "2026-06-07T10:00",
+        "time": "2026-06-08T10:00",
         "uv": 4.4
       },
       {
-        "time": "2026-06-07T11:00",
+        "time": "2026-06-08T11:00",
         "uv": 5.7
       },
       {
-        "time": "2026-06-07T12:00",
-        "uv": 6.6
+        "time": "2026-06-08T12:00",
+        "uv": 6.7
       },
       {
-        "time": "2026-06-07T13:00",
+        "time": "2026-06-08T13:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-06-08T14:00",
         "uv": 7.1
       },
       {
-        "time": "2026-06-07T14:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-06-07T15:00",
+        "time": "2026-06-08T15:00",
         "uv": 6.5
       },
       {
-        "time": "2026-06-07T16:00",
+        "time": "2026-06-08T16:00",
         "uv": 5.5
       },
       {
-        "time": "2026-06-07T17:00",
+        "time": "2026-06-08T17:00",
         "uv": 4.2
       },
       {
-        "time": "2026-06-07T18:00",
+        "time": "2026-06-08T18:00",
         "uv": 2.8
       },
       {
-        "time": "2026-06-07T19:00",
+        "time": "2026-06-08T19:00",
         "uv": 1.5
       },
       {
-        "time": "2026-06-07T20:00",
+        "time": "2026-06-08T20:00",
         "uv": 0.6
       },
       {
-        "time": "2026-06-07T21:00",
+        "time": "2026-06-08T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-07T22:00",
+        "time": "2026-06-08T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-07T23:00",
+        "time": "2026-06-08T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-07T22:09:19+02:00"
+    "fetched_at": "2026-06-08T00:01:56+02:00"
   }
 }
