@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-08",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Jupiter and Venus from Earth",
+    "date": "2026-06-07",
+    "explanation": "It was visible around the world. The sunset conjunction of Jupiter (left) and Venus (right) in 2012 was visible almost no matter where you lived on Earth.  Anyone on our planet with a clear western horizon at sunset could see them. That year, a creative photographer traveled away from the town lights of Szubin, Poland to photograph  a near closest approach of the two planets. The bright planets were then separated by only  three degrees and his daughter struck a humorous pose. A faint red sunset still glowed in the background. Jupiter and Venus are together again this week after sunset, passing within a degree of each other about two days from today.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/JupiterPersonVenus_Nikodem_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/JupiterPersonVenus_Nikodem_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000srb1",
+        "title": "M7.8 Earthquake - 24 km WSW of Burias, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-07T23:37:40.292000Z",
+        "coordinates": [
+          125.0647,
+          5.5996
+        ]
+      },
       {
         "id": "us7000sr9r",
         "title": "M5.8 Earthquake - Easter Island region",
@@ -144,53 +159,11 @@
           127.2652,
           -7.6807
         ]
-      },
-      {
-        "id": "us7000squy",
-        "title": "M5.3 Earthquake - 7 km NNW of Manito, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-05T13:57:59.739000Z",
-        "coordinates": [
-          123.8507,
-          13.1856
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2018 GE)",
-        "hazardous": false,
-        "diameter_m": 19,
-        "close_approach_date": "2026-06-07",
-        "miss_distance_km": 6267506,
-        "velocity_kmh": 11140
-      },
-      {
-        "name": "(2006 MB)",
-        "hazardous": false,
-        "diameter_m": 180,
-        "close_approach_date": "2026-06-07",
-        "miss_distance_km": 15101008,
-        "velocity_kmh": 26400
-      },
-      {
-        "name": "(2019 CH1)",
-        "hazardous": true,
-        "diameter_m": 339,
-        "close_approach_date": "2026-06-07",
-        "miss_distance_km": 23613188,
-        "velocity_kmh": 78804
-      },
-      {
-        "name": "(2020 DJ)",
-        "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-06-07",
-        "miss_distance_km": 60137859,
-        "velocity_kmh": 19691
-      },
       {
         "name": "530974 (2012 BN11)",
         "hazardous": true,
@@ -238,34 +211,66 @@
         "close_approach_date": "2026-06-09",
         "miss_distance_km": 66948122,
         "velocity_kmh": 25266
+      },
+      {
+        "name": "(2016 TQ56)",
+        "hazardous": false,
+        "diameter_m": 96,
+        "close_approach_date": "2026-06-10",
+        "miss_distance_km": 21405493,
+        "velocity_kmh": 47403
+      },
+      {
+        "name": "(2016 BN1)",
+        "hazardous": false,
+        "diameter_m": 441,
+        "close_approach_date": "2026-06-10",
+        "miss_distance_km": 28910360,
+        "velocity_kmh": 49632
+      },
+      {
+        "name": "(2014 AE29)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-06-10",
+        "miss_distance_km": 37075104,
+        "velocity_kmh": 27000
+      },
+      {
+        "name": "(2015 XF261)",
+        "hazardous": false,
+        "diameter_m": 53,
+        "close_approach_date": "2026-06-10",
+        "miss_distance_km": 42069803,
+        "velocity_kmh": 32308
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 19.1,
-    "feels_c": 19.1,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_c": 18.1,
+    "feels_c": 18.1,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-06-08",
-    "city": "Donji grad",
-    "temp_min_c": 17.9,
+    "city": "Zagreb",
+    "temp_min_c": 18.0,
     "temp_max_c": 28.8,
-    "humidity": 64,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear",
     "icon": "03n",
-    "wind_kmh": 5.5,
-    "samples": 9
+    "wind_kmh": 5.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-09",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.9,
     "temp_max_c": 29.2,
     "humidity": 68,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-10",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 14.7,
     "temp_max_c": 26.5,
     "humidity": 74,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-08T00:01:56+02:00"
+    "fetched_at": "2026-06-08T02:04:14+02:00"
   }
 }
