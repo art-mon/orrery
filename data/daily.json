@@ -6,6 +6,46 @@
   "events": {
     "events": [
       {
+        "id": "us7000srku",
+        "title": "M5.4 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-06-08T19:11:21.734000Z",
+        "coordinates": [
+          -4.3752,
+          -55.7212
+        ]
+      },
+      {
+        "id": "us7000srkc",
+        "title": "M5.4 Earthquake - 197 km SSE of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-06-08T18:49:46.908000Z",
+        "coordinates": [
+          169.9905,
+          -21.1981
+        ]
+      },
+      {
+        "id": "us7000srk7",
+        "title": "M5.1 Earthquake - 52 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T18:29:02.497000Z",
+        "coordinates": [
+          125.4615,
+          4.9304
+        ]
+      },
+      {
+        "id": "us7000srjx",
+        "title": "M6.1 Earthquake - 104 km WNW of Mantua, Cuba",
+        "category": "Earthquake",
+        "date": "2026-06-08T18:00:27.786000Z",
+        "coordinates": [
+          -85.1501,
+          22.7854
+        ]
+      },
+      {
         "id": "us7000srh8",
         "title": "M5.3 Earthquake - 19 km SSW of Lumatil, Philippines",
         "category": "Earthquake",
@@ -114,46 +154,6 @@
           125.215,
           4.9789
         ]
-      },
-      {
-        "id": "us7000srdu",
-        "title": "M5.3 Earthquake - 69 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T04:44:32.115000Z",
-        "coordinates": [
-          125.3513,
-          4.787
-        ]
-      },
-      {
-        "id": "us7000srdr",
-        "title": "M5.0 Earthquake - 44 km WSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T04:42:59.900000Z",
-        "coordinates": [
-          125.1257,
-          5.1926
-        ]
-      },
-      {
-        "id": "us7000srck",
-        "title": "M5.1 Earthquake - 64 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T01:10:58.485000Z",
-        "coordinates": [
-          125.1798,
-          4.8963
-        ]
-      },
-      {
-        "id": "us7000srci",
-        "title": "M5.8 Earthquake - 11 km SE of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T00:58:17.138000Z",
-        "coordinates": [
-          125.5344,
-          5.3313
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.9,
-    "feels_c": 25.2,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.1
+    "temp_c": 20.9,
+    "feels_c": 21.2,
+    "humidity": 81,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 3.3
   },
   "forecast_today": {
     "date": "2026-06-08",
     "city": "Zagreb",
-    "temp_min_c": 23.6,
-    "temp_max_c": 24.9,
-    "humidity": 68,
+    "temp_min_c": 20.5,
+    "temp_max_c": 20.9,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 4.8,
-    "samples": 3
+    "icon": "01n",
+    "wind_kmh": 3.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-09",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 27.1,
-    "humidity": 68,
+    "temp_min_c": 19.6,
+    "temp_max_c": 28.6,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.0
+    "wind_kmh": 3.8
   },
   "forecast_day_after": {
     "date": "2026-06-10",
     "city": "Zagreb",
-    "temp_min_c": 13.2,
-    "temp_max_c": 24.7,
-    "humidity": 75,
-    "condition": "Clouds",
+    "temp_min_c": 14.0,
+    "temp_max_c": 25.5,
+    "humidity": 76,
+    "condition": "Rain",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.0
+    "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-08T13:00",
-    "safe_minutes": 333,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-08T19:50:25+02:00"
+    "fetched_at": "2026-06-08T22:11:12+02:00"
   }
 }
