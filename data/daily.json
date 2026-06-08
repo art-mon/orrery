@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-08",
   "apod": {
-    "title": "Comet R3 PanSTARRS Through Time",
-    "date": "2026-06-08",
-    "explanation": "What happens to a comet as it leaves our inner Solar System?  Now, the arrival of a comet into the inner Solar System is typically heralded with great fanfare and high hopes that the comet will become bright and photogenic. But on the way out, the comet's nucleus is less warmed by the Sun, less gas and dust are expelled, the bright coma around the nucleus shrinks and fades, and the tail length drops off. Many comets will then return to the outer Solar System and only return in hundreds or thousands of years. In contrast, some comets -- like Comet C/2025 R3 (PanSTARRS) -- receive a gravitational kick from the planets and so will never return. Pictured, Comet R3 PanSTARRs was imaged deeply many nights in early to mid-May near Cerro Paranal in Chile. Later images appear closer to the top and clearly show the shrinking ion tail.    Comet R3 Gallery: Comet R3 PanSTARRS in 2026",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/R3Tails_Kurak_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/R3Tails_Kurak_1973.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000srh8",
+        "title": "M5.3 Earthquake - 19 km SSW of Lumatil, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T14:53:04.491000Z",
+        "coordinates": [
+          124.8303,
+          5.7068
+        ]
+      },
       {
         "id": "us7000srgz",
         "title": "M5.5 Earthquake - southern Mid-Atlantic Ridge",
@@ -149,16 +154,6 @@
           125.5344,
           5.3313
         ]
-      },
-      {
-        "id": "us7000srcg",
-        "title": "M6.5 Earthquake - 19 km SW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T00:55:12.073000Z",
-        "coordinates": [
-          125.2046,
-          5.4724
-        ]
       }
     ]
   },
@@ -247,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 29.8,
-    "feels_c": 29.7,
-    "humidity": 42,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.9
+    "city": "Zagreb",
+    "temp_c": 24.9,
+    "feels_c": 25.2,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.1
   },
   "forecast_today": {
     "date": "2026-06-08",
-    "city": "City of Zagreb",
-    "temp_min_c": 23.4,
-    "temp_max_c": 29.8,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 23.6,
+    "temp_max_c": 24.9,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
+    "icon": "02d",
     "wind_kmh": 4.8,
-    "samples": 4
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-09",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.5,
     "temp_max_c": 27.1,
     "humidity": 68,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-10",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.2,
     "temp_max_c": 24.7,
     "humidity": 75,
@@ -291,11 +286,11 @@
     "wind_kmh": 6.0
   },
   "uv": {
-    "uv": 4.0,
-    "band": "moderate",
+    "uv": 0.5,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-08T13:00",
-    "safe_minutes": 41,
+    "safe_minutes": 333,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-08T16:46:31+02:00"
+    "fetched_at": "2026-06-08T19:50:25+02:00"
   }
 }
