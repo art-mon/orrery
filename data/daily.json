@@ -1,15 +1,70 @@
 {
   "generated": "2026-06-08",
   "apod": {
-    "title": "Comet R3 PanSTARRS Through Time",
-    "date": "2026-06-08",
-    "explanation": "What happens to a comet as it leaves our inner Solar System?  Now, the arrival of a comet into the inner Solar System is typically heralded with great fanfare and high hopes that the comet will become bright and photogenic. But on the way out, the comet's nucleus is less warmed by the Sun, less gas and dust are expelled, the bright coma around the nucleus shrinks and fades, and the tail length drops off. Many comets will then return to the outer Solar System and only return in hundreds or thousands of years. In contrast, some comets -- like Comet C/2025 R3 (PanSTARRS) -- receive a gravitational kick from the planets and so will never return. Pictured, Comet R3 PanSTARRs was imaged deeply many nights in early to mid-May near Cerro Paranal in Chile. Later images appear closer to the top and clearly show the shrinking ion tail.    Comet R3 Gallery: Comet R3 PanSTARRS in 2026",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/R3Tails_Kurak_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/R3Tails_Kurak_1973.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000srfa",
+        "title": "M5.1 Earthquake - 75 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T09:28:33.259000Z",
+        "coordinates": [
+          125.5369,
+          4.7279
+        ]
+      },
+      {
+        "id": "us7000srf8",
+        "title": "M5.6 Earthquake - 56 km SSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T09:17:22.900000Z",
+        "coordinates": [
+          125.3094,
+          4.9191
+        ]
+      },
+      {
+        "id": "us7000srf1",
+        "title": "M5.3 Earthquake - 29 km SW of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T08:13:44.554000Z",
+        "coordinates": [
+          125.1601,
+          5.3935
+        ]
+      },
+      {
+        "id": "us7000srem",
+        "title": "M5.0 Earthquake - 29 km WSW of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T07:00:06.687000Z",
+        "coordinates": [
+          125.0994,
+          5.4985
+        ]
+      },
+      {
+        "id": "us7000srec",
+        "title": "M5.3 Earthquake - 55 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T06:21:56.592000Z",
+        "coordinates": [
+          125.4434,
+          4.8984
+        ]
+      },
+      {
+        "id": "us7000sre1",
+        "title": "M5.5 Earthquake - 2 km SSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T05:12:04.262000Z",
+        "coordinates": [
+          125.4566,
+          5.3774
+        ]
+      },
       {
         "id": "us7000srds",
         "title": "M5.7 Earthquake - 54 km SSW of Sarangani, Philippines",
@@ -28,6 +83,16 @@
         "coordinates": [
           125.3513,
           4.787
+        ]
+      },
+      {
+        "id": "us7000srdr",
+        "title": "M5.0 Earthquake - 44 km WSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T04:42:59.900000Z",
+        "coordinates": [
+          125.1257,
+          5.1926
         ]
       },
       {
@@ -88,76 +153,6 @@
         "coordinates": [
           125.2096,
           5.5222
-        ]
-      },
-      {
-        "id": "us7000srb1",
-        "title": "M7.8 Earthquake - 26 km SW of Kablalan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-07T23:37:41.803000Z",
-        "coordinates": [
-          125.0469,
-          5.5918
-        ]
-      },
-      {
-        "id": "us7000sr9r",
-        "title": "M5.8 Earthquake - Easter Island region",
-        "category": "Earthquake",
-        "date": "2026-06-07T18:01:20.966000Z",
-        "coordinates": [
-          -112.2108,
-          -29.1847
-        ]
-      },
-      {
-        "id": "us7000sr9j",
-        "title": "M5.6 Earthquake - 15 km WNW of Pun\u0101kha, Bhutan",
-        "category": "Earthquake",
-        "date": "2026-06-07T17:36:39.953000Z",
-        "coordinates": [
-          89.7236,
-          27.6243
-        ]
-      },
-      {
-        "id": "us7000sr8v",
-        "title": "M5.5 Earthquake - 139 km SE of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-07T14:53:56.180000Z",
-        "coordinates": [
-          157.6645,
-          49.8979
-        ]
-      },
-      {
-        "id": "us7000sr7l",
-        "title": "M6.1 Earthquake - 124 km SE of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-07T10:41:58.596000Z",
-        "coordinates": [
-          157.3799,
-          49.8993
-        ]
-      },
-      {
-        "id": "us7000sr7d",
-        "title": "M5.2 Earthquake - 7 km W of Prok\u00f3pi, Greece",
-        "category": "Earthquake",
-        "date": "2026-06-07T10:02:48.827000Z",
-        "coordinates": [
-          23.4046,
-          38.7304
-        ]
-      },
-      {
-        "id": "us7000sr6c",
-        "title": "M5.4 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-06-07T03:56:57.053000Z",
-        "coordinates": [
-          -179.849,
-          -24.3729
         ]
       }
     ]
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.8,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_c": 28.7,
+    "feels_c": 28.7,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.1
+    "wind_kmh": 7.0
   },
   "forecast_today": {
     "date": "2026-06-08",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 28.2,
-    "humidity": 65,
+    "temp_min_c": 20.4,
+    "temp_max_c": 28.7,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.9,
-    "samples": 7
+    "wind_kmh": 5.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-09",
     "city": "Zagreb",
-    "temp_min_c": 19.0,
-    "temp_max_c": 28.0,
-    "humidity": 66,
+    "temp_min_c": 18.4,
+    "temp_max_c": 27.0,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.6
   },
   "forecast_day_after": {
     "date": "2026-06-10",
     "city": "Zagreb",
-    "temp_min_c": 14.0,
-    "temp_max_c": 26.1,
-    "humidity": 70,
+    "temp_min_c": 13.5,
+    "temp_max_c": 24.0,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.6
+    "wind_kmh": 6.3
   },
   "uv": {
-    "uv": 1.3,
-    "band": "low",
+    "uv": 7.2,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-08T13:00",
-    "safe_minutes": 128,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -372,7 +367,7 @@
       },
       {
         "time": "2026-06-08T18:00",
-        "uv": 2.8
+        "uv": 2.7
       },
       {
         "time": "2026-06-08T19:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-08T07:28:34+02:00"
+    "fetched_at": "2026-06-08T12:48:14+02:00"
   }
 }
