@@ -11,6 +11,46 @@
   "events": {
     "events": [
       {
+        "id": "us7000srvv",
+        "title": "M5.2 Earthquake - 163 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-09T19:49:03.951000Z",
+        "coordinates": [
+          160.7499,
+          52.3674
+        ]
+      },
+      {
+        "id": "us7000srvn",
+        "title": "M5.1 Earthquake - southeast Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-06-09T19:36:10.562000Z",
+        "coordinates": [
+          84.9096,
+          -41.5157
+        ]
+      },
+      {
+        "id": "us7000srvk",
+        "title": "M5.1 Earthquake - 120 km ESE of Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-09T19:25:35.189000Z",
+        "coordinates": [
+          149.2865,
+          44.8123
+        ]
+      },
+      {
+        "id": "us7000srun",
+        "title": "M5.0 Earthquake - 8 km SW of Taluya, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-09T18:09:52.935000Z",
+        "coordinates": [
+          125.1164,
+          5.766
+        ]
+      },
+      {
         "id": "us7000sruf",
         "title": "M5.1 Earthquake - 65 km SSW of Sarangani, Philippines",
         "category": "Earthquake",
@@ -119,46 +159,6 @@
           124.8303,
           5.7068
         ]
-      },
-      {
-        "id": "us7000srgz",
-        "title": "M5.5 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-08T14:20:10.924000Z",
-        "coordinates": [
-          -4.3787,
-          -55.7537
-        ]
-      },
-      {
-        "id": "us7000srgq",
-        "title": "M5.2 Earthquake - 44 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T13:37:58.742000Z",
-        "coordinates": [
-          125.2439,
-          5.0648
-        ]
-      },
-      {
-        "id": "us7000srfx",
-        "title": "M5.5 Earthquake - 12 km WSW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T11:22:32.657000Z",
-        "coordinates": [
-          125.2525,
-          5.532
-        ]
-      },
-      {
-        "id": "us7000srfa",
-        "title": "M5.1 Earthquake - 75 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T09:28:33.259000Z",
-        "coordinates": [
-          125.5369,
-          4.7279
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.8,
-    "feels_c": 23.9,
-    "humidity": 67,
+    "city": "City of Zagreb",
+    "temp_c": 18.4,
+    "feels_c": 18.6,
+    "humidity": 88,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.8
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 15.1
   },
   "forecast_today": {
     "date": "2026-06-09",
-    "city": "Zagreb",
-    "temp_min_c": 21.8,
-    "temp_max_c": 23.8,
-    "humidity": 71,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "02d",
-    "wind_kmh": 9.6,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.4,
+    "temp_max_c": 18.4,
+    "humidity": 88,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 15.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-10",
-    "city": "Zagreb",
-    "temp_min_c": 16.3,
-    "temp_max_c": 25.1,
-    "humidity": 66,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.9,
+    "temp_max_c": 25.3,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.9
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-06-11",
-    "city": "Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 15.7,
-    "humidity": 80,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.1,
+    "temp_max_c": 17,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.4
+    "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-06-09T14:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-09T20:01:34+02:00"
+    "fetched_at": "2026-06-09T22:54:47+02:00"
   }
 }
