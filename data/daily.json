@@ -1,12 +1,7 @@
 {
-  "generated": "2026-06-09",
+  "generated": "2026-06-10",
   "apod": {
-    "title": "Thor's Helmet",
-    "date": "2026-06-09",
-    "explanation": "Thor not only has his own day (Thursday), but a helmet in the heavens.  Popularly called Thor's Helmet, NGC 2359 is a hat-shaped cosmic cloud with wing-like appendages. Heroically sized even for a Norse god, Thor's Helmet is about 30 light-years across. In fact, the cosmic head-covering is more like an interstellar bubble, blown by a fast wind from the bright, massive star near the bubble's center. Known as a Wolf-Rayet star, the central star is an extremely hot giant thought to be in a brief, pre-supernova stage of evolution. NGC 2359 is located about 15,000 light-years away toward the constellation of the Great Overdog. This sharp image is a combination of deep images taken in light emitted by hydrogen (red) and oxygen (blue).  The star in the center of Thor's Helmet is expected to explode in a spectacular supernova sometime within the next few thousand years.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_4389.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -248,153 +243,153 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.4,
-    "feels_c": 18.6,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 15.1
-  },
-  "forecast_today": {
-    "date": "2026-06-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 18.4,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 15.1,
-    "samples": 2
-  },
-  "forecast": {
-    "date": "2026-06-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 25.3,
-    "humidity": 71,
+    "temp_c": 18.0,
+    "feels_c": 18.1,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.5
+    "icon": "04n",
+    "wind_kmh": 9.3
   },
-  "forecast_day_after": {
+  "forecast_today": {
+    "date": "2026-06-10",
+    "city": "Zagreb",
+    "temp_min_c": 16.5,
+    "temp_max_c": 25.9,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 6.1,
+    "samples": 9
+  },
+  "forecast": {
     "date": "2026-06-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.1,
-    "temp_max_c": 17,
-    "humidity": 79,
+    "city": "Zagreb",
+    "temp_min_c": 12.7,
+    "temp_max_c": 17.4,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.9
+    "wind_kmh": 5.0
+  },
+  "forecast_day_after": {
+    "date": "2026-06-12",
+    "city": "Zagreb",
+    "temp_min_c": 11.3,
+    "temp_max_c": 23.9,
+    "humidity": 61,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.0,
-    "peak_time": "2026-06-09T14:00",
+    "daily_max": 6.7,
+    "peak_time": "2026-06-10T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-09T00:00",
+        "time": "2026-06-10T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T01:00",
+        "time": "2026-06-10T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T02:00",
+        "time": "2026-06-10T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T03:00",
+        "time": "2026-06-10T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T04:00",
+        "time": "2026-06-10T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T05:00",
+        "time": "2026-06-10T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T06:00",
+        "time": "2026-06-10T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-09T07:00",
+        "time": "2026-06-10T07:00",
         "uv": 0.5
       },
       {
-        "time": "2026-06-09T08:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-06-09T09:00",
-        "uv": 2.0
-      },
-      {
-        "time": "2026-06-09T10:00",
-        "uv": 3.6
-      },
-      {
-        "time": "2026-06-09T11:00",
-        "uv": 4.7
-      },
-      {
-        "time": "2026-06-09T12:00",
-        "uv": 5.9
-      },
-      {
-        "time": "2026-06-09T13:00",
-        "uv": 6.3
-      },
-      {
-        "time": "2026-06-09T14:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-06-09T15:00",
-        "uv": 6.6
-      },
-      {
-        "time": "2026-06-09T16:00",
-        "uv": 5.6
-      },
-      {
-        "time": "2026-06-09T17:00",
-        "uv": 4.2
-      },
-      {
-        "time": "2026-06-09T18:00",
-        "uv": 2.9
-      },
-      {
-        "time": "2026-06-09T19:00",
+        "time": "2026-06-10T08:00",
         "uv": 1.6
       },
       {
-        "time": "2026-06-09T20:00",
+        "time": "2026-06-10T09:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-06-10T10:00",
+        "uv": 4.0
+      },
+      {
+        "time": "2026-06-10T11:00",
+        "uv": 4.7
+      },
+      {
+        "time": "2026-06-10T12:00",
+        "uv": 5.2
+      },
+      {
+        "time": "2026-06-10T13:00",
+        "uv": 6.0
+      },
+      {
+        "time": "2026-06-10T14:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-06-10T15:00",
+        "uv": 5.7
+      },
+      {
+        "time": "2026-06-10T16:00",
+        "uv": 4.2
+      },
+      {
+        "time": "2026-06-10T17:00",
+        "uv": 4.0
+      },
+      {
+        "time": "2026-06-10T18:00",
+        "uv": 2.8
+      },
+      {
+        "time": "2026-06-10T19:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-06-10T20:00",
         "uv": 0.6
       },
       {
-        "time": "2026-06-09T21:00",
+        "time": "2026-06-10T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-09T22:00",
+        "time": "2026-06-10T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-09T23:00",
+        "time": "2026-06-10T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-09T22:54:47+02:00"
+    "fetched_at": "2026-06-10T00:22:29+02:00"
   }
 }
