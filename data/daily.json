@@ -1,10 +1,35 @@
 {
   "generated": "2026-06-09",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Thor's Helmet",
+    "date": "2026-06-09",
+    "explanation": "Thor not only has his own day (Thursday), but a helmet in the heavens.  Popularly called Thor's Helmet, NGC 2359 is a hat-shaped cosmic cloud with wing-like appendages. Heroically sized even for a Norse god, Thor's Helmet is about 30 light-years across. In fact, the cosmic head-covering is more like an interstellar bubble, blown by a fast wind from the bright, massive star near the bubble's center. Known as a Wolf-Rayet star, the central star is an extremely hot giant thought to be in a brief, pre-supernova stage of evolution. NGC 2359 is located about 15,000 light-years away toward the constellation of the Great Overdog. This sharp image is a combination of deep images taken in light emitted by hydrogen (red) and oxygen (blue).  The star in the center of Thor's Helmet is expected to explode in a spectacular supernova sometime within the next few thousand years.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_4389.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000srpu",
+        "title": "M5.4 Earthquake - 21 km SSW of Lumatil, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-09T10:07:29.185000Z",
+        "coordinates": [
+          124.825,
+          5.6881
+        ]
+      },
+      {
+        "id": "us7000srpr",
+        "title": "M5.1 Earthquake - 6 km SSW of Sibagat, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-09T09:24:58.682000Z",
+        "coordinates": [
+          125.685,
+          8.769
+        ]
+      },
       {
         "id": "us7000srp0",
         "title": "M5.2 Earthquake - 21 km SW of Sarangani, Philippines",
@@ -134,26 +159,6 @@
           125.1601,
           5.3935
         ]
-      },
-      {
-        "id": "us7000srem",
-        "title": "M5.0 Earthquake - 29 km WSW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T07:00:06.687000Z",
-        "coordinates": [
-          125.0994,
-          5.4985
-        ]
-      },
-      {
-        "id": "us7000srec",
-        "title": "M5.3 Earthquake - 55 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T06:21:56.592000Z",
-        "coordinates": [
-          125.4434,
-          4.8984
-        ]
       }
     ]
   },
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 28.8,
-    "humidity": 59,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.3
+    "city": "Donji grad",
+    "temp_c": 30.9,
+    "feels_c": 30.9,
+    "humidity": 41,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 8.2
   },
   "forecast_today": {
     "date": "2026-06-09",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.6,
-    "temp_max_c": 28.0,
-    "humidity": 64,
+    "temp_max_c": 30.9,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4,
-    "samples": 5
+    "icon": "01d",
+    "wind_kmh": 8.2,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-10",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 15.2,
     "temp_max_c": 24.5,
     "humidity": 68,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 12.4,
     "temp_max_c": 16.0,
     "humidity": 82,
@@ -286,11 +291,11 @@
     "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 6.1,
+    "uv": 6.7,
     "band": "high",
-    "daily_max": 7.2,
+    "daily_max": 7.0,
     "peak_time": "2026-06-09T14:00",
-    "safe_minutes": 27,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,7 +336,7 @@
       },
       {
         "time": "2026-06-09T09:00",
-        "uv": 2.3
+        "uv": 2.0
       },
       {
         "time": "2026-06-09T10:00",
@@ -339,19 +344,19 @@
       },
       {
         "time": "2026-06-09T11:00",
-        "uv": 5.0
+        "uv": 4.7
       },
       {
         "time": "2026-06-09T12:00",
-        "uv": 6.2
+        "uv": 5.9
       },
       {
         "time": "2026-06-09T13:00",
-        "uv": 6.8
+        "uv": 6.3
       },
       {
         "time": "2026-06-09T14:00",
-        "uv": 7.2
+        "uv": 7.0
       },
       {
         "time": "2026-06-09T15:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-09T11:38:20+02:00"
+    "fetched_at": "2026-06-09T14:34:49+02:00"
   }
 }
