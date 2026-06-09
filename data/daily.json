@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000srmq",
+        "title": "M5.1 Earthquake - 8 km NW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-08T23:38:22.466000Z",
+        "coordinates": [
+          125.4167,
+          5.465
+        ]
+      },
+      {
         "id": "us7000srku",
         "title": "M5.4 Earthquake - southern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -149,53 +159,11 @@
           125.4566,
           5.3774
         ]
-      },
-      {
-        "id": "us7000srds",
-        "title": "M5.7 Earthquake - 54 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T04:46:42.739000Z",
-        "coordinates": [
-          125.215,
-          4.9789
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "530974 (2012 BN11)",
-        "hazardous": true,
-        "diameter_m": 415,
-        "close_approach_date": "2026-06-08",
-        "miss_distance_km": 18129603,
-        "velocity_kmh": 26895
-      },
-      {
-        "name": "(2019 MT3)",
-        "hazardous": false,
-        "diameter_m": 154,
-        "close_approach_date": "2026-06-08",
-        "miss_distance_km": 43357282,
-        "velocity_kmh": 25176
-      },
-      {
-        "name": "(2015 LC21)",
-        "hazardous": false,
-        "diameter_m": 149,
-        "close_approach_date": "2026-06-08",
-        "miss_distance_km": 51769293,
-        "velocity_kmh": 56380
-      },
-      {
-        "name": "(2024 BY15)",
-        "hazardous": false,
-        "diameter_m": 26,
-        "close_approach_date": "2026-06-08",
-        "miss_distance_km": 73426936,
-        "velocity_kmh": 53916
-      },
       {
         "name": "(2004 VJ1)",
         "hazardous": false,
@@ -243,30 +211,62 @@
         "close_approach_date": "2026-06-10",
         "miss_distance_km": 42069803,
         "velocity_kmh": 32308
+      },
+      {
+        "name": "(2019 VB5)",
+        "hazardous": false,
+        "diameter_m": 3,
+        "close_approach_date": "2026-06-10",
+        "miss_distance_km": 64585845,
+        "velocity_kmh": 66568
+      },
+      {
+        "name": "837610 (2013 RE6)",
+        "hazardous": false,
+        "diameter_m": 299,
+        "close_approach_date": "2026-06-11",
+        "miss_distance_km": 29080185,
+        "velocity_kmh": 32355
+      },
+      {
+        "name": "(2013 RE6)",
+        "hazardous": false,
+        "diameter_m": 297,
+        "close_approach_date": "2026-06-11",
+        "miss_distance_km": 29080190,
+        "velocity_kmh": 32355
+      },
+      {
+        "name": "(2011 JX1)",
+        "hazardous": false,
+        "diameter_m": 1493,
+        "close_approach_date": "2026-06-11",
+        "miss_distance_km": 49740172,
+        "velocity_kmh": 103789
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.5,
+    "temp_c": 20.5,
+    "feels_c": 20.4,
     "humidity": 68,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 3.7
+    "wind_kmh": 1.4
   },
   "forecast_today": {
     "date": "2026-06-09",
     "city": "Zagreb",
     "temp_min_c": 19.9,
     "temp_max_c": 28.6,
-    "humidity": 66,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
     "wind_kmh": 3.8,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-10",
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.7,
-    "peak_time": "2026-06-09T14:00",
+    "daily_max": 7.1,
+    "peak_time": "2026-06-09T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -328,39 +328,39 @@
       },
       {
         "time": "2026-06-09T07:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-06-09T08:00",
-        "uv": 1.3
+        "uv": 1.2
       },
       {
         "time": "2026-06-09T09:00",
-        "uv": 2.0
+        "uv": 1.9
       },
       {
         "time": "2026-06-09T10:00",
-        "uv": 2.8
+        "uv": 2.5
       },
       {
         "time": "2026-06-09T11:00",
-        "uv": 3.7
+        "uv": 4.2
       },
       {
         "time": "2026-06-09T12:00",
-        "uv": 5.8
+        "uv": 6.1
       },
       {
         "time": "2026-06-09T13:00",
-        "uv": 6.3
+        "uv": 7.1
       },
       {
         "time": "2026-06-09T14:00",
-        "uv": 6.7
+        "uv": 7.0
       },
       {
         "time": "2026-06-09T15:00",
-        "uv": 6.0
+        "uv": 6.5
       },
       {
         "time": "2026-06-09T16:00",
@@ -368,19 +368,19 @@
       },
       {
         "time": "2026-06-09T17:00",
-        "uv": 4.2
+        "uv": 4.3
       },
       {
         "time": "2026-06-09T18:00",
-        "uv": 1.9
+        "uv": 2.9
       },
       {
         "time": "2026-06-09T19:00",
-        "uv": 0.3
+        "uv": 1.6
       },
       {
         "time": "2026-06-09T20:00",
-        "uv": 0.1
+        "uv": 0.6
       },
       {
         "time": "2026-06-09T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-09T00:24:37+02:00"
+    "fetched_at": "2026-06-09T02:03:42+02:00"
   }
 }
