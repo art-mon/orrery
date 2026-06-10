@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-10",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Eagle Nebula and Friends",
+    "date": "2026-06-10",
+    "explanation": "What looks as if it is going to swallow the great Pillars of Creation? The Eagle Nebula (M16) is not a bird, a plane, or Superman. M16 is actually a combination of several celestial objects. NGC 6611 is the young star cluster that appears to peak out beneath the Eagle\u2019s \u201cwings\u201d. The ultraviolet light from these stars ionizes the surrounding gas, creating the emission nebula IC 4703. The Stellar Spire is seen reaching towards the Pillars of Creation from the left. Both are structures of cold gas and dust that are optimal for star formation. Some astronomers previously thought the Pillars of Creation had been evaporated away by a supernova. Because M16 is 6,000 light years away, we would not be able to see the Pillars\u2019 destruction for thousands more years. However, there is no conclusive evidence of the theorized supernova, so the Pillars of Creation will likely continue to create stars for millions of years.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/eagle_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/eagle.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ss1g",
+        "title": "M5.2 Earthquake - 156 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-10T13:45:26.037000Z",
+        "coordinates": [
+          160.7735,
+          52.5396
+        ]
+      },
       {
         "id": "us7000ss0f",
         "title": "M5.0 Earthquake - 21 km SW of Balangonan, Philippines",
@@ -144,16 +159,6 @@
           125.685,
           8.769
         ]
-      },
-      {
-        "id": "us7000srp0",
-        "title": "M5.2 Earthquake - 21 km SW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T06:15:17.758000Z",
-        "coordinates": [
-          125.3116,
-          5.2857
-        ]
       }
     ]
   },
@@ -242,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 59,
+    "city": "City of Zagreb",
+    "temp_c": 24.8,
+    "feels_c": 25.0,
+    "humidity": 62,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.4
   },
   "forecast_today": {
     "date": "2026-06-10",
-    "city": "Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 24.6,
-    "humidity": 70,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.6,
+    "temp_max_c": 24.8,
+    "humidity": 65,
     "condition": "Rain",
     "description": "rain",
-    "icon": "03d",
-    "wind_kmh": 7.3,
-    "samples": 4
+    "icon": "02d",
+    "wind_kmh": 7.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-11",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.8,
-    "temp_max_c": 17.8,
-    "humidity": 76,
+    "temp_max_c": 18.4,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -276,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-06-12",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 11.7,
-    "temp_max_c": 22.7,
-    "humidity": 64,
+    "temp_max_c": 23,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 6.4,
-    "band": "high",
+    "uv": 1.6,
+    "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-06-10T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 101,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-10T14:55:00+02:00"
+    "fetched_at": "2026-06-10T18:34:16+02:00"
   }
 }
