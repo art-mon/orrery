@@ -1,18 +1,43 @@
 {
   "generated": "2026-06-10",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Eagle Nebula and Friends",
+    "date": "2026-06-10",
+    "explanation": "What looks as if it is going to swallow the great Pillars of Creation? The Eagle Nebula (M16) is not a bird, a plane, or Superman. M16 is actually a combination of several celestial objects. NGC 6611 is the young star cluster that appears to peak out beneath the Eagle\u2019s \u201cwings\u201d. The ultraviolet light from these stars ionizes the surrounding gas, creating the emission nebula IC 4703. The Stellar Spire is seen reaching towards the Pillars of Creation from the left. Both are structures of cold gas and dust that are optimal for star formation. Some astronomers previously thought the Pillars of Creation had been evaporated away by a supernova. Because M16 is 6,000 light years away, we would not be able to see the Pillars\u2019 destruction for thousands more years. However, there is no conclusive evidence of the theorized supernova, so the Pillars of Creation will likely continue to create stars for millions of years.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/eagle_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/eagle.jpg"
   },
   "events": {
     "events": [
       {
-        "id": "us7000srxa",
-        "title": "M5.0 Earthquake - 3 km SSE of Sarangani, Philippines",
+        "id": "us7000sry7",
+        "title": "M5.1 Earthquake - 11 km WSW of Sardinal, Costa Rica",
         "category": "Earthquake",
-        "date": "2026-06-09T23:14:43.587000Z",
+        "date": "2026-06-10T03:01:35.137000Z",
         "coordinates": [
-          125.4727,
-          5.3722
+          -85.7378,
+          10.4644
+        ]
+      },
+      {
+        "id": "us7000sry1",
+        "title": "M5.0 Earthquake - 6 km WSW of Burias, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-10T01:54:24.466000Z",
+        "coordinates": [
+          125.1975,
+          5.697
+        ]
+      },
+      {
+        "id": "us7000srxn",
+        "title": "M6.0 Earthquake - Auckland Islands, New Zealand region",
+        "category": "Earthquake",
+        "date": "2026-06-10T00:44:21.127000Z",
+        "coordinates": [
+          164.0984,
+          -49.6197
         ]
       },
       {
@@ -134,26 +159,6 @@
           169.9905,
           -21.1981
         ]
-      },
-      {
-        "id": "us7000srk7",
-        "title": "M5.1 Earthquake - 52 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T18:29:02.497000Z",
-        "coordinates": [
-          125.4615,
-          4.9304
-        ]
-      },
-      {
-        "id": "us7000srjx",
-        "title": "M6.1 Earthquake - 102 km WNW of Mantua, Cuba",
-        "category": "Earthquake",
-        "date": "2026-06-08T18:00:27.508000Z",
-        "coordinates": [
-          -85.1254,
-          22.7854
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 17.2,
-    "feels_c": 17.2,
-    "humidity": 86,
+    "temp_c": 18.1,
+    "feels_c": 17.9,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 3.5
+    "icon": "04d",
+    "wind_kmh": 3.9
   },
   "forecast_today": {
     "date": "2026-06-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 25.3,
-    "humidity": 71,
+    "city": "Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 24.8,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 6.4,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.1,
-    "temp_max_c": 17,
-    "humidity": 79,
+    "city": "Zagreb",
+    "temp_min_c": 11.7,
+    "temp_max_c": 17.0,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.9
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-06-12",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.7,
-    "temp_max_c": 23.4,
-    "humidity": 62,
+    "city": "Zagreb",
+    "temp_min_c": 10.0,
+    "temp_max_c": 22.3,
+    "humidity": 60,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-06-10T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 159,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-10T02:10:35+02:00"
+    "fetched_at": "2026-06-10T07:15:38+02:00"
   }
 }
