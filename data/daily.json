@@ -1,10 +1,20 @@
 {
   "generated": "2026-06-10",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000srxa",
+        "title": "M5.0 Earthquake - 3 km SSE of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-09T23:14:43.587000Z",
+        "coordinates": [
+          125.4727,
+          5.3722
+        ]
+      },
       {
         "id": "us7000srvv",
         "title": "M5.2 Earthquake - 163 km ESE of Petropavlovsk-Kamchatsky, Russia",
@@ -144,37 +154,11 @@
           -85.1254,
           22.7854
         ]
-      },
-      {
-        "id": "us7000srh8",
-        "title": "M5.3 Earthquake - 19 km SSW of Lumatil, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-08T14:53:04.491000Z",
-        "coordinates": [
-          124.8303,
-          5.7068
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2004 VJ1)",
-        "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-06-09",
-        "miss_distance_km": 27614593,
-        "velocity_kmh": 18253
-      },
-      {
-        "name": "(2019 UX6)",
-        "hazardous": false,
-        "diameter_m": 25,
-        "close_approach_date": "2026-06-09",
-        "miss_distance_km": 66948122,
-        "velocity_kmh": 25266
-      },
       {
         "name": "(2016 TQ56)",
         "hazardous": false,
@@ -238,57 +222,73 @@
         "close_approach_date": "2026-06-11",
         "miss_distance_km": 49740172,
         "velocity_kmh": 103789
+      },
+      {
+        "name": "(2010 ST16)",
+        "hazardous": false,
+        "diameter_m": 133,
+        "close_approach_date": "2026-06-11",
+        "miss_distance_km": 53040900,
+        "velocity_kmh": 65373
+      },
+      {
+        "name": "530520 (2011 LT17)",
+        "hazardous": true,
+        "diameter_m": 254,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 6155484,
+        "velocity_kmh": 52450
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.0,
-    "feels_c": 18.1,
-    "humidity": 87,
+    "temp_c": 17.2,
+    "feels_c": 17.2,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 3.5
   },
   "forecast_today": {
     "date": "2026-06-10",
-    "city": "Zagreb",
-    "temp_min_c": 16.5,
-    "temp_max_c": 25.9,
-    "humidity": 72,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.9,
+    "temp_max_c": 25.3,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.1,
-    "samples": 9
+    "wind_kmh": 5.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-11",
-    "city": "Zagreb",
-    "temp_min_c": 12.7,
-    "temp_max_c": 17.4,
-    "humidity": 80,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.1,
+    "temp_max_c": 17,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.0
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
     "date": "2026-06-12",
-    "city": "Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 23.9,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.7,
+    "temp_max_c": 23.4,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 3.9
+    "wind_kmh": 3.8
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.7,
+    "daily_max": 6.9,
     "peak_time": "2026-06-10T14:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -327,7 +327,7 @@
       },
       {
         "time": "2026-06-10T08:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-06-10T09:00",
@@ -335,7 +335,7 @@
       },
       {
         "time": "2026-06-10T10:00",
-        "uv": 4.0
+        "uv": 4.1
       },
       {
         "time": "2026-06-10T11:00",
@@ -343,23 +343,23 @@
       },
       {
         "time": "2026-06-10T12:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-06-10T13:00",
-        "uv": 6.0
+        "uv": 6.8
       },
       {
         "time": "2026-06-10T14:00",
-        "uv": 6.7
+        "uv": 6.9
       },
       {
         "time": "2026-06-10T15:00",
-        "uv": 5.7
+        "uv": 6.2
       },
       {
         "time": "2026-06-10T16:00",
-        "uv": 4.2
+        "uv": 5.2
       },
       {
         "time": "2026-06-10T17:00",
@@ -375,11 +375,11 @@
       },
       {
         "time": "2026-06-10T20:00",
-        "uv": 0.6
+        "uv": 0.4
       },
       {
         "time": "2026-06-10T21:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-06-10T22:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-10T00:22:29+02:00"
+    "fetched_at": "2026-06-10T02:10:35+02:00"
   }
 }
