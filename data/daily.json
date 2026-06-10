@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000srzt",
+        "title": "M5.1 Earthquake - 7 km NW of Nuing, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-10T09:13:42.703000Z",
+        "coordinates": [
+          125.3874,
+          5.6757
+        ]
+      },
+      {
         "id": "us7000sry7",
         "title": "M5.1 Earthquake - 11 km WSW of Sardinal, Costa Rica",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -4.3752,
           -55.7212
         ]
-      },
-      {
-        "id": "us7000srkc",
-        "title": "M5.4 Earthquake - 197 km SSE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-06-08T18:49:46.908000Z",
-        "coordinates": [
-          169.9905,
-          -21.1981
-        ]
       }
     ]
   },
@@ -241,61 +241,61 @@
         "hazardous": true,
         "diameter_m": 254,
         "close_approach_date": "2026-06-12",
-        "miss_distance_km": 6155484,
+        "miss_distance_km": 6155489,
         "velocity_kmh": 52450
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.1,
-    "feels_c": 17.9,
-    "humidity": 74,
+    "temp_c": 22.0,
+    "feels_c": 21.9,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-06-10",
-    "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 24.8,
-    "humidity": 70,
+    "city": "City of Zagreb",
+    "temp_min_c": 17.9,
+    "temp_max_c": 24.7,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 6.4,
-    "samples": 7
+    "wind_kmh": 7.0,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-11",
-    "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 17.0,
-    "humidity": 76,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.6,
+    "temp_max_c": 17.3,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.5
+    "wind_kmh": 5.4
   },
   "forecast_day_after": {
     "date": "2026-06-12",
-    "city": "Zagreb",
-    "temp_min_c": 10.0,
-    "temp_max_c": 22.3,
-    "humidity": 60,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.1,
+    "temp_max_c": 22.7,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 3.9
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
-    "daily_max": 6.9,
-    "peak_time": "2026-06-10T14:00",
-    "safe_minutes": 159,
+    "uv": 5.8,
+    "band": "moderate",
+    "daily_max": 7.1,
+    "peak_time": "2026-06-10T13:00",
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,7 +332,7 @@
       },
       {
         "time": "2026-06-10T08:00",
-        "uv": 1.5
+        "uv": 1.2
       },
       {
         "time": "2026-06-10T09:00",
@@ -340,35 +340,35 @@
       },
       {
         "time": "2026-06-10T10:00",
-        "uv": 4.1
+        "uv": 4.3
       },
       {
         "time": "2026-06-10T11:00",
-        "uv": 4.7
+        "uv": 4.5
       },
       {
         "time": "2026-06-10T12:00",
-        "uv": 5.0
+        "uv": 5.5
       },
       {
         "time": "2026-06-10T13:00",
-        "uv": 6.8
+        "uv": 7.1
       },
       {
         "time": "2026-06-10T14:00",
-        "uv": 6.9
+        "uv": 6.8
       },
       {
         "time": "2026-06-10T15:00",
-        "uv": 6.2
+        "uv": 6.1
       },
       {
         "time": "2026-06-10T16:00",
-        "uv": 5.2
+        "uv": 5.3
       },
       {
         "time": "2026-06-10T17:00",
-        "uv": 4.0
+        "uv": 4.2
       },
       {
         "time": "2026-06-10T18:00",
@@ -380,11 +380,11 @@
       },
       {
         "time": "2026-06-10T20:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-06-10T21:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-06-10T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-10T07:15:38+02:00"
+    "fetched_at": "2026-06-10T11:54:41+02:00"
   }
 }
