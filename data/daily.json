@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-11",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.9,
-    "feels_c": 17.5,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.8
+    "city": "Donji grad",
+    "temp_c": 16,
+    "feels_c": 15.8,
+    "humidity": 83,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-06-11",
     "city": "City of Zagreb",
-    "temp_min_c": 16.5,
-    "temp_max_c": 17.9,
-    "humidity": 73,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.7,
-    "samples": 3
+    "temp_min_c": 15.2,
+    "temp_max_c": 16.0,
+    "humidity": 84,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 2.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-12",
     "city": "City of Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 22.9,
-    "humidity": 63,
+    "temp_min_c": 13.2,
+    "temp_max_c": 24.9,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 2.8
+    "wind_kmh": 3.1
   },
   "forecast_day_after": {
     "date": "2026-06-13",
     "city": "City of Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 27.3,
-    "humidity": 61,
+    "temp_min_c": 15.2,
+    "temp_max_c": 26.8,
+    "humidity": 59,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.6
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 1.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.9,
     "peak_time": "2026-06-11T14:00",
-    "safe_minutes": 133,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-11T18:53:02+02:00"
+    "fetched_at": "2026-06-11T21:34:10+02:00"
   }
 }
