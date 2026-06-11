@@ -1,15 +1,55 @@
 {
   "generated": "2026-06-11",
   "apod": {
-    "title": "The Eagle Nebula and Friends",
-    "date": "2026-06-10",
-    "explanation": "What looks as if it is going to swallow the great Pillars of Creation? The Eagle Nebula (M16) is not a bird, a plane, or Superman. M16 is actually a combination of several celestial objects. NGC 6611 is the young star cluster that appears to peak out beneath the Eagle\u2019s \u201cwings\u201d. The ultraviolet light from these stars ionizes the surrounding gas, creating the emission nebula IC 4703. The Stellar Spire is seen reaching towards the Pillars of Creation from the left. Both are structures of cold gas and dust that are optimal for star formation. Some astronomers previously thought the Pillars of Creation had been evaporated away by a supernova. Because M16 is 6,000 light years away, we would not be able to see the Pillars\u2019 destruction for thousands more years. However, there is no conclusive evidence of the theorized supernova, so the Pillars of Creation will likely continue to create stars for millions of years.",
+    "title": "The Mermaid Nebula Supernova Remnant",
+    "date": "2026-06-11",
+    "explanation": "Could the Little Mermaid turn into stardust instead of seafoam?   It would seem so in this beautiful nebula.   The featured image shows the Mermaid Nebula, also known as the Betta Fish Nebula, which is part of the G296.5+10.0 Supernova Remnant.   The blue color visible here originates from doubly ionized oxygen (OIII), while the deep red is emitted by hydrogen gas.   \t\t\t\t\t\t\t\t\t\t\t\t Estimated to be located a few thousand light-years away and about 10,000 years old, this nebula was formed when a massive star exploded as a supernova. \t\t\t\t\t\t\t\t\t\t\t\t It left behind a peculiar pulsar, a young radio-quiet neutron star that spins around about twice every second.   The bright stars shown in the image are unassociated with the nebula.\t\t\t\t\t\t\t\t\t\t\t\t   The pulsar can be detected in the X-rays but it does not have a confirmed detection in the optical (visible light) so far.   As a result, the pulsar itself is not visible in this image.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/eagle_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/eagle.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2606/Mermaid_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Mermaid.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ss6g",
+        "title": "M5.4 Earthquake - 59 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-11T07:33:23.077000Z",
+        "coordinates": [
+          125.4495,
+          4.8685
+        ]
+      },
+      {
+        "id": "us7000ss60",
+        "title": "M5.0 Earthquake - 65 km SSE of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-11T05:38:46.440000Z",
+        "coordinates": [
+          125.5812,
+          4.8238
+        ]
+      },
+      {
+        "id": "us7000ss5y",
+        "title": "M5.2 Earthquake - 120 km NW of Vallenar, Chile",
+        "category": "Earthquake",
+        "date": "2026-06-11T05:19:43.993000Z",
+        "coordinates": [
+          -71.678,
+          -27.8615
+        ]
+      },
+      {
+        "id": "us7000ss5v",
+        "title": "M5.0 Earthquake - 212 km SE of Ust\u2019-Kamchatsk Staryy, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-11T04:44:38.172000Z",
+        "coordinates": [
+          165.3069,
+          55.187
+        ]
+      },
       {
         "id": "us7000ss57",
         "title": "M5.5 Earthquake - 58 km S of Sarangani, Philippines",
@@ -119,46 +159,6 @@
           160.7499,
           52.3674
         ]
-      },
-      {
-        "id": "us7000srvn",
-        "title": "M5.1 Earthquake - southeast Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-09T19:36:10.562000Z",
-        "coordinates": [
-          84.9096,
-          -41.5157
-        ]
-      },
-      {
-        "id": "us7000srvk",
-        "title": "M5.1 Earthquake - 120 km ESE of Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-09T19:25:35.189000Z",
-        "coordinates": [
-          149.2865,
-          44.8123
-        ]
-      },
-      {
-        "id": "us7000srun",
-        "title": "M5.0 Earthquake - 8 km SW of Taluya, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T18:09:52.935000Z",
-        "coordinates": [
-          125.1164,
-          5.766
-        ]
-      },
-      {
-        "id": "us7000sruf",
-        "title": "M5.1 Earthquake - 65 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T17:40:37.238000Z",
-        "coordinates": [
-          125.2852,
-          4.8395
-        ]
       }
     ]
   },
@@ -247,154 +247,50 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.8,
-    "feels_c": 14.3,
-    "humidity": 76,
+    "city": "City of Zagreb",
+    "temp_c": 17.0,
+    "feels_c": 16.6,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.6
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-06-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.1,
+    "city": "Zagreb",
+    "temp_min_c": 15.1,
     "temp_max_c": 17.0,
-    "humidity": 78,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 3.8,
-    "samples": 7
+    "wind_kmh": 3.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-12",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.5,
-    "temp_max_c": 23.7,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 13.1,
+    "temp_max_c": 23.5,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.8
   },
   "forecast_day_after": {
     "date": "2026-06-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.2,
-    "temp_max_c": 26.3,
-    "humidity": 63,
+    "city": "Zagreb",
+    "temp_min_c": 12.1,
+    "temp_max_c": 27.3,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 4.7,
-    "peak_time": "2026-06-11T13:00",
-    "safe_minutes": null,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-06-11T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T06:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T07:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-06-11T08:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-06-11T09:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-06-11T10:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-06-11T11:00",
-        "uv": 1.9
-      },
-      {
-        "time": "2026-06-11T12:00",
-        "uv": 3.8
-      },
-      {
-        "time": "2026-06-11T13:00",
-        "uv": 4.7
-      },
-      {
-        "time": "2026-06-11T14:00",
-        "uv": 3.3
-      },
-      {
-        "time": "2026-06-11T15:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-06-11T16:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-06-11T17:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-06-11T18:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-06-11T19:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-06-11T20:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-06-11T21:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-11T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-11T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-06-11T05:41:25+02:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Max retries exceeded with url: /v1/forecast?latitude=45.8150&longitude=15.9819&hourly=uv_index&daily=uv_index_max&current=uv_index&timezone=Europe%2FZagreb&forecast_days=1 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))"
   }
 }
