@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000ss57",
+        "title": "M5.5 Earthquake - 58 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-11T01:56:14.675000Z",
+        "coordinates": [
+          125.4356,
+          4.8778
+        ]
+      },
+      {
+        "id": "us7000ss4s",
+        "title": "M5.4 Earthquake - 176 km ESE of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-06-10T23:30:45.857000Z",
+        "coordinates": [
+          -172.365,
+          -19.0625
+        ]
+      },
+      {
+        "id": "us7000ss4r",
+        "title": "M5.1 Earthquake - 67 km SSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-10T23:26:26.731000Z",
+        "coordinates": [
+          125.3097,
+          4.8122
+        ]
+      },
+      {
         "id": "us7000ss1g",
         "title": "M5.2 Earthquake - 156 km ESE of Petropavlovsk-Kamchatsky, Russia",
         "category": "Earthquake",
@@ -129,81 +159,11 @@
           125.2852,
           4.8395
         ]
-      },
-      {
-        "id": "us7000sru0",
-        "title": "M5.1 Earthquake - 4 km SSW of Bukid, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T16:49:24.753000Z",
-        "coordinates": [
-          125.3855,
-          5.5352
-        ]
-      },
-      {
-        "id": "us7000srpu",
-        "title": "M5.4 Earthquake - 21 km SSW of Lumatil, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T10:07:29.185000Z",
-        "coordinates": [
-          124.825,
-          5.6881
-        ]
-      },
-      {
-        "id": "us7000srpr",
-        "title": "M5.1 Earthquake - 6 km SSW of Sibagat, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-09T09:24:58.682000Z",
-        "coordinates": [
-          125.685,
-          8.769
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2016 TQ56)",
-        "hazardous": false,
-        "diameter_m": 96,
-        "close_approach_date": "2026-06-10",
-        "miss_distance_km": 21405493,
-        "velocity_kmh": 47403
-      },
-      {
-        "name": "(2016 BN1)",
-        "hazardous": false,
-        "diameter_m": 441,
-        "close_approach_date": "2026-06-10",
-        "miss_distance_km": 28910360,
-        "velocity_kmh": 49632
-      },
-      {
-        "name": "(2014 AE29)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-06-10",
-        "miss_distance_km": 37075104,
-        "velocity_kmh": 27000
-      },
-      {
-        "name": "(2015 XF261)",
-        "hazardous": false,
-        "diameter_m": 53,
-        "close_approach_date": "2026-06-10",
-        "miss_distance_km": 42069803,
-        "velocity_kmh": 32308
-      },
-      {
-        "name": "(2019 VB5)",
-        "hazardous": false,
-        "diameter_m": 3,
-        "close_approach_date": "2026-06-10",
-        "miss_distance_km": 64585845,
-        "velocity_kmh": 66568
-      },
       {
         "name": "837610 (2013 RE6)",
         "hazardous": false,
@@ -243,36 +203,76 @@
         "close_approach_date": "2026-06-12",
         "miss_distance_km": 6155489,
         "velocity_kmh": 52450
+      },
+      {
+        "name": "(2016 VS)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 7645401,
+        "velocity_kmh": 39885
+      },
+      {
+        "name": "388945 (2008 TZ3)",
+        "hazardous": true,
+        "diameter_m": 485,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 16794475,
+        "velocity_kmh": 26944
+      },
+      {
+        "name": "(2018 NC15)",
+        "hazardous": false,
+        "diameter_m": 261,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 19650166,
+        "velocity_kmh": 36813
+      },
+      {
+        "name": "(2019 ED1)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 35143932,
+        "velocity_kmh": 56887
+      },
+      {
+        "name": "(2002 UQ12)",
+        "hazardous": false,
+        "diameter_m": 198,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 70108809,
+        "velocity_kmh": 127140
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.5,
-    "feels_c": 14.4,
-    "humidity": 89,
+    "temp_c": 14.8,
+    "feels_c": 14.3,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 14.1
+    "icon": "04d",
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-06-11",
-    "city": "Zagreb",
-    "temp_min_c": 14.3,
-    "temp_max_c": 17.6,
-    "humidity": 77,
+    "city": "City of Zagreb",
+    "temp_min_c": 13.1,
+    "temp_max_c": 17.0,
+    "humidity": 78,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.4,
-    "samples": 9
+    "icon": "04d",
+    "wind_kmh": 3.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-12",
-    "city": "Zagreb",
-    "temp_min_c": 11.9,
-    "temp_max_c": 22.6,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.5,
+    "temp_max_c": 23.7,
     "humidity": 67,
     "condition": "Clouds",
     "description": "scattered clouds",
@@ -281,14 +281,14 @@
   },
   "forecast_day_after": {
     "date": "2026-06-13",
-    "city": "Zagreb",
-    "temp_min_c": 12.4,
-    "temp_max_c": 25.0,
-    "humidity": 67,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.2,
+    "temp_max_c": 26.3,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.2
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.0
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-11T01:40:46+02:00"
+    "fetched_at": "2026-06-11T05:41:25+02:00"
   }
 }
