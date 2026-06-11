@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-11",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.2,
-    "humidity": 70,
+    "city": "City of Zagreb",
+    "temp_c": 17.9,
+    "feels_c": 17.5,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.8
   },
   "forecast_today": {
     "date": "2026-06-11",
     "city": "City of Zagreb",
-    "temp_min_c": 15.1,
-    "temp_max_c": 17.6,
-    "humidity": 74,
+    "temp_min_c": 16.5,
+    "temp_max_c": 17.9,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 4.2,
-    "samples": 4
+    "wind_kmh": 3.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-12",
     "city": "City of Zagreb",
-    "temp_min_c": 13.1,
-    "temp_max_c": 23.5,
-    "humidity": 64,
+    "temp_min_c": 11.8,
+    "temp_max_c": 22.9,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-06-13",
     "city": "City of Zagreb",
-    "temp_min_c": 12.1,
+    "temp_min_c": 14.6,
     "temp_max_c": 27.3,
     "humidity": 61,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 4.0
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 1.2,
     "band": "low",
     "daily_max": 2.9,
     "peak_time": "2026-06-11T14:00",
-    "safe_minutes": 76,
+    "safe_minutes": 133,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-11T14:43:48+02:00"
+    "fetched_at": "2026-06-11T18:53:02+02:00"
   }
 }
