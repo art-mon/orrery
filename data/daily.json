@@ -1,10 +1,35 @@
 {
   "generated": "2026-06-12",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Venus and Jupiter: Conjunction from Avebury",
+    "date": "2026-06-12",
+    "explanation": "To see Venus and Jupiter together this month, you won't need binoculars or even a telescope. Just look up after sunset and you'll find them emerging as the sky grows dark near the western horizon. In fact, on June 9 the two brightest planets were in close conjunction, separated on the sky by less than 2 degrees from our perspective. Since (brighter) inner planet Venus orbits the Sun faster than outer planet Jupiter, it catches up with and passes the outer planet along the ecliptic roughly every 13 months. But every three years or so their resulting conjunction can be viewed far enough from the Sun to be easily seen in Earth's twilight skies. On June 9, the two celestial beacon's close \"cosmic kiss\" was captured here next to the two large standing stones at the cove within a 4,000 year old stone circle at Avebury, UK. Larger than Stonehenge, the Avebury henge and stone circle complex is also recognized as one of the most significant neolithic ceremonial sites on planet Earth.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ssje",
+        "title": "M5.2 Earthquake - 63 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-12T19:10:08.619000Z",
+        "coordinates": [
+          125.4285,
+          4.8338
+        ]
+      },
+      {
+        "id": "us7000ssit",
+        "title": "M5.0 Earthquake - 30 km SSW of Daliao, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-12T17:58:40.438000Z",
+        "coordinates": [
+          124.8728,
+          5.5979
+        ]
+      },
       {
         "id": "us7000ssct",
         "title": "M5.0 Earthquake - 68 km NNW of Isangel, Vanuatu",
@@ -134,26 +159,6 @@
           125.2355,
           5.4152
         ]
-      },
-      {
-        "id": "us7000ss03",
-        "title": "M5.7 Earthquake - 33 km ESE of Ol\u2019ga, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-10T10:34:17.371000Z",
-        "coordinates": [
-          135.6736,
-          43.6289
-        ]
-      },
-      {
-        "id": "us7000srzt",
-        "title": "M5.1 Earthquake - 7 km NW of Nuing, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-10T09:13:42.703000Z",
-        "coordinates": [
-          125.3874,
-          5.6757
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.3,
-    "feels_c": 22.8,
-    "humidity": 45,
+    "city": "Donji grad",
+    "temp_c": 18.3,
+    "feels_c": 18.1,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.3
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-06-12",
-    "city": "Zagreb",
-    "temp_min_c": 21.0,
-    "temp_max_c": 23.3,
-    "humidity": 57,
+    "city": "Donji grad",
+    "temp_min_c": 18.3,
+    "temp_max_c": 19.9,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 4.4,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 2.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-13",
-    "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 32.2,
-    "humidity": 60,
+    "city": "Donji grad",
+    "temp_min_c": 18.3,
+    "temp_max_c": 32.5,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-06-14",
-    "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 28.7,
+    "city": "Donji grad",
+    "temp_min_c": 16.9,
+    "temp_max_c": 32.8,
     "humidity": 67,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 7.5
   },
   "uv": {
-    "uv": 0.7,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-06-12T13:00",
-    "safe_minutes": 238,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,15 +360,15 @@
       },
       {
         "time": "2026-06-12T15:00",
-        "uv": 5.5
+        "uv": 5.2
       },
       {
         "time": "2026-06-12T16:00",
-        "uv": 4.4
+        "uv": 5.5
       },
       {
         "time": "2026-06-12T17:00",
-        "uv": 3.6
+        "uv": 3.8
       },
       {
         "time": "2026-06-12T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-12T19:36:06+02:00"
+    "fetched_at": "2026-06-12T22:06:59+02:00"
   }
 }
