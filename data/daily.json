@@ -1,12 +1,12 @@
 {
   "generated": "2026-06-12",
   "apod": {
-    "title": "The Mermaid Nebula Supernova Remnant",
-    "date": "2026-06-11",
-    "explanation": "Could the Little Mermaid turn into stardust instead of seafoam?   It would seem so in this beautiful nebula.   The featured image shows the Mermaid Nebula, also known as the Betta Fish Nebula, which is part of the G296.5+10.0 Supernova Remnant.   The blue color visible here originates from doubly ionized oxygen (OIII), while the deep red is emitted by hydrogen gas.   \t\t\t\t\t\t\t\t\t\t\t\t Estimated to be located a few thousand light-years away and about 10,000 years old, this nebula was formed when a massive star exploded as a supernova. \t\t\t\t\t\t\t\t\t\t\t\t It left behind a peculiar pulsar, a young radio-quiet neutron star that spins around about twice every second.   The bright stars shown in the image are unassociated with the nebula.\t\t\t\t\t\t\t\t\t\t\t\t   The pulsar can be detected in the X-rays but it does not have a confirmed detection in the optical (visible light) so far.   As a result, the pulsar itself is not visible in this image.",
+    "title": "Venus and Jupiter: Conjunction from Avebury",
+    "date": "2026-06-12",
+    "explanation": "To see Venus and Jupiter together this month, you won't need binoculars or even a telescope. Just look up after sunset and you'll find them emerging as the sky grows dark near the western horizon. In fact, on June 9 the two brightest planets were in close conjunction, separated on the sky by less than 2 degrees from our perspective. Since (brighter) inner planet Venus orbits the Sun faster than outer planet Jupiter, it catches up with and passes the outer planet along the ecliptic roughly every 13 months. But every three years or so their resulting conjunction can be viewed far enough from the Sun to be easily seen in Earth's twilight skies. On June 9, the two celestial beacon's close \"cosmic kiss\" was captured here next to the two large standing stones at the cove within a 4,000 year old stone circle at Avebury, UK. Larger than Stonehenge, the Avebury henge and stone circle complex is also recognized as one of the most significant neolithic ceremonial sites on planet Earth.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Mermaid_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Mermaid.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury.jpg"
   },
   "events": {
     "events": [
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.6,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 13.7,
+    "feels_c": 13.3,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 3.6
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.8
   },
   "forecast_today": {
     "date": "2026-06-12",
     "city": "Zagreb",
-    "temp_min_c": 12.8,
-    "temp_max_c": 24.9,
-    "humidity": 62,
+    "temp_min_c": 13.7,
+    "temp_max_c": 26.5,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 3.1,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 3.3,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-13",
     "city": "Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 26.8,
-    "humidity": 59,
+    "temp_min_c": 15.4,
+    "temp_max_c": 31.4,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-06-14",
     "city": "Zagreb",
-    "temp_min_c": 14.7,
+    "temp_min_c": 15.0,
     "temp_max_c": 28.3,
-    "humidity": 65,
+    "humidity": 66,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-06-12T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 90,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-12T02:17:44+02:00"
+    "fetched_at": "2026-06-12T07:47:10+02:00"
   }
 }
