@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-12",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "The Mermaid Nebula Supernova Remnant",
+    "date": "2026-06-11",
+    "explanation": "Could the Little Mermaid turn into stardust instead of seafoam?   It would seem so in this beautiful nebula.   The featured image shows the Mermaid Nebula, also known as the Betta Fish Nebula, which is part of the G296.5+10.0 Supernova Remnant.   The blue color visible here originates from doubly ionized oxygen (OIII), while the deep red is emitted by hydrogen gas.   \t\t\t\t\t\t\t\t\t\t\t\t Estimated to be located a few thousand light-years away and about 10,000 years old, this nebula was formed when a massive star exploded as a supernova. \t\t\t\t\t\t\t\t\t\t\t\t It left behind a peculiar pulsar, a young radio-quiet neutron star that spins around about twice every second.   The bright stars shown in the image are unassociated with the nebula.\t\t\t\t\t\t\t\t\t\t\t\t   The pulsar can be detected in the X-rays but it does not have a confirmed detection in the optical (visible light) so far.   As a result, the pulsar itself is not visible in this image.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/Mermaid_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Mermaid.jpg"
   },
   "events": {
     "events": [
@@ -160,38 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "837610 (2013 RE6)",
-        "hazardous": false,
-        "diameter_m": 299,
-        "close_approach_date": "2026-06-11",
-        "miss_distance_km": 29080185,
-        "velocity_kmh": 32355
-      },
-      {
-        "name": "(2013 RE6)",
-        "hazardous": false,
-        "diameter_m": 297,
-        "close_approach_date": "2026-06-11",
-        "miss_distance_km": 29080190,
-        "velocity_kmh": 32355
-      },
-      {
-        "name": "(2011 JX1)",
-        "hazardous": false,
-        "diameter_m": 1493,
-        "close_approach_date": "2026-06-11",
-        "miss_distance_km": 49740172,
-        "velocity_kmh": 103789
-      },
-      {
-        "name": "(2010 ST16)",
-        "hazardous": false,
-        "diameter_m": 133,
-        "close_approach_date": "2026-06-11",
-        "miss_distance_km": 53040900,
-        "velocity_kmh": 65373
-      },
-      {
         "name": "530520 (2011 LT17)",
         "hazardous": true,
         "diameter_m": 254,
@@ -238,30 +211,62 @@
         "close_approach_date": "2026-06-12",
         "miss_distance_km": 70108809,
         "velocity_kmh": 127140
+      },
+      {
+        "name": "(2014 DQ)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-06-12",
+        "miss_distance_km": 70781193,
+        "velocity_kmh": 28810
+      },
+      {
+        "name": "(2016 EH1)",
+        "hazardous": false,
+        "diameter_m": 175,
+        "close_approach_date": "2026-06-13",
+        "miss_distance_km": 37474051,
+        "velocity_kmh": 36937
+      },
+      {
+        "name": "(2007 EH)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-06-13",
+        "miss_distance_km": 37696877,
+        "velocity_kmh": 51465
+      },
+      {
+        "name": "(2013 BO27)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 10324741,
+        "velocity_kmh": 52896
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.3,
-    "feels_c": 11.7,
-    "humidity": 80,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 4.1
+    "temp_c": 13.1,
+    "feels_c": 12.6,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 3.6
   },
   "forecast_today": {
     "date": "2026-06-12",
     "city": "Zagreb",
-    "temp_min_c": 12.3,
+    "temp_min_c": 12.8,
     "temp_max_c": 24.9,
-    "humidity": 65,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 3.2,
-    "samples": 9
+    "icon": "02n",
+    "wind_kmh": 3.1,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-13",
@@ -331,11 +336,11 @@
       },
       {
         "time": "2026-06-12T09:00",
-        "uv": 2.9
+        "uv": 3.0
       },
       {
         "time": "2026-06-12T10:00",
-        "uv": 4.2
+        "uv": 4.3
       },
       {
         "time": "2026-06-12T11:00",
@@ -343,7 +348,7 @@
       },
       {
         "time": "2026-06-12T12:00",
-        "uv": 6.7
+        "uv": 6.6
       },
       {
         "time": "2026-06-12T13:00",
@@ -351,7 +356,7 @@
       },
       {
         "time": "2026-06-12T14:00",
-        "uv": 7.1
+        "uv": 7.0
       },
       {
         "time": "2026-06-12T15:00",
@@ -359,7 +364,7 @@
       },
       {
         "time": "2026-06-12T16:00",
-        "uv": 5.3
+        "uv": 5.5
       },
       {
         "time": "2026-06-12T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-12T00:00:45+02:00"
+    "fetched_at": "2026-06-12T02:17:44+02:00"
   }
 }
