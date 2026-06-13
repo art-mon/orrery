@@ -1,7 +1,12 @@
 {
-  "generated": "2026-06-13",
+  "generated": "2026-06-14",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Interplanetary Earth",
+    "date": "2026-06-13",
+    "explanation": "In an interplanetary first, on July 19, 2013 Earth was photographed on the same day from two other worlds of the Solar System, innermost planet Mercury and ringed gas giant Saturn. Pictured on the left, Earth is the pale blue dot just below the rings of Saturn, as captured by the robotic Cassini spacecraft then orbiting the outermost gas giant. On that same day people across planet Earth snapped many of their own pictures of Saturn. On the right, the Earth-Moon system is seen against the dark background of space as captured by the sunward MESSENGER spacecraft, then in Mercury orbit. MESSENGER took its image as part of a search for small natural satellites of Mercury, moons that would be expected to be quite dim. In the MESSENGER image, the brighter Earth and Moon are both overexposed and shine brightly with reflected sunlight. Destined not to return to their home world, both Cassini and MESSENGER have since retired from their missions of Solar System exploration.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1024c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1799.jpg"
   },
   "events": {
     "events": [
@@ -243,38 +248,27 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 18.4,
-    "feels_c": 18.4,
-    "humidity": 79,
+    "temp_c": 17.5,
+    "feels_c": 17.5,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 0.6
+    "wind_kmh": 3.2
   },
   "forecast_today": {
-    "date": "2026-06-13",
-    "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 18.4,
-    "humidity": 79,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 0.6,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-06-14",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 17.3,
     "temp_max_c": 29.5,
-    "humidity": 71,
+    "humidity": 73,
     "condition": "Rain",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.8
+    "description": "rain",
+    "icon": "01n",
+    "wind_kmh": 7.3,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-06-15",
     "city": "Zagreb",
     "temp_min_c": 13.2,
@@ -285,111 +279,122 @@
     "icon": "10d",
     "wind_kmh": 8.5
   },
+  "forecast_day_after": {
+    "date": "2026-06-16",
+    "city": "Zagreb",
+    "temp_min_c": 11.8,
+    "temp_max_c": 25.2,
+    "humidity": 70,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.3
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.0,
-    "peak_time": "2026-06-13T13:00",
+    "daily_max": 7.1,
+    "peak_time": "2026-06-14T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-13T00:00",
+        "time": "2026-06-14T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T01:00",
+        "time": "2026-06-14T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T02:00",
+        "time": "2026-06-14T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T03:00",
+        "time": "2026-06-14T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T04:00",
+        "time": "2026-06-14T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T05:00",
+        "time": "2026-06-14T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T06:00",
+        "time": "2026-06-14T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-13T07:00",
+        "time": "2026-06-14T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-13T08:00",
-        "uv": 1.5
+        "time": "2026-06-14T08:00",
+        "uv": 1.7
       },
       {
-        "time": "2026-06-13T09:00",
-        "uv": 2.5
+        "time": "2026-06-14T09:00",
+        "uv": 3.0
       },
       {
-        "time": "2026-06-13T10:00",
-        "uv": 3.3
+        "time": "2026-06-14T10:00",
+        "uv": 4.5
       },
       {
-        "time": "2026-06-13T11:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-13T12:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-13T13:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-06-13T14:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-06-13T15:00",
+        "time": "2026-06-14T11:00",
         "uv": 5.7
       },
       {
-        "time": "2026-06-13T16:00",
-        "uv": 5.5
+        "time": "2026-06-14T12:00",
+        "uv": 6.7
       },
       {
-        "time": "2026-06-13T17:00",
-        "uv": 4.3
+        "time": "2026-06-14T13:00",
+        "uv": 7.1
       },
       {
-        "time": "2026-06-13T18:00",
-        "uv": 2.9
+        "time": "2026-06-14T14:00",
+        "uv": 4.8
       },
       {
-        "time": "2026-06-13T19:00",
-        "uv": 1.6
+        "time": "2026-06-14T15:00",
+        "uv": 3.1
       },
       {
-        "time": "2026-06-13T20:00",
-        "uv": 0.6
+        "time": "2026-06-14T16:00",
+        "uv": 4.1
       },
       {
-        "time": "2026-06-13T21:00",
+        "time": "2026-06-14T17:00",
+        "uv": 4.1
+      },
+      {
+        "time": "2026-06-14T18:00",
+        "uv": 2.4
+      },
+      {
+        "time": "2026-06-14T19:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-06-14T20:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-06-14T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-13T22:00",
+        "time": "2026-06-14T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-13T23:00",
+        "time": "2026-06-14T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T23:13:08+02:00"
+    "fetched_at": "2026-06-14T01:01:52+02:00"
   }
 }
