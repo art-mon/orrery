@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-13",
   "apod": {
-    "title": "Venus and Jupiter: Conjunction from Avebury",
-    "date": "2026-06-12",
-    "explanation": "To see Venus and Jupiter together this month, you won't need binoculars or even a telescope. Just look up after sunset and you'll find them emerging as the sky grows dark near the western horizon. In fact, on June 9 the two brightest planets were in close conjunction, separated on the sky by less than 2 degrees from our perspective. Since (brighter) inner planet Venus orbits the Sun faster than outer planet Jupiter, it catches up with and passes the outer planet along the ecliptic roughly every 13 months. But every three years or so their resulting conjunction can be viewed far enough from the Sun to be easily seen in Earth's twilight skies. On June 9, the two celestial beacon's close \"cosmic kiss\" was captured here next to the two large standing stones at the cove within a 4,000 year old stone circle at Avebury, UK. Larger than Stonehenge, the Avebury henge and stone circle complex is also recognized as one of the most significant neolithic ceremonial sites on planet Earth.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/CosmicKissTheCoveAveburyDury.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -165,62 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "530520 (2011 LT17)",
-        "hazardous": true,
-        "diameter_m": 254,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 6155491,
-        "velocity_kmh": 52450
-      },
-      {
-        "name": "(2016 VS)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 7645401,
-        "velocity_kmh": 39885
-      },
-      {
-        "name": "388945 (2008 TZ3)",
-        "hazardous": true,
-        "diameter_m": 485,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 16794475,
-        "velocity_kmh": 26944
-      },
-      {
-        "name": "(2018 NC15)",
-        "hazardous": false,
-        "diameter_m": 261,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 19650166,
-        "velocity_kmh": 36813
-      },
-      {
-        "name": "(2019 ED1)",
-        "hazardous": false,
-        "diameter_m": 18,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 35143932,
-        "velocity_kmh": 56887
-      },
-      {
-        "name": "(2002 UQ12)",
-        "hazardous": false,
-        "diameter_m": 198,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 70108809,
-        "velocity_kmh": 127140
-      },
-      {
-        "name": "(2014 DQ)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-06-12",
-        "miss_distance_km": 70781193,
-        "velocity_kmh": 28810
-      },
-      {
         "name": "(2016 EH1)",
         "hazardous": false,
         "diameter_m": 175,
@@ -243,30 +182,86 @@
         "close_approach_date": "2026-06-14",
         "miss_distance_km": 10324741,
         "velocity_kmh": 52896
+      },
+      {
+        "name": "(2019 TA)",
+        "hazardous": false,
+        "diameter_m": 8,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 10796717,
+        "velocity_kmh": 25103
+      },
+      {
+        "name": "(2003 LW2)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 11817810,
+        "velocity_kmh": 37223
+      },
+      {
+        "name": "510190 (2011 CX7)",
+        "hazardous": false,
+        "diameter_m": 488,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 16870305,
+        "velocity_kmh": 33625
+      },
+      {
+        "name": "(2018 LU2)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 18560043,
+        "velocity_kmh": 47215
+      },
+      {
+        "name": "(2019 LZ)",
+        "hazardous": false,
+        "diameter_m": 94,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 44340889,
+        "velocity_kmh": 49977
+      },
+      {
+        "name": "(2019 BZ)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 46265789,
+        "velocity_kmh": 23212
+      },
+      {
+        "name": "(2013 NF19)",
+        "hazardous": true,
+        "diameter_m": 279,
+        "close_approach_date": "2026-06-14",
+        "miss_distance_km": 59259950,
+        "velocity_kmh": 61084
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.1,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_c": 16.5,
+    "feels_c": 16.0,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 0.7
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-06-13",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 16.5,
     "temp_max_c": 32.1,
     "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.5,
-    "samples": 9
+    "wind_kmh": 3.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-14",
@@ -293,7 +288,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
+    "daily_max": 7.2,
     "peak_time": "2026-06-13T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -332,11 +327,11 @@
       },
       {
         "time": "2026-06-13T08:00",
-        "uv": 1.1
+        "uv": 1.5
       },
       {
         "time": "2026-06-13T09:00",
-        "uv": 2.6
+        "uv": 2.5
       },
       {
         "time": "2026-06-13T10:00",
@@ -344,27 +339,27 @@
       },
       {
         "time": "2026-06-13T11:00",
-        "uv": 5.5
+        "uv": 5.6
       },
       {
         "time": "2026-06-13T12:00",
-        "uv": 6.5
+        "uv": 6.7
       },
       {
         "time": "2026-06-13T13:00",
-        "uv": 6.8
+        "uv": 7.2
       },
       {
         "time": "2026-06-13T14:00",
-        "uv": 6.8
+        "uv": 6.6
       },
       {
         "time": "2026-06-13T15:00",
-        "uv": 6.4
+        "uv": 6.2
       },
       {
         "time": "2026-06-13T16:00",
-        "uv": 5.3
+        "uv": 5.1
       },
       {
         "time": "2026-06-13T17:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T00:22:56+02:00"
+    "fetched_at": "2026-06-13T02:18:16+02:00"
   }
 }
