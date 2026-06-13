@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-13",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.2,
-    "feels_c": 28.8,
-    "humidity": 39,
+    "city": "City of Zagreb",
+    "temp_c": 28.3,
+    "feels_c": 28.0,
+    "humidity": 41,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.8
   },
   "forecast_today": {
     "date": "2026-06-13",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 22.3,
-    "temp_max_c": 29.2,
-    "humidity": 48,
+    "temp_max_c": 28.3,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 3.5,
-    "samples": 4
+    "icon": "02d",
+    "wind_kmh": 3.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-14",
-    "city": "Donji grad",
-    "temp_min_c": 17.2,
-    "temp_max_c": 28.8,
-    "humidity": 70,
+    "city": "City of Zagreb",
+    "temp_min_c": 17.6,
+    "temp_max_c": 29.3,
+    "humidity": 68,
     "condition": "Rain",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.1
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-06-15",
-    "city": "Donji grad",
-    "temp_min_c": 14.2,
-    "temp_max_c": 18.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 18.9,
     "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.9
+    "wind_kmh": 8.2
   },
   "uv": {
-    "uv": 4.8,
+    "uv": 3.0,
     "band": "moderate",
     "daily_max": 7.0,
     "peak_time": "2026-06-13T13:00",
-    "safe_minutes": 35,
+    "safe_minutes": 55,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T15:54:30+02:00"
+    "fetched_at": "2026-06-13T17:41:37+02:00"
   }
 }
