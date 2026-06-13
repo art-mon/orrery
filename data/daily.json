@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000ssms",
+        "title": "M5.1 Earthquake - 0 km ESE of Suyo, Peru",
+        "category": "Earthquake",
+        "date": "2026-06-13T06:35:39.650000Z",
+        "coordinates": [
+          -79.9986,
+          -4.5157
+        ]
+      },
+      {
         "id": "us7000ssls",
         "title": "M5.2 Earthquake - 2 km WSW of Kablalan, Philippines",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           125.3097,
           4.8122
         ]
-      },
-      {
-        "id": "us7000ss1g",
-        "title": "M5.2 Earthquake - 156 km ESE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-10T13:45:26.037000Z",
-        "coordinates": [
-          160.7735,
-          52.5396
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.1,
-    "humidity": 72,
+    "temp_c": 23.7,
+    "feels_c": 23.5,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.6
+    "wind_kmh": 4.7
   },
   "forecast_today": {
     "date": "2026-06-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.5,
-    "temp_max_c": 29.1,
-    "humidity": 63,
+    "city": "Donji grad",
+    "temp_min_c": 19.3,
+    "temp_max_c": 27.5,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 3.8,
-    "samples": 7
+    "wind_kmh": 4.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 29.6,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.4
+    "city": "Donji grad",
+    "temp_min_c": 18.8,
+    "temp_max_c": 28.8,
+    "humidity": 70,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 17.3,
+    "city": "Donji grad",
+    "temp_min_c": 14.0,
+    "temp_max_c": 19.6,
     "humidity": 95,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 7.8
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 8.1
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
-    "daily_max": 7.2,
+    "uv": 6.0,
+    "band": "high",
+    "daily_max": 7.1,
     "peak_time": "2026-06-13T13:00",
-    "safe_minutes": 145,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,27 +331,27 @@
       },
       {
         "time": "2026-06-13T09:00",
-        "uv": 2.5
+        "uv": 1.6
       },
       {
         "time": "2026-06-13T10:00",
-        "uv": 4.0
+        "uv": 2.6
       },
       {
         "time": "2026-06-13T11:00",
-        "uv": 5.6
+        "uv": 5.8
       },
       {
         "time": "2026-06-13T12:00",
-        "uv": 6.7
+        "uv": 6.8
       },
       {
         "time": "2026-06-13T13:00",
-        "uv": 7.2
+        "uv": 7.1
       },
       {
         "time": "2026-06-13T14:00",
-        "uv": 6.6
+        "uv": 7.1
       },
       {
         "time": "2026-06-13T15:00",
@@ -359,7 +359,7 @@
       },
       {
         "time": "2026-06-13T16:00",
-        "uv": 5.1
+        "uv": 5.2
       },
       {
         "time": "2026-06-13T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T07:19:04+02:00"
+    "fetched_at": "2026-06-13T10:54:36+02:00"
   }
 }
