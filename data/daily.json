@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-13",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Interplanetary Earth",
+    "date": "2026-06-13",
+    "explanation": "In an interplanetary first, on July 19, 2013 Earth was photographed on the same day from two other worlds of the Solar System, innermost planet Mercury and ringed gas giant Saturn. Pictured on the left, Earth is the pale blue dot just below the rings of Saturn, as captured by the robotic Cassini spacecraft then orbiting the outermost gas giant. On that same day people across planet Earth snapped many of their own pictures of Saturn. On the right, the Earth-Moon system is seen against the dark background of space as captured by the sunward MESSENGER spacecraft, then in Mercury orbit. MESSENGER took its image as part of a search for small natural satellites of Mercury, moons that would be expected to be quite dim. In the MESSENGER image, the brighter Earth and Moon are both overexposed and shine brightly with reflected sunlight. Destined not to return to their home world, both Cassini and MESSENGER have since retired from their missions of Solar System exploration.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1024c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1799.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ssq9",
+        "title": "M5.1 Earthquake - 2 km S of Cerro de Piedra, Mexico",
+        "category": "Earthquake",
+        "date": "2026-06-13T18:20:42.423000Z",
+        "coordinates": [
+          -99.6335,
+          16.7529
+        ]
+      },
       {
         "id": "us7000ssp2",
         "title": "M5.1 Earthquake - 118 km ESE of Bitung, Indonesia",
@@ -144,16 +159,6 @@
           125.5812,
           4.8238
         ]
-      },
-      {
-        "id": "us7000ss5y",
-        "title": "M5.2 Earthquake - 117 km NW of Vallenar, Chile",
-        "category": "Earthquake",
-        "date": "2026-06-11T05:19:44.569000Z",
-        "coordinates": [
-          -71.6196,
-          -27.8358
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 27.7,
-    "humidity": 46,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.8
+    "city": "Donji grad",
+    "temp_c": 20.7,
+    "feels_c": 20.7,
+    "humidity": 70,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 4.2
   },
   "forecast_today": {
     "date": "2026-06-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.8,
-    "temp_max_c": 27.6,
-    "humidity": 49,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 3.7,
-    "samples": 3
+    "city": "Donji grad",
+    "temp_min_c": 20.7,
+    "temp_max_c": 22.1,
+    "humidity": 70,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 2.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 28.8,
-    "humidity": 68,
+    "city": "Donji grad",
+    "temp_min_c": 16.6,
+    "temp_max_c": 29.5,
+    "humidity": 71,
     "condition": "Rain",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.1
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.2,
+    "city": "Donji grad",
+    "temp_min_c": 13.2,
     "temp_max_c": 18.4,
-    "humidity": 95,
+    "humidity": 94,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.9
+    "wind_kmh": 8.5
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-06-13T13:00",
-    "safe_minutes": 185,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,11 +360,11 @@
       },
       {
         "time": "2026-06-13T15:00",
-        "uv": 4.7
+        "uv": 5.7
       },
       {
         "time": "2026-06-13T16:00",
-        "uv": 4.8
+        "uv": 5.5
       },
       {
         "time": "2026-06-13T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T19:20:03+02:00"
+    "fetched_at": "2026-06-13T21:21:59+02:00"
   }
 }
