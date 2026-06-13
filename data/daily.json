@@ -1,15 +1,40 @@
 {
   "generated": "2026-06-13",
   "apod": {
-    "title": "Interplanetary Earth",
-    "date": "2026-06-13",
-    "explanation": "In an interplanetary first, on July 19, 2013 Earth was photographed on the same day from two other worlds of the Solar System, innermost planet Mercury and ringed gas giant Saturn. Pictured on the left, Earth is the pale blue dot just below the rings of Saturn, as captured by the robotic Cassini spacecraft then orbiting the outermost gas giant. On that same day people across planet Earth snapped many of their own pictures of Saturn. On the right, the Earth-Moon system is seen against the dark background of space as captured by the sunward MESSENGER spacecraft, then in Mercury orbit. MESSENGER took its image as part of a search for small natural satellites of Mercury, moons that would be expected to be quite dim. In the MESSENGER image, the brighter Earth and Moon are both overexposed and shine brightly with reflected sunlight. Destined not to return to their home world, both Cassini and MESSENGER have since retired from their missions of Solar System exploration.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1799.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ssp2",
+        "title": "M5.1 Earthquake - 118 km ESE of Bitung, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-13T12:05:34.332000Z",
+        "coordinates": [
+          126.1267,
+          1.0796
+        ]
+      },
+      {
+        "id": "us7000ssp1",
+        "title": "M5.0 Earthquake - 24 km W of Ovalle, Chile",
+        "category": "Earthquake",
+        "date": "2026-06-13T12:04:14.390000Z",
+        "coordinates": [
+          -71.4544,
+          -30.6288
+        ]
+      },
+      {
+        "id": "us7000ssnz",
+        "title": "M5.1 Earthquake - 207 km WSW of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-06-13T11:24:54.194000Z",
+        "coordinates": [
+          -179.5103,
+          51.3511
+        ]
+      },
       {
         "id": "us7000ssnv",
         "title": "M5.0 Earthquake - 93 km SSW of Unalaska, Alaska",
@@ -129,36 +154,6 @@
           -71.6196,
           -27.8358
         ]
-      },
-      {
-        "id": "us7000ss5v",
-        "title": "M5.0 Earthquake - 212 km SE of Ust\u2019-Kamchatsk Staryy, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-11T04:44:38.172000Z",
-        "coordinates": [
-          165.3069,
-          55.187
-        ]
-      },
-      {
-        "id": "us7000ss57",
-        "title": "M5.5 Earthquake - 58 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-11T01:56:14.675000Z",
-        "coordinates": [
-          125.4356,
-          4.8778
-        ]
-      },
-      {
-        "id": "us7000ss4s",
-        "title": "M5.4 Earthquake - 176 km ESE of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-06-10T23:30:45.857000Z",
-        "coordinates": [
-          -172.365,
-          -19.0625
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 27.0,
-    "feels_c": 27.2,
-    "humidity": 46,
+    "city": "Donji grad",
+    "temp_c": 29.2,
+    "feels_c": 28.8,
+    "humidity": 39,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.6
   },
   "forecast_today": {
     "date": "2026-06-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.3,
-    "temp_max_c": 27.6,
-    "humidity": 54,
+    "city": "Donji grad",
+    "temp_min_c": 22.3,
+    "temp_max_c": 29.2,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 4.8,
-    "samples": 5
+    "icon": "03d",
+    "wind_kmh": 3.5,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.8,
+    "city": "Donji grad",
+    "temp_min_c": 17.2,
     "temp_max_c": 28.8,
     "humidity": 70,
     "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 5.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.0,
-    "temp_max_c": 19.6,
+    "city": "Donji grad",
+    "temp_min_c": 14.2,
+    "temp_max_c": 18.4,
     "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.1
+    "wind_kmh": 7.9
   },
   "uv": {
-    "uv": 7.2,
-    "band": "high",
-    "daily_max": 7.1,
+    "uv": 4.8,
+    "band": "moderate",
+    "daily_max": 7.0,
     "peak_time": "2026-06-13T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 35,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +331,11 @@
       },
       {
         "time": "2026-06-13T09:00",
-        "uv": 1.6
+        "uv": 2.5
       },
       {
         "time": "2026-06-13T10:00",
-        "uv": 2.6
+        "uv": 3.3
       },
       {
         "time": "2026-06-13T11:00",
@@ -348,23 +343,23 @@
       },
       {
         "time": "2026-06-13T12:00",
-        "uv": 6.8
+        "uv": 6.7
       },
       {
         "time": "2026-06-13T13:00",
-        "uv": 7.1
+        "uv": 7.0
       },
       {
         "time": "2026-06-13T14:00",
-        "uv": 7.1
+        "uv": 7.0
       },
       {
         "time": "2026-06-13T15:00",
-        "uv": 6.2
+        "uv": 4.7
       },
       {
         "time": "2026-06-13T16:00",
-        "uv": 5.2
+        "uv": 4.8
       },
       {
         "time": "2026-06-13T17:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-13T13:12:25+02:00"
+    "fetched_at": "2026-06-13T15:54:30+02:00"
   }
 }
