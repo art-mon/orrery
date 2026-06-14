@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-14",
   "apod": {
-    "title": "Interplanetary Earth",
-    "date": "2026-06-13",
-    "explanation": "In an interplanetary first, on July 19, 2013 Earth was photographed on the same day from two other worlds of the Solar System, innermost planet Mercury and ringed gas giant Saturn. Pictured on the left, Earth is the pale blue dot just below the rings of Saturn, as captured by the robotic Cassini spacecraft then orbiting the outermost gas giant. On that same day people across planet Earth snapped many of their own pictures of Saturn. On the right, the Earth-Moon system is seen against the dark background of space as captured by the sunward MESSENGER spacecraft, then in Mercury orbit. MESSENGER took its image as part of a search for small natural satellites of Mercury, moons that would be expected to be quite dim. In the MESSENGER image, the brighter Earth and Moon are both overexposed and shine brightly with reflected sunlight. Destined not to return to their home world, both Cassini and MESSENGER have since retired from their missions of Solar System exploration.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/earth_cassinimessenger_1799.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.5,
-    "humidity": 79,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.2
+    "city": "Donji grad",
+    "temp_c": 23.6,
+    "feels_c": 23.9,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.6
   },
   "forecast_today": {
     "date": "2026-06-14",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.3,
-    "temp_max_c": 29.6,
-    "humidity": 70,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 10.0,
-    "samples": 7
+    "temp_max_c": 26.2,
+    "humidity": 73,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 10.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.2,
-    "temp_max_c": 17.5,
-    "humidity": 97,
+    "city": "Zagreb",
+    "temp_min_c": 14.7,
+    "temp_max_c": 17.1,
+    "humidity": 96,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.5
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-06-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.9,
-    "temp_max_c": 25.4,
-    "humidity": 69,
+    "city": "Zagreb",
+    "temp_min_c": 11.7,
+    "temp_max_c": 25.0,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 4.3
+    "wind_kmh": 3.8
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 5.0,
+    "band": "moderate",
     "daily_max": 6.7,
     "peak_time": "2026-06-14T12:00",
-    "safe_minutes": 1111,
+    "safe_minutes": 34,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +339,7 @@
       },
       {
         "time": "2026-06-14T11:00",
-        "uv": 5.8
+        "uv": 5.7
       },
       {
         "time": "2026-06-14T12:00",
@@ -352,35 +347,35 @@
       },
       {
         "time": "2026-06-14T13:00",
-        "uv": 6.7
+        "uv": 6.2
       },
       {
         "time": "2026-06-14T14:00",
-        "uv": 5.5
+        "uv": 6.1
       },
       {
         "time": "2026-06-14T15:00",
-        "uv": 4.7
+        "uv": 2.9
       },
       {
         "time": "2026-06-14T16:00",
-        "uv": 3.6
+        "uv": 2.3
       },
       {
         "time": "2026-06-14T17:00",
-        "uv": 3.4
+        "uv": 3.0
       },
       {
         "time": "2026-06-14T18:00",
-        "uv": 2.5
+        "uv": 1.9
       },
       {
         "time": "2026-06-14T19:00",
-        "uv": 1.2
+        "uv": 0.6
       },
       {
         "time": "2026-06-14T20:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-06-14T21:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-14T05:45:25+02:00"
+    "fetched_at": "2026-06-14T10:13:51+02:00"
   }
 }
