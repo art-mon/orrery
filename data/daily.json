@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-14",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "10 Days of Venus and Jupiter",
+    "date": "2026-06-14",
+    "explanation": "Venus and Jupiter may have caught your attention lately.  The  recent close conjunction of the two brightest planets in recent evening skies has been hard to miss. With Jupiter at the top, starting on May 30 and ending on June 8, their close approach was chronicled daily, left to right, in the featured panels from Maharashtra, India. Near the western horizon, the evening sky colors and exposures used for each panel depend on the local conditions near sunset. At their closest on June 9, the celestial pair appeared to be only about three times the width of a full moon apart. Of course, on that date, the two planets were physically separated by over 600 million kilometers in their orbits around the Sun. In the coming days, Jupiter will slowly settle into the sunset glare, but Venus will continue to move farther from the Sun in the western sky to excel in its current role as the brilliant evening star.   Gallery: Venus - Jupiter Conjunction of 2026 June",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg"
   },
   "events": {
     "events": [
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 31.1,
-    "humidity": 47,
+    "city": "Zagreb",
+    "temp_c": 25.6,
+    "feels_c": 25.6,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.2
+    "wind_kmh": 16.3
   },
   "forecast_today": {
     "date": "2026-06-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.3,
-    "temp_max_c": 30.4,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 19.6,
+    "temp_max_c": 25.6,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 11.0,
-    "samples": 5
+    "wind_kmh": 13.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 17.1,
-    "humidity": 96,
+    "city": "Zagreb",
+    "temp_min_c": 14.0,
+    "temp_max_c": 16.1,
+    "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.9
+    "wind_kmh": 8.1
   },
   "forecast_day_after": {
     "date": "2026-06-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 25.0,
-    "humidity": 75,
+    "city": "Zagreb",
+    "temp_min_c": 12.6,
+    "temp_max_c": 25.5,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.8
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 6.4,
-    "band": "high",
-    "daily_max": 6.7,
-    "peak_time": "2026-06-14T12:00",
-    "safe_minutes": 26,
+    "uv": 4.2,
+    "band": "moderate",
+    "daily_max": 6.8,
+    "peak_time": "2026-06-14T14:00",
+    "safe_minutes": 40,
     "skin_type": 2,
     "hourly": [
       {
@@ -347,31 +352,31 @@
       },
       {
         "time": "2026-06-14T13:00",
-        "uv": 6.2
+        "uv": 5.8
       },
       {
         "time": "2026-06-14T14:00",
-        "uv": 6.1
+        "uv": 6.8
       },
       {
         "time": "2026-06-14T15:00",
-        "uv": 2.9
+        "uv": 5.2
       },
       {
         "time": "2026-06-14T16:00",
-        "uv": 2.3
+        "uv": 4.3
       },
       {
         "time": "2026-06-14T17:00",
-        "uv": 3.0
+        "uv": 3.1
       },
       {
         "time": "2026-06-14T18:00",
-        "uv": 1.9
+        "uv": 2.0
       },
       {
         "time": "2026-06-14T19:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-06-14T20:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-14T13:28:42+02:00"
+    "fetched_at": "2026-06-14T15:57:22+02:00"
   }
 }
