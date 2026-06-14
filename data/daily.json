@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000ssv0",
+        "title": "M5.1 Earthquake - 27 km SE of Magdalena, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-14T15:34:42.713000Z",
+        "coordinates": [
+          122.1173,
+          10.2151
+        ]
+      },
+      {
         "id": "us7000ssub",
         "title": "M5.2 Earthquake - 53 km ENE of Hinatuan, Philippines",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           -71.6744,
           -27.8153
         ]
-      },
-      {
-        "id": "us7000ss7v",
-        "title": "M5.1 Earthquake - 62 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-11T11:46:58.234000Z",
-        "coordinates": [
-          125.5183,
-          4.837
-        ]
       }
     ]
   },
@@ -243,31 +243,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.1,
-    "feels_c": 24.1,
-    "humidity": 60,
+    "temp_c": 21.2,
+    "feels_c": 21.6,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 8.0
+    "wind_kmh": 24.1
   },
   "forecast_today": {
     "date": "2026-06-14",
     "city": "Zagreb",
-    "temp_min_c": 19.3,
-    "temp_max_c": 24.1,
-    "humidity": 73,
+    "temp_min_c": 19.2,
+    "temp_max_c": 21.2,
+    "humidity": 87,
     "condition": "Rain",
     "description": "rain",
     "icon": "03d",
-    "wind_kmh": 9.0,
+    "wind_kmh": 14.3,
     "samples": 3
   },
   "forecast": {
     "date": "2026-06-15",
     "city": "Zagreb",
     "temp_min_c": 14.0,
-    "temp_max_c": 16.1,
+    "temp_max_c": 16.7,
     "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
@@ -286,11 +286,11 @@
     "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 1.9,
+    "uv": 0.5,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-06-14T14:00",
-    "safe_minutes": 90,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-14T17:49:21+02:00"
+    "fetched_at": "2026-06-14T19:18:46+02:00"
   }
 }
