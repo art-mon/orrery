@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-14",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "10 Days of Venus and Jupiter",
+    "date": "2026-06-14",
+    "explanation": "Venus and Jupiter may have caught your attention lately.  The  recent close conjunction of the two brightest planets in recent evening skies has been hard to miss. With Jupiter at the top, starting on May 30 and ending on June 8, their close approach was chronicled daily, left to right, in the featured panels from Maharashtra, India. Near the western horizon, the evening sky colors and exposures used for each panel depend on the local conditions near sunset. At their closest on June 9, the celestial pair appeared to be only about three times the width of a full moon apart. Of course, on that date, the two planets were physically separated by over 600 million kilometers in their orbits around the Sun. In the coming days, Jupiter will slowly settle into the sunset glare, but Venus will continue to move farther from the Sun in the western sky to excel in its current role as the brilliant evening star.   Gallery: Venus - Jupiter Conjunction of 2026 June",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg"
   },
   "events": {
     "events": [
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.2,
-    "feels_c": 21.6,
-    "humidity": 82,
+    "temp_c": 19.1,
+    "feels_c": 19.4,
+    "humidity": 92,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 24.1
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 11.5
   },
   "forecast_today": {
     "date": "2026-06-14",
     "city": "Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 21.2,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "03d",
-    "wind_kmh": 14.3,
-    "samples": 3
+    "temp_min_c": 18.9,
+    "temp_max_c": 19.1,
+    "humidity": 92,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 8.1,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-15",
     "city": "Zagreb",
-    "temp_min_c": 14.0,
-    "temp_max_c": 16.7,
-    "humidity": 95,
+    "temp_min_c": 14.6,
+    "temp_max_c": 17.0,
+    "humidity": 96,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.1
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-06-16",
     "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 25.5,
-    "humidity": 72,
+    "temp_min_c": 12.8,
+    "temp_max_c": 26.7,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.7
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-06-14T14:00",
-    "safe_minutes": 370,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,27 +360,27 @@
       },
       {
         "time": "2026-06-14T15:00",
-        "uv": 5.2
+        "uv": 4.6
       },
       {
         "time": "2026-06-14T16:00",
-        "uv": 4.3
+        "uv": 4.0
       },
       {
         "time": "2026-06-14T17:00",
-        "uv": 3.1
+        "uv": 2.8
       },
       {
         "time": "2026-06-14T18:00",
-        "uv": 2.0
+        "uv": 1.7
       },
       {
         "time": "2026-06-14T19:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-06-14T20:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-06-14T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-14T19:18:46+02:00"
+    "fetched_at": "2026-06-14T21:23:09+02:00"
   }
 }
