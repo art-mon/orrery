@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-14",
   "apod": {
-    "title": "10 Days of Venus and Jupiter",
-    "date": "2026-06-14",
-    "explanation": "Venus and Jupiter may have caught your attention lately.  The  recent close conjunction of the two brightest planets in recent evening skies has been hard to miss. With Jupiter at the top, starting on May 30 and ending on June 8, their close approach was chronicled daily, left to right, in the featured panels from Maharashtra, India. Near the western horizon, the evening sky colors and exposures used for each panel depend on the local conditions near sunset. At their closest on June 9, the celestial pair appeared to be only about three times the width of a full moon apart. Of course, on that date, the two planets were physically separated by over 600 million kilometers in their orbits around the Sun. In the coming days, Jupiter will slowly settle into the sunset glare, but Venus will continue to move farther from the Sun in the western sky to excel in its current role as the brilliant evening star.   Gallery: Venus - Jupiter Conjunction of 2026 June",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ssub",
+        "title": "M5.2 Earthquake - 53 km ENE of Hinatuan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-14T14:08:52.615000Z",
+        "coordinates": [
+          126.7531,
+          8.6152
+        ]
+      },
       {
         "id": "us7000ssqy",
         "title": "M5.0 Earthquake - 33 km ESE of Sarangani, Philippines",
@@ -149,16 +154,6 @@
           125.5183,
           4.837
         ]
-      },
-      {
-        "id": "us7000ss6g",
-        "title": "M5.4 Earthquake - 59 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-11T07:33:23.077000Z",
-        "coordinates": [
-          125.4495,
-          4.8685
-        ]
       }
     ]
   },
@@ -248,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.6,
-    "feels_c": 25.6,
-    "humidity": 50,
+    "temp_c": 24.1,
+    "feels_c": 24.1,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 16.3
+    "wind_kmh": 8.0
   },
   "forecast_today": {
     "date": "2026-06-14",
     "city": "Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 25.6,
-    "humidity": 62,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 19.3,
+    "temp_max_c": 24.1,
+    "humidity": 73,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "03d",
-    "wind_kmh": 13.0,
-    "samples": 4
+    "wind_kmh": 9.0,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-15",
@@ -291,11 +286,11 @@
     "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 4.2,
-    "band": "moderate",
+    "uv": 1.9,
+    "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-06-14T14:00",
-    "safe_minutes": 40,
+    "safe_minutes": 90,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-14T15:57:22+02:00"
+    "fetched_at": "2026-06-14T17:49:21+02:00"
   }
 }
