@@ -1,7 +1,12 @@
 {
-  "generated": "2026-06-15",
+  "generated": "2026-06-16",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Triple Shockwave from Sun Crossing Rocket",
+    "date": "2026-06-15",
+    "explanation": "What's happening to this Sun-crossing rocket?  The SpaceX Falcon 9 rocket, visible on the upper left, launched only about one minute before this amazing image was captured.  As it rose to low Earth orbit from Cape Canaveral, Florida, USA,  in late May, the rocket became supersonic before it crossed the disk of the distant Sun -- from the perspective of the well-placed photographer.  The spacecraft's high speed caused bow-shaped compressed-air shockwaves to form across leading surfaces, with at least three visible even outside the Sun's disk because they refract sunlight.  The trailing exhaust caused turbulence visible on the lower right. None of this was damaging to the robotic Starlink 10-53 mission, which delivered 29 communications satellites to low Earth orbit as planned.  And if that isn't amazing enough - the Sun had spots!    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_1108.jpg"
   },
   "events": {
     "events": [
@@ -242,154 +247,154 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 17.4,
-    "feels_c": 17.6,
-    "humidity": 89,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 4.6
-  },
-  "forecast_today": {
-    "date": "2026-06-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.9,
-    "temp_max_c": 17.4,
-    "humidity": 90,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 4.5,
-    "samples": 2
-  },
-  "forecast": {
-    "date": "2026-06-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 29.1,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_c": 16.1,
+    "feels_c": 15.9,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 4.2
+    "icon": "02n",
+    "wind_kmh": 2.2
   },
-  "forecast_day_after": {
+  "forecast_today": {
+    "date": "2026-06-16",
+    "city": "City of Zagreb",
+    "temp_min_c": 15.3,
+    "temp_max_c": 28.5,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 4.0,
+    "samples": 9
+  },
+  "forecast": {
     "date": "2026-06-17",
     "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 30.6,
-    "humidity": 70,
+    "temp_min_c": 16.1,
+    "temp_max_c": 30.1,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 4.4
   },
+  "forecast_day_after": {
+    "date": "2026-06-18",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.1,
+    "temp_max_c": 29.7,
+    "humidity": 66,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.5
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.8,
-    "peak_time": "2026-06-15T18:00",
+    "daily_max": 7.2,
+    "peak_time": "2026-06-16T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-15T00:00",
+        "time": "2026-06-16T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T01:00",
+        "time": "2026-06-16T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T02:00",
+        "time": "2026-06-16T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T03:00",
+        "time": "2026-06-16T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T04:00",
+        "time": "2026-06-16T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T05:00",
+        "time": "2026-06-16T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T06:00",
+        "time": "2026-06-16T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-15T07:00",
-        "uv": 0.1
+        "time": "2026-06-16T07:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-06-15T08:00",
-        "uv": 0.3
+        "time": "2026-06-16T08:00",
+        "uv": 1.7
       },
       {
-        "time": "2026-06-15T09:00",
-        "uv": 0.9
+        "time": "2026-06-16T09:00",
+        "uv": 3.0
       },
       {
-        "time": "2026-06-15T10:00",
-        "uv": 1.3
+        "time": "2026-06-16T10:00",
+        "uv": 4.4
       },
       {
-        "time": "2026-06-15T11:00",
-        "uv": 1.2
+        "time": "2026-06-16T11:00",
+        "uv": 5.7
       },
       {
-        "time": "2026-06-15T12:00",
-        "uv": 0.9
+        "time": "2026-06-16T12:00",
+        "uv": 6.7
       },
       {
-        "time": "2026-06-15T13:00",
-        "uv": 0.8
+        "time": "2026-06-16T13:00",
+        "uv": 7.2
       },
       {
-        "time": "2026-06-15T14:00",
-        "uv": 0.9
+        "time": "2026-06-16T14:00",
+        "uv": 7.2
       },
       {
-        "time": "2026-06-15T15:00",
-        "uv": 0.9
+        "time": "2026-06-16T15:00",
+        "uv": 6.6
       },
       {
-        "time": "2026-06-15T16:00",
-        "uv": 1.3
+        "time": "2026-06-16T16:00",
+        "uv": 4.8
       },
       {
-        "time": "2026-06-15T17:00",
-        "uv": 1.5
+        "time": "2026-06-16T17:00",
+        "uv": 3.4
       },
       {
-        "time": "2026-06-15T18:00",
-        "uv": 1.8
+        "time": "2026-06-16T18:00",
+        "uv": 2.4
       },
       {
-        "time": "2026-06-15T19:00",
-        "uv": 1.6
+        "time": "2026-06-16T19:00",
+        "uv": 1.4
       },
       {
-        "time": "2026-06-15T20:00",
+        "time": "2026-06-16T20:00",
         "uv": 0.6
       },
       {
-        "time": "2026-06-15T21:00",
+        "time": "2026-06-16T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-15T22:00",
+        "time": "2026-06-16T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-15T23:00",
+        "time": "2026-06-16T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-15T22:23:17+02:00"
+    "fetched_at": "2026-06-16T01:01:14+02:00"
   }
 }
