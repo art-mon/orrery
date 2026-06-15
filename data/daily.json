@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000st48",
+        "title": "M5.5 Earthquake - 5 km SSW of Pangyan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-15T15:30:24.374000Z",
+        "coordinates": [
+          125.2618,
+          5.658
+        ]
+      },
+      {
         "id": "us7000st1c",
         "title": "M6.2 Earthquake - 67 km ESE of Pondaguitan, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           169.0532,
           -18.9647
         ]
-      },
-      {
-        "id": "us7000ss82",
-        "title": "M5.5 Earthquake - 128 km NW of Vallenar, Chile",
-        "category": "Earthquake",
-        "date": "2026-06-11T12:22:06.272000Z",
-        "coordinates": [
-          -71.7406,
-          -27.8038
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.4,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 20.6,
+    "feels_c": 20.6,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 12.3
+    "wind_kmh": 5.6
   },
   "forecast_today": {
     "date": "2026-06-15",
-    "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 18.2,
-    "humidity": 84,
-    "condition": "Rain",
-    "description": "rain",
+    "city": "Donji grad",
+    "temp_min_c": 17.9,
+    "temp_max_c": 20.6,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 7.2,
-    "samples": 5
+    "wind_kmh": 3.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-16",
-    "city": "Zagreb",
-    "temp_min_c": 13.0,
-    "temp_max_c": 27.1,
-    "humidity": 77,
+    "city": "Donji grad",
+    "temp_min_c": 13.7,
+    "temp_max_c": 28.2,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-06-17",
-    "city": "Zagreb",
-    "temp_min_c": 15.8,
-    "temp_max_c": 29.2,
-    "humidity": 71,
+    "city": "Donji grad",
+    "temp_min_c": 16.4,
+    "temp_max_c": 29.5,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.1
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.8,
     "band": "low",
-    "daily_max": 1.2,
-    "peak_time": "2026-06-15T17:00",
-    "safe_minutes": 303,
+    "daily_max": 1.3,
+    "peak_time": "2026-06-15T10:00",
+    "safe_minutes": 208,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,39 +336,39 @@
       },
       {
         "time": "2026-06-15T09:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-06-15T10:00",
-        "uv": 1.0
-      },
-      {
-        "time": "2026-06-15T11:00",
         "uv": 0.9
       },
       {
+        "time": "2026-06-15T10:00",
+        "uv": 1.3
+      },
+      {
+        "time": "2026-06-15T11:00",
+        "uv": 1.2
+      },
+      {
         "time": "2026-06-15T12:00",
-        "uv": 0.7
+        "uv": 0.9
       },
       {
         "time": "2026-06-15T13:00",
-        "uv": 0.6
+        "uv": 0.8
       },
       {
         "time": "2026-06-15T14:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-06-15T15:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-06-15T16:00",
-        "uv": 1.1
+        "uv": 0.8
       },
       {
         "time": "2026-06-15T17:00",
-        "uv": 1.2
+        "uv": 0.8
       },
       {
         "time": "2026-06-15T18:00",
@@ -376,11 +376,11 @@
       },
       {
         "time": "2026-06-15T19:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-06-15T20:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-06-15T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-15T12:52:44+02:00"
+    "fetched_at": "2026-06-15T18:15:56+02:00"
   }
 }
