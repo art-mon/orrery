@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-15",
   "apod": {
-    "title": "Triple Shockwave from Sun Crossing Rocket",
-    "date": "2026-06-15",
-    "explanation": "What's happening to this Sun-crossing rocket?  The SpaceX Falcon 9 rocket, visible on the upper left, launched only about one minute before this amazing image was captured.  As it rose to low Earth orbit from Cape Canaveral, Florida, USA,  in late May, the rocket became supersonic before it crossed the disk of the distant Sun -- from the perspective of the well-placed photographer.  The spacecraft's high speed caused bow-shaped compressed-air shockwaves to form across leading surfaces, with at least three visible even outside the Sun's disk because they refract sunlight.  The trailing exhaust caused turbulence visible on the lower right. None of this was damaging to the robotic Starlink 10-53 mission, which delivered 29 communications satellites to low Earth orbit as planned.  And if that isn't amazing enough - the Sun had spots!    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_1108.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000st5e",
+        "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
+        "category": "Earthquake",
+        "date": "2026-06-15T18:20:45.112000Z",
+        "coordinates": [
+          170.3866,
+          -23.3381
+        ]
+      },
       {
         "id": "us7000st48",
         "title": "M5.5 Earthquake - 5 km SSW of Pangyan, Philippines",
@@ -149,16 +154,6 @@
           124.8728,
           5.5979
         ]
-      },
-      {
-        "id": "us7000ssct",
-        "title": "M5.0 Earthquake - 68 km NNW of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-06-11T21:32:47.364000Z",
-        "coordinates": [
-          169.0532,
-          -18.9647
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.6,
-    "feels_c": 20.6,
-    "humidity": 72,
+    "city": "Donji grad",
+    "temp_c": 17.4,
+    "feels_c": 17.6,
+    "humidity": 89,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.6
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.6
   },
   "forecast_today": {
     "date": "2026-06-15",
-    "city": "Donji grad",
-    "temp_min_c": 17.9,
-    "temp_max_c": 20.6,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.9,
+    "temp_max_c": 17.4,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.7,
-    "samples": 3
+    "icon": "03n",
+    "wind_kmh": 4.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-16",
-    "city": "Donji grad",
-    "temp_min_c": 13.7,
-    "temp_max_c": 28.2,
-    "humidity": 72,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.2,
+    "temp_max_c": 29.1,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.2
   },
   "forecast_day_after": {
     "date": "2026-06-17",
-    "city": "Donji grad",
-    "temp_min_c": 16.4,
-    "temp_max_c": 29.5,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 30.6,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 1.3,
-    "peak_time": "2026-06-15T10:00",
-    "safe_minutes": 208,
+    "daily_max": 1.8,
+    "peak_time": "2026-06-15T18:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,19 +359,19 @@
       },
       {
         "time": "2026-06-15T16:00",
-        "uv": 0.8
+        "uv": 1.3
       },
       {
         "time": "2026-06-15T17:00",
-        "uv": 0.8
+        "uv": 1.5
       },
       {
         "time": "2026-06-15T18:00",
-        "uv": 0.8
+        "uv": 1.8
       },
       {
         "time": "2026-06-15T19:00",
-        "uv": 0.8
+        "uv": 1.6
       },
       {
         "time": "2026-06-15T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-15T18:15:56+02:00"
+    "fetched_at": "2026-06-15T22:23:17+02:00"
   }
 }
