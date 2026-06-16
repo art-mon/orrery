@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 27.6,
-    "humidity": 45,
+    "temp_c": 20.9,
+    "feels_c": 20.8,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 6.9
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 3.9
   },
   "forecast_today": {
     "date": "2026-06-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.4,
-    "temp_max_c": 27.6,
-    "humidity": 53,
+    "city": "Zagreb",
+    "temp_min_c": 19.4,
+    "temp_max_c": 20.9,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 5.6,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 4.3,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.4,
-    "temp_max_c": 29.6,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 17.6,
+    "temp_max_c": 32.3,
+    "humidity": 62,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-06-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.8,
-    "temp_max_c": 28.9,
-    "humidity": 72,
+    "city": "Zagreb",
+    "temp_min_c": 19.4,
+    "temp_max_c": 31.2,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.4
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 3.3,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-16T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -359,7 +359,7 @@
       },
       {
         "time": "2026-06-16T16:00",
-        "uv": 5.2
+        "uv": 5.4
       },
       {
         "time": "2026-06-16T17:00",
@@ -371,7 +371,7 @@
       },
       {
         "time": "2026-06-16T19:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-06-16T20:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-16T17:03:26+02:00"
+    "fetched_at": "2026-06-16T21:32:13+02:00"
   }
 }
