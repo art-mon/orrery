@@ -1,15 +1,30 @@
 {
   "generated": "2026-06-16",
   "apod": {
-    "title": "Triple Shockwave from Sun Crossing Rocket",
-    "date": "2026-06-15",
-    "explanation": "What's happening to this Sun-crossing rocket?  The SpaceX Falcon 9 rocket, visible on the upper left, launched only about one minute before this amazing image was captured.  As it rose to low Earth orbit from Cape Canaveral, Florida, USA,  in late May, the rocket became supersonic before it crossed the disk of the distant Sun -- from the perspective of the well-placed photographer.  The spacecraft's high speed caused bow-shaped compressed-air shockwaves to form across leading surfaces, with at least three visible even outside the Sun's disk because they refract sunlight.  The trailing exhaust caused turbulence visible on the lower right. None of this was damaging to the robotic Starlink 10-53 mission, which delivered 29 communications satellites to low Earth orbit as planned.  And if that isn't amazing enough - the Sun had spots!    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_1108.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000stbp",
+        "title": "M5.0 Earthquake - 49 km ESE of Palu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-16T08:04:46.472000Z",
+        "coordinates": [
+          120.2567,
+          -1.1234
+        ]
+      },
+      {
+        "id": "us7000sta1",
+        "title": "M5.1 Earthquake - 49 km SE of Palu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-16T04:14:01.591000Z",
+        "coordinates": [
+          120.2257,
+          -1.1746
+        ]
+      },
       {
         "id": "us7000st96",
         "title": "M5.2 Earthquake - 44 km ESE of Palu, Indonesia",
@@ -22,12 +37,12 @@
       },
       {
         "id": "us7000st95",
-        "title": "M6.7 Earthquake - 46 km ESE of Palu, Indonesia",
+        "title": "M6.7 Earthquake - 43 km ESE of Palu, Indonesia",
         "category": "Earthquake",
-        "date": "2026-06-16T03:27:44.390000Z",
+        "date": "2026-06-16T03:27:44.418000Z",
         "coordinates": [
-          120.2301,
-          -1.1312
+          120.199,
+          -1.1173
         ]
       },
       {
@@ -139,26 +154,6 @@
           -166.9697,
           53.0785
         ]
-      },
-      {
-        "id": "us7000ssms",
-        "title": "M5.1 Earthquake - 0 km ESE of Suyo, Peru",
-        "category": "Earthquake",
-        "date": "2026-06-13T06:35:39.650000Z",
-        "coordinates": [
-          -79.9986,
-          -4.5157
-        ]
-      },
-      {
-        "id": "us7000ssls",
-        "title": "M5.2 Earthquake - 2 km WSW of Kablalan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-13T02:05:53.272000Z",
-        "coordinates": [
-          125.1803,
-          5.774
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 14.0,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 1.0
-  },
-  "forecast_today": {
-    "date": "2026-06-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 29.9,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 4.6,
-    "samples": 7
-  },
-  "forecast": {
-    "date": "2026-06-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 32.0,
-    "humidity": 70,
+    "city": "Donji grad",
+    "temp_c": 23.7,
+    "feels_c": 23.8,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 4.3
+    "wind_kmh": 4.2
+  },
+  "forecast_today": {
+    "date": "2026-06-16",
+    "city": "Donji grad",
+    "temp_min_c": 18.0,
+    "temp_max_c": 27.3,
+    "humidity": 62,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 5.7,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-06-17",
+    "city": "Donji grad",
+    "temp_min_c": 16.6,
+    "temp_max_c": 32.6,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.8
   },
   "forecast_day_after": {
     "date": "2026-06-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 29.9,
-    "humidity": 64,
+    "city": "Donji grad",
+    "temp_min_c": 17.9,
+    "temp_max_c": 29.3,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 6.4,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-16T13:00",
-    "safe_minutes": 1111,
+    "safe_minutes": 26,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,7 +327,7 @@
       },
       {
         "time": "2026-06-16T08:00",
-        "uv": 1.7
+        "uv": 1.6
       },
       {
         "time": "2026-06-16T09:00",
@@ -364,7 +359,7 @@
       },
       {
         "time": "2026-06-16T16:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-06-16T17:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-16T05:50:54+02:00"
+    "fetched_at": "2026-06-16T11:24:13+02:00"
   }
 }
