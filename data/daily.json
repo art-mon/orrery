@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000st96",
+        "title": "M5.2 Earthquake - 44 km ESE of Palu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-16T03:30:53.802000Z",
+        "coordinates": [
+          120.2135,
+          -1.1104
+        ]
+      },
+      {
+        "id": "us7000st95",
+        "title": "M6.7 Earthquake - 46 km ESE of Palu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-06-16T03:27:44.390000Z",
+        "coordinates": [
+          120.2301,
+          -1.1312
+        ]
+      },
+      {
         "id": "us7000st5e",
         "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
         "category": "Earthquake",
@@ -139,71 +159,11 @@
           125.1803,
           5.774
         ]
-      },
-      {
-        "id": "us7000ssje",
-        "title": "M5.2 Earthquake - 65 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-12T19:10:03.582000Z",
-        "coordinates": [
-          125.3914,
-          4.8121
-        ]
-      },
-      {
-        "id": "us7000ssit",
-        "title": "M5.0 Earthquake - 30 km SSW of Daliao, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-12T17:58:40.438000Z",
-        "coordinates": [
-          124.8728,
-          5.5979
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2015 MC)",
-        "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-06-15",
-        "miss_distance_km": 10991001,
-        "velocity_kmh": 35242
-      },
-      {
-        "name": "(2018 PY7)",
-        "hazardous": false,
-        "diameter_m": 26,
-        "close_approach_date": "2026-06-15",
-        "miss_distance_km": 24463746,
-        "velocity_kmh": 31097
-      },
-      {
-        "name": "(2017 DS109)",
-        "hazardous": false,
-        "diameter_m": 35,
-        "close_approach_date": "2026-06-15",
-        "miss_distance_km": 26221131,
-        "velocity_kmh": 57318
-      },
-      {
-        "name": "(2010 AJ30)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-06-15",
-        "miss_distance_km": 65071521,
-        "velocity_kmh": 53714
-      },
-      {
-        "name": "(2012 XK16)",
-        "hazardous": false,
-        "diameter_m": 186,
-        "close_approach_date": "2026-06-15",
-        "miss_distance_km": 67244884,
-        "velocity_kmh": 71883
-      },
       {
         "name": "(2015 BM510)",
         "hazardous": false,
@@ -243,59 +203,99 @@
         "close_approach_date": "2026-06-17",
         "miss_distance_km": 67899244,
         "velocity_kmh": 73026
+      },
+      {
+        "name": "(2011 BG24)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-06-17",
+        "miss_distance_km": 70868678,
+        "velocity_kmh": 21700
+      },
+      {
+        "name": "(2010 EX11)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-06-17",
+        "miss_distance_km": 74548109,
+        "velocity_kmh": 60614
+      },
+      {
+        "name": "(2003 LN6)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 1417040,
+        "velocity_kmh": 14112
+      },
+      {
+        "name": "(2002 WX12)",
+        "hazardous": false,
+        "diameter_m": 583,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 20750421,
+        "velocity_kmh": 66703
+      },
+      {
+        "name": "(2014 QZ295)",
+        "hazardous": false,
+        "diameter_m": 65,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 34894134,
+        "velocity_kmh": 26651
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 16.1,
-    "feels_c": 15.9,
-    "humidity": 84,
+    "city": "City of Zagreb",
+    "temp_c": 14.2,
+    "feels_c": 14.0,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 2.2
+    "icon": "02d",
+    "wind_kmh": 1.0
   },
   "forecast_today": {
     "date": "2026-06-16",
     "city": "City of Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 28.5,
-    "humidity": 72,
+    "temp_min_c": 14.2,
+    "temp_max_c": 29.9,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 4.0,
-    "samples": 9
+    "icon": "02d",
+    "wind_kmh": 4.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-17",
     "city": "City of Zagreb",
     "temp_min_c": 16.1,
-    "temp_max_c": 30.1,
-    "humidity": 71,
+    "temp_max_c": 32.0,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-06-18",
     "city": "City of Zagreb",
-    "temp_min_c": 18.1,
-    "temp_max_c": 29.7,
-    "humidity": 66,
+    "temp_min_c": 18.2,
+    "temp_max_c": 29.9,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 3.5
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-16T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,15 +364,15 @@
       },
       {
         "time": "2026-06-16T16:00",
-        "uv": 4.8
+        "uv": 5.2
       },
       {
         "time": "2026-06-16T17:00",
-        "uv": 3.4
+        "uv": 3.5
       },
       {
         "time": "2026-06-16T18:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-06-16T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-16T01:01:14+02:00"
+    "fetched_at": "2026-06-16T05:50:54+02:00"
   }
 }
