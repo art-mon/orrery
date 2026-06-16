@@ -6,6 +6,56 @@
   "events": {
     "events": [
       {
+        "id": "us7000stdb",
+        "title": "M5.0 Earthquake - 261 km SSE of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-06-16T11:14:17.721000Z",
+        "coordinates": [
+          95.4313,
+          37.8819
+        ]
+      },
+      {
+        "id": "us7000std7",
+        "title": "M5.5 Earthquake - 4 km NW of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-16T10:46:34.658000Z",
+        "coordinates": [
+          139.8371,
+          35.9814
+        ]
+      },
+      {
+        "id": "us7000stcs",
+        "title": "M5.4 Earthquake - 277 km S of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-06-16T09:45:26.434000Z",
+        "coordinates": [
+          95.2125,
+          37.6989
+        ]
+      },
+      {
+        "id": "us7000std2",
+        "title": "M5.2 Earthquake - 242 km SSE of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-06-16T09:42:35.214000Z",
+        "coordinates": [
+          95.4312,
+          38.0579
+        ]
+      },
+      {
+        "id": "us7000stbz",
+        "title": "M6.3 Earthquake - 260 km SSE of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-06-16T09:06:55.226000Z",
+        "coordinates": [
+          95.4028,
+          37.8888
+        ]
+      },
+      {
         "id": "us7000stbp",
         "title": "M5.0 Earthquake - 49 km ESE of Palu, Indonesia",
         "category": "Earthquake",
@@ -104,56 +154,6 @@
           125.7394,
           5.2843
         ]
-      },
-      {
-        "id": "us7000ssq9",
-        "title": "M5.1 Earthquake - 2 km S of Cerro de Piedra, Mexico",
-        "category": "Earthquake",
-        "date": "2026-06-13T18:20:42.423000Z",
-        "coordinates": [
-          -99.6335,
-          16.7529
-        ]
-      },
-      {
-        "id": "us7000ssp2",
-        "title": "M5.1 Earthquake - 118 km ESE of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-13T12:05:34.332000Z",
-        "coordinates": [
-          126.1267,
-          1.0796
-        ]
-      },
-      {
-        "id": "us7000ssp1",
-        "title": "M5.0 Earthquake - 24 km W of Ovalle, Chile",
-        "category": "Earthquake",
-        "date": "2026-06-13T12:04:14.390000Z",
-        "coordinates": [
-          -71.4544,
-          -30.6288
-        ]
-      },
-      {
-        "id": "us7000ssnz",
-        "title": "M5.1 Earthquake - 207 km WSW of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-06-13T11:24:54.194000Z",
-        "coordinates": [
-          -179.5103,
-          51.3511
-        ]
-      },
-      {
-        "id": "us7000ssnv",
-        "title": "M5.0 Earthquake - 93 km SSW of Unalaska, Alaska",
-        "category": "Earthquake",
-        "date": "2026-06-13T10:38:47.612000Z",
-        "coordinates": [
-          -166.9697,
-          53.0785
-        ]
       }
     ]
   },
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.7,
-    "feels_c": 23.8,
-    "humidity": 63,
+    "city": "City of Zagreb",
+    "temp_c": 27.6,
+    "feels_c": 27.6,
+    "humidity": 45,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.2
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.9
   },
   "forecast_today": {
     "date": "2026-06-16",
-    "city": "Donji grad",
-    "temp_min_c": 18.0,
-    "temp_max_c": 27.3,
-    "humidity": 62,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.4,
+    "temp_max_c": 27.6,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 5.7,
-    "samples": 5
+    "icon": "04d",
+    "wind_kmh": 5.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-17",
-    "city": "Donji grad",
-    "temp_min_c": 16.6,
-    "temp_max_c": 32.6,
-    "humidity": 65,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.4,
+    "temp_max_c": 29.6,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.8
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.5
   },
   "forecast_day_after": {
     "date": "2026-06-18",
-    "city": "Donji grad",
-    "temp_min_c": 17.9,
-    "temp_max_c": 29.3,
-    "humidity": 71,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.8,
+    "temp_max_c": 28.9,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 6.4,
-    "band": "high",
+    "uv": 3.3,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-16T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -359,11 +359,11 @@
       },
       {
         "time": "2026-06-16T16:00",
-        "uv": 5.0
+        "uv": 5.2
       },
       {
         "time": "2026-06-16T17:00",
-        "uv": 3.5
+        "uv": 3.8
       },
       {
         "time": "2026-06-16T18:00",
@@ -371,7 +371,7 @@
       },
       {
         "time": "2026-06-16T19:00",
-        "uv": 1.4
+        "uv": 1.5
       },
       {
         "time": "2026-06-16T20:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-16T11:24:13+02:00"
+    "fetched_at": "2026-06-16T17:03:26+02:00"
   }
 }
