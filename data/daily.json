@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Moons, Rings, Shadows, Clouds: Saturn (Cassini)",
+    "date": "2026-06-16",
+    "explanation": "While cruising around Saturn, be on the lookout for picturesque arrangements of moons, rings, and shadows. One such striking sight occurred in 2005 and was captured by the then Saturn-orbiting Cassini spacecraft. In the featured image, moons Mimas (left) and Tethys (right) are visible on either side of Saturn's thin rings, which are seen nearly edge-on.  Across the top of Saturn are dark shadows of the wide rings, exhibiting their impressive complexity. The violet-light image brings up the texture of the backdrop: Saturn's clouds. Cassini orbited Saturn from 2004 until mid-2017, when the robotic spacecraft was directed to dive into Saturn to keep it from contaminating any moons.    Explore the Universe: Random APOD Generator",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/SaturnRingsMoons_Cassini_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/SaturnRingsMoons_Cassini_960.jpg"
   },
   "events": {
     "events": [
@@ -160,22 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2015 BM510)",
-        "hazardous": false,
-        "diameter_m": 58,
-        "close_approach_date": "2026-06-16",
-        "miss_distance_km": 27381536,
-        "velocity_kmh": 19091
-      },
-      {
-        "name": "(2018 YA)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-06-16",
-        "miss_distance_km": 50630993,
-        "velocity_kmh": 24203
-      },
-      {
         "name": "(2018 KH1)",
         "hazardous": false,
         "diameter_m": 248,
@@ -238,30 +227,46 @@
         "close_approach_date": "2026-06-18",
         "miss_distance_km": 34894134,
         "velocity_kmh": 26651
+      },
+      {
+        "name": "(2018 WS)",
+        "hazardous": false,
+        "diameter_m": 30,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 48633599,
+        "velocity_kmh": 18117
+      },
+      {
+        "name": "(2013 NG10)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 53425589,
+        "velocity_kmh": 40356
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.8,
-    "feels_c": 18.7,
-    "humidity": 78,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 2.3
+    "temp_c": 17.3,
+    "feels_c": 17.3,
+    "humidity": 86,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-06-17",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
+    "temp_min_c": 17,
     "temp_max_c": 31.9,
     "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 4.2,
-    "samples": 9
+    "icon": "10n",
+    "wind_kmh": 4.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-18",
@@ -288,7 +293,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.2,
+    "daily_max": 6.7,
     "peak_time": "2026-06-17T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -343,19 +348,19 @@
       },
       {
         "time": "2026-06-17T12:00",
-        "uv": 6.7
+        "uv": 6.2
       },
       {
         "time": "2026-06-17T13:00",
-        "uv": 7.2
+        "uv": 6.7
       },
       {
         "time": "2026-06-17T14:00",
-        "uv": 5.5
+        "uv": 6.7
       },
       {
         "time": "2026-06-17T15:00",
-        "uv": 5.2
+        "uv": 6.2
       },
       {
         "time": "2026-06-17T16:00",
@@ -363,19 +368,19 @@
       },
       {
         "time": "2026-06-17T17:00",
-        "uv": 3.6
+        "uv": 3.9
       },
       {
         "time": "2026-06-17T18:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-06-17T19:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-06-17T20:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-06-17T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-17T00:09:17+02:00"
+    "fetched_at": "2026-06-17T02:13:53+02:00"
   }
 }
