@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-17",
   "apod": {
-    "title": "Longmore 8: The Hamster Wheel Nebula",
-    "date": "2026-06-17",
-    "explanation": "How did a hamster wheel get into space? The Hamster Wheel Nebula (Longmore 8) was discovered by Andrew Longmore in 1976 as a part of a larger survey of the southern sky. This survey employed several improvements in photographic technology, including the use of highly sensitive film, to capture deeper and fainter objects on plates that were examined by eye and catalogued. The featured image, taken at Observatorio El Sauce in Chile, depicts an intricate wheel structure of glowing hydrogen that was thrown out into space by a dying star and ionized by the leftover white dwarf. This structure was barely visible on the original plate, emphasizing the power of modern telescopes and cameras. Two opposing clumps of red hydrogen gas encased in the blue veil of ionized oxygen hint at the presence of a companion to the bright white dwarf at the wheel\u2019s center!",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/hamster_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/hamster.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.5,
-    "feels_c": 20.8,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_c": 29.8,
+    "feels_c": 29.9,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 1.6
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.9
   },
   "forecast_today": {
     "date": "2026-06-17",
     "city": "Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 28.9,
-    "humidity": 64,
+    "temp_min_c": 21.5,
+    "temp_max_c": 29.8,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.0,
-    "samples": 6
+    "icon": "04d",
+    "wind_kmh": 5.6,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-18",
     "city": "Zagreb",
     "temp_min_c": 18.4,
-    "temp_max_c": 30.0,
-    "humidity": 63,
+    "temp_max_c": 30.3,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.3
+    "wind_kmh": 4.6
   },
   "forecast_day_after": {
     "date": "2026-06-19",
     "city": "Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 31.1,
+    "temp_min_c": 18.7,
+    "temp_max_c": 31.4,
     "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.3
   },
   "uv": {
-    "uv": 2.1,
-    "band": "low",
+    "uv": 6.3,
+    "band": "high",
     "daily_max": 6.7,
     "peak_time": "2026-06-17T13:00",
-    "safe_minutes": 78,
+    "safe_minutes": 26,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-17T08:08:18+02:00"
+    "fetched_at": "2026-06-17T13:45:16+02:00"
   }
 }
