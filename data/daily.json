@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-17",
   "apod": {
-    "title": "Longmore 8: The Hamster Wheel Nebula",
-    "date": "2026-06-17",
-    "explanation": "How did a hamster wheel get into space? The Hamster Wheel Nebula (Longmore 8) was discovered by Andrew Longmore in 1976 as a part of a larger survey of the southern sky. This survey employed several improvements in photographic technology, including the use of highly sensitive film, to capture deeper and fainter objects on plates that were examined by eye and catalogued. The featured image, taken at Observatorio El Sauce in Chile, depicts an intricate wheel structure of glowing hydrogen that was thrown out into space by a dying star and ionized by the leftover white dwarf. This structure was barely visible on the original plate, emphasizing the power of modern telescopes and cameras. Two opposing clumps of red hydrogen gas encased in the blue veil of ionized oxygen hint at the presence of a companion to the bright white dwarf at the wheel\u2019s center!",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/hamster_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/hamster.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000stti",
+        "title": "M6.6 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-06-17T18:56:58.250000Z",
+        "coordinates": [
+          -20.0149,
+          -0.5246
+        ]
+      },
       {
         "id": "us7000stn8",
         "title": "M5.2 Earthquake - 258 km SSE of Dunhuang, China",
@@ -149,16 +154,6 @@
           125.2618,
           5.658
         ]
-      },
-      {
-        "id": "us7000st1c",
-        "title": "M6.2 Earthquake - 67 km ESE of Pondaguitan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-15T09:18:38.846000Z",
-        "coordinates": [
-          126.7611,
-          6.193
-        ]
       }
     ]
   },
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.1,
-    "feels_c": 24.2,
-    "humidity": 66,
+    "temp_c": 20.9,
+    "feels_c": 21.2,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.3
+    "icon": "04n",
+    "wind_kmh": 1.2
   },
   "forecast_today": {
     "date": "2026-06-17",
     "city": "City of Zagreb",
-    "temp_min_c": 23.2,
-    "temp_max_c": 24.1,
-    "humidity": 68,
+    "temp_min_c": 20.9,
+    "temp_max_c": 20.9,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.2,
-    "samples": 2
+    "icon": "04n",
+    "wind_kmh": 1.2,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-18",
     "city": "City of Zagreb",
-    "temp_min_c": 18.3,
-    "temp_max_c": 30.3,
-    "humidity": 65,
+    "temp_min_c": 18.9,
+    "temp_max_c": 30.6,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-06-19",
     "city": "City of Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 31.0,
-    "humidity": 62,
-    "condition": "Clear",
+    "temp_min_c": 19.8,
+    "temp_max_c": 32.3,
+    "humidity": 63,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-06-17T13:00",
-    "safe_minutes": 667,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-17T20:13:10+02:00"
+    "fetched_at": "2026-06-17T23:03:17+02:00"
   }
 }
