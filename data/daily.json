@@ -1,23 +1,18 @@
 {
   "generated": "2026-06-18",
   "apod": {
-    "title": "Longmore 8: The Hamster Wheel Nebula",
-    "date": "2026-06-17",
-    "explanation": "How did a hamster wheel get into space? The Hamster Wheel Nebula (Longmore 8) was discovered by Andrew Longmore in 1976 as a part of a larger survey of the southern sky. This survey employed several improvements in photographic technology, including the use of highly sensitive film, to capture deeper and fainter objects on plates that were examined by eye and catalogued. The featured image, taken at Observatorio El Sauce in Chile, depicts an intricate wheel structure of glowing hydrogen that was thrown out into space by a dying star and ionized by the leftover white dwarf. This structure was barely visible on the original plate, emphasizing the power of modern telescopes and cameras. Two opposing clumps of red hydrogen gas encased in the blue veil of ionized oxygen hint at the presence of a companion to the bright white dwarf at the wheel\u2019s center!",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/hamster_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/hamster.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
       {
-        "id": "us7000su6s",
-        "title": "M5.0 Earthquake - 68 km ESE of Bobon, Philippines",
+        "id": "us7000su8c",
+        "title": "M5.1 Earthquake - central Mid-Atlantic Ridge",
         "category": "Earthquake",
-        "date": "2026-06-17T21:49:26.080000Z",
+        "date": "2026-06-18T02:44:43.145000Z",
         "coordinates": [
-          126.8825,
-          6.5857
+          -19.2026,
+          -0.342
         ]
       },
       {
@@ -165,46 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2018 KH1)",
-        "hazardous": false,
-        "diameter_m": 248,
-        "close_approach_date": "2026-06-17",
-        "miss_distance_km": 24900995,
-        "velocity_kmh": 50347
-      },
-      {
-        "name": "(2014 MZ5)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-06-17",
-        "miss_distance_km": 35275098,
-        "velocity_kmh": 46878
-      },
-      {
-        "name": "(2013 CS83)",
-        "hazardous": false,
-        "diameter_m": 210,
-        "close_approach_date": "2026-06-17",
-        "miss_distance_km": 67899244,
-        "velocity_kmh": 73026
-      },
-      {
-        "name": "(2011 BG24)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-06-17",
-        "miss_distance_km": 70868678,
-        "velocity_kmh": 21700
-      },
-      {
-        "name": "(2010 EX11)",
-        "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-06-17",
-        "miss_distance_km": 74548109,
-        "velocity_kmh": 60614
-      },
-      {
         "name": "(2003 LN6)",
         "hazardous": false,
         "diameter_m": 68,
@@ -243,55 +198,95 @@
         "close_approach_date": "2026-06-18",
         "miss_distance_km": 53425589,
         "velocity_kmh": 40356
+      },
+      {
+        "name": "(2011 ET74)",
+        "hazardous": false,
+        "diameter_m": 34,
+        "close_approach_date": "2026-06-18",
+        "miss_distance_km": 56976627,
+        "velocity_kmh": 24780
+      },
+      {
+        "name": "17182 (1999 VU)",
+        "hazardous": false,
+        "diameter_m": 2229,
+        "close_approach_date": "2026-06-19",
+        "miss_distance_km": 26351461,
+        "velocity_kmh": 49733
+      },
+      {
+        "name": "(2001 MY7)",
+        "hazardous": false,
+        "diameter_m": 262,
+        "close_approach_date": "2026-06-19",
+        "miss_distance_km": 29349367,
+        "velocity_kmh": 62829
+      },
+      {
+        "name": "(2019 UG2)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-06-19",
+        "miss_distance_km": 63821319,
+        "velocity_kmh": 42894
+      },
+      {
+        "name": "(2014 WA201)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-06-20",
+        "miss_distance_km": 20247474,
+        "velocity_kmh": 53526
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.9,
-    "humidity": 84,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.6
+    "temp_c": 19.8,
+    "feels_c": 20.1,
+    "humidity": 87,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-06-18",
-    "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 30.6,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.8,
+    "temp_max_c": 29.4,
     "humidity": 69,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.8,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 4.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-19",
-    "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 32.3,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.0,
+    "temp_max_c": 31.0,
     "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.1
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-06-20",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.9,
-    "temp_max_c": 32.9,
-    "humidity": 58,
+    "temp_max_c": 32.8,
+    "humidity": 59,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.0
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-18T13:00",
@@ -360,19 +355,19 @@
       },
       {
         "time": "2026-06-18T15:00",
-        "uv": 6.6
+        "uv": 6.5
       },
       {
         "time": "2026-06-18T16:00",
-        "uv": 5.6
+        "uv": 4.3
       },
       {
         "time": "2026-06-18T17:00",
-        "uv": 4.0
+        "uv": 1.8
       },
       {
         "time": "2026-06-18T18:00",
-        "uv": 2.5
+        "uv": 2.3
       },
       {
         "time": "2026-06-18T19:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-18T01:21:29+02:00"
+    "fetched_at": "2026-06-18T05:40:26+02:00"
   }
 }
