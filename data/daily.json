@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000su9f",
+        "title": "M5.3 Earthquake - 1 km S of Kablalan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-18T06:57:37.092000Z",
+        "coordinates": [
+          125.1953,
+          5.7634
+        ]
+      },
+      {
+        "id": "us7000su8i",
+        "title": "M5.4 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-06-18T03:43:35.838000Z",
+        "coordinates": [
+          -19.9332,
+          -0.4673
+        ]
+      },
+      {
         "id": "us7000su8c",
         "title": "M5.1 Earthquake - central Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           120.2135,
           -1.1104
         ]
-      },
-      {
-        "id": "us7000st95",
-        "title": "M6.7 Earthquake - 43 km ESE of Palu, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-16T03:27:44.418000Z",
-        "coordinates": [
-          120.199,
-          -1.1173
-        ]
-      },
-      {
-        "id": "us7000st5e",
-        "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
-        "category": "Earthquake",
-        "date": "2026-06-15T18:20:45.112000Z",
-        "coordinates": [
-          170.3866,
-          -23.3381
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 20.1,
-    "humidity": 87,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.6
+    "temp_c": 28.7,
+    "feels_c": 29.3,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.8
   },
   "forecast_today": {
     "date": "2026-06-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 29.4,
-    "humidity": 69,
+    "city": "Donji grad",
+    "temp_min_c": 21.9,
+    "temp_max_c": 28.9,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 4.1,
-    "samples": 7
+    "icon": "03d",
+    "wind_kmh": 4.8,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.0,
+    "city": "Donji grad",
+    "temp_min_c": 19.9,
     "temp_max_c": 31.0,
-    "humidity": 63,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-06-20",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 19.9,
     "temp_max_c": 32.8,
-    "humidity": 59,
+    "humidity": 60,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.5
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 5.6,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-18T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -327,11 +327,11 @@
       },
       {
         "time": "2026-06-18T08:00",
-        "uv": 1.7
+        "uv": 1.1
       },
       {
         "time": "2026-06-18T09:00",
-        "uv": 3.0
+        "uv": 2.5
       },
       {
         "time": "2026-06-18T10:00",
@@ -355,19 +355,19 @@
       },
       {
         "time": "2026-06-18T15:00",
-        "uv": 6.5
+        "uv": 6.6
       },
       {
         "time": "2026-06-18T16:00",
-        "uv": 4.3
+        "uv": 5.2
       },
       {
         "time": "2026-06-18T17:00",
-        "uv": 1.8
+        "uv": 3.5
       },
       {
         "time": "2026-06-18T18:00",
-        "uv": 2.3
+        "uv": 2.4
       },
       {
         "time": "2026-06-18T19:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-18T05:40:26+02:00"
+    "fetched_at": "2026-06-18T10:44:07+02:00"
   }
 }
