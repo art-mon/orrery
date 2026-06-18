@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-18",
   "apod": {
-    "title": "Possible Supernova Remnant in Galactic Center",
-    "date": "2026-06-18",
-    "explanation": "Do you see that blue blob to the lower right of the image center?   Astronomers think that it shows where a massive star exploded as a supernova whose light reached Earth 1,700 years ago.   The image combines optical data from the PanSTARRS telescopes in Hawaii (background stars in red, green, and blue), radio from the MeerKAT telescope in South Africa (large red cloud) and X-rays from NASA's Chandra X-ray Observatory and ESA\u2019s XMM-Newton (shown in blue).   The large cloud is a star forming region called Sagittarius C, which is approximately 50 light-years in extent and about 26,000 light-years from Earth.   It is located only about 260 light-years from the supermassive black hole in the center of the Galaxy (off to the left of the image).   If the blue blob is confirmed to be a supernova remnant, it would be one of the closest ever discovered to the Galactic Center.   In this dense region, the deaths of massive stars are connected to the birth of new stars through gas and magnetic fields in a complex way.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/sgrc.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/sgrc_lg.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sucj",
+        "title": "M5.3 Earthquake - 63 km ESE of Bobon, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-18T16:33:58.155000Z",
+        "coordinates": [
+          126.809,
+          6.5597
+        ]
+      },
       {
         "id": "us7000subg",
         "title": "M5.0 Earthquake - 211 km WSW of Adak, Alaska",
@@ -149,16 +154,6 @@
           120.2567,
           -1.1234
         ]
-      },
-      {
-        "id": "us7000sta1",
-        "title": "M5.1 Earthquake - 49 km SE of Palu, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-16T04:14:01.591000Z",
-        "coordinates": [
-          120.2257,
-          -1.1746
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 29.8,
-    "feels_c": 30.8,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_c": 23.4,
+    "feels_c": 23.8,
+    "humidity": 77,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 9.3
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 5.3
   },
   "forecast_today": {
     "date": "2026-06-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.7,
-    "temp_max_c": 29.8,
-    "humidity": 59,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 6.2,
-    "samples": 3
+    "city": "Zagreb",
+    "temp_min_c": 23.4,
+    "temp_max_c": 23.7,
+    "humidity": 77,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 3.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 31.0,
-    "humidity": 68,
+    "city": "Zagreb",
+    "temp_min_c": 20.0,
+    "temp_max_c": 30.9,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.1
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-06-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.3,
+    "city": "Zagreb",
+    "temp_min_c": 21.2,
     "temp_max_c": 32.9,
-    "humidity": 60,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 2.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-18T13:00",
-    "safe_minutes": 79,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,19 +355,19 @@
       },
       {
         "time": "2026-06-18T15:00",
-        "uv": 6.3
+        "uv": 6.5
       },
       {
         "time": "2026-06-18T16:00",
-        "uv": 3.5
+        "uv": 4.5
       },
       {
         "time": "2026-06-18T17:00",
-        "uv": 2.0
+        "uv": 2.1
       },
       {
         "time": "2026-06-18T18:00",
-        "uv": 2.9
+        "uv": 2.8
       },
       {
         "time": "2026-06-18T19:00",
@@ -380,7 +375,7 @@
       },
       {
         "time": "2026-06-18T20:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-06-18T21:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-18T18:28:29+02:00"
+    "fetched_at": "2026-06-18T21:25:52+02:00"
   }
 }
