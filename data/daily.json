@@ -1,15 +1,50 @@
 {
   "generated": "2026-06-19",
   "apod": {
-    "title": "Starry Night II",
-    "date": "2026-06-19",
-    "explanation": "Does this scene look familiar? It is a modern recreation of the famous painting Starry Night by Vincent van Gogh.  Both the image and the painting depict a tall tree on the left, a crescent moon on the upper right, the planet Venus just to the right of the tree, a foreground horizon rising from left to right, and clouds above the horizon. Differences include that the photograph was taken in mid-April earlier this year in Cascavel, Brazil, while the painting was composed in Saint-R\u00e9my-de-Provence, France, in 1889.  The original Starry Night is considered by many to be one of the three most famous paintings in the world today and a statement about the wonders of the night sky. Today is (roughly) the anniversary of the morning that van Gogh saw the sky that he later painted in his version of Starry Night.    Night Sky Jigsaw: Astronomy Puzzle of the Day",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_4080.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000suik",
+        "title": "M5.2 Earthquake - 167 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-19T08:03:40.851000Z",
+        "coordinates": [
+          161.06,
+          52.7416
+        ]
+      },
+      {
+        "id": "us7000suii",
+        "title": "M5.8 Earthquake - 171 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-19T07:52:57.734000Z",
+        "coordinates": [
+          161.1149,
+          52.7355
+        ]
+      },
+      {
+        "id": "us7000sui3",
+        "title": "M6.6 Earthquake - 133 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-19T06:52:31.597000Z",
+        "coordinates": [
+          160.5652,
+          52.7943
+        ]
+      },
+      {
+        "id": "us7000sui2",
+        "title": "M6.0 Earthquake - 156 km ESE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-06-19T06:51:31.085000Z",
+        "coordinates": [
+          160.8644,
+          52.69
+        ]
+      },
       {
         "id": "us7000suds",
         "title": "M5.3 Earthquake - Izu Islands, Japan region",
@@ -119,46 +154,6 @@
           95.4313,
           37.8819
         ]
-      },
-      {
-        "id": "us7000std7",
-        "title": "M5.5 Earthquake - 4 km NW of Noda, Japan",
-        "category": "Earthquake",
-        "date": "2026-06-16T10:46:34.658000Z",
-        "coordinates": [
-          139.8371,
-          35.9814
-        ]
-      },
-      {
-        "id": "us7000stcs",
-        "title": "M5.4 Earthquake - 277 km S of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-16T09:45:26.434000Z",
-        "coordinates": [
-          95.2125,
-          37.6989
-        ]
-      },
-      {
-        "id": "us7000std2",
-        "title": "M5.2 Earthquake - 242 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-16T09:42:35.214000Z",
-        "coordinates": [
-          95.4312,
-          38.0579
-        ]
-      },
-      {
-        "id": "us7000stbz",
-        "title": "M6.3 Earthquake - 260 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-16T09:06:55.226000Z",
-        "coordinates": [
-          95.4028,
-          37.8888
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 24.1,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 0.9
+    "city": "City of Zagreb",
+    "temp_c": 32.2,
+    "feels_c": 34.2,
+    "humidity": 48,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.3
   },
   "forecast_today": {
     "date": "2026-06-19",
     "city": "Zagreb",
-    "temp_min_c": 23.4,
-    "temp_max_c": 29.4,
-    "humidity": 61,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.9,
-    "samples": 6
+    "temp_min_c": 23.0,
+    "temp_max_c": 32.2,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 6.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-20",
     "city": "Zagreb",
     "temp_min_c": 21.1,
-    "temp_max_c": 32.5,
+    "temp_max_c": 32.6,
     "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.1
   },
   "forecast_day_after": {
     "date": "2026-06-21",
     "city": "Zagreb",
-    "temp_min_c": 19.0,
-    "temp_max_c": 33.9,
-    "humidity": 61,
+    "temp_min_c": 20.1,
+    "temp_max_c": 33.6,
+    "humidity": 62,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.4
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 2.5,
-    "band": "low",
+    "uv": 7.2,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-19T13:00",
-    "safe_minutes": 67,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T08:15:40+02:00"
+    "fetched_at": "2026-06-19T13:20:07+02:00"
   }
 }
