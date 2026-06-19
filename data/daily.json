@@ -1,12 +1,12 @@
 {
   "generated": "2026-06-19",
   "apod": {
-    "title": "Possible Supernova Remnant in Galactic Center",
-    "date": "2026-06-18",
-    "explanation": "Do you see that blue blob to the lower right of the image center?   Astronomers think that it shows where a massive star exploded as a supernova whose light reached Earth 1,700 years ago.   The image combines optical data from the PanSTARRS telescopes in Hawaii (background stars in red, green, and blue), radio from the MeerKAT telescope in South Africa (large red cloud) and X-rays from NASA's Chandra X-ray Observatory and ESA\u2019s XMM-Newton (shown in blue).   The large cloud is a star forming region called Sagittarius C, which is approximately 50 light-years in extent and about 26,000 light-years from Earth.   It is located only about 260 light-years from the supermassive black hole in the center of the Galaxy (off to the left of the image).   If the blue blob is confirmed to be a supernova remnant, it would be one of the closest ever discovered to the Galactic Center.   In this dense region, the deaths of massive stars are connected to the birth of new stars through gas and magnetic fields in a complex way.",
+    "title": "Starry Night II",
+    "date": "2026-06-19",
+    "explanation": "Does this scene look familiar? It is a modern recreation of the famous painting Starry Night by Vincent van Gogh.  Both the image and the painting depict a tall tree on the left, a crescent moon on the upper right, the planet Venus just to the right of the tree, a foreground horizon rising from left to right, and clouds above the horizon. Differences include that the photograph was taken in mid-April earlier this year in Cascavel, Brazil, while the painting was composed in Saint-R\u00e9my-de-Provence, France, in 1889.  The original Starry Night is considered by many to be one of the three most famous paintings in the world today and a statement about the wonders of the night sky. Today is (roughly) the anniversary of the morning that van Gogh saw the sky that he later painted in his version of Starry Night.    Night Sky Jigsaw: Astronomy Puzzle of the Day",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/sgrc.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/sgrc_lg.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_4080.jpg"
   },
   "events": {
     "events": [
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.9,
+    "city": "Zagreb",
+    "temp_c": 23.7,
+    "feels_c": 24.1,
     "humidity": 76,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 2.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 0.9
   },
   "forecast_today": {
     "date": "2026-06-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.7,
-    "temp_max_c": 30.9,
-    "humidity": 63,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "04n",
-    "wind_kmh": 4.3,
-    "samples": 8
+    "city": "Zagreb",
+    "temp_min_c": 23.4,
+    "temp_max_c": 29.4,
+    "humidity": 61,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 4.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 32.9,
-    "humidity": 59,
+    "city": "Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 32.5,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-06-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.9,
-    "temp_max_c": 34.3,
-    "humidity": 62,
+    "city": "Zagreb",
+    "temp_min_c": 19.0,
+    "temp_max_c": 33.9,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.4
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.5,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-19T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 67,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-06-19T11:00",
-        "uv": 5.8
+        "uv": 5.7
       },
       {
         "time": "2026-06-19T12:00",
@@ -368,11 +368,11 @@
       },
       {
         "time": "2026-06-19T17:00",
-        "uv": 4.3
+        "uv": 4.2
       },
       {
         "time": "2026-06-19T18:00",
-        "uv": 2.9
+        "uv": 2.5
       },
       {
         "time": "2026-06-19T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T02:24:20+02:00"
+    "fetched_at": "2026-06-19T08:15:40+02:00"
   }
 }
