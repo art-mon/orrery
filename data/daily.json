@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Starry Night II",
+    "date": "2026-06-19",
+    "explanation": "Does this scene look familiar? It is a modern recreation of the famous painting Starry Night by Vincent van Gogh.  Both the image and the painting depict a tall tree on the left, a crescent moon on the upper right, the planet Venus just to the right of the tree, a foreground horizon rising from left to right, and clouds above the horizon. Differences include that the photograph was taken in mid-April earlier this year in Cascavel, Brazil, while the painting was composed in Saint-R\u00e9my-de-Provence, France, in 1889.  The original Starry Night is considered by many to be one of the three most famous paintings in the world today and a statement about the wonders of the night sky. Today is (roughly) the anniversary of the morning that van Gogh saw the sky that he later painted in his version of Starry Night.    Night Sky Jigsaw: Astronomy Puzzle of the Day",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_4080.jpg"
   },
   "events": {
     "events": [
@@ -243,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.4,
-    "feels_c": 23.8,
-    "humidity": 74,
+    "temp_c": 22.4,
+    "feels_c": 22.7,
+    "humidity": 78,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.0
+    "wind_kmh": 2.4
   },
   "forecast_today": {
     "date": "2026-06-19",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 23.4,
-    "humidity": 74,
+    "temp_min_c": 22.4,
+    "temp_max_c": 22.4,
+    "humidity": 78,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.7,
-    "samples": 2
+    "wind_kmh": 2.4,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-20",
     "city": "Zagreb",
-    "temp_min_c": 20.3,
+    "temp_min_c": 20.2,
     "temp_max_c": 32.6,
     "humidity": 57,
     "condition": "Clear",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T21:46:43+02:00"
+    "fetched_at": "2026-06-19T23:07:54+02:00"
   }
 }
