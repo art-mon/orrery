@@ -1,15 +1,20 @@
 {
-  "generated": "2026-06-19",
+  "generated": "2026-06-20",
   "apod": {
-    "title": "Starry Night II",
-    "date": "2026-06-19",
-    "explanation": "Does this scene look familiar? It is a modern recreation of the famous painting Starry Night by Vincent van Gogh.  Both the image and the painting depict a tall tree on the left, a crescent moon on the upper right, the planet Venus just to the right of the tree, a foreground horizon rising from left to right, and clouds above the horizon. Differences include that the photograph was taken in mid-April earlier this year in Cascavel, Brazil, while the painting was composed in Saint-R\u00e9my-de-Provence, France, in 1889.  The original Starry Night is considered by many to be one of the three most famous paintings in the world today and a statement about the wonders of the night sky. Today is (roughly) the anniversary of the morning that van Gogh saw the sky that he later painted in his version of Starry Night.    Night Sky Jigsaw: Astronomy Puzzle of the Day",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_4080.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000suqu",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-06-19T21:08:29.057000Z",
+        "coordinates": [
+          -26.5917,
+          -59.3446
+        ]
+      },
       {
         "id": "us7000suik",
         "title": "M5.2 Earthquake - 167 km ESE of Petropavlovsk-Kamchatsky, Russia",
@@ -149,16 +154,6 @@
           119.3624,
           -9.6277
         ]
-      },
-      {
-        "id": "us7000stdb",
-        "title": "M5.0 Earthquake - 261 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-16T11:14:17.721000Z",
-        "coordinates": [
-          95.4313,
-          37.8819
-        ]
       }
     ]
   },
@@ -247,41 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.4,
-    "feels_c": 22.7,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 21.4,
+    "feels_c": 21.7,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 2.4
+    "wind_kmh": 1.9
   },
   "forecast_today": {
-    "date": "2026-06-19",
-    "city": "Zagreb",
-    "temp_min_c": 22.4,
-    "temp_max_c": 22.4,
-    "humidity": 78,
+    "date": "2026-06-20",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.5,
+    "temp_max_c": 32.6,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.4,
-    "samples": 1
+    "wind_kmh": 4.3,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-20",
-    "city": "Zagreb",
-    "temp_min_c": 20.2,
-    "temp_max_c": 32.6,
-    "humidity": 57,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.6
-  },
-  "forecast_day_after": {
     "date": "2026-06-21",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.1,
     "temp_max_c": 33.7,
     "humidity": 60,
@@ -290,111 +274,122 @@
     "icon": "01d",
     "wind_kmh": 5.6
   },
+  "forecast_day_after": {
+    "date": "2026-06-22",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.7,
+    "temp_max_c": 33.1,
+    "humidity": 61,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.6
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
-    "peak_time": "2026-06-19T13:00",
+    "peak_time": "2026-06-20T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-19T00:00",
+        "time": "2026-06-20T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T01:00",
+        "time": "2026-06-20T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T02:00",
+        "time": "2026-06-20T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T03:00",
+        "time": "2026-06-20T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T04:00",
+        "time": "2026-06-20T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T05:00",
+        "time": "2026-06-20T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T06:00",
+        "time": "2026-06-20T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-19T07:00",
+        "time": "2026-06-20T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-19T08:00",
+        "time": "2026-06-20T08:00",
         "uv": 1.7
       },
       {
-        "time": "2026-06-19T09:00",
+        "time": "2026-06-20T09:00",
         "uv": 3.0
       },
       {
-        "time": "2026-06-19T10:00",
+        "time": "2026-06-20T10:00",
         "uv": 4.5
       },
       {
-        "time": "2026-06-19T11:00",
+        "time": "2026-06-20T11:00",
         "uv": 5.8
       },
       {
-        "time": "2026-06-19T12:00",
+        "time": "2026-06-20T12:00",
         "uv": 6.7
       },
       {
-        "time": "2026-06-19T13:00",
+        "time": "2026-06-20T13:00",
         "uv": 7.2
       },
       {
-        "time": "2026-06-19T14:00",
+        "time": "2026-06-20T14:00",
         "uv": 7.2
       },
       {
-        "time": "2026-06-19T15:00",
+        "time": "2026-06-20T15:00",
         "uv": 6.7
       },
       {
-        "time": "2026-06-19T16:00",
-        "uv": 5.3
+        "time": "2026-06-20T16:00",
+        "uv": 5.7
       },
       {
-        "time": "2026-06-19T17:00",
-        "uv": 3.2
+        "time": "2026-06-20T17:00",
+        "uv": 4.3
       },
       {
-        "time": "2026-06-19T18:00",
-        "uv": 2.5
+        "time": "2026-06-20T18:00",
+        "uv": 3.0
       },
       {
-        "time": "2026-06-19T19:00",
+        "time": "2026-06-20T19:00",
         "uv": 1.6
       },
       {
-        "time": "2026-06-19T20:00",
+        "time": "2026-06-20T20:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-19T21:00",
+        "time": "2026-06-20T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-19T22:00",
+        "time": "2026-06-20T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-19T23:00",
+        "time": "2026-06-20T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T23:07:54+02:00"
+    "fetched_at": "2026-06-20T00:54:19+02:00"
   }
 }
