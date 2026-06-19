@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Starry Night II",
+    "date": "2026-06-19",
+    "explanation": "Does this scene look familiar? It is a modern recreation of the famous painting Starry Night by Vincent van Gogh.  Both the image and the painting depict a tall tree on the left, a crescent moon on the upper right, the planet Venus just to the right of the tree, a foreground horizon rising from left to right, and clouds above the horizon. Differences include that the photograph was taken in mid-April earlier this year in Cascavel, Brazil, while the painting was composed in Saint-R\u00e9my-de-Provence, France, in 1889.  The original Starry Night is considered by many to be one of the three most famous paintings in the world today and a statement about the wonders of the night sky. Today is (roughly) the anniversary of the morning that van Gogh saw the sky that he later painted in his version of Starry Night.    Night Sky Jigsaw: Astronomy Puzzle of the Day",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/StarryNight2_Guerra_4080.jpg"
   },
   "events": {
     "events": [
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 32.2,
-    "feels_c": 34.2,
-    "humidity": 48,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.3
+    "city": "Zagreb",
+    "temp_c": 31.6,
+    "feels_c": 32.8,
+    "humidity": 46,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 11.7
   },
   "forecast_today": {
     "date": "2026-06-19",
     "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 32.2,
+    "temp_min_c": 26.2,
+    "temp_max_c": 31.6,
     "humidity": 54,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 6.8,
-    "samples": 5
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 6.4,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-20",
     "city": "Zagreb",
-    "temp_min_c": 21.1,
-    "temp_max_c": 32.6,
-    "humidity": 57,
+    "temp_min_c": 20.2,
+    "temp_max_c": 33.4,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.1
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-06-21",
     "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 33.6,
-    "humidity": 62,
-    "condition": "Clouds",
+    "temp_min_c": 20.8,
+    "temp_max_c": 34.7,
+    "humidity": 54,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 7.2,
-    "band": "high",
+    "uv": 2.1,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-19T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 78,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,7 +344,7 @@
       },
       {
         "time": "2026-06-19T11:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-06-19T12:00",
@@ -359,15 +364,15 @@
       },
       {
         "time": "2026-06-19T16:00",
-        "uv": 5.7
+        "uv": 4.8
       },
       {
         "time": "2026-06-19T17:00",
-        "uv": 4.2
+        "uv": 1.9
       },
       {
         "time": "2026-06-19T18:00",
-        "uv": 2.5
+        "uv": 2.8
       },
       {
         "time": "2026-06-19T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T13:20:07+02:00"
+    "fetched_at": "2026-06-19T17:09:14+02:00"
   }
 }
