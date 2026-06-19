@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Possible Supernova Remnant in Galactic Center",
+    "date": "2026-06-18",
+    "explanation": "Do you see that blue blob to the lower right of the image center?   Astronomers think that it shows where a massive star exploded as a supernova whose light reached Earth 1,700 years ago.   The image combines optical data from the PanSTARRS telescopes in Hawaii (background stars in red, green, and blue), radio from the MeerKAT telescope in South Africa (large red cloud) and X-rays from NASA's Chandra X-ray Observatory and ESA\u2019s XMM-Newton (shown in blue).   The large cloud is a star forming region called Sagittarius C, which is approximately 50 light-years in extent and about 26,000 light-years from Earth.   It is located only about 260 light-years from the supermassive black hole in the center of the Galaxy (off to the left of the image).   If the blue blob is confirmed to be a supernova remnant, it would be one of the closest ever discovered to the Galactic Center.   In this dense region, the deaths of massive stars are connected to the birth of new stars through gas and magnetic fields in a complex way.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/sgrc.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/sgrc_lg.jpg"
   },
   "events": {
     "events": [
@@ -160,54 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2003 LN6)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 1417040,
-        "velocity_kmh": 14112
-      },
-      {
-        "name": "(2002 WX12)",
-        "hazardous": false,
-        "diameter_m": 583,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 20750421,
-        "velocity_kmh": 66703
-      },
-      {
-        "name": "(2014 QZ295)",
-        "hazardous": false,
-        "diameter_m": 65,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 34894134,
-        "velocity_kmh": 26651
-      },
-      {
-        "name": "(2018 WS)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 48633599,
-        "velocity_kmh": 18117
-      },
-      {
-        "name": "(2013 NG10)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 53425589,
-        "velocity_kmh": 40356
-      },
-      {
-        "name": "(2011 ET74)",
-        "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-06-18",
-        "miss_distance_km": 56976627,
-        "velocity_kmh": 24780
-      },
-      {
         "name": "17182 (1999 VU)",
         "hazardous": false,
         "diameter_m": 2229,
@@ -238,30 +195,78 @@
         "close_approach_date": "2026-06-20",
         "miss_distance_km": 20247474,
         "velocity_kmh": 53526
+      },
+      {
+        "name": "(2020 AP3)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-06-20",
+        "miss_distance_km": 32918736,
+        "velocity_kmh": 20226
+      },
+      {
+        "name": "(2019 NJ5)",
+        "hazardous": false,
+        "diameter_m": 132,
+        "close_approach_date": "2026-06-20",
+        "miss_distance_km": 70941539,
+        "velocity_kmh": 18570
+      },
+      {
+        "name": "(2008 JL24)",
+        "hazardous": false,
+        "diameter_m": 7,
+        "close_approach_date": "2026-06-21",
+        "miss_distance_km": 13918263,
+        "velocity_kmh": 7164
+      },
+      {
+        "name": "(2017 AY3)",
+        "hazardous": false,
+        "diameter_m": 441,
+        "close_approach_date": "2026-06-21",
+        "miss_distance_km": 15298790,
+        "velocity_kmh": 52584
+      },
+      {
+        "name": "470310 (2007 LB15)",
+        "hazardous": true,
+        "diameter_m": 711,
+        "close_approach_date": "2026-06-21",
+        "miss_distance_km": 31218106,
+        "velocity_kmh": 77279
+      },
+      {
+        "name": "(2015 GF27)",
+        "hazardous": false,
+        "diameter_m": 1208,
+        "close_approach_date": "2026-06-21",
+        "miss_distance_km": 45191105,
+        "velocity_kmh": 18966
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 21.0,
-    "feels_c": 21.4,
-    "humidity": 86,
+    "temp_c": 22.6,
+    "feels_c": 22.9,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.3
   },
   "forecast_today": {
     "date": "2026-06-19",
     "city": "City of Zagreb",
-    "temp_min_c": 20.5,
+    "temp_min_c": 21.7,
     "temp_max_c": 30.9,
-    "humidity": 67,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear",
     "icon": "04n",
-    "wind_kmh": 4.0,
-    "samples": 9
+    "wind_kmh": 4.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-20",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-19T00:05:22+02:00"
+    "fetched_at": "2026-06-19T02:24:20+02:00"
   }
 }
