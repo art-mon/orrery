@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000sutj",
+        "title": "M5.2 Earthquake - 10 km S of Kastr\u00ed, Greece",
+        "category": "Earthquake",
+        "date": "2026-06-20T09:37:24.290000Z",
+        "coordinates": [
+          24.0997,
+          34.7437
+        ]
+      },
+      {
         "id": "us7000susv",
         "title": "M5.5 Earthquake - 160 km NE of Georgetown, Saint Helena",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           125.1953,
           5.7634
         ]
-      },
-      {
-        "id": "us7000su8i",
-        "title": "M5.4 Earthquake - central Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-18T03:43:35.838000Z",
-        "coordinates": [
-          -19.9332,
-          -0.4673
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 30.9,
+    "temp_c": 32.2,
     "feels_c": 32.9,
-    "humidity": 52,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.2
+    "wind_kmh": 8.4
   },
   "forecast_today": {
     "date": "2026-06-20",
     "city": "City of Zagreb",
     "temp_min_c": 22.3,
-    "temp_max_c": 31.6,
-    "humidity": 52,
+    "temp_max_c": 32.2,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.1,
-    "samples": 6
+    "wind_kmh": 7.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-21",
@@ -291,11 +291,11 @@
     "wind_kmh": 8.0
   },
   "uv": {
-    "uv": 5.9,
-    "band": "moderate",
+    "uv": 7.3,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-20T13:00",
-    "safe_minutes": 28,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-20T10:51:40+02:00"
+    "fetched_at": "2026-06-20T13:15:45+02:00"
   }
 }
