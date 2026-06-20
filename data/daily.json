@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-20",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Daytime Moon Meets Evening Star",
+    "date": "2026-06-20",
+    "explanation": "Venus is now appearing on the celestial stage as Earth's brilliant evening star, performing with the Moon, other wandering planets, and bright stars in western skies. For evening sky gazers on June 17, the celestial beacon rose after sunset close by a young, slender, crescent Moon. But from some locations the Moon could be seen to occult or pass in front of Venus. And from a backyard observatory in southern British Columbia, Canada, the lunar occultation was played out in daylight. This stunning telescopic snapshot captured a scene in dramatically cloudy skies, following Venus' hour long disappearance, as the evening star emerged beyond the bright lunar limb.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17.jpg"
   },
   "events": {
     "events": [
@@ -242,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.0,
-    "feels_c": 23.4,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 21.4,
+    "feels_c": 21.8,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 6.6
+    "wind_kmh": 4.2
   },
   "forecast_today": {
     "date": "2026-06-20",
-    "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 23.1,
-    "humidity": 76,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.4,
+    "temp_max_c": 21.4,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.4,
-    "samples": 2
+    "wind_kmh": 4.2,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-21",
-    "city": "Zagreb",
-    "temp_min_c": 18.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.5,
     "temp_max_c": 33.8,
-    "humidity": 54,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.8,
     "temp_max_c": 32.5,
     "humidity": 63,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-20T21:22:08+02:00"
+    "fetched_at": "2026-06-20T23:15:11+02:00"
   }
 }
