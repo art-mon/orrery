@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-20",
   "apod": {
-    "title": "Daytime Moon Meets Evening Star",
-    "date": "2026-06-20",
-    "explanation": "Venus is now appearing on the celestial stage as Earth's brilliant evening star, performing with the Moon, other wandering planets, and bright stars in western skies. For evening sky gazers on June 17, the celestial beacon rose after sunset close by a young, slender, crescent Moon. But from some locations the Moon could be seen to occult or pass in front of Venus. And from a backyard observatory in southern British Columbia, Canada, the lunar occultation was played out in daylight. This stunning telescopic snapshot captured a scene in dramatically cloudy skies, following Venus' hour long disappearance, as the evening star emerged beyond the bright lunar limb.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 34.2,
-    "feels_c": 34.9,
-    "humidity": 36,
+    "temp_c": 32.6,
+    "feels_c": 32.8,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 11.4
+    "wind_kmh": 9.6
   },
   "forecast_today": {
     "date": "2026-06-20",
     "city": "Zagreb",
-    "temp_min_c": 25.7,
-    "temp_max_c": 34.2,
-    "humidity": 43,
+    "temp_min_c": 25.1,
+    "temp_max_c": 32.6,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.9,
-    "samples": 4
+    "wind_kmh": 6.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-21",
@@ -291,110 +286,6 @@
     "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 5.5,
-    "band": "moderate",
-    "daily_max": 7.2,
-    "peak_time": "2026-06-20T13:00",
-    "safe_minutes": 30,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-06-20T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T06:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-20T07:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-06-20T08:00",
-        "uv": 1.7
-      },
-      {
-        "time": "2026-06-20T09:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-20T10:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-20T11:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-20T12:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-20T13:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-20T14:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-20T15:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-20T16:00",
-        "uv": 5.7
-      },
-      {
-        "time": "2026-06-20T17:00",
-        "uv": 4.3
-      },
-      {
-        "time": "2026-06-20T18:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-20T19:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-06-20T20:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-06-20T21:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-20T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-20T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-06-20T15:57:02+02:00"
+    "error": "open-meteo request failed: 429 Client Error: Too Many Requests for url: https://api.open-meteo.com/v1/forecast?latitude=45.8150&longitude=15.9819&hourly=uv_index&daily=uv_index_max&current=uv_index&timezone=Europe%2FZagreb&forecast_days=1"
   }
 }
