@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000susv",
+        "title": "M5.5 Earthquake - 160 km NE of Georgetown, Saint Helena",
+        "category": "Earthquake",
+        "date": "2026-06-20T06:43:17.271000Z",
+        "coordinates": [
+          -13.2711,
+          -7.0346
+        ]
+      },
+      {
         "id": "us7000susg",
         "title": "M5.1 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -19.9332,
           -0.4673
         ]
-      },
-      {
-        "id": "us7000su8c",
-        "title": "M5.1 Earthquake - central Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-18T02:44:43.145000Z",
-        "coordinates": [
-          -19.2026,
-          -0.342
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 23.1,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 30.9,
+    "feels_c": 32.9,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.0
+    "wind_kmh": 6.2
   },
   "forecast_today": {
     "date": "2026-06-20",
-    "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 32.8,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.3,
+    "temp_max_c": 31.6,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.3,
-    "samples": 7
+    "wind_kmh": 7.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-21",
-    "city": "Zagreb",
-    "temp_min_c": 19,
-    "temp_max_c": 33.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.4,
+    "temp_max_c": 33.6,
     "humidity": 58,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.3
   },
   "forecast_day_after": {
     "date": "2026-06-22",
-    "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 33.3,
-    "humidity": 56,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.2,
+    "temp_max_c": 33,
+    "humidity": 59,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.0
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
+    "uv": 5.9,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-20T13:00",
-    "safe_minutes": 159,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-20T07:11:04+02:00"
+    "fetched_at": "2026-06-20T10:51:40+02:00"
   }
 }
