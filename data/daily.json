@@ -1,7 +1,7 @@
 {
   "generated": "2026-06-21",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -242,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.9,
-    "feels_c": 32.0,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_c": 33.7,
+    "feels_c": 36.2,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.8
+    "wind_kmh": 4.5
   },
   "forecast_today": {
     "date": "2026-06-21",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.0,
-    "temp_max_c": 31.3,
-    "humidity": 58,
+    "temp_max_c": 33.7,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.5,
-    "samples": 6
+    "wind_kmh": 6.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-22",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.4,
     "temp_max_c": 32.7,
     "humidity": 62,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-23",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 19.7,
     "temp_max_c": 32.3,
     "humidity": 58,
@@ -286,11 +286,11 @@
     "wind_kmh": 7.1
   },
   "uv": {
-    "uv": 5.6,
-    "band": "moderate",
+    "uv": 7.2,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-21T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -371,11 +371,11 @@
       },
       {
         "time": "2026-06-21T19:00",
-        "uv": 1.6
+        "uv": 1.3
       },
       {
         "time": "2026-06-21T20:00",
-        "uv": 0.7
+        "uv": 0.5
       },
       {
         "time": "2026-06-21T21:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-21T10:31:53+02:00"
+    "fetched_at": "2026-06-21T13:44:01+02:00"
   }
 }
