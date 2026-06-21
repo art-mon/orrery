@@ -1,15 +1,20 @@
 {
-  "generated": "2026-06-21",
+  "generated": "2026-06-22",
   "apod": {
-    "title": "Keogram: The Sky in 2025",
-    "date": "2026-06-21",
-    "explanation": "What if you could see the entire sky -- all at once -- for an entire year? That, very nearly, is what is pictured here.  Every 15 seconds during 2025, an all-sky camera took an image of the sky over the Netherlands. Central columns from these images were then aligned and combined to create the featured keogram, with January at the top, December at the bottom, and the middle of the night running vertically just left of center. What do we see?  Most obviously, the daytime sky is mostly blue, while the nighttime sky is mostly black.  The twelve light bands crossing the night sky are caused by the glow of the Moon. The thinnest part of the black hourglass shape occurs during the summer solstice, like today, when days are the longest, while the thickest part occurs at the winter solstice. Equinoxes can also be located in the keogram, for example the northern-spring equinox from one year ago is about three-quarters of the way up.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sv17",
+        "title": "M5.0 Earthquake - Drake Passage",
+        "category": "Earthquake",
+        "date": "2026-06-21T20:05:26.185000Z",
+        "coordinates": [
+          -62.4195,
+          -60.1068
+        ]
+      },
       {
         "id": "us7000sutj",
         "title": "M5.2 Earthquake - 10 km S of Kastr\u00ed, Greece",
@@ -149,16 +154,6 @@
           -179.5739,
           51.3541
         ]
-      },
-      {
-        "id": "us7000su9f",
-        "title": "M5.3 Earthquake - 1 km S of Kablalan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-18T06:57:37.092000Z",
-        "coordinates": [
-          125.1953,
-          5.7634
-        ]
       }
     ]
   },
@@ -248,153 +243,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.1,
-    "feels_c": 24.8,
-    "humidity": 82,
+    "temp_c": 21.9,
+    "feels_c": 22.3,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 9.6
+    "wind_kmh": 8.9
   },
   "forecast_today": {
-    "date": "2026-06-21",
-    "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 24.1,
-    "humidity": 85,
-    "condition": "Rain",
-    "description": "rain",
+    "date": "2026-06-22",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.5,
+    "temp_max_c": 32.2,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 8.8,
-    "samples": 2
+    "wind_kmh": 5.1,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-22",
-    "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 32.8,
-    "humidity": 65,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 4.5
-  },
-  "forecast_day_after": {
     "date": "2026-06-23",
-    "city": "Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 32.5,
-    "humidity": 58,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.1,
+    "temp_max_c": 31.9,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 6.7
   },
+  "forecast_day_after": {
+    "date": "2026-06-24",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.5,
+    "temp_max_c": 30.8,
+    "humidity": 56,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.6
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
-    "peak_time": "2026-06-21T13:00",
+    "peak_time": "2026-06-22T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-21T00:00",
+        "time": "2026-06-22T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T01:00",
+        "time": "2026-06-22T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T02:00",
+        "time": "2026-06-22T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T03:00",
+        "time": "2026-06-22T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T04:00",
+        "time": "2026-06-22T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T05:00",
+        "time": "2026-06-22T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T06:00",
+        "time": "2026-06-22T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-21T07:00",
+        "time": "2026-06-22T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-21T08:00",
-        "uv": 1.7
-      },
-      {
-        "time": "2026-06-21T09:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-21T10:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-21T11:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-21T12:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-21T13:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-21T14:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-21T15:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-21T16:00",
-        "uv": 5.7
-      },
-      {
-        "time": "2026-06-21T17:00",
-        "uv": 4.3
-      },
-      {
-        "time": "2026-06-21T18:00",
-        "uv": 2.9
-      },
-      {
-        "time": "2026-06-21T19:00",
+        "time": "2026-06-22T08:00",
         "uv": 1.6
       },
       {
-        "time": "2026-06-21T20:00",
+        "time": "2026-06-22T09:00",
+        "uv": 2.9
+      },
+      {
+        "time": "2026-06-22T10:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-06-22T11:00",
+        "uv": 5.8
+      },
+      {
+        "time": "2026-06-22T12:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-06-22T13:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-06-22T14:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-06-22T15:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-06-22T16:00",
+        "uv": 5.7
+      },
+      {
+        "time": "2026-06-22T17:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-06-22T18:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-06-22T19:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-06-22T20:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-21T21:00",
+        "time": "2026-06-22T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-21T22:00",
+        "time": "2026-06-22T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-21T23:00",
+        "time": "2026-06-22T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-21T22:23:09+02:00"
+    "fetched_at": "2026-06-22T00:12:20+02:00"
   }
 }
