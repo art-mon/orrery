@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-21",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Keogram: The Sky in 2025",
+    "date": "2026-06-21",
+    "explanation": "What if you could see the entire sky -- all at once -- for an entire year? That, very nearly, is what is pictured here.  Every 15 seconds during 2025, an all-sky camera took an image of the sky over the Netherlands. Central columns from these images were then aligned and combined to create the featured keogram, with January at the top, December at the bottom, and the middle of the night running vertically just left of center. What do we see?  Most obviously, the daytime sky is mostly blue, while the nighttime sky is mostly black.  The twelve light bands crossing the night sky are caused by the glow of the Moon. The thinnest part of the black hourglass shape occurs during the summer solstice, like today, when days are the longest, while the thickest part occurs at the winter solstice. Equinoxes can also be located in the keogram, for example the northern-spring equinox from one year ago is about three-quarters of the way up.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg"
   },
   "events": {
     "events": [
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.4,
-    "feels_c": 26.4,
-    "humidity": 72,
+    "temp_c": 24.1,
+    "feels_c": 24.8,
+    "humidity": 82,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.6
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 9.6
   },
   "forecast_today": {
     "date": "2026-06-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.7,
-    "temp_max_c": 26.4,
-    "humidity": 75,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 7.2,
+    "city": "Zagreb",
+    "temp_min_c": 23.0,
+    "temp_max_c": 24.1,
+    "humidity": 85,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04n",
+    "wind_kmh": 8.8,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.3,
-    "temp_max_c": 31.7,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 20.8,
+    "temp_max_c": 32.8,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.8
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-06-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 32.4,
-    "humidity": 57,
+    "city": "Zagreb",
+    "temp_min_c": 20.6,
+    "temp_max_c": 32.5,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-21T13:00",
-    "safe_minutes": 667,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-21T20:18:22+02:00"
+    "fetched_at": "2026-06-21T22:23:09+02:00"
   }
 }
