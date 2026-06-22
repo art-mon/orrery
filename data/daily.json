@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-22",
   "apod": {
-    "title": "M27: The Dumbbell Nebula",
-    "date": "2026-06-22",
-    "explanation": "Is this what will become of our Sun? Quite possibly.  The first hint of our Sun's future was discovered inadvertently in 1764. At that time, Charles Messier was compiling a list of diffuse objects not to be confused with comets. The 27th object on Messier's list, now known as M27 or the Dumbbell Nebula, is a planetary nebula, one of the brightest planetary nebulas on the sky and visible with binoculars toward the constellation of the Fox (Vulpecula). It takes light about 1000 years to reach us from M27, featured here in colors enhanced by red for  hydrogen and blue for oxygen. We now know that in about 6 billion years, our Sun will shed its outer gases into a planetary nebula like M27, while its remaining center will become an X-ray hot white dwarf star.  Understanding the physics and significance of M27 was well beyond 18th century science, though. Even today, many things remain mysterious about planetary nebulas, including how their intricate shapes are created.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_3090.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -28,6 +23,16 @@
         "coordinates": [
           -178.5252,
           -30.5449
+        ]
+      },
+      {
+        "id": "us7000sv7m",
+        "title": "M5.4 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-06-21T22:04:16.633000Z",
+        "coordinates": [
+          -27.9105,
+          0.9775
         ]
       },
       {
@@ -149,16 +154,6 @@
           160.8644,
           52.69
         ]
-      },
-      {
-        "id": "us7000suds",
-        "title": "M5.3 Earthquake - Izu Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-06-18T19:17:40.105000Z",
-        "coordinates": [
-          142.2657,
-          30.6099
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 33.1,
-    "feels_c": 35.7,
-    "humidity": 47,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.6
+    "city": "Zagreb",
+    "temp_c": 24.8,
+    "feels_c": 25.5,
+    "humidity": 83,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 11.3
   },
   "forecast_today": {
     "date": "2026-06-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.4,
-    "temp_max_c": 33.1,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_min_c": 24.3,
+    "temp_max_c": 24.8,
+    "humidity": 82,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
+    "icon": "04d",
     "wind_kmh": 9.8,
-    "samples": 4
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.7,
-    "temp_max_c": 31.4,
-    "humidity": 62,
+    "city": "Zagreb",
+    "temp_min_c": 20.8,
+    "temp_max_c": 29.6,
+    "humidity": 61,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.8
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.2
   },
   "forecast_day_after": {
     "date": "2026-06-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 31.4,
+    "city": "Zagreb",
+    "temp_min_c": 20.6,
+    "temp_max_c": 30.9,
     "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 6.0
   },
   "uv": {
-    "uv": 6.5,
-    "band": "high",
+    "uv": 0.5,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-22T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 333,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,19 +359,19 @@
       },
       {
         "time": "2026-06-22T16:00",
-        "uv": 5.0
+        "uv": 5.7
       },
       {
         "time": "2026-06-22T17:00",
-        "uv": 4.4
+        "uv": 4.3
       },
       {
         "time": "2026-06-22T18:00",
-        "uv": 2.9
+        "uv": 3.0
       },
       {
         "time": "2026-06-22T19:00",
-        "uv": 1.0
+        "uv": 1.2
       },
       {
         "time": "2026-06-22T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-22T14:47:39+02:00"
+    "fetched_at": "2026-06-22T19:38:36+02:00"
   }
 }
