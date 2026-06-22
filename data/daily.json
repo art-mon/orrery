@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t7gf",
+        "title": "M5.1 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-06-22T19:46:11.598000Z",
+        "coordinates": [
+          -178.2858,
+          -31.9328
+        ]
+      },
+      {
         "id": "us7000sv6e",
         "title": "M5.2 Earthquake - 42 km SSW of Jurm, Afghanistan",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           160.5652,
           52.7943
         ]
-      },
-      {
-        "id": "us7000sui2",
-        "title": "M6.0 Earthquake - 156 km ESE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-19T06:51:31.085000Z",
-        "coordinates": [
-          160.8644,
-          52.69
-        ]
       }
     ]
   },
@@ -243,32 +243,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 25.5,
-    "humidity": 83,
+    "temp_c": 22.8,
+    "feels_c": 23.1,
+    "humidity": 77,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 11.3
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 6.6
   },
   "forecast_today": {
     "date": "2026-06-22",
     "city": "Zagreb",
-    "temp_min_c": 24.3,
-    "temp_max_c": 24.8,
-    "humidity": 82,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 9.8,
-    "samples": 3
+    "temp_min_c": 22.8,
+    "temp_max_c": 22.8,
+    "humidity": 77,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 6.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-23",
     "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 29.6,
-    "humidity": 61,
+    "temp_min_c": 21.1,
+    "temp_max_c": 28.9,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-06-24",
     "city": "Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 30.9,
-    "humidity": 50,
+    "temp_min_c": 20.8,
+    "temp_max_c": 31.3,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.0
+    "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-22T13:00",
-    "safe_minutes": 333,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-22T19:38:36+02:00"
+    "fetched_at": "2026-06-22T22:43:25+02:00"
   }
 }
