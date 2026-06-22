@@ -1,12 +1,12 @@
 {
   "generated": "2026-06-22",
   "apod": {
-    "title": "Keogram: The Sky in 2025",
-    "date": "2026-06-21",
-    "explanation": "What if you could see the entire sky -- all at once -- for an entire year? That, very nearly, is what is pictured here.  Every 15 seconds during 2025, an all-sky camera took an image of the sky over the Netherlands. Central columns from these images were then aligned and combined to create the featured keogram, with January at the top, December at the bottom, and the middle of the night running vertically just left of center. What do we see?  Most obviously, the daytime sky is mostly blue, while the nighttime sky is mostly black.  The twelve light bands crossing the night sky are caused by the glow of the Moon. The thinnest part of the black hourglass shape occurs during the summer solstice, like today, when days are the longest, while the thickest part occurs at the winter solstice. Equinoxes can also be located in the keogram, for example the northern-spring equinox from one year ago is about three-quarters of the way up.",
+    "title": "M27: The Dumbbell Nebula",
+    "date": "2026-06-22",
+    "explanation": "Is this what will become of our Sun? Quite possibly.  The first hint of our Sun's future was discovered inadvertently in 1764. At that time, Charles Messier was compiling a list of diffuse objects not to be confused with comets. The 27th object on Messier's list, now known as M27 or the Dumbbell Nebula, is a planetary nebula, one of the brightest planetary nebulas on the sky and visible with binoculars toward the constellation of the Fox (Vulpecula). It takes light about 1000 years to reach us from M27, featured here in colors enhanced by red for  hydrogen and blue for oxygen. We now know that in about 6 billion years, our Sun will shed its outer gases into a planetary nebula like M27, while its remaining center will become an X-ray hot white dwarf star.  Understanding the physics and significance of M27 was well beyond 18th century science, though. Even today, many things remain mysterious about planetary nebulas, including how their intricate shapes are created.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_3090.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.6,
-    "feels_c": 22.1,
-    "humidity": 87,
+    "temp_c": 24.5,
+    "feels_c": 25.2,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
+    "icon": "04d",
     "wind_kmh": 4.2
   },
   "forecast_today": {
     "date": "2026-06-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.2,
+    "city": "Zagreb",
+    "temp_min_c": 21.7,
     "temp_max_c": 32.8,
-    "humidity": 64,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 4.5,
-    "samples": 8
+    "humidity": 68,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04d",
+    "wind_kmh": 5.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 32.5,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_min_c": 20.3,
+    "temp_max_c": 31.5,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.7
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.1
   },
   "forecast_day_after": {
     "date": "2026-06-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 31.4,
-    "humidity": 55,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.6
+    "city": "Zagreb",
+    "temp_min_c": 20.1,
+    "temp_max_c": 30.8,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.5,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-22T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 68,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,27 +328,27 @@
       },
       {
         "time": "2026-06-22T07:00",
-        "uv": 0.6
+        "uv": 0.7
       },
       {
         "time": "2026-06-22T08:00",
-        "uv": 1.5
+        "uv": 1.6
       },
       {
         "time": "2026-06-22T09:00",
-        "uv": 2.8
+        "uv": 3.0
       },
       {
         "time": "2026-06-22T10:00",
-        "uv": 4.3
+        "uv": 4.5
       },
       {
         "time": "2026-06-22T11:00",
-        "uv": 5.5
+        "uv": 5.7
       },
       {
         "time": "2026-06-22T12:00",
-        "uv": 6.5
+        "uv": 6.7
       },
       {
         "time": "2026-06-22T13:00",
@@ -364,23 +364,23 @@
       },
       {
         "time": "2026-06-22T16:00",
-        "uv": 5.7
+        "uv": 5.5
       },
       {
         "time": "2026-06-22T17:00",
-        "uv": 4.3
+        "uv": 4.0
       },
       {
         "time": "2026-06-22T18:00",
-        "uv": 3.0
+        "uv": 2.7
       },
       {
         "time": "2026-06-22T19:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-06-22T20:00",
-        "uv": 0.5
+        "uv": 0.3
       },
       {
         "time": "2026-06-22T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-22T02:09:22+02:00"
+    "fetched_at": "2026-06-22T08:27:12+02:00"
   }
 }
