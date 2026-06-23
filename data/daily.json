@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.8,
-    "feels_c": 31.6,
-    "humidity": 55,
+    "city": "Zagreb",
+    "temp_c": 32.6,
+    "feels_c": 34.5,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 10.3
   },
   "forecast_today": {
     "date": "2026-06-23",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 25.1,
-    "temp_max_c": 30.1,
-    "humidity": 53,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_max_c": 32.6,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 7.2,
-    "samples": 6
+    "wind_kmh": 8.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-24",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 20.2,
     "temp_max_c": 30.5,
     "humidity": 53,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-25",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 19.7,
     "temp_max_c": 32.0,
     "humidity": 46,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 5.6,
-    "band": "moderate",
+    "uv": 7.1,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-23T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,15 +360,15 @@
       },
       {
         "time": "2026-06-23T15:00",
-        "uv": 5.2
+        "uv": 5.8
       },
       {
         "time": "2026-06-23T16:00",
-        "uv": 3.0
+        "uv": 2.0
       },
       {
         "time": "2026-06-23T17:00",
-        "uv": 4.4
+        "uv": 3.5
       },
       {
         "time": "2026-06-23T18:00",
@@ -380,7 +380,7 @@
       },
       {
         "time": "2026-06-23T20:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-06-23T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T10:31:27+02:00"
+    "fetched_at": "2026-06-23T13:58:58+02:00"
   }
 }
