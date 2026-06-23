@@ -1,18 +1,33 @@
 {
   "generated": "2026-06-23",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Flying Past Neptune's Moon Triton",
+    "date": "2026-06-23",
+    "explanation": "What would it look like to fly past Triton, the largest moon of planet Neptune?  Only one spacecraft has ever done this -- and the images of this dramatic encounter have been gathered into a video.  In 1989, the Voyager 2 robotic spacecraft shot through the Neptune system with cameras blazing.  Triton is slightly smaller than Earth's Moon but has ice volcanoes and a surface rich in frozen nitrogen.  The first sequence in the video shows Voyager's approach to Triton, which, with the exception of an overall false green tint, appears in approximately true color.  The mysterious cantaloupe terrain seen under the spacecraft soon changed from light to dark, with the terminator of night crossing underneath.  After closest approach, Voyager pivoted to see the departing moon, now visible as a diminishing crescent.  In 2015, the robotic New Horizons spacecraft famously flew past Pluto, an orb of similar size to Triton.   Almost Hyperspace: Random APOD Generator",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
       {
-        "id": "us6000t7lb",
-        "title": "M5.3 Earthquake - 126 km S of Isangel, Vanuatu",
+        "id": "us6000t7ll",
+        "title": "M5.2 Earthquake - 265 km SSE of Dunhuang, China",
         "category": "Earthquake",
-        "date": "2026-06-23T13:58:36.779000Z",
+        "date": "2026-06-23T15:29:02.332000Z",
         "coordinates": [
-          169.1101,
-          -20.6721
+          95.2983,
+          37.8214
+        ]
+      },
+      {
+        "id": "us6000t7lb",
+        "title": "M5.3 Earthquake - 120 km S of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-06-23T13:58:34.774000Z",
+        "coordinates": [
+          169.2307,
+          -20.6302
         ]
       },
       {
@@ -144,16 +159,6 @@
           147.9179,
           -57.129
         ]
-      },
-      {
-        "id": "us7000surx",
-        "title": "M5.0 Earthquake - 102 km SSW of Pagar Alam, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-20T01:40:07.238000Z",
-        "coordinates": [
-          102.9796,
-          -4.913
-        ]
       }
     ]
   },
@@ -242,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 32.0,
-    "feels_c": 33.7,
-    "humidity": 47,
+    "city": "Donji grad",
+    "temp_c": 27.2,
+    "feels_c": 28.8,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.8
+    "wind_kmh": 3.5
   },
   "forecast_today": {
     "date": "2026-06-23",
     "city": "Zagreb",
-    "temp_min_c": 27.2,
-    "temp_max_c": 32.0,
-    "humidity": 53,
+    "temp_min_c": 26.5,
+    "temp_max_c": 27.2,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 6.1,
+    "wind_kmh": 5.0,
     "samples": 3
   },
   "forecast": {
@@ -286,11 +291,11 @@
     "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 3.3,
-    "band": "moderate",
+    "uv": 0.6,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-23T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,15 +360,15 @@
       },
       {
         "time": "2026-06-23T15:00",
-        "uv": 5.8
+        "uv": 4.5
       },
       {
         "time": "2026-06-23T16:00",
-        "uv": 2.0
+        "uv": 5.6
       },
       {
         "time": "2026-06-23T17:00",
-        "uv": 3.5
+        "uv": 4.4
       },
       {
         "time": "2026-06-23T18:00",
@@ -375,7 +380,7 @@
       },
       {
         "time": "2026-06-23T20:00",
-        "uv": 0.6
+        "uv": 0.7
       },
       {
         "time": "2026-06-23T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T17:16:41+02:00"
+    "fetched_at": "2026-06-23T19:51:04+02:00"
   }
 }
