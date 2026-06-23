@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-23",
   "apod": {
-    "title": "M27: The Dumbbell Nebula",
-    "date": "2026-06-22",
-    "explanation": "Is this what will become of our Sun? Quite possibly.  The first hint of our Sun's future was discovered inadvertently in 1764. At that time, Charles Messier was compiling a list of diffuse objects not to be confused with comets. The 27th object on Messier's list, now known as M27 or the Dumbbell Nebula, is a planetary nebula, one of the brightest planetary nebulas on the sky and visible with binoculars toward the constellation of the Fox (Vulpecula). It takes light about 1000 years to reach us from M27, featured here in colors enhanced by red for  hydrogen and blue for oxygen. We now know that in about 6 billion years, our Sun will shed its outer gases into a planetary nebula like M27, while its remaining center will become an X-ray hot white dwarf star.  Understanding the physics and significance of M27 was well beyond 18th century science, though. Even today, many things remain mysterious about planetary nebulas, including how their intricate shapes are created.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/M27_antonucci_3090.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -165,62 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2015 LM24)",
-        "hazardous": false,
-        "diameter_m": 119,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 6951974,
-        "velocity_kmh": 49509
-      },
-      {
-        "name": "(2016 LC9)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 9447842,
-        "velocity_kmh": 12333
-      },
-      {
-        "name": "(2017 WO16)",
-        "hazardous": false,
-        "diameter_m": 58,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 21658553,
-        "velocity_kmh": 22658
-      },
-      {
-        "name": "(2006 MB14)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 28737293,
-        "velocity_kmh": 36652
-      },
-      {
-        "name": "(2019 VB3)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 65153083,
-        "velocity_kmh": 23659
-      },
-      {
-        "name": "(2019 LX1)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 69771592,
-        "velocity_kmh": 55856
-      },
-      {
-        "name": "(2017 FL91)",
-        "hazardous": false,
-        "diameter_m": 360,
-        "close_approach_date": "2026-06-22",
-        "miss_distance_km": 73685455,
-        "velocity_kmh": 10633
-      },
-      {
         "name": "(2020 AT)",
         "hazardous": false,
         "diameter_m": 54,
@@ -243,58 +182,114 @@
         "close_approach_date": "2026-06-23",
         "miss_distance_km": 40258633,
         "velocity_kmh": 30898
+      },
+      {
+        "name": "(2012 KC45)",
+        "hazardous": false,
+        "diameter_m": 8,
+        "close_approach_date": "2026-06-23",
+        "miss_distance_km": 53651221,
+        "velocity_kmh": 54420
+      },
+      {
+        "name": "(2012 GV11)",
+        "hazardous": false,
+        "diameter_m": 225,
+        "close_approach_date": "2026-06-23",
+        "miss_distance_km": 55531321,
+        "velocity_kmh": 61575
+      },
+      {
+        "name": "(2016 VX1)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-06-23",
+        "miss_distance_km": 62058384,
+        "velocity_kmh": 33118
+      },
+      {
+        "name": "(2015 NG13)",
+        "hazardous": false,
+        "diameter_m": 62,
+        "close_approach_date": "2026-06-24",
+        "miss_distance_km": 63745553,
+        "velocity_kmh": 64186
+      },
+      {
+        "name": "(2018 MJ7)",
+        "hazardous": false,
+        "diameter_m": 139,
+        "close_approach_date": "2026-06-25",
+        "miss_distance_km": 20620108,
+        "velocity_kmh": 57825
+      },
+      {
+        "name": "(2018 CP2)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-06-25",
+        "miss_distance_km": 21548857,
+        "velocity_kmh": 52092
+      },
+      {
+        "name": "(2016 VK)",
+        "hazardous": false,
+        "diameter_m": 188,
+        "close_approach_date": "2026-06-25",
+        "miss_distance_km": 22664438,
+        "velocity_kmh": 80194
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.0,
-    "feels_c": 22.4,
-    "humidity": 83,
+    "city": "City of Zagreb",
+    "temp_c": 21.6,
+    "feels_c": 22.0,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 3.6
+    "wind_kmh": 4.3
   },
   "forecast_today": {
     "date": "2026-06-23",
-    "city": "Zagreb",
-    "temp_min_c": 21.0,
-    "temp_max_c": 28.9,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.4,
+    "temp_max_c": 29.4,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.9,
-    "samples": 9
+    "wind_kmh": 6.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-24",
-    "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 31.3,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.4,
+    "temp_max_c": 31.9,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-06-25",
-    "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 32.5,
-    "humidity": 46,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.4,
+    "temp_max_c": 33.2,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.9
+    "wind_kmh": 6.0
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
-    "peak_time": "2026-06-23T14:00",
+    "peak_time": "2026-06-23T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -348,11 +343,11 @@
       },
       {
         "time": "2026-06-23T12:00",
-        "uv": 6.8
+        "uv": 6.7
       },
       {
         "time": "2026-06-23T13:00",
-        "uv": 7.1
+        "uv": 7.2
       },
       {
         "time": "2026-06-23T14:00",
@@ -364,15 +359,15 @@
       },
       {
         "time": "2026-06-23T16:00",
-        "uv": 4.4
+        "uv": 5.6
       },
       {
         "time": "2026-06-23T17:00",
-        "uv": 1.6
+        "uv": 4.4
       },
       {
         "time": "2026-06-23T18:00",
-        "uv": 2.5
+        "uv": 3.0
       },
       {
         "time": "2026-06-23T19:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T00:45:14+02:00"
+    "fetched_at": "2026-06-23T02:03:21+02:00"
   }
 }
