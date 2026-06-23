@@ -1,10 +1,35 @@
 {
   "generated": "2026-06-23",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Flying Past Neptune's Moon Triton",
+    "date": "2026-06-23",
+    "explanation": "What would it look like to fly past Triton, the largest moon of planet Neptune?  Only one spacecraft has ever done this -- and the images of this dramatic encounter have been gathered into a video.  In 1989, the Voyager 2 robotic spacecraft shot through the Neptune system with cameras blazing.  Triton is slightly smaller than Earth's Moon but has ice volcanoes and a surface rich in frozen nitrogen.  The first sequence in the video shows Voyager's approach to Triton, which, with the exception of an overall false green tint, appears in approximately true color.  The mysterious cantaloupe terrain seen under the spacecraft soon changed from light to dark, with the terminator of night crossing underneath.  After closest approach, Voyager pivoted to see the departing moon, now visible as a diminishing crescent.  In 2015, the robotic New Horizons spacecraft famously flew past Pluto, an orb of similar size to Triton.   Almost Hyperspace: Random APOD Generator",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t7iy",
+        "title": "M5.3 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-06-23T02:26:20.999000Z",
+        "coordinates": [
+          -177.7691,
+          -27.1921
+        ]
+      },
+      {
+        "id": "us6000t7it",
+        "title": "M5.1 Earthquake - 186 km N of Fais, Micronesia",
+        "category": "Earthquake",
+        "date": "2026-06-23T01:56:49.906000Z",
+        "coordinates": [
+          140.6086,
+          11.4493
+        ]
+      },
       {
         "id": "us6000t7gf",
         "title": "M5.1 Earthquake - Kermadec Islands region",
@@ -27,22 +52,22 @@
       },
       {
         "id": "us7000sv1m",
-        "title": "M5.0 Earthquake - Kermadec Islands, New Zealand",
+        "title": "M5.1 Earthquake - Kermadec Islands, New Zealand",
         "category": "Earthquake",
-        "date": "2026-06-21T23:14:39.792000Z",
+        "date": "2026-06-21T23:14:44.424000Z",
         "coordinates": [
-          -178.5252,
-          -30.5449
+          -178.4702,
+          -30.3614
         ]
       },
       {
         "id": "us7000sv7m",
         "title": "M5.4 Earthquake - central Mid-Atlantic Ridge",
         "category": "Earthquake",
-        "date": "2026-06-21T22:04:16.633000Z",
+        "date": "2026-06-21T22:04:16.787000Z",
         "coordinates": [
-          -27.9105,
-          0.9775
+          -27.8954,
+          1.0088
         ]
       },
       {
@@ -134,26 +159,6 @@
           161.06,
           52.7416
         ]
-      },
-      {
-        "id": "us7000suii",
-        "title": "M5.8 Earthquake - 171 km ESE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-19T07:52:57.734000Z",
-        "coordinates": [
-          161.1149,
-          52.7355
-        ]
-      },
-      {
-        "id": "us7000sui3",
-        "title": "M6.6 Earthquake - 133 km ESE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-19T06:52:31.597000Z",
-        "coordinates": [
-          160.5652,
-          52.7943
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 21.6,
-    "feels_c": 22.0,
-    "humidity": 84,
+    "temp_c": 21.7,
+    "feels_c": 22.3,
+    "humidity": 89,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 1.7
   },
   "forecast_today": {
     "date": "2026-06-23",
     "city": "City of Zagreb",
-    "temp_min_c": 21.4,
-    "temp_max_c": 29.4,
-    "humidity": 57,
+    "temp_min_c": 21.7,
+    "temp_max_c": 29.5,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 6.3,
-    "samples": 8
+    "icon": "03d",
+    "wind_kmh": 5.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-24",
     "city": "City of Zagreb",
-    "temp_min_c": 21.4,
-    "temp_max_c": 31.9,
-    "humidity": 51,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.8
+    "temp_min_c": 21.1,
+    "temp_max_c": 30.0,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-06-25",
     "city": "City of Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 33.2,
-    "humidity": 45,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.0
+    "temp_min_c": 19.5,
+    "temp_max_c": 32.2,
+    "humidity": 46,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.8,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-23T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 208,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T02:03:21+02:00"
+    "fetched_at": "2026-06-23T06:58:01+02:00"
   }
 }
