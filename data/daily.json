@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-23",
   "apod": {
-    "title": "Flying Past Neptune's Moon Triton",
-    "date": "2026-06-23",
-    "explanation": "What would it look like to fly past Triton, the largest moon of planet Neptune?  Only one spacecraft has ever done this -- and the images of this dramatic encounter have been gathered into a video.  In 1989, the Voyager 2 robotic spacecraft shot through the Neptune system with cameras blazing.  Triton is slightly smaller than Earth's Moon but has ice volcanoes and a surface rich in frozen nitrogen.  The first sequence in the video shows Voyager's approach to Triton, which, with the exception of an overall false green tint, appears in approximately true color.  The mysterious cantaloupe terrain seen under the spacecraft soon changed from light to dark, with the terminator of night crossing underneath.  After closest approach, Voyager pivoted to see the departing moon, now visible as a diminishing crescent.  In 2015, the robotic New Horizons spacecraft famously flew past Pluto, an orb of similar size to Triton.   Almost Hyperspace: Random APOD Generator",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4",
-    "hdurl": null
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t7lb",
+        "title": "M5.3 Earthquake - 126 km S of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-06-23T13:58:36.779000Z",
+        "coordinates": [
+          169.1101,
+          -20.6721
+        ]
+      },
       {
         "id": "us6000t7k4",
         "title": "M5.0 Earthquake - 174 km E of Hihifo, Tonga",
@@ -149,16 +154,6 @@
           102.9796,
           -4.913
         ]
-      },
-      {
-        "id": "us7000suqu",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-06-19T21:08:29.057000Z",
-        "coordinates": [
-          -26.5917,
-          -59.3446
-        ]
       }
     ]
   },
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 32.6,
-    "feels_c": 34.5,
-    "humidity": 46,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 10.3
+    "temp_c": 32.0,
+    "feels_c": 33.7,
+    "humidity": 47,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.8
   },
   "forecast_today": {
     "date": "2026-06-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 25.1,
-    "temp_max_c": 32.6,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 27.2,
+    "temp_max_c": 32.0,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 8.2,
-    "samples": 5
+    "icon": "04d",
+    "wind_kmh": 6.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.2,
-    "temp_max_c": 30.5,
-    "humidity": 53,
+    "city": "Zagreb",
+    "temp_min_c": 19.2,
+    "temp_max_c": 30.6,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.2
   },
   "forecast_day_after": {
     "date": "2026-06-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 32.0,
-    "humidity": 46,
+    "city": "Zagreb",
+    "temp_min_c": 20.2,
+    "temp_max_c": 32.3,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 7.1,
-    "band": "high",
+    "uv": 3.3,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-23T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T13:58:58+02:00"
+    "fetched_at": "2026-06-23T17:16:41+02:00"
   }
 }
