@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-23",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Flying Past Neptune's Moon Triton",
+    "date": "2026-06-23",
+    "explanation": "What would it look like to fly past Triton, the largest moon of planet Neptune?  Only one spacecraft has ever done this -- and the images of this dramatic encounter have been gathered into a video.  In 1989, the Voyager 2 robotic spacecraft shot through the Neptune system with cameras blazing.  Triton is slightly smaller than Earth's Moon but has ice volcanoes and a surface rich in frozen nitrogen.  The first sequence in the video shows Voyager's approach to Triton, which, with the exception of an overall false green tint, appears in approximately true color.  The mysterious cantaloupe terrain seen under the spacecraft soon changed from light to dark, with the terminator of night crossing underneath.  After closest approach, Voyager pivoted to see the departing moon, now visible as a diminishing crescent.  In 2015, the robotic New Horizons spacecraft famously flew past Pluto, an orb of similar size to Triton.   Almost Hyperspace: Random APOD Generator",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.0,
-    "feels_c": 25.3,
-    "humidity": 66,
+    "temp_c": 23.1,
+    "feels_c": 23.2,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 5.5
+    "wind_kmh": 6.3
   },
   "forecast_today": {
     "date": "2026-06-23",
     "city": "Zagreb",
-    "temp_min_c": 24.6,
-    "temp_max_c": 25.0,
-    "humidity": 65,
+    "temp_min_c": 23.1,
+    "temp_max_c": 23.1,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.1,
-    "samples": 2
+    "wind_kmh": 6.3,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-24",
     "city": "Zagreb",
-    "temp_min_c": 21.2,
+    "temp_min_c": 20.9,
     "temp_max_c": 31.8,
-    "humidity": 50,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-23T21:59:37+02:00"
+    "fetched_at": "2026-06-23T23:47:03+02:00"
   }
 }
