@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-24",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "SDO Observes a Coronal Mass Ejection",
+    "date": "2026-06-24",
+    "explanation": "Why does the Sun throw stuff at us? The Sun\u2019s surface is a churning soup of energetic electrons and ions called plasma. The motion of those charged particles creates magnetic field loops that are larger than the Earth. These loops twist, turn, and trap plasma. The featured time-lapse, taken over 2 hours on April 24th, 2026 by the Solar Dynamics Observatory, shows what happens when those magnetic fields become too stressed: they snap and expel billions of tons (trillions of kilograms) of plasma into space at millions of miles (or kilometers) per hour in what is called a coronal mass ejection (CME). The Sun releases a few CMEs each day when it is at the peak of its activity cycle, which passed in 2025. Some of these eruptions hit Earth and can disrupt power grids, disable satellites, and endanger astronauts, which is why space weather monitoring is so important.",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2606/sdo_cme.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
@@ -243,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.2,
-    "feels_c": 25.1,
-    "humidity": 52,
+    "temp_c": 22.6,
+    "feels_c": 22.5,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.3
+    "icon": "01n",
+    "wind_kmh": 4.6
   },
   "forecast_today": {
     "date": "2026-06-24",
     "city": "Zagreb",
-    "temp_min_c": 25.2,
-    "temp_max_c": 25.7,
-    "humidity": 51,
+    "temp_min_c": 22.6,
+    "temp_max_c": 22.6,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.0,
+    "icon": "01n",
+    "wind_kmh": 4.6,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-25",
     "city": "Zagreb",
-    "temp_min_c": 20.2,
+    "temp_min_c": 20.7,
     "temp_max_c": 32.7,
     "humidity": 45,
     "condition": "Clouds",
@@ -277,16 +282,16 @@
   "forecast_day_after": {
     "date": "2026-06-26",
     "city": "Zagreb",
-    "temp_min_c": 20.0,
+    "temp_min_c": 20.4,
     "temp_max_c": 34.4,
     "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-24T13:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-24T20:50:02+02:00"
+    "fetched_at": "2026-06-24T22:46:44+02:00"
   }
 }
