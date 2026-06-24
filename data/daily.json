@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-24",
   "apod": {
-    "title": "SDO Observes a Coronal Mass Ejection",
-    "date": "2026-06-24",
-    "explanation": "Why does the Sun throw stuff at us? The Sun\u2019s surface is a churning soup of energetic electrons and ions called plasma. The motion of those charged particles creates magnetic field loops that are larger than the Earth. These loops twist, turn, and trap plasma. The featured time-lapse, taken over 2 hours on April 24th, 2026 by the Solar Dynamics Observatory, shows what happens when those magnetic fields become too stressed: they snap and expel billions of tons (trillions of kilograms) of plasma into space at millions of miles (or kilometers) per hour in what is called a coronal mass ejection (CME). The Sun releases a few CMEs each day when it is at the peak of its activity cycle, which passed in 2025. Some of these eruptions hit Earth and can disrupt power grids, disable satellites, and endanger astronauts, which is why space weather monitoring is so important.",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2606/sdo_cme.mp4",
-    "hdurl": null
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 28.1,
-    "feels_c": 29.1,
-    "humidity": 55,
+    "city": "City of Zagreb",
+    "temp_c": 32.0,
+    "feels_c": 32.9,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 11.5
   },
   "forecast_today": {
     "date": "2026-06-24",
-    "city": "Zagreb",
-    "temp_min_c": 25.1,
-    "temp_max_c": 30.8,
-    "humidity": 48,
+    "city": "City of Zagreb",
+    "temp_min_c": 23.1,
+    "temp_max_c": 32.1,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.6,
-    "samples": 6
+    "wind_kmh": 8.3,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-25",
-    "city": "Zagreb",
-    "temp_min_c": 21.0,
-    "temp_max_c": 32.5,
-    "humidity": 45,
-    "condition": "Clouds",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.6,
+    "temp_max_c": 32.8,
+    "humidity": 44,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-06-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.7,
     "temp_max_c": 34.3,
     "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.8
+    "wind_kmh": 4.7
   },
   "uv": {
-    "uv": 3.2,
-    "band": "moderate",
+    "uv": 7.2,
+    "band": "high",
     "daily_max": 7.3,
     "peak_time": "2026-06-24T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-24T08:51:18+02:00"
+    "fetched_at": "2026-06-24T12:21:32+02:00"
   }
 }
