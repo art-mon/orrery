@@ -1,15 +1,25 @@
 {
   "generated": "2026-06-24",
   "apod": {
-    "title": "Flying Past Neptune's Moon Triton",
-    "date": "2026-06-23",
-    "explanation": "What would it look like to fly past Triton, the largest moon of planet Neptune?  Only one spacecraft has ever done this -- and the images of this dramatic encounter have been gathered into a video.  In 1989, the Voyager 2 robotic spacecraft shot through the Neptune system with cameras blazing.  Triton is slightly smaller than Earth's Moon but has ice volcanoes and a surface rich in frozen nitrogen.  The first sequence in the video shows Voyager's approach to Triton, which, with the exception of an overall false green tint, appears in approximately true color.  The mysterious cantaloupe terrain seen under the spacecraft soon changed from light to dark, with the terminator of night crossing underneath.  After closest approach, Voyager pivoted to see the departing moon, now visible as a diminishing crescent.  In 2015, the robotic New Horizons spacecraft famously flew past Pluto, an orb of similar size to Triton.   Almost Hyperspace: Random APOD Generator",
+    "title": "SDO Observes a Coronal Mass Ejection",
+    "date": "2026-06-24",
+    "explanation": "Why does the Sun throw stuff at us? The Sun\u2019s surface is a churning soup of energetic electrons and ions called plasma. The motion of those charged particles creates magnetic field loops that are larger than the Earth. These loops twist, turn, and trap plasma. The featured time-lapse, taken over 2 hours on April 24th, 2026 by the Solar Dynamics Observatory, shows what happens when those magnetic fields become too stressed: they snap and expel billions of tons (trillions of kilograms) of plasma into space at millions of miles (or kilometers) per hour in what is called a coronal mass ejection (CME). The Sun releases a few CMEs each day when it is at the peak of its activity cycle, which passed in 2025. Some of these eruptions hit Earth and can disrupt power grids, disable satellites, and endanger astronauts, which is why space weather monitoring is so important.",
     "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4",
+    "url": "https://apod.nasa.gov/apod/image/2606/sdo_cme.mp4",
     "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t7t2",
+        "title": "M5.1 Earthquake - 61 km SSW of Panguna, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-06-24T06:17:22.718000Z",
+        "coordinates": [
+          155.1762,
+          -6.7815
+        ]
+      },
       {
         "id": "us6000t7rx",
         "title": "M5.0 Earthquake - 71 km WNW of Catuday, Philippines",
@@ -149,16 +159,6 @@
           -25.4839,
           -57.9998
         ]
-      },
-      {
-        "id": "us7000susb",
-        "title": "M5.8 Earthquake - 140 km ESE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-06-20T03:49:06.278000Z",
-        "coordinates": [
-          160.6412,
-          52.7287
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.7,
-    "humidity": 77,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 4.3
+    "city": "Zagreb",
+    "temp_c": 28.1,
+    "feels_c": 29.1,
+    "humidity": 55,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.0
   },
   "forecast_today": {
     "date": "2026-06-24",
-    "city": "Donji grad",
-    "temp_min_c": 19.7,
-    "temp_max_c": 31.4,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_min_c": 25.1,
+    "temp_max_c": 30.8,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
-    "icon": "03n",
-    "wind_kmh": 6.3,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 7.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-25",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 21.0,
     "temp_max_c": 32.5,
     "humidity": 45,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-26",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.7,
     "temp_max_c": 34.3,
     "humidity": 43,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 7.2,
+    "uv": 3.2,
+    "band": "moderate",
+    "daily_max": 7.3,
     "peak_time": "2026-06-24T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-06-24T13:00",
-        "uv": 7.2
+        "uv": 7.3
       },
       {
         "time": "2026-06-24T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-24T04:57:28+02:00"
+    "fetched_at": "2026-06-24T08:51:18+02:00"
   }
 }
