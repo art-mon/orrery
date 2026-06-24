@@ -1,10 +1,20 @@
 {
   "generated": "2026-06-24",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "nc75382936",
+        "title": "M5.6 Earthquake - 11 km N of Redwood Valley, CA",
+        "category": "Earthquake",
+        "date": "2026-06-24T15:10:40.770000Z",
+        "coordinates": [
+          -123.229331970215,
+          39.3636665344238
+        ]
+      },
       {
         "id": "us6000t7t2",
         "title": "M5.1 Earthquake - 61 km SSW of Panguna, Papua New Guinea",
@@ -144,16 +154,6 @@
           -13.2711,
           -7.0346
         ]
-      },
-      {
-        "id": "us7000susg",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-06-20T04:44:08.971000Z",
-        "coordinates": [
-          -25.4839,
-          -57.9998
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 33.1,
-    "feels_c": 33.6,
-    "humidity": 38,
+    "temp_c": 31.5,
+    "feels_c": 31.7,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 13.0
+    "wind_kmh": 10.3
   },
   "forecast_today": {
     "date": "2026-06-24",
-    "city": "Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 33.1,
-    "humidity": 45,
+    "city": "City of Zagreb",
+    "temp_min_c": 25.6,
+    "temp_max_c": 31.5,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.8,
-    "samples": 4
+    "wind_kmh": 6.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-25",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.2,
     "temp_max_c": 32.7,
-    "humidity": 44,
-    "condition": "Clear",
+    "humidity": 46,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-06-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.0,
     "temp_max_c": 34.4,
-    "humidity": 43,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.0
   },
   "uv": {
-    "uv": 6.2,
-    "band": "high",
+    "uv": 2.1,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-24T13:00",
-    "safe_minutes": 27,
+    "safe_minutes": 78,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-24T15:20:32+02:00"
+    "fetched_at": "2026-06-24T18:18:49+02:00"
   }
 }
