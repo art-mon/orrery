@@ -1,18 +1,18 @@
 {
   "generated": "2026-06-25",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
       {
         "id": "us6000t81q",
-        "title": "M5.4 Earthquake - 58 km E of Kokopo, Papua New Guinea",
+        "title": "M5.5 Earthquake - 73 km E of Kokopo, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-06-25T06:19:38.278000Z",
+        "date": "2026-06-25T06:19:35.965000Z",
         "coordinates": [
-          152.791,
-          -4.2981
+          152.9318,
+          -4.3413
         ]
       },
       {
@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 34.8,
-    "feels_c": 34.6,
-    "humidity": 31,
+    "city": "Zagreb",
+    "temp_c": 32.6,
+    "feels_c": 32.2,
+    "humidity": 35,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 9.5
+    "wind_kmh": 3.5
   },
   "forecast_today": {
     "date": "2026-06-25",
-    "city": "Zagreb",
-    "temp_min_c": 27.3,
-    "temp_max_c": 34.8,
-    "humidity": 36,
+    "city": "City of Zagreb",
+    "temp_min_c": 29.9,
+    "temp_max_c": 32.7,
+    "humidity": 37,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 5.8,
-    "samples": 4
+    "wind_kmh": 3.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-26",
-    "city": "Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 34.8,
-    "humidity": 42,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 35.5,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -276,21 +276,21 @@
   },
   "forecast_day_after": {
     "date": "2026-06-27",
-    "city": "Zagreb",
-    "temp_min_c": 21.5,
-    "temp_max_c": 36.2,
-    "humidity": 40,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.1,
+    "temp_max_c": 36.9,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 5.0,
-    "band": "moderate",
+    "uv": 1.2,
+    "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-25T13:00",
-    "safe_minutes": 33,
+    "safe_minutes": 133,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-25T16:27:02+02:00"
+    "fetched_at": "2026-06-25T19:10:30+02:00"
   }
 }
