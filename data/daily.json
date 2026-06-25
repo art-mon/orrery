@@ -6,6 +6,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000t7zq",
+        "title": "M6.9 Earthquake - 35 km ENE of Kuji, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-24T22:30:15.418000Z",
+        "coordinates": [
+          142.132,
+          40.3462
+        ]
+      },
+      {
+        "id": "us6000t7zp",
+        "title": "M7.5 Earthquake - 23 km SE of Yumare, Venezuela",
+        "category": "Earthquake",
+        "date": "2026-06-24T22:05:12.092000Z",
+        "coordinates": [
+          -68.5139,
+          10.453
+        ]
+      },
+      {
+        "id": "us6000t7zc",
+        "title": "M7.2 Earthquake - 24 km ENE of San Felipe, Venezuela",
+        "category": "Earthquake",
+        "date": "2026-06-24T22:04:33.586000Z",
+        "coordinates": [
+          -68.52,
+          10.3874
+        ]
+      },
+      {
         "id": "nc75382936",
         "title": "M5.6 Earthquake - 11 km N of Redwood Valley, CA",
         "category": "Earthquake",
@@ -124,49 +154,11 @@
           -27.8954,
           1.0088
         ]
-      },
-      {
-        "id": "us7000sv17",
-        "title": "M5.0 Earthquake - Drake Passage",
-        "category": "Earthquake",
-        "date": "2026-06-21T20:05:26.185000Z",
-        "coordinates": [
-          -62.4195,
-          -60.1068
-        ]
-      },
-      {
-        "id": "us7000sutj",
-        "title": "M5.2 Earthquake - 10 km S of Kastr\u00ed, Greece",
-        "category": "Earthquake",
-        "date": "2026-06-20T09:37:24.290000Z",
-        "coordinates": [
-          24.0997,
-          34.7437
-        ]
-      },
-      {
-        "id": "us7000susv",
-        "title": "M5.5 Earthquake - 160 km NE of Georgetown, Saint Helena",
-        "category": "Earthquake",
-        "date": "2026-06-20T06:43:17.271000Z",
-        "coordinates": [
-          -13.2711,
-          -7.0346
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2015 NG13)",
-        "hazardous": false,
-        "diameter_m": 62,
-        "close_approach_date": "2026-06-24",
-        "miss_distance_km": 63745553,
-        "velocity_kmh": 64186
-      },
       {
         "name": "(2018 MJ7)",
         "hazardous": false,
@@ -238,34 +230,42 @@
         "close_approach_date": "2026-06-26",
         "miss_distance_km": 8369379,
         "velocity_kmh": 51602
+      },
+      {
+        "name": "(2018 NV)",
+        "hazardous": false,
+        "diameter_m": 162,
+        "close_approach_date": "2026-06-26",
+        "miss_distance_km": 15098413,
+        "velocity_kmh": 22233
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.8,
-    "humidity": 55,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.7
+    "temp_c": 23.1,
+    "feels_c": 23.1,
+    "humidity": 61,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 4.6
   },
   "forecast_today": {
     "date": "2026-06-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.4,
+    "city": "Zagreb",
+    "temp_min_c": 22.0,
     "temp_max_c": 32.7,
-    "humidity": 47,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.5,
-    "samples": 9
+    "humidity": 46,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 5.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-26",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.4,
     "temp_max_c": 34.4,
     "humidity": 44,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-27",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.4,
     "temp_max_c": 36.5,
     "humidity": 42,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-25T00:15:08+02:00"
+    "fetched_at": "2026-06-25T02:09:39+02:00"
   }
 }
