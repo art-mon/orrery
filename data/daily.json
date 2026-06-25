@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8al",
+        "title": "M5.0 Earthquake - 93 km E of Union, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-25T21:17:49.072000Z",
+        "coordinates": [
+          126.9518,
+          9.8919
+        ]
+      },
+      {
         "id": "us6000t81q",
         "title": "M5.5 Earthquake - 73 km E of Kokopo, Papua New Guinea",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           -178.2858,
           -31.9328
         ]
-      },
-      {
-        "id": "us7000sv6e",
-        "title": "M5.2 Earthquake - 42 km SSW of Jurm, Afghanistan",
-        "category": "Earthquake",
-        "date": "2026-06-22T10:22:23.506000Z",
-        "coordinates": [
-          70.733,
-          36.4903
-        ]
       }
     ]
   },
@@ -243,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.4,
-    "feels_c": 24.2,
-    "humidity": 51,
+    "temp_c": 23.0,
+    "feels_c": 22.8,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.6
+    "wind_kmh": 4.7
   },
   "forecast_today": {
     "date": "2026-06-25",
     "city": "Zagreb",
-    "temp_min_c": 23.7,
-    "temp_max_c": 24.4,
-    "humidity": 52,
+    "temp_min_c": 23.0,
+    "temp_max_c": 23.0,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.8,
-    "samples": 2
+    "wind_kmh": 4.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-26",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-25T21:56:39+02:00"
+    "fetched_at": "2026-06-25T23:42:40+02:00"
   }
 }
