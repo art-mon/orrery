@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-25",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Anticrepuscular Rays over Sicily",
+    "date": "2026-06-25",
+    "explanation": "The Sun has just set... in the opposite side of the sky.   Pictured here are anticrepuscular rays apparently converging in the east in this image of the limestone plateau in the heart of the Hyblaean Mountains of southeastern Sicily, in Italy.   How were these anticrepuscular rays formed, if the Sun wasn't there?   After the Sun set (in the west, as usual) its light still illuminated a cloud higher up in the sky.   Partially blocked by the cloud, the sunlight produced patterns of light and shadow, crossing the sky in parallel lines.   Perspective makes it look like they converge in the east, in the same way that train tracks appear to meet in the distance.   This effect can also happen at sunrise, only the directions are exchanged.   In rare cases, both crepuscular and anticrepuscular rays can be seen at the same time.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/crepuscular2_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/crepuscular2.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t81q",
+        "title": "M5.4 Earthquake - 58 km E of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-06-25T06:19:38.278000Z",
+        "coordinates": [
+          152.791,
+          -4.2981
+        ]
+      },
       {
         "id": "us6000t815",
         "title": "M5.1 Earthquake - 152 km N of Caluula, Somalia",
@@ -144,16 +159,6 @@
           70.733,
           36.4903
         ]
-      },
-      {
-        "id": "us7000sv1m",
-        "title": "M5.1 Earthquake - Kermadec Islands, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-06-21T23:14:44.424000Z",
-        "coordinates": [
-          -178.4702,
-          -30.3614
-        ]
       }
     ]
   },
@@ -242,43 +247,43 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.8,
-    "humidity": 72,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 1.7
+    "city": "Zagreb",
+    "temp_c": 31.6,
+    "feels_c": 31.5,
+    "humidity": 38,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.0
   },
   "forecast_today": {
     "date": "2026-06-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 32.5,
-    "humidity": 53,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 5.4,
-    "samples": 7
+    "city": "Zagreb",
+    "temp_min_c": 23.6,
+    "temp_max_c": 32.2,
+    "humidity": 39,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 6.7,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 34.3,
+    "city": "Zagreb",
+    "temp_min_c": 20.2,
+    "temp_max_c": 34.5,
     "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.2
   },
   "forecast_day_after": {
     "date": "2026-06-27",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.4,
-    "temp_max_c": 36.8,
+    "temp_max_c": 36.7,
     "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
@@ -286,11 +291,11 @@
     "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
+    "uv": 6.0,
+    "band": "moderate",
     "daily_max": 7.3,
     "peak_time": "2026-06-25T13:00",
-    "safe_minutes": 159,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-25T07:03:07+02:00"
+    "fetched_at": "2026-06-25T10:57:08+02:00"
   }
 }
