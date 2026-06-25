@@ -6,33 +6,43 @@
   "events": {
     "events": [
       {
-        "id": "us6000t7zq",
-        "title": "M6.9 Earthquake - 35 km ENE of Kuji, Japan",
+        "id": "us6000t815",
+        "title": "M5.1 Earthquake - 152 km N of Caluula, Somalia",
         "category": "Earthquake",
-        "date": "2026-06-24T22:30:15.418000Z",
+        "date": "2026-06-25T03:53:24.853000Z",
         "coordinates": [
-          142.132,
-          40.3462
+          50.8792,
+          13.3421
+        ]
+      },
+      {
+        "id": "us6000t7zq",
+        "title": "M6.9 Earthquake - 30 km ENE of Kuji, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-24T22:30:14.931000Z",
+        "coordinates": [
+          142.0981,
+          40.2912
         ]
       },
       {
         "id": "us6000t7zp",
-        "title": "M7.5 Earthquake - 23 km SE of Yumare, Venezuela",
+        "title": "M7.5 Earthquake - 28 km SE of Yumare, Venezuela",
         "category": "Earthquake",
-        "date": "2026-06-24T22:05:12.092000Z",
+        "date": "2026-06-24T22:05:11.566000Z",
         "coordinates": [
-          -68.5139,
-          10.453
+          -68.4716,
+          10.4351
         ]
       },
       {
         "id": "us6000t7zc",
-        "title": "M7.2 Earthquake - 24 km ENE of San Felipe, Venezuela",
+        "title": "M7.2 Earthquake - 23 km SE of Yumare, Venezuela",
         "category": "Earthquake",
-        "date": "2026-06-24T22:04:33.586000Z",
+        "date": "2026-06-24T22:04:33.389000Z",
         "coordinates": [
-          -68.52,
-          10.3874
+          -68.5277,
+          10.436
         ]
       },
       {
@@ -144,16 +154,6 @@
           -178.4702,
           -30.3614
         ]
-      },
-      {
-        "id": "us7000sv7m",
-        "title": "M5.4 Earthquake - central Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-06-21T22:04:16.787000Z",
-        "coordinates": [
-          -27.8954,
-          1.0088
-        ]
       }
     ]
   },
@@ -242,32 +242,32 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.1,
-    "feels_c": 23.1,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_c": 22.6,
+    "feels_c": 22.8,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 4.6
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 1.7
   },
   "forecast_today": {
     "date": "2026-06-25",
-    "city": "Zagreb",
-    "temp_min_c": 22.0,
-    "temp_max_c": 32.7,
-    "humidity": 46,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.6,
+    "temp_max_c": 32.5,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
+    "icon": "03d",
     "wind_kmh": 5.4,
-    "samples": 8
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-26",
-    "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 34.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.5,
+    "temp_max_c": 34.3,
     "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
@@ -276,21 +276,21 @@
   },
   "forecast_day_after": {
     "date": "2026-06-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.4,
-    "temp_max_c": 36.5,
-    "humidity": 42,
+    "temp_max_c": 36.8,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-25T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 159,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-25T02:09:39+02:00"
+    "fetched_at": "2026-06-25T07:03:07+02:00"
   }
 }
