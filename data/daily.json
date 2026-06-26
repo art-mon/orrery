@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8ey",
+        "title": "M5.2 Earthquake - 7 km NE of Villa El Carmen, Nicaragua",
+        "category": "Earthquake",
+        "date": "2026-06-26T11:57:25.458000Z",
+        "coordinates": [
+          -86.4565,
+          12.0312
+        ]
+      },
+      {
+        "id": "us6000t8ei",
+        "title": "M5.2 Earthquake - 52 km NNE of Barkhan, Pakistan",
+        "category": "Earthquake",
+        "date": "2026-06-26T11:48:47.037000Z",
+        "coordinates": [
+          69.6336,
+          30.3661
+        ]
+      },
+      {
+        "id": "us6000t8ec",
+        "title": "M6.5 Earthquake - 34 km WSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-26T11:34:41.498000Z",
+        "coordinates": [
+          125.1965,
+          5.2392
+        ]
+      },
+      {
         "id": "us6000t8di",
         "title": "M5.1 Earthquake - south of the Kermadec Islands",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           95.2983,
           37.8214
         ]
-      },
-      {
-        "id": "us6000t7lb",
-        "title": "M5.3 Earthquake - 120 km S of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-06-23T13:58:34.774000Z",
-        "coordinates": [
-          169.2307,
-          -20.6302
-        ]
-      },
-      {
-        "id": "us6000t7k4",
-        "title": "M5.0 Earthquake - 174 km E of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-06-23T07:11:14.440000Z",
-        "coordinates": [
-          -172.1796,
-          -16.1772
-        ]
-      },
-      {
-        "id": "us6000t7iy",
-        "title": "M5.3 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-06-23T02:26:20.999000Z",
-        "coordinates": [
-          -177.7691,
-          -27.1921
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 33.7,
-    "feels_c": 34.9,
-    "humidity": 40,
+    "temp_c": 35.4,
+    "feels_c": 35.0,
+    "humidity": 29,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.0
+    "wind_kmh": 9.2
   },
   "forecast_today": {
     "date": "2026-06-26",
     "city": "Zagreb",
     "temp_min_c": 23.2,
-    "temp_max_c": 33.7,
-    "humidity": 40,
+    "temp_max_c": 35.4,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.9,
-    "samples": 5
+    "wind_kmh": 5.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-27",
@@ -277,7 +277,7 @@
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.3
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-06-28",
@@ -288,14 +288,14 @@
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 7.4,
+    "uv": 6.5,
     "band": "high",
     "daily_max": 7.3,
     "peak_time": "2026-06-26T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 26,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-26T12:48:44+02:00"
+    "fetched_at": "2026-06-26T15:09:22+02:00"
   }
 }
