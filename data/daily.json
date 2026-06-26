@@ -1,15 +1,30 @@
 {
   "generated": "2026-06-26",
   "apod": {
-    "title": "Milky Way Urban Style",
-    "date": "2026-06-26",
-    "explanation": "In a cosmic vista you can never see, the Milky Way arcs through the night above Seoul, South Korea. Remarkably, this urban night skyscape reveals our galaxy's faintly luminous central region and dark obscuring dust clouds in spite of the brilliant city lights. To overcome the extreme light pollution of the metropolitan area and record faint cosmic details, an infrared filter was used to capture the night scene in a single exposure. While the filter transmits predominately infrared light, it still passes some visible light to give the scene a natural appearance. The view is from Seoul's Ttukseom Hangang Park, with the Han River and a well lit railway bridge across the foreground. The 123 story Lotte World Tower looms in the distance, the tallest building in South Korea.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "pt26177002",
+        "title": "M5.0 Earthquake - 58 km S of Boca de Yuma, Dominican Republic",
+        "category": "Earthquake",
+        "date": "2026-06-26T16:06:48Z",
+        "coordinates": [
+          -68.536,
+          17.858
+        ]
+      },
+      {
+        "id": "us6000t8fe",
+        "title": "M5.7 Earthquake - 7 km N of Oshino, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-26T13:29:01.877000Z",
+        "coordinates": [
+          138.8566,
+          35.5228
+        ]
+      },
       {
         "id": "us6000t8ey",
         "title": "M5.2 Earthquake - 7 km NE of Villa El Carmen, Nicaragua",
@@ -139,26 +154,6 @@
           155.1762,
           -6.7815
         ]
-      },
-      {
-        "id": "us6000t7rx",
-        "title": "M5.0 Earthquake - 71 km WNW of Catuday, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-24T02:04:49.661000Z",
-        "coordinates": [
-          119.1731,
-          16.5122
-        ]
-      },
-      {
-        "id": "us6000t7ll",
-        "title": "M5.2 Earthquake - 265 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-23T15:29:02.332000Z",
-        "coordinates": [
-          95.2983,
-          37.8214
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 35.4,
-    "feels_c": 35.0,
-    "humidity": 29,
+    "city": "Zagreb",
+    "temp_c": 34.2,
+    "feels_c": 33.6,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.2
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-06-26",
     "city": "Zagreb",
-    "temp_min_c": 23.2,
-    "temp_max_c": 35.4,
-    "humidity": 34,
+    "temp_min_c": 26.8,
+    "temp_max_c": 34.2,
+    "humidity": 35,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.7,
-    "samples": 4
+    "wind_kmh": 3.0,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-27",
     "city": "Zagreb",
-    "temp_min_c": 20,
-    "temp_max_c": 36.2,
-    "humidity": 39,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.4
-  },
-  "forecast_day_after": {
-    "date": "2026-06-28",
-    "city": "Zagreb",
-    "temp_min_c": 22.4,
-    "temp_max_c": 37.0,
+    "temp_min_c": 18.8,
+    "temp_max_c": 36.0,
     "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 4.3
+  },
+  "forecast_day_after": {
+    "date": "2026-06-28",
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 37.2,
+    "humidity": 40,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 6.5,
-    "band": "high",
+    "uv": 2.5,
+    "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-26T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 68,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-26T15:09:22+02:00"
+    "fetched_at": "2026-06-26T18:13:57+02:00"
   }
 }
