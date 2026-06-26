@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8di",
+        "title": "M5.1 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-06-26T06:18:59.942000Z",
+        "coordinates": [
+          -177.9409,
+          -32.4752
+        ]
+      },
+      {
+        "id": "us6000t8cy",
+        "title": "M5.8 Earthquake - 3 km SE of Yokoshiba, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-26T03:46:35.803000Z",
+        "coordinates": [
+          140.5099,
+          35.6314
+        ]
+      },
+      {
         "id": "us6000t8al",
         "title": "M5.0 Earthquake - 93 km E of Union, Philippines",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           -177.7691,
           -27.1921
         ]
-      },
-      {
-        "id": "us6000t7it",
-        "title": "M5.1 Earthquake - 186 km N of Fais, Micronesia",
-        "category": "Earthquake",
-        "date": "2026-06-23T01:56:49.906000Z",
-        "coordinates": [
-          140.6086,
-          11.4493
-        ]
-      },
-      {
-        "id": "us6000t7gf",
-        "title": "M5.1 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-06-22T19:46:11.598000Z",
-        "coordinates": [
-          -178.2858,
-          -31.9328
-        ]
       }
     ]
   },
@@ -242,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 20.0,
-    "feels_c": 19.8,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_c": 30.1,
+    "feels_c": 29.1,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-06-26",
-    "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 34.2,
-    "humidity": 43,
+    "city": "City of Zagreb",
+    "temp_min_c": 24.2,
+    "temp_max_c": 33.0,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.4,
-    "samples": 7
+    "wind_kmh": 4.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.0,
     "temp_max_c": 36.5,
     "humidity": 39,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-28",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 22.7,
     "temp_max_c": 37.2,
     "humidity": 41,
@@ -286,11 +286,11 @@
     "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.7,
+    "band": "moderate",
     "daily_max": 7.3,
     "peak_time": "2026-06-26T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 35,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-26T05:27:22+02:00"
+    "fetched_at": "2026-06-26T09:49:51+02:00"
   }
 }
