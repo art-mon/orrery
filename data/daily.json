@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-26",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Milky Way Urban Style",
+    "date": "2026-06-26",
+    "explanation": "In a cosmic vista you can never see, the Milky Way arcs through the night above Seoul, South Korea. Remarkably, this urban night skyscape reveals our galaxy's faintly luminous central region and dark obscuring dust clouds in spite of the brilliant city lights. To overcome the extreme light pollution of the metropolitan area and record faint cosmic details, an infrared filter was used to capture the night scene in a single exposure. While the filter transmits predominately infrared light, it still passes some visible light to give the scene a natural appearance. The view is from Seoul's Ttukseom Hangang Park, with the Han River and a well lit railway bridge across the foreground. The 123 story Lotte World Tower looms in the distance, the tallest building in South Korea.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee800.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee.jpg"
   },
   "events": {
     "events": [
@@ -243,50 +248,50 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.2,
-    "feels_c": 26.2,
-    "humidity": 43,
+    "temp_c": 23.1,
+    "feels_c": 22.7,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.2
+    "icon": "01n",
+    "wind_kmh": 2.1
   },
   "forecast_today": {
     "date": "2026-06-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 26.2,
-    "temp_max_c": 26.5,
-    "humidity": 42,
+    "city": "Zagreb",
+    "temp_min_c": 23.1,
+    "temp_max_c": 23.1,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 2.7,
+    "icon": "01n",
+    "wind_kmh": 2.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-27",
-    "city": "City of Zagreb",
-    "temp_min_c": 20,
-    "temp_max_c": 36.2,
-    "humidity": 38,
+    "city": "Zagreb",
+    "temp_min_c": 20.2,
+    "temp_max_c": 36.0,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-06-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.4,
-    "temp_max_c": 37.0,
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 37.2,
     "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-26T13:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-26T20:50:02+02:00"
+    "fetched_at": "2026-06-26T22:45:06+02:00"
   }
 }
