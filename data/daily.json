@@ -6,13 +6,13 @@
   "events": {
     "events": [
       {
-        "id": "pt26177002",
-        "title": "M5.0 Earthquake - 58 km S of Boca de Yuma, Dominican Republic",
+        "id": "pr2026177000",
+        "title": "M5.0 Earthquake - 51 km S of Boca de Yuma, Dominican Republic",
         "category": "Earthquake",
-        "date": "2026-06-26T16:06:48Z",
+        "date": "2026-06-26T16:06:49.450000Z",
         "coordinates": [
-          -68.536,
-          17.858
+          -68.5223,
+          17.9176
         ]
       },
       {
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 34.2,
-    "feels_c": 33.6,
-    "humidity": 30,
+    "temp_c": 26.2,
+    "feels_c": 26.2,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 2.2
   },
   "forecast_today": {
     "date": "2026-06-26",
-    "city": "Zagreb",
-    "temp_min_c": 26.8,
-    "temp_max_c": 34.2,
-    "humidity": 35,
+    "city": "City of Zagreb",
+    "temp_min_c": 26.2,
+    "temp_max_c": 26.5,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.0,
-    "samples": 3
+    "wind_kmh": 2.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-06-27",
-    "city": "Zagreb",
-    "temp_min_c": 18.8,
-    "temp_max_c": 36.0,
-    "humidity": 40,
+    "city": "City of Zagreb",
+    "temp_min_c": 20,
+    "temp_max_c": 36.2,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.3
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-06-28",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 37.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.4,
+    "temp_max_c": 37.0,
     "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 2.5,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-26T13:00",
-    "safe_minutes": 68,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-26T18:13:57+02:00"
+    "fetched_at": "2026-06-26T20:50:02+02:00"
   }
 }
