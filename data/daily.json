@@ -1,15 +1,35 @@
 {
   "generated": "2026-06-27",
   "apod": {
-    "title": "Milky Way Urban Style",
-    "date": "2026-06-26",
-    "explanation": "In a cosmic vista you can never see, the Milky Way arcs through the night above Seoul, South Korea. Remarkably, this urban night skyscape reveals our galaxy's faintly luminous central region and dark obscuring dust clouds in spite of the brilliant city lights. To overcome the extreme light pollution of the metropolitan area and record faint cosmic details, an infrared filter was used to capture the night scene in a single exposure. While the filter transmits predominately infrared light, it still passes some visible light to give the scene a natural appearance. The view is from Seoul's Ttukseom Hangang Park, with the Han River and a well lit railway bridge across the foreground. The 123 story Lotte World Tower looms in the distance, the tallest building in South Korea.",
+    "title": "Mars Marathon by Perseverance",
+    "date": "2026-06-27",
+    "explanation": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon, traveling a total distance of 26.218 miles (42.195 kilometers) since it began exploring the surface of Mars. That equivalent marathon distance was achieved by Perseverance on its mission sol (Martian day) 1,890, after about 5 Earth years and 4 Earth months of driving. Perseverance is continuing to hunt for biosignatures. In the HiRISE image, the Mars rover's tracks can be seen leading to its location in an area west of its landing site in Jezero crater near an ancient river delta.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2606/PIA26726_figA1024c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t8le",
+        "title": "M5.4 Earthquake - 63 km NNE of Barkhan, Pakistan",
+        "category": "Earthquake",
+        "date": "2026-06-27T03:06:21.113000Z",
+        "coordinates": [
+          69.6859,
+          30.4545
+        ]
+      },
+      {
+        "id": "us6000t8kk",
+        "title": "M5.1 Earthquake - 100 km E of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-06-27T00:03:23.509000Z",
+        "coordinates": [
+          162.8277,
+          -10.6087
+        ]
+      },
       {
         "id": "pr2026177000",
         "title": "M5.0 Earthquake - 51 km S of Boca de Yuma, Dominican Republic",
@@ -139,26 +159,6 @@
           -68.5277,
           10.436
         ]
-      },
-      {
-        "id": "nc75382936",
-        "title": "M5.6 Earthquake - 11 km N of Redwood Valley, CA",
-        "category": "Earthquake",
-        "date": "2026-06-24T15:10:40.760000Z",
-        "coordinates": [
-          -123.228833333333,
-          39.3623333333333
-        ]
-      },
-      {
-        "id": "us6000t7t2",
-        "title": "M5.1 Earthquake - 61 km SSW of Panguna, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-06-24T06:17:22.718000Z",
-        "coordinates": [
-          155.1762,
-          -6.7815
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.9,
-    "humidity": 60,
+    "temp_c": 23.7,
+    "feels_c": 23.9,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 4.3
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-06-27",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 35.7,
-    "humidity": 42,
+    "temp_min_c": 23.6,
+    "temp_max_c": 34.9,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.3,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 4.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-06-28",
     "city": "Zagreb",
-    "temp_min_c": 19.5,
-    "temp_max_c": 37.8,
+    "temp_min_c": 19.1,
+    "temp_max_c": 36.3,
     "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.8
+    "wind_kmh": 6.3
   },
   "forecast_day_after": {
     "date": "2026-06-29",
     "city": "Zagreb",
-    "temp_min_c": 23.7,
-    "temp_max_c": 37.6,
+    "temp_min_c": 23.3,
+    "temp_max_c": 37.2,
     "humidity": 42,
     "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.4
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.8,
     "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-27T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 208,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T02:04:30+02:00"
+    "fetched_at": "2026-06-27T06:51:16+02:00"
   }
 }
