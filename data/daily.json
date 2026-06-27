@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-27",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Mars Marathon by Perseverance",
+    "date": "2026-06-27",
+    "explanation": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon, traveling a total distance of 26.218 miles (42.195 kilometers) since it began exploring the surface of Mars. That equivalent marathon distance was achieved by Perseverance on its mission sol (Martian day) 1,890, after about 5 Earth years and 4 Earth months of driving. Perseverance is continuing to hunt for biosignatures. In the HiRISE image, the Mars rover's tracks can be seen leading to its location in an area west of its landing site in Jezero crater near an ancient river delta.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/PIA26726_figA1024c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t8qd",
+        "title": "M5.9 Earthquake - 50 km ENE of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-27T20:21:51.006000Z",
+        "coordinates": [
+          142.3816,
+          40.2598
+        ]
+      },
       {
         "id": "us6000t8pa",
         "title": "M6.1 Earthquake - 43 km S of Jurm, Afghanistan",
@@ -144,16 +159,6 @@
           126.9518,
           9.8919
         ]
-      },
-      {
-        "id": "us6000t81q",
-        "title": "M5.5 Earthquake - 73 km E of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-06-25T06:19:35.965000Z",
-        "coordinates": [
-          152.9318,
-          -4.3413
-        ]
       }
     ]
   },
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.1,
+    "city": "Donji grad",
+    "temp_c": 23.9,
     "feels_c": 23.9,
-    "humidity": 53,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.3
+    "wind_kmh": 2.2
   },
   "forecast_today": {
     "date": "2026-06-27",
-    "city": "Zagreb",
-    "temp_min_c": 23.2,
-    "temp_max_c": 24.1,
-    "humidity": 54,
+    "city": "Donji grad",
+    "temp_min_c": 23.9,
+    "temp_max_c": 23.9,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.6,
-    "samples": 2
+    "wind_kmh": 2.2,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-06-28",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.6,
     "temp_max_c": 36.1,
     "humidity": 43,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-29",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.0,
     "temp_max_c": 37.0,
     "humidity": 42,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T21:41:07+02:00"
+    "fetched_at": "2026-06-27T23:00:41+02:00"
   }
 }
