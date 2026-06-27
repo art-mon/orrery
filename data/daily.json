@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-27",
   "apod": {
-    "title": "Mars Marathon by Perseverance",
-    "date": "2026-06-27",
-    "explanation": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon, traveling a total distance of 26.218 miles (42.195 kilometers) since it began exploring the surface of Mars. That equivalent marathon distance was achieved by Perseverance on its mission sol (Martian day) 1,890, after about 5 Earth years and 4 Earth months of driving. Perseverance is continuing to hunt for biosignatures. In the HiRISE image, the Mars rover's tracks can be seen leading to its location in an area west of its landing site in Jezero crater near an ancient river delta.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/PIA26726_figA1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 37.0,
-    "feels_c": 37.5,
-    "humidity": 29,
+    "temp_c": 35.4,
+    "feels_c": 35.9,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 10.2
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-06-27",
-    "city": "Zagreb",
-    "temp_min_c": 27.9,
-    "temp_max_c": 37.0,
-    "humidity": 34,
+    "city": "Donji grad",
+    "temp_min_c": 27.3,
+    "temp_max_c": 35.4,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.0,
-    "samples": 4
+    "wind_kmh": 5.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-28",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 19.5,
     "temp_max_c": 36.1,
     "humidity": 43,
@@ -281,21 +276,21 @@
   },
   "forecast_day_after": {
     "date": "2026-06-29",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.0,
-    "temp_max_c": 37.4,
-    "humidity": 40,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.1
+    "temp_max_c": 36.9,
+    "humidity": 42,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.8
   },
   "uv": {
-    "uv": 5.0,
-    "band": "moderate",
+    "uv": 2.5,
+    "band": "low",
     "daily_max": 7.3,
     "peak_time": "2026-06-27T13:00",
-    "safe_minutes": 34,
+    "safe_minutes": 68,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T16:27:46+02:00"
+    "fetched_at": "2026-06-27T18:02:55+02:00"
   }
 }
