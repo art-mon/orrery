@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-27",
+  "generated": "2026-06-28",
   "apod": {
     "title": "Mars Marathon by Perseverance",
     "date": "2026-06-27",
@@ -11,13 +11,23 @@
   "events": {
     "events": [
       {
-        "id": "us6000t8qd",
-        "title": "M5.9 Earthquake - 50 km ENE of Noda, Japan",
+        "id": "us6000t8qv",
+        "title": "M5.1 Earthquake - 112 km SW of Bandar Lampung, Indonesia",
         "category": "Earthquake",
-        "date": "2026-06-27T20:21:51.006000Z",
+        "date": "2026-06-27T21:10:26.101000Z",
         "coordinates": [
-          142.3816,
-          40.2598
+          104.6082,
+          -6.2095
+        ]
+      },
+      {
+        "id": "us6000t8qd",
+        "title": "M5.8 Earthquake - 51 km ENE of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-06-27T20:21:50.769000Z",
+        "coordinates": [
+          142.4136,
+          40.206
         ]
       },
       {
@@ -149,16 +159,6 @@
           140.5099,
           35.6314
         ]
-      },
-      {
-        "id": "us6000t8al",
-        "title": "M5.0 Earthquake - 93 km E of Union, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-25T21:17:49.072000Z",
-        "coordinates": [
-          126.9518,
-          9.8919
-        ]
       }
     ]
   },
@@ -247,41 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.9,
-    "feels_c": 23.9,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_c": 27.0,
+    "feels_c": 28.3,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 2.2
+    "wind_kmh": 1.7
   },
   "forecast_today": {
-    "date": "2026-06-27",
-    "city": "Donji grad",
-    "temp_min_c": 23.9,
-    "temp_max_c": 23.9,
-    "humidity": 60,
+    "date": "2026-06-28",
+    "city": "Zagreb",
+    "temp_min_c": 24,
+    "temp_max_c": 36.1,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.2,
-    "samples": 1
+    "wind_kmh": 4.8,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-28",
-    "city": "Donji grad",
-    "temp_min_c": 20.6,
-    "temp_max_c": 36.1,
-    "humidity": 43,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.2
-  },
-  "forecast_day_after": {
     "date": "2026-06-29",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 20.0,
     "temp_max_c": 37.0,
     "humidity": 42,
@@ -290,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 6.9
   },
+  "forecast_day_after": {
+    "date": "2026-06-30",
+    "city": "Zagreb",
+    "temp_min_c": 21.5,
+    "temp_max_c": 37.7,
+    "humidity": 43,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.5
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.3,
-    "peak_time": "2026-06-27T13:00",
+    "daily_max": 7.2,
+    "peak_time": "2026-06-28T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-27T00:00",
+        "time": "2026-06-28T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T01:00",
+        "time": "2026-06-28T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T02:00",
+        "time": "2026-06-28T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T03:00",
+        "time": "2026-06-28T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T04:00",
+        "time": "2026-06-28T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T05:00",
+        "time": "2026-06-28T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T06:00",
+        "time": "2026-06-28T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-27T07:00",
+        "time": "2026-06-28T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-27T08:00",
-        "uv": 1.7
-      },
-      {
-        "time": "2026-06-27T09:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-27T10:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-27T11:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-27T12:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-06-27T13:00",
-        "uv": 7.3
-      },
-      {
-        "time": "2026-06-27T14:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-27T15:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-06-27T16:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-27T17:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-27T18:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-27T19:00",
+        "time": "2026-06-28T08:00",
         "uv": 1.6
       },
       {
-        "time": "2026-06-27T20:00",
+        "time": "2026-06-28T09:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-06-28T10:00",
+        "uv": 4.5
+      },
+      {
+        "time": "2026-06-28T11:00",
+        "uv": 5.8
+      },
+      {
+        "time": "2026-06-28T12:00",
+        "uv": 6.8
+      },
+      {
+        "time": "2026-06-28T13:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-06-28T14:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-06-28T15:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-06-28T16:00",
+        "uv": 5.8
+      },
+      {
+        "time": "2026-06-28T17:00",
+        "uv": 4.4
+      },
+      {
+        "time": "2026-06-28T18:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-06-28T19:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-06-28T20:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-27T21:00",
+        "time": "2026-06-28T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-27T22:00",
+        "time": "2026-06-28T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-27T23:00",
+        "time": "2026-06-28T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T23:00:41+02:00"
+    "fetched_at": "2026-06-28T00:59:47+02:00"
   }
 }
