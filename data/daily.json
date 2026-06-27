@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8pa",
+        "title": "M6.1 Earthquake - 43 km S of Jurm, Afghanistan",
+        "category": "Earthquake",
+        "date": "2026-06-27T13:34:52.534000Z",
+        "coordinates": [
+          70.7644,
+          36.4731
+        ]
+      },
+      {
         "id": "us6000t8ny",
         "title": "M5.2 Earthquake - 139 km E of Kirakira, Solomon Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           152.9318,
           -4.3413
         ]
-      },
-      {
-        "id": "us6000t815",
-        "title": "M5.1 Earthquake - 152 km N of Caluula, Somalia",
-        "category": "Earthquake",
-        "date": "2026-06-25T03:53:24.853000Z",
-        "coordinates": [
-          50.8792,
-          13.3421
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 36.5,
+    "temp_c": 37.0,
     "feels_c": 37.5,
-    "humidity": 32,
+    "humidity": 29,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.7
+    "wind_kmh": 10.2
   },
   "forecast_today": {
     "date": "2026-06-27",
     "city": "Zagreb",
-    "temp_min_c": 23.2,
-    "temp_max_c": 36.5,
-    "humidity": 38,
+    "temp_min_c": 27.9,
+    "temp_max_c": 37.0,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.7,
+    "wind_kmh": 7.0,
     "samples": 4
   },
   "forecast": {
     "date": "2026-06-28",
     "city": "Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 36.4,
-    "humidity": 42,
+    "temp_min_c": 19.5,
+    "temp_max_c": 36.1,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.8
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-06-29",
     "city": "Zagreb",
-    "temp_min_c": 21.3,
+    "temp_min_c": 20.0,
     "temp_max_c": 37.4,
-    "humidity": 39,
-    "condition": "Clear",
+    "humidity": 40,
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 8.1
   },
   "uv": {
-    "uv": 7.2,
-    "band": "high",
+    "uv": 5.0,
+    "band": "moderate",
     "daily_max": 7.3,
     "peak_time": "2026-06-27T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 34,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T14:07:47+02:00"
+    "fetched_at": "2026-06-27T16:27:46+02:00"
   }
 }
