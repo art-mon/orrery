@@ -1,7 +1,12 @@
 {
   "generated": "2026-06-27",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Milky Way Urban Style",
+    "date": "2026-06-26",
+    "explanation": "In a cosmic vista you can never see, the Milky Way arcs through the night above Seoul, South Korea. Remarkably, this urban night skyscape reveals our galaxy's faintly luminous central region and dark obscuring dust clouds in spite of the brilliant city lights. To overcome the extreme light pollution of the metropolitan area and record faint cosmic details, an infrared filter was used to capture the night scene in a single exposure. While the filter transmits predominately infrared light, it still passes some visible light to give the scene a natural appearance. The view is from Seoul's Ttukseom Hangang Park, with the Han River and a well lit railway bridge across the foreground. The 123 story Lotte World Tower looms in the distance, the tallest building in South Korea.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee800.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee.jpg"
   },
   "events": {
     "events": [
@@ -160,70 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2014 NV63)",
-        "hazardous": false,
-        "diameter_m": 134,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 8369379,
-        "velocity_kmh": 51602
-      },
-      {
-        "name": "(2018 NV)",
-        "hazardous": false,
-        "diameter_m": 162,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 15098413,
-        "velocity_kmh": 22233
-      },
-      {
-        "name": "(2002 EM7)",
-        "hazardous": false,
-        "diameter_m": 78,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 16922096,
-        "velocity_kmh": 27022
-      },
-      {
-        "name": "(2018 LW5)",
-        "hazardous": false,
-        "diameter_m": 439,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 34783231,
-        "velocity_kmh": 42737
-      },
-      {
-        "name": "(2014 MR67)",
-        "hazardous": false,
-        "diameter_m": 164,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 36916937,
-        "velocity_kmh": 61440
-      },
-      {
-        "name": "499998 (2011 PT)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 51086230,
-        "velocity_kmh": 15179
-      },
-      {
-        "name": "(2016 JH17)",
-        "hazardous": false,
-        "diameter_m": 513,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 69261182,
-        "velocity_kmh": 73291
-      },
-      {
-        "name": "(2016 TA57)",
-        "hazardous": true,
-        "diameter_m": 413,
-        "close_approach_date": "2026-06-26",
-        "miss_distance_km": 69942291,
-        "velocity_kmh": 84617
-      },
-      {
         "name": "152637 (1997 NC1)",
         "hazardous": true,
         "diameter_m": 1585,
@@ -238,52 +179,116 @@
         "close_approach_date": "2026-06-27",
         "miss_distance_km": 13643284,
         "velocity_kmh": 21649
+      },
+      {
+        "name": "(2016 XR23)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-06-27",
+        "miss_distance_km": 13846668,
+        "velocity_kmh": 15640
+      },
+      {
+        "name": "(2005 TE49)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-06-27",
+        "miss_distance_km": 63782121,
+        "velocity_kmh": 83637
+      },
+      {
+        "name": "276891 (2004 RH340)",
+        "hazardous": false,
+        "diameter_m": 738,
+        "close_approach_date": "2026-06-27",
+        "miss_distance_km": 67205989,
+        "velocity_kmh": 46916
+      },
+      {
+        "name": "(2018 VP5)",
+        "hazardous": false,
+        "diameter_m": 52,
+        "close_approach_date": "2026-06-27",
+        "miss_distance_km": 73440547,
+        "velocity_kmh": 70592
+      },
+      {
+        "name": "(2015 VH66)",
+        "hazardous": false,
+        "diameter_m": 586,
+        "close_approach_date": "2026-06-28",
+        "miss_distance_km": 23463950,
+        "velocity_kmh": 92259
+      },
+      {
+        "name": "(2015 MO66)",
+        "hazardous": false,
+        "diameter_m": 568,
+        "close_approach_date": "2026-06-28",
+        "miss_distance_km": 36077474,
+        "velocity_kmh": 76034
+      },
+      {
+        "name": "(2019 YO4)",
+        "hazardous": false,
+        "diameter_m": 249,
+        "close_approach_date": "2026-06-29",
+        "miss_distance_km": 35946482,
+        "velocity_kmh": 78533
+      },
+      {
+        "name": "(2015 YC1)",
+        "hazardous": false,
+        "diameter_m": 38,
+        "close_approach_date": "2026-06-29",
+        "miss_distance_km": 38625979,
+        "velocity_kmh": 55379
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 54,
+    "temp_c": 24.8,
+    "feels_c": 24.9,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.2
+    "wind_kmh": 4.3
   },
   "forecast_today": {
     "date": "2026-06-27",
-    "city": "Donji grad",
-    "temp_min_c": 21.4,
-    "temp_max_c": 36.0,
+    "city": "Zagreb",
+    "temp_min_c": 22.7,
+    "temp_max_c": 35.7,
     "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.9,
-    "samples": 9
+    "wind_kmh": 4.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-28",
-    "city": "Donji grad",
-    "temp_min_c": 19.7,
-    "temp_max_c": 37.2,
-    "humidity": 40,
+    "city": "Zagreb",
+    "temp_min_c": 19.5,
+    "temp_max_c": 37.8,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-06-29",
-    "city": "Donji grad",
-    "temp_min_c": 23.9,
-    "temp_max_c": 38.0,
-    "humidity": 38,
+    "city": "Zagreb",
+    "temp_min_c": 23.7,
+    "temp_max_c": 37.6,
+    "humidity": 42,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.2
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.4
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-27T00:11:06+02:00"
+    "fetched_at": "2026-06-27T02:04:30+02:00"
   }
 }
