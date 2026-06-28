@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8ux",
+        "title": "M5.0 Earthquake - 68 km WNW of Catuday, Philippines",
+        "category": "Earthquake",
+        "date": "2026-06-28T19:09:03.928000Z",
+        "coordinates": [
+          119.2088,
+          16.5146
+        ]
+      },
+      {
         "id": "us6000t8u3",
         "title": "M5.2 Earthquake - 8 km WNW of Changning, China",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -86.4565,
           12.0312
         ]
-      },
-      {
-        "id": "us6000t8ei",
-        "title": "M5.2 Earthquake - 52 km NNE of Barkhan, Pakistan",
-        "category": "Earthquake",
-        "date": "2026-06-26T11:48:47.037000Z",
-        "coordinates": [
-          69.6336,
-          30.3661
-        ]
       }
     ]
   },
@@ -248,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 28.1,
-    "humidity": 52,
+    "temp_c": 24.0,
+    "feels_c": 24.1,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 5.8
   },
   "forecast_today": {
     "date": "2026-06-28",
-    "city": "Zagreb",
-    "temp_min_c": 27.5,
-    "temp_max_c": 27.6,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_min_c": 24.0,
+    "temp_max_c": 24.0,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.7,
+    "wind_kmh": 5.8,
     "samples": 2
   },
   "forecast": {
     "date": "2026-06-29",
-    "city": "Zagreb",
-    "temp_min_c": 19.0,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.7,
     "temp_max_c": 36.6,
     "humidity": 44,
     "condition": "Clear",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-06-30",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.8,
     "temp_max_c": 38.1,
     "humidity": 44,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-28T21:15:44+02:00"
+    "fetched_at": "2026-06-28T22:58:53+02:00"
   }
 }
