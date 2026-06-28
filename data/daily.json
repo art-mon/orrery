@@ -1,10 +1,25 @@
 {
   "generated": "2026-06-28",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "AR 4478: Giant Sunspot Group",
+    "date": "2026-06-28",
+    "explanation": "Right now, one of the largest sunspot groups in recent history is crossing the Sun.  Active Region 4478 is not only big -- it's violent, showing tangled magnetic fields capable of throwing off huge clouds of particles into the Solar System.  Some of these CMEs might impact the Earth.  At the extreme, these solar storms could cause some Earth-orbiting satellites to malfunction, the Earth's atmosphere to slightly distort, and electrical power grids to surge.  When impacting Earth's upper atmosphere, these particles can produce beautiful auroras. Pictured here, AR 4478 and its dark sunspots were captured in visible light a few days ago from Barcelona, Spain.  Almost as large as AR 3664 was in 2024, the AR 4478 sunspot group is so big that it is visible just with glasses specially designed to view solar eclipses.  This week, skygazing enthusiasts all over the globe will not only be tracking AR 4478 during the day -- but keenly watching night skies for its corresponding bright auroras.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t8sl",
+        "title": "M5.2 Earthquake - 45 km NE of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-06-28T07:05:45.186000Z",
+        "coordinates": [
+          167.4024,
+          -14.7852
+        ]
+      },
       {
         "id": "us6000t8qv",
         "title": "M5.1 Earthquake - 112 km SW of Bandar Lampung, Indonesia",
@@ -144,16 +159,6 @@
           -177.9409,
           -32.4752
         ]
-      },
-      {
-        "id": "us6000t8cy",
-        "title": "M5.8 Earthquake - 3 km SE of Yokoshiba, Japan",
-        "category": "Earthquake",
-        "date": "2026-06-26T03:46:35.803000Z",
-        "coordinates": [
-          140.5099,
-          35.6314
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 25.0,
-    "feels_c": 25.4,
-    "humidity": 72,
+    "city": "Donji grad",
+    "temp_c": 34.2,
+    "feels_c": 37,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.3
+    "wind_kmh": 6.2
   },
   "forecast_today": {
     "date": "2026-06-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 23.6,
-    "temp_max_c": 35.9,
-    "humidity": 52,
+    "city": "Zagreb",
+    "temp_min_c": 23.5,
+    "temp_max_c": 35.5,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.5,
-    "samples": 7
+    "wind_kmh": 6.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-06-29",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 19.3,
-    "temp_max_c": 37,
-    "humidity": 43,
+    "temp_max_c": 36.9,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.6
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-06-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 37.4,
-    "humidity": 43,
+    "city": "Zagreb",
+    "temp_min_c": 20.7,
+    "temp_max_c": 37.1,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 1.2,
-    "band": "low",
+    "uv": 5.9,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-28T13:00",
-    "safe_minutes": 139,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-28T07:15:12+02:00"
+    "fetched_at": "2026-06-28T10:47:59+02:00"
   }
 }
