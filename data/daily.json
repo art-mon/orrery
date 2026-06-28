@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-28",
   "apod": {
-    "title": "Mars Marathon by Perseverance",
-    "date": "2026-06-27",
-    "explanation": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon, traveling a total distance of 26.218 miles (42.195 kilometers) since it began exploring the surface of Mars. That equivalent marathon distance was achieved by Perseverance on its mission sol (Martian day) 1,890, after about 5 Earth years and 4 Earth months of driving. Perseverance is continuing to hunt for biosignatures. In the HiRISE image, the Mars rover's tracks can be seen leading to its location in an area west of its landing site in Jezero crater near an ancient river delta.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/PIA26726_figA1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,54 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "152637 (1997 NC1)",
-        "hazardous": true,
-        "diameter_m": 1585,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 2565840,
-        "velocity_kmh": 31992
-      },
-      {
-        "name": "(2019 NG)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 13643284,
-        "velocity_kmh": 21649
-      },
-      {
-        "name": "(2016 XR23)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 13846668,
-        "velocity_kmh": 15640
-      },
-      {
-        "name": "(2005 TE49)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 63782121,
-        "velocity_kmh": 83637
-      },
-      {
-        "name": "276891 (2004 RH340)",
-        "hazardous": false,
-        "diameter_m": 738,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 67205989,
-        "velocity_kmh": 46916
-      },
-      {
-        "name": "(2018 VP5)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-06-27",
-        "miss_distance_km": 73440547,
-        "velocity_kmh": 70592
-      },
-      {
         "name": "(2015 VH66)",
         "hazardous": false,
         "diameter_m": 586,
@@ -243,158 +190,102 @@
         "close_approach_date": "2026-06-29",
         "miss_distance_km": 38625979,
         "velocity_kmh": 55379
+      },
+      {
+        "name": "398188 Agni (2010 LE15)",
+        "hazardous": true,
+        "diameter_m": 809,
+        "close_approach_date": "2026-06-30",
+        "miss_distance_km": 28611807,
+        "velocity_kmh": 28032
+      },
+      {
+        "name": "(2018 ES3)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-06-30",
+        "miss_distance_km": 49994491,
+        "velocity_kmh": 31812
+      },
+      {
+        "name": "(2016 AR130)",
+        "hazardous": false,
+        "diameter_m": 485,
+        "close_approach_date": "2026-06-30",
+        "miss_distance_km": 54117549,
+        "velocity_kmh": 129879
+      },
+      {
+        "name": "(2020 BW12)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-06-30",
+        "miss_distance_km": 58968945,
+        "velocity_kmh": 56985
+      },
+      {
+        "name": "(2005 NE21)",
+        "hazardous": false,
+        "diameter_m": 336,
+        "close_approach_date": "2026-07-01",
+        "miss_distance_km": 14442641,
+        "velocity_kmh": 40491
+      },
+      {
+        "name": "441987 (2010 NY65)",
+        "hazardous": true,
+        "diameter_m": 319,
+        "close_approach_date": "2026-07-01",
+        "miss_distance_km": 27329986,
+        "velocity_kmh": 62587
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.0,
-    "feels_c": 28.3,
-    "humidity": 62,
+    "temp_c": 26.1,
+    "feels_c": 26.1,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.7
+    "wind_kmh": 2.0
   },
   "forecast_today": {
     "date": "2026-06-28",
-    "city": "Zagreb",
-    "temp_min_c": 24,
-    "temp_max_c": 36.1,
-    "humidity": 46,
+    "city": "City of Zagreb",
+    "temp_min_c": 24.1,
+    "temp_max_c": 36.7,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.8,
-    "samples": 9
+    "wind_kmh": 5.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-29",
-    "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 37.0,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.6,
+    "temp_max_c": 37.8,
+    "humidity": 41,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.1
+  },
+  "forecast_day_after": {
+    "date": "2026-06-30",
+    "city": "City of Zagreb",
+    "temp_min_c": 22.1,
+    "temp_max_c": 38.4,
     "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.9
-  },
-  "forecast_day_after": {
-    "date": "2026-06-30",
-    "city": "Zagreb",
-    "temp_min_c": 21.5,
-    "temp_max_c": 37.7,
-    "humidity": 43,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.7
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 7.2,
-    "peak_time": "2026-06-28T13:00",
-    "safe_minutes": null,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-06-28T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T06:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-28T07:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-06-28T08:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-06-28T09:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-28T10:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-06-28T11:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-28T12:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-06-28T13:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-28T14:00",
-        "uv": 7.2
-      },
-      {
-        "time": "2026-06-28T15:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-06-28T16:00",
-        "uv": 5.8
-      },
-      {
-        "time": "2026-06-28T17:00",
-        "uv": 4.4
-      },
-      {
-        "time": "2026-06-28T18:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-06-28T19:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-06-28T20:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-06-28T21:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-06-28T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-06-28T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-06-28T00:59:47+02:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
