@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8u3",
+        "title": "M5.2 Earthquake - 8 km WNW of Changning, China",
+        "category": "Earthquake",
+        "date": "2026-06-28T16:12:08.958000Z",
+        "coordinates": [
+          104.8416,
+          28.6031
+        ]
+      },
+      {
         "id": "us6000t8t3",
         "title": "M5.0 Earthquake - 65 km W of Foxton Beach, New Zealand",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           69.6336,
           30.3661
         ]
-      },
-      {
-        "id": "us6000t8ec",
-        "title": "M6.5 Earthquake - 34 km WSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-26T11:34:41.498000Z",
-        "coordinates": [
-          125.1965,
-          5.2392
-        ]
       }
     ]
   },
@@ -243,24 +243,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 35.4,
-    "feels_c": 36.7,
-    "humidity": 36,
+    "temp_c": 35.5,
+    "feels_c": 37.5,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.0
+    "wind_kmh": 7.1
   },
   "forecast_today": {
     "date": "2026-06-28",
     "city": "Zagreb",
-    "temp_min_c": 27.4,
-    "temp_max_c": 35.4,
-    "humidity": 40,
+    "temp_min_c": 31.4,
+    "temp_max_c": 35.5,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.7,
+    "wind_kmh": 6.1,
     "samples": 3
   },
   "forecast": {
@@ -286,11 +286,11 @@
     "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 3.5,
-    "band": "moderate",
+    "uv": 1.2,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-28T13:00",
-    "safe_minutes": 47,
+    "safe_minutes": 139,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-28T17:16:40+02:00"
+    "fetched_at": "2026-06-28T19:06:52+02:00"
   }
 }
