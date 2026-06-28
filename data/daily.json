@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-28",
   "apod": {
-    "title": "AR 4478: Giant Sunspot Group",
-    "date": "2026-06-28",
-    "explanation": "Right now, one of the largest sunspot groups in recent history is crossing the Sun.  Active Region 4478 is not only big -- it's violent, showing tangled magnetic fields capable of throwing off huge clouds of particles into the Solar System.  Some of these CMEs might impact the Earth.  At the extreme, these solar storms could cause some Earth-orbiting satellites to malfunction, the Earth's atmosphere to slightly distort, and electrical power grids to surge.  When impacting Earth's upper atmosphere, these particles can produce beautiful auroras. Pictured here, AR 4478 and its dark sunspots were captured in visible light a few days ago from Barcelona, Spain.  Almost as large as AR 3664 was in 2024, the AR 4478 sunspot group is so big that it is visible just with glasses specially designed to view solar eclipses.  This week, skygazing enthusiasts all over the globe will not only be tracking AR 4478 during the day -- but keenly watching night skies for its corresponding bright auroras.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 36.5,
-    "feels_c": 37.8,
-    "humidity": 33,
+    "temp_c": 35.4,
+    "feels_c": 36.7,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.1
+    "wind_kmh": 9.0
   },
   "forecast_today": {
     "date": "2026-06-28",
     "city": "Zagreb",
-    "temp_min_c": 27.7,
-    "temp_max_c": 36.5,
-    "humidity": 36,
+    "temp_min_c": 27.4,
+    "temp_max_c": 35.4,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.3,
-    "samples": 4
+    "wind_kmh": 6.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-06-29",
@@ -291,11 +286,11 @@
     "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 5.9,
+    "uv": 3.5,
     "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-28T13:00",
-    "safe_minutes": 28,
+    "safe_minutes": 47,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-28T15:40:56+02:00"
+    "fetched_at": "2026-06-28T17:16:40+02:00"
   }
 }
