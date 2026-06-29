@@ -6,13 +6,23 @@
   "events": {
     "events": [
       {
-        "id": "us6000t8vm",
-        "title": "M5.0 Earthquake - 173 km S of Lembar, Indonesia",
+        "id": "us6000t8x8",
+        "title": "M5.2 Earthquake - 107 km SSW of Sarangani, Philippines",
         "category": "Earthquake",
-        "date": "2026-06-28T21:43:51.470000Z",
+        "date": "2026-06-29T04:23:05.855000Z",
         "coordinates": [
-          116.1323,
-          -10.2921
+          125.1893,
+          4.4724
+        ]
+      },
+      {
+        "id": "aka2026msxacu",
+        "title": "M5.3 Earthquake - 35 km SSW of Cordova, Alaska",
+        "category": "Earthquake",
+        "date": "2026-06-29T03:32:39.606000Z",
+        "coordinates": [
+          -145.91,
+          60.237
         ]
       },
       {
@@ -144,16 +154,6 @@
           -68.5223,
           17.9176
         ]
-      },
-      {
-        "id": "us6000t8fe",
-        "title": "M5.7 Earthquake - 7 km N of Oshino, Japan",
-        "category": "Earthquake",
-        "date": "2026-06-26T13:29:01.877000Z",
-        "coordinates": [
-          138.8566,
-          35.5228
-        ]
       }
     ]
   },
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.2,
-    "feels_c": 22.4,
-    "humidity": 77,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.1
-  },
-  "forecast_today": {
-    "date": "2026-06-29",
     "city": "Zagreb",
-    "temp_min_c": 21.4,
-    "temp_max_c": 36.6,
-    "humidity": 49,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 6.3,
-    "samples": 8
-  },
-  "forecast": {
-    "date": "2026-06-30",
-    "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 38.1,
-    "humidity": 44,
+    "temp_c": 25.9,
+    "feels_c": 26.4,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 3.3
+  },
+  "forecast_today": {
+    "date": "2026-06-29",
+    "city": "Donji grad",
+    "temp_min_c": 24.4,
+    "temp_max_c": 35.0,
+    "humidity": 50,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 6.3,
+    "samples": 7
+  },
+  "forecast": {
+    "date": "2026-06-30",
+    "city": "Donji grad",
+    "temp_min_c": 19.4,
+    "temp_max_c": 36.1,
+    "humidity": 46,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-07-01",
-    "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 34,
-    "humidity": 52,
+    "city": "Donji grad",
+    "temp_min_c": 17.7,
+    "temp_max_c": 34.8,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 7.9
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 11.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.2,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-29T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 133,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-29T02:06:05+02:00"
+    "fetched_at": "2026-06-29T07:28:52+02:00"
   }
 }
