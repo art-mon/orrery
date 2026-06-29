@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8xq",
+        "title": "M5.1 Earthquake - off the coast of Central America",
+        "category": "Earthquake",
+        "date": "2026-06-29T07:38:27.562000Z",
+        "coordinates": [
+          -84.3832,
+          2.302
+        ]
+      },
+      {
         "id": "us6000t8x8",
         "title": "M5.2 Earthquake - 107 km SSW of Sarangani, Philippines",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           162.8277,
           -10.6087
         ]
-      },
-      {
-        "id": "pr2026177000",
-        "title": "M5.0 Earthquake - 51 km S of Boca de Yuma, Dominican Republic",
-        "category": "Earthquake",
-        "date": "2026-06-26T16:06:49.450000Z",
-        "coordinates": [
-          -68.5223,
-          17.9176
-        ]
       }
     ]
   },
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 26.4,
-    "humidity": 69,
+    "city": "Donji grad",
+    "temp_c": 36.5,
+    "feels_c": 39.4,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.3
+    "wind_kmh": 9.9
   },
   "forecast_today": {
     "date": "2026-06-29",
-    "city": "Donji grad",
-    "temp_min_c": 24.4,
-    "temp_max_c": 35.0,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 25.2,
+    "temp_max_c": 36.5,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.3,
-    "samples": 7
+    "wind_kmh": 7.1,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-06-30",
-    "city": "Donji grad",
-    "temp_min_c": 19.4,
+    "city": "Zagreb",
+    "temp_min_c": 19.8,
     "temp_max_c": 36.1,
-    "humidity": 46,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.8
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-07-01",
-    "city": "Donji grad",
-    "temp_min_c": 17.7,
-    "temp_max_c": 34.8,
-    "humidity": 57,
+    "city": "Zagreb",
+    "temp_min_c": 17.9,
+    "temp_max_c": 34.2,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 11.7
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 9.1
   },
   "uv": {
-    "uv": 1.2,
-    "band": "low",
+    "uv": 7.2,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-06-29T13:00",
-    "safe_minutes": 133,
+    "safe_minutes": 23,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-29T07:28:52+02:00"
+    "fetched_at": "2026-06-29T12:52:40+02:00"
   }
 }
