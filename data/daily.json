@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-29",
   "apod": {
-    "title": "AR 4478: Giant Sunspot Group",
-    "date": "2026-06-28",
-    "explanation": "Right now, one of the largest sunspot groups in recent history is crossing the Sun.  Active Region 4478 is not only big -- it's violent, showing tangled magnetic fields capable of throwing off huge clouds of particles into the Solar System.  Some of these CMEs might impact the Earth.  At the extreme, these solar storms could cause some Earth-orbiting satellites to malfunction, the Earth's atmosphere to slightly distort, and electrical power grids to surge.  When impacting Earth's upper atmosphere, these particles can produce beautiful auroras. Pictured here, AR 4478 and its dark sunspots were captured in visible light a few days ago from Barcelona, Spain.  Almost as large as AR 3664 was in 2024, the AR 4478 sunspot group is so big that it is visible just with glasses specially designed to view solar eclipses.  This week, skygazing enthusiasts all over the globe will not only be tracking AR 4478 during the day -- but keenly watching night skies for its corresponding bright auroras.   Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/AR4478_vidal_960.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -165,22 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2015 VH66)",
-        "hazardous": false,
-        "diameter_m": 586,
-        "close_approach_date": "2026-06-28",
-        "miss_distance_km": 23463950,
-        "velocity_kmh": 92259
-      },
-      {
-        "name": "(2015 MO66)",
-        "hazardous": false,
-        "diameter_m": 568,
-        "close_approach_date": "2026-06-28",
-        "miss_distance_km": 36077474,
-        "velocity_kmh": 76034
-      },
-      {
         "name": "(2019 YO4)",
         "hazardous": false,
         "diameter_m": 249,
@@ -243,30 +222,46 @@
         "close_approach_date": "2026-07-01",
         "miss_distance_km": 27329986,
         "velocity_kmh": 62587
+      },
+      {
+        "name": "(2005 BG28)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-07-01",
+        "miss_distance_km": 53782677,
+        "velocity_kmh": 62969
+      },
+      {
+        "name": "(2003 BN4)",
+        "hazardous": false,
+        "diameter_m": 84,
+        "close_approach_date": "2026-07-01",
+        "miss_distance_km": 62242781,
+        "velocity_kmh": 23373
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 30.3,
-    "humidity": 58,
+    "temp_c": 22.2,
+    "feels_c": 22.4,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 6.7
+    "wind_kmh": 5.1
   },
   "forecast_today": {
     "date": "2026-06-29",
     "city": "Zagreb",
-    "temp_min_c": 22.6,
+    "temp_min_c": 21.4,
     "temp_max_c": 36.6,
-    "humidity": 46,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 6.4,
-    "samples": 9
+    "wind_kmh": 6.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-06-30",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-29T00:07:18+02:00"
+    "fetched_at": "2026-06-29T02:06:05+02:00"
   }
 }
