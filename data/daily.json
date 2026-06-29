@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t8yt",
+        "title": "M5.5 Earthquake - 218 km W of Bandon, Oregon",
+        "category": "Earthquake",
+        "date": "2026-06-29T11:35:33.629000Z",
+        "coordinates": [
+          -127.0788,
+          43.3828
+        ]
+      },
+      {
         "id": "us6000t8xq",
         "title": "M5.1 Earthquake - off the coast of Central America",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           69.6859,
           30.4545
         ]
-      },
-      {
-        "id": "us6000t8kk",
-        "title": "M5.1 Earthquake - 100 km E of Kirakira, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-06-27T00:03:23.509000Z",
-        "coordinates": [
-          162.8277,
-          -10.6087
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 36.5,
-    "feels_c": 39.4,
-    "humidity": 38,
+    "temp_c": 37.1,
+    "feels_c": 40.4,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.9
+    "wind_kmh": 10.7
   },
   "forecast_today": {
     "date": "2026-06-29",
-    "city": "Zagreb",
-    "temp_min_c": 25.2,
-    "temp_max_c": 36.5,
-    "humidity": 39,
+    "city": "City of Zagreb",
+    "temp_min_c": 28.8,
+    "temp_max_c": 37.1,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.1,
-    "samples": 5
+    "wind_kmh": 6.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-06-30",
-    "city": "Zagreb",
-    "temp_min_c": 19.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.5,
     "temp_max_c": 36.1,
-    "humidity": 45,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 3.4
   },
   "forecast_day_after": {
     "date": "2026-07-01",
-    "city": "Zagreb",
-    "temp_min_c": 17.9,
-    "temp_max_c": 34.2,
-    "humidity": 56,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.9,
+    "temp_max_c": 35.4,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 9.1
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.3
   },
   "uv": {
-    "uv": 7.2,
-    "band": "high",
+    "uv": 4.2,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-06-29T13:00",
-    "safe_minutes": 23,
+    "safe_minutes": 40,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-29T12:52:40+02:00"
+    "fetched_at": "2026-06-29T16:49:31+02:00"
   }
 }
