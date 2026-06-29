@@ -1,5 +1,5 @@
 {
-  "generated": "2026-06-29",
+  "generated": "2026-06-30",
   "apod": {
     "title": "M82: Galaxy with a Supergalactic Wind",
     "date": "2026-06-29",
@@ -248,153 +248,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.9,
-    "feels_c": 25.3,
-    "humidity": 69,
+    "temp_c": 24.3,
+    "feels_c": 24.6,
+    "humidity": 67,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.1
+    "wind_kmh": 2.9
   },
   "forecast_today": {
-    "date": "2026-06-29",
+    "date": "2026-06-30",
     "city": "Zagreb",
-    "temp_min_c": 24.9,
-    "temp_max_c": 24.9,
-    "humidity": 69,
+    "temp_min_c": 23.0,
+    "temp_max_c": 36.3,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.1,
-    "samples": 1
+    "wind_kmh": 4.3,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-06-30",
-    "city": "Zagreb",
-    "temp_min_c": 22,
-    "temp_max_c": 35.7,
-    "humidity": 48,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.5
-  },
-  "forecast_day_after": {
     "date": "2026-07-01",
     "city": "Zagreb",
-    "temp_min_c": 18.0,
-    "temp_max_c": 37.0,
-    "humidity": 51,
+    "temp_min_c": 18.6,
+    "temp_max_c": 37.8,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 8.0
   },
+  "forecast_day_after": {
+    "date": "2026-07-02",
+    "city": "Zagreb",
+    "temp_min_c": 18.9,
+    "temp_max_c": 29.7,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 10.3
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.2,
-    "peak_time": "2026-06-29T13:00",
+    "peak_time": "2026-06-30T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-06-29T00:00",
+        "time": "2026-06-30T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T01:00",
+        "time": "2026-06-30T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T02:00",
+        "time": "2026-06-30T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T03:00",
+        "time": "2026-06-30T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T04:00",
+        "time": "2026-06-30T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T05:00",
+        "time": "2026-06-30T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T06:00",
+        "time": "2026-06-30T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-29T07:00",
+        "time": "2026-06-30T07:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-29T08:00",
+        "time": "2026-06-30T08:00",
         "uv": 1.6
       },
       {
-        "time": "2026-06-29T09:00",
+        "time": "2026-06-30T09:00",
         "uv": 3.0
       },
       {
-        "time": "2026-06-29T10:00",
+        "time": "2026-06-30T10:00",
         "uv": 4.4
       },
       {
-        "time": "2026-06-29T11:00",
+        "time": "2026-06-30T11:00",
         "uv": 5.7
       },
       {
-        "time": "2026-06-29T12:00",
+        "time": "2026-06-30T12:00",
         "uv": 6.7
       },
       {
-        "time": "2026-06-29T13:00",
+        "time": "2026-06-30T13:00",
         "uv": 7.2
       },
       {
-        "time": "2026-06-29T14:00",
+        "time": "2026-06-30T14:00",
         "uv": 7.2
       },
       {
-        "time": "2026-06-29T15:00",
+        "time": "2026-06-30T15:00",
         "uv": 6.7
       },
       {
-        "time": "2026-06-29T16:00",
+        "time": "2026-06-30T16:00",
         "uv": 5.7
       },
       {
-        "time": "2026-06-29T17:00",
+        "time": "2026-06-30T17:00",
         "uv": 4.4
       },
       {
-        "time": "2026-06-29T18:00",
+        "time": "2026-06-30T18:00",
         "uv": 3.0
       },
       {
-        "time": "2026-06-29T19:00",
-        "uv": 1.6
+        "time": "2026-06-30T19:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-06-29T20:00",
+        "time": "2026-06-30T20:00",
         "uv": 0.7
       },
       {
-        "time": "2026-06-29T21:00",
+        "time": "2026-06-30T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-06-29T22:00",
+        "time": "2026-06-30T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-06-29T23:00",
+        "time": "2026-06-30T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-29T23:24:04+02:00"
+    "fetched_at": "2026-06-30T00:54:28+02:00"
   }
 }
