@@ -1,12 +1,7 @@
 {
   "generated": "2026-06-30",
   "apod": {
-    "title": "M82: Galaxy with a Supergalactic Wind",
-    "date": "2026-06-29",
-    "explanation": "Why is the Cigar Galaxy billowing red smoke?  M82, as this starburst galaxy is also known, was stirred up by a recent pass near large spiral galaxy M81.  This doesn't fully explain the source of the red-glowing outwardly expanding gas and dust, however.  Evidence indicates that this gas and dust is being driven out by the combined emerging particle winds of many stars, together creating a galactic superwind.  The dust particles are thought to originate in M82's interstellar medium and are actually similar in size to particles in cigar smoke.  The featured photographic mosaic combines images taken in visible light from the Hubble Space Telescope and images taken in infrared light from James Webb Space Telescope.  It shows the light-colored central galaxy nearly edge on across the image center with tremendous orange and red colored filaments of gas and dust extending both up and down.  The filaments extend for over 10,000 light years. The 12-million light-year distant Cigar Galaxy is the brightest galaxy in the sky in infrared light and can be seen in visible light with a small telescope towards the constellation of the Great Bear (Ursa Major).",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/M82_HubbleWebb_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/M82_HubbleWebb_5000.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,22 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2019 YO4)",
-        "hazardous": false,
-        "diameter_m": 249,
-        "close_approach_date": "2026-06-29",
-        "miss_distance_km": 35946482,
-        "velocity_kmh": 78533
-      },
-      {
-        "name": "(2015 YC1)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-06-29",
-        "miss_distance_km": 38625979,
-        "velocity_kmh": 55379
-      },
-      {
         "name": "398188 Agni (2010 LE15)",
         "hazardous": true,
         "diameter_m": 809,
@@ -243,37 +222,53 @@
         "close_approach_date": "2026-07-01",
         "miss_distance_km": 62242781,
         "velocity_kmh": 23373
+      },
+      {
+        "name": "(2014 XQ3)",
+        "hazardous": false,
+        "diameter_m": 721,
+        "close_approach_date": "2026-07-01",
+        "miss_distance_km": 68287444,
+        "velocity_kmh": 55242
+      },
+      {
+        "name": "(2019 YS3)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-07-02",
+        "miss_distance_km": 7721720,
+        "velocity_kmh": 24622
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.3,
-    "feels_c": 24.6,
-    "humidity": 67,
+    "temp_c": 23.2,
+    "feels_c": 23.5,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-06-30",
     "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 36.3,
-    "humidity": 50,
+    "temp_min_c": 22.5,
+    "temp_max_c": 35.7,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.3,
-    "samples": 9
+    "wind_kmh": 4.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-01",
     "city": "Zagreb",
-    "temp_min_c": 18.6,
-    "temp_max_c": 37.8,
-    "humidity": 50,
+    "temp_min_c": 18.0,
+    "temp_max_c": 37.0,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -282,8 +277,8 @@
   "forecast_day_after": {
     "date": "2026-07-02",
     "city": "Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 29.7,
+    "temp_min_c": 18.3,
+    "temp_max_c": 29.1,
     "humidity": 50,
     "condition": "Clouds",
     "description": "scattered clouds",
@@ -364,7 +359,7 @@
       },
       {
         "time": "2026-06-30T16:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-06-30T17:00",
@@ -376,7 +371,7 @@
       },
       {
         "time": "2026-06-30T19:00",
-        "uv": 1.2
+        "uv": 1.6
       },
       {
         "time": "2026-06-30T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-30T00:54:28+02:00"
+    "fetched_at": "2026-06-30T02:01:35+02:00"
   }
 }
