@@ -1,15 +1,20 @@
 {
   "generated": "2026-06-30",
   "apod": {
-    "title": "Unusually Smooth Sections of Asteroid Itokawa",
-    "date": "2026-06-30",
-    "explanation": "Why are parts of this asteroid's surface so smooth?  The answer seems likely to do with the dynamics of an asteroid that is a loose pile of rubble rather than a solid rock.  The unusual asteroid Itokawa was visited by the Japanese spacecraft Hayabusa in 2005 which imaged and documented its unusual structure and mysterious lack of craters.  Analyses of the border regions between smooth and rugged sections indicate that jostling of the asteroid might be creating segregation between large and small rocks near the surface, like the Brazil nut effect.  The robotic Hayabusa actually touched down on one of the smooth patches, dubbed the MUSES Sea, and collected soil samples. These samples were returned to Earth and are not only giving clues to the ancient history of this unusual asteroid, but also about the early years of our entire Solar System. Computer simulations show that 500-meter asteroid Itokawa may impact the Earth within the next few million years.   Rocking Space: Today is Asteroid Day",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2606/itokawa07_hayabusa_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2606/itokawa07_hayabusa_1080.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t978",
+        "title": "M5.4 Earthquake - 90 km ESE of Kimbe, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-06-30T14:41:10.582000Z",
+        "coordinates": [
+          150.9338,
+          -5.727
+        ]
+      },
       {
         "id": "us6000t93x",
         "title": "M5.1 Earthquake - South Sandwich Islands region",
@@ -149,16 +154,6 @@
           125.6119,
           -6.7898
         ]
-      },
-      {
-        "id": "us6000t8me",
-        "title": "M5.2 Earthquake - 114 km SSW of Trenggalek, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-27T07:47:23.012000Z",
-        "coordinates": [
-          111.1499,
-          -8.9563
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 37.0,
-    "feels_c": 40.1,
-    "humidity": 37,
+    "city": "City of Zagreb",
+    "temp_c": 35.9,
+    "feels_c": 39.0,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 10.9
+    "wind_kmh": 5.1
   },
   "forecast_today": {
     "date": "2026-06-30",
-    "city": "Zagreb",
-    "temp_min_c": 28.4,
-    "temp_max_c": 37.0,
-    "humidity": 41,
+    "city": "City of Zagreb",
+    "temp_min_c": 32.4,
+    "temp_max_c": 36.0,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.7,
-    "samples": 4
+    "wind_kmh": 4.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-01",
-    "city": "Zagreb",
-    "temp_min_c": 19.3,
-    "temp_max_c": 33.3,
-    "humidity": 54,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 33.8,
+    "humidity": 52,
     "condition": "Clear",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.6
   },
   "forecast_day_after": {
     "date": "2026-07-02",
-    "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 29.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.7,
+    "temp_max_c": 30.1,
     "humidity": 52,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 8.8
+    "wind_kmh": 8.9
   },
   "uv": {
-    "uv": 5.2,
-    "band": "moderate",
+    "uv": 1.2,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-06-30T13:00",
-    "safe_minutes": 32,
+    "safe_minutes": 139,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-30T16:13:21+02:00"
+    "fetched_at": "2026-06-30T19:05:33+02:00"
   }
 }
