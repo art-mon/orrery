@@ -1,10 +1,20 @@
 {
   "generated": "2026-06-30",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t99j",
+        "title": "M6.0 Earthquake - 75 km SSW of El Progreso, Mexico",
+        "category": "Earthquake",
+        "date": "2026-06-30T19:45:40.116000Z",
+        "coordinates": [
+          -108.9285,
+          24.8239
+        ]
+      },
       {
         "id": "us6000t978",
         "title": "M5.4 Earthquake - 90 km ESE of Kimbe, Papua New Guinea",
@@ -144,16 +154,6 @@
           163.1809,
           -10.655
         ]
-      },
-      {
-        "id": "us6000t8nf",
-        "title": "M5.9 Earthquake - 192 km N of Metinaro, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-06-27T10:37:02.333000Z",
-        "coordinates": [
-          125.6119,
-          -6.7898
-        ]
       }
     ]
   },
@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.8,
-    "humidity": 61,
+    "city": "Zagreb",
+    "temp_c": 23.7,
+    "feels_c": 24.0,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 6.3
+    "wind_kmh": 6.9
   },
   "forecast_today": {
     "date": "2026-06-30",
     "city": "Zagreb",
-    "temp_min_c": 24.3,
-    "temp_max_c": 24.7,
-    "humidity": 62,
+    "temp_min_c": 23.7,
+    "temp_max_c": 23.7,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 6.6,
-    "samples": 2
+    "wind_kmh": 6.9,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-01",
     "city": "Zagreb",
     "temp_min_c": 19.8,
     "temp_max_c": 32.7,
-    "humidity": 54,
+    "humidity": 55,
     "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-06-30T21:51:50+02:00"
+    "fetched_at": "2026-06-30T23:26:28+02:00"
   }
 }
