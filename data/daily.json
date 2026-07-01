@@ -1,12 +1,7 @@
 {
   "generated": "2026-07-01",
   "apod": {
-    "title": "The Cotton Candy Clouds of Rho Ophiuchi",
-    "date": "2026-07-01",
-    "explanation": "Although they look like cotton candy, you cannot eat these clouds! Taken in C\u00e1diz, Spain, today's image features the Rho Ophiuchi complex, a rich tapestry of young and old astronomical phenomena. This colorful cloud complex is a nearby star-forming region containing hundreds of young stellar objects, including protostars and T Tauri stars. Light from the triple star system at its center reflects off of small dust grains to create the blue reflection nebula. Ultraviolet light from hot stars ionizes the surrounding hydrogen gas, creating the red emission nebula. Antares, a red supergiant big enough to engulf the Solar System\u2019s asteroid belt, lights up the yellow region. Dark interstellar dust blocks some of the complex\u2019s color. Recent JWST observations exhibit shadows cast by hidden circumstellar disks, the beginning stages of planet formation. Messier 4, a globular cluster almost as old as the universe, sits in the bottom right and witnesses yet another chaotic burst of youth in the Milky Way.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_1024.png"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -247,25 +242,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 32.6,
-    "feels_c": 35.0,
-    "humidity": 48,
+    "city": "City of Zagreb",
+    "temp_c": 24.3,
+    "feels_c": 24.9,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 15.3
+    "wind_kmh": 11.4
   },
   "forecast_today": {
     "date": "2026-07-01",
     "city": "Zagreb",
-    "temp_min_c": 23.5,
-    "temp_max_c": 32.6,
-    "humidity": 62,
+    "temp_min_c": 22.5,
+    "temp_max_c": 24.3,
+    "humidity": 81,
     "condition": "Rain",
     "description": "rain",
     "icon": "03d",
-    "wind_kmh": 14.3,
+    "wind_kmh": 13.0,
     "samples": 3
   },
   "forecast": {
@@ -291,11 +286,11 @@
     "wind_kmh": 8.4
   },
   "uv": {
-    "uv": 3.2,
-    "band": "moderate",
+    "uv": 0.3,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-07-01T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,15 +355,15 @@
       },
       {
         "time": "2026-07-01T15:00",
-        "uv": 4.5
+        "uv": 3.8
       },
       {
         "time": "2026-07-01T16:00",
-        "uv": 2.8
+        "uv": 5.2
       },
       {
         "time": "2026-07-01T17:00",
-        "uv": 4.4
+        "uv": 4.5
       },
       {
         "time": "2026-07-01T18:00",
@@ -376,15 +371,15 @@
       },
       {
         "time": "2026-07-01T19:00",
-        "uv": 1.1
+        "uv": 1.6
       },
       {
         "time": "2026-07-01T20:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-07-01T21:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-07-01T22:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-01T17:39:25+02:00"
+    "fetched_at": "2026-07-01T19:52:10+02:00"
   }
 }
