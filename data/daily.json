@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t9ej",
+        "title": "M6.0 Earthquake - 49 km E of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-07-01T12:08:29.986000Z",
+        "coordinates": [
+          142.3927,
+          40.1637
+        ]
+      },
+      {
         "id": "us6000t9e1",
         "title": "M5.6 Earthquake - 224 km S of Suva, Fiji",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           174.4645,
           -40.3938
         ]
-      },
-      {
-        "id": "us6000t8sl",
-        "title": "M5.2 Earthquake - 45 km NE of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-06-28T07:05:45.186000Z",
-        "coordinates": [
-          167.4024,
-          -14.7852
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 32.7,
-    "feels_c": 33.9,
-    "humidity": 43,
+    "city": "Zagreb",
+    "temp_c": 32.6,
+    "feels_c": 35.0,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.2
+    "wind_kmh": 15.3
   },
   "forecast_today": {
     "date": "2026-07-01",
     "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 32.7,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 23.5,
+    "temp_max_c": 32.6,
+    "humidity": 62,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "03d",
-    "wind_kmh": 9.9,
-    "samples": 4
+    "wind_kmh": 14.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-02",
     "city": "Zagreb",
-    "temp_min_c": 18,
-    "temp_max_c": 27.9,
-    "humidity": 61,
+    "temp_min_c": 17.3,
+    "temp_max_c": 26.9,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.7
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-07-03",
     "city": "Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 29.2,
+    "temp_min_c": 17.3,
+    "temp_max_c": 29.9,
     "humidity": 50,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 8.2
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 8.4
   },
   "uv": {
-    "uv": 6.2,
-    "band": "high",
+    "uv": 3.2,
+    "band": "moderate",
     "daily_max": 7.2,
     "peak_time": "2026-07-01T13:00",
-    "safe_minutes": 27,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-01T14:00:57+02:00"
+    "fetched_at": "2026-07-01T17:39:25+02:00"
   }
 }
