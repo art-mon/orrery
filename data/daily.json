@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t9e1",
+        "title": "M5.6 Earthquake - 224 km S of Suva, Fiji",
+        "category": "Earthquake",
+        "date": "2026-07-01T10:42:43.103000Z",
+        "coordinates": [
+          178.6881,
+          -20.1466
+        ]
+      },
+      {
         "id": "us6000t9bv",
         "title": "M5.0 Earthquake - 16 km WNW of Tournavista, Peru",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           167.4024,
           -14.7852
         ]
-      },
-      {
-        "id": "us6000t8qv",
-        "title": "M5.1 Earthquake - 112 km SW of Bandar Lampung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-06-27T21:10:26.101000Z",
-        "coordinates": [
-          104.6082,
-          -6.2095
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 29.9,
-    "feels_c": 31.3,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_c": 32.7,
+    "feels_c": 33.9,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.1
+    "wind_kmh": 7.2
   },
   "forecast_today": {
     "date": "2026-07-01",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.3,
-    "temp_max_c": 31.8,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 32.7,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 8.6,
-    "samples": 6
+    "wind_kmh": 9.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-02",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 28.5,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_min_c": 18,
+    "temp_max_c": 27.9,
+    "humidity": 61,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.8
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-07-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.1,
-    "temp_max_c": 30.1,
+    "city": "Zagreb",
+    "temp_min_c": 17.5,
+    "temp_max_c": 29.2,
     "humidity": 50,
     "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 8.4
+    "wind_kmh": 8.2
   },
   "uv": {
-    "uv": 4.5,
-    "band": "moderate",
+    "uv": 6.2,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-07-01T13:00",
-    "safe_minutes": 37,
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +336,11 @@
       },
       {
         "time": "2026-07-01T09:00",
-        "uv": 2.5
+        "uv": 2.9
       },
       {
         "time": "2026-07-01T10:00",
-        "uv": 3.9
+        "uv": 4.4
       },
       {
         "time": "2026-07-01T11:00",
@@ -356,15 +356,15 @@
       },
       {
         "time": "2026-07-01T14:00",
-        "uv": 7.2
+        "uv": 7.0
       },
       {
         "time": "2026-07-01T15:00",
-        "uv": 6.2
+        "uv": 4.5
       },
       {
         "time": "2026-07-01T16:00",
-        "uv": 5.2
+        "uv": 2.8
       },
       {
         "time": "2026-07-01T17:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-07-01T19:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-07-01T20:00",
@@ -384,7 +384,7 @@
       },
       {
         "time": "2026-07-01T21:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-07-01T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-01T10:09:44+02:00"
+    "fetched_at": "2026-07-01T14:00:57+02:00"
   }
 }
