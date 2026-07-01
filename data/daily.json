@@ -1,12 +1,7 @@
 {
   "generated": "2026-07-01",
   "apod": {
-    "title": "The Cotton Candy Clouds of Rho Ophiuchi",
-    "date": "2026-07-01",
-    "explanation": "Although they look like cotton candy, you cannot eat these clouds! Taken in C\u00e1diz, Spain, today's image features the Rho Ophiuchi complex, a rich tapestry of young and old astronomical phenomena. This colorful cloud complex is a nearby star-forming region containing hundreds of young stellar objects, including protostars and T Tauri stars. Light from the triple star system at its center reflects off of small dust grains to create the blue reflection nebula. Ultraviolet light from hot stars ionizes the surrounding hydrogen gas, creating the red emission nebula. Antares, a red supergiant big enough to engulf the Solar System\u2019s asteroid belt, lights up the yellow region. Dark interstellar dust blocks some of the complex\u2019s color. Recent JWST observations exhibit shadows cast by hidden circumstellar disks, the beginning stages of planet formation. Messier 4, a globular cluster almost as old as the universe, sits in the bottom right and witnesses yet another chaotic burst of youth in the Milky Way.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_1024.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,31 +242,31 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 21.1,
+    "city": "Zagreb",
+    "temp_c": 19.8,
+    "feels_c": 20.1,
     "humidity": 86,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 12.5
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 14.5
   },
   "forecast_today": {
     "date": "2026-07-01",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 20.7,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 13.5,
-    "samples": 2
+    "city": "City of Zagreb",
+    "temp_min_c": 19.8,
+    "temp_max_c": 19.8,
+    "humidity": 86,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 14.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-02",
-    "city": "Zagreb",
-    "temp_min_c": 17.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 17.9,
     "temp_max_c": 28.1,
     "humidity": 61,
     "condition": "Clouds",
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-03",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.3,
     "temp_max_c": 27.4,
     "humidity": 49,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-01T21:50:30+02:00"
+    "fetched_at": "2026-07-01T23:25:51+02:00"
   }
 }
