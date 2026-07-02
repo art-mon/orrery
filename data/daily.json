@@ -1,15 +1,40 @@
 {
   "generated": "2026-07-02",
   "apod": {
-    "title": "The Cotton Candy Clouds of Rho Ophiuchi",
-    "date": "2026-07-01",
-    "explanation": "Although they look like cotton candy, you cannot eat these clouds! Taken in C\u00e1diz, Spain, today's image features the Rho Ophiuchi complex, a rich tapestry of young and old astronomical phenomena. This colorful cloud complex is a nearby star-forming region containing hundreds of young stellar objects, including protostars and T Tauri stars. Light from the triple star system at its center reflects off of small dust grains to create the blue reflection nebula. Ultraviolet light from hot stars ionizes the surrounding hydrogen gas, creating the red emission nebula. Antares, a red supergiant big enough to engulf the Solar System\u2019s asteroid belt, lights up the yellow region. Dark interstellar dust blocks some of the complex\u2019s color. Recent JWST observations exhibit shadows cast by hidden circumstellar disks, the beginning stages of planet formation. Messier 4, a globular cluster almost as old as the universe, sits in the bottom right and witnesses yet another chaotic burst of youth in the Milky Way.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_1024.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000t9kl",
+        "title": "M5.3 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-02T05:23:17.823000Z",
+        "coordinates": [
+          -23.537,
+          -60.9974
+        ]
+      },
+      {
+        "id": "us6000t9kj",
+        "title": "M5.2 Earthquake - east of the South Sandwich Islands",
+        "category": "Earthquake",
+        "date": "2026-07-02T05:14:00.518000Z",
+        "coordinates": [
+          -8.4887,
+          -57.8826
+        ]
+      },
+      {
+        "id": "us6000t9jv",
+        "title": "M5.2 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-02T02:57:42.207000Z",
+        "coordinates": [
+          -26.5923,
+          -58.4797
+        ]
+      },
       {
         "id": "us6000t9hu",
         "title": "M5.7 Earthquake - 155 km SW of Hihifo, Tonga",
@@ -129,36 +154,6 @@
           -84.3832,
           2.302
         ]
-      },
-      {
-        "id": "us6000t8x8",
-        "title": "M5.2 Earthquake - 107 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-29T04:23:05.855000Z",
-        "coordinates": [
-          125.1893,
-          4.4724
-        ]
-      },
-      {
-        "id": "aka2026msxacu",
-        "title": "M5.3 Earthquake - 35 km SSW of Cordova, Alaska",
-        "category": "Earthquake",
-        "date": "2026-06-29T03:32:39.606000Z",
-        "coordinates": [
-          -145.91,
-          60.237
-        ]
-      },
-      {
-        "id": "us6000t8ux",
-        "title": "M5.0 Earthquake - 68 km WNW of Catuday, Philippines",
-        "category": "Earthquake",
-        "date": "2026-06-28T19:09:03.928000Z",
-        "coordinates": [
-          119.2088,
-          16.5146
-        ]
       }
     ]
   },
@@ -247,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.8,
-    "feels_c": 18.9,
-    "humidity": 86,
+    "city": "Donji grad",
+    "temp_c": 22.0,
+    "feels_c": 22.3,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.6
+    "icon": "04d",
+    "wind_kmh": 4.8
   },
   "forecast_today": {
     "date": "2026-07-02",
-    "city": "Donji grad",
-    "temp_min_c": 18.8,
+    "city": "Zagreb",
+    "temp_min_c": 21.5,
     "temp_max_c": 28.1,
-    "humidity": 62,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 7.8,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 9.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-03",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.3,
     "temp_max_c": 27.7,
     "humidity": 48,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-04",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 15.8,
     "temp_max_c": 28.5,
     "humidity": 43,
@@ -291,11 +286,11 @@
     "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.6,
     "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-07-02T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 64,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,15 +327,15 @@
       },
       {
         "time": "2026-07-02T08:00",
-        "uv": 0.8
+        "uv": 1.4
       },
       {
         "time": "2026-07-02T09:00",
-        "uv": 1.6
+        "uv": 2.5
       },
       {
         "time": "2026-07-02T10:00",
-        "uv": 2.6
+        "uv": 3.3
       },
       {
         "time": "2026-07-02T11:00",
@@ -348,7 +343,7 @@
       },
       {
         "time": "2026-07-02T12:00",
-        "uv": 6.5
+        "uv": 6.6
       },
       {
         "time": "2026-07-02T13:00",
@@ -360,23 +355,23 @@
       },
       {
         "time": "2026-07-02T15:00",
-        "uv": 5.4
+        "uv": 6.1
       },
       {
         "time": "2026-07-02T16:00",
-        "uv": 4.0
+        "uv": 5.5
       },
       {
         "time": "2026-07-02T17:00",
-        "uv": 2.8
+        "uv": 4.4
       },
       {
         "time": "2026-07-02T18:00",
-        "uv": 1.8
+        "uv": 3.0
       },
       {
         "time": "2026-07-02T19:00",
-        "uv": 1.4
+        "uv": 1.6
       },
       {
         "time": "2026-07-02T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-02T04:58:26+02:00"
+    "fetched_at": "2026-07-02T08:46:05+02:00"
   }
 }
