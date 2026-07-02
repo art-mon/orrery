@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000t9hu",
-        "title": "M5.7 Earthquake - 153 km SW of Hihifo, Tonga",
+        "title": "M5.7 Earthquake - 155 km SW of Hihifo, Tonga",
         "category": "Earthquake",
-        "date": "2026-07-01T21:13:41.188000Z",
+        "date": "2026-07-01T21:13:40.262000Z",
         "coordinates": [
-          -174.8465,
-          -16.8952
+          -174.8243,
+          -16.9457
         ]
       },
       {
@@ -165,46 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2005 NE21)",
-        "hazardous": false,
-        "diameter_m": 336,
-        "close_approach_date": "2026-07-01",
-        "miss_distance_km": 14442641,
-        "velocity_kmh": 40491
-      },
-      {
-        "name": "441987 (2010 NY65)",
-        "hazardous": true,
-        "diameter_m": 319,
-        "close_approach_date": "2026-07-01",
-        "miss_distance_km": 27329986,
-        "velocity_kmh": 62587
-      },
-      {
-        "name": "(2005 BG28)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-07-01",
-        "miss_distance_km": 53782677,
-        "velocity_kmh": 62969
-      },
-      {
-        "name": "(2003 BN4)",
-        "hazardous": false,
-        "diameter_m": 84,
-        "close_approach_date": "2026-07-01",
-        "miss_distance_km": 62242781,
-        "velocity_kmh": 23373
-      },
-      {
-        "name": "(2014 XQ3)",
-        "hazardous": false,
-        "diameter_m": 721,
-        "close_approach_date": "2026-07-01",
-        "miss_distance_km": 68287444,
-        "velocity_kmh": 55242
-      },
-      {
         "name": "(2019 YS3)",
         "hazardous": false,
         "diameter_m": 70,
@@ -243,57 +203,97 @@
         "close_approach_date": "2026-07-02",
         "miss_distance_km": 63003270,
         "velocity_kmh": 61907
+      },
+      {
+        "name": "(2018 WE2)",
+        "hazardous": false,
+        "diameter_m": 40,
+        "close_approach_date": "2026-07-02",
+        "miss_distance_km": 66624821,
+        "velocity_kmh": 68583
+      },
+      {
+        "name": "(2019 KW3)",
+        "hazardous": false,
+        "diameter_m": 252,
+        "close_approach_date": "2026-07-02",
+        "miss_distance_km": 68231134,
+        "velocity_kmh": 21962
+      },
+      {
+        "name": "(2015 KJ157)",
+        "hazardous": false,
+        "diameter_m": 863,
+        "close_approach_date": "2026-07-03",
+        "miss_distance_km": 53545379,
+        "velocity_kmh": 78413
+      },
+      {
+        "name": "523808 (2007 ML24)",
+        "hazardous": true,
+        "diameter_m": 802,
+        "close_approach_date": "2026-07-04",
+        "miss_distance_km": 3476895,
+        "velocity_kmh": 60353
+      },
+      {
+        "name": "(2019 AE3)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-07-04",
+        "miss_distance_km": 8015038,
+        "velocity_kmh": 28403
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.1,
-    "feels_c": 19.3,
+    "temp_c": 18.8,
+    "feels_c": 18.9,
     "humidity": 86,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 5.9
+    "wind_kmh": 4.6
   },
   "forecast_today": {
     "date": "2026-07-02",
-    "city": "Zagreb",
-    "temp_min_c": 18.1,
+    "city": "Donji grad",
+    "temp_min_c": 18.8,
     "temp_max_c": 28.1,
-    "humidity": 64,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 7.7,
-    "samples": 9
+    "wind_kmh": 7.8,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-03",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 17.3,
-    "temp_max_c": 27.4,
-    "humidity": 49,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.0
+    "temp_max_c": 27.7,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 8.3
   },
   "forecast_day_after": {
     "date": "2026-07-04",
-    "city": "Zagreb",
-    "temp_min_c": 15.6,
-    "temp_max_c": 27.5,
+    "city": "Donji grad",
+    "temp_min_c": 15.8,
+    "temp_max_c": 28.5,
     "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 5.2
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.1,
+    "daily_max": 7.2,
     "peak_time": "2026-07-02T14:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -328,23 +328,23 @@
       },
       {
         "time": "2026-07-02T07:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-07-02T08:00",
-        "uv": 1.1
+        "uv": 0.8
       },
       {
         "time": "2026-07-02T09:00",
-        "uv": 2.5
+        "uv": 1.6
       },
       {
         "time": "2026-07-02T10:00",
-        "uv": 4.2
+        "uv": 2.6
       },
       {
         "time": "2026-07-02T11:00",
-        "uv": 5.7
+        "uv": 5.5
       },
       {
         "time": "2026-07-02T12:00",
@@ -352,31 +352,31 @@
       },
       {
         "time": "2026-07-02T13:00",
-        "uv": 6.9
+        "uv": 7.0
       },
       {
         "time": "2026-07-02T14:00",
-        "uv": 7.1
+        "uv": 7.2
       },
       {
         "time": "2026-07-02T15:00",
-        "uv": 4.3
+        "uv": 5.4
       },
       {
         "time": "2026-07-02T16:00",
-        "uv": 4.2
+        "uv": 4.0
       },
       {
         "time": "2026-07-02T17:00",
-        "uv": 3.9
+        "uv": 2.8
       },
       {
         "time": "2026-07-02T18:00",
-        "uv": 2.7
+        "uv": 1.8
       },
       {
         "time": "2026-07-02T19:00",
-        "uv": 1.6
+        "uv": 1.4
       },
       {
         "time": "2026-07-02T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-02T01:12:38+02:00"
+    "fetched_at": "2026-07-02T04:58:26+02:00"
   }
 }
