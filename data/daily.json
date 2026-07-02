@@ -1,12 +1,7 @@
 {
   "generated": "2026-07-02",
   "apod": {
-    "title": "Sibling Supernova Remnants",
-    "date": "2026-07-02",
-    "explanation": "What happens when one of the stars in a binary goes supernova?   This image combines visible (yellow), ultraviolet (purple) and infrared light (cyan, red and orange) to show two supernova remnants and their surrounding environment, about 6,000 light-years away.   The younger one is the well-known Jellyfish Nebula in the center (mostly in yellow).   If we could see it by eye, it would appear larger than the full moon in the sky.   The filament shown in purple is part of an older, overlapping supernova remnant, G189.6+3.3.   A new study used data from NASA's Fermi Gamma-ray Space Telescope to piece together their story.   Astronomers believe that there were two stars in a binary system, then the first one exploded as a supernova, kicking away its companion, which also exploded as a supernova tens of thousands of years later, creating the superimposed supernova remnants we see today.   The bright star on the right is actually a triple star system named Propus.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/sibling_supernovae_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/sibling_supernovae.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 27.0,
-    "feels_c": 27.3,
-    "humidity": 47,
+    "feels_c": 27.5,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.9
+    "wind_kmh": 9.4
   },
   "forecast_today": {
     "date": "2026-07-02",
-    "city": "Zagreb",
-    "temp_min_c": 21.6,
+    "city": "Donji grad",
+    "temp_min_c": 23.4,
     "temp_max_c": 27.0,
-    "humidity": 47,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 7.4,
-    "samples": 4
+    "wind_kmh": 8.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-03",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 16.0,
     "temp_max_c": 25.1,
     "humidity": 48,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-07-04",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 14.3,
-    "temp_max_c": 27.8,
-    "humidity": 43,
+    "temp_max_c": 28.0,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 2.2,
-    "band": "low",
+    "uv": 3.9,
+    "band": "moderate",
     "daily_max": 5.7,
     "peak_time": "2026-07-02T16:00",
-    "safe_minutes": 76,
+    "safe_minutes": 43,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-02T14:55:37+02:00"
+    "fetched_at": "2026-07-02T17:13:32+02:00"
   }
 }
