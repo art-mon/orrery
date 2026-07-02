@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t9lz",
+        "title": "M5.2 Earthquake - 23 km SSE of Karpathos, Greece",
+        "category": "Earthquake",
+        "date": "2026-07-02T11:06:21.727000Z",
+        "coordinates": [
+          27.2953,
+          35.3034
+        ]
+      },
+      {
         "id": "us6000t9kl",
         "title": "M5.3 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -127.0788,
           43.3828
         ]
-      },
-      {
-        "id": "us6000t8xq",
-        "title": "M5.1 Earthquake - off the coast of Central America",
-        "category": "Earthquake",
-        "date": "2026-06-29T07:38:27.562000Z",
-        "coordinates": [
-          -84.3832,
-          2.302
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 25.5,
-    "feels_c": 25.3,
-    "humidity": 46,
+    "city": "City of Zagreb",
+    "temp_c": 27.0,
+    "feels_c": 27.3,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 14.6
+    "wind_kmh": 4.9
   },
   "forecast_today": {
     "date": "2026-07-02",
     "city": "Zagreb",
-    "temp_min_c": 21.1,
-    "temp_max_c": 26.1,
-    "humidity": 46,
+    "temp_min_c": 21.6,
+    "temp_max_c": 27.0,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 12.4,
-    "samples": 5
+    "wind_kmh": 7.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-03",
     "city": "Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 25.3,
+    "temp_min_c": 16.0,
+    "temp_max_c": 25.1,
     "humidity": 48,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-07-04",
     "city": "Zagreb",
-    "temp_min_c": 15.7,
+    "temp_min_c": 14.3,
     "temp_max_c": 27.8,
-    "humidity": 45,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
-    "daily_max": 7.2,
-    "peak_time": "2026-07-02T14:00",
-    "safe_minutes": 25,
+    "uv": 2.2,
+    "band": "low",
+    "daily_max": 5.7,
+    "peak_time": "2026-07-02T16:00",
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,39 +336,39 @@
       },
       {
         "time": "2026-07-02T09:00",
-        "uv": 2.5
+        "uv": 0.8
       },
       {
         "time": "2026-07-02T10:00",
-        "uv": 3.3
+        "uv": 0.8
       },
       {
         "time": "2026-07-02T11:00",
-        "uv": 5.5
+        "uv": 2.2
       },
       {
         "time": "2026-07-02T12:00",
-        "uv": 6.6
+        "uv": 4.9
       },
       {
         "time": "2026-07-02T13:00",
-        "uv": 7.0
+        "uv": 2.8
       },
       {
         "time": "2026-07-02T14:00",
-        "uv": 7.2
+        "uv": 1.9
       },
       {
         "time": "2026-07-02T15:00",
-        "uv": 6.1
+        "uv": 1.9
       },
       {
         "time": "2026-07-02T16:00",
-        "uv": 5.5
+        "uv": 5.7
       },
       {
         "time": "2026-07-02T17:00",
-        "uv": 4.4
+        "uv": 4.3
       },
       {
         "time": "2026-07-02T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-02T12:08:28+02:00"
+    "fetched_at": "2026-07-02T14:55:37+02:00"
   }
 }
