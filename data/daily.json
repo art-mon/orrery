@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000t9zw",
+        "title": "M5.3 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-03T20:22:15.219000Z",
+        "coordinates": [
+          155.7881,
+          -62.1125
+        ]
+      },
+      {
         "id": "us6000t9tf",
         "title": "M5.9 Earthquake - 296 km SSW of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           95.3273,
           37.8295
         ]
-      },
-      {
-        "id": "us6000t9a4",
-        "title": "M5.3 Earthquake - 95 km SSW of El Progreso, Mexico",
-        "category": "Earthquake",
-        "date": "2026-06-30T21:01:34.191000Z",
-        "coordinates": [
-          -109.0169,
-          24.6598
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.8,
-    "feels_c": 23.7,
-    "humidity": 58,
+    "temp_c": 20.4,
+    "feels_c": 20.4,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 4.9
+    "wind_kmh": 6.0
   },
   "forecast_today": {
     "date": "2026-07-03",
     "city": "Zagreb",
-    "temp_min_c": 23.8,
-    "temp_max_c": 23.9,
-    "humidity": 58,
+    "temp_min_c": 20.4,
+    "temp_max_c": 20.4,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.4,
-    "samples": 2
+    "wind_kmh": 6.0,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-04",
     "city": "Zagreb",
-    "temp_min_c": 15.6,
+    "temp_min_c": 17.2,
     "temp_max_c": 31.7,
-    "humidity": 43,
+    "humidity": 45,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -285,7 +285,7 @@
     "temp_min_c": 16.5,
     "temp_max_c": 33.8,
     "humidity": 54,
-    "condition": "Clear",
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 5.4
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-03T21:16:59+02:00"
+    "fetched_at": "2026-07-03T23:02:15+02:00"
   }
 }
