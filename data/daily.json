@@ -3,7 +3,7 @@
   "apod": {
     "title": "Three Galaxies in Pavo",
     "date": "2026-07-03",
-    "explanation": "Some 190 million light-years away, far beyond the bright stars and nebulae of the Milky Way, these three galaxies are drawn together by gravity in a mesmerizing cosmic dance. Clearly distorted by galactic-scale gravitational interactions, large spiral galaxies NGC6769 and NGC6770 are seen face-on, with luminous galactic disks scarred by obscuring interstellar dust lanes. Their young blue star clusters along drawn out spiral arms are spawned in star forming regions that result from collisions of massive molecular clouds. Below, spiral NGC6771 presents a more edge-on perspective, its boxy central bulge due to tidal star streams. Of course, in the distant future a merger of the three galaxies is inevitable. At the estimated distance of this galaxy trio, known to some as the Devil's Mask, the sharp telescopic frame spans over 300 thousand light-years within the boundaries of the far southern constellation Pavo.",
+    "explanation": "Some 190 million light-years away, far beyond the bright stars and nebulae of the Milky Way, these three galaxies are drawn together by gravity in a mesmerizing cosmic dance. Clearly distorted by galactic-scale gravitational interactions, large spiral galaxies NGC 6769 and NGC 6770 are seen face-on, with luminous galactic disks scarred by obscuring interstellar dust lanes. Their young blue star clusters along drawn out spiral arms are spawned in star forming regions that resulted from collisions of massive molecular clouds. Below, spiral NGC 6771 presents a more edge-on perspective, its boxy central bulge due to tidal star streams. Of course, in the distant future a merger of the three galaxies is inevitable. At the estimated distance of this galaxy trio, known to some as the Devil's Mask, the sharp telescopic frame spans over 300 thousand light-years within the boundaries of the far southern constellation Pavo.   News: Swift Boost Mission Launched",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2607/NGC6769LRGBcropAZ-1500-20-May-2026-1024.jpg",
     "hdurl": "https://apod.nasa.gov/apod/image/2607/NGC6769LRGBcropAZ-1500-20-May-2026.jpg"
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 30.5,
-    "feels_c": 29.7,
-    "humidity": 35,
+    "city": "Donji grad",
+    "temp_c": 28.1,
+    "feels_c": 28.2,
+    "humidity": 46,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 12.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 10.4
   },
   "forecast_today": {
     "date": "2026-07-03",
-    "city": "Zagreb",
-    "temp_min_c": 24.2,
-    "temp_max_c": 30.5,
-    "humidity": 43,
+    "city": "Donji grad",
+    "temp_min_c": 26.1,
+    "temp_max_c": 28.3,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 8.5,
+    "icon": "03d",
+    "wind_kmh": 7.8,
     "samples": 3
   },
   "forecast": {
     "date": "2026-07-04",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 16.3,
     "temp_max_c": 30.8,
     "humidity": 43,
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-05",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 17.1,
     "temp_max_c": 31.5,
     "humidity": 58,
-    "condition": "Rain",
+    "condition": "Clear",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 4.0,
-    "band": "moderate",
+    "uv": 0.8,
+    "band": "low",
     "daily_max": 7.2,
     "peak_time": "2026-07-03T13:00",
-    "safe_minutes": 42,
+    "safe_minutes": 208,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-03T17:08:29+02:00"
+    "fetched_at": "2026-07-03T19:22:47+02:00"
   }
 }
