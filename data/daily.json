@@ -1,10 +1,45 @@
 {
   "generated": "2026-07-04",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Pathfinder on Mars",
+    "date": "2026-07-04",
+    "explanation": "On July 4th, 1997, using its own array of fireworks, a parachute, and a cocoon of airbags, the Mars Pathfinder spacecraft bounced like a giant beach ball at least 15 times before it came to rest on the surface of Mars at 10:07 AM Pacific Daylight Time. After its then novel airbag-assisted landing sequence was completed, Pathfinder transmitted this color mosaic to mission operators on Earth. In the scene from another world, the Mars Sojourner robot rover is visible in the foreground, crouched on top of the unfolded Pathfinder.  About the size of a large house cat, the six-wheeled, solar-powered Sojourner became the first successful Martian rover. Surrounding Pathfinder are deflated airbags and the rock-strewn terrain of the Ares Vallis floodplain. In the distance Martian hills appear against a dusty brownish sky. The Pathfinder lander was subsequently renamed the Carl Sagan Memorial Station.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/PIA00621_1080CWb.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/PIA00621.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ta34",
+        "title": "M5.0 Earthquake - 64 km W of Tobelo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-04T09:02:14.524000Z",
+        "coordinates": [
+          127.4364,
+          1.7873
+        ]
+      },
+      {
+        "id": "us6000ta32",
+        "title": "M5.1 Earthquake - 264 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-04T08:55:54.191000Z",
+        "coordinates": [
+          138.2529,
+          -2.5131
+        ]
+      },
+      {
+        "id": "us6000ta2x",
+        "title": "M5.1 Earthquake - 135 km N of Lae, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-07-04T07:50:23.853000Z",
+        "coordinates": [
+          147.103,
+          -5.5049
+        ]
+      },
       {
         "id": "us6000ta18",
         "title": "M5.0 Earthquake - 43 km SW of Ovalle, Chile",
@@ -124,36 +159,6 @@
           -174.8243,
           -16.9457
         ]
-      },
-      {
-        "id": "us6000t9gg",
-        "title": "M5.5 Earthquake - 47 km SW of Jurm, Afghanistan",
-        "category": "Earthquake",
-        "date": "2026-07-01T17:57:02.913000Z",
-        "coordinates": [
-          70.4491,
-          36.567
-        ]
-      },
-      {
-        "id": "us6000t9ej",
-        "title": "M6.0 Earthquake - 49 km E of Noda, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-01T12:08:29.986000Z",
-        "coordinates": [
-          142.3927,
-          40.1637
-        ]
-      },
-      {
-        "id": "us6000t9e1",
-        "title": "M5.6 Earthquake - 224 km S of Suva, Fiji",
-        "category": "Earthquake",
-        "date": "2026-07-01T10:42:43.103000Z",
-        "coordinates": [
-          178.6881,
-          -20.1466
-        ]
       }
     ]
   },
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.9,
-    "feels_c": 24.4,
-    "humidity": 36,
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 33,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.8
+    "wind_kmh": 3.9
   },
   "forecast_today": {
     "date": "2026-07-04",
     "city": "Zagreb",
     "temp_min_c": 19.3,
-    "temp_max_c": 27.8,
+    "temp_max_c": 28.4,
     "humidity": 38,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 3.5,
-    "samples": 6
+    "wind_kmh": 3.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-05",
@@ -286,11 +291,11 @@
     "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 4.2,
-    "band": "moderate",
+    "uv": 6.9,
+    "band": "high",
     "daily_max": 7.2,
     "peak_time": "2026-07-04T13:00",
-    "safe_minutes": 40,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-04T09:44:00+02:00"
+    "fetched_at": "2026-07-04T12:06:54+02:00"
   }
 }
