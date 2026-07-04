@@ -1,15 +1,35 @@
 {
   "generated": "2026-07-04",
   "apod": {
-    "title": "Three Galaxies in Pavo",
-    "date": "2026-07-03",
-    "explanation": "Some 190 million light-years away, far beyond the bright stars and nebulae of the Milky Way, these three galaxies are drawn together by gravity in a mesmerizing cosmic dance. Clearly distorted by galactic-scale gravitational interactions, large spiral galaxies NGC 6769 and NGC 6770 are seen face-on, with luminous galactic disks scarred by obscuring interstellar dust lanes. Their young blue star clusters along drawn out spiral arms are spawned in star forming regions that resulted from collisions of massive molecular clouds. Below, spiral NGC 6771 presents a more edge-on perspective, its boxy central bulge due to tidal star streams. Of course, in the distant future a merger of the three galaxies is inevitable. At the estimated distance of this galaxy trio, known to some as the Devil's Mask, the sharp telescopic frame spans over 300 thousand light-years within the boundaries of the far southern constellation Pavo.   News: Swift Boost Mission Launched",
+    "title": "Pathfinder on Mars",
+    "date": "2026-07-04",
+    "explanation": "On July 4th, 1997, using its own array of fireworks, a parachute, and a cocoon of airbags, the Mars Pathfinder spacecraft bounced like a giant beach ball at least 15 times before it came to rest on the surface of Mars at 10:07 AM Pacific Daylight Time. After its then novel airbag-assisted landing sequence was completed, Pathfinder transmitted this color mosaic to mission operators on Earth. In the scene from another world, the Mars Sojourner robot rover is visible in the foreground, crouched on top of the unfolded Pathfinder.  About the size of a large house cat, the six-wheeled, solar-powered Sojourner became the first successful Martian rover. Surrounding Pathfinder are deflated airbags and the rock-strewn terrain of the Ares Vallis floodplain. In the distance Martian hills appear against a dusty brownish sky. The Pathfinder lander was subsequently renamed the Carl Sagan Memorial Station.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/NGC6769LRGBcropAZ-1500-20-May-2026-1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/NGC6769LRGBcropAZ-1500-20-May-2026.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/PIA00621_1080CWb.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/PIA00621.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ta18",
+        "title": "M5.0 Earthquake - 43 km SW of Ovalle, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-04T03:09:33.198000Z",
+        "coordinates": [
+          -71.4792,
+          -30.9133
+        ]
+      },
+      {
+        "id": "us6000ta14",
+        "title": "M5.2 Earthquake - 24 km SW of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-04T02:21:23.141000Z",
+        "coordinates": [
+          125.1808,
+          5.429
+        ]
+      },
       {
         "id": "us6000t9zw",
         "title": "M5.3 Earthquake - Balleny Islands region",
@@ -139,26 +159,6 @@
           178.6881,
           -20.1466
         ]
-      },
-      {
-        "id": "us6000t9bv",
-        "title": "M5.0 Earthquake - 16 km WNW of Tournavista, Peru",
-        "category": "Earthquake",
-        "date": "2026-07-01T02:00:38.195000Z",
-        "coordinates": [
-          -74.831,
-          -8.8555
-        ]
-      },
-      {
-        "id": "us6000t9bg",
-        "title": "M5.3 Earthquake - 265 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-06-30T23:44:54.830000Z",
-        "coordinates": [
-          95.3273,
-          37.8295
-        ]
       }
     ]
   },
@@ -247,50 +247,154 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.7,
-    "feels_c": 17.6,
-    "humidity": 79,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 2.7
+    "city": "Donji grad",
+    "temp_c": 17.4,
+    "feels_c": 17.1,
+    "humidity": 73,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 0.6
   },
   "forecast_today": {
     "date": "2026-07-04",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 31.7,
-    "humidity": 49,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 2.8,
-    "samples": 8
+    "temp_min_c": 17.4,
+    "temp_max_c": 28.6,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 2.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-05",
     "city": "Zagreb",
-    "temp_min_c": 16.5,
-    "temp_max_c": 33.8,
-    "humidity": 54,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 5.4
+    "temp_min_c": 16.6,
+    "temp_max_c": 30.3,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-07-06",
     "city": "Zagreb",
-    "temp_min_c": 16.7,
-    "temp_max_c": 28.8,
-    "humidity": 68,
+    "temp_min_c": 16.5,
+    "temp_max_c": 30.2,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.9
+    "wind_kmh": 4.0
   },
   "uv": {
-    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
+    "uv": 0.5,
+    "band": "low",
+    "daily_max": 7.2,
+    "peak_time": "2026-07-04T13:00",
+    "safe_minutes": 333,
+    "skin_type": 2,
+    "hourly": [
+      {
+        "time": "2026-07-04T00:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T01:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T02:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T03:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T04:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T05:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T06:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-07-04T07:00",
+        "uv": 0.6
+      },
+      {
+        "time": "2026-07-04T08:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-07-04T09:00",
+        "uv": 2.9
+      },
+      {
+        "time": "2026-07-04T10:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-07-04T11:00",
+        "uv": 5.7
+      },
+      {
+        "time": "2026-07-04T12:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-07-04T13:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-07-04T14:00",
+        "uv": 7.2
+      },
+      {
+        "time": "2026-07-04T15:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-07-04T16:00",
+        "uv": 5.7
+      },
+      {
+        "time": "2026-07-04T17:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-07-04T18:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-07-04T19:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-07-04T20:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-07-04T21:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-07-04T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-07-04T23:00",
+        "uv": 0.0
+      }
+    ],
+    "fetched_at": "2026-07-04T06:33:11+02:00"
   }
 }
