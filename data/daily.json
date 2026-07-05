@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 32.6,
-    "feels_c": 31.6,
-    "humidity": 31,
+    "city": "Zagreb",
+    "temp_c": 27.3,
+    "feels_c": 27.4,
+    "humidity": 45,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 9.5
   },
   "forecast_today": {
     "date": "2026-07-05",
-    "city": "Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 32.6,
-    "humidity": 59,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.0,
+    "temp_max_c": 27.3,
+    "humidity": 56,
     "condition": "Rain",
     "description": "rain",
-    "icon": "03d",
-    "wind_kmh": 7.0,
+    "icon": "04d",
+    "wind_kmh": 7.7,
     "samples": 4
   },
   "forecast": {
     "date": "2026-07-06",
-    "city": "Zagreb",
-    "temp_min_c": 17,
-    "temp_max_c": 30.4,
-    "humidity": 75,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.7
+    "city": "City of Zagreb",
+    "temp_min_c": 17.1,
+    "temp_max_c": 29.6,
+    "humidity": 71,
+    "condition": "Rain",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.0
   },
   "forecast_day_after": {
     "date": "2026-07-07",
-    "city": "Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 30.7,
-    "humidity": 66,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 32.5,
+    "humidity": 60,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.8
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 10.0
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 4.2,
+    "band": "moderate",
     "daily_max": 7.1,
     "peak_time": "2026-07-05T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 40,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-05T14:13:48+02:00"
+    "fetched_at": "2026-07-05T16:39:48+02:00"
   }
 }
