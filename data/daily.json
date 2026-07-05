@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000taab",
+        "title": "M5.0 Earthquake - 106 km NW of Coquimbo, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-05T15:53:33.718000Z",
+        "coordinates": [
+          -72.0113,
+          -29.1964
+        ]
+      },
+      {
         "id": "us6000taaa",
         "title": "M5.0 Earthquake - 26 km NNW of Mianzhu, Deyang, Sichuan, China",
         "category": "Earthquake",
@@ -18,6 +28,16 @@
         "coordinates": [
           104.126,
           31.5649
+        ]
+      },
+      {
+        "id": "us6000taa2",
+        "title": "M5.0 Earthquake - 23 km NNW of Mianzhu, Deyang, Sichuan, China",
+        "category": "Earthquake",
+        "date": "2026-07-05T15:03:27.206000Z",
+        "coordinates": [
+          104.0978,
+          31.5223
         ]
       },
       {
@@ -139,26 +159,6 @@
           155.7881,
           -62.1125
         ]
-      },
-      {
-        "id": "us6000t9tf",
-        "title": "M5.9 Earthquake - 296 km SSW of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-07-03T08:22:53.615000Z",
-        "coordinates": [
-          154.2634,
-          48.3001
-        ]
-      },
-      {
-        "id": "us6000t9sj",
-        "title": "M6.1 Earthquake - 136 km NNE of Hirara, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-03T04:04:48.066000Z",
-        "coordinates": [
-          125.7941,
-          25.9501
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.9,
-    "feels_c": 25.2,
-    "humidity": 65,
+    "temp_c": 21.7,
+    "feels_c": 22.1,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 15.2
+    "wind_kmh": 6.9
   },
   "forecast_today": {
     "date": "2026-07-05",
     "city": "Zagreb",
-    "temp_min_c": 22.1,
-    "temp_max_c": 25.1,
-    "humidity": 69,
+    "temp_min_c": 21.0,
+    "temp_max_c": 21.7,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 9.0,
-    "samples": 3
+    "wind_kmh": 5.8,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-06",
     "city": "Zagreb",
     "temp_min_c": 17.1,
     "temp_max_c": 29.6,
-    "humidity": 71,
+    "humidity": 70,
     "condition": "Rain",
     "description": "scattered clouds",
     "icon": "03d",
@@ -291,11 +291,11 @@
     "wind_kmh": 10.0
   },
   "uv": {
-    "uv": 1.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-07-05T13:00",
-    "safe_minutes": 167,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,27 +360,27 @@
       },
       {
         "time": "2026-07-05T15:00",
-        "uv": 5.5
+        "uv": 4.9
       },
       {
         "time": "2026-07-05T16:00",
-        "uv": 0.6
+        "uv": 0.4
       },
       {
         "time": "2026-07-05T17:00",
-        "uv": 4.3
+        "uv": 3.9
       },
       {
         "time": "2026-07-05T18:00",
-        "uv": 1.1
+        "uv": 0.4
       },
       {
         "time": "2026-07-05T19:00",
-        "uv": 1.0
+        "uv": 0.5
       },
       {
         "time": "2026-07-05T20:00",
-        "uv": 0.3
+        "uv": 0.1
       },
       {
         "time": "2026-07-05T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-05T18:05:46+02:00"
+    "fetched_at": "2026-07-05T20:00:30+02:00"
   }
 }
