@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-05",
+  "generated": "2026-07-06",
   "apod": {
     "title": "Saturn's Iapetus: Painted Moon",
     "date": "2026-07-05",
@@ -248,40 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.8,
-    "feels_c": 18.9,
-    "humidity": 84,
+    "temp_c": 18.4,
+    "feels_c": 18.5,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 5.5
+    "wind_kmh": 4.8
   },
   "forecast_today": {
-    "date": "2026-07-05",
-    "city": "Donji grad",
-    "temp_min_c": 18.8,
-    "temp_max_c": 18.8,
-    "humidity": 84,
+    "date": "2026-07-06",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.0,
+    "temp_max_c": 30.1,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
-    "wind_kmh": 5.5,
-    "samples": 1
+    "wind_kmh": 6.1,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-06",
-    "city": "Donji grad",
-    "temp_min_c": 17.9,
-    "temp_max_c": 30.1,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.2
-  },
-  "forecast_day_after": {
     "date": "2026-07-07",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 17.1,
     "temp_max_c": 32.7,
     "humidity": 59,
@@ -290,111 +279,122 @@
     "icon": "02d",
     "wind_kmh": 8.6
   },
+  "forecast_day_after": {
+    "date": "2026-07-08",
+    "city": "City of Zagreb",
+    "temp_min_c": 19.0,
+    "temp_max_c": 30.3,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.3
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 7.1,
-    "peak_time": "2026-07-05T13:00",
+    "peak_time": "2026-07-06T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-05T00:00",
+        "time": "2026-07-06T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T01:00",
+        "time": "2026-07-06T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T02:00",
+        "time": "2026-07-06T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T03:00",
+        "time": "2026-07-06T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T04:00",
+        "time": "2026-07-06T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T05:00",
+        "time": "2026-07-06T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T06:00",
+        "time": "2026-07-06T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-05T07:00",
-        "uv": 0.6
+        "time": "2026-07-06T07:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-07-05T08:00",
-        "uv": 1.6
+        "time": "2026-07-06T08:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-07-05T09:00",
-        "uv": 2.9
+        "time": "2026-07-06T09:00",
+        "uv": 1.3
       },
       {
-        "time": "2026-07-05T10:00",
+        "time": "2026-07-06T10:00",
         "uv": 4.2
       },
       {
-        "time": "2026-07-05T11:00",
-        "uv": 5.3
+        "time": "2026-07-06T11:00",
+        "uv": 5.4
       },
       {
-        "time": "2026-07-05T12:00",
+        "time": "2026-07-06T12:00",
         "uv": 6.5
       },
       {
-        "time": "2026-07-05T13:00",
+        "time": "2026-07-06T13:00",
+        "uv": 7.0
+      },
+      {
+        "time": "2026-07-06T14:00",
         "uv": 7.1
       },
       {
-        "time": "2026-07-05T14:00",
-        "uv": 7.1
+        "time": "2026-07-06T15:00",
+        "uv": 6.3
       },
       {
-        "time": "2026-07-05T15:00",
-        "uv": 4.9
+        "time": "2026-07-06T16:00",
+        "uv": 4.2
       },
       {
-        "time": "2026-07-05T16:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-07-05T17:00",
-        "uv": 3.9
-      },
-      {
-        "time": "2026-07-05T18:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-07-05T19:00",
+        "time": "2026-07-06T17:00",
         "uv": 0.5
       },
       {
-        "time": "2026-07-05T20:00",
+        "time": "2026-07-06T18:00",
+        "uv": 2.9
+      },
+      {
+        "time": "2026-07-06T19:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-07-06T20:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-07-06T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-05T21:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-07-05T22:00",
+        "time": "2026-07-06T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-05T23:00",
+        "time": "2026-07-06T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-05T23:58:54+02:00"
+    "fetched_at": "2026-07-06T01:07:54+02:00"
   }
 }
