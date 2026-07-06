@@ -1,12 +1,12 @@
 {
   "generated": "2026-07-06",
   "apod": {
-    "title": "Saturn's Iapetus: Painted Moon",
-    "date": "2026-07-05",
-    "explanation": "What has happened to Saturn's moon Iapetus?  Vast sections of this strange world are dark as coal, while others are as bright as snow.  To help better understand this unusually tinted moon, in 2007 NASA directed the robotic Cassini spacecraft then orbiting Saturn to swoop within 2,000 kilometers.  Pictured here, from about 75,000 kilometers out, is the hemisphere of Iapetus that is always trailing.  A large impact crater seen in the south spans 500 kilometers and appears superposed on an older crater of similar size.  The dark material is seen increasingly coating the easternmost part of Iapetus, darkening craters and highlands alike.  A leading hypothesis is that the dark material is mostly a form of carbon-rich soil leftover from when relatively warm but dirty ice sublimates.  An initial coating of this dark material may have been effectively painted on by the accretion of meteor-liberated debris from other moons.   Jigsaw Moon: Astronomy Puzzle of the Day",
+    "title": "Dueling Bands over the Atacama Desert",
+    "date": "2026-07-06",
+    "explanation": "What are these two bands in the sky?  The more commonly seen band is on the left and is the central band of our Milky Way galaxy.  Our Sun orbits in the disk of this spiral galaxy so that from inside, it appears as a band of comparable brightness all the way around the sky.  The less commonly seen band, on the right, is zodiacal light -- sunlight reflected from dust orbiting the Sun in our Solar System.  Zodiacal light is brightest near the Sun and so is best seen just before sunrise or just after sunset.  On some evenings, this ribbon of zodiacal light can appear quite prominent.  It was discovered only in this century that zodiacal dust was mostly expelled by comets that have passed near Jupiter.  The featured image was captured about a year ago from the Atacama Desert in Chile.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/iapetus4_cassini_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/iapetus4_cassini_4100.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/ZodiMw_Looten_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/ZodiMw_Looten_6125.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.8,
-    "feels_c": 17.7,
-    "humidity": 81,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10n",
-    "wind_kmh": 3.7
+    "temp_c": 22.6,
+    "feels_c": 22.9,
+    "humidity": 75,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 4.8
   },
   "forecast_today": {
     "date": "2026-07-06",
-    "city": "Donji grad",
-    "temp_min_c": 17.8,
-    "temp_max_c": 28.3,
-    "humidity": 66,
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 26.7,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10n",
+    "icon": "04d",
     "wind_kmh": 5.0,
-    "samples": 8
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-07",
-    "city": "Donji grad",
-    "temp_min_c": 17.1,
-    "temp_max_c": 31.7,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_min_c": 16.0,
+    "temp_max_c": 31.5,
+    "humidity": 54,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 8.1
   },
   "forecast_day_after": {
     "date": "2026-07-08",
-    "city": "Donji grad",
-    "temp_min_c": 19,
-    "temp_max_c": 31.2,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 30.6,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.3
+    "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.4,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-06T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 69,
     "skin_type": 2,
     "hourly": [
       {
@@ -324,7 +324,7 @@
       },
       {
         "time": "2026-07-06T06:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-07-06T07:00",
@@ -332,15 +332,15 @@
       },
       {
         "time": "2026-07-06T08:00",
-        "uv": 1.2
+        "uv": 0.8
       },
       {
         "time": "2026-07-06T09:00",
-        "uv": 2.4
+        "uv": 1.6
       },
       {
         "time": "2026-07-06T10:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-07-06T11:00",
@@ -360,27 +360,27 @@
       },
       {
         "time": "2026-07-06T15:00",
-        "uv": 6.3
+        "uv": 6.4
       },
       {
         "time": "2026-07-06T16:00",
-        "uv": 5.6
+        "uv": 3.5
       },
       {
         "time": "2026-07-06T17:00",
-        "uv": 0.8
+        "uv": 3.0
       },
       {
         "time": "2026-07-06T18:00",
-        "uv": 2.9
+        "uv": 0.8
       },
       {
         "time": "2026-07-06T19:00",
-        "uv": 0.2
+        "uv": 1.2
       },
       {
         "time": "2026-07-06T20:00",
-        "uv": 0.3
+        "uv": 0.6
       },
       {
         "time": "2026-07-06T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-06T04:55:53+02:00"
+    "fetched_at": "2026-07-06T09:11:44+02:00"
   }
 }
