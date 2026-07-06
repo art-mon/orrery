@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000taft",
+        "title": "M5.1 Earthquake - 211 km ESE of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-06T14:43:38.525000Z",
+        "coordinates": [
+          -172.07,
+          -16.892
+        ]
+      },
+      {
         "id": "us6000tadj",
         "title": "M5.4 Earthquake - 65 km SSW of Sarangani, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           147.103,
           -5.5049
         ]
-      },
-      {
-        "id": "us6000ta18",
-        "title": "M5.0 Earthquake - 43 km SW of Ovalle, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-04T03:09:33.198000Z",
-        "coordinates": [
-          -71.4792,
-          -30.9133
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 29.8,
-    "feels_c": 29.9,
-    "humidity": 44,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.6
+    "city": "Donji grad",
+    "temp_c": 28.7,
+    "feels_c": 28.6,
+    "humidity": 43,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.4
   },
   "forecast_today": {
     "date": "2026-07-06",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 29.8,
-    "humidity": 55,
+    "city": "City of Zagreb",
+    "temp_min_c": 23.9,
+    "temp_max_c": 28.7,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.9,
-    "samples": 4
+    "icon": "10d",
+    "wind_kmh": 5.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-07",
-    "city": "Zagreb",
-    "temp_min_c": 16.0,
-    "temp_max_c": 31.5,
-    "humidity": 54,
+    "city": "City of Zagreb",
+    "temp_min_c": 17.8,
+    "temp_max_c": 31,
+    "humidity": 49,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.1
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 8.5
   },
   "forecast_day_after": {
     "date": "2026-07-08",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 30.6,
-    "humidity": 54,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.0,
+    "temp_max_c": 31.3,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.7
+    "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 6.7,
-    "band": "high",
+    "uv": 1.1,
+    "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-06T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 145,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-06T14:02:00+02:00"
+    "fetched_at": "2026-07-06T18:18:06+02:00"
   }
 }
