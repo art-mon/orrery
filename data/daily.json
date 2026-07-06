@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tadj",
+        "title": "M5.4 Earthquake - 65 km SSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-06T08:41:38.715000Z",
+        "coordinates": [
+          125.1424,
+          4.9091
+        ]
+      },
+      {
+        "id": "us6000tadc",
+        "title": "M5.8 Earthquake - 48 km SSW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-06T08:11:11.032000Z",
+        "coordinates": [
+          125.326,
+          4.9886
+        ]
+      },
+      {
         "id": "us6000taab",
         "title": "M5.0 Earthquake - 106 km NW of Coquimbo, Chile",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -71.4792,
           -30.9133
         ]
-      },
-      {
-        "id": "us6000ta14",
-        "title": "M5.2 Earthquake - 24 km SW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-04T02:21:23.141000Z",
-        "coordinates": [
-          125.1808,
-          5.429
-        ]
-      },
-      {
-        "id": "us6000t9zw",
-        "title": "M5.3 Earthquake - Balleny Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-03T20:22:15.219000Z",
-        "coordinates": [
-          155.7881,
-          -62.1125
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.9,
-    "humidity": 75,
+    "temp_c": 29.8,
+    "feels_c": 29.9,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.6
   },
   "forecast_today": {
     "date": "2026-07-06",
     "city": "Zagreb",
     "temp_min_c": 19.7,
-    "temp_max_c": 26.7,
-    "humidity": 60,
+    "temp_max_c": 29.8,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 5.0,
-    "samples": 6
+    "icon": "03d",
+    "wind_kmh": 4.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-07",
@@ -291,11 +291,11 @@
     "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 2.4,
-    "band": "low",
+    "uv": 6.7,
+    "band": "high",
     "daily_max": 7.0,
     "peak_time": "2026-07-06T13:00",
-    "safe_minutes": 69,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,7 +336,7 @@
       },
       {
         "time": "2026-07-06T09:00",
-        "uv": 1.6
+        "uv": 2.1
       },
       {
         "time": "2026-07-06T10:00",
@@ -360,23 +360,23 @@
       },
       {
         "time": "2026-07-06T15:00",
-        "uv": 6.4
+        "uv": 5.7
       },
       {
         "time": "2026-07-06T16:00",
-        "uv": 3.5
+        "uv": 4.4
       },
       {
         "time": "2026-07-06T17:00",
-        "uv": 3.0
+        "uv": 1.9
       },
       {
         "time": "2026-07-06T18:00",
-        "uv": 0.8
+        "uv": 1.0
       },
       {
         "time": "2026-07-06T19:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-07-06T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-06T09:11:44+02:00"
+    "fetched_at": "2026-07-06T14:02:00+02:00"
   }
 }
