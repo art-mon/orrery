@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tary",
+        "title": "M5.3 Earthquake - 95 km WSW of Labuan, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-07T19:44:52.435000Z",
+        "coordinates": [
+          105.0646,
+          -6.7717
+        ]
+      },
+      {
         "id": "us6000tarc",
         "title": "M5.3 Earthquake - 10 km WSW of Orotina, Costa Rica",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -71.9385,
           -29.2333
         ]
-      },
-      {
-        "id": "us6000ta9m",
-        "title": "M5.8 Earthquake - 274 km SE of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-07-05T14:22:26.034000Z",
-        "coordinates": [
-          -179.03,
-          -19.9807
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.7,
-    "humidity": 64,
+    "temp_c": 21.9,
+    "feels_c": 21.9,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 2.3
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-07-07",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 22.7,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 21.9,
+    "temp_max_c": 21.9,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.1,
-    "samples": 2
+    "wind_kmh": 4.0,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-08",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 19.5,
     "temp_max_c": 27.7,
-    "humidity": 62,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-09",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.7,
     "temp_max_c": 29.1,
     "humidity": 60,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-07T21:51:05+02:00"
+    "fetched_at": "2026-07-07T23:21:08+02:00"
   }
 }
