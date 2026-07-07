@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 33.7,
-    "feels_c": 34.0,
-    "humidity": 36,
+    "temp_c": 28.0,
+    "feels_c": 32.4,
+    "humidity": 82,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 10.7
+    "wind_kmh": 11.3
   },
   "forecast_today": {
     "date": "2026-07-07",
     "city": "Zagreb",
-    "temp_min_c": 23.3,
-    "temp_max_c": 33.7,
-    "humidity": 41,
+    "temp_min_c": 24.5,
+    "temp_max_c": 28.6,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 8.1,
-    "samples": 5
+    "wind_kmh": 6.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-08",
     "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 29.1,
-    "humidity": 50,
+    "temp_min_c": 20.3,
+    "temp_max_c": 28.8,
+    "humidity": 53,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 6.7
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.2
   },
   "forecast_day_after": {
     "date": "2026-07-09",
     "city": "Zagreb",
     "temp_min_c": 17.2,
-    "temp_max_c": 31.1,
-    "humidity": 53,
+    "temp_max_c": 30.3,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.7
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 7.0,
-    "band": "high",
+    "uv": 3.2,
+    "band": "moderate",
     "daily_max": 7.1,
     "peak_time": "2026-07-07T13:00",
-    "safe_minutes": 24,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-07-07T11:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-07-07T12:00",
@@ -356,19 +356,19 @@
       },
       {
         "time": "2026-07-07T14:00",
-        "uv": 7.1
+        "uv": 7.0
       },
       {
         "time": "2026-07-07T15:00",
-        "uv": 6.2
+        "uv": 3.8
       },
       {
         "time": "2026-07-07T16:00",
-        "uv": 0.8
+        "uv": 2.0
       },
       {
         "time": "2026-07-07T17:00",
-        "uv": 3.9
+        "uv": 3.8
       },
       {
         "time": "2026-07-07T18:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-07-07T19:00",
-        "uv": 1.6
+        "uv": 1.1
       },
       {
         "time": "2026-07-07T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-07T13:46:09+02:00"
+    "fetched_at": "2026-07-07T16:26:35+02:00"
   }
 }
