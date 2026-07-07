@@ -165,30 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2007 RT9)",
-        "hazardous": false,
-        "diameter_m": 908,
-        "close_approach_date": "2026-07-06",
-        "miss_distance_km": 59230697,
-        "velocity_kmh": 79312
-      },
-      {
-        "name": "663491 (2007 RT9)",
-        "hazardous": false,
-        "diameter_m": 916,
-        "close_approach_date": "2026-07-06",
-        "miss_distance_km": 59230704,
-        "velocity_kmh": 79312
-      },
-      {
-        "name": "(2008 MG1)",
-        "hazardous": false,
-        "diameter_m": 637,
-        "close_approach_date": "2026-07-06",
-        "miss_distance_km": 63610695,
-        "velocity_kmh": 67677
-      },
-      {
         "name": "(2016 XR1)",
         "hazardous": false,
         "diameter_m": 85,
@@ -243,30 +219,54 @@
         "close_approach_date": "2026-07-08",
         "miss_distance_km": 50795140,
         "velocity_kmh": 52214
+      },
+      {
+        "name": "(2013 BU2)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-07-08",
+        "miss_distance_km": 53711278,
+        "velocity_kmh": 33342
+      },
+      {
+        "name": "250680 (2005 QC5)",
+        "hazardous": true,
+        "diameter_m": 705,
+        "close_approach_date": "2026-07-09",
+        "miss_distance_km": 30472665,
+        "velocity_kmh": 54708
+      },
+      {
+        "name": "500136 (2012 CO46)",
+        "hazardous": false,
+        "diameter_m": 160,
+        "close_approach_date": "2026-07-09",
+        "miss_distance_km": 69705550,
+        "velocity_kmh": 23047
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.9,
-    "feels_c": 19.9,
-    "humidity": 76,
+    "temp_c": 21.6,
+    "feels_c": 21.6,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 2.8
+    "wind_kmh": 4.4
   },
   "forecast_today": {
     "date": "2026-07-07",
     "city": "Zagreb",
-    "temp_min_c": 18.6,
+    "temp_min_c": 20.3,
     "temp_max_c": 30.8,
-    "humidity": 56,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.8,
-    "samples": 9
+    "wind_kmh": 7.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-08",
@@ -344,11 +344,11 @@
       },
       {
         "time": "2026-07-07T11:00",
-        "uv": 5.5
+        "uv": 5.3
       },
       {
         "time": "2026-07-07T12:00",
-        "uv": 6.5
+        "uv": 6.4
       },
       {
         "time": "2026-07-07T13:00",
@@ -356,7 +356,7 @@
       },
       {
         "time": "2026-07-07T14:00",
-        "uv": 7.0
+        "uv": 7.1
       },
       {
         "time": "2026-07-07T15:00",
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-07-07T16:00",
-        "uv": 5.7
+        "uv": 2.6
       },
       {
         "time": "2026-07-07T17:00",
-        "uv": 2.3
+        "uv": 3.1
       },
       {
         "time": "2026-07-07T18:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-07-07T19:00",
-        "uv": 1.2
+        "uv": 0.7
       },
       {
         "time": "2026-07-07T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-07T00:11:31+02:00"
+    "fetched_at": "2026-07-07T02:05:37+02:00"
   }
 }
