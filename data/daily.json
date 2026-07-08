@@ -1,23 +1,33 @@
 {
   "generated": "2026-07-08",
   "apod": {
-    "title": "NGC 6188: Dragons of Ara",
-    "date": "2026-07-07",
-    "explanation": "Where can you find dragons fighting in the night sky?  In the southern constellation of the Altar: Ara. The dragons are, of course, actually made of suggestively shaped gas and dust.  The celestial home of the mythological battling beasts is cataloged as NGC 6188 and located about 4,000 light years away near the edge of a large molecular cloud.  Massive, young stars of the embedded Ara OB1 association were formed there only a few million years ago, sculpting the dark shapes and powering the nebular glow with stellar winds and intense ultraviolet radiation.  Joining NGC 6188 on this cosmic canvas, visible toward the lower right, is unusual emission nebula NGC 6164, also created by one of the region's massive stars.  This impressively wide field picture, captured from Queensland, Australia, spans over 2 degrees (four full Moons).",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/AraDragons_Prazeres_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/AraDragons_Prazeres_7200.jpg"
+    "title": "Swift Boost Mission",
+    "date": "2026-07-08",
+    "explanation": "Sometimes we can all use a little help from a friend.    NASA's Neil Gehrels Swift Observatory needs a boost to stay in orbit after almost 22 years of service.   This video shows an artist's visualization of the Swift Boost Mission: The Katalyst's LINK spacecraft was launched aboard a Northrop Grumman Pegasus XL rocket on July 3 and it is now en route to rendezvous with Swift and boost it to a higher orbit over the course of the next several months.   This type of maneuver has never been attempted before.   If successful, it will be the technology demonstration of a new key capability to extended the lifetime of spacecraft in low Earth orbit, whose orbits decay over time.   Swift has an array of instruments that observe the most energetic explosions in the Universe in gamma-rays, X-rays and ultraviolet, and the unique ability to repoint in their direction within tens of seconds.   Astronomers around the world, and indeed all fans of cosmic explosions, are anxiously hoping for a successful mission!",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2607/Swift_Boost.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
       {
-        "id": "us6000tatd",
-        "title": "M5.1 Earthquake - 14 km W of Changning, China",
+        "id": "us6000taui",
+        "title": "M5.0 Earthquake - 15 km NNE of Xunchang, China",
         "category": "Earthquake",
-        "date": "2026-07-07T22:12:29.761000Z",
+        "date": "2026-07-08T02:08:48.776000Z",
         "coordinates": [
-          104.7718,
-          28.5899
+          104.7549,
+          28.5871
+        ]
+      },
+      {
+        "id": "us6000tatd",
+        "title": "M5.1 Earthquake - 13 km W of Changning, China",
+        "category": "Earthquake",
+        "date": "2026-07-07T22:12:29.518000Z",
+        "coordinates": [
+          104.788,
+          28.5702
         ]
       },
       {
@@ -149,16 +159,6 @@
           104.126,
           31.5649
         ]
-      },
-      {
-        "id": "us6000taa2",
-        "title": "M5.0 Earthquake - 23 km NNW of Mianzhu, Deyang, Sichuan, China",
-        "category": "Earthquake",
-        "date": "2026-07-05T15:03:27.206000Z",
-        "coordinates": [
-          104.0978,
-          31.5223
-        ]
       }
     ]
   },
@@ -248,50 +248,50 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.0,
-    "feels_c": 20.9,
-    "humidity": 66,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 7.1
+    "temp_c": 23.8,
+    "feels_c": 23.9,
+    "humidity": 61,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.2
   },
   "forecast_today": {
     "date": "2026-07-08",
-    "city": "Zagreb",
-    "temp_min_c": 19.5,
-    "temp_max_c": 27.7,
-    "humidity": 64,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 6.1,
-    "samples": 8
+    "city": "Donji grad",
+    "temp_min_c": 19.7,
+    "temp_max_c": 28.1,
+    "humidity": 61,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10d",
+    "wind_kmh": 6.2,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-09",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 16.7,
-    "temp_max_c": 29.1,
+    "temp_max_c": 29.3,
     "humidity": 60,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.9
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-07-10",
-    "city": "Zagreb",
-    "temp_min_c": 17.7,
-    "temp_max_c": 33.1,
-    "humidity": 50,
+    "city": "Donji grad",
+    "temp_min_c": 18.2,
+    "temp_max_c": 32.4,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.3
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 5.7,
     "peak_time": "2026-07-08T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-08T02:02:56+02:00"
+    "fetched_at": "2026-07-08T06:12:06+02:00"
   }
 }
