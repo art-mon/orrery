@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000sz2b",
+        "title": "M5.5 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-08T19:07:10.909000Z",
+        "coordinates": [
+          154.8869,
+          -61.7788
+        ]
+      },
+      {
         "id": "us6000tay7",
         "title": "M5.3 Earthquake - Chagos Archipelago region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -66.7593,
           -57.3319
         ]
-      },
-      {
-        "id": "us6000tahc",
-        "title": "M5.1 Earthquake - 56 km W of La Ligua, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-06T16:15:51.905000Z",
-        "coordinates": [
-          -71.8252,
-          -32.5446
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.7,
-    "humidity": 74,
+    "temp_c": 19.3,
+    "feels_c": 19.4,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 3.9
+    "wind_kmh": 1.0
   },
   "forecast_today": {
     "date": "2026-07-08",
     "city": "Zagreb",
-    "temp_min_c": 21.4,
-    "temp_max_c": 21.5,
-    "humidity": 72,
+    "temp_min_c": 19.3,
+    "temp_max_c": 19.3,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 2.5,
-    "samples": 2
+    "wind_kmh": 1.0,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-09",
     "city": "Zagreb",
-    "temp_min_c": 15.8,
+    "temp_min_c": 16.9,
     "temp_max_c": 28.9,
-    "humidity": 63,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-08T21:20:43+02:00"
+    "fetched_at": "2026-07-08T23:04:03+02:00"
   }
 }
