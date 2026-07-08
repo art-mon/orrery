@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tawe",
+        "title": "M5.8 Earthquake - 91 km SSW of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-07-08T09:50:23.421000Z",
+        "coordinates": [
+          168.8353,
+          -20.2559
+        ]
+      },
+      {
         "id": "us6000taui",
         "title": "M5.0 Earthquake - 15 km NNE of Xunchang, China",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -72.0113,
           -29.1964
         ]
-      },
-      {
-        "id": "us6000taaa",
-        "title": "M5.0 Earthquake - 26 km NNW of Mianzhu, Deyang, Sichuan, China",
-        "category": "Earthquake",
-        "date": "2026-07-05T15:30:13.631000Z",
-        "coordinates": [
-          104.126,
-          31.5649
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.9,
-    "feels_c": 25.1,
-    "humidity": 61,
+    "temp_c": 25.9,
+    "feels_c": 26.1,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.4
+    "wind_kmh": 7.1
   },
   "forecast_today": {
     "date": "2026-07-08",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.7,
-    "temp_max_c": 25.8,
-    "humidity": 65,
+    "temp_max_c": 25.9,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 5.5,
-    "samples": 6
+    "wind_kmh": 6.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-09",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.3,
     "temp_max_c": 29.4,
     "humidity": 60,
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-10",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.4,
     "temp_max_c": 32.5,
     "humidity": 54,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 2.5,
-    "band": "low",
+    "uv": 4.3,
+    "band": "moderate",
     "daily_max": 5.0,
     "peak_time": "2026-07-08T12:00",
-    "safe_minutes": 65,
+    "safe_minutes": 38,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-08T09:26:06+02:00"
+    "fetched_at": "2026-07-08T12:13:39+02:00"
   }
 }
