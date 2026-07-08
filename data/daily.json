@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tawt",
+        "title": "M5.2 Earthquake - 109 km SW of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-07-08T11:42:51.921000Z",
+        "coordinates": [
+          168.6887,
+          -20.3518
+        ]
+      },
+      {
+        "id": "us6000tawr",
+        "title": "M5.0 Earthquake - 110 km SE of Kimbe, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-07-08T11:23:04.023000Z",
+        "coordinates": [
+          150.91,
+          -6.1834
+        ]
+      },
+      {
         "id": "us6000tawe",
         "title": "M5.8 Earthquake - 91 km SSW of Isangel, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           125.1424,
           4.9091
         ]
-      },
-      {
-        "id": "us6000tadc",
-        "title": "M5.8 Earthquake - 48 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-06T08:11:11.032000Z",
-        "coordinates": [
-          125.326,
-          4.9886
-        ]
-      },
-      {
-        "id": "us6000taab",
-        "title": "M5.0 Earthquake - 106 km NW of Coquimbo, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-05T15:53:33.718000Z",
-        "coordinates": [
-          -72.0113,
-          -29.1964
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 26.1,
-    "humidity": 60,
+    "temp_c": 27.2,
+    "feels_c": 27.5,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.1
+    "wind_kmh": 9.8
   },
   "forecast_today": {
     "date": "2026-07-08",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.7,
-    "temp_max_c": 25.9,
-    "humidity": 66,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_max_c": 27.2,
+    "humidity": 62,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "04d",
-    "wind_kmh": 6.7,
-    "samples": 5
+    "wind_kmh": 6.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-09",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.3,
     "temp_max_c": 29.4,
     "humidity": 60,
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-10",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.4,
     "temp_max_c": 32.5,
     "humidity": 54,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 4.3,
+    "uv": 4.5,
     "band": "moderate",
-    "daily_max": 5.0,
-    "peak_time": "2026-07-08T12:00",
-    "safe_minutes": 38,
+    "daily_max": 5.4,
+    "peak_time": "2026-07-08T14:00",
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,51 +336,51 @@
       },
       {
         "time": "2026-07-08T09:00",
-        "uv": 1.1
+        "uv": 0.9
       },
       {
         "time": "2026-07-08T10:00",
-        "uv": 3.2
+        "uv": 3.0
       },
       {
         "time": "2026-07-08T11:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-07-08T12:00",
-        "uv": 5.0
+        "uv": 5.2
       },
       {
         "time": "2026-07-08T13:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-07-08T14:00",
         "uv": 2.9
       },
       {
+        "time": "2026-07-08T14:00",
+        "uv": 5.4
+      },
+      {
         "time": "2026-07-08T15:00",
-        "uv": 2.6
+        "uv": 3.8
       },
       {
         "time": "2026-07-08T16:00",
-        "uv": 1.1
+        "uv": 2.2
       },
       {
         "time": "2026-07-08T17:00",
-        "uv": 1.2
+        "uv": 1.9
       },
       {
         "time": "2026-07-08T18:00",
-        "uv": 2.6
+        "uv": 2.0
       },
       {
         "time": "2026-07-08T19:00",
-        "uv": 1.6
+        "uv": 1.4
       },
       {
         "time": "2026-07-08T20:00",
-        "uv": 0.1
+        "uv": 0.6
       },
       {
         "time": "2026-07-08T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-08T12:13:39+02:00"
+    "fetched_at": "2026-07-08T14:18:29+02:00"
   }
 }
