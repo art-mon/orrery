@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tay7",
+        "title": "M5.4 Earthquake - Chagos Archipelago region",
+        "category": "Earthquake",
+        "date": "2026-07-08T13:01:10.819000Z",
+        "coordinates": [
+          68.7025,
+          -6.4643
+        ]
+      },
+      {
+        "id": "us6000taww",
+        "title": "M5.4 Earthquake - 245 km S of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-08T12:18:59.673000Z",
+        "coordinates": [
+          -174.9716,
+          -23.5549
+        ]
+      },
+      {
         "id": "us6000tawt",
         "title": "M5.2 Earthquake - 109 km SW of Isangel, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -71.8252,
           -32.5446
         ]
-      },
-      {
-        "id": "us6000taft",
-        "title": "M5.1 Earthquake - 211 km ESE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-06T14:43:38.525000Z",
-        "coordinates": [
-          -172.07,
-          -16.892
-        ]
-      },
-      {
-        "id": "us6000tadj",
-        "title": "M5.4 Earthquake - 65 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-06T08:41:38.715000Z",
-        "coordinates": [
-          125.1424,
-          4.9091
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 27.2,
-    "feels_c": 27.5,
-    "humidity": 49,
+    "city": "City of Zagreb",
+    "temp_c": 25.4,
+    "feels_c": 25.3,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.8
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-07-08",
-    "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 27.2,
-    "humidity": 62,
-    "condition": "Rain",
-    "description": "rain",
+    "city": "Donji grad",
+    "temp_min_c": 20.3,
+    "temp_max_c": 25.4,
+    "humidity": 59,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 6.6,
-    "samples": 4
+    "wind_kmh": 4.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-09",
-    "city": "Zagreb",
-    "temp_min_c": 17.3,
-    "temp_max_c": 29.4,
-    "humidity": 60,
+    "city": "Donji grad",
+    "temp_min_c": 16.1,
+    "temp_max_c": 28.8,
+    "humidity": 65,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-07-10",
-    "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 32.5,
-    "humidity": 54,
-    "condition": "Clouds",
+    "city": "Donji grad",
+    "temp_min_c": 17.8,
+    "temp_max_c": 32.2,
+    "humidity": 56,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 4.5,
-    "band": "moderate",
+    "uv": 2.0,
+    "band": "low",
     "daily_max": 5.4,
     "peak_time": "2026-07-08T14:00",
-    "safe_minutes": 37,
+    "safe_minutes": 81,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-08T14:18:29+02:00"
+    "fetched_at": "2026-07-08T17:18:20+02:00"
   }
 }
