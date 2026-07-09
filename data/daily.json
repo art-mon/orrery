@@ -1,15 +1,20 @@
 {
   "generated": "2026-07-09",
   "apod": {
-    "title": "Swift Boost Mission",
-    "date": "2026-07-08",
-    "explanation": "Sometimes we can all use a little help from a friend.    NASA's Neil Gehrels Swift Observatory needs a boost to stay in orbit after almost 22 years of service.   This video shows an artist's visualization of the Swift Boost Mission: The Katalyst's LINK spacecraft was launched aboard a Northrop Grumman Pegasus XL rocket on July 3 and it is now en route to rendezvous with Swift and boost it to a higher orbit over the course of the next several months.   This type of maneuver has never been attempted before.   If successful, it will be the technology demonstration of a new key capability to extended the lifetime of spacecraft in low Earth orbit, whose orbits decay over time.   Swift has an array of instruments that observe the most energetic explosions in the Universe in gamma-rays, X-rays and ultraviolet, and the unique ability to repoint in their direction within tens of seconds.   Astronomers around the world, and indeed all fans of cosmic explosions, are anxiously hoping for a successful mission!",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2607/Swift_Boost.mp4",
-    "hdurl": null
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sz3z",
+        "title": "M5.0 Earthquake - 1 km NNW of Xunchang, China",
+        "category": "Earthquake",
+        "date": "2026-07-08T23:44:13.741000Z",
+        "coordinates": [
+          104.7074,
+          28.4707
+        ]
+      },
       {
         "id": "us7000sz2b",
         "title": "M5.5 Earthquake - Balleny Islands region",
@@ -149,53 +154,11 @@
           -30.2505,
           59.4631
         ]
-      },
-      {
-        "id": "us6000takd",
-        "title": "M5.8 Earthquake - 296 km SSE of Ushuaia, Argentina",
-        "category": "Earthquake",
-        "date": "2026-07-07T01:26:45.626000Z",
-        "coordinates": [
-          -66.7593,
-          -57.3319
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 AM12)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-07-08",
-        "miss_distance_km": 10787227,
-        "velocity_kmh": 18135
-      },
-      {
-        "name": "(2017 RO17)",
-        "hazardous": false,
-        "diameter_m": 36,
-        "close_approach_date": "2026-07-08",
-        "miss_distance_km": 50252760,
-        "velocity_kmh": 29136
-      },
-      {
-        "name": "(2017 TH2)",
-        "hazardous": false,
-        "diameter_m": 10,
-        "close_approach_date": "2026-07-08",
-        "miss_distance_km": 50795140,
-        "velocity_kmh": 52214
-      },
-      {
-        "name": "(2013 BU2)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-07-08",
-        "miss_distance_km": 53711278,
-        "velocity_kmh": 33342
-      },
       {
         "name": "250680 (2005 QC5)",
         "hazardous": true,
@@ -243,52 +206,84 @@
         "close_approach_date": "2026-07-10",
         "miss_distance_km": 26877308,
         "velocity_kmh": 111835
+      },
+      {
+        "name": "(2016 BW14)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-07-10",
+        "miss_distance_km": 44771055,
+        "velocity_kmh": 35811
+      },
+      {
+        "name": "(2017 UG)",
+        "hazardous": false,
+        "diameter_m": 19,
+        "close_approach_date": "2026-07-10",
+        "miss_distance_km": 52558651,
+        "velocity_kmh": 27449
+      },
+      {
+        "name": "(2011 EP51)",
+        "hazardous": false,
+        "diameter_m": 54,
+        "close_approach_date": "2026-07-10",
+        "miss_distance_km": 60661348,
+        "velocity_kmh": 46658
+      },
+      {
+        "name": "(2015 NU2)",
+        "hazardous": true,
+        "diameter_m": 391,
+        "close_approach_date": "2026-07-10",
+        "miss_distance_km": 70338978,
+        "velocity_kmh": 44788
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.3,
-    "humidity": 72,
+    "temp_c": 19.2,
+    "feels_c": 19.2,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 2.1
+    "wind_kmh": 3.1
   },
   "forecast_today": {
     "date": "2026-07-09",
     "city": "Zagreb",
-    "temp_min_c": 19.0,
-    "temp_max_c": 28.9,
-    "humidity": 63,
+    "temp_min_c": 18.5,
+    "temp_max_c": 28.0,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 4.7,
-    "samples": 9
+    "wind_kmh": 4.6,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-10",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 32.2,
-    "humidity": 57,
+    "temp_min_c": 16.0,
+    "temp_max_c": 30.7,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-07-11",
     "city": "Zagreb",
-    "temp_min_c": 18.1,
-    "temp_max_c": 30.8,
-    "humidity": 69,
+    "temp_min_c": 17.9,
+    "temp_max_c": 27.2,
+    "humidity": 72,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 3.2
+    "wind_kmh": 3.3
   },
   "uv": {
     "uv": 0.0,
@@ -324,19 +319,19 @@
       },
       {
         "time": "2026-07-09T06:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-07-09T07:00",
-        "uv": 0.6
+        "uv": 0.2
       },
       {
         "time": "2026-07-09T08:00",
-        "uv": 1.5
+        "uv": 1.1
       },
       {
         "time": "2026-07-09T09:00",
-        "uv": 2.8
+        "uv": 2.9
       },
       {
         "time": "2026-07-09T10:00",
@@ -356,19 +351,19 @@
       },
       {
         "time": "2026-07-09T14:00",
-        "uv": 6.9
+        "uv": 4.4
       },
       {
         "time": "2026-07-09T15:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-07-09T16:00",
         "uv": 1.4
       },
       {
-        "time": "2026-07-09T17:00",
+        "time": "2026-07-09T16:00",
         "uv": 0.6
+      },
+      {
+        "time": "2026-07-09T17:00",
+        "uv": 0.4
       },
       {
         "time": "2026-07-09T18:00",
@@ -376,7 +371,7 @@
       },
       {
         "time": "2026-07-09T19:00",
-        "uv": 1.5
+        "uv": 1.0
       },
       {
         "time": "2026-07-09T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-09T01:03:40+02:00"
+    "fetched_at": "2026-07-09T04:42:38+02:00"
   }
 }
