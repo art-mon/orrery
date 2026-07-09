@@ -1,7 +1,12 @@
 {
   "generated": "2026-07-09",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Red Glow of the Cosmic Bat Nebula",
+    "date": "2026-07-09",
+    "explanation": "This Cosmic Bat wishes you a happy Summerween! This mid-year celebration of Halloween transcends hemispheres, even though summer in the Northern hemisphere is winter in the South. Contrary to its eery aura, the Cosmic Bat Nebula (LDN 43), not to be confused with the Bat Nebula (NGC 6995), is a vibrant birthplace for stars. A bit of young starlight peeks through the dense clouds of gas and dust that make up the Cosmic Bat\u2019s 12 lightyear wingspan. The ultraviolet light from the young stars energizes the nebula\u2019s hydrogen gas, causing it to glow an ominous red. The jet of glowing hydrogen gas emerging from the bat\u2019s head hints at the star formation hidden within.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/cosmic_bat_halpha_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/cosmic_bat_1024.jpg"
   },
   "events": {
     "events": [
@@ -243,47 +248,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.0,
-    "feels_c": 22.9,
-    "humidity": 58,
+    "temp_c": 20.4,
+    "feels_c": 20.1,
+    "humidity": 62,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.2
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 3.2
   },
   "forecast_today": {
     "date": "2026-07-09",
     "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 23.0,
-    "humidity": 58,
+    "temp_min_c": 20.4,
+    "temp_max_c": 20.4,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 2.7,
+    "icon": "04n",
+    "wind_kmh": 3.2,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-10",
     "city": "Zagreb",
-    "temp_min_c": 16.4,
+    "temp_min_c": 17.7,
     "temp_max_c": 30.0,
-    "humidity": 47,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.9
+    "humidity": 50,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.2
   },
   "forecast_day_after": {
     "date": "2026-07-11",
     "city": "Zagreb",
     "temp_min_c": 17,
-    "temp_max_c": 28.5,
-    "humidity": 70,
-    "condition": "Rain",
+    "temp_max_c": 28.9,
+    "humidity": 65,
+    "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.5
+    "wind_kmh": 4.5
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-09T20:48:29+02:00"
+    "fetched_at": "2026-07-09T22:44:36+02:00"
   }
 }
