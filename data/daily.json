@@ -1,15 +1,20 @@
 {
   "generated": "2026-07-09",
   "apod": {
-    "title": "The Red Glow of the Cosmic Bat Nebula",
-    "date": "2026-07-09",
-    "explanation": "This Cosmic Bat wishes you a happy Summerween! This mid-year celebration of Halloween transcends hemispheres, even though summer in the Northern hemisphere is winter in the South. Contrary to its eery aura, the Cosmic Bat Nebula (LDN 43), not to be confused with the Bat Nebula (NGC 6995), is a vibrant birthplace for stars. A bit of young starlight peeks through the dense clouds of gas and dust that make up the Cosmic Bat\u2019s 12 lightyear wingspan. The ultraviolet light from the young stars energizes the nebula\u2019s hydrogen gas, causing it to glow an ominous red. The jet of glowing hydrogen gas emerging from the bat\u2019s head hints at the star formation hidden within.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/cosmic_bat_halpha_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/cosmic_bat_1024.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000sz8l",
+        "title": "M5.0 Earthquake - 19 km ENE of Abuyog, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-09T16:46:49.469000Z",
+        "coordinates": [
+          125.179,
+          10.8094
+        ]
+      },
       {
         "id": "us7000sz7n",
         "title": "M5.1 Earthquake - 50 km SW of Shirahama, Japan",
@@ -149,16 +154,6 @@
           -30.3683,
           59.4768
         ]
-      },
-      {
-        "id": "us6000talg",
-        "title": "M5.4 Earthquake - 162 km NNW of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-07T07:16:26.844000Z",
-        "coordinates": [
-          127.5573,
-          3.1239
-        ]
       }
     ]
   },
@@ -248,31 +243,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.2,
-    "feels_c": 26.2,
-    "humidity": 46,
+    "temp_c": 23.0,
+    "feels_c": 22.9,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.5
+    "wind_kmh": 2.2
   },
   "forecast_today": {
     "date": "2026-07-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 23.1,
-    "temp_max_c": 26.2,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 23.0,
+    "temp_max_c": 23.0,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 4.7,
-    "samples": 3
+    "wind_kmh": 2.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 29.9,
+    "city": "Zagreb",
+    "temp_min_c": 16.4,
+    "temp_max_c": 30.0,
     "humidity": 47,
     "condition": "Clouds",
     "description": "few clouds",
@@ -281,9 +276,9 @@
   },
   "forecast_day_after": {
     "date": "2026-07-11",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17,
-    "temp_max_c": 29.1,
+    "temp_max_c": 28.5,
     "humidity": 70,
     "condition": "Rain",
     "description": "overcast clouds",
@@ -291,11 +286,11 @@
     "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-09T13:00",
-    "safe_minutes": 185,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,27 +355,27 @@
       },
       {
         "time": "2026-07-09T15:00",
-        "uv": 1.1
+        "uv": 1.6
       },
       {
         "time": "2026-07-09T16:00",
-        "uv": 0.9
+        "uv": 1.1
       },
       {
         "time": "2026-07-09T17:00",
-        "uv": 0.5
+        "uv": 0.8
       },
       {
         "time": "2026-07-09T18:00",
-        "uv": 1.5
+        "uv": 2.4
       },
       {
         "time": "2026-07-09T19:00",
-        "uv": 0.6
+        "uv": 1.0
       },
       {
         "time": "2026-07-09T20:00",
-        "uv": 0.3
+        "uv": 0.5
       },
       {
         "time": "2026-07-09T21:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-09T18:25:30+02:00"
+    "fetched_at": "2026-07-09T20:48:29+02:00"
   }
 }
