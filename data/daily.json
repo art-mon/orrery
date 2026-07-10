@@ -165,30 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "250680 (2005 QC5)",
-        "hazardous": true,
-        "diameter_m": 705,
-        "close_approach_date": "2026-07-09",
-        "miss_distance_km": 30472665,
-        "velocity_kmh": 54708
-      },
-      {
-        "name": "500136 (2012 CO46)",
-        "hazardous": false,
-        "diameter_m": 160,
-        "close_approach_date": "2026-07-09",
-        "miss_distance_km": 69705550,
-        "velocity_kmh": 23047
-      },
-      {
-        "name": "(2008 CL20)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-07-09",
-        "miss_distance_km": 74177674,
-        "velocity_kmh": 69473
-      },
-      {
         "name": "(2013 AS27)",
         "hazardous": true,
         "diameter_m": 315,
@@ -243,37 +219,61 @@
         "close_approach_date": "2026-07-10",
         "miss_distance_km": 70338978,
         "velocity_kmh": 44788
+      },
+      {
+        "name": "(2007 AA2)",
+        "hazardous": false,
+        "diameter_m": 71,
+        "close_approach_date": "2026-07-11",
+        "miss_distance_km": 6832281,
+        "velocity_kmh": 25970
+      },
+      {
+        "name": "(2018 LQ2)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-07-11",
+        "miss_distance_km": 20039918,
+        "velocity_kmh": 16043
+      },
+      {
+        "name": "(2008 EU68)",
+        "hazardous": false,
+        "diameter_m": 248,
+        "close_approach_date": "2026-07-11",
+        "miss_distance_km": 35056102,
+        "velocity_kmh": 87188
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.1,
-    "feels_c": 18.9,
-    "humidity": 73,
+    "temp_c": 21.5,
+    "feels_c": 21.4,
+    "humidity": 65,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 3.7
+    "wind_kmh": 0.6
   },
   "forecast_today": {
     "date": "2026-07-10",
     "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 30.6,
-    "humidity": 53,
+    "temp_min_c": 19.8,
+    "temp_max_c": 30.0,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear",
     "icon": "04n",
-    "wind_kmh": 4.4,
-    "samples": 9
+    "wind_kmh": 4.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-11",
     "city": "Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 29.5,
-    "humidity": 64,
+    "temp_min_c": 17,
+    "temp_max_c": 28.9,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -282,13 +282,13 @@
   "forecast_day_after": {
     "date": "2026-07-12",
     "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 31.2,
+    "temp_min_c": 16.0,
+    "temp_max_c": 30.6,
     "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 7.2
   },
   "uv": {
     "uv": 0.0,
@@ -328,11 +328,11 @@
       },
       {
         "time": "2026-07-10T07:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-07-10T08:00",
-        "uv": 1.4
+        "uv": 1.6
       },
       {
         "time": "2026-07-10T09:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-10T00:19:43+02:00"
+    "fetched_at": "2026-07-10T02:02:07+02:00"
   }
 }
