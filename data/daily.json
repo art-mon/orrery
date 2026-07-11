@@ -11,13 +11,23 @@
   "events": {
     "events": [
       {
+        "id": "us7000szq0",
+        "title": "M5.4 Earthquake - 41 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-11T10:51:12.845000Z",
+        "coordinates": [
+          125.4897,
+          5.0334
+        ]
+      },
+      {
         "id": "us7000szpb",
         "title": "M6.4 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
-        "date": "2026-07-11T10:26:45.250000Z",
+        "date": "2026-07-11T10:26:42.691000Z",
         "coordinates": [
-          -28.9704,
-          -55.5361
+          -28.8526,
+          -55.5424
         ]
       },
       {
@@ -149,16 +159,6 @@
           150.91,
           -6.1834
         ]
-      },
-      {
-        "id": "us6000tawe",
-        "title": "M5.8 Earthquake - 91 km SSW of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-07-08T09:50:23.421000Z",
-        "coordinates": [
-          168.8353,
-          -20.2559
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 33.1,
-    "feels_c": 33.2,
-    "humidity": 36,
+    "city": "Zagreb",
+    "temp_c": 33.8,
+    "feels_c": 34.7,
+    "humidity": 38,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.7
+    "wind_kmh": 9.1
   },
   "forecast_today": {
     "date": "2026-07-11",
     "city": "Zagreb",
-    "temp_min_c": 20.9,
-    "temp_max_c": 33.1,
-    "humidity": 49,
+    "temp_min_c": 20.2,
+    "temp_max_c": 33.8,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 5.5,
-    "samples": 5
+    "wind_kmh": 9.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-12",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 18.2,
     "temp_max_c": 29.6,
-    "humidity": 54,
+    "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.6
+    "wind_kmh": 6.3
   },
   "forecast_day_after": {
     "date": "2026-07-13",
     "city": "Zagreb",
-    "temp_min_c": 17.7,
-    "temp_max_c": 32.9,
-    "humidity": 44,
+    "temp_min_c": 19.9,
+    "temp_max_c": 31.9,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 6.5,
+    "uv": 6.2,
     "band": "high",
-    "daily_max": 6.5,
-    "peak_time": "2026-07-11T13:00",
-    "safe_minutes": 25,
+    "daily_max": 6.9,
+    "peak_time": "2026-07-11T14:00",
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +336,11 @@
       },
       {
         "time": "2026-07-11T09:00",
-        "uv": 2.6
+        "uv": 2.8
       },
       {
         "time": "2026-07-11T10:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-07-11T11:00",
@@ -348,19 +348,19 @@
       },
       {
         "time": "2026-07-11T12:00",
-        "uv": 5.8
+        "uv": 6.2
       },
       {
         "time": "2026-07-11T13:00",
-        "uv": 6.5
+        "uv": 6.7
       },
       {
         "time": "2026-07-11T14:00",
-        "uv": 6.5
+        "uv": 6.9
       },
       {
         "time": "2026-07-11T15:00",
-        "uv": 6.2
+        "uv": 6.5
       },
       {
         "time": "2026-07-11T16:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-07-11T17:00",
-        "uv": 4.0
+        "uv": 4.2
       },
       {
         "time": "2026-07-11T18:00",
@@ -376,15 +376,15 @@
       },
       {
         "time": "2026-07-11T19:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-07-11T20:00",
-        "uv": 0.6
+        "uv": 0.2
       },
       {
         "time": "2026-07-11T21:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-07-11T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-11T13:02:30+02:00"
+    "fetched_at": "2026-07-11T15:12:35+02:00"
   }
 }
