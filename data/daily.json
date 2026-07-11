@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-11",
   "apod": {
-    "title": "Western Moon, Eastern Sea",
-    "date": "2026-07-10",
-    "explanation": "The Mare Orientale, Latin for Eastern Sea, is one of the most striking large scale lunar features. The youngest of the large lunar impact basins it's very difficult to see from an earthbound perspective. Still, captured on July 7 during a period of favorable tilt, or libration of the lunar nearside, the Eastern Sea can be found at the upper right in this sharp telescopic view. In the image, the large lunar mare is extremely foreshortened and stretches along the Moon's western edge. Formed by the impact of an asteroid over 3 billion years ago and nearly 1000 kilometers across, the impact basin's concentric circular features are ripples in the lunar crust. But they are a little easier to spot in more direct images of the region taken from lunar orbit. So why is the Eastern Sea at the Moon's western edge? The Mare Orientale lunar feature was named before 1961. That's when the convention labeling east and west on lunar maps was reversed.",
+    "title": "Messier 24: Sagittarius Star Cloud",
+    "date": "2026-07-11",
+    "explanation": "Unlike most entries in Charles Messier's famous catalog of deep sky objects, M24 is not a bright galaxy, star cluster, or nebula. It's a gap in nearby, obscuring interstellar dust clouds that allows a view of the distant stars in the Sagittarius spiral arm of our Milky Way galaxy. Direct your gaze through this gap with binoculars or a small telescope and you are looking through a window over 300 light-years wide at stars some 10,000 light-years or more from Earth. Sometimes called the Small Sagittarius Star Cloud, M24's luminous stars stretch across this gorgeous interstellar scene.  Spanning over four full moons on the sky toward the constellation Sagittarius, the telescopic field of view includes dark markings B92 and B93 near the center of M24, along with other clouds of dust and glowing nebulae toward the center of the Milky Way.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/C14MareOrientaleGuyBardon1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/C14MareOrientaleGuyBardon.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/M24_1088.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/M24.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000szmb",
+        "title": "M5.0 Earthquake - 299 km W of Neiafu, Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-11T03:14:55.443000Z",
+        "coordinates": [
+          -176.783,
+          -18.2136
+        ]
+      },
       {
         "id": "us7000szim",
         "title": "M5.0 Earthquake - west of Macquarie Island",
@@ -149,16 +159,6 @@
           105.0646,
           -6.7717
         ]
-      },
-      {
-        "id": "us6000tarc",
-        "title": "M5.3 Earthquake - 10 km WSW of Orotina, Costa Rica",
-        "category": "Earthquake",
-        "date": "2026-07-07T18:11:32.787000Z",
-        "coordinates": [
-          -84.6042,
-          9.8644
-        ]
       }
     ]
   },
@@ -247,32 +247,32 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 18.0,
-    "feels_c": 18.1,
-    "humidity": 87,
+    "city": "Zagreb",
+    "temp_c": 22.1,
+    "feels_c": 22.3,
+    "humidity": 71,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 1.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.1
   },
   "forecast_today": {
     "date": "2026-07-11",
     "city": "City of Zagreb",
-    "temp_min_c": 17.3,
-    "temp_max_c": 30.4,
-    "humidity": 68,
+    "temp_min_c": 20.4,
+    "temp_max_c": 29.7,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.8,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 4.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-12",
     "city": "City of Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 28.3,
+    "temp_min_c": 16.6,
+    "temp_max_c": 28.8,
     "humidity": 62,
     "condition": "Clear",
     "description": "few clouds",
@@ -282,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-07-13",
     "city": "City of Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 31.1,
-    "humidity": 49,
+    "temp_min_c": 17.6,
+    "temp_max_c": 31.8,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.3,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-07-11T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 128,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,7 +332,7 @@
       },
       {
         "time": "2026-07-11T08:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-07-11T09:00",
@@ -340,15 +340,15 @@
       },
       {
         "time": "2026-07-11T10:00",
-        "uv": 4.2
+        "uv": 4.1
       },
       {
         "time": "2026-07-11T11:00",
-        "uv": 5.5
+        "uv": 5.1
       },
       {
         "time": "2026-07-11T12:00",
-        "uv": 6.0
+        "uv": 5.8
       },
       {
         "time": "2026-07-11T13:00",
@@ -356,15 +356,15 @@
       },
       {
         "time": "2026-07-11T14:00",
-        "uv": 6.2
+        "uv": 6.5
       },
       {
         "time": "2026-07-11T15:00",
-        "uv": 6.0
+        "uv": 6.2
       },
       {
         "time": "2026-07-11T16:00",
-        "uv": 5.1
+        "uv": 5.5
       },
       {
         "time": "2026-07-11T17:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-07-11T19:00",
-        "uv": 1.1
+        "uv": 1.6
       },
       {
         "time": "2026-07-11T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-11T04:25:15+02:00"
+    "fetched_at": "2026-07-11T07:37:50+02:00"
   }
 }
