@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-11",
+  "generated": "2026-07-12",
   "apod": {
     "title": "Messier 24: Sagittarius Star Cloud",
     "date": "2026-07-11",
@@ -247,39 +247,28 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.9,
-    "feels_c": 20.4,
-    "humidity": 93,
+    "city": "Donji grad",
+    "temp_c": 19.4,
+    "feels_c": 19.8,
+    "humidity": 92,
     "condition": "Rain",
     "description": "moderate rain",
     "icon": "10n",
-    "wind_kmh": 6.0
+    "wind_kmh": 2.6
   },
   "forecast_today": {
-    "date": "2026-07-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 19.9,
-    "humidity": 93,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 6.0,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-07-12",
     "city": "City of Zagreb",
-    "temp_min_c": 18.6,
+    "temp_min_c": 18.8,
     "temp_max_c": 29.0,
-    "humidity": 60,
+    "humidity": 64,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.6
+    "description": "clear",
+    "icon": "10n",
+    "wind_kmh": 5.2,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-07-13",
     "city": "City of Zagreb",
     "temp_min_c": 19.6,
@@ -290,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 4.0
   },
+  "forecast_day_after": {
+    "date": "2026-07-14",
+    "city": "City of Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 32.1,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.9,
-    "peak_time": "2026-07-11T14:00",
+    "daily_max": 7.1,
+    "peak_time": "2026-07-12T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-11T00:00",
+        "time": "2026-07-12T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T01:00",
+        "time": "2026-07-12T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T02:00",
+        "time": "2026-07-12T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T03:00",
+        "time": "2026-07-12T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T04:00",
+        "time": "2026-07-12T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T05:00",
+        "time": "2026-07-12T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T06:00",
+        "time": "2026-07-12T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-11T07:00",
+        "time": "2026-07-12T07:00",
         "uv": 0.6
       },
       {
-        "time": "2026-07-11T08:00",
-        "uv": 1.4
+        "time": "2026-07-12T08:00",
+        "uv": 1.5
       },
       {
-        "time": "2026-07-11T09:00",
+        "time": "2026-07-12T09:00",
         "uv": 2.8
       },
       {
-        "time": "2026-07-11T10:00",
+        "time": "2026-07-12T10:00",
         "uv": 4.2
       },
       {
-        "time": "2026-07-11T11:00",
-        "uv": 5.1
-      },
-      {
-        "time": "2026-07-11T12:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-07-11T13:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-07-11T14:00",
-        "uv": 6.9
-      },
-      {
-        "time": "2026-07-11T15:00",
+        "time": "2026-07-12T11:00",
         "uv": 5.5
       },
       {
-        "time": "2026-07-11T16:00",
+        "time": "2026-07-12T12:00",
+        "uv": 6.5
+      },
+      {
+        "time": "2026-07-12T13:00",
+        "uv": 7.0
+      },
+      {
+        "time": "2026-07-12T14:00",
+        "uv": 7.1
+      },
+      {
+        "time": "2026-07-12T15:00",
+        "uv": 6.5
+      },
+      {
+        "time": "2026-07-12T16:00",
+        "uv": 5.6
+      },
+      {
+        "time": "2026-07-12T17:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-07-12T18:00",
         "uv": 2.9
       },
       {
-        "time": "2026-07-11T17:00",
-        "uv": 1.7
+        "time": "2026-07-12T19:00",
+        "uv": 1.6
       },
       {
-        "time": "2026-07-11T18:00",
-        "uv": 2.0
+        "time": "2026-07-12T20:00",
+        "uv": 0.6
       },
       {
-        "time": "2026-07-11T19:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-07-11T20:00",
+        "time": "2026-07-12T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-11T21:00",
+        "time": "2026-07-12T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-11T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-11T23:00",
+        "time": "2026-07-12T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-11T23:46:24+02:00"
+    "fetched_at": "2026-07-12T00:44:02+02:00"
   }
 }
