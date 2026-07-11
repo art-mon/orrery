@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000szpb",
+        "title": "M6.4 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-11T10:26:45.250000Z",
+        "coordinates": [
+          -28.9704,
+          -55.5361
+        ]
+      },
+      {
         "id": "us7000sznq",
         "title": "M5.1 Earthquake - 129 km SW of Huarmey, Peru",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           168.8353,
           -20.2559
         ]
-      },
-      {
-        "id": "us6000taui",
-        "title": "M5.0 Earthquake - 15 km NNE of Xunchang, China",
-        "category": "Earthquake",
-        "date": "2026-07-08T02:08:48.776000Z",
-        "coordinates": [
-          104.7549,
-          28.5871
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 30.9,
-    "feels_c": 31.4,
-    "humidity": 44,
+    "temp_c": 33.1,
+    "feels_c": 33.2,
+    "humidity": 36,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.5
+    "wind_kmh": 7.7
   },
   "forecast_today": {
     "date": "2026-07-11",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.9,
-    "temp_max_c": 30.9,
-    "humidity": 53,
+    "temp_max_c": 33.1,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 4.9,
+    "wind_kmh": 5.5,
     "samples": 5
   },
   "forecast": {
     "date": "2026-07-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.2,
     "temp_max_c": 29.6,
     "humidity": 54,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-13",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.7,
     "temp_max_c": 32.9,
     "humidity": 44,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 5.5,
-    "band": "moderate",
+    "uv": 6.5,
+    "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-07-11T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-11T11:25:39+02:00"
+    "fetched_at": "2026-07-11T13:02:30+02:00"
   }
 }
