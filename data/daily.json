@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000szuz",
+        "title": "M5.0 Earthquake - 139 km S of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-12T11:09:45.067000Z",
+        "coordinates": [
+          -174.917,
+          -22.6035
+        ]
+      },
+      {
         "id": "us7000szu6",
         "title": "M5.5 Earthquake - southern East Pacific Rise",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           154.8869,
           -61.7788
         ]
-      },
-      {
-        "id": "us6000tay7",
-        "title": "M5.3 Earthquake - Chagos Archipelago region",
-        "category": "Earthquake",
-        "date": "2026-07-08T13:01:10.891000Z",
-        "coordinates": [
-          68.7,
-          -6.427
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 29.8,
-    "feels_c": 29.4,
-    "humidity": 39,
+    "city": "Zagreb",
+    "temp_c": 30.9,
+    "feels_c": 30.5,
+    "humidity": 38,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.2
+    "wind_kmh": 9.9
   },
   "forecast_today": {
     "date": "2026-07-12",
     "city": "Zagreb",
     "temp_min_c": 21.6,
-    "temp_max_c": 29.8,
-    "humidity": 46,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_max_c": 30.9,
+    "humidity": 44,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 7.4,
+    "wind_kmh": 8.0,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 6.5,
+    "uv": 7.0,
     "band": "high",
     "daily_max": 7.0,
     "peak_time": "2026-07-12T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,7 +348,7 @@
       },
       {
         "time": "2026-07-12T12:00",
-        "uv": 5.7
+        "uv": 6.0
       },
       {
         "time": "2026-07-12T13:00",
@@ -360,23 +360,23 @@
       },
       {
         "time": "2026-07-12T15:00",
-        "uv": 6.5
+        "uv": 5.5
       },
       {
         "time": "2026-07-12T16:00",
-        "uv": 5.6
+        "uv": 5.5
       },
       {
         "time": "2026-07-12T17:00",
-        "uv": 4.3
+        "uv": 2.8
       },
       {
         "time": "2026-07-12T18:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-07-12T19:00",
-        "uv": 1.4
+        "uv": 1.6
       },
       {
         "time": "2026-07-12T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-12T12:24:54+02:00"
+    "fetched_at": "2026-07-12T13:56:56+02:00"
   }
 }
