@@ -1,12 +1,7 @@
 {
-  "generated": "2026-07-12",
+  "generated": "2026-07-13",
   "apod": {
-    "title": "Galaxy NGC 474: Shells and Star Streams",
-    "date": "2026-07-12",
-    "explanation": "What's happening to galaxy NGC 474?  The multiple layers of emission appear strangely complex given the relatively featureless appearance of the elliptical galaxy in less deep images.  The cause of the shells is a topic of research, but they are possibly tidal tails related to debris left over from absorbing numerous small galaxies in the past billion years.  Alternatively, the shells may be like ripples in a pond, where the ongoing collision with the spiral galaxy just to the right of NGC 474 is causing density waves to ripple through the galactic giant.  Regardless of the actual cause, the featured image dramatically highlights the increasing evidence that the halos of some elliptical galaxies are surprisingly complicated.  Similarly, the halo of our own Milky Way Galaxy is one example of such unexpected intricacies.  NGC 474 spans about 250,000 light years and lies about 100 million light years distant toward the constellation of the Fish (Pisces).",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_1500.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,39 +242,28 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.6,
-    "feels_c": 20.6,
-    "humidity": 70,
+    "city": "Zagreb",
+    "temp_c": 20.0,
+    "feels_c": 19.9,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.9
+    "wind_kmh": 2.3
   },
   "forecast_today": {
-    "date": "2026-07-12",
+    "date": "2026-07-13",
     "city": "Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 20.6,
-    "humidity": 70,
+    "temp_min_c": 18.8,
+    "temp_max_c": 32.4,
+    "humidity": 53,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.9,
-    "samples": 1
+    "wind_kmh": 4.8,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-13",
-    "city": "Zagreb",
-    "temp_min_c": 18.6,
-    "temp_max_c": 32.4,
-    "humidity": 52,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.1
-  },
-  "forecast_day_after": {
     "date": "2026-07-14",
     "city": "Zagreb",
     "temp_min_c": 18.7,
@@ -290,111 +274,122 @@
     "icon": "03d",
     "wind_kmh": 4.0
   },
+  "forecast_day_after": {
+    "date": "2026-07-15",
+    "city": "Zagreb",
+    "temp_min_c": 17.4,
+    "temp_max_c": 31.3,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.2
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.0,
-    "peak_time": "2026-07-12T13:00",
+    "daily_max": 7.1,
+    "peak_time": "2026-07-13T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-12T00:00",
+        "time": "2026-07-13T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T01:00",
+        "time": "2026-07-13T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T02:00",
+        "time": "2026-07-13T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T03:00",
+        "time": "2026-07-13T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T04:00",
+        "time": "2026-07-13T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T05:00",
+        "time": "2026-07-13T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T06:00",
+        "time": "2026-07-13T06:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-12T07:00",
+        "time": "2026-07-13T07:00",
         "uv": 0.6
       },
       {
-        "time": "2026-07-12T08:00",
+        "time": "2026-07-13T08:00",
         "uv": 1.5
       },
       {
-        "time": "2026-07-12T09:00",
+        "time": "2026-07-13T09:00",
         "uv": 2.8
       },
       {
-        "time": "2026-07-12T10:00",
+        "time": "2026-07-13T10:00",
         "uv": 4.2
       },
       {
-        "time": "2026-07-12T11:00",
+        "time": "2026-07-13T11:00",
         "uv": 5.5
       },
       {
-        "time": "2026-07-12T12:00",
-        "uv": 6.0
+        "time": "2026-07-13T12:00",
+        "uv": 6.5
       },
       {
-        "time": "2026-07-12T13:00",
-        "uv": 7.0
+        "time": "2026-07-13T13:00",
+        "uv": 7.1
       },
       {
-        "time": "2026-07-12T14:00",
-        "uv": 7.0
+        "time": "2026-07-13T14:00",
+        "uv": 7.1
       },
       {
-        "time": "2026-07-12T15:00",
-        "uv": 6.3
+        "time": "2026-07-13T15:00",
+        "uv": 6.6
       },
       {
-        "time": "2026-07-12T16:00",
-        "uv": 5.5
+        "time": "2026-07-13T16:00",
+        "uv": 5.7
       },
       {
-        "time": "2026-07-12T17:00",
-        "uv": 2.6
+        "time": "2026-07-13T17:00",
+        "uv": 4.3
       },
       {
-        "time": "2026-07-12T18:00",
-        "uv": 0.7
+        "time": "2026-07-13T18:00",
+        "uv": 2.9
       },
       {
-        "time": "2026-07-12T19:00",
+        "time": "2026-07-13T19:00",
         "uv": 1.6
       },
       {
-        "time": "2026-07-12T20:00",
+        "time": "2026-07-13T20:00",
         "uv": 0.6
       },
       {
-        "time": "2026-07-12T21:00",
+        "time": "2026-07-13T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-12T22:00",
+        "time": "2026-07-13T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-12T23:00",
+        "time": "2026-07-13T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-12T23:45:48+02:00"
+    "fetched_at": "2026-07-13T00:43:57+02:00"
   }
 }
