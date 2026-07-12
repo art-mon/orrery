@@ -1,7 +1,12 @@
 {
   "generated": "2026-07-13",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Galaxy NGC 474: Shells and Star Streams",
+    "date": "2026-07-12",
+    "explanation": "What's happening to galaxy NGC 474?  The multiple layers of emission appear strangely complex given the relatively featureless appearance of the elliptical galaxy in less deep images.  The cause of the shells is a topic of research, but they are possibly tidal tails related to debris left over from absorbing numerous small galaxies in the past billion years.  Alternatively, the shells may be like ripples in a pond, where the ongoing collision with the spiral galaxy just to the right of NGC 474 is causing density waves to ripple through the galactic giant.  Regardless of the actual cause, the featured image dramatically highlights the increasing evidence that the halos of some elliptical galaxies are surprisingly complicated.  Similarly, the halo of our own Milky Way Galaxy is one example of such unexpected intricacies.  NGC 474 spans about 250,000 light years and lies about 100 million light years distant toward the constellation of the Fish (Pisces).",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_1500.jpg"
   },
   "events": {
     "events": [
@@ -243,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.0,
-    "feels_c": 19.9,
-    "humidity": 71,
+    "temp_c": 19.2,
+    "feels_c": 19.0,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 2.3
+    "wind_kmh": 3.2
   },
   "forecast_today": {
     "date": "2026-07-13",
     "city": "Zagreb",
-    "temp_min_c": 18.8,
+    "temp_min_c": 18.7,
     "temp_max_c": 32.4,
-    "humidity": 53,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.8,
+    "wind_kmh": 4.9,
     "samples": 9
   },
   "forecast": {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-13T00:43:57+02:00"
+    "fetched_at": "2026-07-13T01:51:08+02:00"
   }
 }
