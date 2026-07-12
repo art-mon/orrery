@@ -4,6 +4,7 @@
 #include "gfx.h"
 #include "clock.h"
 #include "world.h"
+#include "encoder.h"
 
 #include <ctype.h>
 #include <math.h>
@@ -1072,7 +1073,12 @@ void scenes_run(const daily_data_t *data) {
         panel_flip();
         vTaskDelay(pdMS_TO_TICKS(FRAME_MS));
         tick++;
-        if (tick >= SCENES[idx].ticks) {
+
+        int delta = encoder_read_delta();
+        if (delta != 0) {
+            idx  = (idx + NUM_SCENES + delta) % NUM_SCENES;
+            tick = 0;
+        } else if (tick >= SCENES[idx].ticks) {
             tick = 0;
             idx  = (idx + 1) % NUM_SCENES;
         }

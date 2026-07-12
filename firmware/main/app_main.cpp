@@ -4,6 +4,7 @@
 #include "clock.h"
 #include "scenes.h"
 #include "world.h"
+#include "encoder.h"
 #include "wifi_creds.h"
 
 #include <string.h>
@@ -54,6 +55,7 @@ extern "C" void app_main(void) {
 
     panel_init();
     panel_set_brightness(40);
+    encoder_init();
     draw_status("BOOT", 200, 200, 200);
 
     draw_status("WIFI..", 255, 200, 0);

@@ -4,6 +4,7 @@ idf_component_register(
          "font.c"
          "wifi.c"
          "daily.c"
+         "encoder.c"
     INCLUDE_DIRS "."
     REQUIRES
         esp_wifi
