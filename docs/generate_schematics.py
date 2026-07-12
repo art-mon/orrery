@@ -32,7 +32,7 @@ BUTTONS_X      = 12
 HUB75_PINS = [
     ('R1','4'),('G1','5'),('B1','6'),
     ('R2','7'),('G2','15'),('B2','16'),
-    ('A','36'),('B','37'),('C','38'),('D','39'),
+    ('A','17'),('B','18'),('C','21'),('D','14'),
     ('CLK','2'),('LAT','47'),('OE','48'),
 ]
 N = len(HUB75_PINS)      # 13
@@ -51,7 +51,8 @@ with schemdraw.Drawing(show=False) as d:
     d.add(elm.Label().at(Point((9, TITLE_Y + 0.8)))
           .label('orrery — Hardware Schematic', loc='center'))
     d.add(elm.Label().at(Point((9, TITLE_Y + 0.2)))
-          .label('ESP32-S3 N16R8 · 64×32 HUB75 · MAX98357A · 3 buttons', loc='center')
+          .label('ESP32-S3 N16R8 · 64×32 HUB75 · MAX98357A · KY-040 encoder · BH1750 I2C',
+                 loc='center')
           .color('#888888'))
 
     # ═══════════════════════════════════════════════════════════════════════
