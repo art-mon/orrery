@@ -248,153 +248,49 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.9,
-    "feels_c": 30.5,
-    "humidity": 38,
+    "temp_c": 31.5,
+    "feels_c": 31.0,
+    "humidity": 36,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 9.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.9
   },
   "forecast_today": {
     "date": "2026-07-12",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.6,
-    "temp_max_c": 30.9,
+    "temp_max_c": 31.5,
     "humidity": 44,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 8.0,
-    "samples": 5
+    "icon": "03d",
+    "wind_kmh": 7.5,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-13",
-    "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 32.0,
+    "city": "City of Zagreb",
+    "temp_min_c": 17.4,
+    "temp_max_c": 32.9,
     "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.2
+    "wind_kmh": 4.8
   },
   "forecast_day_after": {
     "date": "2026-07-14",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.4,
     "temp_max_c": 33.6,
     "humidity": 62,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 7.0,
-    "band": "high",
-    "daily_max": 7.0,
-    "peak_time": "2026-07-12T13:00",
-    "safe_minutes": 24,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-07-12T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T06:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-07-12T07:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-07-12T08:00",
-        "uv": 1.5
-      },
-      {
-        "time": "2026-07-12T09:00",
-        "uv": 2.8
-      },
-      {
-        "time": "2026-07-12T10:00",
-        "uv": 4.2
-      },
-      {
-        "time": "2026-07-12T11:00",
-        "uv": 5.5
-      },
-      {
-        "time": "2026-07-12T12:00",
-        "uv": 6.0
-      },
-      {
-        "time": "2026-07-12T13:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-07-12T14:00",
-        "uv": 7.0
-      },
-      {
-        "time": "2026-07-12T15:00",
-        "uv": 5.5
-      },
-      {
-        "time": "2026-07-12T16:00",
-        "uv": 5.5
-      },
-      {
-        "time": "2026-07-12T17:00",
-        "uv": 2.8
-      },
-      {
-        "time": "2026-07-12T18:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-07-12T19:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-07-12T20:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-07-12T21:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-07-12T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-07-12T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-07-12T13:56:56+02:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
