@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000szzy",
+        "title": "M6.4 Earthquake - 191 km SE of Lorengau, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-07-13T08:53:27.913000Z",
+        "coordinates": [
+          148.5218,
+          -3.2207
+        ]
+      },
+      {
+        "id": "us7000szzl",
+        "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
+        "category": "Earthquake",
+        "date": "2026-07-13T06:45:31.999000Z",
+        "coordinates": [
+          171.5471,
+          -22.8646
+        ]
+      },
+      {
         "id": "us7000szyr",
         "title": "M5.4 Earthquake - 24 km W of Mabiton, Philippines",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           140.3613,
           -53.1692
         ]
-      },
-      {
-        "id": "us7000sz8l",
-        "title": "M5.0 Earthquake - 19 km ENE of Abuyog, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-09T16:46:49.469000Z",
-        "coordinates": [
-          125.179,
-          10.8094
-        ]
-      },
-      {
-        "id": "us7000sz7n",
-        "title": "M5.1 Earthquake - 50 km SW of Shirahama, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-09T12:58:57.039000Z",
-        "coordinates": [
-          134.9851,
-          33.3425
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 59,
+    "city": "Donji grad",
+    "temp_c": 32.6,
+    "feels_c": 31.9,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 4.3
   },
   "forecast_today": {
     "date": "2026-07-13",
     "city": "Zagreb",
-    "temp_min_c": 24.2,
+    "temp_min_c": 24.1,
     "temp_max_c": 32.6,
-    "humidity": 48,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.8,
-    "samples": 6
+    "wind_kmh": 4.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-14",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 31.3,
+    "temp_min_c": 21.3,
+    "temp_max_c": 31.0,
     "humidity": 61,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.7
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.4
   },
   "forecast_day_after": {
     "date": "2026-07-15",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 33.4,
-    "humidity": 58,
+    "temp_min_c": 18.3,
+    "temp_max_c": 32.6,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 1.9,
-    "band": "low",
+    "uv": 7.0,
+    "band": "high",
     "daily_max": 7.1,
     "peak_time": "2026-07-13T13:00",
-    "safe_minutes": 85,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-13T08:13:55+02:00"
+    "fetched_at": "2026-07-13T12:22:53+02:00"
   }
 }
