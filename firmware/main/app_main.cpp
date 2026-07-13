@@ -6,6 +6,7 @@
 #include "world.h"
 #include "encoder.h"
 #include "als.h"
+#include "audio.h"
 #include "wifi_creds.h"
 
 #include <string.h>
@@ -57,6 +58,7 @@ extern "C" void app_main(void) {
     panel_init();
     panel_set_brightness(40);   // ALS task takes over once it has its first sample; 40 is the ceiling.
     encoder_init();
+    audio_init();
     als_start(40);
     draw_status("BOOT", 200, 200, 200);
 

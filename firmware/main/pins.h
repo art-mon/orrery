@@ -33,6 +33,11 @@
 #define PIN_I2C_SDA    41
 #define PIN_I2C_SCL    42
 
+// I2S audio — MAX98357A Class-D amplifier (see docs/hardware.md)
+#define PIN_I2S_BCLK   9
+#define PIN_I2S_WS     10
+#define PIN_I2S_DATA   11
+
 // Panel geometry
 #define PANEL_W   64
 #define PANEL_H   32

@@ -5,6 +5,7 @@
 #include "clock.h"
 #include "world.h"
 #include "encoder.h"
+#include "audio.h"
 
 #include <ctype.h>
 #include <math.h>
@@ -1044,6 +1045,33 @@ static void scene_uv(const daily_data_t *d, uint32_t tick) {
     gfx_text_outlined(PANEL_W - max_valw - 1, 12, mbuf, mb->r, mb->g, mb->b);
 }
 
+// ─── scene_broadcast (button-triggered tone test) ───────────────────────
+// Off-rotation: only reached via the encoder press. Concentric rings pulse
+// outward from the panel centre in sync with the tone; a "BROADCAST" label
+// sits underneath.
+
+#define BROADCAST_TONE_HZ  440
+#define BROADCAST_MS       1000
+#define BROADCAST_TICKS    (BROADCAST_MS / FRAME_MS)
+
+static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
+    (void)d;
+    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+
+    int cx = PANEL_W / 2;
+    int cy = PANEL_H / 2 - 3;
+    for (int i = 0; i < 3; ++i) {
+        int rad = ((int)tick + i * 6) % 18;
+        int f   = 240 - rad * 12;
+        if (f < 0) f = 0;
+        gfx_circle(cx, cy, rad, (uint8_t)(f / 3), (uint8_t)(f / 2), (uint8_t)f, 0);
+    }
+
+    const char *msg = "BROADCAST";
+    int w = gfx_text_width(msg);
+    gfx_text_outlined((PANEL_W - w) / 2, PANEL_H - 7, msg, 220, 220, 100);
+}
+
 // ─── rotator ─────────────────────────────────────────────────────────────
 // Adds scenes one at a time as each is verified on hardware.
 
@@ -1065,14 +1093,38 @@ static const scene_def_t SCENES[] = {
 #define NUM_SCENES (sizeof(SCENES) / sizeof(SCENES[0]))
 
 void scenes_run(const daily_data_t *data) {
-    uint32_t tick = 0;
-    size_t   idx  = 0;
+    uint32_t tick     = 0;
+    size_t   idx      = 0;
+    uint32_t bc_tick  = 0;   // 0 = not broadcasting; otherwise 1..BROADCAST_TICKS
     while (true) {
         panel_clear();
-        SCENES[idx].draw(data, tick);
+        if (bc_tick > 0) {
+            scene_broadcast(data, bc_tick - 1);
+        } else {
+            SCENES[idx].draw(data, tick);
+        }
         panel_flip();
         vTaskDelay(pdMS_TO_TICKS(FRAME_MS));
+
+        if (bc_tick > 0) {
+            // Broadcast detour freezes normal rotation. Drain any encoder
+            // motion so pressing while spinning doesn't queue up a jump.
+            encoder_read_delta();
+            encoder_read_pressed();
+            bc_tick++;
+            if (bc_tick > BROADCAST_TICKS) {
+                audio_tone_stop();
+                bc_tick = 0;
+            }
+            continue;
+        }
+
         tick++;
+        if (encoder_read_pressed() > 0) {
+            audio_tone_start(BROADCAST_TONE_HZ);
+            bc_tick = 1;
+            continue;
+        }
 
         int delta = encoder_read_delta();
         if (delta != 0) {

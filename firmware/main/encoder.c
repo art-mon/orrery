@@ -41,10 +41,13 @@ static const uint8_t TT[7][4] = {
 };
 
 static atomic_int s_accum = 0;
+static atomic_int s_pressed = 0;
 
 static void encoder_task(void *arg) {
     (void)arg;
-    uint8_t state = R_REST;
+    uint8_t state    = R_REST;
+    uint8_t sw_hist  = 0xFF;   // shift register, LSB = newest sample
+    uint8_t sw_state = 1;      // last debounced level (1=idle, 0=held)
     while (true) {
         uint8_t clk = gpio_get_level(PIN_ENC_CLK);
         uint8_t dt  = gpio_get_level(PIN_ENC_DT);
@@ -52,13 +55,27 @@ static void encoder_task(void *arg) {
         state = TT[state & 0x0F][pins];
         if (state & DIR_CW)       atomic_fetch_add(&s_accum, +1);
         else if (state & DIR_CCW) atomic_fetch_add(&s_accum, -1);
+
+        // Button: 4 stable samples (~40 ms) transition from idle to held
+        // counts as one press. Ignore auto-repeat; the caller sees one event
+        // per physical click.
+        sw_hist = (uint8_t)((sw_hist << 1) | (gpio_get_level(PIN_ENC_SW) & 1u));
+        uint8_t masked = (uint8_t)(sw_hist & 0x0F);
+        if (masked == 0x00 && sw_state == 1) {
+            sw_state = 0;
+            atomic_fetch_add(&s_pressed, 1);
+        } else if (masked == 0x0F && sw_state == 0) {
+            sw_state = 1;
+        }
+
         vTaskDelay(1);  // 1 tick — at CONFIG_FREERTOS_HZ=100 that's 10 ms
     }
 }
 
 void encoder_init(void) {
     gpio_config_t io = {
-        .pin_bit_mask   = (1ULL << PIN_ENC_CLK) | (1ULL << PIN_ENC_DT),
+        .pin_bit_mask   = (1ULL << PIN_ENC_CLK) | (1ULL << PIN_ENC_DT)
+                        | (1ULL << PIN_ENC_SW),
         .mode           = GPIO_MODE_INPUT,
         .pull_up_en     = GPIO_PULLUP_ENABLE,
         .pull_down_en   = GPIO_PULLDOWN_DISABLE,
@@ -66,9 +83,14 @@ void encoder_init(void) {
     };
     gpio_config(&io);
     atomic_store(&s_accum, 0);
+    atomic_store(&s_pressed, 0);
     xTaskCreate(encoder_task, "encoder", 2048, NULL, 5, NULL);
 }
 
 int encoder_read_delta(void) {
     return atomic_exchange(&s_accum, 0);
+}
+
+int encoder_read_pressed(void) {
+    return atomic_exchange(&s_pressed, 0);
 }
