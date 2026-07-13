@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-13",
   "apod": {
-    "title": "Galaxy NGC 474: Shells and Star Streams",
-    "date": "2026-07-12",
-    "explanation": "What's happening to galaxy NGC 474?  The multiple layers of emission appear strangely complex given the relatively featureless appearance of the elliptical galaxy in less deep images.  The cause of the shells is a topic of research, but they are possibly tidal tails related to debris left over from absorbing numerous small galaxies in the past billion years.  Alternatively, the shells may be like ripples in a pond, where the ongoing collision with the spiral galaxy just to the right of NGC 474 is causing density waves to ripple through the galactic giant.  Regardless of the actual cause, the featured image dramatically highlights the increasing evidence that the halos of some elliptical galaxies are surprisingly complicated.  Similarly, the halo of our own Milky Way Galaxy is one example of such unexpected intricacies.  NGC 474 spans about 250,000 light years and lies about 100 million light years distant toward the constellation of the Fish (Pisces).",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_1500.jpg"
+    "title": "Auroras from Space",
+    "date": "2026-07-13",
+    "explanation": "What do auroras look like from above? Behold!  From the ground, auroras dance high above clouds, frequently causing spectacular displays.  From space, they look a bit different. As the International Space Station (ISS) circles the Earth every 90 minutes, it sometimes sees auroras below that are active on the night side.  A one-hour time-lapse video showing auroras from above was captured about two weeks ago from the orbiting ISS.  The ISS -- and all objects in low Earth orbit -- will pass well above green auroras but just a bit above red glowing auroras.  The auroras' electron and proton streams are too thin to be a danger to the ISS, just as clouds pose little danger to airplanes.  From orbit, as magnetic fields change, auroras can appear to squiggle and crawl like giant snakes.  The featured one-minute video was captured by French astronaut Sophie Adenot of the ISS Expedition 74 crew.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2607/Auroras_Esa.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t01n",
+        "title": "M6.3 Earthquake - southeast of the Loyalty Islands",
+        "category": "Earthquake",
+        "date": "2026-07-13T14:45:49.203000Z",
+        "coordinates": [
+          171.5199,
+          -22.7889
+        ]
+      },
       {
         "id": "us7000szzy",
         "title": "M6.4 Earthquake - 191 km SE of Lorengau, Papua New Guinea",
@@ -149,16 +159,6 @@
           -176.783,
           -18.2136
         ]
-      },
-      {
-        "id": "us7000szim",
-        "title": "M5.0 Earthquake - west of Macquarie Island",
-        "category": "Earthquake",
-        "date": "2026-07-10T18:26:44.453000Z",
-        "coordinates": [
-          140.3613,
-          -53.1692
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 34.2,
-    "feels_c": 34,
-    "humidity": 32,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.3
+    "city": "Donji grad",
+    "temp_c": 32.6,
+    "feels_c": 32.2,
+    "humidity": 35,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.0
   },
   "forecast_today": {
     "date": "2026-07-13",
-    "city": "Zagreb",
-    "temp_min_c": 23.8,
-    "temp_max_c": 34.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 27.1,
+    "temp_max_c": 32.6,
     "humidity": 41,
     "condition": "Clear",
     "description": "clear",
-    "icon": "02d",
-    "wind_kmh": 4.7,
-    "samples": 4
+    "icon": "01d",
+    "wind_kmh": 3.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-14",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 22.1,
     "temp_max_c": 30.7,
     "humidity": 57,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-15",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.4,
     "temp_max_c": 34.3,
     "humidity": 61,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.3
   },
   "uv": {
-    "uv": 6.0,
-    "band": "high",
+    "uv": 2.0,
+    "band": "low",
     "daily_max": 7.1,
     "peak_time": "2026-07-13T13:00",
-    "safe_minutes": 28,
+    "safe_minutes": 81,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-13T15:20:59+02:00"
+    "fetched_at": "2026-07-13T18:29:42+02:00"
   }
 }
