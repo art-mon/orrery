@@ -3,9 +3,36 @@
 
 #include <driver/gpio.h>
 
-// KY-040 detent = one full CLK cycle. Sample CLK each frame; on a falling
-// edge, DT tells us direction (HIGH = CW, LOW = CCW).
-static int s_last_clk = 1;
+// Quadrature state-machine decoder (Buxton table). Robust to contact bounce:
+// only emits after a full valid CW/CCW sequence, and invalid transitions
+// (bounces) push the state back to REST without emitting a click.
+
+#define R_REST       0x0
+#define R_CW_1       0x1
+#define R_CW_2       0x2
+#define R_CW_3       0x3
+#define R_CCW_1      0x4
+#define R_CCW_2      0x5
+#define R_CCW_3      0x6
+
+#define DIR_CW       0x10
+#define DIR_CCW      0x20
+
+// Rows: current state (masked with 0x0F).
+// Cols: pin sample = (DT << 1) | CLK (0..3).
+// Value: next state, optionally OR'd with DIR_CW / DIR_CCW when a detent
+// completes at REST.
+static const uint8_t TT[7][4] = {
+    /* R_REST  */ { R_REST,   R_CW_1,   R_CCW_1,  R_REST },
+    /* R_CW_1  */ { R_CW_2,   R_CW_1,   R_REST,   R_REST },
+    /* R_CW_2  */ { R_CW_2,   R_CW_1,   R_CW_3,   R_REST },
+    /* R_CW_3  */ { R_CW_2,   R_REST,   R_CW_3,   R_REST | DIR_CW  },
+    /* R_CCW_1 */ { R_CCW_2,  R_REST,   R_CCW_1,  R_REST },
+    /* R_CCW_2 */ { R_CCW_2,  R_CCW_3,  R_CCW_1,  R_REST },
+    /* R_CCW_3 */ { R_CCW_2,  R_CCW_3,  R_REST,   R_REST | DIR_CCW },
+};
+
+static uint8_t s_state = R_REST;
 
 void encoder_init(void) {
     gpio_config_t io = {
@@ -16,15 +43,15 @@ void encoder_init(void) {
         .intr_type      = GPIO_INTR_DISABLE,
     };
     gpio_config(&io);
-    s_last_clk = gpio_get_level(PIN_ENC_CLK);
+    s_state = R_REST;
 }
 
 int encoder_read_delta(void) {
-    int clk = gpio_get_level(PIN_ENC_CLK);
-    int delta = 0;
-    if (s_last_clk == 1 && clk == 0) {
-        delta = gpio_get_level(PIN_ENC_DT) ? +1 : -1;
-    }
-    s_last_clk = clk;
-    return delta;
+    uint8_t clk = gpio_get_level(PIN_ENC_CLK);
+    uint8_t dt  = gpio_get_level(PIN_ENC_DT);
+    uint8_t pins = (uint8_t)((dt << 1) | clk);
+    s_state = TT[s_state & 0x0F][pins];
+    if (s_state & DIR_CW)  return +1;
+    if (s_state & DIR_CCW) return -1;
+    return 0;
 }
