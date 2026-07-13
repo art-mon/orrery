@@ -31,8 +31,11 @@ static const char *TAG = "als";
 
 // Log-linear lux → factor map.
 // Below LUX_LO the brightness sits at the floor; above LUX_HI it's full max.
-#define LUX_LO                   5.0f
-#define LUX_HI                   200.0f
+// Anchored so a normal-lit room (≥ LUX_HI) sits at the ceiling and mild
+// shading (≤ LUX_LO) hits the floor — otherwise the interior of the curve
+// eats most of the dynamic range.
+#define LUX_LO                   15.0f
+#define LUX_HI                   80.0f
 #define FACTOR_FLOOR             0.075f  // ≈ 3/40 at the current max
 #define FACTOR_CEIL              1.0f
 
