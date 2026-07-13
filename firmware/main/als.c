@@ -3,6 +3,7 @@
 #include "panel.h"
 
 #include <math.h>
+#include <stdbool.h>
 #include <stdint.h>
 
 #include <driver/i2c_master.h>
@@ -18,16 +19,21 @@ static const char *TAG = "als";
 #define BH1750_ONE_SHOT_HIRES    0x20   // 1 lux resolution, ~180 ms max
 #define BH1750_MEAS_WAIT_MS      180
 
-// Sample cadence and filter.
+// Cadence. The BH1750 needs ~180 ms per one-shot high-res read, but the
+// filter and brightness write tick faster so the eye sees a smooth ramp
+// instead of 200 ms staircase steps.
 #define SAMPLE_PERIOD_MS         200
+#define TICK_MS                  20
+#define SAMPLE_TICKS             (SAMPLE_PERIOD_MS / TICK_MS)     // 10
+#define MEAS_READ_TICK           (BH1750_MEAS_WAIT_MS / TICK_MS)  // 9
 #define TAU_S                    3.0f   // 1-pole LPF time constant
-// α = dt / (τ + dt) — computed once at init.
+// α = dt / (τ + dt) — computed from TICK_MS so τ is invariant to cadence.
 
 // Log-linear lux → factor map.
 // Below LUX_LO the brightness sits at the floor; above LUX_HI it's full max.
 #define LUX_LO                   5.0f
 #define LUX_HI                   200.0f
-#define FACTOR_FLOOR             0.2f   // ≈ 8/40 at the current max
+#define FACTOR_FLOOR             0.075f  // ≈ 3/40 at the current max
 #define FACTOR_CEIL              1.0f
 
 static i2c_master_bus_handle_t s_bus  = NULL;
@@ -58,44 +64,59 @@ static float lux_to_factor(float lux) {
 static void als_task(void *arg) {
     const uint8_t max_brightness = (uint8_t)(uintptr_t)arg;
 
-    // α computed from the actual loop period (τ = 3 s, dt = 200 ms → α ≈ 0.0625).
-    const float alpha = (float)SAMPLE_PERIOD_MS / 1000.0f
-                     / (TAU_S + (float)SAMPLE_PERIOD_MS / 1000.0f);
+    // α at TICK_MS cadence (τ = 3 s, dt = 20 ms → α ≈ 0.0066). Small α + fast
+    // ticks → sub-unit brightness updates → smooth visual ramp.
+    const float alpha = (float)TICK_MS / 1000.0f
+                     / (TAU_S + (float)TICK_MS / 1000.0f);
 
-    // Seed the filter with the first good sample so we don't ramp from an
-    // arbitrary initial value at boot.
+    // Filter state (< 0 means "not seeded yet"). Target updates every SAMPLE_TICKS.
     float filtered = -1.0f;
-    int log_countdown = 0;
+    float target   = FACTOR_CEIL;
+    bool  trigger_ok = false;
+    int   log_countdown = 0;
+    int   sample_phase = 0;   // 0..SAMPLE_TICKS-1
 
     TickType_t last_wake = xTaskGetTickCount();
     while (true) {
-        esp_err_t err = als_trigger_measurement();
-        if (err == ESP_OK) {
-            vTaskDelay(pdMS_TO_TICKS(BH1750_MEAS_WAIT_MS));
-            float lux = 0.0f;
-            err = als_read_lux(&lux);
-            if (err == ESP_OK) {
-                float target = lux_to_factor(lux);
-                if (filtered < 0.0f) filtered = target;
-                else                 filtered += alpha * (target - filtered);
-
-                int b = (int)lroundf((float)max_brightness * filtered);
-                if (b < 1) b = 1;
-                if (b > max_brightness) b = max_brightness;
-                panel_set_brightness((uint8_t)b);
-
-                if (--log_countdown <= 0) {
-                    ESP_LOGI(TAG, "lux=%.1f target=%.2f filt=%.2f b=%d/%u",
-                             lux, target, filtered, b, max_brightness);
-                    log_countdown = 5;  // once per second
-                }
+        // Kick off a new BH1750 measurement at the start of each sample window.
+        if (sample_phase == 0) {
+            esp_err_t err = als_trigger_measurement();
+            trigger_ok = (err == ESP_OK);
+            if (!trigger_ok) {
+                ESP_LOGW(TAG, "BH1750 trigger err 0x%x — holding target", err);
             }
         }
-        if (err != ESP_OK) {
-            ESP_LOGW(TAG, "BH1750 I/O err 0x%x — holding last brightness", err);
+
+        // Read the result ~180 ms later, once the sensor's integration is done.
+        if (sample_phase == MEAS_READ_TICK && trigger_ok) {
+            float lux = 0.0f;
+            esp_err_t err = als_read_lux(&lux);
+            if (err == ESP_OK) {
+                target = lux_to_factor(lux);
+                if (filtered < 0.0f) filtered = target;
+                if (--log_countdown <= 0) {
+                    int b_now = (int)lroundf((float)max_brightness * filtered);
+                    ESP_LOGI(TAG, "lux=%.1f target=%.2f filt=%.2f b=%d/%u",
+                             lux, target, filtered, b_now, max_brightness);
+                    log_countdown = 5;  // ~1 log/sec at a 200 ms sample cadence
+                }
+            } else {
+                ESP_LOGW(TAG, "BH1750 read err 0x%x — holding target", err);
+            }
         }
 
-        vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(SAMPLE_PERIOD_MS));
+        // Every tick: step the LPF and write brightness. Ramps look continuous
+        // because each tick moves less than one brightness unit.
+        if (filtered >= 0.0f) {
+            filtered += alpha * (target - filtered);
+            int b = (int)lroundf((float)max_brightness * filtered);
+            if (b < 1) b = 1;
+            if (b > max_brightness) b = max_brightness;
+            panel_set_brightness((uint8_t)b);
+        }
+
+        sample_phase = (sample_phase + 1) % SAMPLE_TICKS;
+        vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(TICK_MS));
     }
 }
 
