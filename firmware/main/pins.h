@@ -25,9 +25,9 @@
 #define PIN_BTN_WIFI   35
 
 // Rotary encoder — KY-040 (module has built-in 10 kΩ pullups on CLK/DT)
-#define PIN_ENC_CLK    38
+#define PIN_ENC_CLK    40
 #define PIN_ENC_DT     39
-#define PIN_ENC_SW     40
+#define PIN_ENC_SW     38
 
 // I2C bus — BH1750 ambient light sensor (default address 0x23, ADDR floating)
 #define PIN_I2C_SDA    41

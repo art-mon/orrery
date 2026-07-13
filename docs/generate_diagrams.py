@@ -80,7 +80,7 @@ graph TD
         NVRAM["NVS Flash<br/>WiFi creds · config"]
         UART["GPIO 43 44<br/>UART debug TX RX"]
         I2S["GPIO 9 10 11<br/>I2S BCLK · WS · DATA"]
-        ENC["GPIO 38 39 40<br/>encoder CLK · DT · SW"]
+        ENC["GPIO 40 39 38<br/>encoder CLK · DT · SW"]
         I2C["GPIO 41 42<br/>I2C SDA · SCL"]
     end
 
@@ -217,9 +217,9 @@ HW_EXTRAS = """
 
 | Signal   | GPIO | Notes |
 |----------|------|-------|
-| ENC_CLK  | 38   | A channel — module has 10 kΩ pullup on-board |
+| ENC_CLK  | 40   | A channel — module has 10 kΩ pullup on-board |
 | ENC_DT   | 39   | B channel — module has 10 kΩ pullup on-board |
-| ENC_SW   | 40   | Push button — enable ESP32 internal pullup |
+| ENC_SW   | 38   | Push button — enable ESP32 internal pullup |
 | VCC      | —    | 3.3V (see BH1750 note about the 5V pin) |
 | GND      | —    | Common ground |
 
