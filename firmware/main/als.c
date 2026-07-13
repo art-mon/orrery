@@ -36,7 +36,7 @@ static const char *TAG = "als";
 // eats most of the dynamic range.
 #define LUX_LO                   15.0f
 #define LUX_HI                   80.0f
-#define FACTOR_FLOOR             0.075f  // ≈ 3/40 at the current max
+#define FACTOR_FLOOR             0.025f  // ≈ 1/40 — never fully off
 #define FACTOR_CEIL              1.0f
 
 static i2c_master_bus_handle_t s_bus  = NULL;
@@ -78,6 +78,7 @@ static void als_task(void *arg) {
     bool  trigger_ok = false;
     int   log_countdown = 0;
     int   sample_phase = 0;   // 0..SAMPLE_TICKS-1
+    int   last_applied = -1;  // last brightness written to the panel
 
     TickType_t last_wake = xTaskGetTickCount();
     while (true) {
@@ -108,14 +109,19 @@ static void als_task(void *arg) {
             }
         }
 
-        // Every tick: step the LPF and write brightness. Ramps look continuous
-        // because each tick moves less than one brightness unit.
+        // Every tick: step the LPF; only write to the panel when the rounded
+        // brightness actually changes. The driver's set_brightness rewrites the
+        // OE bits across every DMA buffer, so calling it at 50 Hz thrashes the
+        // panel and can block a full blank at b=0.
         if (filtered >= 0.0f) {
             filtered += alpha * (target - filtered);
             int b = (int)lroundf((float)max_brightness * filtered);
             if (b < 1) b = 1;
             if (b > max_brightness) b = max_brightness;
-            panel_set_brightness((uint8_t)b);
+            if (b != last_applied) {
+                panel_set_brightness((uint8_t)b);
+                last_applied = b;
+            }
         }
 
         sample_phase = (sample_phase + 1) % SAMPLE_TICKS;
