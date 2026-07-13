@@ -6,6 +6,7 @@
 #include "world.h"
 #include "encoder.h"
 #include "audio.h"
+#include "wifi_creds.h"
 
 #include <ctype.h>
 #include <math.h>
@@ -1045,14 +1046,11 @@ static void scene_uv(const daily_data_t *d, uint32_t tick) {
     gfx_text_outlined(PANEL_W - max_valw - 1, 12, mbuf, mb->r, mb->g, mb->b);
 }
 
-// ─── scene_broadcast (button-triggered tone test) ───────────────────────
-// Off-rotation: only reached via the encoder press. Concentric rings pulse
-// outward from the panel centre in sync with the tone; a "BROADCAST" label
-// sits underneath.
-
-#define BROADCAST_TONE_HZ  440
-#define BROADCAST_MS       1000
-#define BROADCAST_TICKS    (BROADCAST_MS / FRAME_MS)
+// ─── scene_broadcast (button-triggered daily briefing) ──────────────────
+// Off-rotation: only reached via the encoder press. Streams briefing.mp3
+// from the server, decodes with minimp3, and plays through I2S while the
+// scene draws concentric rings + label. Stays visible until the audio
+// finishes on its own or the user presses the encoder again.
 
 static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
     (void)d;
@@ -1067,7 +1065,8 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
         gfx_circle(cx, cy, rad, (uint8_t)(f / 3), (uint8_t)(f / 2), (uint8_t)f, 0);
     }
 
-    const char *msg = "BROADCAST";
+    const char *msg = (audio_briefing_state() == AUDIO_BRIEFING_LOADING)
+                    ? "LOADING" : "BROADCAST";
     int w = gfx_text_width(msg);
     gfx_text_outlined((PANEL_W - w) / 2, PANEL_H - 7, msg, 220, 220, 100);
 }
@@ -1093,36 +1092,38 @@ static const scene_def_t SCENES[] = {
 #define NUM_SCENES (sizeof(SCENES) / sizeof(SCENES[0]))
 
 void scenes_run(const daily_data_t *data) {
-    uint32_t tick     = 0;
-    size_t   idx      = 0;
-    uint32_t bc_tick  = 0;   // 0 = not broadcasting; otherwise 1..BROADCAST_TICKS
+    uint32_t tick         = 0;
+    size_t   idx          = 0;
+    bool     in_broadcast = false;
+    uint32_t bc_frame     = 0;
     while (true) {
         panel_clear();
-        if (bc_tick > 0) {
-            scene_broadcast(data, bc_tick - 1);
+        if (in_broadcast) {
+            scene_broadcast(data, bc_frame++);
         } else {
             SCENES[idx].draw(data, tick);
         }
         panel_flip();
         vTaskDelay(pdMS_TO_TICKS(FRAME_MS));
 
-        if (bc_tick > 0) {
-            // Broadcast detour freezes normal rotation. Drain any encoder
-            // motion so pressing while spinning doesn't queue up a jump.
+        if (in_broadcast) {
+            // A second press aborts the briefing; the pipeline will notice
+            // on its next frame and clear the active flag. Meanwhile drain
+            // the rotary delta so scrolling during playback isn't queued.
+            if (encoder_read_pressed() > 0) audio_briefing_stop();
             encoder_read_delta();
-            encoder_read_pressed();
-            bc_tick++;
-            if (bc_tick > BROADCAST_TICKS) {
-                audio_tone_stop();
-                bc_tick = 0;
+            if (!audio_briefing_active()) {
+                in_broadcast = false;
+                tick         = 0;   // restart current scene animation
             }
             continue;
         }
 
         tick++;
         if (encoder_read_pressed() > 0) {
-            audio_tone_start(BROADCAST_TONE_HZ);
-            bc_tick = 1;
+            audio_briefing_start(BRIEFING_MP3_URL);
+            in_broadcast = true;
+            bc_frame     = 0;
             continue;
         }
 

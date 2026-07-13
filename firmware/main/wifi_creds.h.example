@@ -6,4 +6,7 @@
 #define WIFI_PASS "your-wifi-password"
 
 // URL of the dashboard's daily.json (GitHub Pages or your own host).
-#define DAILY_JSON_URL "https://art-mon.github.io/orrery/data/daily.json"
+#define DAILY_JSON_URL    "https://art-mon.github.io/orrery/data/daily.json"
+
+// URL of the daily voice briefing MP3 (mono, 24 kHz recommended).
+#define BRIEFING_MP3_URL  "https://art-mon.github.io/orrery/data/briefing.mp3"
