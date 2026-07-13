@@ -1076,7 +1076,10 @@ void scenes_run(const daily_data_t *data) {
 
         int delta = encoder_read_delta();
         if (delta != 0) {
-            idx  = (idx + NUM_SCENES + delta) % NUM_SCENES;
+            int n = (int)NUM_SCENES;
+            int i = (int)idx + delta;
+            i    = ((i % n) + n) % n;   // safe modulo for negative delta
+            idx  = (size_t)i;
             tick = 0;
         } else if (tick >= SCENES[idx].ticks) {
             tick = 0;
