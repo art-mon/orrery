@@ -5,8 +5,12 @@
 #include <stdatomic.h>
 #include <string.h>
 #include <driver/i2s_std.h>
+#include <esp_check.h>
+#include <esp_log.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
+
+static const char *TAG = "audio";
 
 #define SAMPLE_RATE   16000
 #define CHUNK_SAMPLES 512
@@ -35,13 +39,17 @@ static void audio_task(void *arg) {
             phase = 0.0f;
         }
         size_t written = 0;
-        i2s_channel_write(s_tx, buf, sizeof(buf), &written, portMAX_DELAY);
+        esp_err_t err = i2s_channel_write(s_tx, buf, sizeof(buf), &written, portMAX_DELAY);
+        if (err != ESP_OK) {
+            ESP_LOGE(TAG, "i2s_channel_write failed: %s", esp_err_to_name(err));
+            vTaskDelay(pdMS_TO_TICKS(100));
+        }
     }
 }
 
 void audio_init(void) {
     i2s_chan_config_t chan_cfg = I2S_CHANNEL_DEFAULT_CONFIG(I2S_NUM_AUTO, I2S_ROLE_MASTER);
-    i2s_new_channel(&chan_cfg, &s_tx, NULL);
+    ESP_ERROR_CHECK(i2s_new_channel(&chan_cfg, &s_tx, NULL));
 
     i2s_std_config_t std_cfg = {
         .clk_cfg  = I2S_STD_CLK_DEFAULT_CONFIG(SAMPLE_RATE),
@@ -56,11 +64,20 @@ void audio_init(void) {
             .invert_flags = { 0, 0, 0 },
         },
     };
-    i2s_channel_init_std_mode(s_tx, &std_cfg);
-    i2s_channel_enable(s_tx);
+    ESP_ERROR_CHECK(i2s_channel_init_std_mode(s_tx, &std_cfg));
+    ESP_ERROR_CHECK(i2s_channel_enable(s_tx));
+
+    ESP_LOGI(TAG, "i2s std TX ready — bclk=%d ws=%d dout=%d @%d Hz",
+             PIN_I2S_BCLK, PIN_I2S_WS, PIN_I2S_DATA, SAMPLE_RATE);
 
     xTaskCreate(audio_task, "audio", 4096, NULL, 5, NULL);
 }
 
-void audio_tone_start(int freq_hz) { atomic_store(&s_freq, freq_hz); }
-void audio_tone_stop(void)         { atomic_store(&s_freq, 0); }
+void audio_tone_start(int freq_hz) {
+    ESP_LOGI(TAG, "tone start %d Hz", freq_hz);
+    atomic_store(&s_freq, freq_hz);
+}
+void audio_tone_stop(void) {
+    ESP_LOGI(TAG, "tone stop");
+    atomic_store(&s_freq, 0);
+}
