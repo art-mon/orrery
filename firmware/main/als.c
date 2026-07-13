@@ -67,9 +67,8 @@ static void als_task(void *arg) {
     float filtered = -1.0f;
     int log_countdown = 0;
 
+    TickType_t last_wake = xTaskGetTickCount();
     while (true) {
-        TickType_t wake_at = xTaskGetTickCount() + pdMS_TO_TICKS(SAMPLE_PERIOD_MS);
-
         esp_err_t err = als_trigger_measurement();
         if (err == ESP_OK) {
             vTaskDelay(pdMS_TO_TICKS(BH1750_MEAS_WAIT_MS));
@@ -96,7 +95,7 @@ static void als_task(void *arg) {
             ESP_LOGW(TAG, "BH1750 I/O err 0x%x — holding last brightness", err);
         }
 
-        vTaskDelayUntil(&wake_at, 0);
+        vTaskDelayUntil(&last_wake, pdMS_TO_TICKS(SAMPLE_PERIOD_MS));
     }
 }
 
