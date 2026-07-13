@@ -5,6 +5,7 @@ idf_component_register(
          "wifi.c"
          "daily.c"
          "encoder.c"
+         "als.c"
     INCLUDE_DIRS "."
     REQUIRES
         esp_wifi
@@ -15,4 +16,5 @@ idf_component_register(
         nvs_flash
         lwip
         mbedtls
+        esp_driver_i2c
 )
