@@ -1116,17 +1116,25 @@ static void draw_broadcast_bars(uint32_t tick) {
         // where quiet passages still show visible bars and peaks reach
         // full height without clipping the majority of the spectrum.
         float m;
-        if (m_lin <= 1e-4f) {
+        if (!isfinite(m_lin) || m_lin <= 1e-4f) {
             m = 0.0f;
         } else {
             float db = 20.0f * log10f(m_lin);
             m = (db + 50.0f) / 60.0f;
-            if (m < 0.0f) m = 0.0f;
+            if (!isfinite(m) || m < 0.0f) m = 0.0f;
             if (m > 1.0f) m = 1.0f;
         }
 
+        // Defensive clamp: `(int)(NaN * …)` is undefined and can leak a
+        // huge value that turns the inner dy loop into a multi-billion
+        // iteration hang (and starves the task watchdog on CPU0). Two
+        // independent guards — finite-check on m above and a hard bound
+        // on half here — mean neither a decoder glitch nor a corrupt FFT
+        // sample can freeze the panel.
         int half = (int)(m * (float)max_half + 0.5f);
-        int x    = i * 2;
+        if (half < 0)        half = 0;
+        if (half > max_half) half = max_half;
+        int x = i * 2;
 
         // Dim center axis dot on every column so the analyzer reads as a
         // line at rest, not just black.
