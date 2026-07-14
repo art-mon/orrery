@@ -42,6 +42,23 @@ static char               s_briefing_url[URL_MAX];
 static mp3dec_t           s_dec;
 static int16_t            s_pcm[MINIMP3_MAX_SAMPLES_PER_FRAME];
 
+// Rolling PCM history for the spectrum analyzer. Power of two so the
+// modulo is a mask. Audio task writes as it feeds I2S; scene renderer
+// reads via audio_pcm_snapshot(). Torn reads are acceptable — the FFT
+// input is copied whole and one flipped sample is inaudible visually.
+#define PCM_HIST_SIZE   2048u
+#define PCM_HIST_MASK   (PCM_HIST_SIZE - 1u)
+static int16_t            s_pcm_hist[PCM_HIST_SIZE];
+static atomic_uint        s_pcm_write = 0;
+
+static void pcm_hist_push(const int16_t *src, size_t n) {
+    unsigned w = atomic_load_explicit(&s_pcm_write, memory_order_relaxed);
+    for (size_t i = 0; i < n; ++i) {
+        s_pcm_hist[(w + i) & PCM_HIST_MASK] = src[i];
+    }
+    atomic_store_explicit(&s_pcm_write, w + (unsigned)n, memory_order_release);
+}
+
 static void write_silence_chunk(void) {
     static int16_t zeros[TONE_CHUNK];
     size_t w = 0;
@@ -160,6 +177,7 @@ static void play_briefing_from_ram(const uint8_t *mp3, size_t len) {
             ESP_LOGE(TAG, "briefing: i2s write: %s", esp_err_to_name(werr));
             break;
         }
+        pcm_hist_push(s_pcm, (size_t)samples);
         frames++;
     }
     ESP_LOGI(TAG, "briefing: playback done, %d frames", frames);
@@ -269,4 +287,17 @@ audio_briefing_state_t audio_briefing_state(void) {
 
 bool audio_briefing_active(void) {
     return audio_briefing_state() != AUDIO_BRIEFING_IDLE;
+}
+
+void audio_pcm_snapshot(int16_t *out, size_t n) {
+    unsigned w = atomic_load_explicit(&s_pcm_write, memory_order_acquire);
+    // If we haven't produced n samples yet, zero the head so the FFT still
+    // sees a valid window (garbage at the start of playback is very brief).
+    unsigned filled = (w >= n) ? (unsigned)n : w;
+    unsigned lead   = (unsigned)n - filled;
+    for (unsigned i = 0; i < lead; ++i) out[i] = 0;
+    unsigned start = w - filled;
+    for (unsigned i = 0; i < filled; ++i) {
+        out[lead + i] = s_pcm_hist[(start + i) & PCM_HIST_MASK];
+    }
 }

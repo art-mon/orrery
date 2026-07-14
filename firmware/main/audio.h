@@ -1,6 +1,8 @@
 #pragma once
 
 #include <stdbool.h>
+#include <stddef.h>
+#include <stdint.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -36,6 +38,12 @@ audio_briefing_state_t audio_briefing_state(void);
 
 // Convenience: true while state != IDLE.
 bool audio_briefing_active(void);
+
+// Copy the most recent `n` mono int16 samples that were written to I2S
+// into `out`. Intended for the broadcast scene's spectrum analyzer. If
+// fewer than `n` samples have been produced (or nothing is playing) the
+// unfilled tail is zeroed. Safe to call at any time.
+void audio_pcm_snapshot(int16_t *out, size_t n);
 
 #ifdef __cplusplus
 }

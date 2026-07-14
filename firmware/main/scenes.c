@@ -1049,13 +1049,104 @@ static void scene_uv(const daily_data_t *d, uint32_t tick) {
 // ─── scene_broadcast (button-triggered daily briefing) ──────────────────
 // Off-rotation: only reached via the encoder press. Streams briefing.mp3
 // from the server, decodes with minimp3, and plays through I2S while the
-// scene draws concentric rings + label. Stays visible until the audio
-// finishes on its own or the user presses the encoder again.
+// scene draws a spectrum-analyzer view of the audio the user is hearing.
+// LOADING state shows a pulsing-ring placeholder; PLAYING state runs a
+// 512-point real FFT and draws 32 mirrored bars — mirrors the web sim's
+// sceneRadio (display/index.html).
 
-static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
-    (void)d;
-    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+#include "dsps_fft2r.h"
+#include "dsps_wind.h"
 
+#define BC_FFT_N       512
+#define BC_BAR_BINS    96      // first 96 bins ≈ 0..4.5 kHz at 24 kHz SR
+#define BC_NBARS       32
+
+static bool     s_bc_fft_ready = false;
+static float    s_bc_wind[BC_FFT_N];
+static float    s_bc_fft[BC_FFT_N * 2];   // interleaved complex
+static int16_t  s_bc_pcm[BC_FFT_N];
+
+static void bc_fft_init_once(void) {
+    if (s_bc_fft_ready) return;
+    if (dsps_fft2r_init_fc32(NULL, BC_FFT_N) == ESP_OK) {
+        dsps_wind_hann_f32(s_bc_wind, BC_FFT_N);
+        s_bc_fft_ready = true;
+    }
+}
+
+static void draw_broadcast_bars(uint32_t tick) {
+    (void)tick;
+    bc_fft_init_once();
+    if (!s_bc_fft_ready) return;
+
+    audio_pcm_snapshot(s_bc_pcm, BC_FFT_N);
+
+    // Windowed, normalized real → complex-with-zero-imag input.
+    for (int i = 0; i < BC_FFT_N; ++i) {
+        s_bc_fft[2*i]     = (float)s_bc_pcm[i] * (1.0f / 32768.0f) * s_bc_wind[i];
+        s_bc_fft[2*i + 1] = 0.0f;
+    }
+    dsps_fft2r_fc32(s_bc_fft, BC_FFT_N);
+    dsps_bit_rev_fc32(s_bc_fft, BC_FFT_N);
+
+    // Per-bin magnitude for the useful spectrum.
+    float mag[BC_BAR_BINS];
+    for (int k = 0; k < BC_BAR_BINS; ++k) {
+        float re = s_bc_fft[2*k];
+        float im = s_bc_fft[2*k + 1];
+        mag[k] = sqrtf(re * re + im * im);
+    }
+
+    const int bar_area_h = PANEL_H - 8;     // top 24 rows for the bars
+    const int cy         = bar_area_h / 2;  // vertical center row
+    const int max_half   = cy - 1;
+
+    for (int i = 0; i < BC_NBARS; ++i) {
+        int b0 = i * BC_BAR_BINS / BC_NBARS;
+        int b1 = (i + 1) * BC_BAR_BINS / BC_NBARS;
+        if (b1 <= b0) b1 = b0 + 1;
+        float sum = 0.0f;
+        for (int k = b0; k < b1; ++k) sum += mag[k];
+        float m_lin = sum / (float)(b1 - b0);
+
+        // Amplitude → dB compression. Voice content spans a wide dynamic
+        // range and linear scaling saturates the top instantly. Mapping
+        // [-50 dB .. +10 dB] to [0 .. 1] gives the classic VU-meter feel
+        // where quiet passages still show visible bars and peaks reach
+        // full height without clipping the majority of the spectrum.
+        float m;
+        if (m_lin <= 1e-4f) {
+            m = 0.0f;
+        } else {
+            float db = 20.0f * log10f(m_lin);
+            m = (db + 50.0f) / 60.0f;
+            if (m < 0.0f) m = 0.0f;
+            if (m > 1.0f) m = 1.0f;
+        }
+
+        int half = (int)(m * (float)max_half + 0.5f);
+        int x    = i * 2;
+
+        // Dim center axis dot on every column so the analyzer reads as a
+        // line at rest, not just black.
+        panel_pixel(x, cy, 60, 45, 90);
+
+        // Cool violet base with brightness proportional to magnitude and
+        // a subtle tip-fade so peaks look pointier.
+        for (int dy = -half; dy <= half; ++dy) {
+            int y = cy + dy;
+            if (y < 0 || y >= bar_area_h) continue;
+            float tip = 1.0f - fabsf((float)dy) / ((float)half + 1.0f) * 0.35f;
+            float lit = (0.45f + m * 0.45f) * tip;
+            uint8_t r = (uint8_t)(180.0f * lit);
+            uint8_t g = (uint8_t)(140.0f * lit);
+            uint8_t b = (uint8_t)(255.0f * lit);
+            panel_pixel(x, y, r, g, b);
+        }
+    }
+}
+
+static void draw_broadcast_rings(uint32_t tick) {
     int cx = PANEL_W / 2;
     int cy = PANEL_H / 2 - 3;
     for (int i = 0; i < 3; ++i) {
@@ -1064,11 +1155,35 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
         if (f < 0) f = 0;
         gfx_circle(cx, cy, rad, (uint8_t)(f / 3), (uint8_t)(f / 2), (uint8_t)f, 0);
     }
+}
 
-    const char *msg = (audio_briefing_state() == AUDIO_BRIEFING_LOADING)
-                    ? "LOADING" : "BROADCAST";
-    int w = gfx_text_width(msg);
-    gfx_text_outlined((PANEL_W - w) / 2, PANEL_H - 7, msg, 220, 220, 100);
+static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
+    (void)d;
+    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+
+    audio_briefing_state_t st = audio_briefing_state();
+    if (st == AUDIO_BRIEFING_PLAYING) {
+        draw_broadcast_bars(tick);
+    } else {
+        draw_broadcast_rings(tick);
+    }
+
+    // Time top-left (dim), matching the web sim
+    struct tm tm;
+    if (clock_now(&tm)) {
+        char clk[8];
+        snprintf(clk, sizeof(clk), "%02d:%02d", tm.tm_hour, tm.tm_min);
+        gfx_text_outlined(1, 1, clk, 80, 80, 120);
+    }
+
+    if (st == AUDIO_BRIEFING_LOADING) {
+        const char *msg = "LOADING";
+        int w = gfx_text_width(msg);
+        gfx_text_outlined((PANEL_W - w) / 2, PANEL_H - 7, msg, 220, 220, 100);
+    } else {
+        gfx_ticker(PANEL_H - 7, "ORRERY RADIO", gfx_ticker_scroll(tick),
+                   180, 140, 255);
+    }
 }
 
 // ─── rotator ─────────────────────────────────────────────────────────────
