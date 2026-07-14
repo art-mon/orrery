@@ -1189,6 +1189,8 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
 
 // ─── scene_apod (NASA Astronomy Picture of the Day) ─────────────────────
 
+#define APOD_SCENE_TICKS (14 * 1000 / FRAME_MS)   // 14 s — one ticker pass + hold
+
 static void scene_apod(const daily_data_t *d, uint32_t tick) {
     const uint8_t *px = apod_pixels();
 
@@ -1212,12 +1214,26 @@ static void scene_apod(const daily_data_t *d, uint32_t tick) {
         }
     }
 
+    // Time top-left (matches the moon / event scenes)
+    struct tm tm;
+    if (clock_now(&tm)) {
+        char clk[8];
+        snprintf(clk, sizeof(clk), "%02d:%02d", tm.tm_hour, tm.tm_min);
+        gfx_text_outlined(1, 1, clk, 220, 220, 220);
+    }
+
+    // Single-pass ticker: starts offscreen right, scrolls off the left,
+    // then leaves the image clean for the remainder of the scene.
     char line[128];
     const char *title = (d && d->has_apod && d->apod_title[0])
                         ? d->apod_title
                         : "ASTRONOMY PICTURE OF THE DAY";
     snprintf(line, sizeof(line), "APOD  ~  %s", title);
-    gfx_ticker(PANEL_H - 6, line, gfx_ticker_scroll(tick), 255, 220, 100);
+    int  w = gfx_text_width(line);
+    int  x = (int)PANEL_W - (int)gfx_ticker_scroll(tick);
+    if (x + w > 0) {
+        gfx_text_outlined(x, PANEL_H - 6, line, 255, 220, 100);
+    }
 }
 
 // ─── rotator ─────────────────────────────────────────────────────────────
@@ -1237,7 +1253,7 @@ static const scene_def_t SCENES[] = {
     { scene_moon,     SCENE_TICKS         },
     { scene_event,    SCENE_TICKS         },
     { scene_asteroid, ASTEROID_SCENE_TICKS },
-    { scene_apod,     SCENE_TICKS         },
+    { scene_apod,     APOD_SCENE_TICKS    },
 };
 #define NUM_SCENES (sizeof(SCENES) / sizeof(SCENES[0]))
 
