@@ -51,7 +51,7 @@ static void encoder_task(void *arg) {
     while (true) {
         uint8_t clk = gpio_get_level(PIN_ENC_CLK);
         uint8_t dt  = gpio_get_level(PIN_ENC_DT);
-        uint8_t pins = (uint8_t)((dt << 1) | clk);
+        uint8_t pins = (uint8_t)((clk << 1) | dt);
         state = TT[state & 0x0F][pins];
         if (state & DIR_CW)       atomic_fetch_add(&s_accum, +1);
         else if (state & DIR_CCW) atomic_fetch_add(&s_accum, -1);
