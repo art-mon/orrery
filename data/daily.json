@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0hk",
+        "title": "M5.5 Earthquake - Fiji region",
+        "category": "Earthquake",
+        "date": "2026-07-14T22:50:12.020000Z",
+        "coordinates": [
+          -178.5092,
+          -20.748
+        ]
+      },
+      {
         "id": "us7000t0fu",
         "title": "M5.4 Earthquake - 90 km SSE of False Pass, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           171.5471,
           -22.8646
         ]
-      },
-      {
-        "id": "us7000szyr",
-        "title": "M5.4 Earthquake - 24 km W of Mabiton, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-13T00:54:02.072000Z",
-        "coordinates": [
-          123.0436,
-          12.7921
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.1,
-    "feels_c": 20.6,
-    "humidity": 91,
+    "temp_c": 19.7,
+    "feels_c": 20.2,
+    "humidity": 93,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 4.0
+    "wind_kmh": 4.4
   },
   "forecast_today": {
     "date": "2026-07-15",
     "city": "City of Zagreb",
-    "temp_min_c": 19.7,
+    "temp_min_c": 19.6,
     "temp_max_c": 33.0,
-    "humidity": 66,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 4.5,
+    "wind_kmh": 4.6,
     "samples": 9
   },
   "forecast": {
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.1,
-    "peak_time": "2026-07-15T14:00",
+    "daily_max": 7.0,
+    "peak_time": "2026-07-15T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -328,7 +328,7 @@
       },
       {
         "time": "2026-07-15T07:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-07-15T08:00",
@@ -356,7 +356,7 @@
       },
       {
         "time": "2026-07-15T14:00",
-        "uv": 7.1
+        "uv": 7.0
       },
       {
         "time": "2026-07-15T15:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-07-15T18:00",
-        "uv": 2.9
+        "uv": 2.8
       },
       {
         "time": "2026-07-15T19:00",
@@ -380,7 +380,7 @@
       },
       {
         "time": "2026-07-15T20:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-07-15T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-15T00:01:44+02:00"
+    "fetched_at": "2026-07-15T01:51:11+02:00"
   }
 }
