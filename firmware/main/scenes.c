@@ -1202,20 +1202,13 @@ static void scene_apod(const daily_data_t *d, uint32_t tick) {
         return;
     }
 
-    // Fit the source (PANEL_W × PANEL_H, 2:1) into the area above the ticker
-    // while preserving aspect: target height = PANEL_H - 7, width doubled.
-    // Centre horizontally and blit with nearest-neighbour sampling so the
-    // ticker stays on a clean black strip.
-    const int TH = PANEL_H - 7;          // 25 rows for the image
-    const int TW = TH * 2;               // preserve 2:1 → 50 cols
-    const int X0 = (PANEL_W - TW) / 2;   // 7-px black margins on each side
-    for (int oy = 0; oy < TH; ++oy) {
-        int sy = oy * PANEL_H / TH;
-        const uint8_t *row = px + sy * PANEL_W * 3;
-        for (int ox = 0; ox < TW; ++ox) {
-            int sx = ox * PANEL_W / TW;
-            const uint8_t *p = row + sx * 3;
-            panel_pixel(X0 + ox, oy, p[0], p[1], p[2]);
+    // Blit the full 64×32 frame; the ticker's outlined glyphs read
+    // cleanly on top, matching how the moon / event scenes overlay text.
+    for (int y = 0; y < PANEL_H; ++y) {
+        const uint8_t *row = px + y * PANEL_W * 3;
+        for (int x = 0; x < PANEL_W; ++x) {
+            const uint8_t *p = row + x * 3;
+            panel_pixel(x, y, p[0], p[1], p[2]);
         }
     }
 
