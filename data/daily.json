@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0a3",
+        "title": "M5.6 Earthquake - 11 km N of Pichigua, Peru",
+        "category": "Earthquake",
+        "date": "2026-07-14T08:21:06.499000Z",
+        "coordinates": [
+          -71.4358,
+          -14.5779
+        ]
+      },
+      {
+        "id": "us7000t09u",
+        "title": "M5.0 Earthquake - 117 km E of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-07-14T07:44:09.565000Z",
+        "coordinates": [
+          143.1932,
+          40.1338
+        ]
+      },
+      {
         "id": "us7000t09m",
         "title": "M5.2 Earthquake - 14 km WSW of Mabiton, Philippines",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -118.9732,
           -54.6008
         ]
-      },
-      {
-        "id": "us7000szri",
-        "title": "M5.2 Earthquake - 56 km SSW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-11T17:49:31.928000Z",
-        "coordinates": [
-          125.2447,
-          4.9407
-        ]
-      },
-      {
-        "id": "us7000szr0",
-        "title": "M5.1 Earthquake - 89 km NE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-11T15:33:17.598000Z",
-        "coordinates": [
-          -173.293,
-          -15.3141
-        ]
       }
     ]
   },
@@ -248,40 +248,40 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 29.2,
-    "feels_c": 30.0,
-    "humidity": 50,
+    "temp_c": 31.5,
+    "feels_c": 32.6,
+    "humidity": 46,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.1
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 1.6
   },
   "forecast_today": {
     "date": "2026-07-14",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 22.3,
-    "temp_max_c": 31.0,
+    "temp_max_c": 31.7,
     "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 2.8,
-    "samples": 6
+    "icon": "04d",
+    "wind_kmh": 2.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-15",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.6,
     "temp_max_c": 31.5,
     "humidity": 67,
-    "condition": "Clouds",
+    "condition": "Rain",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 5.0
   },
   "forecast_day_after": {
     "date": "2026-07-16",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.1,
     "temp_max_c": 31.5,
     "humidity": 60,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 4.2,
+    "uv": 5.6,
     "band": "moderate",
     "daily_max": 6.7,
     "peak_time": "2026-07-14T14:00",
-    "safe_minutes": 39,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-14T09:58:41+02:00"
+    "fetched_at": "2026-07-14T12:04:23+02:00"
   }
 }
