@@ -93,6 +93,12 @@ def run():
         if "error" not in frame:
             (OUT / "frame.json").write_text(json.dumps(frame))
             print("✓ data/frame.json")
+            # Compact firmware-friendly variant (rgb_b64 only, ~8 KB) so the
+            # ESP32 doesn't have to parse the pixel array of frame.json.
+            b64 = frame.get("rgb_b64")
+            if b64:
+                (OUT / "frame_b64.json").write_text(json.dumps({"rgb_b64": b64}))
+                print("✓ data/frame_b64.json")
     else:
         print("  APOD is not an image today — skipping frame")
 

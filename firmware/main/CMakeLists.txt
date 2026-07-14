@@ -8,6 +8,7 @@ idf_component_register(
          "als.c"
          "audio.c"
          "mp3_impl.c"
+         "apod.c"
     INCLUDE_DIRS "."
     REQUIRES
         esp_wifi

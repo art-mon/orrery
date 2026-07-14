@@ -1,3 +1,4 @@
+import base64
 import io
 import requests
 from PIL import Image, ImageEnhance
@@ -47,6 +48,12 @@ def apod_frame(url: str) -> dict:
     img = Image.open(io.BytesIO(r.content))
     pixels = _process(img)
 
-    result = {"width": W, "height": H, "pixels": pixels}
+    # Firmware-friendly compact form: raw RGB888 as base64. Matches the
+    # world_clouds / earth_texture pattern so the ESP32 doesn't have to
+    # parse a 2048-triple JSON array (which would OOM cJSON).
+    raw = bytes(v for p in pixels for v in p)
+    rgb_b64 = base64.b64encode(raw).decode("ascii")
+
+    result = {"width": W, "height": H, "pixels": pixels, "rgb_b64": rgb_b64}
     cache.set("apod_frame", result)
     return result

@@ -4,6 +4,7 @@
 #include "clock.h"
 #include "scenes.h"
 #include "world.h"
+#include "apod.h"
 #include "encoder.h"
 #include "als.h"
 #include "audio.h"
@@ -48,6 +49,9 @@ static void fetch_task(void *arg) {
         } else {
             ESP_LOGW(TAG, "fetch failed, keeping previous data");
         }
+        // Refresh the APOD frame alongside daily.json. The CDN serves the
+        // same bytes until the workflow regenerates it, so this is cheap.
+        if (g_data.has_apod) apod_fetch();
         vTaskDelay(pdMS_TO_TICKS(FETCH_INTERVAL_MS));
     }
 }
@@ -82,6 +86,12 @@ extern "C" void app_main(void) {
     // World map data (mask + clouds) for the Earth Event scene
     draw_status("MAP...", 80, 180, 255);
     world_fetch();
+
+    // Today's APOD frame — small (6 KB decoded), skip silently on failure
+    if (g_data.has_apod) {
+        draw_status("APOD...", 255, 220, 100);
+        apod_fetch();
+    }
 
     xTaskCreate(fetch_task, "fetch", 8192, NULL, 4, NULL);
 

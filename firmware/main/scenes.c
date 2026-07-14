@@ -4,6 +4,7 @@
 #include "gfx.h"
 #include "clock.h"
 #include "world.h"
+#include "apod.h"
 #include "encoder.h"
 #include "audio.h"
 #include "wifi_creds.h"
@@ -1186,6 +1187,41 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
     }
 }
 
+// ─── scene_apod (NASA Astronomy Picture of the Day) ─────────────────────
+
+static void scene_apod(const daily_data_t *d, uint32_t tick) {
+    const uint8_t *px = apod_pixels();
+
+    if (!px) {
+        // Loading state — starfield placeholder + status text.
+        gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+        gfx_stars(1, 20, 180, 180, 180);
+        const char *msg = apod_loaded() ? "NO DATA" : "LOADING...";
+        int w = gfx_text_width(msg);
+        gfx_text_outlined((PANEL_W - w) / 2, 13, msg, 200, 200, 200);
+        return;
+    }
+
+    // Blit the 64×32 RGB888 frame straight to the panel.
+    for (int y = 0; y < PANEL_H; ++y) {
+        const uint8_t *row = px + y * PANEL_W * 3;
+        for (int x = 0; x < PANEL_W; ++x) {
+            const uint8_t *p = row + x * 3;
+            panel_pixel(x, y, p[0], p[1], p[2]);
+        }
+    }
+
+    // Dark strip behind the ticker so the title stays readable over any image.
+    gfx_rect(0, PANEL_H - 7, PANEL_W, 7, 0, 0, 0);
+
+    char line[128];
+    const char *title = (d && d->has_apod && d->apod_title[0])
+                        ? d->apod_title
+                        : "ASTRONOMY PICTURE OF THE DAY";
+    snprintf(line, sizeof(line), "APOD  ~  %s", title);
+    gfx_ticker(PANEL_H - 6, line, gfx_ticker_scroll(tick), 255, 220, 100);
+}
+
 // ─── rotator ─────────────────────────────────────────────────────────────
 // Adds scenes one at a time as each is verified on hardware.
 
@@ -1203,6 +1239,7 @@ static const scene_def_t SCENES[] = {
     { scene_moon,     SCENE_TICKS         },
     { scene_event,    SCENE_TICKS         },
     { scene_asteroid, ASTEROID_SCENE_TICKS },
+    { scene_apod,     SCENE_TICKS         },
 };
 #define NUM_SCENES (sizeof(SCENES) / sizeof(SCENES[0]))
 
