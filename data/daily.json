@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t09m",
+        "title": "M5.2 Earthquake - 14 km WSW of Mabiton, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-14T07:04:54.275000Z",
+        "coordinates": [
+          123.136,
+          12.7967
+        ]
+      },
+      {
         "id": "us7000t07s",
         "title": "M5.0 Earthquake - 2 km WSW of Congregaci\u00f3n Reforma, Mexico",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -173.293,
           -15.3141
         ]
-      },
-      {
-        "id": "us7000szq0",
-        "title": "M5.4 Earthquake - 41 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-11T10:51:12.845000Z",
-        "coordinates": [
-          125.4897,
-          5.0334
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.9,
-    "feels_c": 22.4,
-    "humidity": 86,
+    "temp_c": 29.2,
+    "feels_c": 30.0,
+    "humidity": 50,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.6
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-07-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.9,
-    "temp_max_c": 32.8,
-    "humidity": 66,
+    "city": "Zagreb",
+    "temp_min_c": 22.3,
+    "temp_max_c": 31.0,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.0,
-    "samples": 7
+    "icon": "03d",
+    "wind_kmh": 2.8,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-15",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.8,
-    "temp_max_c": 32.9,
-    "humidity": 65,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "city": "Zagreb",
+    "temp_min_c": 21.6,
+    "temp_max_c": 31.5,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 5.0
   },
   "forecast_day_after": {
     "date": "2026-07-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 31.4,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 31.5,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.9
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
-    "daily_max": 6.9,
+    "uv": 4.2,
+    "band": "moderate",
+    "daily_max": 6.7,
     "peak_time": "2026-07-14T14:00",
-    "safe_minutes": 152,
+    "safe_minutes": 39,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,11 +328,11 @@
       },
       {
         "time": "2026-07-14T07:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-07-14T08:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-07-14T09:00",
@@ -344,39 +344,39 @@
       },
       {
         "time": "2026-07-14T11:00",
-        "uv": 5.0
+        "uv": 4.6
       },
       {
         "time": "2026-07-14T12:00",
-        "uv": 6.5
+        "uv": 5.7
       },
       {
         "time": "2026-07-14T13:00",
-        "uv": 5.3
+        "uv": 5.2
       },
       {
         "time": "2026-07-14T14:00",
-        "uv": 6.9
+        "uv": 6.7
       },
       {
         "time": "2026-07-14T15:00",
-        "uv": 6.0
+        "uv": 6.4
       },
       {
         "time": "2026-07-14T16:00",
-        "uv": 5.6
+        "uv": 5.1
       },
       {
         "time": "2026-07-14T17:00",
-        "uv": 4.3
+        "uv": 4.2
       },
       {
         "time": "2026-07-14T18:00",
-        "uv": 2.9
+        "uv": 2.2
       },
       {
         "time": "2026-07-14T19:00",
-        "uv": 1.6
+        "uv": 1.4
       },
       {
         "time": "2026-07-14T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-14T07:27:04+02:00"
+    "fetched_at": "2026-07-14T09:58:41+02:00"
   }
 }
