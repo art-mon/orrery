@@ -1,12 +1,12 @@
 {
   "generated": "2026-07-14",
   "apod": {
-    "title": "Auroras from Space",
-    "date": "2026-07-13",
-    "explanation": "What do auroras look like from above? Behold!  From the ground, auroras dance high above clouds, frequently causing spectacular displays.  From space, they look a bit different. As the International Space Station (ISS) circles the Earth every 90 minutes, it sometimes sees auroras below that are active on the night side.  A one-hour time-lapse video showing auroras from above was captured about two weeks ago from the orbiting ISS.  The ISS -- and all objects in low Earth orbit -- will pass well above green auroras but just a bit above red glowing auroras.  The auroras' electron and proton streams are too thin to be a danger to the ISS, just as clouds pose little danger to airplanes.  From orbit, as magnetic fields change, auroras can appear to squiggle and crawl like giant snakes.  The featured one-minute video was captured by French astronaut Sophie Adenot of the ISS Expedition 74 crew.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2607/Auroras_Esa.mp4",
-    "hdurl": null
+    "title": "Double Lobed Asteroid Torifune",
+    "date": "2026-07-14",
+    "explanation": "Why is this asteroid a double?  Earlier this month the Japanese robotic spacecraft Hayabusa2 shot past asteroid 98943 Torifune and captured pictures. Although previous observations from distant Earth indicated that Torifune was oblong, Hayabusa2 found that Torifune actually has two joined lobes.  With a length of about four soccer fields, this space rock frequently comes near the Earth as it orbits the Sun, although it is not a threat.  Besides the two lobes, Torifune shows many large boulders, but, surprisingly, no obvious craters, likely because its surface is a pile of rubble.  Like asteroid Arrokoth, it appears that each lobe formed separately before colliding and becoming stuck together.  Hayabusa2 famously encountered asteroid Ryugu in 2018, and now heads for an encounter in 2031 with 1998 KY26, a smaller asteroid that rotates unusually fast and might have reservoirs of ice.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/Torifune_JAXA_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/Torifune_JAXA_1400.jpg"
   },
   "events": {
     "events": [
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.9,
-    "humidity": 81,
+    "temp_c": 21.9,
+    "feels_c": 22.4,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 1.2
+    "icon": "04d",
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-07-14",
     "city": "City of Zagreb",
-    "temp_min_c": 20.7,
+    "temp_min_c": 21.9,
     "temp_max_c": 32.8,
-    "humidity": 63,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 2.7,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 3.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-15",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-14T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 152,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-14T04:11:18+02:00"
+    "fetched_at": "2026-07-14T07:27:04+02:00"
   }
 }
