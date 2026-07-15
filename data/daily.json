@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-15",
   "apod": {
-    "title": "Double Lobed Asteroid Torifune",
-    "date": "2026-07-14",
-    "explanation": "Why is this asteroid a double?  Earlier this month the Japanese robotic spacecraft Hayabusa2 shot past asteroid 98943 Torifune and captured pictures. Although previous observations from distant Earth indicated that Torifune was oblong, Hayabusa2 found that Torifune actually has two joined lobes.  With a length of about four soccer fields, this space rock frequently comes near the Earth as it orbits the Sun, although it is not a threat.  Besides the two lobes, Torifune shows many large boulders, but, surprisingly, no obvious craters, likely because its surface is a pile of rubble.  Like asteroid Arrokoth, it appears that each lobe formed separately before colliding and becoming stuck together.  Hayabusa2 famously encountered asteroid Ryugu in 2018, and now heads for an encounter in 2031 with 1998 KY26, a smaller asteroid that rotates unusually fast and might have reservoirs of ice.",
+    "title": "Red Sprites in the Tatacoa Desert",
+    "date": "2026-07-15",
+    "explanation": "Is there an angry Sith using force lightning in the Tatacoa Desert? This is not science fiction, but a red sprite with multiple streamers! Ordinary lightning occurs when thundercloud particles collide, lose their electrons, and build up negative charge at the cloud bottom. The cloud\u2019s negative charge repels negative charge deeper into the Earth, leaving Earth\u2019s surface positively charged. The opposite charges attract, reaching towards each other and superheating the air into a white strike of plasma. Red sprites are millisecond events triggered by positive cloud-to-ground lightning. They extend up into the mesosphere where the air is too thin for thunder. Their red glow comes from heated molecular nitrogen. There are several potential causes for red sprites, including that the preceding positive lightning exposes the negatively charged cloud core to the positively charged upper atmosphere, allowing those charges to connect. NASA\u2019s Juno has observed sprites on Jupiter, indicating that sprites occur on other planets!",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/Torifune_JAXA_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/Torifune_JAXA_1400.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/red_sprite_700.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/red_sprite.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t0k1",
+        "title": "M5.1 Earthquake - 190 km SSE of Vilyuchinsk, Russia",
+        "category": "Earthquake",
+        "date": "2026-07-15T02:42:18.066000Z",
+        "coordinates": [
+          159.5815,
+          51.3809
+        ]
+      },
       {
         "id": "us7000t0it",
         "title": "M5.1 Earthquake - 52 km NNW of Valpara\u00edso, Chile",
@@ -149,16 +159,6 @@
           171.3991,
           -22.8289
         ]
-      },
-      {
-        "id": "us7000t01n",
-        "title": "M6.3 Earthquake - southeast of the Loyalty Islands",
-        "category": "Earthquake",
-        "date": "2026-07-13T14:45:49.203000Z",
-        "coordinates": [
-          171.5199,
-          -22.7889
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 20.2,
-    "humidity": 93,
+    "city": "City of Zagreb",
+    "temp_c": 22.6,
+    "feels_c": 22.9,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.3
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.9
   },
   "forecast_today": {
     "date": "2026-07-15",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
+    "temp_min_c": 22.2,
     "temp_max_c": 32.9,
-    "humidity": 67,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.1,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 5.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-16",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-15T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 159,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-15T04:09:20+02:00"
+    "fetched_at": "2026-07-15T07:27:52+02:00"
   }
 }
