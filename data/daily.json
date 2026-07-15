@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0ng",
+        "title": "M5.7 Earthquake - east of the South Sandwich Islands",
+        "category": "Earthquake",
+        "date": "2026-07-15T14:51:37.824000Z",
+        "coordinates": [
+          -19.003,
+          -59.9671
+        ]
+      },
+      {
         "id": "us7000t0k1",
         "title": "M5.1 Earthquake - 190 km SSE of Vilyuchinsk, Russia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           125.4626,
           5.577
         ]
-      },
-      {
-        "id": "us7000t02f",
-        "title": "M5.1 Earthquake - southeast of the Loyalty Islands",
-        "category": "Earthquake",
-        "date": "2026-07-13T16:31:30.321000Z",
-        "coordinates": [
-          171.3991,
-          -22.8289
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 33.7,
-    "feels_c": 34.7,
-    "humidity": 39,
+    "city": "Donji grad",
+    "temp_c": 32.6,
+    "feels_c": 33.8,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.3
+    "wind_kmh": 2.4
   },
   "forecast_today": {
     "date": "2026-07-15",
-    "city": "Zagreb",
-    "temp_min_c": 25.7,
-    "temp_max_c": 33.7,
-    "humidity": 46,
-    "condition": "Clear",
-    "description": "clear",
+    "city": "City of Zagreb",
+    "temp_min_c": 25.6,
+    "temp_max_c": 32.6,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 6.2,
-    "samples": 4
+    "wind_kmh": 4.9,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-16",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.7,
     "temp_max_c": 29.8,
     "humidity": 78,
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-17",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.2,
     "temp_max_c": 34.3,
     "humidity": 60,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 4.1,
-    "band": "moderate",
+    "uv": 2.0,
+    "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-15T13:00",
-    "safe_minutes": 41,
+    "safe_minutes": 81,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-15T16:46:52+02:00"
+    "fetched_at": "2026-07-15T18:18:57+02:00"
   }
 }
