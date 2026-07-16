@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000t14v",
+        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-16T20:21:52.035000Z",
+        "coordinates": [
+          -14.7175,
+          -12.6871
+        ]
+      },
+      {
+        "id": "us7000t14m",
+        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-16T19:55:32.193000Z",
+        "coordinates": [
+          -14.3805,
+          -12.6918
+        ]
+      },
+      {
+        "id": "us7000t14l",
+        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-16T19:44:54.568000Z",
+        "coordinates": [
+          -14.3837,
+          -12.6935
+        ]
+      },
+      {
         "id": "aka2026nyxoap",
         "title": "M5.2 Earthquake - 122 km SE of McCarthy, Alaska",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           125.1801,
           5.3226
         ]
-      },
-      {
-        "id": "us7000t0bm",
-        "title": "M5.2 Earthquake - 6 km NW of Nuing, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-14T13:15:06.042000Z",
-        "coordinates": [
-          125.3976,
-          5.6727
-        ]
-      },
-      {
-        "id": "us7000t0b5",
-        "title": "M5.3 Earthquake - 96 km SE of False Pass, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-14T12:12:19.529000Z",
-        "coordinates": [
-          -162.543,
-          54.1456
-        ]
-      },
-      {
-        "id": "us7000t0a3",
-        "title": "M5.6 Earthquake - 11 km N of Pichigua, Peru",
-        "category": "Earthquake",
-        "date": "2026-07-14T08:21:06.499000Z",
-        "coordinates": [
-          -71.4358,
-          -14.5779
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.3,
-    "feels_c": 26.3,
-    "humidity": 68,
+    "temp_c": 24.1,
+    "feels_c": 24.5,
+    "humidity": 73,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 5.2
+    "wind_kmh": 2.1
   },
   "forecast_today": {
     "date": "2026-07-16",
     "city": "City of Zagreb",
-    "temp_min_c": 26.3,
-    "temp_max_c": 26.5,
-    "humidity": 68,
+    "temp_min_c": 23.6,
+    "temp_max_c": 24.1,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.5,
+    "wind_kmh": 2.0,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-17",
     "city": "City of Zagreb",
-    "temp_min_c": 20.9,
+    "temp_min_c": 21.5,
     "temp_max_c": 34.4,
-    "humidity": 67,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -282,13 +282,13 @@
   "forecast_day_after": {
     "date": "2026-07-18",
     "city": "City of Zagreb",
-    "temp_min_c": 18.0,
+    "temp_min_c": 17.4,
     "temp_max_c": 32.8,
-    "humidity": 78,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 6.2
+    "wind_kmh": 6.3
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-16T21:05:23+02:00"
+    "fetched_at": "2026-07-16T22:54:06+02:00"
   }
 }
