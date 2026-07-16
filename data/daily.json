@@ -1,12 +1,12 @@
 {
   "generated": "2026-07-16",
   "apod": {
-    "title": "Red Sprites in the Tatacoa Desert",
-    "date": "2026-07-15",
-    "explanation": "Is there an angry Sith using force lightning in the Tatacoa Desert? This is not science fiction, but a red sprite with multiple streamers! Ordinary lightning occurs when thundercloud particles collide, lose their electrons, and build up negative charge at the cloud bottom. The cloud\u2019s negative charge repels negative charge deeper into the Earth, leaving Earth\u2019s surface positively charged. The opposite charges attract, reaching towards each other and superheating the air into a white strike of plasma. Red sprites are millisecond events triggered by positive cloud-to-ground lightning. They extend up into the mesosphere where the air is too thin for thunder. Their red glow comes from heated molecular nitrogen. There are several potential causes for red sprites, including that the preceding positive lightning exposes the negatively charged cloud core to the positively charged upper atmosphere, allowing those charges to connect. NASA\u2019s Juno has observed sprites on Jupiter, indicating that sprites occur on other planets!",
+    "title": "NGC 300: A Cosmic Gemstone with Stars and Gas Clouds",
+    "date": "2026-07-16",
+    "explanation": "This sparkling, colorful gemstone is a spiral galaxy, NGC 300.   It is one of the closest spiral galaxies to Earth, only about 6 million light-years away.     But does it really look like this?   Here is a more standard portrait of it.   This unusual image combines the light from the stars and dust within the galaxy with the light from ionized clouds of interstellar gas shown in red (Sulphur), green (Hydrogen) and blue (Oxygen).   Combining red and green light in different proportions makes yellow or orange light, most visible in the image.   Light from other ionized gases is also at work in neon signs, fluorescent tubes and street lights.   These massive clouds of ionized gas are typically created by young, massive stars that produce high-energy ultraviolet radiation capable of ionizing the gas.   Massive stars are short-lived, compared with lighter stars like our sun, and explode as supernovas at the end of their lives.   Some of the colorful clouds in the image could be hiding supernova remnants.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/red_sprite_700.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/red_sprite.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/ngc300_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/ngc300.jpg"
   },
   "events": {
     "events": [
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.3,
-    "feels_c": 20.9,
-    "humidity": 95,
+    "temp_c": 23.1,
+    "feels_c": 23.9,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.1
+    "wind_kmh": 4.9
   },
   "forecast_today": {
     "date": "2026-07-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.3,
+    "city": "Zagreb",
+    "temp_min_c": 23.1,
     "temp_max_c": 31.8,
-    "humidity": 71,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 5.8,
-    "samples": 7
+    "wind_kmh": 6.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-17",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.1,
     "temp_max_c": 34.7,
     "humidity": 59,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.8,
     "temp_max_c": 32.3,
     "humidity": 72,
@@ -291,11 +291,11 @@
     "wind_kmh": 7.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 7.0,
-    "peak_time": "2026-07-16T14:00",
-    "safe_minutes": null,
+    "peak_time": "2026-07-16T13:00",
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -324,7 +324,7 @@
       },
       {
         "time": "2026-07-16T06:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-07-16T07:00",
@@ -336,23 +336,23 @@
       },
       {
         "time": "2026-07-16T09:00",
-        "uv": 2.0
+        "uv": 2.7
       },
       {
         "time": "2026-07-16T10:00",
-        "uv": 3.0
+        "uv": 4.1
       },
       {
         "time": "2026-07-16T11:00",
-        "uv": 4.5
+        "uv": 5.5
       },
       {
         "time": "2026-07-16T12:00",
-        "uv": 4.6
+        "uv": 6.0
       },
       {
         "time": "2026-07-16T13:00",
-        "uv": 5.9
+        "uv": 7.0
       },
       {
         "time": "2026-07-16T14:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-07-16T17:00",
-        "uv": 4.2
+        "uv": 4.3
       },
       {
         "time": "2026-07-16T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-16T05:59:19+02:00"
+    "fetched_at": "2026-07-16T08:26:37+02:00"
   }
 }
