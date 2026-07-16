@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0xb",
+        "title": "M5.9 Earthquake - 42 km NNW of Te Anau, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-07-16T09:14:54.293000Z",
+        "coordinates": [
+          167.6107,
+          -45.0434
+        ]
+      },
+      {
+        "id": "us7000t0x8",
+        "title": "M5.0 Earthquake - 141 km ENE of Hicks Bay, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-07-16T08:57:58.825000Z",
+        "coordinates": [
+          179.8608,
+          -37.3276
+        ]
+      },
+      {
         "id": "us7000t0x0",
         "title": "M5.5 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           143.1932,
           40.1338
         ]
-      },
-      {
-        "id": "us7000t09m",
-        "title": "M5.2 Earthquake - 14 km WSW of Mabiton, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-14T07:04:54.275000Z",
-        "coordinates": [
-          123.136,
-          12.7967
-        ]
-      },
-      {
-        "id": "us7000t07s",
-        "title": "M5.0 Earthquake - 2 km WSW of Congregaci\u00f3n Reforma, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-14T01:19:59.535000Z",
-        "coordinates": [
-          -92.3316,
-          14.7717
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 28.6,
-    "humidity": 57,
+    "city": "Zagreb",
+    "temp_c": 29.2,
+    "feels_c": 30.1,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 13.1
+    "wind_kmh": 7.7
   },
   "forecast_today": {
     "date": "2026-07-16",
     "city": "Zagreb",
     "temp_min_c": 24.2,
-    "temp_max_c": 31.3,
-    "humidity": 56,
+    "temp_max_c": 30.4,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 6.3,
+    "wind_kmh": 5.3,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 5.7,
-    "band": "moderate",
+    "uv": 7.0,
+    "band": "high",
     "daily_max": 7.0,
-    "peak_time": "2026-07-16T13:00",
-    "safe_minutes": 29,
+    "peak_time": "2026-07-16T14:00",
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,11 +348,11 @@
       },
       {
         "time": "2026-07-16T12:00",
-        "uv": 6.0
+        "uv": 6.4
       },
       {
         "time": "2026-07-16T13:00",
-        "uv": 7.0
+        "uv": 6.8
       },
       {
         "time": "2026-07-16T14:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-07-16T17:00",
-        "uv": 4.3
+        "uv": 4.2
       },
       {
         "time": "2026-07-16T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-16T11:11:16+02:00"
+    "fetched_at": "2026-07-16T13:37:26+02:00"
   }
 }
