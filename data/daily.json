@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0u6",
+        "title": "M5.8 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-07-15T22:57:11.162000Z",
+        "coordinates": [
+          -178.6944,
+          -26.366
+        ]
+      },
+      {
         "id": "us7000t0ng",
         "title": "M5.7 Earthquake - east of the South Sandwich Islands",
         "category": "Earthquake",
@@ -149,53 +159,11 @@
           171.5098,
           -22.9464
         ]
-      },
-      {
-        "id": "us7000t048",
-        "title": "M5.0 Earthquake - 5 km SE of Butulan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-13T17:44:29.061000Z",
-        "coordinates": [
-          125.4626,
-          5.577
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2011 LA19)",
-        "hazardous": true,
-        "diameter_m": 871,
-        "close_approach_date": "2026-07-15",
-        "miss_distance_km": 17635961,
-        "velocity_kmh": 49174
-      },
-      {
-        "name": "(2010 WB3)",
-        "hazardous": false,
-        "diameter_m": 608,
-        "close_approach_date": "2026-07-15",
-        "miss_distance_km": 17725395,
-        "velocity_kmh": 98979
-      },
-      {
-        "name": "(2004 KG1)",
-        "hazardous": false,
-        "diameter_m": 96,
-        "close_approach_date": "2026-07-15",
-        "miss_distance_km": 20607226,
-        "velocity_kmh": 28840
-      },
-      {
-        "name": "(2015 AF45)",
-        "hazardous": false,
-        "diameter_m": 56,
-        "close_approach_date": "2026-07-15",
-        "miss_distance_km": 62576972,
-        "velocity_kmh": 23294
-      },
       {
         "name": "(2018 XQ2)",
         "hazardous": false,
@@ -243,30 +211,62 @@
         "close_approach_date": "2026-07-17",
         "miss_distance_km": 26402393,
         "velocity_kmh": 23729
+      },
+      {
+        "name": "475534 (2006 TS7)",
+        "hazardous": true,
+        "diameter_m": 334,
+        "close_approach_date": "2026-07-17",
+        "miss_distance_km": 31333271,
+        "velocity_kmh": 46176
+      },
+      {
+        "name": "(2013 AK20)",
+        "hazardous": false,
+        "diameter_m": 137,
+        "close_approach_date": "2026-07-17",
+        "miss_distance_km": 64718526,
+        "velocity_kmh": 35899
+      },
+      {
+        "name": "(2017 QR16)",
+        "hazardous": false,
+        "diameter_m": 162,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 23639374,
+        "velocity_kmh": 30748
+      },
+      {
+        "name": "(2019 LF1)",
+        "hazardous": false,
+        "diameter_m": 233,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 57265900,
+        "velocity_kmh": 29032
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 22.1,
-    "humidity": 91,
+    "temp_c": 21.3,
+    "feels_c": 21.8,
+    "humidity": 92,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 5.0
+    "wind_kmh": 5.8
   },
   "forecast_today": {
     "date": "2026-07-16",
     "city": "Zagreb",
-    "temp_min_c": 21.1,
+    "temp_min_c": 21.2,
     "temp_max_c": 30.2,
-    "humidity": 79,
-    "condition": "Rain",
-    "description": "rain",
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04n",
     "wind_kmh": 4.7,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-17",
@@ -293,7 +293,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
+    "daily_max": 7.0,
     "peak_time": "2026-07-16T14:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -328,55 +328,55 @@
       },
       {
         "time": "2026-07-16T07:00",
-        "uv": 0.1
+        "uv": 0.5
       },
       {
         "time": "2026-07-16T08:00",
-        "uv": 0.6
+        "uv": 1.4
       },
       {
         "time": "2026-07-16T09:00",
-        "uv": 1.9
+        "uv": 2.0
       },
       {
         "time": "2026-07-16T10:00",
-        "uv": 2.4
+        "uv": 3.0
       },
       {
         "time": "2026-07-16T11:00",
-        "uv": 2.5
+        "uv": 4.5
       },
       {
         "time": "2026-07-16T12:00",
-        "uv": 4.2
+        "uv": 4.6
       },
       {
         "time": "2026-07-16T13:00",
-        "uv": 6.5
+        "uv": 5.9
       },
       {
         "time": "2026-07-16T14:00",
-        "uv": 6.8
+        "uv": 7.0
       },
       {
         "time": "2026-07-16T15:00",
-        "uv": 6.0
+        "uv": 6.5
       },
       {
         "time": "2026-07-16T16:00",
-        "uv": 4.2
+        "uv": 5.6
       },
       {
         "time": "2026-07-16T17:00",
-        "uv": 3.4
+        "uv": 4.2
       },
       {
         "time": "2026-07-16T18:00",
-        "uv": 2.2
+        "uv": 2.9
       },
       {
         "time": "2026-07-16T19:00",
-        "uv": 1.3
+        "uv": 1.6
       },
       {
         "time": "2026-07-16T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-16T00:59:34+02:00"
+    "fetched_at": "2026-07-16T02:05:07+02:00"
   }
 }
