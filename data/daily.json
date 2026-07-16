@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t15z",
+        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-16T21:53:58.953000Z",
+        "coordinates": [
+          -15.0898,
+          -12.7868
+        ]
+      },
+      {
+        "id": "us7000t15t",
+        "title": "M5.2 Earthquake - 48 km E of Nishinoomote, Japan",
+        "category": "Earthquake",
+        "date": "2026-07-16T21:49:42.977000Z",
+        "coordinates": [
+          131.5099,
+          30.7625
+        ]
+      },
+      {
         "id": "us7000t15b",
         "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -29.4723,
           -58.7712
         ]
-      },
-      {
-        "id": "us7000t0hk",
-        "title": "M5.5 Earthquake - Fiji region",
-        "category": "Earthquake",
-        "date": "2026-07-14T22:50:12.020000Z",
-        "coordinates": [
-          -178.5092,
-          -20.748
-        ]
-      },
-      {
-        "id": "us7000t0fu",
-        "title": "M5.4 Earthquake - 90 km SSE of False Pass, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-14T18:51:07.308000Z",
-        "coordinates": [
-          -162.6381,
-          54.1759
-        ]
       }
     ]
   },
@@ -247,14 +247,14 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 24.8,
-    "feels_c": 25.1,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_c": 23.7,
+    "feels_c": 24.0,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.8
   },
   "forecast_today": {
     "date": "2026-07-17",
@@ -265,7 +265,7 @@
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
-    "wind_kmh": 3.5,
+    "wind_kmh": 3.6,
     "samples": 9
   },
   "forecast": {
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 7.1,
-    "peak_time": "2026-07-17T13:00",
+    "daily_max": 7.2,
+    "peak_time": "2026-07-17T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -348,7 +348,7 @@
       },
       {
         "time": "2026-07-17T12:00",
-        "uv": 6.4
+        "uv": 6.5
       },
       {
         "time": "2026-07-17T13:00",
@@ -356,7 +356,7 @@
       },
       {
         "time": "2026-07-17T14:00",
-        "uv": 7.0
+        "uv": 7.2
       },
       {
         "time": "2026-07-17T15:00",
@@ -368,19 +368,19 @@
       },
       {
         "time": "2026-07-17T17:00",
-        "uv": 4.2
+        "uv": 4.3
       },
       {
         "time": "2026-07-17T18:00",
-        "uv": 0.9
+        "uv": 2.8
       },
       {
         "time": "2026-07-17T19:00",
-        "uv": 0.0
+        "uv": 1.2
       },
       {
         "time": "2026-07-17T20:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-07-17T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T00:01:02+02:00"
+    "fetched_at": "2026-07-17T01:56:36+02:00"
   }
 }
