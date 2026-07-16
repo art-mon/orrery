@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t0x0",
+        "title": "M5.5 Earthquake - Volcano Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-07-16T07:49:09.543000Z",
+        "coordinates": [
+          144.3909,
+          22.8589
+        ]
+      },
+      {
         "id": "us7000t0u6",
         "title": "M5.8 Earthquake - south of the Fiji Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -92.3316,
           14.7717
         ]
-      },
-      {
-        "id": "us7000t06d",
-        "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
-        "category": "Earthquake",
-        "date": "2026-07-13T21:03:37.178000Z",
-        "coordinates": [
-          171.5098,
-          -22.9464
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.1,
-    "feels_c": 23.9,
-    "humidity": 90,
+    "city": "City of Zagreb",
+    "temp_c": 27.6,
+    "feels_c": 28.6,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 13.1
   },
   "forecast_today": {
     "date": "2026-07-16",
     "city": "Zagreb",
-    "temp_min_c": 23.1,
-    "temp_max_c": 31.8,
-    "humidity": 70,
+    "temp_min_c": 24.2,
+    "temp_max_c": 31.3,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 6.1,
-    "samples": 6
+    "icon": "03d",
+    "wind_kmh": 6.3,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-17",
     "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 34.7,
-    "humidity": 59,
-    "condition": "Clear",
+    "temp_min_c": 20.4,
+    "temp_max_c": 35.8,
+    "humidity": 57,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-07-18",
     "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 32.3,
-    "humidity": 72,
+    "temp_min_c": 17.1,
+    "temp_max_c": 33.7,
+    "humidity": 73,
     "condition": "Rain",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.4
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 2.2,
-    "band": "low",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 7.0,
     "peak_time": "2026-07-16T13:00",
-    "safe_minutes": 76,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-16T08:26:37+02:00"
+    "fetched_at": "2026-07-16T11:11:16+02:00"
   }
 }
