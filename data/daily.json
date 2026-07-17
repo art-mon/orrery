@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1b3",
+        "title": "M5.1 Earthquake - 16 km NW of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-07-17T13:27:41.447000Z",
+        "coordinates": [
+          161.8112,
+          -10.3499
+        ]
+      },
+      {
+        "id": "us7000t1b0",
+        "title": "M5.0 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-07-17T13:16:59.268000Z",
+        "coordinates": [
+          -177.9086,
+          -32.9894
+        ]
+      },
+      {
+        "id": "us7000t19u",
+        "title": "M5.3 Earthquake - 203 km N of Hadibu, Yemen",
+        "category": "Earthquake",
+        "date": "2026-07-17T12:01:14.725000Z",
+        "coordinates": [
+          54.1453,
+          14.4873
+        ]
+      },
+      {
         "id": "us7000t173",
         "title": "M5.2 Earthquake - 42 km NE of Shwebo, Burma (Myanmar)",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           -178.6944,
           -26.366
         ]
-      },
-      {
-        "id": "us7000t0ng",
-        "title": "M5.7 Earthquake - east of the South Sandwich Islands",
-        "category": "Earthquake",
-        "date": "2026-07-15T14:51:37.824000Z",
-        "coordinates": [
-          -19.003,
-          -59.9671
-        ]
-      },
-      {
-        "id": "us7000t0k1",
-        "title": "M5.1 Earthquake - 190 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-07-15T02:42:18.066000Z",
-        "coordinates": [
-          159.5815,
-          51.3809
-        ]
-      },
-      {
-        "id": "us7000t0it",
-        "title": "M5.1 Earthquake - 52 km NNW of Valpara\u00edso, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-15T01:09:20.402000Z",
-        "coordinates": [
-          -71.8626,
-          -32.6034
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.9,
-    "feels_c": 33,
-    "humidity": 53,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 5.7
+    "temp_c": 33.1,
+    "feels_c": 36,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-07-17",
     "city": "Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 31.5,
-    "humidity": 63,
+    "temp_min_c": 25.4,
+    "temp_max_c": 33.1,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10d",
-    "wind_kmh": 8.0,
+    "icon": "02d",
+    "wind_kmh": 7.5,
     "samples": 4
   },
   "forecast": {
     "date": "2026-07-18",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 28.8,
-    "humidity": 70,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.2
+    "temp_min_c": 19.2,
+    "temp_max_c": 26.9,
+    "humidity": 79,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 7.4
   },
   "forecast_day_after": {
     "date": "2026-07-19",
     "city": "Zagreb",
     "temp_min_c": 16.6,
-    "temp_max_c": 32.0,
-    "humidity": 69,
+    "temp_max_c": 31.7,
+    "humidity": 75,
     "condition": "Rain",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.5
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 4.5,
+    "band": "moderate",
     "daily_max": 6.7,
     "peak_time": "2026-07-17T14:00",
-    "safe_minutes": 25,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T14:06:52+02:00"
+    "fetched_at": "2026-07-17T16:41:17+02:00"
   }
 }
