@@ -8,6 +8,7 @@
 #include "encoder.h"
 #include "als.h"
 #include "audio.h"
+#include "ota.h"
 #include "wifi_creds.h"
 
 #include <string.h>
@@ -77,7 +78,12 @@ extern "C" void app_main(void) {
 
     // First fetch synchronously so the rotator has data on its first tick.
     draw_status("FETCH..", 0, 255, 0);
-    if (!daily_fetch(&g_data)) {
+    if (daily_fetch(&g_data)) {
+        // Reaching a good fetch after boot is our health check for an OTA
+        // update. If we just booted a newly-flashed slot, this cancels the
+        // pending rollback so the bootloader commits to this slot.
+        ota_mark_running_valid();
+    } else {
         ESP_LOGW(TAG, "first fetch failed; rotator will run with empty data");
         draw_status("RETRY", 255, 80, 0);
         vTaskDelay(pdMS_TO_TICKS(2000));
@@ -94,6 +100,7 @@ extern "C" void app_main(void) {
     }
 
     xTaskCreate(fetch_task, "fetch", 8192, NULL, 4, NULL);
+    ota_start();
 
     scenes_run(&g_data);  // never returns
 }

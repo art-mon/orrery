@@ -9,12 +9,15 @@ idf_component_register(
          "audio.c"
          "mp3_impl.c"
          "apod.c"
+         "ota.c"
     INCLUDE_DIRS "."
     REQUIRES
         esp_wifi
         esp_event
         esp_netif
         esp_http_client
+        esp_https_ota
+        app_update
         esp-tls
         nvs_flash
         lwip

@@ -10,3 +10,6 @@
 
 // URL of the daily voice briefing MP3 (mono, 24 kHz recommended).
 #define BRIEFING_MP3_URL  "https://art-mon.github.io/orrery/data/briefing.mp3"
+
+// URL of the OTA firmware manifest. See docs/firmware.md § OTA version manifest.
+#define VERSION_JSON_URL  "https://art-mon.github.io/orrery/data/version.json"
