@@ -1,15 +1,20 @@
 {
   "generated": "2026-07-17",
   "apod": {
-    "title": "NGC 300: A Cosmic Gemstone with Stars and Gas Clouds",
-    "date": "2026-07-16",
-    "explanation": "This sparkling, colorful gemstone is a spiral galaxy, NGC 300.   It is one of the closest spiral galaxies to Earth, only about 6 million light-years away.     But does it really look like this?   Here is a more standard portrait of it.   This unusual image combines the light from the stars and dust within the galaxy with the light from ionized clouds of interstellar gas shown in red (Sulphur), green (Hydrogen) and blue (Oxygen).   Combining red and green light in different proportions makes yellow or orange light, most visible in the image.   Light from other ionized gases is also at work in neon signs, fluorescent tubes and street lights.   These massive clouds of ionized gas are typically created by young, massive stars that produce high-energy ultraviolet radiation capable of ionizing the gas.   Massive stars are short-lived, compared with lighter stars like our sun, and explode as supernovas at the end of their lives.   Some of the colorful clouds in the image could be hiding supernova remnants.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/ngc300_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/ngc300.jpg"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t173",
+        "title": "M5.2 Earthquake - 42 km NE of Shwebo, Burma (Myanmar)",
+        "category": "Earthquake",
+        "date": "2026-07-17T01:26:06.555000Z",
+        "coordinates": [
+          95.9644,
+          22.8587
+        ]
+      },
       {
         "id": "us7000t15z",
         "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
@@ -149,61 +154,11 @@
           -71.8626,
           -32.6034
         ]
-      },
-      {
-        "id": "us7000t0ia",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-15T00:35:28.891000Z",
-        "coordinates": [
-          -29.4723,
-          -58.7712
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2018 XQ2)",
-        "hazardous": false,
-        "diameter_m": 14,
-        "close_approach_date": "2026-07-16",
-        "miss_distance_km": 44158739,
-        "velocity_kmh": 29820
-      },
-      {
-        "name": "(2019 NX4)",
-        "hazardous": false,
-        "diameter_m": 358,
-        "close_approach_date": "2026-07-16",
-        "miss_distance_km": 46318258,
-        "velocity_kmh": 65535
-      },
-      {
-        "name": "(2009 HA21)",
-        "hazardous": true,
-        "diameter_m": 402,
-        "close_approach_date": "2026-07-16",
-        "miss_distance_km": 53400710,
-        "velocity_kmh": 122817
-      },
-      {
-        "name": "(2017 FX101)",
-        "hazardous": false,
-        "diameter_m": 50,
-        "close_approach_date": "2026-07-16",
-        "miss_distance_km": 59195513,
-        "velocity_kmh": 50789
-      },
-      {
-        "name": "(2009 DB1)",
-        "hazardous": false,
-        "diameter_m": 146,
-        "close_approach_date": "2026-07-16",
-        "miss_distance_km": 69118723,
-        "velocity_kmh": 95585
-      },
       {
         "name": "(2018 LG4)",
         "hazardous": false,
@@ -243,52 +198,92 @@
         "close_approach_date": "2026-07-18",
         "miss_distance_km": 57265900,
         "velocity_kmh": 29032
+      },
+      {
+        "name": "(2019 UL5)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 62315509,
+        "velocity_kmh": 20807
+      },
+      {
+        "name": "(2017 BP30)",
+        "hazardous": false,
+        "diameter_m": 38,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 63799650,
+        "velocity_kmh": 26357
+      },
+      {
+        "name": "(2015 RF36)",
+        "hazardous": false,
+        "diameter_m": 124,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 67979267,
+        "velocity_kmh": 57339
+      },
+      {
+        "name": "(2019 MX3)",
+        "hazardous": false,
+        "diameter_m": 216,
+        "close_approach_date": "2026-07-18",
+        "miss_distance_km": 71840960,
+        "velocity_kmh": 14419
+      },
+      {
+        "name": "(2016 PC8)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-07-19",
+        "miss_distance_km": 31201476,
+        "velocity_kmh": 20434
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 24.0,
-    "humidity": 71,
+    "temp_c": 20.6,
+    "feels_c": 21.1,
+    "humidity": 89,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 2.8
+    "wind_kmh": 1.0
   },
   "forecast_today": {
     "date": "2026-07-17",
     "city": "Zagreb",
-    "temp_min_c": 21.5,
-    "temp_max_c": 34.4,
-    "humidity": 66,
+    "temp_min_c": 20.6,
+    "temp_max_c": 32.9,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
-    "wind_kmh": 3.6,
-    "samples": 9
+    "wind_kmh": 4.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-18",
     "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 32.8,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.3
+    "temp_min_c": 18.4,
+    "temp_max_c": 28.5,
+    "humidity": 81,
+    "condition": "Rain",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-07-19",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
-    "temp_max_c": 29.0,
+    "temp_min_c": 16.4,
+    "temp_max_c": 31.1,
     "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.4
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T01:56:36+02:00"
+    "fetched_at": "2026-07-17T04:40:22+02:00"
   }
 }
