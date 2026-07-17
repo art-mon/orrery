@@ -150,25 +150,74 @@ The daily briefing MP3 is downloaded once and cached in the LittleFS
 
 ## OTA version manifest
 
-A tiny JSON file committed to the repo alongside `daily.json`:
+A tiny JSON file committed to the repo alongside `daily.json` and served
+from the same GitHub Pages host:
 
 ```json
 {
   "version": "1.0.0",
   "url": "https://github.com/art-mon/orrery/releases/download/v1.0.0/firmware.bin",
-  "min_flash_kb": 768,
-  "notes": "Initial release"
+  "notes": "Initial OTA-capable firmware."
 }
 ```
 
-Firmware compares the `version` string against its own build-time version.
-If newer, downloads from `url` directly into the inactive OTA slot.
+The running firmware's version comes from `PROJECT_VER` in the top-level
+`firmware/CMakeLists.txt`, which ESP-IDF stamps into the app descriptor
+(`esp_app_get_description()->version`). The OTA client parses both strings
+as `MAJOR.MINOR.PATCH`; any non-numeric suffix is ignored, so `1.2.0-rc1`
+compares equal to `1.2.0`.
+
+If the manifest version is strictly greater, `esp_https_ota` writes the
+binary at `url` directly into the inactive OTA slot and the device reboots.
+
+Fields currently read: `version`, `url`. `notes` and any future fields
+(release date, min flash size, changelog) are ignored by the client but
+useful for humans reading the manifest.
+
+---
+
+## Releasing a new firmware version — manual runbook
+
+Until the CI workflow lands, cutting a release is a five-step manual flow.
+Do it once end-to-end to prove the client works before automating.
+
+1. **Bump `PROJECT_VER`** in `firmware/CMakeLists.txt` (e.g. `1.0.0` → `1.0.1`).
+2. **Build**: `cd firmware && idf.py build`. Confirm the resulting
+   `build/orrery.bin` is under 1.5 MB (`ota_0`/`ota_1` slot size) and check
+   the reported `X% free` line — that's your headroom.
+3. **Cut a GitHub release**: tag the commit (`git tag v1.0.1 && git push
+   origin v1.0.1`), create a release on that tag, and upload
+   `build/orrery.bin` as the asset — renaming to `firmware.bin` so the URL
+   pattern in `version.json` stays stable.
+4. **Update `data/version.json`** with the new version + the release asset
+   URL (`.../releases/download/v1.0.1/firmware.bin`) and push to `main`.
+   GitHub Pages serves it within a minute or two.
+5. **Watch the device pick it up.** Devices run their first OTA check
+   ~2 minutes after boot and every 24h after that, so either wait or
+   power-cycle. In the serial log you should see:
+   ```
+   I (…) ota: running version: 1.0.0
+   I (…) ota: manifest version: 1.0.1 url: https://…
+   I (…) ota: newer version available — downloading
+   I (…) ota: OTA success — rebooting into new slot
+   ```
+   After the reboot, the app comes up on the new slot as `PENDING_VERIFY`.
+   Once wifi connects and `daily_fetch` returns non-empty, `app_main` calls
+   `ota_mark_running_valid()`, which cancels the pending rollback. If either
+   step fails, the next reset drops back to the previous slot automatically
+   (bootloader-enforced via `CONFIG_BOOTLOADER_APP_ROLLBACK_ENABLE`).
+
+**Deliberate rollback test** (do this once): publish a version that fails
+its health check — e.g. temporarily point `DAILY_JSON_URL` at a 404. The
+device should update, boot the broken slot, fail to fetch, and on the next
+reset boot back into the previous slot without your intervention.
 
 ---
 
 ## CI — firmware build workflow (future)
 
-Triggered by a git tag (`v*`). Separate from the hourly data-fetch workflow.
+Once the manual runbook has been proven end-to-end, wrap it in a workflow
+triggered by a git tag (`v*`), separate from the hourly data-fetch workflow.
 
 ```
 on: push tags: ["v*"]
@@ -176,14 +225,15 @@ on: push tags: ["v*"]
 steps:
   1. Checkout repo
   2. Install ESP-IDF (idf-component-manager cache)
-  3. idf.py build
-  4. Upload firmware/build/orrery.bin as GitHub Release asset
-  5. Update data/version.json with new tag + asset URL
-  6. Commit version.json back to main [skip ci]
+  3. Parse the tag → set PROJECT_VER
+  4. idf.py build
+  5. Upload firmware/build/orrery.bin as GitHub Release asset (firmware.bin)
+  6. Update data/version.json with new tag + asset URL
+  7. Commit version.json back to main [skip ci]
 ```
 
-This means releasing a new firmware version is just:
+Releasing a new firmware version then reduces to:
 ```bash
 git tag v1.2.0 && git push origin v1.2.0
 ```
-Devices pick it up overnight.
+Devices pick it up on their next daily check.
