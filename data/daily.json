@@ -11,6 +11,46 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1cc",
+        "title": "M6.0 Earthquake - 90 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T15:20:06.868000Z",
+        "coordinates": [
+          -93.0929,
+          14.2369
+        ]
+      },
+      {
+        "id": "us7000t1c2",
+        "title": "M5.1 Earthquake - 101 km WSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T15:19:46.384000Z",
+        "coordinates": [
+          -93.2998,
+          14.3986
+        ]
+      },
+      {
+        "id": "us7000t1c1",
+        "title": "M5.3 Earthquake - 93 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T15:14:55.773000Z",
+        "coordinates": [
+          -93.0992,
+          14.189
+        ]
+      },
+      {
+        "id": "us7000t1bu",
+        "title": "M7.3 Earthquake - 48 km SW of Aquiles Serd\u00e1n, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T14:48:39.768000Z",
+        "coordinates": [
+          -92.8855,
+          14.6913
+        ]
+      },
+      {
         "id": "us7000t1b3",
         "title": "M5.1 Earthquake - 16 km NW of Kirakira, Solomon Islands",
         "category": "Earthquake",
@@ -119,46 +159,6 @@
           -141.508,
           60.569
         ]
-      },
-      {
-        "id": "us7000t0xb",
-        "title": "M5.9 Earthquake - 42 km NNW of Te Anau, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-07-16T09:14:54.293000Z",
-        "coordinates": [
-          167.6107,
-          -45.0434
-        ]
-      },
-      {
-        "id": "us7000t0x8",
-        "title": "M5.0 Earthquake - 141 km ENE of Hicks Bay, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-07-16T08:57:58.825000Z",
-        "coordinates": [
-          179.8608,
-          -37.3276
-        ]
-      },
-      {
-        "id": "us7000t0x0",
-        "title": "M5.5 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-07-16T07:49:09.543000Z",
-        "coordinates": [
-          144.3909,
-          22.8589
-        ]
-      },
-      {
-        "id": "us7000t0u6",
-        "title": "M5.8 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-07-15T22:57:11.162000Z",
-        "coordinates": [
-          -178.6944,
-          -26.366
-        ]
       }
     ]
   },
@@ -248,40 +248,40 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 33.1,
-    "feels_c": 36,
+    "temp_c": 32.6,
+    "feels_c": 35.0,
     "humidity": 48,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.4
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 11.6
   },
   "forecast_today": {
     "date": "2026-07-17",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 25.4,
-    "temp_max_c": 33.1,
-    "humidity": 55,
+    "temp_max_c": 32.6,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 7.5,
-    "samples": 4
+    "icon": "03d",
+    "wind_kmh": 8.9,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-18",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 19.2,
     "temp_max_c": 26.9,
     "humidity": 79,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 7.4
   },
   "forecast_day_after": {
     "date": "2026-07-19",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 16.6,
     "temp_max_c": 31.7,
     "humidity": 75,
@@ -291,11 +291,11 @@
     "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 4.5,
-    "band": "moderate",
+    "uv": 2.2,
+    "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-17T14:00",
-    "safe_minutes": 37,
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T16:41:17+02:00"
+    "fetched_at": "2026-07-17T18:12:51+02:00"
   }
 }
