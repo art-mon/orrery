@@ -11,6 +11,76 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1f6",
+        "title": "M5.0 Earthquake - 59 km SSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T17:23:30.902000Z",
+        "coordinates": [
+          -92.713,
+          14.2633
+        ]
+      },
+      {
+        "id": "us7000t1f0",
+        "title": "M5.1 Earthquake - 72 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T17:15:19.287000Z",
+        "coordinates": [
+          -92.9705,
+          14.3448
+        ]
+      },
+      {
+        "id": "us7000t1ey",
+        "title": "M5.1 Earthquake - 78 km WSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T17:03:38.011000Z",
+        "coordinates": [
+          -93.0323,
+          14.3368
+        ]
+      },
+      {
+        "id": "us7000t1e8",
+        "title": "M5.3 Earthquake - 9 km ENE of Pangyan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-17T16:12:56.063000Z",
+        "coordinates": [
+          125.3523,
+          5.7419
+        ]
+      },
+      {
+        "id": "us7000t1ep",
+        "title": "M5.1 Earthquake - 33 km SSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T16:01:26.495000Z",
+        "coordinates": [
+          -92.5836,
+          14.4643
+        ]
+      },
+      {
+        "id": "us7000t1dv",
+        "title": "M5.1 Earthquake - 70 km WSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T15:57:15.051000Z",
+        "coordinates": [
+          -93.0044,
+          14.4311
+        ]
+      },
+      {
+        "id": "us7000t1du",
+        "title": "M5.0 Earthquake - 66 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T15:30:38.234000Z",
+        "coordinates": [
+          -92.9089,
+          14.3476
+        ]
+      },
+      {
         "id": "us7000t1cc",
         "title": "M6.0 Earthquake - 90 km SW of Puerto Madero, Mexico",
         "category": "Earthquake",
@@ -42,12 +112,12 @@
       },
       {
         "id": "us7000t1bu",
-        "title": "M7.3 Earthquake - 48 km SW of Aquiles Serd\u00e1n, Mexico",
+        "title": "M7.3 Earthquake - 58 km WSW of Puerto Madero, Mexico",
         "category": "Earthquake",
-        "date": "2026-07-17T14:48:39.768000Z",
+        "date": "2026-07-17T14:48:39.769000Z",
         "coordinates": [
-          -92.8855,
-          14.6913
+          -92.9517,
+          14.6043
         ]
       },
       {
@@ -88,76 +158,6 @@
         "coordinates": [
           95.9644,
           22.8587
-        ]
-      },
-      {
-        "id": "us7000t15z",
-        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-16T21:53:58.953000Z",
-        "coordinates": [
-          -15.0898,
-          -12.7868
-        ]
-      },
-      {
-        "id": "us7000t15t",
-        "title": "M5.2 Earthquake - 48 km E of Nishinoomote, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-16T21:49:42.977000Z",
-        "coordinates": [
-          131.5099,
-          30.7625
-        ]
-      },
-      {
-        "id": "us7000t15b",
-        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-16T21:16:33.262000Z",
-        "coordinates": [
-          -14.8449,
-          -12.6241
-        ]
-      },
-      {
-        "id": "us7000t14v",
-        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-16T20:21:52.035000Z",
-        "coordinates": [
-          -14.7175,
-          -12.6871
-        ]
-      },
-      {
-        "id": "us7000t14m",
-        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-16T19:55:32.193000Z",
-        "coordinates": [
-          -14.3805,
-          -12.6918
-        ]
-      },
-      {
-        "id": "us7000t14l",
-        "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-16T19:44:54.568000Z",
-        "coordinates": [
-          -14.3837,
-          -12.6935
-        ]
-      },
-      {
-        "id": "aka2026nyxoap",
-        "title": "M5.2 Earthquake - 122 km SE of McCarthy, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-16T11:37:21.034000Z",
-        "coordinates": [
-          -141.508,
-          60.569
         ]
       }
     ]
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 32.6,
-    "feels_c": 35.0,
-    "humidity": 48,
+    "city": "City of Zagreb",
+    "temp_c": 32.0,
+    "feels_c": 34.7,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 11.6
+    "wind_kmh": 10.2
   },
   "forecast_today": {
     "date": "2026-07-17",
-    "city": "Donji grad",
-    "temp_min_c": 25.4,
-    "temp_max_c": 32.6,
+    "city": "City of Zagreb",
+    "temp_min_c": 28.7,
+    "temp_max_c": 32.0,
     "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 8.9,
-    "samples": 3
+    "wind_kmh": 7.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-18",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 19.2,
     "temp_max_c": 26.9,
-    "humidity": 79,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-19",
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 31.7,
     "humidity": 75,
@@ -291,11 +291,11 @@
     "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-17T14:00",
-    "safe_minutes": 76,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-07-17T15:00",
-        "uv": 6.6
+        "uv": 6.4
       },
       {
         "time": "2026-07-17T16:00",
@@ -372,11 +372,11 @@
       },
       {
         "time": "2026-07-17T18:00",
-        "uv": 2.8
+        "uv": 2.9
       },
       {
         "time": "2026-07-17T19:00",
-        "uv": 1.4
+        "uv": 1.6
       },
       {
         "time": "2026-07-17T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T18:12:51+02:00"
+    "fetched_at": "2026-07-17T20:03:14+02:00"
   }
 }
