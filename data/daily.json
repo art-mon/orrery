@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1fk",
+        "title": "M5.2 Earthquake - 67 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-17T18:26:43.919000Z",
+        "coordinates": [
+          -92.9332,
+          14.3713
+        ]
+      },
+      {
         "id": "us7000t1f6",
         "title": "M5.0 Earthquake - 59 km SSW of Puerto Madero, Mexico",
         "category": "Earthquake",
@@ -42,12 +52,12 @@
       },
       {
         "id": "us7000t1e8",
-        "title": "M5.3 Earthquake - 9 km ENE of Pangyan, Philippines",
+        "title": "M5.2 Earthquake - 11 km SE of Kiupo, Philippines",
         "category": "Earthquake",
-        "date": "2026-07-17T16:12:56.063000Z",
+        "date": "2026-07-17T16:12:57.547000Z",
         "coordinates": [
-          125.3523,
-          5.7419
+          125.378,
+          5.7602
         ]
       },
       {
@@ -149,16 +159,6 @@
           54.1453,
           14.4873
         ]
-      },
-      {
-        "id": "us7000t173",
-        "title": "M5.2 Earthquake - 42 km NE of Shwebo, Burma (Myanmar)",
-        "category": "Earthquake",
-        "date": "2026-07-17T01:26:06.555000Z",
-        "coordinates": [
-          95.9644,
-          22.8587
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 32.0,
-    "feels_c": 34.7,
-    "humidity": 51,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 10.2
+    "city": "Donji grad",
+    "temp_c": 28.8,
+    "feels_c": 30.6,
+    "humidity": 59,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 3.1
   },
   "forecast_today": {
     "date": "2026-07-17",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 28.7,
-    "temp_max_c": 32.0,
-    "humidity": 57,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 7.6,
+    "temp_max_c": 28.8,
+    "humidity": 59,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 4.8,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 26.9,
-    "humidity": 77,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 27.2,
+    "humidity": 67,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.4
+    "wind_kmh": 8.1
   },
   "forecast_day_after": {
     "date": "2026-07-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 31.7,
-    "humidity": 75,
+    "city": "Zagreb",
+    "temp_min_c": 15.7,
+    "temp_max_c": 32.5,
+    "humidity": 72,
     "condition": "Rain",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.8
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.7
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-17T14:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-17T20:03:14+02:00"
+    "fetched_at": "2026-07-17T22:03:48+02:00"
   }
 }
