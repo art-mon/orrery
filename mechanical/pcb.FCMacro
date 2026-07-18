@@ -4,22 +4,20 @@
 #   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
 #
 # What this does:
-#   1. Imports mechanical/orrery_v1_pcb.step (regenerate with
-#      ./mechanical/regenerate_pcb_step.sh whenever the KiCad layout
-#      changes).
-#   2. Rotates it −90° about X so KiCad's Z (thickness) axis lines up
-#      with our Y (depth) axis.
-#   3. Centers the board about (X=0, Z=0) and places it at Y=Y_OFFSET
-#      behind the HUB75 LED face.
-#
-# The rotation and translation are applied to each imported object
-# individually. A DocumentObjectGroup wrapper does NOT propagate its
-# Placement to its children in FreeCAD — that's the trap the previous
-# version fell into and why the parts were floating in space.
+#   1. Reads mechanical/orrery_v1_pcb.step as one Compound shape.
+#      (Import.insert previously produced a scattered set of parent/
+#      child objects; transforming each individually broke the
+#      hierarchy and left some floating. A single Compound sidesteps
+#      that entirely.)
+#   2. Regenerate the STEP with ./mechanical/regenerate_pcb_step.sh
+#      whenever the KiCad layout changes.
+#   3. Rotates it −90° about X so KiCad's Z (thickness) → our Y (depth).
+#   4. Centers about (X=0, Z=0) and places at Y=Y_OFFSET behind the
+#      HUB75 LED face.
 
 import os
 import FreeCAD as App
-import Import
+import Part
 
 STEP_PATH = os.path.expanduser(
     "~/Documents/Repos/NASA/mechanical/orrery_v1_pcb.step"
@@ -38,46 +36,34 @@ if not os.path.exists(STEP_PATH):
 
 doc = App.newDocument("Orrery_PCB")
 
-before = set(doc.Objects)
-Import.insert(STEP_PATH, doc.Name)
-imported = [o for o in doc.Objects if o not in before]
+# Read the entire STEP as a single Shape (a Compound of all solids).
+shape = Part.Shape()
+shape.read(STEP_PATH)
 
-print(f"Import.insert added {len(imported)} objects:")
-for o in imported:
-    print(f"  - {o.Name}  ({o.TypeId})")
-
-# Combined bounding box across all imported shapes (in native KiCad coords)
-bb = None
-for o in imported:
-    shape = getattr(o, "Shape", None)
-    if shape is None or shape.isNull():
-        continue
-    b = shape.BoundBox
-    if bb is None:
-        bb = App.BoundBox(b)
-    else:
-        bb.add(b)
+bb = shape.BoundBox
+print(
+    f"STEP bounding box (KiCad coords, mm): "
+    f"X=[{bb.XMin:.1f}, {bb.XMax:.1f}], "
+    f"Y=[{bb.YMin:.1f}, {bb.YMax:.1f}], "
+    f"Z=[{bb.ZMin:.1f}, {bb.ZMax:.1f}]"
+)
 
 # −90° rotation about X → maps KiCad (x, y, z) to world (x, z, −y)
 rot = App.Rotation(App.Vector(1, 0, 0), -90)
 
-if bb is None:
-    print("Warning: no BoundBox available; placing at origin+Y_OFFSET without centering.")
-    translation = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
-else:
-    cx = (bb.XMin + bb.XMax) / 2.0
-    cy = (bb.YMin + bb.YMax) / 2.0
-    cz = (bb.ZMin + bb.ZMax) / 2.0
-    # KiCad center after rotation lands at (cx, cz, −cy)
-    rotated_center = App.Vector(cx, cz, -cy)
-    target = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
-    translation = target - rotated_center
+# Where the STEP's centre lands after the rotation
+cx = (bb.XMin + bb.XMax) / 2.0
+cy = (bb.YMin + bb.YMax) / 2.0
+cz = (bb.ZMin + bb.ZMax) / 2.0
+rotated_center = App.Vector(cx, cz, -cy)
 
-transform = App.Placement(translation, rot)
+target      = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
+translation = target - rotated_center
 
-# Apply transform to each imported object individually: new = T * old
-for o in imported:
-    o.Placement = transform.multiply(o.Placement)
+obj = doc.addObject("Part::Feature", "Orrery_PCB")
+obj.Shape = shape
+obj.Label = "Orrery_PCB_STEP"
+obj.Placement = App.Placement(translation, rot)
 
 doc.recompute()
 
@@ -87,6 +73,6 @@ except Exception:
     pass
 
 print(
-    f"Imported PCB from {STEP_PATH}, {len(imported)} shapes, "
-    f"placed at Y = {Y_OFFSET} mm, centered on (X, Z) = {CENTER_XZ}."
+    f"Imported PCB as single Compound from {STEP_PATH}, "
+    f"placed at Y = {Y_OFFSET} mm, centred on (X, Z) = {CENTER_XZ}."
 )
