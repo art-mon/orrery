@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
-  "url": "https://github.com/art-mon/orrery/releases/download/v1.0.0/firmware.bin",
-  "notes": "Initial OTA-capable firmware."
+  "version": "1.0.1",
+  "url": "https://github.com/art-mon/orrery/releases/download/v1.0.1/firmware.bin",
+  "notes": "First OTA-delivered release; verifies download + mark-valid on hardware."
 }
