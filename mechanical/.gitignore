@@ -1,0 +1,24 @@
+# Fusion 360
+*.f3d.lock
+*.f3z.lock
+
+# FreeCAD
+*.FCStd1
+*.FCBak
+
+# LibreCAD / QCAD
+*.dxf.bak
+*.bak
+
+# Inkscape
+*.svg~
+
+# LightBurn
+*.lbrn2.bak
+
+# SolidWorks / Onshape misc
+*.SLDPRT.bak
+
+# OS / editor
+.DS_Store
+*.swp
