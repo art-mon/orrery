@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1l4",
+        "title": "M5.2 Earthquake - 69 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-18T09:59:22.033000Z",
+        "coordinates": [
+          -92.9174,
+          14.3207
+        ]
+      },
+      {
         "id": "us7000t1jy",
         "title": "M5.3 Earthquake - 87 km WSW of Puerto Madero, Mexico",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -92.9089,
           14.3476
         ]
-      },
-      {
-        "id": "us7000t1cc",
-        "title": "M6.0 Earthquake - 90 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T15:20:06.868000Z",
-        "coordinates": [
-          -93.0929,
-          14.2369
-        ]
       }
     ]
   },
@@ -248,40 +248,40 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 25.7,
-    "feels_c": 26.3,
-    "humidity": 74,
-    "condition": "Rain",
-    "description": "heavy intensity rain",
-    "icon": "10d",
-    "wind_kmh": 6.2
+    "temp_c": 26.1,
+    "feels_c": 26.1,
+    "humidity": 63,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.5
   },
   "forecast_today": {
     "date": "2026-07-18",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.6,
-    "temp_max_c": 27.1,
-    "humidity": 72,
+    "temp_max_c": 27.3,
+    "humidity": 68,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 8.3,
+    "icon": "04d",
+    "wind_kmh": 8.4,
     "samples": 5
   },
   "forecast": {
     "date": "2026-07-19",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 28.5,
     "humidity": 73,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-07-20",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 15.7,
     "temp_max_c": 28.7,
     "humidity": 59,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 4.5,
-    "band": "moderate",
+    "uv": 2.0,
+    "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-07-18T15:00",
-    "safe_minutes": 37,
+    "safe_minutes": 81,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T11:21:43+02:00"
+    "fetched_at": "2026-07-18T13:00:18+02:00"
   }
 }
