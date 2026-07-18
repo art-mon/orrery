@@ -10,9 +10,16 @@
 #   +Y      = INTO the enclosure (away from the viewer)
 #   depth   = extends in +Y (LED face at Y=0, back face at Y=+D)
 #
-# FreeCAD's Front view (numpad 1) looks at the −Y face of an object, so it
-# sees the LED face here (which is at Y=0, i.e. the −Y-most face of the
-# body). Rear view (4) shows the back with pockets and mount threads.
+# Creates two objects:
+#   HUB75_Panel_Body — the black substrate: LED face at Y=0, 4 back
+#                      pockets, 6 blind M3 mount threads on the rim.
+#   HUB75_LEDs       — a compound of 2048 tiny pucks representing the
+#                      individual LEDs on a 64×32 P4 grid, protruding
+#                      from the LED face toward −Y.
+#
+# The LEDs are kept as a separate compound (not fused into the body)
+# so the boolean cost is O(1) instead of O(2048). Colour them
+# separately in the tree if you want a proper LED look.
 
 import FreeCAD as App
 import Part
@@ -27,20 +34,27 @@ INSET      = 7.0    # center of each thread inset from the nearest edge
 HOLE_D     = 3.0    # M3 nominal
 HOLE_DEPTH = 8.0    # blind depth from the back face (never reaches the LED face)
 
-# ── back pockets (visual match to the driver-IC recesses) ────────────────────
-POCKET_MARGIN_X = 15.0   # rim width on the left/right edges
-POCKET_MARGIN_Z = 12.0   # rim width on the top/bottom edges
-POCKET_DEPTH    = 8.0    # how deep each pocket recesses into the back
-N_POCKETS       = 4      # driver-IC cavities are grouped in four
-GUTTER          = 5.0    # rib width between adjacent pockets (mount holes land here)
+# ── back pockets (driver-IC recesses) ────────────────────────────────────────
+POCKET_MARGIN_X = 15.0
+POCKET_MARGIN_Z = 12.0
+POCKET_DEPTH    = 8.0
+N_POCKETS       = 4
+GUTTER          = 5.0
+
+# ── LED matrix ───────────────────────────────────────────────────────────────
+PITCH      = 4.0    # P4 = 4 mm centre-to-centre
+LED_SIZE   = 2.0    # LED package side (SMD2121-ish)
+LED_H      = 0.5    # how far each LED protrudes from the LED face
+N_LEDS_X   = 64
+N_LEDS_Z   = 32
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("HUB75_Panel")
 
-# Solid panel body: LED face at Y=0, back face at Y=+D
+# Substrate body: LED face at Y=0, back face at Y=+D
 body = Part.makeBox(W, D, H, App.Vector(-W / 2, 0, -H / 2))
 
-# Back-face pockets: cut from the back (Y=+D) going in −Y direction
+# Back pockets
 usable_x = W - 2 * POCKET_MARGIN_X
 pocket_w = (usable_x - (N_POCKETS - 1) * GUTTER) / N_POCKETS
 pocket_h = H - 2 * POCKET_MARGIN_Z
@@ -53,28 +67,52 @@ for i in range(N_POCKETS):
     )
     body = body.cut(pocket)
 
-# 6 blind M3 mount threads: corners + top-middle + bottom-middle,
-# cut from the back face going into the material
+# 6 blind M3 mount threads on the back rim
 holes = [
-    (-W / 2 + INSET, -H / 2 + INSET),   # bottom-left
-    ( 0.0,           -H / 2 + INSET),   # bottom-middle
-    ( W / 2 - INSET, -H / 2 + INSET),   # bottom-right
-    (-W / 2 + INSET,  H / 2 - INSET),   # top-left
-    ( 0.0,            H / 2 - INSET),   # top-middle
-    ( W / 2 - INSET,  H / 2 - INSET),   # top-right
+    (-W / 2 + INSET, -H / 2 + INSET),   # BL
+    ( 0.0,           -H / 2 + INSET),   # BC
+    ( W / 2 - INSET, -H / 2 + INSET),   # BR
+    (-W / 2 + INSET,  H / 2 - INSET),   # TL
+    ( 0.0,            H / 2 - INSET),   # TC
+    ( W / 2 - INSET,  H / 2 - INSET),   # TR
 ]
 
 for x, z in holes:
     cyl = Part.makeCylinder(
         HOLE_D / 2, HOLE_DEPTH,
-        App.Vector(x, D - HOLE_DEPTH, z),   # start HOLE_DEPTH before the back face
-        App.Vector(0, 1, 0),                # axis along +Y, ending at Y=+D
+        App.Vector(x, D - HOLE_DEPTH, z),
+        App.Vector(0, 1, 0),
     )
     body = body.cut(cyl)
 
-obj = doc.addObject("Part::Feature", "HUB75_Panel")
-obj.Shape = body
-obj.Label = f"HUB75_Panel_{int(W)}x{int(H)}x{int(D)}"
+body_obj = doc.addObject("Part::Feature", "HUB75_Panel_Body")
+body_obj.Shape = body
+body_obj.Label = f"HUB75_Panel_Body_{int(W)}x{int(H)}x{int(D)}"
+
+# LED matrix — 64 × 32 = 2048 small pucks on a 4 mm pitch grid,
+# protruding from the LED face toward −Y
+first_x = -W / 2 + PITCH / 2
+first_z = -H / 2 + PITCH / 2
+
+led_shapes = []
+for i in range(N_LEDS_X):
+    x_center = first_x + i * PITCH
+    for j in range(N_LEDS_Z):
+        z_center = first_z + j * PITCH
+        led = Part.makeBox(
+            LED_SIZE, LED_H, LED_SIZE,
+            App.Vector(
+                x_center - LED_SIZE / 2,
+                -LED_H,
+                z_center - LED_SIZE / 2,
+            ),
+        )
+        led_shapes.append(led)
+
+leds_obj = doc.addObject("Part::Feature", "HUB75_LEDs")
+leds_obj.Shape = Part.makeCompound(led_shapes)
+leds_obj.Label = f"HUB75_LEDs_{N_LEDS_X}x{N_LEDS_Z}"
+
 doc.recompute()
 
 # Fit the view if running in the GUI
@@ -86,5 +124,6 @@ except Exception:
 print(
     f"Built HUB75 panel: {W} × {H} × {D} mm, "
     f"{len(holes)} M{int(HOLE_D)} blind threads ({HOLE_DEPTH} mm deep), "
-    f"{N_POCKETS} back-face driver-IC pockets ({POCKET_DEPTH} mm deep)."
+    f"{N_POCKETS} back pockets ({POCKET_DEPTH} mm deep), "
+    f"{N_LEDS_X * N_LEDS_Z} LEDs on P{int(PITCH)} pitch."
 )
