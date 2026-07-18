@@ -10,16 +10,19 @@
 #   +Y      = INTO the enclosure (away from the viewer)
 #   depth   = extends in +Y (LED face at Y=0, back face at Y=+D)
 #
-# Creates two objects:
-#   HUB75_Panel_Body — the black substrate: LED face at Y=0, 4 back
-#                      pockets, 6 blind M3 mount threads on the rim.
-#   HUB75_LEDs       — a compound of 2048 tiny pucks representing the
-#                      individual LEDs on a 64×32 P4 grid, protruding
-#                      from the LED face toward −Y.
+# Creates four objects:
+#   HUB75_Panel_Body      — black substrate: LED face at Y=0, 4 back
+#                           pockets, 6 blind M3 mount threads on the rim.
+#   HUB75_LEDs            — compound of 2048 tiny pucks on a 64×32 P4
+#                           grid, protruding from the LED face toward −Y.
+#   HUB75_Conn_DataIn     — 2×8 IDC shrouded box header on the back
+#                           (left pocket area).
+#   HUB75_Conn_Power      — 3-pin power terminal (VCC/GND) on the back
+#                           (upper-middle area).
 #
-# The LEDs are kept as a separate compound (not fused into the body)
-# so the boolean cost is O(1) instead of O(2048). Colour them
-# separately in the tree if you want a proper LED look.
+# The LEDs and connectors are separate Part::Feature objects so
+# FreeCAD doesn't do expensive boolean unions and so each can be
+# coloured / toggled independently in the tree.
 
 import FreeCAD as App
 import Part
@@ -113,6 +116,47 @@ leds_obj = doc.addObject("Part::Feature", "HUB75_LEDs")
 leds_obj.Shape = Part.makeCompound(led_shapes)
 leds_obj.Label = f"HUB75_LEDs_{N_LEDS_X}x{N_LEDS_Z}"
 
+# ── back-mounted connectors ──────────────────────────────────────────────────
+# Sit on the pocket floor (Y = D − POCKET_DEPTH = 6) and stick out toward +Y.
+# Dimensions are approximate rectangular envelopes — good enough for
+# assembly clearance checks; refine with a detailed model later if needed.
+
+pocket_floor_y = D - POCKET_DEPTH
+
+# Left: 2×8 IDC shrouded box header (data input)
+# Oriented vertically: 8-pin axis along Z, 2-pin axis along X.
+IDC_X, IDC_Z, IDC_H = 8.0, 23.0, 9.0     # width × height × protrusion
+IDC_CENTER = (-86.0, 0.0)                # (X, Z) — inside left pocket
+
+idc_in = Part.makeBox(
+    IDC_X, IDC_H, IDC_Z,
+    App.Vector(
+        IDC_CENTER[0] - IDC_X / 2,
+        pocket_floor_y,
+        IDC_CENTER[1] - IDC_Z / 2,
+    ),
+)
+idc_obj = doc.addObject("Part::Feature", "HUB75_Conn_DataIn")
+idc_obj.Shape = idc_in
+idc_obj.Label = "HUB75_Conn_DataIn_2x8_IDC"
+
+# Center: 3-pin power terminal block (VCC / GND / +V return)
+# Oriented horizontally: pin axis along X.
+PWR_X, PWR_Z, PWR_H = 12.0, 7.0, 10.0
+PWR_CENTER = (0.0, 20.0)                 # upper-middle, between center pockets
+
+pwr = Part.makeBox(
+    PWR_X, PWR_H, PWR_Z,
+    App.Vector(
+        PWR_CENTER[0] - PWR_X / 2,
+        pocket_floor_y,
+        PWR_CENTER[1] - PWR_Z / 2,
+    ),
+)
+pwr_obj = doc.addObject("Part::Feature", "HUB75_Conn_Power")
+pwr_obj.Shape = pwr
+pwr_obj.Label = "HUB75_Conn_Power_VCC_GND"
+
 doc.recompute()
 
 # Fit the view if running in the GUI
@@ -125,5 +169,6 @@ print(
     f"Built HUB75 panel: {W} × {H} × {D} mm, "
     f"{len(holes)} M{int(HOLE_D)} blind threads ({HOLE_DEPTH} mm deep), "
     f"{N_POCKETS} back pockets ({POCKET_DEPTH} mm deep), "
-    f"{N_LEDS_X * N_LEDS_Z} LEDs on P{int(PITCH)} pitch."
+    f"{N_LEDS_X * N_LEDS_Z} LEDs on P{int(PITCH)} pitch, "
+    "2 back connectors (data-in IDC, power terminal)."
 )
