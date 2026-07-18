@@ -7,30 +7,27 @@
 #   1. Imports mechanical/orrery_v1_pcb.step (regenerate with
 #      ./mechanical/regenerate_pcb_step.sh whenever the KiCad layout
 #      changes).
-#   2. Rotates it into the project's coordinate convention. KiCad's
-#      STEP export uses X-Y as the board plane with Z as thickness,
-#      but our assembly uses X-Z as the panel plane with Y as depth.
-#      A -90° rotation about the X axis does the swap.
+#   2. Rotates it −90° about X so KiCad's Z (thickness) axis lines up
+#      with our Y (depth) axis.
 #   3. Centers the board about (X=0, Z=0) and places it at Y=Y_OFFSET
 #      behind the HUB75 LED face.
 #
-# Adjust Y_OFFSET and the X/Z centering below to slide the PCB around
-# to its actual mounting position in the enclosure.
+# The rotation and translation are applied to each imported object
+# individually. A DocumentObjectGroup wrapper does NOT propagate its
+# Placement to its children in FreeCAD — that's the trap the previous
+# version fell into and why the parts were floating in space.
 
 import os
 import FreeCAD as App
 import Import
 
-# ── path to the STEP file (repo-relative) ────────────────────────────────────
-# App.getUserMacroDir(True) points at ~/Library/Application Support/FreeCAD/Macro
-# so we can't rely on __file__. Hard-coding the repo location is simplest.
 STEP_PATH = os.path.expanduser(
     "~/Documents/Repos/NASA/mechanical/orrery_v1_pcb.step"
 )
 
 # ── target placement in world coordinates ────────────────────────────────────
-Y_OFFSET     = 30.0    # mm behind the HUB75 LED face — nudge to taste
-CENTER_XZ    = (0.0, 0.0)   # (X, Z) center of the PCB in world coords
+Y_OFFSET  = 30.0        # mm behind the HUB75 LED face
+CENTER_XZ = (0.0, 0.0)  # (X, Z) center of the PCB in world coords
 
 # ── build ────────────────────────────────────────────────────────────────────
 if not os.path.exists(STEP_PATH):
@@ -41,45 +38,46 @@ if not os.path.exists(STEP_PATH):
 
 doc = App.newDocument("Orrery_PCB")
 
-# Snapshot the current object set so we can find what was imported
 before = set(doc.Objects)
 Import.insert(STEP_PATH, doc.Name)
 imported = [o for o in doc.Objects if o not in before]
 
-if not imported:
-    raise RuntimeError("STEP import produced no new objects.")
-
-# Group everything the import created under a single placement handle.
-# We rotate/translate the group; the individual component shapes tag along.
-grp = doc.addObject("App::DocumentObjectGroup", "Orrery_PCB_Group")
+print(f"Import.insert added {len(imported)} objects:")
 for o in imported:
-    grp.addObject(o)
+    print(f"  - {o.Name}  ({o.TypeId})")
 
-# KiCad STEP → project convention: rotate -90° about X so Z (thickness) → Y
-rot = App.Rotation(App.Vector(1, 0, 0), -90)
-
-# Compute the imported bounding box in native (KiCad) coords
+# Combined bounding box across all imported shapes (in native KiCad coords)
 bb = None
 for o in imported:
-    if hasattr(o, "Shape") and o.Shape and not o.Shape.isNull():
-        b = o.Shape.BoundBox
-        bb = b if bb is None else bb.united(b) if hasattr(bb, "united") else bb
+    shape = getattr(o, "Shape", None)
+    if shape is None or shape.isNull():
+        continue
+    b = shape.BoundBox
+    if bb is None:
+        bb = App.BoundBox(b)
+    else:
+        bb.add(b)
+
+# −90° rotation about X → maps KiCad (x, y, z) to world (x, z, −y)
+rot = App.Rotation(App.Vector(1, 0, 0), -90)
+
 if bb is None:
-    print("Warning: no BoundBox available; skipping auto-centering.")
-    grp.Placement = App.Placement(App.Vector(0, Y_OFFSET, 0), rot)
+    print("Warning: no BoundBox available; placing at origin+Y_OFFSET without centering.")
+    translation = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
 else:
-    # Center of PCB in KiCad space
-    cx = (bb.XMin + bb.XMax) / 2
-    cy = (bb.YMin + bb.YMax) / 2
-    cz = (bb.ZMin + bb.ZMax) / 2
-    # After the rotation, KiCad (X, Y, Z) → world (X, Z, -Y).
-    # To place the (rotated) center at (CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1]),
-    # solve for the translation applied to the group placement.
-    target = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
-    # Current rotated center is (cx, cz, -cy) added to (0,0,0)
+    cx = (bb.XMin + bb.XMax) / 2.0
+    cy = (bb.YMin + bb.YMax) / 2.0
+    cz = (bb.ZMin + bb.ZMax) / 2.0
+    # KiCad center after rotation lands at (cx, cz, −cy)
     rotated_center = App.Vector(cx, cz, -cy)
+    target = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
     translation = target - rotated_center
-    grp.Placement = App.Placement(translation, rot)
+
+transform = App.Placement(translation, rot)
+
+# Apply transform to each imported object individually: new = T * old
+for o in imported:
+    o.Placement = transform.multiply(o.Placement)
 
 doc.recompute()
 
@@ -88,5 +86,7 @@ try:
 except Exception:
     pass
 
-print(f"Imported PCB from {STEP_PATH}")
-print(f"Rotated -90° about X, centered at (X, Z) = {CENTER_XZ}, Y = {Y_OFFSET} mm")
+print(
+    f"Imported PCB from {STEP_PATH}, {len(imported)} shapes, "
+    f"placed at Y = {Y_OFFSET} mm, centered on (X, Z) = {CENTER_XZ}."
+)
