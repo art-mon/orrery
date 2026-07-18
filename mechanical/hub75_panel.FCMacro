@@ -10,39 +10,67 @@
 #   +Y      = out of the display toward the viewer
 #   depth   = extends in −Y (into the enclosure)
 #
-# FreeCAD's Front view (numpad 1) camera sits on +Y looking in −Y, so it
-# sees the +Y face = the LED matrix. Everything else in the assembly
-# (PCB, PVC back panel, side rails, front bezel) locates itself relative
-# to this origin so the whole enclosure is symmetric around it.
+# Front (LED) face is a clean rectangle. Back face has 4 pocketed
+# recesses (matching the driver-IC cavity pattern of the real panel)
+# and 6 blind M3 mounting threads on the rim (4 corners + top-middle +
+# bottom-middle). The mount holes only reach into the material from
+# the back — they never pierce the LED face.
 
 import FreeCAD as App
 import Part
 
-# ── parameters (mm) ──────────────────────────────────────────────────────────
+# ── panel dimensions (mm) ────────────────────────────────────────────────────
 W        = 256.0    # width  (X) — 64 LEDs × 4 mm pitch
 H        = 128.0    # height (Z) — 32 LEDs × 4 mm pitch
-D        = 14.0     # depth  (Y) — PCB + LED + back rails
-INSET    = 7.0      # mount-hole center inset from each edge (X and Z)
-HOLE_D   = 3.0      # M3 nominal (use 3.2 for clearance, 4.0 for M4)
+D        = 14.0     # depth  (Y)
+
+# ── mounting threads ─────────────────────────────────────────────────────────
+INSET      = 7.0    # center of each thread inset from the nearest edge
+HOLE_D     = 3.0    # M3 nominal
+HOLE_DEPTH = 8.0    # blind depth from the back face (never through)
+
+# ── back pockets (visual match to the driver-IC recesses) ────────────────────
+POCKET_MARGIN_X = 15.0   # rim width on the left/right edges
+POCKET_MARGIN_Z = 12.0   # rim width on the top/bottom edges
+POCKET_DEPTH    = 8.0    # how deep each pocket recesses into the back
+N_POCKETS       = 4      # driver-IC cavities are grouped in four
+GUTTER          = 5.0    # rib width between adjacent pockets (mount holes land here)
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("HUB75_Panel")
 
-# Box with LED face on the Y=0 plane, depth going into −Y
+# Solid panel body, LED face on Y=0, depth into −Y
 body = Part.makeBox(W, D, H, App.Vector(-W / 2, -D, -H / 2))
 
-# 4 mount holes at the corners of the XZ profile, drilled along +Y
+# Back-face pockets: 4 rectangular recesses arranged left-to-right,
+# with a small rib (gutter) between each pair
+usable_x = W - 2 * POCKET_MARGIN_X
+pocket_w = (usable_x - (N_POCKETS - 1) * GUTTER) / N_POCKETS
+pocket_h = H - 2 * POCKET_MARGIN_Z
+
+for i in range(N_POCKETS):
+    x_min = -W / 2 + POCKET_MARGIN_X + i * (pocket_w + GUTTER)
+    pocket = Part.makeBox(
+        pocket_w, POCKET_DEPTH, pocket_h,
+        App.Vector(x_min, -D, -pocket_h / 2),
+    )
+    body = body.cut(pocket)
+
+# 6 blind M3 mounting threads: corners + top-middle + bottom-middle
 holes = [
     (-W / 2 + INSET, -H / 2 + INSET),   # bottom-left
+    ( 0.0,           -H / 2 + INSET),   # bottom-middle
     ( W / 2 - INSET, -H / 2 + INSET),   # bottom-right
-    ( W / 2 - INSET,  H / 2 - INSET),   # top-right
     (-W / 2 + INSET,  H / 2 - INSET),   # top-left
+    ( 0.0,            H / 2 - INSET),   # top-middle
+    ( W / 2 - INSET,  H / 2 - INSET),   # top-right
 ]
+
 for x, z in holes:
     cyl = Part.makeCylinder(
-        HOLE_D / 2, D,
+        HOLE_D / 2, HOLE_DEPTH,
         App.Vector(x, -D, z),
-        App.Vector(0, 1, 0),   # axis along +Y
+        App.Vector(0, 1, 0),   # axis along +Y, from back face into material
     )
     body = body.cut(cyl)
 
@@ -57,5 +85,8 @@ try:
 except Exception:
     pass
 
-print(f"Built HUB75 panel: {W} × {H} × {D} mm, {len(holes)} M{int(HOLE_D)} mount holes")
-print(f"Origin at center of LED face; depth extends into −Y.")
+print(
+    f"Built HUB75 panel: {W} × {H} × {D} mm, "
+    f"{len(holes)} M{int(HOLE_D)} blind threads ({HOLE_DEPTH} mm deep), "
+    f"{N_POCKETS} back-face driver-IC pockets ({POCKET_DEPTH} mm deep)."
+)
