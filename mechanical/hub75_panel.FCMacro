@@ -2,35 +2,49 @@
 #
 # Usage:
 #   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
-# or:
-#   FreeCADCmd hub75_panel.FCMacro    (once you save the doc afterwards)
 #
-# Produces a "HUB75_Panel" document with a parametric-ish box + 4x M3 mount
-# holes. Reference geometry only — this represents the purchased panel, not
-# something we're going to fabricate. Use it to align the enclosure panels.
+# Coordinate convention (project-wide anchor):
+#   ORIGIN  = center of the LED (front) face of the panel
+#   +X      = right, as the viewer faces the display
+#   +Z      = up
+#   +Y      = out of the display toward the viewer
+#   depth   = extends in −Y (into the enclosure)
+#
+# FreeCAD's Front view (numpad 1) camera sits on +Y looking in −Y, so it
+# sees the +Y face = the LED matrix. Everything else in the assembly
+# (PCB, PVC back panel, side rails, front bezel) locates itself relative
+# to this origin so the whole enclosure is symmetric around it.
 
 import FreeCAD as App
 import Part
 
 # ── parameters (mm) ──────────────────────────────────────────────────────────
-W        = 256.0    # width  (X)   — 64 LEDs * 4 mm pitch
-H        = 128.0    # height (Y)   — 32 LEDs * 4 mm pitch
-D        = 14.0     # depth  (Z)   — PCB + LED height + back rails
-INSET    = 7.0      # mount-hole center inset from each edge
-HOLE_D   = 3.0      # M3 thread nominal (use 3.2 for clearance, 4.0 for M4)
+W        = 256.0    # width  (X) — 64 LEDs × 4 mm pitch
+H        = 128.0    # height (Z) — 32 LEDs × 4 mm pitch
+D        = 14.0     # depth  (Y) — PCB + LED + back rails
+INSET    = 7.0      # mount-hole center inset from each edge (X and Z)
+HOLE_D   = 3.0      # M3 nominal (use 3.2 for clearance, 4.0 for M4)
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("HUB75_Panel")
 
-body = Part.makeBox(W, H, D)
+# Box with LED face on the Y=0 plane, depth going into −Y
+body = Part.makeBox(W, D, H, App.Vector(-W / 2, -D, -H / 2))
+
+# 4 mount holes at the corners of the XZ profile, drilled along +Y
 holes = [
-    (INSET,     INSET),
-    (W - INSET, INSET),
-    (W - INSET, H - INSET),
-    (INSET,     H - INSET),
+    (-W / 2 + INSET, -H / 2 + INSET),   # bottom-left
+    ( W / 2 - INSET, -H / 2 + INSET),   # bottom-right
+    ( W / 2 - INSET,  H / 2 - INSET),   # top-right
+    (-W / 2 + INSET,  H / 2 - INSET),   # top-left
 ]
-for x, y in holes:
-    body = body.cut(Part.makeCylinder(HOLE_D / 2, D, App.Vector(x, y, 0)))
+for x, z in holes:
+    cyl = Part.makeCylinder(
+        HOLE_D / 2, D,
+        App.Vector(x, -D, z),
+        App.Vector(0, 1, 0),   # axis along +Y
+    )
+    body = body.cut(cyl)
 
 obj = doc.addObject("Part::Feature", "HUB75_Panel")
 obj.Shape = body
@@ -43,4 +57,5 @@ try:
 except Exception:
     pass
 
-print(f"Built HUB75 panel: {W} x {H} x {D} mm, {len(holes)} M{int(HOLE_D)} mount holes")
+print(f"Built HUB75 panel: {W} × {H} × {D} mm, {len(holes)} M{int(HOLE_D)} mount holes")
+print(f"Origin at center of LED face; depth extends into −Y.")
