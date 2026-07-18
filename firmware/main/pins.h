@@ -18,12 +18,6 @@
 #define PIN_LAT  47
 #define PIN_OE   48
 
-// Buttons — TODO: 33/34/35 fall inside the octal-PSRAM range (26-37) and
-// cannot be used on this S3 module. Remap or drop in favour of the encoder.
-#define PIN_BTN_NEXT   33
-#define PIN_BTN_BRITE  34
-#define PIN_BTN_WIFI   35
-
 // Rotary encoder — KY-040 (module has built-in 10 kΩ pullups on CLK/DT)
 #define PIN_ENC_CLK    40
 #define PIN_ENC_DT     39
