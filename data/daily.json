@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1mu",
+        "title": "M5.1 Earthquake - 149 km S of George Town, Cayman Islands",
+        "category": "Earthquake",
+        "date": "2026-07-18T16:08:44.116000Z",
+        "coordinates": [
+          -81.5431,
+          17.9439
+        ]
+      },
+      {
         "id": "us7000t1l4",
         "title": "M5.2 Earthquake - 69 km SW of Puerto Madero, Mexico",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -93.0044,
           14.4311
         ]
-      },
-      {
-        "id": "us7000t1du",
-        "title": "M5.0 Earthquake - 66 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T15:30:38.234000Z",
-        "coordinates": [
-          -92.9089,
-          14.3476
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 27.0,
-    "feels_c": 28.3,
-    "humidity": 63,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 9.8
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 70,
+    "condition": "Rain",
+    "description": "heavy intensity rain",
+    "icon": "10d",
+    "wind_kmh": 6.0
   },
   "forecast_today": {
     "date": "2026-07-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.1,
-    "temp_max_c": 27.0,
-    "humidity": 72,
+    "city": "Zagreb",
+    "temp_min_c": 24.4,
+    "temp_max_c": 26.5,
+    "humidity": 73,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 8.7,
+    "icon": "10d",
+    "wind_kmh": 7.4,
     "samples": 3
   },
   "forecast": {
     "date": "2026-07-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.8,
     "temp_max_c": 30.6,
-    "humidity": 72,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-20",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.1,
     "temp_max_c": 28.6,
     "humidity": 54,
@@ -291,11 +291,11 @@
     "wind_kmh": 6.6
   },
   "uv": {
-    "uv": 2.7,
+    "uv": 1.4,
     "band": "low",
     "daily_max": 6.0,
     "peak_time": "2026-07-18T12:00",
-    "safe_minutes": 62,
+    "safe_minutes": 119,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T17:53:50+02:00"
+    "fetched_at": "2026-07-18T18:54:54+02:00"
   }
 }
