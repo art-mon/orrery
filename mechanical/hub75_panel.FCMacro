@@ -1,0 +1,46 @@
+# HUB75 P4 64x32 LED matrix panel — reference 3D model
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+# or:
+#   FreeCADCmd hub75_panel.FCMacro    (once you save the doc afterwards)
+#
+# Produces a "HUB75_Panel" document with a parametric-ish box + 4x M3 mount
+# holes. Reference geometry only — this represents the purchased panel, not
+# something we're going to fabricate. Use it to align the enclosure panels.
+
+import FreeCAD as App
+import Part
+
+# ── parameters (mm) ──────────────────────────────────────────────────────────
+W        = 256.0    # width  (X)   — 64 LEDs * 4 mm pitch
+H        = 128.0    # height (Y)   — 32 LEDs * 4 mm pitch
+D        = 14.0     # depth  (Z)   — PCB + LED height + back rails
+INSET    = 7.0      # mount-hole center inset from each edge
+HOLE_D   = 3.0      # M3 thread nominal (use 3.2 for clearance, 4.0 for M4)
+
+# ── build ────────────────────────────────────────────────────────────────────
+doc = App.newDocument("HUB75_Panel")
+
+body = Part.makeBox(W, H, D)
+holes = [
+    (INSET,     INSET),
+    (W - INSET, INSET),
+    (W - INSET, H - INSET),
+    (INSET,     H - INSET),
+]
+for x, y in holes:
+    body = body.cut(Part.makeCylinder(HOLE_D / 2, D, App.Vector(x, y, 0)))
+
+obj = doc.addObject("Part::Feature", "HUB75_Panel")
+obj.Shape = body
+obj.Label = f"HUB75_Panel_{int(W)}x{int(H)}x{int(D)}"
+doc.recompute()
+
+# Fit the view if running in the GUI
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(f"Built HUB75 panel: {W} x {H} x {D} mm, {len(holes)} M{int(HOLE_D)} mount holes")
