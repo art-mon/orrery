@@ -1,0 +1,20 @@
+# VS Code Local History extension
+.history/
+
+*-backups/
+*.kicad_prl
+*.kicad_pro.lck
+~*.lck
+fp-info-cache
+*.bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# KiCad autosave
+_autosave-*
+
+# Build/fab outputs (regenerate on demand)
+gerbers/
+production/
+*.gbr
+*.drl
