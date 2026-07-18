@@ -1,15 +1,35 @@
 {
   "generated": "2026-07-18",
   "apod": {
-    "title": "The Dust Trail of Comet Tempel 2",
-    "date": "2026-07-17",
-    "explanation": "Comet 10P/Tempel 2 orbits the Sun once every 5.4 years. Currently visible in binoculars or small telescopes toward the constellation Capricornus, the periodic comet is captured in this sharp telescopic image from July 11 sporting a bright nuclear region and pretty greenish coma. Remarkably, a thin dust trail, not a typical dust tail, is also seen extending both east and west of the Tempel 2 nucleus. Unlike a comet dust tail, which tends to temporarily fan out in a direction away from the Sun, this dust trail is due to the residual dust shed during many past orbits along this ancient periodic comet's orbital plane. In fact, Tempel 2's dust trail may get a little narrower and brighter from our perspective as Earth crosses through the comet's orbital plane on July 20. Comet 10P/Tempel 2 will reach a perihelion on August 2, and make its closest approach to Earth on August 3.",
+    "title": "Shadow and Rainbow",
+    "date": "2026-07-18",
+    "explanation": "At sunset, an alignment of rainbow and mountain shadow was captured in this remarkable snapshot. The stunning view was recorded from a fire lookout on Smith Peak in the Plumas National Forest near Portola, California on July 13.  Still, near sunset it's no accident that the majestic mountain shadow seems to point to the center of the graceful rainbow arc. Due to perspective and the long line of sight the mountain shadow naturally forms a tapering triangular shape, its apex positioned at the point opposite the Sun on the horizon. Following thunderstorms across the region, the rainbow arcs across the early evening sky, with its colorful and characteristic 42 degree arc formed as sunlight is refracted and reflected by the atmospheric water droplets. The geometric center of a rainbow arc lies at the antisolar point. And in this scene from the golden hour on planet Earth, that's also oposite the setting Sun along the distant horizon.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/10P_Tempel2_20260711_DEBartlett1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/10P_Tempel2_20260711_DEBartlett2048.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t1j0",
+        "title": "M5.0 Earthquake - 17 km SE of Malatya, Turkey",
+        "category": "Earthquake",
+        "date": "2026-07-18T03:21:00.587000Z",
+        "coordinates": [
+          38.4814,
+          38.2608
+        ]
+      },
+      {
+        "id": "us7000t1it",
+        "title": "M5.3 Earthquake - 119 km SW of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-18T02:23:40.127000Z",
+        "coordinates": [
+          124.8574,
+          4.5057
+        ]
+      },
       {
         "id": "us7000t1im",
         "title": "M5.1 Earthquake - 99 km WSW of Puerto Madero, Mexico",
@@ -139,26 +159,6 @@
           -93.0992,
           14.189
         ]
-      },
-      {
-        "id": "us7000t1bu",
-        "title": "M7.3 Earthquake - 58 km WSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T14:48:39.769000Z",
-        "coordinates": [
-          -92.9517,
-          14.6043
-        ]
-      },
-      {
-        "id": "us7000t1b3",
-        "title": "M5.1 Earthquake - 16 km NW of Kirakira, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-07-17T13:27:41.447000Z",
-        "coordinates": [
-          161.8112,
-          -10.3499
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.9,
-    "humidity": 82,
+    "city": "Donji grad",
+    "temp_c": 21.4,
+    "feels_c": 21.9,
+    "humidity": 88,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 3.6
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-07-18",
     "city": "Zagreb",
     "temp_min_c": 18.9,
     "temp_max_c": 26.0,
-    "humidity": 78,
+    "humidity": 79,
     "condition": "Rain",
     "description": "rain",
-    "icon": "02n",
-    "wind_kmh": 7.0,
-    "samples": 8
+    "icon": "03d",
+    "wind_kmh": 7.5,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-19",
@@ -291,11 +291,11 @@
     "wind_kmh": 6.3
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.9,
     "band": "low",
     "daily_max": 4.7,
     "peak_time": "2026-07-18T15:00",
-    "safe_minutes": null,
+    "safe_minutes": 185,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T04:09:51+02:00"
+    "fetched_at": "2026-07-18T07:22:28+02:00"
   }
 }
