@@ -1,0 +1,97 @@
+# Back acrylic panel — sits against the HUB75 back rim
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+# Open this document alongside HUB75_Panel to see them assembled (both
+# share the world origin = center of the HUB75 LED face).
+#
+# Coordinate convention (shared with hub75_panel.FCMacro):
+#   ORIGIN  = center of the HUB75 LED (front) face
+#   +X      = right
+#   +Z      = up
+#   +Y      = into the enclosure
+#
+# The back panel:
+#   - Same X × Z envelope as the HUB75 (256 × 128 mm)
+#   - 3 mm thick, sits from Y = HUB75_D to Y = HUB75_D + t
+#   - 6 M3 clearance through-holes lined up with the HUB75 mount threads
+#   - 2 rectangular cutouts so the HUB75 back connectors (data-in IDC +
+#     power terminal) poke through and remain accessible from outside
+
+import FreeCAD as App
+import Part
+
+# ── shared with HUB75 (keep in sync with hub75_panel.FCMacro) ────────────────
+W        = 256.0    # X
+H        = 128.0    # Z
+HUB75_D  = 14.0     # depth of the HUB75 panel
+INSET    = 7.0
+
+# ── back panel ──────────────────────────────────────────────────────────────
+t                = 3.0      # panel thickness (Y)
+MOUNT_HOLE_D     = 3.2      # M3 clearance through-hole
+CUTOUT_CLEARANCE = 1.0      # gap on each side of each connector
+
+# Connector envelopes (must match hub75_panel.FCMacro)
+IDC_ENV_X, IDC_ENV_Z = 8.0, 23.0
+IDC_CENTER           = (-86.0, 0.0)
+
+PWR_ENV_X, PWR_ENV_Z = 12.0, 7.0
+PWR_CENTER           = (0.0, 20.0)
+
+# ── build ────────────────────────────────────────────────────────────────────
+doc = App.newDocument("Back_Panel")
+
+# Slab: front face at Y = HUB75_D, back at Y = HUB75_D + t
+body = Part.makeBox(W, t, H, App.Vector(-W / 2, HUB75_D, -H / 2))
+
+# 2 connector cutouts through the full thickness
+def _rect_cutout(cx, cz, w, h):
+    return Part.makeBox(
+        w, t, h,
+        App.Vector(cx - w / 2, HUB75_D, cz - h / 2),
+    )
+
+idc_cut = _rect_cutout(
+    IDC_CENTER[0], IDC_CENTER[1],
+    IDC_ENV_X + 2 * CUTOUT_CLEARANCE,
+    IDC_ENV_Z + 2 * CUTOUT_CLEARANCE,
+)
+pwr_cut = _rect_cutout(
+    PWR_CENTER[0], PWR_CENTER[1],
+    PWR_ENV_X + 2 * CUTOUT_CLEARANCE,
+    PWR_ENV_Z + 2 * CUTOUT_CLEARANCE,
+)
+body = body.cut(idc_cut).cut(pwr_cut)
+
+# 6 M3 clearance through-holes at the same positions as the HUB75 threads
+holes = [
+    (-W / 2 + INSET, -H / 2 + INSET),   # BL
+    ( 0.0,           -H / 2 + INSET),   # BC
+    ( W / 2 - INSET, -H / 2 + INSET),   # BR
+    (-W / 2 + INSET,  H / 2 - INSET),   # TL
+    ( 0.0,            H / 2 - INSET),   # TC
+    ( W / 2 - INSET,  H / 2 - INSET),   # TR
+]
+for x, z in holes:
+    cyl = Part.makeCylinder(
+        MOUNT_HOLE_D / 2, t,
+        App.Vector(x, HUB75_D, z),
+        App.Vector(0, 1, 0),
+    )
+    body = body.cut(cyl)
+
+obj = doc.addObject("Part::Feature", "Back_Panel")
+obj.Shape = body
+obj.Label = f"Back_Panel_{int(W)}x{int(H)}x{int(t)}"
+doc.recompute()
+
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(
+    f"Built back panel: {W} × {H} × {t} mm, "
+    f"{len(holes)} M3 clearance holes, 2 connector cutouts."
+)
