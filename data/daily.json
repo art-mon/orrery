@@ -1,15 +1,20 @@
 {
   "generated": "2026-07-18",
   "apod": {
-    "title": "Shadow and Rainbow",
-    "date": "2026-07-18",
-    "explanation": "At sunset, an alignment of rainbow and mountain shadow was captured in this remarkable snapshot. The stunning view was recorded from a fire lookout on Smith Peak in the Plumas National Forest near Portola, California on July 13.  Still, near sunset it's no accident that the majestic mountain shadow seems to point to the center of the graceful rainbow arc. Due to perspective and the long line of sight the mountain shadow naturally forms a tapering triangular shape, its apex positioned at the point opposite the Sun on the horizon. Following thunderstorms across the region, the rainbow arcs across the early evening sky, with its colorful and characteristic 42 degree arc formed as sunlight is refracted and reflected by the atmospheric water droplets. The geometric center of a rainbow arc lies at the antisolar point. And in this scene from the golden hour on planet Earth, that's also oposite the setting Sun along the distant horizon.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t1ng",
+        "title": "M5.5 Earthquake - Scotia Sea",
+        "category": "Earthquake",
+        "date": "2026-07-18T19:50:37.215000Z",
+        "coordinates": [
+          -51.0559,
+          -60.7066
+        ]
+      },
       {
         "id": "us7000t1n5",
         "title": "M5.7 Earthquake - 72 km SW of Puerto Madero, Mexico",
@@ -149,16 +154,6 @@
           125.378,
           5.7602
         ]
-      },
-      {
-        "id": "us7000t1ep",
-        "title": "M5.1 Earthquake - 33 km SSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T16:01:26.495000Z",
-        "coordinates": [
-          -92.5836,
-          14.4643
-        ]
       }
     ]
   },
@@ -247,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.6,
-    "feels_c": 21.1,
-    "humidity": 93,
+    "city": "Zagreb",
+    "temp_c": 19.4,
+    "feels_c": 19.9,
+    "humidity": 95,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 13.5
+    "wind_kmh": 8.1
   },
   "forecast_today": {
     "date": "2026-07-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 20.6,
-    "humidity": 94,
-    "condition": "Rain",
-    "description": "rain",
+    "city": "Zagreb",
+    "temp_min_c": 19.4,
+    "temp_max_c": 19.4,
+    "humidity": 95,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 11.6,
-    "samples": 2
+    "wind_kmh": 8.1,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.2,
     "temp_max_c": 29.7,
-    "humidity": 75,
+    "humidity": 74,
     "condition": "Rain",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-20",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 28.9,
     "humidity": 63,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T22:06:42+02:00"
+    "fetched_at": "2026-07-18T23:47:47+02:00"
   }
 }
