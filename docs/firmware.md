@@ -80,7 +80,7 @@ stateDiagram-v2
 | **Display during provisioning** | LED matrix shows `SETUP` + device BLE name | Future: QR code for pairing |
 | **OTA check schedule** | Once per day at ~02:00 local time | Low-traffic window; uses `esp_timer` or SNTP-synced RTC |
 | **OTA manifest** | `data/version.json` on GitHub Pages | Same host as `daily.json`; no separate server needed |
-| **OTA binary host** | GitHub Releases asset (`.bin`) | Tagged release triggers CI build |
+| **OTA binary host** | `data/firmware.bin` on GitHub Pages | Same-origin as the manifest — no redirects, no signed-URL expiry. GH release assets 302 to a signed URL on a different host, which `esp_https_ota` handles poorly. |
 | **OTA rollback** | After 1 crash on new slot | ESP-IDF `esp_ota_mark_app_invalid_rollback_and_reboot()` |
 | **CI trigger** | Git tag push (e.g. `v1.2.0`) | Separate workflow from data-fetch; produces `firmware.bin` |
 | **Credentials storage** | ESP-IDF NVS (non-volatile storage) | Survives firmware updates; encrypted NVS optional later |
@@ -151,15 +151,19 @@ The daily briefing MP3 is downloaded once and cached in the LittleFS
 ## OTA version manifest
 
 A tiny JSON file committed to the repo alongside `daily.json` and served
-from the same GitHub Pages host:
+from the same GitHub Pages host, plus the firmware binary itself:
 
 ```json
 {
-  "version": "1.0.0",
-  "url": "https://github.com/art-mon/orrery/releases/download/v1.0.0/firmware.bin",
-  "notes": "Initial OTA-capable firmware."
+  "version": "1.0.1",
+  "url": "https://art-mon.github.io/orrery/data/firmware.bin",
+  "notes": "First OTA-delivered release."
 }
 ```
+
+Both files live under `data/` and get served by GH Pages, so the client
+opens exactly one TLS connection — to the same host it already uses for
+`daily.json` — with no cross-origin redirects.
 
 The running firmware's version comes from `PROJECT_VER` in the top-level
 `firmware/CMakeLists.txt`, which ESP-IDF stamps into the app descriptor
@@ -178,20 +182,27 @@ useful for humans reading the manifest.
 
 ## Releasing a new firmware version — manual runbook
 
-Until the CI workflow lands, cutting a release is a five-step manual flow.
+Until the CI workflow lands, cutting a release is a four-step manual flow.
 Do it once end-to-end to prove the client works before automating.
 
 1. **Bump `PROJECT_VER`** in `firmware/CMakeLists.txt` (e.g. `1.0.0` → `1.0.1`).
 2. **Build**: `cd firmware && idf.py build`. Confirm the resulting
    `build/orrery.bin` is under 1.5 MB (`ota_0`/`ota_1` slot size) and check
    the reported `X% free` line — that's your headroom.
-3. **Cut a GitHub release**: tag the commit (`git tag v1.0.1 && git push
-   origin v1.0.1`), create a release on that tag, and upload
-   `build/orrery.bin` as the asset — renaming to `firmware.bin` so the URL
-   pattern in `version.json` stays stable.
-4. **Update `data/version.json`** with the new version + the release asset
-   URL (`.../releases/download/v1.0.1/firmware.bin`) and push to `main`.
-   GitHub Pages serves it within a minute or two.
+3. **Publish binary + manifest**: copy the build to Pages and update
+   `version.json` in one commit:
+   ```bash
+   cp firmware/build/orrery.bin data/firmware.bin
+   # edit data/version.json — bump "version"; url stays the same
+   git add data/firmware.bin data/version.json
+   git commit -m "ota: release vX.Y.Z"
+   git push
+   ```
+   Tagging (`git tag vX.Y.Z && git push origin vX.Y.Z`) is optional but
+   recommended so `git log` has a semver anchor per release; no GH release
+   needs to be cut since the binary lives on Pages.
+4. **Wait for GH Pages to redeploy** — usually under a minute after push.
+   Verify with `curl -sSL https://art-mon.github.io/orrery/data/version.json`.
 5. **Watch the device pick it up.** During bring-up the OTA task uses a
    **test cadence** — first check ~60s after boot, then every 30 min — so
    a fresh flash validates end-to-end within minutes and a release lands
@@ -231,13 +242,13 @@ steps:
   2. Install ESP-IDF (idf-component-manager cache)
   3. Parse the tag → set PROJECT_VER
   4. idf.py build
-  5. Upload firmware/build/orrery.bin as GitHub Release asset (firmware.bin)
-  6. Update data/version.json with new tag + asset URL
-  7. Commit version.json back to main [skip ci]
+  5. Copy firmware/build/orrery.bin to data/firmware.bin
+  6. Update data/version.json with the new tag
+  7. Commit both files back to main [skip ci]
 ```
 
 Releasing a new firmware version then reduces to:
 ```bash
 git tag v1.2.0 && git push origin v1.2.0
 ```
-Devices pick it up on their next daily check.
+Devices pick it up on their next OTA check.
