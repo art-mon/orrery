@@ -24,12 +24,17 @@ static const char *TAG = "ota";
 // Delay before the first OTA check after boot. Gives wifi + the initial
 // data fetch time to settle, and lets the user notice a bad update and
 // power-cycle before we overwrite the other slot.
-#define OTA_FIRST_CHECK_DELAY_MS (2 * 60 * 1000)
+// TEST CADENCE — 60s so a fresh flash validates end-to-end within minutes.
+// Revert to a few minutes before shipping.
+#define OTA_FIRST_CHECK_DELAY_MS (60u * 1000u)
 
 // Cadence between checks once the first one runs. Design target is a
-// scheduled 02:00-local check; for now a rolling 24h timer is enough
-// and doesn't depend on the RTC being set.
-#define OTA_CHECK_INTERVAL_MS (24u * 60u * 60u * 1000u)
+// scheduled 02:00-local check; for now a rolling timer is enough and
+// doesn't depend on the RTC being set.
+// TEST CADENCE — 30 min so a release lands on the bench in the same
+// session. Bump back to 24h (or wire the 02:00-local schedule) before
+// shipping.
+#define OTA_CHECK_INTERVAL_MS (30u * 60u * 1000u)
 
 typedef struct {
     char  *buf;

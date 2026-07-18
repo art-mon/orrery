@@ -15,6 +15,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <esp_app_desc.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 
@@ -1183,6 +1184,20 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
         char clk[8];
         snprintf(clk, sizeof(clk), "%02d:%02d", tm.tm_hour, tm.tm_min);
         gfx_text_outlined(1, 1, clk, 80, 80, 120);
+    }
+
+    // Firmware version top-right (dim). Sourced from the app descriptor so
+    // it always reflects PROJECT_VER of the running slot — useful for
+    // eyeballing whether an OTA landed without a serial console.
+    const esp_app_desc_t *desc = esp_app_get_description();
+    if (desc && desc->version[0]) {
+        // desc->version is a 32-byte fixed field; the buffer sizes the
+        // prefix + full field + null so the compiler can't warn about
+        // truncation, even though a bare "1.0.0" is all it'll ever be.
+        char ver[sizeof(desc->version) + 2];
+        snprintf(ver, sizeof(ver), "v%s", desc->version);
+        int vw = gfx_text_width(ver);
+        gfx_text_outlined(PANEL_W - vw - 1, 1, ver, 80, 80, 120);
     }
 
     if (st == AUDIO_BRIEFING_LOADING) {

@@ -192,9 +192,13 @@ Do it once end-to-end to prove the client works before automating.
 4. **Update `data/version.json`** with the new version + the release asset
    URL (`.../releases/download/v1.0.1/firmware.bin`) and push to `main`.
    GitHub Pages serves it within a minute or two.
-5. **Watch the device pick it up.** Devices run their first OTA check
-   ~2 minutes after boot and every 24h after that, so either wait or
-   power-cycle. In the serial log you should see:
+5. **Watch the device pick it up.** During bring-up the OTA task uses a
+   **test cadence** — first check ~60s after boot, then every 30 min — so
+   a fresh flash validates end-to-end within minutes and a release lands
+   on the bench in the same session. Both intervals are defined at the
+   top of [firmware/main/ota.c](../firmware/main/ota.c) and should be
+   raised (or replaced with the 02:00-local schedule) before shipping.
+   In the serial log you should see:
    ```
    I (…) ota: running version: 1.0.0
    I (…) ota: manifest version: 1.0.1 url: https://…
