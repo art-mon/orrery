@@ -7,7 +7,7 @@
 		(in_bom yes)
 		(on_board no)
 		(property "Reference" "PS"
-			(at -15.24 15.24 0)
+			(at -15.24 12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,7 +16,7 @@
 			)
 		)
 		(property "Value" "RS-25-5"
-			(at -15.24 -20.32 0)
+			(at -15.24 -15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34,7 +34,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.meanwell.com/webapp/product/search.aspx?prod=RS-25"
-			(at 0 -22.86 0)
+			(at 0 -17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -42,7 +42,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mean Well RS-25-5, 25W enclosed AC/DC switching PSU, 5V @ 5A, chassis-mount (board-external, no PCB footprint)"
+		(property "Description" "Mean Well RS-25-5, 25W enclosed AC/DC switching PSU, 5V @ 5A, chassis-mount (board-external, no PCB footprint). Physical terminal 3 (+V ADJ trim) is present on the unit but intentionally omitted from the symbol - leave it unwired."
 			(at 0 0 0)
 			(effects
 				(font
@@ -89,8 +89,8 @@
 		)
 		(symbol "RS-25-5_0_1"
 			(rectangle
-				(start -12.7 12.7)
-				(end 12.7 -17.78)
+				(start -12.7 10.16)
+				(end 12.7 -12.7)
 				(stroke
 					(width 0)
 					(type default)
@@ -100,7 +100,7 @@
 				)
 			)
 			(text "Mean Well"
-				(at 0 8.89 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -108,7 +108,7 @@
 				)
 			)
 			(text "AC/DC 25W"
-				(at 0 3.81 0)
+				(at 0 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -116,7 +116,7 @@
 				)
 			)
 			(text "5V @ 5A"
-				(at 0 1.27 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -124,7 +124,7 @@
 				)
 			)
 			(text "chassis mount"
-				(at 0 -15.24 0)
+				(at 0 -10.16 0)
 				(effects
 					(font
 						(size 1.0 1.0)
@@ -134,79 +134,7 @@
 		)
 		(symbol "RS-25-5_1_1"
 			(pin passive line
-				(at 17.78 -2.54 180)
-				(length 5.08)
-				(name "-V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 17.78 -7.62 180)
-				(length 5.08)
-				(name "+V"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 17.78 -12.7 180)
-				(length 5.08)
-				(name "+V_ADJ"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -17.78 -2.54 0)
-				(length 5.08)
-				(name "AC/N"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -17.78 -7.62 0)
+				(at -17.78 5.08 0)
 				(length 5.08)
 				(name "AC/L"
 					(effects
@@ -224,9 +152,9 @@
 				)
 			)
 			(pin passive line
-				(at -17.78 -12.7 0)
+				(at -17.78 0 0)
 				(length 5.08)
-				(name "FG"
+				(name "PE"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -234,6 +162,60 @@
 					)
 				)
 				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -17.78 -5.08 0)
+				(length 5.08)
+				(name "AC/N"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 17.78 5.08 180)
+				(length 5.08)
+				(name "+V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 17.78 -5.08 180)
+				(length 5.08)
+				(name "-V"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
 					(effects
 						(font
 							(size 1.27 1.27)
