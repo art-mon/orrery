@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 26.1,
-    "feels_c": 26.1,
-    "humidity": 63,
+    "city": "Zagreb",
+    "temp_c": 27.0,
+    "feels_c": 28.4,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -260,8 +260,8 @@
     "date": "2026-07-18",
     "city": "City of Zagreb",
     "temp_min_c": 19.6,
-    "temp_max_c": 27.3,
-    "humidity": 68,
+    "temp_max_c": 27.4,
+    "humidity": 70,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 2.0,
-    "band": "low",
-    "daily_max": 6.2,
-    "peak_time": "2026-07-18T15:00",
-    "safe_minutes": 81,
+    "uv": 6.2,
+    "band": "high",
+    "daily_max": 6.0,
+    "peak_time": "2026-07-18T12:00",
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,39 +336,39 @@
       },
       {
         "time": "2026-07-18T09:00",
-        "uv": 2.5
+        "uv": 2.7
       },
       {
         "time": "2026-07-18T10:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-07-18T11:00",
-        "uv": 5.3
+        "uv": 5.5
       },
       {
         "time": "2026-07-18T12:00",
-        "uv": 3.8
+        "uv": 6.0
       },
       {
         "time": "2026-07-18T13:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-07-18T14:00",
         "uv": 1.2
       },
       {
+        "time": "2026-07-18T14:00",
+        "uv": 6.0
+      },
+      {
         "time": "2026-07-18T15:00",
-        "uv": 6.2
+        "uv": 4.9
       },
       {
         "time": "2026-07-18T16:00",
-        "uv": 5.6
+        "uv": 2.8
       },
       {
         "time": "2026-07-18T17:00",
-        "uv": 4.3
+        "uv": 3.8
       },
       {
         "time": "2026-07-18T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T13:00:18+02:00"
+    "fetched_at": "2026-07-18T13:59:35+02:00"
   }
 }
