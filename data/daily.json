@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t1jy",
+        "title": "M5.3 Earthquake - 87 km WSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-18T06:51:50.543000Z",
+        "coordinates": [
+          -93.1511,
+          14.3804
+        ]
+      },
+      {
+        "id": "us7000t1jp",
+        "title": "M5.2 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-07-18T05:46:47.673000Z",
+        "coordinates": [
+          -178.1149,
+          -32.8189
+        ]
+      },
+      {
         "id": "us7000t1j0",
         "title": "M5.0 Earthquake - 17 km SE of Malatya, Turkey",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -93.0929,
           14.2369
         ]
-      },
-      {
-        "id": "us7000t1c2",
-        "title": "M5.1 Earthquake - 101 km WSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T15:19:46.384000Z",
-        "coordinates": [
-          -93.2998,
-          14.3986
-        ]
-      },
-      {
-        "id": "us7000t1c1",
-        "title": "M5.3 Earthquake - 93 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T15:14:55.773000Z",
-        "coordinates": [
-          -93.0992,
-          14.189
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 21.4,
-    "feels_c": 21.9,
-    "humidity": 88,
+    "city": "City of Zagreb",
+    "temp_c": 27.6,
+    "feels_c": 28.9,
+    "humidity": 60,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.3
   },
   "forecast_today": {
     "date": "2026-07-18",
     "city": "Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 26.0,
-    "humidity": 79,
+    "temp_min_c": 19.6,
+    "temp_max_c": 27.8,
+    "humidity": 65,
     "condition": "Rain",
     "description": "rain",
-    "icon": "03d",
+    "icon": "04d",
     "wind_kmh": 7.5,
-    "samples": 7
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-19",
     "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 29.2,
-    "humidity": 67,
+    "temp_min_c": 16.6,
+    "temp_max_c": 28.5,
+    "humidity": 73,
     "condition": "Rain",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-07-20",
     "city": "Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 28.1,
-    "humidity": 56,
+    "temp_min_c": 15.7,
+    "temp_max_c": 28.7,
+    "humidity": 59,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 0.9,
-    "band": "low",
-    "daily_max": 4.7,
+    "uv": 3.9,
+    "band": "moderate",
+    "daily_max": 6.2,
     "peak_time": "2026-07-18T15:00",
-    "safe_minutes": 185,
+    "safe_minutes": 43,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,39 +336,39 @@
       },
       {
         "time": "2026-07-18T09:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-07-18T10:00",
-        "uv": 4.0
-      },
-      {
-        "time": "2026-07-18T11:00",
         "uv": 2.5
       },
       {
+        "time": "2026-07-18T10:00",
+        "uv": 4.1
+      },
+      {
+        "time": "2026-07-18T11:00",
+        "uv": 5.3
+      },
+      {
         "time": "2026-07-18T12:00",
-        "uv": 1.2
+        "uv": 3.8
       },
       {
         "time": "2026-07-18T13:00",
-        "uv": 1.0
+        "uv": 3.0
       },
       {
         "time": "2026-07-18T14:00",
-        "uv": 2.3
+        "uv": 1.2
       },
       {
         "time": "2026-07-18T15:00",
-        "uv": 4.7
+        "uv": 6.2
       },
       {
         "time": "2026-07-18T16:00",
-        "uv": 3.7
+        "uv": 5.6
       },
       {
         "time": "2026-07-18T17:00",
-        "uv": 4.2
+        "uv": 4.3
       },
       {
         "time": "2026-07-18T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-18T07:22:28+02:00"
+    "fetched_at": "2026-07-18T09:44:24+02:00"
   }
 }
