@@ -1,0 +1,114 @@
+# 3 W 8 Ω rectangular speaker — hand-modeled reference
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+#
+# Approximates the ~70 × 30 × 16 mm plastic-cased rectangular speaker
+# with:
+#   - rectangular plastic body
+#   - stadium-shaped cone recess in the front face (close enough to
+#     the oval on the real part for visual purposes)
+#   - small central dome (voice coil former)
+#   - 4 corner screw-through holes for M3 mounting
+#
+# Local coordinate system:
+#   - Body length along X, width along Y, thickness along Z
+#   - Cone faces +Z (up)
+# The macro rotates about X so the cone ends up facing −Y (out toward
+# the viewer) in world coords, matching the "shaft-forward" convention
+# we've used for other parts. If the speaker mounts on a side panel
+# in the final design, just change ROT.
+
+import FreeCAD as App
+import Part
+
+# ── outer body (mm) ──────────────────────────────────────────────────────────
+BODY_L = 70.0
+BODY_W = 30.0
+BODY_H = 16.0
+
+# ── speaker cone recess (stadium: rectangle + two half-circles) ──────────────
+CONE_L     = 48.0   # overall major length
+CONE_W     = 22.0   # overall minor width
+CONE_DEPTH = 4.0    # recess depth from the front face
+
+# ── central dome (voice coil former) ─────────────────────────────────────────
+DOME_D = 12.0
+DOME_H = 2.5
+
+# ── 4 corner mounting holes ──────────────────────────────────────────────────
+SCREW_HOLE_D = 3.2   # M3 clearance
+SCREW_INSET  = 4.0   # centre of each hole inset from the nearest edges
+
+# ── target placement in world coords ─────────────────────────────────────────
+X_CENTER =  0.0
+Y_OFFSET = -5.0    # a hair in front of the LED face
+Z_CENTER = 50.0    # above panel centre — placeholder
+
+# +90° about X → local +Z (cone-facing direction) becomes world −Y
+ROT = App.Rotation(App.Vector(1, 0, 0), 90)
+
+# ── build ────────────────────────────────────────────────────────────────────
+doc = App.newDocument("Speaker")
+
+# Body
+body = Part.makeBox(BODY_L, BODY_W, BODY_H, App.Vector(-BODY_L / 2, -BODY_W / 2, 0))
+
+# Stadium-shaped cone recess on the +Z face
+rect_L = CONE_L - CONE_W    # length of the central rectangle portion
+rect = Part.makeBox(
+    rect_L, CONE_W, CONE_DEPTH,
+    App.Vector(-rect_L / 2, -CONE_W / 2, BODY_H - CONE_DEPTH),
+)
+cyl_left = Part.makeCylinder(
+    CONE_W / 2, CONE_DEPTH,
+    App.Vector(-rect_L / 2, 0, BODY_H - CONE_DEPTH),
+    App.Vector(0, 0, 1),
+)
+cyl_right = Part.makeCylinder(
+    CONE_W / 2, CONE_DEPTH,
+    App.Vector( rect_L / 2, 0, BODY_H - CONE_DEPTH),
+    App.Vector(0, 0, 1),
+)
+stadium = rect.fuse(cyl_left).fuse(cyl_right)
+body = body.cut(stadium)
+
+# Central dome rising out of the recess floor
+dome = Part.makeCylinder(
+    DOME_D / 2, DOME_H,
+    App.Vector(0, 0, BODY_H - CONE_DEPTH),
+    App.Vector(0, 0, 1),
+)
+body = body.fuse(dome)
+
+# 4 corner mounting through-holes
+for x_sign in (-1, 1):
+    for y_sign in (-1, 1):
+        cx = x_sign * (BODY_L / 2 - SCREW_INSET)
+        cy = y_sign * (BODY_W / 2 - SCREW_INSET)
+        hole = Part.makeCylinder(
+            SCREW_HOLE_D / 2, BODY_H,
+            App.Vector(cx, cy, 0),
+            App.Vector(0, 0, 1),
+        )
+        body = body.cut(hole)
+
+obj = doc.addObject("Part::Feature", "Speaker")
+obj.Shape = body
+obj.Label = "Speaker_3W_8Ohm"
+obj.Placement = App.Placement(
+    App.Vector(X_CENTER, Y_OFFSET, Z_CENTER),
+    ROT,
+)
+doc.recompute()
+
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(
+    f"Built speaker ({BODY_L} × {BODY_W} × {BODY_H} mm) at "
+    f"(X={X_CENTER}, Y={Y_OFFSET}, Z={Z_CENTER}). "
+    "Adjust CONE_L / CONE_W / mounting inset if the caliper says otherwise."
+)
