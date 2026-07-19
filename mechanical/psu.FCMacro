@@ -20,19 +20,20 @@ STEP_PATH = os.path.expanduser(
 )
 
 # ── target placement in world coordinates ────────────────────────────────────
-# Sitting against the HUB75 back rim, on the LEFT half of the panel.
-X_CENTER =  75.0    # world +X (renders on the viewer-left in Rear view)
+# Middle-left of the back panel, past the HUB75 power connector cutout
+# (which is at X=0, Z=+20).
+X_CENTER = -70.0    # middle-left in the image
 Z_CENTER =   0.0    # vertically centred
-Y_OFFSET =  31.0    # base pressed against back-panel rear face (Y=17) + H/2 (14)
+Y_OFFSET =  42.5    # BB centre — puts the PSU base at Y=17 (back-panel rear face)
+                    # with W=51 mm extending into +Y (depth = 51 mm)
 
-# ── rotation to match project convention ─────────────────────────────────────
-# The Mean Well STEP has the case oriented with its L axis along X,
-# W axis along Y, H (height/vertical) axis along Z — datasheet standard.
-# Our project uses Y = depth into enclosure, so a −90° rotation about
-# X swaps Z (case-vertical) into Y (project-depth) the same way it did
-# for the KiCad PCB. Result: PSU stands upright with terminals facing
-# up (+Z in the world), depth axis into the enclosure.
-ROT = App.Rotation(App.Vector(1, 0, 0), -90)
+# ── rotation ─────────────────────────────────────────────────────────────────
+# R_y(180°) — the only single rotation that satisfies BOTH:
+#   - terminals face world −Z (downward): native +Z → world −Z ✓
+#   - depth axis is into the enclosure (world +Y): native +Y (W) → +Y ✓
+# Side effect: L axis flips (native +X → world −X). Doesn't matter
+# electrically, just changes which end of the 78 mm PSU is "left".
+ROT = App.Rotation(App.Vector(0, 1, 0), 180)
 
 # ── build ────────────────────────────────────────────────────────────────────
 if not os.path.exists(STEP_PATH):
@@ -51,12 +52,12 @@ print(
     f"Z=[{bb.ZMin:.1f}, {bb.ZMax:.1f}]"
 )
 
-# Native centre
+# Native BB centre
 cx = (bb.XMin + bb.XMax) / 2.0
 cy = (bb.YMin + bb.YMax) / 2.0
 cz = (bb.ZMin + bb.ZMax) / 2.0
-# After −90° rotation about X, native (x, y, z) → world (x, z, −y)
-rotated_center = App.Vector(cx, cz, -cy)
+# Where the native BB centre lands after ROT (works for any rotation)
+rotated_center = ROT.multVec(App.Vector(cx, cy, cz))
 
 target      = App.Vector(X_CENTER, Y_OFFSET, Z_CENTER)
 translation = target - rotated_center

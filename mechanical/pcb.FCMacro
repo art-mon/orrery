@@ -25,8 +25,8 @@ STEP_PATH = os.path.expanduser(
 
 # ── target placement in world coordinates ────────────────────────────────────
 # Upper-right quadrant of the HUB75 back, sitting close to the rim.
-Y_OFFSET  = 26.0             # BB centre — pushes pin bottoms roughly to the back-panel rear face (Y=17)
-CENTER_XZ = (-65.0, 25.0)    # (X, Z) — world −X, upper half (renders on viewer-right)
+Y_OFFSET  = 26.0            # BB centre — pushes pin bottoms roughly to the back-panel rear face (Y=17)
+CENTER_XZ = (75.0, -30.0)   # (X, Z) — top-right of the back panel
 
 # ── build ────────────────────────────────────────────────────────────────────
 if not os.path.exists(STEP_PATH):
@@ -49,14 +49,14 @@ print(
     f"Z=[{bb.ZMin:.1f}, {bb.ZMax:.1f}]"
 )
 
-# −90° rotation about X → maps KiCad (x, y, z) to world (x, z, −y)
+# −90° rotation about X → maps KiCad (x, y, z=thickness) to world (x, z, −y)
 rot = App.Rotation(App.Vector(1, 0, 0), -90)
 
-# Where the STEP's centre lands after the rotation
+# Where the STEP's centre lands after the rotation (generic via multVec)
 cx = (bb.XMin + bb.XMax) / 2.0
 cy = (bb.YMin + bb.YMax) / 2.0
 cz = (bb.ZMin + bb.ZMax) / 2.0
-rotated_center = App.Vector(cx, cz, -cy)
+rotated_center = rot.multVec(App.Vector(cx, cy, cz))
 
 target      = App.Vector(CENTER_XZ[0], Y_OFFSET, CENTER_XZ[1])
 translation = target - rotated_center
