@@ -9,6 +9,7 @@ extern "C" {
 void panel_init(void);
 void panel_clear(void);
 void panel_set_brightness(uint8_t b);
+uint8_t panel_get_brightness(void);
 void panel_draw_test_pattern(void);
 
 // Atomically swap the back buffer (what we've been drawing into) with the

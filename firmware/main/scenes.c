@@ -7,6 +7,7 @@
 #include "apod.h"
 #include "encoder.h"
 #include "audio.h"
+#include "als.h"
 #include "wifi_creds.h"
 
 #include <ctype.h>
@@ -1259,10 +1260,52 @@ static void scene_apod(const daily_data_t *d, uint32_t tick) {
     }
 }
 
+// ─── scene_devinfo (dev-only telemetry) ────────────────────────────────────
+// TEMPORARY — remove (or gate behind a debug flag) before shipping.
+// Shows the raw lux the ALS is reading and the panel brightness it's
+// currently driving, plus the running firmware version. Useful for
+// eyeballing whether an ALS reading looks sane or a brightness change
+// is being applied without needing serial.
+static void scene_devinfo(const daily_data_t *d, uint32_t tick) {
+    (void)d; (void)tick;
+    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+
+    // DEV marker top-left, dim orange — obvious this isn't a normal scene.
+    gfx_text_outlined(1, 1, "DEV", 200, 120, 0);
+
+    // Version top-right, same dim style as the broadcast scene.
+    const esp_app_desc_t *desc = esp_app_get_description();
+    if (desc && desc->version[0]) {
+        char ver[sizeof(desc->version) + 2];
+        snprintf(ver, sizeof(ver), "v%s", desc->version);
+        int vw = gfx_text_width(ver);
+        gfx_text_outlined(PANEL_W - vw - 1, 1, ver, 80, 80, 120);
+    }
+
+    // LUX line — raw sensor reading. NaN before the first successful read.
+    char line[24];
+    float lux = als_get_lux();
+    if (isnan(lux)) {
+        snprintf(line, sizeof(line), "LUX  ---");
+    } else if (lux < 1000.0f) {
+        snprintf(line, sizeof(line), "LUX %5.1f", lux);
+    } else {
+        snprintf(line, sizeof(line), "LUX %5.0f", lux);
+    }
+    gfx_text_outlined(1, 12, line, 120, 220, 120);
+
+    // BRI line — current vs cap. panel_get_brightness reflects what was
+    // last written to the driver, which matches what the ALS filter drove.
+    uint8_t b = panel_get_brightness();
+    snprintf(line, sizeof(line), "BRI %3u/40", (unsigned)b);
+    gfx_text_outlined(1, 22, line, 220, 180, 80);
+}
+
 // ─── rotator ─────────────────────────────────────────────────────────────
 // Adds scenes one at a time as each is verified on hardware.
 
 #define SCENE_TICKS         (12 * 1000 / FRAME_MS)   // 12 s default
+#define DEVINFO_SCENE_TICKS ( 6 * 1000 / FRAME_MS)   // 6 s — dev scene, shorter
 
 typedef struct {
     void   (*draw)(const daily_data_t *, uint32_t);
@@ -1270,6 +1313,7 @@ typedef struct {
 } scene_def_t;
 
 static const scene_def_t SCENES[] = {
+    { scene_devinfo,  DEVINFO_SCENE_TICKS },  // DEV: remove before shipping
     { scene_now,      SCENE_TICKS         },
     { scene_forecast, SCENE_TICKS         },
     { scene_uv,       SCENE_TICKS         },

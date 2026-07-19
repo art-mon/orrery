@@ -5,6 +5,7 @@
 #include "hub75.h"
 
 static Hub75Driver *s_panel = nullptr;
+static uint8_t s_last_brightness = 0;
 
 void panel_init(void) {
     Hub75Config cfg{};
@@ -44,6 +45,11 @@ void panel_flip(void) {
 
 void panel_set_brightness(uint8_t b) {
     if (s_panel) s_panel->set_brightness(b);
+    s_last_brightness = b;
+}
+
+uint8_t panel_get_brightness(void) {
+    return s_last_brightness;
 }
 
 void panel_draw_test_pattern(void) {

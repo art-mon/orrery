@@ -6,6 +6,15 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+// Cached values exposed via als_get_lux / als_get_factor. Written only by
+// the ALS task, read by scenes on the render task. A torn read is fine —
+// worst case a display shows a stale-by-one-sample number for one frame.
+static float s_last_lux    = NAN;
+static float s_last_factor = 0.0f;
+
+float als_get_lux(void)    { return s_last_lux; }
+float als_get_factor(void) { return s_last_factor; }
+
 #include <driver/i2c_master.h>
 #include <esp_log.h>
 #include <freertos/FreeRTOS.h>
@@ -98,6 +107,7 @@ static void als_task(void *arg) {
             if (err == ESP_OK) {
                 target = lux_to_factor(lux);
                 if (filtered < 0.0f) filtered = target;
+                s_last_lux = lux;
                 if (--log_countdown <= 0) {
                     int b_now = (int)lroundf((float)max_brightness * filtered);
                     ESP_LOGI(TAG, "lux=%.1f target=%.2f filt=%.2f b=%d/%u",
@@ -115,6 +125,7 @@ static void als_task(void *arg) {
         // panel and can block a full blank at b=0.
         if (filtered >= 0.0f) {
             filtered += alpha * (target - filtered);
+            s_last_factor = filtered;
             int b = (int)lroundf((float)max_brightness * filtered);
             if (b < 1) b = 1;
             if (b > max_brightness) b = max_brightness;
