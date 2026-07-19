@@ -42,12 +42,16 @@ SHAFT_H          = 6.0   # from top of bushing
 SHAFT_FLAT_DEPTH = 1.0   # D-flat cut depth
 SHAFT_FLAT_LEN   = 5.0   # length of the D-flat starting from the top
 
-# ── 5-pin header (single row, 2.54 mm pitch) ─────────────────────────────────
+# ── 5-pin header (single row, 2.54 mm pitch, right-angle pins) ───────────────
 HDR_L        = 12.7     # 5 × 2.54, along X (across the PCB width)
 HDR_W        = 2.54     # along Y (into the PCB length)
 HDR_H        = 2.5      # plastic body height above PCB
 PIN_D        = 0.7
-PIN_L_BELOW  = 6.0      # pin protrusion below the PCB
+# Right-angle pins: short drop below PCB, then 90° bend outward in −Y.
+# Matches the physical part — the vertical stub is the solder end, the
+# horizontal extension is the mate end.
+PIN_DROP     = 1.5      # length of vertical stub below the PCB
+PIN_HORIZ_L  = 6.0      # length of horizontal extension after the bend
 
 # ── knurled knob (external, optional) ────────────────────────────────────────
 INCLUDE_KNOB = True
@@ -115,12 +119,22 @@ hdr_body = Part.makeBox(
 pin_shapes = []
 for i in range(5):
     pin_x = -HDR_L / 2 + 1.27 + i * 2.54
-    pin = Part.makeCylinder(
-        PIN_D / 2, PIN_L_BELOW + PCB_T,
-        App.Vector(pin_x, HDR_CENTER_Y, -PIN_L_BELOW),
+
+    # Vertical stub: through the PCB and a short distance below
+    vert = Part.makeCylinder(
+        PIN_D / 2, PCB_T + PIN_DROP,
+        App.Vector(pin_x, HDR_CENTER_Y, -PIN_DROP),
         App.Vector(0, 0, 1),
     )
-    pin_shapes.append(pin)
+    # Horizontal extension: from the bottom of the vertical stub, going in −Y
+    # (away from the encoder). Starts a hair inside the vertical so the two
+    # cylinders actually intersect and fuse cleanly.
+    horiz = Part.makeCylinder(
+        PIN_D / 2, PIN_HORIZ_L,
+        App.Vector(pin_x, HDR_CENTER_Y + PIN_D / 4, -PIN_DROP),
+        App.Vector(0, -1, 0),
+    )
+    pin_shapes.extend([vert, horiz])
 
 parts = [pcb, enc, bushing, shaft, hdr_body] + pin_shapes
 
