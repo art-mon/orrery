@@ -1,121 +1,147 @@
-# KY-040 Rotary Encoder Module — hand-modeled reference
+# KY-040 Rotary Encoder Module (with threaded bushing) — hand-modeled
 #
 # Usage:
 #   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
 #
-# The KY-040 is a generic clone board with no vendor-official STEP,
-# so it's built parametrically from datasheet-ish dimensions:
-#   - PCB slab
-#   - Metal encoder case sitting on top
-#   - Shaft cylinder with D-flat cut
-#   - 5-pin header body
-# All fused into a single Part::Feature (single Placement moves it).
+# This variant matches the physical unit on the bench (measured):
+#   - small ~15 x 20 mm PCB
+#   - encoder body sits over one short edge of the PCB
+#   - THREADED BUSHING above the metal case for panel mounting
+#   - shaft with D-flat on top for the knob grub screw
+#   - 5-pin single-row header on the OPPOSITE short edge, pins
+#     protrude downward only (not up)
+#   - optional knurled aluminium knob on top (INCLUDE_KNOB toggle)
 #
 # Local coordinate system for the model:
 #   - PCB lies in the XY plane, thickness in +Z
-#   - Shaft points along +Z
-# The macro then applies a +90° rotation about X so in world coords
-# the shaft ends up pointing along −Y (out toward the viewer), ready
-# to poke through a front-panel hole. Adjust ROT if you'd rather have
-# it point up, sideways, etc.
+#   - Encoder / bushing / shaft / knob rise in +Z
+#   - Header pins hang in −Z
+# The macro then rotates about X so in world coords the shaft points
+# along −Y (out toward the viewer) — same convention as before.
 
 import FreeCAD as App
 import Part
 
 # ── PCB ──────────────────────────────────────────────────────────────────────
-PCB_L    = 30.0     # length (X in local)
-PCB_W    = 15.0     # width  (Y in local)
-PCB_T    = 1.6      # thickness (Z)
+PCB_L    = 20.0     # length along Y (encoder end ↔ header end)
+PCB_W    = 15.0     # width along X
+PCB_T    = 1.6      # thickness along Z
 
 # ── encoder metal case ───────────────────────────────────────────────────────
-ENC_L    = 12.4
-ENC_W    = 13.2
-ENC_H    = 6.5      # protrudes above PCB in +Z
+ENC_L    = 13.0     # along Y
+ENC_W    = 13.0     # along X
+ENC_H    = 6.5      # above PCB in +Z
 
-# ── shaft ───────────────────────────────────────────────────────────────────
+# ── threaded panel-mount bushing (silver, threaded) ──────────────────────────
+BUSHING_D  = 7.0    # OD (matches ~M7 panel-mount collar)
+BUSHING_H  = 7.0    # protrudes above the metal case in +Z
+
+# ── shaft above the bushing (holds the knob) ─────────────────────────────────
 SHAFT_D          = 6.0
-SHAFT_L          = 13.0
-SHAFT_FLAT_LEN   = 8.0    # length of the D-flat (top of shaft)
-SHAFT_FLAT_DEPTH = 1.0    # how deeply the flat cuts into the cylinder
+SHAFT_H          = 6.0   # from top of bushing
+SHAFT_FLAT_DEPTH = 1.0   # D-flat cut depth
+SHAFT_FLAT_LEN   = 5.0   # length of the D-flat starting from the top
 
 # ── 5-pin header (single row, 2.54 mm pitch) ─────────────────────────────────
-HDR_L    = 12.7
-HDR_W    = 2.54
-HDR_H    = 2.5      # header plastic body height
-PIN_D    = 0.7
-PIN_L_BELOW = 7.0
-PIN_L_ABOVE = 3.0
+HDR_L        = 12.7     # 5 × 2.54, along X (across the PCB width)
+HDR_W        = 2.54     # along Y (into the PCB length)
+HDR_H        = 2.5      # plastic body height above PCB
+PIN_D        = 0.7
+PIN_L_BELOW  = 6.0      # pin protrusion below the PCB
 
-# ── layout on the PCB ────────────────────────────────────────────────────────
-# Encoder centred over one end, 5-pin header centred over the other.
-ENC_CENTER_X = -PCB_L / 2 + ENC_L / 2 + 3.0
-HDR_CENTER_X =  PCB_L / 2 - HDR_L / 2 - 1.0
+# ── knurled knob (external, optional) ────────────────────────────────────────
+INCLUDE_KNOB = True
+KNOB_D       = 15.0
+KNOB_H       = 15.0
+KNOB_GAP     = 0.5      # slight gap between knob bottom and bushing top
+
+# ── layout on the PCB (Y positions along PCB length) ─────────────────────────
+# Encoder centred over the +Y end of the PCB, header centred over −Y end.
+ENC_CENTER_Y = PCB_L / 2 - ENC_L / 2 - 0.5
+HDR_CENTER_Y = -PCB_L / 2 + HDR_W / 2 + 0.5
 
 # ── target placement in world coords ─────────────────────────────────────────
 X_CENTER =  0.0
-Y_OFFSET = -5.0    # slightly out toward the viewer from the LED face
-Z_CENTER = 40.0    # above panel centre — just a placeholder position
+Y_OFFSET = -5.0     # slightly out toward the viewer from the LED face
+Z_CENTER = 40.0     # above panel centre — placeholder
 
-# ── orientation ──────────────────────────────────────────────────────────────
-# +90° about X maps local +Z (shaft direction) to world −Y (out
-# toward the viewer). If you want the shaft to point INTO the
-# enclosure instead, change +90 to −90.
+# +90° about X → local +Z (shaft direction) becomes world −Y (out at viewer).
 ROT = App.Rotation(App.Vector(1, 0, 0), 90)
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("KY_040_Encoder")
 
-# PCB
-pcb = Part.makeBox(PCB_L, PCB_W, PCB_T, App.Vector(-PCB_L / 2, -PCB_W / 2, 0))
+# PCB slab
+pcb = Part.makeBox(PCB_W, PCB_L, PCB_T, App.Vector(-PCB_W / 2, -PCB_L / 2, 0))
 
-# Metal encoder case
+# Encoder metal case, centred in X, offset toward +Y
 enc = Part.makeBox(
-    ENC_L, ENC_W, ENC_H,
-    App.Vector(ENC_CENTER_X - ENC_L / 2, -ENC_W / 2, PCB_T),
+    ENC_W, ENC_L, ENC_H,
+    App.Vector(-ENC_W / 2, ENC_CENTER_Y - ENC_L / 2, PCB_T),
 )
 
-# Shaft — cylinder rising from the top of the encoder case
-shaft_base_z = PCB_T + ENC_H
+# Threaded bushing above the case, centred on the encoder centre
+bushing_base_z = PCB_T + ENC_H
+bushing = Part.makeCylinder(
+    BUSHING_D / 2, BUSHING_H,
+    App.Vector(0, ENC_CENTER_Y, bushing_base_z),
+    App.Vector(0, 0, 1),
+)
+
+# Shaft above the bushing
+shaft_base_z = bushing_base_z + BUSHING_H
 shaft = Part.makeCylinder(
-    SHAFT_D / 2, SHAFT_L,
-    App.Vector(ENC_CENTER_X, 0, shaft_base_z),
+    SHAFT_D / 2, SHAFT_H,
+    App.Vector(0, ENC_CENTER_Y, shaft_base_z),
     App.Vector(0, 0, 1),
 )
 # D-flat on the top portion of the shaft
 flat = Part.makeBox(
     SHAFT_D + 1, SHAFT_FLAT_DEPTH, SHAFT_FLAT_LEN,
     App.Vector(
-        ENC_CENTER_X - (SHAFT_D + 1) / 2,
-        SHAFT_D / 2 - SHAFT_FLAT_DEPTH,
-        shaft_base_z + SHAFT_L - SHAFT_FLAT_LEN,
+        -(SHAFT_D + 1) / 2,
+        ENC_CENTER_Y + SHAFT_D / 2 - SHAFT_FLAT_DEPTH,
+        shaft_base_z + SHAFT_H - SHAFT_FLAT_LEN,
     ),
 )
 shaft = shaft.cut(flat)
 
-# Header body + pins on the opposite end of the PCB
+# Header body + pins on the −Y end of the PCB
 hdr_body = Part.makeBox(
     HDR_L, HDR_W, HDR_H,
-    App.Vector(HDR_CENTER_X - HDR_L / 2, -HDR_W / 2, PCB_T),
+    App.Vector(-HDR_L / 2, HDR_CENTER_Y - HDR_W / 2, PCB_T),
 )
 
 pin_shapes = []
 for i in range(5):
-    pin_x = HDR_CENTER_X - HDR_L / 2 + 1.27 + i * 2.54
+    pin_x = -HDR_L / 2 + 1.27 + i * 2.54
     pin = Part.makeCylinder(
-        PIN_D / 2, PIN_L_BELOW + PIN_L_ABOVE + PCB_T,
-        App.Vector(pin_x, 0, -PIN_L_BELOW),
+        PIN_D / 2, PIN_L_BELOW + PCB_T,
+        App.Vector(pin_x, HDR_CENTER_Y, -PIN_L_BELOW),
         App.Vector(0, 0, 1),
     )
     pin_shapes.append(pin)
 
+parts = [pcb, enc, bushing, shaft, hdr_body] + pin_shapes
+
+# Optional knob on top of the shaft
+if INCLUDE_KNOB:
+    knob_base_z = shaft_base_z + SHAFT_H + KNOB_GAP
+    knob = Part.makeCylinder(
+        KNOB_D / 2, KNOB_H,
+        App.Vector(0, ENC_CENTER_Y, knob_base_z),
+        App.Vector(0, 0, 1),
+    )
+    parts.append(knob)
+
 # Fuse everything into one solid
-full = pcb.fuse(enc).fuse(shaft).fuse(hdr_body)
-for p in pin_shapes:
+full = parts[0]
+for p in parts[1:]:
     full = full.fuse(p)
 
 obj = doc.addObject("Part::Feature", "KY_040_Encoder")
 obj.Shape = full
-obj.Label = "KY-040_Rotary_Encoder"
+obj.Label = "KY-040_Rotary_Encoder" + (" + Knob" if INCLUDE_KNOB else "")
 obj.Placement = App.Placement(
     App.Vector(X_CENTER, Y_OFFSET, Z_CENTER),
     ROT,
@@ -128,6 +154,7 @@ except Exception:
     pass
 
 print(
-    f"Built KY-040 encoder module at (X={X_CENTER}, Y={Y_OFFSET}, Z={Z_CENTER}). "
-    "Adjust X/Y/Z_CENTER and ROT at the top of the macro to reposition/reorient."
+    f"Built KY-040 (with bushing{', + knob' if INCLUDE_KNOB else ''}) at "
+    f"(X={X_CENTER}, Y={Y_OFFSET}, Z={Z_CENTER}). "
+    "Adjust the constants at the top of the macro to reposition/reshape."
 )
