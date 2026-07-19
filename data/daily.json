@@ -1,10 +1,25 @@
 {
   "generated": "2026-07-19",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Flying Saucer Crash Lands in Utah Desert",
+    "date": "2026-07-19",
+    "explanation": "A flying saucer from outer space crash-landed in the Utah desert after being tracked by radar and chased by helicopters.  The year was 2004, and no space aliens were involved.  The saucer, pictured here, was the Genesis sample return capsule, part of a human-made robot Genesis spaceship launched in 2001 by NASA itself to study the Sun.  The unexpectedly hard landing at over 300 kilometers per hour occurred because the parachutes did not open as planned.  The Genesis mission had been orbiting the Sun collecting solar wind particles that are usually deflected away by Earth's magnetic field. Despite the crash landing, many return samples remained in good enough condition to analyze. Genesis-related discoveries included new details about the composition of the Sun and how the abundance of some types of elements differ across the Solar System. These results have provided intriguing clues into details of how the Sun and planets formed billions of years ago.    Almost Hyperspace: Random APOD Generator",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/Genesisimpact_nasa_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/Genesisimpact_nasa_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t1tp",
+        "title": "M5.5 Earthquake - 81 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-19T17:45:16.923000Z",
+        "coordinates": [
+          -92.9052,
+          14.1592
+        ]
+      },
       {
         "id": "us7000t1q7",
         "title": "M5.5 Earthquake - 2 km WSW of Sicaya, Peru",
@@ -144,16 +159,6 @@
           -92.9584,
           14.2237
         ]
-      },
-      {
-        "id": "us7000t1fk",
-        "title": "M5.2 Earthquake - 67 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T18:26:43.919000Z",
-        "coordinates": [
-          -92.9332,
-          14.3713
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.4,
-    "humidity": 76,
-    "condition": "Rain",
-    "description": "heavy intensity rain",
-    "icon": "10d",
-    "wind_kmh": 13.7
+    "city": "Donji grad",
+    "temp_c": 18.3,
+    "feels_c": 18.4,
+    "humidity": 85,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 12.6
   },
   "forecast_today": {
     "date": "2026-07-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 20.4,
-    "humidity": 78,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 11.9,
-    "samples": 3
+    "city": "Donji grad",
+    "temp_min_c": 18.2,
+    "temp_max_c": 18.3,
+    "humidity": 86,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 8.1,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 27.0,
-    "humidity": 64,
+    "city": "Donji grad",
+    "temp_min_c": 17,
+    "temp_max_c": 27.6,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
+    "description": "light rain",
+    "icon": "10d",
     "wind_kmh": 5.4
   },
   "forecast_day_after": {
     "date": "2026-07-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 25.1,
-    "humidity": 48,
+    "city": "Donji grad",
+    "temp_min_c": 17.0,
+    "temp_max_c": 25.7,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.8
+    "wind_kmh": 8.4
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-19T13:00",
-    "safe_minutes": 667,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-19T19:56:25+02:00"
+    "fetched_at": "2026-07-19T21:05:01+02:00"
   }
 }
