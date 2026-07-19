@@ -67,9 +67,9 @@ HDR_CENTER_Y = -PCB_L / 2 + HDR_W / 2 + 0.5
 # ── target placement in world coords ─────────────────────────────────────────
 # Far-right, top corner of the HUB75 back. PCB base flush with the rim, shaft
 # faces +Y so the bushing and knob poke through the back panel.
-X_CENTER = 115.0
-Y_OFFSET =  14.0    # PCB bottom flush with the HUB75 back rim
-Z_CENTER =  45.0    # top of the panel
+X_CENTER = -115.0   # world −X (renders on viewer-right in Rear view)
+Y_OFFSET =   33.0   # bushing (local Z=8.1–15.1) crosses the back panel (Y=45–48)
+Z_CENTER =   45.0   # top of the panel
 
 # −90° about X → local +Z (shaft direction) becomes world +Y (into the
 # enclosure, poking through the back panel). Flip to +90 for viewer-facing.

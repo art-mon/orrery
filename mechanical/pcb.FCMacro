@@ -25,8 +25,8 @@ STEP_PATH = os.path.expanduser(
 
 # ── target placement in world coordinates ────────────────────────────────────
 # Upper-right quadrant of the HUB75 back, sitting close to the rim.
-Y_OFFSET  = 20.0            # mm behind the HUB75 LED face
-CENTER_XZ = (65.0, 25.0)    # (X, Z) — right side, upper half
+Y_OFFSET  = 20.0             # mm behind the HUB75 LED face
+CENTER_XZ = (-65.0, 25.0)    # (X, Z) — world −X, upper half (renders on viewer-right)
 
 # ── build ────────────────────────────────────────────────────────────────────
 if not os.path.exists(STEP_PATH):

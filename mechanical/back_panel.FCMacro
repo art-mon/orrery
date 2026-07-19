@@ -1,22 +1,26 @@
-# Back acrylic panel — sits against the HUB75 back rim
+# Back acrylic panel — sits behind the interior components, forming
+# the outermost rear wall of the enclosure.
 #
 # Usage:
 #   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
-# Open this document alongside HUB75_Panel to see them assembled (both
-# share the world origin = center of the HUB75 LED face).
+# Open alongside the other part documents (or run assembly.FCMacro).
 #
 # Coordinate convention (shared with hub75_panel.FCMacro):
-#   ORIGIN  = center of the HUB75 LED (front) face
-#   +X      = right
+#   ORIGIN  = center of the HUB75 LED face
+#   +X      = right (viewer's perspective from the front)
 #   +Z      = up
 #   +Y      = into the enclosure
 #
-# The back panel:
+# Placement:
 #   - Same X × Z envelope as the HUB75 (256 × 128 mm)
-#   - 3 mm thick, sits from Y = HUB75_D to Y = HUB75_D + t
-#   - 6 M3 clearance through-holes lined up with the HUB75 mount threads
-#   - 2 rectangular cutouts so the HUB75 back connectors (data-in IDC +
-#     power terminal) poke through and remain accessible from outside
+#   - 3 mm thick, front face at Y = HUB75_D + BACK_GAP so it sits
+#     BEHIND all interior components (PSU, PCB, encoder, speaker)
+#   - 6 M3 clearance through-holes at the HUB75 thread positions
+#     (repurposed as enclosure-structure mount points)
+#   - Cutouts for:
+#       · rotary encoder bushing (through-shaft)
+#       · speaker cone (grille opening)
+#       · generic bottom-edge cable slot for USB / power ingress
 
 import FreeCAD as App
 import Part
@@ -24,47 +28,67 @@ import Part
 # ── shared with HUB75 (keep in sync with hub75_panel.FCMacro) ────────────────
 W        = 256.0    # X
 H        = 128.0    # Z
-HUB75_D  = 14.0     # depth of the HUB75 panel
-INSET    = 7.0
+HUB75_D  =  14.0    # depth of the HUB75 panel
+INSET    =   7.0
 
-# ── back panel ──────────────────────────────────────────────────────────────
-t                = 3.0      # panel thickness (Y)
-MOUNT_HOLE_D     = 3.2      # M3 clearance through-hole
-CUTOUT_CLEARANCE = 1.0      # gap on each side of each connector
+# ── back panel geometry ─────────────────────────────────────────────────────
+BACK_GAP     = 31.0     # gap between HUB75 back rim and back panel front
+t            =  3.0     # panel thickness (Y)
+MOUNT_HOLE_D =  3.2     # M3 clearance through-hole
 
-# Connector envelopes (must match hub75_panel.FCMacro)
-IDC_ENV_X, IDC_ENV_Z = 8.0, 23.0
-IDC_CENTER           = (-86.0, 0.0)
+FRONT_Y = HUB75_D + BACK_GAP   # front face Y = 45
+BACK_Y  = FRONT_Y + t          # back face Y = 48
 
-PWR_ENV_X, PWR_ENV_Z = 12.0, 7.0
-PWR_CENTER           = (0.0, 20.0)
+# ── cutouts (positions must match the placed parts) ─────────────────────────
+# Rotary encoder bushing hole (matches encoder X_CENTER / Z_CENTER)
+ENC_CENTER_XZ = (-115.0, 45.0)
+ENC_HOLE_D    = 8.0    # bushing OD (7 mm) + 1 mm clearance
+
+# Speaker grille opening (matches speaker X_CENTER / Z_CENTER)
+SPK_CENTER_XZ = (-90.0, -25.0)
+SPK_HOLE_L    = 55.0   # slightly larger than the cone recess (48 mm)
+SPK_HOLE_H    = 28.0   # slightly larger than the cone recess (22 mm)
+
+# Generic cable pass-through slot near the bottom edge
+CABLE_SLOT_XZ = (0.0, -55.0)
+CABLE_SLOT_L  = 30.0
+CABLE_SLOT_H  = 15.0
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("Back_Panel")
 
-# Slab: front face at Y = HUB75_D, back at Y = HUB75_D + t
-body = Part.makeBox(W, t, H, App.Vector(-W / 2, HUB75_D, -H / 2))
+body = Part.makeBox(W, t, H, App.Vector(-W / 2, FRONT_Y, -H / 2))
 
-# 2 connector cutouts through the full thickness
 def _rect_cutout(cx, cz, w, h):
     return Part.makeBox(
         w, t, h,
-        App.Vector(cx - w / 2, HUB75_D, cz - h / 2),
+        App.Vector(cx - w / 2, FRONT_Y, cz - h / 2),
     )
 
-idc_cut = _rect_cutout(
-    IDC_CENTER[0], IDC_CENTER[1],
-    IDC_ENV_X + 2 * CUTOUT_CLEARANCE,
-    IDC_ENV_Z + 2 * CUTOUT_CLEARANCE,
+# Encoder bushing hole (circular)
+enc_hole = Part.makeCylinder(
+    ENC_HOLE_D / 2, t,
+    App.Vector(ENC_CENTER_XZ[0], FRONT_Y, ENC_CENTER_XZ[1]),
+    App.Vector(0, 1, 0),
 )
-pwr_cut = _rect_cutout(
-    PWR_CENTER[0], PWR_CENTER[1],
-    PWR_ENV_X + 2 * CUTOUT_CLEARANCE,
-    PWR_ENV_Z + 2 * CUTOUT_CLEARANCE,
-)
-body = body.cut(idc_cut).cut(pwr_cut)
+body = body.cut(enc_hole)
 
-# 6 M3 clearance through-holes at the same positions as the HUB75 threads
+# Speaker grille (rectangular hole)
+spk_hole = _rect_cutout(
+    SPK_CENTER_XZ[0], SPK_CENTER_XZ[1],
+    SPK_HOLE_L, SPK_HOLE_H,
+)
+body = body.cut(spk_hole)
+
+# Cable pass-through slot
+cable_hole = _rect_cutout(
+    CABLE_SLOT_XZ[0], CABLE_SLOT_XZ[1],
+    CABLE_SLOT_L, CABLE_SLOT_H,
+)
+body = body.cut(cable_hole)
+
+# 6 M3 clearance through-holes at the HUB75 mount-thread positions
+# (now serve as enclosure-structure mount points, not HUB75 mounts)
 holes = [
     (-W / 2 + INSET, -H / 2 + INSET),   # BL
     ( 0.0,           -H / 2 + INSET),   # BC
@@ -76,7 +100,7 @@ holes = [
 for x, z in holes:
     cyl = Part.makeCylinder(
         MOUNT_HOLE_D / 2, t,
-        App.Vector(x, HUB75_D, z),
+        App.Vector(x, FRONT_Y, z),
         App.Vector(0, 1, 0),
     )
     body = body.cut(cyl)
@@ -92,6 +116,6 @@ except Exception:
     pass
 
 print(
-    f"Built back panel: {W} × {H} × {t} mm, "
-    f"{len(holes)} M3 clearance holes, 2 connector cutouts."
+    f"Built back panel: {W} × {H} × {t} mm at Y={FRONT_Y}–{BACK_Y}, "
+    f"6 M3 clearance holes, encoder shaft hole, speaker grille, cable slot."
 )
