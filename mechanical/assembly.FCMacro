@@ -1,0 +1,65 @@
+# Orrery Enclosure Assembly — runs every part macro in order
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+#
+# Closes any prior assembly documents to avoid piling up duplicates,
+# then runs each part macro in sequence. Result: six documents open,
+# all rendered together in one 3D view because they share the world
+# origin (centre of the HUB75 LED face).
+
+import os
+import FreeCAD as App
+
+MACRO_DIR = os.path.expanduser("~/Documents/Repos/NASA/mechanical")
+
+# Ordered list of part macros to execute
+MACROS = [
+    "hub75_panel.FCMacro",
+    "back_panel.FCMacro",
+    "pcb.FCMacro",
+    "psu.FCMacro",
+    "rotary_encoder.FCMacro",
+    "speaker.FCMacro",
+]
+
+# Document names each part macro creates, so we can close them cleanly
+# before rerunning. Update this list if any macro changes its
+# newDocument() name.
+DOC_NAMES = [
+    "HUB75_Panel",
+    "Back_Panel",
+    "Orrery_PCB",
+    "RS_25_PSU",
+    "KY_040_Encoder",
+    "Speaker",
+]
+
+# ── close any prior assembly documents ───────────────────────────────────────
+existing = App.listDocuments()
+for name in DOC_NAMES:
+    if name in existing:
+        try:
+            App.closeDocument(name)
+            print(f"[assembly] closed existing document '{name}'")
+        except Exception as e:
+            print(f"[assembly] could not close '{name}': {e}")
+
+# ── run each part macro in sequence ──────────────────────────────────────────
+for name in MACROS:
+    path = os.path.join(MACRO_DIR, name)
+    if not os.path.exists(path):
+        print(f"[assembly] MISSING FILE: {path}")
+        continue
+    print(f"[assembly] executing {name}")
+    with open(path) as f:
+        source = f.read()
+    exec(compile(source, path, "exec"))
+
+# ── fit view ─────────────────────────────────────────────────────────────────
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(f"[assembly] done — {len(App.listDocuments())} documents open")
