@@ -1,19 +1,27 @@
-# Orrery Enclosure Assembly — runs every part macro in order
+# Orrery Enclosure Assembly — runs every part macro and consolidates
+# them into a single "Orrery_Assembly" document.
 #
 # Usage:
 #   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
 #
-# Closes any prior assembly documents to avoid piling up duplicates,
-# then runs each part macro in sequence. Result: six documents open,
-# all rendered together in one 3D view because they share the world
-# origin (centre of the HUB75 LED face).
+# Flow:
+#   1. Close any prior part/assembly documents (idempotent re-run).
+#   2. Execute each part macro. Each one still creates its own
+#      newDocument("HUB75_Panel", "Back_Panel", …) as before.
+#   3. Copy every Part::Feature out of those into "Orrery_Assembly".
+#   4. Close the individual part documents so only the assembly
+#      remains in the tree.
+#
+# Every part macro places its geometry at world coordinates around
+# the HUB75 LED-face origin, so the copies land where they belong
+# and you get a single assembled document at the end.
 
 import os
 import FreeCAD as App
 
-MACRO_DIR = os.path.expanduser("~/Documents/Repos/NASA/mechanical")
+MACRO_DIR          = os.path.expanduser("~/Documents/Repos/NASA/mechanical")
+ASSEMBLY_DOC_NAME  = "Orrery_Assembly"
 
-# Ordered list of part macros to execute
 MACROS = [
     "hub75_panel.FCMacro",
     "back_panel.FCMacro",
@@ -23,9 +31,6 @@ MACROS = [
     "speaker.FCMacro",
 ]
 
-# Document names each part macro creates, so we can close them cleanly
-# before rerunning. Update this list if any macro changes its
-# newDocument() name.
 DOC_NAMES = [
     "HUB75_Panel",
     "Back_Panel",
@@ -35,17 +40,17 @@ DOC_NAMES = [
     "Speaker",
 ]
 
-# ── close any prior assembly documents ───────────────────────────────────────
+# ── close any prior documents (individual parts + assembly) ──────────────────
 existing = App.listDocuments()
-for name in DOC_NAMES:
+for name in DOC_NAMES + [ASSEMBLY_DOC_NAME]:
     if name in existing:
         try:
             App.closeDocument(name)
-            print(f"[assembly] closed existing document '{name}'")
+            print(f"[assembly] closed '{name}'")
         except Exception as e:
             print(f"[assembly] could not close '{name}': {e}")
 
-# ── run each part macro in sequence ──────────────────────────────────────────
+# ── run each part macro (each creates its own doc) ───────────────────────────
 for name in MACROS:
     path = os.path.join(MACRO_DIR, name)
     if not os.path.exists(path):
@@ -56,10 +61,37 @@ for name in MACROS:
         source = f.read()
     exec(compile(source, path, "exec"))
 
-# ── fit view ─────────────────────────────────────────────────────────────────
+# ── consolidate into a single assembly document ──────────────────────────────
+assembly_doc = App.newDocument(ASSEMBLY_DOC_NAME)
+copied_count = 0
+
+for source_name in DOC_NAMES:
+    if source_name not in App.listDocuments():
+        continue
+    source_doc = App.getDocument(source_name)
+    for obj in source_doc.Objects:
+        if obj.TypeId != "Part::Feature":
+            continue
+        assembly_doc.copyObject(obj, False)   # placement + shape carry over
+        copied_count += 1
+        print(f"[assembly] copied {source_name}::{obj.Label} → {ASSEMBLY_DOC_NAME}")
+
+# ── close individual part documents ──────────────────────────────────────────
+for name in DOC_NAMES:
+    if name in App.listDocuments():
+        try:
+            App.closeDocument(name)
+        except Exception as e:
+            print(f"[assembly] could not close '{name}' after copy: {e}")
+
+App.setActiveDocument(ASSEMBLY_DOC_NAME)
+assembly_doc.recompute()
+
 try:
     App.Gui.SendMsgToActiveView("ViewFit")
 except Exception:
     pass
 
-print(f"[assembly] done — {len(App.listDocuments())} documents open")
+print(
+    f"[assembly] done — {copied_count} parts assembled in '{ASSEMBLY_DOC_NAME}'"
+)
