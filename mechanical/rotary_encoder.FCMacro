@@ -65,12 +65,15 @@ ENC_CENTER_Y = PCB_L / 2 - ENC_L / 2 - 0.5
 HDR_CENTER_Y = -PCB_L / 2 + HDR_W / 2 + 0.5
 
 # ── target placement in world coords ─────────────────────────────────────────
-X_CENTER =  0.0
-Y_OFFSET = -5.0     # slightly out toward the viewer from the LED face
-Z_CENTER = 40.0     # above panel centre — placeholder
+# Far-right, top corner of the HUB75 back. PCB base flush with the rim, shaft
+# faces +Y so the bushing and knob poke through the back panel.
+X_CENTER = 115.0
+Y_OFFSET =  14.0    # PCB bottom flush with the HUB75 back rim
+Z_CENTER =  45.0    # top of the panel
 
-# +90° about X → local +Z (shaft direction) becomes world −Y (out at viewer).
-ROT = App.Rotation(App.Vector(1, 0, 0), 90)
+# −90° about X → local +Z (shaft direction) becomes world +Y (into the
+# enclosure, poking through the back panel). Flip to +90 for viewer-facing.
+ROT = App.Rotation(App.Vector(1, 0, 0), -90)
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("KY_040_Encoder")

@@ -24,8 +24,9 @@ STEP_PATH = os.path.expanduser(
 )
 
 # ── target placement in world coordinates ────────────────────────────────────
-Y_OFFSET  = 30.0        # mm behind the HUB75 LED face
-CENTER_XZ = (0.0, 0.0)  # (X, Z) center of the PCB in world coords
+# Upper-right quadrant of the HUB75 back, sitting close to the rim.
+Y_OFFSET  = 20.0            # mm behind the HUB75 LED face
+CENTER_XZ = (65.0, 25.0)    # (X, Z) — right side, upper half
 
 # ── build ────────────────────────────────────────────────────────────────────
 if not os.path.exists(STEP_PATH):

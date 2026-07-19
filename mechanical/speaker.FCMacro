@@ -41,12 +41,15 @@ SCREW_HOLE_D = 3.2   # M3 clearance
 SCREW_INSET  = 4.0   # centre of each hole inset from the nearest edges
 
 # ── target placement in world coords ─────────────────────────────────────────
-X_CENTER =  0.0
-Y_OFFSET = -5.0    # a hair in front of the LED face
-Z_CENTER = 50.0    # above panel centre — placeholder
+# Right side, lower half of the HUB75 back. Cone faces +Y (toward the back
+# panel / grille) so sound exits through the rear of the enclosure.
+X_CENTER =  90.0
+Y_OFFSET =  14.0    # base flush with the HUB75 back rim
+Z_CENTER = -25.0    # lower half of the panel
 
-# +90° about X → local +Z (cone-facing direction) becomes world −Y
-ROT = App.Rotation(App.Vector(1, 0, 0), 90)
+# −90° about X → local +Z (cone-facing direction) becomes world +Y (into
+# the enclosure, out the back). Flip to +90 for cone facing the viewer.
+ROT = App.Rotation(App.Vector(1, 0, 0), -90)
 
 # ── build ────────────────────────────────────────────────────────────────────
 doc = App.newDocument("Speaker")

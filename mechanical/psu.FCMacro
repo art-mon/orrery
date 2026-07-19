@@ -20,11 +20,10 @@ STEP_PATH = os.path.expanduser(
 )
 
 # ── target placement in world coordinates ────────────────────────────────────
-# Initial guess: parked inside the enclosure interior, below the PCB.
-# Tweak these to move the PSU into its actual mounting position.
-X_CENTER =   0.0    # horizontal (X) centre of the PSU
-Z_CENTER = -40.0    # below the panel centre, out of the PCB's way
-Y_OFFSET =  40.0    # depth into the enclosure
+# Sitting against the HUB75 back rim, on the LEFT half of the panel.
+X_CENTER = -75.0    # left half of the HUB75 back
+Z_CENTER =   0.0    # vertically centred
+Y_OFFSET =  28.0    # base flush with the HUB75 back rim (Y=14) + H/2 (14)
 
 # ── rotation to match project convention ─────────────────────────────────────
 # The Mean Well STEP has the case oriented with its L axis along X,
