@@ -1,0 +1,133 @@
+# KY-040 Rotary Encoder Module — hand-modeled reference
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+#
+# The KY-040 is a generic clone board with no vendor-official STEP,
+# so it's built parametrically from datasheet-ish dimensions:
+#   - PCB slab
+#   - Metal encoder case sitting on top
+#   - Shaft cylinder with D-flat cut
+#   - 5-pin header body
+# All fused into a single Part::Feature (single Placement moves it).
+#
+# Local coordinate system for the model:
+#   - PCB lies in the XY plane, thickness in +Z
+#   - Shaft points along +Z
+# The macro then applies a +90° rotation about X so in world coords
+# the shaft ends up pointing along −Y (out toward the viewer), ready
+# to poke through a front-panel hole. Adjust ROT if you'd rather have
+# it point up, sideways, etc.
+
+import FreeCAD as App
+import Part
+
+# ── PCB ──────────────────────────────────────────────────────────────────────
+PCB_L    = 30.0     # length (X in local)
+PCB_W    = 15.0     # width  (Y in local)
+PCB_T    = 1.6      # thickness (Z)
+
+# ── encoder metal case ───────────────────────────────────────────────────────
+ENC_L    = 12.4
+ENC_W    = 13.2
+ENC_H    = 6.5      # protrudes above PCB in +Z
+
+# ── shaft ───────────────────────────────────────────────────────────────────
+SHAFT_D          = 6.0
+SHAFT_L          = 13.0
+SHAFT_FLAT_LEN   = 8.0    # length of the D-flat (top of shaft)
+SHAFT_FLAT_DEPTH = 1.0    # how deeply the flat cuts into the cylinder
+
+# ── 5-pin header (single row, 2.54 mm pitch) ─────────────────────────────────
+HDR_L    = 12.7
+HDR_W    = 2.54
+HDR_H    = 2.5      # header plastic body height
+PIN_D    = 0.7
+PIN_L_BELOW = 7.0
+PIN_L_ABOVE = 3.0
+
+# ── layout on the PCB ────────────────────────────────────────────────────────
+# Encoder centred over one end, 5-pin header centred over the other.
+ENC_CENTER_X = -PCB_L / 2 + ENC_L / 2 + 3.0
+HDR_CENTER_X =  PCB_L / 2 - HDR_L / 2 - 1.0
+
+# ── target placement in world coords ─────────────────────────────────────────
+X_CENTER =  0.0
+Y_OFFSET = -5.0    # slightly out toward the viewer from the LED face
+Z_CENTER = 40.0    # above panel centre — just a placeholder position
+
+# ── orientation ──────────────────────────────────────────────────────────────
+# +90° about X maps local +Z (shaft direction) to world −Y (out
+# toward the viewer). If you want the shaft to point INTO the
+# enclosure instead, change +90 to −90.
+ROT = App.Rotation(App.Vector(1, 0, 0), 90)
+
+# ── build ────────────────────────────────────────────────────────────────────
+doc = App.newDocument("KY_040_Encoder")
+
+# PCB
+pcb = Part.makeBox(PCB_L, PCB_W, PCB_T, App.Vector(-PCB_L / 2, -PCB_W / 2, 0))
+
+# Metal encoder case
+enc = Part.makeBox(
+    ENC_L, ENC_W, ENC_H,
+    App.Vector(ENC_CENTER_X - ENC_L / 2, -ENC_W / 2, PCB_T),
+)
+
+# Shaft — cylinder rising from the top of the encoder case
+shaft_base_z = PCB_T + ENC_H
+shaft = Part.makeCylinder(
+    SHAFT_D / 2, SHAFT_L,
+    App.Vector(ENC_CENTER_X, 0, shaft_base_z),
+    App.Vector(0, 0, 1),
+)
+# D-flat on the top portion of the shaft
+flat = Part.makeBox(
+    SHAFT_D + 1, SHAFT_FLAT_DEPTH, SHAFT_FLAT_LEN,
+    App.Vector(
+        ENC_CENTER_X - (SHAFT_D + 1) / 2,
+        SHAFT_D / 2 - SHAFT_FLAT_DEPTH,
+        shaft_base_z + SHAFT_L - SHAFT_FLAT_LEN,
+    ),
+)
+shaft = shaft.cut(flat)
+
+# Header body + pins on the opposite end of the PCB
+hdr_body = Part.makeBox(
+    HDR_L, HDR_W, HDR_H,
+    App.Vector(HDR_CENTER_X - HDR_L / 2, -HDR_W / 2, PCB_T),
+)
+
+pin_shapes = []
+for i in range(5):
+    pin_x = HDR_CENTER_X - HDR_L / 2 + 1.27 + i * 2.54
+    pin = Part.makeCylinder(
+        PIN_D / 2, PIN_L_BELOW + PIN_L_ABOVE + PCB_T,
+        App.Vector(pin_x, 0, -PIN_L_BELOW),
+        App.Vector(0, 0, 1),
+    )
+    pin_shapes.append(pin)
+
+# Fuse everything into one solid
+full = pcb.fuse(enc).fuse(shaft).fuse(hdr_body)
+for p in pin_shapes:
+    full = full.fuse(p)
+
+obj = doc.addObject("Part::Feature", "KY_040_Encoder")
+obj.Shape = full
+obj.Label = "KY-040_Rotary_Encoder"
+obj.Placement = App.Placement(
+    App.Vector(X_CENTER, Y_OFFSET, Z_CENTER),
+    ROT,
+)
+doc.recompute()
+
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(
+    f"Built KY-040 encoder module at (X={X_CENTER}, Y={Y_OFFSET}, Z={Z_CENTER}). "
+    "Adjust X/Y/Z_CENTER and ROT at the top of the macro to reposition/reorient."
+)
