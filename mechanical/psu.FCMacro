@@ -23,7 +23,7 @@ STEP_PATH = os.path.expanduser(
 # Sitting against the HUB75 back rim, on the LEFT half of the panel.
 X_CENTER =  75.0    # world +X (renders on the viewer-left in Rear view)
 Z_CENTER =   0.0    # vertically centred
-Y_OFFSET =  28.0    # base flush with the HUB75 back rim (Y=14) + H/2 (14)
+Y_OFFSET =  31.0    # base pressed against back-panel rear face (Y=17) + H/2 (14)
 
 # ── rotation to match project convention ─────────────────────────────────────
 # The Mean Well STEP has the case oriented with its L axis along X,

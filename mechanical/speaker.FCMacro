@@ -44,7 +44,7 @@ SCREW_INSET  = 4.0   # centre of each hole inset from the nearest edges
 # Right side, lower half of the HUB75 back. Cone faces +Y (toward the back
 # panel / grille) so sound exits through the rear of the enclosure.
 X_CENTER = -90.0    # world −X (renders on viewer-right in Rear view)
-Y_OFFSET =  29.0    # cone (at local Z=BODY_H=16) lands at the back panel (Y≈45)
+Y_OFFSET =  17.0    # body base pressed against the back-panel rear face
 Z_CENTER = -25.0    # lower half of the panel
 
 # −90° about X → local +Z (cone-facing direction) becomes world +Y (into

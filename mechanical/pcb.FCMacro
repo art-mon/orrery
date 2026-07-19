@@ -25,7 +25,7 @@ STEP_PATH = os.path.expanduser(
 
 # ── target placement in world coordinates ────────────────────────────────────
 # Upper-right quadrant of the HUB75 back, sitting close to the rim.
-Y_OFFSET  = 20.0             # mm behind the HUB75 LED face
+Y_OFFSET  = 26.0             # BB centre — pushes pin bottoms roughly to the back-panel rear face (Y=17)
 CENTER_XZ = (-65.0, 25.0)    # (X, Z) — world −X, upper half (renders on viewer-right)
 
 # ── build ────────────────────────────────────────────────────────────────────
