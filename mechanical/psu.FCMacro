@@ -1,0 +1,80 @@
+# Mean Well RS-25 PSU — official STEP model imported into the assembly
+#
+# Usage:
+#   FreeCAD → Macro → Macros… → point at this file → Execute (F5)
+#
+# The STEP was downloaded from meanwell.com and covers the whole RS-25
+# series (all output voltages are mechanically identical, so RS-25-5
+# uses the same solid).
+#
+# Same single-Compound trick as pcb.FCMacro: read the STEP as one
+# Shape and assign it to one Part::Feature so a single Placement moves
+# the entire model rigidly.
+
+import os
+import FreeCAD as App
+import Part
+
+STEP_PATH = os.path.expanduser(
+    "~/Documents/Repos/NASA/mechanical/RS-25.stp"
+)
+
+# ── target placement in world coordinates ────────────────────────────────────
+# Initial guess: parked inside the enclosure interior, below the PCB.
+# Tweak these to move the PSU into its actual mounting position.
+X_CENTER =   0.0    # horizontal (X) centre of the PSU
+Z_CENTER = -40.0    # below the panel centre, out of the PCB's way
+Y_OFFSET =  40.0    # depth into the enclosure
+
+# ── rotation to match project convention ─────────────────────────────────────
+# The Mean Well STEP has the case oriented with its L axis along X,
+# W axis along Y, H (height/vertical) axis along Z — datasheet standard.
+# Our project uses Y = depth into enclosure, so a −90° rotation about
+# X swaps Z (case-vertical) into Y (project-depth) the same way it did
+# for the KiCad PCB. Result: PSU stands upright with terminals facing
+# up (+Z in the world), depth axis into the enclosure.
+ROT = App.Rotation(App.Vector(1, 0, 0), -90)
+
+# ── build ────────────────────────────────────────────────────────────────────
+if not os.path.exists(STEP_PATH):
+    raise FileNotFoundError(f"STEP file not found at {STEP_PATH}.")
+
+doc = App.newDocument("RS_25_PSU")
+
+shape = Part.Shape()
+shape.read(STEP_PATH)
+
+bb = shape.BoundBox
+print(
+    f"RS-25 STEP bounding box (native, mm): "
+    f"X=[{bb.XMin:.1f}, {bb.XMax:.1f}], "
+    f"Y=[{bb.YMin:.1f}, {bb.YMax:.1f}], "
+    f"Z=[{bb.ZMin:.1f}, {bb.ZMax:.1f}]"
+)
+
+# Native centre
+cx = (bb.XMin + bb.XMax) / 2.0
+cy = (bb.YMin + bb.YMax) / 2.0
+cz = (bb.ZMin + bb.ZMax) / 2.0
+# After −90° rotation about X, native (x, y, z) → world (x, z, −y)
+rotated_center = App.Vector(cx, cz, -cy)
+
+target      = App.Vector(X_CENTER, Y_OFFSET, Z_CENTER)
+translation = target - rotated_center
+
+obj = doc.addObject("Part::Feature", "RS_25_PSU")
+obj.Shape = shape
+obj.Label = "MeanWell_RS-25-5"
+obj.Placement = App.Placement(translation, ROT)
+
+doc.recompute()
+
+try:
+    App.Gui.SendMsgToActiveView("ViewFit")
+except Exception:
+    pass
+
+print(
+    f"Placed RS-25 at (X={X_CENTER}, Y={Y_OFFSET}, Z={Z_CENTER}). "
+    "Adjust X_CENTER / Y_OFFSET / Z_CENTER at the top of the macro to reposition."
+)
