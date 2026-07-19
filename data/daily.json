@@ -3,13 +3,33 @@
   "apod": {
     "title": "Shadow and Rainbow",
     "date": "2026-07-18",
-    "explanation": "At sunset, an alignment of rainbow and mountain shadow was captured in this remarkable snapshot. The stunning view was recorded from a fire lookout on Smith Peak in the Plumas National Forest near Portola, California on July 13.  Still, near sunset it's no accident that the majestic mountain shadow seems to point to the center of the graceful rainbow arc. Due to perspective and the long line of sight the mountain shadow naturally forms a tapering triangular shape, its apex positioned at the point opposite the Sun on the horizon. Following thunderstorms across the region, the rainbow arcs across the early evening sky, with its colorful and characteristic 42 degree arc formed as sunlight is refracted and reflected by the atmospheric water droplets. The geometric center of a rainbow arc lies at the antisolar point. And in this scene from the golden hour on planet Earth, that's also oposite the setting Sun along the distant horizon.",
+    "explanation": "At sunset, an alignment of rainbow and mountain shadow was captured in this remarkable snapshot. The stunning view was recorded from a fire lookout on Smith Peak in the Plumas National Forest near Portola, California on July 13.  Still, near sunset it's no accident that the majestic mountain shadow seems to point to the center of the graceful rainbow arc. Due to perspective and the long line of sight the mountain shadow naturally forms a tapering triangular shape, its apex positioned at the point opposite the Sun on the horizon. Following thunderstorms in the region, the rainbow arched across the early evening sky, with its colorful and characteristic 42 degree arc formed as sunlight is refracted and reflected by the atmospheric water droplets. The geometric center of a rainbow arc lies at the antisolar point. And in this scene from the golden hour on planet Earth, that's also opposite the setting Sun along the distant horizon.",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo1024.jpg",
     "hdurl": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t1q3",
+        "title": "M5.3 Earthquake - 85 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-19T01:47:24.332000Z",
+        "coordinates": [
+          -92.9167,
+          14.1155
+        ]
+      },
+      {
+        "id": "us7000t1py",
+        "title": "M5.3 Earthquake - 190 km SSE of Vilyuchinsk, Russia",
+        "category": "Earthquake",
+        "date": "2026-07-19T00:39:39.917000Z",
+        "coordinates": [
+          159.6116,
+          51.3859
+        ]
+      },
       {
         "id": "us7000t1ng",
         "title": "M5.5 Earthquake - Scotia Sea",
@@ -139,79 +159,11 @@
           -92.9705,
           14.3448
         ]
-      },
-      {
-        "id": "us7000t1ey",
-        "title": "M5.1 Earthquake - 78 km WSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T17:03:38.011000Z",
-        "coordinates": [
-          -93.0323,
-          14.3368
-        ]
-      },
-      {
-        "id": "us7000t1e8",
-        "title": "M5.2 Earthquake - 11 km SE of Kiupo, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-17T16:12:57.547000Z",
-        "coordinates": [
-          125.378,
-          5.7602
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 QR16)",
-        "hazardous": false,
-        "diameter_m": 162,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 23639374,
-        "velocity_kmh": 30748
-      },
-      {
-        "name": "(2019 LF1)",
-        "hazardous": false,
-        "diameter_m": 233,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 57265900,
-        "velocity_kmh": 29032
-      },
-      {
-        "name": "(2019 UL5)",
-        "hazardous": false,
-        "diameter_m": 17,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 62315509,
-        "velocity_kmh": 20807
-      },
-      {
-        "name": "(2017 BP30)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 63799650,
-        "velocity_kmh": 26357
-      },
-      {
-        "name": "(2015 RF36)",
-        "hazardous": false,
-        "diameter_m": 124,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 67979267,
-        "velocity_kmh": 57339
-      },
-      {
-        "name": "(2019 MX3)",
-        "hazardous": false,
-        "diameter_m": 216,
-        "close_approach_date": "2026-07-18",
-        "miss_distance_km": 71840960,
-        "velocity_kmh": 14419
-      },
       {
         "name": "(2016 PC8)",
         "hazardous": false,
@@ -243,52 +195,100 @@
         "close_approach_date": "2026-07-20",
         "miss_distance_km": 8918882,
         "velocity_kmh": 49775
+      },
+      {
+        "name": "(2009 HC)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 24568520,
+        "velocity_kmh": 12594
+      },
+      {
+        "name": "524474 (2002 KJ3)",
+        "hazardous": false,
+        "diameter_m": 813,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 28253001,
+        "velocity_kmh": 16603
+      },
+      {
+        "name": "(2019 VK3)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 35182446,
+        "velocity_kmh": 51820
+      },
+      {
+        "name": "(2002 AJ69)",
+        "hazardous": false,
+        "diameter_m": 327,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 38203008,
+        "velocity_kmh": 67987
+      },
+      {
+        "name": "(2017 VZ13)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 51500433,
+        "velocity_kmh": 15118
+      },
+      {
+        "name": "(2018 PR10)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 69658029,
+        "velocity_kmh": 96579
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 18.9,
-    "feels_c": 19.4,
-    "humidity": 95,
+    "city": "Zagreb",
+    "temp_c": 19.1,
+    "feels_c": 19.5,
+    "humidity": 93,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 5.6
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 2.9
   },
   "forecast_today": {
     "date": "2026-07-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 29.7,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_min_c": 18.1,
+    "temp_max_c": 30.3,
+    "humidity": 76,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04n",
-    "wind_kmh": 6.2,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 4.8,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 28.9,
-    "humidity": 63,
+    "city": "Zagreb",
+    "temp_min_c": 17.7,
+    "temp_max_c": 27.2,
+    "humidity": 65,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 4.9
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-07-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.0,
-    "temp_max_c": 24.7,
-    "humidity": 60,
-    "condition": "Rain",
+    "city": "Zagreb",
+    "temp_min_c": 18.4,
+    "temp_max_c": 22.9,
+    "humidity": 57,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.8
+    "wind_kmh": 9.6
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-19T01:51:16+02:00"
+    "fetched_at": "2026-07-19T04:27:20+02:00"
   }
 }
