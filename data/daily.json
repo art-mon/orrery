@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 18.3,
-    "feels_c": 18.4,
+    "temp_c": 18.1,
+    "feels_c": 18.2,
     "humidity": 85,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 12.6
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-07-19",
     "city": "Donji grad",
-    "temp_min_c": 18.2,
-    "temp_max_c": 18.3,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 8.1,
+    "temp_min_c": 18.1,
+    "temp_max_c": 18.1,
+    "humidity": 85,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 3.7,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-20",
     "city": "Donji grad",
-    "temp_min_c": 17,
+    "temp_min_c": 17.4,
     "temp_max_c": 27.6,
-    "humidity": 67,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-19T21:05:01+02:00"
+    "fetched_at": "2026-07-19T22:42:30+02:00"
   }
 }
