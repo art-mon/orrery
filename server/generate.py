@@ -20,6 +20,7 @@ import nasa
 import weather
 import uv as uv_mod
 import image
+import qr
 import briefing
 import generate_bg
 import fetch_clouds
@@ -101,6 +102,15 @@ def run():
                 print("✓ data/frame_b64.json")
     else:
         print("  APOD is not an image today — skipping frame")
+
+    # QR code for the "scan for more" tail of the APOD scene. Static URL for
+    # now — cheap enough to regenerate every run and keeps the option open
+    # to swap in a per-day URL later without a firmware change.
+    print("APOD QR...")
+    qr_payload = safe(qr.generate, "apod.nasa.gov")
+    if "error" not in qr_payload:
+        (OUT / "apod_qr.json").write_text(json.dumps(qr_payload))
+        print("✓ data/apod_qr.json")
 
     # Daily briefing (TTS) — regenerated from live data on every run
     print("Briefing (edge-tts)...")
