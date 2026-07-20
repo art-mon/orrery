@@ -1213,9 +1213,11 @@ static void scene_broadcast(const daily_data_t *d, uint32_t tick) {
 
 // ─── scene_apod (NASA Astronomy Picture of the Day) ─────────────────────
 
-#define APOD_SCENE_TICKS (14 * 1000 / FRAME_MS)   // 14 s — one ticker pass + hold
+#define APOD_IMAGE_TICKS (14 * 1000 / FRAME_MS)                    // 14 s image + single ticker pass
+#define APOD_QR_TICKS    (5  * 1000 / FRAME_MS)                    // 5 s "scan for more" QR
+#define APOD_SCENE_TICKS (APOD_IMAGE_TICKS + APOD_QR_TICKS)        // 19 s total
 
-static void scene_apod(const daily_data_t *d, uint32_t tick) {
+static void draw_apod_image(const daily_data_t *d, uint32_t tick) {
     const uint8_t *px = apod_pixels();
 
     if (!px) {
@@ -1257,6 +1259,43 @@ static void scene_apod(const daily_data_t *d, uint32_t tick) {
     int  x = (int)PANEL_W - (int)gfx_ticker_scroll(tick);
     if (x + w > 0) {
         gfx_text_outlined(x, PANEL_H - 6, line, 255, 220, 100);
+    }
+}
+
+static void draw_apod_qr(void) {
+    gfx_rect(0, 0, PANEL_W, PANEL_H, 0, 0, 0);
+
+    if (!apod_qr_loaded()) {
+        // Fallback — text-only prompt if the QR payload didn't load.
+        const char *msg = "APOD.NASA.GOV";
+        int w = gfx_text_width(msg);
+        gfx_text_outlined((PANEL_W - w) / 2, PANEL_H / 2 - 2, msg, 220, 220, 100);
+        return;
+    }
+
+    // Standard QR needs a light quiet zone; 2 modules is enough for
+    // typical phone scanners and still fits the 32-row panel.
+    const int QUIET  = 2;
+    int n = apod_qr_size();
+    int sz = n + 2 * QUIET;
+    int x0 = (PANEL_W - sz) / 2;
+    int y0 = (PANEL_H - sz) / 2;
+
+    gfx_rect(x0, y0, sz, sz, 255, 255, 255);
+    for (int qy = 0; qy < n; ++qy) {
+        for (int qx = 0; qx < n; ++qx) {
+            if (apod_qr_module(qx, qy)) {
+                panel_pixel(x0 + QUIET + qx, y0 + QUIET + qy, 0, 0, 0);
+            }
+        }
+    }
+}
+
+static void scene_apod(const daily_data_t *d, uint32_t tick) {
+    if (tick < APOD_IMAGE_TICKS) {
+        draw_apod_image(d, tick);
+    } else {
+        draw_apod_qr();
     }
 }
 

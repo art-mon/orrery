@@ -14,11 +14,29 @@ static const char *TAG = "apod";
 
 #define APOD_BYTES (PANEL_W * PANEL_H * 3)
 
+// Roomy cap — v1 QR is 21×21, but leave headroom in case the encoded URL
+// later needs a bigger version.
+#define QR_MAX_SIZE  40
+#define QR_MAX_BYTES ((QR_MAX_SIZE * QR_MAX_SIZE + 7) / 8)
+
 static uint8_t s_pixels[APOD_BYTES];
 static bool    s_loaded = false;
 
-bool           apod_loaded(void)  { return s_loaded; }
-const uint8_t *apod_pixels(void)  { return s_loaded ? s_pixels : NULL; }
+static uint8_t s_qr_bits[QR_MAX_BYTES];
+static int     s_qr_size    = 0;
+static bool    s_qr_loaded  = false;
+
+bool           apod_loaded(void)     { return s_loaded; }
+const uint8_t *apod_pixels(void)     { return s_loaded ? s_pixels : NULL; }
+bool           apod_qr_loaded(void)  { return s_qr_loaded; }
+int            apod_qr_size(void)    { return s_qr_size; }
+
+bool apod_qr_module(int x, int y) {
+    if (!s_qr_loaded) return false;
+    if (x < 0 || y < 0 || x >= s_qr_size || y >= s_qr_size) return false;
+    int idx = y * s_qr_size + x;
+    return (s_qr_bits[idx >> 3] & (1u << (7 - (idx & 7)))) != 0;
+}
 
 // Strip the file name off DAILY_JSON_URL to derive the data dir.
 // e.g. "https://host/path/data/daily.json" -> "https://host/path/data/"
@@ -94,5 +112,38 @@ bool apod_fetch(void) {
     }
     cJSON_Delete(root);
     if (ok) { s_loaded = true; ESP_LOGI(TAG, "frame loaded (%d bytes)", APOD_BYTES); }
+    return ok;
+}
+
+bool apod_qr_fetch(void) {
+    char url[256];
+    build_url(url, sizeof(url), "apod_qr.json");
+    size_t blen = 0;
+    char  *body = http_get_text(url, &blen);
+    if (!body) { ESP_LOGW(TAG, "qr fetch failed"); return false; }
+
+    cJSON *root = cJSON_Parse(body);
+    free(body);
+    if (!root) { ESP_LOGE(TAG, "qr json parse failed"); return false; }
+
+    cJSON *sz  = cJSON_GetObjectItemCaseSensitive(root, "size");
+    cJSON *b64 = cJSON_GetObjectItemCaseSensitive(root, "modules_b64");
+    bool ok = false;
+    if (cJSON_IsNumber(sz) && cJSON_IsString(b64) && b64->valuestring) {
+        int n = sz->valueint;
+        if (n > 0 && n <= QR_MAX_SIZE) {
+            size_t need = (size_t)((n * n + 7) / 8);
+            size_t olen = 0;
+            int rc = mbedtls_base64_decode(s_qr_bits, sizeof(s_qr_bits), &olen,
+                                           (const unsigned char *)b64->valuestring,
+                                           strlen(b64->valuestring));
+            if (rc == 0 && olen == need) {
+                s_qr_size = n;
+                ok = true;
+            }
+        }
+    }
+    cJSON_Delete(root);
+    if (ok) { s_qr_loaded = true; ESP_LOGI(TAG, "qr loaded (%d modules)", s_qr_size); }
     return ok;
 }

@@ -1,5 +1,5 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "url": "https://art-mon.github.io/orrery/data/firmware.bin",
-  "notes": "Adds scene_devinfo (dev-only lux + brightness telemetry) and als/panel getters."
+  "notes": "Adds APOD scene: today's image + scrolling title + clock, then a 5 s QR code (apod.nasa.gov) at the end."
 }

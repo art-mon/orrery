@@ -53,6 +53,8 @@ static void fetch_task(void *arg) {
         // Refresh the APOD frame alongside daily.json. The CDN serves the
         // same bytes until the workflow regenerates it, so this is cheap.
         if (g_data.has_apod) apod_fetch();
+        // QR payload is tiny (~150 B) and swaps if we ever change the URL.
+        apod_qr_fetch();
         vTaskDelay(pdMS_TO_TICKS(FETCH_INTERVAL_MS));
     }
 }
@@ -98,6 +100,7 @@ extern "C" void app_main(void) {
         draw_status("APOD...", 255, 220, 100);
         apod_fetch();
     }
+    apod_qr_fetch();
 
     xTaskCreate(fetch_task, "fetch", 8192, NULL, 4, NULL);
     ota_start();
