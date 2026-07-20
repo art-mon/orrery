@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t21e",
+        "title": "M5.0 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-07-20T20:44:19.902000Z",
+        "coordinates": [
+          -178.0878,
+          -32.759
+        ]
+      },
+      {
         "id": "us7000t1wn",
         "title": "M5.2 Earthquake - 22 km NNW of Scarborough, Trinidad and Tobago",
         "category": "Earthquake",
@@ -38,6 +48,16 @@
         "coordinates": [
           -129.342,
           49.4076
+        ]
+      },
+      {
+        "id": "us7000t213",
+        "title": "M5.5 Earthquake - Pacific-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-20T05:38:56.465000Z",
+        "coordinates": [
+          -141.7631,
+          -57.2663
         ]
       },
       {
@@ -139,58 +159,119 @@
           -92.9174,
           14.3207
         ]
-      },
-      {
-        "id": "us7000t1jy",
-        "title": "M5.3 Earthquake - 87 km WSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-18T06:51:50.543000Z",
-        "coordinates": [
-          -93.1511,
-          14.3804
-        ]
-      },
-      {
-        "id": "us7000t1jp",
-        "title": "M5.2 Earthquake - south of the Kermadec Islands",
-        "category": "Earthquake",
-        "date": "2026-07-18T05:46:47.673000Z",
-        "coordinates": [
-          -178.1149,
-          -32.8189
-        ]
       }
     ]
   },
   "asteroids": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "asteroids": [
+      {
+        "name": "(2019 NG2)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 8918882,
+        "velocity_kmh": 49775
+      },
+      {
+        "name": "(2009 HC)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 24568520,
+        "velocity_kmh": 12594
+      },
+      {
+        "name": "524474 (2002 KJ3)",
+        "hazardous": false,
+        "diameter_m": 813,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 28253001,
+        "velocity_kmh": 16603
+      },
+      {
+        "name": "(2019 VK3)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 35182446,
+        "velocity_kmh": 51820
+      },
+      {
+        "name": "(2002 AJ69)",
+        "hazardous": false,
+        "diameter_m": 327,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 38203008,
+        "velocity_kmh": 67987
+      },
+      {
+        "name": "(2017 VZ13)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 51500433,
+        "velocity_kmh": 15118
+      },
+      {
+        "name": "(2018 PR10)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 69658029,
+        "velocity_kmh": 96579
+      },
+      {
+        "name": "(2019 WG)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-07-20",
+        "miss_distance_km": 74716630,
+        "velocity_kmh": 25672
+      },
+      {
+        "name": "(2020 BO12)",
+        "hazardous": false,
+        "diameter_m": 206,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 57346111,
+        "velocity_kmh": 90314
+      },
+      {
+        "name": "(2004 YC)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 62800824,
+        "velocity_kmh": 53947
+      }
+    ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 21.1,
-    "feels_c": 21.1,
-    "humidity": 67,
+    "city": "Donji grad",
+    "temp_c": 22.0,
+    "feels_c": 22.0,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.1
+    "wind_kmh": 6.4
   },
   "forecast_today": {
     "date": "2026-07-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 21.1,
-    "humidity": 66,
+    "city": "Donji grad",
+    "temp_min_c": 22.0,
+    "temp_max_c": 22.0,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.7,
-    "samples": 2
+    "wind_kmh": 6.4,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.2,
+    "city": "Donji grad",
+    "temp_min_c": 18.7,
     "temp_max_c": 25.9,
     "humidity": 50,
     "condition": "Clouds",
@@ -200,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-22",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 18.0,
     "temp_max_c": 26.3,
     "humidity": 38,
@@ -314,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-20T21:49:01+02:00"
+    "fetched_at": "2026-07-20T23:09:13+02:00"
   }
 }
