@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-20",
   "apod": {
-    "title": "Flying Saucer Crash Lands in Utah Desert",
-    "date": "2026-07-19",
-    "explanation": "A flying saucer from outer space crash-landed in the Utah desert after being tracked by radar and chased by helicopters.  The year was 2004, and no space aliens were involved.  The saucer, pictured here, was the Genesis sample return capsule, part of a human-made robot Genesis spaceship launched in 2001 by NASA itself to study the Sun.  The unexpectedly hard landing at over 300 kilometers per hour occurred because the parachutes did not open as planned.  The Genesis mission had been orbiting the Sun collecting solar wind particles that are usually deflected away by Earth's magnetic field. Despite the crash landing, many return samples remained in good enough condition to analyze. Genesis-related discoveries included new details about the composition of the Sun and how the abundance of some types of elements differ across the Solar System. These results have provided intriguing clues into details of how the Sun and planets formed billions of years ago.    Almost Hyperspace: Random APOD Generator",
+    "title": "NGC 3576: The Statue of Liberty Nebula",
+    "date": "2026-07-20",
+    "explanation": "What's happening in the Statue of Liberty nebula?  Bright stars and interesting molecules are forming and being liberated. The complex nebula resides in the star forming region called RCW 57, and besides the iconic monument, to some looks like a flying superhero or a weeping angel.  This re-assigned color image showcases dense knots of dark interstellar dust, fields of glowing hydrogen gas ionized by these stars, and great loops of gas expelled by dying stars. A detailed study of NGC 3576, also known as NGC 3582 and NGC 3584, uncovered at least 33 massive stars in the end stages of formation, and the clear presence of the complex carbon molecules known as polycyclic aromatic hydrocarbons (PAHs). PAHs are thought to be created in the cooling gas of star forming regions, and their development in the Sun's formation nebula five billion years ago may have been an important step in the development of life on Earth.   Jigsaw Star Statue: Astronomy Puzzle of the Day",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/Genesisimpact_nasa_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/Genesisimpact_nasa_960.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_1830.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t1vq",
+        "title": "M5.2 Earthquake - 27 km S of Jav\u0101nr\u016bd, Iran",
+        "category": "Earthquake",
+        "date": "2026-07-20T03:48:50.791000Z",
+        "coordinates": [
+          46.5578,
+          34.5521
+        ]
+      },
       {
         "id": "us7000t1tp",
         "title": "M5.5 Earthquake - 81 km SW of Puerto Madero, Mexico",
@@ -149,16 +159,6 @@
           -93.2679,
           14.3665
         ]
-      },
-      {
-        "id": "us7000t1hd",
-        "title": "M5.0 Earthquake - 79 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-17T22:13:06.825000Z",
-        "coordinates": [
-          -92.9584,
-          14.2237
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.1,
-    "feels_c": 17.2,
-    "humidity": 87,
+    "city": "Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.7,
+    "humidity": 81,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 2.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.1
   },
   "forecast_today": {
     "date": "2026-07-20",
     "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 27.6,
-    "humidity": 66,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.4,
-    "samples": 8
+    "temp_min_c": 18.7,
+    "temp_max_c": 26.6,
+    "humidity": 63,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "03d",
+    "wind_kmh": 6.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-21",
     "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 27.1,
+    "temp_min_c": 17.9,
+    "temp_max_c": 26.6,
     "humidity": 50,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.1
+    "wind_kmh": 7.0
   },
   "forecast_day_after": {
     "date": "2026-07-22",
     "city": "Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 27.6,
-    "humidity": 38,
+    "temp_min_c": 18.5,
+    "temp_max_c": 27.0,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.2
+    "wind_kmh": 6.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-20T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,15 +340,15 @@
       },
       {
         "time": "2026-07-20T10:00",
-        "uv": 4.1
+        "uv": 4.0
       },
       {
         "time": "2026-07-20T11:00",
-        "uv": 5.5
+        "uv": 5.0
       },
       {
         "time": "2026-07-20T12:00",
-        "uv": 6.5
+        "uv": 6.2
       },
       {
         "time": "2026-07-20T13:00",
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-07-20T16:00",
-        "uv": 5.4
+        "uv": 5.5
       },
       {
         "time": "2026-07-20T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-20T04:42:38+02:00"
+    "fetched_at": "2026-07-20T08:15:13+02:00"
   }
 }
