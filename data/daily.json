@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t25j",
+        "title": "M5.0 Earthquake - 58 km SSW of Merizo Village, Guam",
+        "category": "Earthquake",
+        "date": "2026-07-21T11:09:45.478000Z",
+        "coordinates": [
+          144.3814,
+          12.8216
+        ]
+      },
+      {
         "id": "us7000t23v",
         "title": "M5.0 Earthquake - Mid-Indian Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -92.9167,
           14.1155
         ]
-      },
-      {
-        "id": "us7000t1py",
-        "title": "M5.3 Earthquake - 190 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-07-19T00:39:39.917000Z",
-        "coordinates": [
-          159.6116,
-          51.3859
-        ]
       }
     ]
   },
@@ -248,20 +248,20 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 62,
+    "temp_c": 27.6,
+    "feels_c": 27.4,
+    "humidity": 42,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 10.7
+    "wind_kmh": 10.3
   },
   "forecast_today": {
     "date": "2026-07-21",
     "city": "Zagreb",
     "temp_min_c": 20.2,
-    "temp_max_c": 24.6,
-    "humidity": 57,
+    "temp_max_c": 27.6,
+    "humidity": 48,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 5.2,
-    "band": "moderate",
-    "daily_max": 6.5,
-    "peak_time": "2026-07-21T14:00",
-    "safe_minutes": 32,
+    "uv": 6.6,
+    "band": "high",
+    "daily_max": 6.7,
+    "peak_time": "2026-07-21T13:00",
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,19 +340,19 @@
       },
       {
         "time": "2026-07-21T10:00",
-        "uv": 3.8
+        "uv": 4.0
       },
       {
         "time": "2026-07-21T11:00",
-        "uv": 4.9
+        "uv": 5.3
       },
       {
         "time": "2026-07-21T12:00",
-        "uv": 5.2
+        "uv": 6.3
       },
       {
         "time": "2026-07-21T13:00",
-        "uv": 5.0
+        "uv": 6.7
       },
       {
         "time": "2026-07-21T14:00",
@@ -368,15 +368,15 @@
       },
       {
         "time": "2026-07-21T17:00",
-        "uv": 4.2
+        "uv": 4.0
       },
       {
         "time": "2026-07-21T18:00",
-        "uv": 2.8
+        "uv": 2.6
       },
       {
         "time": "2026-07-21T19:00",
-        "uv": 1.4
+        "uv": 1.3
       },
       {
         "time": "2026-07-21T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-21T11:24:47+02:00"
+    "fetched_at": "2026-07-21T13:44:51+02:00"
   }
 }
