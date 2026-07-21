@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t23e",
+        "title": "M5.2 Earthquake - northern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-21T01:03:34.930000Z",
+        "coordinates": [
+          -45.0893,
+          25.9041
+        ]
+      },
+      {
+        "id": "us7000t232",
+        "title": "M5.0 Earthquake - 141 km SSW of Gataivai, Samoa",
+        "category": "Earthquake",
+        "date": "2026-07-20T23:37:57.854000Z",
+        "coordinates": [
+          -172.8619,
+          -14.9677
+        ]
+      },
+      {
         "id": "us7000t21z",
         "title": "M5.6 Earthquake - northern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -139,95 +159,11 @@
           -50.9727,
           -60.6982
         ]
-      },
-      {
-        "id": "us7000t1n5",
-        "title": "M5.7 Earthquake - 72 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-18T17:26:25.879000Z",
-        "coordinates": [
-          -92.8805,
-          14.2392
-        ]
-      },
-      {
-        "id": "us7000t1mu",
-        "title": "M5.1 Earthquake - 149 km S of George Town, Cayman Islands",
-        "category": "Earthquake",
-        "date": "2026-07-18T16:08:44.116000Z",
-        "coordinates": [
-          -81.5431,
-          17.9439
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 NG2)",
-        "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 8918882,
-        "velocity_kmh": 49775
-      },
-      {
-        "name": "(2009 HC)",
-        "hazardous": false,
-        "diameter_m": 70,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 24568520,
-        "velocity_kmh": 12594
-      },
-      {
-        "name": "524474 (2002 KJ3)",
-        "hazardous": false,
-        "diameter_m": 813,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 28253001,
-        "velocity_kmh": 16603
-      },
-      {
-        "name": "(2019 VK3)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 35182446,
-        "velocity_kmh": 51820
-      },
-      {
-        "name": "(2002 AJ69)",
-        "hazardous": false,
-        "diameter_m": 327,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 38203008,
-        "velocity_kmh": 67987
-      },
-      {
-        "name": "(2017 VZ13)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 51500433,
-        "velocity_kmh": 15118
-      },
-      {
-        "name": "(2018 PR10)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 69658029,
-        "velocity_kmh": 96579
-      },
-      {
-        "name": "(2019 WG)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-07-20",
-        "miss_distance_km": 74716630,
-        "velocity_kmh": 25672
-      },
       {
         "name": "(2020 BO12)",
         "hazardous": false,
@@ -243,52 +179,116 @@
         "close_approach_date": "2026-07-21",
         "miss_distance_km": 62800824,
         "velocity_kmh": 53947
+      },
+      {
+        "name": "(2007 YH)",
+        "hazardous": false,
+        "diameter_m": 545,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 66614248,
+        "velocity_kmh": 54201
+      },
+      {
+        "name": "(2020 BX12)",
+        "hazardous": true,
+        "diameter_m": 445,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 70060876,
+        "velocity_kmh": 70579
+      },
+      {
+        "name": "(2020 DA1)",
+        "hazardous": false,
+        "diameter_m": 7,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 70777962,
+        "velocity_kmh": 70784
+      },
+      {
+        "name": "(2016 WB8)",
+        "hazardous": false,
+        "diameter_m": 39,
+        "close_approach_date": "2026-07-21",
+        "miss_distance_km": 72890319,
+        "velocity_kmh": 31153
+      },
+      {
+        "name": "(2015 EG7)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-07-22",
+        "miss_distance_km": 20140894,
+        "velocity_kmh": 60637
+      },
+      {
+        "name": "(2007 SW2)",
+        "hazardous": false,
+        "diameter_m": 303,
+        "close_approach_date": "2026-07-22",
+        "miss_distance_km": 35390107,
+        "velocity_kmh": 36791
+      },
+      {
+        "name": "523728 (2014 ON344)",
+        "hazardous": false,
+        "diameter_m": 179,
+        "close_approach_date": "2026-07-22",
+        "miss_distance_km": 52949732,
+        "velocity_kmh": 49300
+      },
+      {
+        "name": "(2015 TO237)",
+        "hazardous": false,
+        "diameter_m": 1067,
+        "close_approach_date": "2026-07-22",
+        "miss_distance_km": 65196291,
+        "velocity_kmh": 88223
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.9,
-    "feels_c": 19.9,
-    "humidity": 72,
+    "temp_c": 18.8,
+    "feels_c": 18.8,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 5.1
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 6.1
   },
   "forecast_today": {
     "date": "2026-07-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 25.9,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_min_c": 18.8,
+    "temp_max_c": 24.3,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 7.6,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 8.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.0,
-    "temp_max_c": 26.3,
-    "humidity": 38,
+    "city": "Zagreb",
+    "temp_min_c": 17.9,
+    "temp_max_c": 25.8,
+    "humidity": 40,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.2
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-07-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.5,
-    "temp_max_c": 27.8,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_min_c": 14.3,
+    "temp_max_c": 27.5,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-21T01:59:08+02:00"
+    "fetched_at": "2026-07-21T05:28:29+02:00"
   }
 }
