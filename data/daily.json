@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t26b",
+        "title": "M5.3 Earthquake - 132 km ENE of Santa Cruz das Flores, Portugal",
+        "category": "Earthquake",
+        "date": "2026-07-21T13:13:11.261000Z",
+        "coordinates": [
+          -29.7175,
+          39.9371
+        ]
+      },
+      {
         "id": "us7000t25y",
         "title": "M5.6 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -75.3013,
           -12.0429
         ]
-      },
-      {
-        "id": "us7000t1q6",
-        "title": "M5.3 Earthquake - 59 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-19T02:18:54.767000Z",
-        "coordinates": [
-          -92.7591,
-          14.292
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.2,
-    "feels_c": 27.2,
-    "humidity": 44,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 18.7
+    "temp_c": 25.4,
+    "feels_c": 25.2,
+    "humidity": 47,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 12.5
   },
   "forecast_today": {
     "date": "2026-07-21",
-    "city": "Zagreb",
-    "temp_min_c": 21.8,
-    "temp_max_c": 27.2,
-    "humidity": 48,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 11.2,
-    "samples": 4
+    "city": "City of Zagreb",
+    "temp_min_c": 21.2,
+    "temp_max_c": 25.4,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 7.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.1,
     "temp_max_c": 26.4,
     "humidity": 42,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-23",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 14.7,
     "temp_max_c": 22.8,
     "humidity": 65,
@@ -291,11 +291,11 @@
     "wind_kmh": 6.0
   },
   "uv": {
-    "uv": 5.3,
-    "band": "moderate",
+    "uv": 2.9,
+    "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-21T13:00",
-    "safe_minutes": 31,
+    "safe_minutes": 58,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-21T15:42:25+02:00"
+    "fetched_at": "2026-07-21T17:41:16+02:00"
   }
 }
