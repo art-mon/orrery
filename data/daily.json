@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-21",
   "apod": {
-    "title": "NGC 3576: The Statue of Liberty Nebula",
-    "date": "2026-07-20",
-    "explanation": "What's happening in the Statue of Liberty nebula?  Bright stars and interesting molecules are forming and being liberated. The complex nebula resides in the star forming region called RCW 57, and besides the iconic monument, to some looks like a flying superhero or a weeping angel.  This re-assigned color image showcases dense knots of dark interstellar dust, fields of glowing hydrogen gas ionized by these stars, and great loops of gas expelled by dying stars. A detailed study of NGC 3576, also known as NGC 3582 and NGC 3584, uncovered at least 33 massive stars in the end stages of formation, and the clear presence of the complex carbon molecules known as polycyclic aromatic hydrocarbons (PAHs). PAHs are thought to be created in the cooling gas of star forming regions, and their development in the Sun's formation nebula five billion years ago may have been an important step in the development of life on Earth.   Jigsaw Star Statue: Astronomy Puzzle of the Day",
+    "title": "Turtle Rock on Mars",
+    "date": "2026-07-21",
+    "explanation": "Is this a fossilized turtle on Mars?  No.  Although resembling a large Earth tortoise, this is a layered rock outcrop on Mars that is estimated to span about 15 meters, making it much larger than turtles on Earth. NASA\u2019s robotic Curiosity rover came across this unusual mound, dubbed Miraflores, last month during its 4922nd Martian day exploring Mars.  The small butte may survive because it was somehow more resistant to erosion than surrounding rock.  More recent wind has now covered its top with orange Martian sand.  Below the top shell, many layers of stratified rock are visible, possibly indicating a long history of intermittent wind-blown sand being deposited and then hardened by ground water.  Similar wind-eroded layered landforms, such as yardangs in the Qaidam Desert of China, exist here on Earth. Curiosity and its companion rover Perseverance continue to investigate the ancient history of Mars as well as searching for signs of primeval life.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_1830.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/TurtleRock_Curiosity_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/TurtleRock_Curiosity_2048.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t23v",
+        "title": "M5.0 Earthquake - Mid-Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-21T03:17:09.781000Z",
+        "coordinates": [
+          73.8261,
+          -27.6011
+        ]
+      },
       {
         "id": "us7000t23e",
         "title": "M5.2 Earthquake - northern Mid-Atlantic Ridge",
@@ -149,16 +159,6 @@
           159.6116,
           51.3859
         ]
-      },
-      {
-        "id": "us7000t1ng",
-        "title": "M5.5 Earthquake - Scotia Sea",
-        "category": "Earthquake",
-        "date": "2026-07-18T19:50:36.395000Z",
-        "coordinates": [
-          -50.9727,
-          -60.6982
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.8,
-    "feels_c": 18.8,
-    "humidity": 78,
+    "temp_c": 20.3,
+    "feels_c": 20.2,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 6.1
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.7
   },
   "forecast_today": {
     "date": "2026-07-21",
     "city": "Zagreb",
-    "temp_min_c": 18.8,
+    "temp_min_c": 20.2,
     "temp_max_c": 24.3,
-    "humidity": 57,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 8.6,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 9.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-22",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.1,
     "band": "low",
-    "daily_max": 6.2,
-    "peak_time": "2026-07-21T13:00",
-    "safe_minutes": null,
+    "daily_max": 6.5,
+    "peak_time": "2026-07-21T14:00",
+    "safe_minutes": 78,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,23 +340,23 @@
       },
       {
         "time": "2026-07-21T10:00",
-        "uv": 4.0
+        "uv": 3.8
       },
       {
         "time": "2026-07-21T11:00",
-        "uv": 5.2
+        "uv": 4.9
       },
       {
         "time": "2026-07-21T12:00",
-        "uv": 5.9
+        "uv": 5.2
       },
       {
         "time": "2026-07-21T13:00",
-        "uv": 6.2
+        "uv": 5.0
       },
       {
         "time": "2026-07-21T14:00",
-        "uv": 6.2
+        "uv": 6.5
       },
       {
         "time": "2026-07-21T15:00",
@@ -368,19 +368,19 @@
       },
       {
         "time": "2026-07-21T17:00",
-        "uv": 3.9
+        "uv": 4.2
       },
       {
         "time": "2026-07-21T18:00",
-        "uv": 2.5
+        "uv": 2.8
       },
       {
         "time": "2026-07-21T19:00",
-        "uv": 1.1
+        "uv": 1.4
       },
       {
         "time": "2026-07-21T20:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-07-21T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-21T05:28:29+02:00"
+    "fetched_at": "2026-07-21T08:25:30+02:00"
   }
 }
