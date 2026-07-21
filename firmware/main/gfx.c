@@ -363,6 +363,10 @@ void gfx_moon(int cx, int cy, int rad, float phase01) {
 
 // ── Weather backgrounds ──────────────────────────────────────────────────
 
+static int s_night = 0;
+void gfx_set_night(int night) { s_night = night ? 1 : 0; }
+int  gfx_is_night(void)       { return s_night; }
+
 // Pseudo-random hash, matches the simulator's nhash(a, b)
 static float nhash(int a, int b) {
     float v = sinf(a * 127.1f + b * 311.7f) * 43758.5f;
@@ -390,7 +394,14 @@ void gfx_weather_sky_col(int x0, int col_w, const char *cond) {
     for (int y = 0; y < PANEL_H; ++y) {
         float t = (float)y / (PANEL_H - 1);
         int r, g, b;
-        if      (isClear) { r = 20 + (int)(t * 60);  g = 60 + (int)(t * 80);  b = 160 + (int)(t * 60); }
+        if (s_night) {
+            if      (isClear) { r =  2 + (int)(t * 10); g =  4 + (int)(t * 12); b = 22 + (int)(t * 28); }
+            else if (isRain)  { r =  5 + (int)(t *  8); g =  8 + (int)(t * 10); b = 20 + (int)(t * 18); }
+            else if (isSnow)  { r = 20 + (int)(t * 30); g = 28 + (int)(t * 30); b = 55 + (int)(t * 30); }
+            else if (isStorm) { r =  2 + (int)(t *  6); g =  2 + (int)(t *  6); b = 10 + (int)(t * 14); }
+            else              { r = 10 + (int)(t * 12); g = 14 + (int)(t * 14); b = 28 + (int)(t * 20); }
+        }
+        else if (isClear) { r = 20 + (int)(t * 60);  g = 60 + (int)(t * 80);  b = 160 + (int)(t * 60); }
         else if (isRain)  { r = 30 + (int)(t * 20);  g = 40 + (int)(t * 20);  b = 70  + (int)(t * 30); }
         else if (isSnow)  { r = 80 + (int)(t * 80);  g = 90 + (int)(t * 80);  b = 120 + (int)(t * 80); }
         else if (isStorm) { r = 10 + (int)(t * 20);  g = 10 + (int)(t * 15);  b = 30  + (int)(t * 20); }
@@ -410,10 +421,31 @@ void gfx_weather_particles_col(int x0, int col_w, int col_idx,
     int isRain    = cond_contains(cond, "rain") && !isDrizzle;
     int isSnow    = cond_contains(cond, "snow");
     int isStorm   = cond_contains(cond, "thunder");
-    if (isClear) return;
 
     const int H = PANEL_H;
     int x_end = x0 + col_w;
+
+    if (isClear) {
+        if (!s_night) return;
+        // Sparse starfield — deterministic positions from column seed, count
+        // scales with column width so the full-panel case gets ~48 stars.
+        int stars = 8 + (col_w * 5) / 8;
+        uint32_t s = 0xC0FFEEu ^ ((uint32_t)col_idx * 0x9E3779B1u);
+        for (int i = 0; i < stars; ++i) {
+            s = s * 1664525u + 1013904223u;
+            int rx = x0 + (int)(s % (uint32_t)col_w);
+            s = s * 1664525u + 1013904223u;
+            int ry = (int)(s % (uint32_t)H);
+            s = s * 1664525u + 1013904223u;
+            int base = 90 + (int)(s % 90u);            // 90..179 base
+            float pulse = 0.75f + 0.25f * sinf(tick * 0.08f + i * 1.9f);
+            int br = (int)(base * pulse);
+            if (br > 255) br = 255;
+            uint8_t bb = (uint8_t)(br < 240 ? br + 15 : 255);
+            panel_pixel(rx, ry, (uint8_t)br, (uint8_t)br, bb);
+        }
+        return;
+    }
 
     if (isRain || isStorm) {
         for (int x = x0; x < x_end; ++x) {
@@ -484,6 +516,12 @@ void gfx_weather_particles_col(int x0, int col_w, int col_idx,
                     int rc = br;
                     int gc = br + 8;
                     int bc = br + 25;
+                    if (s_night) {
+                        // Moonlit undersides — dim and cool
+                        rc = (rc * 22) / 100;
+                        gc = (gc * 26) / 100;
+                        bc = (bc * 40) / 100;
+                    }
                     if (rc > 255) rc = 255;
                     if (gc > 255) gc = 255;
                     if (bc > 255) bc = 255;

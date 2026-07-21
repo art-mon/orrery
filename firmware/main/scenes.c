@@ -71,25 +71,54 @@ static void cond_palette(const char *cond,
     }
 }
 
+// Night variant — dim & cool to sit atop the deep-navy sky. Clear nights get
+// a warm amber tint (moonlight cast); all other conditions share a muted
+// blue-white so wet/foggy/cloudy nights stay legible without competing with
+// the dark background.
+static void cond_palette_night(const char *cond,
+                               uint8_t *trgb, uint8_t *flrgb,
+                               uint8_t *hurgb, uint8_t *wdrgb,
+                               uint8_t *nowrgb) {
+    if (contains_ci(cond, "clear")) {
+        uint8_t a[5][3] = { {230,205,150},{170,150,110},{140,190,215},{170,200,220},{220,205,160} };
+        memcpy(trgb, a[0], 3); memcpy(flrgb, a[1], 3); memcpy(hurgb, a[2], 3);
+        memcpy(wdrgb, a[3], 3); memcpy(nowrgb, a[4], 3);
+    } else {
+        uint8_t a[5][3] = { {205,215,235},{150,165,190},{135,195,225},{165,205,220},{200,215,235} };
+        memcpy(trgb, a[0], 3); memcpy(flrgb, a[1], 3); memcpy(hurgb, a[2], 3);
+        memcpy(wdrgb, a[3], 3); memcpy(nowrgb, a[4], 3);
+    }
+}
+
 // ─── scene_now (Weather: NOW) ────────────────────────────────────────────
 
 static void scene_now(const daily_data_t *d, uint32_t tick) {
     const char *cond = d->has_weather ? d->condition : "";
 
+    struct tm tm;
+    int have_tm = clock_now(&tm);
+    // Local hour < 6 or >= 20 → night. Falls back to day if clock isn't set yet.
+    int night = have_tm && (tm.tm_hour < 6 || tm.tm_hour >= 20);
+
+    int prev_night = gfx_is_night();
+    gfx_set_night(night);
     gfx_weather_sky(cond);
     gfx_weather_particles(cond, tick);
+    gfx_set_night(prev_night);
 
     uint8_t tcol[3], flcol[3], hucol[3], wdcol[3], nowcol[3];
-    cond_palette(cond, tcol, flcol, hucol, wdcol, nowcol);
+    if (night) cond_palette_night(cond, tcol, flcol, hucol, wdcol, nowcol);
+    else       cond_palette      (cond, tcol, flcol, hucol, wdcol, nowcol);
 
     // Top bar: "NOW" left, clock right
     gfx_text_outlined(1, 1, "NOW", nowcol[0], nowcol[1], nowcol[2]);
 
-    struct tm tm;
-    if (clock_now(&tm)) {
+    if (have_tm) {
         char clk[8]; format_clock(&tm, clk, sizeof(clk));
         int  cw = gfx_text_width(clk);
-        gfx_text_outlined(PANEL_W - cw - 1, 1, clk, 170, 170, 170);
+        uint8_t cg = night ? 210 : 170;
+        uint8_t cb = night ? 230 : 170;
+        gfx_text_outlined(PANEL_W - cw - 1, 1, clk, cg, cg, cb);
     }
 
     if (!d->has_weather) {

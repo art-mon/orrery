@@ -80,6 +80,14 @@ void gfx_weather_sky_col(int x0, int col_w, const char *cond);
 void gfx_weather_particles_col(int x0, int col_w, int col_idx,
                                const char *cond, uint32_t tick);
 
+// Night mode toggle for the weather helpers above. When enabled, sky
+// gradients switch to deep-navy palettes and the "clear" particle branch
+// paints a twinkling starfield instead of returning early. Off by default;
+// callers are expected to save/restore around their draws so unrelated
+// scenes (e.g. the 3-day forecast strip) aren't affected.
+void gfx_set_night(int night);
+int  gfx_is_night(void);
+
 #ifdef __cplusplus
 }
 #endif
