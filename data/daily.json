@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t2a7",
+        "title": "M5.1 Earthquake - 7 km WNW of Kalbay, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-21T18:33:27.762000Z",
+        "coordinates": [
+          125.4295,
+          5.739
+        ]
+      },
+      {
         "id": "us7000t26b",
         "title": "M5.3 Earthquake - 132 km ENE of Santa Cruz das Flores, Portugal",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -92.9052,
           14.1592
         ]
-      },
-      {
-        "id": "us7000t1q7",
-        "title": "M5.5 Earthquake - 2 km WSW of Sicaya, Peru",
-        "category": "Earthquake",
-        "date": "2026-07-19T02:24:36.324000Z",
-        "coordinates": [
-          -75.3013,
-          -12.0429
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.7,
-    "humidity": 60,
+    "temp_c": 20.9,
+    "feels_c": 20.9,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 11.8
+    "icon": "04n",
+    "wind_kmh": 8.4
   },
   "forecast_today": {
     "date": "2026-07-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.2,
-    "temp_max_c": 23.7,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_min_c": 20.3,
+    "temp_max_c": 20.9,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 7.5,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 8.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 26.4,
+    "city": "Zagreb",
+    "temp_min_c": 15.5,
+    "temp_max_c": 26.6,
     "humidity": 42,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.3
+    "wind_kmh": 6.6
   },
   "forecast_day_after": {
     "date": "2026-07-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 22.8,
-    "humidity": 65,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 27.0,
+    "humidity": 64,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.0
+    "wind_kmh": 6.4
   },
   "uv": {
-    "uv": 0.7,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-07-21T13:00",
-    "safe_minutes": 238,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,23 +360,23 @@
       },
       {
         "time": "2026-07-21T15:00",
-        "uv": 6.0
+        "uv": 6.3
       },
       {
         "time": "2026-07-21T16:00",
-        "uv": 5.2
+        "uv": 4.8
       },
       {
         "time": "2026-07-21T17:00",
-        "uv": 4.0
+        "uv": 3.9
       },
       {
         "time": "2026-07-21T18:00",
-        "uv": 2.6
+        "uv": 2.7
       },
       {
         "time": "2026-07-21T19:00",
-        "uv": 1.3
+        "uv": 1.4
       },
       {
         "time": "2026-07-21T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-21T19:15:06+02:00"
+    "fetched_at": "2026-07-21T21:16:48+02:00"
   }
 }
