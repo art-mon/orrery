@@ -165,54 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2020 BO12)",
-        "hazardous": false,
-        "diameter_m": 206,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 57346111,
-        "velocity_kmh": 90314
-      },
-      {
-        "name": "(2004 YC)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 62800824,
-        "velocity_kmh": 53947
-      },
-      {
-        "name": "(2007 YH)",
-        "hazardous": false,
-        "diameter_m": 545,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 66614248,
-        "velocity_kmh": 54201
-      },
-      {
-        "name": "(2020 BX12)",
-        "hazardous": true,
-        "diameter_m": 445,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 70060876,
-        "velocity_kmh": 70579
-      },
-      {
-        "name": "(2020 DA1)",
-        "hazardous": false,
-        "diameter_m": 7,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 70777962,
-        "velocity_kmh": 70784
-      },
-      {
-        "name": "(2016 WB8)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-07-21",
-        "miss_distance_km": 72890319,
-        "velocity_kmh": 31153
-      },
-      {
         "name": "(2015 EG7)",
         "hazardous": false,
         "diameter_m": 20,
@@ -243,52 +195,100 @@
         "close_approach_date": "2026-07-22",
         "miss_distance_km": 65196291,
         "velocity_kmh": 88223
+      },
+      {
+        "name": "(2015 VC105)",
+        "hazardous": false,
+        "diameter_m": 54,
+        "close_approach_date": "2026-07-22",
+        "miss_distance_km": 73020003,
+        "velocity_kmh": 17795
+      },
+      {
+        "name": "(2019 BN2)",
+        "hazardous": false,
+        "diameter_m": 29,
+        "close_approach_date": "2026-07-23",
+        "miss_distance_km": 18101269,
+        "velocity_kmh": 41905
+      },
+      {
+        "name": "(2014 GJ1)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-07-23",
+        "miss_distance_km": 18262849,
+        "velocity_kmh": 18944
+      },
+      {
+        "name": "253062 (2002 TC70)",
+        "hazardous": false,
+        "diameter_m": 358,
+        "close_approach_date": "2026-07-23",
+        "miss_distance_km": 20041502,
+        "velocity_kmh": 10208
+      },
+      {
+        "name": "(2023 OV)",
+        "hazardous": false,
+        "diameter_m": 1107,
+        "close_approach_date": "2026-07-23",
+        "miss_distance_km": 35785875,
+        "velocity_kmh": 62586
+      },
+      {
+        "name": "(2017 FZ2)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-07-23",
+        "miss_distance_km": 40553314,
+        "velocity_kmh": 33689
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 19.0,
+    "city": "Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.4,
     "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 7.9
+    "wind_kmh": 3.4
   },
   "forecast_today": {
     "date": "2026-07-22",
     "city": "Zagreb",
     "temp_min_c": 17.6,
-    "temp_max_c": 26.6,
-    "humidity": 49,
+    "temp_max_c": 25.7,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.8,
-    "samples": 9
+    "wind_kmh": 5.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-23",
     "city": "Zagreb",
     "temp_min_c": 14.8,
-    "temp_max_c": 27.0,
+    "temp_max_c": 27.4,
     "humidity": 64,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.4
+    "wind_kmh": 5.2
   },
   "forecast_day_after": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 26.2,
-    "humidity": 55,
-    "condition": "Clear",
+    "temp_min_c": 12.3,
+    "temp_max_c": 26.0,
+    "humidity": 56,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.2
+    "wind_kmh": 6.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-22T01:54:23+02:00"
+    "fetched_at": "2026-07-22T04:24:40+02:00"
   }
 }
