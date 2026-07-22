@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t2fd",
+        "title": "M5.1 Earthquake - 121 km NW of Vallenar, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-22T09:34:22.317000Z",
+        "coordinates": [
+          -71.7009,
+          -27.8666
+        ]
+      },
+      {
         "id": "us7000t2dz",
         "title": "M5.0 Earthquake - 55 km WSW of Langsa, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -141.7631,
           -57.2663
         ]
-      },
-      {
-        "id": "us7000t1vq",
-        "title": "M5.2 Earthquake - 27 km S of Jav\u0101nr\u016bd, Iran",
-        "category": "Earthquake",
-        "date": "2026-07-20T03:48:50.791000Z",
-        "coordinates": [
-          46.5578,
-          34.5521
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.6,
-    "humidity": 46,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.4
+    "temp_c": 25.9,
+    "feels_c": 25.5,
+    "humidity": 37,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-07-22",
     "city": "Zagreb",
     "temp_min_c": 18.8,
-    "temp_max_c": 25.4,
-    "humidity": 44,
+    "temp_max_c": 25.9,
+    "humidity": 40,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 5.2,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 5.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-23",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.3
   },
   "uv": {
-    "uv": 4.8,
+    "uv": 5.4,
     "band": "moderate",
     "daily_max": 6.6,
     "peak_time": "2026-07-22T13:00",
-    "safe_minutes": 34,
+    "safe_minutes": 31,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-22T10:23:51+02:00"
+    "fetched_at": "2026-07-22T13:06:34+02:00"
   }
 }
