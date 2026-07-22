@@ -1,15 +1,25 @@
 {
   "generated": "2026-07-22",
   "apod": {
-    "title": "Turtle Rock on Mars",
-    "date": "2026-07-21",
-    "explanation": "Is this a fossilized turtle on Mars?  No.  Although resembling a large Earth tortoise, this is a layered rock outcrop on Mars that is estimated to span about 15 meters, making it much larger than turtles on Earth. NASA\u2019s robotic Curiosity rover came across this unusual mound, dubbed Miraflores, last month during its 4922nd Martian day exploring Mars.  The small butte may survive because it was somehow more resistant to erosion than surrounding rock.  More recent wind has now covered its top with orange Martian sand.  Below the top shell, many layers of stratified rock are visible, possibly indicating a long history of intermittent wind-blown sand being deposited and then hardened by ground water.  Similar wind-eroded layered landforms, such as yardangs in the Qaidam Desert of China, exist here on Earth. Curiosity and its companion rover Perseverance continue to investigate the ancient history of Mars as well as searching for signs of primeval life.",
+    "title": "The Corona Australis Molecular Cloud and the Chandelier Cluster",
+    "date": "2026-07-22",
+    "explanation": "The Southern Crown (Corona Australis) dazzles with young and ancient celestial jewels. The Corona Australis Cloud is a collage of reflection and emission nebulae on the left of today\u2019s image. At 430 light years away, this cloud is one of the closest star-forming regions to Earth. It contains gas cool enough (-260 Celsius or -440 Fahrenheit) to collapse into protostars. Recently formed stars paint blue hues across the cloud as their light reflects off surrounding material. The waltz of the R Coronae Australis binary system stirs up the nebula NGC 6729. The younger of the pair ionizes nearby gas with its ultraviolet light, causing it to glow. The Chandelier Cluster (NGC 6723) dangles from the top right, but is actually tens of thousands of light years farther away than its apparent star-forming neighbor. While NGC 6723 experienced multiple periods of star formation creating slightly younger stars, the chandelier twinkles with stars almost as old as the universe.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/TurtleRock_Curiosity_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/TurtleRock_Curiosity_2048.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/corona_australis_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/corona_australis.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000t2dz",
+        "title": "M5.0 Earthquake - 55 km WSW of Langsa, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-22T04:18:22.071000Z",
+        "coordinates": [
+          97.5238,
+          4.2441
+        ]
+      },
       {
         "id": "us7000t2a7",
         "title": "M5.1 Earthquake - 7 km WNW of Kalbay, Philippines",
@@ -149,16 +159,6 @@
           46.5578,
           34.5521
         ]
-      },
-      {
-        "id": "us7000t1tp",
-        "title": "M5.5 Earthquake - 81 km SW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-19T17:45:16.923000Z",
-        "coordinates": [
-          -92.9052,
-          14.1592
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.4,
-    "humidity": 69,
+    "city": "City of Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 19.1,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.4
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.4
   },
   "forecast_today": {
     "date": "2026-07-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.6,
     "temp_max_c": 25.7,
-    "humidity": 50,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.9,
-    "samples": 8
+    "icon": "03d",
+    "wind_kmh": 6.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-23",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 14.8,
     "temp_max_c": 27.4,
     "humidity": 64,
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 12.3,
     "temp_max_c": 26.0,
     "humidity": 56,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.5,
     "band": "low",
-    "daily_max": 6.8,
+    "daily_max": 6.6,
     "peak_time": "2026-07-22T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,23 +348,23 @@
       },
       {
         "time": "2026-07-22T12:00",
-        "uv": 6.3
+        "uv": 6.2
       },
       {
         "time": "2026-07-22T13:00",
-        "uv": 6.8
+        "uv": 6.6
       },
       {
         "time": "2026-07-22T14:00",
-        "uv": 5.0
+        "uv": 3.1
       },
       {
         "time": "2026-07-22T15:00",
-        "uv": 2.9
+        "uv": 4.0
       },
       {
         "time": "2026-07-22T16:00",
-        "uv": 5.1
+        "uv": 2.1
       },
       {
         "time": "2026-07-22T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-22T04:24:40+02:00"
+    "fetched_at": "2026-07-22T07:47:10+02:00"
   }
 }
