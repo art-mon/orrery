@@ -1,12 +1,12 @@
 {
   "generated": "2026-07-23",
   "apod": {
-    "title": "The Corona Australis Molecular Cloud and the Chandelier Cluster",
-    "date": "2026-07-22",
-    "explanation": "The Southern Crown (Corona Australis) dazzles with young and ancient celestial jewels. The Corona Australis Cloud is a collage of reflection and emission nebulae on the left of today\u2019s image. At 430 light years away, this cloud is one of the closest star-forming regions to Earth. It contains gas cool enough (-260 Celsius or -440 Fahrenheit) to collapse into protostars. Recently formed stars paint blue hues across the cloud as their light reflects off surrounding material. The waltz of the R Coronae Australis binary system stirs up the nebula NGC 6729. The younger of the pair ionizes nearby gas with its ultraviolet light, causing it to glow. The Chandelier Cluster (NGC 6723) dangles from the top right, but is actually tens of thousands of light years farther away than its apparent star-forming neighbor. While NGC 6723 experienced multiple periods of star formation creating slightly younger stars, the chandelier twinkles with stars almost as old as the universe.",
+    "title": "The Large Magellanic Cloud",
+    "date": "2026-07-23",
+    "explanation": "Have you ever seen another galaxy with your own eyes?   The featured image shows the Large Magellanic Cloud (LMC), one of the closest neighbors of our Milky Way.     If you are anywhere south of latitude 20\u00b0 N (but the further south, the better), you can see it with the unaided eye if you go to a dark sky location, away from big cities and light polution.   It is a dwarf irregular galaxy about 163,000 light-years away, and a member of our Local Group of galaxies.   Despite being small, with a total mass approximately equivalent to 10% - 20% of the mass of the Milky Way, the LMC is very actively forming stars.   This is likely due in part to the gravitational push and pull of tides caused by the Milky Way on the LMC.   Some astronomers have predicted that it will collide with the Milky Way in in about 2 billion years.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/corona_australis_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/corona_australis.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/LMC_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/LMC.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.1,
-    "feels_c": 17.6,
-    "humidity": 62,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 4.1
+    "temp_c": 15.4,
+    "feels_c": 14.9,
+    "humidity": 76,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.7
   },
   "forecast_today": {
     "date": "2026-07-23",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 15.4,
     "temp_max_c": 28.5,
-    "humidity": 58,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "01n",
-    "wind_kmh": 4.5,
-    "samples": 8
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 6.2,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 13.9,
-    "temp_max_c": 25.3,
-    "humidity": 58,
+    "temp_min_c": 13.5,
+    "temp_max_c": 27.1,
+    "humidity": 55,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.8
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.5
   },
   "forecast_day_after": {
     "date": "2026-07-25",
     "city": "Zagreb",
     "temp_min_c": 14.6,
-    "temp_max_c": 28.4,
-    "humidity": 47,
+    "temp_max_c": 29.2,
+    "humidity": 43,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.5
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-07-23T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-23T02:08:45+02:00"
+    "fetched_at": "2026-07-23T06:13:07+02:00"
   }
 }
