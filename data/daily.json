@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t2w3",
+        "title": "M5.8 Earthquake - 130 km W of Ternate, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-23T22:58:36.362000Z",
+        "coordinates": [
+          126.2244,
+          0.592
+        ]
+      },
+      {
         "id": "tx2026ojlaky",
         "title": "M5.0 Earthquake - 38 km SSE of Spearman, Texas",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -45.0893,
           25.9041
         ]
-      },
-      {
-        "id": "us7000t232",
-        "title": "M5.0 Earthquake - 141 km SSW of Gataivai, Samoa",
-        "category": "Earthquake",
-        "date": "2026-07-20T23:37:57.854000Z",
-        "coordinates": [
-          -172.8619,
-          -14.9677
-        ]
       }
     ]
   },
@@ -247,48 +247,48 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_c": 15.3,
-    "feels_c": 15.3,
+    "feels_c": 15.2,
     "humidity": 92,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.3
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 25.3,
-    "humidity": 61,
+    "temp_min_c": 14.7,
+    "temp_max_c": 25.8,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.5,
+    "wind_kmh": 5.4,
     "samples": 9
   },
   "forecast": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 14.8,
-    "temp_max_c": 29.8,
-    "humidity": 46,
+    "temp_min_c": 15.3,
+    "temp_max_c": 30.4,
+    "humidity": 45,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.3
+    "wind_kmh": 6.4
   },
   "forecast_day_after": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 31.8,
-    "humidity": 51,
+    "temp_min_c": 17.3,
+    "temp_max_c": 32.4,
+    "humidity": 50,
     "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 12.9
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 13.3
   },
   "uv": {
     "uv": 0.0,
@@ -356,15 +356,15 @@
       },
       {
         "time": "2026-07-24T14:00",
-        "uv": 6.7
+        "uv": 6.8
       },
       {
         "time": "2026-07-24T15:00",
-        "uv": 6.0
+        "uv": 6.2
       },
       {
         "time": "2026-07-24T16:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-07-24T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T00:53:07+02:00"
+    "fetched_at": "2026-07-24T01:57:38+02:00"
   }
 }
