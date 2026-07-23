@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000t2n5",
+        "title": "M5.1 Earthquake - 92 km SE of Atka, Alaska",
+        "category": "Earthquake",
+        "date": "2026-07-23T09:30:18.969000Z",
+        "coordinates": [
+          -173.2484,
+          51.604
+        ]
+      },
+      {
+        "id": "us7000t2n3",
+        "title": "M5.1 Earthquake - 85 km SE of Tatsug\u014d, Japan",
+        "category": "Earthquake",
+        "date": "2026-07-23T09:22:22.460000Z",
+        "coordinates": [
+          130.1887,
+          27.8812
+        ]
+      },
+      {
+        "id": "us7000t2mi",
+        "title": "M5.1 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-23T06:29:57.530000Z",
+        "coordinates": [
+          -39.3528,
+          8.5099
+        ]
+      },
+      {
         "id": "us7000t2j3",
         "title": "M5.0 Earthquake - Kermadec Islands, New Zealand",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           -45.1002,
           14.5216
         ]
-      },
-      {
-        "id": "us7000t21e",
-        "title": "M5.0 Earthquake - south of the Kermadec Islands",
-        "category": "Earthquake",
-        "date": "2026-07-20T20:44:19.902000Z",
-        "coordinates": [
-          -178.0878,
-          -32.759
-        ]
-      },
-      {
-        "id": "us7000t1wn",
-        "title": "M5.2 Earthquake - 22 km NNW of Scarborough, Trinidad and Tobago",
-        "category": "Earthquake",
-        "date": "2026-07-20T09:45:10.282000Z",
-        "coordinates": [
-          -60.8041,
-          11.3742
-        ]
-      },
-      {
-        "id": "us7000t1wm",
-        "title": "M5.1 Earthquake - 83 km W of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-20T09:40:43.255000Z",
-        "coordinates": [
-          127.2659,
-          1.6021
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.2,
-    "humidity": 57,
+    "temp_c": 24.8,
+    "feels_c": 24.4,
+    "humidity": 40,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.4
+    "wind_kmh": 1.0
   },
   "forecast_today": {
     "date": "2026-07-23",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 15.7,
-    "temp_max_c": 23.7,
-    "humidity": 67,
+    "temp_max_c": 25.5,
+    "humidity": 63,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
-    "wind_kmh": 7.9,
-    "samples": 6
+    "wind_kmh": 7.4,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-24",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.2,
     "temp_max_c": 25.8,
     "humidity": 62,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-25",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 14.2,
     "temp_max_c": 28.2,
     "humidity": 49,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.2
   },
   "uv": {
-    "uv": 2.8,
-    "band": "low",
+    "uv": 4.5,
+    "band": "moderate",
     "daily_max": 6.1,
     "peak_time": "2026-07-23T14:00",
-    "safe_minutes": 61,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-23T09:30:48+02:00"
+    "fetched_at": "2026-07-23T12:19:42+02:00"
   }
 }
