@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.9,
-    "feels_c": 21.2,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_c": 18.3,
+    "feels_c": 18.4,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 10.7
+    "icon": "04n",
+    "wind_kmh": 5.3
   },
   "forecast_today": {
     "date": "2026-07-23",
     "city": "Zagreb",
-    "temp_min_c": 18.9,
-    "temp_max_c": 20.9,
-    "humidity": 85,
+    "temp_min_c": 18.3,
+    "temp_max_c": 18.3,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 10.0,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 5.2,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 26.7,
+    "temp_min_c": 12.8,
+    "temp_max_c": 25.3,
     "humidity": 56,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.7
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 14.1,
+    "temp_min_c": 14.8,
     "temp_max_c": 29.3,
     "humidity": 46,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 0.4,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-07-23T14:00",
-    "safe_minutes": 417,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,11 +360,11 @@
       },
       {
         "time": "2026-07-23T15:00",
-        "uv": 6.0
+        "uv": 6.2
       },
       {
         "time": "2026-07-23T16:00",
-        "uv": 5.3
+        "uv": 5.1
       },
       {
         "time": "2026-07-23T17:00",
@@ -372,19 +372,19 @@
       },
       {
         "time": "2026-07-23T18:00",
-        "uv": 2.0
+        "uv": 2.6
       },
       {
         "time": "2026-07-23T19:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-07-23T20:00",
-        "uv": 0.4
+        "uv": 0.2
       },
       {
         "time": "2026-07-23T21:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-07-23T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-23T19:18:44+02:00"
+    "fetched_at": "2026-07-23T21:11:17+02:00"
   }
 }
