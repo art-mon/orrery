@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000t30v",
+        "title": "M5.1 Earthquake - 194 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-24T12:27:02.974000Z",
+        "coordinates": [
+          138.8797,
+          -2.6055
+        ]
+      },
+      {
+        "id": "us7000t30r",
+        "title": "M5.4 Earthquake - 202 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-24T12:14:28.267000Z",
+        "coordinates": [
+          138.8159,
+          -2.5572
+        ]
+      },
+      {
+        "id": "us7000t309",
+        "title": "M5.3 Earthquake - 197 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-24T11:11:34.234000Z",
+        "coordinates": [
+          138.8612,
+          -2.5436
+        ]
+      },
+      {
         "id": "us7000t2wx",
         "title": "M5.0 Earthquake - 94 km SSE of Adak, Alaska",
         "category": "Earthquake",
@@ -129,92 +159,143 @@
           -29.6202,
           39.9124
         ]
-      },
-      {
-        "id": "us7000t25y",
-        "title": "M5.6 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-21T12:14:33.338000Z",
-        "coordinates": [
-          -176.9951,
-          -29.5116
-        ]
-      },
-      {
-        "id": "us7000t25j",
-        "title": "M5.0 Earthquake - 58 km SSW of Merizo Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-07-21T11:09:45.478000Z",
-        "coordinates": [
-          144.3814,
-          12.8216
-        ]
-      },
-      {
-        "id": "us7000t23v",
-        "title": "M5.0 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-21T03:17:09.781000Z",
-        "coordinates": [
-          73.8261,
-          -27.6011
-        ]
       }
     ]
   },
   "asteroids": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "asteroids": [
+      {
+        "name": "(2016 PC2)",
+        "hazardous": false,
+        "diameter_m": 149,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 10699041,
+        "velocity_kmh": 52088
+      },
+      {
+        "name": "(2017 OU18)",
+        "hazardous": false,
+        "diameter_m": 95,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 17820136,
+        "velocity_kmh": 54745
+      },
+      {
+        "name": "(2018 FA3)",
+        "hazardous": false,
+        "diameter_m": 164,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 22009177,
+        "velocity_kmh": 21861
+      },
+      {
+        "name": "(2014 NE3)",
+        "hazardous": false,
+        "diameter_m": 583,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 58710178,
+        "velocity_kmh": 46149
+      },
+      {
+        "name": "(2019 WW)",
+        "hazardous": false,
+        "diameter_m": 73,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 71623648,
+        "velocity_kmh": 87198
+      },
+      {
+        "name": "(2017 KN4)",
+        "hazardous": false,
+        "diameter_m": 431,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 11817788,
+        "velocity_kmh": 24872
+      },
+      {
+        "name": "(2005 NB56)",
+        "hazardous": false,
+        "diameter_m": 128,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 38510912,
+        "velocity_kmh": 68833
+      },
+      {
+        "name": "(2017 FW128)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 40398048,
+        "velocity_kmh": 50150
+      },
+      {
+        "name": "(2009 CD)",
+        "hazardous": false,
+        "diameter_m": 147,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 51064278,
+        "velocity_kmh": 62983
+      },
+      {
+        "name": "(2006 AJ4)",
+        "hazardous": false,
+        "diameter_m": 363,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 57166344,
+        "velocity_kmh": 34190
+      }
+    ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.1,
-    "humidity": 39,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 10.5
+    "temp_c": 24.8,
+    "feels_c": 24.3,
+    "humidity": 36,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 9.1
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 24.2,
-    "humidity": 42,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 6.9,
-    "samples": 5
+    "temp_min_c": 19.9,
+    "temp_max_c": 24.8,
+    "humidity": 40,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 5.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 28.0,
-    "humidity": 48,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.9
+    "temp_min_c": 15.7,
+    "temp_max_c": 28.9,
+    "humidity": 49,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.0
   },
   "forecast_day_after": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 16.7,
-    "temp_max_c": 31.6,
-    "humidity": 51,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 12.8
+    "temp_min_c": 17.7,
+    "temp_max_c": 31.9,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 12.7
   },
   "uv": {
-    "uv": 6.9,
-    "band": "high",
+    "uv": 4.6,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-07-24T13:00",
-    "safe_minutes": 24,
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -275,15 +356,15 @@
       },
       {
         "time": "2026-07-24T14:00",
-        "uv": 6.8
+        "uv": 6.0
       },
       {
         "time": "2026-07-24T15:00",
-        "uv": 5.8
+        "uv": 2.7
       },
       {
         "time": "2026-07-24T16:00",
-        "uv": 4.5
+        "uv": 4.8
       },
       {
         "time": "2026-07-24T17:00",
@@ -314,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T13:01:39+02:00"
+    "fetched_at": "2026-07-24T15:38:26+02:00"
   }
 }
