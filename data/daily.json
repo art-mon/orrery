@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24",
+  "generated": "2026-07-25",
   "apod": {
     "title": "RCW 86: Historical Supernova Remnant",
     "date": "2026-07-24",
@@ -11,13 +11,33 @@
   "events": {
     "events": [
       {
-        "id": "us7000t36n",
-        "title": "M5.4 Earthquake - 47 km WNW of San Antonio de los Cobres, Argentina",
+        "id": "us7000t37a",
+        "title": "M6.0 Earthquake - 82 km W of Sola, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-07-24T19:38:42.138000Z",
+        "date": "2026-07-24T21:37:56.459000Z",
         "coordinates": [
-          -66.7282,
-          -24.0121
+          166.8006,
+          -14.0205
+        ]
+      },
+      {
+        "id": "us7000t376",
+        "title": "M5.1 Earthquake - 75 km WSW of Sola, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-07-24T21:19:44.549000Z",
+        "coordinates": [
+          166.8778,
+          -14.0586
+        ]
+      },
+      {
+        "id": "us7000t36n",
+        "title": "M5.3 Earthquake - 39 km NW of San Antonio de los Cobres, Argentina",
+        "category": "Earthquake",
+        "date": "2026-07-24T19:38:42.356000Z",
+        "coordinates": [
+          -66.6072,
+          -23.9755
         ]
       },
       {
@@ -139,26 +159,6 @@
           -177.9234,
           -29.6177
         ]
-      },
-      {
-        "id": "us7000t2fd",
-        "title": "M5.1 Earthquake - 121 km NW of Vallenar, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-22T09:34:22.317000Z",
-        "coordinates": [
-          -71.7009,
-          -27.8666
-        ]
-      },
-      {
-        "id": "us7000t2dz",
-        "title": "M5.0 Earthquake - 55 km WSW of Langsa, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-22T04:18:22.071000Z",
-        "coordinates": [
-          97.5238,
-          4.2441
-        ]
       }
     ]
   },
@@ -247,41 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.1,
-    "humidity": 56,
+    "city": "City of Zagreb",
+    "temp_c": 17.6,
+    "feels_c": 16.9,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.1
+    "wind_kmh": 6.1
   },
   "forecast_today": {
-    "date": "2026-07-24",
-    "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 18.7,
-    "humidity": 56,
-    "condition": "Clear",
-    "description": "clear",
+    "date": "2026-07-25",
+    "city": "City of Zagreb",
+    "temp_min_c": 15.9,
+    "temp_max_c": 28.2,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 5.1,
-    "samples": 2
+    "wind_kmh": 6.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-25",
-    "city": "Zagreb",
-    "temp_min_c": 16.2,
-    "temp_max_c": 28.2,
-    "humidity": 48,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.5
-  },
-  "forecast_day_after": {
     "date": "2026-07-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.4,
     "temp_max_c": 30.5,
     "humidity": 54,
@@ -290,111 +279,122 @@
     "icon": "03d",
     "wind_kmh": 13.4
   },
+  "forecast_day_after": {
+    "date": "2026-07-27",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.0,
+    "temp_max_c": 30.5,
+    "humidity": 66,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.3
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
-    "peak_time": "2026-07-24T13:00",
+    "daily_max": 6.9,
+    "peak_time": "2026-07-25T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-24T00:00",
+        "time": "2026-07-25T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T01:00",
+        "time": "2026-07-25T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T02:00",
+        "time": "2026-07-25T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T03:00",
+        "time": "2026-07-25T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T04:00",
+        "time": "2026-07-25T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T05:00",
+        "time": "2026-07-25T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T06:00",
-        "uv": 0.1
+        "time": "2026-07-25T06:00",
+        "uv": 0.0
       },
       {
-        "time": "2026-07-24T07:00",
-        "uv": 0.5
+        "time": "2026-07-25T07:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-07-24T08:00",
+        "time": "2026-07-25T08:00",
         "uv": 1.3
       },
       {
-        "time": "2026-07-24T09:00",
+        "time": "2026-07-25T09:00",
         "uv": 2.5
       },
       {
-        "time": "2026-07-24T10:00",
+        "time": "2026-07-25T10:00",
         "uv": 4.0
       },
       {
-        "time": "2026-07-24T11:00",
-        "uv": 5.2
+        "time": "2026-07-25T11:00",
+        "uv": 5.3
       },
       {
-        "time": "2026-07-24T12:00",
-        "uv": 6.2
+        "time": "2026-07-25T12:00",
+        "uv": 6.3
       },
       {
-        "time": "2026-07-24T13:00",
-        "uv": 6.8
+        "time": "2026-07-25T13:00",
+        "uv": 6.9
       },
       {
-        "time": "2026-07-24T14:00",
-        "uv": 6.0
+        "time": "2026-07-25T14:00",
+        "uv": 6.9
       },
       {
-        "time": "2026-07-24T15:00",
-        "uv": 3.0
+        "time": "2026-07-25T15:00",
+        "uv": 6.4
       },
       {
-        "time": "2026-07-24T16:00",
-        "uv": 4.7
+        "time": "2026-07-25T16:00",
+        "uv": 5.5
       },
       {
-        "time": "2026-07-24T17:00",
-        "uv": 4.1
+        "time": "2026-07-25T17:00",
+        "uv": 4.2
       },
       {
-        "time": "2026-07-24T18:00",
+        "time": "2026-07-25T18:00",
         "uv": 2.7
       },
       {
-        "time": "2026-07-24T19:00",
+        "time": "2026-07-25T19:00",
         "uv": 1.4
       },
       {
-        "time": "2026-07-24T20:00",
+        "time": "2026-07-25T20:00",
         "uv": 0.5
       },
       {
-        "time": "2026-07-24T21:00",
+        "time": "2026-07-25T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-24T22:00",
+        "time": "2026-07-25T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-24T23:00",
+        "time": "2026-07-25T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T22:59:11+02:00"
+    "fetched_at": "2026-07-25T00:11:39+02:00"
   }
 }
