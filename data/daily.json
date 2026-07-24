@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t34g",
+        "title": "M5.7 Earthquake - 49 km W of Turangi, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-07-24T16:51:37.514000Z",
+        "coordinates": [
+          175.2332,
+          -38.9621
+        ]
+      },
+      {
+        "id": "us7000t34c",
+        "title": "M5.1 Earthquake - 115 km ENE of Ozernovskiy, Russia",
+        "category": "Earthquake",
+        "date": "2026-07-24T16:33:19.808000Z",
+        "coordinates": [
+          158.127,
+          51.7216
+        ]
+      },
+      {
         "id": "us7000t30v",
         "title": "M5.1 Earthquake - 194 km W of Abepura, Indonesia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           97.5238,
           4.2441
         ]
-      },
-      {
-        "id": "us7000t2a7",
-        "title": "M5.1 Earthquake - 7 km WNW of Kalbay, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-21T18:33:27.762000Z",
-        "coordinates": [
-          125.4295,
-          5.739
-        ]
-      },
-      {
-        "id": "us7000t26b",
-        "title": "M5.3 Earthquake - 138 km ENE of Santa Cruz das Flores, Portugal",
-        "category": "Earthquake",
-        "date": "2026-07-21T13:13:11.316000Z",
-        "coordinates": [
-          -29.6202,
-          39.9124
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 25.4,
-    "feels_c": 24.8,
-    "humidity": 32,
+    "city": "Zagreb",
+    "temp_c": 24.2,
+    "feels_c": 23.7,
+    "humidity": 36,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.7
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 25.4,
-    "humidity": 39,
+    "temp_min_c": 22.3,
+    "temp_max_c": 24.2,
+    "humidity": 38,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 4.4,
+    "icon": "03d",
+    "wind_kmh": 4.5,
     "samples": 3
   },
   "forecast": {
@@ -273,7 +273,7 @@
     "city": "Zagreb",
     "temp_min_c": 15.7,
     "temp_max_c": 28.9,
-    "humidity": 49,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -291,11 +291,11 @@
     "wind_kmh": 12.7
   },
   "uv": {
-    "uv": 3.2,
-    "band": "moderate",
+    "uv": 0.8,
+    "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-24T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 208,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T17:23:32+02:00"
+    "fetched_at": "2026-07-24T19:27:30+02:00"
   }
 }
