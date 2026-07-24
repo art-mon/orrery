@@ -131,16 +131,6 @@
         ]
       },
       {
-        "id": "us7000t2h9",
-        "title": "M5.1 Earthquake - 61 km SSW of San Pedro de Atacama, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-22T17:34:36.746000Z",
-        "coordinates": [
-          -68.5273,
-          -23.3767
-        ]
-      },
-      {
         "id": "us7000t2fd",
         "title": "M5.1 Earthquake - 121 km NW of Vallenar, Chile",
         "category": "Earthquake",
@@ -158,6 +148,16 @@
         "coordinates": [
           97.5238,
           4.2441
+        ]
+      },
+      {
+        "id": "us7000t2a7",
+        "title": "M5.1 Earthquake - 7 km WNW of Kalbay, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-21T18:33:27.762000Z",
+        "coordinates": [
+          125.4295,
+          5.739
         ]
       }
     ]
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 23.7,
-    "humidity": 36,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.7
+    "temp_c": 19.9,
+    "feels_c": 19.5,
+    "humidity": 61,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 1.6
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 22.3,
-    "temp_max_c": 24.2,
-    "humidity": 38,
+    "temp_min_c": 19.5,
+    "temp_max_c": 19.9,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.5,
-    "samples": 3
+    "icon": "01n",
+    "wind_kmh": 3.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 28.9,
+    "temp_min_c": 15.0,
+    "temp_max_c": 28.2,
     "humidity": 48,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.0
+    "wind_kmh": 6.5
   },
   "forecast_day_after": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 17.7,
-    "temp_max_c": 31.9,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 12.7
+    "temp_min_c": 17.4,
+    "temp_max_c": 30.5,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 13.4
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-24T13:00",
-    "safe_minutes": 208,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,11 +360,11 @@
       },
       {
         "time": "2026-07-24T15:00",
-        "uv": 2.7
+        "uv": 3.0
       },
       {
         "time": "2026-07-24T16:00",
-        "uv": 4.8
+        "uv": 4.7
       },
       {
         "time": "2026-07-24T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T19:27:30+02:00"
+    "fetched_at": "2026-07-24T21:20:35+02:00"
   }
 }
