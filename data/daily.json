@@ -1,15 +1,30 @@
 {
   "generated": "2026-07-24",
   "apod": {
-    "title": "The Large Magellanic Cloud",
-    "date": "2026-07-23",
-    "explanation": "Have you ever seen another galaxy with your own eyes?   The featured image shows the Large Magellanic Cloud (LMC), one of the closest neighbors of our Milky Way.     If you are anywhere south of latitude 20\u00b0 N (but the further south, the better), you can see it with the unaided eye if you go to a dark sky location, away from big cities and light polution.   It is a dwarf irregular galaxy about 163,000 light-years away, and a member of our Local Group of galaxies.   Despite being small, with a total mass approximately equivalent to 10% - 20% of the mass of the Milky Way, the LMC is very actively forming stars.   This is likely due in part to the gravitational push and pull of tides caused by the Milky Way on the LMC.   Some astronomers have predicted that it will collide with the Milky Way in in about 2 billion years.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/LMC_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/LMC.jpg"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "pt26205050",
+        "title": "M5.0 Earthquake - 49 km NNW of San Antonio, Puerto Rico",
+        "category": "Earthquake",
+        "date": "2026-07-24T02:42:35Z",
+        "coordinates": [
+          -67.356,
+          18.869
+        ]
+      },
+      {
+        "id": "us7000t2wx",
+        "title": "M5.0 Earthquake - 94 km SSE of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-07-24T01:03:16.097000Z",
+        "coordinates": [
+          -176.0652,
+          51.1015
+        ]
+      },
       {
         "id": "us7000t2w3",
         "title": "M5.8 Earthquake - 130 km W of Ternate, Indonesia",
@@ -139,79 +154,11 @@
           144.3814,
           12.8216
         ]
-      },
-      {
-        "id": "us7000t23v",
-        "title": "M5.0 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-21T03:17:09.781000Z",
-        "coordinates": [
-          73.8261,
-          -27.6011
-        ]
-      },
-      {
-        "id": "us7000t23e",
-        "title": "M5.2 Earthquake - northern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-21T01:03:34.930000Z",
-        "coordinates": [
-          -45.0893,
-          25.9041
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 BN2)",
-        "hazardous": false,
-        "diameter_m": 29,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 18101269,
-        "velocity_kmh": 41905
-      },
-      {
-        "name": "(2014 GJ1)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 18262849,
-        "velocity_kmh": 18944
-      },
-      {
-        "name": "253062 (2002 TC70)",
-        "hazardous": false,
-        "diameter_m": 358,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 20041502,
-        "velocity_kmh": 10208
-      },
-      {
-        "name": "(2023 OV)",
-        "hazardous": false,
-        "diameter_m": 1107,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 35785875,
-        "velocity_kmh": 62586
-      },
-      {
-        "name": "(2017 FZ2)",
-        "hazardous": false,
-        "diameter_m": 28,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 40553314,
-        "velocity_kmh": 33689
-      },
-      {
-        "name": "448628 (2010 VF1)",
-        "hazardous": false,
-        "diameter_m": 511,
-        "close_approach_date": "2026-07-23",
-        "miss_distance_km": 57116676,
-        "velocity_kmh": 78432
-      },
       {
         "name": "(2016 PC2)",
         "hazardous": false,
@@ -243,37 +190,85 @@
         "close_approach_date": "2026-07-24",
         "miss_distance_km": 58710178,
         "velocity_kmh": 46149
+      },
+      {
+        "name": "(2019 WW)",
+        "hazardous": false,
+        "diameter_m": 73,
+        "close_approach_date": "2026-07-24",
+        "miss_distance_km": 71623648,
+        "velocity_kmh": 87198
+      },
+      {
+        "name": "(2017 KN4)",
+        "hazardous": false,
+        "diameter_m": 431,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 11817788,
+        "velocity_kmh": 24872
+      },
+      {
+        "name": "(2005 NB56)",
+        "hazardous": false,
+        "diameter_m": 128,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 38510912,
+        "velocity_kmh": 68833
+      },
+      {
+        "name": "(2017 FW128)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 40398048,
+        "velocity_kmh": 50150
+      },
+      {
+        "name": "(2009 CD)",
+        "hazardous": false,
+        "diameter_m": 147,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 51064278,
+        "velocity_kmh": 62983
+      },
+      {
+        "name": "(2006 AJ4)",
+        "hazardous": false,
+        "diameter_m": 363,
+        "close_approach_date": "2026-07-25",
+        "miss_distance_km": 57166344,
+        "velocity_kmh": 34190
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 15.3,
-    "feels_c": 15.2,
-    "humidity": 92,
+    "city": "City of Zagreb",
+    "temp_c": 14.8,
+    "feels_c": 14.5,
+    "humidity": 81,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.3
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.2
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 25.8,
-    "humidity": 60,
+    "temp_min_c": 14.8,
+    "temp_max_c": 24.1,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.4,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 5.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 30.4,
-    "humidity": 45,
+    "temp_min_c": 14.2,
+    "temp_max_c": 28.6,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -282,13 +277,13 @@
   "forecast_day_after": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 17.3,
-    "temp_max_c": 32.4,
-    "humidity": 50,
+    "temp_min_c": 16.6,
+    "temp_max_c": 31.8,
+    "humidity": 51,
     "condition": "Clear",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 13.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 12.6
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T01:57:38+02:00"
+    "fetched_at": "2026-07-24T04:53:56+02:00"
   }
 }
