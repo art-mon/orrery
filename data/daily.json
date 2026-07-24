@@ -163,110 +163,29 @@
     ]
   },
   "asteroids": {
-    "asteroids": [
-      {
-        "name": "(2016 PC2)",
-        "hazardous": false,
-        "diameter_m": 149,
-        "close_approach_date": "2026-07-24",
-        "miss_distance_km": 10699041,
-        "velocity_kmh": 52088
-      },
-      {
-        "name": "(2017 OU18)",
-        "hazardous": false,
-        "diameter_m": 95,
-        "close_approach_date": "2026-07-24",
-        "miss_distance_km": 17820136,
-        "velocity_kmh": 54745
-      },
-      {
-        "name": "(2018 FA3)",
-        "hazardous": false,
-        "diameter_m": 164,
-        "close_approach_date": "2026-07-24",
-        "miss_distance_km": 22009177,
-        "velocity_kmh": 21861
-      },
-      {
-        "name": "(2014 NE3)",
-        "hazardous": false,
-        "diameter_m": 583,
-        "close_approach_date": "2026-07-24",
-        "miss_distance_km": 58710178,
-        "velocity_kmh": 46149
-      },
-      {
-        "name": "(2019 WW)",
-        "hazardous": false,
-        "diameter_m": 73,
-        "close_approach_date": "2026-07-24",
-        "miss_distance_km": 71623648,
-        "velocity_kmh": 87198
-      },
-      {
-        "name": "(2017 KN4)",
-        "hazardous": false,
-        "diameter_m": 431,
-        "close_approach_date": "2026-07-25",
-        "miss_distance_km": 11817788,
-        "velocity_kmh": 24872
-      },
-      {
-        "name": "(2005 NB56)",
-        "hazardous": false,
-        "diameter_m": 128,
-        "close_approach_date": "2026-07-25",
-        "miss_distance_km": 38510912,
-        "velocity_kmh": 68833
-      },
-      {
-        "name": "(2017 FW128)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-07-25",
-        "miss_distance_km": 40398048,
-        "velocity_kmh": 50150
-      },
-      {
-        "name": "(2009 CD)",
-        "hazardous": false,
-        "diameter_m": 147,
-        "close_approach_date": "2026-07-25",
-        "miss_distance_km": 51064278,
-        "velocity_kmh": 62983
-      },
-      {
-        "name": "(2006 AJ4)",
-        "hazardous": false,
-        "diameter_m": 363,
-        "close_approach_date": "2026-07-25",
-        "miss_distance_km": 57166344,
-        "velocity_kmh": 34190
-      }
-    ]
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.0,
-    "feels_c": 21.7,
-    "humidity": 54,
+    "temp_c": 23.7,
+    "feels_c": 23.1,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 10.5
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
     "temp_min_c": 17.5,
-    "temp_max_c": 23.5,
-    "humidity": 50,
+    "temp_max_c": 24.2,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.3,
-    "samples": 6
+    "wind_kmh": 6.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-07-25",
@@ -274,7 +193,7 @@
     "temp_min_c": 15.2,
     "temp_max_c": 28.0,
     "humidity": 48,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 6.9
@@ -291,11 +210,11 @@
     "wind_kmh": 12.8
   },
   "uv": {
-    "uv": 4.8,
-    "band": "moderate",
+    "uv": 6.9,
+    "band": "high",
     "daily_max": 6.8,
     "peak_time": "2026-07-24T13:00",
-    "safe_minutes": 35,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +314,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T10:22:50+02:00"
+    "fetched_at": "2026-07-24T13:01:39+02:00"
   }
 }
