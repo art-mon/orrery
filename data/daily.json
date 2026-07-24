@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t36n",
+        "title": "M5.4 Earthquake - 47 km WNW of San Antonio de los Cobres, Argentina",
+        "category": "Earthquake",
+        "date": "2026-07-24T19:38:42.138000Z",
+        "coordinates": [
+          -66.7282,
+          -24.0121
+        ]
+      },
+      {
         "id": "us7000t34g",
         "title": "M5.7 Earthquake - 49 km W of Turangi, New Zealand",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           97.5238,
           4.2441
         ]
-      },
-      {
-        "id": "us7000t2a7",
-        "title": "M5.1 Earthquake - 7 km WNW of Kalbay, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-21T18:33:27.762000Z",
-        "coordinates": [
-          125.4295,
-          5.739
-        ]
       }
     ]
   },
@@ -248,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.9,
-    "feels_c": 19.5,
-    "humidity": 61,
+    "temp_c": 18.7,
+    "feels_c": 18.1,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.6
+    "wind_kmh": 5.1
   },
   "forecast_today": {
     "date": "2026-07-24",
     "city": "Zagreb",
-    "temp_min_c": 19.5,
-    "temp_max_c": 19.9,
-    "humidity": 62,
-    "condition": "Clouds",
-    "description": "clouds",
+    "temp_min_c": 18.7,
+    "temp_max_c": 18.7,
+    "humidity": 56,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.4,
+    "wind_kmh": 5.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 15.0,
+    "temp_min_c": 16.2,
     "temp_max_c": 28.2,
     "humidity": 48,
     "condition": "Clouds",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-24T21:20:35+02:00"
+    "fetched_at": "2026-07-24T22:59:11+02:00"
   }
 }
