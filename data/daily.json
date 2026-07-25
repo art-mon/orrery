@@ -247,31 +247,31 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 22.6,
-    "feels_c": 22.5,
-    "humidity": 60,
+    "city": "City of Zagreb",
+    "temp_c": 20.1,
+    "feels_c": 19.9,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.2
+    "wind_kmh": 1.9
   },
   "forecast_today": {
     "date": "2026-07-25",
     "city": "Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 22.7,
-    "humidity": 60,
+    "temp_min_c": 20.1,
+    "temp_max_c": 20.1,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.6,
+    "wind_kmh": 1.9,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
+    "temp_min_c": 17,
     "temp_max_c": 31.5,
     "humidity": 58,
     "condition": "Clouds",
@@ -283,12 +283,12 @@
     "date": "2026-07-27",
     "city": "Zagreb",
     "temp_min_c": 19.0,
-    "temp_max_c": 31.0,
+    "temp_max_c": 31.8,
     "humidity": 64,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 5.7
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-25T21:05:51+02:00"
+    "fetched_at": "2026-07-25T22:48:00+02:00"
   }
 }
