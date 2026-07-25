@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000t3a4",
+        "title": "M5.0 Earthquake - 57 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-25T06:46:06.097000Z",
+        "coordinates": [
+          125.4791,
+          4.8793
+        ]
+      },
+      {
+        "id": "us7000t3a0",
+        "title": "M5.1 Earthquake - 43 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-25T05:26:33.842000Z",
+        "coordinates": [
+          -92.7508,
+          14.4952
+        ]
+      },
+      {
         "id": "us7000t38a",
         "title": "M5.0 Earthquake - 96 km NNW of Port-Olry, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -100.976,
           35.902
         ]
-      },
-      {
-        "id": "us7000t2n5",
-        "title": "M5.1 Earthquake - 92 km SE of Atka, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-23T09:30:18.969000Z",
-        "coordinates": [
-          -173.2484,
-          51.604
-        ]
-      },
-      {
-        "id": "us7000t2n3",
-        "title": "M5.1 Earthquake - 85 km SE of Tatsug\u014d, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-23T09:22:22.460000Z",
-        "coordinates": [
-          130.1887,
-          27.8812
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.8,
-    "feels_c": 13.3,
-    "humidity": 77,
+    "temp_c": 20.4,
+    "feels_c": 20.1,
+    "humidity": 61,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.1
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.8
   },
   "forecast_today": {
     "date": "2026-07-25",
-    "city": "Zagreb",
-    "temp_min_c": 13.8,
-    "temp_max_c": 28.8,
-    "humidity": 54,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.2,
+    "temp_max_c": 28.5,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 6.5,
-    "samples": 7
+    "icon": "03d",
+    "wind_kmh": 6.7,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-26",
-    "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 28.4,
-    "humidity": 52,
-    "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 13.1
+    "city": "City of Zagreb",
+    "temp_min_c": 17.6,
+    "temp_max_c": 27.7,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 12.2
   },
   "forecast_day_after": {
     "date": "2026-07-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.8,
     "temp_max_c": 30.7,
-    "humidity": 66,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 3.1,
+    "band": "moderate",
     "daily_max": 6.9,
-    "peak_time": "2026-07-25T13:00",
-    "safe_minutes": null,
+    "peak_time": "2026-07-25T14:00",
+    "safe_minutes": 53,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,7 +328,7 @@
       },
       {
         "time": "2026-07-25T07:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-07-25T08:00",
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-07-25T11:00",
-        "uv": 5.2
+        "uv": 5.3
       },
       {
         "time": "2026-07-25T12:00",
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-07-25T13:00",
-        "uv": 6.9
+        "uv": 6.8
       },
       {
         "time": "2026-07-25T14:00",
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-07-25T16:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-07-25T17:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-07-25T18:00",
-        "uv": 2.5
+        "uv": 2.7
       },
       {
         "time": "2026-07-25T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-25T06:07:21+02:00"
+    "fetched_at": "2026-07-25T09:12:59+02:00"
   }
 }
