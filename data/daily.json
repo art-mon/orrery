@@ -1,12 +1,7 @@
 {
-  "generated": "2026-07-25",
+  "generated": "2026-07-26",
   "apod": {
-    "title": "Tranquility and Serenity",
-    "date": "2026-07-25",
-    "explanation": "The Seas of Tranquility and Serenity are calm today. They're calm most every day though, since they are actually lunar maria, ancient lava flows filling in large impact basins on the Moon. Also known by Latin names Mare Tranquillitatis (right) and Mare Serenitatis, the smooth dark lunar \"seas\" are in stark contrast to the bright cratered lunar highlands surrounding them in this telescopic view. Of course their names are based on the historical, pre-telescopic designations of lunar maria. Easily visible to the unaided eye, the broad features on the Moon's near side were imagined to be like the expansive oceans of planet Earth. On July 20, 1969, the Apollo 11 lunar module Eagle touched down on the Mare Tranquillitatis (at lower right), establishing Tranquility base and the first human presence on the Moon.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/TranquilitySerenity1024c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/TranquilitySerenity2048.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,154 +242,154 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 19.6,
-    "feels_c": 19.5,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_c": 18.5,
+    "feels_c": 18.4,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.4
+    "wind_kmh": 6.1
   },
   "forecast_today": {
-    "date": "2026-07-25",
-    "city": "Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 19.6,
-    "humidity": 74,
-    "condition": "Clear",
-    "description": "clear",
+    "date": "2026-07-26",
+    "city": "City of Zagreb",
+    "temp_min_c": 17.1,
+    "temp_max_c": 31.5,
+    "humidity": 60,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 5.4,
-    "samples": 1
+    "wind_kmh": 12.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-26",
-    "city": "Zagreb",
-    "temp_min_c": 17.4,
-    "temp_max_c": 32.0,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 13.5
-  },
-  "forecast_day_after": {
     "date": "2026-07-27",
-    "city": "Zagreb",
-    "temp_min_c": 19.5,
-    "temp_max_c": 32.3,
-    "humidity": 63,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.0,
+    "temp_max_c": 31.8,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.9
+    "wind_kmh": 5.7
+  },
+  "forecast_day_after": {
+    "date": "2026-07-28",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.5,
+    "temp_max_c": 33.5,
+    "humidity": 52,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.4
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.9,
-    "peak_time": "2026-07-25T14:00",
+    "daily_max": 6.8,
+    "peak_time": "2026-07-26T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-25T00:00",
+        "time": "2026-07-26T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T01:00",
+        "time": "2026-07-26T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T02:00",
+        "time": "2026-07-26T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T03:00",
+        "time": "2026-07-26T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T04:00",
+        "time": "2026-07-26T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T05:00",
+        "time": "2026-07-26T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T06:00",
+        "time": "2026-07-26T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T07:00",
-        "uv": 0.5
+        "time": "2026-07-26T07:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-07-25T08:00",
+        "time": "2026-07-26T08:00",
         "uv": 1.3
       },
       {
-        "time": "2026-07-25T09:00",
-        "uv": 2.6
+        "time": "2026-07-26T09:00",
+        "uv": 2.5
       },
       {
-        "time": "2026-07-25T10:00",
+        "time": "2026-07-26T10:00",
         "uv": 4.0
       },
       {
-        "time": "2026-07-25T11:00",
-        "uv": 5.3
+        "time": "2026-07-26T11:00",
+        "uv": 5.2
       },
       {
-        "time": "2026-07-25T12:00",
-        "uv": 6.3
+        "time": "2026-07-26T12:00",
+        "uv": 6.2
       },
       {
-        "time": "2026-07-25T13:00",
+        "time": "2026-07-26T13:00",
         "uv": 6.8
       },
       {
-        "time": "2026-07-25T14:00",
-        "uv": 6.9
+        "time": "2026-07-26T14:00",
+        "uv": 6.7
       },
       {
-        "time": "2026-07-25T15:00",
-        "uv": 6.4
+        "time": "2026-07-26T15:00",
+        "uv": 5.8
       },
       {
-        "time": "2026-07-25T16:00",
-        "uv": 5.4
+        "time": "2026-07-26T16:00",
+        "uv": 4.5
       },
       {
-        "time": "2026-07-25T17:00",
-        "uv": 4.0
+        "time": "2026-07-26T17:00",
+        "uv": 3.8
       },
       {
-        "time": "2026-07-25T18:00",
-        "uv": 2.7
+        "time": "2026-07-26T18:00",
+        "uv": 2.5
       },
       {
-        "time": "2026-07-25T19:00",
+        "time": "2026-07-26T19:00",
         "uv": 1.4
       },
       {
-        "time": "2026-07-25T20:00",
+        "time": "2026-07-26T20:00",
         "uv": 0.5
       },
       {
-        "time": "2026-07-25T21:00",
+        "time": "2026-07-26T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-25T22:00",
+        "time": "2026-07-26T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-25T23:00",
+        "time": "2026-07-26T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-25T23:52:52+02:00"
+    "fetched_at": "2026-07-26T00:53:21+02:00"
   }
 }
