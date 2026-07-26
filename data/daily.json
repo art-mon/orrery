@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t3fm",
+        "title": "M5.8 Earthquake - 99 km SE of Atka, Alaska",
+        "category": "Earthquake",
+        "date": "2026-07-26T08:35:18.849000Z",
+        "coordinates": [
+          -173.306,
+          51.4994
+        ]
+      },
+      {
         "id": "us7000t3e7",
         "title": "M5.1 Earthquake - Tristan da Cunha region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           138.8612,
           -2.5436
         ]
-      },
-      {
-        "id": "us7000t2wx",
-        "title": "M5.0 Earthquake - 94 km SSE of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-24T01:03:16.097000Z",
-        "coordinates": [
-          -176.0652,
-          51.1015
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.1,
-    "feels_c": 23.0,
-    "humidity": 56,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 12.2
-  },
-  "forecast_today": {
-    "date": "2026-07-26",
-    "city": "Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 28.0,
-    "humidity": 54,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 15.0,
-    "samples": 6
-  },
-  "forecast": {
-    "date": "2026-07-27",
-    "city": "Zagreb",
-    "temp_min_c": 18.8,
-    "temp_max_c": 29.8,
-    "humidity": 61,
+    "temp_c": 26.0,
+    "feels_c": 26.0,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 6.5
+    "wind_kmh": 17.1
+  },
+  "forecast_today": {
+    "date": "2026-07-26",
+    "city": "City of Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 27.5,
+    "humidity": 56,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04d",
+    "wind_kmh": 13.8,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-07-27",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.0,
+    "temp_max_c": 30.1,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-07-28",
-    "city": "Zagreb",
-    "temp_min_c": 18.1,
-    "temp_max_c": 32.9,
-    "humidity": 50,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.9
+    "city": "City of Zagreb",
+    "temp_min_c": 19.6,
+    "temp_max_c": 33.1,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.8
   },
   "uv": {
-    "uv": 2.3,
-    "band": "low",
+    "uv": 5.6,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-07-26T13:00",
-    "safe_minutes": 72,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-26T08:33:42+02:00"
+    "fetched_at": "2026-07-26T11:09:44+02:00"
   }
 }
