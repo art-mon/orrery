@@ -1,7 +1,12 @@
 {
   "generated": "2026-07-26",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Simulation TNG50: A Galaxy Cluster Forms",
+    "date": "2026-07-26",
+    "explanation": "How do clusters of galaxies form?  Since our universe moves too slowly to watch, faster-moving computer simulations are created to help find out.  One famous effort is TNG50 from IllustrisTNG, an upgrade of the famous Illustris Simulation. The first part of the featured video tracks cosmic gas (mostly hydrogen) as it evolves into galaxies and galaxy clusters from the early universe to today, with brighter colors marking faster moving gas.  As the universe matures, gas falls into gravitational wells, galaxies forms, galaxies spin, galaxies collide and merge, all while black holes form in galaxy centers and expel surrounding gas at high speeds. The second half of the video switches to tracking stars, showing a galaxy cluster coming together, complete with stellar streams.  The outflow from black holes in TNG50 is surprisingly complex and details are being compared with our real universe.  Studying how gas coalesced in the early universe helps humanity better understand how our Earth, Sun, and Solar System originally formed.   Explore the Universe: Random APOD Generator",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2607/ClusterFormation_TNG50.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.5,
-    "feels_c": 17.4,
-    "humidity": 83,
+    "temp_c": 23.1,
+    "feels_c": 23.0,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 9.6
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 12.2
   },
   "forecast_today": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 30.4,
-    "humidity": 61,
+    "temp_min_c": 20.5,
+    "temp_max_c": 28.0,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 14.1,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 15.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-27",
@@ -286,11 +291,11 @@
     "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.3,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-26T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 72,
     "skin_type": 2,
     "hourly": [
       {
@@ -327,19 +332,19 @@
       },
       {
         "time": "2026-07-26T08:00",
-        "uv": 1.2
+        "uv": 1.3
       },
       {
         "time": "2026-07-26T09:00",
-        "uv": 2.2
+        "uv": 2.5
       },
       {
         "time": "2026-07-26T10:00",
-        "uv": 3.7
+        "uv": 3.9
       },
       {
         "time": "2026-07-26T11:00",
-        "uv": 4.7
+        "uv": 5.2
       },
       {
         "time": "2026-07-26T12:00",
@@ -351,23 +356,23 @@
       },
       {
         "time": "2026-07-26T14:00",
-        "uv": 6.5
-      },
-      {
-        "time": "2026-07-26T15:00",
         "uv": 5.8
       },
       {
+        "time": "2026-07-26T15:00",
+        "uv": 5.4
+      },
+      {
         "time": "2026-07-26T16:00",
-        "uv": 4.9
+        "uv": 4.6
       },
       {
         "time": "2026-07-26T17:00",
-        "uv": 3.6
+        "uv": 3.8
       },
       {
         "time": "2026-07-26T18:00",
-        "uv": 2.4
+        "uv": 2.6
       },
       {
         "time": "2026-07-26T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-26T05:27:22+02:00"
+    "fetched_at": "2026-07-26T08:33:42+02:00"
   }
 }
