@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t3in",
+        "title": "M5.4 Earthquake - northern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-26T18:19:40.684000Z",
+        "coordinates": [
+          -42.8052,
+          29.9365
+        ]
+      },
+      {
         "id": "us7000t3g4",
         "title": "M5.3 Earthquake - 25 km NW of Kupang, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           138.8797,
           -2.6055
         ]
-      },
-      {
-        "id": "us7000t30r",
-        "title": "M5.4 Earthquake - 202 km W of Abepura, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-24T12:14:28.267000Z",
-        "coordinates": [
-          138.8159,
-          -2.5572
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 27.6,
-    "feels_c": 27.7,
-    "humidity": 46,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 12.2
+    "temp_c": 21.8,
+    "feels_c": 21.9,
+    "humidity": 73,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 12.1
   },
   "forecast_today": {
     "date": "2026-07-26",
     "city": "Zagreb",
-    "temp_min_c": 25.6,
-    "temp_max_c": 27.6,
-    "humidity": 53,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "03d",
-    "wind_kmh": 11.9,
+    "temp_min_c": 21.3,
+    "temp_max_c": 21.8,
+    "humidity": 74,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 12.5,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-27",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 31.2,
-    "humidity": 60,
+    "temp_min_c": 20.2,
+    "temp_max_c": 32.2,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.0
+    "wind_kmh": 7.2
   },
   "forecast_day_after": {
     "date": "2026-07-28",
     "city": "Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 33.3,
-    "humidity": 49,
-    "condition": "Clear",
+    "temp_min_c": 20.4,
+    "temp_max_c": 33.4,
+    "humidity": 54,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.3,
     "peak_time": "2026-07-26T13:00",
-    "safe_minutes": 667,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-26T20:01:01+02:00"
+    "fetched_at": "2026-07-26T22:06:54+02:00"
   }
 }
