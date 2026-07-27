@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us7000t3m7",
+        "title": "M5.4 Earthquake - 82 km SSW of San Pedro de Atacama, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-27T08:57:43.758000Z",
+        "coordinates": [
+          -68.633,
+          -23.5454
+        ]
+      },
+      {
+        "id": "us7000t3m6",
+        "title": "M5.2 Earthquake - south of Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-27T08:47:18.681000Z",
+        "coordinates": [
+          -175.3545,
+          -24.7345
+        ]
+      },
+      {
+        "id": "us7000t3m5",
+        "title": "M5.2 Earthquake - south of Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-27T08:44:08.090000Z",
+        "coordinates": [
+          -175.244,
+          -24.6958
+        ]
+      },
+      {
         "id": "us7000t3l3",
         "title": "M5.2 Earthquake - south of Tonga",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           166.7272,
           -14.2346
         ]
-      },
-      {
-        "id": "us7000t387",
-        "title": "M5.7 Earthquake - 292 km SSE of Ushuaia, Argentina",
-        "category": "Earthquake",
-        "date": "2026-07-24T23:10:29.856000Z",
-        "coordinates": [
-          -66.8383,
-          -57.3066
-        ]
-      },
-      {
-        "id": "us7000t37a",
-        "title": "M6.0 Earthquake - 82 km W of Sola, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-07-24T21:37:56.459000Z",
-        "coordinates": [
-          166.8006,
-          -14.0205
-        ]
-      },
-      {
-        "id": "us7000t376",
-        "title": "M5.1 Earthquake - 75 km WSW of Sola, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-07-24T21:19:44.549000Z",
-        "coordinates": [
-          166.8778,
-          -14.0586
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 29.2,
-    "humidity": 49,
+    "city": "City of Zagreb",
+    "temp_c": 32.0,
+    "feels_c": 31.7,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 8.4
   },
   "forecast_today": {
     "date": "2026-07-27",
     "city": "Zagreb",
     "temp_min_c": 21.4,
-    "temp_max_c": 29.4,
-    "humidity": 48,
+    "temp_max_c": 32.0,
+    "humidity": 45,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01d",
-    "wind_kmh": 7.6,
-    "samples": 6
+    "wind_kmh": 9.1,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-28",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 4.8,
+    "uv": 5.6,
     "band": "moderate",
     "daily_max": 6.9,
     "peak_time": "2026-07-27T14:00",
-    "safe_minutes": 34,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-07-27T11:00",
-        "uv": 5.3
+        "uv": 5.2
       },
       {
         "time": "2026-07-27T12:00",
@@ -360,31 +360,31 @@
       },
       {
         "time": "2026-07-27T15:00",
-        "uv": 4.2
+        "uv": 4.8
       },
       {
         "time": "2026-07-27T16:00",
-        "uv": 5.1
+        "uv": 3.4
       },
       {
         "time": "2026-07-27T17:00",
-        "uv": 4.1
+        "uv": 3.0
       },
       {
         "time": "2026-07-27T18:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-07-27T19:00",
-        "uv": 0.6
+        "uv": 0.7
       },
       {
         "time": "2026-07-27T20:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-07-27T21:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-07-27T22:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-27T10:27:54+02:00"
+    "fetched_at": "2026-07-27T14:19:32+02:00"
   }
 }
