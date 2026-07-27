@@ -1,7 +1,12 @@
 {
   "generated": "2026-07-27",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NGC 7635: The Bubble Nebula",
+    "date": "2026-07-27",
+    "explanation": "What created this huge space bubble? Blown by the wind from a star, this tantalizing, head-like apparition is cataloged as NGC 7635, but known simply as the Bubble Nebula. Taken from Krakow, Poland, the featured view utilizes a long exposure to reveal the intricate details of this cosmic bubble and its environment. Although it looks delicate, the 10 light-year diameter bubble offers evidence of violent processes at work. Seen here right of the Bubble's center, a bright hot star is embedded in the nebula's reflecting dust. A fierce stellar wind and intense radiation from the star, which likely has a mass 10 to 20 times that of the Sun, has blasted out the structure of glowing gas against denser material in a surrounding molecular cloud. The intriguing Bubble Nebula lies a mere 11,000 light-years away toward the boastful constellation Cassiopeia.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/Bubble_Piechnik_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/Bubble_Piechnik_1616.jpg"
   },
   "events": {
     "events": [
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 25.0,
-    "humidity": 62,
+    "temp_c": 24.2,
+    "feels_c": 24.4,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 11.4
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 11.2
   },
   "forecast_today": {
     "date": "2026-07-27",
     "city": "Zagreb",
-    "temp_min_c": 24.1,
-    "temp_max_c": 24.8,
-    "humidity": 62,
+    "temp_min_c": 24.2,
+    "temp_max_c": 24.2,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 11.3,
-    "samples": 2
+    "icon": "04n",
+    "wind_kmh": 11.2,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-28",
     "city": "Zagreb",
-    "temp_min_c": 19.4,
+    "temp_min_c": 21.0,
     "temp_max_c": 32.1,
-    "humidity": 47,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-27T21:23:08+02:00"
+    "fetched_at": "2026-07-27T23:07:05+02:00"
   }
 }
