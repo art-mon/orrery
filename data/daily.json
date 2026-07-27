@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000t3jr",
+        "title": "M5.0 Earthquake - South Atlantic Ocean",
+        "category": "Earthquake",
+        "date": "2026-07-26T22:39:02.826000Z",
+        "coordinates": [
+          -20.2453,
+          -22.5127
+        ]
+      },
+      {
         "id": "us7000t3in",
         "title": "M5.4 Earthquake - northern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -149,69 +159,11 @@
           158.127,
           51.7216
         ]
-      },
-      {
-        "id": "us7000t30v",
-        "title": "M5.1 Earthquake - 194 km W of Abepura, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-24T12:27:02.974000Z",
-        "coordinates": [
-          138.8797,
-          -2.6055
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2015 BF)",
-        "hazardous": false,
-        "diameter_m": 28,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 6631829,
-        "velocity_kmh": 45035
-      },
-      {
-        "name": "164216 (2004 OT11)",
-        "hazardous": true,
-        "diameter_m": 2128,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 12292262,
-        "velocity_kmh": 60779
-      },
-      {
-        "name": "(2017 MW7)",
-        "hazardous": false,
-        "diameter_m": 358,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 15482005,
-        "velocity_kmh": 43142
-      },
-      {
-        "name": "620101 (2017 MW7)",
-        "hazardous": false,
-        "diameter_m": 373,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 15482015,
-        "velocity_kmh": 43142
-      },
-      {
-        "name": "(2013 TQ5)",
-        "hazardous": false,
-        "diameter_m": 631,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 28843705,
-        "velocity_kmh": 33534
-      },
-      {
-        "name": "(2007 YM56)",
-        "hazardous": false,
-        "diameter_m": 204,
-        "close_approach_date": "2026-07-26",
-        "miss_distance_km": 35699905,
-        "velocity_kmh": 56386
-      },
       {
         "name": "(2013 OD4)",
         "hazardous": true,
@@ -243,48 +195,96 @@
         "close_approach_date": "2026-07-27",
         "miss_distance_km": 55828016,
         "velocity_kmh": 21327
+      },
+      {
+        "name": "(2019 AS5)",
+        "hazardous": false,
+        "diameter_m": 2,
+        "close_approach_date": "2026-07-27",
+        "miss_distance_km": 67522250,
+        "velocity_kmh": 84388
+      },
+      {
+        "name": "(2017 SL16)",
+        "hazardous": false,
+        "diameter_m": 39,
+        "close_approach_date": "2026-07-28",
+        "miss_distance_km": 29382304,
+        "velocity_kmh": 15284
+      },
+      {
+        "name": "(2015 NJ3)",
+        "hazardous": true,
+        "diameter_m": 494,
+        "close_approach_date": "2026-07-28",
+        "miss_distance_km": 30880486,
+        "velocity_kmh": 59168
+      },
+      {
+        "name": "(2016 GL222)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-07-28",
+        "miss_distance_km": 44483504,
+        "velocity_kmh": 18232
+      },
+      {
+        "name": "(2018 WG2)",
+        "hazardous": false,
+        "diameter_m": 6,
+        "close_approach_date": "2026-07-28",
+        "miss_distance_km": 50776743,
+        "velocity_kmh": 24590
+      },
+      {
+        "name": "(2019 CJ4)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-07-28",
+        "miss_distance_km": 51472047,
+        "velocity_kmh": 21994
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 23.3,
-    "feels_c": 23.4,
-    "humidity": 67,
+    "city": "Donji grad",
+    "temp_c": 21.5,
+    "feels_c": 21.6,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 8.6
+    "wind_kmh": 7.3
   },
   "forecast_today": {
     "date": "2026-07-27",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.2,
-    "temp_max_c": 32.6,
-    "humidity": 57,
+    "city": "Zagreb",
+    "temp_min_c": 20.8,
+    "temp_max_c": 32.2,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
-    "wind_kmh": 7.4,
-    "samples": 9
+    "wind_kmh": 7.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.0,
-    "temp_max_c": 34.1,
-    "humidity": 52,
-    "condition": "Clear",
+    "city": "Zagreb",
+    "temp_min_c": 20.4,
+    "temp_max_c": 33.4,
+    "humidity": 54,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-07-29",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.3,
-    "temp_max_c": 36.2,
-    "humidity": 41,
+    "city": "Zagreb",
+    "temp_min_c": 20.7,
+    "temp_max_c": 35.4,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -328,23 +328,23 @@
       },
       {
         "time": "2026-07-27T07:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-07-27T08:00",
-        "uv": 0.9
+        "uv": 1.2
       },
       {
         "time": "2026-07-27T09:00",
-        "uv": 1.6
+        "uv": 2.2
       },
       {
         "time": "2026-07-27T10:00",
-        "uv": 2.9
+        "uv": 3.5
       },
       {
         "time": "2026-07-27T11:00",
-        "uv": 5.0
+        "uv": 5.2
       },
       {
         "time": "2026-07-27T12:00",
@@ -360,27 +360,27 @@
       },
       {
         "time": "2026-07-27T15:00",
-        "uv": 6.2
+        "uv": 6.0
       },
       {
         "time": "2026-07-27T16:00",
-        "uv": 2.5
+        "uv": 4.0
       },
       {
         "time": "2026-07-27T17:00",
-        "uv": 2.3
+        "uv": 3.4
       },
       {
         "time": "2026-07-27T18:00",
-        "uv": 1.9
+        "uv": 2.6
       },
       {
         "time": "2026-07-27T19:00",
-        "uv": 0.9
+        "uv": 0.3
       },
       {
         "time": "2026-07-27T20:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-07-27T21:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-27T00:59:11+02:00"
+    "fetched_at": "2026-07-27T02:07:08+02:00"
   }
 }
