@@ -1,7 +1,7 @@
 {
   "generated": "2026-07-27",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "403 Client Error: Forbidden for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -158,114 +158,33 @@
     ]
   },
   "asteroids": {
-    "asteroids": [
-      {
-        "name": "(2013 OD4)",
-        "hazardous": true,
-        "diameter_m": 368,
-        "close_approach_date": "2026-07-27",
-        "miss_distance_km": 42510615,
-        "velocity_kmh": 122611
-      },
-      {
-        "name": "(2016 WN7)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-07-27",
-        "miss_distance_km": 45370737,
-        "velocity_kmh": 30897
-      },
-      {
-        "name": "(2019 WU1)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-07-27",
-        "miss_distance_km": 47212501,
-        "velocity_kmh": 30558
-      },
-      {
-        "name": "(2018 GE4)",
-        "hazardous": false,
-        "diameter_m": 220,
-        "close_approach_date": "2026-07-27",
-        "miss_distance_km": 55828016,
-        "velocity_kmh": 21327
-      },
-      {
-        "name": "(2019 AS5)",
-        "hazardous": false,
-        "diameter_m": 2,
-        "close_approach_date": "2026-07-27",
-        "miss_distance_km": 67522250,
-        "velocity_kmh": 84388
-      },
-      {
-        "name": "(2017 SL16)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-07-28",
-        "miss_distance_km": 29382304,
-        "velocity_kmh": 15284
-      },
-      {
-        "name": "(2015 NJ3)",
-        "hazardous": true,
-        "diameter_m": 494,
-        "close_approach_date": "2026-07-28",
-        "miss_distance_km": 30880486,
-        "velocity_kmh": 59168
-      },
-      {
-        "name": "(2016 GL222)",
-        "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-07-28",
-        "miss_distance_km": 44483504,
-        "velocity_kmh": 18232
-      },
-      {
-        "name": "(2018 WG2)",
-        "hazardous": false,
-        "diameter_m": 6,
-        "close_approach_date": "2026-07-28",
-        "miss_distance_km": 50776743,
-        "velocity_kmh": 24590
-      },
-      {
-        "name": "(2019 CJ4)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-07-28",
-        "miss_distance_km": 51472047,
-        "velocity_kmh": 21994
-      }
-    ]
+    "error": "403 Client Error: Forbidden for url: https://api.nasa.gov/neo/rest/v1/feed?start_date=2026-07-27&end_date=2026-08-03&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.5,
-    "feels_c": 29.4,
-    "humidity": 54,
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 8.6
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-07-27",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.4,
-    "temp_max_c": 28.5,
-    "humidity": 55,
+    "city": "Zagreb",
+    "temp_min_c": 25.2,
+    "temp_max_c": 26.5,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 8.2,
+    "wind_kmh": 7.1,
     "samples": 3
   },
   "forecast": {
     "date": "2026-07-28",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 19.4,
     "temp_max_c": 32.1,
     "humidity": 49,
@@ -276,7 +195,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-29",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.4,
     "temp_max_c": 35.1,
     "humidity": 42,
@@ -286,11 +205,11 @@
     "wind_kmh": 4.2
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.4,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-27T14:00",
-    "safe_minutes": 476,
+    "safe_minutes": 417,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +309,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-27T17:40:27+02:00"
+    "fetched_at": "2026-07-27T19:40:04+02:00"
   }
 }
