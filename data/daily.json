@@ -1,15 +1,45 @@
 {
   "generated": "2026-07-28",
   "apod": {
-    "title": "NGC 7635: The Bubble Nebula",
-    "date": "2026-07-27",
-    "explanation": "What created this huge space bubble? Blown by the wind from a star, this tantalizing, head-like apparition is cataloged as NGC 7635, but known simply as the Bubble Nebula. Taken from Krakow, Poland, the featured view utilizes a long exposure to reveal the intricate details of this cosmic bubble and its environment. Although it looks delicate, the 10 light-year diameter bubble offers evidence of violent processes at work. Seen here right of the Bubble's center, a bright hot star is embedded in the nebula's reflecting dust. A fierce stellar wind and intense radiation from the star, which likely has a mass 10 to 20 times that of the Sun, has blasted out the structure of glowing gas against denser material in a surrounding molecular cloud. The intriguing Bubble Nebula lies a mere 11,000 light-years away toward the boastful constellation Cassiopeia.",
+    "title": "Barnards Loop over Twin Volcanoes",
+    "date": "2026-07-28",
+    "explanation": "What's connecting these two volcanoes? In ancient folklore, the two volcanoes, Parinacota (left) and Pomerape (right), are connected by representing a mythical prince and princess who engaged in a forbidden romance.  Beneath the ground, the two peaks are not known to be connected by a common pool of hot magma, and neither volcano has erupted in the past 1000 years.  Above the ground, there is usually nothing in the sky that connects them -- except if you use careful timing and look from a specific location.  The featured well-planned image was captured from Bolivia in mid-April with a series of camera exposures taken on the same day and from the same location.  Then, Barnard's Loop appeared to connect the volcanic peaks. Also visible in the image is the Orion Nebula in the center, the star Betelgeuse on the right, and the Rosette Nebula on the upper right.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/Bubble_Piechnik_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/Bubble_Piechnik_1616.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2607/LoopVolcanos_Laserna_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/LoopVolcanos_Laserna_5815.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tgaw",
+        "title": "M5.4 Earthquake - 110 km SSE of Akureyri, Iceland",
+        "category": "Earthquake",
+        "date": "2026-07-28T05:36:40.595000Z",
+        "coordinates": [
+          -17.4485,
+          64.7252
+        ]
+      },
+      {
+        "id": "us6000tgau",
+        "title": "M5.9 Earthquake - 50 km WSW of Brisas Barra de Suchiate, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-28T05:35:18.079000Z",
+        "coordinates": [
+          -92.6223,
+          14.296
+        ]
+      },
+      {
+        "id": "us6000tgae",
+        "title": "M5.8 Earthquake - 160 km E of Ust\u2019-Kamchatsk Staryy, Russia",
+        "category": "Earthquake",
+        "date": "2026-07-28T04:42:18.739000Z",
+        "coordinates": [
+          165.0432,
+          56.064
+        ]
+      },
       {
         "id": "us6000tga9",
         "title": "M5.8 Earthquake - 191 km NW of Oula Xiuma, China",
@@ -22,12 +52,12 @@
       },
       {
         "id": "us6000tga6",
-        "title": "M5.8 Earthquake - 190 km NW of Oula Xiuma, China",
+        "title": "M5.7 Earthquake - 192 km NW of Oula Xiuma, China",
         "category": "Earthquake",
-        "date": "2026-07-28T03:16:08.940000Z",
+        "date": "2026-07-28T03:16:08.857000Z",
         "coordinates": [
-          99.5602,
-          35.3745
+          99.5198,
+          35.3685
         ]
       },
       {
@@ -129,36 +159,6 @@
           -175.0899,
           -24.4378
         ]
-      },
-      {
-        "id": "us7000t3km",
-        "title": "M5.1 Earthquake - south of Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-27T01:54:14.139000Z",
-        "coordinates": [
-          -175.1465,
-          -24.5442
-        ]
-      },
-      {
-        "id": "us7000t3jr",
-        "title": "M5.0 Earthquake - South Atlantic Ocean",
-        "category": "Earthquake",
-        "date": "2026-07-26T22:39:02.826000Z",
-        "coordinates": [
-          -20.2453,
-          -22.5127
-        ]
-      },
-      {
-        "id": "us7000t3in",
-        "title": "M5.4 Earthquake - northern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-26T18:19:40.684000Z",
-        "coordinates": [
-          -42.8052,
-          29.9365
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.1,
-    "feels_c": 19.2,
-    "humidity": 80,
+    "city": "Donji grad",
+    "temp_c": 23.7,
+    "feels_c": 23.6,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 0.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.8
   },
   "forecast_today": {
     "date": "2026-07-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.1,
+    "city": "Zagreb",
+    "temp_min_c": 23.7,
     "temp_max_c": 34.2,
-    "humidity": 52,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "04d",
-    "wind_kmh": 3.8,
-    "samples": 7
+    "humidity": 45,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 4.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-07-29",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.3,
     "temp_max_c": 38.2,
     "humidity": 41,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-30",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 22.1,
     "temp_max_c": 37.6,
     "humidity": 38,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.3,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-28T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 72,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T05:58:29+02:00"
+    "fetched_at": "2026-07-28T08:31:46+02:00"
   }
 }
