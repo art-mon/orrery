@@ -42,7 +42,7 @@
       },
       {
         "id": "us6000tgb9",
-        "title": "M6.8 Earthquake - 5 km E of Uto, Japan",
+        "title": "M6.8 Earthquake - 2026 Uto, Japan Earthquake\u00a0",
         "category": "Earthquake",
         "date": "2026-07-28T07:27:15.512000Z",
         "coordinates": [
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 30,
-    "humidity": 39,
+    "city": "Donji grad",
+    "temp_c": 27.6,
+    "feels_c": 27.9,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 1.2
   },
   "forecast_today": {
     "date": "2026-07-28",
-    "city": "Donji grad",
-    "temp_min_c": 26.1,
-    "temp_max_c": 30.4,
-    "humidity": 43,
+    "city": "Zagreb",
+    "temp_min_c": 26.4,
+    "temp_max_c": 27.6,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.0,
-    "samples": 3
+    "wind_kmh": 2.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-07-29",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.1,
     "temp_max_c": 38.4,
     "humidity": 40,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-07-30",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 22.1,
     "temp_max_c": 37.9,
     "humidity": 37,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 2.1,
+    "uv": 0.2,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-28T13:00",
-    "safe_minutes": 78,
+    "safe_minutes": 667,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T18:08:26+02:00"
+    "fetched_at": "2026-07-28T20:11:58+02:00"
   }
 }
