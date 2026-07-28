@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28",
+  "generated": "2026-07-29",
   "apod": {
     "title": "Barnards Loop over Twin Volcanoes",
     "date": "2026-07-28",
@@ -10,6 +10,36 @@
   },
   "events": {
     "events": [
+      {
+        "id": "aka2026ovufno",
+        "title": "M5.0 Earthquake - 52 km E of Denali National Park, Alaska",
+        "category": "Earthquake",
+        "date": "2026-07-28T20:49:24.979000Z",
+        "coordinates": [
+          -150.673,
+          63.611
+        ]
+      },
+      {
+        "id": "us6000tggm",
+        "title": "M5.4 Earthquake - 211 km SE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-07-28T20:27:57.268000Z",
+        "coordinates": [
+          153.5437,
+          -5.7602
+        ]
+      },
+      {
+        "id": "us6000tggi",
+        "title": "M5.1 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-07-28T20:23:42.798000Z",
+        "coordinates": [
+          179.5638,
+          -22.1845
+        ]
+      },
       {
         "id": "us6000tgg2",
         "title": "M5.0 Earthquake - 82 km SW of Kirakira, Solomon Islands",
@@ -129,36 +159,6 @@
           -175.2557,
           -24.7784
         ]
-      },
-      {
-        "id": "us6000tg94",
-        "title": "M5.3 Earthquake - 23 km E of Kinablangan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-27T23:06:34.085000Z",
-        "coordinates": [
-          126.7653,
-          7.6738
-        ]
-      },
-      {
-        "id": "us6000tg8z",
-        "title": "M5.0 Earthquake - 112 km ENE of Georgetown, Saint Helena",
-        "category": "Earthquake",
-        "date": "2026-07-27T22:32:02.648000Z",
-        "coordinates": [
-          -13.4844,
-          -7.5058
-        ]
-      },
-      {
-        "id": "us7000t3p2",
-        "title": "M5.1 Earthquake - 147 km E of Kimbe, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-07-27T14:33:36.219000Z",
-        "coordinates": [
-          151.462,
-          -5.4518
-        ]
       }
     ]
   },
@@ -247,44 +247,44 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.3,
-    "feels_c": 23.2,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_c": 21.6,
+    "feels_c": 21.5,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.0
   },
   "forecast_today": {
-    "date": "2026-07-28",
+    "date": "2026-07-29",
     "city": "Zagreb",
-    "temp_min_c": 22.9,
-    "temp_max_c": 23.3,
-    "humidity": 59,
+    "temp_min_c": 19.6,
+    "temp_max_c": 37.6,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.1,
-    "samples": 2
+    "wind_kmh": 4.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-29",
-    "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 37.6,
-    "humidity": 40,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.7
-  },
-  "forecast_day_after": {
     "date": "2026-07-30",
     "city": "Zagreb",
     "temp_min_c": 21.8,
     "temp_max_c": 37.2,
     "humidity": 35,
+    "condition": "Clouds",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.5
+  },
+  "forecast_day_after": {
+    "date": "2026-07-31",
+    "city": "Zagreb",
+    "temp_min_c": 22.2,
+    "temp_max_c": 39.2,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -293,108 +293,108 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
-    "peak_time": "2026-07-28T13:00",
+    "daily_max": 6.9,
+    "peak_time": "2026-07-29T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-28T00:00",
+        "time": "2026-07-29T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T01:00",
+        "time": "2026-07-29T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T02:00",
+        "time": "2026-07-29T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T03:00",
+        "time": "2026-07-29T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T04:00",
+        "time": "2026-07-29T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T05:00",
+        "time": "2026-07-29T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T06:00",
+        "time": "2026-07-29T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T07:00",
-        "uv": 0.3
+        "time": "2026-07-29T07:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-07-28T08:00",
-        "uv": 1.1
+        "time": "2026-07-29T08:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-07-28T09:00",
-        "uv": 2.0
+        "time": "2026-07-29T09:00",
+        "uv": 2.5
       },
       {
-        "time": "2026-07-28T10:00",
+        "time": "2026-07-29T10:00",
         "uv": 4.0
       },
       {
-        "time": "2026-07-28T11:00",
-        "uv": 5.2
+        "time": "2026-07-29T11:00",
+        "uv": 5.3
       },
       {
-        "time": "2026-07-28T12:00",
+        "time": "2026-07-29T12:00",
         "uv": 6.3
       },
       {
-        "time": "2026-07-28T13:00",
+        "time": "2026-07-29T13:00",
         "uv": 6.8
       },
       {
-        "time": "2026-07-28T14:00",
-        "uv": 6.8
+        "time": "2026-07-29T14:00",
+        "uv": 6.9
       },
       {
-        "time": "2026-07-28T15:00",
-        "uv": 6.3
+        "time": "2026-07-29T15:00",
+        "uv": 6.4
       },
       {
-        "time": "2026-07-28T16:00",
+        "time": "2026-07-29T16:00",
         "uv": 5.4
       },
       {
-        "time": "2026-07-28T17:00",
+        "time": "2026-07-29T17:00",
         "uv": 4.1
       },
       {
-        "time": "2026-07-28T18:00",
+        "time": "2026-07-29T18:00",
         "uv": 2.6
       },
       {
-        "time": "2026-07-28T19:00",
+        "time": "2026-07-29T19:00",
         "uv": 1.4
       },
       {
-        "time": "2026-07-28T20:00",
+        "time": "2026-07-29T20:00",
         "uv": 0.5
       },
       {
-        "time": "2026-07-28T21:00",
+        "time": "2026-07-29T21:00",
         "uv": 0.1
       },
       {
-        "time": "2026-07-28T22:00",
+        "time": "2026-07-29T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-28T23:00",
+        "time": "2026-07-29T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T22:14:29+02:00"
+    "fetched_at": "2026-07-29T00:01:25+02:00"
   }
 }
