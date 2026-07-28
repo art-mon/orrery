@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tgcx",
+        "title": "M5.2 Earthquake - 151 km WSW of Puerto Santa, Peru",
+        "category": "Earthquake",
+        "date": "2026-07-28T13:24:33.090000Z",
+        "coordinates": [
+          -79.8368,
+          -9.6737
+        ]
+      },
+      {
         "id": "us6000tgbm",
         "title": "M5.6 Earthquake - 16 km NE of Tsunagi, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -68.633,
           -23.5454
         ]
-      },
-      {
-        "id": "us7000t3m6",
-        "title": "M5.2 Earthquake - south of Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-27T08:47:18.681000Z",
-        "coordinates": [
-          -175.3545,
-          -24.7345
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 30,
-    "humidity": 39,
+    "city": "City of Zagreb",
+    "temp_c": 31.5,
+    "feels_c": 31.0,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.8
+    "wind_kmh": 5.6
   },
   "forecast_today": {
     "date": "2026-07-28",
     "city": "Zagreb",
-    "temp_min_c": 24.0,
-    "temp_max_c": 31.6,
-    "humidity": 42,
+    "temp_min_c": 26.5,
+    "temp_max_c": 31.5,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.7,
-    "samples": 5
+    "wind_kmh": 3.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-29",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.2
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 5.2,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-07-28T13:00",
-    "safe_minutes": 24,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T13:55:26+02:00"
+    "fetched_at": "2026-07-28T15:59:37+02:00"
   }
 }
