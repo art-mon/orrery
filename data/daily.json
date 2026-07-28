@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tgg2",
+        "title": "M5.0 Earthquake - 82 km SW of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-07-28T19:28:08.993000Z",
+        "coordinates": [
+          161.3309,
+          -10.9261
+        ]
+      },
+      {
         "id": "us6000tgcx",
         "title": "M5.2 Earthquake - 151 km WSW of Puerto Santa, Peru",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           151.462,
           -5.4518
         ]
-      },
-      {
-        "id": "us7000t3m7",
-        "title": "M5.4 Earthquake - 82 km SSW of San Pedro de Atacama, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-27T08:57:43.758000Z",
-        "coordinates": [
-          -68.633,
-          -23.5454
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 27.6,
-    "feels_c": 27.9,
-    "humidity": 49,
+    "temp_c": 23.3,
+    "feels_c": 23.2,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 1.2
+    "icon": "01n",
+    "wind_kmh": 4.0
   },
   "forecast_today": {
     "date": "2026-07-28",
     "city": "Zagreb",
-    "temp_min_c": 26.4,
-    "temp_max_c": 27.6,
-    "humidity": 50,
+    "temp_min_c": 22.9,
+    "temp_max_c": 23.3,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 2.7,
+    "icon": "01n",
+    "wind_kmh": 4.1,
     "samples": 2
   },
   "forecast": {
     "date": "2026-07-29",
     "city": "Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 38.4,
+    "temp_min_c": 19.9,
+    "temp_max_c": 37.6,
     "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-07-30",
     "city": "Zagreb",
-    "temp_min_c": 22.1,
-    "temp_max_c": 37.9,
-    "humidity": 37,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 4.1
+    "temp_min_c": 21.8,
+    "temp_max_c": 37.2,
+    "humidity": 35,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-07-28T13:00",
-    "safe_minutes": 667,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T20:11:58+02:00"
+    "fetched_at": "2026-07-28T22:14:29+02:00"
   }
 }
