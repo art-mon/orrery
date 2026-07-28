@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000tga9",
+        "title": "M5.8 Earthquake - 191 km NW of Oula Xiuma, China",
+        "category": "Earthquake",
+        "date": "2026-07-28T03:34:05.779000Z",
+        "coordinates": [
+          99.5513,
+          35.3866
+        ]
+      },
+      {
+        "id": "us6000tga6",
+        "title": "M5.8 Earthquake - 190 km NW of Oula Xiuma, China",
+        "category": "Earthquake",
+        "date": "2026-07-28T03:16:08.940000Z",
+        "coordinates": [
+          99.5602,
+          35.3745
+        ]
+      },
+      {
+        "id": "us6000tg9n",
+        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-07-28T01:27:51.735000Z",
+        "coordinates": [
+          -14.5098,
+          -12.7784
+        ]
+      },
+      {
         "id": "us6000tg95",
         "title": "M5.1 Earthquake - south of Tonga",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           -42.8052,
           29.9365
         ]
-      },
-      {
-        "id": "us7000t3g4",
-        "title": "M5.3 Earthquake - 25 km NW of Kupang, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-26T10:57:37.061000Z",
-        "coordinates": [
-          123.4402,
-          -10.007
-        ]
-      },
-      {
-        "id": "us7000t3fm",
-        "title": "M5.8 Earthquake - 99 km SE of Atka, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-26T08:35:18.849000Z",
-        "coordinates": [
-          -173.306,
-          51.4994
-        ]
-      },
-      {
-        "id": "us7000t3e7",
-        "title": "M5.1 Earthquake - Tristan da Cunha region",
-        "category": "Earthquake",
-        "date": "2026-07-26T01:32:44.077000Z",
-        "coordinates": [
-          -14.543,
-          -34.0707
-        ]
       }
     ]
   },
@@ -247,44 +247,44 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.9,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_c": 19.1,
+    "feels_c": 19.2,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 5.1
+    "icon": "04d",
+    "wind_kmh": 0.6
   },
   "forecast_today": {
     "date": "2026-07-28",
-    "city": "Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 32.1,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.1,
+    "temp_max_c": 34.2,
     "humidity": 52,
     "condition": "Clear",
     "description": "clear",
-    "icon": "04n",
-    "wind_kmh": 5.4,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 3.8,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-29",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.3,
-    "temp_max_c": 34.9,
-    "humidity": 42,
+    "temp_max_c": 38.2,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.8
   },
   "forecast_day_after": {
     "date": "2026-07-30",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 22.1,
-    "temp_max_c": 37.2,
-    "humidity": 39,
+    "temp_max_c": 37.6,
+    "humidity": 38,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-28T02:05:53+02:00"
+    "fetched_at": "2026-07-28T05:58:29+02:00"
   }
 }
