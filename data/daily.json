@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000tgn0",
+        "title": "M5.0 Earthquake - 48 km SW of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-29T13:23:56.014000Z",
+        "coordinates": [
+          124.9945,
+          5.3176
+        ]
+      },
+      {
+        "id": "us6000tgmx",
+        "title": "M5.4 Earthquake - 11 km N of Tsunagi, Japan",
+        "category": "Earthquake",
+        "date": "2026-07-29T13:19:36.661000Z",
+        "coordinates": [
+          130.4881,
+          32.34
+        ]
+      },
+      {
+        "id": "us6000tgmy",
+        "title": "M5.0 Earthquake - 4 km NNE of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-29T13:16:59.109000Z",
+        "coordinates": [
+          125.3648,
+          5.6157
+        ]
+      },
+      {
         "id": "us6000tgm6",
         "title": "M5.0 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           130.7217,
           32.6817
         ]
-      },
-      {
-        "id": "us6000tgaw",
-        "title": "M5.4 Earthquake - 109 km S of Akureyri, Iceland",
-        "category": "Earthquake",
-        "date": "2026-07-28T05:36:39.419000Z",
-        "coordinates": [
-          -17.7103,
-          64.7107
-        ]
-      },
-      {
-        "id": "us6000tgau",
-        "title": "M5.9 Earthquake - 50 km WSW of Brisas Barra de Suchiate, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-28T05:35:18.079000Z",
-        "coordinates": [
-          -92.6223,
-          14.296
-        ]
-      },
-      {
-        "id": "us6000tgae",
-        "title": "M5.8 Earthquake - 160 km E of Ust\u2019-Kamchatsk Staryy, Russia",
-        "category": "Earthquake",
-        "date": "2026-07-28T04:42:18.739000Z",
-        "coordinates": [
-          165.0432,
-          56.064
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 33.7,
-    "feels_c": 34.0,
-    "humidity": 36,
+    "city": "City of Zagreb",
+    "temp_c": 34.8,
+    "feels_c": 34.8,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.2
+    "wind_kmh": 6.8
   },
   "forecast_today": {
     "date": "2026-07-29",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.7,
-    "temp_max_c": 33.7,
-    "humidity": 36,
+    "city": "Zagreb",
+    "temp_min_c": 27.7,
+    "temp_max_c": 34.8,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.1,
-    "samples": 5
+    "wind_kmh": 4.5,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-07-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.3,
+    "city": "Zagreb",
+    "temp_min_c": 20.3,
     "temp_max_c": 36.4,
-    "humidity": 35,
+    "humidity": 34,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-07-31",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.3,
-    "temp_max_c": 39.3,
+    "city": "Zagreb",
+    "temp_min_c": 22.2,
+    "temp_max_c": 39.1,
     "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 7.0,
-    "band": "high",
+    "uv": 5.0,
+    "band": "moderate",
     "daily_max": 6.9,
     "peak_time": "2026-07-29T14:00",
-    "safe_minutes": 24,
+    "safe_minutes": 34,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-29T13:23:37+02:00"
+    "fetched_at": "2026-07-29T16:03:36+02:00"
   }
 }
