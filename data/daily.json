@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tgtc",
+        "title": "M5.1 Earthquake - south of Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-29T20:52:10.337000Z",
+        "coordinates": [
+          -175.2721,
+          -24.6282
+        ]
+      },
+      {
         "id": "us6000tgrk",
         "title": "M5.0 Earthquake - south of Tonga",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           161.3309,
           -10.9261
         ]
-      },
-      {
-        "id": "us6000tgcx",
-        "title": "M5.3 Earthquake - 151 km WSW of Puerto Santa, Peru",
-        "category": "Earthquake",
-        "date": "2026-07-28T13:24:33.262000Z",
-        "coordinates": [
-          -79.8217,
-          -9.7052
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.3,
-    "feels_c": 24.1,
-    "humidity": 53,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.3
+    "temp_c": 22.6,
+    "feels_c": 22.3,
+    "humidity": 54,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 1.2
   },
   "forecast_today": {
     "date": "2026-07-29",
     "city": "Zagreb",
-    "temp_min_c": 23.8,
-    "temp_max_c": 24.3,
-    "humidity": 51,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.4,
-    "samples": 2
+    "temp_min_c": 22.6,
+    "temp_max_c": 22.6,
+    "humidity": 54,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 1.2,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-07-30",
     "city": "Zagreb",
-    "temp_min_c": 21.0,
+    "temp_min_c": 20.7,
     "temp_max_c": 36.3,
-    "humidity": 32,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-29T22:10:09+02:00"
+    "fetched_at": "2026-07-29T23:58:17+02:00"
   }
 }
