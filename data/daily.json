@@ -1,15 +1,35 @@
 {
   "generated": "2026-07-29",
   "apod": {
-    "title": "Barnards Loop over Twin Volcanoes",
-    "date": "2026-07-28",
-    "explanation": "What's connecting these two volcanoes? In ancient folklore, the two volcanoes, Parinacota (left) and Pomerape (right), are connected by representing a mythical prince and princess who engaged in a forbidden romance.  Beneath the ground, the two peaks are not known to be connected by a common pool of hot magma, and neither volcano has erupted in the past 1000 years.  Above the ground, there is usually nothing in the sky that connects them -- except if you use careful timing and look from a specific location.  The featured well-planned image was captured from Bolivia in mid-April with a series of camera exposures taken on the same day and from the same location.  Then, Barnard's Loop appeared to connect the volcanic peaks. Also visible in the image is the Orion Nebula in the center, the star Betelgeuse on the right, and the Rosette Nebula on the upper right.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/LoopVolcanos_Laserna_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/LoopVolcanos_Laserna_5815.jpg"
+    "title": "Psyche Receives Gravity Assist from Mars",
+    "date": "2026-07-29",
+    "explanation": "Solar System bodies make deep space exploration more fuel efficient! Today\u2019s video shows the Psyche spacecraft gaining speed and changing its trajectory with minimal fuel spent due to a gravity assist from Mars in May 2026. Mars has an average orbital speed of almost 87,000 km/h (54,000 mph) around the Sun. Its orbital motion and its gravity allowed Mars to pull Psyche along with it, increasing the spacecraft\u2019s speed. Gravity assists have been used since 1959\u2019s Luna 3 mission to allow for spacecraft (the Voyagers, Cassini) to reach farther than they could with fuel alone. This assist helped the Psyche spacecraft on its journey to the Psyche asteroid, which it will reach in 2029. While passing Mars, the spacecraft tested instruments that will analyze the asteroid\u2019s composition and magnetic field. This is the first mission to an asteroid thought to be largely made of metal, an essential building block for planets, rather than rock or ice.   Find dark skies and look up this August to witness the Perseid meteor shower uninhibited by the Moon!",
+    "media_type": "video",
+    "url": "https://www.youtube.com/embed/6_cH5-daLjg?si=i9geSInQj3VMZwx3",
+    "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tgkd",
+        "title": "M5.0 Earthquake - south of Tonga",
+        "category": "Earthquake",
+        "date": "2026-07-29T03:52:22.131000Z",
+        "coordinates": [
+          -174.924,
+          -24.6364
+        ]
+      },
+      {
+        "id": "us6000tgk8",
+        "title": "M5.1 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-29T03:30:50.783000Z",
+        "coordinates": [
+          -176.7131,
+          -28.6804
+        ]
+      },
       {
         "id": "us6000tgje",
         "title": "M5.4 Earthquake - 153 km NE of Neiafu, Tonga",
@@ -139,26 +159,6 @@
           99.5513,
           35.3866
         ]
-      },
-      {
-        "id": "us6000tga6",
-        "title": "M5.7 Earthquake - 192 km NW of Oula Xiuma, China",
-        "category": "Earthquake",
-        "date": "2026-07-28T03:16:08.857000Z",
-        "coordinates": [
-          99.5198,
-          35.3685
-        ]
-      },
-      {
-        "id": "us6000tg9n",
-        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-28T01:27:51.735000Z",
-        "coordinates": [
-          -14.5098,
-          -12.7784
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.4,
-    "feels_c": 18.2,
-    "humidity": 73,
+    "city": "Donji grad",
+    "temp_c": 23.7,
+    "feels_c": 23.8,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.4
+    "icon": "01d",
+    "wind_kmh": 5.0
   },
   "forecast_today": {
     "date": "2026-07-29",
-    "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 37.6,
-    "humidity": 48,
+    "city": "Donji grad",
+    "temp_min_c": 23.7,
+    "temp_max_c": 33.4,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.6,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.5,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-30",
-    "city": "Zagreb",
-    "temp_min_c": 21.8,
-    "temp_max_c": 37.2,
+    "city": "Donji grad",
+    "temp_min_c": 21.7,
+    "temp_max_c": 36.4,
     "humidity": 35,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.5
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-07-31",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 22.2,
-    "temp_max_c": 39.2,
-    "humidity": 34,
+    "temp_max_c": 39.4,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 3.6
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.4,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-29T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 119,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-29T04:33:19+02:00"
+    "fetched_at": "2026-07-29T07:49:22+02:00"
   }
 }
