@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tgpr",
+        "title": "M5.4 Earthquake - 53 km E of Rapu-Rapu, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-29T15:10:02.995000Z",
+        "coordinates": [
+          124.6138,
+          13.1384
+        ]
+      },
+      {
+        "id": "us6000tgnu",
+        "title": "M5.1 Earthquake - 79 km NE of Casuguran, Philippines",
+        "category": "Earthquake",
+        "date": "2026-07-29T14:11:03.513000Z",
+        "coordinates": [
+          122.8525,
+          15.2694
+        ]
+      },
+      {
         "id": "us6000tgn0",
         "title": "M5.0 Earthquake - 48 km SW of Balangonan, Philippines",
         "category": "Earthquake",
@@ -122,12 +142,12 @@
       },
       {
         "id": "us6000tgcx",
-        "title": "M5.2 Earthquake - 151 km WSW of Puerto Santa, Peru",
+        "title": "M5.3 Earthquake - 151 km WSW of Puerto Santa, Peru",
         "category": "Earthquake",
-        "date": "2026-07-28T13:24:33.090000Z",
+        "date": "2026-07-28T13:24:33.262000Z",
         "coordinates": [
-          -79.8368,
-          -9.6737
+          -79.8217,
+          -9.7052
         ]
       },
       {
@@ -138,26 +158,6 @@
         "coordinates": [
           130.5868,
           32.3529
-        ]
-      },
-      {
-        "id": "us6000tgbk",
-        "title": "M5.1 Earthquake - 198 km NW of Oula Xiuma, China",
-        "category": "Earthquake",
-        "date": "2026-07-28T08:04:10.636000Z",
-        "coordinates": [
-          99.493,
-          35.4249
-        ]
-      },
-      {
-        "id": "us6000tgb9",
-        "title": "M6.8 Earthquake - 2026 Uto, Japan Earthquake\u00a0",
-        "category": "Earthquake",
-        "date": "2026-07-28T07:27:15.512000Z",
-        "coordinates": [
-          130.7217,
-          32.6817
         ]
       }
     ]
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 34.8,
-    "feels_c": 34.8,
-    "humidity": 32,
+    "city": "Donji grad",
+    "temp_c": 33.8,
+    "feels_c": 33.2,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.8
+    "wind_kmh": 4.7
   },
   "forecast_today": {
     "date": "2026-07-29",
     "city": "Zagreb",
-    "temp_min_c": 27.7,
-    "temp_max_c": 34.8,
+    "temp_min_c": 27.2,
+    "temp_max_c": 33.8,
     "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.5,
-    "samples": 4
+    "wind_kmh": 3.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-07-30",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.1
   },
   "uv": {
-    "uv": 5.0,
-    "band": "moderate",
+    "uv": 1.9,
+    "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-29T14:00",
-    "safe_minutes": 34,
+    "safe_minutes": 90,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-29T16:03:36+02:00"
+    "fetched_at": "2026-07-29T18:19:01+02:00"
   }
 }
