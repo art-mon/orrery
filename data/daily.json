@@ -1,15 +1,20 @@
 {
   "generated": "2026-07-30",
   "apod": {
-    "title": "Psyche Receives Gravity Assist from Mars",
-    "date": "2026-07-29",
-    "explanation": "Solar System bodies make deep space exploration more fuel efficient! Today\u2019s video shows the Psyche spacecraft gaining speed and changing its trajectory with minimal fuel spent due to a gravity assist from Mars in May 2026. Mars has an average orbital speed of almost 87,000 km/h (54,000 mph) around the Sun. Its orbital motion and its gravity allowed Mars to pull Psyche along with it, increasing the spacecraft\u2019s speed. Gravity assists have been used since 1959\u2019s Luna 3 mission to allow for spacecraft (the Voyagers, Cassini) to reach farther than they could with fuel alone. This assist helped the Psyche spacecraft on its journey to the Psyche asteroid, which it will reach in 2029. While passing Mars, the spacecraft tested instruments that will analyze the asteroid\u2019s composition and magnetic field. This is the first mission to an asteroid thought to be largely made of metal, an essential building block for planets, rather than rock or ice.   Find dark skies and look up this August to witness the Perseid meteor shower uninhibited by the Moon!",
-    "media_type": "video",
-    "url": "https://www.youtube.com/embed/6_cH5-daLjg?si=i9geSInQj3VMZwx3",
-    "hdurl": null
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tguj",
+        "title": "M5.2 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-29T22:42:25.141000Z",
+        "coordinates": [
+          -176.6372,
+          -28.5591
+        ]
+      },
       {
         "id": "us6000tguf",
         "title": "M5.9 Earthquake - Kermadec Islands region",
@@ -149,146 +154,55 @@
           -150.673,
           63.611
         ]
-      },
-      {
-        "id": "us6000tggm",
-        "title": "M5.4 Earthquake - 211 km SE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-07-28T20:27:57.268000Z",
-        "coordinates": [
-          153.5437,
-          -5.7602
-        ]
       }
     ]
   },
   "asteroids": {
-    "asteroids": [
-      {
-        "name": "(2018 RL4)",
-        "hazardous": false,
-        "diameter_m": 168,
-        "close_approach_date": "2026-07-29",
-        "miss_distance_km": 67051571,
-        "velocity_kmh": 89623
-      },
-      {
-        "name": "(2018 YH)",
-        "hazardous": true,
-        "diameter_m": 254,
-        "close_approach_date": "2026-07-30",
-        "miss_distance_km": 27223531,
-        "velocity_kmh": 26116
-      },
-      {
-        "name": "(2015 XT378)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-07-30",
-        "miss_distance_km": 44786105,
-        "velocity_kmh": 34818
-      },
-      {
-        "name": "(2019 UE5)",
-        "hazardous": false,
-        "diameter_m": 190,
-        "close_approach_date": "2026-07-30",
-        "miss_distance_km": 59589696,
-        "velocity_kmh": 72101
-      },
-      {
-        "name": "(2019 RA)",
-        "hazardous": false,
-        "diameter_m": 48,
-        "close_approach_date": "2026-07-30",
-        "miss_distance_km": 61288544,
-        "velocity_kmh": 54566
-      },
-      {
-        "name": "(2014 CM13)",
-        "hazardous": false,
-        "diameter_m": 237,
-        "close_approach_date": "2026-07-30",
-        "miss_distance_km": 63431855,
-        "velocity_kmh": 113175
-      },
-      {
-        "name": "(2014 OA339)",
-        "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 34488674,
-        "velocity_kmh": 59152
-      },
-      {
-        "name": "(2017 OK19)",
-        "hazardous": false,
-        "diameter_m": 352,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 59265547,
-        "velocity_kmh": 43912
-      },
-      {
-        "name": "(2001 AV43)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 65159533,
-        "velocity_kmh": 23210
-      },
-      {
-        "name": "(2012 DW60)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 11795416,
-        "velocity_kmh": 22907
-      }
-    ]
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/neo/rest/v1/feed?start_date=2026-07-30&end_date=2026-08-06&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.9,
-    "feels_c": 21.6,
-    "humidity": 57,
+    "city": "City of Zagreb",
+    "temp_c": 19.3,
+    "feels_c": 19.2,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 1.5
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-07-30",
     "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 36.3,
-    "humidity": 36,
+    "temp_min_c": 19.2,
+    "temp_max_c": 35.5,
+    "humidity": 42,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.2,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 3.6,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-07-31",
     "city": "Zagreb",
-    "temp_min_c": 21.1,
-    "temp_max_c": 38.5,
-    "humidity": 32,
+    "temp_min_c": 21.4,
+    "temp_max_c": 38.3,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 3.4
   },
   "forecast_day_after": {
     "date": "2026-08-01",
     "city": "Zagreb",
     "temp_min_c": 22.7,
-    "temp_max_c": 38.2,
-    "humidity": 34,
+    "temp_max_c": 38.1,
+    "humidity": 35,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.2
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +309,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-30T01:01:31+02:00"
+    "fetched_at": "2026-07-30T04:06:10+02:00"
   }
 }
