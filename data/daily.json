@@ -1,10 +1,45 @@
 {
   "generated": "2026-07-30",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Red Sun through Wildfire Smoke",
+    "date": "2026-07-30",
+    "explanation": "This could be the view from an exoplanet orbiting around a red dwarf star, but it is our own Sun.   This image was taken on July 22, 2026, in the Okanagan region in the Canadian province of British Columbia.   Wildfire smoke from the Pacific Northwest acted as a solar filter, allowing the photographer to take this photo of the Sun directly.   Several sunspots are also visible in this eerie image; just below and right of the center is AR 4493, a fast evolving, giant active solar region and sunspot group.     The smoke is made of tiny particles that help block and scatter light with bluer colors, so the light we see coming from the Sun is dimmer and redder than usual (but it is never safe to stare directly at the Sun).   Sunsets and sunrises are also more colorful because of the smoke.      Some 6 billion years from now, the Sun will actually start to turn redder as it approaches its red giant phase.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2607/red_sun_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2607/red_sun.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tgvz",
+        "title": "M5.8 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-07-30T05:08:31.888000Z",
+        "coordinates": [
+          -176.5759,
+          -28.6242
+        ]
+      },
+      {
+        "id": "us6000tgvu",
+        "title": "M5.4 Earthquake - 201 km W of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-07-30T04:42:12.667000Z",
+        "coordinates": [
+          138.8205,
+          -2.6018
+        ]
+      },
+      {
+        "id": "us6000tgva",
+        "title": "M5.3 Earthquake - 217 km SE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-07-30T02:46:24.341000Z",
+        "coordinates": [
+          153.5797,
+          -5.8112
+        ]
+      },
       {
         "id": "us6000tguj",
         "title": "M5.2 Earthquake - Kermadec Islands region",
@@ -124,36 +159,6 @@
           -174.924,
           -24.6364
         ]
-      },
-      {
-        "id": "us6000tgk8",
-        "title": "M5.1 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-29T03:30:50.783000Z",
-        "coordinates": [
-          -176.7131,
-          -28.6804
-        ]
-      },
-      {
-        "id": "us6000tgje",
-        "title": "M5.4 Earthquake - 153 km NE of Neiafu, Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-29T00:47:59.660000Z",
-        "coordinates": [
-          -172.8179,
-          -17.8256
-        ]
-      },
-      {
-        "id": "aka2026ovufno",
-        "title": "M5.0 Earthquake - 52 km E of Denali National Park, Alaska",
-        "category": "Earthquake",
-        "date": "2026-07-28T20:49:24.979000Z",
-        "coordinates": [
-          -150.673,
-          63.611
-        ]
       }
     ]
   },
@@ -161,26 +166,26 @@
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/neo/rest/v1/feed?start_date=2026-07-30&end_date=2026-08-06&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.3,
-    "feels_c": 19.2,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_c": 22.6,
+    "feels_c": 22.7,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 4.1
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.9
   },
   "forecast_today": {
     "date": "2026-07-30",
     "city": "Zagreb",
-    "temp_min_c": 19.2,
+    "temp_min_c": 22.6,
     "temp_max_c": 35.5,
-    "humidity": 42,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
+    "icon": "04d",
     "wind_kmh": 3.6,
-    "samples": 8
+    "samples": 7
   },
   "forecast": {
     "date": "2026-07-31",
@@ -205,11 +210,11 @@
     "wind_kmh": 6.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
     "daily_max": 7.0,
     "peak_time": "2026-07-30T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 152,
     "skin_type": 2,
     "hourly": [
       {
@@ -309,6 +314,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-30T04:06:10+02:00"
+    "fetched_at": "2026-07-30T07:37:40+02:00"
   }
 }
