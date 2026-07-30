@@ -1,15 +1,20 @@
 {
-  "generated": "2026-07-30",
+  "generated": "2026-07-31",
   "apod": {
-    "title": "Red Sun through Wildfire Smoke",
-    "date": "2026-07-30",
-    "explanation": "This could be the view from an exoplanet orbiting around a red dwarf star, but it is our own Sun.   This image was taken on July 22, 2026, in the Okanagan region in the Canadian province of British Columbia.   Wildfire smoke from the Pacific Northwest acted as a solar filter, allowing the photographer to take this photo of the Sun directly.   Several sunspots are also visible in this eerie image; just below and right of the center is AR 4493, a fast evolving, giant active solar region and sunspot group.     The smoke is made of tiny particles that help block and scatter light with bluer colors, so the light we see coming from the Sun is dimmer and redder than usual (but it is never safe to stare directly at the Sun).   Sunsets and sunrises are also more colorful because of the smoke.      Some 6 billion years from now, the Sun will actually start to turn redder as it approaches its red giant phase.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2607/red_sun_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2607/red_sun.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000th3m",
+        "title": "M5.1 Earthquake - 67 km E of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-07-30T21:53:26.269000Z",
+        "coordinates": [
+          159.6405,
+          53.0742
+        ]
+      },
       {
         "id": "us6000th30",
         "title": "M5.0 Earthquake - Kermadec Islands region",
@@ -149,16 +154,6 @@
           122.8525,
           15.2694
         ]
-      },
-      {
-        "id": "us6000tgn0",
-        "title": "M5.0 Earthquake - 48 km SW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-07-29T13:23:56.014000Z",
-        "coordinates": [
-          124.9945,
-          5.3176
-        ]
       }
     ]
   },
@@ -248,40 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.9,
-    "feels_c": 22.7,
-    "humidity": 56,
+    "temp_c": 21.7,
+    "feels_c": 21.4,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02n",
-    "wind_kmh": 4.4
+    "wind_kmh": 2.9
   },
   "forecast_today": {
-    "date": "2026-07-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.9,
-    "temp_max_c": 22.9,
-    "humidity": 56,
-    "condition": "Clouds",
-    "description": "clouds",
+    "date": "2026-07-31",
+    "city": "Zagreb",
+    "temp_min_c": 20.3,
+    "temp_max_c": 36.8,
+    "humidity": 40,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "02n",
-    "wind_kmh": 4.4,
-    "samples": 1
+    "wind_kmh": 3.2,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-07-31",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 36.8,
-    "humidity": 37,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.3
-  },
-  "forecast_day_after": {
     "date": "2026-08-01",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 19.5,
     "temp_max_c": 38.2,
     "humidity": 35,
@@ -290,111 +274,122 @@
     "icon": "01d",
     "wind_kmh": 4.3
   },
+  "forecast_day_after": {
+    "date": "2026-08-02",
+    "city": "Zagreb",
+    "temp_min_c": 22.3,
+    "temp_max_c": 37.9,
+    "humidity": 37,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.4
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.9,
-    "peak_time": "2026-07-30T13:00",
+    "peak_time": "2026-07-31T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-07-30T00:00",
+        "time": "2026-07-31T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T01:00",
+        "time": "2026-07-31T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T02:00",
+        "time": "2026-07-31T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T03:00",
+        "time": "2026-07-31T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T04:00",
+        "time": "2026-07-31T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T05:00",
+        "time": "2026-07-31T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T06:00",
+        "time": "2026-07-31T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T07:00",
-        "uv": 0.4
+        "time": "2026-07-31T07:00",
+        "uv": 0.3
       },
       {
-        "time": "2026-07-30T08:00",
+        "time": "2026-07-31T08:00",
         "uv": 1.2
       },
       {
-        "time": "2026-07-30T09:00",
+        "time": "2026-07-31T09:00",
         "uv": 2.5
       },
       {
-        "time": "2026-07-30T10:00",
+        "time": "2026-07-31T10:00",
         "uv": 4.0
       },
       {
-        "time": "2026-07-30T11:00",
+        "time": "2026-07-31T11:00",
         "uv": 5.3
       },
       {
-        "time": "2026-07-30T12:00",
+        "time": "2026-07-31T12:00",
         "uv": 6.3
       },
       {
-        "time": "2026-07-30T13:00",
+        "time": "2026-07-31T13:00",
         "uv": 6.9
       },
       {
-        "time": "2026-07-30T14:00",
+        "time": "2026-07-31T14:00",
         "uv": 6.9
       },
       {
-        "time": "2026-07-30T15:00",
+        "time": "2026-07-31T15:00",
         "uv": 6.4
       },
       {
-        "time": "2026-07-30T16:00",
+        "time": "2026-07-31T16:00",
         "uv": 5.4
       },
       {
-        "time": "2026-07-30T17:00",
+        "time": "2026-07-31T17:00",
         "uv": 4.1
       },
       {
-        "time": "2026-07-30T18:00",
+        "time": "2026-07-31T18:00",
         "uv": 2.6
       },
       {
-        "time": "2026-07-30T19:00",
+        "time": "2026-07-31T19:00",
         "uv": 1.4
       },
       {
-        "time": "2026-07-30T20:00",
+        "time": "2026-07-31T20:00",
         "uv": 0.5
       },
       {
-        "time": "2026-07-30T21:00",
+        "time": "2026-07-31T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T22:00",
+        "time": "2026-07-31T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-07-30T23:00",
+        "time": "2026-07-31T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-30T23:05:56+02:00"
+    "fetched_at": "2026-07-31T01:03:06+02:00"
   }
 }
