@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000th8n",
+        "title": "M5.2 Earthquake - 85 km SW of El Arenal, Mexico",
+        "category": "Earthquake",
+        "date": "2026-07-31T16:15:58.641000Z",
+        "coordinates": [
+          -93.2309,
+          14.6031
+        ]
+      },
+      {
         "id": "us6000th5s",
         "title": "M5.0 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -179.1239,
           -65.0558
         ]
-      },
-      {
-        "id": "us6000tgtc",
-        "title": "M5.1 Earthquake - south of Tonga",
-        "category": "Earthquake",
-        "date": "2026-07-29T20:52:10.337000Z",
-        "coordinates": [
-          -175.2721,
-          -24.6282
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 37.6,
-    "feels_c": 37.3,
-    "humidity": 25,
+    "temp_c": 35.9,
+    "feels_c": 36.0,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -259,21 +259,21 @@
   "forecast_today": {
     "date": "2026-07-31",
     "city": "Zagreb",
-    "temp_min_c": 28.4,
-    "temp_max_c": 37.6,
-    "humidity": 28,
+    "temp_min_c": 31.9,
+    "temp_max_c": 35.9,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.1,
-    "samples": 4
+    "wind_kmh": 3.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-01",
     "city": "Zagreb",
     "temp_min_c": 18.4,
     "temp_max_c": 36.4,
-    "humidity": 38,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -291,11 +291,11 @@
     "wind_kmh": 7.3
   },
   "uv": {
-    "uv": 5.0,
-    "band": "moderate",
+    "uv": 1.5,
+    "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-31T13:00",
-    "safe_minutes": 34,
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-31T16:09:35+02:00"
+    "fetched_at": "2026-07-31T18:42:57+02:00"
   }
 }
