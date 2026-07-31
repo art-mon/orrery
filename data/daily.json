@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000th96",
+        "title": "M5.1 Earthquake - 69 km W of Coquimbo, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-31T17:47:07Z",
+        "coordinates": [
+          -72.0611,
+          -29.8946
+        ]
+      },
+      {
         "id": "us6000th8n",
         "title": "M5.2 Earthquake - 85 km SW of El Arenal, Mexico",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -176.5171,
           -28.4982
         ]
-      },
-      {
-        "id": "us6000tgud",
-        "title": "M5.6 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-07-29T22:08:07.628000Z",
-        "coordinates": [
-          -179.1239,
-          -65.0558
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 35.9,
-    "feels_c": 36.0,
-    "humidity": 30,
+    "city": "Zagreb",
+    "temp_c": 29.5,
+    "feels_c": 29.2,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.4
   },
   "forecast_today": {
     "date": "2026-07-31",
     "city": "Zagreb",
-    "temp_min_c": 31.9,
-    "temp_max_c": 35.9,
-    "humidity": 31,
+    "temp_min_c": 27.8,
+    "temp_max_c": 29.5,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.3,
-    "samples": 3
+    "wind_kmh": 3.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-08-01",
@@ -291,11 +291,11 @@
     "wind_kmh": 7.3
   },
   "uv": {
-    "uv": 1.5,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-07-31T13:00",
-    "safe_minutes": 111,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-07-31T17:00",
-        "uv": 4.1
+        "uv": 4.0
       },
       {
         "time": "2026-07-31T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-07-31T18:42:57+02:00"
+    "fetched_at": "2026-07-31T20:17:43+02:00"
   }
 }
