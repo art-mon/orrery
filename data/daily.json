@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000thfp",
+        "title": "M5.1 Earthquake - Tristan da Cunha region",
+        "category": "Earthquake",
+        "date": "2026-08-01T09:50:33.985000Z",
+        "coordinates": [
+          -15.9764,
+          -39.6903
+        ]
+      },
+      {
         "id": "us6000thf3",
         "title": "M5.1 Earthquake - south of the Fiji Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -177.9701,
           -31.3231
         ]
-      },
-      {
-        "id": "us6000tgy8",
-        "title": "M5.0 Earthquake - 2 km WNW of Uto, Japan",
-        "category": "Earthquake",
-        "date": "2026-07-30T13:47:38.996000Z",
-        "coordinates": [
-          130.642,
-          32.6877
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 33.7,
-    "feels_c": 34.7,
-    "humidity": 39,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.8
+    "city": "Zagreb",
+    "temp_c": 36.6,
+    "feels_c": 38.0,
+    "humidity": 33,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-01",
     "city": "City of Zagreb",
     "temp_min_c": 24.9,
-    "temp_max_c": 35.1,
+    "temp_max_c": 36.6,
     "humidity": 32,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.9,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 5.7,
-    "band": "moderate",
+    "uv": 7.0,
+    "band": "high",
     "daily_max": 6.9,
     "peak_time": "2026-08-01T14:00",
-    "safe_minutes": 29,
+    "safe_minutes": 24,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T11:03:38+02:00"
+    "fetched_at": "2026-08-01T13:14:24+02:00"
   }
 }
