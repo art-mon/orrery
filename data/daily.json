@@ -72,12 +72,12 @@
       },
       {
         "id": "us6000thbq",
-        "title": "M5.2 Earthquake - 141 km ENE of Masohi, Indonesia",
+        "title": "M5.3 Earthquake - 140 km ENE of Masohi, Indonesia",
         "category": "Earthquake",
-        "date": "2026-07-31T20:19:26.311000Z",
+        "date": "2026-07-31T20:19:26.522000Z",
         "coordinates": [
-          130.1548,
-          -2.8451
+          130.1637,
+          -2.8782
         ]
       },
       {
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 38.1,
-    "feels_c": 37.1,
+    "temp_c": 36.5,
+    "feels_c": 34.9,
     "humidity": 21,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 1.0
+    "wind_kmh": 3.3
   },
   "forecast_today": {
     "date": "2026-08-01",
-    "city": "City of Zagreb",
-    "temp_min_c": 28.8,
-    "temp_max_c": 38.1,
-    "humidity": 25,
+    "city": "Zagreb",
+    "temp_min_c": 28.3,
+    "temp_max_c": 36.5,
+    "humidity": 26,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 4.7,
-    "samples": 4
+    "wind_kmh": 6.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-02",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.9,
     "temp_max_c": 35.6,
     "humidity": 45,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-03",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.3,
     "temp_max_c": 38.4,
     "humidity": 34,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 3.8,
-    "band": "moderate",
+    "uv": 2.1,
+    "band": "low",
     "daily_max": 6.9,
     "peak_time": "2026-08-01T14:00",
-    "safe_minutes": 44,
+    "safe_minutes": 79,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T16:57:58+02:00"
+    "fetched_at": "2026-08-01T18:03:19+02:00"
   }
 }
