@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000thf3",
+        "title": "M5.1 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-08-01T07:46:03.634000Z",
+        "coordinates": [
+          -179.1255,
+          -22.3815
+        ]
+      },
+      {
         "id": "us6000thej",
         "title": "M5.6 Earthquake - 200 km SW of Port McNeill, Canada",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           130.642,
           32.6877
         ]
-      },
-      {
-        "id": "us6000tgvz",
-        "title": "M5.8 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-30T05:08:31.888000Z",
-        "coordinates": [
-          -176.5759,
-          -28.6242
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 27.1,
-    "feels_c": 28.3,
-    "humidity": 60,
+    "city": "City of Zagreb",
+    "temp_c": 33.7,
+    "feels_c": 34.7,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 2.8
   },
   "forecast_today": {
     "date": "2026-08-01",
     "city": "City of Zagreb",
-    "temp_min_c": 24.7,
-    "temp_max_c": 36.6,
-    "humidity": 36,
+    "temp_min_c": 24.9,
+    "temp_max_c": 35.1,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.7,
-    "samples": 6
+    "wind_kmh": 4.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-02",
     "city": "City of Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 36.5,
-    "humidity": 41,
+    "temp_min_c": 18.3,
+    "temp_max_c": 35.6,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.2
+    "wind_kmh": 6.9
   },
   "forecast_day_after": {
     "date": "2026-08-03",
     "city": "City of Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 38.9,
-    "humidity": 33,
+    "temp_min_c": 22.0,
+    "temp_max_c": 38.4,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.8
+    "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 2.0,
-    "band": "low",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 6.9,
     "peak_time": "2026-08-01T14:00",
-    "safe_minutes": 83,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T08:26:02+02:00"
+    "fetched_at": "2026-08-01T11:03:38+02:00"
   }
 }
