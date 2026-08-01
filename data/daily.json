@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000thdk",
+        "title": "M5.5 Earthquake - 57 km E of Mutsu, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-01T02:48:01.570000Z",
+        "coordinates": [
+          141.8958,
+          41.352
+        ]
+      },
+      {
         "id": "us6000thcs",
         "title": "M5.1 Earthquake - 132 km ENE of Masohi, Indonesia",
         "category": "Earthquake",
@@ -149,45 +159,11 @@
           138.8205,
           -2.6018
         ]
-      },
-      {
-        "id": "us6000tgva",
-        "title": "M5.3 Earthquake - 217 km SE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-07-30T02:46:24.341000Z",
-        "coordinates": [
-          153.5797,
-          -5.8112
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2014 OA339)",
-        "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 34488674,
-        "velocity_kmh": 59152
-      },
-      {
-        "name": "(2017 OK19)",
-        "hazardous": false,
-        "diameter_m": 352,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 59265547,
-        "velocity_kmh": 43912
-      },
-      {
-        "name": "(2001 AV43)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-07-31",
-        "miss_distance_km": 65159533,
-        "velocity_kmh": 23210
-      },
       {
         "name": "(2012 DW60)",
         "hazardous": false,
@@ -243,48 +219,72 @@
         "close_approach_date": "2026-08-02",
         "miss_distance_km": 12290017,
         "velocity_kmh": 29734
+      },
+      {
+        "name": "(2015 ME131)",
+        "hazardous": true,
+        "diameter_m": 686,
+        "close_approach_date": "2026-08-02",
+        "miss_distance_km": 37601766,
+        "velocity_kmh": 70382
+      },
+      {
+        "name": "(2020 RX8)",
+        "hazardous": true,
+        "diameter_m": 714,
+        "close_approach_date": "2026-08-02",
+        "miss_distance_km": 37691802,
+        "velocity_kmh": 70424
+      },
+      {
+        "name": "(2016 UP41)",
+        "hazardous": false,
+        "diameter_m": 262,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 18216974,
+        "velocity_kmh": 31207
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 26.1,
-    "humidity": 57,
+    "temp_c": 23.7,
+    "feels_c": 23.9,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.7
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-08-01",
     "city": "Zagreb",
-    "temp_min_c": 23.6,
-    "temp_max_c": 36.2,
-    "humidity": 39,
+    "temp_min_c": 23.5,
+    "temp_max_c": 37.0,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.6,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 4.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-08-02",
     "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 37.5,
+    "temp_min_c": 18.5,
+    "temp_max_c": 36,
     "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.7
+    "wind_kmh": 6.9
   },
   "forecast_day_after": {
     "date": "2026-08-03",
     "city": "Zagreb",
     "temp_min_c": 22.0,
-    "temp_max_c": 38.4,
-    "humidity": 33,
+    "temp_max_c": 38.3,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T01:59:22+02:00"
+    "fetched_at": "2026-08-01T05:40:38+02:00"
   }
 }
