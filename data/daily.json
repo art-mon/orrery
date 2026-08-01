@@ -81,13 +81,23 @@
         ]
       },
       {
-        "id": "us6000th96",
-        "title": "M5.1 Earthquake - 69 km W of Coquimbo, Chile",
+        "id": "us6000thb5",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
-        "date": "2026-07-31T17:47:07Z",
+        "date": "2026-07-31T18:58:13.716000Z",
         "coordinates": [
-          -72.0611,
-          -29.8946
+          -25.2881,
+          -58.713
+        ]
+      },
+      {
+        "id": "us6000th96",
+        "title": "M5.0 Earthquake - 76 km W of Coquimbo, Chile",
+        "category": "Earthquake",
+        "date": "2026-07-31T17:47:05.666000Z",
+        "coordinates": [
+          -72.1202,
+          -29.867
         ]
       },
       {
@@ -148,16 +158,6 @@
         "coordinates": [
           -176.5707,
           -28.5478
-        ]
-      },
-      {
-        "id": "us6000th1h",
-        "title": "M5.9 Earthquake - 247 km NNE of Colonia, Micronesia",
-        "category": "Earthquake",
-        "date": "2026-07-30T17:55:59.690000Z",
-        "coordinates": [
-          138.9989,
-          11.5807
         ]
       }
     ]
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 38.1,
-    "feels_c": 38.4,
-    "humidity": 26,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.6
+    "feels_c": 37.1,
+    "humidity": 21,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 1.0
   },
   "forecast_today": {
     "date": "2026-08-01",
-    "city": "Zagreb",
-    "temp_min_c": 24.1,
+    "city": "City of Zagreb",
+    "temp_min_c": 28.8,
     "temp_max_c": 38.1,
-    "humidity": 29,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 5.6,
+    "humidity": 25,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 4.7,
     "samples": 4
   },
   "forecast": {
     "date": "2026-08-02",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.9,
     "temp_max_c": 35.6,
     "humidity": 45,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-03",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.3,
     "temp_max_c": 38.4,
     "humidity": 34,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 6.0,
-    "band": "high",
+    "uv": 3.8,
+    "band": "moderate",
     "daily_max": 6.9,
     "peak_time": "2026-08-01T14:00",
-    "safe_minutes": 28,
+    "safe_minutes": 44,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T15:13:25+02:00"
+    "fetched_at": "2026-08-01T16:57:58+02:00"
   }
 }
