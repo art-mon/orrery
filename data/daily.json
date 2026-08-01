@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000thhr",
+        "title": "M5.2 Earthquake - 160 km SSW of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-01T20:02:46.638000Z",
+        "coordinates": [
+          155.327,
+          49.3239
+        ]
+      },
+      {
+        "id": "us6000thhk",
+        "title": "M5.2 Earthquake - 48 km ESE of Tsun\u014d, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-01T19:10:52.622000Z",
+        "coordinates": [
+          131.9999,
+          32.0078
+        ]
+      },
+      {
         "id": "us6000thgx",
         "title": "M5.1 Earthquake - south of the Fiji Islands",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -176.7278,
           -28.3933
         ]
-      },
-      {
-        "id": "us6000th4k",
-        "title": "M5.6 Earthquake - 13 km ENE of San Fernando, Peru",
-        "category": "Earthquake",
-        "date": "2026-07-31T00:58:44.364000Z",
-        "coordinates": [
-          -74.4353,
-          -8.3349
-        ]
-      },
-      {
-        "id": "us6000th3m",
-        "title": "M5.1 Earthquake - 67 km E of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-07-30T21:53:26.269000Z",
-        "coordinates": [
-          159.6405,
-          53.0742
-        ]
       }
     ]
   },
@@ -247,31 +247,31 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 28.1,
-    "feels_c": 27.9,
-    "humidity": 41,
+    "city": "City of Zagreb",
+    "temp_c": 24.3,
+    "feels_c": 24.2,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 6.4
+    "wind_kmh": 9.5
   },
   "forecast_today": {
     "date": "2026-08-01",
     "city": "Zagreb",
-    "temp_min_c": 27.6,
-    "temp_max_c": 28.1,
-    "humidity": 42,
+    "temp_min_c": 24.3,
+    "temp_max_c": 24.3,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.0,
+    "wind_kmh": 9.5,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-02",
     "city": "Zagreb",
-    "temp_min_c": 18.3,
+    "temp_min_c": 20.3,
     "temp_max_c": 35.2,
     "humidity": 43,
     "condition": "Clear",
@@ -283,12 +283,12 @@
     "date": "2026-08-03",
     "city": "Zagreb",
     "temp_min_c": 19.9,
-    "temp_max_c": 38.4,
+    "temp_max_c": 37.9,
     "humidity": 35,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-01T21:12:41+02:00"
+    "fetched_at": "2026-08-01T22:47:41+02:00"
   }
 }
