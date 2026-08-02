@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000thlb",
+        "title": "M5.0 Earthquake - north of Ascension Island",
+        "category": "Earthquake",
+        "date": "2026-08-02T09:17:11.235000Z",
+        "coordinates": [
+          -12.2442,
+          -3.2948
+        ]
+      },
+      {
+        "id": "us6000thl3",
+        "title": "M5.6 Earthquake - 14 km S of Hicks Bay, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-08-02T08:35:27.066000Z",
+        "coordinates": [
+          178.3287,
+          -37.73
+        ]
+      },
+      {
         "id": "us6000thj5",
         "title": "M5.2 Earthquake - 112 km SW of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -72.1202,
           -29.867
         ]
-      },
-      {
-        "id": "us6000th8n",
-        "title": "M5.2 Earthquake - 85 km SW of El Arenal, Mexico",
-        "category": "Earthquake",
-        "date": "2026-07-31T16:15:58.641000Z",
-        "coordinates": [
-          -93.2309,
-          14.6031
-        ]
-      },
-      {
-        "id": "us6000th5s",
-        "title": "M5.0 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-31T06:30:26.157000Z",
-        "coordinates": [
-          -176.5524,
-          -29.4109
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.1,
-    "feels_c": 29.8,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_c": 34.8,
+    "feels_c": 36.6,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.1
+    "wind_kmh": 8.4
   },
   "forecast_today": {
     "date": "2026-08-02",
     "city": "Zagreb",
     "temp_min_c": 26.6,
-    "temp_max_c": 33.5,
+    "temp_max_c": 34.9,
     "humidity": 36,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 6.5,
-    "samples": 6
+    "wind_kmh": 5.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-03",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 4.8,
-    "band": "moderate",
+    "uv": 6.8,
+    "band": "high",
     "daily_max": 6.8,
     "peak_time": "2026-08-02T13:00",
-    "safe_minutes": 35,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-02T10:19:32+02:00"
+    "fetched_at": "2026-08-02T12:38:11+02:00"
   }
 }
