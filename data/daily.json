@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000thm1",
+        "title": "M5.1 Earthquake - 60 km W of Bah\u00eda de Lobos, Mexico",
+        "category": "Earthquake",
+        "date": "2026-08-02T13:10:47.947000Z",
+        "coordinates": [
+          -111.0607,
+          27.3736
+        ]
+      },
+      {
+        "id": "us6000thly",
+        "title": "M5.3 Earthquake - north of Ascension Island",
+        "category": "Earthquake",
+        "date": "2026-08-02T11:52:33.048000Z",
+        "coordinates": [
+          -12.1759,
+          -3.2144
+        ]
+      },
+      {
         "id": "us6000thlj",
         "title": "M5.3 Earthquake - 265 km S of \u2018Ohonua, Tonga",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           130.1237,
           -3.0027
         ]
-      },
-      {
-        "id": "us6000thbq",
-        "title": "M5.3 Earthquake - 140 km ENE of Masohi, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-07-31T20:19:26.522000Z",
-        "coordinates": [
-          130.1637,
-          -2.8782
-        ]
-      },
-      {
-        "id": "us6000thb5",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-31T18:58:13.716000Z",
-        "coordinates": [
-          -25.2881,
-          -58.713
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 35.9,
-    "feels_c": 36.5,
+    "temp_c": 37.0,
+    "feels_c": 38.4,
     "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.6
+    "wind_kmh": 4.8
   },
   "forecast_today": {
     "date": "2026-08-02",
-    "city": "Donji grad",
-    "temp_min_c": 26.6,
-    "temp_max_c": 35.9,
-    "humidity": 31,
+    "city": "Zagreb",
+    "temp_min_c": 30.5,
+    "temp_max_c": 37.6,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.0,
+    "wind_kmh": 4.1,
     "samples": 4
   },
   "forecast": {
     "date": "2026-08-03",
-    "city": "Donji grad",
-    "temp_min_c": 20.4,
-    "temp_max_c": 36.2,
-    "humidity": 32,
+    "city": "Zagreb",
+    "temp_min_c": 21.9,
+    "temp_max_c": 36.9,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-08-04",
-    "city": "Donji grad",
-    "temp_min_c": 22.8,
-    "temp_max_c": 39.2,
+    "city": "Zagreb",
+    "temp_min_c": 22.7,
+    "temp_max_c": 39.3,
     "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 6.8,
-    "band": "high",
+    "uv": 5.2,
+    "band": "moderate",
     "daily_max": 6.8,
     "peak_time": "2026-08-02T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-02T14:00:09+02:00"
+    "fetched_at": "2026-08-02T15:45:56+02:00"
   }
 }
