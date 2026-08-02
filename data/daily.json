@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000thj5",
+        "title": "M5.2 Earthquake - 112 km SW of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-02T00:13:38.325000Z",
+        "coordinates": [
+          155.1713,
+          49.8672
+        ]
+      },
+      {
         "id": "us6000thhr",
         "title": "M5.2 Earthquake - 160 km SSW of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
@@ -149,69 +159,11 @@
           -176.5524,
           -29.4109
         ]
-      },
-      {
-        "id": "us6000th5f",
-        "title": "M5.0 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-07-31T04:02:53.372000Z",
-        "coordinates": [
-          -176.7278,
-          -28.3933
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2012 DW60)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 11795416,
-        "velocity_kmh": 22907
-      },
-      {
-        "name": "(2016 YC8)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 31704911,
-        "velocity_kmh": 17293
-      },
-      {
-        "name": "(2016 CE)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 56755754,
-        "velocity_kmh": 45231
-      },
-      {
-        "name": "(2018 PV7)",
-        "hazardous": false,
-        "diameter_m": 81,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 57876331,
-        "velocity_kmh": 24393
-      },
-      {
-        "name": "(2005 BU)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 61128505,
-        "velocity_kmh": 56532
-      },
-      {
-        "name": "(2020 BK13)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-08-01",
-        "miss_distance_km": 67416998,
-        "velocity_kmh": 82867
-      },
       {
         "name": "(2019 QK7)",
         "hazardous": false,
@@ -243,52 +195,100 @@
         "close_approach_date": "2026-08-03",
         "miss_distance_km": 18216974,
         "velocity_kmh": 31207
+      },
+      {
+        "name": "(2017 DS37)",
+        "hazardous": false,
+        "diameter_m": 21,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 30450416,
+        "velocity_kmh": 24023
+      },
+      {
+        "name": "(2019 AS9)",
+        "hazardous": false,
+        "diameter_m": 365,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 42943900,
+        "velocity_kmh": 65035
+      },
+      {
+        "name": "(2007 PS9)",
+        "hazardous": false,
+        "diameter_m": 119,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 63366552,
+        "velocity_kmh": 52513
+      },
+      {
+        "name": "(2013 RD6)",
+        "hazardous": false,
+        "diameter_m": 65,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 66145925,
+        "velocity_kmh": 62569
+      },
+      {
+        "name": "(2021 GR12)",
+        "hazardous": false,
+        "diameter_m": 1486,
+        "close_approach_date": "2026-08-03",
+        "miss_distance_km": 71591695,
+        "velocity_kmh": 130940
+      },
+      {
+        "name": "(2011 LJ1)",
+        "hazardous": false,
+        "diameter_m": 820,
+        "close_approach_date": "2026-08-04",
+        "miss_distance_km": 26927575,
+        "velocity_kmh": 51486
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.9,
-    "feels_c": 21.8,
-    "humidity": 63,
+    "city": "City of Zagreb",
+    "temp_c": 21.1,
+    "feels_c": 21.0,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-02",
     "city": "Zagreb",
-    "temp_min_c": 20.9,
-    "temp_max_c": 35.2,
-    "humidity": 46,
+    "temp_min_c": 21.1,
+    "temp_max_c": 36.0,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 6.5,
-    "samples": 9
+    "wind_kmh": 5.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-03",
     "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 37.9,
-    "humidity": 35,
+    "temp_min_c": 21.3,
+    "temp_max_c": 36.8,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.8
+    "wind_kmh": 5.3
   },
   "forecast_day_after": {
     "date": "2026-08-04",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
+    "temp_min_c": 22.9,
     "temp_max_c": 39.2,
     "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 4.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-02T01:54:36+02:00"
+    "fetched_at": "2026-08-02T04:31:52+02:00"
   }
 }
