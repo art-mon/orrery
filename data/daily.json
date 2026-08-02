@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000thlj",
+        "title": "M5.3 Earthquake - 265 km S of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-08-02T10:34:14.181000Z",
+        "coordinates": [
+          -174.9439,
+          -23.7388
+        ]
+      },
+      {
         "id": "us6000thlb",
         "title": "M5.0 Earthquake - north of Ascension Island",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -25.2881,
           -58.713
         ]
-      },
-      {
-        "id": "us6000th96",
-        "title": "M5.0 Earthquake - 76 km W of Coquimbo, Chile",
-        "category": "Earthquake",
-        "date": "2026-07-31T17:47:05.666000Z",
-        "coordinates": [
-          -72.1202,
-          -29.867
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 34.8,
-    "feels_c": 36.6,
-    "humidity": 39,
+    "temp_c": 35.9,
+    "feels_c": 36.5,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.4
+    "wind_kmh": 7.6
   },
   "forecast_today": {
     "date": "2026-08-02",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 26.6,
-    "temp_max_c": 34.9,
-    "humidity": 36,
+    "temp_max_c": 35.9,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 5.7,
-    "samples": 5
+    "wind_kmh": 5.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-03",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.4,
     "temp_max_c": 36.2,
     "humidity": 32,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-04",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 22.8,
     "temp_max_c": 39.2,
     "humidity": 30,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-02T12:38:11+02:00"
+    "fetched_at": "2026-08-02T14:00:09+02:00"
   }
 }
