@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000thpt",
+        "title": "M5.2 Earthquake - 66 km WNW of San Alejandro, Peru",
+        "category": "Earthquake",
+        "date": "2026-08-03T01:42:24.662000Z",
+        "coordinates": [
+          -75.7603,
+          -8.5724
+        ]
+      },
+      {
+        "id": "us6000thpb",
+        "title": "M5.0 Earthquake - 36 km NNE of Suez, Egypt",
+        "category": "Earthquake",
+        "date": "2026-08-03T00:00:33.082000Z",
+        "coordinates": [
+          32.6273,
+          30.2922
+        ]
+      },
+      {
         "id": "us6000thmd",
         "title": "M5.0 Earthquake - south of Tonga",
         "category": "Earthquake",
@@ -139,55 +159,11 @@
           -179.1255,
           -22.3815
         ]
-      },
-      {
-        "id": "us6000thej",
-        "title": "M5.6 Earthquake - 200 km SW of Port McNeill, Canada",
-        "category": "Earthquake",
-        "date": "2026-08-01T04:49:01.269000Z",
-        "coordinates": [
-          -129.4251,
-          49.6033
-        ]
-      },
-      {
-        "id": "us6000thdk",
-        "title": "M5.5 Earthquake - 57 km E of Mutsu, Japan",
-        "category": "Earthquake",
-        "date": "2026-08-01T02:48:01.570000Z",
-        "coordinates": [
-          141.8958,
-          41.352
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 QK7)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-08-02",
-        "miss_distance_km": 12290017,
-        "velocity_kmh": 29734
-      },
-      {
-        "name": "(2015 ME131)",
-        "hazardous": true,
-        "diameter_m": 686,
-        "close_approach_date": "2026-08-02",
-        "miss_distance_km": 37601766,
-        "velocity_kmh": 70382
-      },
-      {
-        "name": "(2020 RX8)",
-        "hazardous": true,
-        "diameter_m": 714,
-        "close_approach_date": "2026-08-02",
-        "miss_distance_km": 37691802,
-        "velocity_kmh": 70424
-      },
       {
         "name": "(2016 UP41)",
         "hazardous": false,
@@ -243,52 +219,76 @@
         "close_approach_date": "2026-08-04",
         "miss_distance_km": 26927575,
         "velocity_kmh": 51486
+      },
+      {
+        "name": "628250 (2014 QL390)",
+        "hazardous": false,
+        "diameter_m": 211,
+        "close_approach_date": "2026-08-04",
+        "miss_distance_km": 40926110,
+        "velocity_kmh": 10117
+      },
+      {
+        "name": "(2014 QL390)",
+        "hazardous": false,
+        "diameter_m": 209,
+        "close_approach_date": "2026-08-04",
+        "miss_distance_km": 40926112,
+        "velocity_kmh": 10117
+      },
+      {
+        "name": "(2010 PW58)",
+        "hazardous": true,
+        "diameter_m": 272,
+        "close_approach_date": "2026-08-04",
+        "miss_distance_km": 48923072,
+        "velocity_kmh": 59361
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 51,
+    "city": "Donji grad",
+    "temp_c": 24.2,
+    "feels_c": 24.3,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 4.0
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-08-03",
     "city": "Zagreb",
-    "temp_min_c": 24.9,
-    "temp_max_c": 36.0,
-    "humidity": 34,
+    "temp_min_c": 24.2,
+    "temp_max_c": 36.7,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.7,
-    "samples": 9
+    "wind_kmh": 4.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-04",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 38.8,
-    "humidity": 31,
+    "temp_min_c": 23.1,
+    "temp_max_c": 37.9,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.2
   },
   "forecast_day_after": {
     "date": "2026-08-05",
     "city": "Zagreb",
-    "temp_min_c": 23.9,
-    "temp_max_c": 40.5,
-    "humidity": 33,
+    "temp_min_c": 23.5,
+    "temp_max_c": 40.6,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.6
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-03T01:56:04+02:00"
+    "fetched_at": "2026-08-03T04:41:57+02:00"
   }
 }
