@@ -1,12 +1,12 @@
 {
   "generated": "2026-08-03",
   "apod": {
-    "title": "A Fire Rainbow over West Virginia",
-    "date": "2026-08-02",
-    "explanation": "What's happening to this cloud? Ice crystals in a distant cirrus cloud are acting like little floating prisms.  Known informally as a fire rainbow for its flame-like appearance, a circumhorizon arc appears parallel to the horizon. For a circumhorizontal arc to be visible, the Sun must be at least 58 degrees high in a sky where cirrus clouds present below --  in this case cirrus fibratus.  The numerous, flat, hexagonal ice-crystals that compose the cirrus cloud must be aligned horizontally to properly refract sunlight in a collectively similar manner.  Therefore, circumhorizontal arcs are somewhat unusual to see.  The featured fire rainbow was photographed in 2021 near North Fork Mountain in West Virginia, USA.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "title": "Vaporizing Meteor Photobombs the Lacerta Nebula",
+    "date": "2026-08-03",
+    "explanation": "What's happening to this meteor? This bright meteor streak appeared and disappeared quickly during a long exposure of the Great Lacerta Nebula, seen faintly in red toward the center of the image. The meteoroid, likely a small pebble, creates its glow partly by heating and exciting surrounding air in Earth's atmosphere, but itself vaporizes and leaves wind-blown gas and dust with colors that give clues to its composition.  The featured image was captured last month from Death Valley Observatories in Nevada, USA.  This month, though, is particularly good for seeing meteors. Presently there are three meteor showers ongoing, although they are currently competing for visibility with the glow of a bright gibbous Moon.  The most active of these showers, the Perseids, will be busiest in about 10 days -- after the Moon has dimmed considerably.  This year, the Perseids peak nearly coincides with not only a new Moon, but, from some locations, one that totally eclipses the Sun.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/FireRainbow_Harbig_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/FireRainbow_Harbig_4000.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/MeteorGecko_Burnett_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/MeteorGecko_Burnett_4944.jpg"
   },
   "events": {
     "events": [
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_c": 25.3,
+    "feels_c": 25.6,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 2.6
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-08-03",
     "city": "Zagreb",
-    "temp_min_c": 24.2,
+    "temp_min_c": 25.3,
     "temp_max_c": 36.7,
-    "humidity": 37,
+    "humidity": 36,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.5,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.1,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-04",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.6
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-08-03T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 85,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-03T04:41:57+02:00"
+    "fetched_at": "2026-08-03T08:19:42+02:00"
   }
 }
