@@ -1,12 +1,12 @@
 {
   "generated": "2026-08-04",
   "apod": {
-    "title": "Vaporizing Meteor Photobombs the Lacerta Nebula",
-    "date": "2026-08-03",
-    "explanation": "What's happening to this meteor? This bright meteor streak appeared and disappeared quickly during a long exposure of the Great Lacerta Nebula, seen faintly in red toward the center of the image. The meteoroid, likely a small pebble, creates its glow partly by heating and exciting surrounding air in Earth's atmosphere, but itself vaporizes and leaves wind-blown gas and dust with colors that give clues to its composition.  The featured image was captured last month from Death Valley Observatories in Nevada, USA.  This month, though, is particularly good for seeing meteors. Presently there are three meteor showers ongoing, although they are currently competing for visibility with the glow of a bright gibbous Moon.  The most active of these showers, the Perseids, will be busiest in about 10 days -- after the Moon has dimmed considerably.  This year, the Perseids peak nearly coincides with not only a new Moon, but, from some locations, one that totally eclipses the Sun.    Sky Surprise: What picture did APOD feature on your birthday? (after 1995)",
+    "title": "Curious Cometary Knots in the Helix Nebula",
+    "date": "2026-08-04",
+    "explanation": "What causes unusual knots of gas and dust in planetary nebulas?  Seen also in the Ring Nebula, the Dumbbell Nebula and NGC 2392, the knots' existence was not initially predicted, and their origins are still not well understood.  Pictured here is a fascinating image of part of the Helix Nebula by the James Webb Space Telescope showing tremendous detail in infrared light. The cometary knots have masses similar to the Earth but have sizes typically several times the orbit of Pluto.  One hypothesis for the fragmentation and evolution of the knots includes existing gas being driven out by a less dense but highly energetic stellar wind of the central evolving star.  The Helix Nebula is one of the closest examples of a planetary nebula created at the end of the life of a Sun-like star.  Given a technical designation of NGC 7293, the Helix Nebula lies about 650 light-years away towards the constellation of Water Carrier (Aquarius).   Open Science: Browse 4,000+ codes in the Astrophysics Source Code Library",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/MeteorGecko_Burnett_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/MeteorGecko_Burnett_4944.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/HelixKnots_JWST_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/HelixKnots_JWST_2000.jpg"
   },
   "events": {
     "events": [
@@ -248,50 +248,50 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.9,
-    "feels_c": 22.7,
-    "humidity": 57,
+    "temp_c": 23.7,
+    "feels_c": 23.8,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.6
+    "icon": "01d",
+    "wind_kmh": 2.7
   },
   "forecast_today": {
     "date": "2026-08-04",
     "city": "Zagreb",
-    "temp_min_c": 22.2,
-    "temp_max_c": 37.4,
-    "humidity": 35,
+    "temp_min_c": 23.7,
+    "temp_max_c": 39.8,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.1,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 4.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-08-05",
     "city": "Zagreb",
-    "temp_min_c": 22.2,
-    "temp_max_c": 39.1,
-    "humidity": 35,
+    "temp_min_c": 22.1,
+    "temp_max_c": 40.5,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 3.8
   },
   "forecast_day_after": {
     "date": "2026-08-06",
     "city": "Zagreb",
-    "temp_min_c": 24,
-    "temp_max_c": 39.5,
-    "humidity": 37,
+    "temp_min_c": 23.7,
+    "temp_max_c": 39.8,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-08-04T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-04T02:06:02+02:00"
+    "fetched_at": "2026-08-04T06:10:44+02:00"
   }
 }
