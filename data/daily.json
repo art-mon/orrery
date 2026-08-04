@@ -165,54 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2016 UP41)",
-        "hazardous": false,
-        "diameter_m": 262,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 18216974,
-        "velocity_kmh": 31207
-      },
-      {
-        "name": "(2017 DS37)",
-        "hazardous": false,
-        "diameter_m": 21,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 30450416,
-        "velocity_kmh": 24023
-      },
-      {
-        "name": "(2019 AS9)",
-        "hazardous": false,
-        "diameter_m": 365,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 42943900,
-        "velocity_kmh": 65035
-      },
-      {
-        "name": "(2007 PS9)",
-        "hazardous": false,
-        "diameter_m": 119,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 63366552,
-        "velocity_kmh": 52513
-      },
-      {
-        "name": "(2013 RD6)",
-        "hazardous": false,
-        "diameter_m": 65,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 66145925,
-        "velocity_kmh": 62569
-      },
-      {
-        "name": "(2021 GR12)",
-        "hazardous": false,
-        "diameter_m": 1486,
-        "close_approach_date": "2026-08-03",
-        "miss_distance_km": 71591695,
-        "velocity_kmh": 130940
-      },
-      {
         "name": "(2011 LJ1)",
         "hazardous": false,
         "diameter_m": 820,
@@ -243,30 +195,78 @@
         "close_approach_date": "2026-08-04",
         "miss_distance_km": 48923072,
         "velocity_kmh": 59361
+      },
+      {
+        "name": "(2014 OL339)",
+        "hazardous": false,
+        "diameter_m": 165,
+        "close_approach_date": "2026-08-05",
+        "miss_distance_km": 53777827,
+        "velocity_kmh": 32166
+      },
+      {
+        "name": "(2016 CM246)",
+        "hazardous": false,
+        "diameter_m": 461,
+        "close_approach_date": "2026-08-05",
+        "miss_distance_km": 68092262,
+        "velocity_kmh": 71220
+      },
+      {
+        "name": "(2016 NR)",
+        "hazardous": false,
+        "diameter_m": 103,
+        "close_approach_date": "2026-08-06",
+        "miss_distance_km": 30035053,
+        "velocity_kmh": 25610
+      },
+      {
+        "name": "(2020 CH2)",
+        "hazardous": false,
+        "diameter_m": 71,
+        "close_approach_date": "2026-08-06",
+        "miss_distance_km": 41701346,
+        "velocity_kmh": 38907
+      },
+      {
+        "name": "136770 (1996 PC1)",
+        "hazardous": false,
+        "diameter_m": 459,
+        "close_approach_date": "2026-08-06",
+        "miss_distance_km": 61668128,
+        "velocity_kmh": 83074
+      },
+      {
+        "name": "(2018 DY3)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-08-07",
+        "miss_distance_km": 21617916,
+        "velocity_kmh": 44419
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.4,
-    "feels_c": 24.3,
-    "humidity": 51,
+    "temp_c": 22.9,
+    "feels_c": 22.7,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 3.6
   },
   "forecast_today": {
     "date": "2026-08-04",
     "city": "Zagreb",
-    "temp_min_c": 22,
+    "temp_min_c": 22.2,
     "temp_max_c": 37.4,
     "humidity": 35,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
     "wind_kmh": 4.1,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-05",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-04T00:06:07+02:00"
+    "fetched_at": "2026-08-04T02:06:02+02:00"
   }
 }
