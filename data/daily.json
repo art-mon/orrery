@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000ti9w",
+        "title": "M5.0 Earthquake - 60 km NNE of Shi Yomi, India",
+        "category": "Earthquake",
+        "date": "2026-08-05T10:06:09.955000Z",
+        "coordinates": [
+          94.681,
+          29.0027
+        ]
+      },
+      {
         "id": "us6000ti8i",
         "title": "M6.3 Earthquake - south of the Kermadec Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -12.2442,
           -3.2948
         ]
-      },
-      {
-        "id": "us6000thl3",
-        "title": "M5.6 Earthquake - 14 km S of Hicks Bay, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-08-02T08:35:27.066000Z",
-        "coordinates": [
-          178.3287,
-          -37.73
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 36.0,
-    "feels_c": 36.2,
-    "humidity": 30,
+    "city": "Zagreb",
+    "temp_c": 38.7,
+    "feels_c": 38.1,
+    "humidity": 22,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.8
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-08-05",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 28.0,
-    "temp_max_c": 37.6,
-    "humidity": 26,
+    "temp_max_c": 38.7,
+    "humidity": 24,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.8,
+    "wind_kmh": 4.9,
     "samples": 5
   },
   "forecast": {
     "date": "2026-08-06",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.3,
     "temp_max_c": 39.3,
     "humidity": 31,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-07",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.9,
     "temp_max_c": 32.8,
     "humidity": 45,
@@ -291,11 +291,11 @@
     "wind_kmh": 7.1
   },
   "uv": {
-    "uv": 6.0,
+    "uv": 6.8,
     "band": "high",
     "daily_max": 6.8,
     "peak_time": "2026-08-05T13:00",
-    "safe_minutes": 28,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-05T11:35:02+02:00"
+    "fetched_at": "2026-08-05T13:57:37+02:00"
   }
 }
