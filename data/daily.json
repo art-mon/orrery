@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000tif5",
-        "title": "M5.9 Earthquake - 32 km SW of Sarangani, Philippines",
+        "title": "M5.6 Earthquake - 40 km SW of Sarangani, Philippines",
         "category": "Earthquake",
-        "date": "2026-08-05T21:41:28.262000Z",
+        "date": "2026-08-05T21:41:27.717000Z",
         "coordinates": [
-          125.2809,
-          5.1757
+          125.227,
+          5.1283
         ]
       },
       {
@@ -165,22 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2014 OL339)",
-        "hazardous": false,
-        "diameter_m": 165,
-        "close_approach_date": "2026-08-05",
-        "miss_distance_km": 53777827,
-        "velocity_kmh": 32166
-      },
-      {
-        "name": "(2016 CM246)",
-        "hazardous": false,
-        "diameter_m": 461,
-        "close_approach_date": "2026-08-05",
-        "miss_distance_km": 68092262,
-        "velocity_kmh": 71220
-      },
-      {
         "name": "(2016 NR)",
         "hazardous": false,
         "diameter_m": 103,
@@ -243,52 +227,68 @@
         "close_approach_date": "2026-08-07",
         "miss_distance_km": 65599203,
         "velocity_kmh": 21547
+      },
+      {
+        "name": "(2014 CH13)",
+        "hazardous": false,
+        "diameter_m": 69,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 24129531,
+        "velocity_kmh": 8439
+      },
+      {
+        "name": "(2020 OB6)",
+        "hazardous": false,
+        "diameter_m": 62,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 24144414,
+        "velocity_kmh": 8449
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.3,
-    "feels_c": 24.0,
-    "humidity": 47,
+    "temp_c": 24.8,
+    "feels_c": 24.7,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.9
+    "wind_kmh": 2.6
   },
   "forecast_today": {
     "date": "2026-08-06",
     "city": "Zagreb",
-    "temp_min_c": 23.1,
-    "temp_max_c": 38.5,
-    "humidity": 32,
+    "temp_min_c": 24.8,
+    "temp_max_c": 38.2,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 5.2,
-    "samples": 9
+    "wind_kmh": 5.0,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-07",
     "city": "Zagreb",
-    "temp_min_c": 20.6,
-    "temp_max_c": 33.9,
-    "humidity": 43,
+    "temp_min_c": 20.5,
+    "temp_max_c": 33.6,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.1
+    "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-08-08",
     "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 33.8,
-    "humidity": 44,
+    "temp_min_c": 21.3,
+    "temp_max_c": 32.7,
+    "humidity": 43,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.9
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 8.0
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-06T01:57:44+02:00"
+    "fetched_at": "2026-08-06T04:49:20+02:00"
   }
 }
