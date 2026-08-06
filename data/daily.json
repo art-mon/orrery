@@ -1,12 +1,12 @@
 {
   "generated": "2026-08-06",
   "apod": {
-    "title": "Spokes on Saturn's B Ring",
-    "date": "2026-08-05",
-    "explanation": "Don\u2019t get spooked by Saturn\u2019s ghostly spokes! Today we feature a nearly two-hour timelapse of Saturn and its rings looping forwards and backwards. If you look closely, a ghoulish shadow appears and disappears as\u00a0 Saturn\u2019s B ring\u00a0 rotates. Decades of observation with\u00a0 Voyager 2,\u00a0 Cassini, and\u00a0Hubble\u00a0 show the appearance of Saturn\u2019s spokes varies with\u00a0 the planet\u2019s seasons. Like Earth, Saturn\u2019s\u00a0 spin axis\u00a0 is tilted compared to the plane of its orbit around the Sun. During Saturn\u2019s\u00a0 equinox, the rings are\u00a0 less tilted\u00a0 toward the Sun and they receive sunlight at a shallower angle. Saturn\u2019s spokes may be electrically charged dust and ice temporarily levitated above the rings by electromagnetic forces. It is still uncertain, but the ring plasma and charge environment may be influenced by changing ultraviolet illumination, meteoroid impacts, or indirect effects from interactions between the solar wind and the planet\u2019s magnetic field.   Note: The text of this APOD has been revised. Find dark skies and look up this August to witness the Perseid meteor shower uninhibited by the Moon!",
+    "title": "New Sharpest Image of the Sun Uncovers Instability",
+    "date": "2026-08-06",
+    "explanation": "What does the new sharpest image of our Sun show? Instability. To be clear, a certain kind of interactive process called the Kelvin-Helmholtz instability (KHI). This instability can create waves and swirls when two streams flow past each other -- in this case variable streams of solar magnetic plasma. Long hypothesized to occur on the Sun's surface, KHI streaks and swirls were confirmed in just-released dramatic high-resolution images taken recently by the Inouye Solar Telescope in Hawaii, USA.\u00a0 The featured false-yellow image, actually taken in deep blue, is the highest resolution image yet of the Sun in visible light. It spans about the radius of the Earth, but its finest details are city sized.  Visible are several smooth tops of changing solar granules, while the edges of the flower-like structures have been found to harbor multiple KHI swirls.  Future research may investigate how the KHI helps move energy, magnetic fields, and may even heat the surrounding solar corona.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/saturn_spokes.gif",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/saturn_spokes.gif"
+    "url": "https://apod.nasa.gov/apod/image/2608/SunFlowers_NSO_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/SunFlowers_NSO_1901.jpg"
   },
   "events": {
     "events": [
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.7,
-    "humidity": 52,
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 53,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 2.6
+    "icon": "01d",
+    "wind_kmh": 1.1
   },
   "forecast_today": {
     "date": "2026-08-06",
     "city": "Zagreb",
-    "temp_min_c": 24.8,
+    "temp_min_c": 26.5,
     "temp_max_c": 38.2,
-    "humidity": 33,
+    "humidity": 35,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.0,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-08-07",
@@ -291,11 +291,11 @@
     "wind_kmh": 8.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.3,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-08-06T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 128,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-06T04:49:20+02:00"
+    "fetched_at": "2026-08-06T07:46:15+02:00"
   }
 }
