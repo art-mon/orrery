@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Rubin's COSMOS field",
+    "date": "2026-08-07",
+    "explanation": "There are more than half a million galaxies in the central panel of this image from the NSF-DOE Vera C. Rubin Observatory in Chile.   This is the COSMOS field, a patch of sky several times larger than the full moon, first observed by Hubble.   It has also been observed by Webb and other telescopes because it contains comparatively few bright stars from our own galaxy, offering a relatively unimpeded view of other galaxies outside the Milky Way.   The outer panels, numbered 1-10, show zoomed-in views of the corresponding small regions highlighted in the central panel.   The variety of galaxy shapes and sizes is astonishing.   Some of them are so far away that their light has traveled for billions of years before reaching Earth.   Rubin will come back every couple of days to the COSMOS field as part of its ten-year Legacy Survey of Space and Time.   It will allow a dynamic view of the COSMOS field and how the sky changes over time.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/noirlab2618b_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/noirlab2618b.jpg"
   },
   "events": {
     "events": [
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_c": 30.4,
+    "feels_c": 30.8,
+    "humidity": 45,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.2
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.9
   },
   "forecast_today": {
     "date": "2026-08-07",
-    "city": "Donji grad",
-    "temp_min_c": 24.8,
-    "temp_max_c": 33.4,
-    "humidity": 50,
+    "city": "Zagreb",
+    "temp_min_c": 22.7,
+    "temp_max_c": 34.2,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 8.8,
-    "samples": 7
+    "icon": "03d",
+    "wind_kmh": 10.7,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-08",
-    "city": "Donji grad",
-    "temp_min_c": 20.5,
-    "temp_max_c": 31.5,
+    "city": "Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 31.3,
     "humidity": 56,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.6
+    "wind_kmh": 7.3
   },
   "forecast_day_after": {
     "date": "2026-08-09",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.7,
     "temp_max_c": 34.8,
-    "humidity": 36,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 3.3
   },
   "uv": {
-    "uv": 1.0,
+    "uv": 2.7,
     "band": "low",
     "daily_max": 6.8,
     "peak_time": "2026-08-07T14:00",
-    "safe_minutes": 167,
+    "safe_minutes": 62,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-07T07:38:26+02:00"
+    "fetched_at": "2026-08-07T09:10:20+02:00"
   }
 }
