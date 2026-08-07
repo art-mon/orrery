@@ -1,12 +1,7 @@
 {
-  "generated": "2026-08-07",
+  "generated": "2026-08-08",
   "apod": {
-    "title": "Rubin's COSMOS field",
-    "date": "2026-08-07",
-    "explanation": "There are more than half a million galaxies in the central panel of this image from the NSF-DOE Vera C. Rubin Observatory in Chile.   This is the COSMOS field, a patch of sky several times larger than the full moon, first observed by Hubble.   It has also been observed by Webb and other telescopes because it contains comparatively few bright stars from our own galaxy, offering a relatively unimpeded view of other galaxies outside the Milky Way.   The outer panels, numbered 1-10, show zoomed-in views of the corresponding small regions highlighted in the central panel.   The variety of galaxy shapes and sizes is astonishing.   Some of them are so far away that their light has traveled for billions of years before reaching Earth.   Rubin will come back every couple of days to the COSMOS field as part of its ten-year Legacy Survey of Space and Time.   It will allow a dynamic view of the COSMOS field and how the sky changes over time.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/noirlab2618b_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/noirlab2618b.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,40 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.5,
-    "humidity": 70,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 4.2
+    "temp_c": 23.1,
+    "feels_c": 23.4,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 4.5
   },
   "forecast_today": {
-    "date": "2026-08-07",
-    "city": "Zagreb",
-    "temp_min_c": 24.2,
-    "temp_max_c": 24.2,
-    "humidity": 70,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.2,
-    "samples": 1
+    "date": "2026-08-08",
+    "city": "City of Zagreb",
+    "temp_min_c": 22.6,
+    "temp_max_c": 30.2,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 6.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-08-08",
-    "city": "Zagreb",
-    "temp_min_c": 23.7,
-    "temp_max_c": 30.2,
-    "humidity": 50,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 6.7
-  },
-  "forecast_day_after": {
     "date": "2026-08-09",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 22.7,
     "temp_max_c": 34.7,
     "humidity": 39,
@@ -290,111 +274,122 @@
     "icon": "01d",
     "wind_kmh": 3.3
   },
+  "forecast_day_after": {
+    "date": "2026-08-10",
+    "city": "City of Zagreb",
+    "temp_min_c": 21.2,
+    "temp_max_c": 38.1,
+    "humidity": 36,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.6
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.8,
-    "peak_time": "2026-08-07T14:00",
+    "daily_max": 6.4,
+    "peak_time": "2026-08-08T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-08-07T00:00",
+        "time": "2026-08-08T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T01:00",
+        "time": "2026-08-08T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T02:00",
+        "time": "2026-08-08T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T03:00",
+        "time": "2026-08-08T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T04:00",
+        "time": "2026-08-08T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T05:00",
+        "time": "2026-08-08T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T06:00",
+        "time": "2026-08-08T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T07:00",
-        "uv": 0.3
+        "time": "2026-08-08T07:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-08-07T08:00",
+        "time": "2026-08-08T08:00",
         "uv": 1.1
       },
       {
-        "time": "2026-08-07T09:00",
+        "time": "2026-08-08T09:00",
+        "uv": 2.2
+      },
+      {
+        "time": "2026-08-08T10:00",
+        "uv": 3.0
+      },
+      {
+        "time": "2026-08-08T11:00",
+        "uv": 3.1
+      },
+      {
+        "time": "2026-08-08T12:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-08-08T13:00",
+        "uv": 6.4
+      },
+      {
+        "time": "2026-08-08T14:00",
+        "uv": 4.5
+      },
+      {
+        "time": "2026-08-08T15:00",
         "uv": 2.4
       },
       {
-        "time": "2026-08-07T10:00",
-        "uv": 3.6
+        "time": "2026-08-08T16:00",
+        "uv": 4.0
       },
       {
-        "time": "2026-08-07T11:00",
-        "uv": 5.0
-      },
-      {
-        "time": "2026-08-07T12:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-08-07T13:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-08-07T14:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-08-07T15:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-08-07T16:00",
-        "uv": 5.2
-      },
-      {
-        "time": "2026-08-07T17:00",
+        "time": "2026-08-08T17:00",
         "uv": 3.9
       },
       {
-        "time": "2026-08-07T18:00",
-        "uv": 2.5
+        "time": "2026-08-08T18:00",
+        "uv": 2.4
       },
       {
-        "time": "2026-08-07T19:00",
-        "uv": 1.2
+        "time": "2026-08-08T19:00",
+        "uv": 1.1
       },
       {
-        "time": "2026-08-07T20:00",
+        "time": "2026-08-08T20:00",
         "uv": 0.3
       },
       {
-        "time": "2026-08-07T21:00",
+        "time": "2026-08-08T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T22:00",
+        "time": "2026-08-08T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-07T23:00",
+        "time": "2026-08-08T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-07T23:35:43+02:00"
+    "fetched_at": "2026-08-08T00:31:25+02:00"
   }
 }
