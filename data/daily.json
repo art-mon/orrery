@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-06",
+  "generated": "2026-08-07",
   "apod": {
     "title": "New Sharpest Image of the Sun Uncovers Instability",
     "date": "2026-08-06",
@@ -10,6 +10,36 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tip9",
+        "title": "M5.3 Earthquake - 7 km SSW of Huayucachi, Peru",
+        "category": "Earthquake",
+        "date": "2026-08-06T18:57:21.831000Z",
+        "coordinates": [
+          -75.2574,
+          -12.1948
+        ]
+      },
+      {
+        "id": "us6000timf",
+        "title": "M5.4 Earthquake - 145 km E of Yamada, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-06T17:43:36.862000Z",
+        "coordinates": [
+          143.6408,
+          39.5829
+        ]
+      },
+      {
+        "id": "us6000tik6",
+        "title": "M5.1 Earthquake - 110 km W of Buala, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-08-06T13:42:11.429000Z",
+        "coordinates": [
+          158.5995,
+          -8.0025
+        ]
+      },
       {
         "id": "us6000tif5",
         "title": "M5.6 Earthquake - 40 km SW of Sarangani, Philippines",
@@ -129,65 +159,11 @@
           -75.7603,
           -8.5724
         ]
-      },
-      {
-        "id": "us6000thpb",
-        "title": "M5.0 Earthquake - 36 km NNE of Suez, Egypt",
-        "category": "Earthquake",
-        "date": "2026-08-03T00:00:33.082000Z",
-        "coordinates": [
-          32.6273,
-          30.2922
-        ]
-      },
-      {
-        "id": "us6000thmd",
-        "title": "M5.0 Earthquake - south of Tonga",
-        "category": "Earthquake",
-        "date": "2026-08-02T15:35:30.843000Z",
-        "coordinates": [
-          -175.1322,
-          -25.0444
-        ]
-      },
-      {
-        "id": "us6000thm1",
-        "title": "M5.1 Earthquake - 60 km W of Bah\u00eda de Lobos, Mexico",
-        "category": "Earthquake",
-        "date": "2026-08-02T13:10:47.947000Z",
-        "coordinates": [
-          -111.0607,
-          27.3736
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2016 NR)",
-        "hazardous": false,
-        "diameter_m": 103,
-        "close_approach_date": "2026-08-06",
-        "miss_distance_km": 30035053,
-        "velocity_kmh": 25610
-      },
-      {
-        "name": "(2020 CH2)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-08-06",
-        "miss_distance_km": 41701346,
-        "velocity_kmh": 38907
-      },
-      {
-        "name": "136770 (1996 PC1)",
-        "hazardous": false,
-        "diameter_m": 459,
-        "close_approach_date": "2026-08-06",
-        "miss_distance_km": 61668128,
-        "velocity_kmh": 83074
-      },
       {
         "name": "(2018 DY3)",
         "hazardous": false,
@@ -243,158 +219,182 @@
         "close_approach_date": "2026-08-08",
         "miss_distance_km": 24144414,
         "velocity_kmh": 8449
+      },
+      {
+        "name": "(2007 QA2)",
+        "hazardous": false,
+        "diameter_m": 437,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 35223838,
+        "velocity_kmh": 13651
+      },
+      {
+        "name": "(2019 AV13)",
+        "hazardous": false,
+        "diameter_m": 211,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 38554460,
+        "velocity_kmh": 53604
+      },
+      {
+        "name": "(2016 GC134)",
+        "hazardous": false,
+        "diameter_m": 34,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 53176069,
+        "velocity_kmh": 49522
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 39.2,
-    "feels_c": 38.9,
-    "humidity": 22,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.7
+    "city": "City of Zagreb",
+    "temp_c": 25.9,
+    "feels_c": 25.9,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 4.6
   },
   "forecast_today": {
-    "date": "2026-08-06",
-    "city": "Zagreb",
-    "temp_min_c": 32.2,
-    "temp_max_c": 39.2,
-    "humidity": 23,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 6.7,
-    "samples": 4
-  },
-  "forecast": {
     "date": "2026-08-07",
     "city": "Zagreb",
-    "temp_min_c": 22.5,
-    "temp_max_c": 34.5,
-    "humidity": 43,
+    "temp_min_c": 24.2,
+    "temp_max_c": 34.8,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 8.8,
+    "samples": 8
+  },
+  "forecast": {
+    "date": "2026-08-08",
+    "city": "Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 30.8,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.9
+    "wind_kmh": 6.6
   },
   "forecast_day_after": {
-    "date": "2026-08-08",
+    "date": "2026-08-09",
     "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 30.9,
-    "humidity": 50,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 8.5
+    "temp_min_c": 18.9,
+    "temp_max_c": 34.6,
+    "humidity": 39,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.2
   },
   "uv": {
-    "uv": 4.8,
-    "band": "moderate",
-    "daily_max": 6.8,
-    "peak_time": "2026-08-06T13:00",
-    "safe_minutes": 35,
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 6.2,
+    "peak_time": "2026-08-07T15:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-08-06T00:00",
+        "time": "2026-08-07T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T01:00",
+        "time": "2026-08-07T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T02:00",
+        "time": "2026-08-07T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T03:00",
+        "time": "2026-08-07T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T04:00",
+        "time": "2026-08-07T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T05:00",
+        "time": "2026-08-07T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T06:00",
+        "time": "2026-08-07T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T07:00",
+        "time": "2026-08-07T07:00",
         "uv": 0.3
       },
       {
-        "time": "2026-08-06T08:00",
-        "uv": 1.1
+        "time": "2026-08-07T08:00",
+        "uv": 1.0
       },
       {
-        "time": "2026-08-06T09:00",
-        "uv": 2.4
+        "time": "2026-08-07T09:00",
+        "uv": 2.0
       },
       {
-        "time": "2026-08-06T10:00",
-        "uv": 3.8
+        "time": "2026-08-07T10:00",
+        "uv": 3.2
       },
       {
-        "time": "2026-08-06T11:00",
-        "uv": 5.2
+        "time": "2026-08-07T11:00",
+        "uv": 4.7
       },
       {
-        "time": "2026-08-06T12:00",
+        "time": "2026-08-07T12:00",
+        "uv": 5.7
+      },
+      {
+        "time": "2026-08-07T13:00",
+        "uv": 5.3
+      },
+      {
+        "time": "2026-08-07T14:00",
+        "uv": 5.1
+      },
+      {
+        "time": "2026-08-07T15:00",
         "uv": 6.2
       },
       {
-        "time": "2026-08-06T13:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-08-06T14:00",
-        "uv": 6.8
-      },
-      {
-        "time": "2026-08-06T15:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-08-06T16:00",
+        "time": "2026-08-07T16:00",
         "uv": 5.2
       },
       {
-        "time": "2026-08-06T17:00",
+        "time": "2026-08-07T17:00",
         "uv": 3.9
       },
       {
-        "time": "2026-08-06T18:00",
+        "time": "2026-08-07T18:00",
         "uv": 2.5
       },
       {
-        "time": "2026-08-06T19:00",
+        "time": "2026-08-07T19:00",
         "uv": 1.2
       },
       {
-        "time": "2026-08-06T20:00",
+        "time": "2026-08-07T20:00",
         "uv": 0.3
       },
       {
-        "time": "2026-08-06T21:00",
+        "time": "2026-08-07T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T22:00",
+        "time": "2026-08-07T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-06T23:00",
+        "time": "2026-08-07T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-06T16:00:18+02:00"
+    "fetched_at": "2026-08-07T02:39:26+02:00"
   }
 }
