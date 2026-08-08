@@ -1,10 +1,35 @@
 {
   "generated": "2026-08-08",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "A Messier Moment for Tempel 2",
+    "date": "2026-08-08",
+    "explanation": "Which of these is not a comet? You guessed it - the one on the right is a globular star cluster. The diffuse greenish coma of periodic comet 10P/Tempel 2 is at left in the frame. In fact the globular star cluster is Messier 30, also known as M30, or the 30th entry in astronomer Charles Messier's catalog of things which are not comets. The well-known 18th century astronomer kept a list of objects he observed, now his famous Messier Catalogue of Nebulae and Star Clusters, which did not move from night to night against the background stars and so were not the comets he was hunting for. So the famous comet hunter would get the correct answer too, even though his telescope would show both 10P/Tempel 2 and distant star cluster as similar looking faint and fuzzy objects in his field of view. Recorded on July 29, this modern telescopic image captures periodic comet Tempel 2 as it briefly swept close on the sky to M30. While the periodic comet's faint, narrow, orbital dust trail seems to pierce the globular star cluster, Tempel 2 was a mere 3.5 light-minutes away. Messier 30 is some 28,000 light-years distant.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett600c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "aka2026powmkf",
+        "title": "M5.5 Earthquake - 59 km WNW of Skwentna, Alaska",
+        "category": "Earthquake",
+        "date": "2026-08-08T04:50:33.282000Z",
+        "coordinates": [
+          -152.375,
+          62.268
+        ]
+      },
+      {
+        "id": "us6000tj69",
+        "title": "M5.0 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-08-08T03:59:31.810000Z",
+        "coordinates": [
+          -176.5487,
+          -28.4766
+        ]
+      },
       {
         "id": "us6000tixr",
         "title": "M5.0 Earthquake - 49 km SE of Severo-Kuril\u2019sk, Russia",
@@ -134,26 +159,6 @@
           125.412,
           5.1275
         ]
-      },
-      {
-        "id": "us6000ti6z",
-        "title": "M5.1 Earthquake - 238 km SSW of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-08-05T04:19:21.769000Z",
-        "coordinates": [
-          -82.4726,
-          5.8882
-        ]
-      },
-      {
-        "id": "us6000ti6x",
-        "title": "M6.3 Earthquake - 32 km SW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-05T04:14:06.625000Z",
-        "coordinates": [
-          125.276,
-          5.1812
-        ]
       }
     ]
   },
@@ -242,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_c": 23.7,
     "feels_c": 23.9,
-    "humidity": 67,
+    "humidity": 69,
     "condition": "Rain",
-    "description": "light rain",
-    "icon": "10n",
-    "wind_kmh": 4.4
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 4.1
   },
   "forecast_today": {
     "date": "2026-08-08",
     "city": "Zagreb",
     "temp_min_c": 23.7,
     "temp_max_c": 30.8,
-    "humidity": 48,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10n",
-    "wind_kmh": 9.0,
+    "icon": "10d",
+    "wind_kmh": 8.9,
     "samples": 7
   },
   "forecast": {
@@ -286,11 +291,11 @@
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-08-08T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 476,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-08T05:22:30+02:00"
+    "fetched_at": "2026-08-08T06:53:23+02:00"
   }
 }
