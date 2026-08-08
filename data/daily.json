@@ -1,7 +1,7 @@
 {
-  "generated": "2026-08-08",
+  "generated": "2026-08-09",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -242,39 +242,28 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.6,
-    "humidity": 50,
+    "city": "City of Zagreb",
+    "temp_c": 24.4,
+    "feels_c": 24.2,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.1
+    "wind_kmh": 5.8
   },
   "forecast_today": {
-    "date": "2026-08-08",
+    "date": "2026-08-09",
     "city": "Zagreb",
-    "temp_min_c": 24.8,
-    "temp_max_c": 24.8,
-    "humidity": 50,
+    "temp_min_c": 22.4,
+    "temp_max_c": 34.9,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.1,
-    "samples": 1
+    "wind_kmh": 3.6,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-08-09",
-    "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 34.9,
-    "humidity": 37,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.3
-  },
-  "forecast_day_after": {
     "date": "2026-08-10",
     "city": "Zagreb",
     "temp_min_c": 23.4,
@@ -285,111 +274,122 @@
     "icon": "01d",
     "wind_kmh": 3.9
   },
+  "forecast_day_after": {
+    "date": "2026-08-11",
+    "city": "Zagreb",
+    "temp_min_c": 21.5,
+    "temp_max_c": 37.3,
+    "humidity": 41,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.1
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.7,
-    "peak_time": "2026-08-08T13:00",
+    "peak_time": "2026-08-09T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-08-08T00:00",
+        "time": "2026-08-09T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T01:00",
+        "time": "2026-08-09T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T02:00",
+        "time": "2026-08-09T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T03:00",
+        "time": "2026-08-09T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T04:00",
+        "time": "2026-08-09T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T05:00",
+        "time": "2026-08-09T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T06:00",
+        "time": "2026-08-09T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T07:00",
+        "time": "2026-08-09T07:00",
         "uv": 0.2
       },
       {
-        "time": "2026-08-08T08:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-08-08T09:00",
-        "uv": 1.5
-      },
-      {
-        "time": "2026-08-08T10:00",
-        "uv": 2.8
-      },
-      {
-        "time": "2026-08-08T11:00",
-        "uv": 5.0
-      },
-      {
-        "time": "2026-08-08T12:00",
-        "uv": 6.1
-      },
-      {
-        "time": "2026-08-08T13:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-08-08T14:00",
-        "uv": 6.7
-      },
-      {
-        "time": "2026-08-08T15:00",
-        "uv": 6.2
-      },
-      {
-        "time": "2026-08-08T16:00",
-        "uv": 5.2
-      },
-      {
-        "time": "2026-08-08T17:00",
-        "uv": 3.8
-      },
-      {
-        "time": "2026-08-08T18:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-08-08T19:00",
+        "time": "2026-08-09T08:00",
         "uv": 1.1
       },
       {
-        "time": "2026-08-08T20:00",
+        "time": "2026-08-09T09:00",
+        "uv": 2.4
+      },
+      {
+        "time": "2026-08-09T10:00",
+        "uv": 3.8
+      },
+      {
+        "time": "2026-08-09T11:00",
+        "uv": 5.1
+      },
+      {
+        "time": "2026-08-09T12:00",
+        "uv": 6.1
+      },
+      {
+        "time": "2026-08-09T13:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-08-09T14:00",
+        "uv": 6.7
+      },
+      {
+        "time": "2026-08-09T15:00",
+        "uv": 6.2
+      },
+      {
+        "time": "2026-08-09T16:00",
+        "uv": 5.2
+      },
+      {
+        "time": "2026-08-09T17:00",
+        "uv": 3.9
+      },
+      {
+        "time": "2026-08-09T18:00",
+        "uv": 2.4
+      },
+      {
+        "time": "2026-08-09T19:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-08-09T20:00",
         "uv": 0.3
       },
       {
-        "time": "2026-08-08T21:00",
+        "time": "2026-08-09T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T22:00",
+        "time": "2026-08-09T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-08T23:00",
+        "time": "2026-08-09T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-08T23:27:05+02:00"
+    "fetched_at": "2026-08-09T00:25:05+02:00"
   }
 }
