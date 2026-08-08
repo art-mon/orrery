@@ -1,12 +1,7 @@
 {
   "generated": "2026-08-08",
   "apod": {
-    "title": "A Messier Moment for Tempel 2",
-    "date": "2026-08-08",
-    "explanation": "Which of these is not a comet? You guessed it - the one on the right is a globular star cluster. The diffuse greenish coma of periodic comet 10P/Tempel 2 is at left in the frame. In fact the globular star cluster is Messier 30, also known as M30, or the 30th entry in astronomer Charles Messier's catalog of things which are not comets. The well-known 18th century astronomer kept a list of objects he observed, now his famous Messier Catalogue of Nebulae and Star Clusters, which did not move from night to night against the background stars and so were not the comets he was hunting for. So the famous comet hunter would get the correct answer too, even though his telescope would show both 10P/Tempel 2 and distant star cluster as similar looking faint and fuzzy objects in his field of view. Recorded on July 29, this modern telescopic image captures periodic comet Tempel 2 as it briefly swept close on the sky to M30. While the periodic comet's faint, narrow, orbital dust trail seems to pierce the globular star cluster, Tempel 2 was a mere 3.5 light-minutes away. Messier 30 is some 28,000 light-years distant.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett600c.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -247,31 +242,31 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 23.1,
-    "feels_c": 22.9,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_c": 24.8,
+    "feels_c": 24.6,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 2.9
+    "wind_kmh": 3.1
   },
   "forecast_today": {
     "date": "2026-08-08",
-    "city": "City of Zagreb",
-    "temp_min_c": 23.1,
-    "temp_max_c": 23.3,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_min_c": 24.8,
+    "temp_max_c": 24.8,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.0,
-    "samples": 2
+    "wind_kmh": 3.1,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-08-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 22.2,
+    "city": "Zagreb",
+    "temp_min_c": 22.7,
     "temp_max_c": 34.9,
     "humidity": 37,
     "condition": "Clear",
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-10",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 23.4,
     "temp_max_c": 37.5,
     "humidity": 35,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-08T22:25:44+02:00"
+    "fetched_at": "2026-08-08T23:27:05+02:00"
   }
 }
