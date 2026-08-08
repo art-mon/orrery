@@ -1,7 +1,7 @@
 {
   "generated": "2026-08-08",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -160,46 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2018 DY3)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-08-07",
-        "miss_distance_km": 21617916,
-        "velocity_kmh": 44419
-      },
-      {
-        "name": "(2016 DE1)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-08-07",
-        "miss_distance_km": 38224404,
-        "velocity_kmh": 97526
-      },
-      {
-        "name": "(2017 GT6)",
-        "hazardous": false,
-        "diameter_m": 164,
-        "close_approach_date": "2026-08-07",
-        "miss_distance_km": 41760074,
-        "velocity_kmh": 58681
-      },
-      {
-        "name": "(2015 BQ512)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-08-07",
-        "miss_distance_km": 48658459,
-        "velocity_kmh": 66601
-      },
-      {
-        "name": "(2013 US3)",
-        "hazardous": true,
-        "diameter_m": 324,
-        "close_approach_date": "2026-08-07",
-        "miss_distance_km": 65599203,
-        "velocity_kmh": 21547
-      },
-      {
         "name": "(2014 CH13)",
         "hazardous": false,
         "diameter_m": 69,
@@ -238,41 +198,81 @@
         "close_approach_date": "2026-08-08",
         "miss_distance_km": 53176069,
         "velocity_kmh": 49522
+      },
+      {
+        "name": "(2009 DM45)",
+        "hazardous": true,
+        "diameter_m": 305,
+        "close_approach_date": "2026-08-08",
+        "miss_distance_km": 73998365,
+        "velocity_kmh": 103413
+      },
+      {
+        "name": "173561 (2000 YV137)",
+        "hazardous": true,
+        "diameter_m": 1265,
+        "close_approach_date": "2026-08-09",
+        "miss_distance_km": 5020904,
+        "velocity_kmh": 58299
+      },
+      {
+        "name": "(2012 PH6)",
+        "hazardous": false,
+        "diameter_m": 358,
+        "close_approach_date": "2026-08-09",
+        "miss_distance_km": 49707076,
+        "velocity_kmh": 57436
+      },
+      {
+        "name": "(2005 FC)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-08-09",
+        "miss_distance_km": 54950846,
+        "velocity_kmh": 46496
+      },
+      {
+        "name": "(2012 AC11)",
+        "hazardous": false,
+        "diameter_m": 243,
+        "close_approach_date": "2026-08-09",
+        "miss_distance_km": 64140356,
+        "velocity_kmh": 38832
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.1,
-    "feels_c": 22.4,
-    "humidity": 78,
+    "temp_c": 21.6,
+    "feels_c": 22.0,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 4.0
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 4.4
   },
   "forecast_today": {
     "date": "2026-08-08",
     "city": "Zagreb",
-    "temp_min_c": 22.1,
-    "temp_max_c": 30.2,
-    "humidity": 55,
+    "temp_min_c": 21.6,
+    "temp_max_c": 30.8,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 6.4,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 8.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-09",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 34.7,
-    "humidity": 39,
+    "temp_min_c": 22.8,
+    "temp_max_c": 35.1,
+    "humidity": 38,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.3
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-08-10",
@@ -288,7 +288,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.4,
+    "daily_max": 6.7,
     "peak_time": "2026-08-08T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -323,7 +323,7 @@
       },
       {
         "time": "2026-08-08T07:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-08-08T08:00",
@@ -335,31 +335,31 @@
       },
       {
         "time": "2026-08-08T10:00",
-        "uv": 3.0
+        "uv": 3.4
       },
       {
         "time": "2026-08-08T11:00",
-        "uv": 3.1
+        "uv": 4.8
       },
       {
         "time": "2026-08-08T12:00",
-        "uv": 4.3
+        "uv": 6.0
       },
       {
         "time": "2026-08-08T13:00",
-        "uv": 6.4
+        "uv": 6.7
       },
       {
         "time": "2026-08-08T14:00",
-        "uv": 4.5
+        "uv": 6.7
       },
       {
         "time": "2026-08-08T15:00",
-        "uv": 2.4
+        "uv": 6.0
       },
       {
         "time": "2026-08-08T16:00",
-        "uv": 4.0
+        "uv": 5.2
       },
       {
         "time": "2026-08-08T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-08T01:30:54+02:00"
+    "fetched_at": "2026-08-08T03:19:41+02:00"
   }
 }
