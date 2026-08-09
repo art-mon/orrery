@@ -1,7 +1,7 @@
 {
   "generated": "2026-08-09",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -243,9 +243,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.0,
-    "feels_c": 26.0,
-    "humidity": 49,
+    "temp_c": 24.5,
+    "feels_c": 24.7,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -253,10 +253,10 @@
   },
   "forecast_today": {
     "date": "2026-08-09",
-    "city": "Donji grad",
-    "temp_min_c": 25.9,
-    "temp_max_c": 26.0,
-    "humidity": 48,
+    "city": "Zagreb",
+    "temp_min_c": 24.5,
+    "temp_max_c": 24.9,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
@@ -265,10 +265,10 @@
   },
   "forecast": {
     "date": "2026-08-10",
-    "city": "Donji grad",
-    "temp_min_c": 23.2,
+    "city": "Zagreb",
+    "temp_min_c": 22.9,
     "temp_max_c": 37.3,
-    "humidity": 36,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 23.5,
     "temp_max_c": 37.9,
     "humidity": 40,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-09T21:30:32+02:00"
+    "fetched_at": "2026-08-09T22:27:58+02:00"
   }
 }
