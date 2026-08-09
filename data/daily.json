@@ -1,12 +1,7 @@
 {
   "generated": "2026-08-09",
   "apod": {
-    "title": "Contemplating the Sun",
-    "date": "2026-08-09",
-    "explanation": "Have you contemplated your home star recently?  Featured here, a Sun partially eclipsed on the top left by the Moon is also seen eclipsed by earthlings contemplating the eclipse below.  This spectacular menagerie of silhouettes was taken in 2012 from the Glen Canyon National Recreation Area near Page, Arizona, USA, where park rangers and astronomers expounded on the unusual event to interested gatherers.  Also, faintly visible on the Sun's disk, just to the lower right of the dark Moon's disk, is a group of sunspots.  A new solar eclipse will occur this week and give many people in northern North America, Europe, and northwestern Africa a new chance to contemplate a partially eclipsed Sun. A thin swath of Earth from Greenland to Portugal will further experience a total solar eclipse. An open question is whether any meteors from the peaking Perseids will be visible during totality.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/sunsilhouettes_gilbert_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/sunsilhouettes_gilbert_1024.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,9 +243,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 29.6,
-    "humidity": 35,
+    "temp_c": 30.5,
+    "feels_c": 29.9,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -258,19 +253,19 @@
   },
   "forecast_today": {
     "date": "2026-08-09",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 27.4,
     "temp_max_c": 33.6,
-    "humidity": 33,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.4,
-    "samples": 6
+    "wind_kmh": 3.1,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-10",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 23.4,
     "temp_max_c": 37.7,
     "humidity": 36,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-11",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 21.2,
     "temp_max_c": 37.5,
     "humidity": 42,
@@ -291,11 +286,11 @@
     "wind_kmh": 7.3
   },
   "uv": {
-    "uv": 5.0,
-    "band": "moderate",
+    "uv": 6.0,
+    "band": "high",
     "daily_max": 6.7,
     "peak_time": "2026-08-09T13:00",
-    "safe_minutes": 34,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-09T10:38:34+02:00"
+    "fetched_at": "2026-08-09T11:35:47+02:00"
   }
 }
