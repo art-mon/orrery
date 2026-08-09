@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tjen",
+        "title": "M5.2 Earthquake - Galapagos Triple Junction region",
+        "category": "Earthquake",
+        "date": "2026-08-09T11:57:33.237000Z",
+        "coordinates": [
+          -101.9125,
+          2.2955
+        ]
+      },
+      {
         "id": "us6000tjcl",
         "title": "M5.0 Earthquake - 180 km NW of Sabang, Indonesia",
         "category": "Earthquake",
@@ -58,6 +68,16 @@
         "coordinates": [
           -176.5487,
           -28.4766
+        ]
+      },
+      {
+        "id": "us6000tjel",
+        "title": "M5.1 Earthquake - central East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-08-07T23:19:07.914000Z",
+        "coordinates": [
+          -112.2713,
+          -13.7382
         ]
       },
       {
@@ -138,26 +158,6 @@
         "coordinates": [
           143.8444,
           -6.5225
-        ]
-      },
-      {
-        "id": "us6000tics",
-        "title": "M5.3 Earthquake - 62 km W of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-05T16:50:18.349000Z",
-        "coordinates": [
-          127.454,
-          1.7901
-        ]
-      },
-      {
-        "id": "us6000ti9w",
-        "title": "M5.0 Earthquake - 60 km NNE of Shi Yomi, India",
-        "category": "Earthquake",
-        "date": "2026-08-05T10:06:09.955000Z",
-        "coordinates": [
-          94.681,
-          29.0027
         ]
       }
     ]
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 33.1,
-    "feels_c": 32.5,
-    "humidity": 32,
+    "city": "Zagreb",
+    "temp_c": 34.2,
+    "feels_c": 33.6,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.8
+    "wind_kmh": 3.0
   },
   "forecast_today": {
     "date": "2026-08-09",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 27.4,
-    "temp_max_c": 33.6,
-    "humidity": 33,
+    "temp_max_c": 34.4,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.1,
-    "samples": 5
+    "wind_kmh": 2.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-10",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 23.4,
     "temp_max_c": 37.7,
     "humidity": 36,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-11",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.2,
     "temp_max_c": 37.5,
     "humidity": 42,
@@ -291,11 +291,11 @@
     "wind_kmh": 7.3
   },
   "uv": {
-    "uv": 6.8,
+    "uv": 6.2,
     "band": "high",
     "daily_max": 6.7,
     "peak_time": "2026-08-09T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-09T13:25:46+02:00"
+    "fetched_at": "2026-08-09T14:43:01+02:00"
   }
 }
