@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-10",
   "apod": {
-    "title": "Contemplating the Sun",
-    "date": "2026-08-09",
-    "explanation": "Have you contemplated your home star recently?  Featured here, a Sun partially eclipsed on the top left by the Moon is also seen eclipsed by earthlings contemplating the eclipse below.  This spectacular menagerie of silhouettes was taken in 2012 from the Glen Canyon National Recreation Area near Page, Arizona, USA, where park rangers and astronomers expounded on the unusual event to interested gatherers.  Also, faintly visible on the Sun's disk, just to the lower right of the dark Moon's disk, is a group of sunspots.  A new solar eclipse will occur this week and give many people in northern North America, Europe, and northwestern Africa a new chance to contemplate a partially eclipsed Sun. A thin swath of Earth from Greenland to Portugal will further experience a total solar eclipse. An open question is whether any meteors from the peaking Perseids will be visible during totality.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/sunsilhouettes_gilbert_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/sunsilhouettes_gilbert_1024.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tji3",
+        "title": "M5.0 Earthquake - 198 km SE of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-08-09T22:17:27.944000Z",
+        "coordinates": [
+          126.7399,
+          4.1457
+        ]
+      },
       {
         "id": "us6000tjfj",
         "title": "M5.3 Earthquake - 197 km SSW of Pagar Alam, Indonesia",
@@ -149,16 +154,6 @@
           158.5995,
           -8.0025
         ]
-      },
-      {
-        "id": "us6000tif5",
-        "title": "M5.6 Earthquake - 40 km SW of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-05T21:41:27.717000Z",
-        "coordinates": [
-          125.227,
-          5.1283
-        ]
       }
     ]
   },
@@ -248,13 +243,13 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.1,
-    "feels_c": 23.1,
+    "temp_c": 22.5,
+    "feels_c": 22.3,
     "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.3
+    "wind_kmh": 2.5
   },
   "forecast_today": {
     "date": "2026-08-10",
@@ -265,7 +260,7 @@
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.3,
+    "wind_kmh": 3.2,
     "samples": 9
   },
   "forecast": {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-10T00:27:06+02:00"
+    "fetched_at": "2026-08-10T01:28:07+02:00"
   }
 }
