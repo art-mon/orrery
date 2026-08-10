@@ -1,23 +1,28 @@
 {
   "generated": "2026-08-10",
   "apod": {
-    "title": "Three Galaxy Pairs",
-    "date": "2026-08-10",
-    "explanation": "ch of these pairs of galaxies is different.  The two galaxies at the top are likely not interacting, at least presently.  However, the top galaxy with the blue stripe, NGC 4650A, is a polar ring galaxy and may be the result of a past galaxy collision. The two galaxies in the middle of the featured image appear like they could be interacting gravitationally -- but their relative speeds make this unlikely.  Of these two, the larger galaxy, NGC 4650, is a spiral galaxy with a bright bar of stars across its center.  The two galaxies at the bottom are actively interacting.  Possibly in a billion years or so, NGC 4622A and NGC 4622B will merge and become one single galaxy. All of these galaxies are likely members of the larger Centaurus Galaxy Cluster.    Explore the Universe: Random APOD Generator",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_2784.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
       {
-        "id": "us6000tjl2",
-        "title": "M7.4 Earthquake - 5 km E of San Jos\u00e9 del Palmar, Colombia",
+        "id": "us6000tjm4",
+        "title": "M5.0 Earthquake - 16 km W of San Jos\u00e9 del Palmar, Colombia",
         "category": "Earthquake",
-        "date": "2026-08-10T12:34:27.787000Z",
+        "date": "2026-08-10T13:18:10.451000Z",
         "coordinates": [
-          -76.1885,
-          4.9031
+          -76.3859,
+          4.8971
+        ]
+      },
+      {
+        "id": "us6000tjl2",
+        "title": "M7.4 Earthquake - 5 km S of San Jos\u00e9 del Palmar, Colombia",
+        "category": "Earthquake",
+        "date": "2026-08-10T12:34:28.125000Z",
+        "coordinates": [
+          -76.2422,
+          4.8436
         ]
       },
       {
@@ -149,16 +154,6 @@
           104.7523,
           28.505
         ]
-      },
-      {
-        "id": "us6000tivb",
-        "title": "M5.0 Earthquake - 7 km NW of Cabacao, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-07T02:38:10.013000Z",
-        "coordinates": [
-          120.6108,
-          13.3855
-        ]
       }
     ]
   },
@@ -249,53 +244,53 @@
   "weather": {
     "city": "Zagreb",
     "temp_c": 37.2,
-    "feels_c": 37.4,
-    "humidity": 28,
+    "feels_c": 37.7,
+    "humidity": 29,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.0
+    "wind_kmh": 3.6
   },
   "forecast_today": {
     "date": "2026-08-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 27.0,
+    "city": "Zagreb",
+    "temp_min_c": 30.3,
     "temp_max_c": 37.2,
-    "humidity": 33,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.0,
+    "wind_kmh": 3.7,
     "samples": 4
   },
   "forecast": {
     "date": "2026-08-11",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 24.3,
     "temp_max_c": 36.8,
     "humidity": 47,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-08-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.8,
-    "temp_max_c": 32.4,
-    "humidity": 45,
+    "temp_max_c": 32.7,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.1
+    "wind_kmh": 7.9
   },
   "uv": {
-    "uv": 5.8,
+    "uv": 3.6,
     "band": "moderate",
     "daily_max": 6.7,
     "peak_time": "2026-08-10T13:00",
-    "safe_minutes": 29,
+    "safe_minutes": 46,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-10T15:00:42+02:00"
+    "fetched_at": "2026-08-10T16:54:48+02:00"
   }
 }
