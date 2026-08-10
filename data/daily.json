@@ -1,7 +1,12 @@
 {
-  "generated": "2026-08-10",
+  "generated": "2026-08-11",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Three Galaxy Pairs",
+    "date": "2026-08-10",
+    "explanation": "ch of these pairs of galaxies is different.  The two galaxies at the top are likely not interacting, at least presently.  However, the top galaxy with the blue stripe, NGC 4650A, is a polar ring galaxy and may be the result of a past galaxy collision. The two galaxies in the middle of the featured image appear like they could be interacting gravitationally -- but their relative speeds make this unlikely.  Of these two, the larger galaxy, NGC 4650, is a spiral galaxy with a bright bar of stars across its center.  The two galaxies at the bottom are actively interacting.  Possibly in a billion years or so, NGC 4622A and NGC 4622B will merge and become one single galaxy. All of these galaxies are likely members of the larger Centaurus Galaxy Cluster.    Explore the Universe: Random APOD Generator",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_2784.jpg"
   },
   "events": {
     "events": [
@@ -243,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.0,
-    "feels_c": 25.0,
-    "humidity": 58,
+    "temp_c": 24.5,
+    "feels_c": 24.6,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 5.5
+    "wind_kmh": 4.6
   },
   "forecast_today": {
-    "date": "2026-08-10",
-    "city": "Zagreb",
-    "temp_min_c": 25.0,
-    "temp_max_c": 25.0,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-08-11",
     "city": "Zagreb",
     "temp_min_c": 22.4,
     "temp_max_c": 36.2,
-    "humidity": 50,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 8.0
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 7.6,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-08-12",
     "city": "Zagreb",
     "temp_min_c": 20.7,
@@ -285,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 7.8
   },
+  "forecast_day_after": {
+    "date": "2026-08-13",
+    "city": "Zagreb",
+    "temp_min_c": 18.5,
+    "temp_max_c": 31.7,
+    "humidity": 30,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.6
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.7,
-    "peak_time": "2026-08-10T13:00",
+    "daily_max": 6.6,
+    "peak_time": "2026-08-11T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-08-10T00:00",
+        "time": "2026-08-11T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T01:00",
+        "time": "2026-08-11T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T02:00",
+        "time": "2026-08-11T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T03:00",
+        "time": "2026-08-11T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T04:00",
+        "time": "2026-08-11T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T05:00",
+        "time": "2026-08-11T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T06:00",
+        "time": "2026-08-11T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T07:00",
+        "time": "2026-08-11T07:00",
         "uv": 0.2
       },
       {
-        "time": "2026-08-10T08:00",
+        "time": "2026-08-11T08:00",
         "uv": 1.1
       },
       {
-        "time": "2026-08-10T09:00",
+        "time": "2026-08-11T09:00",
         "uv": 2.3
       },
       {
-        "time": "2026-08-10T10:00",
-        "uv": 3.8
+        "time": "2026-08-11T10:00",
+        "uv": 3.7
       },
       {
-        "time": "2026-08-10T11:00",
+        "time": "2026-08-11T11:00",
         "uv": 5.0
       },
       {
-        "time": "2026-08-10T12:00",
-        "uv": 6.1
+        "time": "2026-08-11T12:00",
+        "uv": 6.0
       },
       {
-        "time": "2026-08-10T13:00",
-        "uv": 6.7
+        "time": "2026-08-11T13:00",
+        "uv": 6.5
       },
       {
-        "time": "2026-08-10T14:00",
-        "uv": 6.7
+        "time": "2026-08-11T14:00",
+        "uv": 6.6
       },
       {
-        "time": "2026-08-10T15:00",
-        "uv": 6.1
+        "time": "2026-08-11T15:00",
+        "uv": 6.0
       },
       {
-        "time": "2026-08-10T16:00",
-        "uv": 5.1
+        "time": "2026-08-11T16:00",
+        "uv": 5.0
       },
       {
-        "time": "2026-08-10T17:00",
-        "uv": 3.8
+        "time": "2026-08-11T17:00",
+        "uv": 3.7
       },
       {
-        "time": "2026-08-10T18:00",
-        "uv": 2.4
+        "time": "2026-08-11T18:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-08-10T19:00",
-        "uv": 1.1
+        "time": "2026-08-11T19:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-08-10T20:00",
-        "uv": 0.3
+        "time": "2026-08-11T20:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-08-10T21:00",
+        "time": "2026-08-11T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T22:00",
+        "time": "2026-08-11T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-10T23:00",
+        "time": "2026-08-11T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-10T23:38:28+02:00"
+    "fetched_at": "2026-08-11T00:33:57+02:00"
   }
 }
