@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-10",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Three Galaxy Pairs",
+    "date": "2026-08-10",
+    "explanation": "ch of these pairs of galaxies is different.  The two galaxies at the top are likely not interacting, at least presently.  However, the top galaxy with the blue stripe, NGC 4650A, is a polar ring galaxy and may be the result of a past galaxy collision. The two galaxies in the middle of the featured image appear like they could be interacting gravitationally -- but their relative speeds make this unlikely.  Of these two, the larger galaxy, NGC 4650, is a spiral galaxy with a bright bar of stars across its center.  The two galaxies at the bottom are actively interacting.  Possibly in a billion years or so, NGC 4622A and NGC 4622B will merge and become one single galaxy. All of these galaxies are likely members of the larger Centaurus Galaxy Cluster.    Explore the Universe: Random APOD Generator",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/Three3GalaxyPairs_Sampaio_2784.jpg"
   },
   "events": {
     "events": [
@@ -242,21 +247,21 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 35.9,
-    "feels_c": 35.8,
-    "humidity": 29,
+    "city": "Zagreb",
+    "temp_c": 35.5,
+    "feels_c": 35.6,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 0.7
+    "wind_kmh": 0.8
   },
   "forecast_today": {
     "date": "2026-08-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 30.0,
-    "temp_max_c": 35.9,
-    "humidity": 34,
+    "city": "Zagreb",
+    "temp_min_c": 32.6,
+    "temp_max_c": 35.5,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
@@ -265,10 +270,10 @@
   },
   "forecast": {
     "date": "2026-08-11",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 24.3,
     "temp_max_c": 36.8,
-    "humidity": 47,
+    "humidity": 46,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.8,
     "temp_max_c": 32.7,
     "humidity": 43,
@@ -286,11 +291,11 @@
     "wind_kmh": 7.9
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 1.0,
     "band": "low",
     "daily_max": 6.7,
     "peak_time": "2026-08-10T13:00",
-    "safe_minutes": 76,
+    "safe_minutes": 167,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-10T17:57:18+02:00"
+    "fetched_at": "2026-08-10T18:54:56+02:00"
   }
 }
