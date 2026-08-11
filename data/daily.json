@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-11",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Six Moons of Saturn",
+    "date": "2026-08-11",
+    "explanation": "How many moons does Saturn have? While the total will likely continue to grow, as of June 2026 the ringed gas giant had 293 confirmed moons. That's easily more than any other planet of the Solar System, including ruling gas giant Jupiter with a mere 115 confirmed moons. Most of Saturn's known moons are small, irregular satellites. Many are only few kilometers to a fraction of a kilometer across and grouped in tilted outer orbits. Six of its largest satellites can be seen here, though, in this sharp telescopic Saturnian family portrait taken on August 5. Larger than Earth's Moon and even slightly larger than inner planet Mercury, Titan, with a diameter of 5,150 kilometers, is at lower right. You can also spot icy major moons Mimas, Tethys, Enceladus, Dione, and Rhea in the frame. Saturn's first known natural satellite, Titan was discovered in 1655 by Dutch astronomer Christiaan Huygens. During the space age Voyager and Cassini discoveries have added to the swelling ranks of Saturnian moons.  NASA Stream: August 12 Total Solar Eclipse.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/2026-08-05-0609_7-SaturnSystem_c.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/2026-08-05-0609_7-SaturnSystem_c.jpg"
   },
   "events": {
     "events": [
@@ -106,6 +111,16 @@
         ]
       },
       {
+        "id": "us6000tjer",
+        "title": "M5.2 Earthquake - southeast of Easter Island",
+        "category": "Earthquake",
+        "date": "2026-08-08T13:49:30.300000Z",
+        "coordinates": [
+          -90.5965,
+          -41.3258
+        ]
+      },
+      {
         "id": "us6000tj8t",
         "title": "M5.6 Earthquake - southeast of Easter Island",
         "category": "Earthquake",
@@ -143,16 +158,6 @@
         "coordinates": [
           -112.2713,
           -13.7382
-        ]
-      },
-      {
-        "id": "us6000tixr",
-        "title": "M5.0 Earthquake - 49 km SE of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-08-07T14:21:30.314000Z",
-        "coordinates": [
-          156.7027,
-          50.4235
         ]
       }
     ]
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 35.4,
-    "feels_c": 35.4,
-    "humidity": 31,
+    "city": "City of Zagreb",
+    "temp_c": 30.6,
+    "feels_c": 30.3,
+    "humidity": 39,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 11.2
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 17.5
   },
   "forecast_today": {
     "date": "2026-08-11",
-    "city": "Donji grad",
-    "temp_min_c": 27.9,
-    "temp_max_c": 35.4,
-    "humidity": 42,
+    "city": "Zagreb",
+    "temp_min_c": 26.9,
+    "temp_max_c": 30.7,
+    "humidity": 53,
     "condition": "Rain",
     "description": "rain",
-    "icon": "03d",
-    "wind_kmh": 12.1,
-    "samples": 4
+    "icon": "04d",
+    "wind_kmh": 13.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-12",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.8,
     "temp_max_c": 33.1,
     "humidity": 48,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-13",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 20.5,
     "temp_max_c": 31.6,
     "humidity": 31,
@@ -286,11 +291,11 @@
     "wind_kmh": 7.5
   },
   "uv": {
-    "uv": 4.3,
-    "band": "moderate",
+    "uv": 0.1,
+    "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-08-11T13:00",
-    "safe_minutes": 38,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-11T16:19:34+02:00"
+    "fetched_at": "2026-08-11T17:58:30+02:00"
   }
 }
