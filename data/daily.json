@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tk29",
+        "title": "M5.0 Earthquake - 89 km ESE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-11T20:31:28.580000Z",
+        "coordinates": [
+          152.9875,
+          -4.7193
+        ]
+      },
+      {
+        "id": "us6000tk1y",
+        "title": "M5.1 Earthquake - 51 km E of Tobelo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-11T20:14:18.452000Z",
+        "coordinates": [
+          128.4742,
+          1.7064
+        ]
+      },
+      {
         "id": "us6000tk0a",
         "title": "M5.0 Earthquake - 107 km WNW of Kerema, Papua New Guinea",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           -90.0796,
           -41.4826
         ]
-      },
-      {
-        "id": "aka2026powmkf",
-        "title": "M5.6 Earthquake - 57 km WNW of Skwentna, Alaska",
-        "category": "Earthquake",
-        "date": "2026-08-08T04:50:34.985000Z",
-        "coordinates": [
-          -152.314,
-          62.269
-        ]
-      },
-      {
-        "id": "us6000tj69",
-        "title": "M5.0 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-08-08T03:59:31.810000Z",
-        "coordinates": [
-          -176.5487,
-          -28.4766
-        ]
       }
     ]
   },
@@ -242,31 +242,31 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 25.4,
-    "feels_c": 25.8,
-    "humidity": 69,
+    "city": "Zagreb",
+    "temp_c": 24.6,
+    "feels_c": 25.0,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 9.8
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-11",
-    "city": "Donji grad",
-    "temp_min_c": 25.0,
-    "temp_max_c": 25.4,
-    "humidity": 70,
+    "city": "Zagreb",
+    "temp_min_c": 24.6,
+    "temp_max_c": 24.6,
+    "humidity": 72,
     "condition": "Rain",
     "description": "rain",
     "icon": "04n",
-    "wind_kmh": 8.6,
+    "wind_kmh": 7.4,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-12",
-    "city": "Donji grad",
-    "temp_min_c": 22.3,
+    "city": "Zagreb",
+    "temp_min_c": 22.2,
     "temp_max_c": 33.1,
     "humidity": 42,
     "condition": "Clear",
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-13",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 20.2,
     "temp_max_c": 31.6,
     "humidity": 31,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-11T22:00:29+02:00"
+    "fetched_at": "2026-08-11T22:56:28+02:00"
   }
 }
