@@ -1,7 +1,7 @@
 {
   "generated": "2026-08-11",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.6,
-    "feels_c": 25.0,
-    "humidity": 72,
+    "city": "City of Zagreb",
+    "temp_c": 24.1,
+    "feels_c": 24.5,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 7.4
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-11",
     "city": "Zagreb",
-    "temp_min_c": 24.6,
-    "temp_max_c": 24.6,
-    "humidity": 72,
-    "condition": "Rain",
-    "description": "rain",
+    "temp_min_c": 24.1,
+    "temp_max_c": 24.1,
+    "humidity": 74,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 7.4,
-    "samples": 2
+    "wind_kmh": 5.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-08-12",
     "city": "Zagreb",
-    "temp_min_c": 22.2,
+    "temp_min_c": 22.0,
     "temp_max_c": 33.1,
-    "humidity": 42,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-11T22:56:28+02:00"
+    "fetched_at": "2026-08-11T23:45:49+02:00"
   }
 }
