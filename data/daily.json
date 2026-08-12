@@ -1,18 +1,33 @@
 {
   "generated": "2026-08-12",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Perseids Over a little Planet",
+    "date": "2026-08-12",
+    "explanation": "It looks like a view from the Little Prince's planet.   The featured image is a throwback to the 2024 Perseid meteor shower, surrounded in this projection by the Bieszczady Mountains in Poland.   Visible in the sky is the arch of the Milky Way, along with several nebulas in red and over a hundred meteors pointing to the radiant.     The Perseids are easily visible and quite popular in the Northern Hemisphere summer. (Watching meteor showers in the winter is less convenient for a good reason).     This year they are expected to offer an even more dazzling spectacle than usual, because the peak coincides with a new moon.   The 2026 Perseid meteor shower will peak tonight with as many as 50-100 meteors per hour, when the Earth's path crosses through debris left behind by Comet Swift-Tuttle.   Typically, the best times for seeing the meteors are between midnight and pre-dawn.   You won't need binoculars to see the meteors, but a lawn chair and a dark sky location help.       There is total solar eclipse happening today! See here if you are in the path of totality.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors.jpg"
   },
   "events": {
     "events": [
       {
-        "id": "hv75018296",
-        "title": "M5.1 Earthquake - 45 km ESE of Naalehu, Hawaii",
+        "id": "us6000tk5j",
+        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
         "category": "Earthquake",
-        "date": "2026-08-12T03:48:33.320000Z",
+        "date": "2026-08-12T05:11:27.487000Z",
         "coordinates": [
-          -155.21533203125,
-          18.8521671295166
+          -143.4933,
+          -55.9202
+        ]
+      },
+      {
+        "id": "hv75018296",
+        "title": "M5.2 Earthquake - 42 km ESE of Naalehu, Hawaii",
+        "category": "Earthquake",
+        "date": "2026-08-12T03:48:33.980000Z",
+        "coordinates": [
+          -155.233333333333,
+          18.879
         ]
       },
       {
@@ -144,16 +159,6 @@
           142.3107,
           40.1723
         ]
-      },
-      {
-        "id": "us6000tjer",
-        "title": "M5.2 Earthquake - southeast of Easter Island",
-        "category": "Earthquake",
-        "date": "2026-08-08T13:49:30.300000Z",
-        "coordinates": [
-          -90.5965,
-          -41.3258
-        ]
       }
     ]
   },
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.9,
-    "feels_c": 18.7,
-    "humidity": 71,
+    "city": "City of Zagreb",
+    "temp_c": 22.5,
+    "feels_c": 22.6,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 6.4
+    "wind_kmh": 8.3
   },
   "forecast_today": {
     "date": "2026-08-12",
-    "city": "Zagreb",
-    "temp_min_c": 18.9,
+    "city": "Donji grad",
+    "temp_min_c": 22.5,
     "temp_max_c": 33.5,
-    "humidity": 43,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "03d",
-    "wind_kmh": 8.7,
-    "samples": 7
+    "wind_kmh": 9.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-13",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.4,
     "temp_max_c": 32.8,
     "humidity": 31,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-14",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 17.5,
     "temp_max_c": 32.2,
     "humidity": 29,
@@ -286,11 +291,11 @@
     "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.4,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-08-12T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 115,
     "skin_type": 2,
     "hourly": [
       {
@@ -363,7 +368,7 @@
       },
       {
         "time": "2026-08-12T17:00",
-        "uv": 3.6
+        "uv": 3.7
       },
       {
         "time": "2026-08-12T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-12T06:04:24+02:00"
+    "fetched_at": "2026-08-12T08:11:23+02:00"
   }
 }
