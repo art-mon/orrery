@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-12",
   "apod": {
-    "title": "Perseids Over a little Planet",
-    "date": "2026-08-12",
-    "explanation": "It looks like a view from the Little Prince's planet.   The featured image is a throwback to the 2024 Perseid meteor shower, surrounded in this projection by the Bieszczady Mountains in Poland.   Visible in the sky is the arch of the Milky Way, along with several nebulas in red and over a hundred meteors pointing to the radiant.     The Perseids are easily visible and quite popular in the Northern Hemisphere summer. (Watching meteor showers in the winter is less convenient for a good reason).     This year they are expected to offer an even more dazzling spectacle than usual, because the peak coincides with a new moon.   The 2026 Perseid meteor shower will peak tonight with as many as 50-100 meteors per hour, when the Earth's path crosses through debris left behind by Comet Swift-Tuttle.   Typically, the best times for seeing the meteors are between midnight and pre-dawn.   You won't need binoculars to see the meteors, but a lawn chair and a dark sky location help.       There is total solar eclipse happening today! See here if you are in the path of totality.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tk74",
+        "title": "M6.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-08-12T11:47:12.117000Z",
+        "coordinates": [
+          -28.9899,
+          -60.2445
+        ]
+      },
       {
         "id": "us6000tk5x",
         "title": "M5.0 Earthquake - 66 km E of Chayek, Kyrgyzstan",
@@ -149,16 +154,6 @@
           -101.9125,
           2.2955
         ]
-      },
-      {
-        "id": "us6000tjcl",
-        "title": "M5.0 Earthquake - 180 km NW of Sabang, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-09T03:02:07.086000Z",
-        "coordinates": [
-          94.1402,
-          7.017
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 31.1,
-    "feels_c": 29.6,
-    "humidity": 28,
+    "city": "City of Zagreb",
+    "temp_c": 32.6,
+    "feels_c": 31.0,
+    "humidity": 26,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 18.5
+    "wind_kmh": 9.5
   },
   "forecast_today": {
     "date": "2026-08-12",
     "city": "Zagreb",
-    "temp_min_c": 23.5,
-    "temp_max_c": 31.9,
-    "humidity": 30,
+    "temp_min_c": 22.9,
+    "temp_max_c": 32.7,
+    "humidity": 29,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 11.4,
-    "samples": 5
+    "wind_kmh": 9.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-13",
     "city": "Zagreb",
-    "temp_min_c": 20.3,
-    "temp_max_c": 33.2,
+    "temp_min_c": 19.9,
+    "temp_max_c": 32.8,
     "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.1
+    "wind_kmh": 7.0
   },
   "forecast_day_after": {
     "date": "2026-08-14",
     "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 33.1,
+    "temp_min_c": 21.0,
+    "temp_max_c": 32.5,
     "humidity": 28,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 6.6,
-    "band": "high",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-08-12T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-12T13:05:18+02:00"
+    "fetched_at": "2026-08-12T15:01:55+02:00"
   }
 }
