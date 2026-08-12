@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-12",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Perseids Over a little Planet",
+    "date": "2026-08-12",
+    "explanation": "It looks like a view from the Little Prince's planet.   The featured image is a throwback to the 2024 Perseid meteor shower, surrounded in this projection by the Bieszczady Mountains in Poland.   Visible in the sky is the arch of the Milky Way, along with several nebulas in red and over a hundred meteors pointing to the radiant.     The Perseids are easily visible and quite popular in the Northern Hemisphere summer. (Watching meteor showers in the winter is less convenient for a good reason).     This year they are expected to offer an even more dazzling spectacle than usual, because the peak coincides with a new moon.   The 2026 Perseid meteor shower will peak tonight with as many as 50-100 meteors per hour, when the Earth's path crosses through debris left behind by Comet Swift-Tuttle.   Typically, the best times for seeing the meteors are between midnight and pre-dawn.   You won't need binoculars to see the meteors, but a lawn chair and a dark sky location help.       There is total solar eclipse happening today! See here if you are in the path of totality.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors.jpg"
   },
   "events": {
     "events": [
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 30.9,
-    "feels_c": 29.8,
-    "humidity": 32,
+    "city": "Zagreb",
+    "temp_c": 31.1,
+    "feels_c": 29.6,
+    "humidity": 28,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 20.4
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-08-12",
     "city": "Zagreb",
-    "temp_min_c": 23.0,
-    "temp_max_c": 32.5,
-    "humidity": 31,
+    "temp_min_c": 23.5,
+    "temp_max_c": 31.9,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 11.6,
+    "wind_kmh": 11.4,
     "samples": 5
   },
   "forecast": {
     "date": "2026-08-13",
     "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 32.7,
+    "temp_min_c": 20.3,
+    "temp_max_c": 33.2,
     "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.0
+    "wind_kmh": 7.1
   },
   "forecast_day_after": {
     "date": "2026-08-14",
     "city": "Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 32.5,
+    "temp_min_c": 18.2,
+    "temp_max_c": 33.1,
     "humidity": 28,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.2
+    "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 6.0,
+    "uv": 6.6,
     "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-12T13:00",
-    "safe_minutes": 28,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-12T11:59:50+02:00"
+    "fetched_at": "2026-08-12T13:05:18+02:00"
   }
 }
