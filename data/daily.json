@@ -1,12 +1,7 @@
 {
   "generated": "2026-08-12",
   "apod": {
-    "title": "Perseids Over a little Planet",
-    "date": "2026-08-12",
-    "explanation": "It looks like a view from the Little Prince's planet.   The featured image is a throwback to the 2024 Perseid meteor shower, surrounded in this projection by the Bieszczady Mountains in Poland.   Visible in the sky is the arch of the Milky Way, along with several nebulas in red and over a hundred meteors pointing to the radiant.     The Perseids are easily visible and quite popular in the Northern Hemisphere summer. (Watching meteor showers in the winter is less convenient for a good reason).     This year they are expected to offer an even more dazzling spectacle than usual, because the peak coincides with a new moon.   The 2026 Perseid meteor shower will peak tonight with as many as 50-100 meteors per hour, when the Earth's path crosses through debris left behind by Comet Swift-Tuttle.   Typically, the best times for seeing the meteors are between midnight and pre-dawn.   You won't need binoculars to see the meteors, but a lawn chair and a dark sky location help.       There is total solar eclipse happening today! See here if you are in the path of totality.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,25 +243,25 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 26.2,
-    "feels_c": 26.2,
-    "humidity": 43,
+    "temp_c": 30.9,
+    "feels_c": 29.8,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.6
+    "wind_kmh": 20.4
   },
   "forecast_today": {
     "date": "2026-08-12",
     "city": "Zagreb",
     "temp_min_c": 23.0,
-    "temp_max_c": 31.2,
-    "humidity": 35,
+    "temp_max_c": 32.5,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 9.6,
-    "samples": 6
+    "wind_kmh": 11.6,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-13",
@@ -291,11 +286,11 @@
     "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 4.2,
-    "band": "moderate",
+    "uv": 6.0,
+    "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-12T13:00",
-    "safe_minutes": 40,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-12T10:14:10+02:00"
+    "fetched_at": "2026-08-12T11:59:50+02:00"
   }
 }
