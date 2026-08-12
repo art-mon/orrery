@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tk5x",
+        "title": "M5.0 Earthquake - 66 km E of Chayek, Kyrgyzstan",
+        "category": "Earthquake",
+        "date": "2026-08-12T07:14:52.581000Z",
+        "coordinates": [
+          75.3037,
+          42.0411
+        ]
+      },
+      {
         "id": "us6000tk5j",
         "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           94.1402,
           7.017
         ]
-      },
-      {
-        "id": "us6000tjaj",
-        "title": "M5.6 Earthquake - 42 km E of Noda, Japan",
-        "category": "Earthquake",
-        "date": "2026-08-08T17:57:58.745000Z",
-        "coordinates": [
-          142.3107,
-          40.1723
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.5,
-    "feels_c": 22.6,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 8.3
+    "city": "Donji grad",
+    "temp_c": 26.2,
+    "feels_c": 26.2,
+    "humidity": 43,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.6
   },
   "forecast_today": {
     "date": "2026-08-12",
-    "city": "Donji grad",
-    "temp_min_c": 22.5,
-    "temp_max_c": 33.5,
-    "humidity": 42,
+    "city": "Zagreb",
+    "temp_min_c": 23.0,
+    "temp_max_c": 31.2,
+    "humidity": 35,
     "condition": "Clear",
     "description": "clear",
-    "icon": "03d",
-    "wind_kmh": 9.0,
+    "icon": "01d",
+    "wind_kmh": 9.6,
     "samples": 6
   },
   "forecast": {
     "date": "2026-08-13",
-    "city": "Donji grad",
-    "temp_min_c": 20.4,
-    "temp_max_c": 32.8,
-    "humidity": 31,
+    "city": "Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 32.7,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.2
+    "wind_kmh": 7.0
   },
   "forecast_day_after": {
     "date": "2026-08-14",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.5,
-    "temp_max_c": 32.2,
-    "humidity": 29,
+    "temp_max_c": 32.5,
+    "humidity": 28,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.7
+    "wind_kmh": 5.2
   },
   "uv": {
-    "uv": 1.4,
-    "band": "low",
+    "uv": 4.2,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-08-12T13:00",
-    "safe_minutes": 115,
+    "safe_minutes": 40,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-12T08:11:23+02:00"
+    "fetched_at": "2026-08-12T10:14:10+02:00"
   }
 }
