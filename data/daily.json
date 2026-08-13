@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tkhm",
+        "title": "M5.6 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-08-13T16:11:45.826000Z",
+        "coordinates": [
+          -176.3124,
+          -28.6742
+        ]
+      },
+      {
         "id": "us6000tkgn",
         "title": "M5.0 Earthquake - 45 km SSW of Angoram, Papua New Guinea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -76.3859,
           4.8971
         ]
-      },
-      {
-        "id": "us6000tjl2",
-        "title": "M7.4 Earthquake - 5 km S of San Jos\u00e9 del Palmar, Colombia",
-        "category": "Earthquake",
-        "date": "2026-08-10T12:34:28.125000Z",
-        "coordinates": [
-          -76.2422,
-          4.8436
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 31.5,
-    "feels_c": 30.1,
-    "humidity": 29,
+    "temp_c": 29.8,
+    "feels_c": 28.6,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 16.7
+    "wind_kmh": 8.4
   },
   "forecast_today": {
     "date": "2026-08-13",
     "city": "Zagreb",
-    "temp_min_c": 25,
-    "temp_max_c": 31.5,
-    "humidity": 30,
+    "temp_min_c": 27.4,
+    "temp_max_c": 29.8,
+    "humidity": 31,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 10.1,
+    "wind_kmh": 7.3,
     "samples": 3
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 3.1
   },
   "uv": {
-    "uv": 2.1,
+    "uv": 0.9,
     "band": "low",
     "daily_max": 6.5,
     "peak_time": "2026-08-13T13:00",
-    "safe_minutes": 79,
+    "safe_minutes": 175,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-13T17:56:31+02:00"
+    "fetched_at": "2026-08-13T18:55:34+02:00"
   }
 }
