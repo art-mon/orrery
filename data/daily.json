@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tkgn",
+        "title": "M5.0 Earthquake - 45 km SSW of Angoram, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-13T12:44:59.102000Z",
+        "coordinates": [
+          143.8885,
+          -4.4318
+        ]
+      },
+      {
         "id": "us6000tkfh",
         "title": "M5.1 Earthquake - 22 km ENE of Lapuan, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -76.2422,
           4.8436
         ]
-      },
-      {
-        "id": "us6000tjl0",
-        "title": "M5.0 Earthquake - northern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-10T12:12:22.220000Z",
-        "coordinates": [
-          -45.8376,
-          17.5068
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 31.5,
-    "feels_c": 30.0,
-    "humidity": 27,
+    "temp_c": 32.6,
+    "feels_c": 31.0,
+    "humidity": 26,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 8.7
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-08-13",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 22.2,
-    "temp_max_c": 31.8,
+    "temp_max_c": 32.6,
     "humidity": 28,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.9,
-    "samples": 5
+    "wind_kmh": 9.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-14",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 20.8,
     "temp_max_c": 34.0,
     "humidity": 27,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-15",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.1,
     "temp_max_c": 34.4,
     "humidity": 27,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 6.5,
-    "band": "high",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-08-13T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-13T13:42:51+02:00"
+    "fetched_at": "2026-08-13T15:02:54+02:00"
   }
 }
