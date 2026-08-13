@@ -1,23 +1,38 @@
 {
   "generated": "2026-08-13",
   "apod": {
-    "title": "Perseids Over a little Planet",
-    "date": "2026-08-12",
-    "explanation": "It looks like a view from the Little Prince's planet.   The featured image is a throwback to the 2024 Perseid meteor shower, surrounded in this projection by the Bieszczady Mountains in Poland.   Visible in the sky is the arch of the Milky Way, along with several nebulas in red and over a hundred meteors pointing to the radiant.     The Perseids are easily visible and quite popular in the Northern Hemisphere summer. (Watching meteor showers in the winter is less convenient for a good reason).     This year they are expected to offer an even more dazzling spectacle than usual, because the peak coincides with a new moon.   The 2026 Perseid meteor shower will peak tonight with as many as 50-100 meteors per hour, when the Earth's path crosses through debris left behind by Comet Swift-Tuttle.   Typically, the best times for seeing the meteors are between midnight and pre-dawn.   You won't need binoculars to see the meteors, but a lawn chair and a dark sky location help.       There is total solar eclipse happening today! See here if you are in the path of totality.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/A_Planet_of_Meteors.jpg"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
       {
-        "id": "us6000tkba",
-        "title": "M5.3 Earthquake - 227 km E of Levuka, Fiji",
+        "id": "us6000tkci",
+        "title": "M5.1 Earthquake - 59 km NNW of Barishal, Pakistan",
         "category": "Earthquake",
-        "date": "2026-08-12T22:13:33.924000Z",
+        "date": "2026-08-13T00:35:18.815000Z",
         "coordinates": [
-          -178.545,
-          -17.865
+          74.3579,
+          36.7849
+        ]
+      },
+      {
+        "id": "us6000tkcb",
+        "title": "M5.5 Earthquake - 69 km SSW of Chirilagua, El Salvador",
+        "category": "Earthquake",
+        "date": "2026-08-13T00:30:04.840000Z",
+        "coordinates": [
+          -88.2864,
+          12.6084
+        ]
+      },
+      {
+        "id": "us6000tkba",
+        "title": "M5.1 Earthquake - 226 km E of Levuka, Fiji",
+        "category": "Earthquake",
+        "date": "2026-08-12T22:13:33.611000Z",
+        "coordinates": [
+          -178.554,
+          -17.8749
         ]
       },
       {
@@ -139,71 +154,11 @@
           -114.648,
           0.3112
         ]
-      },
-      {
-        "id": "us6000tji3",
-        "title": "M5.0 Earthquake - 206 km SE of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-09T22:17:27.839000Z",
-        "coordinates": [
-          126.8342,
-          4.1417
-        ]
-      },
-      {
-        "id": "us6000tjfj",
-        "title": "M5.3 Earthquake - 197 km SSW of Pagar Alam, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-09T15:15:03.956000Z",
-        "coordinates": [
-          102.8866,
-          -5.7782
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2014 QL433)",
-        "hazardous": true,
-        "diameter_m": 622,
-        "close_approach_date": "2026-08-12",
-        "miss_distance_km": 19855378,
-        "velocity_kmh": 91237
-      },
-      {
-        "name": "620082 (2014 QL433)",
-        "hazardous": true,
-        "diameter_m": 628,
-        "close_approach_date": "2026-08-12",
-        "miss_distance_km": 19855486,
-        "velocity_kmh": 91237
-      },
-      {
-        "name": "(2008 CO)",
-        "hazardous": false,
-        "diameter_m": 179,
-        "close_approach_date": "2026-08-12",
-        "miss_distance_km": 23952432,
-        "velocity_kmh": 15926
-      },
-      {
-        "name": "1620 Geographos (1951 RA)",
-        "hazardous": true,
-        "diameter_m": 5249,
-        "close_approach_date": "2026-08-12",
-        "miss_distance_km": 25497054,
-        "velocity_kmh": 30102
-      },
-      {
-        "name": "(2018 KC)",
-        "hazardous": false,
-        "diameter_m": 19,
-        "close_approach_date": "2026-08-12",
-        "miss_distance_km": 66504035,
-        "velocity_kmh": 30959
-      },
       {
         "name": "(2013 QC11)",
         "hazardous": true,
@@ -243,14 +198,54 @@
         "close_approach_date": "2026-08-14",
         "miss_distance_km": 40935312,
         "velocity_kmh": 36947
+      },
+      {
+        "name": "(2009 DB12)",
+        "hazardous": false,
+        "diameter_m": 331,
+        "close_approach_date": "2026-08-14",
+        "miss_distance_km": 57311162,
+        "velocity_kmh": 81105
+      },
+      {
+        "name": "(2008 MQ1)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-08-14",
+        "miss_distance_km": 57492051,
+        "velocity_kmh": 53938
+      },
+      {
+        "name": "(2009 SZ99)",
+        "hazardous": false,
+        "diameter_m": 813,
+        "close_approach_date": "2026-08-14",
+        "miss_distance_km": 58975198,
+        "velocity_kmh": 68163
+      },
+      {
+        "name": "(2009 RA4)",
+        "hazardous": false,
+        "diameter_m": 284,
+        "close_approach_date": "2026-08-14",
+        "miss_distance_km": 67012723,
+        "velocity_kmh": 13273
+      },
+      {
+        "name": "(2017 AV3)",
+        "hazardous": false,
+        "diameter_m": 689,
+        "close_approach_date": "2026-08-15",
+        "miss_distance_km": 42346250,
+        "velocity_kmh": 89666
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.1,
-    "humidity": 55,
+    "city": "Zagreb",
+    "temp_c": 15.7,
+    "feels_c": 15.2,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -258,19 +253,19 @@
   },
   "forecast_today": {
     "date": "2026-08-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.7,
+    "city": "Zagreb",
+    "temp_min_c": 15.7,
     "temp_max_c": 32.2,
-    "humidity": 35,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
     "wind_kmh": 6.4,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-14",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.1,
     "temp_max_c": 32.5,
     "humidity": 28,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-15",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 18.3,
     "temp_max_c": 34.9,
     "humidity": 27,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-13T01:37:18+02:00"
+    "fetched_at": "2026-08-13T03:44:19+02:00"
   }
 }
