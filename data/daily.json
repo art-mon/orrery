@@ -11,6 +11,56 @@
   "events": {
     "events": [
       {
+        "id": "us6000tkuf",
+        "title": "M5.5 Earthquake - 49 km NE of Labuan Bajo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T22:37:17.172000Z",
+        "coordinates": [
+          120.1908,
+          -8.1604
+        ]
+      },
+      {
+        "id": "us6000tkuc",
+        "title": "M6.1 Earthquake - 58 km N of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T22:28:37.550000Z",
+        "coordinates": [
+          121.5717,
+          -8.3186
+        ]
+      },
+      {
+        "id": "us6000tku7",
+        "title": "M5.6 Earthquake - 61 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T22:18:06.706000Z",
+        "coordinates": [
+          121.4284,
+          -8.3406
+        ]
+      },
+      {
+        "id": "us6000tkta",
+        "title": "M5.9 Earthquake - 36 km NE of Labuan Bajo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T22:13:50.869000Z",
+        "coordinates": [
+          120.1465,
+          -8.2849
+        ]
+      },
+      {
+        "id": "us6000tkt2",
+        "title": "M7.7 Earthquake - 68 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T21:58:21.564000Z",
+        "coordinates": [
+          121.3517,
+          -8.3101
+        ]
+      },
+      {
         "id": "us6000tkig",
         "title": "M5.3 Earthquake - 11 km S of Sarangani, Philippines",
         "category": "Earthquake",
@@ -109,56 +159,6 @@
           75.3037,
           42.0411
         ]
-      },
-      {
-        "id": "us6000tk5j",
-        "title": "M5.1 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-12T05:11:27.487000Z",
-        "coordinates": [
-          -143.4933,
-          -55.9202
-        ]
-      },
-      {
-        "id": "hv75018296",
-        "title": "M5.2 Earthquake - 42 km ESE of Naalehu, Hawaii",
-        "category": "Earthquake",
-        "date": "2026-08-12T03:48:33.980000Z",
-        "coordinates": [
-          -155.233333333333,
-          18.879
-        ]
-      },
-      {
-        "id": "us6000tk29",
-        "title": "M5.0 Earthquake - 89 km ESE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-11T20:31:28.580000Z",
-        "coordinates": [
-          152.9875,
-          -4.7193
-        ]
-      },
-      {
-        "id": "us6000tk1y",
-        "title": "M5.1 Earthquake - 51 km E of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-11T20:14:18.452000Z",
-        "coordinates": [
-          128.4742,
-          1.7064
-        ]
-      },
-      {
-        "id": "us6000tk0a",
-        "title": "M5.0 Earthquake - 107 km WNW of Kerema, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-11T17:06:18.902000Z",
-        "coordinates": [
-          144.8583,
-          -7.6341
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 16.7,
-    "feels_c": 16.2,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_c": 15.7,
+    "feels_c": 15.2,
+    "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-15",
     "city": "Zagreb",
-    "temp_min_c": 15.7,
+    "temp_min_c": 15.5,
     "temp_max_c": 35.0,
-    "humidity": 37,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.6,
+    "wind_kmh": 4.2,
     "samples": 9
   },
   "forecast": {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-15T00:18:57+02:00"
+    "fetched_at": "2026-08-15T01:18:16+02:00"
   }
 }
