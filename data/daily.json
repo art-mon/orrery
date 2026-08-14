@@ -1,12 +1,12 @@
 {
   "generated": "2026-08-14",
   "apod": {
-    "title": "Total Solar Eclipse Over Spain",
-    "date": "2026-08-13",
-    "explanation": "On August 12th, 2026, the Moon totally eclipsed the Sun and cast its shadow across Siberia, Greenland, Iceland, Spain, and Portugal. Today\u2019s image features two total solar eclipses viewed from Zaragoza, Spain, one over the Cathedral-Basilica of Our Lady of the Pillar and the other reflecting in the Ebro River. For a few moments, Spain saw its first major total solar eclipse since 1905. Those witnessing totality may experience a chill in the air, the quieting of birds, the confused chirps of insects, and the shared awe of many. It\u2019s the corona\u2019s time to shine as the Sun\u2019s bright disk is blocked by the Moon. Among other reasons to study eclipses, they help scientists understand why the corona is millions of degrees hotter than the Sun\u2019s surface. Enthusiastic citizens can contribute to these studies by recording how wildlife responds, imaging the corona, and monitoring air temperature and clouds.  More spectacular eclipse images: Solar Eclipse of 2026 August 12",
+    "title": "Total Solar Eclipse from Greenland",
+    "date": "2026-08-14",
+    "explanation": "On August 12, the Moon's shadow reached out to touch our fair planet. Beginning in the Arctic Ocean, it swept along a narrow track that led the dark lunar umbra across parts of Greenland, Iceland, the Atlantic, Portugal, and northern Spain. And for a moment, denizens of Earth who found themselves with clear skies under the shadow of the Moon could witness a total solar eclipse. After dodging the weather by sea and making a landing along Rype Fjord on the Greenland east coast (at 71.07055N, 27.71252W), this hard-won snapshot was captured at 17:33:26 UTC. That's near the initial reach of clearing skies along the path of totality, so the image is likely one of the first unobstructed views of the totally eclipsed Sun. Through a break in the clouds, the stunning photo also records one of this eclipse's transient diamond rings and the magnificent solar corona emerging near the moment totality began.  More spectacular eclipse images: Solar Eclipse of 2026 August 12",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/total_solar_eclipse_900.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/total_solar_eclipse.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/TSE2026DR_Madhaven1024.jpeg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/TSE2026DR_Madhaven.jpeg"
   },
   "events": {
     "events": [
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.1,
-    "feels_c": 16.2,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 18.1,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.1
+    "icon": "01d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-14",
-    "city": "Zagreb",
-    "temp_min_c": 16.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 18.7,
     "temp_max_c": 33.1,
-    "humidity": 32,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.7,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 7.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-08-15",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.5,
     "temp_max_c": 35.7,
     "humidity": 26,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-16",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.4,
     "temp_max_c": 36.0,
     "humidity": 30,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-14T03:42:17+02:00"
+    "fetched_at": "2026-08-14T06:05:34+02:00"
   }
 }
