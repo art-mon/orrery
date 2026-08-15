@@ -11,6 +11,76 @@
   "events": {
     "events": [
       {
+        "id": "us6000tkvj",
+        "title": "M5.4 Earthquake - 38 km SSE of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-15T00:43:29.640000Z",
+        "coordinates": [
+          156.3863,
+          50.3745
+        ]
+      },
+      {
+        "id": "us6000tkvh",
+        "title": "M5.1 Earthquake - 71 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-15T00:40:18.406000Z",
+        "coordinates": [
+          121.4162,
+          -8.248
+        ]
+      },
+      {
+        "id": "us6000tkvi",
+        "title": "M5.3 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-08-15T00:40:13.397000Z",
+        "coordinates": [
+          165.89,
+          -62.9125
+        ]
+      },
+      {
+        "id": "us6000tkv9",
+        "title": "M5.0 Earthquake - 65 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T23:17:05.284000Z",
+        "coordinates": [
+          121.359,
+          -8.3348
+        ]
+      },
+      {
+        "id": "us6000tkv7",
+        "title": "M5.1 Earthquake - 49 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T23:12:31.091000Z",
+        "coordinates": [
+          120.4166,
+          -8.1694
+        ]
+      },
+      {
+        "id": "us6000tkv2",
+        "title": "M5.2 Earthquake - 1 km SW of Otura, Spain",
+        "category": "Earthquake",
+        "date": "2026-08-14T23:04:40.797000Z",
+        "coordinates": [
+          -3.6486,
+          37.0789
+        ]
+      },
+      {
+        "id": "us6000tkuw",
+        "title": "M5.3 Earthquake - 49 km NE of Labuan Bajo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-14T22:53:11.834000Z",
+        "coordinates": [
+          120.2253,
+          -8.2053
+        ]
+      },
+      {
         "id": "us6000tkuf",
         "title": "M5.5 Earthquake - 49 km NE of Labuan Bajo, Indonesia",
         "category": "Earthquake",
@@ -89,129 +159,11 @@
           -176.3124,
           -28.6742
         ]
-      },
-      {
-        "id": "us6000tkgn",
-        "title": "M5.0 Earthquake - 45 km SSW of Angoram, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-13T12:44:59.102000Z",
-        "coordinates": [
-          143.8885,
-          -4.4318
-        ]
-      },
-      {
-        "id": "us6000tkfh",
-        "title": "M5.1 Earthquake - 22 km ENE of Lapuan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-13T09:22:58.999000Z",
-        "coordinates": [
-          125.8789,
-          6.2479
-        ]
-      },
-      {
-        "id": "us6000tkci",
-        "title": "M5.1 Earthquake - 59 km NNW of Barishal, Pakistan",
-        "category": "Earthquake",
-        "date": "2026-08-13T00:35:18.815000Z",
-        "coordinates": [
-          74.3579,
-          36.7849
-        ]
-      },
-      {
-        "id": "us6000tkcb",
-        "title": "M5.5 Earthquake - 69 km SSW of Chirilagua, El Salvador",
-        "category": "Earthquake",
-        "date": "2026-08-13T00:30:04.840000Z",
-        "coordinates": [
-          -88.2864,
-          12.6084
-        ]
-      },
-      {
-        "id": "us6000tkba",
-        "title": "M5.1 Earthquake - 226 km E of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-08-12T22:13:33.611000Z",
-        "coordinates": [
-          -178.554,
-          -17.8749
-        ]
-      },
-      {
-        "id": "us6000tk74",
-        "title": "M6.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-08-12T11:47:12.117000Z",
-        "coordinates": [
-          -28.9899,
-          -60.2445
-        ]
-      },
-      {
-        "id": "us6000tk5x",
-        "title": "M5.0 Earthquake - 66 km E of Chayek, Kyrgyzstan",
-        "category": "Earthquake",
-        "date": "2026-08-12T07:14:52.581000Z",
-        "coordinates": [
-          75.3037,
-          42.0411
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2015 MO116)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 39236668,
-        "velocity_kmh": 37388
-      },
-      {
-        "name": "(2019 UF5)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 40935312,
-        "velocity_kmh": 36947
-      },
-      {
-        "name": "(2009 DB12)",
-        "hazardous": false,
-        "diameter_m": 331,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 57311162,
-        "velocity_kmh": 81105
-      },
-      {
-        "name": "(2008 MQ1)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 57492051,
-        "velocity_kmh": 53938
-      },
-      {
-        "name": "(2009 SZ99)",
-        "hazardous": false,
-        "diameter_m": 813,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 58975198,
-        "velocity_kmh": 68163
-      },
-      {
-        "name": "(2009 RA4)",
-        "hazardous": false,
-        "diameter_m": 284,
-        "close_approach_date": "2026-08-14",
-        "miss_distance_km": 67012723,
-        "velocity_kmh": 13273
-      },
       {
         "name": "(2017 AV3)",
         "hazardous": false,
@@ -243,30 +195,78 @@
         "close_approach_date": "2026-08-16",
         "miss_distance_km": 47615955,
         "velocity_kmh": 144032
+      },
+      {
+        "name": "(2014 CE)",
+        "hazardous": false,
+        "diameter_m": 25,
+        "close_approach_date": "2026-08-17",
+        "miss_distance_km": 21766254,
+        "velocity_kmh": 61350
+      },
+      {
+        "name": "(2017 WY27)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-08-18",
+        "miss_distance_km": 32285716,
+        "velocity_kmh": 26803
+      },
+      {
+        "name": "(2018 LV2)",
+        "hazardous": false,
+        "diameter_m": 52,
+        "close_approach_date": "2026-08-18",
+        "miss_distance_km": 41609903,
+        "velocity_kmh": 26845
+      },
+      {
+        "name": "(2017 YD1)",
+        "hazardous": false,
+        "diameter_m": 6,
+        "close_approach_date": "2026-08-18",
+        "miss_distance_km": 45947270,
+        "velocity_kmh": 39880
+      },
+      {
+        "name": "(2011 HH)",
+        "hazardous": false,
+        "diameter_m": 52,
+        "close_approach_date": "2026-08-18",
+        "miss_distance_km": 69990071,
+        "velocity_kmh": 24114
+      },
+      {
+        "name": "(2014 FO38)",
+        "hazardous": false,
+        "diameter_m": 32,
+        "close_approach_date": "2026-08-18",
+        "miss_distance_km": 74726689,
+        "velocity_kmh": 60331
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.7,
-    "feels_c": 15.2,
-    "humidity": 72,
+    "temp_c": 20.9,
+    "feels_c": 20.4,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 9.3
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-15",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
+    "temp_min_c": 19.0,
     "temp_max_c": 35.0,
-    "humidity": 41,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.2,
-    "samples": 9
+    "wind_kmh": 3.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-16",
@@ -294,7 +294,7 @@
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.5,
-    "peak_time": "2026-08-15T14:00",
+    "peak_time": "2026-08-15T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-08-15T13:00",
-        "uv": 6.4
+        "uv": 6.5
       },
       {
         "time": "2026-08-15T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-15T01:18:16+02:00"
+    "fetched_at": "2026-08-15T03:03:14+02:00"
   }
 }
