@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tl43",
+        "title": "M5.4 Earthquake - 19 km NE of Colonia, Micronesia",
+        "category": "Earthquake",
+        "date": "2026-08-15T22:52:55.761000Z",
+        "coordinates": [
+          138.224,
+          9.6571
+        ]
+      },
+      {
         "id": "us6000tl36",
         "title": "M5.5 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           165.89,
           -62.9125
         ]
-      },
-      {
-        "id": "us6000tkv9",
-        "title": "M5.0 Earthquake - 65 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-14T23:17:05.284000Z",
-        "coordinates": [
-          121.359,
-          -8.3348
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 18.7,
-    "feels_c": 18.4,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_c": 16.8,
+    "feels_c": 16.6,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 0.0
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-16",
-    "city": "Zagreb",
-    "temp_min_c": 16.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.8,
     "temp_max_c": 36.0,
-    "humidity": 40,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.5,
+    "wind_kmh": 4.1,
     "samples": 9
   },
   "forecast": {
     "date": "2026-08-17",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.1,
     "temp_max_c": 29.3,
     "humidity": 58,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-18",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 15.5,
     "temp_max_c": 29.4,
     "humidity": 62,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T00:17:25+02:00"
+    "fetched_at": "2026-08-16T01:16:53+02:00"
   }
 }
