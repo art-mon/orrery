@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tkyk",
+        "title": "M6.9 Earthquake - 7 km NNW of Pematangsiantar, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-15T10:54:52.753000Z",
+        "coordinates": [
+          99.0376,
+          3.018
+        ]
+      },
+      {
+        "id": "us6000tkyg",
+        "title": "M5.1 Earthquake - 39 km NNW of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-15T10:31:30.185000Z",
+        "coordinates": [
+          120.3675,
+          -8.264
+        ]
+      },
+      {
         "id": "us6000tkx5",
         "title": "M5.1 Earthquake - 71 km NNE of Ruteng, Indonesia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           120.1908,
           -8.1604
         ]
-      },
-      {
-        "id": "us6000tkuc",
-        "title": "M6.1 Earthquake - 58 km N of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-14T22:28:37.550000Z",
-        "coordinates": [
-          121.5717,
-          -8.3186
-        ]
-      },
-      {
-        "id": "us6000tku7",
-        "title": "M5.6 Earthquake - 61 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-14T22:18:06.706000Z",
-        "coordinates": [
-          121.4284,
-          -8.3406
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 32.6,
-    "feels_c": 31.2,
-    "humidity": 28,
+    "city": "Zagreb",
+    "temp_c": 33.7,
+    "feels_c": 32.2,
+    "humidity": 25,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.4
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-15",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 21.3,
-    "temp_max_c": 33.3,
-    "humidity": 28,
+    "temp_max_c": 33.7,
+    "humidity": 27,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.8,
+    "wind_kmh": 6.0,
     "samples": 5
   },
   "forecast": {
     "date": "2026-08-16",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 15.9,
     "temp_max_c": 36.3,
     "humidity": 33,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-17",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 18.3,
     "temp_max_c": 30.6,
     "humidity": 65,
@@ -291,7 +291,7 @@
     "wind_kmh": 7.0
   },
   "uv": {
-    "uv": 6.3,
+    "uv": 6.5,
     "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-15T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-15T12:18:57+02:00"
+    "fetched_at": "2026-08-15T13:16:57+02:00"
   }
 }
