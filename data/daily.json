@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-16",
   "apod": {
-    "title": "Bright Perseids from Sweden",
-    "date": "2026-08-15",
-    "explanation": "Known for its bright and fast meteors, the annual Perseid Meteor Shower comes to planet Earth's skies from a radiant in the heroic constellation Perseus. The popular northern summer celestial spectacle is created as grains of dust cast off along the orbit of periodic comet 109P/Swift-Tuttle vaporize in Earth's dense atmosphere, tracing brief, but beautiful streaks through the night. Taken near the shower's peak of activity on August 12, this composite image recorded two bright perseid meteors and one meteor's watery reflection from a location near the coastal village of Grisslehamn, Sweden.  Almost as bright as Altair, brightest star on the scene, the meteors appear along with the faint, diffuse background of the Milky Way. This year, the shower's peak activity coincided with a New Moon, so perseid meteor flashes were undiminished by bright moonlight. And for many skywatchers, this night of bright perseid meteors followed their viewing of the silhouette of the New Moon in a much anticipated solar eclipse.  Growing Gallery: Solar Eclipse of 2026 August 12",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/PerseidsAPOD_P-MHeden.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/PerseidsAPOD_P-MHeden.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tl44",
+        "title": "M5.0 Earthquake - 80 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-15T23:12:54.664000Z",
+        "coordinates": [
+          120.5156,
+          -7.8894
+        ]
+      },
       {
         "id": "us6000tl43",
         "title": "M5.4 Earthquake - 19 km NE of Colonia, Micronesia",
@@ -149,45 +154,11 @@
           121.4162,
           -8.248
         ]
-      },
-      {
-        "id": "us6000tkvi",
-        "title": "M5.3 Earthquake - Balleny Islands region",
-        "category": "Earthquake",
-        "date": "2026-08-15T00:40:13.397000Z",
-        "coordinates": [
-          165.89,
-          -62.9125
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 AV3)",
-        "hazardous": false,
-        "diameter_m": 689,
-        "close_approach_date": "2026-08-15",
-        "miss_distance_km": 42346250,
-        "velocity_kmh": 89666
-      },
-      {
-        "name": "(2015 NJ24)",
-        "hazardous": false,
-        "diameter_m": 313,
-        "close_approach_date": "2026-08-15",
-        "miss_distance_km": 55487031,
-        "velocity_kmh": 28380
-      },
-      {
-        "name": "(2008 JM20)",
-        "hazardous": false,
-        "diameter_m": 375,
-        "close_approach_date": "2026-08-15",
-        "miss_distance_km": 64469063,
-        "velocity_kmh": 87892
-      },
       {
         "name": "417874 (2007 NC5)",
         "hazardous": false,
@@ -243,45 +214,69 @@
         "close_approach_date": "2026-08-18",
         "miss_distance_km": 74726689,
         "velocity_kmh": 60331
+      },
+      {
+        "name": "(2019 WC4)",
+        "hazardous": false,
+        "diameter_m": 197,
+        "close_approach_date": "2026-08-19",
+        "miss_distance_km": 36198395,
+        "velocity_kmh": 35828
+      },
+      {
+        "name": "(2020 BV5)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-08-19",
+        "miss_distance_km": 55406602,
+        "velocity_kmh": 61893
+      },
+      {
+        "name": "(2019 TZ6)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-08-19",
+        "miss_distance_km": 57188453,
+        "velocity_kmh": 32343
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 16.8,
-    "feels_c": 16.6,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_c": 22.6,
+    "feels_c": 22.4,
+    "humidity": 59,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-08-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 36.0,
-    "humidity": 41,
+    "city": "Zagreb",
+    "temp_min_c": 20.3,
+    "temp_max_c": 36.4,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.1,
-    "samples": 9
+    "wind_kmh": 3.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 29.3,
-    "humidity": 58,
+    "city": "Zagreb",
+    "temp_min_c": 15.8,
+    "temp_max_c": 32.4,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.5
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 15.5,
     "temp_max_c": 29.4,
     "humidity": 62,
@@ -294,7 +289,7 @@
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.5,
-    "peak_time": "2026-08-16T14:00",
+    "peak_time": "2026-08-16T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -344,15 +339,15 @@
       },
       {
         "time": "2026-08-16T11:00",
-        "uv": 4.8
+        "uv": 4.9
       },
       {
         "time": "2026-08-16T12:00",
-        "uv": 5.8
+        "uv": 5.9
       },
       {
         "time": "2026-08-16T13:00",
-        "uv": 6.3
+        "uv": 6.5
       },
       {
         "time": "2026-08-16T14:00",
@@ -368,7 +363,7 @@
       },
       {
         "time": "2026-08-16T17:00",
-        "uv": 3.6
+        "uv": 3.5
       },
       {
         "time": "2026-08-16T18:00",
@@ -376,7 +371,7 @@
       },
       {
         "time": "2026-08-16T19:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-08-16T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T01:16:53+02:00"
+    "fetched_at": "2026-08-16T03:07:12+02:00"
   }
 }
