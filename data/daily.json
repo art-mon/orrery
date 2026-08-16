@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "usd0015e7p",
+        "title": "M5.3 Earthquake - 105 km ESE of Madang, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-16T10:59:12.836000Z",
+        "coordinates": [
+          146.6791,
+          -5.557
+        ]
+      },
+      {
+        "id": "usd0015e7k",
+        "title": "M5.1 Earthquake - 81 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-16T10:31:34.822000Z",
+        "coordinates": [
+          120.5504,
+          -7.8791
+        ]
+      },
+      {
+        "id": "usd0015e7j",
+        "title": "M5.3 Earthquake - 75 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-16T10:14:36.343000Z",
+        "coordinates": [
+          120.5995,
+          -7.9399
+        ]
+      },
+      {
         "id": "us6000tl6a",
         "title": "M5.5 Earthquake - 76 km N of Ruteng, Indonesia",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           120.7765,
           -8.0446
         ]
-      },
-      {
-        "id": "us6000tkwq",
-        "title": "M5.1 Earthquake - 71 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T06:28:51.109000Z",
-        "coordinates": [
-          121.3664,
-          -8.2671
-        ]
-      },
-      {
-        "id": "us6000tkwj",
-        "title": "M5.0 Earthquake - 62 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T05:45:08.046000Z",
-        "coordinates": [
-          121.3609,
-          -8.3681
-        ]
-      },
-      {
-        "id": "us6000tkw9",
-        "title": "M5.0 Earthquake - 67 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T03:54:13.099000Z",
-        "coordinates": [
-          121.3458,
-          -8.32
-        ]
       }
     ]
   },
@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 32.0,
-    "feels_c": 31.4,
-    "humidity": 34,
+    "city": "City of Zagreb",
+    "temp_c": 34.8,
+    "feels_c": 34.4,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -258,10 +258,10 @@
   },
   "forecast_today": {
     "date": "2026-08-16",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.6,
-    "temp_max_c": 34.9,
-    "humidity": 41,
+    "temp_max_c": 35.1,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
@@ -270,7 +270,7 @@
   },
   "forecast": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 15.2,
     "temp_max_c": 29.9,
     "humidity": 60,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.8,
     "temp_max_c": 27.6,
     "humidity": 66,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 6.3,
+    "uv": 6.5,
     "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-16T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 25,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T12:19:07+02:00"
+    "fetched_at": "2026-08-16T13:17:08+02:00"
   }
 }
