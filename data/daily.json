@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-16",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Bright Perseids from Sweden",
+    "date": "2026-08-15",
+    "explanation": "Known for its bright and fast meteors, the annual Perseid Meteor Shower comes to planet Earth's skies from a radiant in the heroic constellation Perseus. The popular northern summer celestial spectacle is created as grains of dust cast off along the orbit of periodic comet 109P/Swift-Tuttle vaporize in Earth's dense atmosphere, tracing brief, but beautiful streaks through the night. Taken near the shower's peak of activity on August 12, this composite image recorded two bright perseid meteors and one meteor's watery reflection from a location near the coastal village of Grisslehamn, Sweden.  Almost as bright as Altair, brightest star on the scene, the meteors appear along with the faint, diffuse background of the Milky Way. This year, the shower's peak activity coincided with a New Moon, so perseid meteor flashes were undiminished by bright moonlight. And for many skywatchers, this night of bright perseid meteors followed their viewing of the silhouette of the New Moon in a much anticipated solar eclipse.  Growing Gallery: Solar Eclipse of 2026 August 12",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/PerseidsAPOD_P-MHeden.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/PerseidsAPOD_P-MHeden.jpg"
   },
   "events": {
     "events": [
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.4,
-    "humidity": 59,
+    "temp_c": 14.8,
+    "feels_c": 14.5,
+    "humidity": 82,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.8
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-16",
-    "city": "Zagreb",
-    "temp_min_c": 20.3,
-    "temp_max_c": 36.4,
-    "humidity": 39,
+    "city": "City of Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 36.8,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.7,
+    "wind_kmh": 4.1,
     "samples": 8
   },
   "forecast": {
     "date": "2026-08-17",
-    "city": "Zagreb",
-    "temp_min_c": 15.8,
-    "temp_max_c": 32.4,
-    "humidity": 57,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.3,
+    "temp_max_c": 32.8,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -276,14 +281,14 @@
   },
   "forecast_day_after": {
     "date": "2026-08-18",
-    "city": "Zagreb",
-    "temp_min_c": 15.5,
-    "temp_max_c": 29.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.8,
+    "temp_max_c": 29.3,
     "humidity": 62,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.5
+    "wind_kmh": 5.8
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T03:07:12+02:00"
+    "fetched_at": "2026-08-16T04:56:40+02:00"
   }
 }
