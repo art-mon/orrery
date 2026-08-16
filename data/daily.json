@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 31.6,
-    "feels_c": 31.3,
-    "humidity": 37,
+    "temp_c": 32.0,
+    "feels_c": 31.4,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-16",
     "city": "City of Zagreb",
     "temp_min_c": 21.6,
-    "temp_max_c": 34.7,
-    "humidity": 42,
+    "temp_max_c": 34.9,
+    "humidity": 41,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.0,
+    "wind_kmh": 7.4,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 5.5,
-    "band": "moderate",
+    "uv": 6.3,
+    "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-16T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 26,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T11:23:35+02:00"
+    "fetched_at": "2026-08-16T12:19:07+02:00"
   }
 }
