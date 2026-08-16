@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tl6a",
+        "title": "M5.5 Earthquake - 76 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-16T06:51:47.338000Z",
+        "coordinates": [
+          120.5855,
+          -7.9322
+        ]
+      },
+      {
         "id": "us6000tl55",
         "title": "M5.0 Earthquake - 45 km NNW of Ende, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           121.3458,
           -8.32
         ]
-      },
-      {
-        "id": "us6000tkvp",
-        "title": "M5.1 Earthquake - 71 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T01:17:20.014000Z",
-        "coordinates": [
-          120.6888,
-          -8.0088
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.6,
-    "humidity": 56,
+    "temp_c": 25.9,
+    "feels_c": 25.9,
+    "humidity": 50,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -258,44 +258,44 @@
   },
   "forecast_today": {
     "date": "2026-08-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.1,
-    "temp_max_c": 36.4,
-    "humidity": 40,
-    "condition": "Clouds",
-    "description": "clouds",
+    "city": "Donji grad",
+    "temp_min_c": 21.6,
+    "temp_max_c": 36.3,
+    "humidity": 43,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.6,
+    "wind_kmh": 6.4,
     "samples": 6
   },
   "forecast": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 15.8,
-    "temp_max_c": 32.4,
-    "humidity": 57,
+    "city": "Donji grad",
+    "temp_min_c": 15.2,
+    "temp_max_c": 29.9,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.9
+    "wind_kmh": 6.4
   },
   "forecast_day_after": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.2,
-    "temp_max_c": 28.7,
-    "humidity": 63,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.8
+    "city": "Donji grad",
+    "temp_min_c": 13.8,
+    "temp_max_c": 27.6,
+    "humidity": 66,
+    "condition": "Rain",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 2.0,
-    "band": "low",
+    "uv": 3.0,
+    "band": "moderate",
     "daily_max": 6.5,
     "peak_time": "2026-08-16T13:00",
-    "safe_minutes": 83,
+    "safe_minutes": 56,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T08:34:29+02:00"
+    "fetched_at": "2026-08-16T09:27:50+02:00"
   }
 }
