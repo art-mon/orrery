@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "usd0015e7p",
-        "title": "M5.3 Earthquake - 105 km ESE of Madang, Papua New Guinea",
+        "title": "M5.1 Earthquake - 112 km ESE of Madang, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-08-16T10:59:12.836000Z",
+        "date": "2026-08-16T10:59:10.367000Z",
         "coordinates": [
-          146.6791,
-          -5.557
+          146.7476,
+          -5.5481
         ]
       },
       {
@@ -247,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 34.8,
-    "feels_c": 34.4,
-    "humidity": 30,
+    "city": "Zagreb",
+    "temp_c": 37.0,
+    "feels_c": 36.7,
+    "humidity": 26,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -260,13 +260,13 @@
     "date": "2026-08-16",
     "city": "Zagreb",
     "temp_min_c": 21.6,
-    "temp_max_c": 35.1,
-    "humidity": 39,
+    "temp_max_c": 37.0,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.4,
-    "samples": 5
+    "wind_kmh": 7.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-17",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 6.5,
+    "uv": 6.0,
     "band": "high",
     "daily_max": 6.5,
     "peak_time": "2026-08-16T13:00",
-    "safe_minutes": 25,
+    "safe_minutes": 28,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-16T13:17:08+02:00"
+    "fetched_at": "2026-08-16T14:32:52+02:00"
   }
 }
