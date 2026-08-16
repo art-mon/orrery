@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "usd0015e86",
+        "title": "M5.0 Earthquake - 81 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-16T13:38:39.493000Z",
+        "coordinates": [
+          120.7165,
+          -7.9176
+        ]
+      },
+      {
         "id": "usd0015e7p",
         "title": "M5.1 Earthquake - 112 km ESE of Madang, Papua New Guinea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.3675,
           -8.264
         ]
-      },
-      {
-        "id": "us6000tkx5",
-        "title": "M5.1 Earthquake - 71 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T07:39:38.975000Z",
-        "coordinates": [
-          120.7765,
-          -8.0446
-        ]
       }
     ]
   },
@@ -247,24 +247,24 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 37.2,
-    "feels_c": 36.7,
+    "city": "City of Zagreb",
+    "temp_c": 37.6,
+    "feels_c": 37.3,
     "humidity": 25,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-16",
     "city": "Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 37.2,
-    "humidity": 40,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
+    "temp_min_c": 26.7,
+    "temp_max_c": 37.6,
+    "humidity": 34,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
     "wind_kmh": 6.6,
     "samples": 4
   },
@@ -291,110 +291,110 @@
     "wind_kmh": 6.9
   },
   "uv": {
-    "uv": 5.3,
-    "band": "moderate",
-    "daily_max": 6.5,
-    "peak_time": "2026-08-16T13:00",
-    "safe_minutes": 31,
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": null,
+    "peak_time": null,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
         "time": "2026-08-16T00:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T01:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T02:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T03:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T04:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T05:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T06:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T07:00",
-        "uv": 0.2
+        "uv": null
       },
       {
         "time": "2026-08-16T08:00",
-        "uv": 1.0
+        "uv": null
       },
       {
         "time": "2026-08-16T09:00",
-        "uv": 2.1
+        "uv": null
       },
       {
         "time": "2026-08-16T10:00",
-        "uv": 3.5
+        "uv": null
       },
       {
         "time": "2026-08-16T11:00",
-        "uv": 4.8
+        "uv": null
       },
       {
         "time": "2026-08-16T12:00",
-        "uv": 5.9
+        "uv": null
       },
       {
         "time": "2026-08-16T13:00",
-        "uv": 6.5
+        "uv": null
       },
       {
         "time": "2026-08-16T14:00",
-        "uv": 6.5
+        "uv": null
       },
       {
         "time": "2026-08-16T15:00",
-        "uv": 5.9
+        "uv": null
       },
       {
         "time": "2026-08-16T16:00",
-        "uv": 4.9
+        "uv": null
       },
       {
         "time": "2026-08-16T17:00",
-        "uv": 3.5
+        "uv": null
       },
       {
         "time": "2026-08-16T18:00",
-        "uv": 2.2
+        "uv": null
       },
       {
         "time": "2026-08-16T19:00",
-        "uv": 0.9
+        "uv": null
       },
       {
         "time": "2026-08-16T20:00",
-        "uv": 0.2
+        "uv": null
       },
       {
         "time": "2026-08-16T21:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T22:00",
-        "uv": 0.0
+        "uv": null
       },
       {
         "time": "2026-08-16T23:00",
-        "uv": 0.0
+        "uv": null
       }
     ],
-    "fetched_at": "2026-08-16T15:28:05+02:00"
+    "fetched_at": "2026-08-16T16:18:56+02:00"
   }
 }
