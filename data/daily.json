@@ -1,15 +1,40 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "title": "A Golden Corona Eclipse",
-    "date": "2026-08-17",
-    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "usd0015edb",
+        "title": "M5.1 Earthquake - 28 km SW of Kandrian, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-17T11:00:23.022000Z",
+        "coordinates": [
+          149.3577,
+          -6.3769
+        ]
+      },
+      {
+        "id": "usd0015ed8",
+        "title": "M5.4 Earthquake - 75 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T10:44:49.886000Z",
+        "coordinates": [
+          120.4324,
+          -7.9289
+        ]
+      },
+      {
+        "id": "usd0015ed7",
+        "title": "M5.2 Earthquake - 81 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T10:42:41.971000Z",
+        "coordinates": [
+          120.5019,
+          -7.8762
+        ]
+      },
       {
         "id": "usd0015ebj",
         "title": "M5.2 Earthquake - 70 km NNW of Ende, Indonesia",
@@ -129,36 +154,6 @@
           167.1934,
           -14.5474
         ]
-      },
-      {
-        "id": "us6000tl44",
-        "title": "M5.0 Earthquake - 80 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T23:12:54.664000Z",
-        "coordinates": [
-          120.5156,
-          -7.8894
-        ]
-      },
-      {
-        "id": "us6000tl43",
-        "title": "M5.4 Earthquake - 19 km NE of Colonia, Micronesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T22:52:55.761000Z",
-        "coordinates": [
-          138.224,
-          9.6571
-        ]
-      },
-      {
-        "id": "us6000tl36",
-        "title": "M5.5 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-08-15T19:32:30.371000Z",
-        "coordinates": [
-          142.7868,
-          23.4461
-        ]
       }
     ]
   },
@@ -248,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.7,
-    "feels_c": 25.6,
-    "humidity": 50,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 14.8
+    "temp_c": 24.7,
+    "feels_c": 24.9,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 22.6,
-    "temp_max_c": 29.4,
-    "humidity": 62,
+    "temp_max_c": 27.8,
+    "humidity": 69,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 10.2,
+    "icon": "04d",
+    "wind_kmh": 9.1,
     "samples": 5
   },
   "forecast": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 15.1,
     "temp_max_c": 32.2,
     "humidity": 59,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.2,
     "temp_max_c": 32.2,
     "humidity": 53,
@@ -291,11 +286,11 @@
     "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 5.9,
+    "uv": 5.0,
     "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-08-17T12:00",
-    "safe_minutes": 28,
+    "safe_minutes": 33,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T12:28:26+02:00"
+    "fetched_at": "2026-08-17T13:21:42+02:00"
   }
 }
