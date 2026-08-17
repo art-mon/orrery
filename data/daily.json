@@ -1,15 +1,30 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "title": "Milky Way over Yellowstone",
-    "date": "2026-08-16",
-    "explanation": "The Milky Way was not created by an evaporating lake.  The colorful pool of water, about 10 meters across, is known as Silex Spring and is located in Yellowstone National Park in Wyoming, USA.  Illuminated artificially, the colors are caused by layers of bacteria that grow in the hot spring.  Steam rises off the spring, heated by underground magma associated with the Yellowstone Hotspot.  Unrelated and far in the distance, the central band of our Milky Way Galaxy arches high overhead, a band lit by billions of stars.  The picture features a 16-image panorama taken in 2014.  If the Yellowstone Hotspot causes another supervolcanic eruption as it did about 640,000 years ago, a large part of North America would be affected.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_1800.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "usd0015eay",
+        "title": "M5.7 Earthquake - 42 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T00:46:45.054000Z",
+        "coordinates": [
+          121.4731,
+          -8.5128
+        ]
+      },
+      {
+        "id": "usd0015eas",
+        "title": "M5.0 Earthquake - 215 km ENE of Levuka, Fiji",
+        "category": "Earthquake",
+        "date": "2026-08-17T00:08:07.431000Z",
+        "coordinates": [
+          -178.692,
+          -17.6896
+        ]
+      },
       {
         "id": "usd0015e8n",
         "title": "M5.2 Earthquake - 67 km WSW of Puerto Madero, Mexico",
@@ -139,39 +154,11 @@
           121.2565,
           -8.2575
         ]
-      },
-      {
-        "id": "us6000tkyz",
-        "title": "M5.4 Earthquake - 41 km SSW of Angoram, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-15T11:10:24.937000Z",
-        "coordinates": [
-          143.9212,
-          -4.411
-        ]
-      },
-      {
-        "id": "us6000tkyk",
-        "title": "M6.9 Earthquake - 15 km NNW of Pematangsiantar, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T10:54:51.796000Z",
-        "coordinates": [
-          99.015,
-          3.0856
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "417874 (2007 NC5)",
-        "hazardous": false,
-        "diameter_m": 1413,
-        "close_approach_date": "2026-08-16",
-        "miss_distance_km": 47615955,
-        "velocity_kmh": 144032
-      },
       {
         "name": "(2014 CE)",
         "hazardous": false,
@@ -243,45 +230,53 @@
         "close_approach_date": "2026-08-19",
         "miss_distance_km": 57188453,
         "velocity_kmh": 32343
+      },
+      {
+        "name": "(2016 EF156)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-08-19",
+        "miss_distance_km": 73046158,
+        "velocity_kmh": 78760
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.5,
-    "humidity": 64,
+    "temp_c": 19.7,
+    "feels_c": 19.5,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 31.3,
-    "humidity": 59,
+    "city": "Zagreb",
+    "temp_min_c": 18.5,
+    "temp_max_c": 32.2,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.3,
-    "samples": 9
+    "wind_kmh": 6.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.8,
+    "city": "Zagreb",
+    "temp_min_c": 13.9,
     "temp_max_c": 29.3,
-    "humidity": 61,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 7.9
   },
   "forecast_day_after": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.5,
     "temp_max_c": 32.0,
     "humidity": 51,
@@ -293,8 +288,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 5.8,
-    "peak_time": "2026-08-17T14:00",
+    "daily_max": 6.2,
+    "peak_time": "2026-08-17T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -328,7 +323,7 @@
       },
       {
         "time": "2026-08-17T07:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-08-17T08:00",
@@ -340,35 +335,35 @@
       },
       {
         "time": "2026-08-17T10:00",
-        "uv": 3.0
+        "uv": 3.5
       },
       {
         "time": "2026-08-17T11:00",
-        "uv": 3.0
+        "uv": 4.8
       },
       {
         "time": "2026-08-17T12:00",
-        "uv": 3.6
-      },
-      {
-        "time": "2026-08-17T13:00",
-        "uv": 5.7
-      },
-      {
-        "time": "2026-08-17T14:00",
         "uv": 5.8
       },
       {
+        "time": "2026-08-17T13:00",
+        "uv": 6.2
+      },
+      {
+        "time": "2026-08-17T14:00",
+        "uv": 5.5
+      },
+      {
         "time": "2026-08-17T15:00",
-        "uv": 5.1
+        "uv": 4.5
       },
       {
         "time": "2026-08-17T16:00",
-        "uv": 2.7
+        "uv": 2.5
       },
       {
         "time": "2026-08-17T17:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-08-17T18:00",
@@ -380,7 +375,7 @@
       },
       {
         "time": "2026-08-17T20:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-08-17T21:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T01:16:26+02:00"
+    "fetched_at": "2026-08-17T03:04:51+02:00"
   }
 }
