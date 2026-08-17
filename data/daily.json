@@ -1,18 +1,23 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Milky Way over Yellowstone",
+    "date": "2026-08-16",
+    "explanation": "The Milky Way was not created by an evaporating lake.  The colorful pool of water, about 10 meters across, is known as Silex Spring and is located in Yellowstone National Park in Wyoming, USA.  Illuminated artificially, the colors are caused by layers of bacteria that grow in the hot spring.  Steam rises off the spring, heated by underground magma associated with the Yellowstone Hotspot.  Unrelated and far in the distance, the central band of our Milky Way Galaxy arches high overhead, a band lit by billions of stars.  The picture features a 16-image panorama taken in 2014.  If the Yellowstone Hotspot causes another supervolcanic eruption as it did about 640,000 years ago, a large part of North America would be affected.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_1800.jpg"
   },
   "events": {
     "events": [
       {
         "id": "usd0015eay",
-        "title": "M5.7 Earthquake - 42 km NNW of Ende, Indonesia",
+        "title": "M5.7 Earthquake - 65 km NNW of Ende, Indonesia",
         "category": "Earthquake",
-        "date": "2026-08-17T00:46:45.054000Z",
+        "date": "2026-08-17T00:46:45.640000Z",
         "coordinates": [
-          121.4731,
-          -8.5128
+          121.5148,
+          -8.2665
         ]
       },
       {
@@ -242,10 +247,10 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.5,
-    "humidity": 68,
+    "city": "Donji grad",
+    "temp_c": 18.7,
+    "feels_c": 18.5,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
@@ -254,9 +259,9 @@
   "forecast_today": {
     "date": "2026-08-17",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
+    "temp_min_c": 18.7,
     "temp_max_c": 32.2,
-    "humidity": 56,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
@@ -268,22 +273,22 @@
     "city": "Zagreb",
     "temp_min_c": 13.9,
     "temp_max_c": 29.3,
-    "humidity": 63,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.9
+    "wind_kmh": 7.2
   },
   "forecast_day_after": {
     "date": "2026-08-19",
     "city": "Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 32.0,
-    "humidity": 51,
+    "temp_min_c": 17,
+    "temp_max_c": 32.9,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.1
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T03:04:51+02:00"
+    "fetched_at": "2026-08-17T04:56:23+02:00"
   }
 }
