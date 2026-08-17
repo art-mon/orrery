@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "title": "A Golden Corona Eclipse",
-    "date": "2026-08-17",
-    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "usd0015edq",
+        "title": "M5.8 Earthquake - 72 km E of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-17T12:38:03.466000Z",
+        "coordinates": [
+          159.7106,
+          53.024
+        ]
+      },
       {
         "id": "usd0015edb",
         "title": "M5.1 Earthquake - 28 km SW of Kandrian, Papua New Guinea",
@@ -149,16 +154,6 @@
           121.5082,
           -8.4615
         ]
-      },
-      {
-        "id": "us6000tl4w",
-        "title": "M6.1 Earthquake - 56 km NNE of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-08-16T03:20:24.373000Z",
-        "coordinates": [
-          167.1934,
-          -14.5474
-        ]
       }
     ]
   },
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 32.6,
-    "feels_c": 32.6,
-    "humidity": 37,
+    "temp_c": 32.0,
+    "feels_c": 32.1,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 11.1
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-17",
     "city": "Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 32.6,
-    "humidity": 56,
-    "condition": "Rain",
-    "description": "rain",
+    "temp_min_c": 26.2,
+    "temp_max_c": 32.0,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 9.1,
+    "wind_kmh": 8.9,
     "samples": 4
   },
   "forecast": {
     "date": "2026-08-18",
     "city": "Zagreb",
-    "temp_min_c": 15.1,
-    "temp_max_c": 32.2,
-    "humidity": 59,
+    "temp_min_c": 16.9,
+    "temp_max_c": 31.6,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.3
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-08-19",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
-    "temp_max_c": 32.2,
-    "humidity": 53,
+    "temp_min_c": 17.0,
+    "temp_max_c": 32.4,
+    "humidity": 50,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 6.7
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 3.4,
+    "uv": 3.2,
     "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-08-17T12:00",
-    "safe_minutes": 49,
+    "safe_minutes": 52,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T14:37:21+02:00"
+    "fetched_at": "2026-08-17T15:36:41+02:00"
   }
 }
