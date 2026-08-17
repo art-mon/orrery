@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tlgm",
+        "title": "M5.3 Earthquake - 59 km ENE of Colonia, Micronesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T22:53:11.009000Z",
+        "coordinates": [
+          138.6056,
+          9.7621
+        ]
+      },
+      {
         "id": "us6000tlbz",
         "title": "M5.1 Earthquake - Kuril Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.5504,
           -7.8791
         ]
-      },
-      {
-        "id": "usd0015e7j",
-        "title": "M5.3 Earthquake - 75 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-16T10:14:36.343000Z",
-        "coordinates": [
-          120.5995,
-          -7.9399
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.8,
-    "humidity": 89,
+    "temp_c": 19.8,
+    "feels_c": 20.2,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
@@ -258,10 +258,10 @@
   },
   "forecast_today": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.5,
+    "city": "Zagreb",
+    "temp_min_c": 19.1,
     "temp_max_c": 33.4,
-    "humidity": 63,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
@@ -270,7 +270,7 @@
   },
   "forecast": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 33.0,
     "humidity": 49,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-20",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.3,
     "temp_max_c": 34.6,
     "humidity": 48,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-18T00:20:43+02:00"
+    "fetched_at": "2026-08-18T01:19:59+02:00"
   }
 }
