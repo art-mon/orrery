@@ -1,10 +1,25 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "A Golden Corona Eclipse",
+    "date": "2026-08-17",
+    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "usd0015ee2",
+        "title": "M5.0 Earthquake - 32 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T13:58:34.474000Z",
+        "coordinates": [
+          120.4472,
+          -8.3182
+        ]
+      },
       {
         "id": "usd0015edq",
         "title": "M5.8 Earthquake - 72 km E of Petropavlovsk-Kamchatsky, Russia",
@@ -144,16 +159,6 @@
           120.5855,
           -7.9322
         ]
-      },
-      {
-        "id": "us6000tl55",
-        "title": "M5.0 Earthquake - 45 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-16T03:42:59.885000Z",
-        "coordinates": [
-          121.5082,
-          -8.4615
-        ]
       }
     ]
   },
@@ -242,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 31.1,
-    "feels_c": 31.3,
-    "humidity": 42,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 7.4
+    "city": "City of Zagreb",
+    "temp_c": 31.8,
+    "feels_c": 31.2,
+    "humidity": 35,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 25.8,
-    "temp_max_c": 31.1,
-    "humidity": 50,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 8.5,
-    "samples": 4
+    "city": "Zagreb",
+    "temp_min_c": 26.1,
+    "temp_max_c": 31.8,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 8.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.9,
     "temp_max_c": 31.6,
     "humidity": 58,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.0,
     "temp_max_c": 32.4,
     "humidity": 50,
@@ -286,11 +291,11 @@
     "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 2.4,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-08-17T12:00",
-    "safe_minutes": 71,
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T16:24:23+02:00"
+    "fetched_at": "2026-08-17T17:21:37+02:00"
   }
 }
