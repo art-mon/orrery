@@ -122,12 +122,12 @@
       },
       {
         "id": "usd0015e7p",
-        "title": "M5.1 Earthquake - 112 km ESE of Madang, Papua New Guinea",
+        "title": "M5.5 Earthquake - 116 km ESE of Madang, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-08-16T10:59:10.367000Z",
+        "date": "2026-08-16T10:59:11.283000Z",
         "coordinates": [
-          146.7476,
-          -5.5481
+          146.7882,
+          -5.5432
         ]
       },
       {
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.7,
-    "feels_c": 29.2,
-    "humidity": 39,
+    "city": "Zagreb",
+    "temp_c": 27.7,
+    "feels_c": 27.9,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 11.1
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 25.6,
-    "temp_max_c": 29.7,
+    "city": "Zagreb",
+    "temp_min_c": 26.2,
+    "temp_max_c": 27.7,
     "humidity": 50,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 6.8,
+    "wind_kmh": 5.0,
     "samples": 3
   },
   "forecast": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 16.9,
     "temp_max_c": 31.6,
-    "humidity": 58,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.0,
     "temp_max_c": 32.4,
     "humidity": 50,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 0.7,
+    "uv": 0.2,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-08-17T12:00",
-    "safe_minutes": 256,
+    "safe_minutes": 833,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T18:23:11+02:00"
+    "fetched_at": "2026-08-17T19:23:23+02:00"
   }
 }
