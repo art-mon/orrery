@@ -1,15 +1,35 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "title": "Milky Way over Yellowstone",
-    "date": "2026-08-16",
-    "explanation": "The Milky Way was not created by an evaporating lake.  The colorful pool of water, about 10 meters across, is known as Silex Spring and is located in Yellowstone National Park in Wyoming, USA.  Illuminated artificially, the colors are caused by layers of bacteria that grow in the hot spring.  Steam rises off the spring, heated by underground magma associated with the Yellowstone Hotspot.  Unrelated and far in the distance, the central band of our Milky Way Galaxy arches high overhead, a band lit by billions of stars.  The picture features a 16-image panorama taken in 2014.  If the Yellowstone Hotspot causes another supervolcanic eruption as it did about 640,000 years ago, a large part of North America would be affected.",
+    "title": "A Golden Corona Eclipse",
+    "date": "2026-08-17",
+    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/mwyellowstone_lane_1800.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "usd0015ebj",
+        "title": "M5.2 Earthquake - 70 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T03:48:04.873000Z",
+        "coordinates": [
+          121.327,
+          -8.2999
+        ]
+      },
+      {
+        "id": "usd0015ebi",
+        "title": "M5.3 Earthquake - 68 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-17T03:36:39.370000Z",
+        "coordinates": [
+          121.407,
+          -8.278
+        ]
+      },
       {
         "id": "usd0015eay",
         "title": "M5.7 Earthquake - 65 km NNW of Ende, Indonesia",
@@ -139,26 +159,6 @@
           142.7868,
           23.4461
         ]
-      },
-      {
-        "id": "us6000tl1s",
-        "title": "M5.7 Earthquake - 125 km NNE of Palu, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T16:25:18.342000Z",
-        "coordinates": [
-          120.2573,
-          0.1542
-        ]
-      },
-      {
-        "id": "us6000tl0v",
-        "title": "M5.2 Earthquake - 78 km NW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-15T12:14:39.321000Z",
-        "coordinates": [
-          121.2565,
-          -8.2575
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 17.7,
-    "feels_c": 17.4,
-    "humidity": 72,
+    "feels_c": 17.5,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
+    "icon": "04d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-08-17",
     "city": "Zagreb",
     "temp_min_c": 17.7,
-    "temp_max_c": 32.2,
-    "humidity": 56,
+    "temp_max_c": 29.5,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 6.3,
+    "icon": "04d",
+    "wind_kmh": 6.0,
     "samples": 7
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 7.1
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-17T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T05:49:31+02:00"
+    "fetched_at": "2026-08-17T06:37:43+02:00"
   }
 }
