@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "A Golden Corona Eclipse",
+    "date": "2026-08-17",
+    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
   },
   "events": {
     "events": [
@@ -243,31 +248,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.8,
-    "feels_c": 18.6,
-    "humidity": 72,
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.8,
-    "temp_max_c": 29.9,
-    "humidity": 59,
-    "condition": "Clouds",
-    "description": "clouds",
+    "city": "Zagreb",
+    "temp_min_c": 20.2,
+    "temp_max_c": 30.3,
+    "humidity": 51,
+    "condition": "Rain",
+    "description": "rain",
     "icon": "04d",
-    "wind_kmh": 6.3,
-    "samples": 7
+    "wind_kmh": 6.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.3,
-    "temp_max_c": 29.6,
+    "city": "Zagreb",
+    "temp_min_c": 13.9,
+    "temp_max_c": 29.3,
     "humidity": 62,
     "condition": "Clouds",
     "description": "broken clouds",
@@ -276,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-08-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 33.5,
-    "humidity": 51,
+    "city": "Zagreb",
+    "temp_min_c": 17,
+    "temp_max_c": 32.9,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.3
+    "wind_kmh": 7.1
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 2.2,
     "band": "low",
-    "daily_max": 6.2,
-    "peak_time": "2026-08-17T13:00",
-    "safe_minutes": 196,
+    "daily_max": 5.8,
+    "peak_time": "2026-08-17T12:00",
+    "safe_minutes": 74,
     "skin_type": 2,
     "hourly": [
       {
@@ -335,7 +340,7 @@
       },
       {
         "time": "2026-08-17T10:00",
-        "uv": 3.5
+        "uv": 3.3
       },
       {
         "time": "2026-08-17T11:00",
@@ -347,35 +352,35 @@
       },
       {
         "time": "2026-08-17T13:00",
-        "uv": 6.2
+        "uv": 5.7
       },
       {
         "time": "2026-08-17T14:00",
-        "uv": 5.5
-      },
-      {
-        "time": "2026-08-17T15:00",
         "uv": 4.5
       },
       {
+        "time": "2026-08-17T15:00",
+        "uv": 3.3
+      },
+      {
         "time": "2026-08-17T16:00",
-        "uv": 2.5
+        "uv": 3.1
       },
       {
         "time": "2026-08-17T17:00",
-        "uv": 1.4
+        "uv": 2.0
       },
       {
         "time": "2026-08-17T18:00",
-        "uv": 1.7
+        "uv": 2.0
       },
       {
         "time": "2026-08-17T19:00",
-        "uv": 0.8
+        "uv": 0.1
       },
       {
         "time": "2026-08-17T20:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-08-17T21:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-17T07:32:26+02:00"
+    "fetched_at": "2026-08-17T08:48:46+02:00"
   }
 }
