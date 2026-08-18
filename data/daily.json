@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tlkt",
+        "title": "M5.6 Earthquake - 154 km SSE of Teluk Dalam, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-18T06:02:20.229000Z",
+        "coordinates": [
+          98.416,
+          -0.6858
+        ]
+      },
+      {
         "id": "us6000tlkl",
         "title": "M5.7 Earthquake - 95 km SW of Puerto Madero, Mexico",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           146.7882,
           -5.5432
         ]
-      },
-      {
-        "id": "usd0015e7k",
-        "title": "M5.1 Earthquake - 81 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-16T10:31:34.822000Z",
-        "coordinates": [
-          120.5504,
-          -7.8791
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 19.5,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.7
+    "temp_c": 21.5,
+    "feels_c": 21.8,
+    "humidity": 79,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-18",
-    "city": "Zagreb",
-    "temp_min_c": 19.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.4,
     "temp_max_c": 33.6,
-    "humidity": 64,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 5.9,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 6.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-19",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.1,
     "temp_max_c": 36.9,
     "humidity": 54,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-20",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 21.5,
     "temp_max_c": 34.8,
     "humidity": 50,
@@ -291,11 +291,11 @@
     "wind_kmh": 11.7
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 6.3,
     "peak_time": "2026-08-18T13:00",
-    "safe_minutes": 303,
+    "safe_minutes": 90,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-18T07:24:58+02:00"
+    "fetched_at": "2026-08-18T08:37:26+02:00"
   }
 }
