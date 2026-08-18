@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tlqq",
+        "title": "M5.3 Earthquake - 35 km SSW of Jurm, Afghanistan",
+        "category": "Earthquake",
+        "date": "2026-08-18T19:51:09.478000Z",
+        "coordinates": [
+          70.7551,
+          36.5535
+        ]
+      },
+      {
         "id": "us6000tlkt",
         "title": "M5.6 Earthquake - 154 km SSE of Teluk Dalam, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.7165,
           -7.9176
         ]
-      },
-      {
-        "id": "usd0015e7p",
-        "title": "M5.5 Earthquake - 116 km ESE of Madang, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-16T10:59:11.283000Z",
-        "coordinates": [
-          146.7882,
-          -5.5432
-        ]
       }
     ]
   },
@@ -248,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.7,
-    "humidity": 64,
+    "temp_c": 21.7,
+    "feels_c": 21.8,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 24.1
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-08-18",
     "city": "Zagreb",
-    "temp_min_c": 21.9,
-    "temp_max_c": 22.7,
-    "humidity": 66,
+    "temp_min_c": 21.7,
+    "temp_max_c": 21.7,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 14.2,
+    "wind_kmh": 10.5,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-19",
     "city": "Zagreb",
-    "temp_min_c": 18.1,
+    "temp_min_c": 19.3,
     "temp_max_c": 37.4,
     "humidity": 52,
     "condition": "Clouds",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-18T21:24:53+02:00"
+    "fetched_at": "2026-08-18T22:19:20+02:00"
   }
 }
