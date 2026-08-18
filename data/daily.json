@@ -1,33 +1,33 @@
 {
   "generated": "2026-08-18",
   "apod": {
-    "title": "A Golden Corona Eclipse",
-    "date": "2026-08-17",
-    "explanation": "This total solar eclipse appeared not only poetically beautiful but scientifically interesting.  Usually the solar corona appears white, and to some observers the corona of last week's total solar eclipse did appear this pearly color.  But this time, totality observers in Spain saw a corona that appeared unusually golden.  For one reason, from Spain, the totality occurred when the setting Sun was near the horizon.  That low, sunlight travels through a large amount of air which scatters out blue light. An unusual amount of smoke in the air from nearby forest fires acted as a second filter, further scattering the remaining blue tones and deepening the already gold-dominated light. The HDR-processed, multiple-exposure featured image was captured from Benavente, Spain last week.  One thing that did not appear golden was a hydrogen-glowing prominence that hovered over the Sun's left edge -- its original bright pink color survived.   Gallery: Solar Eclipse of 2026 August 12",
+    "title": "Perseids from Perseus",
+    "date": "2026-08-18",
+    "explanation": "This was a good year for the Perseids meteor shower.  A key reason was the Moon was absent from lighting up Earth's night sky so that more meteors were visible than usual.  Where was the Moon?  It was busy visiting the Sun.  Near the Perseids peak, the Moon moved directly in front of the Sun and created a total solar eclipse visible from Greenland and Spain. The Perseids occur when the Earth collides with a stream of Sun-orbiting debris cast off by Comet Swift-Tuttle. Perseid meteors, although typically only the size of a sand grain, tend to be fast and bright because Swift-Tuttle's debris orbits the Sun in a direction partly opposite Earth's orbital motion. In the featured image compilation, accumulated over several nights from Jizerka in the Czech Republic, the Perseids meteor streaks can be traced back to a single location on the sky -- its radiant in Perseus.    Gallery: Perseids Meteor Shower of 2026",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/GoldCorona_Santos_1751.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/Perseids_karuk_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/Perseids_karuk_3000.jpg"
   },
   "events": {
     "events": [
       {
         "id": "us6000tlgm",
-        "title": "M5.3 Earthquake - 59 km ENE of Colonia, Micronesia",
+        "title": "M5.3 Earthquake - 24 km ENE of Colonia, Micronesia",
         "category": "Earthquake",
-        "date": "2026-08-17T22:53:11.009000Z",
+        "date": "2026-08-17T22:53:11.292000Z",
         "coordinates": [
-          138.6056,
-          9.7621
+          138.3106,
+          9.638
         ]
       },
       {
         "id": "us6000tlbz",
         "title": "M5.1 Earthquake - Kuril Islands",
         "category": "Earthquake",
-        "date": "2026-08-17T21:36:35.887000Z",
+        "date": "2026-08-17T21:36:36.105000Z",
         "coordinates": [
-          151.3834,
-          46.4341
+          151.4468,
+          46.4392
         ]
       },
       {
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_c": 18.7,
     "feels_c": 18.9,
     "humidity": 89,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.7
+    "icon": "04d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-18",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
+    "temp_min_c": 18.7,
     "temp_max_c": 33.6,
-    "humidity": 59,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.9,
+    "icon": "04d",
+    "wind_kmh": 6.2,
     "samples": 7
   },
   "forecast": {
@@ -291,7 +291,7 @@
     "wind_kmh": 11.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 6.3,
     "peak_time": "2026-08-18T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-18T05:40:56+02:00"
+    "fetched_at": "2026-08-18T06:31:39+02:00"
   }
 }
