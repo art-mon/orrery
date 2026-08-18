@@ -165,14 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2014 CE)",
-        "hazardous": false,
-        "diameter_m": 25,
-        "close_approach_date": "2026-08-17",
-        "miss_distance_km": 21766254,
-        "velocity_kmh": 61350
-      },
-      {
         "name": "(2017 WY27)",
         "hazardous": false,
         "diameter_m": 16,
@@ -243,41 +235,49 @@
         "close_approach_date": "2026-08-19",
         "miss_distance_km": 73046158,
         "velocity_kmh": 78760
+      },
+      {
+        "name": "(2019 LR4)",
+        "hazardous": false,
+        "diameter_m": 54,
+        "close_approach_date": "2026-08-20",
+        "miss_distance_km": 14332478,
+        "velocity_kmh": 31182
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 20.2,
-    "humidity": 90,
+    "temp_c": 19.2,
+    "feels_c": 19.6,
+    "humidity": 89,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-18",
     "city": "Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 33.4,
-    "humidity": 64,
+    "temp_min_c": 18.4,
+    "temp_max_c": 33.6,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.3,
-    "samples": 9
+    "wind_kmh": 6.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-19",
     "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 33.0,
-    "humidity": 49,
+    "temp_min_c": 18.1,
+    "temp_max_c": 36.9,
+    "humidity": 54,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.7
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-08-20",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-18T01:19:59+02:00"
+    "fetched_at": "2026-08-18T03:02:38+02:00"
   }
 }
