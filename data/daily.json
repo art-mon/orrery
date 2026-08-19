@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tlyv",
+        "title": "M5.4 Earthquake - 134 km S of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-19T18:07:17.251000Z",
+        "coordinates": [
+          155.8633,
+          49.4799
+        ]
+      },
+      {
         "id": "us6000tlxq",
         "title": "M5.5 Earthquake - 52 km NNE of Ruteng, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           121.327,
           -8.2999
         ]
-      },
-      {
-        "id": "usd0015ebi",
-        "title": "M5.3 Earthquake - 68 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-17T03:36:39.370000Z",
-        "coordinates": [
-          121.407,
-          -8.278
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 31.7,
-    "feels_c": 31.4,
+    "city": "Donji grad",
+    "temp_c": 29.8,
+    "feels_c": 29.2,
     "humidity": 37,
     "condition": "Clouds",
     "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 11.1
+    "icon": "02n",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-19",
     "city": "Zagreb",
-    "temp_min_c": 29.9,
-    "temp_max_c": 31.7,
-    "humidity": 38,
+    "temp_min_c": 28.5,
+    "temp_max_c": 29.8,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 9.5,
-    "samples": 3
+    "icon": "02n",
+    "wind_kmh": 10.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-08-20",
@@ -291,11 +291,11 @@
     "wind_kmh": 9.6
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.3,
     "peak_time": "2026-08-19T13:00",
-    "safe_minutes": 476,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-19T19:23:25+02:00"
+    "fetched_at": "2026-08-19T20:30:03+02:00"
   }
 }
