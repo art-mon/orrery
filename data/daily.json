@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm0u",
+        "title": "M5.8 Earthquake - 25 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-19T22:45:17.831000Z",
+        "coordinates": [
+          120.529,
+          -8.3926
+        ]
+      },
+      {
+        "id": "us6000tm0s",
+        "title": "M5.2 Earthquake - 31 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-19T22:28:08.710000Z",
+        "coordinates": [
+          120.4559,
+          -8.3255
+        ]
+      },
+      {
         "id": "us6000tlz8",
         "title": "M5.4 Earthquake - 215 km E of Levuka, Fiji",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           149.3577,
           -6.3769
         ]
-      },
-      {
-        "id": "usd0015ed8",
-        "title": "M5.4 Earthquake - 75 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-17T10:44:49.886000Z",
-        "coordinates": [
-          120.4324,
-          -7.9289
-        ]
-      },
-      {
-        "id": "usd0015ed7",
-        "title": "M5.2 Earthquake - 81 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-17T10:42:41.971000Z",
-        "coordinates": [
-          120.5019,
-          -7.8762
-        ]
       }
     ]
   },
@@ -248,24 +248,24 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.7,
-    "feels_c": 25.5,
-    "humidity": 47,
+    "temp_c": 24.7,
+    "feels_c": 24.5,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 11.1
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-08-20",
     "city": "Zagreb",
-    "temp_min_c": 23.6,
+    "temp_min_c": 24,
     "temp_max_c": 34.5,
     "humidity": 46,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 12.7,
+    "wind_kmh": 13.4,
     "samples": 9
   },
   "forecast": {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T00:20:52+02:00"
+    "fetched_at": "2026-08-20T01:19:19+02:00"
   }
 }
