@@ -11,23 +11,33 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm16",
+        "title": "M5.0 Earthquake - 87 km S of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-08-20T00:20:24.938000Z",
+        "coordinates": [
+          169.1514,
+          -20.324
+        ]
+      },
+      {
         "id": "us6000tm0u",
         "title": "M5.8 Earthquake - 25 km NNE of Ruteng, Indonesia",
         "category": "Earthquake",
-        "date": "2026-08-19T22:45:17.831000Z",
+        "date": "2026-08-19T22:45:17.395000Z",
         "coordinates": [
-          120.529,
-          -8.3926
+          120.5278,
+          -8.3922
         ]
       },
       {
         "id": "us6000tm0s",
-        "title": "M5.2 Earthquake - 31 km N of Ruteng, Indonesia",
+        "title": "M5.2 Earthquake - 33 km N of Ruteng, Indonesia",
         "category": "Earthquake",
-        "date": "2026-08-19T22:28:08.710000Z",
+        "date": "2026-08-19T22:28:08.388000Z",
         "coordinates": [
-          120.4559,
-          -8.3255
+          120.4718,
+          -8.3101
         ]
       },
       {
@@ -149,53 +159,11 @@
           159.7106,
           53.024
         ]
-      },
-      {
-        "id": "usd0015edb",
-        "title": "M5.1 Earthquake - 28 km SW of Kandrian, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-17T11:00:23.022000Z",
-        "coordinates": [
-          149.3577,
-          -6.3769
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 WC4)",
-        "hazardous": false,
-        "diameter_m": 197,
-        "close_approach_date": "2026-08-19",
-        "miss_distance_km": 36198395,
-        "velocity_kmh": 35828
-      },
-      {
-        "name": "(2020 BV5)",
-        "hazardous": false,
-        "diameter_m": 31,
-        "close_approach_date": "2026-08-19",
-        "miss_distance_km": 55406602,
-        "velocity_kmh": 61893
-      },
-      {
-        "name": "(2019 TZ6)",
-        "hazardous": false,
-        "diameter_m": 17,
-        "close_approach_date": "2026-08-19",
-        "miss_distance_km": 57188453,
-        "velocity_kmh": 32343
-      },
-      {
-        "name": "(2016 EF156)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-08-19",
-        "miss_distance_km": 73046158,
-        "velocity_kmh": 78760
-      },
       {
         "name": "(2019 LR4)",
         "hazardous": false,
@@ -243,45 +211,77 @@
         "close_approach_date": "2026-08-21",
         "miss_distance_km": 46526521,
         "velocity_kmh": 72266
+      },
+      {
+        "name": "(2016 US4)",
+        "hazardous": false,
+        "diameter_m": 78,
+        "close_approach_date": "2026-08-21",
+        "miss_distance_km": 50395175,
+        "velocity_kmh": 57477
+      },
+      {
+        "name": "(2013 PO43)",
+        "hazardous": false,
+        "diameter_m": 298,
+        "close_approach_date": "2026-08-21",
+        "miss_distance_km": 55154040,
+        "velocity_kmh": 20033
+      },
+      {
+        "name": "(2014 UR116)",
+        "hazardous": true,
+        "diameter_m": 652,
+        "close_approach_date": "2026-08-21",
+        "miss_distance_km": 60665428,
+        "velocity_kmh": 70080
+      },
+      {
+        "name": "(2019 LK5)",
+        "hazardous": false,
+        "diameter_m": 995,
+        "close_approach_date": "2026-08-21",
+        "miss_distance_km": 69615323,
+        "velocity_kmh": 18414
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.5,
-    "humidity": 50,
+    "temp_c": 22.7,
+    "feels_c": 22.5,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 16.7
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-20",
-    "city": "Zagreb",
-    "temp_min_c": 24,
-    "temp_max_c": 34.5,
-    "humidity": 46,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.6,
+    "temp_max_c": 35.8,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 13.4,
-    "samples": 9
+    "wind_kmh": 12.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-21",
-    "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 30.3,
-    "humidity": 67,
+    "city": "City of Zagreb",
+    "temp_min_c": 21.3,
+    "temp_max_c": 34,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 10.2
+    "wind_kmh": 8.0
   },
   "forecast_day_after": {
     "date": "2026-08-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.6,
     "temp_max_c": 24.6,
     "humidity": 62,
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-08-20T15:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-08-20T16:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-08-20T19:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-08-20T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T01:19:19+02:00"
+    "fetched_at": "2026-08-20T03:03:37+02:00"
   }
 }
