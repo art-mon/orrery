@@ -6,10 +6,30 @@
     "explanation": "Like an illustration in a galactic Just So Story, the Elephant's Trunk Nebula winds through the emission region and young star cluster complex IC 1396, in the high and far off constellation of Cepheus. Also known as vdB 142, this cosmic elephant's trunk is over 20 light-years long. The detailed telescopic view features the bright swept-back ridges and pockets of cool interstellar dust and gas that abound in the region. But the dark, tendril-shaped clouds contain the raw material for star formation and hide protostars within. Nearly 3,000 light-years distant, the relatively faint IC 1396 complex covers a large region on the sky, spanning over 5 degrees. Top to bottom this proboscidean-like rendition reaches across an almost 1 degree wide field of view, though. That's a little less than the angular size of 2 full moons.",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2608/IMG_5201_sgarbossa1024.jpeg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/IMG_5201_sgarbossa.jpeg"
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/IMG_5201.jpeg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tm8h",
+        "title": "M5.6 Earthquake - 67 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-20T18:12:51.721000Z",
+        "coordinates": [
+          121.3981,
+          -8.2877
+        ]
+      },
+      {
+        "id": "us6000tm81",
+        "title": "M6.7 Earthquake - 38 km NW of Upahuacho, Peru",
+        "category": "Earthquake",
+        "date": "2026-08-20T18:00:15.163000Z",
+        "coordinates": [
+          -73.616,
+          -14.6262
+        ]
+      },
       {
         "id": "us6000tm2y",
         "title": "M5.2 Earthquake - 270 km SSE of Dunhuang, China",
@@ -139,26 +159,6 @@
           95.5688,
           37.8507
         ]
-      },
-      {
-        "id": "us6000tlqq",
-        "title": "M5.3 Earthquake - 35 km SSW of Jurm, Afghanistan",
-        "category": "Earthquake",
-        "date": "2026-08-18T19:51:09.478000Z",
-        "coordinates": [
-          70.7551,
-          36.5535
-        ]
-      },
-      {
-        "id": "us6000tlkt",
-        "title": "M5.6 Earthquake - 154 km SSE of Teluk Dalam, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-18T06:02:20.229000Z",
-        "coordinates": [
-          98.416,
-          -0.6858
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 31.7,
-    "feels_c": 31.8,
-    "humidity": 40,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 14.8
+    "temp_c": 28.7,
+    "feels_c": 29.1,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 29.1,
-    "temp_max_c": 31.7,
-    "humidity": 44,
+    "city": "Zagreb",
+    "temp_min_c": 27.1,
+    "temp_max_c": 28.7,
+    "humidity": 52,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 11.7,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 10.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-08-21",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 21.2,
     "temp_max_c": 30.7,
-    "humidity": 68,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-22",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 17.1,
     "temp_max_c": 23.9,
     "humidity": 61,
@@ -291,11 +291,11 @@
     "wind_kmh": 10.5
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-20T13:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T19:24:57+02:00"
+    "fetched_at": "2026-08-20T20:34:13+02:00"
   }
 }
