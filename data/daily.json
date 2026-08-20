@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm93",
+        "title": "M5.0 Earthquake - 63 km NW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-20T19:24:03.495000Z",
+        "coordinates": [
+          121.2709,
+          -8.423
+        ]
+      },
+      {
         "id": "us6000tm8j",
         "title": "M5.1 Earthquake - 183 km SE of Kokopo, Papua New Guinea",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.6643,
           -8.1769
         ]
-      },
-      {
-        "id": "us6000tlt9",
-        "title": "M5.2 Earthquake - 66 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-19T03:13:29.805000Z",
-        "coordinates": [
-          121.4389,
-          -8.2837
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.8,
-    "feels_c": 29.2,
-    "humidity": 48,
+    "temp_c": 25.7,
+    "feels_c": 25.8,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 13.0
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-20",
-    "city": "Zagreb",
-    "temp_min_c": 27.8,
-    "temp_max_c": 28.8,
-    "humidity": 52,
+    "city": "City of Zagreb",
+    "temp_min_c": 25.7,
+    "temp_max_c": 25.8,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 11.3,
+    "wind_kmh": 10.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-21",
-    "city": "Zagreb",
-    "temp_min_c": 21.9,
+    "city": "City of Zagreb",
+    "temp_min_c": 23.2,
     "temp_max_c": 33.0,
-    "humidity": 66,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-22",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.0,
     "temp_max_c": 24.6,
     "humidity": 62,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T21:28:01+02:00"
+    "fetched_at": "2026-08-20T22:24:07+02:00"
   }
 }
