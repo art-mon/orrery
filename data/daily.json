@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4
+    "temp_c": 27.6,
+    "feels_c": 28,
+    "humidity": 50,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-20",
     "city": "Zagreb",
-    "temp_min_c": 24.2,
+    "temp_min_c": 25.9,
     "temp_max_c": 35.4,
-    "humidity": 53,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 12.8,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 13.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-21",
@@ -274,7 +274,7 @@
     "temp_min_c": 21.3,
     "temp_max_c": 34,
     "humidity": 66,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 7.9
@@ -291,11 +291,11 @@
     "wind_kmh": 9.0
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-20T13:00",
-    "safe_minutes": 303,
+    "safe_minutes": 88,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T07:26:54+02:00"
+    "fetched_at": "2026-08-20T08:40:09+02:00"
   }
 }
