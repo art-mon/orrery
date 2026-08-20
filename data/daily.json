@@ -92,12 +92,12 @@
       },
       {
         "id": "us6000tlz8",
-        "title": "M5.4 Earthquake - 215 km E of Levuka, Fiji",
+        "title": "M5.4 Earthquake - 216 km E of Levuka, Fiji",
         "category": "Earthquake",
-        "date": "2026-08-19T18:45:29.754000Z",
+        "date": "2026-08-19T18:45:29.787000Z",
         "coordinates": [
-          -178.6638,
-          -17.8049
+          -178.664,
+          -17.7629
         ]
       },
       {
@@ -132,12 +132,12 @@
       },
       {
         "id": "us6000tlrj",
-        "title": "M5.9 Earthquake - 270 km WSW of Yanglong, China",
+        "title": "M5.5 Earthquake - 268 km SSE of Dunhuang, China",
         "category": "Earthquake",
-        "date": "2026-08-18T21:36:28.032000Z",
+        "date": "2026-08-18T21:36:27.970000Z",
         "coordinates": [
-          95.6095,
-          37.8208
+          95.5688,
+          37.8507
         ]
       },
       {
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 36.6,
-    "feels_c": 37.1,
-    "humidity": 30,
+    "city": "Zagreb",
+    "temp_c": 34.9,
+    "feels_c": 36.2,
+    "humidity": 37,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 27.8
+    "wind_kmh": 25.9
   },
   "forecast_today": {
     "date": "2026-08-20",
-    "city": "Donji grad",
-    "temp_min_c": 27.4,
-    "temp_max_c": 36.6,
-    "humidity": 40,
+    "city": "Zagreb",
+    "temp_min_c": 27.1,
+    "temp_max_c": 34.9,
+    "humidity": 48,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 16.8,
-    "samples": 4
+    "wind_kmh": 15.4,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-21",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 21.2,
     "temp_max_c": 30.7,
     "humidity": 71,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-22",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.1,
     "temp_max_c": 23.9,
     "humidity": 61,
@@ -291,11 +291,11 @@
     "wind_kmh": 10.5
   },
   "uv": {
-    "uv": 3.6,
-    "band": "moderate",
+    "uv": 2.5,
+    "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-20T13:00",
-    "safe_minutes": 46,
+    "safe_minutes": 65,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T16:32:55+02:00"
+    "fetched_at": "2026-08-20T17:29:49+02:00"
   }
 }
