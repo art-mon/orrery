@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm1j",
+        "title": "M5.7 Earthquake - 32 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-20T02:46:59.072000Z",
+        "coordinates": [
+          120.6104,
+          -8.3582
+        ]
+      },
+      {
         "id": "us6000tm16",
         "title": "M5.0 Earthquake - 87 km S of Isangel, Vanuatu",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.4472,
           -8.3182
         ]
-      },
-      {
-        "id": "usd0015edq",
-        "title": "M5.8 Earthquake - 72 km E of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-08-17T12:38:03.466000Z",
-        "coordinates": [
-          159.7106,
-          53.024
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.3,
-    "humidity": 59,
+    "temp_c": 20.7,
+    "feels_c": 20.5,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-20",
     "city": "Zagreb",
-    "temp_min_c": 24.2,
+    "temp_min_c": 20.7,
     "temp_max_c": 35.8,
     "humidity": 51,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 12.5,
-    "samples": 8
+    "wind_kmh": 13.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-08-21",
@@ -274,7 +274,7 @@
     "temp_min_c": 21.3,
     "temp_max_c": 34,
     "humidity": 66,
-    "condition": "Clouds",
+    "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 7.9
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T04:53:46+02:00"
+    "fetched_at": "2026-08-20T05:42:55+02:00"
   }
 }
