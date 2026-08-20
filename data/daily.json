@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm2k",
+        "title": "M5.0 Earthquake - 43 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-20T08:01:33.945000Z",
+        "coordinates": [
+          120.4879,
+          -8.2196
+        ]
+      },
+      {
+        "id": "us6000tm2j",
+        "title": "M5.0 Earthquake - 37 km NNW of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-20T07:55:03.208000Z",
+        "coordinates": [
+          120.377,
+          -8.2868
+        ]
+      },
+      {
         "id": "us6000tm1j",
         "title": "M5.7 Earthquake - 32 km NNE of Ruteng, Indonesia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           138.3106,
           9.638
         ]
-      },
-      {
-        "id": "us6000tlbz",
-        "title": "M5.1 Earthquake - Kuril Islands",
-        "category": "Earthquake",
-        "date": "2026-08-17T21:36:36.105000Z",
-        "coordinates": [
-          151.4468,
-          46.4392
-        ]
-      },
-      {
-        "id": "usd0015ee2",
-        "title": "M5.0 Earthquake - 32 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-17T13:58:34.474000Z",
-        "coordinates": [
-          120.4472,
-          -8.3182
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 31.1,
-    "humidity": 47,
+    "temp_c": 32.0,
+    "feels_c": 33.5,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -260,8 +260,8 @@
     "date": "2026-08-20",
     "city": "Zagreb",
     "temp_min_c": 24.6,
-    "temp_max_c": 32.8,
-    "humidity": 48,
+    "temp_max_c": 34.3,
+    "humidity": 49,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
@@ -291,11 +291,11 @@
     "wind_kmh": 9.6
   },
   "uv": {
-    "uv": 3.2,
+    "uv": 4.5,
     "band": "moderate",
     "daily_max": 6.2,
     "peak_time": "2026-08-20T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T09:38:06+02:00"
+    "fetched_at": "2026-08-20T10:33:55+02:00"
   }
 }
