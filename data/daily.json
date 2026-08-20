@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tm8j",
+        "title": "M5.1 Earthquake - 183 km SE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-20T18:25:19.502000Z",
+        "coordinates": [
+          153.5631,
+          -5.3709
+        ]
+      },
+      {
         "id": "us6000tm8h",
         "title": "M5.6 Earthquake - 67 km NNW of Ende, Indonesia",
         "category": "Earthquake",
@@ -22,12 +32,12 @@
       },
       {
         "id": "us6000tm81",
-        "title": "M6.7 Earthquake - 38 km NW of Upahuacho, Peru",
+        "title": "M6.7 Earthquake - 31 km NW of Aniso, Peru",
         "category": "Earthquake",
-        "date": "2026-08-20T18:00:15.163000Z",
+        "date": "2026-08-20T18:00:18.626000Z",
         "coordinates": [
-          -73.616,
-          -14.6262
+          -73.5236,
+          -14.6414
         ]
       },
       {
@@ -149,16 +159,6 @@
           121.4389,
           -8.2837
         ]
-      },
-      {
-        "id": "us6000tlrj",
-        "title": "M5.5 Earthquake - 268 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-08-18T21:36:27.970000Z",
-        "coordinates": [
-          95.5688,
-          37.8507
-        ]
       }
     ]
   },
@@ -248,47 +248,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 29.1,
+    "temp_c": 28.8,
+    "feels_c": 29.2,
     "humidity": 48,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 11.1
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-20",
     "city": "Zagreb",
-    "temp_min_c": 27.1,
-    "temp_max_c": 28.7,
+    "temp_min_c": 27.8,
+    "temp_max_c": 28.8,
     "humidity": 52,
-    "condition": "Rain",
-    "description": "rain",
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 10.4,
+    "wind_kmh": 11.3,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-21",
     "city": "Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 30.7,
-    "humidity": 69,
+    "temp_min_c": 21.9,
+    "temp_max_c": 33.0,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.9
+    "wind_kmh": 9.4
   },
   "forecast_day_after": {
     "date": "2026-08-22",
     "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 23.9,
-    "humidity": 61,
+    "temp_min_c": 18.0,
+    "temp_max_c": 24.6,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 10.5
+    "wind_kmh": 10.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-20T20:34:13+02:00"
+    "fetched_at": "2026-08-20T21:28:01+02:00"
   }
 }
