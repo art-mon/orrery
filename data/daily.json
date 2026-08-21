@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmbw",
+        "title": "M5.0 Earthquake - Pacific-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-08-20T23:36:41.054000Z",
+        "coordinates": [
+          -141.4541,
+          -56.5921
+        ]
+      },
+      {
         "id": "us6000tm9h",
         "title": "M5.0 Earthquake - 78 km NNW of Ende, Indonesia",
         "category": "Earthquake",
@@ -149,53 +159,11 @@
           -178.664,
           -17.7629
         ]
-      },
-      {
-        "id": "us6000tlyv",
-        "title": "M5.4 Earthquake - 134 km S of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-08-19T18:07:17.251000Z",
-        "coordinates": [
-          155.8633,
-          49.4799
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 LR4)",
-        "hazardous": false,
-        "diameter_m": 54,
-        "close_approach_date": "2026-08-20",
-        "miss_distance_km": 14332478,
-        "velocity_kmh": 31182
-      },
-      {
-        "name": "(2013 TH135)",
-        "hazardous": false,
-        "diameter_m": 407,
-        "close_approach_date": "2026-08-20",
-        "miss_distance_km": 60284891,
-        "velocity_kmh": 7967
-      },
-      {
-        "name": "(2019 QR1)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-08-20",
-        "miss_distance_km": 62238840,
-        "velocity_kmh": 59474
-      },
-      {
-        "name": "(2005 UE1)",
-        "hazardous": false,
-        "diameter_m": 34,
-        "close_approach_date": "2026-08-20",
-        "miss_distance_km": 71146097,
-        "velocity_kmh": 65506
-      },
       {
         "name": "357621 (2005 EG94)",
         "hazardous": false,
@@ -243,36 +211,68 @@
         "close_approach_date": "2026-08-21",
         "miss_distance_km": 69615323,
         "velocity_kmh": 18414
+      },
+      {
+        "name": "(2004 TF10)",
+        "hazardous": false,
+        "diameter_m": 384,
+        "close_approach_date": "2026-08-22",
+        "miss_distance_km": 15284218,
+        "velocity_kmh": 36024
+      },
+      {
+        "name": "(2018 QT1)",
+        "hazardous": false,
+        "diameter_m": 226,
+        "close_approach_date": "2026-08-22",
+        "miss_distance_km": 19233984,
+        "velocity_kmh": 53539
+      },
+      {
+        "name": "(2016 CD137)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-08-22",
+        "miss_distance_km": 27984680,
+        "velocity_kmh": 46478
+      },
+      {
+        "name": "(2005 GO59)",
+        "hazardous": false,
+        "diameter_m": 449,
+        "close_approach_date": "2026-08-22",
+        "miss_distance_km": 32949922,
+        "velocity_kmh": 103523
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.9,
-    "humidity": 65,
+    "city": "City of Zagreb",
+    "temp_c": 23.1,
+    "feels_c": 23.6,
+    "humidity": 81,
     "condition": "Rain",
     "description": "moderate rain",
     "icon": "10n",
-    "wind_kmh": 9.3
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-08-21",
     "city": "Zagreb",
-    "temp_min_c": 23.6,
-    "temp_max_c": 32.6,
-    "humidity": 63,
+    "temp_min_c": 22.5,
+    "temp_max_c": 33.0,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "10n",
-    "wind_kmh": 9.3,
-    "samples": 9
+    "wind_kmh": 11.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-22",
     "city": "Zagreb",
     "temp_min_c": 17.4,
-    "temp_max_c": 24.2,
+    "temp_max_c": 26.3,
     "humidity": 64,
     "condition": "Clouds",
     "description": "broken clouds",
@@ -285,7 +285,7 @@
     "temp_min_c": 18.2,
     "temp_max_c": 29.1,
     "humidity": 47,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.7
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 6.0,
-    "peak_time": "2026-08-21T13:00",
+    "daily_max": 5.0,
+    "peak_time": "2026-08-21T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -336,11 +336,11 @@
       },
       {
         "time": "2026-08-21T09:00",
-        "uv": 1.7
+        "uv": 1.9
       },
       {
         "time": "2026-08-21T10:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-08-21T11:00",
@@ -348,35 +348,35 @@
       },
       {
         "time": "2026-08-21T12:00",
-        "uv": 5.4
+        "uv": 5.0
       },
       {
         "time": "2026-08-21T13:00",
-        "uv": 6.0
+        "uv": 4.9
       },
       {
         "time": "2026-08-21T14:00",
-        "uv": 5.2
+        "uv": 4.8
       },
       {
         "time": "2026-08-21T15:00",
-        "uv": 3.0
+        "uv": 3.2
       },
       {
         "time": "2026-08-21T16:00",
-        "uv": 4.7
+        "uv": 0.8
       },
       {
         "time": "2026-08-21T17:00",
-        "uv": 3.0
+        "uv": 2.6
       },
       {
         "time": "2026-08-21T18:00",
-        "uv": 0.7
+        "uv": 0.5
       },
       {
         "time": "2026-08-21T19:00",
-        "uv": 0.8
+        "uv": 0.4
       },
       {
         "time": "2026-08-21T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-21T01:21:49+02:00"
+    "fetched_at": "2026-08-21T03:06:20+02:00"
   }
 }
