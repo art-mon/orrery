@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmft",
+        "title": "M5.4 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-08-21T13:06:40.821000Z",
+        "coordinates": [
+          -26.5571,
+          -58.8509
+        ]
+      },
+      {
         "id": "us6000tmfe",
         "title": "M5.4 Earthquake - 148 km SSE of Tateyama, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.377,
           -8.2868
         ]
-      },
-      {
-        "id": "us6000tm1j",
-        "title": "M5.7 Earthquake - 32 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-20T02:46:59.072000Z",
-        "coordinates": [
-          120.6104,
-          -8.3582
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 29.7,
-    "feels_c": 31.2,
-    "humidity": 54,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 13.0
+    "city": "City of Zagreb",
+    "temp_c": 28.7,
+    "feels_c": 29.4,
+    "humidity": 51,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 20.4
   },
   "forecast_today": {
     "date": "2026-08-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 28.3,
-    "temp_max_c": 29.9,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_min_c": 28.5,
+    "temp_max_c": 29.6,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 15.8,
+    "icon": "10d",
+    "wind_kmh": 19.7,
     "samples": 4
   },
   "forecast": {
     "date": "2026-08-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 26.5,
-    "humidity": 56,
+    "city": "Zagreb",
+    "temp_min_c": 21.1,
+    "temp_max_c": 26.2,
+    "humidity": 67,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 10.5
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.5
   },
   "forecast_day_after": {
     "date": "2026-08-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 28.4,
+    "city": "Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 29.1,
     "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.5
+    "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 5.6,
+    "uv": 4.5,
     "band": "moderate",
     "daily_max": 5.7,
     "peak_time": "2026-08-21T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-21T14:39:54+02:00"
+    "fetched_at": "2026-08-21T15:41:46+02:00"
   }
 }
