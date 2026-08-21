@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmes",
+        "title": "M5.1 Earthquake - 1 km N of Alegria, Philippines",
+        "category": "Earthquake",
+        "date": "2026-08-21T09:22:36.390000Z",
+        "coordinates": [
+          125.5784,
+          9.4833
+        ]
+      },
+      {
         "id": "us6000tmer",
         "title": "M5.2 Earthquake - 19 km W of Jabonga, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           169.1514,
           -20.324
         ]
-      },
-      {
-        "id": "us6000tm0u",
-        "title": "M5.8 Earthquake - 25 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-19T22:45:17.395000Z",
-        "coordinates": [
-          120.5278,
-          -8.3922
-        ]
       }
     ]
   },
@@ -247,14 +247,14 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_c": 28.7,
-    "feels_c": 31.3,
-    "humidity": 65,
+    "feels_c": 31.1,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-08-21",
@@ -265,7 +265,7 @@
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 14.4,
+    "wind_kmh": 13.7,
     "samples": 5
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 4.7,
+    "uv": 5.2,
     "band": "moderate",
     "daily_max": 6.2,
     "peak_time": "2026-08-21T14:00",
-    "safe_minutes": 35,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-21T11:33:03+02:00"
+    "fetched_at": "2026-08-21T12:26:28+02:00"
   }
 }
