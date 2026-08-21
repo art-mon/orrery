@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmfe",
+        "title": "M5.4 Earthquake - 148 km SSE of Tateyama, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-21T12:02:07.072000Z",
+        "coordinates": [
+          140.3802,
+          33.7171
+        ]
+      },
+      {
         "id": "us6000tmes",
         "title": "M5.1 Earthquake - 1 km N of Alegria, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.6104,
           -8.3582
         ]
-      },
-      {
-        "id": "us6000tm16",
-        "title": "M5.0 Earthquake - 87 km S of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-08-20T00:20:24.938000Z",
-        "coordinates": [
-          169.1514,
-          -20.324
-        ]
       }
     ]
   },
@@ -254,7 +254,7 @@
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.3
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-21",
@@ -265,8 +265,8 @@
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 15.2,
-    "samples": 5
+    "wind_kmh": 15.8,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-22",
@@ -291,11 +291,11 @@
     "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 6.1,
-    "band": "high",
-    "daily_max": 6.2,
-    "peak_time": "2026-08-21T14:00",
-    "safe_minutes": 27,
+    "uv": 5.6,
+    "band": "moderate",
+    "daily_max": 5.7,
+    "peak_time": "2026-08-21T13:00",
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +336,11 @@
       },
       {
         "time": "2026-08-21T09:00",
-        "uv": 1.9
+        "uv": 1.8
       },
       {
         "time": "2026-08-21T10:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-08-21T11:00",
@@ -352,31 +352,31 @@
       },
       {
         "time": "2026-08-21T13:00",
-        "uv": 5.5
+        "uv": 5.7
       },
       {
         "time": "2026-08-21T14:00",
-        "uv": 6.2
+        "uv": 5.0
       },
       {
         "time": "2026-08-21T15:00",
-        "uv": 5.3
+        "uv": 5.6
       },
       {
         "time": "2026-08-21T16:00",
-        "uv": 4.5
+        "uv": 4.3
       },
       {
         "time": "2026-08-21T17:00",
-        "uv": 2.8
+        "uv": 2.0
       },
       {
         "time": "2026-08-21T18:00",
-        "uv": 0.8
+        "uv": 1.4
       },
       {
         "time": "2026-08-21T19:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-08-21T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-21T13:22:17+02:00"
+    "fetched_at": "2026-08-21T14:39:54+02:00"
   }
 }
