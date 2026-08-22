@@ -1,12 +1,7 @@
 {
   "generated": "2026-08-22",
   "apod": {
-    "title": "Time-Lapse of the Star S301 Orbiting the Black Hole in the Center of the Galaxy",
-    "date": "2026-08-21",
-    "explanation": "What does it feel like to zoom around a spinning supermassive black hole?   The featured video is an animation showing a time-lapse of 4 years of observations of the star S301 orbiting Sagittarius A*, the 4-million-solar-mass black hole in the center of our Galaxy.   S301 was discovered in 2023 with the Very Large Telescope Interferometer of the European Southern Observatory, located in the Atacama Desert in Chile.   Astronomers recently found that S301 takes approximately 8.7 years to go around the black hole and reaches speeds of 25,000 km/s.   It comes closer to the black hole than any other stars detected before, at a distance similar to that from Saturn to the Sun.   Because it comes so close to Sagittarius A*, S301 could be used to directly measure how fast the black hole spins and test Einstein's theory of general relativity.   According to the theory, a spinning black hole drags the fabric of spacetime around itself, affecting the orbits of close-by objects.",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2608/eso2612b.mp4",
-    "hdurl": null
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,54 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "357621 (2005 EG94)",
-        "hazardous": false,
-        "diameter_m": 1019,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 12358640,
-        "velocity_kmh": 39215
-      },
-      {
-        "name": "(2017 FN64)",
-        "hazardous": false,
-        "diameter_m": 237,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 46526521,
-        "velocity_kmh": 72266
-      },
-      {
-        "name": "(2016 US4)",
-        "hazardous": false,
-        "diameter_m": 78,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 50395175,
-        "velocity_kmh": 57477
-      },
-      {
-        "name": "(2013 PO43)",
-        "hazardous": false,
-        "diameter_m": 298,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 55154040,
-        "velocity_kmh": 20033
-      },
-      {
-        "name": "(2014 UR116)",
-        "hazardous": true,
-        "diameter_m": 652,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 60665428,
-        "velocity_kmh": 70080
-      },
-      {
-        "name": "(2019 LK5)",
-        "hazardous": false,
-        "diameter_m": 995,
-        "close_approach_date": "2026-08-21",
-        "miss_distance_km": 69615323,
-        "velocity_kmh": 18414
-      },
-      {
         "name": "(2004 TF10)",
         "hazardous": false,
         "diameter_m": 384,
@@ -243,30 +190,78 @@
         "close_approach_date": "2026-08-22",
         "miss_distance_km": 32949922,
         "velocity_kmh": 103523
+      },
+      {
+        "name": "(2019 QC4)",
+        "hazardous": false,
+        "diameter_m": 120,
+        "close_approach_date": "2026-08-23",
+        "miss_distance_km": 19189987,
+        "velocity_kmh": 47197
+      },
+      {
+        "name": "(2016 RT17)",
+        "hazardous": false,
+        "diameter_m": 117,
+        "close_approach_date": "2026-08-23",
+        "miss_distance_km": 26833135,
+        "velocity_kmh": 32154
+      },
+      {
+        "name": "(2007 DK8)",
+        "hazardous": false,
+        "diameter_m": 912,
+        "close_approach_date": "2026-08-23",
+        "miss_distance_km": 47187424,
+        "velocity_kmh": 83613
+      },
+      {
+        "name": "(2017 HV3)",
+        "hazardous": false,
+        "diameter_m": 106,
+        "close_approach_date": "2026-08-24",
+        "miss_distance_km": 27073027,
+        "velocity_kmh": 32698
+      },
+      {
+        "name": "(2007 HL4)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-08-24",
+        "miss_distance_km": 34623113,
+        "velocity_kmh": 14586
+      },
+      {
+        "name": "(2019 FO)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-08-24",
+        "miss_distance_km": 47124399,
+        "velocity_kmh": 42767
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_c": 20.9,
     "feels_c": 21.4,
-    "humidity": 89,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 5.5
+    "humidity": 90,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-08-22",
     "city": "Zagreb",
     "temp_min_c": 19.9,
     "temp_max_c": 22.2,
-    "humidity": 67,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 9.5,
-    "samples": 9
+    "icon": "01n",
+    "wind_kmh": 9.6,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-23",
@@ -294,7 +289,7 @@
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.0,
-    "peak_time": "2026-08-22T14:00",
+    "peak_time": "2026-08-22T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -336,43 +331,43 @@
       },
       {
         "time": "2026-08-22T09:00",
-        "uv": 1.5
+        "uv": 1.1
       },
       {
         "time": "2026-08-22T10:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-08-22T11:00",
         "uv": 3.0
       },
       {
+        "time": "2026-08-22T11:00",
+        "uv": 4.5
+      },
+      {
         "time": "2026-08-22T12:00",
-        "uv": 3.8
+        "uv": 4.0
       },
       {
         "time": "2026-08-22T13:00",
-        "uv": 5.3
-      },
-      {
-        "time": "2026-08-22T14:00",
         "uv": 6.0
       },
       {
+        "time": "2026-08-22T14:00",
+        "uv": 3.4
+      },
+      {
         "time": "2026-08-22T15:00",
-        "uv": 4.8
+        "uv": 2.2
       },
       {
         "time": "2026-08-22T16:00",
-        "uv": 4.2
+        "uv": 3.5
       },
       {
         "time": "2026-08-22T17:00",
-        "uv": 3.1
+        "uv": 1.9
       },
       {
         "time": "2026-08-22T18:00",
-        "uv": 1.9
+        "uv": 1.4
       },
       {
         "time": "2026-08-22T19:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-22T01:20:12+02:00"
+    "fetched_at": "2026-08-22T03:02:58+02:00"
   }
 }
