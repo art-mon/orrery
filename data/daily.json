@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmrf",
+        "title": "M5.0 Earthquake - 45 km SE of Lukatan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-08-22T06:43:39.032000Z",
+        "coordinates": [
+          126.7362,
+          6.7397
+        ]
+      },
+      {
         "id": "us6000tmr2",
         "title": "M5.0 Earthquake - 6 km S of Kitcharao, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           121.3981,
           -8.2877
         ]
-      },
-      {
-        "id": "us6000tm81",
-        "title": "M6.7 Earthquake - 31 km NW of Aniso, Peru",
-        "category": "Earthquake",
-        "date": "2026-08-20T18:00:18.626000Z",
-        "coordinates": [
-          -73.5236,
-          -14.6414
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 20.9,
-    "feels_c": 21.0,
-    "humidity": 75,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
+    "temp_c": 19.9,
+    "feels_c": 20.2,
+    "humidity": 85,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
     "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-22",
     "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 21.9,
-    "humidity": 61,
+    "temp_min_c": 17.6,
+    "temp_max_c": 22.2,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10d",
-    "wind_kmh": 11.9,
+    "icon": "04d",
+    "wind_kmh": 11.5,
     "samples": 6
   },
   "forecast": {
     "date": "2026-08-23",
     "city": "Zagreb",
-    "temp_min_c": 15.1,
-    "temp_max_c": 26.7,
+    "temp_min_c": 15.9,
+    "temp_max_c": 26.9,
     "humidity": 49,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 7.7
+    "wind_kmh": 7.3
   },
   "forecast_day_after": {
     "date": "2026-08-24",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 17.3,
     "temp_max_c": 30.2,
     "humidity": 41,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 6.8
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 1.5,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 5.9,
     "peak_time": "2026-08-22T13:00",
-    "safe_minutes": 111,
+    "safe_minutes": 85,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-22T08:34:16+02:00"
+    "fetched_at": "2026-08-22T09:28:25+02:00"
   }
 }
