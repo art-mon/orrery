@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-22",
   "apod": {
-    "title": "Mostly Perseids",
-    "date": "2026-08-22",
-    "explanation": "Recorded the night of August 12-13, images from four dedicated meteor-monitoring cameras at an astronomical observatory in Czechia were aligned and combined to create this all-night, all-sky view. On that night, the total count came to 1,706 meteors. And since that coincided with the peak activity of the 2026 Perseid Meteor Shower, most are perseids. Their overwhelming numbers make them easy to spot. Quite convincingly, perseid trails all trace back to a single radiant on the sky at the upper right, a region in the annual shower's eponymous constellation Perseus. But meteors belonging to other much less active showers can also revealed by finding their radiants too. For example, seen crossing the perseid trails are meteors from a shower whose radiant lies in Cygnus, known as Kappa Cygnids. The antihelion complex, a general region near Aquarius and opposite the Sun in the sky, is also identifiable as a weak source for meteors.",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tmrn",
+        "title": "M5.7 Earthquake - Scotia Sea",
+        "category": "Earthquake",
+        "date": "2026-08-22T07:40:12.697000Z",
+        "coordinates": [
+          -47.2591,
+          -60.2649
+        ]
+      },
       {
         "id": "us6000tmrf",
         "title": "M5.0 Earthquake - 45 km SE of Lukatan, Philippines",
@@ -149,16 +154,6 @@
           153.5631,
           -5.3709
         ]
-      },
-      {
-        "id": "us6000tm8h",
-        "title": "M5.6 Earthquake - 67 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-20T18:12:51.721000Z",
-        "coordinates": [
-          121.3981,
-          -8.2877
-        ]
       }
     ]
   },
@@ -247,25 +242,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.9,
-    "feels_c": 20.2,
-    "humidity": 85,
+    "city": "Donji grad",
+    "temp_c": 19.8,
+    "feels_c": 20.1,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.3
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-08-22",
     "city": "Zagreb",
     "temp_min_c": 17.6,
-    "temp_max_c": 22.2,
-    "humidity": 65,
+    "temp_max_c": 21.4,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 11.5,
+    "wind_kmh": 12.4,
     "samples": 6
   },
   "forecast": {
@@ -291,11 +286,11 @@
     "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 1.9,
-    "band": "low",
+    "uv": 3.2,
+    "band": "moderate",
     "daily_max": 5.9,
     "peak_time": "2026-08-22T13:00",
-    "safe_minutes": 85,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-22T09:28:25+02:00"
+    "fetched_at": "2026-08-22T10:25:04+02:00"
   }
 }
