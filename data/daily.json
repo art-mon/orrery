@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-22",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Mostly Perseids",
+    "date": "2026-08-22",
+    "explanation": "Recorded the night of August 12-13, images from four dedicated meteor-monitoring cameras at an astronomical observatory in Czechia were aligned and combined to create this all-night, all-sky view. On that night, the total count came to 1,706 meteors. And since that coincided with the peak activity of the 2026 Perseid Meteor Shower, most are perseids. Their overwhelming numbers make them easy to spot. Quite convincingly, perseid trails all trace back to a single radiant on the sky at the upper right, a region in the annual shower's eponymous constellation Perseus. But meteors belonging to other much less active showers can also revealed by finding their radiants too. For example, seen crossing the perseid trails are meteors from a shower whose radiant lies in Cygnus, known as Kappa Cygnids. The antihelion complex, a general region near Aquarius and opposite the Sun in the sky, is also identifiable as a weak source for meteors.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit.jpg"
   },
   "events": {
     "events": [
@@ -243,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.7,
-    "humidity": 86,
+    "temp_c": 20.9,
+    "feels_c": 21.3,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-22",
-    "city": "Zagreb",
-    "temp_min_c": 20.1,
-    "temp_max_c": 22.1,
-    "humidity": 62,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.4,
+    "temp_max_c": 21.9,
+    "humidity": 63,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
     "wind_kmh": 12.2,
     "samples": 7
   },
   "forecast": {
     "date": "2026-08-23",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 15.1,
     "temp_max_c": 26.7,
     "humidity": 49,
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.2,
     "temp_max_c": 30.2,
     "humidity": 41,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-22T05:38:42+02:00"
+    "fetched_at": "2026-08-22T06:29:07+02:00"
   }
 }
