@@ -1,7 +1,12 @@
 {
   "generated": "2026-08-22",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Mostly Perseids",
+    "date": "2026-08-22",
+    "explanation": "Recorded the night of August 12-13, images from four dedicated meteor-monitoring cameras at an astronomical observatory in Czechia were aligned and combined to create this all-night, all-sky view. On that night, the total count came to 1,706 meteors. And since that coincided with the peak activity of the 2026 Perseid Meteor Shower, most are perseids. Their overwhelming numbers make them easy to spot. Quite convincingly, perseid trails all trace back to a single radiant on the sky at the upper right, a region in the annual shower's eponymous constellation Perseus. But meteors belonging to other much less active showers can also revealed by finding their radiants too. For example, seen crossing the perseid trails are meteors from a shower whose radiant lies in Cygnus, known as Kappa Cygnids. The antihelion complex, a general region near Aquarius and opposite the Sun in the sky, is also identifiable as a weak source for meteors.",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/allsky_CEMeNt_Aug12-13final_pretty_8bit.jpg"
   },
   "events": {
     "events": [
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.7,
-    "humidity": 87,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 1.8
+    "temp_c": 20.9,
+    "feels_c": 21.0,
+    "humidity": 75,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-22",
     "city": "Zagreb",
     "temp_min_c": 20.4,
     "temp_max_c": 21.9,
-    "humidity": 68,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 11.1,
-    "samples": 7
+    "icon": "10d",
+    "wind_kmh": 11.9,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-23",
@@ -286,11 +291,11 @@
     "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 1.5,
     "band": "low",
-    "daily_max": 6.0,
+    "daily_max": 5.9,
     "peak_time": "2026-08-22T13:00",
-    "safe_minutes": 303,
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,47 +336,47 @@
       },
       {
         "time": "2026-08-22T09:00",
-        "uv": 1.1
+        "uv": 1.6
       },
       {
         "time": "2026-08-22T10:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-08-22T11:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-08-22T12:00",
-        "uv": 4.0
-      },
-      {
-        "time": "2026-08-22T13:00",
-        "uv": 6.0
-      },
-      {
-        "time": "2026-08-22T14:00",
-        "uv": 3.4
-      },
-      {
-        "time": "2026-08-22T15:00",
         "uv": 2.2
       },
       {
+        "time": "2026-08-22T11:00",
+        "uv": 3.9
+      },
+      {
+        "time": "2026-08-22T12:00",
+        "uv": 4.7
+      },
+      {
+        "time": "2026-08-22T13:00",
+        "uv": 5.9
+      },
+      {
+        "time": "2026-08-22T14:00",
+        "uv": 5.0
+      },
+      {
+        "time": "2026-08-22T15:00",
+        "uv": 2.1
+      },
+      {
         "time": "2026-08-22T16:00",
-        "uv": 3.5
-      },
-      {
-        "time": "2026-08-22T17:00",
-        "uv": 1.9
-      },
-      {
-        "time": "2026-08-22T18:00",
         "uv": 1.4
       },
       {
+        "time": "2026-08-22T17:00",
+        "uv": 2.2
+      },
+      {
+        "time": "2026-08-22T18:00",
+        "uv": 1.9
+      },
+      {
         "time": "2026-08-22T19:00",
-        "uv": 0.8
+        "uv": 0.7
       },
       {
         "time": "2026-08-22T20:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-22T07:23:35+02:00"
+    "fetched_at": "2026-08-22T08:34:16+02:00"
   }
 }
