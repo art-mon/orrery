@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmyk",
+        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-08-23T11:22:41.913000Z",
+        "coordinates": [
+          -14.8524,
+          -12.8299
+        ]
+      },
+      {
         "id": "us6000tmxn",
         "title": "M5.2 Earthquake - 124 km ESE of Kirakira, Solomon Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -175.3072,
           -24.7124
         ]
-      },
-      {
-        "id": "us6000tmbw",
-        "title": "M5.0 Earthquake - Pacific-Antarctic Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-20T23:36:41.054000Z",
-        "coordinates": [
-          -141.4541,
-          -56.5921
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 43,
+    "temp_c": 27.2,
+    "feels_c": 27.1,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 16.7
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-23",
-    "city": "Donji grad",
-    "temp_min_c": 19.2,
-    "temp_max_c": 26.5,
-    "humidity": 43,
+    "city": "Zagreb",
+    "temp_min_c": 19.7,
+    "temp_max_c": 27.2,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 9.2,
-    "samples": 5
+    "wind_kmh": 8.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-24",
-    "city": "Donji grad",
-    "temp_min_c": 15.9,
-    "temp_max_c": 27.9,
-    "humidity": 40,
+    "city": "Zagreb",
+    "temp_min_c": 16.4,
+    "temp_max_c": 28.3,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.3
+    "wind_kmh": 5.4
   },
   "forecast_day_after": {
     "date": "2026-08-25",
-    "city": "Donji grad",
-    "temp_min_c": 18.5,
-    "temp_max_c": 33.0,
-    "humidity": 52,
+    "city": "Zagreb",
+    "temp_min_c": 19.2,
+    "temp_max_c": 33.6,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 6.3,
-    "band": "high",
+    "uv": 5.8,
+    "band": "moderate",
     "daily_max": 6.2,
     "peak_time": "2026-08-23T13:00",
-    "safe_minutes": 26,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-23T13:18:06+02:00"
+    "fetched_at": "2026-08-23T14:33:33+02:00"
   }
 }
