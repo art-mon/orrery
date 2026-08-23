@@ -1,15 +1,35 @@
 {
-  "generated": "2026-08-23",
+  "generated": "2026-08-24",
   "apod": {
     "title": "Cassini Approaches Saturn",
     "date": "2026-08-23",
     "explanation": "What would it look like to approach the grand planet Saturn? One doesn't have to just imagine -- the Cassini spacecraft did just this in 2004, recording thousands of images along the way, and hundreds of thousands more since entering orbit. Some of Cassini's early images have been digitally tweaked, cropped, and compiled into the featured inspiring video which is part of a larger IMAX movie project named In Saturn's Rings.  In the concluding sequence, Saturn looms increasingly large on approach as cloudy Titan swoops below. With Saturn whirling around in the background, Cassini is next depicted flying over Mimas, with large Herschel Crater clearly visible. Saturn's majestic rings then take over the show as Cassini crosses Saturn's thin ring plane. Dark shadows of the ring appear on Saturn itself. Finally, the enigmatic ice-geyser moon Enceladus appears in the distance and then is approached just as the video clip ends. After more than a decade of exploration and discovery, the Cassini spacecraft ran low on fuel in 2017 was directed to enter Saturn's atmosphere, where it surely melted.    APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "video",
-    "url": "https://player.vimeo.com/video/11386048#t=0m58s?color=8BA0FF&portrait=0",
+    "url": "https://www.youtube.com/embed/UgxWkOXcdZU?si=GOlnR_CQR3sDtl-j",
     "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tn0t",
+        "title": "M5.3 Earthquake - 127 km W of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-08-23T21:32:21.749000Z",
+        "coordinates": [
+          164.633,
+          -10.7354
+        ]
+      },
+      {
+        "id": "us6000tn0s",
+        "title": "M5.2 Earthquake - 48 km NE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-23T21:20:16.733000Z",
+        "coordinates": [
+          120.7421,
+          -8.2734
+        ]
+      },
       {
         "id": "us6000tmz6",
         "title": "M6.0 Earthquake - 33 km SSW of Honch\u014d, Japan",
@@ -139,26 +159,6 @@
           140.3802,
           33.7171
         ]
-      },
-      {
-        "id": "us6000tmes",
-        "title": "M5.1 Earthquake - 1 km N of Alegria, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-21T09:22:36.390000Z",
-        "coordinates": [
-          125.5784,
-          9.4833
-        ]
-      },
-      {
-        "id": "us6000tmer",
-        "title": "M5.2 Earthquake - 19 km W of Jabonga, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-21T09:12:20.890000Z",
-        "coordinates": [
-          125.342,
-          9.3382
-        ]
       }
     ]
   },
@@ -247,154 +247,154 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.4,
-    "humidity": 64,
+    "city": "City of Zagreb",
+    "temp_c": 20.4,
+    "feels_c": 20.2,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.8
+    "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-08-23",
-    "city": "Zagreb",
-    "temp_min_c": 21.5,
-    "temp_max_c": 21.5,
-    "humidity": 64,
+    "date": "2026-08-24",
+    "city": "City of Zagreb",
+    "temp_min_c": 17.0,
+    "temp_max_c": 24.5,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 1.8,
-    "samples": 1
+    "wind_kmh": 4.8,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-08-24",
-    "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 24.5,
-    "humidity": 44,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.0
-  },
-  "forecast_day_after": {
     "date": "2026-08-25",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.6,
     "temp_max_c": 29.0,
     "humidity": 54,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 5.7
+  },
+  "forecast_day_after": {
+    "date": "2026-08-26",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.4,
+    "temp_max_c": 31.7,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.9
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 6.2,
-    "peak_time": "2026-08-23T13:00",
+    "peak_time": "2026-08-24T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-08-23T00:00",
+        "time": "2026-08-24T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T01:00",
+        "time": "2026-08-24T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T02:00",
+        "time": "2026-08-24T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T03:00",
+        "time": "2026-08-24T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T04:00",
+        "time": "2026-08-24T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T05:00",
+        "time": "2026-08-24T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T06:00",
+        "time": "2026-08-24T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T07:00",
+        "time": "2026-08-24T07:00",
         "uv": 0.1
       },
       {
-        "time": "2026-08-23T08:00",
+        "time": "2026-08-24T08:00",
         "uv": 0.8
       },
       {
-        "time": "2026-08-23T09:00",
+        "time": "2026-08-24T09:00",
         "uv": 2.0
       },
       {
-        "time": "2026-08-23T10:00",
+        "time": "2026-08-24T10:00",
         "uv": 3.4
       },
       {
-        "time": "2026-08-23T11:00",
+        "time": "2026-08-24T11:00",
         "uv": 4.7
       },
       {
-        "time": "2026-08-23T12:00",
+        "time": "2026-08-24T12:00",
         "uv": 5.7
       },
       {
-        "time": "2026-08-23T13:00",
+        "time": "2026-08-24T13:00",
         "uv": 6.2
       },
       {
-        "time": "2026-08-23T14:00",
+        "time": "2026-08-24T14:00",
         "uv": 6.2
       },
       {
-        "time": "2026-08-23T15:00",
-        "uv": 5.7
+        "time": "2026-08-24T15:00",
+        "uv": 5.6
       },
       {
-        "time": "2026-08-23T16:00",
+        "time": "2026-08-24T16:00",
         "uv": 4.6
       },
       {
-        "time": "2026-08-23T17:00",
+        "time": "2026-08-24T17:00",
         "uv": 3.3
       },
       {
-        "time": "2026-08-23T18:00",
+        "time": "2026-08-24T18:00",
         "uv": 1.9
       },
       {
-        "time": "2026-08-23T19:00",
+        "time": "2026-08-24T19:00",
         "uv": 0.8
       },
       {
-        "time": "2026-08-23T20:00",
+        "time": "2026-08-24T20:00",
         "uv": 0.1
       },
       {
-        "time": "2026-08-23T21:00",
+        "time": "2026-08-24T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T22:00",
+        "time": "2026-08-24T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-08-23T23:00",
+        "time": "2026-08-24T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-23T23:18:04+02:00"
+    "fetched_at": "2026-08-24T00:17:48+02:00"
   }
 }
