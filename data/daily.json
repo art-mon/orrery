@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tmxn",
+        "title": "M5.2 Earthquake - 124 km ESE of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-08-23T08:12:38.133000Z",
+        "coordinates": [
+          162.9618,
+          -10.9015
+        ]
+      },
+      {
         "id": "us6000tmta",
         "title": "M5.8 Earthquake - 4 km N of Toride, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -141.4541,
           -56.5921
         ]
-      },
-      {
-        "id": "us6000tm9h",
-        "title": "M5.0 Earthquake - 78 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-20T19:53:51.824000Z",
-        "coordinates": [
-          121.3299,
-          -8.214
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.5,
-    "humidity": 55,
+    "city": "City of Zagreb",
+    "temp_c": 23.8,
+    "feels_c": 23.7,
+    "humidity": 54,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 14.8
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-08-23",
     "city": "Zagreb",
     "temp_min_c": 19.2,
-    "temp_max_c": 23.6,
-    "humidity": 47,
+    "temp_max_c": 24.0,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
     "wind_kmh": 9.2,
-    "samples": 6
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-24",
@@ -291,11 +291,11 @@
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 4.2,
+    "uv": 5.3,
     "band": "moderate",
     "daily_max": 6.2,
     "peak_time": "2026-08-23T13:00",
-    "safe_minutes": 40,
+    "safe_minutes": 31,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-23T10:25:20+02:00"
+    "fetched_at": "2026-08-23T11:24:29+02:00"
   }
 }
