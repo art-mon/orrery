@@ -1,12 +1,7 @@
 {
   "generated": "2026-08-24",
   "apod": {
-    "title": "Comet 220P in Outburst",
-    "date": "2026-08-24",
-    "explanation": "Comet 220P is unexpectedly bright. Normally, periodic Comet 220P/McNaught is so dim that to see it requires a telescope. Two surprising outbursts this year, however, have made it about 20,000 times brighter than usual, so that it is now visible with binoculars and long-duration camera exposures. As expected, Comet 220P continues to orbit the Sun between Mars and Jupiter with a period of over 5 years.  The featured long duration exposure, taken 10 days ago from South Africa, shows the comet's bright green head and short dust tail.  Reasons for Comet 220P's impressive outbursts are unknown but could be caused by the release of built-up subsurface gas or comet quakes.  Comet 220P will pass about one Earth-Sun distance from the Earth in October, after which it is expected to fade quickly  as it begins its return to the far part of its orbit.   APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/Comet220P_SA_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/Comet220P_SA_4104.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,30 +242,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 30.9,
-    "feels_c": 29.8,
-    "humidity": 32,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 11.1
+    "city": "City of Zagreb",
+    "temp_c": 29.2,
+    "feels_c": 28.5,
+    "humidity": 36,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-24",
-    "city": "Zagreb",
-    "temp_min_c": 24.8,
-    "temp_max_c": 30.9,
-    "humidity": 36,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 6.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 26.9,
+    "temp_max_c": 29.2,
+    "humidity": 37,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 6.2,
     "samples": 3
   },
   "forecast": {
     "date": "2026-08-25",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.2,
     "temp_max_c": 28.8,
     "humidity": 65,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 29.6,
     "humidity": 59,
@@ -291,11 +286,11 @@
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 2.0,
+    "uv": 0.9,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-24T13:00",
-    "safe_minutes": 81,
+    "safe_minutes": 185,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-24T17:35:45+02:00"
+    "fetched_at": "2026-08-24T18:33:01+02:00"
   }
 }
