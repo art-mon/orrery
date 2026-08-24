@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tn80",
+        "title": "M5.0 Earthquake - 209 km NNE of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-08-24T19:00:03.416000Z",
+        "coordinates": [
+          127.5019,
+          -6.6912
+        ]
+      },
+      {
         "id": "us6000tn41",
         "title": "M6.0 Earthquake - 215 km NNE of Lospalos, Timor Leste",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           125.5805,
           9.3981
         ]
-      },
-      {
-        "id": "us6000tmq6",
-        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-22T01:34:57.606000Z",
-        "coordinates": [
-          -14.8824,
-          -12.7714
-        ]
       }
     ]
   },
@@ -248,30 +248,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.8,
-    "feels_c": 24.6,
-    "humidity": 50,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
+    "temp_c": 23.7,
+    "feels_c": 23.5,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-24",
     "city": "Zagreb",
-    "temp_min_c": 23.4,
-    "temp_max_c": 24.8,
-    "humidity": 50,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
+    "temp_min_c": 23.7,
+    "temp_max_c": 23.7,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
     "wind_kmh": 5.0,
     "samples": 2
   },
   "forecast": {
     "date": "2026-08-25",
     "city": "Zagreb",
-    "temp_min_c": 16.2,
+    "temp_min_c": 18.7,
     "temp_max_c": 29.4,
     "humidity": 60,
     "condition": "Clouds",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-24T21:26:14+02:00"
+    "fetched_at": "2026-08-24T22:26:20+02:00"
   }
 }
