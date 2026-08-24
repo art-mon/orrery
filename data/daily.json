@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tn33",
+        "title": "M5.5 Earthquake - 207 km SSE of Amahai, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-24T10:02:58.888000Z",
+        "coordinates": [
+          129.6871,
+          -5.0525
+        ]
+      },
+      {
         "id": "us6000tn19",
         "title": "M5.0 Earthquake - Rat Islands, Aleutian Islands, Alaska",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           104.5501,
           -7.5836
         ]
-      },
-      {
-        "id": "us6000tmft",
-        "title": "M5.4 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-08-21T13:06:40.821000Z",
-        "coordinates": [
-          -26.5571,
-          -58.8509
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.1,
-    "feels_c": 27.6,
-    "humidity": 37,
+    "temp_c": 29.2,
+    "feels_c": 28.4,
+    "humidity": 34,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -260,7 +260,7 @@
     "date": "2026-08-24",
     "city": "Zagreb",
     "temp_min_c": 23.0,
-    "temp_max_c": 29.3,
+    "temp_max_c": 29.4,
     "humidity": 37,
     "condition": "Clear",
     "description": "clear",
@@ -291,11 +291,11 @@
     "wind_kmh": 2.1
   },
   "uv": {
-    "uv": 5.5,
-    "band": "moderate",
+    "uv": 6.2,
+    "band": "high",
     "daily_max": 6.2,
     "peak_time": "2026-08-24T13:00",
-    "safe_minutes": 30,
+    "safe_minutes": 27,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-24T11:42:58+02:00"
+    "fetched_at": "2026-08-24T12:33:59+02:00"
   }
 }
