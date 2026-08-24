@@ -1,23 +1,23 @@
 {
   "generated": "2026-08-24",
   "apod": {
-    "title": "Cassini Approaches Saturn",
-    "date": "2026-08-23",
-    "explanation": "What would it look like to approach the grand planet Saturn? One doesn't have to just imagine -- the Cassini spacecraft did just this in 2004, recording thousands of images along the way, and hundreds of thousands more since entering orbit. Some of Cassini's early images have been digitally tweaked, cropped, and compiled into the featured inspiring video which is part of a larger IMAX movie project named In Saturn's Rings.  In the concluding sequence, Saturn looms increasingly large on approach as cloudy Titan swoops below. With Saturn whirling around in the background, Cassini is next depicted flying over Mimas, with large Herschel Crater clearly visible. Saturn's majestic rings then take over the show as Cassini crosses Saturn's thin ring plane. Dark shadows of the ring appear on Saturn itself. Finally, the enigmatic ice-geyser moon Enceladus appears in the distance and then is approached just as the video clip ends. After more than a decade of exploration and discovery, the Cassini spacecraft ran low on fuel in 2017 was directed to enter Saturn's atmosphere, where it surely melted.    APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "video",
-    "url": "https://www.youtube.com/embed/UgxWkOXcdZU?si=GOlnR_CQR3sDtl-j",
-    "hdurl": null
+    "title": "Comet 220P in Outburst",
+    "date": "2026-08-24",
+    "explanation": "Comet 220P is unexpectedly bright. Normally, periodic Comet 220P/McNaught is so dim that to see it requires a telescope. Two surprising outbursts this year, however, have made it about 20,000 times brighter than usual, so that it is now visible with binoculars and long-duration camera exposures. As expected, Comet 220P continues to orbit the Sun between Mars and Jupiter with a period of over 5 years.  The featured long duration exposure, taken 10 days ago from South Africa, shows the comet's bright green head and short dust tail.  Reasons for Comet 220P's impressive outbursts are unknown but could be caused by the release of built-up subsurface gas or comet quakes.  Comet 220P will pass about one Earth-Sun distance from the Earth in October, after which it is expected to fade quickly  as it begins its return to the far part of its orbit.   APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/Comet220P_SA_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/Comet220P_SA_4104.jpg"
   },
   "events": {
     "events": [
       {
         "id": "us6000tn19",
-        "title": "M5.0 Earthquake - 239 km ESE of Attu Station, Alaska",
+        "title": "M5.0 Earthquake - Rat Islands, Aleutian Islands, Alaska",
         "category": "Earthquake",
-        "date": "2026-08-23T23:20:35.049000Z",
+        "date": "2026-08-23T23:20:35.668000Z",
         "coordinates": [
-          176.4797,
-          52.0776
+          176.3834,
+          52.1941
         ]
       },
       {
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.4,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 19.1,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-08-24",
-    "city": "Zagreb",
-    "temp_min_c": 17.6,
+    "city": "Donji grad",
+    "temp_min_c": 18.1,
     "temp_max_c": 29.6,
-    "humidity": 47,
+    "humidity": 52,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.7,
+    "icon": "01d",
+    "wind_kmh": 4.4,
     "samples": 7
   },
   "forecast": {
     "date": "2026-08-25",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 18.5,
     "temp_max_c": 30.1,
     "humidity": 56,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-26",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 17.2,
     "temp_max_c": 30.1,
     "humidity": 59,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.8,
     "band": "low",
     "daily_max": 6.2,
     "peak_time": "2026-08-24T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 222,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-24T06:00:34+02:00"
+    "fetched_at": "2026-08-24T07:35:10+02:00"
   }
 }
