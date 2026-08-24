@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tn41",
+        "title": "M6.0 Earthquake - 215 km NNE of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-08-24T14:10:17.299000Z",
+        "coordinates": [
+          127.4598,
+          -6.6264
+        ]
+      },
+      {
         "id": "us6000tn3t",
         "title": "M5.0 Earthquake - southern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -14.8824,
           -12.7714
         ]
-      },
-      {
-        "id": "us6000tmq5",
-        "title": "M5.2 Earthquake - 38 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-22T01:30:59.335000Z",
-        "coordinates": [
-          120.5614,
-          -8.2752
-        ]
       }
     ]
   },
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 32.0,
-    "feels_c": 30.9,
-    "humidity": 30,
+    "city": "Donji grad",
+    "temp_c": 31.5,
+    "feels_c": 30.4,
+    "humidity": 31,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 14.8
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-24",
     "city": "Zagreb",
-    "temp_min_c": 25.0,
-    "temp_max_c": 32.0,
+    "temp_min_c": 24.9,
+    "temp_max_c": 31.5,
     "humidity": 34,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 6.7,
+    "wind_kmh": 5.8,
     "samples": 4
   },
   "forecast": {
@@ -285,17 +285,17 @@
     "temp_min_c": 16.6,
     "temp_max_c": 29.6,
     "humidity": 59,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 4.5,
+    "uv": 3.5,
     "band": "moderate",
     "daily_max": 6.2,
     "peak_time": "2026-08-24T13:00",
-    "safe_minutes": 37,
+    "safe_minutes": 48,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-24T15:48:39+02:00"
+    "fetched_at": "2026-08-24T16:38:01+02:00"
   }
 }
