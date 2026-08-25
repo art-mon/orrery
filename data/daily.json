@@ -1,15 +1,20 @@
 {
   "generated": "2026-08-25",
   "apod": {
-    "title": "Earth's Shadow Visualized with Lunar Eclipses",
-    "date": "2026-08-25",
-    "explanation": "What\u2019s creating this giant hole in space? This is not a black hole \u2014 it\u2019s a shadow.  It\u2019s Earth\u2019s shadow.  Since at least the time of Aristotle, people have noted that Earth's dark shadow on the Moon during a partial lunar eclipse is circular -- although never a whole circle.  Using modern digital technology, though, the images of multiple lunar eclipses can be combined to show Earth's complete shadow.  The featured image compilation by a perseistent astrophotographer is constructed from 22 years of lunar eclipses.  The Moon is not eclipsed every month (moon-th) because the Moon's orbit is slightly tilted relative to Earth's orbit.  Close inspection of some lunar eclipse images shows a faint blue band where  Earth\u2019s atmosphere filters out more red sunlight than blue.  Later this week, a new lunar eclipse will occur and will be best visible in parts of North and South America, Europe, and Africa.    APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/EarthShadow_Martin_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/EarthShadow_Martin_4000.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tnbv",
+        "title": "M5.0 Earthquake - 31 km S of Nemuro, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-25T09:07:20.740000Z",
+        "coordinates": [
+          145.6343,
+          43.045
+        ]
+      },
       {
         "id": "us6000tnbm",
         "title": "M5.5 Earthquake - 108 km NE of Hengchun, Taiwan",
@@ -149,16 +154,6 @@
           -47.2591,
           -60.2649
         ]
-      },
-      {
-        "id": "us6000tmrf",
-        "title": "M5.0 Earthquake - 45 km SE of Lukatan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-22T06:43:39.032000Z",
-        "coordinates": [
-          126.7362,
-          6.7397
-        ]
       }
     ]
   },
@@ -248,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.9,
-    "humidity": 85,
+    "temp_c": 23.1,
+    "feels_c": 23.4,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-08-25",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 17.5,
-    "temp_max_c": 22.9,
-    "humidity": 81,
+    "temp_max_c": 24.4,
+    "humidity": 75,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
-    "wind_kmh": 6.1,
-    "samples": 6
+    "wind_kmh": 6.4,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 15.5,
     "temp_max_c": 29.1,
     "humidity": 69,
@@ -281,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.4,
     "temp_max_c": 31.7,
     "humidity": 53,
@@ -291,11 +286,11 @@
     "wind_kmh": 3.6
   },
   "uv": {
-    "uv": 1.1,
-    "band": "low",
+    "uv": 4.8,
+    "band": "moderate",
     "daily_max": 6.0,
     "peak_time": "2026-08-25T13:00",
-    "safe_minutes": 159,
+    "safe_minutes": 35,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-25T10:37:54+02:00"
+    "fetched_at": "2026-08-25T11:32:04+02:00"
   }
 }
