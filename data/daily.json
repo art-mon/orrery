@@ -12,12 +12,12 @@
     "events": [
       {
         "id": "us6000tnd7",
-        "title": "M5.3 Earthquake - 239 km SE of Hihifo, Tonga",
+        "title": "M5.2 Earthquake - 243 km SE of Hihifo, Tonga",
         "category": "Earthquake",
-        "date": "2026-08-25T15:15:54.981000Z",
+        "date": "2026-08-25T15:15:54.612000Z",
         "coordinates": [
-          -172.0374,
-          -17.2936
+          -171.9817,
+          -17.2913
         ]
       },
       {
@@ -247,25 +247,25 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 60,
+    "city": "Zagreb",
+    "temp_c": 25.9,
+    "feels_c": 26.3,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 13.0
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-08-25",
     "city": "Zagreb",
-    "temp_min_c": 20.5,
-    "temp_max_c": 26.5,
-    "humidity": 70,
+    "temp_min_c": 20.8,
+    "temp_max_c": 25.9,
+    "humidity": 73,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
-    "wind_kmh": 8.4,
+    "wind_kmh": 7.2,
     "samples": 3
   },
   "forecast": {
@@ -291,11 +291,11 @@
     "wind_kmh": 2.5
   },
   "uv": {
-    "uv": 1.6,
+    "uv": 0.8,
     "band": "low",
     "daily_max": 6.1,
     "peak_time": "2026-08-25T13:00",
-    "safe_minutes": 108,
+    "safe_minutes": 196,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-25T17:38:38+02:00"
+    "fetched_at": "2026-08-25T18:33:01+02:00"
   }
 }
