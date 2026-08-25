@@ -21,6 +21,16 @@
         ]
       },
       {
+        "id": "us6000tnd4",
+        "title": "M5.0 Earthquake - 54 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-25T14:58:54.206000Z",
+        "coordinates": [
+          120.5816,
+          -8.1362
+        ]
+      },
+      {
         "id": "us6000tnci",
         "title": "M5.5 Earthquake - south of the Fiji Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           162.9618,
           -10.9015
         ]
-      },
-      {
-        "id": "us6000tmta",
-        "title": "M5.8 Earthquake - 4 km N of Toride, Japan",
-        "category": "Earthquake",
-        "date": "2026-08-22T17:00:39.472000Z",
-        "coordinates": [
-          140.0778,
-          35.9375
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 26.3,
-    "humidity": 65,
+    "temp_c": 25.4,
+    "feels_c": 25.7,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -258,10 +258,10 @@
   },
   "forecast_today": {
     "date": "2026-08-25",
-    "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 25.9,
-    "humidity": 73,
+    "city": "City of Zagreb",
+    "temp_min_c": 23.0,
+    "temp_max_c": 25.4,
+    "humidity": 70,
     "condition": "Rain",
     "description": "rain",
     "icon": "04d",
@@ -270,10 +270,10 @@
   },
   "forecast": {
     "date": "2026-08-26",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 15.7,
     "temp_max_c": 30.2,
-    "humidity": 65,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-27",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 19.6,
     "temp_max_c": 33.5,
     "humidity": 48,
@@ -291,11 +291,11 @@
     "wind_kmh": 2.5
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 6.1,
     "peak_time": "2026-08-25T13:00",
-    "safe_minutes": 196,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-25T18:33:01+02:00"
+    "fetched_at": "2026-08-25T19:28:17+02:00"
   }
 }
