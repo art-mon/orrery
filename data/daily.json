@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 18.8,
-    "feels_c": 18.7,
-    "humidity": 75,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 1.8
+    "city": "Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 19.2,
+    "humidity": 74,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 20.4
   },
   "forecast_today": {
     "date": "2026-08-25",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 18,
     "temp_max_c": 25.2,
     "humidity": 74,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 4.0,
-    "samples": 7
+    "icon": "10d",
+    "wind_kmh": 7.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-08-26",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 16.6,
     "temp_max_c": 30.1,
     "humidity": 64,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-08-27",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.9,
     "temp_max_c": 33.1,
     "humidity": 51,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.2
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 1.2,
     "band": "low",
     "daily_max": 6.0,
     "peak_time": "2026-08-25T13:00",
-    "safe_minutes": 370,
+    "safe_minutes": 133,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,23 +332,23 @@
       },
       {
         "time": "2026-08-25T08:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-08-25T09:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-08-25T10:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-08-25T11:00",
         "uv": 0.7
       },
       {
+        "time": "2026-08-25T09:00",
+        "uv": 1.2
+      },
+      {
+        "time": "2026-08-25T10:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-08-25T11:00",
+        "uv": 1.3
+      },
+      {
         "time": "2026-08-25T12:00",
-        "uv": 0.8
+        "uv": 5.1
       },
       {
         "time": "2026-08-25T13:00",
@@ -360,23 +360,23 @@
       },
       {
         "time": "2026-08-25T15:00",
-        "uv": 5.5
+        "uv": 4.2
       },
       {
         "time": "2026-08-25T16:00",
-        "uv": 3.5
+        "uv": 2.9
       },
       {
         "time": "2026-08-25T17:00",
-        "uv": 1.1
+        "uv": 1.9
       },
       {
         "time": "2026-08-25T18:00",
-        "uv": 1.3
+        "uv": 1.9
       },
       {
         "time": "2026-08-25T19:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-08-25T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-25T07:27:52+02:00"
+    "fetched_at": "2026-08-25T08:40:23+02:00"
   }
 }
