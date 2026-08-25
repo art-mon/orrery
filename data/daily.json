@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tnbm",
+        "title": "M5.5 Earthquake - 108 km NE of Hengchun, Taiwan",
+        "category": "Earthquake",
+        "date": "2026-08-25T07:00:10.853000Z",
+        "coordinates": [
+          121.5709,
+          22.6053
+        ]
+      },
+      {
         "id": "us6000tn80",
         "title": "M5.0 Earthquake - 209 km NNE of Lospalos, Timor Leste",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           126.7362,
           6.7397
         ]
-      },
-      {
-        "id": "us6000tmr2",
-        "title": "M5.0 Earthquake - 6 km S of Kitcharao, Philippines",
-        "category": "Earthquake",
-        "date": "2026-08-22T04:44:08.744000Z",
-        "coordinates": [
-          125.5805,
-          9.3981
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 19.2,
-    "humidity": 74,
+    "city": "City of Zagreb",
+    "temp_c": 18.1,
+    "feels_c": 18.2,
+    "humidity": 83,
     "condition": "Rain",
-    "description": "light rain",
+    "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 20.4
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-08-25",
     "city": "Zagreb",
-    "temp_min_c": 18,
-    "temp_max_c": 25.2,
-    "humidity": 74,
+    "temp_min_c": 17.5,
+    "temp_max_c": 22.8,
+    "humidity": 80,
     "condition": "Rain",
     "description": "rain",
     "icon": "10d",
-    "wind_kmh": 7.0,
+    "wind_kmh": 7.3,
     "samples": 6
   },
   "forecast": {
     "date": "2026-08-26",
     "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 30.1,
-    "humidity": 64,
+    "temp_min_c": 15.5,
+    "temp_max_c": 29.1,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 3.9
+    "wind_kmh": 3.2
   },
   "forecast_day_after": {
     "date": "2026-08-27",
     "city": "Zagreb",
-    "temp_min_c": 19.9,
-    "temp_max_c": 33.1,
-    "humidity": 51,
+    "temp_min_c": 19.4,
+    "temp_max_c": 31.7,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 3.2
+    "wind_kmh": 3.6
   },
   "uv": {
-    "uv": 1.2,
+    "uv": 0.5,
     "band": "low",
     "daily_max": 6.0,
     "peak_time": "2026-08-25T13:00",
-    "safe_minutes": 133,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-25T08:40:23+02:00"
+    "fetched_at": "2026-08-25T09:40:45+02:00"
   }
 }
