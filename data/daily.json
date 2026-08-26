@@ -165,54 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2019 GV5)",
-        "hazardous": false,
-        "diameter_m": 8,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 31170093,
-        "velocity_kmh": 21246
-      },
-      {
-        "name": "(2019 GJ4)",
-        "hazardous": false,
-        "diameter_m": 37,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 50210606,
-        "velocity_kmh": 52857
-      },
-      {
-        "name": "(2019 MH1)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 54786652,
-        "velocity_kmh": 82707
-      },
-      {
-        "name": "(2016 XJ)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 59946801,
-        "velocity_kmh": 20056
-      },
-      {
-        "name": "(2005 EY169)",
-        "hazardous": false,
-        "diameter_m": 207,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 62610526,
-        "velocity_kmh": 40833
-      },
-      {
-        "name": "(2019 DN1)",
-        "hazardous": false,
-        "diameter_m": 10,
-        "close_approach_date": "2026-08-25",
-        "miss_distance_km": 65395170,
-        "velocity_kmh": 57776
-      },
-      {
         "name": "66146 (1998 TU3)",
         "hazardous": false,
         "diameter_m": 7981,
@@ -243,45 +195,93 @@
         "close_approach_date": "2026-08-27",
         "miss_distance_km": 7077379,
         "velocity_kmh": 81899
+      },
+      {
+        "name": "(2013 VJ11)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 13745154,
+        "velocity_kmh": 26710
+      },
+      {
+        "name": "612346 (2002 GQ5)",
+        "hazardous": false,
+        "diameter_m": 387,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 16819881,
+        "velocity_kmh": 49404
+      },
+      {
+        "name": "(2002 GQ5)",
+        "hazardous": false,
+        "diameter_m": 402,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 16819931,
+        "velocity_kmh": 49404
+      },
+      {
+        "name": "(2005 QQ87)",
+        "hazardous": false,
+        "diameter_m": 161,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 20672081,
+        "velocity_kmh": 73280
+      },
+      {
+        "name": "(2017 WJ16)",
+        "hazardous": false,
+        "diameter_m": 77,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 39639327,
+        "velocity_kmh": 16663
+      },
+      {
+        "name": "(2019 QF2)",
+        "hazardous": false,
+        "diameter_m": 163,
+        "close_approach_date": "2026-08-27",
+        "miss_distance_km": 58346530,
+        "velocity_kmh": 73102
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 20.2,
-    "humidity": 94,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "temp_c": 18.8,
+    "feels_c": 19.4,
+    "humidity": 100,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-08-26",
-    "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 30.5,
-    "humidity": 66,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.2,
-    "samples": 9
+    "city": "Donji grad",
+    "temp_min_c": 18.1,
+    "temp_max_c": 32.3,
+    "humidity": 64,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 3.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-27",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 34.3,
-    "humidity": 46,
+    "city": "Donji grad",
+    "temp_min_c": 20.6,
+    "temp_max_c": 35.2,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 2.5
+    "wind_kmh": 2.7
   },
   "forecast_day_after": {
     "date": "2026-08-28",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 21.7,
     "temp_max_c": 36.5,
     "humidity": 49,
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-08-26T16:00",
-        "uv": 4.3
+        "uv": 4.5
       },
       {
         "time": "2026-08-26T17:00",
-        "uv": 3.1
+        "uv": 3.2
       },
       {
         "time": "2026-08-26T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-26T01:22:15+02:00"
+    "fetched_at": "2026-08-26T03:07:05+02:00"
   }
 }
