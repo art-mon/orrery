@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tc18",
+        "title": "M5.6 Earthquake - 212 km E of Onagawa Ch\u014d, Japan",
+        "category": "Earthquake",
+        "date": "2026-08-26T19:21:41.921000Z",
+        "coordinates": [
+          143.8477,
+          38.1292
+        ]
+      },
+      {
         "id": "us7000tbyu",
         "title": "M5.0 Earthquake - 54 km NNW of Ende, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           120.8354,
           -8.1992
         ]
-      },
-      {
-        "id": "us6000tmz6",
-        "title": "M6.0 Earthquake - 33 km SSW of Honch\u014d, Japan",
-        "category": "Earthquake",
-        "date": "2026-08-23T13:44:53.514000Z",
-        "coordinates": [
-          142.8255,
-          41.8344
-        ]
       }
     ]
   },
@@ -247,48 +247,48 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.7,
-    "humidity": 57,
+    "city": "Donji grad",
+    "temp_c": 24.8,
+    "feels_c": 25.0,
+    "humidity": 63,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-08-26",
     "city": "Zagreb",
-    "temp_min_c": 24.7,
+    "temp_min_c": 24.8,
     "temp_max_c": 24.8,
-    "humidity": 58,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.7,
-    "samples": 2
+    "wind_kmh": 5.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-08-27",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
+    "temp_min_c": 21.5,
     "temp_max_c": 35.4,
-    "humidity": 48,
+    "humidity": 47,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.2
+    "wind_kmh": 3.1
   },
   "forecast_day_after": {
     "date": "2026-08-28",
     "city": "Zagreb",
     "temp_min_c": 21.6,
     "temp_max_c": 36.1,
-    "humidity": 48,
+    "humidity": 47,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 4.5
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-26T20:56:09+02:00"
+    "fetched_at": "2026-08-26T23:39:45+02:00"
   }
 }
