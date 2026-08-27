@@ -1,15 +1,45 @@
 {
   "generated": "2026-08-27",
   "apod": {
-    "title": "JWST Images The Lion's Head Nebula",
-    "date": "2026-08-26",
-    "explanation": "Are we looking at the future of our Sun? The James Webb Space Telescope captured today\u2019s composite image of the Lion\u2019s Head Nebula (NGC 2392) with its NIRCam and MIRI instruments. The Lion\u2019s Head Nebula is the remnant of a Sun-like star. This star was unable to sustain the nuclear fusion in its core needed to remain stable. It began to shed layers of gas and dust into space, forming this planetary nebula. A hot stellar core, called a white dwarf, is left behind within the lion\u2019s nose. Do not boop this nose! Intense radiation from the white dwarf is ionizing the gas as it expands, creating the irregular bubble that makes up the lion\u2019s face. Dust clumps that have survived the white dwarf\u2019s radiation and a cloud of ionized gas make up the lion\u2019s mane. This new and more detailed view of the nebula will help humanity learn more about how the gas and dust interact with each other and the white dwarf radiation.",
+    "title": "Colorful Aurora over Icelandic Waterfall",
+    "date": "2026-08-27",
+    "explanation": "What a sight to behold, when a night sky became filled with colors that appeared to rain over the Sk\u00f3gafoss waterfall in Iceland.     This image was taken in a single 5 second exposure by the photographer in April 2025.   Seeing an aurora is on many people's bucket lists.   But it is not easy.   It requires high solar activity, dark and clear skies, and usually a viewing location at high latitude.   That makes the northern lights more easily seen than the corresponding southern lights, simply because there is less landmass in the Southern Hemisphere, especially around the Antarctic Circle.   Auroras are caused by charged particles from the solar wind that are captured by the Earth's magnetosphere and guided by the magnetic field to a region close to one of the poles, where they collide with gas particles in the atmosphere.   Different colors indicate interactions with different gases at different altitudes, like oxygen (red and green) and nitrogen (blue and pink).        APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/lions_head_nebula.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/lions_head_nebula.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/Aurora_over_Fall_800.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/Aurora_over_Fall.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tc8j",
+        "title": "M5.3 Earthquake - 54 km NNE of Labuan Bajo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-27T10:33:24.325000Z",
+        "coordinates": [
+          120.0539,
+          -8.0324
+        ]
+      },
+      {
+        "id": "us7000tc7l",
+        "title": "M5.3 Earthquake - Volcano Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-08-27T05:44:26.043000Z",
+        "coordinates": [
+          142.7624,
+          24.2906
+        ]
+      },
+      {
+        "id": "us7000tc56",
+        "title": "M5.1 Earthquake - South Atlantic Ocean",
+        "category": "Earthquake",
+        "date": "2026-08-27T04:19:08.168000Z",
+        "coordinates": [
+          -20.2977,
+          -22.5672
+        ]
+      },
       {
         "id": "us7000tc18",
         "title": "M5.6 Earthquake - 212 km E of Onagawa Ch\u014d, Japan",
@@ -129,36 +159,6 @@
           129.6871,
           -5.0525
         ]
-      },
-      {
-        "id": "us6000tn19",
-        "title": "M5.0 Earthquake - Rat Islands, Aleutian Islands, Alaska",
-        "category": "Earthquake",
-        "date": "2026-08-23T23:20:35.668000Z",
-        "coordinates": [
-          176.3834,
-          52.1941
-        ]
-      },
-      {
-        "id": "us6000tn0t",
-        "title": "M5.3 Earthquake - 120 km W of Lata, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-08-23T21:32:20.775000Z",
-        "coordinates": [
-          164.6977,
-          -10.6943
-        ]
-      },
-      {
-        "id": "us6000tn0s",
-        "title": "M5.2 Earthquake - 61 km NE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-23T21:20:15.767000Z",
-        "coordinates": [
-          120.8354,
-          -8.1992
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.2,
-    "feels_c": 22.4,
-    "humidity": 74,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7
+    "temp_c": 35.4,
+    "feels_c": 37.6,
+    "humidity": 39,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-08-27",
     "city": "Zagreb",
-    "temp_min_c": 22.0,
-    "temp_max_c": 36.4,
-    "humidity": 53,
+    "temp_min_c": 27.7,
+    "temp_max_c": 35.4,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 8.2,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-08-28",
     "city": "Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 36.5,
-    "humidity": 48,
+    "temp_min_c": 20.8,
+    "temp_max_c": 34.5,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.8
   },
   "forecast_day_after": {
     "date": "2026-08-29",
     "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 28.6,
+    "temp_min_c": 21.0,
+    "temp_max_c": 31.1,
     "humidity": 49,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 10.3
+    "wind_kmh": 10.7
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.6,
+    "band": "moderate",
     "daily_max": 5.7,
     "peak_time": "2026-08-27T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,11 +344,11 @@
       },
       {
         "time": "2026-08-27T11:00",
-        "uv": 4.4
+        "uv": 4.5
       },
       {
         "time": "2026-08-27T12:00",
-        "uv": 5.1
+        "uv": 4.9
       },
       {
         "time": "2026-08-27T13:00",
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-08-27T15:00",
-        "uv": 5.3
+        "uv": 5.5
       },
       {
         "time": "2026-08-27T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-27T04:53:01+02:00"
+    "fetched_at": "2026-08-27T15:44:21+02:00"
   }
 }
