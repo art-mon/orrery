@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tcp5",
+        "title": "M5.0 Earthquake - 191 km ESE of Kimbe, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-08-28T20:19:38.305000Z",
+        "coordinates": [
+          151.7381,
+          -6.211
+        ]
+      },
+      {
+        "id": "us7000tcii",
+        "title": "M5.0 Earthquake - 172 km SE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-08-28T09:12:17.255000Z",
+        "coordinates": [
+          160.6615,
+          52.1245
+        ]
+      },
+      {
         "id": "us7000tcig",
         "title": "M5.0 Earthquake - 109 km WNW of Isangel, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -171.8992,
           -17.4086
         ]
-      },
-      {
-        "id": "us6000tnd4",
-        "title": "M5.0 Earthquake - 62 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-25T14:58:54.052000Z",
-        "coordinates": [
-          120.6333,
-          -8.0758
-        ]
-      },
-      {
-        "id": "us6000tnci",
-        "title": "M5.5 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-08-25T12:12:03.252000Z",
-        "coordinates": [
-          179.8207,
-          -23.3497
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.9,
-    "feels_c": 32.7,
-    "humidity": 51,
+    "temp_c": 28.7,
+    "feels_c": 30.7,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "icon": "01n",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-28",
-    "city": "Zagreb",
-    "temp_min_c": 27.9,
-    "temp_max_c": 35.0,
-    "humidity": 44,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 12.3,
-    "samples": 5
+    "city": "City of Zagreb",
+    "temp_min_c": 28.7,
+    "temp_max_c": 28.7,
+    "humidity": 61,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 11.1,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-08-29",
-    "city": "Zagreb",
-    "temp_min_c": 22.6,
-    "temp_max_c": 30.3,
-    "humidity": 54,
-    "condition": "Clear",
+    "city": "City of Zagreb",
+    "temp_min_c": 21.0,
+    "temp_max_c": 29.5,
+    "humidity": 56,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.0
+    "wind_kmh": 6.9
   },
   "forecast_day_after": {
     "date": "2026-08-30",
-    "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 31.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 19.9,
+    "temp_max_c": 32.2,
     "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 5.2,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 6.0,
     "peak_time": "2026-08-28T13:00",
-    "safe_minutes": 32,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-08-28T16:00",
-        "uv": 4.4
+        "uv": 4.5
       },
       {
         "time": "2026-08-28T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-28T11:24:08+02:00"
+    "fetched_at": "2026-08-28T23:04:03+02:00"
   }
 }
