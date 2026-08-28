@@ -1,15 +1,55 @@
 {
   "generated": "2026-08-28",
   "apod": {
-    "title": "Colorful Aurora over Icelandic Waterfall",
-    "date": "2026-08-27",
-    "explanation": "What a sight to behold, when a night sky became filled with colors that appeared to rain over the Sk\u00f3gafoss waterfall in Iceland.     This image was taken in a single 5 second exposure by the photographer in April 2025.   Seeing an aurora is on many people's bucket lists.   But it is not easy.   It requires high solar activity, dark and clear skies, and usually a viewing location at high latitude.   That makes the northern lights more easily seen than the corresponding southern lights, simply because there is less landmass in the Southern Hemisphere, especially around the Antarctic Circle.   Auroras are caused by charged particles from the solar wind that are captured by the Earth's magnetosphere and guided by the magnetic field to a region close to one of the poles, where they collide with gas particles in the atmosphere.   Different colors indicate interactions with different gases at different altitudes, like oxygen (red and green) and nitrogen (blue and pink).        APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "The Sky Turns Above Paranal",
+    "date": "2026-08-28",
+    "explanation": "At the latitude of ESO's Paranal Observatory in Chile, about 25 degrees south, Earth's rotation moves the planet's surface eastward at over 1,500 kilometers per hour. And while that's faster than the speed of sound at sea level, the motion is imperceptible. Still, that motion can be revealed in the apparent rotation of the night sky by photographing star trails. This star trail image was composed from a digital stack of 300 consecutive 25-second exposures made with a camera fixed to a tripod to trace the star trail arcs. The graceful arcs are concentric and centered at the south celestial pole, the southern hemisphere extension of Earth's axis of rotation into space. One of the observatory's operating 1.8 meter auxiliary telescopes, AT 3, appears beneath the south celestial pole, faintly illuminated in the foreground of this well-planned scene from a rotating planet.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/Aurora_over_Fall_800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/Aurora_over_Fall.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tcig",
+        "title": "M5.0 Earthquake - 109 km WNW of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-08-28T08:32:35.971000Z",
+        "coordinates": [
+          168.2841,
+          -19.2675
+        ]
+      },
+      {
+        "id": "us7000tcht",
+        "title": "M5.0 Earthquake - 19 km NW of Fuji, China",
+        "category": "Earthquake",
+        "date": "2026-08-28T05:13:35.070000Z",
+        "coordinates": [
+          105.229,
+          29.2752
+        ]
+      },
+      {
+        "id": "us7000tchl",
+        "title": "M5.2 Earthquake - southeast Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-08-28T04:59:06.623000Z",
+        "coordinates": [
+          111.5852,
+          -50.116
+        ]
+      },
+      {
+        "id": "us7000tch3",
+        "title": "M5.0 Earthquake - northern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-08-28T02:39:17.518000Z",
+        "coordinates": [
+          -103.4604,
+          8.4191
+        ]
+      },
       {
         "id": "us7000tcf3",
         "title": "M6.0 Earthquake - 145 km N of Caluula, Somalia",
@@ -119,107 +159,11 @@
           179.8207,
           -23.3497
         ]
-      },
-      {
-        "id": "us6000tnbv",
-        "title": "M5.0 Earthquake - 31 km S of Nemuro, Japan",
-        "category": "Earthquake",
-        "date": "2026-08-25T09:07:20.740000Z",
-        "coordinates": [
-          145.6343,
-          43.045
-        ]
-      },
-      {
-        "id": "us6000tnbm",
-        "title": "M5.5 Earthquake - 108 km NE of Hengchun, Taiwan",
-        "category": "Earthquake",
-        "date": "2026-08-25T07:00:10.853000Z",
-        "coordinates": [
-          121.5709,
-          22.6053
-        ]
-      },
-      {
-        "id": "us6000tn80",
-        "title": "M5.0 Earthquake - 209 km NNE of Lospalos, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-08-24T19:00:03.416000Z",
-        "coordinates": [
-          127.5019,
-          -6.6912
-        ]
-      },
-      {
-        "id": "us6000tn41",
-        "title": "M6.0 Earthquake - 215 km NNE of Lospalos, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-08-24T14:10:17.299000Z",
-        "coordinates": [
-          127.4598,
-          -6.6264
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "523609 (2005 PJ2)",
-        "hazardous": true,
-        "diameter_m": 738,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 7077378,
-        "velocity_kmh": 81899
-      },
-      {
-        "name": "(2013 VJ11)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 13745154,
-        "velocity_kmh": 26710
-      },
-      {
-        "name": "612346 (2002 GQ5)",
-        "hazardous": false,
-        "diameter_m": 387,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 16819881,
-        "velocity_kmh": 49404
-      },
-      {
-        "name": "(2002 GQ5)",
-        "hazardous": false,
-        "diameter_m": 402,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 16819931,
-        "velocity_kmh": 49404
-      },
-      {
-        "name": "(2005 QQ87)",
-        "hazardous": false,
-        "diameter_m": 161,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 20672081,
-        "velocity_kmh": 73280
-      },
-      {
-        "name": "(2017 WJ16)",
-        "hazardous": false,
-        "diameter_m": 77,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 39639327,
-        "velocity_kmh": 16663
-      },
-      {
-        "name": "(2019 QF2)",
-        "hazardous": false,
-        "diameter_m": 163,
-        "close_approach_date": "2026-08-27",
-        "miss_distance_km": 58346530,
-        "velocity_kmh": 73102
-      },
       {
         "name": "221455 (2006 BC10)",
         "hazardous": true,
@@ -243,59 +187,115 @@
         "close_approach_date": "2026-08-28",
         "miss_distance_km": 45742161,
         "velocity_kmh": 27392
+      },
+      {
+        "name": "(2019 NC1)",
+        "hazardous": false,
+        "diameter_m": 312,
+        "close_approach_date": "2026-08-28",
+        "miss_distance_km": 46139345,
+        "velocity_kmh": 44848
+      },
+      {
+        "name": "(2017 DR37)",
+        "hazardous": false,
+        "diameter_m": 245,
+        "close_approach_date": "2026-08-28",
+        "miss_distance_km": 68191142,
+        "velocity_kmh": 48522
+      },
+      {
+        "name": "(2020 DX1)",
+        "hazardous": false,
+        "diameter_m": 30,
+        "close_approach_date": "2026-08-29",
+        "miss_distance_km": 16511204,
+        "velocity_kmh": 24546
+      },
+      {
+        "name": "(2007 EK)",
+        "hazardous": false,
+        "diameter_m": 8,
+        "close_approach_date": "2026-08-30",
+        "miss_distance_km": 4188706,
+        "velocity_kmh": 32907
+      },
+      {
+        "name": "(2012 LE11)",
+        "hazardous": false,
+        "diameter_m": 1406,
+        "close_approach_date": "2026-08-30",
+        "miss_distance_km": 26064307,
+        "velocity_kmh": 36259
+      },
+      {
+        "name": "(2019 GK5)",
+        "hazardous": false,
+        "diameter_m": 494,
+        "close_approach_date": "2026-08-30",
+        "miss_distance_km": 26507432,
+        "velocity_kmh": 45467
+      },
+      {
+        "name": "(2012 TB53)",
+        "hazardous": false,
+        "diameter_m": 143,
+        "close_approach_date": "2026-08-30",
+        "miss_distance_km": 28836716,
+        "velocity_kmh": 28687
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 25.4,
-    "feels_c": 25.8,
-    "humidity": 69,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
-  },
-  "forecast_today": {
-    "date": "2026-08-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 24.0,
-    "temp_max_c": 38.5,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.9,
-    "samples": 9
-  },
-  "forecast": {
-    "date": "2026-08-29",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 27.9,
-    "humidity": 50,
-    "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 10.5
-  },
-  "forecast_day_after": {
-    "date": "2026-08-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 31.4,
-    "humidity": 44,
+    "city": "Zagreb",
+    "temp_c": 30.9,
+    "feels_c": 32.7,
+    "humidity": 51,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.6
+    "wind_kmh": 7.4
+  },
+  "forecast_today": {
+    "date": "2026-08-28",
+    "city": "Zagreb",
+    "temp_min_c": 27.9,
+    "temp_max_c": 35.0,
+    "humidity": 44,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
+    "wind_kmh": 12.3,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-08-29",
+    "city": "Zagreb",
+    "temp_min_c": 22.6,
+    "temp_max_c": 30.3,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 8.0
+  },
+  "forecast_day_after": {
+    "date": "2026-08-30",
+    "city": "Zagreb",
+    "temp_min_c": 18.5,
+    "temp_max_c": 31.4,
+    "humidity": 46,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 5.2,
+    "band": "moderate",
     "daily_max": 6.0,
     "peak_time": "2026-08-28T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-08-28T16:00",
-        "uv": 4.5
+        "uv": 4.4
       },
       {
         "time": "2026-08-28T17:00",
-        "uv": 3.0
+        "uv": 3.1
       },
       {
         "time": "2026-08-28T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-28T01:33:59+02:00"
+    "fetched_at": "2026-08-28T11:24:08+02:00"
   }
 }
