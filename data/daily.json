@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.2,
-    "humidity": 56,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 29.6
+    "temp_c": 28.7,
+    "feels_c": 28.3,
+    "humidity": 40,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-08-29",
     "city": "Zagreb",
-    "temp_min_c": 22.5,
-    "temp_max_c": 25.5,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "10d",
-    "wind_kmh": 12.0,
-    "samples": 5
+    "temp_min_c": 26.0,
+    "temp_max_c": 28.7,
+    "humidity": 42,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 7.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-08-30",
     "city": "Zagreb",
-    "temp_min_c": 19.4,
-    "temp_max_c": 31.4,
-    "humidity": 47,
-    "condition": "Clouds",
+    "temp_min_c": 21.7,
+    "temp_max_c": 29.5,
+    "humidity": 45,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.6
+    "wind_kmh": 4.2
   },
   "forecast_day_after": {
     "date": "2026-08-31",
     "city": "Zagreb",
-    "temp_min_c": 20.2,
-    "temp_max_c": 32.6,
-    "humidity": 43,
+    "temp_min_c": 21.7,
+    "temp_max_c": 32.9,
+    "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.6
+    "wind_kmh": 6.1
   },
   "uv": {
-    "uv": 5.2,
-    "band": "moderate",
+    "uv": 2.2,
+    "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-08-29T14:00",
-    "safe_minutes": 32,
+    "safe_minutes": 74,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,11 +340,11 @@
       },
       {
         "time": "2026-08-29T10:00",
-        "uv": 3.0
+        "uv": 3.1
       },
       {
         "time": "2026-08-29T11:00",
-        "uv": 3.8
+        "uv": 3.9
       },
       {
         "time": "2026-08-29T12:00",
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-08-29T15:00",
-        "uv": 5.3
+        "uv": 5.2
       },
       {
         "time": "2026-08-29T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-29T12:44:57+02:00"
+    "fetched_at": "2026-08-29T17:27:43+02:00"
   }
 }
