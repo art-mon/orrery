@@ -1,15 +1,35 @@
 {
   "generated": "2026-08-29",
   "apod": {
-    "title": "The Sky Turns Above Paranal",
-    "date": "2026-08-28",
-    "explanation": "At the latitude of ESO's Paranal Observatory in Chile, about 25 degrees south, Earth's rotation moves the planet's surface eastward at over 1,500 kilometers per hour. And while that's faster than the speed of sound at sea level, the motion is imperceptible. Still, that motion can be revealed in the apparent rotation of the night sky by photographing star trails. This star trail image was composed from a digital stack of 300 consecutive 25-second exposures made with a camera fixed to a tripod to trace the star trail arcs. The graceful arcs are concentric and centered at the south celestial pole, the southern hemisphere extension of Earth's axis of rotation into space. One of the observatory's operating 1.8 meter auxiliary telescopes, AT 3, appears beneath the south celestial pole, faintly illuminated in the foreground of this well-planned scene from a rotating planet.   Growing Gallery: Lunar Eclipse of 2026 August 28 APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Eclipse Pair",
+    "date": "2026-08-29",
+    "explanation": "clipses tend to come in pairs. Twice a year, during an eclipse season that lasts about 34 days, Sun, Moon, and Earth can nearly align. Then the new and full phases of the Moon, separated by just over 14 days, create a solar and a lunar eclipse. But only rarely is the alignment at both new moon and full moon during a single eclipse season close enough to produce a pair with both total solar and lunar eclipses. More often, partial eclipses are part of any eclipse season. But, the last eclipse season of 2026 did produce this fortnight-separated pairing of a total solar eclipse on August 12 (top) and an almost total lunar eclipse on the night of August 27/28. At New Moon, the solar eclipse was captured at Pe\u00f1afiel, Spain near the begining of totality in this HDR composite image, revealing a flash of Bailey's beads and a golden solar corona. At the following Full Moon, the deep partial lunar eclipse was recorded from S\u00e8vres, France. Also an HDR composite, the image shows this partial eclipse at closer to half its 93 percent maximum phase, so about half the visible lunar disk appears darkened and reddened within Earth's umbral shadow. The coming eclipse season will see an annular solar eclipse on 2027 February 6 paired with a penumbral lunar eclipse on February 20/21.   Growing Gallery: Lunar Eclipse of 2026 August 28 APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/TheSkyTurnsAboveParanal.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2608/2026-08_12and28-EclipsePair1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/2026-08_12and28-EclipsePair.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tcsu",
+        "title": "M5.0 Earthquake - 64 km W of Labuha, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-08-29T08:08:45.662000Z",
+        "coordinates": [
+          126.9069,
+          -0.7032
+        ]
+      },
+      {
+        "id": "us7000tcs7",
+        "title": "M5.1 Earthquake - Southwest Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-08-29T05:40:06.207000Z",
+        "coordinates": [
+          56.9522,
+          -31.8483
+        ]
+      },
       {
         "id": "us7000tcp5",
         "title": "M5.0 Earthquake - 191 km ESE of Kimbe, Papua New Guinea",
@@ -139,26 +159,6 @@
           121.5083,
           -8.3715
         ]
-      },
-      {
-        "id": "us7000tbwb",
-        "title": "M5.2 Earthquake - 55 km NW of Kod\u0101ri\u0307\u0304, Nepal",
-        "category": "Earthquake",
-        "date": "2026-08-26T02:52:10Z",
-        "coordinates": [
-          85.515,
-          28.271
-        ]
-      },
-      {
-        "id": "us6000tnd7",
-        "title": "M5.2 Earthquake - 258 km SE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-08-25T15:15:54.340000Z",
-        "coordinates": [
-          -171.8992,
-          -17.4086
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.5,
-    "feels_c": 25.8,
-    "humidity": 65,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7
+    "temp_c": 24.2,
+    "feels_c": 24.2,
+    "humidity": 56,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 29.6
   },
   "forecast_today": {
     "date": "2026-08-29",
     "city": "Zagreb",
-    "temp_min_c": 22.4,
-    "temp_max_c": 28.1,
-    "humidity": 53,
+    "temp_min_c": 22.5,
+    "temp_max_c": 25.5,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 7.7,
-    "samples": 7
+    "icon": "10d",
+    "wind_kmh": 12.0,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-08-30",
     "city": "Zagreb",
-    "temp_min_c": 18.8,
-    "temp_max_c": 31.1,
-    "humidity": 44,
-    "condition": "Clear",
+    "temp_min_c": 19.4,
+    "temp_max_c": 31.4,
+    "humidity": 47,
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-08-31",
     "city": "Zagreb",
-    "temp_min_c": 20.1,
+    "temp_min_c": 20.2,
     "temp_max_c": 32.6,
-    "humidity": 41,
+    "humidity": 43,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 6.2
+    "wind_kmh": 5.6
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 5.7,
+    "uv": 5.2,
+    "band": "moderate",
+    "daily_max": 5.8,
     "peak_time": "2026-08-29T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,23 +340,23 @@
       },
       {
         "time": "2026-08-29T10:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-08-29T11:00",
-        "uv": 3.1
+        "uv": 3.8
       },
       {
         "time": "2026-08-29T12:00",
-        "uv": 3.1
+        "uv": 4.8
       },
       {
         "time": "2026-08-29T13:00",
-        "uv": 5.1
+        "uv": 5.2
       },
       {
         "time": "2026-08-29T14:00",
-        "uv": 5.7
+        "uv": 5.8
       },
       {
         "time": "2026-08-29T15:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-29T05:28:27+02:00"
+    "fetched_at": "2026-08-29T12:44:57+02:00"
   }
 }
