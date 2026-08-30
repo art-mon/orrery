@@ -165,14 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2020 DX1)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-08-29",
-        "miss_distance_km": 16511204,
-        "velocity_kmh": 24546
-      },
-      {
         "name": "(2007 EK)",
         "hazardous": false,
         "diameter_m": 8,
@@ -243,30 +235,38 @@
         "close_approach_date": "2026-08-31",
         "miss_distance_km": 16186692,
         "velocity_kmh": 27829
+      },
+      {
+        "name": "(2008 CD70)",
+        "hazardous": false,
+        "diameter_m": 22,
+        "close_approach_date": "2026-08-31",
+        "miss_distance_km": 22734702,
+        "velocity_kmh": 24433
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.5,
-    "feels_c": 21.4,
-    "humidity": 66,
+    "temp_c": 20.4,
+    "feels_c": 20.3,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-08-30",
     "city": "Zagreb",
-    "temp_min_c": 20.9,
+    "temp_min_c": 20.3,
     "temp_max_c": 31.4,
     "humidity": 48,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.9,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 4.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-08-31",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-08-30T00:19:01+02:00"
+    "fetched_at": "2026-08-30T03:01:08+02:00"
   }
 }
