@@ -1,15 +1,25 @@
 {
   "generated": "2026-09-01",
   "apod": {
-    "title": "Launch of the Roman Space Telescope",
-    "date": "2026-08-31",
-    "explanation": "A new telescope has been launched into space to study the universe. The Nancy Grace Roman Space Telescope (RST) has the same size main mirror as the Hubble Space Telescope (HST) but sees 100 times more sky during each snapshot.  This is possible because when compared to HST, RST's main mirror is more curved, its secondary mirror is closer, and its main camera is larger.  The result is that RST can inspect more of the sky more quickly, likely allowing, among other capabilities, the discovery of many more supernovas which tell us more about the expansion rate and composition of our universe, and many more planets orbiting other stars that tell us more about the possibilities for life elsewhere in the universe. RST will orbit the Sun, not the Earth, like the James Webb Space Telescope.  The featured video shows Roman being launched yesterday from Kennedy Space Center, Florida, USA aboard a SpaceX Falcon Heavy rocket.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2608/RomanLaunch_NASA.mp4",
-    "hdurl": null
+    "title": "A Plane Lunar Eclipse",
+    "date": "2026-09-01",
+    "explanation": "Did you need to be on the right side of this airplane to see this eclipse? No.  Lunar eclipses are routinely seen from the half of the Earth facing the Moon when the eclipse occurs, making them some of the most commonly witnessed astronomical events. You don't even need any special equipment to see one -- just your unaided eyes.  Lunar eclipses are also some of the most photographed astronomical events because, unlike with a solar eclipse, your eyes and camera do not have to look toward the bright Sun. However, considering the featured image taken last week from Portugal, if you were on the left side of that airplane during takeoff, you might have trouble seeing it -- at first. But even then, after takeoff, since lunar eclipses typically last for hours, you might soon be able to safely cross the aisle(s) to see it.   Gallery: Lunar Eclipse of 2026 August APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2608/PlaneEclipse_Ferreira_1059.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2608/PlaneEclipse_Ferreira_1059.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tdab",
+        "title": "M5.2 Earthquake - 84 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-01T06:44:39.430000Z",
+        "coordinates": [
+          -169.4258,
+          52.2569
+        ]
+      },
       {
         "id": "us7000td2z",
         "title": "M5.5 Earthquake - 44 km NNE of Ruteng, Indonesia",
@@ -149,16 +159,6 @@
           120.0539,
           -8.0324
         ]
-      },
-      {
-        "id": "us7000tc7l",
-        "title": "M5.3 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-08-27T05:44:26.043000Z",
-        "coordinates": [
-          142.7624,
-          24.2906
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.5,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_c": 24.2,
+    "feels_c": 24.2,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 16.7
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-01",
     "city": "City of Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 29.2,
-    "humidity": 54,
+    "temp_min_c": 23.8,
+    "temp_max_c": 30.4,
+    "humidity": 45,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 8.2,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 7.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-02",
     "city": "City of Zagreb",
-    "temp_min_c": 17.5,
-    "temp_max_c": 31.6,
-    "humidity": 48,
+    "temp_min_c": 19.2,
+    "temp_max_c": 31.2,
+    "humidity": 46,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.3
+    "wind_kmh": 6.2
   },
   "forecast_day_after": {
     "date": "2026-09-03",
     "city": "City of Zagreb",
-    "temp_min_c": 18.0,
-    "temp_max_c": 29.4,
+    "temp_min_c": 17.9,
+    "temp_max_c": 29.8,
     "humidity": 47,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.3,
     "band": "low",
     "daily_max": 5.8,
-    "peak_time": "2026-09-01T14:00",
-    "safe_minutes": null,
+    "peak_time": "2026-09-01T13:00",
+    "safe_minutes": 72,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,27 +332,27 @@
       },
       {
         "time": "2026-09-01T08:00",
-        "uv": 0.2
+        "uv": 0.6
       },
       {
         "time": "2026-09-01T09:00",
-        "uv": 1.4
+        "uv": 1.8
       },
       {
         "time": "2026-09-01T10:00",
-        "uv": 1.1
+        "uv": 3.1
       },
       {
         "time": "2026-09-01T11:00",
-        "uv": 1.9
+        "uv": 3.6
       },
       {
         "time": "2026-09-01T12:00",
-        "uv": 5.3
+        "uv": 3.1
       },
       {
         "time": "2026-09-01T13:00",
-        "uv": 5.0
+        "uv": 5.8
       },
       {
         "time": "2026-09-01T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-01T03:37:25+02:00"
+    "fetched_at": "2026-09-01T09:13:16+02:00"
   }
 }
