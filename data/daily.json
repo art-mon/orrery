@@ -11,13 +11,23 @@
   "events": {
     "events": [
       {
-        "id": "us7000tdab",
-        "title": "M5.2 Earthquake - 84 km SSW of Nikolski, Alaska",
+        "id": "us7000tdav",
+        "title": "M5.6 Earthquake - 82 km SE of Maba, Indonesia",
         "category": "Earthquake",
-        "date": "2026-09-01T06:44:39.430000Z",
+        "date": "2026-09-01T08:22:20.813000Z",
         "coordinates": [
-          -169.4258,
-          52.2569
+          128.8054,
+          0.1685
+        ]
+      },
+      {
+        "id": "us7000tdab",
+        "title": "M5.3 Earthquake - 89 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-01T06:44:36.948000Z",
+        "coordinates": [
+          -169.4456,
+          52.2132
         ]
       },
       {
@@ -149,16 +159,6 @@
           86.9395,
           33.2423
         ]
-      },
-      {
-        "id": "us7000tc8j",
-        "title": "M5.3 Earthquake - 54 km NNE of Labuan Bajo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-27T10:33:24.325000Z",
-        "coordinates": [
-          120.0539,
-          -8.0324
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 24.2,
-    "feels_c": 24.2,
-    "humidity": 56,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.5
-  },
-  "forecast_today": {
-    "date": "2026-09-01",
-    "city": "City of Zagreb",
-    "temp_min_c": 23.8,
-    "temp_max_c": 30.4,
-    "humidity": 45,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4,
-    "samples": 6
-  },
-  "forecast": {
-    "date": "2026-09-02",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 31.2,
-    "humidity": 46,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.2
-  },
-  "forecast_day_after": {
-    "date": "2026-09-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 17.9,
-    "temp_max_c": 29.8,
-    "humidity": 47,
+    "city": "Zagreb",
+    "temp_c": 30.4,
+    "feels_c": 29.9,
+    "humidity": 38,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.8
+    "wind_kmh": 16.7
+  },
+  "forecast_today": {
+    "date": "2026-09-01",
+    "city": "Zagreb",
+    "temp_min_c": 27.0,
+    "temp_max_c": 30.4,
+    "humidity": 40,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 10.0,
+    "samples": 4
+  },
+  "forecast": {
+    "date": "2026-09-02",
+    "city": "Zagreb",
+    "temp_min_c": 21.4,
+    "temp_max_c": 31.7,
+    "humidity": 43,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.4
+  },
+  "forecast_day_after": {
+    "date": "2026-09-03",
+    "city": "Zagreb",
+    "temp_min_c": 20.9,
+    "temp_max_c": 29.8,
+    "humidity": 45,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.7
   },
   "uv": {
-    "uv": 2.3,
-    "band": "low",
+    "uv": 4.8,
+    "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-09-01T13:00",
-    "safe_minutes": 72,
+    "safe_minutes": 34,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,11 +344,11 @@
       },
       {
         "time": "2026-09-01T11:00",
-        "uv": 3.6
+        "uv": 3.7
       },
       {
         "time": "2026-09-01T12:00",
-        "uv": 3.1
+        "uv": 4.6
       },
       {
         "time": "2026-09-01T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-01T09:13:16+02:00"
+    "fetched_at": "2026-09-01T15:03:18+02:00"
   }
 }
