@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdbr",
+        "title": "M5.2 Earthquake - 35 km SE of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-09-01T13:22:30.133000Z",
+        "coordinates": [
+          125.672,
+          5.1623
+        ]
+      },
+      {
         "id": "us7000tdav",
         "title": "M5.6 Earthquake - 82 km SE of Maba, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           50.5425,
           13.2654
         ]
-      },
-      {
-        "id": "us7000tc9m",
-        "title": "M5.0 Earthquake - western Xizang",
-        "category": "Earthquake",
-        "date": "2026-08-27T14:45:48.054000Z",
-        "coordinates": [
-          86.9395,
-          33.2423
-        ]
       }
     ]
   },
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 29.9,
-    "humidity": 38,
+    "temp_c": 26.7,
+    "feels_c": 26.4,
+    "humidity": 34,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 16.7
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-09-01",
     "city": "Zagreb",
-    "temp_min_c": 27.0,
-    "temp_max_c": 30.4,
-    "humidity": 40,
+    "temp_min_c": 25.7,
+    "temp_max_c": 26.7,
+    "humidity": 36,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 10.0,
-    "samples": 4
+    "wind_kmh": 10.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-02",
     "city": "Zagreb",
     "temp_min_c": 21.4,
     "temp_max_c": 31.7,
-    "humidity": 43,
+    "humidity": 42,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -283,19 +283,19 @@
     "date": "2026-09-03",
     "city": "Zagreb",
     "temp_min_c": 20.9,
-    "temp_max_c": 29.8,
-    "humidity": 45,
+    "temp_max_c": 29.9,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.7
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 4.8,
-    "band": "moderate",
+    "uv": 0.1,
+    "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-01T13:00",
-    "safe_minutes": 34,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-01T15:03:18+02:00"
+    "fetched_at": "2026-09-01T19:34:32+02:00"
   }
 }
