@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdey",
+        "title": "M5.0 Earthquake - 118 km SSE of Isangel, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-09-01T18:37:29.222000Z",
+        "coordinates": [
+          169.7829,
+          -20.5024
+        ]
+      },
+      {
         "id": "us7000tdbr",
         "title": "M5.2 Earthquake - 35 km SE of Sarangani, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -103.4604,
           8.4191
         ]
-      },
-      {
-        "id": "us7000tcf3",
-        "title": "M6.0 Earthquake - 145 km N of Caluula, Somalia",
-        "category": "Earthquake",
-        "date": "2026-08-27T21:07:38.352000Z",
-        "coordinates": [
-          50.5425,
-          13.2654
-        ]
       }
     ]
   },
@@ -248,50 +248,50 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.7,
-    "feels_c": 26.4,
-    "humidity": 34,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 14.8
+    "temp_c": 20.7,
+    "feels_c": 20.2,
+    "humidity": 52,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-01",
     "city": "Zagreb",
-    "temp_min_c": 25.7,
-    "temp_max_c": 26.7,
-    "humidity": 36,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 10.1,
-    "samples": 3
+    "temp_min_c": 20.7,
+    "temp_max_c": 20.7,
+    "humidity": 52,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 6.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-02",
     "city": "Zagreb",
-    "temp_min_c": 21.4,
+    "temp_min_c": 20.9,
     "temp_max_c": 31.7,
-    "humidity": 42,
+    "humidity": 41,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.1
   },
   "forecast_day_after": {
     "date": "2026-09-03",
     "city": "Zagreb",
-    "temp_min_c": 20.9,
-    "temp_max_c": 29.9,
-    "humidity": 44,
+    "temp_min_c": 21.2,
+    "temp_max_c": 32.1,
+    "humidity": 41,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.9
+    "wind_kmh": 6.5
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-01T13:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-01T19:34:32+02:00"
+    "fetched_at": "2026-09-01T22:30:52+02:00"
   }
 }
