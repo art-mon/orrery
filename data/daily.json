@@ -11,6 +11,46 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdms",
+        "title": "M5.9 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-09-02T12:35:56.627000Z",
+        "coordinates": [
+          -109.0259,
+          -34.9815
+        ]
+      },
+      {
+        "id": "us7000tdmm",
+        "title": "M5.2 Earthquake - 78 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-02T12:32:01.324000Z",
+        "coordinates": [
+          -169.4988,
+          52.3538
+        ]
+      },
+      {
+        "id": "us7000tdmp",
+        "title": "M5.6 Earthquake - 71 km WSW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-09-02T12:28:31.022000Z",
+        "coordinates": [
+          -92.9873,
+          14.3909
+        ]
+      },
+      {
+        "id": "us7000tdkr",
+        "title": "M5.2 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-02T10:54:02.666000Z",
+        "coordinates": [
+          -26.904,
+          -56.3968
+        ]
+      },
+      {
         "id": "us7000tdjg",
         "title": "M5.2 Earthquake - 70 km NNW of Arthurs Point, New Zealand",
         "category": "Earthquake",
@@ -62,12 +102,12 @@
       },
       {
         "id": "us7000tdbr",
-        "title": "M5.2 Earthquake - 35 km SE of Sarangani, Philippines",
+        "title": "M5.2 Earthquake - 44 km SE of Sarangani, Philippines",
         "category": "Earthquake",
-        "date": "2026-09-01T13:22:30.133000Z",
+        "date": "2026-09-01T13:22:29.602000Z",
         "coordinates": [
-          125.672,
-          5.1623
+          125.7229,
+          5.0959
         ]
       },
       {
@@ -118,46 +158,6 @@
         "coordinates": [
           -27.0033,
           -56.4575
-        ]
-      },
-      {
-        "id": "us7000tcsu",
-        "title": "M5.0 Earthquake - 64 km W of Labuha, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-29T08:08:45.662000Z",
-        "coordinates": [
-          126.9069,
-          -0.7032
-        ]
-      },
-      {
-        "id": "us7000tcs7",
-        "title": "M5.1 Earthquake - Southwest Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-29T05:40:06.207000Z",
-        "coordinates": [
-          56.9522,
-          -31.8483
-        ]
-      },
-      {
-        "id": "us7000tcp5",
-        "title": "M5.0 Earthquake - 191 km ESE of Kimbe, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-08-28T20:19:38.305000Z",
-        "coordinates": [
-          151.7381,
-          -6.211
-        ]
-      },
-      {
-        "id": "us7000tcii",
-        "title": "M5.0 Earthquake - 172 km SE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-08-28T09:12:17.255000Z",
-        "coordinates": [
-          160.6615,
-          52.1245
         ]
       }
     ]
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 29.8,
-    "feels_c": 29.4,
-    "humidity": 39,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 11.1
+    "city": "Zagreb",
+    "temp_c": 31.5,
+    "feels_c": 30.6,
+    "humidity": 33,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-02",
     "city": "Zagreb",
-    "temp_min_c": 27.6,
-    "temp_max_c": 30.2,
-    "humidity": 42,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 6.3,
-    "samples": 5
+    "temp_min_c": 25.8,
+    "temp_max_c": 31.5,
+    "humidity": 40,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "01d",
+    "wind_kmh": 8.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-03",
     "city": "Zagreb",
-    "temp_min_c": 20.8,
-    "temp_max_c": 32.9,
-    "humidity": 42,
+    "temp_min_c": 20.0,
+    "temp_max_c": 33.9,
+    "humidity": 48,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.7
+    "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 20.2,
-    "temp_max_c": 31.7,
-    "humidity": 39,
+    "temp_min_c": 22.9,
+    "temp_max_c": 32,
+    "humidity": 41,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 4.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 5.7,
-    "band": "moderate",
+    "uv": 2.7,
+    "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-02T13:00",
-    "safe_minutes": 29,
+    "safe_minutes": 62,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,15 +336,15 @@
       },
       {
         "time": "2026-09-02T09:00",
-        "uv": 1.7
+        "uv": 1.6
       },
       {
         "time": "2026-09-02T10:00",
-        "uv": 2.6
+        "uv": 2.8
       },
       {
         "time": "2026-09-02T11:00",
-        "uv": 4.0
+        "uv": 4.1
       },
       {
         "time": "2026-09-02T12:00",
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-09-02T15:00",
-        "uv": 5.2
+        "uv": 5.1
       },
       {
         "time": "2026-09-02T16:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-09-02T18:00",
-        "uv": 1.4
+        "uv": 1.6
       },
       {
         "time": "2026-09-02T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-02T12:35:30+02:00"
+    "fetched_at": "2026-09-02T16:57:21+02:00"
   }
 }
