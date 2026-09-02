@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdqc",
+        "title": "M5.4 Earthquake - 53 km W of Bulolo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-09-02T20:04:33.407000Z",
+        "coordinates": [
+          146.1539,
+          -7.1815
+        ]
+      },
+      {
         "id": "us7000tdms",
         "title": "M5.9 Earthquake - southern East Pacific Rise",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -177.8882,
           -30.1462
         ]
-      },
-      {
-        "id": "us7000tcwd",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-08-30T03:55:28.753000Z",
-        "coordinates": [
-          -27.0033,
-          -56.4575
-        ]
       }
     ]
   },
@@ -247,48 +247,48 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 24.7,
-    "feels_c": 24.4,
-    "humidity": 47,
+    "city": "Zagreb",
+    "temp_c": 18.8,
+    "feels_c": 18.5,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-02",
     "city": "Donji grad",
-    "temp_min_c": 24.1,
-    "temp_max_c": 24.7,
-    "humidity": 50,
+    "temp_min_c": 18.8,
+    "temp_max_c": 18.8,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 4.4,
-    "samples": 2
+    "icon": "04n",
+    "wind_kmh": 1.8,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-09-03",
     "city": "Donji grad",
-    "temp_min_c": 20.0,
-    "temp_max_c": 33.9,
-    "humidity": 46,
+    "temp_min_c": 19.1,
+    "temp_max_c": 32.7,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 4.7
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-09-04",
     "city": "Donji grad",
-    "temp_min_c": 22.9,
-    "temp_max_c": 32,
+    "temp_min_c": 22.7,
+    "temp_max_c": 33.5,
     "humidity": 41,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.3
+    "wind_kmh": 4.8
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-02T20:27:55+02:00"
+    "fetched_at": "2026-09-02T23:34:34+02:00"
   }
 }
