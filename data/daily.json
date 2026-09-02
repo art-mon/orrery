@@ -1,23 +1,33 @@
 {
   "generated": "2026-09-02",
   "apod": {
-    "title": "A Plane Lunar Eclipse",
-    "date": "2026-09-01",
-    "explanation": "Did you need to be on the right side of this airplane to see this eclipse? No.  Lunar eclipses are routinely seen from the half of the Earth facing the Moon when the eclipse occurs, making them some of the most commonly witnessed astronomical events. You don't even need any special equipment to see one -- just your unaided eyes.  Lunar eclipses are also some of the most photographed astronomical events because, unlike with a solar eclipse, your eyes and camera do not have to look toward the bright Sun. However, considering the featured image taken last week from Portugal, if you were on the left side of that airplane during takeoff, you might have trouble seeing it -- at first. But even then, after takeoff, since lunar eclipses typically last for hours, you might soon be able to safely cross the aisle(s) to see it.   Gallery: Lunar Eclipse of 2026 August APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Solar Eclipses and Culture",
+    "date": "2026-09-02",
+    "explanation": "Pretend you have never heard of a solar eclipse. The Sun\u2019s behavior has been predictable your whole life. One day, you witness the sky transform as it does in today\u2019s spliced image spanning two hours of the August 12, 2026 solar eclipse. The Sun disappears, leaving behind a bright, empty ring. What would you think had happened? Humans have interpreted eclipses in countless ways throughout history, embedding beliefs about connection, rebirth, or danger into culture. \u201cEclipse\u201d comes from the Greek word \u201c\u00e9kleipsis\u201d meaning \u201cabandonment\u201d. In ancient Greece, the solar eclipse marked the anger of the gods and the Sun abandoning humanity. To the Din\u00e9 people, this celestial alignment is a time of renewal. Out of respect and to avoid the danger of sunlight, the Din\u00e9 stay inside until the Sun and Moon separate. The Batammariba people of Benin and Togo believe that the Sun and Moon fight during an eclipse, so the community encourages peace among themselves. Eclipses are an example of the longstanding connection between astronomy and society.   Gallery: Solar Eclipse of 2026 August 12",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2608/PlaneEclipse_Ferreira_1059.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2608/PlaneEclipse_Ferreira_1059.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/colors_of_eclipse_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/colors_of_eclipse.jpg"
   },
   "events": {
     "events": [
       {
-        "id": "us7000tdhl",
-        "title": "M5.6 Earthquake - 155 km WSW of Abepura, Indonesia",
+        "id": "us7000tdin",
+        "title": "M5.2 Earthquake - 95 km SSW of Nikolski, Alaska",
         "category": "Earthquake",
-        "date": "2026-09-02T00:04:54.781000Z",
+        "date": "2026-09-02T05:14:00.312000Z",
         "coordinates": [
-          139.3732,
-          -3.2128
+          -169.295,
+          52.1186
+        ]
+      },
+      {
+        "id": "us7000tdhl",
+        "title": "M5.6 Earthquake - 159 km WSW of Abepura, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-02T00:04:55.147000Z",
+        "coordinates": [
+          139.3456,
+          -3.2239
         ]
       },
       {
@@ -149,16 +159,6 @@
           105.229,
           29.2752
         ]
-      },
-      {
-        "id": "us7000tchl",
-        "title": "M5.2 Earthquake - southeast Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-08-28T04:59:06.623000Z",
-        "coordinates": [
-          111.5852,
-          -50.116
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 20.9,
-    "feels_c": 20.6,
-    "humidity": 59,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "city": "Donji grad",
+    "temp_c": 19.8,
+    "feels_c": 19.5,
+    "humidity": 65,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-02",
-    "city": "Zagreb",
-    "temp_min_c": 20.7,
-    "temp_max_c": 31.7,
-    "humidity": 43,
+    "city": "Donji grad",
+    "temp_min_c": 19.8,
+    "temp_max_c": 31.5,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
+    "icon": "03d",
     "wind_kmh": 5.0,
-    "samples": 8
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-03",
-    "city": "Zagreb",
-    "temp_min_c": 21.2,
-    "temp_max_c": 32.1,
-    "humidity": 41,
+    "city": "Donji grad",
+    "temp_min_c": 20.8,
+    "temp_max_c": 32.9,
+    "humidity": 42,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.5
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-09-04",
-    "city": "Zagreb",
-    "temp_min_c": 19.4,
-    "temp_max_c": 31.8,
+    "city": "Donji grad",
+    "temp_min_c": 20.2,
+    "temp_max_c": 31.7,
     "humidity": 39,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 4.2
+    "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-02T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -332,19 +332,19 @@
       },
       {
         "time": "2026-09-02T08:00",
-        "uv": 0.4
+        "uv": 0.7
       },
       {
         "time": "2026-09-02T09:00",
-        "uv": 0.8
+        "uv": 1.7
       },
       {
         "time": "2026-09-02T10:00",
-        "uv": 1.3
+        "uv": 2.6
       },
       {
         "time": "2026-09-02T11:00",
-        "uv": 3.1
+        "uv": 4.0
       },
       {
         "time": "2026-09-02T12:00",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-09-02T18:00",
-        "uv": 1.6
+        "uv": 1.4
       },
       {
         "time": "2026-09-02T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-02T02:57:57+02:00"
+    "fetched_at": "2026-09-02T07:33:08+02:00"
   }
 }
