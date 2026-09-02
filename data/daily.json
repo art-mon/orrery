@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdjg",
+        "title": "M5.2 Earthquake - 70 km NNW of Arthurs Point, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-09-02T06:57:12.278000Z",
+        "coordinates": [
+          168.2503,
+          -44.4277
+        ]
+      },
+      {
+        "id": "us7000tdj8",
+        "title": "M5.3 Earthquake - 66 km NNW of Arthurs Point, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-09-02T06:13:33.779000Z",
+        "coordinates": [
+          168.3029,
+          -44.4431
+        ]
+      },
+      {
         "id": "us7000tdin",
         "title": "M5.2 Earthquake - 95 km SSW of Nikolski, Alaska",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           160.6615,
           52.1245
         ]
-      },
-      {
-        "id": "us7000tcig",
-        "title": "M5.0 Earthquake - 109 km WNW of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-08-28T08:32:35.971000Z",
-        "coordinates": [
-          168.2841,
-          -19.2675
-        ]
-      },
-      {
-        "id": "us7000tcht",
-        "title": "M5.0 Earthquake - 19 km NW of Fuji, China",
-        "category": "Earthquake",
-        "date": "2026-08-28T05:13:35.070000Z",
-        "coordinates": [
-          105.229,
-          29.2752
-        ]
       }
     ]
   },
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 19.8,
-    "feels_c": 19.5,
-    "humidity": 65,
+    "temp_c": 29.8,
+    "feels_c": 29.4,
+    "humidity": 39,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.5
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-09-02",
-    "city": "Donji grad",
-    "temp_min_c": 19.8,
-    "temp_max_c": 31.5,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_min_c": 27.6,
+    "temp_max_c": 30.2,
+    "humidity": 42,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 5.0,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 6.3,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-03",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 20.8,
     "temp_max_c": 32.9,
     "humidity": 42,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-04",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 20.2,
     "temp_max_c": 31.7,
     "humidity": 39,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.9
   },
   "uv": {
-    "uv": 0.6,
-    "band": "low",
+    "uv": 5.7,
+    "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-09-02T13:00",
-    "safe_minutes": 303,
+    "safe_minutes": 29,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-02T07:33:08+02:00"
+    "fetched_at": "2026-09-02T12:35:30+02:00"
   }
 }
