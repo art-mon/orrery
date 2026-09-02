@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 31.5,
-    "feels_c": 30.6,
-    "humidity": 33,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "city": "Donji grad",
+    "temp_c": 24.7,
+    "feels_c": 24.4,
+    "humidity": 47,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-02",
-    "city": "Zagreb",
-    "temp_min_c": 25.8,
-    "temp_max_c": 31.5,
-    "humidity": 40,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 8.0,
-    "samples": 4
+    "city": "Donji grad",
+    "temp_min_c": 24.1,
+    "temp_max_c": 24.7,
+    "humidity": 50,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 4.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-03",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 20.0,
     "temp_max_c": 33.9,
-    "humidity": 48,
+    "humidity": 46,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-04",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 22.9,
     "temp_max_c": 32,
     "humidity": 41,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 2.7,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-02T13:00",
-    "safe_minutes": 62,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,11 +360,11 @@
       },
       {
         "time": "2026-09-02T15:00",
-        "uv": 5.1
+        "uv": 5.2
       },
       {
         "time": "2026-09-02T16:00",
-        "uv": 4.2
+        "uv": 4.1
       },
       {
         "time": "2026-09-02T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-02T16:57:21+02:00"
+    "fetched_at": "2026-09-02T20:27:55+02:00"
   }
 }
