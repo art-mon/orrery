@@ -1,10 +1,25 @@
 {
   "generated": "2026-09-03",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "The Eclipse and the Stork",
+    "date": "2026-09-03",
+    "explanation": "How do animals react to a total solar eclipse?   The featured image shows a stork roosting on her nest in Poland at a partial phase of the recent total solar eclipse.   If you are lucky enough to experience a total eclipse somewhere quiet and close to nature, you may be able to notice unusual daytime animal behaviors.     During totality, you may hear nighttime sounds like crickets and frogs and see fireflies.   In the dark, most birds are quiet.   Thinking that it is time to go to bed, ducks and other waterfowl prepare to sleep on one leg, with their heads turned around and their beaks tucked into their back feathers (they don't really sleep with their heads tucked under one wing).   When sunlight returns at the end of totality, songbirds greet the new \"morning\" with their dawn songs.   The crickets and frogs go quiet again.   Animals and people resume their lifes, only briefly disturbed by the chance alignment of our Sun and Moon.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/eclipse_stork_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/eclipse_stork.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tduc",
+        "title": "M5.1 Earthquake - 42 km NW of Coquimbo, Chile",
+        "category": "Earthquake",
+        "date": "2026-09-03T06:04:02.572000Z",
+        "coordinates": [
+          -71.6979,
+          -29.7346
+        ]
+      },
       {
         "id": "us7000tdrv",
         "title": "M6.2 Earthquake - South Sandwich Islands region",
@@ -144,16 +159,6 @@
           128.8054,
           0.1685
         ]
-      },
-      {
-        "id": "us7000tdab",
-        "title": "M5.3 Earthquake - 89 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-01T06:44:36.948000Z",
-        "coordinates": [
-          -169.4456,
-          52.2132
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.7,
-    "feels_c": 15.5,
-    "humidity": 82,
+    "temp_c": 25.9,
+    "feels_c": 26,
+    "humidity": 55,
     "condition": "Clouds",
     "description": "scattered clouds",
-    "icon": "03n",
+    "icon": "03d",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-03",
     "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 33.1,
-    "humidity": 53,
+    "temp_min_c": 25.9,
+    "temp_max_c": 29.9,
+    "humidity": 46,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7,
-    "samples": 8
+    "icon": "03d",
+    "wind_kmh": 3.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 22.8,
-    "temp_max_c": 34.0,
-    "humidity": 40,
+    "temp_min_c": 19.3,
+    "temp_max_c": 33.1,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.9
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 6.2
   },
   "forecast_day_after": {
     "date": "2026-09-05",
     "city": "Zagreb",
     "temp_min_c": 20.0,
-    "temp_max_c": 32.3,
-    "humidity": 51,
-    "condition": "Clear",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 9.0
+    "temp_max_c": 32.6,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 8.2
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.1,
+    "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-09-03T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 53,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,11 +360,11 @@
       },
       {
         "time": "2026-09-03T15:00",
-        "uv": 5.1
+        "uv": 5.0
       },
       {
         "time": "2026-09-03T16:00",
-        "uv": 3.8
+        "uv": 4.0
       },
       {
         "time": "2026-09-03T17:00",
@@ -367,7 +372,7 @@
       },
       {
         "time": "2026-09-03T18:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-09-03T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T04:52:02+02:00"
+    "fetched_at": "2026-09-03T09:45:49+02:00"
   }
 }
