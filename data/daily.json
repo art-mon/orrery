@@ -11,6 +11,46 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdw6",
+        "title": "M5.4 Earthquake - 21 km WNW of Jiangyou, China",
+        "category": "Earthquake",
+        "date": "2026-09-03T11:39:41.981000Z",
+        "coordinates": [
+          104.5066,
+          31.8458
+        ]
+      },
+      {
+        "id": "us7000tdy7",
+        "title": "M5.2 Earthquake - 97 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-03T11:24:55.479000Z",
+        "coordinates": [
+          -169.4182,
+          52.1321
+        ]
+      },
+      {
+        "id": "us7000tdvt",
+        "title": "M6.3 Earthquake - 84 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-03T11:17:24.056000Z",
+        "coordinates": [
+          -169.4088,
+          52.2579
+        ]
+      },
+      {
+        "id": "us7000tdv4",
+        "title": "M5.1 Earthquake - 115 km NE of Josh\u012bmath, India",
+        "category": "Earthquake",
+        "date": "2026-09-03T08:16:36.417000Z",
+        "coordinates": [
+          80.33,
+          31.3618
+        ]
+      },
+      {
         "id": "us7000tduc",
         "title": "M5.1 Earthquake - 42 km NW of Coquimbo, Chile",
         "category": "Earthquake",
@@ -119,46 +159,6 @@
           -169.295,
           52.1186
         ]
-      },
-      {
-        "id": "us7000tdhl",
-        "title": "M5.6 Earthquake - 159 km WSW of Abepura, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-02T00:04:55.147000Z",
-        "coordinates": [
-          139.3456,
-          -3.2239
-        ]
-      },
-      {
-        "id": "us7000tdey",
-        "title": "M5.0 Earthquake - 118 km SSE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-01T18:37:29.222000Z",
-        "coordinates": [
-          169.7829,
-          -20.5024
-        ]
-      },
-      {
-        "id": "us7000tdbr",
-        "title": "M5.2 Earthquake - 44 km SE of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-09-01T13:22:29.602000Z",
-        "coordinates": [
-          125.7229,
-          5.0959
-        ]
-      },
-      {
-        "id": "us7000tdav",
-        "title": "M5.6 Earthquake - 82 km SE of Maba, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-01T08:22:20.813000Z",
-        "coordinates": [
-          128.8054,
-          0.1685
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 25.9,
-    "feels_c": 26,
-    "humidity": 55,
+    "city": "City of Zagreb",
+    "temp_c": 33.1,
+    "feels_c": 33,
+    "humidity": 35,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.5
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-09-03",
     "city": "Zagreb",
-    "temp_min_c": 25.9,
-    "temp_max_c": 29.9,
-    "humidity": 46,
+    "temp_min_c": 26.0,
+    "temp_max_c": 33.1,
+    "humidity": 37,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03d",
-    "wind_kmh": 3.4,
-    "samples": 6
+    "wind_kmh": 6.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-04",
@@ -291,11 +291,11 @@
     "wind_kmh": 8.2
   },
   "uv": {
-    "uv": 3.1,
+    "uv": 5.2,
     "band": "moderate",
     "daily_max": 5.8,
     "peak_time": "2026-09-03T13:00",
-    "safe_minutes": 53,
+    "safe_minutes": 32,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,15 +360,15 @@
       },
       {
         "time": "2026-09-03T15:00",
-        "uv": 5.0
+        "uv": 5.1
       },
       {
         "time": "2026-09-03T16:00",
-        "uv": 4.0
+        "uv": 4.1
       },
       {
         "time": "2026-09-03T17:00",
-        "uv": 2.5
+        "uv": 2.6
       },
       {
         "time": "2026-09-03T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T09:45:49+02:00"
+    "fetched_at": "2026-09-03T14:34:40+02:00"
   }
 }
