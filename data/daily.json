@@ -3,13 +3,43 @@
   "apod": {
     "title": "The Eclipse and the Stork",
     "date": "2026-09-03",
-    "explanation": "How do animals react to a total solar eclipse?   The featured image shows a stork roosting on her nest in Poland at a partial phase of the recent total solar eclipse.   If you are lucky enough to experience a total eclipse somewhere quiet and close to nature, you may be able to notice unusual daytime animal behaviors.     During totality, you may hear nighttime sounds like crickets and frogs and see fireflies.   In the dark, most birds are quiet.   Thinking that it is time to go to bed, ducks and other waterfowl prepare to sleep on one leg, with their heads turned around and their beaks tucked into their back feathers (they don't really sleep with their heads tucked under one wing).   When sunlight returns at the end of totality, songbirds greet the new \"morning\" with their dawn songs.   The crickets and frogs go quiet again.   Animals and people resume their lifes, only briefly disturbed by the chance alignment of our Sun and Moon.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
+    "explanation": "How do animals react to a total solar eclipse?   The featured image shows a stork roosting on her nest in Poland at a partial phase of the recent total solar eclipse.   If you are lucky enough to experience a total eclipse somewhere quiet and close to nature, you may be able to notice unusual daytime animal behaviors.     During totality, you may hear nighttime sounds like crickets and frogs and see fireflies.   In the dark, most birds are quiet.   Thinking that it is time to go to bed, ducks and other waterfowl prepare to sleep on one leg, with their heads turned around and their beaks tucked into their back feathers (they don't really sleep with their heads tucked under one wing).   When sunlight returns at the end of totality, songbirds greet the new \"morning\" with their dawn songs.   The crickets and frogs go quiet again.   Animals and people resume their lives, only briefly disturbed by the chance alignment of our Sun and Moon.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
     "url": "https://apod.nasa.gov/apod/image/2609/eclipse_stork_1080.jpg",
     "hdurl": "https://apod.nasa.gov/apod/image/2609/eclipse_stork.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000te2m",
+        "title": "M5.3 Earthquake - 104 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-03T18:45:39.228000Z",
+        "coordinates": [
+          -169.2217,
+          52.0304
+        ]
+      },
+      {
+        "id": "us7000te2i",
+        "title": "M5.0 Earthquake - Fiji region",
+        "category": "Earthquake",
+        "date": "2026-09-03T18:31:04.918000Z",
+        "coordinates": [
+          -177.4572,
+          -18.7662
+        ]
+      },
+      {
+        "id": "us7000te21",
+        "title": "M5.2 Earthquake - 271 km SSE of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-09-03T17:04:40.769000Z",
+        "coordinates": [
+          95.4671,
+          37.7963
+        ]
+      },
       {
         "id": "us7000tdzk",
         "title": "M5.1 Earthquake - Owen Fracture Zone region",
@@ -129,36 +159,6 @@
           -169.4988,
           52.3538
         ]
-      },
-      {
-        "id": "us7000tdmp",
-        "title": "M5.6 Earthquake - 71 km WSW of Puerto Madero, Mexico",
-        "category": "Earthquake",
-        "date": "2026-09-02T12:28:31.022000Z",
-        "coordinates": [
-          -92.9873,
-          14.3909
-        ]
-      },
-      {
-        "id": "us7000tdkr",
-        "title": "M5.2 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-02T10:54:02.666000Z",
-        "coordinates": [
-          -26.904,
-          -56.3968
-        ]
-      },
-      {
-        "id": "us7000tdjg",
-        "title": "M5.2 Earthquake - 70 km NNW of Arthurs Point, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-09-02T06:57:12.278000Z",
-        "coordinates": [
-          168.2503,
-          -44.4277
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 29.7,
-    "feels_c": 28.5,
-    "humidity": 30,
+    "temp_c": 21.7,
+    "feels_c": 21.3,
+    "humidity": 53,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 28.2,
-    "temp_max_c": 29.7,
-    "humidity": 32,
+    "city": "Zagreb",
+    "temp_min_c": 21.7,
+    "temp_max_c": 21.7,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 6.1,
-    "samples": 3
+    "icon": "02n",
+    "wind_kmh": 6.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-04",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.1,
+    "city": "Zagreb",
+    "temp_min_c": 20.7,
     "temp_max_c": 34.0,
     "humidity": 41,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.4
+    "wind_kmh": 6.0
   },
   "forecast_day_after": {
     "date": "2026-09-05",
-    "city": "City of Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 33.2,
+    "city": "Zagreb",
+    "temp_min_c": 19.4,
+    "temp_max_c": 35.6,
     "humidity": 50,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.7
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.6
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-03T13:00",
-    "safe_minutes": 370,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T18:54:41+02:00"
+    "fetched_at": "2026-09-03T21:38:02+02:00"
   }
 }
