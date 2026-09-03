@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-03",
+  "generated": "2026-09-04",
   "apod": {
     "title": "The Eclipse and the Stork",
     "date": "2026-09-03",
@@ -10,6 +10,16 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000te4b",
+        "title": "M5.5 Earthquake - 100 km S of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-03T20:21:15.216000Z",
+        "coordinates": [
+          -169.1387,
+          52.0506
+        ]
+      },
       {
         "id": "us7000te2m",
         "title": "M5.3 Earthquake - 104 km SSW of Nikolski, Alaska",
@@ -149,16 +159,6 @@
           -109.0259,
           -34.9815
         ]
-      },
-      {
-        "id": "us7000tdmm",
-        "title": "M5.2 Earthquake - 78 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-02T12:32:01.324000Z",
-        "coordinates": [
-          -169.4988,
-          52.3538
-        ]
       }
     ]
   },
@@ -248,38 +248,27 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 21.7,
-    "feels_c": 21.3,
-    "humidity": 53,
+    "temp_c": 23.7,
+    "feels_c": 23.4,
+    "humidity": 50,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-09-03",
+    "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 21.7,
-    "temp_max_c": 21.7,
-    "humidity": 53,
+    "temp_min_c": 21.3,
+    "temp_max_c": 34.0,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02n",
-    "wind_kmh": 6.5,
-    "samples": 2
+    "wind_kmh": 6.0,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-09-04",
-    "city": "Zagreb",
-    "temp_min_c": 20.7,
-    "temp_max_c": 34.0,
-    "humidity": 41,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 6.0
-  },
-  "forecast_day_after": {
     "date": "2026-09-05",
     "city": "Zagreb",
     "temp_min_c": 19.4,
@@ -290,111 +279,122 @@
     "icon": "02d",
     "wind_kmh": 7.6
   },
+  "forecast_day_after": {
+    "date": "2026-09-06",
+    "city": "Zagreb",
+    "temp_min_c": 18.6,
+    "temp_max_c": 26.3,
+    "humidity": 58,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 9.0
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 5.8,
-    "peak_time": "2026-09-03T13:00",
+    "peak_time": "2026-09-04T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-09-03T00:00",
+        "time": "2026-09-04T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T01:00",
+        "time": "2026-09-04T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T02:00",
+        "time": "2026-09-04T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T03:00",
+        "time": "2026-09-04T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T04:00",
+        "time": "2026-09-04T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T05:00",
+        "time": "2026-09-04T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T06:00",
+        "time": "2026-09-04T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T07:00",
+        "time": "2026-09-04T07:00",
         "uv": 0.1
       },
       {
-        "time": "2026-09-03T08:00",
+        "time": "2026-09-04T08:00",
         "uv": 0.7
       },
       {
-        "time": "2026-09-03T09:00",
-        "uv": 1.7
+        "time": "2026-09-04T09:00",
+        "uv": 1.6
       },
       {
-        "time": "2026-09-03T10:00",
+        "time": "2026-09-04T10:00",
         "uv": 3.0
       },
       {
-        "time": "2026-09-03T11:00",
+        "time": "2026-09-04T11:00",
         "uv": 4.2
       },
       {
-        "time": "2026-09-03T12:00",
+        "time": "2026-09-04T12:00",
         "uv": 5.2
       },
       {
-        "time": "2026-09-03T13:00",
+        "time": "2026-09-04T13:00",
         "uv": 5.8
       },
       {
-        "time": "2026-09-03T14:00",
+        "time": "2026-09-04T14:00",
         "uv": 5.7
       },
       {
-        "time": "2026-09-03T15:00",
-        "uv": 5.1
+        "time": "2026-09-04T15:00",
+        "uv": 5.2
       },
       {
-        "time": "2026-09-03T16:00",
+        "time": "2026-09-04T16:00",
         "uv": 4.1
       },
       {
-        "time": "2026-09-03T17:00",
-        "uv": 2.6
+        "time": "2026-09-04T17:00",
+        "uv": 2.8
       },
       {
-        "time": "2026-09-03T18:00",
-        "uv": 1.4
+        "time": "2026-09-04T18:00",
+        "uv": 1.5
       },
       {
-        "time": "2026-09-03T19:00",
-        "uv": 0.6
+        "time": "2026-09-04T19:00",
+        "uv": 0.5
       },
       {
-        "time": "2026-09-03T20:00",
+        "time": "2026-09-04T20:00",
         "uv": 0.1
       },
       {
-        "time": "2026-09-03T21:00",
+        "time": "2026-09-04T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T22:00",
+        "time": "2026-09-04T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-03T23:00",
+        "time": "2026-09-04T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T21:38:02+02:00"
+    "fetched_at": "2026-09-04T00:15:16+02:00"
   }
 }
