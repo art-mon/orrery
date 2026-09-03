@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tdzk",
+        "title": "M5.1 Earthquake - Owen Fracture Zone region",
+        "category": "Earthquake",
+        "date": "2026-09-03T14:11:31.916000Z",
+        "coordinates": [
+          56.4505,
+          14.4605
+        ]
+      },
+      {
+        "id": "us7000tdys",
+        "title": "M5.2 Earthquake - 100 km SSW of Nikolski, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-03T13:03:18.659000Z",
+        "coordinates": [
+          -169.1988,
+          52.0562
+        ]
+      },
+      {
         "id": "us7000tdw6",
         "title": "M5.4 Earthquake - 21 km WNW of Jiangyou, China",
         "category": "Earthquake",
@@ -82,12 +102,12 @@
       },
       {
         "id": "us7000tdqc",
-        "title": "M5.4 Earthquake - 53 km W of Bulolo, Papua New Guinea",
+        "title": "M5.4 Earthquake - 52 km W of Bulolo, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-09-02T20:04:33.407000Z",
+        "date": "2026-09-02T20:04:33.819000Z",
         "coordinates": [
-          146.1539,
-          -7.1815
+          146.174,
+          -7.1178
         ]
       },
       {
@@ -138,26 +158,6 @@
         "coordinates": [
           168.2503,
           -44.4277
-        ]
-      },
-      {
-        "id": "us7000tdj8",
-        "title": "M5.3 Earthquake - 66 km NNW of Arthurs Point, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-09-02T06:13:33.779000Z",
-        "coordinates": [
-          168.3029,
-          -44.4431
-        ]
-      },
-      {
-        "id": "us7000tdin",
-        "title": "M5.2 Earthquake - 95 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-02T05:14:00.312000Z",
-        "coordinates": [
-          -169.295,
-          52.1186
         ]
       }
     ]
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 33.1,
-    "feels_c": 33,
-    "humidity": 35,
+    "city": "Zagreb",
+    "temp_c": 29.7,
+    "feels_c": 28.5,
+    "humidity": 30,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 14.8
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-03",
-    "city": "Zagreb",
-    "temp_min_c": 26.0,
-    "temp_max_c": 33.1,
-    "humidity": 37,
+    "city": "City of Zagreb",
+    "temp_min_c": 28.2,
+    "temp_max_c": 29.7,
+    "humidity": 32,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 6.4,
-    "samples": 4
+    "icon": "04d",
+    "wind_kmh": 6.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-04",
-    "city": "Zagreb",
-    "temp_min_c": 19.3,
-    "temp_max_c": 33.1,
-    "humidity": 44,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.1,
+    "temp_max_c": 34.0,
+    "humidity": 41,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.2
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.4
   },
   "forecast_day_after": {
     "date": "2026-09-05",
-    "city": "Zagreb",
-    "temp_min_c": 20.0,
-    "temp_max_c": 32.6,
-    "humidity": 53,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 8.2
+    "city": "City of Zagreb",
+    "temp_min_c": 19.8,
+    "temp_max_c": 33.2,
+    "humidity": 50,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 7.7
   },
   "uv": {
-    "uv": 5.2,
-    "band": "moderate",
+    "uv": 0.5,
+    "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-03T13:00",
-    "safe_minutes": 32,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T14:34:40+02:00"
+    "fetched_at": "2026-09-03T18:54:41+02:00"
   }
 }
