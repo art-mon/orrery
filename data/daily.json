@@ -1,15 +1,20 @@
 {
   "generated": "2026-09-03",
   "apod": {
-    "title": "Solar Eclipses and Culture",
-    "date": "2026-09-02",
-    "explanation": "Pretend you have never heard of a solar eclipse. The Sun\u2019s behavior has been predictable your whole life. One day, you witness the sky transform as it does in today\u2019s spliced image spanning two hours of the August 12, 2026 solar eclipse. The Sun disappears, leaving behind a bright, empty ring. What would you think had happened? Humans have interpreted eclipses in countless ways throughout history, embedding beliefs about connection, rebirth, or danger into culture. \u201cEclipse\u201d comes from the Greek word \u201c\u00e9kleipsis\u201d meaning \u201cabandonment\u201d. In ancient Greece, the solar eclipse marked the anger of the gods and the Sun abandoning humanity. To the Din\u00e9 people, this celestial alignment is a time of renewal. Out of respect and to avoid the danger of sunlight, the Din\u00e9 stay inside until the Sun and Moon separate. The Batammariba people of Benin and Togo believe that the Sun and Moon fight during an eclipse, so the community encourages peace among themselves. Eclipses are an example of the longstanding connection between astronomy and society.   Gallery: Solar Eclipse of 2026 August 12",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/colors_of_eclipse_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/colors_of_eclipse.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tdrv",
+        "title": "M6.2 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-02T23:46:57.617000Z",
+        "coordinates": [
+          -27.9085,
+          -56.2062
+        ]
+      },
       {
         "id": "us7000tdr1",
         "title": "M5.4 Earthquake - 82 km S of Isangel, Vanuatu",
@@ -149,45 +154,11 @@
           -169.4456,
           52.2132
         ]
-      },
-      {
-        "id": "us7000td2z",
-        "title": "M5.5 Earthquake - 44 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-08-31T08:03:28.497000Z",
-        "coordinates": [
-          120.6119,
-          -8.241
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 FF101)",
-        "hazardous": false,
-        "diameter_m": 94,
-        "close_approach_date": "2026-09-02",
-        "miss_distance_km": 60448776,
-        "velocity_kmh": 24914
-      },
-      {
-        "name": "(2019 HE)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-09-02",
-        "miss_distance_km": 72955345,
-        "velocity_kmh": 31450
-      },
-      {
-        "name": "(2014 SU1)",
-        "hazardous": false,
-        "diameter_m": 61,
-        "close_approach_date": "2026-09-02",
-        "miss_distance_km": 73140769,
-        "velocity_kmh": 61504
-      },
       {
         "name": "(2015 DM215)",
         "hazardous": false,
@@ -243,52 +214,76 @@
         "close_approach_date": "2026-09-03",
         "miss_distance_km": 69497751,
         "velocity_kmh": 73639
+      },
+      {
+        "name": "(2019 PM)",
+        "hazardous": false,
+        "diameter_m": 119,
+        "close_approach_date": "2026-09-04",
+        "miss_distance_km": 34733103,
+        "velocity_kmh": 47969
+      },
+      {
+        "name": "(2018 XF2)",
+        "hazardous": false,
+        "diameter_m": 33,
+        "close_approach_date": "2026-09-04",
+        "miss_distance_km": 57724743,
+        "velocity_kmh": 77775
+      },
+      {
+        "name": "(2016 HF2)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-09-04",
+        "miss_distance_km": 64651537,
+        "velocity_kmh": 65981
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.7,
-    "feels_c": 16.6,
+    "temp_c": 15.7,
+    "feels_c": 15.5,
     "humidity": 82,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 1.8
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-03",
     "city": "Zagreb",
-    "temp_min_c": 16.7,
-    "temp_max_c": 32.7,
-    "humidity": 55,
+    "temp_min_c": 15.7,
+    "temp_max_c": 33.1,
+    "humidity": 53,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 4.2,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 3.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 22.7,
-    "temp_max_c": 33.5,
-    "humidity": 41,
+    "temp_min_c": 22.8,
+    "temp_max_c": 34.0,
+    "humidity": 40,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.8
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-09-05",
     "city": "Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 32.8,
-    "humidity": 53,
+    "temp_min_c": 20.0,
+    "temp_max_c": 32.3,
+    "humidity": 51,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 8.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 9.0
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-03T01:50:36+02:00"
+    "fetched_at": "2026-09-03T04:52:02+02:00"
   }
 }
