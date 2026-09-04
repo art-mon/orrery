@@ -1,12 +1,7 @@
 {
   "generated": "2026-09-04",
   "apod": {
-    "title": "The Eclipse and the Stork",
-    "date": "2026-09-03",
-    "explanation": "How do animals react to a total solar eclipse?   The featured image shows a stork roosting on her nest in Poland at a partial phase of the recent total solar eclipse.   If you are lucky enough to experience a total eclipse somewhere quiet and close to nature, you may be able to notice unusual daytime animal behaviors.     During totality, you may hear nighttime sounds like crickets and frogs and see fireflies.   In the dark, most birds are quiet.   Thinking that it is time to go to bed, ducks and other waterfowl prepare to sleep on one leg, with their heads turned around and their beaks tucked into their back feathers (they don't really sleep with their heads tucked under one wing).   When sunlight returns at the end of totality, songbirds greet the new \"morning\" with their dawn songs.   The crickets and frogs go quiet again.   Animals and people resume their lives, only briefly disturbed by the chance alignment of our Sun and Moon.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/eclipse_stork_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/eclipse_stork.jpg"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,62 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2015 DM215)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 16494855,
-        "velocity_kmh": 51137
-      },
-      {
-        "name": "(2017 QB35)",
-        "hazardous": false,
-        "diameter_m": 8,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 27431274,
-        "velocity_kmh": 32076
-      },
-      {
-        "name": "(2013 QF11)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 34921102,
-        "velocity_kmh": 64496
-      },
-      {
-        "name": "337075 (1998 QC1)",
-        "hazardous": true,
-        "diameter_m": 649,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 50661467,
-        "velocity_kmh": 83921
-      },
-      {
-        "name": "(2014 YT34)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 54941534,
-        "velocity_kmh": 23216
-      },
-      {
-        "name": "(2019 LL5)",
-        "hazardous": false,
-        "diameter_m": 1154,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 56280081,
-        "velocity_kmh": 65619
-      },
-      {
-        "name": "(2014 SF304)",
-        "hazardous": false,
-        "diameter_m": 21,
-        "close_approach_date": "2026-09-03",
-        "miss_distance_km": 69497751,
-        "velocity_kmh": 73639
-      },
-      {
         "name": "(2019 PM)",
         "hazardous": false,
         "diameter_m": 119,
@@ -243,58 +182,114 @@
         "close_approach_date": "2026-09-04",
         "miss_distance_km": 64651537,
         "velocity_kmh": 65981
+      },
+      {
+        "name": "(2018 BX)",
+        "hazardous": false,
+        "diameter_m": 9,
+        "close_approach_date": "2026-09-05",
+        "miss_distance_km": 45436726,
+        "velocity_kmh": 29040
+      },
+      {
+        "name": "(2019 QL7)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-09-05",
+        "miss_distance_km": 45508479,
+        "velocity_kmh": 75528
+      },
+      {
+        "name": "(2006 HC2)",
+        "hazardous": true,
+        "diameter_m": 263,
+        "close_approach_date": "2026-09-05",
+        "miss_distance_km": 52936208,
+        "velocity_kmh": 78249
+      },
+      {
+        "name": "246138 (2007 OG3)",
+        "hazardous": false,
+        "diameter_m": 1331,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 19039681,
+        "velocity_kmh": 17652
+      },
+      {
+        "name": "(2008 GA4)",
+        "hazardous": false,
+        "diameter_m": 809,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 28238905,
+        "velocity_kmh": 87272
+      },
+      {
+        "name": "186822 (2004 FE31)",
+        "hazardous": false,
+        "diameter_m": 1637,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 29580201,
+        "velocity_kmh": 40654
+      },
+      {
+        "name": "(2008 CE22)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 30793365,
+        "velocity_kmh": 51131
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.4,
-    "humidity": 50,
+    "temp_c": 23.8,
+    "feels_c": 23.6,
+    "humidity": 52,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 5.5
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 21.3,
-    "temp_max_c": 34.0,
-    "humidity": 43,
+    "temp_min_c": 22.8,
+    "temp_max_c": 34.4,
+    "humidity": 41,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 6.0,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 5.6,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-05",
     "city": "Zagreb",
-    "temp_min_c": 19.4,
-    "temp_max_c": 35.6,
-    "humidity": 50,
+    "temp_min_c": 20,
+    "temp_max_c": 36.0,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.6
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-09-06",
     "city": "Zagreb",
-    "temp_min_c": 18.6,
-    "temp_max_c": 26.3,
+    "temp_min_c": 19.0,
+    "temp_max_c": 27.1,
     "humidity": 58,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 9.0
+    "wind_kmh": 9.3
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 5.8,
-    "peak_time": "2026-09-04T13:00",
+    "daily_max": 5.6,
+    "peak_time": "2026-09-04T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -332,7 +327,7 @@
       },
       {
         "time": "2026-09-04T08:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-09-04T09:00",
@@ -344,19 +339,19 @@
       },
       {
         "time": "2026-09-04T11:00",
-        "uv": 4.2
+        "uv": 4.1
       },
       {
         "time": "2026-09-04T12:00",
-        "uv": 5.2
+        "uv": 5.0
       },
       {
         "time": "2026-09-04T13:00",
-        "uv": 5.8
+        "uv": 5.2
       },
       {
         "time": "2026-09-04T14:00",
-        "uv": 5.7
+        "uv": 5.6
       },
       {
         "time": "2026-09-04T15:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-04T00:15:16+02:00"
+    "fetched_at": "2026-09-04T02:44:24+02:00"
   }
 }
