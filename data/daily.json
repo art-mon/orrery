@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000teck",
+        "title": "M5.1 Earthquake - 25 km W of Padangsidempuan, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-04T16:24:41.107000Z",
+        "coordinates": [
+          99.0453,
+          1.3758
+        ]
+      },
+      {
         "id": "us7000te9t",
         "title": "M5.4 Earthquake - Kermadec Islands region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           80.33,
           31.3618
         ]
-      },
-      {
-        "id": "us7000tduc",
-        "title": "M5.1 Earthquake - 42 km NW of Coquimbo, Chile",
-        "category": "Earthquake",
-        "date": "2026-09-03T06:04:02.572000Z",
-        "coordinates": [
-          -71.6979,
-          -29.7346
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 35.5,
-    "feels_c": 35.0,
-    "humidity": 28,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "city": "City of Zagreb",
+    "temp_c": 28.7,
+    "feels_c": 27.9,
+    "humidity": 34,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
     "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-09-04",
     "city": "Zagreb",
-    "temp_min_c": 26.4,
-    "temp_max_c": 35.5,
-    "humidity": 32,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 9.6,
-    "samples": 4
+    "temp_min_c": 26.9,
+    "temp_max_c": 28.7,
+    "humidity": 38,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 10.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-05",
     "city": "Zagreb",
     "temp_min_c": 19.1,
     "temp_max_c": 32.8,
-    "humidity": 55,
+    "humidity": 54,
     "condition": "Clear",
     "description": "scattered clouds",
     "icon": "03d",
@@ -291,11 +291,11 @@
     "wind_kmh": 8.0
   },
   "uv": {
-    "uv": 2.6,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.8,
     "peak_time": "2026-09-04T13:00",
-    "safe_minutes": 63,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-09-04T15:00",
-        "uv": 5.2
+        "uv": 5.1
       },
       {
         "time": "2026-09-04T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-04T16:46:15+02:00"
+    "fetched_at": "2026-09-04T20:04:00+02:00"
   }
 }
