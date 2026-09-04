@@ -1,10 +1,25 @@
 {
   "generated": "2026-09-04",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "N\u0101 \u02bbUhane M\u0101hoe Huki P\u016b i ke Ola",
+    "date": "2026-09-04",
+    "explanation": "N\u0101 \u02bbUhane M\u0101hoe Huki P\u016b i ke Ola, is the Hawaiian name given to this image of a pair of spiral galaxies locked in a mutual gravitational embrace. Some 200 million light-years distant toward the high flying constellation Pegasus their spectacular, galactic scale merger is captured in sharp detail in the image from the 8.1 meter Gemini North telescope on Maunakea, Hawai\u2018i. The galaxy pair, known as NGC 7253 and Arp 278, was chosen as a target, researched, and given a Hawaiian name by high school students in the joint Gemini Observatory and University of Hawai\u02bbi Project H\u014dk\u016blani internship program.  The name translates to \"The Twin Spirits Pulling Together Creating Life\". That's both culturally and astronomically appropriate for galaxy collisions that trigger a cosmic maelstrom of star formation from galactic reservoirs of elemental building blocks of life. These merging galaxies are found within a region of Pegasus identified as the Hawaiian navigational constellation Ka Lupe o Kawelo.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/noirlab2621a_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/noirlab2621a.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000te8r",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-04T06:45:54.522000Z",
+        "coordinates": [
+          -26.1632,
+          -56.1536
+        ]
+      },
       {
         "id": "us7000te82",
         "title": "M5.2 Earthquake - 28 km S of Cilacap, Indonesia",
@@ -144,16 +159,6 @@
           -27.9085,
           -56.2062
         ]
-      },
-      {
-        "id": "us7000tdr1",
-        "title": "M5.4 Earthquake - 82 km S of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-02T21:22:08.653000Z",
-        "coordinates": [
-          169.4012,
-          -20.279
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.8,
-    "feels_c": 16.6,
-    "humidity": 77,
+    "temp_c": 32.0,
+    "feels_c": 31.5,
+    "humidity": 35,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.8
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-04",
-    "city": "Zagreb",
-    "temp_min_c": 16.7,
-    "temp_max_c": 33.9,
-    "humidity": 54,
+    "city": "City of Zagreb",
+    "temp_min_c": 22.1,
+    "temp_max_c": 32.7,
+    "humidity": 38,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 6.1,
-    "samples": 7
+    "wind_kmh": 8.0,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-05",
-    "city": "Zagreb",
-    "temp_min_c": 19.1,
-    "temp_max_c": 33.9,
-    "humidity": 52,
-    "condition": "Clear",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.3,
+    "temp_max_c": 33.5,
+    "humidity": 54,
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 7.7
+    "wind_kmh": 8.1
   },
   "forecast_day_after": {
     "date": "2026-09-06",
-    "city": "Zagreb",
-    "temp_min_c": 18.6,
-    "temp_max_c": 26.4,
-    "humidity": 58,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "city": "City of Zagreb",
+    "temp_min_c": 18.4,
+    "temp_max_c": 26.3,
+    "humidity": 60,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 8.3
   },
   "uv": {
-    "uv": 0.3,
-    "band": "low",
-    "daily_max": 5.6,
+    "uv": 5.5,
+    "band": "moderate",
+    "daily_max": 5.7,
     "peak_time": "2026-09-04T14:00",
-    "safe_minutes": 556,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,7 +344,7 @@
       },
       {
         "time": "2026-09-04T11:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-09-04T12:00",
@@ -347,15 +352,15 @@
       },
       {
         "time": "2026-09-04T13:00",
-        "uv": 5.2
-      },
-      {
-        "time": "2026-09-04T14:00",
         "uv": 5.6
       },
       {
+        "time": "2026-09-04T14:00",
+        "uv": 5.7
+      },
+      {
         "time": "2026-09-04T15:00",
-        "uv": 5.2
+        "uv": 5.1
       },
       {
         "time": "2026-09-04T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-04T07:28:11+02:00"
+    "fetched_at": "2026-09-04T12:33:22+02:00"
   }
 }
