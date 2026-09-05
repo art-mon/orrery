@@ -1,10 +1,25 @@
 {
   "generated": "2026-09-05",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Chasing the Moon's Shadow",
+    "date": "2026-09-05",
+    "explanation": "Chasing the shadow of a New Moon, NASA\u2019s WB-57F high altitude research aircraft took to the skies off the coast of Iceland on August 12 to observe a total solar eclipse. At 50,000 feet the aircraft was piloted along the precisely determined path of totality to maximize its time in the Moon\u2019s shadow. A suite of high-resolution cameras on board was able to record eclipse data from above the clouds, dust, and atmospheric water vapor that interfere with observations made closer to the ground. This view from the cockpit, taken from an inflight video, captures the solar corona emerging at the beginning of totality. The sky appears dark in the shadow of the Moon. Venus is shining left of center in the video frame, while Jupiter and Mercury are just visible to the right of the eclipsed Sun. But the sky is bright along the distant horizon below, beyond the reach of the Moon's shadow.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_Abridged.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tehe",
+        "title": "M5.0 Earthquake - off the coast of Central America",
+        "category": "Earthquake",
+        "date": "2026-09-05T05:00:06.778000Z",
+        "coordinates": [
+          -83.151,
+          3.5071
+        ]
+      },
       {
         "id": "us7000tefx",
         "title": "M5.5 Earthquake - 156 km E of Kuril\u2019sk, Russia",
@@ -144,16 +159,6 @@
           104.5066,
           31.8458
         ]
-      },
-      {
-        "id": "us7000tdy7",
-        "title": "M5.2 Earthquake - 97 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-03T11:24:55.479000Z",
-        "coordinates": [
-          -169.4182,
-          52.1321
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.5,
-    "humidity": 60,
+    "temp_c": 26.7,
+    "feels_c": 26.6,
+    "humidity": 39,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "icon": "01d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-09-05",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 29.3,
-    "humidity": 57,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 10.0,
-    "samples": 8
+    "temp_min_c": 21.3,
+    "temp_max_c": 28.6,
+    "humidity": 56,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
+    "wind_kmh": 12.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-06",
     "city": "Zagreb",
-    "temp_min_c": 18.5,
-    "temp_max_c": 30.2,
-    "humidity": 54,
+    "temp_min_c": 17.8,
+    "temp_max_c": 29.9,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 7.2
+    "wind_kmh": 6.0
   },
   "forecast_day_after": {
     "date": "2026-09-07",
     "city": "Zagreb",
     "temp_min_c": 17.2,
-    "temp_max_c": 30.6,
-    "humidity": 42,
+    "temp_max_c": 30.3,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.0
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.5,
     "band": "low",
-    "daily_max": 5.3,
-    "peak_time": "2026-09-05T13:00",
-    "safe_minutes": null,
+    "daily_max": 5.5,
+    "peak_time": "2026-09-05T14:00",
+    "safe_minutes": 67,
     "skin_type": 2,
     "hourly": [
       {
@@ -351,11 +356,11 @@
       },
       {
         "time": "2026-09-05T14:00",
-        "uv": 5.2
+        "uv": 5.5
       },
       {
         "time": "2026-09-05T15:00",
-        "uv": 4.8
+        "uv": 4.5
       },
       {
         "time": "2026-09-05T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-05T04:52:47+02:00"
+    "fetched_at": "2026-09-05T09:23:29+02:00"
   }
 }
