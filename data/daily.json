@@ -1,15 +1,30 @@
 {
   "generated": "2026-09-05",
   "apod": {
-    "title": "N\u0101 \u02bbUhane M\u0101hoe Huki P\u016b i ke Ola",
-    "date": "2026-09-04",
-    "explanation": "N\u0101 \u02bbUhane M\u0101hoe Huki P\u016b i ke Ola, is the Hawaiian name given to this image of a pair of spiral galaxies locked in a mutual gravitational embrace. Some 200 million light-years distant toward the high flying constellation Pegasus their spectacular, galactic scale merger is captured in sharp detail in the image from the 8.1 meter Gemini North telescope on Maunakea, Hawai\u2018i. The galaxy pair, known as NGC 7253 and Arp 278, was chosen as a target, researched, and given a Hawaiian name by high school students in the joint Gemini Observatory and University of Hawai\u02bbi Project H\u014dk\u016blani internship program.  The name translates to \"The Twin Spirits Pulling Together Creating Life\". That's both culturally and astronomically appropriate for galaxy collisions that trigger a cosmic maelstrom of star formation from galactic reservoirs of elemental building blocks of life. These merging galaxies are found within a region of Pegasus identified as the Hawaiian navigational constellation Ka Lupe o Kawelo.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/noirlab2621a_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/noirlab2621a.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tefx",
+        "title": "M5.5 Earthquake - 156 km E of Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-09-04T23:52:30.886000Z",
+        "coordinates": [
+          149.8346,
+          44.9792
+        ]
+      },
+      {
+        "id": "us7000tefw",
+        "title": "M5.1 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-09-04T23:38:40.818000Z",
+        "coordinates": [
+          -40.8475,
+          9.4666
+        ]
+      },
       {
         "id": "us7000teck",
         "title": "M5.1 Earthquake - 25 km W of Padangsidempuan, Indonesia",
@@ -139,55 +154,11 @@
           -169.4182,
           52.1321
         ]
-      },
-      {
-        "id": "us7000tdvt",
-        "title": "M6.3 Earthquake - 84 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-03T11:17:24.056000Z",
-        "coordinates": [
-          -169.4088,
-          52.2579
-        ]
-      },
-      {
-        "id": "us7000tdv4",
-        "title": "M5.1 Earthquake - 115 km NE of Josh\u012bmath, India",
-        "category": "Earthquake",
-        "date": "2026-09-03T08:16:36.417000Z",
-        "coordinates": [
-          80.33,
-          31.3618
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 PM)",
-        "hazardous": false,
-        "diameter_m": 119,
-        "close_approach_date": "2026-09-04",
-        "miss_distance_km": 34733103,
-        "velocity_kmh": 47969
-      },
-      {
-        "name": "(2018 XF2)",
-        "hazardous": false,
-        "diameter_m": 33,
-        "close_approach_date": "2026-09-04",
-        "miss_distance_km": 57724743,
-        "velocity_kmh": 77775
-      },
-      {
-        "name": "(2016 HF2)",
-        "hazardous": false,
-        "diameter_m": 36,
-        "close_approach_date": "2026-09-04",
-        "miss_distance_km": 64651537,
-        "velocity_kmh": 65981
-      },
       {
         "name": "(2018 BX)",
         "hazardous": false,
@@ -243,52 +214,76 @@
         "close_approach_date": "2026-09-06",
         "miss_distance_km": 30793365,
         "velocity_kmh": 51131
+      },
+      {
+        "name": "(2015 TH1)",
+        "hazardous": false,
+        "diameter_m": 130,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 53699066,
+        "velocity_kmh": 30534
+      },
+      {
+        "name": "(2018 EY)",
+        "hazardous": false,
+        "diameter_m": 103,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 54991631,
+        "velocity_kmh": 49949
+      },
+      {
+        "name": "(2018 VV4)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-09-06",
+        "miss_distance_km": 68255522,
+        "velocity_kmh": 26912
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.8,
-    "feels_c": 20.4,
-    "humidity": 56,
+    "temp_c": 22.6,
+    "feels_c": 22.5,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-05",
     "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 32.3,
-    "humidity": 50,
+    "temp_min_c": 19.8,
+    "temp_max_c": 29.3,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 9.2,
-    "samples": 9
+    "wind_kmh": 10.0,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-06",
     "city": "Zagreb",
-    "temp_min_c": 19.2,
-    "temp_max_c": 28.2,
-    "humidity": 49,
+    "temp_min_c": 18.5,
+    "temp_max_c": 30.2,
+    "humidity": 54,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 9.0
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.2
   },
   "forecast_day_after": {
     "date": "2026-09-07",
     "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 31.0,
+    "temp_min_c": 17.2,
+    "temp_max_c": 30.6,
     "humidity": 42,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.8
+    "wind_kmh": 4.0
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-05T01:42:09+02:00"
+    "fetched_at": "2026-09-05T04:52:47+02:00"
   }
 }
