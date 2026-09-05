@@ -21,6 +21,16 @@
         ]
       },
       {
+        "id": "us7000tejg",
+        "title": "M5.2 Earthquake - 77 km SSW of Sibolga, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-05T14:06:07.776000Z",
+        "coordinates": [
+          98.6095,
+          1.0574
+        ]
+      },
+      {
         "id": "us7000tej2",
         "title": "M5.1 Earthquake - 69 km E of Antofagasta de la Sierra, Argentina",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -177.4572,
           -18.7662
         ]
-      },
-      {
-        "id": "us7000te21",
-        "title": "M5.2 Earthquake - 271 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-09-03T17:04:40.769000Z",
-        "coordinates": [
-          95.4671,
-          37.7963
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 28.7,
-    "feels_c": 28.1,
-    "humidity": 38,
+    "city": "Zagreb",
+    "temp_c": 25.7,
+    "feels_c": 25.4,
+    "humidity": 41,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 24.1
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 16.7
   },
   "forecast_today": {
     "date": "2026-09-05",
-    "city": "Zagreb",
-    "temp_min_c": 24.2,
-    "temp_max_c": 28.7,
-    "humidity": 48,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 13.3,
-    "samples": 4
+    "city": "City of Zagreb",
+    "temp_min_c": 24.6,
+    "temp_max_c": 25.7,
+    "humidity": 45,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 9.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-06",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 20.4,
     "temp_max_c": 30.7,
-    "humidity": 61,
+    "humidity": 59,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-07",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 18.1,
     "temp_max_c": 30.3,
     "humidity": 40,
@@ -291,11 +291,11 @@
     "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 2.9,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 5.5,
     "peak_time": "2026-09-05T13:00",
-    "safe_minutes": 58,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-05T16:33:04+02:00"
+    "fetched_at": "2026-09-05T19:07:39+02:00"
   }
 }
