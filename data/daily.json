@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000teiy",
+        "title": "M5.0 Earthquake - 70 km SW of Pagar Alam, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-05T10:59:15.678000Z",
+        "coordinates": [
+          102.7513,
+          -4.4202
+        ]
+      },
+      {
         "id": "us7000tehe",
         "title": "M5.0 Earthquake - off the coast of Central America",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -169.1988,
           52.0562
         ]
-      },
-      {
-        "id": "us7000tdw6",
-        "title": "M5.4 Earthquake - 21 km WNW of Jiangyou, China",
-        "category": "Earthquake",
-        "date": "2026-09-03T11:39:41.981000Z",
-        "coordinates": [
-          104.5066,
-          31.8458
-        ]
       }
     ]
   },
@@ -193,7 +193,7 @@
         "hazardous": false,
         "diameter_m": 1331,
         "close_approach_date": "2026-09-06",
-        "miss_distance_km": 19039681,
+        "miss_distance_km": 19039680,
         "velocity_kmh": 17652
       },
       {
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.7,
-    "feels_c": 26.6,
-    "humidity": 39,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 13.0
+    "temp_c": 30.4,
+    "feels_c": 29.8,
+    "humidity": 37,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 29.6
   },
   "forecast_today": {
     "date": "2026-09-05",
     "city": "Zagreb",
     "temp_min_c": 21.3,
-    "temp_max_c": 28.6,
-    "humidity": 56,
+    "temp_max_c": 30.4,
+    "humidity": 54,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 12.0,
-    "samples": 6
+    "icon": "03d",
+    "wind_kmh": 15.6,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-06",
@@ -291,11 +291,11 @@
     "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 2.5,
-    "band": "low",
+    "uv": 5.6,
+    "band": "moderate",
     "daily_max": 5.5,
     "peak_time": "2026-09-05T14:00",
-    "safe_minutes": 67,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-05T09:23:29+02:00"
+    "fetched_at": "2026-09-05T13:36:52+02:00"
   }
 }
