@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000teji",
+        "title": "M5.5 Earthquake - 157 km E of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-09-05T14:12:07.727000Z",
+        "coordinates": [
+          153.6766,
+          -4.5469
+        ]
+      },
+      {
+        "id": "us7000tej2",
+        "title": "M5.1 Earthquake - 69 km E of Antofagasta de la Sierra, Argentina",
+        "category": "Earthquake",
+        "date": "2026-09-05T11:37:12.553000Z",
+        "coordinates": [
+          -66.7176,
+          -26.1078
+        ]
+      },
+      {
         "id": "us7000teiy",
         "title": "M5.0 Earthquake - 70 km SW of Pagar Alam, Indonesia",
         "category": "Earthquake",
@@ -32,12 +52,12 @@
       },
       {
         "id": "us7000tefx",
-        "title": "M5.5 Earthquake - 156 km E of Kuril\u2019sk, Russia",
+        "title": "M5.5 Earthquake - 168 km ESE of Kuril\u2019sk, Russia",
         "category": "Earthquake",
-        "date": "2026-09-04T23:52:30.886000Z",
+        "date": "2026-09-04T23:52:29.825000Z",
         "coordinates": [
-          149.8346,
-          44.9792
+          149.9838,
+          44.9418
         ]
       },
       {
@@ -139,26 +159,6 @@
           95.4671,
           37.7963
         ]
-      },
-      {
-        "id": "us7000tdzk",
-        "title": "M5.1 Earthquake - Owen Fracture Zone region",
-        "category": "Earthquake",
-        "date": "2026-09-03T14:11:31.916000Z",
-        "coordinates": [
-          56.4505,
-          14.4605
-        ]
-      },
-      {
-        "id": "us7000tdys",
-        "title": "M5.2 Earthquake - 100 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-03T13:03:18.659000Z",
-        "coordinates": [
-          -169.1988,
-          52.0562
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 30.4,
-    "feels_c": 29.8,
-    "humidity": 37,
+    "city": "Donji grad",
+    "temp_c": 28.7,
+    "feels_c": 28.1,
+    "humidity": 38,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 29.6
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 24.1
   },
   "forecast_today": {
     "date": "2026-09-05",
     "city": "Zagreb",
-    "temp_min_c": 21.3,
-    "temp_max_c": 30.4,
-    "humidity": 54,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 15.6,
-    "samples": 5
+    "temp_min_c": 24.2,
+    "temp_max_c": 28.7,
+    "humidity": 48,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04d",
+    "wind_kmh": 13.3,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-06",
     "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 29.9,
-    "humidity": 64,
+    "temp_min_c": 20.4,
+    "temp_max_c": 30.7,
+    "humidity": 61,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 6.0
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-09-07",
     "city": "Zagreb",
-    "temp_min_c": 17.2,
+    "temp_min_c": 18.1,
     "temp_max_c": 30.3,
-    "humidity": 44,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 5.6,
-    "band": "moderate",
+    "uv": 2.9,
+    "band": "low",
     "daily_max": 5.5,
-    "peak_time": "2026-09-05T14:00",
-    "safe_minutes": 30,
+    "peak_time": "2026-09-05T13:00",
+    "safe_minutes": 58,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,19 +348,19 @@
       },
       {
         "time": "2026-09-05T12:00",
-        "uv": 4.8
+        "uv": 4.6
       },
       {
         "time": "2026-09-05T13:00",
-        "uv": 5.3
-      },
-      {
-        "time": "2026-09-05T14:00",
         "uv": 5.5
       },
       {
+        "time": "2026-09-05T14:00",
+        "uv": 5.3
+      },
+      {
         "time": "2026-09-05T15:00",
-        "uv": 4.5
+        "uv": 4.0
       },
       {
         "time": "2026-09-05T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-05T13:36:52+02:00"
+    "fetched_at": "2026-09-05T16:33:04+02:00"
   }
 }
