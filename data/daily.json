@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tepa",
+        "title": "M5.1 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-09-06T10:38:34.744000Z",
+        "coordinates": [
+          -115.8427,
+          -22.1041
+        ]
+      },
+      {
+        "id": "us7000tep6",
+        "title": "M5.2 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-09-06T10:32:28.227000Z",
+        "coordinates": [
+          -115.6112,
+          -24.5304
+        ]
+      },
+      {
         "id": "us7000temi",
         "title": "M5.6 Earthquake - 93 km SE of Kirakira, Solomon Islands",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -26.1632,
           -56.1536
         ]
-      },
-      {
-        "id": "us7000te82",
-        "title": "M5.2 Earthquake - 28 km S of Cilacap, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-04T05:04:54.278000Z",
-        "coordinates": [
-          109.0409,
-          -7.9867
-        ]
-      },
-      {
-        "id": "us7000te7l",
-        "title": "M5.0 Earthquake - 236 km ESE of Attu Station, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-04T02:28:38.697000Z",
-        "coordinates": [
-          176.3482,
-          51.9555
-        ]
       }
     ]
   },
@@ -247,30 +247,30 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 25.4,
-    "feels_c": 25.2,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_c": 29.8,
+    "feels_c": 29.0,
+    "humidity": 35,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 20.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-09-06",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 22.4,
-    "temp_max_c": 28.1,
-    "humidity": 46,
+    "temp_max_c": 29.8,
+    "humidity": 39,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 10.4,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 8.8,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-07",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 17.6,
     "temp_max_c": 32.0,
     "humidity": 38,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-08",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 19.2,
     "temp_max_c": 32.4,
     "humidity": 33,
@@ -291,11 +291,11 @@
     "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 2.6,
-    "band": "low",
+    "uv": 5.5,
+    "band": "moderate",
     "daily_max": 5.6,
     "peak_time": "2026-09-06T13:00",
-    "safe_minutes": 63,
+    "safe_minutes": 30,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +336,11 @@
       },
       {
         "time": "2026-09-06T09:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-09-06T10:00",
-        "uv": 2.8
+        "uv": 2.6
       },
       {
         "time": "2026-09-06T11:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-06T09:36:33+02:00"
+    "fetched_at": "2026-09-06T13:56:07+02:00"
   }
 }
