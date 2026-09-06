@@ -1,15 +1,35 @@
 {
   "generated": "2026-09-06",
   "apod": {
-    "title": "Chasing the Moon's Shadow",
-    "date": "2026-09-05",
-    "explanation": "Chasing the shadow of a New Moon, NASA\u2019s WB-57F high altitude research aircraft took to the skies off the coast of Iceland on August 12 to observe a total solar eclipse. At 50,000 feet the aircraft was piloted along the precisely determined path of totality to maximize its time in the Moon\u2019s shadow. A suite of high-resolution cameras on board was able to record eclipse data from above the clouds, dust, and atmospheric water vapor that interfere with observations made closer to the ground. This view from the cockpit, taken from an inflight video, captures the solar corona emerging at the beginning of totality. The sky appears dark in the shadow of the Moon. Venus is shining left of center in the video frame, while Jupiter and Mercury are just visible to the right of the eclipsed Sun. But the sky is bright along the distant horizon below, beyond the reach of the Moon's shadow.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Pluto in Enhanced Color",
+    "date": "2026-09-06",
+    "explanation": "Pluto is more colorful than we can see. Color data and high-resolution images of our Solar System's most famous dwarf planet, taken by the robotic New Horizons spacecraft during its flyby in 2015 July, have been digitally combined to give an enhanced-color view of this ancient world sporting an unexpectedly young surface. The featured enhanced color image is not only esthetically pretty but scientifically useful, making surface regions of differing chemical composition visually distinct. For example, the light-colored heart-shaped Tombaugh Regio on the lower right is clearly shown here to be divisible into two regions that are geologically different, with the leftmost lobe, Sputnik Planitia, also appearing unusually smooth. After Pluto, New Horizons continued on, shooting  past asteroid Arrokoth in 2019 with enough speed to escape our Solar System completely.",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/2026Eclipse_WB57GoPro_Totality_H264_Abridged.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/PlutoEnhancedHiRes_NewHorizons_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/PlutoEnhancedHiRes_NewHorizons_5000.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000temi",
+        "title": "M5.6 Earthquake - 93 km SE of Kirakira, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-09-06T04:05:30.141000Z",
+        "coordinates": [
+          162.519,
+          -11.0595
+        ]
+      },
+      {
+        "id": "us7000tem2",
+        "title": "M5.3 Earthquake - 108 km SW of Puerto Madero, Mexico",
+        "category": "Earthquake",
+        "date": "2026-09-06T02:56:32.601000Z",
+        "coordinates": [
+          -93.2487,
+          14.1551
+        ]
+      },
       {
         "id": "us7000tek0",
         "title": "M5.6 Earthquake - 96 km ESE of Isangel, Vanuatu",
@@ -139,26 +159,6 @@
           176.3482,
           51.9555
         ]
-      },
-      {
-        "id": "us7000te4b",
-        "title": "M5.5 Earthquake - 100 km S of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-03T20:21:15.216000Z",
-        "coordinates": [
-          -169.1387,
-          52.0506
-        ]
-      },
-      {
-        "id": "us7000te2m",
-        "title": "M5.3 Earthquake - 104 km SSW of Nikolski, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-03T18:45:39.228000Z",
-        "coordinates": [
-          -169.2217,
-          52.0304
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.4,
-    "humidity": 60,
+    "city": "Donji grad",
+    "temp_c": 25.4,
+    "feels_c": 25.2,
+    "humidity": 49,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 7.4
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 20.4
   },
   "forecast_today": {
     "date": "2026-09-06",
-    "city": "Zagreb",
-    "temp_min_c": 20.7,
-    "temp_max_c": 29.9,
-    "humidity": 48,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "04n",
-    "wind_kmh": 7.8,
-    "samples": 8
+    "city": "Donji grad",
+    "temp_min_c": 22.4,
+    "temp_max_c": 28.1,
+    "humidity": 46,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 10.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-07",
-    "city": "Zagreb",
-    "temp_min_c": 18.5,
+    "city": "Donji grad",
+    "temp_min_c": 17.6,
     "temp_max_c": 32.0,
     "humidity": 38,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 4.9
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-09-08",
-    "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 32.5,
-    "humidity": 36,
+    "city": "Donji grad",
+    "temp_min_c": 19.2,
+    "temp_max_c": 32.4,
+    "humidity": 33,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.6,
     "band": "low",
     "daily_max": 5.6,
     "peak_time": "2026-09-06T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 63,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,19 +328,19 @@
       },
       {
         "time": "2026-09-06T07:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-09-06T08:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-09-06T09:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-09-06T10:00",
-        "uv": 2.9
+        "uv": 2.8
       },
       {
         "time": "2026-09-06T11:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-06T04:51:06+02:00"
+    "fetched_at": "2026-09-06T09:36:33+02:00"
   }
 }
