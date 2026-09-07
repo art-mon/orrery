@@ -1,12 +1,7 @@
 {
   "generated": "2026-09-07",
   "apod": {
-    "title": "The Pelican Nebula in Gas, Dust, and Stars",
-    "date": "2026-09-07",
-    "explanation": "The Pelican Nebula is slowly being transformed.  IC 5070 (an official designation) is divided from the larger North America Nebula by a molecular cloud filled with dark dust.  The deep featured picture from Utah, USA incorporates 25 hours of exposure and brings out great details of this filamentary dust. The Pelican Nebula receives much study because it is a particularly active mix of star formation and evolving gas clouds.  The light from young energetic stars is slowly transforming the cold gas to hot gas, with the advancing boundary between the two, known as an ionization front, visible in bright orange on the upper right. Particularly dense tentacles of cold gas remain.  Millions of years from now, the Pelican Nebula, bounded by dark nebula LDN 935, might no longer be known as the Pelican, as the balance and placement of stars and gas will surely leave something that appears completely different.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/Pelican_Killion_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/Pelican_Killion_4800.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 28.7,
-    "feels_c": 27.4,
-    "humidity": 26,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "temp_c": 24.2,
+    "feels_c": 23.9,
+    "humidity": 45,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-07",
     "city": "Zagreb",
-    "temp_min_c": 26.9,
-    "temp_max_c": 28.7,
-    "humidity": 28,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.9,
-    "samples": 3
+    "temp_min_c": 24.2,
+    "temp_max_c": 24.2,
+    "humidity": 45,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 3.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-09-08",
     "city": "Zagreb",
-    "temp_min_c": 18.4,
-    "temp_max_c": 35.1,
-    "humidity": 31,
+    "temp_min_c": 20.2,
+    "temp_max_c": 35.0,
+    "humidity": 32,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 3.5
+    "wind_kmh": 3.2
   },
   "forecast_day_after": {
     "date": "2026-09-09",
     "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 31.5,
-    "humidity": 53,
+    "temp_min_c": 18.2,
+    "temp_max_c": 32.6,
+    "humidity": 49,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 4.3
+    "wind_kmh": 5.3
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.6,
     "peak_time": "2026-09-07T13:00",
-    "safe_minutes": 1111,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -368,7 +363,7 @@
       },
       {
         "time": "2026-09-07T17:00",
-        "uv": 2.7
+        "uv": 2.6
       },
       {
         "time": "2026-09-07T18:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-07T19:12:15+02:00"
+    "fetched_at": "2026-09-07T23:05:35+02:00"
   }
 }
