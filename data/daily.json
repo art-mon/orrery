@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tfum",
+        "title": "M5.2 Earthquake - 123 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-08T15:36:35.020000Z",
+        "coordinates": [
+          121.0852,
+          -7.6774
+        ]
+      },
+      {
         "id": "us7000tftd",
         "title": "M5.3 Earthquake - 26 km NW of Neiafu, Tonga",
         "category": "Earthquake",
@@ -142,22 +152,12 @@
       },
       {
         "id": "us7000teji",
-        "title": "M5.5 Earthquake - 157 km E of Kokopo, Papua New Guinea",
+        "title": "M5.5 Earthquake - 162 km E of Kokopo, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-09-05T14:12:07.727000Z",
+        "date": "2026-09-05T14:12:06.943000Z",
         "coordinates": [
-          153.6766,
-          -4.5469
-        ]
-      },
-      {
-        "id": "us7000tejg",
-        "title": "M5.2 Earthquake - 77 km SSW of Sibolga, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-05T14:06:07.776000Z",
-        "coordinates": [
-          98.6095,
-          1.0574
+          153.7143,
+          -4.5717
         ]
       }
     ]
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 34.8,
-    "feels_c": 34.2,
-    "humidity": 29,
+    "temp_c": 27.8,
+    "feels_c": 27.1,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "icon": "01n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-08",
     "city": "Zagreb",
-    "temp_min_c": 20.4,
-    "temp_max_c": 34.8,
-    "humidity": 30,
+    "temp_min_c": 25.8,
+    "temp_max_c": 27.8,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.6,
-    "samples": 4
+    "icon": "01n",
+    "wind_kmh": 2.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-09",
     "city": "Zagreb",
-    "temp_min_c": 17.9,
-    "temp_max_c": 30.9,
-    "humidity": 53,
+    "temp_min_c": 18.2,
+    "temp_max_c": 31.3,
+    "humidity": 52,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.7
+    "wind_kmh": 5.9
   },
   "forecast_day_after": {
     "date": "2026-09-10",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
-    "temp_max_c": 22.9,
-    "humidity": 62,
-    "condition": "Clouds",
+    "temp_min_c": 16.0,
+    "temp_max_c": 22.3,
+    "humidity": 69,
+    "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.4
+    "wind_kmh": 6.8
   },
   "uv": {
-    "uv": 4.3,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 5.5,
     "peak_time": "2026-09-08T13:00",
-    "safe_minutes": 38,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-08T15:18:47+02:00"
+    "fetched_at": "2026-09-08T19:44:44+02:00"
   }
 }
