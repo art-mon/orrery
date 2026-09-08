@@ -1,15 +1,35 @@
 {
   "generated": "2026-09-08",
   "apod": {
-    "title": "The Pelican Nebula in Gas, Dust, and Stars",
-    "date": "2026-09-07",
-    "explanation": "The Pelican Nebula is slowly being transformed.  IC 5070 (an official designation) is divided from the larger North America Nebula by a molecular cloud filled with dark dust.  The deep featured picture from Utah, USA incorporates 25 hours of exposure and brings out great details of this filamentary dust. The Pelican Nebula receives much study because it is a particularly active mix of star formation and evolving gas clouds.  The light from young energetic stars is slowly transforming the cold gas to hot gas, with the advancing boundary between the two, known as an ionization front, visible in bright orange on the upper right. Particularly dense tentacles of cold gas remain.  Millions of years from now, the Pelican Nebula, bounded by dark nebula LDN 935, might no longer be known as the Pelican, as the balance and placement of stars and gas will surely leave something that appears completely different.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Hubble: Decagon Around Saturn's South Pole",
+    "date": "2026-09-08",
+    "explanation": "Why are Saturn\u2019s poles geometric? Saturn\u2019s North Pole has been known to be surrounded by a hexagonal (6 sides) cloud since discovery in 1987 in data taken by NASA\u2019s Voyager spacecrafts, which quickly flew past the ringed world in the early 1980s.  Now, recent observations of Saturn by the Hubble Space Telescope reveal a slightly different geometric cloud pattern around the South Pole: a decagon (10 sides).  The geometric boundaries are possibly caused by waves when the fast-moving gas away from the poles interacts with slower-moving gas closer to the poles.  In the featured image composite by the Hubble taken last year, the South Pole of Saturn is marked by an X and surrounded by bands of circulating clouds.  The decagon appears most prominent in the dark inner regions.  The northern hexagon has proven stable for over 40 years, while the stability of the southern decagon will surely remain a topic of research.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/Pelican_Killion_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/Pelican_Killion_4800.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tfs3",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-08T06:50:46.470000Z",
+        "coordinates": [
+          -26.2578,
+          -58.1213
+        ]
+      },
+      {
+        "id": "us7000tfr8",
+        "title": "M5.3 Earthquake - 51 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-08T04:40:28.046000Z",
+        "coordinates": [
+          120.5995,
+          -8.1646
+        ]
+      },
       {
         "id": "us7000tfqf",
         "title": "M5.1 Earthquake - 92 km ESE of Isangel, Vanuatu",
@@ -139,26 +159,6 @@
           -66.7176,
           -26.1078
         ]
-      },
-      {
-        "id": "us7000teiy",
-        "title": "M5.0 Earthquake - 70 km SW of Pagar Alam, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-05T10:59:15.678000Z",
-        "coordinates": [
-          102.7513,
-          -4.4202
-        ]
-      },
-      {
-        "id": "us7000tehe",
-        "title": "M5.0 Earthquake - off the coast of Central America",
-        "category": "Earthquake",
-        "date": "2026-09-05T05:00:06.778000Z",
-        "coordinates": [
-          -83.151,
-          3.5071
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.6,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 1.8
+    "city": "Zagreb",
+    "temp_c": 28.1,
+    "feels_c": 27.9,
+    "humidity": 41,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-08",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 34.4,
-    "humidity": 38,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.8,
-    "samples": 7
+    "temp_min_c": 20.6,
+    "temp_max_c": 32.4,
+    "humidity": 34,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 4.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-09",
     "city": "Zagreb",
-    "temp_min_c": 18.2,
-    "temp_max_c": 34.2,
-    "humidity": 43,
+    "temp_min_c": 18.3,
+    "temp_max_c": 33.8,
+    "humidity": 44,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.8
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 7.2
   },
   "forecast_day_after": {
     "date": "2026-09-10",
     "city": "Zagreb",
-    "temp_min_c": 17.8,
-    "temp_max_c": 25.3,
-    "humidity": 58,
+    "temp_min_c": 16.5,
+    "temp_max_c": 22.9,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.5
+    "wind_kmh": 8.3
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 5.6,
+    "uv": 4.3,
+    "band": "moderate",
+    "daily_max": 5.5,
     "peak_time": "2026-09-08T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 39,
     "skin_type": 2,
     "hourly": [
       {
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-09-08T13:00",
-        "uv": 5.6
+        "uv": 5.5
       },
       {
         "time": "2026-09-08T14:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-09-08T19:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-09-08T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-08T05:58:10+02:00"
+    "fetched_at": "2026-09-08T10:45:19+02:00"
   }
 }
