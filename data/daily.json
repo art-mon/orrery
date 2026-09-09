@@ -248,42 +248,42 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 24.7,
-    "feels_c": 24.5,
-    "humidity": 50,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 18.5
+    "temp_c": 24.8,
+    "feels_c": 25.0,
+    "humidity": 63,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-09",
     "city": "Zagreb",
-    "temp_min_c": 19.8,
-    "temp_max_c": 26.7,
-    "humidity": 60,
+    "temp_min_c": 23.8,
+    "temp_max_c": 25.5,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10d",
-    "wind_kmh": 12.2,
-    "samples": 4
+    "icon": "04n",
+    "wind_kmh": 6.5,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-10",
     "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 20.6,
-    "humidity": 79,
+    "temp_min_c": 15.1,
+    "temp_max_c": 21.0,
+    "humidity": 77,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.5
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-09-11",
     "city": "Zagreb",
-    "temp_min_c": 13.9,
-    "temp_max_c": 15.8,
+    "temp_min_c": 14.4,
+    "temp_max_c": 16.3,
     "humidity": 94,
     "condition": "Rain",
     "description": "moderate rain",
@@ -291,11 +291,11 @@
     "wind_kmh": 3.8
   },
   "uv": {
-    "uv": 2.8,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 5.5,
     "peak_time": "2026-09-09T13:00",
-    "safe_minutes": 61,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,15 +360,15 @@
       },
       {
         "time": "2026-09-09T15:00",
-        "uv": 4.1
+        "uv": 4.2
       },
       {
         "time": "2026-09-09T16:00",
-        "uv": 2.1
+        "uv": 2.4
       },
       {
         "time": "2026-09-09T17:00",
-        "uv": 1.9
+        "uv": 1.1
       },
       {
         "time": "2026-09-09T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-09T15:22:09+02:00"
+    "fetched_at": "2026-09-09T19:31:25+02:00"
   }
 }
