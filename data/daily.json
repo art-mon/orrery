@@ -1,15 +1,25 @@
 {
   "generated": "2026-09-09",
   "apod": {
-    "title": "Hubble: Decagon Around Saturn's South Pole",
-    "date": "2026-09-08",
-    "explanation": "Why are Saturn\u2019s poles geometric? Saturn\u2019s North Pole has been known to be surrounded by a hexagonal (6 sides) cloud since discovery in 1987 in data taken by NASA\u2019s Voyager spacecrafts, which quickly flew past the ringed world in the early 1980s.  Now, recent observations of Saturn by the Hubble Space Telescope reveal a slightly different geometric cloud pattern around the South Pole: a decagon (10 sides).  The geometric boundaries are possibly caused by waves when the fast-moving gas away from the poles interacts with slower-moving gas closer to the poles.  In the featured image composite by the Hubble taken last year, the South Pole of Saturn is marked by an X and surrounded by bands of circulating clouds.  The decagon appears most prominent in the dark inner regions.  The northern hexagon has proven stable for over 40 years, while the stability of the southern decagon will surely remain a topic of research.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/SaturnDecagon_Hubble_960.jpg"
+    "title": "Witness XZ Andromedae Wink",
+    "date": "2026-09-09",
+    "explanation": "Is this star winking at us? The central object in today\u2019s animation is not one but two stars. XZ Andromedae, indicated by the bold lines, is an Algol-type eclipsing binary with a nearly edge-on orbit from Earth\u2019s perspective. The bottom light curve shows the amount of light from the system dim and brighten as the cooler star eclipses its hotter, brighter companion. Analysis of several XZ Andromedae light curves indicates there may be two other stars orbiting the system. This particular light curve was created with Citizen Astronomy, an open-source software for differential photometry. The software takes the difference in brightness between a target and comparison star and traces its behavior over time. This technique reduces most variations from the instrument and Earth\u2019s atmosphere. In addition to eclipsing binaries, this analysis is useful for studying transiting exoplanets, accreting black holes, supernovae, and many more time-varying astronomical phenomena. Astrophotographers: try it out on your own data!",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2609/xz_and.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tg06",
+        "title": "M5.0 Earthquake - 154 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-09-09T07:07:03.319000Z",
+        "coordinates": [
+          125.3233,
+          4.0172
+        ]
+      },
       {
         "id": "us7000tfum",
         "title": "M5.2 Earthquake - 123 km NNE of Ruteng, Indonesia",
@@ -149,16 +159,6 @@
           170.1576,
           -19.807
         ]
-      },
-      {
-        "id": "us7000teji",
-        "title": "M5.5 Earthquake - 162 km E of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-09-05T14:12:06.943000Z",
-        "coordinates": [
-          153.7143,
-          -4.5717
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 21.0,
-    "feels_c": 20.8,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
+    "city": "Zagreb",
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 49,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 21.0,
-    "temp_max_c": 33.5,
+    "city": "Donji grad",
+    "temp_min_c": 22.8,
+    "temp_max_c": 30.2,
     "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 8.4,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 9.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.5,
-    "temp_max_c": 22.4,
-    "humidity": 69,
-    "condition": "Rain",
+    "city": "Donji grad",
+    "temp_min_c": 14.0,
+    "temp_max_c": 22.2,
+    "humidity": 68,
+    "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.0
+    "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-09-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.4,
-    "temp_max_c": 16.6,
-    "humidity": 87,
-    "condition": "Rain",
+    "city": "Donji grad",
+    "temp_min_c": 14.0,
+    "temp_max_c": 16.7,
+    "humidity": 85,
+    "condition": "Clouds",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 3.8
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.4,
+    "band": "moderate",
     "daily_max": 5.5,
     "peak_time": "2026-09-09T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 50,
     "skin_type": 2,
     "hourly": [
       {
@@ -356,7 +356,7 @@
       },
       {
         "time": "2026-09-09T14:00",
-        "uv": 5.2
+        "uv": 5.5
       },
       {
         "time": "2026-09-09T15:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-09-09T19:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-09-09T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-09T04:59:41+02:00"
+    "fetched_at": "2026-09-09T10:03:12+02:00"
   }
 }
