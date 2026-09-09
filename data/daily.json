@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tg12",
+        "title": "M5.0 Earthquake - 53 km W of Cafayate, Argentina",
+        "category": "Earthquake",
+        "date": "2026-09-09T10:06:57.170000Z",
+        "coordinates": [
+          -66.5049,
+          -26.1386
+        ]
+      },
+      {
         "id": "us7000tg06",
         "title": "M5.0 Earthquake - 154 km S of Sarangani, Philippines",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -93.2487,
           14.1551
         ]
-      },
-      {
-        "id": "us7000tek0",
-        "title": "M5.6 Earthquake - 96 km ESE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-05T17:02:11.581000Z",
-        "coordinates": [
-          170.1576,
-          -19.807
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 26.5,
-    "feels_c": 26.5,
-    "humidity": 49,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "temp_c": 24.7,
+    "feels_c": 24.5,
+    "humidity": 50,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-09-09",
-    "city": "Donji grad",
-    "temp_min_c": 22.8,
-    "temp_max_c": 30.2,
-    "humidity": 49,
+    "city": "Zagreb",
+    "temp_min_c": 19.8,
+    "temp_max_c": 26.7,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 9.5,
-    "samples": 6
+    "icon": "10d",
+    "wind_kmh": 12.2,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-10",
-    "city": "Donji grad",
-    "temp_min_c": 14.0,
-    "temp_max_c": 22.2,
-    "humidity": 68,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 6.8
+    "city": "Zagreb",
+    "temp_min_c": 13.7,
+    "temp_max_c": 20.6,
+    "humidity": 79,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.5
   },
   "forecast_day_after": {
     "date": "2026-09-11",
-    "city": "Donji grad",
-    "temp_min_c": 14.0,
-    "temp_max_c": 16.7,
-    "humidity": 85,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 13.9,
+    "temp_max_c": 15.8,
+    "humidity": 94,
+    "condition": "Rain",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 2.9
+    "wind_kmh": 3.8
   },
   "uv": {
-    "uv": 3.4,
-    "band": "moderate",
+    "uv": 2.8,
+    "band": "low",
     "daily_max": 5.5,
     "peak_time": "2026-09-09T13:00",
-    "safe_minutes": 50,
+    "safe_minutes": 61,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,7 +348,7 @@
       },
       {
         "time": "2026-09-09T12:00",
-        "uv": 5.0
+        "uv": 3.9
       },
       {
         "time": "2026-09-09T13:00",
@@ -356,27 +356,27 @@
       },
       {
         "time": "2026-09-09T14:00",
-        "uv": 5.5
+        "uv": 5.4
       },
       {
         "time": "2026-09-09T15:00",
-        "uv": 4.8
+        "uv": 4.1
       },
       {
         "time": "2026-09-09T16:00",
-        "uv": 3.9
+        "uv": 2.1
       },
       {
         "time": "2026-09-09T17:00",
-        "uv": 2.5
+        "uv": 1.9
       },
       {
         "time": "2026-09-09T18:00",
-        "uv": 1.1
+        "uv": 1.0
       },
       {
         "time": "2026-09-09T19:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-09-09T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-09T10:03:12+02:00"
+    "fetched_at": "2026-09-09T15:22:09+02:00"
   }
 }
