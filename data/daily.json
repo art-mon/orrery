@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tg98",
+        "title": "M5.0 Earthquake - 45 km SSE of Quepos, Costa Rica",
+        "category": "Earthquake",
+        "date": "2026-09-10T08:26:53.828000Z",
+        "coordinates": [
+          -84.0624,
+          9.0275
+        ]
+      },
+      {
+        "id": "us7000tg8v",
+        "title": "M5.3 Earthquake - 126 km WSW of Alianza Cristiana, Peru",
+        "category": "Earthquake",
+        "date": "2026-09-10T06:42:40.393000Z",
+        "coordinates": [
+          -77.5027,
+          -3.873
+        ]
+      },
+      {
         "id": "us7000tg43",
         "title": "M5.1 Earthquake - 81 km ESE of Isangel, Vanuatu",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -115.8082,
           -24.2436
         ]
-      },
-      {
-        "id": "us7000tepa",
-        "title": "M5.2 Earthquake - southern East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-09-06T10:38:18.353000Z",
-        "coordinates": [
-          -116.0305,
-          -24.5229
-        ]
-      },
-      {
-        "id": "us7000tep6",
-        "title": "M5.2 Earthquake - southern East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-09-06T10:32:28.227000Z",
-        "coordinates": [
-          -115.6112,
-          -24.5304
-        ]
       }
     ]
   },
@@ -217,7 +217,7 @@
         "hazardous": true,
         "diameter_m": 273,
         "close_approach_date": "2026-09-11",
-        "miss_distance_km": 7757385,
+        "miss_distance_km": 7757386,
         "velocity_kmh": 41734
       },
       {
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.4,
-    "humidity": 83,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 16.7
+    "city": "Donji grad",
+    "temp_c": 18.1,
+    "feels_c": 17.9,
+    "humidity": 72,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-10",
-    "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 18.9,
-    "humidity": 80,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 10.2,
-    "samples": 7
+    "city": "City of Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 18.1,
+    "humidity": 78,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10d",
+    "wind_kmh": 6.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-11",
-    "city": "Zagreb",
-    "temp_min_c": 13.6,
-    "temp_max_c": 20.1,
-    "humidity": 90,
+    "city": "City of Zagreb",
+    "temp_min_c": 14.1,
+    "temp_max_c": 18.9,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
     "date": "2026-09-12",
-    "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 23.2,
-    "humidity": 62,
+    "city": "City of Zagreb",
+    "temp_min_c": 13.4,
+    "temp_max_c": 24.0,
+    "humidity": 61,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 4.6
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 3.0,
     "peak_time": "2026-09-10T16:00",
-    "safe_minutes": null,
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-10T07:34:27+02:00"
+    "fetched_at": "2026-09-10T12:34:14+02:00"
   }
 }
