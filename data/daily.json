@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tgf2",
+        "title": "M5.3 Earthquake - 83 km E of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-09-10T18:44:40.243000Z",
+        "coordinates": [
+          127.7505,
+          -8.5914
+        ]
+      },
+      {
+        "id": "us7000tgey",
+        "title": "M5.4 Earthquake - southern East Pacific Rise",
+        "category": "Earthquake",
+        "date": "2026-09-10T18:21:18.934000Z",
+        "coordinates": [
+          -109.1514,
+          -34.8341
+        ]
+      },
+      {
         "id": "us7000tgb6",
         "title": "M5.1 Earthquake - 162 km SSW of Merizo Village, Guam",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           171.6769,
           -23.4192
         ]
-      },
-      {
-        "id": "us7000test",
-        "title": "M5.0 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-07T02:06:48.371000Z",
-        "coordinates": [
-          178.5443,
-          -30.9663
-        ]
-      },
-      {
-        "id": "us7000tesi",
-        "title": "M5.3 Earthquake - off the coast of Oregon",
-        "category": "Earthquake",
-        "date": "2026-09-07T01:30:24.930000Z",
-        "coordinates": [
-          -128.2038,
-          43.9019
-        ]
       }
     ]
   },
@@ -248,47 +248,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.3,
-    "feels_c": 18.2,
-    "humidity": 77,
+    "temp_c": 15.9,
+    "feels_c": 15.8,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-10",
     "city": "Zagreb",
-    "temp_min_c": 17.1,
-    "temp_max_c": 18.3,
-    "humidity": 80,
+    "temp_min_c": 15.9,
+    "temp_max_c": 15.9,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 7.5,
-    "samples": 2
+    "wind_kmh": 3.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-09-11",
     "city": "Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 19.7,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.0
+    "temp_min_c": 14.2,
+    "temp_max_c": 18.6,
+    "humidity": 91,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-09-12",
     "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 23.7,
-    "humidity": 54,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.8
+    "temp_min_c": 12.9,
+    "temp_max_c": 23.9,
+    "humidity": 61,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.9
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-10T20:03:53+02:00"
+    "fetched_at": "2026-09-10T23:22:51+02:00"
   }
 }
