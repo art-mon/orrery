@@ -42,22 +42,22 @@
       },
       {
         "id": "us7000tg43",
-        "title": "M5.1 Earthquake - 81 km ESE of Isangel, Vanuatu",
+        "title": "M5.1 Earthquake - 86 km ESE of Isangel, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-09-09T17:18:45.381000Z",
+        "date": "2026-09-09T17:18:45.408000Z",
         "coordinates": [
-          170.0391,
-          -19.7219
+          170.0677,
+          -19.777
         ]
       },
       {
         "id": "us7000tg3x",
-        "title": "M5.2 Earthquake - 76 km ESE of Isangel, Vanuatu",
+        "title": "M5.2 Earthquake - 78 km ESE of Isangel, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-09-09T17:01:52.208000Z",
+        "date": "2026-09-09T17:01:52.191000Z",
         "coordinates": [
-          169.9486,
-          -19.8237
+          169.9636,
+          -19.8279
         ]
       },
       {
@@ -82,12 +82,12 @@
       },
       {
         "id": "us7000tfum",
-        "title": "M5.2 Earthquake - 123 km NNE of Ruteng, Indonesia",
+        "title": "M5.2 Earthquake - 125 km NE of Ruteng, Indonesia",
         "category": "Earthquake",
-        "date": "2026-09-08T15:36:35.020000Z",
+        "date": "2026-09-08T15:36:34.907000Z",
         "coordinates": [
-          121.0852,
-          -7.6774
+          121.1202,
+          -7.6809
         ]
       },
       {
@@ -248,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.4,
-    "humidity": 69,
+    "temp_c": 18.3,
+    "feels_c": 18.2,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 14.8
+    "icon": "04n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 18.7,
-    "humidity": 74,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 9.1,
-    "samples": 4
+    "city": "Zagreb",
+    "temp_min_c": 17.1,
+    "temp_max_c": 18.3,
+    "humidity": 80,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 7.5,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-11",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 14.1,
     "temp_max_c": 19.7,
-    "humidity": 83,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 13.7,
     "temp_max_c": 23.7,
     "humidity": 54,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.8
   },
   "uv": {
-    "uv": 1.9,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 3.1,
-    "peak_time": "2026-09-10T16:00",
-    "safe_minutes": 85,
+    "daily_max": 2.8,
+    "peak_time": "2026-09-10T13:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -360,15 +360,15 @@
       },
       {
         "time": "2026-09-10T15:00",
-        "uv": 2.6
+        "uv": 2.4
       },
       {
         "time": "2026-09-10T16:00",
-        "uv": 3.1
+        "uv": 1.6
       },
       {
         "time": "2026-09-10T17:00",
-        "uv": 2.1
+        "uv": 2.2
       },
       {
         "time": "2026-09-10T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-10T16:47:41+02:00"
+    "fetched_at": "2026-09-10T20:03:53+02:00"
   }
 }
