@@ -1,10 +1,35 @@
 {
   "generated": "2026-09-11",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "M83: The Southern Pinwheel",
+    "date": "2026-09-11",
+    "explanation": "Beautiful and bright spiral galaxy M83 lies some twelve million light-years away, near the southeastern tip of the very long constellation Hydra. Prominent spiral arms traced by dark dust lanes and blue star clusters lend this galaxy its popular name, the Southern Pinwheel.  Still, reddish star forming regions that dot this cosmic pinwheel's spiral arms have suggested another nickname, the Thousand-Ruby Galaxy. A mere 40,000 light-years across, smaller than the Milky Way, M83 is a member of a group of galaxies that includes active galaxy Centaurus A. In fact, the core of M83 itself is bright at x-ray energies, showing a high concentration of neutron stars and black holes left from an intense burst of star formation. This sharp, groundbased telescopic view also features foreground Milky Way stars and distant background galaxies.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/M83_Final2_1x1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/M83_Final2_1x.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tgl2",
+        "title": "M5.9 Earthquake - 253 km ENE of Lospalos, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-09-11T11:56:23.115000Z",
+        "coordinates": [
+          128.9383,
+          -7.2863
+        ]
+      },
+      {
+        "id": "us7000tgky",
+        "title": "M5.3 Earthquake - 151 km WSW of Adak, Alaska",
+        "category": "Earthquake",
+        "date": "2026-09-11T10:47:12.613000Z",
+        "coordinates": [
+          -178.5429,
+          51.213
+        ]
+      },
       {
         "id": "us7000tgf2",
         "title": "M5.3 Earthquake - 83 km E of Lospalos, Timor Leste",
@@ -134,26 +159,6 @@
           120.5995,
           -8.1646
         ]
-      },
-      {
-        "id": "us7000tfqf",
-        "title": "M5.1 Earthquake - 92 km ESE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-08T00:52:02.083000Z",
-        "coordinates": [
-          170.1194,
-          -19.8072
-        ]
-      },
-      {
-        "id": "us7000teu1",
-        "title": "M5.5 Earthquake - southeast of the Loyalty Islands",
-        "category": "Earthquake",
-        "date": "2026-09-07T05:50:44.529000Z",
-        "coordinates": [
-          171.6769,
-          -23.4192
-        ]
       }
     ]
   },
@@ -212,7 +217,7 @@
         "hazardous": true,
         "diameter_m": 429,
         "close_approach_date": "2026-09-12",
-        "miss_distance_km": 19854157,
+        "miss_distance_km": 19854160,
         "velocity_kmh": 23479
       },
       {
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.8,
-    "feels_c": 14.7,
-    "humidity": 90,
+    "temp_c": 15.9,
+    "feels_c": 15.8,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.4
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-11",
     "city": "Zagreb",
     "temp_min_c": 14.4,
-    "temp_max_c": 16.1,
-    "humidity": 85,
+    "temp_max_c": 16.2,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
     "wind_kmh": 5.1,
-    "samples": 6
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-12",
@@ -286,11 +291,11 @@
     "wind_kmh": 3.1
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 1.5,
     "band": "low",
-    "daily_max": 2.0,
-    "peak_time": "2026-09-11T13:00",
-    "safe_minutes": 222,
+    "daily_max": 1.6,
+    "peak_time": "2026-09-11T12:00",
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,43 +336,43 @@
       },
       {
         "time": "2026-09-11T09:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-09-11T10:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-09-11T11:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-09-11T12:00",
-        "uv": 1.8
-      },
-      {
-        "time": "2026-09-11T13:00",
-        "uv": 2.0
-      },
-      {
-        "time": "2026-09-11T14:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-09-11T15:00",
-        "uv": 1.0
-      },
-      {
-        "time": "2026-09-11T16:00",
         "uv": 0.8
       },
       {
+        "time": "2026-09-11T11:00",
+        "uv": 0.9
+      },
+      {
+        "time": "2026-09-11T12:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-09-11T13:00",
+        "uv": 1.4
+      },
+      {
+        "time": "2026-09-11T14:00",
+        "uv": 1.3
+      },
+      {
+        "time": "2026-09-11T15:00",
+        "uv": 1.5
+      },
+      {
+        "time": "2026-09-11T16:00",
+        "uv": 1.1
+      },
+      {
         "time": "2026-09-11T17:00",
-        "uv": 0.4
+        "uv": 0.7
       },
       {
         "time": "2026-09-11T18:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-09-11T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-11T09:48:54+02:00"
+    "fetched_at": "2026-09-11T14:35:16+02:00"
   }
 }
