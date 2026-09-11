@@ -247,51 +247,51 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.2,
-    "feels_c": 17.0,
-    "humidity": 78,
+    "city": "Donji grad",
+    "temp_c": 16.6,
+    "feels_c": 16.5,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 13.0
+    "icon": "04n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-11",
-    "city": "Zagreb",
-    "temp_min_c": 16.3,
-    "temp_max_c": 17.2,
-    "humidity": 78,
+    "city": "Donji grad",
+    "temp_min_c": 15.9,
+    "temp_max_c": 16.6,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 5.9,
-    "samples": 3
+    "icon": "04n",
+    "wind_kmh": 5.2,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-12",
-    "city": "Zagreb",
-    "temp_min_c": 12.9,
+    "city": "Donji grad",
+    "temp_min_c": 12.3,
     "temp_max_c": 24.8,
-    "humidity": 55,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 4.3
+    "humidity": 57,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.1
   },
   "forecast_day_after": {
     "date": "2026-09-13",
-    "city": "Zagreb",
-    "temp_min_c": 14.2,
+    "city": "Donji grad",
+    "temp_min_c": 14,
     "temp_max_c": 26.5,
     "humidity": 46,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.3
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 1.6,
     "peak_time": "2026-09-11T12:00",
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-09-11T15:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-09-11T16:00",
@@ -368,11 +368,11 @@
       },
       {
         "time": "2026-09-11T17:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-09-11T18:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-09-11T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-11T18:53:50+02:00"
+    "fetched_at": "2026-09-11T21:26:48+02:00"
   }
 }
