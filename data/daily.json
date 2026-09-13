@@ -1,15 +1,35 @@
 {
   "generated": "2026-09-13",
   "apod": {
-    "title": "Apollo 11: Catching Some Sun",
-    "date": "2026-09-12",
-    "explanation": "Bright sunlight glints as long dark shadows mark this image of the surface of the Moon. It was taken on July 20, 1969, by Apollo 11 astronaut Neil Armstrong, the first to walk on the lunar surface. Pictured is the mission's lunar module, the Eagle, and spacesuited lunar module pilot Buzz Aldrin. Aldrin is unfurling a long sheet of foil also known as the Solar Wind Composition Experiment. Exposed facing the Sun, the foil trapped particles streaming outward in the solar wind, catching a sample of material from the Sun itself. Along with 22 kilograms of moon rocks and lunar soil samples, the solar wind collector was returned for analysis in earthbound laboratories.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/AS11-40-5872HR1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/AS11-40-5872HR.jpg"
+    "title": "Comet NEOWISE Rising over the Adriatic Sea",
+    "date": "2026-09-13",
+    "explanation": "This sight was worth getting out of bed early.  Just over four years ago, Comet C/2020 F3 (NEOWISE) rose before dawn to the delight of northern sky enthusiasts awake that early. Up before sunrise on July 8th, the featured photographer was able to capture in dramatic fashion one of the few comets visible to the unaided eye this century, an inner-Solar System intruder that has become known as the Great Comet of 2020.  The resulting video detailed Comet NEOWISE from Italy rising over the Adriatic Sea. The featured time-lapse video combines over 240 images taken over 30 minutes.  The comet was seen rising through a foreground of bright and undulating noctilucent clouds, and before a background of distant stars.  Comet NEOWISE remained unexpectedly bright for over a month, with its ion and dust tails found to emanate from a nucleus spanning about five kilometers across.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "video",
+    "url": "https://apod.nasa.gov/apod/image/2609/NoctilucentNeowise_Girotti.mp4",
+    "hdurl": null
   },
   "events": {
     "events": [
+      {
+        "id": "us7000th50",
+        "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
+        "category": "Earthquake",
+        "date": "2026-09-13T07:30:23.024000Z",
+        "coordinates": [
+          171.3544,
+          -22.2281
+        ]
+      },
+      {
+        "id": "us7000th4y",
+        "title": "M5.2 Earthquake - 43 km ESE of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-09-13T07:19:21.693000Z",
+        "coordinates": [
+          167.4363,
+          -15.2195
+        ]
+      },
       {
         "id": "us7000th1q",
         "title": "M5.1 Earthquake - 101 km S of Yudomari, Japan",
@@ -139,26 +159,6 @@
           -66.5049,
           -26.1386
         ]
-      },
-      {
-        "id": "us7000tg06",
-        "title": "M5.0 Earthquake - 154 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-09-09T07:07:03.319000Z",
-        "coordinates": [
-          125.3233,
-          4.0172
-        ]
-      },
-      {
-        "id": "us7000tfum",
-        "title": "M5.2 Earthquake - 125 km NE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-08T15:36:34.907000Z",
-        "coordinates": [
-          121.1202,
-          -7.6809
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.3,
-    "humidity": 83,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 39,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-09-13",
     "city": "Zagreb",
-    "temp_min_c": 13.5,
-    "temp_max_c": 24.4,
-    "humidity": 56,
+    "temp_min_c": 20.7,
+    "temp_max_c": 26.5,
+    "humidity": 43,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 5.0,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 5.2,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-14",
     "city": "Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 24.3,
-    "humidity": 60,
+    "temp_min_c": 14.7,
+    "temp_max_c": 21.8,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.0
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-09-15",
     "city": "Zagreb",
-    "temp_min_c": 14.8,
-    "temp_max_c": 25.4,
-    "humidity": 66,
+    "temp_min_c": 13.6,
+    "temp_max_c": 24.6,
+    "humidity": 69,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.3
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 5.3,
+    "uv": 3.7,
+    "band": "moderate",
+    "daily_max": 5.2,
     "peak_time": "2026-09-13T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 45,
     "skin_type": 2,
     "hourly": [
       {
@@ -328,7 +328,7 @@
       },
       {
         "time": "2026-09-13T07:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-09-13T08:00",
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-09-13T11:00",
-        "uv": 3.6
+        "uv": 3.8
       },
       {
         "time": "2026-09-13T12:00",
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-09-13T13:00",
-        "uv": 5.3
+        "uv": 5.2
       },
       {
         "time": "2026-09-13T14:00",
@@ -360,7 +360,7 @@
       },
       {
         "time": "2026-09-13T15:00",
-        "uv": 4.5
+        "uv": 4.4
       },
       {
         "time": "2026-09-13T16:00",
@@ -368,11 +368,11 @@
       },
       {
         "time": "2026-09-13T17:00",
-        "uv": 1.0
+        "uv": 1.6
       },
       {
         "time": "2026-09-13T18:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-09-13T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-13T05:03:36+02:00"
+    "fetched_at": "2026-09-13T15:38:41+02:00"
   }
 }
