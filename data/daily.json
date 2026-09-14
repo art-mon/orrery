@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000thgs",
+        "title": "M5.3 Earthquake - off the coast of Michoacan, Mexico",
+        "category": "Earthquake",
+        "date": "2026-09-14T20:38:59.760000Z",
+        "coordinates": [
+          -104.4352,
+          15.0879
+        ]
+      },
+      {
         "id": "us7000thea",
         "title": "M5.2 Earthquake - 135 km SE of Gizo, Solomon Islands",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -109.1514,
           -34.8341
         ]
-      },
-      {
-        "id": "us7000tgb6",
-        "title": "M5.1 Earthquake - 162 km SSW of Merizo Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-09-10T13:28:15.798000Z",
-        "coordinates": [
-          143.8739,
-          12.0265
-        ]
       }
     ]
   },
@@ -248,47 +248,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.7,
-    "feels_c": 20.6,
-    "humidity": 68,
+    "temp_c": 17.6,
+    "feels_c": 17.6,
+    "humidity": 82,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 11.1
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-14",
     "city": "Zagreb",
-    "temp_min_c": 19.6,
-    "temp_max_c": 20.7,
-    "humidity": 70,
+    "temp_min_c": 17.6,
+    "temp_max_c": 17.6,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 5.5,
-    "samples": 3
+    "wind_kmh": 9.3,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-09-15",
     "city": "Zagreb",
-    "temp_min_c": 15.5,
-    "temp_max_c": 27.8,
-    "humidity": 66,
+    "temp_min_c": 16.2,
+    "temp_max_c": 28.2,
+    "humidity": 64,
     "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 2.4
+    "wind_kmh": 2.6
   },
   "forecast_day_after": {
     "date": "2026-09-16",
     "city": "Zagreb",
-    "temp_min_c": 15.6,
-    "temp_max_c": 27.0,
-    "humidity": 54,
+    "temp_min_c": 16.0,
+    "temp_max_c": 28.3,
+    "humidity": 53,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.5
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.2
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-14T19:38:55+02:00"
+    "fetched_at": "2026-09-14T23:26:44+02:00"
   }
 }
