@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000th8u",
+        "title": "M5.1 Earthquake - 50 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-13T22:40:01.303000Z",
+        "coordinates": [
+          120.3822,
+          -8.1597
+        ]
+      },
+      {
         "id": "us7000th50",
         "title": "M5.0 Earthquake - southeast of the Loyalty Islands",
         "category": "Earthquake",
@@ -149,61 +159,11 @@
           169.9636,
           -19.8279
         ]
-      },
-      {
-        "id": "us7000tg12",
-        "title": "M5.0 Earthquake - 53 km W of Cafayate, Argentina",
-        "category": "Earthquake",
-        "date": "2026-09-09T10:06:57.170000Z",
-        "coordinates": [
-          -66.5049,
-          -26.1386
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 YF4)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-09-13",
-        "miss_distance_km": 61738911,
-        "velocity_kmh": 22860
-      },
-      {
-        "name": "(2013 SR)",
-        "hazardous": false,
-        "diameter_m": 90,
-        "close_approach_date": "2026-09-13",
-        "miss_distance_km": 63952875,
-        "velocity_kmh": 60446
-      },
-      {
-        "name": "(2019 WL5)",
-        "hazardous": false,
-        "diameter_m": 130,
-        "close_approach_date": "2026-09-13",
-        "miss_distance_km": 64962631,
-        "velocity_kmh": 29287
-      },
-      {
-        "name": "(2002 RS129)",
-        "hazardous": false,
-        "diameter_m": 156,
-        "close_approach_date": "2026-09-13",
-        "miss_distance_km": 66123725,
-        "velocity_kmh": 86408
-      },
-      {
-        "name": "(2016 TZ19)",
-        "hazardous": false,
-        "diameter_m": 139,
-        "close_approach_date": "2026-09-13",
-        "miss_distance_km": 74088225,
-        "velocity_kmh": 49798
-      },
       {
         "name": "(2010 FX9)",
         "hazardous": false,
@@ -243,14 +203,54 @@
         "close_approach_date": "2026-09-14",
         "miss_distance_km": 73522639,
         "velocity_kmh": 71143
+      },
+      {
+        "name": "(2019 SQ8)",
+        "hazardous": false,
+        "diameter_m": 132,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 19831924,
+        "velocity_kmh": 76366
+      },
+      {
+        "name": "429584 (2011 EU29)",
+        "hazardous": true,
+        "diameter_m": 652,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 20160853,
+        "velocity_kmh": 75623
+      },
+      {
+        "name": "(2013 QM10)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 28177765,
+        "velocity_kmh": 31048
+      },
+      {
+        "name": "(2005 RZ2)",
+        "hazardous": false,
+        "diameter_m": 130,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 36510668,
+        "velocity_kmh": 37825
+      },
+      {
+        "name": "(2019 OQ4)",
+        "hazardous": false,
+        "diameter_m": 386,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 43071600,
+        "velocity_kmh": 22660
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.1,
-    "humidity": 64,
+    "temp_c": 19.8,
+    "feels_c": 19.6,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
@@ -261,12 +261,12 @@
     "city": "Zagreb",
     "temp_min_c": 15.3,
     "temp_max_c": 23.1,
-    "humidity": 66,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.7,
-    "samples": 9
+    "wind_kmh": 3.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-15",
@@ -274,7 +274,7 @@
     "temp_min_c": 13.6,
     "temp_max_c": 24.4,
     "humidity": 70,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "scattered clouds",
     "icon": "03d",
     "wind_kmh": 2.8
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.5,
-    "peak_time": "2026-09-14T15:00",
+    "daily_max": 4.7,
+    "peak_time": "2026-09-14T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -332,43 +332,43 @@
       },
       {
         "time": "2026-09-14T08:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-09-14T09:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-09-14T10:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-09-14T11:00",
         "uv": 1.9
       },
       {
+        "time": "2026-09-14T11:00",
+        "uv": 2.3
+      },
+      {
         "time": "2026-09-14T12:00",
-        "uv": 0.6
+        "uv": 1.9
       },
       {
         "time": "2026-09-14T13:00",
-        "uv": 2.4
+        "uv": 2.9
       },
       {
         "time": "2026-09-14T14:00",
-        "uv": 2.5
+        "uv": 4.7
       },
       {
         "time": "2026-09-14T15:00",
-        "uv": 3.5
+        "uv": 4.1
       },
       {
         "time": "2026-09-14T16:00",
-        "uv": 3.2
+        "uv": 3.1
       },
       {
         "time": "2026-09-14T17:00",
-        "uv": 2.3
+        "uv": 2.2
       },
       {
         "time": "2026-09-14T18:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-09-14T19:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-09-14T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-14T00:51:06+02:00"
+    "fetched_at": "2026-09-14T02:41:51+02:00"
   }
 }
