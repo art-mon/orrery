@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000thcs",
+        "title": "M5.6 Earthquake - 78 km NNE of Tobelo, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-14T10:58:03.047000Z",
+        "coordinates": [
+          128.1704,
+          2.4223
+        ]
+      },
+      {
+        "id": "us7000thc6",
+        "title": "M5.5 Earthquake - 187 km SSW of Pelabuhanratu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-14T09:27:38.536000Z",
+        "coordinates": [
+          105.8726,
+          -8.5419
+        ]
+      },
+      {
         "id": "us7000tha3",
         "title": "M5.4 Earthquake - northern Mid-Atlantic Ridge",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -84.0624,
           9.0275
         ]
-      },
-      {
-        "id": "us7000tg8v",
-        "title": "M5.3 Earthquake - 126 km WSW of Alianza Cristiana, Peru",
-        "category": "Earthquake",
-        "date": "2026-09-10T06:42:40.393000Z",
-        "coordinates": [
-          -77.5027,
-          -3.873
-        ]
-      },
-      {
-        "id": "us7000tg43",
-        "title": "M5.1 Earthquake - 86 km ESE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-09T17:18:45.408000Z",
-        "coordinates": [
-          170.0677,
-          -19.777
-        ]
       }
     ]
   },
@@ -248,9 +248,9 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.6,
-    "humidity": 76,
+    "temp_c": 24.8,
+    "feels_c": 24.9,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -258,44 +258,44 @@
   },
   "forecast_today": {
     "date": "2026-09-14",
-    "city": "Zagreb",
-    "temp_min_c": 15.7,
-    "temp_max_c": 25.5,
-    "humidity": 74,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.6,
+    "temp_max_c": 24.8,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 4.5,
-    "samples": 7
+    "wind_kmh": 4.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-15",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 14.3,
-    "temp_max_c": 24.7,
-    "humidity": 70,
+    "temp_max_c": 24.5,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.2
   },
   "forecast_day_after": {
     "date": "2026-09-16",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 14.7,
-    "temp_max_c": 26.8,
-    "humidity": 58,
+    "temp_max_c": 26.5,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 0.1,
-    "band": "low",
+    "uv": 4.0,
+    "band": "moderate",
     "daily_max": 4.2,
     "peak_time": "2026-09-14T14:00",
-    "safe_minutes": 1111,
+    "safe_minutes": 42,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-14T07:45:36+02:00"
+    "fetched_at": "2026-09-14T13:44:47+02:00"
   }
 }
