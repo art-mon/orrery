@@ -1,15 +1,25 @@
 {
   "generated": "2026-09-14",
   "apod": {
-    "title": "Comet NEOWISE Rising over the Adriatic Sea",
-    "date": "2026-09-13",
-    "explanation": "This sight was worth getting out of bed early.  Just over four years ago, Comet C/2020 F3 (NEOWISE) rose before dawn to the delight of northern sky enthusiasts awake that early. Up before sunrise on July 8th, the featured photographer was able to capture in dramatic fashion one of the few comets visible to the unaided eye this century, an inner-Solar System intruder that has become known as the Great Comet of 2020.  The resulting video detailed Comet NEOWISE from Italy rising over the Adriatic Sea. The featured time-lapse video combines over 240 images taken over 30 minutes.  The comet was seen rising through a foreground of bright and undulating noctilucent clouds, and before a background of distant stars.  Comet NEOWISE remained unexpectedly bright for over a month, with its ion and dust tails found to emanate from a nucleus spanning about five kilometers across.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "video",
-    "url": "https://apod.nasa.gov/apod/image/2609/NoctilucentNeowise_Girotti.mp4",
-    "hdurl": null
+    "title": "Where Your Elements Came From",
+    "date": "2026-09-14",
+    "explanation": "The hydrogen in your body and present in every molecule of water came from the Big Bang.  There are no other appreciable sources of hydrogen in the universe.  The carbon in your body was made by nuclear fusion in the interior of stars, as was the oxygen.  Much of the iron in your body was made during supernovas of stars that occurred long ago and far away.  The gold in your jewelry was likely made from neutron stars during collisions that may have been visible as short-duration gamma-ray bursts or gravitational wave events. Elements like phosphorus and copper are present in our bodies in only small amounts but are essential to the functioning of all known life.  The featured periodic table is color coded to indicate humanity's best guess as to the nuclear origin of all known elements.  The sites of nuclear creation of some elements, such as copper, are not really well known and are continuing topics of observational and computational research.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/ElementOrigins2_svs_1080.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/ElementOrigins2_svs_6000.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tha3",
+        "title": "M5.4 Earthquake - northern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-09-14T02:56:17.419000Z",
+        "coordinates": [
+          -45.3828,
+          25.5449
+        ]
+      },
       {
         "id": "us7000th8u",
         "title": "M5.1 Earthquake - 50 km N of Ruteng, Indonesia",
@@ -149,16 +159,6 @@
           170.0677,
           -19.777
         ]
-      },
-      {
-        "id": "us7000tg3x",
-        "title": "M5.2 Earthquake - 78 km ESE of Isangel, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-09-09T17:01:52.191000Z",
-        "coordinates": [
-          169.9636,
-          -19.8279
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.6,
-    "humidity": 66,
+    "temp_c": 18.7,
+    "feels_c": 18.6,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 1.8
+    "icon": "04d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-14",
     "city": "Zagreb",
-    "temp_min_c": 15.3,
-    "temp_max_c": 23.1,
-    "humidity": 67,
+    "temp_min_c": 15.7,
+    "temp_max_c": 25.5,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.9,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 4.5,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-15",
     "city": "Zagreb",
-    "temp_min_c": 13.6,
-    "temp_max_c": 24.4,
+    "temp_min_c": 14.3,
+    "temp_max_c": 24.7,
     "humidity": 70,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-09-16",
     "city": "Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 27.4,
+    "temp_min_c": 14.7,
+    "temp_max_c": 26.8,
     "humidity": 58,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.6
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
-    "daily_max": 4.7,
+    "daily_max": 4.2,
     "peak_time": "2026-09-14T14:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,39 +336,39 @@
       },
       {
         "time": "2026-09-14T09:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-09-14T10:00",
-        "uv": 1.9
+        "uv": 2.2
       },
       {
         "time": "2026-09-14T11:00",
-        "uv": 2.3
+        "uv": 0.8
       },
       {
         "time": "2026-09-14T12:00",
-        "uv": 1.9
-      },
-      {
-        "time": "2026-09-14T13:00",
-        "uv": 2.9
-      },
-      {
-        "time": "2026-09-14T14:00",
-        "uv": 4.7
-      },
-      {
-        "time": "2026-09-14T15:00",
-        "uv": 4.1
-      },
-      {
-        "time": "2026-09-14T16:00",
         "uv": 3.1
       },
       {
+        "time": "2026-09-14T13:00",
+        "uv": 1.0
+      },
+      {
+        "time": "2026-09-14T14:00",
+        "uv": 4.2
+      },
+      {
+        "time": "2026-09-14T15:00",
+        "uv": 3.1
+      },
+      {
+        "time": "2026-09-14T16:00",
+        "uv": 3.2
+      },
+      {
         "time": "2026-09-14T17:00",
-        "uv": 2.2
+        "uv": 2.0
       },
       {
         "time": "2026-09-14T18:00",
@@ -376,7 +376,7 @@
       },
       {
         "time": "2026-09-14T19:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-09-14T20:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-14T02:41:51+02:00"
+    "fetched_at": "2026-09-14T07:45:36+02:00"
   }
 }
