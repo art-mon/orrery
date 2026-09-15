@@ -1,23 +1,23 @@
 {
   "generated": "2026-09-15",
   "apod": {
-    "title": "Where Your Elements Came From",
-    "date": "2026-09-14",
-    "explanation": "The hydrogen in your body and present in every molecule of water came from the Big Bang.  There are no other appreciable sources of hydrogen in the universe.  The carbon in your body was made by nuclear fusion in the interior of stars, as was the oxygen.  Much of the iron in your body was made during supernovas of stars that occurred long ago and far away.  The gold in your jewelry was likely made from neutron stars during collisions that may have been visible as short-duration gamma-ray bursts or gravitational wave events. Elements like phosphorus and copper are present in our bodies in only small amounts but are essential to the functioning of all known life.  The featured periodic table is color coded to indicate humanity's best guess as to the nuclear origin of all known elements.  The sites of nuclear creation of some elements, such as copper, are not really well known and are continuing topics of observational and computational research.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "A Daytime Eclipse: Moon Occults Venus",
+    "date": "2026-09-15",
+    "explanation": "There was something behind the clouds.  Upon close inspection, it was the Moon, which was hard to see yesterday around noon above the small village of Cessy, France.  But soon, it was not only the Moon. As expected, a bright dot suddenly appeared from behind the Moon -- the planet Venus far in the distance.  Captured in the single featured exposure, both appeared to show a crescent phase.  The Moon's crescent was quite slight -- with only about 10 percent of its face illuminated by the Sun. In contrast, Venus's crescent was more full -- showing about 25 percent illumination. Venus appeared brighter because it is nearer the Sun and because its clouds are more reflective than the dark lunar surface. An occultation of Venus by the Moon is visible to only about 10 percent of the Earth, but in yesterday's event even most of that was experiencing daytime.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/ElementOrigins2_svs_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/ElementOrigins2_svs_6000.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/MoonVenus_Mariat_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/MoonVenus_Mariat_1410.jpg"
   },
   "events": {
     "events": [
       {
         "id": "us7000thhd",
-        "title": "M5.2 Earthquake - 66 km E of Kainantu, Papua New Guinea",
+        "title": "M5.0 Earthquake - 69 km NW of Lae, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-09-14T22:06:54.287000Z",
+        "date": "2026-09-14T22:06:53.342000Z",
         "coordinates": [
-          146.4675,
-          -6.2894
+          146.5257,
+          -6.3071
         ]
       },
       {
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.4,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7
+    "city": "Zagreb",
+    "temp_c": 15.5,
+    "feels_c": 15.4,
+    "humidity": 89,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-15",
-    "city": "Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 28.2,
-    "humidity": 64,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.4,
+    "temp_max_c": 28.4,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear",
-    "icon": "03n",
+    "icon": "01d",
     "wind_kmh": 2.9,
-    "samples": 8
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-16",
-    "city": "Zagreb",
-    "temp_min_c": 16.0,
-    "temp_max_c": 28.3,
+    "city": "City of Zagreb",
+    "temp_min_c": 15.8,
+    "temp_max_c": 31.0,
     "humidity": 53,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.2
+    "wind_kmh": 3.4
   },
   "forecast_day_after": {
     "date": "2026-09-17",
-    "city": "Zagreb",
-    "temp_min_c": 16.1,
-    "temp_max_c": 24.8,
-    "humidity": 61,
+    "city": "City of Zagreb",
+    "temp_min_c": 16.0,
+    "temp_max_c": 20.7,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
+    "description": "light rain",
+    "icon": "10d",
     "wind_kmh": 6.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.6,
     "band": "low",
-    "daily_max": 5.1,
-    "peak_time": "2026-09-15T14:00",
-    "safe_minutes": null,
+    "daily_max": 5.2,
+    "peak_time": "2026-09-15T13:00",
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -352,7 +352,7 @@
       },
       {
         "time": "2026-09-15T13:00",
-        "uv": 5.0
+        "uv": 5.2
       },
       {
         "time": "2026-09-15T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-15T02:15:21+02:00"
+    "fetched_at": "2026-09-15T07:46:54+02:00"
   }
 }
