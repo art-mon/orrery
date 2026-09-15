@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-14",
+  "generated": "2026-09-15",
   "apod": {
     "title": "Where Your Elements Came From",
     "date": "2026-09-14",
@@ -10,6 +10,16 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000thhd",
+        "title": "M5.2 Earthquake - 66 km E of Kainantu, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-09-14T22:06:54.287000Z",
+        "coordinates": [
+          146.4675,
+          -6.2894
+        ]
+      },
       {
         "id": "us7000thgs",
         "title": "M5.3 Earthquake - off the coast of Michoacan, Mexico",
@@ -149,61 +159,11 @@
           127.7505,
           -8.5914
         ]
-      },
-      {
-        "id": "us7000tgey",
-        "title": "M5.4 Earthquake - southern East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-09-10T18:21:18.934000Z",
-        "coordinates": [
-          -109.1514,
-          -34.8341
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2010 FX9)",
-        "hazardous": false,
-        "diameter_m": 92,
-        "close_approach_date": "2026-09-14",
-        "miss_distance_km": 3592430,
-        "velocity_kmh": 39846
-      },
-      {
-        "name": "(2018 VG)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-09-14",
-        "miss_distance_km": 8072829,
-        "velocity_kmh": 31892
-      },
-      {
-        "name": "(2014 QS295)",
-        "hazardous": false,
-        "diameter_m": 231,
-        "close_approach_date": "2026-09-14",
-        "miss_distance_km": 46111554,
-        "velocity_kmh": 33425
-      },
-      {
-        "name": "(2012 UD34)",
-        "hazardous": false,
-        "diameter_m": 711,
-        "close_approach_date": "2026-09-14",
-        "miss_distance_km": 68422839,
-        "velocity_kmh": 4910
-      },
-      {
-        "name": "(2000 EB14)",
-        "hazardous": false,
-        "diameter_m": 122,
-        "close_approach_date": "2026-09-14",
-        "miss_distance_km": 73522639,
-        "velocity_kmh": 71143
-      },
       {
         "name": "(2019 SQ8)",
         "hazardous": false,
@@ -243,43 +203,72 @@
         "close_approach_date": "2026-09-15",
         "miss_distance_km": 43071600,
         "velocity_kmh": 22660
+      },
+      {
+        "name": "(2020 CH1)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 47065846,
+        "velocity_kmh": 40182
+      },
+      {
+        "name": "(2017 TF2)",
+        "hazardous": false,
+        "diameter_m": 518,
+        "close_approach_date": "2026-09-15",
+        "miss_distance_km": 54500564,
+        "velocity_kmh": 72109
+      },
+      {
+        "name": "(2007 QE3)",
+        "hazardous": false,
+        "diameter_m": 597,
+        "close_approach_date": "2026-09-16",
+        "miss_distance_km": 13284379,
+        "velocity_kmh": 65481
+      },
+      {
+        "name": "(2007 GU4)",
+        "hazardous": false,
+        "diameter_m": 175,
+        "close_approach_date": "2026-09-16",
+        "miss_distance_km": 20918863,
+        "velocity_kmh": 63219
+      },
+      {
+        "name": "(2016 TH10)",
+        "hazardous": false,
+        "diameter_m": 65,
+        "close_approach_date": "2026-09-16",
+        "miss_distance_km": 23261739,
+        "velocity_kmh": 37468
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.6,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_c": 16.5,
+    "feels_c": 16.4,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 9.3
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-09-14",
-    "city": "Zagreb",
-    "temp_min_c": 17.6,
-    "temp_max_c": 17.6,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 9.3,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-09-15",
     "city": "Zagreb",
-    "temp_min_c": 16.2,
+    "temp_min_c": 16.1,
     "temp_max_c": 28.2,
     "humidity": 64,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 2.6
+    "description": "clear",
+    "icon": "03n",
+    "wind_kmh": 2.9,
+    "samples": 8
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-09-16",
     "city": "Zagreb",
     "temp_min_c": 16.0,
@@ -290,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 3.2
   },
+  "forecast_day_after": {
+    "date": "2026-09-17",
+    "city": "Zagreb",
+    "temp_min_c": 16.1,
+    "temp_max_c": 24.8,
+    "humidity": 61,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.4
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.1,
-    "peak_time": "2026-09-14T14:00",
+    "daily_max": 5.1,
+    "peak_time": "2026-09-15T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-09-14T00:00",
+        "time": "2026-09-15T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T01:00",
+        "time": "2026-09-15T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T02:00",
+        "time": "2026-09-15T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T03:00",
+        "time": "2026-09-15T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T04:00",
+        "time": "2026-09-15T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T05:00",
+        "time": "2026-09-15T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T06:00",
+        "time": "2026-09-15T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T07:00",
+        "time": "2026-09-15T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T08:00",
-        "uv": 0.1
+        "time": "2026-09-15T08:00",
+        "uv": 0.5
       },
       {
-        "time": "2026-09-14T09:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-09-14T10:00",
-        "uv": 2.2
-      },
-      {
-        "time": "2026-09-14T11:00",
-        "uv": 1.8
-      },
-      {
-        "time": "2026-09-14T12:00",
-        "uv": 2.8
-      },
-      {
-        "time": "2026-09-14T13:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-09-14T14:00",
-        "uv": 3.1
-      },
-      {
-        "time": "2026-09-14T15:00",
+        "time": "2026-09-15T09:00",
         "uv": 1.4
       },
       {
-        "time": "2026-09-14T16:00",
-        "uv": 2.2
+        "time": "2026-09-15T10:00",
+        "uv": 2.6
       },
       {
-        "time": "2026-09-14T17:00",
-        "uv": 1.6
+        "time": "2026-09-15T11:00",
+        "uv": 3.8
       },
       {
-        "time": "2026-09-14T18:00",
-        "uv": 1.0
+        "time": "2026-09-15T12:00",
+        "uv": 4.6
       },
       {
-        "time": "2026-09-14T19:00",
+        "time": "2026-09-15T13:00",
+        "uv": 5.0
+      },
+      {
+        "time": "2026-09-15T14:00",
+        "uv": 5.1
+      },
+      {
+        "time": "2026-09-15T15:00",
+        "uv": 4.5
+      },
+      {
+        "time": "2026-09-15T16:00",
+        "uv": 3.5
+      },
+      {
+        "time": "2026-09-15T17:00",
+        "uv": 2.3
+      },
+      {
+        "time": "2026-09-15T18:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-09-15T19:00",
         "uv": 0.2
       },
       {
-        "time": "2026-09-14T20:00",
+        "time": "2026-09-15T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T21:00",
+        "time": "2026-09-15T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T22:00",
+        "time": "2026-09-15T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-14T23:00",
+        "time": "2026-09-15T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-14T23:26:44+02:00"
+    "fetched_at": "2026-09-15T02:15:21+02:00"
   }
 }
