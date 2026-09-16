@@ -1,15 +1,35 @@
 {
   "generated": "2026-09-16",
   "apod": {
-    "title": "A Daytime Eclipse: Moon Occults Venus",
-    "date": "2026-09-15",
-    "explanation": "There was something behind the clouds.  Upon close inspection, it was the Moon, which was hard to see yesterday around noon above the small village of Cessy, France.  But soon, it was not only the Moon. As expected, a bright dot suddenly appeared from behind the Moon -- the planet Venus far in the distance.  Captured in the single featured exposure, both appeared to show a crescent phase.  The Moon's crescent was quite slight -- with only about 10 percent of its face illuminated by the Sun. In contrast, Venus's crescent was more full -- showing about 25 percent illumination. Venus appeared brighter because it is nearer the Sun and because its clouds are more reflective than the dark lunar surface. An occultation of Venus by the Moon is visible to only about 10 percent of the Earth, but in yesterday's event even most of that was experiencing daytime.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Webb's View of M64",
+    "date": "2026-09-16",
+    "explanation": "Sometimes where Hubble finds darkness, Webb sees light. An example is today\u2019s composite images of Messier 64 (M64), a nearby spiral galaxy of many names. The dark band of dust partially blocking its bright core earned it the moniker \u201cthe Black Eye Galaxy.\u201d Webb\u2019s Mid-InfraRed Instrument (MIRI) sees that dust, shown in red, as it absorbs and re-emits light from surrounding newborn stars. These young stars are embedded in pink star-forming regions in the secondary Hubble-only image. M64\u2019s inner and outer gas regions counter-rotate, creating regions of increased star formation where the two gas \u201ccurrents\u201d meet and compress. A merger between M64 and a smaller galaxy was likely the cause of the opposing motion of the outer gas. Spiral galaxies were once thought to have peaceful histories. M64 was key evidence that spiral galaxies, including the Milky Way, can and do experience mergers. Webb\u2019s view of M64 will tell astronomers about the structure, motion, and composition of the galaxy\u2019s dust and add context to the galaxy\u2019s merger history and evolution.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/MoonVenus_Mariat_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/MoonVenus_Mariat_1410.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/M64_Webb_1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/M64_Webb.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ths9",
+        "title": "M5.0 Earthquake - 281 km SSE of Dunhuang, China",
+        "category": "Earthquake",
+        "date": "2026-09-16T05:52:03.328000Z",
+        "coordinates": [
+          95.4963,
+          37.7078
+        ]
+      },
+      {
+        "id": "us7000thrz",
+        "title": "M5.0 Earthquake - 60 km SSW of Oc\u00f3s, Guatemala",
+        "category": "Earthquake",
+        "date": "2026-09-16T03:45:03.456000Z",
+        "coordinates": [
+          -92.4543,
+          14.0287
+        ]
+      },
       {
         "id": "us7000thhd",
         "title": "M5.0 Earthquake - 69 km NW of Lae, Papua New Guinea",
@@ -139,26 +159,6 @@
           128.9383,
           -7.2863
         ]
-      },
-      {
-        "id": "us7000tgky",
-        "title": "M5.3 Earthquake - 151 km WSW of Adak, Alaska",
-        "category": "Earthquake",
-        "date": "2026-09-11T10:47:12.613000Z",
-        "coordinates": [
-          -178.5429,
-          51.213
-        ]
-      },
-      {
-        "id": "us7000tgf2",
-        "title": "M5.3 Earthquake - 83 km E of Lospalos, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-09-10T18:44:40.243000Z",
-        "coordinates": [
-          127.7505,
-          -8.5914
-        ]
       }
     ]
   },
@@ -248,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.1,
-    "feels_c": 15.8,
-    "humidity": 79,
+    "temp_c": 18.7,
+    "feels_c": 18.5,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-16",
     "city": "Zagreb",
-    "temp_min_c": 15.2,
+    "temp_min_c": 18.7,
     "temp_max_c": 23.4,
-    "humidity": 68,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.2,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 3.7,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-17",
@@ -277,25 +277,25 @@
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.6
+    "wind_kmh": 6.7
   },
   "forecast_day_after": {
     "date": "2026-09-18",
     "city": "Zagreb",
-    "temp_min_c": 13.5,
-    "temp_max_c": 22.2,
-    "humidity": 77,
+    "temp_min_c": 13.2,
+    "temp_max_c": 22.5,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 2.6
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.9,
     "band": "low",
     "daily_max": 5.2,
     "peak_time": "2026-09-16T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 88,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-16T03:04:00+02:00"
+    "fetched_at": "2026-09-16T09:11:24+02:00"
   }
 }
