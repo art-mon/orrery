@@ -91,23 +91,13 @@
         ]
       },
       {
-        "id": "us7000thxc",
-        "title": "M5.0 Earthquake - 29 km WSW of Sip\u00ed, Colombia",
-        "category": "Earthquake",
-        "date": "2026-09-16T20:12:52.070000Z",
-        "coordinates": [
-          -76.8772,
-          4.5241
-        ]
-      },
-      {
         "id": "us7000thwt",
-        "title": "M5.1 Earthquake - 77 km SSW of San Jose Village, Northern Mariana Islands",
+        "title": "M5.1 Earthquake - 80 km SSW of San Jose Village, Northern Mariana Islands",
         "category": "Earthquake",
-        "date": "2026-09-16T18:06:40.886000Z",
+        "date": "2026-09-16T18:06:40.400000Z",
         "coordinates": [
-          145.4729,
-          14.2866
+          145.4199,
+          14.2719
         ]
       },
       {
@@ -158,6 +148,16 @@
         "coordinates": [
           146.5257,
           -6.3071
+        ]
+      },
+      {
+        "id": "us7000thgs",
+        "title": "M5.3 Earthquake - off the coast of Michoacan, Mexico",
+        "category": "Earthquake",
+        "date": "2026-09-14T20:38:59.760000Z",
+        "coordinates": [
+          -104.4352,
+          15.0879
         ]
       }
     ]
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 22.6,
-    "feels_c": 22.6,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_c": 19.2,
+    "feels_c": 19.3,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 20.7,
-    "temp_max_c": 22.6,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 19.2,
+    "temp_max_c": 19.2,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.4,
-    "samples": 3
+    "wind_kmh": 3.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 23.7,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_min_c": 15.8,
+    "temp_max_c": 23.8,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
@@ -281,9 +281,9 @@
   },
   "forecast_day_after": {
     "date": "2026-09-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.9,
-    "temp_max_c": 24.3,
+    "city": "Zagreb",
+    "temp_min_c": 15.0,
+    "temp_max_c": 26.1,
     "humidity": 76,
     "condition": "Clouds",
     "description": "scattered clouds",
@@ -372,7 +372,7 @@
       },
       {
         "time": "2026-09-18T18:00",
-        "uv": 1.0
+        "uv": 0.9
       },
       {
         "time": "2026-09-18T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-18T19:28:34+02:00"
+    "fetched_at": "2026-09-18T22:22:39+02:00"
   }
 }
