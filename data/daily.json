@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tid4",
+        "title": "M5.2 Earthquake - 28 km NE of Villa Presidente Frei, Chile",
+        "category": "Earthquake",
+        "date": "2026-09-18T16:52:07.958000Z",
+        "coordinates": [
+          -70.3344,
+          -33.3109
+        ]
+      },
+      {
+        "id": "us7000tib8",
+        "title": "M5.2 Earthquake - 189 km SSW of Pelabuhanratu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-09-18T14:36:17.895000Z",
+        "coordinates": [
+          105.9112,
+          -8.5809
+        ]
+      },
+      {
         "id": "us7000ti89",
         "title": "M5.0 Earthquake - Izu Islands, Japan region",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           146.5257,
           -6.3071
         ]
-      },
-      {
-        "id": "us7000thgs",
-        "title": "M5.3 Earthquake - off the coast of Michoacan, Mexico",
-        "category": "Earthquake",
-        "date": "2026-09-14T20:38:59.760000Z",
-        "coordinates": [
-          -104.4352,
-          15.0879
-        ]
-      },
-      {
-        "id": "us7000thea",
-        "title": "M5.2 Earthquake - 135 km SE of Gizo, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-09-14T16:15:05.947000Z",
-        "coordinates": [
-          157.7415,
-          -8.9454
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
+    "city": "City of Zagreb",
     "temp_c": 22.6,
     "feels_c": 22.6,
     "humidity": 65,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4
+    "icon": "04n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-18",
-    "city": "Zagreb",
-    "temp_min_c": 16.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 20.7,
     "temp_max_c": 22.6,
-    "humidity": 73,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 4.9,
-    "samples": 4
+    "icon": "04n",
+    "wind_kmh": 3.4,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-19",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 14.6,
     "temp_max_c": 23.7,
-    "humidity": 82,
-    "condition": "Rain",
+    "humidity": 81,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-09-20",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.9,
-    "temp_max_c": 24.0,
-    "humidity": 78,
+    "temp_max_c": 24.3,
+    "humidity": 76,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 3.8,
-    "band": "moderate",
-    "daily_max": 4.9,
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 4.8,
     "peak_time": "2026-09-18T13:00",
-    "safe_minutes": 44,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,7 +336,7 @@
       },
       {
         "time": "2026-09-18T09:00",
-        "uv": 1.1
+        "uv": 1.4
       },
       {
         "time": "2026-09-18T10:00",
@@ -348,11 +348,11 @@
       },
       {
         "time": "2026-09-18T12:00",
-        "uv": 4.4
+        "uv": 4.5
       },
       {
         "time": "2026-09-18T13:00",
-        "uv": 4.9
+        "uv": 4.8
       },
       {
         "time": "2026-09-18T14:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-18T15:22:37+02:00"
+    "fetched_at": "2026-09-18T19:28:34+02:00"
   }
 }
