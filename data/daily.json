@@ -1,12 +1,7 @@
 {
   "generated": "2026-09-18",
   "apod": {
-    "title": "A Treasure Chest in the Carina Nebula",
-    "date": "2026-09-17",
-    "explanation": "This treasure chest is full of stars.   The featured image was obtained with NASA's James Webb Space Telescope and shows a dust pilar in the Carina Nebula inside our Galaxy, roughly 7500 light-years away.   It is formed by interstellar gas and dust, and shaped by powerful stellar winds and radiation form neighboring stars like the nearby Eta Carinae stellar system which is more luminous than 5 million suns.   The star formation inside the pillar is excavating its head, creating the open lid of the chest.     Astronomers estimate that there are about 70 stars in a compact cluster inside the pillar.   This cluster is now thought to be only around 1.3 million years old.   Its bounty of young stars includes a massive star approximately 19 times as massive as the Sun.   More massive stars are rarer, shine brighter and evolve faster than less massive stars.   They are the shiniest jewels in the treasure chest.     APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/JWST_Treasure_Chest_800.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/JWST_Treasure_Chest.jpg"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,38 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2019 GM1)",
-        "hazardous": false,
-        "diameter_m": 21,
-        "close_approach_date": "2026-09-17",
-        "miss_distance_km": 12667838,
-        "velocity_kmh": 13109
-      },
-      {
-        "name": "(2016 VH2)",
-        "hazardous": false,
-        "diameter_m": 56,
-        "close_approach_date": "2026-09-17",
-        "miss_distance_km": 36432856,
-        "velocity_kmh": 35748
-      },
-      {
-        "name": "(2013 ST)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-09-17",
-        "miss_distance_km": 38638849,
-        "velocity_kmh": 51354
-      },
-      {
-        "name": "(2006 SB142)",
-        "hazardous": false,
-        "diameter_m": 259,
-        "close_approach_date": "2026-09-17",
-        "miss_distance_km": 74149448,
-        "velocity_kmh": 13826
-      },
-      {
         "name": "260277 (2004 TR12)",
         "hazardous": false,
         "diameter_m": 1318,
@@ -243,52 +206,84 @@
         "close_approach_date": "2026-09-18",
         "miss_distance_km": 58933352,
         "velocity_kmh": 51425
+      },
+      {
+        "name": "(2007 AM)",
+        "hazardous": false,
+        "diameter_m": 257,
+        "close_approach_date": "2026-09-18",
+        "miss_distance_km": 69414332,
+        "velocity_kmh": 46451
+      },
+      {
+        "name": "(2018 MC5)",
+        "hazardous": false,
+        "diameter_m": 51,
+        "close_approach_date": "2026-09-19",
+        "miss_distance_km": 19518493,
+        "velocity_kmh": 29978
+      },
+      {
+        "name": "(2014 FD7)",
+        "hazardous": false,
+        "diameter_m": 301,
+        "close_approach_date": "2026-09-19",
+        "miss_distance_km": 25377526,
+        "velocity_kmh": 29499
+      },
+      {
+        "name": "(2012 EP5)",
+        "hazardous": false,
+        "diameter_m": 273,
+        "close_approach_date": "2026-09-19",
+        "miss_distance_km": 49646713,
+        "velocity_kmh": 46611
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.4,
-    "humidity": 85,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "temp_c": 14.2,
+    "feels_c": 14.1,
+    "humidity": 91,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-18",
     "city": "City of Zagreb",
-    "temp_min_c": 15.2,
-    "temp_max_c": 26.1,
-    "humidity": 81,
+    "temp_min_c": 14.1,
+    "temp_max_c": 21.9,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 3.5,
-    "samples": 9
+    "icon": "02n",
+    "wind_kmh": 4.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-19",
     "city": "City of Zagreb",
-    "temp_min_c": 16.2,
-    "temp_max_c": 23.3,
+    "temp_min_c": 16.4,
+    "temp_max_c": 24.0,
     "humidity": 84,
     "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.7
+    "wind_kmh": 4.1
   },
   "forecast_day_after": {
     "date": "2026-09-20",
     "city": "City of Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 23.6,
+    "temp_min_c": 14.5,
+    "temp_max_c": 23.5,
     "humidity": 78,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 2.7
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-18T01:53:59+02:00"
+    "fetched_at": "2026-09-18T05:06:57+02:00"
   }
 }
