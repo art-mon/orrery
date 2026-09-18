@@ -1,10 +1,25 @@
 {
   "generated": "2026-09-18",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Messier 33: The Triangulum Galaxy",
+    "date": "2026-09-18",
+    "explanation": "The small, northern constellation Triangulum harbors this magnificent face-on spiral galaxy, Messier 33. Its popular names include the Pinwheel Galaxy or just the Triangulum Galaxy. M33 is over 50,000 light-years in diameter, third largest in the Local Group of galaxies after the Andromeda Galaxy (M31), and our own Milky Way. About 3 million light-years from the Milky Way, M33 is itself thought to be a satellite of the Andromeda Galaxy and astronomers in these two galaxies would likely have spectacular views of each other's grand spiral star systems. As for the view from the Milky Way, this sharp telescopic image shows off M33's blue star clusters and pinkish star forming regions along the galaxy's loosely wound spiral arms. In fact, the cavernous NGC 604 is the brightest star forming region, seen here at about the 5 o'clock position from the galaxy center. Like M31, M33's population of well-measured variable stars have helped make this nearby spiral a cosmic yardstick for establishing the distance scale of the Universe.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/m33m14_rasa3NM1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/m33m14_rasa3NM.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ti89",
+        "title": "M5.0 Earthquake - Izu Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-09-18T07:19:28.254000Z",
+        "coordinates": [
+          141.5763,
+          32.243
+        ]
+      },
       {
         "id": "us7000ti1p",
         "title": "M6.5 Earthquake - 165 km W of Nikolski, Alaska",
@@ -144,16 +159,6 @@
           157.7415,
           -8.9454
         ]
-      },
-      {
-        "id": "us7000thcs",
-        "title": "M5.6 Earthquake - 78 km NNE of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-14T10:58:03.047000Z",
-        "coordinates": [
-          128.1704,
-          2.4223
-        ]
       }
     ]
   },
@@ -243,35 +248,35 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 14.1,
-    "humidity": 91,
+    "temp_c": 18.1,
+    "feels_c": 18.2,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 7.4
+    "icon": "02d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-18",
     "city": "City of Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 21.9,
-    "humidity": 79,
+    "temp_min_c": 16.2,
+    "temp_max_c": 20.8,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 4.1,
-    "samples": 7
+    "icon": "02d",
+    "wind_kmh": 3.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-19",
     "city": "City of Zagreb",
-    "temp_min_c": 16.4,
-    "temp_max_c": 24.0,
-    "humidity": 84,
+    "temp_min_c": 16.2,
+    "temp_max_c": 24.1,
+    "humidity": 82,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
+    "description": "light rain",
+    "icon": "10d",
     "wind_kmh": 4.1
   },
   "forecast_day_after": {
@@ -283,14 +288,14 @@
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 2.7
+    "wind_kmh": 2.8
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 4.8,
-    "peak_time": "2026-09-18T14:00",
-    "safe_minutes": null,
+    "uv": 3.5,
+    "band": "moderate",
+    "daily_max": 4.9,
+    "peak_time": "2026-09-18T13:00",
+    "safe_minutes": 47,
     "skin_type": 2,
     "hourly": [
       {
@@ -327,11 +332,11 @@
       },
       {
         "time": "2026-09-18T08:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-09-18T09:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-09-18T10:00",
@@ -343,11 +348,11 @@
       },
       {
         "time": "2026-09-18T12:00",
-        "uv": 4.3
+        "uv": 4.4
       },
       {
         "time": "2026-09-18T13:00",
-        "uv": 4.6
+        "uv": 4.9
       },
       {
         "time": "2026-09-18T14:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-18T05:06:57+02:00"
+    "fetched_at": "2026-09-18T10:44:16+02:00"
   }
 }
