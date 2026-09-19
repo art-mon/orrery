@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-19",
+  "generated": "2026-09-20",
   "apod": {
     "title": "A Zodiacal Night",
     "date": "2026-09-19",
@@ -10,6 +10,16 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tild",
+        "title": "M5.2 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-09-19T20:24:42.449000Z",
+        "coordinates": [
+          -33.4247,
+          57.1175
+        ]
+      },
       {
         "id": "us7000tiju",
         "title": "M5.1 Earthquake - 67 km NE of Ruteng, Indonesia",
@@ -149,16 +159,6 @@
           145.4199,
           14.2719
         ]
-      },
-      {
-        "id": "us7000thv6",
-        "title": "M5.0 Earthquake - 5 km NE of Mitsukaid\u014d, Japan",
-        "category": "Earthquake",
-        "date": "2026-09-16T15:07:38.245000Z",
-        "coordinates": [
-          140.0207,
-          36.0556
-        ]
       }
     ]
   },
@@ -248,153 +248,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 20.4,
-    "humidity": 75,
+    "temp_c": 18.9,
+    "feels_c": 18.9,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-09-19",
-    "city": "Zagreb",
-    "temp_min_c": 19.7,
-    "temp_max_c": 20.4,
-    "humidity": 76,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.0,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-09-20",
-    "city": "Zagreb",
-    "temp_min_c": 16.6,
-    "temp_max_c": 26.5,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.6
-  },
-  "forecast_day_after": {
-    "date": "2026-09-21",
-    "city": "Zagreb",
-    "temp_min_c": 13.8,
-    "temp_max_c": 21.6,
+    "city": "Donji grad",
+    "temp_min_c": 18.3,
+    "temp_max_c": 27.4,
     "humidity": 72,
     "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 3.2,
+    "samples": 9
+  },
+  "forecast": {
+    "date": "2026-09-21",
+    "city": "Donji grad",
+    "temp_min_c": 15.3,
+    "temp_max_c": 22.7,
+    "humidity": 64,
+    "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 5.4
+    "wind_kmh": 6.7
+  },
+  "forecast_day_after": {
+    "date": "2026-09-22",
+    "city": "Donji grad",
+    "temp_min_c": 10.7,
+    "temp_max_c": 19.1,
+    "humidity": 55,
+    "condition": "Clear",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 8.1
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 5.0,
-    "peak_time": "2026-09-19T13:00",
+    "peak_time": "2026-09-20T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-09-19T00:00",
+        "time": "2026-09-20T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T01:00",
+        "time": "2026-09-20T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T02:00",
+        "time": "2026-09-20T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T03:00",
+        "time": "2026-09-20T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T04:00",
+        "time": "2026-09-20T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T05:00",
+        "time": "2026-09-20T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T06:00",
+        "time": "2026-09-20T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T07:00",
+        "time": "2026-09-20T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T08:00",
+        "time": "2026-09-20T08:00",
         "uv": 0.4
       },
       {
-        "time": "2026-09-19T09:00",
-        "uv": 1.3
+        "time": "2026-09-20T09:00",
+        "uv": 1.4
       },
       {
-        "time": "2026-09-19T10:00",
-        "uv": 2.2
+        "time": "2026-09-20T10:00",
+        "uv": 2.5
       },
       {
-        "time": "2026-09-19T11:00",
-        "uv": 3.6
+        "time": "2026-09-20T11:00",
+        "uv": 3.7
       },
       {
-        "time": "2026-09-19T12:00",
-        "uv": 4.5
+        "time": "2026-09-20T12:00",
+        "uv": 4.6
       },
       {
-        "time": "2026-09-19T13:00",
+        "time": "2026-09-20T13:00",
         "uv": 5.0
       },
       {
-        "time": "2026-09-19T14:00",
-        "uv": 4.9
+        "time": "2026-09-20T14:00",
+        "uv": 5.0
       },
       {
-        "time": "2026-09-19T15:00",
+        "time": "2026-09-20T15:00",
         "uv": 4.3
       },
       {
-        "time": "2026-09-19T16:00",
-        "uv": 3.3
+        "time": "2026-09-20T16:00",
+        "uv": 3.1
       },
       {
-        "time": "2026-09-19T17:00",
-        "uv": 2.1
+        "time": "2026-09-20T17:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-09-19T18:00",
-        "uv": 1.0
+        "time": "2026-09-20T18:00",
+        "uv": 0.9
       },
       {
-        "time": "2026-09-19T19:00",
+        "time": "2026-09-20T19:00",
         "uv": 0.2
       },
       {
-        "time": "2026-09-19T20:00",
+        "time": "2026-09-20T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T21:00",
+        "time": "2026-09-20T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T22:00",
+        "time": "2026-09-20T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-19T23:00",
+        "time": "2026-09-20T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-19T21:08:21+02:00"
+    "fetched_at": "2026-09-20T00:05:39+02:00"
   }
 }
