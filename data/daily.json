@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tigd",
+        "title": "M5.5 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-18T23:18:28.306000Z",
+        "coordinates": [
+          -177.2286,
+          -27.8581
+        ]
+      },
+      {
         "id": "us7000tid4",
         "title": "M5.2 Earthquake - 28 km NE of Villa Presidente Frei, Chile",
         "category": "Earthquake",
@@ -149,77 +159,11 @@
           -92.4543,
           14.0287
         ]
-      },
-      {
-        "id": "us7000thhd",
-        "title": "M5.0 Earthquake - 69 km NW of Lae, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-09-14T22:06:53.342000Z",
-        "coordinates": [
-          146.5257,
-          -6.3071
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "260277 (2004 TR12)",
-        "hazardous": false,
-        "diameter_m": 1318,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 30398631,
-        "velocity_kmh": 55618
-      },
-      {
-        "name": "(2016 RS)",
-        "hazardous": false,
-        "diameter_m": 139,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 37799731,
-        "velocity_kmh": 26277
-      },
-      {
-        "name": "(2015 YA)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 42366963,
-        "velocity_kmh": 35391
-      },
-      {
-        "name": "(2016 FZ12)",
-        "hazardous": false,
-        "diameter_m": 26,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 46169202,
-        "velocity_kmh": 62774
-      },
-      {
-        "name": "(2017 XD)",
-        "hazardous": false,
-        "diameter_m": 2005,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 48014449,
-        "velocity_kmh": 133396
-      },
-      {
-        "name": "(2009 YS)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 58933352,
-        "velocity_kmh": 51425
-      },
-      {
-        "name": "(2007 AM)",
-        "hazardous": false,
-        "diameter_m": 257,
-        "close_approach_date": "2026-09-18",
-        "miss_distance_km": 69414332,
-        "velocity_kmh": 46451
-      },
       {
         "name": "(2018 MC5)",
         "hazardous": false,
@@ -243,30 +187,86 @@
         "close_approach_date": "2026-09-19",
         "miss_distance_km": 49646713,
         "velocity_kmh": 46611
+      },
+      {
+        "name": "(2017 US)",
+        "hazardous": false,
+        "diameter_m": 34,
+        "close_approach_date": "2026-09-19",
+        "miss_distance_km": 57185544,
+        "velocity_kmh": 61103
+      },
+      {
+        "name": "(2013 TM127)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-09-19",
+        "miss_distance_km": 70050329,
+        "velocity_kmh": 92144
+      },
+      {
+        "name": "(2012 RL15)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-09-20",
+        "miss_distance_km": 37163915,
+        "velocity_kmh": 64823
+      },
+      {
+        "name": "(2014 SJ262)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-09-20",
+        "miss_distance_km": 39953697,
+        "velocity_kmh": 39488
+      },
+      {
+        "name": "(2018 BH3)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-09-20",
+        "miss_distance_km": 64369648,
+        "velocity_kmh": 56757
+      },
+      {
+        "name": "(2019 UK12)",
+        "hazardous": false,
+        "diameter_m": 41,
+        "close_approach_date": "2026-09-20",
+        "miss_distance_km": 64886245,
+        "velocity_kmh": 58746
+      },
+      {
+        "name": "(2010 JA)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-09-21",
+        "miss_distance_km": 10081613,
+        "velocity_kmh": 24046
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.7,
-    "humidity": 81,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
+    "temp_c": 16.7,
+    "feels_c": 16.9,
+    "humidity": 94,
+    "condition": "Rain",
+    "description": "heavy intensity rain",
+    "icon": "10n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-19",
     "city": "Zagreb",
-    "temp_min_c": 16.2,
+    "temp_min_c": 16.1,
     "temp_max_c": 23.8,
-    "humidity": 80,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 4.7,
-    "samples": 9
+    "humidity": 83,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 4.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-20",
@@ -293,8 +293,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 5.0,
-    "peak_time": "2026-09-19T13:00",
+    "daily_max": 4.5,
+    "peak_time": "2026-09-19T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -332,15 +332,15 @@
       },
       {
         "time": "2026-09-19T08:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-09-19T09:00",
-        "uv": 1.0
+        "uv": 1.3
       },
       {
         "time": "2026-09-19T10:00",
-        "uv": 2.1
+        "uv": 2.5
       },
       {
         "time": "2026-09-19T11:00",
@@ -348,15 +348,15 @@
       },
       {
         "time": "2026-09-19T12:00",
-        "uv": 4.5
+        "uv": 3.4
       },
       {
         "time": "2026-09-19T13:00",
-        "uv": 5.0
+        "uv": 4.0
       },
       {
         "time": "2026-09-19T14:00",
-        "uv": 5.0
+        "uv": 4.5
       },
       {
         "time": "2026-09-19T15:00",
@@ -368,11 +368,11 @@
       },
       {
         "time": "2026-09-19T17:00",
-        "uv": 2.0
+        "uv": 2.1
       },
       {
         "time": "2026-09-19T18:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-09-19T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-19T01:00:05+02:00"
+    "fetched_at": "2026-09-19T03:06:30+02:00"
   }
 }
