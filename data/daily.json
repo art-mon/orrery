@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tiis",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-19T09:59:59.264000Z",
+        "coordinates": [
+          -28.1116,
+          -55.6255
+        ]
+      },
+      {
         "id": "us7000tih8",
         "title": "M5.2 Earthquake - 210 km WNW of Abepura, Indonesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           147.1141,
           14.3886
         ]
-      },
-      {
-        "id": "us7000ths9",
-        "title": "M5.0 Earthquake - 281 km SSE of Dunhuang, China",
-        "category": "Earthquake",
-        "date": "2026-09-16T05:52:03.328000Z",
-        "coordinates": [
-          95.4963,
-          37.7078
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 19.0,
-    "humidity": 90,
+    "city": "Donji grad",
+    "temp_c": 24.8,
+    "feels_c": 24.9,
+    "humidity": 60,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.7
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-19",
     "city": "Zagreb",
-    "temp_min_c": 18.7,
-    "temp_max_c": 25.2,
-    "humidity": 78,
+    "temp_min_c": 19.0,
+    "temp_max_c": 24.8,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.2,
-    "samples": 6
+    "icon": "02d",
+    "wind_kmh": 2.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-20",
     "city": "Zagreb",
-    "temp_min_c": 16.4,
-    "temp_max_c": 27.1,
-    "humidity": 75,
+    "temp_min_c": 16.1,
+    "temp_max_c": 26.4,
+    "humidity": 79,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 2.7
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 2.1
   },
   "forecast_day_after": {
     "date": "2026-09-21",
     "city": "Zagreb",
-    "temp_min_c": 14.4,
-    "temp_max_c": 21.5,
-    "humidity": 64,
+    "temp_min_c": 13.7,
+    "temp_max_c": 19.9,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.0
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 1.8,
-    "band": "low",
-    "daily_max": 4.5,
-    "peak_time": "2026-09-19T14:00",
-    "safe_minutes": 95,
+    "uv": 4.7,
+    "band": "moderate",
+    "daily_max": 5.0,
+    "peak_time": "2026-09-19T13:00",
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,19 +344,19 @@
       },
       {
         "time": "2026-09-19T11:00",
-        "uv": 3.5
+        "uv": 3.6
       },
       {
         "time": "2026-09-19T12:00",
-        "uv": 3.4
+        "uv": 4.6
       },
       {
         "time": "2026-09-19T13:00",
-        "uv": 4.0
+        "uv": 5.0
       },
       {
         "time": "2026-09-19T14:00",
-        "uv": 4.5
+        "uv": 4.9
       },
       {
         "time": "2026-09-19T15:00",
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-09-19T16:00",
-        "uv": 3.3
+        "uv": 3.4
       },
       {
         "time": "2026-09-19T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-19T09:00:42+02:00"
+    "fetched_at": "2026-09-19T14:15:37+02:00"
   }
 }
