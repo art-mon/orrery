@@ -1,15 +1,40 @@
 {
   "generated": "2026-09-20",
   "apod": {
-    "title": "A Zodiacal Night",
-    "date": "2026-09-19",
-    "explanation": "Also known as the false dawn, a luminous band of zodiacal light is captured in this dark night skyscape. The serene view was recorded just before the beginning of astronomical twilight during September's star party at the remote Hanle Dark Sky Reserve, Ladakh, India, planet Earth. At about 4,500 meters altitude, the dark sky reserve presents a haven for hardy stargazing and astrophotography enthusiasts. While meteors streak through the night, bright planet Jupiter appears immersed in the faint zodiacal glow near the eastern horizon. Follow the zodiacal band toward the zenith to find open star cluster M44 and a yellowish tinged planet Mars near the center of the frame. In fact, serendipitous detections of interplanetary dust by NASA's Juno spacecraft suggest Mars itself is the source of dust that back scatters sunlight and creates zodiacal light in planet Earth's night.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/2026-09-09ZodiacalLightHSP1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/2026-09-09ZodiacalLightHSP.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tip2",
+        "title": "M5.0 Earthquake - 103 km W of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-09-20T05:07:03.869000Z",
+        "coordinates": [
+          -174.7641,
+          -15.8926
+        ]
+      },
+      {
+        "id": "us7000tinl",
+        "title": "M5.3 Earthquake - 108 km ESE of Yigo Village, Guam",
+        "category": "Earthquake",
+        "date": "2026-09-20T03:43:24.649000Z",
+        "coordinates": [
+          145.7591,
+          13.0568
+        ]
+      },
+      {
+        "id": "us7000timy",
+        "title": "M5.3 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-09-20T00:58:14.425000Z",
+        "coordinates": [
+          -33.5459,
+          57.1211
+        ]
+      },
       {
         "id": "us7000tild",
         "title": "M5.2 Earthquake - Reykjanes Ridge",
@@ -129,36 +154,6 @@
           126.3092,
           1.3156
         ]
-      },
-      {
-        "id": "us7000thz3",
-        "title": "M5.3 Earthquake - 155 km SSE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-09-17T04:06:53.528000Z",
-        "coordinates": [
-          -173.4476,
-          -17.3232
-        ]
-      },
-      {
-        "id": "us7000thxg",
-        "title": "M5.1 Earthquake - 190 km ESE of Kimbe, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-09-16T20:21:24.473000Z",
-        "coordinates": [
-          151.7908,
-          -6.0303
-        ]
-      },
-      {
-        "id": "us7000thwt",
-        "title": "M5.1 Earthquake - 80 km SSW of San Jose Village, Northern Mariana Islands",
-        "category": "Earthquake",
-        "date": "2026-09-16T18:06:40.400000Z",
-        "coordinates": [
-          145.4199,
-          14.2719
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 17.0,
-    "feels_c": 17.0,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
+    "city": "Zagreb",
+    "temp_c": 15.9,
+    "feels_c": 15.9,
+    "humidity": 88,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 16.9,
-    "temp_max_c": 27.0,
-    "humidity": 72,
+    "city": "Zagreb",
+    "temp_min_c": 15.9,
+    "temp_max_c": 27.3,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 2.8,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 2.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.3,
-    "temp_max_c": 22.1,
+    "city": "Zagreb",
+    "temp_min_c": 14.7,
+    "temp_max_c": 23.2,
     "humidity": 64,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 6.3
   },
   "forecast_day_after": {
     "date": "2026-09-22",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 18.3,
+    "city": "Zagreb",
+    "temp_min_c": 9.8,
+    "temp_max_c": 18.0,
     "humidity": 56,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 8.3
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.3,
     "band": "low",
     "daily_max": 5.0,
     "peak_time": "2026-09-20T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-20T02:37:16+02:00"
+    "fetched_at": "2026-09-20T07:41:12+02:00"
   }
 }
