@@ -1,10 +1,45 @@
 {
   "generated": "2026-09-20",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Analemma over the Callanish Stones",
+    "date": "2026-09-20",
+    "explanation": "If you went outside at the same time every day and took a picture that included the Sun, how would the Sun's position change?  A visual answer to that question is an analemma, a composite image taken from the same spot at the same time over the course of a year.  The featured analemma was composed from images taken every few days at noon near the village of Callanish in the Outer Hebrides in Scotland, UK.  In the foreground are the Callanish Stones, a stone circle built around 2700 BC during humanity's Bronze Age.  It is not known if the placement of the Callanish Stones has or had astronomical significance.  The ultimate causes for the figure-8 shape of this and all analemmas are the tilt of the Earth axis and the ellipticity of the Earth's orbit around the Sun.  At the solstices, the Sun will appear at the top or bottom of an analemma. The featured image was taken near the December solstice and so the Sun appears near the bottom.  Equinoxes, however, correspond to analemma middle points -- not the intersection point. In two days there will be an equinox (\"equal night\"), when day and night are equal over all of planet Earth. Many cultures celebrate a change of season at an equinox.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/CallanishAnalemma_Petricca_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/CallanishAnalemma_Petricca_1280.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tiqc",
+        "title": "M6.4 Earthquake - 49 km NNE of Kainantu, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-09-20T09:17:35.624000Z",
+        "coordinates": [
+          146.0922,
+          -5.9021
+        ]
+      },
+      {
+        "id": "us7000tiq2",
+        "title": "M5.3 Earthquake - 64 km W of Cafayate, Argentina",
+        "category": "Earthquake",
+        "date": "2026-09-20T08:47:54.457000Z",
+        "coordinates": [
+          -66.6117,
+          -25.9869
+        ]
+      },
+      {
+        "id": "us7000tipl",
+        "title": "M5.1 Earthquake - 14 km WNW of Naze, Japan",
+        "category": "Earthquake",
+        "date": "2026-09-20T07:28:22.965000Z",
+        "coordinates": [
+          129.3406,
+          28.3947
+        ]
+      },
       {
         "id": "us7000tip2",
         "title": "M5.0 Earthquake - 103 km W of Hihifo, Tonga",
@@ -124,36 +159,6 @@
           -171.3756,
           52.8594
         ]
-      },
-      {
-        "id": "us7000thzz",
-        "title": "M5.0 Earthquake - South Atlantic Ocean",
-        "category": "Earthquake",
-        "date": "2026-09-17T06:48:41.815000Z",
-        "coordinates": [
-          -20.3463,
-          -22.5873
-        ]
-      },
-      {
-        "id": "us7000thzw",
-        "title": "M5.3 Earthquake - 191 km SE of Mata-Utu, Wallis and Futuna",
-        "category": "Earthquake",
-        "date": "2026-09-17T06:42:41.657000Z",
-        "coordinates": [
-          -174.8957,
-          -14.4792
-        ]
-      },
-      {
-        "id": "us7000thzp",
-        "title": "M5.2 Earthquake - 132 km E of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-17T06:20:48.508000Z",
-        "coordinates": [
-          126.3092,
-          1.3156
-        ]
       }
     ]
   },
@@ -232,65 +237,65 @@
         "velocity_kmh": 32639
       },
       {
-        "name": "719194 (2018 PL23)",
+        "name": "(2018 PL23)",
         "hazardous": true,
         "diameter_m": 631,
         "close_approach_date": "2026-09-22",
-        "miss_distance_km": 26278582,
+        "miss_distance_km": 26278603,
         "velocity_kmh": 80455
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15.9,
-    "humidity": 88,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
-  },
-  "forecast_today": {
-    "date": "2026-09-20",
-    "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 27.3,
-    "humidity": 74,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 2.0,
-    "samples": 7
-  },
-  "forecast": {
-    "date": "2026-09-21",
-    "city": "Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 23.2,
-    "humidity": 64,
+    "temp_c": 26.5,
+    "feels_c": 26.5,
+    "humidity": 56,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.3
+    "wind_kmh": 7.4
+  },
+  "forecast_today": {
+    "date": "2026-09-20",
+    "city": "City of Zagreb",
+    "temp_min_c": 20.6,
+    "temp_max_c": 26.6,
+    "humidity": 62,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 3.1,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-09-21",
+    "city": "City of Zagreb",
+    "temp_min_c": 15.7,
+    "temp_max_c": 22.9,
+    "humidity": 67,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-09-22",
-    "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 18.0,
-    "humidity": 56,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.5,
+    "temp_max_c": 18.1,
+    "humidity": 57,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.2
+    "wind_kmh": 9.1
   },
   "uv": {
-    "uv": 0.3,
-    "band": "low",
+    "uv": 5.0,
+    "band": "moderate",
     "daily_max": 5.0,
     "peak_time": "2026-09-20T13:00",
-    "safe_minutes": 556,
+    "safe_minutes": 33,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,15 +360,15 @@
       },
       {
         "time": "2026-09-20T15:00",
-        "uv": 4.2
+        "uv": 4.0
       },
       {
         "time": "2026-09-20T16:00",
-        "uv": 3.3
+        "uv": 3.2
       },
       {
         "time": "2026-09-20T17:00",
-        "uv": 1.9
+        "uv": 2.1
       },
       {
         "time": "2026-09-20T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-20T07:41:12+02:00"
+    "fetched_at": "2026-09-20T12:35:20+02:00"
   }
 }
