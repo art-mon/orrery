@@ -1,15 +1,20 @@
 {
   "generated": "2026-09-21",
   "apod": {
-    "title": "Analemma over the Callanish Stones",
-    "date": "2026-09-20",
-    "explanation": "If you went outside at the same time every day and took a picture that included the Sun, how would the Sun's position change?  A visual answer to that question is an analemma, a composite image taken from the same spot at the same time over the course of a year.  The featured analemma was composed from images taken every few days at noon near the village of Callanish in the Outer Hebrides in Scotland, UK.  In the foreground are the Callanish Stones, a stone circle built around 2700 BC during humanity's Bronze Age.  It is not known if the placement of the Callanish Stones has or had astronomical significance.  The ultimate causes for the figure-8 shape of this and all analemmas are the tilt of the Earth axis and the ellipticity of the Earth's orbit around the Sun.  At the solstices, the Sun will appear at the top or bottom of an analemma. The featured image was taken near the December solstice and so the Sun appears near the bottom.  Equinoxes, however, correspond to analemma middle points -- not the intersection point. In two days there will be an equinox (\"equal night\"), when day and night are equal over all of planet Earth. Many cultures celebrate a change of season at an equinox.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/CallanishAnalemma_Petricca_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/CallanishAnalemma_Petricca_1280.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tiu3",
+        "title": "M5.0 Earthquake - 16 km WSW of Shikotan, Russia",
+        "category": "Earthquake",
+        "date": "2026-09-20T23:25:38.807000Z",
+        "coordinates": [
+          146.5339,
+          43.7443
+        ]
+      },
       {
         "id": "us7000tit6",
         "title": "M5.0 Earthquake - 248 km SSE of False Pass, Alaska",
@@ -149,53 +154,11 @@
           138.8882,
           -1.8561
         ]
-      },
-      {
-        "id": "us7000tigd",
-        "title": "M5.5 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-18T23:18:28.306000Z",
-        "coordinates": [
-          -177.2286,
-          -27.8581
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2012 RL15)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-09-20",
-        "miss_distance_km": 37163915,
-        "velocity_kmh": 64823
-      },
-      {
-        "name": "(2014 SJ262)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-09-20",
-        "miss_distance_km": 39953697,
-        "velocity_kmh": 39488
-      },
-      {
-        "name": "(2018 BH3)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-09-20",
-        "miss_distance_km": 64369648,
-        "velocity_kmh": 56757
-      },
-      {
-        "name": "(2019 UK12)",
-        "hazardous": false,
-        "diameter_m": 41,
-        "close_approach_date": "2026-09-20",
-        "miss_distance_km": 64886245,
-        "velocity_kmh": 58746
-      },
       {
         "name": "(2010 JA)",
         "hazardous": false,
@@ -243,17 +206,49 @@
         "close_approach_date": "2026-09-22",
         "miss_distance_km": 26278603,
         "velocity_kmh": 80455
+      },
+      {
+        "name": "719194 (2018 PL23)",
+        "hazardous": true,
+        "diameter_m": 631,
+        "close_approach_date": "2026-09-22",
+        "miss_distance_km": 26278603,
+        "velocity_kmh": 80455
+      },
+      {
+        "name": "(2019 RX)",
+        "hazardous": false,
+        "diameter_m": 80,
+        "close_approach_date": "2026-09-22",
+        "miss_distance_km": 26495838,
+        "velocity_kmh": 23232
+      },
+      {
+        "name": "(2004 LA6)",
+        "hazardous": false,
+        "diameter_m": 259,
+        "close_approach_date": "2026-09-22",
+        "miss_distance_km": 54500983,
+        "velocity_kmh": 33466
+      },
+      {
+        "name": "(2018 RL6)",
+        "hazardous": false,
+        "diameter_m": 119,
+        "close_approach_date": "2026-09-22",
+        "miss_distance_km": 62938834,
+        "velocity_kmh": 64529
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.9,
-    "humidity": 79,
+    "temp_c": 19.4,
+    "feels_c": 19.6,
+    "humidity": 82,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
+    "description": "scattered clouds",
+    "icon": "03n",
     "wind_kmh": 9.3
   },
   "forecast_today": {
@@ -264,9 +259,9 @@
     "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 5.6,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 5.8,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-22",
@@ -274,7 +269,7 @@
     "temp_min_c": 11,
     "temp_max_c": 20.9,
     "humidity": 56,
-    "condition": "Clouds",
+    "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
     "wind_kmh": 9.0
@@ -332,23 +327,23 @@
       },
       {
         "time": "2026-09-21T08:00",
-        "uv": 0.1
+        "uv": 0.3
       },
       {
         "time": "2026-09-21T09:00",
-        "uv": 1.1
+        "uv": 0.6
       },
       {
         "time": "2026-09-21T10:00",
-        "uv": 1.6
+        "uv": 1.3
       },
       {
         "time": "2026-09-21T11:00",
-        "uv": 2.2
+        "uv": 2.5
       },
       {
         "time": "2026-09-21T12:00",
-        "uv": 3.0
+        "uv": 3.5
       },
       {
         "time": "2026-09-21T13:00",
@@ -356,23 +351,23 @@
       },
       {
         "time": "2026-09-21T14:00",
-        "uv": 3.0
+        "uv": 3.5
       },
       {
         "time": "2026-09-21T15:00",
-        "uv": 2.4
+        "uv": 2.3
       },
       {
         "time": "2026-09-21T16:00",
-        "uv": 2.2
+        "uv": 1.9
       },
       {
         "time": "2026-09-21T17:00",
-        "uv": 1.2
+        "uv": 1.7
       },
       {
         "time": "2026-09-21T18:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-09-21T19:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-21T00:57:21+02:00"
+    "fetched_at": "2026-09-21T02:54:52+02:00"
   }
 }
