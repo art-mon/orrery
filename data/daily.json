@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 17.9,
-    "humidity": 49,
+    "city": "City of Zagreb",
+    "temp_c": 14.4,
+    "feels_c": 13.6,
+    "humidity": 65,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 14.8
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-09-22",
-    "city": "Zagreb",
-    "temp_min_c": 14.6,
-    "temp_max_c": 18.7,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 7.8,
-    "samples": 3
+    "city": "City of Zagreb",
+    "temp_min_c": 14.2,
+    "temp_max_c": 14.4,
+    "humidity": 65,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "03n",
+    "wind_kmh": 8.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-23",
-    "city": "Zagreb",
-    "temp_min_c": 8.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 9.7,
     "temp_max_c": 18.6,
-    "humidity": 63,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-09-24",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 9.5,
     "temp_max_c": 20.8,
     "humidity": 66,
@@ -291,11 +291,11 @@
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 3.5,
     "peak_time": "2026-09-22T14:00",
-    "safe_minutes": 175,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-09-22T16:00",
-        "uv": 2.0
+        "uv": 1.8
       },
       {
         "time": "2026-09-22T17:00",
-        "uv": 0.9
+        "uv": 1.4
       },
       {
         "time": "2026-09-22T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-22T17:26:04+02:00"
+    "fetched_at": "2026-09-22T21:34:31+02:00"
   }
 }
