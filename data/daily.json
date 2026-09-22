@@ -1,33 +1,43 @@
 {
   "generated": "2026-09-22",
   "apod": {
-    "title": "Cocoon Nebula Wide Field",
-    "date": "2026-09-21",
-    "explanation": "When does a nebula look like a comet?  In this crowded starfield covering over two degrees within the high-flying constellation of the Swan (Cygnus), the eye is drawn to the Cocoon Nebula.  A compact star forming region, the cosmic Cocoon punctuates a nebula bright in emission and reflection on the lower right, with a long trail of interstellar dust clouds to the left, making the entire complex appear a bit like a comet.  Cataloged as IC 5146, the central bright head of the nebula spans about 10 light years, while the dark dusty tail spans nearly 100 light years.  Both are located about 2,500 light years away.  A bright star near the colorful nebula's center likely supplies power and helps clear out a cavity.  The long dusty filaments of the tail, although dark in this visible light image, hide stars in the process of formation. The featured image was captured in July from Death Valley, California, USA.   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Chance Triple Alignment: Plane, Space Station, Sun",
+    "date": "2026-09-22",
+    "explanation": "This shot captured an unexpected silhouette. Which is it?  It isn't the sunspots, the small dark regions caused by concentrated magnetic fields visible around the Sun's bright disk. Sunspots typically last for weeks and were expected, since these spots were seen previously.  It isn\u2019t the International Space Station (ISS), the small dark structure on the middle left.\u00a0 This is\u00a0because the featured picture was planned with sub-second timing to record the iconic structure passing before the Sun.  It is the airplane.  Just as this exposure was taking place in June, from Prasek in the Czech Republic, an airplane began its own miniature partial eclipse.  The result is this triply aligned image of our Sun.  The photographer estimates that the chance of any random Sun image containing silhouettes of both a space station and an airplane, from that location, is about 30 million to one.\u00a0   APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/Cocoon_Czerski_1080.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/Cocoon_Czerski_3000.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/PlaneIssSpots_Horalek_960.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/PlaneIssSpots_Horalek_1500.jpg"
   },
   "events": {
     "events": [
       {
-        "id": "us7000tj1s",
-        "title": "M5.2 Earthquake - 92 km S of Sarangani, Philippines",
+        "id": "us7000tj3k",
+        "title": "M5.0 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
-        "date": "2026-09-21T23:48:13.824000Z",
+        "date": "2026-09-22T05:18:24.687000Z",
         "coordinates": [
-          125.3746,
-          4.5722
+          142.4369,
+          23.1331
+        ]
+      },
+      {
+        "id": "us7000tj1s",
+        "title": "M5.3 Earthquake - 97 km S of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-09-21T23:48:13.180000Z",
+        "coordinates": [
+          125.3573,
+          4.525
         ]
       },
       {
         "id": "us7000tj0z",
         "title": "M5.0 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
-        "date": "2026-09-21T21:37:05.134000Z",
+        "date": "2026-09-21T21:37:04.871000Z",
         "coordinates": [
-          -23.969,
-          -56.4621
+          -24.1479,
+          -56.5064
         ]
       },
       {
@@ -149,16 +159,6 @@
           -174.7641,
           -15.8926
         ]
-      },
-      {
-        "id": "us7000tinl",
-        "title": "M5.3 Earthquake - 108 km ESE of Yigo Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-09-20T03:43:24.649000Z",
-        "coordinates": [
-          145.7591,
-          13.0568
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.4,
-    "humidity": 74,
+    "temp_c": 12.0,
+    "feels_c": 11.2,
+    "humidity": 75,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-22",
-    "city": "Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 18.5,
-    "humidity": 60,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 8.3,
-    "samples": 8
+    "city": "City of Zagreb",
+    "temp_min_c": 11.0,
+    "temp_max_c": 17.8,
+    "humidity": 62,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
+    "wind_kmh": 9.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-23",
-    "city": "Zagreb",
-    "temp_min_c": 8.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.0,
     "temp_max_c": 19.1,
-    "humidity": 60,
+    "humidity": 62,
     "condition": "Clear",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.0
   },
   "forecast_day_after": {
     "date": "2026-09-24",
-    "city": "Zagreb",
-    "temp_min_c": 10.4,
-    "temp_max_c": 21.4,
-    "humidity": 66,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.3,
+    "temp_max_c": 21.2,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.5,
     "band": "low",
-    "daily_max": 4.2,
-    "peak_time": "2026-09-22T13:00",
-    "safe_minutes": null,
+    "daily_max": 3.6,
+    "peak_time": "2026-09-22T12:00",
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,35 +344,35 @@
       },
       {
         "time": "2026-09-22T11:00",
-        "uv": 3.4
+        "uv": 3.5
       },
       {
         "time": "2026-09-22T12:00",
-        "uv": 3.4
+        "uv": 3.6
       },
       {
         "time": "2026-09-22T13:00",
-        "uv": 4.2
+        "uv": 3.3
       },
       {
         "time": "2026-09-22T14:00",
-        "uv": 1.4
+        "uv": 2.4
       },
       {
         "time": "2026-09-22T15:00",
-        "uv": 2.8
+        "uv": 3.5
       },
       {
         "time": "2026-09-22T16:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-09-22T17:00",
-        "uv": 1.9
+        "uv": 1.8
       },
       {
         "time": "2026-09-22T18:00",
-        "uv": 0.9
+        "uv": 0.8
       },
       {
         "time": "2026-09-22T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-22T02:34:55+02:00"
+    "fetched_at": "2026-09-22T07:50:43+02:00"
   }
 }
