@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tj4y",
+        "title": "M5.1 Earthquake - 88 km NNW of Uken, Japan",
+        "category": "Earthquake",
+        "date": "2026-09-22T10:46:22.312000Z",
+        "coordinates": [
+          128.8944,
+          29.0367
+        ]
+      },
+      {
         "id": "us7000tj3k",
         "title": "M5.0 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           129.3406,
           28.3947
         ]
-      },
-      {
-        "id": "us7000tip2",
-        "title": "M5.0 Earthquake - 103 km W of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-09-20T05:07:03.869000Z",
-        "coordinates": [
-          -174.7641,
-          -15.8926
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.0,
-    "feels_c": 16.2,
-    "humidity": 54,
+    "temp_c": 18.7,
+    "feels_c": 17.9,
+    "humidity": 49,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 11.1
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-09-22",
     "city": "Zagreb",
-    "temp_min_c": 12.6,
-    "temp_max_c": 17.9,
-    "humidity": 59,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 8.2,
-    "samples": 5
+    "temp_min_c": 14.6,
+    "temp_max_c": 18.7,
+    "humidity": 58,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 7.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-23",
     "city": "Zagreb",
-    "temp_min_c": 7.8,
-    "temp_max_c": 18.8,
+    "temp_min_c": 8.5,
+    "temp_max_c": 18.6,
     "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.2
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-09-24",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 21.4,
-    "humidity": 67,
+    "temp_min_c": 9.5,
+    "temp_max_c": 20.8,
+    "humidity": 66,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 5.2
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 3.2,
-    "band": "moderate",
-    "daily_max": 3.6,
-    "peak_time": "2026-09-22T12:00",
-    "safe_minutes": 52,
+    "uv": 0.9,
+    "band": "low",
+    "daily_max": 3.5,
+    "peak_time": "2026-09-22T14:00",
+    "safe_minutes": 175,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,15 +340,15 @@
       },
       {
         "time": "2026-09-22T10:00",
-        "uv": 2.4
+        "uv": 2.3
       },
       {
         "time": "2026-09-22T11:00",
-        "uv": 3.5
+        "uv": 2.4
       },
       {
         "time": "2026-09-22T12:00",
-        "uv": 3.6
+        "uv": 3.3
       },
       {
         "time": "2026-09-22T13:00",
@@ -356,19 +356,19 @@
       },
       {
         "time": "2026-09-22T14:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-09-22T15:00",
         "uv": 3.5
       },
       {
+        "time": "2026-09-22T15:00",
+        "uv": 1.1
+      },
+      {
         "time": "2026-09-22T16:00",
-        "uv": 3.0
+        "uv": 2.0
       },
       {
         "time": "2026-09-22T17:00",
-        "uv": 1.8
+        "uv": 0.9
       },
       {
         "time": "2026-09-22T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-22T12:56:38+02:00"
+    "fetched_at": "2026-09-22T17:26:04+02:00"
   }
 }
