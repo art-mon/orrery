@@ -165,54 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2017 RP15)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 21886909,
-        "velocity_kmh": 32639
-      },
-      {
-        "name": "(2018 PL23)",
-        "hazardous": true,
-        "diameter_m": 631,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 26278603,
-        "velocity_kmh": 80455
-      },
-      {
-        "name": "719194 (2018 PL23)",
-        "hazardous": true,
-        "diameter_m": 631,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 26278603,
-        "velocity_kmh": 80455
-      },
-      {
-        "name": "(2019 RX)",
-        "hazardous": false,
-        "diameter_m": 80,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 26495838,
-        "velocity_kmh": 23232
-      },
-      {
-        "name": "(2004 LA6)",
-        "hazardous": false,
-        "diameter_m": 259,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 54500983,
-        "velocity_kmh": 33466
-      },
-      {
-        "name": "(2018 RL6)",
-        "hazardous": false,
-        "diameter_m": 119,
-        "close_approach_date": "2026-09-22",
-        "miss_distance_km": 62938834,
-        "velocity_kmh": 64529
-      },
-      {
         "name": "(2012 VB37)",
         "hazardous": false,
         "diameter_m": 47,
@@ -243,45 +195,93 @@
         "close_approach_date": "2026-09-23",
         "miss_distance_km": 51742444,
         "velocity_kmh": 73457
+      },
+      {
+        "name": "(2004 FH)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-09-23",
+        "miss_distance_km": 59678378,
+        "velocity_kmh": 46825
+      },
+      {
+        "name": "(2008 CO116)",
+        "hazardous": false,
+        "diameter_m": 358,
+        "close_approach_date": "2026-09-23",
+        "miss_distance_km": 72943128,
+        "velocity_kmh": 78794
+      },
+      {
+        "name": "(2006 TL)",
+        "hazardous": false,
+        "diameter_m": 99,
+        "close_approach_date": "2026-09-24",
+        "miss_distance_km": 40765882,
+        "velocity_kmh": 35169
+      },
+      {
+        "name": "(2011 TB4)",
+        "hazardous": false,
+        "diameter_m": 49,
+        "close_approach_date": "2026-09-24",
+        "miss_distance_km": 44130095,
+        "velocity_kmh": 78749
+      },
+      {
+        "name": "(2019 VW2)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-09-24",
+        "miss_distance_km": 44525498,
+        "velocity_kmh": 51686
+      },
+      {
+        "name": "(2015 SY16)",
+        "hazardous": true,
+        "diameter_m": 287,
+        "close_approach_date": "2026-09-24",
+        "miss_distance_km": 73848077,
+        "velocity_kmh": 109887
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 11.8,
-    "humidity": 73,
+    "temp_c": 10.9,
+    "feels_c": 10,
+    "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-23",
-    "city": "Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 19.9,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.6,
+    "temp_max_c": 20.6,
     "humidity": 64,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.3,
-    "samples": 9
+    "wind_kmh": 4.5,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-09-24",
-    "city": "Zagreb",
-    "temp_min_c": 11.5,
-    "temp_max_c": 21.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.2,
+    "temp_max_c": 21.3,
     "humidity": 72,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.6
+    "wind_kmh": 5.0
   },
   "forecast_day_after": {
     "date": "2026-09-25",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 9.9,
     "temp_max_c": 17.6,
     "humidity": 72,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-23T00:43:26+02:00"
+    "fetched_at": "2026-09-23T03:14:01+02:00"
   }
 }
