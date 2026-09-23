@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000tx29",
+        "title": "M5.3 Earthquake - 51 km WSW of Arauco, Argentina",
+        "category": "Earthquake",
+        "date": "2026-09-23T09:21:14.600000Z",
+        "coordinates": [
+          -67.2912,
+          -28.7298
+        ]
+      },
+      {
         "id": "us7000tj4y",
         "title": "M5.1 Earthquake - 88 km NNW of Uken, Japan",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -66.6117,
           -25.9869
         ]
-      },
-      {
-        "id": "us7000tipl",
-        "title": "M5.1 Earthquake - 14 km WNW of Naze, Japan",
-        "category": "Earthquake",
-        "date": "2026-09-20T07:28:22.965000Z",
-        "coordinates": [
-          129.3406,
-          28.3947
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.7,
-    "feels_c": 10.0,
-    "humidity": 82,
+    "temp_c": 22.6,
+    "feels_c": 21.7,
+    "humidity": 32,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 13.0
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-23",
     "city": "Zagreb",
-    "temp_min_c": 10.7,
-    "temp_max_c": 20.6,
-    "humidity": 67,
+    "temp_min_c": 13.7,
+    "temp_max_c": 22.6,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.6,
-    "samples": 6
+    "wind_kmh": 2.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-24",
     "city": "Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 21.3,
-    "humidity": 73,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.4
-  },
-  "forecast_day_after": {
-    "date": "2026-09-25",
-    "city": "Zagreb",
-    "temp_min_c": 8.8,
-    "temp_max_c": 16.9,
+    "temp_min_c": 11.0,
+    "temp_max_c": 24.1,
     "humidity": 72,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
+    "wind_kmh": 4.9
+  },
+  "forecast_day_after": {
+    "date": "2026-09-25",
+    "city": "Zagreb",
+    "temp_min_c": 9.3,
+    "temp_max_c": 16.6,
+    "humidity": 71,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
     "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 1.9,
-    "band": "low",
+    "uv": 3.5,
+    "band": "moderate",
     "daily_max": 4.8,
     "peak_time": "2026-09-23T13:00",
-    "safe_minutes": 85,
+    "safe_minutes": 48,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-23T09:19:19+02:00"
+    "fetched_at": "2026-09-23T15:20:32+02:00"
   }
 }
