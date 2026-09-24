@@ -1,12 +1,12 @@
 {
   "generated": "2026-09-24",
   "apod": {
-    "title": "A New Lunar Crater: McGetchin",
-    "date": "2026-09-23",
-    "explanation": "A once-in-a-lifetime crater has appeared on the Moon! A comet or asteroid roughly the size of a humpback whale (approximately 10-20 meters, 30-60 feet) crashed into the Moon sometime between April and May of 2024. The Lunar Reconnaissance Orbiter (LRO), with its monthly monitoring of the Moon, captured today\u2019s images of the lunar surface before and after the event. The resulting crater, named after Apollo-era lunar scientist McGetchin, is two soccer fields across. Craters of this size are only expected once every 132 years! Follow up thermal imaging revealed a large cold spot that surrounds the warm crater. Surface impacts will puff up the loose lunar sediment, or regolith, making it less dense and harder to retain heat. This event affected an area much larger than the visible crater, which will inform humanity\u2019s understanding of surface impacts and the evolution of the Moon\u2019s surface. It also reminds us all to be thankful for Earth's atmosphere.   APOD's email for image submissions has changed. Please see: APOD Submissions.  APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "The Ghosts of Five Supernovas",
+    "date": "2026-09-24",
+    "explanation": "The ghosts of five supernovas haunt this extraordinary image.   It was acquired at Ouka\u00efmeden Observatory in Morocco with approximately 200 hours of observations and shows a large patch of the sky, equivalent to the area of one thousand full moons tiled together, in the constellation of Auriga (the charioteer).   From left to right, the five supernova remnants visible across the field are G181.1+9.5, G182.4+4.3, G179.0+2.6, G180.0\u22121.7 (Sh2-240, the Spaghetti Nebula), and G178.2\u22124.2.   They are highlighted in the annotated image, together with open cluster M37 and the Tadpole Nebula.   As each explosion expanded into space, it created a growing shell of shocked gas and delicate filamentary structures shown in red (hydrogen) and blue (oxygen), respectively.    These ancient stellar explosions happened independently; they are at various distances up to about several thousands of light-years away from Earth and have estimated ages up to tens of thousands of years old.   Early humans may have witnessed them as bright new stars, fading over weeks or months.     APOD's email for image submissions has changed. Please see: APOD Submissions.    APOD's main NASA site is moving : From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/mcgetchin_after.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/mcgetchin_after.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/5SNR_Auriga_1000.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/5SNR_Auriga_2000.jpg"
   },
   "events": {
     "events": [
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 11.6,
-    "feels_c": 10.8,
-    "humidity": 76,
+    "temp_c": 13.1,
+    "feels_c": 12.4,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 7.4
+    "icon": "04d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-24",
-    "city": "Zagreb",
-    "temp_min_c": 10.5,
-    "temp_max_c": 23.4,
-    "humidity": 72,
+    "city": "Donji grad",
+    "temp_min_c": 13.1,
+    "temp_max_c": 21.3,
+    "humidity": 78,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 7.3,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 6.4,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-09-25",
-    "city": "Zagreb",
-    "temp_min_c": 8.3,
-    "temp_max_c": 21.8,
-    "humidity": 71,
+    "city": "Donji grad",
+    "temp_min_c": 7.2,
+    "temp_max_c": 21.0,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.6
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
     "date": "2026-09-26",
-    "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 18.4,
-    "humidity": 71,
+    "city": "Donji grad",
+    "temp_min_c": 9.3,
+    "temp_max_c": 18.3,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.1
+    "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.5,
     "band": "low",
-    "daily_max": 3.4,
+    "daily_max": 3.2,
     "peak_time": "2026-09-24T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,23 +340,23 @@
       },
       {
         "time": "2026-09-24T10:00",
-        "uv": 1.9
+        "uv": 2.1
       },
       {
         "time": "2026-09-24T11:00",
-        "uv": 2.6
+        "uv": 2.9
       },
       {
         "time": "2026-09-24T12:00",
-        "uv": 3.4
+        "uv": 3.2
       },
       {
         "time": "2026-09-24T13:00",
-        "uv": 3.0
+        "uv": 2.9
       },
       {
         "time": "2026-09-24T14:00",
-        "uv": 2.3
+        "uv": 2.6
       },
       {
         "time": "2026-09-24T15:00",
@@ -368,7 +368,7 @@
       },
       {
         "time": "2026-09-24T17:00",
-        "uv": 0.9
+        "uv": 0.8
       },
       {
         "time": "2026-09-24T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-24T03:02:50+02:00"
+    "fetched_at": "2026-09-24T09:09:08+02:00"
   }
 }
