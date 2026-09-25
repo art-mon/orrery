@@ -1,10 +1,25 @@
 {
   "generated": "2026-09-25",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "Globular Cluster Omega Centauri",
+    "date": "2026-09-25",
+    "explanation": "Globular star cluster Omega Centauri packs about 10 million stars much older than the Sun into a volume some 150 light-years in diameter. Also known as NGC 5139, at a distance of 15,000 light-years it's the largest and brightest of 200 or so known globular clusters that roam the halo of our Milky Way galaxy. Though most star clusters consist of stars with the same age and composition, the enigmatic Omega Cen exhibits the presence of different stellar populations with a spread of ages and chemical abundances. In fact, Omega Cen may be the remnant core of a small galaxy merging with the Milky Way. With a yellowish hue, Omega Centauri's red giant stars are easy to pick out in this sharp telescopic view.  A two-decade-long exploration of the dense star cluster with the Hubble Space Telescope has revealed evidence for a massive black hole near the center of Omega Centauri.  APOD's email for image submissions has changed. Please see: APOD Submissions. APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000txim",
+        "title": "M5.0 Earthquake - 124 km N of Metinaro, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-09-25T04:27:40.435000Z",
+        "coordinates": [
+          125.6985,
+          -7.4036
+        ]
+      },
       {
         "id": "us6000txhp",
         "title": "M5.3 Earthquake - 72 km NW of Finschhafen, Papua New Guinea",
@@ -144,16 +159,6 @@
           -71.8678,
           -22.3643
         ]
-      },
-      {
-        "id": "us7000tiw4",
-        "title": "M5.0 Earthquake - 34 km WNW of Luwuk, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-21T07:31:07.967000Z",
-        "coordinates": [
-          122.4959,
-          -0.8563
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.8,
-    "humidity": 86,
+    "temp_c": 9.8,
+    "feels_c": 9.8,
+    "humidity": 90,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-25",
     "city": "Zagreb",
-    "temp_min_c": 10.0,
-    "temp_max_c": 18.1,
-    "humidity": 75,
+    "temp_min_c": 9.8,
+    "temp_max_c": 16.2,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 6.2,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-26",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 20.1,
-    "humidity": 71,
+    "temp_min_c": 6.9,
+    "temp_max_c": 18.0,
+    "humidity": 70,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.3
+    "wind_kmh": 2.8
   },
   "forecast_day_after": {
     "date": "2026-09-27",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 18.8,
-    "humidity": 72,
+    "temp_min_c": 9.6,
+    "temp_max_c": 18.7,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.6
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.4,
     "band": "low",
-    "daily_max": 4.5,
-    "peak_time": "2026-09-25T13:00",
-    "safe_minutes": null,
+    "daily_max": 4.2,
+    "peak_time": "2026-09-25T12:00",
+    "safe_minutes": 417,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,11 +336,11 @@
       },
       {
         "time": "2026-09-25T09:00",
-        "uv": 1.1
+        "uv": 1.2
       },
       {
         "time": "2026-09-25T10:00",
-        "uv": 2.2
+        "uv": 2.3
       },
       {
         "time": "2026-09-25T11:00",
@@ -347,27 +352,27 @@
       },
       {
         "time": "2026-09-25T13:00",
-        "uv": 4.5
-      },
-      {
-        "time": "2026-09-25T14:00",
         "uv": 4.2
       },
       {
+        "time": "2026-09-25T14:00",
+        "uv": 3.2
+      },
+      {
         "time": "2026-09-25T15:00",
-        "uv": 3.6
+        "uv": 3.1
       },
       {
         "time": "2026-09-25T16:00",
-        "uv": 2.9
+        "uv": 2.4
       },
       {
         "time": "2026-09-25T17:00",
-        "uv": 1.9
+        "uv": 0.9
       },
       {
         "time": "2026-09-25T18:00",
-        "uv": 0.8
+        "uv": 0.6
       },
       {
         "time": "2026-09-25T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-25T02:18:45+02:00"
+    "fetched_at": "2026-09-25T07:46:39+02:00"
   }
 }
