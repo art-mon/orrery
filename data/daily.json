@@ -1,10 +1,45 @@
 {
-  "generated": "2026-09-25",
+  "generated": "2026-09-26",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "Globular Cluster Omega Centauri",
+    "date": "2026-09-25",
+    "explanation": "Globular star cluster Omega Centauri packs about 10 million stars much older than the Sun into a volume some 150 light-years in diameter. Also known as NGC 5139, at a distance of 15,000 light-years it's the largest and brightest of 200 or so known globular clusters that roam the halo of our Milky Way galaxy. Though most star clusters consist of stars with the same age and composition, the enigmatic Omega Cen exhibits the presence of different stellar populations with a spread of ages and chemical abundances. In fact, Omega Cen may be the remnant core of a small galaxy merging with the Milky Way. With a yellowish hue, Omega Centauri's red giant stars are easy to pick out in this sharp telescopic view.  A two-decade-long exploration of the dense star cluster with the Hubble Space Telescope has revealed evidence for a massive black hole near the center of Omega Centauri.  APOD's email for image submissions has changed. Please see: APOD Submissions. APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "media_type": "image",
+    "url": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra1024.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000txq2",
+        "title": "M5.1 Earthquake - 78 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-25T22:07:34.791000Z",
+        "coordinates": [
+          168.5744,
+          -21.2728
+        ]
+      },
+      {
+        "id": "us6000txpi",
+        "title": "M6.6 Earthquake - 80 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-25T21:23:03.309000Z",
+        "coordinates": [
+          168.61,
+          -21.2982
+        ]
+      },
+      {
+        "id": "us6000txpf",
+        "title": "M5.0 Earthquake - 13 km N of Xunchang, China",
+        "category": "Earthquake",
+        "date": "2026-09-25T21:01:27.262000Z",
+        "coordinates": [
+          104.7032,
+          28.5744
+        ]
+      },
       {
         "id": "us6000txme",
         "title": "M5.2 Earthquake - 62 km SW of San Antonio, Chile",
@@ -124,36 +159,6 @@
           128.8944,
           29.0367
         ]
-      },
-      {
-        "id": "us7000tj3k",
-        "title": "M5.0 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-09-22T05:18:24.687000Z",
-        "coordinates": [
-          142.4369,
-          23.1331
-        ]
-      },
-      {
-        "id": "us7000tj1s",
-        "title": "M5.3 Earthquake - 97 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-09-21T23:48:13.180000Z",
-        "coordinates": [
-          125.3573,
-          4.525
-        ]
-      },
-      {
-        "id": "us7000tj0z",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-21T21:37:04.871000Z",
-        "coordinates": [
-          -24.1479,
-          -56.5064
-        ]
       }
     ]
   },
@@ -242,154 +247,154 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.0,
-    "humidity": 71,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
+    "city": "Donji grad",
+    "temp_c": 11.5,
+    "feels_c": 10.8,
+    "humidity": 79,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
     "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-09-25",
-    "city": "Zagreb",
-    "temp_min_c": 13.7,
-    "temp_max_c": 13.7,
-    "humidity": 71,
+    "date": "2026-09-26",
+    "city": "City of Zagreb",
+    "temp_min_c": 11.2,
+    "temp_max_c": 20.9,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear",
-    "icon": "02n",
-    "wind_kmh": 2.9,
-    "samples": 2
+    "icon": "01n",
+    "wind_kmh": 3.5,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-09-26",
-    "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 20.6,
-    "humidity": 71,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.0
-  },
-  "forecast_day_after": {
     "date": "2026-09-27",
-    "city": "Zagreb",
-    "temp_min_c": 10.9,
-    "temp_max_c": 18.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.8,
+    "temp_max_c": 20.9,
     "humidity": 74,
     "condition": "Clear",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.9
+  },
+  "forecast_day_after": {
+    "date": "2026-09-28",
+    "city": "City of Zagreb",
+    "temp_min_c": 11.0,
+    "temp_max_c": 19.8,
+    "humidity": 72,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.0
+    "wind_kmh": 2.6
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.2,
-    "peak_time": "2026-09-25T12:00",
+    "daily_max": 4.7,
+    "peak_time": "2026-09-26T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-09-25T00:00",
+        "time": "2026-09-26T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T01:00",
+        "time": "2026-09-26T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T02:00",
+        "time": "2026-09-26T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T03:00",
+        "time": "2026-09-26T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T04:00",
+        "time": "2026-09-26T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T05:00",
+        "time": "2026-09-26T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T06:00",
+        "time": "2026-09-26T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T07:00",
+        "time": "2026-09-26T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T08:00",
+        "time": "2026-09-26T08:00",
         "uv": 0.3
       },
       {
-        "time": "2026-09-25T09:00",
-        "uv": 1.1
+        "time": "2026-09-26T09:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-09-25T10:00",
+        "time": "2026-09-26T10:00",
         "uv": 2.3
       },
       {
-        "time": "2026-09-25T11:00",
-        "uv": 3.4
-      },
-      {
-        "time": "2026-09-25T12:00",
-        "uv": 4.2
-      },
-      {
-        "time": "2026-09-25T13:00",
-        "uv": 3.4
-      },
-      {
-        "time": "2026-09-25T14:00",
-        "uv": 2.5
-      },
-      {
-        "time": "2026-09-25T15:00",
+        "time": "2026-09-26T11:00",
         "uv": 3.5
       },
       {
-        "time": "2026-09-25T16:00",
+        "time": "2026-09-26T12:00",
+        "uv": 4.3
+      },
+      {
+        "time": "2026-09-26T13:00",
+        "uv": 4.7
+      },
+      {
+        "time": "2026-09-26T14:00",
+        "uv": 4.6
+      },
+      {
+        "time": "2026-09-26T15:00",
+        "uv": 4.0
+      },
+      {
+        "time": "2026-09-26T16:00",
         "uv": 3.0
       },
       {
-        "time": "2026-09-25T17:00",
-        "uv": 1.6
+        "time": "2026-09-26T17:00",
+        "uv": 1.8
       },
       {
-        "time": "2026-09-25T18:00",
+        "time": "2026-09-26T18:00",
         "uv": 0.8
       },
       {
-        "time": "2026-09-25T19:00",
+        "time": "2026-09-26T19:00",
         "uv": 0.1
       },
       {
-        "time": "2026-09-25T20:00",
+        "time": "2026-09-26T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T21:00",
+        "time": "2026-09-26T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T22:00",
+        "time": "2026-09-26T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-25T23:00",
+        "time": "2026-09-26T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-25T22:14:08+02:00"
+    "fetched_at": "2026-09-26T01:47:27+02:00"
   }
 }
