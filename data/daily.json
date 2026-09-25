@@ -1,12 +1,7 @@
 {
   "generated": "2026-09-25",
   "apod": {
-    "title": "Globular Cluster Omega Centauri",
-    "date": "2026-09-25",
-    "explanation": "Globular star cluster Omega Centauri packs about 10 million stars much older than the Sun into a volume some 150 light-years in diameter. Also known as NGC 5139, at a distance of 15,000 light-years it's the largest and brightest of 200 or so known globular clusters that roam the halo of our Milky Way galaxy. Though most star clusters consist of stars with the same age and composition, the enigmatic Omega Cen exhibits the presence of different stellar populations with a spread of ages and chemical abundances. In fact, Omega Cen may be the remnant core of a small galaxy merging with the Milky Way. With a yellowish hue, Omega Centauri's red giant stars are easy to pick out in this sharp telescopic view.  A two-decade-long exploration of the dense star cluster with the Hubble Space Telescope has revealed evidence for a massive black hole near the center of Omega Centauri.  APOD's email for image submissions has changed. Please see: APOD Submissions. APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra1024.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/NGC5139CadenasParra.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -82,12 +77,12 @@
       },
       {
         "id": "us6000tx58",
-        "title": "M5.0 Earthquake - 140 km NNE of Ba, Fiji",
+        "title": "M5.0 Earthquake - 139 km NNE of Ba, Fiji",
         "category": "Earthquake",
-        "date": "2026-09-23T17:46:06.489000Z",
+        "date": "2026-09-23T17:46:06.554000Z",
         "coordinates": [
-          178.0194,
-          -16.3072
+          178.0237,
+          -16.3155
         ]
       },
       {
@@ -247,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 19.2,
-    "feels_c": 18.6,
-    "humidity": 51,
+    "city": "City of Zagreb",
+    "temp_c": 13.7,
+    "feels_c": 13.0,
+    "humidity": 71,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 9.3
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-25",
     "city": "Zagreb",
-    "temp_min_c": 16.4,
-    "temp_max_c": 19.2,
-    "humidity": 58,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.1,
-    "samples": 3
+    "temp_min_c": 13.7,
+    "temp_max_c": 13.7,
+    "humidity": 71,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "02n",
+    "wind_kmh": 2.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-26",
     "city": "Zagreb",
     "temp_min_c": 9.8,
     "temp_max_c": 20.6,
-    "humidity": 72,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -291,11 +286,11 @@
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 4.2,
     "peak_time": "2026-09-25T12:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -368,7 +363,7 @@
       },
       {
         "time": "2026-09-25T17:00",
-        "uv": 1.8
+        "uv": 1.6
       },
       {
         "time": "2026-09-25T18:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-25T18:29:28+02:00"
+    "fetched_at": "2026-09-25T22:14:08+02:00"
   }
 }
