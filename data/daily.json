@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000txme",
+        "title": "M5.2 Earthquake - 62 km SW of San Antonio, Chile",
+        "category": "Earthquake",
+        "date": "2026-09-25T15:29:09.560000Z",
+        "coordinates": [
+          -72.1079,
+          -33.9661
+        ]
+      },
+      {
+        "id": "us6000txjy",
+        "title": "M5.3 Earthquake - Vanuatu region",
+        "category": "Earthquake",
+        "date": "2026-09-25T11:12:15.838000Z",
+        "coordinates": [
+          174.0792,
+          -21.8904
+        ]
+      },
+      {
         "id": "us6000txim",
         "title": "M5.0 Earthquake - 124 km N of Metinaro, Timor Leste",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           -24.1479,
           -56.5064
         ]
-      },
-      {
-        "id": "us7000tixp",
-        "title": "M5.0 Earthquake - 38 km E of Nobeoka, Japan",
-        "category": "Earthquake",
-        "date": "2026-09-21T13:38:32.404000Z",
-        "coordinates": [
-          132.0805,
-          32.5978
-        ]
-      },
-      {
-        "id": "us7000tixc",
-        "title": "M5.2 Earthquake - 167 km WNW of Mejillones, Chile",
-        "category": "Earthquake",
-        "date": "2026-09-21T11:48:28.996000Z",
-        "coordinates": [
-          -71.8678,
-          -22.3643
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.4,
-    "feels_c": 19.7,
-    "humidity": 47,
+    "temp_c": 19.2,
+    "feels_c": 18.6,
+    "humidity": 51,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 14.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-09-25",
     "city": "Zagreb",
-    "temp_min_c": 10.9,
-    "temp_max_c": 20.4,
-    "humidity": 59,
+    "temp_min_c": 16.4,
+    "temp_max_c": 19.2,
+    "humidity": 58,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 7.5,
-    "samples": 5
+    "icon": "03d",
+    "wind_kmh": 4.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-26",
     "city": "Zagreb",
     "temp_min_c": 9.8,
-    "temp_max_c": 19.1,
+    "temp_max_c": 20.6,
     "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.8
+    "wind_kmh": 3.0
   },
   "forecast_day_after": {
     "date": "2026-09-27",
     "city": "Zagreb",
-    "temp_min_c": 9.6,
-    "temp_max_c": 18.6,
-    "humidity": 73,
+    "temp_min_c": 10.9,
+    "temp_max_c": 18.5,
+    "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 3.9,
-    "band": "moderate",
+    "uv": 0.3,
+    "band": "low",
     "daily_max": 4.2,
     "peak_time": "2026-09-25T12:00",
-    "safe_minutes": 43,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,7 +336,7 @@
       },
       {
         "time": "2026-09-25T09:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-09-25T10:00",
@@ -352,27 +352,27 @@
       },
       {
         "time": "2026-09-25T13:00",
-        "uv": 4.2
+        "uv": 3.4
       },
       {
         "time": "2026-09-25T14:00",
-        "uv": 3.2
+        "uv": 2.5
       },
       {
         "time": "2026-09-25T15:00",
-        "uv": 3.1
+        "uv": 3.5
       },
       {
         "time": "2026-09-25T16:00",
-        "uv": 2.4
+        "uv": 3.0
       },
       {
         "time": "2026-09-25T17:00",
-        "uv": 0.9
+        "uv": 1.8
       },
       {
         "time": "2026-09-25T18:00",
-        "uv": 0.6
+        "uv": 0.8
       },
       {
         "time": "2026-09-25T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-25T13:05:54+02:00"
+    "fetched_at": "2026-09-25T18:29:28+02:00"
   }
 }
