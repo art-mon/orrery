@@ -11,6 +11,46 @@
   "events": {
     "events": [
       {
+        "id": "us6000txqu",
+        "title": "M5.3 Earthquake - 58 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-26T01:10:19.430000Z",
+        "coordinates": [
+          168.3721,
+          -21.2883
+        ]
+      },
+      {
+        "id": "us6000txql",
+        "title": "M5.0 Earthquake - 15 km NNW of Xunchang, China",
+        "category": "Earthquake",
+        "date": "2026-09-25T23:57:33.361000Z",
+        "coordinates": [
+          104.6428,
+          28.5792
+        ]
+      },
+      {
+        "id": "us6000txqk",
+        "title": "M5.4 Earthquake - 69 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-25T23:52:35.158000Z",
+        "coordinates": [
+          168.4346,
+          -21.2023
+        ]
+      },
+      {
+        "id": "us6000txqi",
+        "title": "M5.5 Earthquake - 61 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-25T23:39:41.392000Z",
+        "coordinates": [
+          168.4446,
+          -21.3748
+        ]
+      },
+      {
         "id": "us6000txq2",
         "title": "M5.1 Earthquake - 78 km ENE of Tadine, New Caledonia",
         "category": "Earthquake",
@@ -119,75 +159,11 @@
           178.0237,
           -16.3155
         ]
-      },
-      {
-        "id": "us6000tx3m",
-        "title": "M5.7 Earthquake - 180 km NW of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-09-23T14:41:02.650000Z",
-        "coordinates": [
-          -175.1114,
-          -14.9369
-        ]
-      },
-      {
-        "id": "us6000tx38",
-        "title": "M5.0 Earthquake - Mariana Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-23T13:01:51.614000Z",
-        "coordinates": [
-          143.0239,
-          21.6622
-        ]
-      },
-      {
-        "id": "us6000tx29",
-        "title": "M5.3 Earthquake - 51 km WSW of Arauco, Argentina",
-        "category": "Earthquake",
-        "date": "2026-09-23T09:21:14.600000Z",
-        "coordinates": [
-          -67.2912,
-          -28.7298
-        ]
-      },
-      {
-        "id": "us7000tj4y",
-        "title": "M5.1 Earthquake - 88 km NNW of Uken, Japan",
-        "category": "Earthquake",
-        "date": "2026-09-22T10:46:22.312000Z",
-        "coordinates": [
-          128.8944,
-          29.0367
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2016 LY8)",
-        "hazardous": false,
-        "diameter_m": 147,
-        "close_approach_date": "2026-09-25",
-        "miss_distance_km": 13142327,
-        "velocity_kmh": 26214
-      },
-      {
-        "name": "(2018 HN)",
-        "hazardous": false,
-        "diameter_m": 61,
-        "close_approach_date": "2026-09-25",
-        "miss_distance_km": 16612224,
-        "velocity_kmh": 42456
-      },
-      {
-        "name": "(2018 KS)",
-        "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-09-25",
-        "miss_distance_km": 34180550,
-        "velocity_kmh": 24763
-      },
       {
         "name": "(2008 ST)",
         "hazardous": false,
@@ -243,52 +219,76 @@
         "close_approach_date": "2026-09-26",
         "miss_distance_km": 70330128,
         "velocity_kmh": 93137
+      },
+      {
+        "name": "(2019 QY1)",
+        "hazardous": true,
+        "diameter_m": 417,
+        "close_approach_date": "2026-09-26",
+        "miss_distance_km": 74134163,
+        "velocity_kmh": 72124
+      },
+      {
+        "name": "(2019 SH7)",
+        "hazardous": false,
+        "diameter_m": 131,
+        "close_approach_date": "2026-09-27",
+        "miss_distance_km": 32446693,
+        "velocity_kmh": 34525
+      },
+      {
+        "name": "(2014 TU)",
+        "hazardous": false,
+        "diameter_m": 57,
+        "close_approach_date": "2026-09-27",
+        "miss_distance_km": 40650768,
+        "velocity_kmh": 56092
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 11.5,
-    "feels_c": 10.8,
-    "humidity": 79,
+    "city": "Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 20.9,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 21.2,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.5,
-    "samples": 9
+    "wind_kmh": 3.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-09-27",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 20.9,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_min_c": 11.4,
+    "temp_max_c": 22.3,
+    "humidity": 73,
     "condition": "Clear",
-    "description": "few clouds",
-    "icon": "02d",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-09-28",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 11.0,
-    "temp_max_c": 19.8,
+    "temp_max_c": 19.7,
     "humidity": 72,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.6
+    "wind_kmh": 2.7
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-26T01:47:27+02:00"
+    "fetched_at": "2026-09-26T05:26:27+02:00"
   }
 }
