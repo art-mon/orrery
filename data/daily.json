@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000txt0",
+        "title": "M5.2 Earthquake - 58 km NE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-26T12:14:58.406000Z",
+        "coordinates": [
+          168.3226,
+          -21.2176
+        ]
+      },
+      {
+        "id": "us6000txsz",
+        "title": "M5.0 Earthquake - 76 km NE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-26T12:14:20.648000Z",
+        "coordinates": [
+          168.4681,
+          -21.1281
+        ]
+      },
+      {
         "id": "us6000txrs",
         "title": "M5.0 Earthquake - 78 km ENE of Tadine, New Caledonia",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           174.0792,
           -21.8904
         ]
-      },
-      {
-        "id": "us6000txim",
-        "title": "M5.0 Earthquake - 124 km N of Metinaro, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-09-25T04:27:40.435000Z",
-        "coordinates": [
-          125.6985,
-          -7.4036
-        ]
-      },
-      {
-        "id": "us6000txhp",
-        "title": "M5.3 Earthquake - 72 km NW of Finschhafen, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-09-24T23:30:28.053000Z",
-        "coordinates": [
-          147.3935,
-          -6.0863
-        ]
       }
     ]
   },
@@ -247,32 +247,32 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 18.2,
-    "humidity": 61,
+    "city": "Donji grad",
+    "temp_c": 23.8,
+    "feels_c": 23.3,
+    "humidity": 40,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 20.4,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 16.8,
+    "temp_max_c": 23.8,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 4.3,
-    "samples": 5
+    "wind_kmh": 4.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-09-27",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 22.1,
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 21.9,
     "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
@@ -281,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-09-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.4,
+    "city": "Zagreb",
+    "temp_min_c": 12.0,
     "temp_max_c": 19.9,
     "humidity": 73,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 3.8,
-    "band": "moderate",
+    "uv": 2.5,
+    "band": "low",
     "daily_max": 4.7,
     "peak_time": "2026-09-26T13:00",
-    "safe_minutes": 44,
+    "safe_minutes": 65,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,7 +344,7 @@
       },
       {
         "time": "2026-09-26T11:00",
-        "uv": 3.4
+        "uv": 3.5
       },
       {
         "time": "2026-09-26T12:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-26T11:04:33+02:00"
+    "fetched_at": "2026-09-26T16:04:10+02:00"
   }
 }
