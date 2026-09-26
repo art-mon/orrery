@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000txtz",
+        "title": "M5.2 Earthquake - 148 km NW of Kilmia, Yemen",
+        "category": "Earthquake",
+        "date": "2026-09-26T16:33:43.270000Z",
+        "coordinates": [
+          51.4282,
+          13.2741
+        ]
+      },
+      {
+        "id": "us6000txtn",
+        "title": "M5.1 Earthquake - 74 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-26T15:01:36.433000Z",
+        "coordinates": [
+          168.5751,
+          -21.3884
+        ]
+      },
+      {
+        "id": "us6000txtc",
+        "title": "M5.6 Earthquake - 74 km ESE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-09-26T14:08:17.704000Z",
+        "coordinates": [
+          152.8383,
+          -4.6952
+        ]
+      },
+      {
         "id": "us6000txt0",
         "title": "M5.2 Earthquake - 58 km NE of Tadine, New Caledonia",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           168.61,
           -21.2982
         ]
-      },
-      {
-        "id": "us6000txpf",
-        "title": "M5.0 Earthquake - 13 km N of Xunchang, China",
-        "category": "Earthquake",
-        "date": "2026-09-25T21:01:27.262000Z",
-        "coordinates": [
-          104.7032,
-          28.5744
-        ]
-      },
-      {
-        "id": "us6000txme",
-        "title": "M5.2 Earthquake - 62 km SW of San Antonio, Chile",
-        "category": "Earthquake",
-        "date": "2026-09-25T15:29:09.560000Z",
-        "coordinates": [
-          -72.1079,
-          -33.9661
-        ]
-      },
-      {
-        "id": "us6000txjy",
-        "title": "M5.3 Earthquake - Vanuatu region",
-        "category": "Earthquake",
-        "date": "2026-09-25T11:12:15.838000Z",
-        "coordinates": [
-          174.0792,
-          -21.8904
-        ]
       }
     ]
   },
@@ -247,26 +247,26 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.8,
-    "feels_c": 23.3,
-    "humidity": 40,
+    "city": "Zagreb",
+    "temp_c": 18.3,
+    "feels_c": 17.8,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "icon": "01n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-26",
     "city": "Zagreb",
-    "temp_min_c": 16.8,
-    "temp_max_c": 23.8,
-    "humidity": 47,
+    "temp_min_c": 16.0,
+    "temp_max_c": 18.3,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 4.7,
-    "samples": 4
+    "icon": "01n",
+    "wind_kmh": 1.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-09-27",
@@ -291,11 +291,11 @@
     "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 2.5,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 4.7,
     "peak_time": "2026-09-26T13:00",
-    "safe_minutes": 65,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-26T16:04:10+02:00"
+    "fetched_at": "2026-09-26T20:17:48+02:00"
   }
 }
