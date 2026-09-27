@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-26",
+  "generated": "2026-09-27",
   "apod": {
     "title": "Mirrored Meteor and Milky Way",
     "date": "2026-09-26",
@@ -165,70 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2008 ST)",
-        "hazardous": false,
-        "diameter_m": 23,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 14878930,
-        "velocity_kmh": 22191
-      },
-      {
-        "name": "376848 (2001 RY47)",
-        "hazardous": false,
-        "diameter_m": 711,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 19724592,
-        "velocity_kmh": 43382
-      },
-      {
-        "name": "(2018 SD1)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 35828310,
-        "velocity_kmh": 82107
-      },
-      {
-        "name": "(2015 HA10)",
-        "hazardous": false,
-        "diameter_m": 449,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 38850386,
-        "velocity_kmh": 55625
-      },
-      {
-        "name": "(2005 SP9)",
-        "hazardous": false,
-        "diameter_m": 283,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 56699115,
-        "velocity_kmh": 59508
-      },
-      {
-        "name": "(2001 SY169)",
-        "hazardous": false,
-        "diameter_m": 143,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 70322608,
-        "velocity_kmh": 93132
-      },
-      {
-        "name": "(2013 ET)",
-        "hazardous": false,
-        "diameter_m": 143,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 70330128,
-        "velocity_kmh": 93137
-      },
-      {
-        "name": "(2019 QY1)",
-        "hazardous": true,
-        "diameter_m": 417,
-        "close_approach_date": "2026-09-26",
-        "miss_distance_km": 74134163,
-        "velocity_kmh": 72124
-      },
-      {
         "name": "(2019 SH7)",
         "hazardous": false,
         "diameter_m": 131,
@@ -243,43 +179,96 @@
         "close_approach_date": "2026-09-27",
         "miss_distance_km": 40650768,
         "velocity_kmh": 56092
+      },
+      {
+        "name": "(2019 DJ1)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-09-27",
+        "miss_distance_km": 42105243,
+        "velocity_kmh": 44519
+      },
+      {
+        "name": "523934 (1998 FF14)",
+        "hazardous": true,
+        "diameter_m": 449,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 15393501,
+        "velocity_kmh": 84523
+      },
+      {
+        "name": "(2017 GK4)",
+        "hazardous": true,
+        "diameter_m": 261,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 18423686,
+        "velocity_kmh": 43803
+      },
+      {
+        "name": "(2015 EQ7)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 29487899,
+        "velocity_kmh": 22630
+      },
+      {
+        "name": "(2004 TB10)",
+        "hazardous": true,
+        "diameter_m": 298,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 35666462,
+        "velocity_kmh": 41660
+      },
+      {
+        "name": "(2014 SQ260)",
+        "hazardous": false,
+        "diameter_m": 93,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 39365624,
+        "velocity_kmh": 44323
+      },
+      {
+        "name": "(2016 FL12)",
+        "hazardous": false,
+        "diameter_m": 33,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 63605340,
+        "velocity_kmh": 26290
+      },
+      {
+        "name": "138971 (2001 CB21)",
+        "hazardous": true,
+        "diameter_m": 1164,
+        "close_approach_date": "2026-09-29",
+        "miss_distance_km": 8096702,
+        "velocity_kmh": 36822
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.7,
-    "humidity": 75,
+    "temp_c": 13.1,
+    "feels_c": 12.6,
+    "humidity": 79,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 1.8
+    "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 14.2,
-    "humidity": 75,
+    "temp_min_c": 12.0,
+    "temp_max_c": 22.2,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 1.8,
-    "samples": 1
+    "wind_kmh": 3.2,
+    "samples": 8
   },
   "forecast": {
-    "date": "2026-09-27",
-    "city": "Zagreb",
-    "temp_min_c": 11.2,
-    "temp_max_c": 22.2,
-    "humidity": 72,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.8
-  },
-  "forecast_day_after": {
     "date": "2026-09-28",
     "city": "Zagreb",
     "temp_min_c": 11.8,
@@ -290,111 +279,122 @@
     "icon": "01d",
     "wind_kmh": 2.2
   },
+  "forecast_day_after": {
+    "date": "2026-09-29",
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 20.5,
+    "humidity": 69,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.0
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 4.7,
-    "peak_time": "2026-09-26T13:00",
+    "peak_time": "2026-09-27T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-09-26T00:00",
+        "time": "2026-09-27T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T01:00",
+        "time": "2026-09-27T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T02:00",
+        "time": "2026-09-27T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T03:00",
+        "time": "2026-09-27T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T04:00",
+        "time": "2026-09-27T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T05:00",
+        "time": "2026-09-27T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T06:00",
+        "time": "2026-09-27T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T07:00",
+        "time": "2026-09-27T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T08:00",
+        "time": "2026-09-27T08:00",
         "uv": 0.3
       },
       {
-        "time": "2026-09-26T09:00",
+        "time": "2026-09-27T09:00",
         "uv": 1.1
       },
       {
-        "time": "2026-09-26T10:00",
+        "time": "2026-09-27T10:00",
         "uv": 2.3
       },
       {
-        "time": "2026-09-26T11:00",
-        "uv": 3.5
+        "time": "2026-09-27T11:00",
+        "uv": 3.4
       },
       {
-        "time": "2026-09-26T12:00",
-        "uv": 4.3
+        "time": "2026-09-27T12:00",
+        "uv": 4.2
       },
       {
-        "time": "2026-09-26T13:00",
+        "time": "2026-09-27T13:00",
         "uv": 4.7
       },
       {
-        "time": "2026-09-26T14:00",
-        "uv": 4.6
+        "time": "2026-09-27T14:00",
+        "uv": 4.5
       },
       {
-        "time": "2026-09-26T15:00",
+        "time": "2026-09-27T15:00",
         "uv": 4.0
       },
       {
-        "time": "2026-09-26T16:00",
+        "time": "2026-09-27T16:00",
         "uv": 3.0
       },
       {
-        "time": "2026-09-26T17:00",
+        "time": "2026-09-27T17:00",
         "uv": 1.8
       },
       {
-        "time": "2026-09-26T18:00",
+        "time": "2026-09-27T18:00",
         "uv": 0.8
       },
       {
-        "time": "2026-09-26T19:00",
+        "time": "2026-09-27T19:00",
         "uv": 0.1
       },
       {
-        "time": "2026-09-26T20:00",
+        "time": "2026-09-27T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T21:00",
+        "time": "2026-09-27T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T22:00",
+        "time": "2026-09-27T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-09-26T23:00",
+        "time": "2026-09-27T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-26T23:48:17+02:00"
+    "fetched_at": "2026-09-27T02:12:25+02:00"
   }
 }
