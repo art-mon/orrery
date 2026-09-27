@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000txzj",
+        "title": "M5.0 Earthquake - 191 km NW of Oula Xiuma, China",
+        "category": "Earthquake",
+        "date": "2026-09-27T16:43:10.268000Z",
+        "coordinates": [
+          99.5536,
+          35.3861
+        ]
+      },
+      {
         "id": "us6000txw5",
         "title": "M5.1 Earthquake - 90 km ENE of Tadine, New Caledonia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           104.6428,
           28.5792
         ]
-      },
-      {
-        "id": "us6000txqk",
-        "title": "M5.4 Earthquake - 69 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-25T23:52:35.158000Z",
-        "coordinates": [
-          168.4346,
-          -21.2023
-        ]
       }
     ]
   },
@@ -248,31 +248,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.2,
-    "humidity": 43,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 9.3
+    "temp_c": 18.7,
+    "feels_c": 18.0,
+    "humidity": 52,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-09-27",
     "city": "Zagreb",
-    "temp_min_c": 12.7,
-    "temp_max_c": 23.7,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 4.7,
-    "samples": 4
+    "temp_min_c": 16.9,
+    "temp_max_c": 18.7,
+    "humidity": 54,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 2.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-28",
     "city": "Zagreb",
-    "temp_min_c": 10.0,
-    "temp_max_c": 24.2,
+    "temp_min_c": 11.2,
+    "temp_max_c": 24.1,
     "humidity": 70,
     "condition": "Clear",
     "description": "clear sky",
@@ -282,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-09-29",
     "city": "Zagreb",
-    "temp_min_c": 10.5,
-    "temp_max_c": 20.4,
-    "humidity": 69,
+    "temp_min_c": 11.0,
+    "temp_max_c": 20.2,
+    "humidity": 70,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.9
+    "wind_kmh": 3.3
   },
   "uv": {
-    "uv": 4.0,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 4.7,
     "peak_time": "2026-09-27T13:00",
-    "safe_minutes": 41,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-27T14:43:13+02:00"
+    "fetched_at": "2026-09-27T19:27:54+02:00"
   }
 }
