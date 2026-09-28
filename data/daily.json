@@ -1,15 +1,75 @@
 {
   "generated": "2026-09-28",
   "apod": {
-    "title": "Andromeda before Photoshop",
-    "date": "2026-09-27",
-    "explanation": "What does the Andromeda galaxy really look like? The featured image shows how our Milky Way Galaxy's closest major galactic neighbor really appears in a long exposure through Earth's busy skies and with a digital camera that introduces normal imperfections.  The picture is a stack of 223 images, each a 300 second exposure, taken from a garden observatory in Portugal during 2019.  Obvious image deficiencies include bright parallel airplane trails, long and continuous satellite trails, short cosmic ray streaks, and bad pixels.  These imperfections were actually not removed with Photoshop specifically, but rather greatly reduced with a series of computer software packages that included Astro Pixel Processor, DeepSkyStacker, and PixInsight.  All of this work was done not to deceive you with a digital fantasy that has little to do with the real likeness of the Andromeda galaxy (M31), but to minimize Earthly artifacts that have nothing to do with the distant galaxy and so better recreate what M31 really does look like.   APOD's email for image submissions has changed. Please see: APOD Submissions APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
+    "title": "Cosmic Latte: The Average Color of the Universe",
+    "date": "2026-09-28",
+    "explanation": "What color is the universe?  More precisely, if the entire sky were smeared out, what color would the final mix be?  This whimsical question came up when trying to determine what stars are commonplace in nearby galaxies. The answer, depicted here, is a conditionally perceived shade of beige. In computer parlance: #FFF8E7.  To determine this, astronomers computationally averaged the light emitted by one of the larger samples of galaxies analyzed: the 200,000 galaxies of the 2dF Galaxy Redshift Survey.  The resulting cosmic spectrum has some emission in all parts of the electromagnetic spectrum, but a single perceived composite color.  This color has become much less blue over the past 10 billion years, indicating that redder stars are becoming more prevalent.  In a contest to better name the color, notable entries included skyvory, univeige, and the winner: cosmic latte.   APOD's email for image submissions has changed. Please see: APOD Submissions  Tomorrow: APOD's main NASA site is moving: From apod.nasa.gov to science.nasa.gov/apod",
     "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/M31Before_Scherer_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/M31Before_Scherer_4298.jpg"
+    "url": "https://apod.nasa.gov/apod/image/2609/CosmicLatte_jhu_960_annotated.jpg",
+    "hdurl": "https://apod.nasa.gov/apod/image/2609/CosmicLatte_jhu_960.jpg"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ty43",
+        "title": "M5.2 Earthquake - 190 km WSW of Port McNeill, Canada",
+        "category": "Earthquake",
+        "date": "2026-09-28T09:13:39.402000Z",
+        "coordinates": [
+          -129.6785,
+          50.171
+        ]
+      },
+      {
+        "id": "us6000ty38",
+        "title": "M5.2 Earthquake - 67 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-28T05:45:29.689000Z",
+        "coordinates": [
+          168.4274,
+          -21.2247
+        ]
+      },
+      {
+        "id": "us6000ty33",
+        "title": "M5.1 Earthquake - 78 km ENE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-28T05:28:08.891000Z",
+        "coordinates": [
+          168.5459,
+          -21.2065
+        ]
+      },
+      {
+        "id": "us6000ty2u",
+        "title": "M5.4 Earthquake - 231 km WSW of Port McNeill, Canada",
+        "category": "Earthquake",
+        "date": "2026-09-28T04:41:21.639000Z",
+        "coordinates": [
+          -130.2208,
+          50.0527
+        ]
+      },
+      {
+        "id": "us6000ty2e",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-28T03:43:44.172000Z",
+        "coordinates": [
+          -25.2785,
+          -57.6701
+        ]
+      },
+      {
+        "id": "us6000ty2b",
+        "title": "M5.3 Earthquake - 60 km NE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-28T03:25:06.893000Z",
+        "coordinates": [
+          168.3545,
+          -21.2245
+        ]
+      },
       {
         "id": "us6000ty0j",
         "title": "M5.0 Earthquake - South Sandwich Islands region",
@@ -99,100 +159,121 @@
           168.3226,
           -21.2176
         ]
-      },
-      {
-        "id": "us6000txsz",
-        "title": "M5.0 Earthquake - 76 km NE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T12:14:20.648000Z",
-        "coordinates": [
-          168.4681,
-          -21.1281
-        ]
-      },
-      {
-        "id": "us6000txrs",
-        "title": "M5.0 Earthquake - 78 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T08:24:58.743000Z",
-        "coordinates": [
-          168.5478,
-          -21.2116
-        ]
-      },
-      {
-        "id": "us6000txrq",
-        "title": "M5.0 Earthquake - 84 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T07:22:12.908000Z",
-        "coordinates": [
-          168.614,
-          -21.2249
-        ]
-      },
-      {
-        "id": "us6000txrn",
-        "title": "M5.1 Earthquake - 68 km NE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T07:08:02.558000Z",
-        "coordinates": [
-          168.4225,
-          -21.1943
-        ]
-      },
-      {
-        "id": "us6000txrf",
-        "title": "M5.1 Earthquake - 64 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T05:50:48.716000Z",
-        "coordinates": [
-          168.4033,
-          -21.227
-        ]
-      },
-      {
-        "id": "us6000txqu",
-        "title": "M5.3 Earthquake - 58 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-26T01:10:19.430000Z",
-        "coordinates": [
-          168.3721,
-          -21.2883
-        ]
       }
     ]
   },
   "asteroids": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "asteroids": [
+      {
+        "name": "523934 (1998 FF14)",
+        "hazardous": true,
+        "diameter_m": 449,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 15393501,
+        "velocity_kmh": 84523
+      },
+      {
+        "name": "(2017 GK4)",
+        "hazardous": true,
+        "diameter_m": 261,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 18423686,
+        "velocity_kmh": 43803
+      },
+      {
+        "name": "(2015 EQ7)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 29487899,
+        "velocity_kmh": 22630
+      },
+      {
+        "name": "(2004 TB10)",
+        "hazardous": true,
+        "diameter_m": 298,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 35666462,
+        "velocity_kmh": 41660
+      },
+      {
+        "name": "(2014 SQ260)",
+        "hazardous": false,
+        "diameter_m": 93,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 39365624,
+        "velocity_kmh": 44323
+      },
+      {
+        "name": "(2016 FL12)",
+        "hazardous": false,
+        "diameter_m": 33,
+        "close_approach_date": "2026-09-28",
+        "miss_distance_km": 63605340,
+        "velocity_kmh": 26290
+      },
+      {
+        "name": "138971 (2001 CB21)",
+        "hazardous": true,
+        "diameter_m": 1164,
+        "close_approach_date": "2026-09-29",
+        "miss_distance_km": 8096702,
+        "velocity_kmh": 36822
+      },
+      {
+        "name": "(2014 FR37)",
+        "hazardous": false,
+        "diameter_m": 149,
+        "close_approach_date": "2026-09-29",
+        "miss_distance_km": 39845554,
+        "velocity_kmh": 54289
+      },
+      {
+        "name": "(2013 TL)",
+        "hazardous": false,
+        "diameter_m": 216,
+        "close_approach_date": "2026-09-29",
+        "miss_distance_km": 47966664,
+        "velocity_kmh": 68931
+      },
+      {
+        "name": "(2009 DC12)",
+        "hazardous": false,
+        "diameter_m": 156,
+        "close_approach_date": "2026-09-29",
+        "miss_distance_km": 64533049,
+        "velocity_kmh": 21810
+      }
+    ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 12.0,
-    "feels_c": 11.5,
-    "humidity": 83,
+    "temp_c": 24.2,
+    "feels_c": 23.9,
+    "humidity": 44,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-28",
-    "city": "City of Zagreb",
-    "temp_min_c": 12.0,
-    "temp_max_c": 24.9,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 12.7,
+    "temp_max_c": 24.2,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.4,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 4.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-09-29",
-    "city": "City of Zagreb",
-    "temp_min_c": 11.4,
-    "temp_max_c": 24.9,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 11,
+    "temp_max_c": 24.6,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -200,21 +281,21 @@
   },
   "forecast_day_after": {
     "date": "2026-09-30",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.5,
+    "city": "Zagreb",
+    "temp_min_c": 10.4,
     "temp_max_c": 20.1,
-    "humidity": 68,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.4
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.6,
+    "band": "moderate",
     "daily_max": 4.6,
     "peak_time": "2026-09-28T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 36,
     "skin_type": 2,
     "hourly": [
       {
@@ -314,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-28T05:33:12+02:00"
+    "fetched_at": "2026-09-28T12:31:38+02:00"
   }
 }
