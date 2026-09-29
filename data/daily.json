@@ -11,6 +11,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000tyc9",
+        "title": "M5.0 Earthquake - 58 km NW of Pante Makasar, Timor Leste",
+        "category": "Earthquake",
+        "date": "2026-09-29T14:14:06.077000Z",
+        "coordinates": [
+          124.0495,
+          -8.7834
+        ]
+      },
+      {
+        "id": "us6000tyc3",
+        "title": "M5.6 Earthquake - southern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-09-29T13:06:10.191000Z",
+        "coordinates": [
+          -16.1859,
+          -35.204
+        ]
+      },
+      {
+        "id": "us6000tyc1",
+        "title": "M5.4 Earthquake - 99 km SSE of Pangai, Tonga",
+        "category": "Earthquake",
+        "date": "2026-09-29T12:40:35.064000Z",
+        "coordinates": [
+          -174.0813,
+          -20.6773
+        ]
+      },
+      {
         "id": "us6000tybr",
         "title": "M5.0 Earthquake - 77 km ENE of Tadine, New Caledonia",
         "category": "Earthquake",
@@ -129,36 +159,6 @@
           168.7073,
           -21.2857
         ]
-      },
-      {
-        "id": "us6000txvu",
-        "title": "M5.0 Earthquake - 61 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-27T01:18:25.822000Z",
-        "coordinates": [
-          168.4566,
-          -21.4298
-        ]
-      },
-      {
-        "id": "us6000txur",
-        "title": "M5.0 Earthquake - 52 km NNW of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-09-26T19:37:01.212000Z",
-        "coordinates": [
-          120.3294,
-          -8.1581
-        ]
-      },
-      {
-        "id": "us6000txtz",
-        "title": "M5.2 Earthquake - 148 km NW of Kilmia, Yemen",
-        "category": "Earthquake",
-        "date": "2026-09-26T16:33:43.270000Z",
-        "coordinates": [
-          51.4282,
-          13.2741
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 25.4,
-    "feels_c": 25.0,
-    "humidity": 41,
+    "temp_c": 16.7,
+    "feels_c": 15.8,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "icon": "01n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-09-29",
-    "city": "Donji grad",
-    "temp_min_c": 10.4,
-    "temp_max_c": 25.4,
-    "humidity": 51,
+    "city": "Zagreb",
+    "temp_min_c": 14.9,
+    "temp_max_c": 16.7,
+    "humidity": 56,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01d",
-    "wind_kmh": 3.9,
-    "samples": 5
+    "icon": "01n",
+    "wind_kmh": 4.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-09-30",
-    "city": "Donji grad",
-    "temp_min_c": 10.0,
-    "temp_max_c": 24.6,
+    "city": "Zagreb",
+    "temp_min_c": 8.0,
+    "temp_max_c": 24.5,
     "humidity": 70,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.4
+    "wind_kmh": 3.3
   },
   "forecast_day_after": {
     "date": "2026-10-01",
-    "city": "Donji grad",
-    "temp_min_c": 10.2,
-    "temp_max_c": 19.5,
-    "humidity": 68,
+    "city": "Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 19.2,
+    "humidity": 70,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.0
+    "wind_kmh": 3.9
   },
   "uv": {
-    "uv": 4.6,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 4.6,
     "peak_time": "2026-09-29T13:00",
-    "safe_minutes": 36,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-29T13:04:03+02:00"
+    "fetched_at": "2026-09-29T19:35:52+02:00"
   }
 }
