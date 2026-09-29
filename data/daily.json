@@ -1,12 +1,7 @@
 {
   "generated": "2026-09-29",
   "apod": {
-    "title": "Sh2-188: The Shrimp Nebula",
-    "date": "2026-09-29",
-    "explanation": "What causes the swirl in the Shrimp Nebula? Its high speed is likely.  What is sure is that Sh2-188 is one of the larger planetary nebulas on the night sky, by angular size, spanning about half the diameter of the Moon.  Moreover, the white-dwarf core -- leftover from the Sun-like star that shed its outer atmosphere -- is moving unusually fast through interstellar space, creating a bow shock most visible on the upper left that is similar to a boat plowing through water.  Although faint, the  Shrimp Nebula glows also by compressing and brightening gas on its leading edge.  The featured image was taken in the light of hydrogen, sulfur, and oxygen by a backyard telescope in Krakow, Poland and then digitally adjusted to approximate the nebula's true colors.    APOD's email for image submissions has changed. Please see: APOD Submissions  APOD's main NASA site has moved: From apod.nasa.gov to science.nasa.gov/apod",
-    "media_type": "image",
-    "url": "https://apod.nasa.gov/apod/image/2609/Shrimp_Pawel_960.jpg",
-    "hdurl": "https://apod.nasa.gov/apod/image/2609/Shrimp_Pawel_2048.jpg"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -247,48 +242,48 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 16.7,
-    "feels_c": 15.8,
-    "humidity": 55,
+    "city": "Donji grad",
+    "temp_c": 15.4,
+    "feels_c": 14.6,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-09-29",
     "city": "Zagreb",
-    "temp_min_c": 14.9,
-    "temp_max_c": 16.7,
-    "humidity": 56,
+    "temp_min_c": 15.4,
+    "temp_max_c": 15.4,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 4.2,
-    "samples": 3
+    "wind_kmh": 7.4,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-09-30",
     "city": "Zagreb",
-    "temp_min_c": 8.0,
-    "temp_max_c": 24.5,
-    "humidity": 70,
+    "temp_min_c": 10.9,
+    "temp_max_c": 24.9,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.3
+    "wind_kmh": 2.6
   },
   "forecast_day_after": {
     "date": "2026-10-01",
     "city": "Zagreb",
-    "temp_min_c": 8.6,
-    "temp_max_c": 19.2,
-    "humidity": 70,
+    "temp_min_c": 9.1,
+    "temp_max_c": 24.1,
+    "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.9
+    "wind_kmh": 4.3
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-29T19:35:52+02:00"
+    "fetched_at": "2026-09-29T23:50:14+02:00"
   }
 }
