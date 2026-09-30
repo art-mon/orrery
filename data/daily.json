@@ -6,6 +6,46 @@
   "events": {
     "events": [
       {
+        "id": "us6000tyik",
+        "title": "M5.2 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-30T07:07:16.005000Z",
+        "coordinates": [
+          171.414,
+          -63.5619
+        ]
+      },
+      {
+        "id": "us6000tyid",
+        "title": "M5.0 Earthquake - 83 km NE of Tadine, New Caledonia",
+        "category": "Earthquake",
+        "date": "2026-09-30T06:50:03.339000Z",
+        "coordinates": [
+          168.4237,
+          -20.988
+        ]
+      },
+      {
+        "id": "us6000tyhk",
+        "title": "M5.6 Earthquake - 74 km S of Yonakuni, Japan",
+        "category": "Earthquake",
+        "date": "2026-09-30T05:00:24.971000Z",
+        "coordinates": [
+          122.9149,
+          23.8027
+        ]
+      },
+      {
+        "id": "us6000tyhi",
+        "title": "M5.4 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-09-30T04:48:06.031000Z",
+        "coordinates": [
+          169.2156,
+          -63.0088
+        ]
+      },
+      {
         "id": "us6000tyc9",
         "title": "M5.0 Earthquake - 58 km NW of Pante Makasar, Timor Leste",
         "category": "Earthquake",
@@ -114,46 +154,6 @@
           -25.2785,
           -57.6701
         ]
-      },
-      {
-        "id": "us6000ty2b",
-        "title": "M5.3 Earthquake - 60 km NE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-28T03:25:06.893000Z",
-        "coordinates": [
-          168.3545,
-          -21.2245
-        ]
-      },
-      {
-        "id": "us6000ty0j",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-09-27T21:13:33.366000Z",
-        "coordinates": [
-          -25.8945,
-          -59.0586
-        ]
-      },
-      {
-        "id": "us6000txzj",
-        "title": "M5.0 Earthquake - 191 km NW of Oula Xiuma, China",
-        "category": "Earthquake",
-        "date": "2026-09-27T16:43:10.268000Z",
-        "coordinates": [
-          99.5536,
-          35.3861
-        ]
-      },
-      {
-        "id": "us6000txw5",
-        "title": "M5.1 Earthquake - 90 km ENE of Tadine, New Caledonia",
-        "category": "Earthquake",
-        "date": "2026-09-27T02:22:10.562000Z",
-        "coordinates": [
-          168.7073,
-          -21.2857
-        ]
       }
     ]
   },
@@ -242,32 +242,32 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.4,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_c": 17.2,
+    "feels_c": 16.5,
+    "humidity": 61,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-09-30",
     "city": "Zagreb",
     "temp_min_c": 11.0,
-    "temp_max_c": 24.9,
-    "humidity": 67,
+    "temp_max_c": 22.1,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 2.8,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 3.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-01",
     "city": "Zagreb",
-    "temp_min_c": 9.1,
-    "temp_max_c": 24.1,
+    "temp_min_c": 9.2,
+    "temp_max_c": 24.9,
     "humidity": 68,
     "condition": "Clear",
     "description": "clear sky",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-10-02",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
+    "temp_min_c": 9.4,
     "temp_max_c": 19.5,
-    "humidity": 66,
+    "humidity": 65,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.6
+    "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.4,
     "band": "low",
     "daily_max": 4.5,
     "peak_time": "2026-09-30T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 71,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-09-30T03:02:24+02:00"
+    "fetched_at": "2026-09-30T09:56:21+02:00"
   }
 }
