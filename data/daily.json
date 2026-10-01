@@ -1,10 +1,35 @@
 {
-  "generated": "2026-10-01",
+  "generated": "2026-10-02",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-01",
+    "explanation": "Have you ever seen the full moon rise? This colorful image was photographed last weekend in Sicily, just outside the town of Nicosia, in Italy. It is a composite photograph that shows the Moon rising as the sky turns darker. Lower clouds are reflecting the colors of antitwilight, while ash and gas from Mount Etna are seen higher in the background. The pink band lower in the sky is called the Belt of Venus. During a full moon, the Moon and the Sun are in opposition in the sky: the moon rises as the sun sets. The lunar phase cycle lasts approximately 29.5 days (but the Moon takes approximately 27 days to orbit the Earth). In some cultures of the Northern Hemisphere, the September full moon is called the Harvest Moon. Does your culture have a special name for it? (A full moon by any other name would shine as bright.)APOD's email for image submissions has changed. Please see: APOD SubmissionsAPOD's main NASA site has moved : From apod.nasa.gov to science.nasa.gov/apodTomorrow's picture: sharpless\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tyx0",
+        "title": "M5.1 Earthquake - 176 km SE of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-10-01T20:00:34.322000Z",
+        "coordinates": [
+          167.0918,
+          -11.6728
+        ]
+      },
+      {
+        "id": "us6000tywu",
+        "title": "M5.1 Earthquake - 171 km SE of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-10-01T19:38:01.795000Z",
+        "coordinates": [
+          166.961,
+          -11.7706
+        ]
+      },
       {
         "id": "us6000tyw6",
         "title": "M5.1 Earthquake - 108 km ENE of Miyako, Japan",
@@ -134,26 +159,6 @@
           169.2156,
           -63.0088
         ]
-      },
-      {
-        "id": "us6000tyc3",
-        "title": "M5.5 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-09-29T13:06:09.941000Z",
-        "coordinates": [
-          -16.0771,
-          -35.2758
-        ]
-      },
-      {
-        "id": "us6000tyc1",
-        "title": "M5.4 Earthquake - 99 km SSE of Pangai, Tonga",
-        "category": "Earthquake",
-        "date": "2026-09-29T12:40:35.064000Z",
-        "coordinates": [
-          -174.0813,
-          -20.6773
-        ]
       }
     ]
   },
@@ -242,154 +247,154 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.7,
-    "feels_c": 14.7,
-    "humidity": 51,
+    "city": "Zagreb",
+    "temp_c": 14.8,
+    "feels_c": 14.0,
+    "humidity": 64,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 7.4
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-10-01",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.9,
-    "temp_max_c": 15.7,
-    "humidity": 53,
+    "date": "2026-10-02",
+    "city": "Zagreb",
+    "temp_min_c": 9.1,
+    "temp_max_c": 24.1,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 5.6,
-    "samples": 3
+    "icon": "03n",
+    "wind_kmh": 4.0,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-10-02",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.0,
-    "temp_max_c": 23.7,
-    "humidity": 67,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 4.2
-  },
-  "forecast_day_after": {
     "date": "2026-10-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.4,
-    "temp_max_c": 18.6,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 6.6,
+    "temp_max_c": 24.1,
+    "humidity": 63,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 2.8
   },
+  "forecast_day_after": {
+    "date": "2026-10-04",
+    "city": "Zagreb",
+    "temp_min_c": 9.2,
+    "temp_max_c": 18.8,
+    "humidity": 64,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.2
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.5,
-    "peak_time": "2026-10-01T13:00",
+    "daily_max": 3.9,
+    "peak_time": "2026-10-02T14:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-01T00:00",
+        "time": "2026-10-02T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T01:00",
+        "time": "2026-10-02T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T02:00",
+        "time": "2026-10-02T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T03:00",
+        "time": "2026-10-02T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T04:00",
+        "time": "2026-10-02T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T05:00",
+        "time": "2026-10-02T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T06:00",
+        "time": "2026-10-02T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T07:00",
+        "time": "2026-10-02T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T08:00",
+        "time": "2026-10-02T08:00",
         "uv": 0.2
       },
       {
-        "time": "2026-10-01T09:00",
-        "uv": 1.1
+        "time": "2026-10-02T09:00",
+        "uv": 0.9
       },
       {
-        "time": "2026-10-01T10:00",
-        "uv": 2.1
+        "time": "2026-10-02T10:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-10-01T11:00",
-        "uv": 3.2
+        "time": "2026-10-02T11:00",
+        "uv": 2.9
       },
       {
-        "time": "2026-10-01T12:00",
-        "uv": 4.0
+        "time": "2026-10-02T12:00",
+        "uv": 3.6
       },
       {
-        "time": "2026-10-01T13:00",
-        "uv": 4.5
+        "time": "2026-10-02T13:00",
+        "uv": 3.8
       },
       {
-        "time": "2026-10-01T14:00",
-        "uv": 4.3
+        "time": "2026-10-02T14:00",
+        "uv": 3.9
       },
       {
-        "time": "2026-10-01T15:00",
-        "uv": 3.7
+        "time": "2026-10-02T15:00",
+        "uv": 3.4
       },
       {
-        "time": "2026-10-01T16:00",
-        "uv": 2.8
+        "time": "2026-10-02T16:00",
+        "uv": 2.5
       },
       {
-        "time": "2026-10-01T17:00",
-        "uv": 1.6
+        "time": "2026-10-02T17:00",
+        "uv": 1.4
       },
       {
-        "time": "2026-10-01T18:00",
-        "uv": 0.7
+        "time": "2026-10-02T18:00",
+        "uv": 0.6
       },
       {
-        "time": "2026-10-01T19:00",
+        "time": "2026-10-02T19:00",
         "uv": 0.1
       },
       {
-        "time": "2026-10-01T20:00",
+        "time": "2026-10-02T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T21:00",
+        "time": "2026-10-02T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T22:00",
+        "time": "2026-10-02T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-01T23:00",
+        "time": "2026-10-02T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-01T19:58:59+02:00"
+    "fetched_at": "2026-10-02T00:33:28+02:00"
   }
 }
