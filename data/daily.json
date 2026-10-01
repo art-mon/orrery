@@ -1,10 +1,25 @@
 {
   "generated": "2026-10-01",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-01",
+    "explanation": "Have you ever seen the full moon rise? This colorful image was photographed last weekend in Sicily, just outside the town of Nicosia, in Italy. It is a composite photograph that shows the Moon rising as the sky turns darker. Lower clouds are reflecting the colors of antitwilight, while ash and gas from Mount Etna are seen higher in the background. The pink band lower in the sky is called the Belt of Venus. During a full moon, the Moon and the Sun are in opposition in the sky: the moon rises as the sun sets. The lunar phase cycle lasts approximately 29.5 days (but the Moon takes approximately 27 days to orbit the Earth). In some cultures of the Northern Hemisphere, the September full moon is called the Harvest Moon. Does your culture have a special name for it? (A full moon by any other name would shine as bright.)APOD's email for image submissions has changed. Please see: APOD SubmissionsAPOD's main NASA site has moved : From apod.nasa.gov to science.nasa.gov/apodTomorrow's picture: sharpless\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tyq7",
+        "title": "M5.0 Earthquake - 38 km WSW of Palimbang, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-01T05:34:10.634000Z",
+        "coordinates": [
+          123.8599,
+          6.1116
+        ]
+      },
       {
         "id": "us6000tyny",
         "title": "M5.2 Earthquake - 7 km ESE of Baghl\u0101n, Afghanistan",
@@ -144,16 +159,6 @@
           -7.1923,
           82.6385
         ]
-      },
-      {
-        "id": "us6000ty43",
-        "title": "M5.2 Earthquake - 190 km WSW of Port McNeill, Canada",
-        "category": "Earthquake",
-        "date": "2026-09-28T09:13:39.402000Z",
-        "coordinates": [
-          -129.6785,
-          50.171
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 12.0,
-    "humidity": 81,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
-  },
-  "forecast_today": {
-    "date": "2026-10-01",
-    "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 24.6,
-    "humidity": 67,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.9,
-    "samples": 7
-  },
-  "forecast": {
-    "date": "2026-10-02",
-    "city": "Zagreb",
-    "temp_min_c": 8.9,
-    "temp_max_c": 24.2,
-    "humidity": 65,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.8
-  },
-  "forecast_day_after": {
-    "date": "2026-10-03",
-    "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 18.9,
-    "humidity": 62,
+    "temp_c": 24.2,
+    "feels_c": 23.6,
+    "humidity": 33,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.8
+    "wind_kmh": 7.4
+  },
+  "forecast_today": {
+    "date": "2026-10-01",
+    "city": "City of Zagreb",
+    "temp_min_c": 9.3,
+    "temp_max_c": 24.2,
+    "humidity": 47,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 5.3,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-10-02",
+    "city": "City of Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 24.0,
+    "humidity": 66,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9
+  },
+  "forecast_day_after": {
+    "date": "2026-10-03",
+    "city": "City of Zagreb",
+    "temp_min_c": 9,
+    "temp_max_c": 18.7,
+    "humidity": 64,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.7
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.5,
+    "band": "moderate",
     "daily_max": 4.5,
     "peak_time": "2026-10-01T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 37,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-01T06:03:45+02:00"
+    "fetched_at": "2026-10-01T13:20:19+02:00"
   }
 }
