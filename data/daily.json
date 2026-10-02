@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-02",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-01",
-    "explanation": "Have you ever seen the full moon rise? This colorful image was photographed last weekend in Sicily, just outside the town of Nicosia, in Italy. It is a composite photograph that shows the Moon rising as the sky turns darker. Lower clouds are reflecting the colors of antitwilight, while ash and gas from Mount Etna are seen higher in the background. The pink band lower in the sky is called the Belt of Venus. During a full moon, the Moon and the Sun are in opposition in the sky: the moon rises as the sun sets. The lunar phase cycle lasts approximately 29.5 days (but the Moon takes approximately 27 days to orbit the Earth). In some cultures of the Northern Hemisphere, the September full moon is called the Harvest Moon. Does your culture have a special name for it? (A full moon by any other name would shine as bright.)APOD's email for image submissions has changed. Please see: APOD SubmissionsAPOD's main NASA site has moved : From apod.nasa.gov to science.nasa.gov/apodTomorrow's picture: sharpless\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,54 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "499496 (2010 MR87)",
-        "hazardous": false,
-        "diameter_m": 755,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 28345945,
-        "velocity_kmh": 67816
-      },
-      {
-        "name": "(2014 RX22)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 37754644,
-        "velocity_kmh": 46816
-      },
-      {
-        "name": "(2019 SD7)",
-        "hazardous": false,
-        "diameter_m": 108,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 43473504,
-        "velocity_kmh": 30662
-      },
-      {
-        "name": "(2016 FB)",
-        "hazardous": false,
-        "diameter_m": 110,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 64412687,
-        "velocity_kmh": 39905
-      },
-      {
-        "name": "(2008 TX3)",
-        "hazardous": false,
-        "diameter_m": 62,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 65905706,
-        "velocity_kmh": 60405
-      },
-      {
-        "name": "(2018 LC1)",
-        "hazardous": false,
-        "diameter_m": 62,
-        "close_approach_date": "2026-10-01",
-        "miss_distance_km": 71893233,
-        "velocity_kmh": 30362
-      },
-      {
         "name": "(2013 HO11)",
         "hazardous": false,
         "diameter_m": 145,
@@ -243,47 +190,95 @@
         "close_approach_date": "2026-10-02",
         "miss_distance_km": 65023415,
         "velocity_kmh": 22853
+      },
+      {
+        "name": "(2010 KV7)",
+        "hazardous": false,
+        "diameter_m": 38,
+        "close_approach_date": "2026-10-02",
+        "miss_distance_km": 67127830,
+        "velocity_kmh": 67326
+      },
+      {
+        "name": "(2019 SW5)",
+        "hazardous": false,
+        "diameter_m": 55,
+        "close_approach_date": "2026-10-03",
+        "miss_distance_km": 15214652,
+        "velocity_kmh": 61874
+      },
+      {
+        "name": "(2006 HZ5)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-10-03",
+        "miss_distance_km": 57958790,
+        "velocity_kmh": 24734
+      },
+      {
+        "name": "(2009 UD)",
+        "hazardous": false,
+        "diameter_m": 22,
+        "close_approach_date": "2026-10-04",
+        "miss_distance_km": 47218840,
+        "velocity_kmh": 45585
+      },
+      {
+        "name": "(2019 UM8)",
+        "hazardous": false,
+        "diameter_m": 12,
+        "close_approach_date": "2026-10-04",
+        "miss_distance_km": 61974605,
+        "velocity_kmh": 65521
+      },
+      {
+        "name": "(2017 WK15)",
+        "hazardous": false,
+        "diameter_m": 27,
+        "close_approach_date": "2026-10-04",
+        "miss_distance_km": 65522606,
+        "velocity_kmh": 61044
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.8,
-    "feels_c": 14.0,
-    "humidity": 64,
+    "temp_c": 12.0,
+    "feels_c": 11.2,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03n",
-    "wind_kmh": 3.7
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-02",
     "city": "Zagreb",
     "temp_min_c": 9.1,
-    "temp_max_c": 24.1,
-    "humidity": 63,
+    "temp_max_c": 24.7,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "03n",
-    "wind_kmh": 4.0,
-    "samples": 9
+    "wind_kmh": 4.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-03",
     "city": "Zagreb",
-    "temp_min_c": 6.6,
-    "temp_max_c": 24.1,
-    "humidity": 63,
+    "temp_min_c": 6.5,
+    "temp_max_c": 24.4,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-10-04",
     "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 18.8,
+    "temp_min_c": 9.4,
+    "temp_max_c": 18.6,
     "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
@@ -293,8 +288,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.9,
-    "peak_time": "2026-10-02T14:00",
+    "daily_max": 4.0,
+    "peak_time": "2026-10-02T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -348,15 +343,15 @@
       },
       {
         "time": "2026-10-02T12:00",
-        "uv": 3.6
+        "uv": 3.5
       },
       {
         "time": "2026-10-02T13:00",
-        "uv": 3.8
+        "uv": 4.0
       },
       {
         "time": "2026-10-02T14:00",
-        "uv": 3.9
+        "uv": 4.0
       },
       {
         "time": "2026-10-02T15:00",
@@ -368,7 +363,7 @@
       },
       {
         "time": "2026-10-02T17:00",
-        "uv": 1.4
+        "uv": 1.5
       },
       {
         "time": "2026-10-02T18:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-02T00:33:28+02:00"
+    "fetched_at": "2026-10-02T03:59:14+02:00"
   }
 }
