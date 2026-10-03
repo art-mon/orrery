@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-03",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-03",
-    "explanation": "On sol 1943 of its journey of exploration across the surface of Mars, the Curiosity Rover recorded this selfie at the south rim of Vera Rubin Ridge. Of course a sol is a Martian solar day, about 40 minutes longer than an Earth day. Curiosity's sol 1943 corresponds to Earth date January 23, 2018. Also composed as an interactive 360 degree VR, the mosaicked panorama combines 61 exposures taken by the small car-sized rover's Mars Hand Lens Imager (MAHLI). Frames containing the imager's arm have been edited out while the extended background used was taken by the rover's Mastcam on sol 1903. At the top of the rover's mast, sitting above the Mastcam, the laser-firing ChemCam housing blocks out the distant, 5 kilometer high peak of Mount Sharp. On Earth date August 26, 2026, Curiosity marked an total elevation gain of 1 kilometer in its trek from the floor of Gale Crater up the slope of Mount Sharp.APOD's email for image submissions has changed. Please see: APOD Submissions.Tomorrow's picture: Sunday's Childe",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 9.9,
-    "feels_c": 9.5,
-    "humidity": 78,
+    "city": "Zagreb",
+    "temp_c": 24.8,
+    "feels_c": 24.1,
+    "humidity": 30,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-03",
-    "city": "Donji grad",
-    "temp_min_c": 8.4,
-    "temp_max_c": 22.5,
-    "humidity": 68,
+    "city": "Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 24.8,
+    "humidity": 47,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 3.6,
-    "samples": 7
+    "wind_kmh": 4.5,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-04",
-    "city": "Donji grad",
-    "temp_min_c": 6.3,
-    "temp_max_c": 24.1,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 5.6,
+    "temp_max_c": 23.4,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.3
+    "wind_kmh": 2.2
   },
   "forecast_day_after": {
     "date": "2026-10-05",
-    "city": "Donji grad",
-    "temp_min_c": 8.9,
-    "temp_max_c": 19.4,
-    "humidity": 75,
+    "city": "Zagreb",
+    "temp_min_c": 5.8,
+    "temp_max_c": 16.8,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 2.1
   },
   "uv": {
-    "uv": 0.5,
-    "band": "low",
+    "uv": 4.0,
+    "band": "moderate",
     "daily_max": 4.3,
     "peak_time": "2026-10-03T13:00",
-    "safe_minutes": 370,
+    "safe_minutes": 42,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-03T08:00:45+02:00"
+    "fetched_at": "2026-10-03T14:12:34+02:00"
   }
 }
