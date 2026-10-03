@@ -1,10 +1,25 @@
 {
   "generated": "2026-10-03",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-03",
+    "explanation": "On sol 1943 of its journey of exploration across the surface of Mars, the Curiosity Rover recorded this selfie at the south rim of Vera Rubin Ridge. Of course a sol is a Martian solar day, about 40 minutes longer than an Earth day. Curiosity's sol 1943 corresponds to Earth date January 23, 2018. Also composed as an interactive 360 degree VR, the mosaicked panorama combines 61 exposures taken by the small car-sized rover's Mars Hand Lens Imager (MAHLI). Frames containing the imager's arm have been edited out while the extended background used was taken by the rover's Mastcam on sol 1903. At the top of the rover's mast, sitting above the Mastcam, the laser-firing ChemCam housing blocks out the distant, 5 kilometer high peak of Mount Sharp. On Earth date August 26, 2026, Curiosity marked an total elevation gain of 1 kilometer in its trek from the floor of Gale Crater up the slope of Mount Sharp.APOD's email for image submissions has changed. Please see: APOD Submissions.Tomorrow's picture: Sunday's Childe",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tzal",
+        "title": "M5.0 Earthquake - 163 km SE of Petropavlovsk-Kamchatsky, Russia",
+        "category": "Earthquake",
+        "date": "2026-10-03T02:59:06.296000Z",
+        "coordinates": [
+          160.4217,
+          52.0836
+        ]
+      },
       {
         "id": "us6000tz8l",
         "title": "M5.0 Earthquake - 171 km SE of Vilyuchinsk, Russia",
@@ -144,16 +159,6 @@
           140.5507,
           35.7025
         ]
-      },
-      {
-        "id": "us6000tyq7",
-        "title": "M5.0 Earthquake - 38 km WSW of Palimbang, Philippines",
-        "category": "Earthquake",
-        "date": "2026-10-01T05:34:10.634000Z",
-        "coordinates": [
-          123.8599,
-          6.1116
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 11.7,
-    "humidity": 68,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
-  },
-  "forecast_today": {
-    "date": "2026-10-03",
-    "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 24.2,
-    "humidity": 63,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.0,
-    "samples": 8
-  },
-  "forecast": {
-    "date": "2026-10-04",
-    "city": "Zagreb",
-    "temp_min_c": 6.0,
-    "temp_max_c": 24.1,
-    "humidity": 64,
+    "city": "Donji grad",
+    "temp_c": 9.9,
+    "feels_c": 9.5,
+    "humidity": 78,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.2
+    "wind_kmh": 5.5
+  },
+  "forecast_today": {
+    "date": "2026-10-03",
+    "city": "Donji grad",
+    "temp_min_c": 8.4,
+    "temp_max_c": 22.5,
+    "humidity": 68,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 3.6,
+    "samples": 7
+  },
+  "forecast": {
+    "date": "2026-10-04",
+    "city": "Donji grad",
+    "temp_min_c": 6.3,
+    "temp_max_c": 24.1,
+    "humidity": 65,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.3
   },
   "forecast_day_after": {
     "date": "2026-10-05",
-    "city": "Zagreb",
-    "temp_min_c": 8.8,
-    "temp_max_c": 18.5,
-    "humidity": 76,
+    "city": "Donji grad",
+    "temp_min_c": 8.9,
+    "temp_max_c": 19.4,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.5,
     "band": "low",
     "daily_max": 4.3,
     "peak_time": "2026-10-03T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 370,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-03T02:08:44+02:00"
+    "fetched_at": "2026-10-03T08:00:45+02:00"
   }
 }
