@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-04",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-04",
+    "explanation": "On sol 1943 of its journey of exploration across the surface of Mars, the Curiosity Rover recorded this selfie at the south rim of Vera Rubin Ridge. Of course a sol is a Martian solar day, about 40 minutes longer than an Earth day. Curiosity's sol 1943 corresponds to Earth date January 23, 2018. Also composed as an interactive 360 degree VR, the mosaicked panorama combines 61 exposures taken by the small car-sized rover's Mars Hand Lens Imager (MAHLI). Frames containing the imager's arm have been edited out while the extended background used was taken by the rover's Mastcam on sol 1903. At the top of the rover's mast, sitting above the Mastcam, the laser-firing ChemCam housing blocks out the distant, 5 kilometer high peak of Mount Sharp. On Earth date August 26, 2026, Curiosity marked an total elevation gain of 1 kilometer in its trek from the floor of Gale Crater up the slope of Mount Sharp.APOD's email for image submissions has changed. Please see: APOD Submissions.Tomorrow's picture: Sunday's Childe",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tzfg",
+        "title": "M5.6 Earthquake - 80 km S of Banda Aceh, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-03T23:37:35.621000Z",
+        "coordinates": [
+          95.2428,
+          4.8223
+        ]
+      },
+      {
+        "id": "us6000tzer",
+        "title": "M5.9 Earthquake - 39 km WSW of Tambolaka, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-03T22:55:55.358000Z",
+        "coordinates": [
+          118.9078,
+          -9.5672
+        ]
+      },
       {
         "id": "us6000tze2",
         "title": "M5.1 Earthquake - 182 km SSE of Vilyuchinsk, Russia",
@@ -134,47 +159,11 @@
           166.961,
           -11.7706
         ]
-      },
-      {
-        "id": "us6000tyw6",
-        "title": "M5.1 Earthquake - 108 km ENE of Miyako, Japan",
-        "category": "Earthquake",
-        "date": "2026-10-01T17:17:20.097000Z",
-        "coordinates": [
-          143.1734,
-          39.8778
-        ]
-      },
-      {
-        "id": "us6000tyua",
-        "title": "M5.0 Earthquake - 176 km NNE of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-01T14:19:59.078000Z",
-        "coordinates": [
-          120.9136,
-          -7.0805
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 SW5)",
-        "hazardous": false,
-        "diameter_m": 55,
-        "close_approach_date": "2026-10-03",
-        "miss_distance_km": 15214652,
-        "velocity_kmh": 61874
-      },
-      {
-        "name": "(2006 HZ5)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-10-03",
-        "miss_distance_km": 57958790,
-        "velocity_kmh": 24734
-      },
       {
         "name": "(2009 UD)",
         "hazardous": false,
@@ -238,52 +227,68 @@
         "close_approach_date": "2026-10-06",
         "miss_distance_km": 38056500,
         "velocity_kmh": 24664
+      },
+      {
+        "name": "(2018 TZ1)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-10-06",
+        "miss_distance_km": 43654128,
+        "velocity_kmh": 49783
+      },
+      {
+        "name": "(2018 SL1)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-10-06",
+        "miss_distance_km": 46951512,
+        "velocity_kmh": 43941
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 13.3,
-    "feels_c": 12.3,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.4,
+    "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-04",
     "city": "Donji grad",
     "temp_min_c": 8.7,
-    "temp_max_c": 23.7,
-    "humidity": 62,
+    "temp_max_c": 24.1,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.6,
-    "samples": 9
+    "wind_kmh": 2.3,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-05",
     "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 23.4,
+    "temp_min_c": 8.9,
+    "temp_max_c": 23.5,
     "humidity": 68,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.1
+    "wind_kmh": 2.0
   },
   "forecast_day_after": {
     "date": "2026-10-06",
     "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 18.4,
-    "humidity": 72,
+    "temp_min_c": 8.3,
+    "temp_max_c": 18.1,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.7
+    "wind_kmh": 2.9
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-04T00:39:09+02:00"
+    "fetched_at": "2026-10-04T04:22:41+02:00"
   }
 }
