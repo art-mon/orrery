@@ -3,7 +3,7 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-10-04",
-    "explanation": "On sol 1943 of its journey of exploration across the surface of Mars, the Curiosity Rover recorded this selfie at the south rim of Vera Rubin Ridge. Of course a sol is a Martian solar day, about 40 minutes longer than an Earth day. Curiosity's sol 1943 corresponds to Earth date January 23, 2018. Also composed as an interactive 360 degree VR, the mosaicked panorama combines 61 exposures taken by the small car-sized rover's Mars Hand Lens Imager (MAHLI). Frames containing the imager's arm have been edited out while the extended background used was taken by the rover's Mastcam on sol 1903. At the top of the rover's mast, sitting above the Mastcam, the laser-firing ChemCam housing blocks out the distant, 5 kilometer high peak of Mount Sharp. On Earth date August 26, 2026, Curiosity marked an total elevation gain of 1 kilometer in its trek from the floor of Gale Crater up the slope of Mount Sharp.APOD's email for image submissions has changed. Please see: APOD Submissions.Tomorrow's picture: Sunday's Childe",
+    "explanation": "Yes, but can your rainbow do this? After the remnants of Hurricane Florence passed over the Jersey Shore, New Jersey, USA in 2018, the Sun came out in one direction but something quite unusual appeared in the opposite direction: a hall of rainbows. Over the course of the next half hour, to the delight of the photographer and his daughter, vibrant supernumerary rainbows faded in and out, with at least five captured in this featured single shot. Supernumerary rainbows only form when falling water droplets are all nearly the same size and typically less than a millimeter across. Then, sunlight will not only reflect from inside the raindrops, but interfere, a wave phenomenon similar to ripples on a pond when a stone is thrown in. In fact, supernumerary rainbows can only be explained with waves, and their noted existence in the early 1800s was considered early evidence of light's wave nature.Your Sky Surprise: What picture did APOD feature on your birthday? (post 1995)Tomorrow's picture: open space\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.4,
-    "humidity": 74,
+    "temp_c": 19.8,
+    "feels_c": 19.1,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-04",
-    "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 24.1,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_min_c": 7.8,
+    "temp_max_c": 21.5,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 2.3,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 2.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-05",
-    "city": "Donji grad",
-    "temp_min_c": 8.9,
-    "temp_max_c": 23.5,
-    "humidity": 68,
+    "city": "Zagreb",
+    "temp_min_c": 8.0,
+    "temp_max_c": 23.1,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.0
+    "wind_kmh": 2.1
   },
   "forecast_day_after": {
     "date": "2026-10-06",
-    "city": "Donji grad",
-    "temp_min_c": 8.3,
-    "temp_max_c": 18.1,
+    "city": "Zagreb",
+    "temp_min_c": 8.0,
+    "temp_max_c": 17.8,
     "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.6,
+    "band": "moderate",
     "daily_max": 4.2,
     "peak_time": "2026-10-04T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 46,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-10-04T16:00",
-        "uv": 2.6
+        "uv": 2.5
       },
       {
         "time": "2026-10-04T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-04T04:22:41+02:00"
+    "fetched_at": "2026-10-04T11:19:02+02:00"
   }
 }
