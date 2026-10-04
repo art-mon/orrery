@@ -1,7 +1,12 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-05",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-04",
+    "explanation": "Yes, but can your rainbow do this? After the remnants of Hurricane Florence passed over the Jersey Shore, New Jersey, USA in 2018, the Sun came out in one direction but something quite unusual appeared in the opposite direction: a hall of rainbows. Over the course of the next half hour, to the delight of the photographer and his daughter, vibrant supernumerary rainbows faded in and out, with at least five captured in this featured single shot. Supernumerary rainbows only form when falling water droplets are all nearly the same size and typically less than a millimeter across. Then, sunlight will not only reflect from inside the raindrops, but interfere, a wave phenomenon similar to ripples on a pond when a stone is thrown in. In fact, supernumerary rainbows can only be explained with waves, and their noted existence in the early 1800s was considered early evidence of light's wave nature.Your Sky Surprise: What picture did APOD feature on your birthday? (post 1995)Tomorrow's picture: open space\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,154 +247,154 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 15.5,
-    "feels_c": 14.5,
-    "humidity": 54,
+    "city": "Zagreb",
+    "temp_c": 12.6,
+    "feels_c": 11.6,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-10-04",
-    "city": "Donji grad",
-    "temp_min_c": 13.4,
-    "temp_max_c": 15.5,
-    "humidity": 56,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 3.1,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-10-05",
     "city": "Donji grad",
-    "temp_min_c": 6.7,
-    "temp_max_c": 22.7,
-    "humidity": 69,
+    "temp_min_c": 7.6,
+    "temp_max_c": 23.3,
+    "humidity": 68,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 1.9
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 2.5,
+    "samples": 9
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-10-06",
     "city": "Donji grad",
-    "temp_min_c": 5.3,
-    "temp_max_c": 17.3,
-    "humidity": 73,
-    "condition": "Clear",
-    "description": "broken clouds",
-    "icon": "04d",
+    "temp_min_c": 5.7,
+    "temp_max_c": 23.5,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 2.5
+  },
+  "forecast_day_after": {
+    "date": "2026-10-07",
+    "city": "Donji grad",
+    "temp_min_c": 10.5,
+    "temp_max_c": 20.9,
+    "humidity": 76,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.6
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.2,
-    "peak_time": "2026-10-04T13:00",
+    "daily_max": 3.6,
+    "peak_time": "2026-10-05T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-04T00:00",
+        "time": "2026-10-05T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T01:00",
+        "time": "2026-10-05T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T02:00",
+        "time": "2026-10-05T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T03:00",
+        "time": "2026-10-05T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T04:00",
+        "time": "2026-10-05T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T05:00",
+        "time": "2026-10-05T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T06:00",
+        "time": "2026-10-05T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T07:00",
+        "time": "2026-10-05T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T08:00",
+        "time": "2026-10-05T08:00",
         "uv": 0.2
       },
       {
-        "time": "2026-10-04T09:00",
-        "uv": 1.0
+        "time": "2026-10-05T09:00",
+        "uv": 0.9
       },
       {
-        "time": "2026-10-04T10:00",
-        "uv": 2.0
+        "time": "2026-10-05T10:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-10-04T11:00",
-        "uv": 3.1
+        "time": "2026-10-05T11:00",
+        "uv": 3.0
       },
       {
-        "time": "2026-10-04T12:00",
-        "uv": 3.9
+        "time": "2026-10-05T12:00",
+        "uv": 3.6
       },
       {
-        "time": "2026-10-04T13:00",
-        "uv": 4.2
-      },
-      {
-        "time": "2026-10-04T14:00",
-        "uv": 4.2
-      },
-      {
-        "time": "2026-10-04T15:00",
+        "time": "2026-10-05T13:00",
         "uv": 3.5
       },
       {
-        "time": "2026-10-04T16:00",
-        "uv": 2.5
+        "time": "2026-10-05T14:00",
+        "uv": 3.6
       },
       {
-        "time": "2026-10-04T17:00",
-        "uv": 1.5
+        "time": "2026-10-05T15:00",
+        "uv": 3.0
       },
       {
-        "time": "2026-10-04T18:00",
-        "uv": 0.6
+        "time": "2026-10-05T16:00",
+        "uv": 2.0
       },
       {
-        "time": "2026-10-04T19:00",
+        "time": "2026-10-05T17:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-10-05T18:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-10-05T19:00",
         "uv": 0.1
       },
       {
-        "time": "2026-10-04T20:00",
+        "time": "2026-10-05T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T21:00",
+        "time": "2026-10-05T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T22:00",
+        "time": "2026-10-05T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-04T23:00",
+        "time": "2026-10-05T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-04T21:09:53+02:00"
+    "fetched_at": "2026-10-05T00:42:36+02:00"
   }
 }
