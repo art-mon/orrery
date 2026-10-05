@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-05",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-04",
-    "explanation": "Yes, but can your rainbow do this? After the remnants of Hurricane Florence passed over the Jersey Shore, New Jersey, USA in 2018, the Sun came out in one direction but something quite unusual appeared in the opposite direction: a hall of rainbows. Over the course of the next half hour, to the delight of the photographer and his daughter, vibrant supernumerary rainbows faded in and out, with at least five captured in this featured single shot. Supernumerary rainbows only form when falling water droplets are all nearly the same size and typically less than a millimeter across. Then, sunlight will not only reflect from inside the raindrops, but interfere, a wave phenomenon similar to ripples on a pond when a stone is thrown in. In fact, supernumerary rainbows can only be explained with waves, and their noted existence in the early 1800s was considered early evidence of light's wave nature.Your Sky Surprise: What picture did APOD feature on your birthday? (post 1995)Tomorrow's picture: open space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,30 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2009 UD)",
-        "hazardous": false,
-        "diameter_m": 22,
-        "close_approach_date": "2026-10-04",
-        "miss_distance_km": 47218840,
-        "velocity_kmh": 45585
-      },
-      {
-        "name": "(2019 UM8)",
-        "hazardous": false,
-        "diameter_m": 12,
-        "close_approach_date": "2026-10-04",
-        "miss_distance_km": 61974605,
-        "velocity_kmh": 65521
-      },
-      {
-        "name": "(2017 WK15)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-10-04",
-        "miss_distance_km": 65522606,
-        "velocity_kmh": 61044
-      },
-      {
         "name": "(2007 UW1)",
         "hazardous": false,
         "diameter_m": 171,
@@ -243,45 +214,69 @@
         "close_approach_date": "2026-10-06",
         "miss_distance_km": 46951512,
         "velocity_kmh": 43941
+      },
+      {
+        "name": "(2017 SX20)",
+        "hazardous": false,
+        "diameter_m": 88,
+        "close_approach_date": "2026-10-06",
+        "miss_distance_km": 63429518,
+        "velocity_kmh": 57428
+      },
+      {
+        "name": "(2018 AG12)",
+        "hazardous": false,
+        "diameter_m": 108,
+        "close_approach_date": "2026-10-06",
+        "miss_distance_km": 64143759,
+        "velocity_kmh": 30201
+      },
+      {
+        "name": "(2010 SJ)",
+        "hazardous": false,
+        "diameter_m": 103,
+        "close_approach_date": "2026-10-06",
+        "miss_distance_km": 74094317,
+        "velocity_kmh": 69818
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 11.6,
-    "humidity": 64,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
+    "temp_c": 10.4,
+    "feels_c": 9.5,
+    "humidity": 77,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-05",
-    "city": "Donji grad",
-    "temp_min_c": 7.6,
-    "temp_max_c": 23.3,
-    "humidity": 68,
+    "city": "Zagreb",
+    "temp_min_c": 7.5,
+    "temp_max_c": 23.4,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
+    "icon": "04n",
     "wind_kmh": 2.5,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-06",
-    "city": "Donji grad",
-    "temp_min_c": 5.7,
-    "temp_max_c": 23.5,
-    "humidity": 72,
+    "city": "Zagreb",
+    "temp_min_c": 5.5,
+    "temp_max_c": 24.1,
+    "humidity": 70,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.5
+    "wind_kmh": 2.7
   },
   "forecast_day_after": {
     "date": "2026-10-07",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 10.5,
     "temp_max_c": 20.9,
     "humidity": 76,
@@ -293,8 +288,8 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.6,
-    "peak_time": "2026-10-05T12:00",
+    "daily_max": 3.7,
+    "peak_time": "2026-10-05T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -340,43 +335,43 @@
       },
       {
         "time": "2026-10-05T10:00",
-        "uv": 1.9
+        "uv": 1.8
       },
       {
         "time": "2026-10-05T11:00",
-        "uv": 3.0
+        "uv": 2.8
       },
       {
         "time": "2026-10-05T12:00",
-        "uv": 3.6
-      },
-      {
-        "time": "2026-10-05T13:00",
         "uv": 3.5
       },
       {
+        "time": "2026-10-05T13:00",
+        "uv": 3.7
+      },
+      {
         "time": "2026-10-05T14:00",
-        "uv": 3.6
+        "uv": 3.5
       },
       {
         "time": "2026-10-05T15:00",
-        "uv": 3.0
+        "uv": 2.8
       },
       {
         "time": "2026-10-05T16:00",
-        "uv": 2.0
+        "uv": 1.6
       },
       {
         "time": "2026-10-05T17:00",
-        "uv": 1.1
+        "uv": 0.8
       },
       {
         "time": "2026-10-05T18:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-10-05T19:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-10-05T20:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-05T00:42:36+02:00"
+    "fetched_at": "2026-10-05T03:34:27+02:00"
   }
 }
