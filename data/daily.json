@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-05",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-05",
+    "explanation": "A deep image of the Sombrero galaxy reveals surprises. M104 is named the Sombrero galaxy because, on shorter exposures, it looks like a hat. A key defining feature of this huge galaxy is a dark brim of dust that circles the disk galaxy's center. A much longer exposure, however, brings up a hairy past where a bright, hazy halo is revealed that extends well past the central disk and contains many unresolved stars. Surprisingly, in this stellar haze, structures can be seen that include a diagonal ring. These structures and tidal streams provide fresh evidence that M104 had a violent past and is surely the result of collisions and mergers of smaller galaxies. Light takes about 30 million years to reach us from the Sombrero galaxy, which fully spans about 150 thousand light years across. The featured image was taken over seven days in mid-2026 from Namibia.Your Sky Surprise: What picture did APOD feature on your birthday? (post 1995)Tomorrow's picture: a smile\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000tzme",
+        "title": "M5.0 Earthquake - 71 km E of \u2018Ohonua, Tonga",
+        "category": "Earthquake",
+        "date": "2026-10-05T05:26:44.808000Z",
+        "coordinates": [
+          -174.2679,
+          -21.4208
+        ]
+      },
+      {
+        "id": "us6000tzlp",
+        "title": "M5.3 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-05T01:18:50.392000Z",
+        "coordinates": [
+          -19.965,
+          -0.4325
+        ]
+      },
       {
         "id": "us6000tzj8",
         "title": "M5.0 Earthquake - 295 km S of Burica, Panama",
@@ -134,26 +159,6 @@
           -62.4223,
           10.3698
         ]
-      },
-      {
-        "id": "us6000tz1c",
-        "title": "M5.0 Earthquake - 6 km E of Inglewood, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-10-02T13:57:15.838000Z",
-        "coordinates": [
-          174.2598,
-          -39.1598
-        ]
-      },
-      {
-        "id": "us6000tz0x",
-        "title": "M5.0 Earthquake - 63 km SW of Panguna, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-02T11:14:14.383000Z",
-        "coordinates": [
-          155.0136,
-          -6.6368
-        ]
       }
     ]
   },
@@ -243,25 +248,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.5,
-    "humidity": 77,
+    "temp_c": 15.4,
+    "feels_c": 14.6,
+    "humidity": 61,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
+    "icon": "04d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-10-05",
     "city": "Zagreb",
     "temp_min_c": 7.5,
-    "temp_max_c": 23.4,
-    "humidity": 72,
+    "temp_max_c": 19.6,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 2.5,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 1.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-06",
@@ -277,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-10-07",
     "city": "Zagreb",
-    "temp_min_c": 10.5,
-    "temp_max_c": 20.9,
-    "humidity": 76,
+    "temp_min_c": 10.6,
+    "temp_max_c": 20.8,
+    "humidity": 75,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.6
+    "wind_kmh": 4.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.4,
     "band": "low",
-    "daily_max": 3.7,
-    "peak_time": "2026-10-05T13:00",
-    "safe_minutes": null,
+    "daily_max": 3.5,
+    "peak_time": "2026-10-05T12:00",
+    "safe_minutes": 71,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,7 +336,7 @@
       },
       {
         "time": "2026-10-05T09:00",
-        "uv": 0.9
+        "uv": 0.8
       },
       {
         "time": "2026-10-05T10:00",
@@ -339,7 +344,7 @@
       },
       {
         "time": "2026-10-05T11:00",
-        "uv": 2.8
+        "uv": 2.6
       },
       {
         "time": "2026-10-05T12:00",
@@ -347,7 +352,7 @@
       },
       {
         "time": "2026-10-05T13:00",
-        "uv": 3.7
+        "uv": 3.5
       },
       {
         "time": "2026-10-05T14:00",
@@ -359,11 +364,11 @@
       },
       {
         "time": "2026-10-05T16:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-10-05T17:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-10-05T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-05T03:34:27+02:00"
+    "fetched_at": "2026-10-05T10:17:13+02:00"
   }
 }
