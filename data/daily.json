@@ -3,13 +3,33 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-10-06",
-    "explanation": "Have you ever seen a complete auroral oval? You can't see one from the ground because it makes too large a circle around one of Earth's magnetic poles. But spacecraft high above the Earth can see them. The featured video from ESA and CAS's robotic SMILE spacecraft shows not only a full auroral oval, but using ultraviolet light, one that occurred during the day. The time-lapse covers about an hour in late July and shows visually how variable and turbulent auroras really are. The points of light on the sides are distant stars that appear to move only because SMILE's camera view shifts as the spacecraft orbits the Earth. A goal of SMILE is to better understand how the Sun's wind interacts with the Earth's magnetosphere -- and so better understand how to protect astronauts, spacecraft, and ground-based electrical grids from solar storms.Tomorrow's picture: a ghost\t\t\t\t\t\t",
+    "explanation": "Have you ever seen a complete auroral oval? You can't see one from the ground because it makes too large a circle around one of Earth's magnetic poles. But spacecraft high above the Earth can see them. The featured video from ESA and CAS's robotic SMILE spacecraft shows not only a full auroral oval, but using ultraviolet light, one that occurred during the day. The time-lapse covers about an hour in late July and shows visually how variable and turbulent auroras really are. The points of light on the sides are distant stars that appear to move only because SMILE's camera view shifts as the spacecraft orbits the Earth. A goal of SMILE is to better understand how the Sun's wind interacts with the Earth's magnetosphere -- and so better understand how to protect astronauts, spacecraft, and ground-based electrical grids from solar storms.Tomorrow's picture: a spokey image\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u0hz",
+        "title": "M5.1 Earthquake - 34 km NNW of B\u0101geshwar, India",
+        "category": "Earthquake",
+        "date": "2026-10-06T16:53:11.296000Z",
+        "coordinates": [
+          79.6148,
+          30.1171
+        ]
+      },
+      {
+        "id": "us6000u0hy",
+        "title": "M5.9 Earthquake - 264 km SSW of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-10-06T16:48:21.805000Z",
+        "coordinates": [
+          154.8085,
+          48.4554
+        ]
+      },
       {
         "id": "us6000tzsc",
         "title": "M5.0 Earthquake - south of the Fiji Islands",
@@ -139,26 +159,6 @@
           159.8843,
           51.6886
         ]
-      },
-      {
-        "id": "us6000tz8c",
-        "title": "M5.1 Earthquake - 199 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-02T20:27:27.120000Z",
-        "coordinates": [
-          159.665,
-          51.3149
-        ]
-      },
-      {
-        "id": "us6000tz7b",
-        "title": "M5.0 Earthquake - 179 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-02T18:25:20.940000Z",
-        "coordinates": [
-          159.8307,
-          51.5775
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 23.3,
-    "feels_c": 22.6,
-    "humidity": 35,
+    "city": "Zagreb",
+    "temp_c": 18.7,
+    "feels_c": 17.9,
+    "humidity": 49,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
+    "description": "broken clouds",
+    "icon": "04n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-06",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 23.7,
-    "humidity": 48,
+    "temp_min_c": 15.9,
+    "temp_max_c": 18.7,
+    "humidity": 51,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 2.7,
-    "samples": 5
+    "icon": "04n",
+    "wind_kmh": 2.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-07",
     "city": "Zagreb",
-    "temp_min_c": 7.1,
-    "temp_max_c": 24.8,
-    "humidity": 76,
+    "temp_min_c": 7.3,
+    "temp_max_c": 24.3,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.1
+    "wind_kmh": 2.8
   },
   "forecast_day_after": {
     "date": "2026-10-08",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 22.1,
-    "humidity": 84,
+    "temp_min_c": 10.5,
+    "temp_max_c": 21.8,
+    "humidity": 85,
     "condition": "Rain",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 7.2
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.0
   },
   "uv": {
-    "uv": 4.0,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 4.2,
     "peak_time": "2026-10-06T13:00",
-    "safe_minutes": 42,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -364,7 +364,7 @@
       },
       {
         "time": "2026-10-06T16:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-10-06T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-06T13:45:56+02:00"
+    "fetched_at": "2026-10-06T19:53:53+02:00"
   }
 }
