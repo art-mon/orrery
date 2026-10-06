@@ -1,7 +1,12 @@
 {
   "generated": "2026-10-06",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-06",
+    "explanation": "Have you ever seen a complete auroral oval? You can't see one from the ground because it makes too large a circle around one of Earth's magnetic poles. But spacecraft high above the Earth can see them. The featured video from ESA and CAS's robotic SMILE spacecraft shows not only a full auroral oval, but using ultraviolet light, one that occurred during the day. The time-lapse covers about an hour in late July and shows visually how variable and turbulent auroras really are. The points of light on the sides are distant stars that appear to move only because SMILE's camera view shifts as the spacecraft orbits the Earth. A goal of SMILE is to better understand how the Sun's wind interacts with the Earth's magnetosphere -- and so better understand how to protect astronauts, spacecraft, and ground-based electrical grids from solar storms.Tomorrow's picture: a ghost\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 9.2,
-    "feels_c": 9.2,
-    "humidity": 83,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "city": "Donji grad",
+    "temp_c": 23.3,
+    "feels_c": 22.6,
+    "humidity": 35,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-06",
     "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 22.6,
-    "humidity": 71,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 2.2,
-    "samples": 7
+    "temp_min_c": 9.7,
+    "temp_max_c": 23.7,
+    "humidity": 48,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02d",
+    "wind_kmh": 2.7,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-07",
     "city": "Zagreb",
-    "temp_min_c": 7.4,
-    "temp_max_c": 25.0,
-    "humidity": 74,
+    "temp_min_c": 7.1,
+    "temp_max_c": 24.8,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -277,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-10-08",
     "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 22.8,
+    "temp_min_c": 9.7,
+    "temp_max_c": 22.1,
     "humidity": 84,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.3
+    "condition": "Rain",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.2
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 4.0,
+    "band": "moderate",
     "daily_max": 4.2,
     "peak_time": "2026-10-06T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 42,
     "skin_type": 2,
     "hourly": [
       {
@@ -359,7 +364,7 @@
       },
       {
         "time": "2026-10-06T16:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-10-06T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-06T06:47:13+02:00"
+    "fetched_at": "2026-10-06T13:45:56+02:00"
   }
 }
