@@ -1,15 +1,20 @@
 {
-  "generated": "2026-10-06",
+  "generated": "2026-10-07",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-06",
-    "explanation": "Have you ever seen a complete auroral oval? You can't see one from the ground because it makes too large a circle around one of Earth's magnetic poles. But spacecraft high above the Earth can see them. The featured video from ESA and CAS's robotic SMILE spacecraft shows not only a full auroral oval, but using ultraviolet light, one that occurred during the day. The time-lapse covers about an hour in late July and shows visually how variable and turbulent auroras really are. The points of light on the sides are distant stars that appear to move only because SMILE's camera view shifts as the spacecraft orbits the Earth. A goal of SMILE is to better understand how the Sun's wind interacts with the Earth's magnetosphere -- and so better understand how to protect astronauts, spacecraft, and ground-based electrical grids from solar storms.Tomorrow's picture: a spokey image\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "aka2026tuxgky",
+        "title": "M5.5 Earthquake - 92 km NNW of Aleneva, Alaska",
+        "category": "Earthquake",
+        "date": "2026-10-06T18:34:31.760000Z",
+        "coordinates": [
+          -153.609,
+          58.802
+        ]
+      },
       {
         "id": "us6000u0hz",
         "title": "M5.1 Earthquake - 34 km NNW of B\u0101geshwar, India",
@@ -149,16 +154,6 @@
           160.4217,
           52.0836
         ]
-      },
-      {
-        "id": "us6000tz8l",
-        "title": "M5.0 Earthquake - 171 km SE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-02T20:54:15.391000Z",
-        "coordinates": [
-          159.8843,
-          51.6886
-        ]
       }
     ]
   },
@@ -248,153 +243,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.7,
-    "feels_c": 17.9,
-    "humidity": 49,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
-  },
-  "forecast_today": {
-    "date": "2026-10-06",
-    "city": "Zagreb",
-    "temp_min_c": 15.9,
-    "temp_max_c": 18.7,
-    "humidity": 51,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 2.6,
-    "samples": 3
-  },
-  "forecast": {
-    "date": "2026-10-07",
-    "city": "Zagreb",
-    "temp_min_c": 7.3,
-    "temp_max_c": 24.3,
-    "humidity": 77,
+    "temp_c": 14.2,
+    "feels_c": 13.4,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.8
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
-  "forecast_day_after": {
+  "forecast_today": {
+    "date": "2026-10-07",
+    "city": "Zagreb",
+    "temp_min_c": 10.3,
+    "temp_max_c": 24.9,
+    "humidity": 72,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 3.8,
+    "samples": 9
+  },
+  "forecast": {
     "date": "2026-10-08",
     "city": "Zagreb",
-    "temp_min_c": 10.5,
-    "temp_max_c": 21.8,
-    "humidity": 85,
+    "temp_min_c": 11.0,
+    "temp_max_c": 25.4,
+    "humidity": 86,
     "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 8.1
+  },
+  "forecast_day_after": {
+    "date": "2026-10-09",
+    "city": "Zagreb",
+    "temp_min_c": 11.4,
+    "temp_max_c": 16.7,
+    "humidity": 81,
+    "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.0
+    "wind_kmh": 7.2
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.2,
-    "peak_time": "2026-10-06T13:00",
+    "daily_max": 4.1,
+    "peak_time": "2026-10-07T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-06T00:00",
+        "time": "2026-10-07T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T01:00",
+        "time": "2026-10-07T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T02:00",
+        "time": "2026-10-07T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T03:00",
+        "time": "2026-10-07T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T04:00",
+        "time": "2026-10-07T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T05:00",
+        "time": "2026-10-07T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T06:00",
+        "time": "2026-10-07T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T07:00",
+        "time": "2026-10-07T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T08:00",
+        "time": "2026-10-07T08:00",
         "uv": 0.2
       },
       {
-        "time": "2026-10-06T09:00",
+        "time": "2026-10-07T09:00",
         "uv": 0.9
       },
       {
-        "time": "2026-10-06T10:00",
-        "uv": 2.0
+        "time": "2026-10-07T10:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-10-06T11:00",
+        "time": "2026-10-07T11:00",
         "uv": 3.0
       },
       {
-        "time": "2026-10-06T12:00",
+        "time": "2026-10-07T12:00",
         "uv": 3.8
       },
       {
-        "time": "2026-10-06T13:00",
-        "uv": 4.2
+        "time": "2026-10-07T13:00",
+        "uv": 4.1
       },
       {
-        "time": "2026-10-06T14:00",
+        "time": "2026-10-07T14:00",
         "uv": 4.0
       },
       {
-        "time": "2026-10-06T15:00",
-        "uv": 3.5
+        "time": "2026-10-07T15:00",
+        "uv": 3.3
       },
       {
-        "time": "2026-10-06T16:00",
-        "uv": 2.5
+        "time": "2026-10-07T16:00",
+        "uv": 2.2
       },
       {
-        "time": "2026-10-06T17:00",
+        "time": "2026-10-07T17:00",
         "uv": 1.4
       },
       {
-        "time": "2026-10-06T18:00",
+        "time": "2026-10-07T18:00",
         "uv": 0.5
       },
       {
-        "time": "2026-10-06T19:00",
+        "time": "2026-10-07T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T20:00",
+        "time": "2026-10-07T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T21:00",
+        "time": "2026-10-07T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T22:00",
+        "time": "2026-10-07T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-06T23:00",
+        "time": "2026-10-07T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-06T19:53:53+02:00"
+    "fetched_at": "2026-10-07T00:18:06+02:00"
   }
 }
