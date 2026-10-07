@@ -1,10 +1,25 @@
 {
   "generated": "2026-10-07",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-07",
+    "explanation": "\"Happy New Year!\" No, wait, this is not a fireworks display. This image shows Nebula Pa 30, observed with the Gemini North Telescope in Hawai'i. It is likely the remnant of an old supernova explosion: separate historical records by Chinese, Japanese and Arabic astronomers tell of a \"guest star\" that appeared in the sky for 185 days in the year 1181. It is believed that this bright new point of light came from the supernova that caused the fireworks in Pa 30. Astronomers don't know exactly what happened in this unusual explosion, classified as a Type Iax supernova, but it is thought to be caused by the merger of two white dwarfs. The mysterious central star in the image is extremely hot and produces a strong wind, possibly forming the radial filaments. Look closely at them: those pearl-like knots stringing the filaments are 4 light-days in diameter. Understanding how a supernova created this amazing nebula continues an 845-year old mystery (and counting).Tomorrow's picture: sm\u00f6rg\u00e5sbord\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u0rr",
+        "title": "M5.2 Earthquake - Chagos Archipelago region",
+        "category": "Earthquake",
+        "date": "2026-10-07T14:59:25.858000Z",
+        "coordinates": [
+          72.2362,
+          -6.6637
+        ]
+      },
       {
         "id": "aka2026tuxgky",
         "title": "M5.5 Earthquake - 92 km NNW of Aleneva, Alaska",
@@ -17,22 +32,32 @@
       },
       {
         "id": "us6000u0hz",
-        "title": "M5.1 Earthquake - 34 km NNW of B\u0101geshwar, India",
+        "title": "M5.1 Earthquake - 34 km NW of B\u0101geshwar, India",
         "category": "Earthquake",
-        "date": "2026-10-06T16:53:11.296000Z",
+        "date": "2026-10-06T16:53:12.578000Z",
         "coordinates": [
-          79.6148,
-          30.1171
+          79.5618,
+          30.092
         ]
       },
       {
         "id": "us6000u0hy",
-        "title": "M5.9 Earthquake - 264 km SSW of Severo-Kuril\u2019sk, Russia",
+        "title": "M5.8 Earthquake - 262 km SSW of Severo-Kuril\u2019sk, Russia",
         "category": "Earthquake",
-        "date": "2026-10-06T16:48:21.805000Z",
+        "date": "2026-10-06T16:48:22.347000Z",
         "coordinates": [
-          154.8085,
-          48.4554
+          154.9316,
+          48.4437
+        ]
+      },
+      {
+        "id": "us6000tzwg",
+        "title": "M5.0 Earthquake - 51 km NNE of Semporna, Malaysia",
+        "category": "Earthquake",
+        "date": "2026-10-06T13:11:22.867000Z",
+        "coordinates": [
+          118.825,
+          4.8949
         ]
       },
       {
@@ -134,26 +159,6 @@
           118.9078,
           -9.5672
         ]
-      },
-      {
-        "id": "us6000tze2",
-        "title": "M5.1 Earthquake - 182 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-03T20:00:44.104000Z",
-        "coordinates": [
-          159.8296,
-          51.5457
-        ]
-      },
-      {
-        "id": "us6000tzal",
-        "title": "M5.0 Earthquake - 163 km SE of Petropavlovsk-Kamchatsky, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-03T02:59:06.296000Z",
-        "coordinates": [
-          160.4217,
-          52.0836
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 23.7,
-    "feels_c": 23.4,
-    "humidity": 48,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "temp_c": 22.7,
+    "feels_c": 22.2,
+    "humidity": 46,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-07",
     "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 24.0,
-    "humidity": 61,
+    "temp_min_c": 19.5,
+    "temp_max_c": 22.7,
+    "humidity": 49,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 6.5,
-    "samples": 5
+    "icon": "02n",
+    "wind_kmh": 6.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-08",
     "city": "Zagreb",
-    "temp_min_c": 11.0,
-    "temp_max_c": 27.1,
-    "humidity": 85,
+    "temp_min_c": 12.5,
+    "temp_max_c": 25.8,
+    "humidity": 83,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.1
+    "wind_kmh": 7.6
   },
   "forecast_day_after": {
     "date": "2026-10-09",
     "city": "Zagreb",
-    "temp_min_c": 11.3,
+    "temp_min_c": 10.3,
     "temp_max_c": 14.9,
-    "humidity": 80,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.9
+    "wind_kmh": 4.8
   },
   "uv": {
-    "uv": 3.9,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 4.1,
     "peak_time": "2026-10-07T13:00",
-    "safe_minutes": 43,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-07T11:46:13+02:00"
+    "fetched_at": "2026-10-07T19:13:37+02:00"
   }
 }
