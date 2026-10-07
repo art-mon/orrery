@@ -1,12 +1,7 @@
 {
-  "generated": "2026-10-07",
+  "generated": "2026-10-08",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-07",
-    "explanation": "\"Happy New Year!\" No, wait, this is not a fireworks display. This image shows Nebula Pa 30, observed with the Gemini North Telescope in Hawai'i. It is likely the remnant of an old supernova explosion: separate historical records by Chinese, Japanese and Arabic astronomers tell of a \"guest star\" that appeared in the sky for 185 days in the year 1181. It is believed that this bright new point of light came from the supernova that caused the fireworks in Pa 30. Astronomers don't know exactly what happened in this unusual explosion, classified as a Type Iax supernova, but it is thought to be caused by the merger of two white dwarfs. The mysterious central star in the image is extremely hot and produces a strong wind, possibly forming the radial filaments. Look closely at them: those pearl-like knots stringing the filaments are 4 light-days in diameter. Understanding how a supernova created this amazing nebula continues an 845-year old mystery (and counting).Tomorrow's picture: sm\u00f6rg\u00e5sbord\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -248,153 +243,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 22.7,
-    "feels_c": 22.2,
-    "humidity": 46,
+    "temp_c": 16.5,
+    "feels_c": 16.0,
+    "humidity": 69,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 9.3
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-10-07",
-    "city": "Zagreb",
-    "temp_min_c": 19.5,
-    "temp_max_c": 22.7,
-    "humidity": 49,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 6.1,
-    "samples": 3
+    "date": "2026-10-08",
+    "city": "Donji grad",
+    "temp_min_c": 13.9,
+    "temp_max_c": 27.5,
+    "humidity": 78,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04n",
+    "wind_kmh": 8.3,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-10-08",
-    "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 25.8,
-    "humidity": 83,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 7.6
-  },
-  "forecast_day_after": {
     "date": "2026-10-09",
-    "city": "Zagreb",
-    "temp_min_c": 10.3,
-    "temp_max_c": 14.9,
-    "humidity": 82,
+    "city": "Donji grad",
+    "temp_min_c": 9.7,
+    "temp_max_c": 20.4,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.8
+    "wind_kmh": 5.4
+  },
+  "forecast_day_after": {
+    "date": "2026-10-10",
+    "city": "Donji grad",
+    "temp_min_c": 8.6,
+    "temp_max_c": 11.3,
+    "humidity": 88,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.5
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 4.1,
-    "peak_time": "2026-10-07T13:00",
+    "daily_max": 3.9,
+    "peak_time": "2026-10-08T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-07T00:00",
+        "time": "2026-10-08T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T01:00",
+        "time": "2026-10-08T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T02:00",
+        "time": "2026-10-08T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T03:00",
+        "time": "2026-10-08T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T04:00",
+        "time": "2026-10-08T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T05:00",
+        "time": "2026-10-08T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T06:00",
+        "time": "2026-10-08T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T07:00",
+        "time": "2026-10-08T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T08:00",
-        "uv": 0.2
+        "time": "2026-10-08T08:00",
+        "uv": 0.0
       },
       {
-        "time": "2026-10-07T09:00",
+        "time": "2026-10-08T09:00",
+        "uv": 0.6
+      },
+      {
+        "time": "2026-10-08T10:00",
         "uv": 0.9
       },
       {
-        "time": "2026-10-07T10:00",
-        "uv": 1.9
+        "time": "2026-10-08T11:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-10-07T11:00",
-        "uv": 3.0
+        "time": "2026-10-08T12:00",
+        "uv": 2.8
       },
       {
-        "time": "2026-10-07T12:00",
-        "uv": 3.8
+        "time": "2026-10-08T13:00",
+        "uv": 3.9
       },
       {
-        "time": "2026-10-07T13:00",
-        "uv": 4.1
+        "time": "2026-10-08T14:00",
+        "uv": 3.6
       },
       {
-        "time": "2026-10-07T14:00",
-        "uv": 4.0
+        "time": "2026-10-08T15:00",
+        "uv": 2.8
       },
       {
-        "time": "2026-10-07T15:00",
-        "uv": 3.4
+        "time": "2026-10-08T16:00",
+        "uv": 2.0
       },
       {
-        "time": "2026-10-07T16:00",
-        "uv": 2.4
+        "time": "2026-10-08T17:00",
+        "uv": 1.1
       },
       {
-        "time": "2026-10-07T17:00",
-        "uv": 1.4
+        "time": "2026-10-08T18:00",
+        "uv": 0.3
       },
       {
-        "time": "2026-10-07T18:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-10-07T19:00",
+        "time": "2026-10-08T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T20:00",
+        "time": "2026-10-08T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T21:00",
+        "time": "2026-10-08T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T22:00",
+        "time": "2026-10-08T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-07T23:00",
+        "time": "2026-10-08T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-07T19:13:37+02:00"
+    "fetched_at": "2026-10-08T00:40:19+02:00"
   }
 }
