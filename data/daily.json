@@ -1,10 +1,55 @@
 {
   "generated": "2026-10-08",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-08",
+    "explanation": "How was the Saturn system imaged so clearly? Astrophotographer Tom Williams captured such exquisite details due to one night of exceptional atmospheric conditions above the United Kingdom. This means more than a cloudless sky. Pockets of air at different temperatures and densities move around and bend light as it travels through Earth\u2019s atmosphere, distorting astronomy images. This is called \u201cseeing\u201d. Less atmospheric turbulence means clearer images. The astrophotographer reduced the impact of seeing with the lucky imaging technique: thousands of short-exposure images are taken very quickly with a high-speed camera and the clearest images are added up. Which object in this sm\u00f6rg\u00e5sbord interests you? Perhaps Titan or the icy stripes of Enceladus? Maybe the gaps and spokes in Saturn\u2019s rings? Saturn's opposition, when Earth passes in between the planet and the Sun, occurred on October 4th. Due to the planet's proximity and full illumination from the Sun, now is a great time of year to observe it!Tomorrow's picture: bumpy\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u0xi",
+        "title": "M6.3 Earthquake - 102 km NE of Norsup, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-08T09:00:07.768000Z",
+        "coordinates": [
+          168.1889,
+          -15.5411
+        ]
+      },
+      {
+        "id": "us6000u0x4",
+        "title": "M5.5 Earthquake - 17 km SW of Burias, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-08T08:07:59.114000Z",
+        "coordinates": [
+          125.1521,
+          5.6006
+        ]
+      },
+      {
+        "id": "us6000u0ws",
+        "title": "M5.5 Earthquake - west of Macquarie Island",
+        "category": "Earthquake",
+        "date": "2026-10-08T06:46:47.971000Z",
+        "coordinates": [
+          140.2121,
+          -52.5475
+        ]
+      },
+      {
+        "id": "us6000u0wa",
+        "title": "M5.0 Earthquake - 92 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-08T04:48:59.943000Z",
+        "coordinates": [
+          120.5395,
+          -7.7761
+        ]
+      },
       {
         "id": "us6000u0rr",
         "title": "M5.2 Earthquake - Chagos Archipelago region",
@@ -114,46 +159,6 @@
           36.1272,
           37.7292
         ]
-      },
-      {
-        "id": "us6000tzid",
-        "title": "M5.1 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-10-04T11:12:48.352000Z",
-        "coordinates": [
-          144.6508,
-          22.8191
-        ]
-      },
-      {
-        "id": "us6000tzi5",
-        "title": "M5.0 Earthquake - 37 km N of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-04T10:13:07.298000Z",
-        "coordinates": [
-          120.4532,
-          -8.2698
-        ]
-      },
-      {
-        "id": "us6000tzfg",
-        "title": "M5.3 Earthquake - 81 km SSW of Banda Aceh, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-03T23:37:34.235000Z",
-        "coordinates": [
-          95.1622,
-          4.8247
-        ]
-      },
-      {
-        "id": "us6000tzer",
-        "title": "M5.9 Earthquake - 39 km WSW of Tambolaka, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-03T22:55:55.358000Z",
-        "coordinates": [
-          118.9078,
-          -9.5672
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 16.1,
-    "humidity": 72,
+    "temp_c": 21.6,
+    "feels_c": 21.3,
+    "humidity": 58,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.7
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-08",
     "city": "Zagreb",
-    "temp_min_c": 14.7,
-    "temp_max_c": 26.4,
-    "humidity": 79,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 8.9,
-    "samples": 8
+    "temp_min_c": 15.7,
+    "temp_max_c": 23.3,
+    "humidity": 76,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "03d",
+    "wind_kmh": 11.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-09",
     "city": "Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 20.3,
-    "humidity": 80,
+    "temp_min_c": 11.7,
+    "temp_max_c": 20.4,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.3
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
     "date": "2026-10-10",
     "city": "Zagreb",
-    "temp_min_c": 9.1,
-    "temp_max_c": 11.2,
-    "humidity": 86,
+    "temp_min_c": 8.8,
+    "temp_max_c": 12.4,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 3.1
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.5,
     "band": "low",
-    "daily_max": 3.4,
-    "peak_time": "2026-10-08T14:00",
-    "safe_minutes": null,
+    "daily_max": 3.9,
+    "peak_time": "2026-10-08T13:00",
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -327,7 +332,7 @@
       },
       {
         "time": "2026-10-08T08:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-10-08T09:00",
@@ -335,39 +340,39 @@
       },
       {
         "time": "2026-10-08T10:00",
-        "uv": 1.1
+        "uv": 0.2
       },
       {
         "time": "2026-10-08T11:00",
-        "uv": 1.5
+        "uv": 0.7
       },
       {
         "time": "2026-10-08T12:00",
-        "uv": 3.0
+        "uv": 1.2
       },
       {
         "time": "2026-10-08T13:00",
-        "uv": 3.1
+        "uv": 3.9
       },
       {
         "time": "2026-10-08T14:00",
-        "uv": 3.4
+        "uv": 3.0
       },
       {
         "time": "2026-10-08T15:00",
-        "uv": 3.2
+        "uv": 2.6
       },
       {
         "time": "2026-10-08T16:00",
-        "uv": 2.0
+        "uv": 1.7
       },
       {
         "time": "2026-10-08T17:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-10-08T18:00",
-        "uv": 0.3
+        "uv": 0.1
       },
       {
         "time": "2026-10-08T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-08T04:29:10+02:00"
+    "fetched_at": "2026-10-08T11:56:50+02:00"
   }
 }
