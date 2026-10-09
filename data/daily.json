@@ -1,10 +1,20 @@
 {
   "generated": "2026-10-09",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u13v",
+        "title": "M5.2 Earthquake - 117 km SE of Bitung, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-09T05:11:04.200000Z",
+        "coordinates": [
+          125.9365,
+          0.7587
+        ]
+      },
       {
         "id": "us6000u0xn",
         "title": "M5.1 Earthquake - 236 km E of Levuka, Fiji",
@@ -144,16 +154,6 @@
           -19.965,
           -0.4325
         ]
-      },
-      {
-        "id": "us6000tzj8",
-        "title": "M5.0 Earthquake - 295 km S of Burica, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-04T14:06:10.385000Z",
-        "coordinates": [
-          -82.7171,
-          5.3695
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.7,
-    "feels_c": 17.8,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 9.3
+    "temp_c": 15.4,
+    "feels_c": 14.7,
+    "humidity": 68,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 20.4
   },
   "forecast_today": {
     "date": "2026-10-09",
     "city": "Zagreb",
-    "temp_min_c": 14.4,
-    "temp_max_c": 18.8,
-    "humidity": 78,
+    "temp_min_c": 15.0,
+    "temp_max_c": 16.8,
+    "humidity": 72,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10n",
-    "wind_kmh": 4.5,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 7.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-10",
     "city": "Zagreb",
-    "temp_min_c": 11.8,
-    "temp_max_c": 18.7,
-    "humidity": 86,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 3.0
+    "temp_min_c": 11.4,
+    "temp_max_c": 19.0,
+    "humidity": 84,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.4
   },
   "forecast_day_after": {
     "date": "2026-10-11",
     "city": "Zagreb",
-    "temp_min_c": 10.8,
-    "temp_max_c": 17.6,
+    "temp_min_c": 10.3,
+    "temp_max_c": 16.7,
     "humidity": 80,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.2
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.3,
     "band": "low",
-    "daily_max": 1.4,
+    "daily_max": 1.5,
     "peak_time": "2026-10-09T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 128,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,39 +331,39 @@
       },
       {
         "time": "2026-10-09T09:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-10-09T10:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-10-09T11:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-10-09T12:00",
-        "uv": 1.4
-      },
-      {
-        "time": "2026-10-09T13:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-10-09T14:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-10-09T15:00",
         "uv": 0.7
       },
       {
+        "time": "2026-10-09T11:00",
+        "uv": 1.4
+      },
+      {
+        "time": "2026-10-09T12:00",
+        "uv": 1.5
+      },
+      {
+        "time": "2026-10-09T13:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-10-09T14:00",
+        "uv": 0.9
+      },
+      {
+        "time": "2026-10-09T15:00",
+        "uv": 0.8
+      },
+      {
         "time": "2026-10-09T16:00",
-        "uv": 1.1
+        "uv": 0.7
       },
       {
         "time": "2026-10-09T17:00",
-        "uv": 1.1
+        "uv": 0.5
       },
       {
         "time": "2026-10-09T18:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-09T04:45:24+02:00"
+    "fetched_at": "2026-10-09T12:00:42+02:00"
   }
 }
