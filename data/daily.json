@@ -160,46 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2015 TS238)",
-        "hazardous": false,
-        "diameter_m": 49,
-        "close_approach_date": "2026-10-08",
-        "miss_distance_km": 1813910,
-        "velocity_kmh": 56916
-      },
-      {
-        "name": "513312 (2007 DM41)",
-        "hazardous": true,
-        "diameter_m": 230,
-        "close_approach_date": "2026-10-08",
-        "miss_distance_km": 24922544,
-        "velocity_kmh": 43689
-      },
-      {
-        "name": "(2009 UU1)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-10-08",
-        "miss_distance_km": 44809139,
-        "velocity_kmh": 68079
-      },
-      {
-        "name": "(2007 TH3)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-10-08",
-        "miss_distance_km": 50420385,
-        "velocity_kmh": 52845
-      },
-      {
-        "name": "(2018 HO1)",
-        "hazardous": false,
-        "diameter_m": 52,
-        "close_approach_date": "2026-10-08",
-        "miss_distance_km": 56973735,
-        "velocity_kmh": 30486
-      },
-      {
         "name": "(2019 GE1)",
         "hazardous": false,
         "diameter_m": 24,
@@ -238,58 +198,98 @@
         "close_approach_date": "2026-10-09",
         "miss_distance_km": 54641923,
         "velocity_kmh": 43971
+      },
+      {
+        "name": "(2001 UP)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-10-09",
+        "miss_distance_km": 62620486,
+        "velocity_kmh": 74968
+      },
+      {
+        "name": "(2019 EO2)",
+        "hazardous": false,
+        "diameter_m": 126,
+        "close_approach_date": "2026-10-09",
+        "miss_distance_km": 74515531,
+        "velocity_kmh": 71701
+      },
+      {
+        "name": "(2019 SD8)",
+        "hazardous": false,
+        "diameter_m": 20,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 7162671,
+        "velocity_kmh": 34285
+      },
+      {
+        "name": "(2020 DT2)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 20410341,
+        "velocity_kmh": 58730
+      },
+      {
+        "name": "(2020 BN10)",
+        "hazardous": true,
+        "diameter_m": 377,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 22350835,
+        "velocity_kmh": 65867
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.6,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 7.4
+    "temp_c": 17.7,
+    "feels_c": 17.8,
+    "humidity": 87,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 13.4,
-    "temp_max_c": 21.0,
-    "humidity": 80,
+    "city": "Zagreb",
+    "temp_min_c": 14.4,
+    "temp_max_c": 18.8,
+    "humidity": 78,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
+    "icon": "10n",
     "wind_kmh": 4.5,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-10",
-    "city": "City of Zagreb",
-    "temp_min_c": 10.8,
-    "temp_max_c": 21.4,
-    "humidity": 80,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 3.3
+    "city": "Zagreb",
+    "temp_min_c": 11.8,
+    "temp_max_c": 18.7,
+    "humidity": 86,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.0
   },
   "forecast_day_after": {
     "date": "2026-10-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 9.9,
-    "temp_max_c": 16.7,
+    "city": "Zagreb",
+    "temp_min_c": 10.8,
+    "temp_max_c": 17.6,
     "humidity": 80,
-    "condition": "Rain",
-    "description": "clear sky",
-    "icon": "01d",
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 4.2
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.7,
-    "peak_time": "2026-10-09T16:00",
+    "daily_max": 1.4,
+    "peak_time": "2026-10-09T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -331,39 +331,39 @@
       },
       {
         "time": "2026-10-09T09:00",
-        "uv": 0.3
+        "uv": 0.5
       },
       {
         "time": "2026-10-09T10:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-10-09T11:00",
         "uv": 0.8
       },
       {
-        "time": "2026-10-09T12:00",
+        "time": "2026-10-09T11:00",
         "uv": 1.1
+      },
+      {
+        "time": "2026-10-09T12:00",
+        "uv": 1.4
       },
       {
         "time": "2026-10-09T13:00",
-        "uv": 0.7
+        "uv": 0.6
       },
       {
         "time": "2026-10-09T14:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-10-09T15:00",
         "uv": 1.1
       },
       {
+        "time": "2026-10-09T15:00",
+        "uv": 0.7
+      },
+      {
         "time": "2026-10-09T16:00",
-        "uv": 1.7
+        "uv": 1.1
       },
       {
         "time": "2026-10-09T17:00",
-        "uv": 1.2
+        "uv": 1.1
       },
       {
         "time": "2026-10-09T18:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-09T00:51:37+02:00"
+    "fetched_at": "2026-10-09T04:45:24+02:00"
   }
 }
