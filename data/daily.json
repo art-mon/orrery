@@ -1,15 +1,30 @@
 {
   "generated": "2026-10-10",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-09",
-    "explanation": "Stickney Crater, the largest crater on the martian moon Phobos, is named for Chloe Angeline Stickney Hall, mathematician and wife of astronomer Asaph Hall. Asaph Hall discovered both the Red Planet's moons in 1877. Over 9 kilometers across, Stickney is nearly half the diameter of Phobos itself, so large that the impact that blasted out the crater likely came close to shattering the tiny moon. This enhanced-color image of Stickney and surroundings was recorded by the HiRISE camera onboard the Mars Reconnaissance Orbiter as it passed within some six thousand kilometers of Phobos in March of 2008. Even though the surface gravity of asteroid-like Phobos is less than 1/1000th Earth's gravity, streaks suggest loose material slid down inside the crater walls over time. Light bluish regions near the crater's rim could indicate a relatively freshly exposed surface. The origin of the curious grooves along the surface is mysterious but may be related to tidal stresses experienced by close-orbiting Phobos or the crater-forming impact itself.Tomorrow's picture: farside\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u1ay",
+        "title": "M5.4 Earthquake - 9 km SSE of Los Asientos, Panama",
+        "category": "Earthquake",
+        "date": "2026-10-09T23:12:37.790000Z",
+        "coordinates": [
+          -80.0968,
+          7.4366
+        ]
+      },
+      {
+        "id": "us6000u1ax",
+        "title": "M5.0 Earthquake - 8 km ESE of La Tronosa, Panama",
+        "category": "Earthquake",
+        "date": "2026-10-09T23:10:02.875000Z",
+        "coordinates": [
+          -80.5284,
+          7.3962
+        ]
+      },
       {
         "id": "us6000u1aa",
         "title": "M5.0 Earthquake - 13 km W of R\u00edo Grande, Panama",
@@ -139,87 +154,11 @@
           -68.7905,
           -19.9128
         ]
-      },
-      {
-        "id": "us6000u13v",
-        "title": "M5.2 Earthquake - 117 km SE of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-09T05:11:04.200000Z",
-        "coordinates": [
-          125.9365,
-          0.7587
-        ]
-      },
-      {
-        "id": "us6000u0xn",
-        "title": "M5.1 Earthquake - 236 km E of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-10-08T10:07:28.642000Z",
-        "coordinates": [
-          -178.4545,
-          -18.0147
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 GE1)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 17122192,
-        "velocity_kmh": 12911
-      },
-      {
-        "name": "(2016 UW35)",
-        "hazardous": false,
-        "diameter_m": 71,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 32507570,
-        "velocity_kmh": 18012
-      },
-      {
-        "name": "(2015 KT121)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 46791579,
-        "velocity_kmh": 38982
-      },
-      {
-        "name": "(2003 QF70)",
-        "hazardous": false,
-        "diameter_m": 586,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 46792545,
-        "velocity_kmh": 23097
-      },
-      {
-        "name": "(2018 VJ1)",
-        "hazardous": false,
-        "diameter_m": 88,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 54641923,
-        "velocity_kmh": 43971
-      },
-      {
-        "name": "(2001 UP)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 62620486,
-        "velocity_kmh": 74968
-      },
-      {
-        "name": "(2019 EO2)",
-        "hazardous": false,
-        "diameter_m": 126,
-        "close_approach_date": "2026-10-09",
-        "miss_distance_km": 74515531,
-        "velocity_kmh": 71701
-      },
       {
         "name": "(2019 SD8)",
         "hazardous": false,
@@ -243,58 +182,114 @@
         "close_approach_date": "2026-10-10",
         "miss_distance_km": 22350835,
         "velocity_kmh": 65867
+      },
+      {
+        "name": "(2013 RX80)",
+        "hazardous": false,
+        "diameter_m": 1493,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 36110935,
+        "velocity_kmh": 92907
+      },
+      {
+        "name": "(2017 SV14)",
+        "hazardous": false,
+        "diameter_m": 132,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 42766098,
+        "velocity_kmh": 36368
+      },
+      {
+        "name": "(2016 UW80)",
+        "hazardous": false,
+        "diameter_m": 98,
+        "close_approach_date": "2026-10-10",
+        "miss_distance_km": 48924375,
+        "velocity_kmh": 27578
+      },
+      {
+        "name": "(2017 HE49)",
+        "hazardous": false,
+        "diameter_m": 108,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 21280369,
+        "velocity_kmh": 25274
+      },
+      {
+        "name": "(2009 SB170)",
+        "hazardous": false,
+        "diameter_m": 407,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 63325076,
+        "velocity_kmh": 145639
+      },
+      {
+        "name": "(2011 PU1)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 64600557,
+        "velocity_kmh": 22146
+      },
+      {
+        "name": "(2021 JE4)",
+        "hazardous": false,
+        "diameter_m": 530,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 66930582,
+        "velocity_kmh": 60196
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 13.7,
-    "feels_c": 13.3,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_c": 14.2,
+    "feels_c": 13.7,
+    "humidity": 77,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-10",
     "city": "Zagreb",
-    "temp_min_c": 12.8,
-    "temp_max_c": 15.2,
+    "temp_min_c": 13.7,
+    "temp_max_c": 16.2,
     "humidity": 88,
     "condition": "Rain",
     "description": "rain",
-    "icon": "03n",
-    "wind_kmh": 3.6,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 3.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-11",
     "city": "Zagreb",
-    "temp_min_c": 11.3,
-    "temp_max_c": 17.7,
-    "humidity": 84,
+    "temp_min_c": 11.4,
+    "temp_max_c": 18.7,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.2
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-10-12",
     "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 15.1,
-    "humidity": 74,
+    "temp_min_c": 8.1,
+    "temp_max_c": 12.4,
+    "humidity": 80,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.8
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.7
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.7,
-    "peak_time": "2026-10-10T16:00",
+    "daily_max": 2.2,
+    "peak_time": "2026-10-10T15:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -344,31 +339,31 @@
       },
       {
         "time": "2026-10-10T11:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-10-10T12:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-10-10T13:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-10-10T14:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-10-10T15:00",
         "uv": 0.8
       },
       {
+        "time": "2026-10-10T13:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-10-10T14:00",
+        "uv": 1.9
+      },
+      {
+        "time": "2026-10-10T15:00",
+        "uv": 2.2
+      },
+      {
         "time": "2026-10-10T16:00",
-        "uv": 1.7
+        "uv": 0.8
       },
       {
         "time": "2026-10-10T17:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-10-10T18:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-10T00:13:04+02:00"
+    "fetched_at": "2026-10-10T04:03:10+02:00"
   }
 }
