@@ -1,161 +1,10 @@
 {
   "generated": "2026-10-10",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
-    "events": [
-      {
-        "id": "us6000u1cv",
-        "title": "M5.0 Earthquake - 141 km E of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-10T05:32:01.552000Z",
-        "coordinates": [
-          126.3886,
-          1.6248
-        ]
-      },
-      {
-        "id": "us6000u1cf",
-        "title": "M6.0 Earthquake - 7 km N of La Tronosa, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-10T04:14:01.786000Z",
-        "coordinates": [
-          -80.5985,
-          7.5068
-        ]
-      },
-      {
-        "id": "us6000u1cd",
-        "title": "M5.3 Earthquake - 41 km NNE of Yigo Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-10-10T03:58:18.250000Z",
-        "coordinates": [
-          145.0892,
-          13.8594
-        ]
-      },
-      {
-        "id": "us6000u1bu",
-        "title": "M5.1 Earthquake - 1 km NNE of Tonos\u00ed, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-10T02:26:32.740000Z",
-        "coordinates": [
-          -80.4348,
-          7.4178
-        ]
-      },
-      {
-        "id": "us6000u1bs",
-        "title": "M5.1 Earthquake - 133 km WNW of Ternate, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-10T02:00:42.634000Z",
-        "coordinates": [
-          126.3601,
-          1.416
-        ]
-      },
-      {
-        "id": "us6000u1ay",
-        "title": "M5.4 Earthquake - 9 km SSE of Los Asientos, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T23:12:37.790000Z",
-        "coordinates": [
-          -80.0968,
-          7.4366
-        ]
-      },
-      {
-        "id": "us6000u1ax",
-        "title": "M5.0 Earthquake - 8 km ESE of La Tronosa, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T23:10:02.875000Z",
-        "coordinates": [
-          -80.5284,
-          7.3962
-        ]
-      },
-      {
-        "id": "us6000u1aa",
-        "title": "M5.0 Earthquake - 13 km W of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T20:42:08.725000Z",
-        "coordinates": [
-          -81.4589,
-          7.7249
-        ]
-      },
-      {
-        "id": "us6000u19w",
-        "title": "M6.6 Earthquake - 14 km W of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T20:25:39.080000Z",
-        "coordinates": [
-          -81.4687,
-          7.7176
-        ]
-      },
-      {
-        "id": "us6000u19t",
-        "title": "M5.0 Earthquake - 6 km NE of La Tronosa, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T20:21:37.940000Z",
-        "coordinates": [
-          -80.5491,
-          7.4734
-        ]
-      },
-      {
-        "id": "us6000u19h",
-        "title": "M5.2 Earthquake - 11 km SE of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T19:48:55.624000Z",
-        "coordinates": [
-          -81.2677,
-          7.6417
-        ]
-      },
-      {
-        "id": "us6000u197",
-        "title": "M5.0 Earthquake - 14 km SE of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T19:04:49.305000Z",
-        "coordinates": [
-          -81.2492,
-          7.6161
-        ]
-      },
-      {
-        "id": "us6000u194",
-        "title": "M5.0 Earthquake - 18 km S of Los Asientos, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T18:50:12.134000Z",
-        "coordinates": [
-          -80.1178,
-          7.3504
-        ]
-      },
-      {
-        "id": "us6000u195",
-        "title": "M5.0 Earthquake - 19 km S of Leones Arriba, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T18:47:04.065000Z",
-        "coordinates": [
-          -81.0943,
-          7.5783
-        ]
-      },
-      {
-        "id": "us6000u18x",
-        "title": "M5.8 Earthquake - 1 km S of El Cacao, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T18:37:46.146000Z",
-        "coordinates": [
-          -80.4012,
-          7.4362
-        ]
-      }
-    ]
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
@@ -242,55 +91,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_c": 13.7,
-    "feels_c": 13.3,
-    "humidity": 84,
+    "feels_c": 13.5,
+    "humidity": 91,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "heavy intensity rain",
     "icon": "10d",
-    "wind_kmh": 7.4
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-10",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 13.7,
-    "temp_max_c": 16.3,
-    "humidity": 92,
+    "temp_max_c": 14.9,
+    "humidity": 93,
     "condition": "Rain",
     "description": "rain",
     "icon": "10d",
-    "wind_kmh": 3.8,
-    "samples": 5
+    "wind_kmh": 5.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-11",
-    "city": "Zagreb",
-    "temp_min_c": 12.5,
-    "temp_max_c": 19.4,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_min_c": 12.4,
+    "temp_max_c": 19.1,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 4.6
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-10-12",
-    "city": "Zagreb",
-    "temp_min_c": 9.0,
-    "temp_max_c": 15.0,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 15.5,
+    "humidity": 80,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.3
+    "wind_kmh": 3.6
   },
   "uv": {
-    "uv": 0.5,
+    "uv": 0.1,
     "band": "low",
-    "daily_max": 0.7,
-    "peak_time": "2026-10-10T16:00",
-    "safe_minutes": 333,
+    "daily_max": 1.9,
+    "peak_time": "2026-10-10T14:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,23 +188,23 @@
       },
       {
         "time": "2026-10-10T11:00",
-        "uv": 0.4
+        "uv": 0.8
       },
       {
         "time": "2026-10-10T12:00",
-        "uv": 0.6
+        "uv": 1.1
       },
       {
         "time": "2026-10-10T13:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-10-10T14:00",
-        "uv": 0.4
+        "uv": 1.9
       },
       {
         "time": "2026-10-10T15:00",
-        "uv": 0.4
+        "uv": 1.4
       },
       {
         "time": "2026-10-10T16:00",
@@ -363,7 +212,7 @@
       },
       {
         "time": "2026-10-10T17:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-10-10T18:00",
@@ -390,6 +239,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-10T11:21:54+02:00"
+    "fetched_at": "2026-10-10T17:41:06+02:00"
   }
 }
