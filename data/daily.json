@@ -1,15 +1,20 @@
 {
   "generated": "2026-10-11",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-11",
-    "explanation": "Scientists are melting holes in the bottom of the world. In fact, almost 100 holes melted near the South Pole are now being used as an astronomical observatory. Astronomers with the IceCube Neutrino Observatory lowered a long string knotted with basketball-sized light detectors into each vertical lake. The water in each hole soon refreezes. The detectors attached to the strings are sensitive to blue light emitted in the surrounding clear ice. Such light results from fast-moving secondary particles liberated when high-energy neutrinos emitted by powerful processes out in the universe collide with ice molecules. IceCube has now detected many illuminating neutrinos. Pictured in 2010, one of the last of IceCube's detector strings is lowered into the freezing abyss, making IceCube the largest neutrino detector ever created. In recognition of unprecedented discoveries, it was announced earlier this week that a founding leader of the IceCube Collaboration will be awarded the Nobel Prize in Physics.Tomorrow's picture: Moons Planet\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u1ld",
+        "title": "M5.2 Earthquake - 101 km SSW of Severo-Kuril\u2019sk, Russia",
+        "category": "Earthquake",
+        "date": "2026-10-11T17:00:29.277000Z",
+        "coordinates": [
+          155.7863,
+          49.7885
+        ]
+      },
       {
         "id": "us6000u1kv",
         "title": "M6.2 Earthquake - 79 km SSE of Panguna, Papua New Guinea",
@@ -149,16 +154,6 @@
           -81.4687,
           7.7176
         ]
-      },
-      {
-        "id": "us6000u19t",
-        "title": "M5.0 Earthquake - 6 km NE of La Tronosa, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T20:21:37.940000Z",
-        "coordinates": [
-          -80.5491,
-          7.4734
-        ]
       }
     ]
   },
@@ -248,29 +243,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.8,
-    "feels_c": 15.1,
-    "humidity": 63,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 9.3
+    "temp_c": 14.2,
+    "feels_c": 13.8,
+    "humidity": 79,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-11",
-    "city": "City of Zagreb",
-    "temp_min_c": 14.8,
-    "temp_max_c": 15.8,
-    "humidity": 64,
+    "city": "Zagreb",
+    "temp_min_c": 14.2,
+    "temp_max_c": 14.2,
+    "humidity": 79,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 5.3,
-    "samples": 3
+    "icon": "03n",
+    "wind_kmh": 4.7,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-10-12",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 8.7,
     "temp_max_c": 14.3,
     "humidity": 89,
@@ -281,11 +276,11 @@
   },
   "forecast_day_after": {
     "date": "2026-10-13",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 7.7,
     "temp_max_c": 14.5,
     "humidity": 76,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
     "wind_kmh": 4.0
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-11T18:32:05+02:00"
+    "fetched_at": "2026-10-11T22:47:09+02:00"
   }
 }
