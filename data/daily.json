@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-11",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-11",
+    "explanation": "Scientists are melting holes in the bottom of the world. In fact, almost 100 holes melted near the South Pole are now being used as an astronomical observatory. Astronomers with the IceCube Neutrino Observatory lowered a long string knotted with basketball-sized light detectors into each vertical lake. The water in each hole soon refreezes. The detectors attached to the strings are sensitive to blue light emitted in the surrounding clear ice. Such light results from fast-moving secondary particles liberated when high-energy neutrinos emitted by powerful processes out in the universe collide with ice molecules. IceCube has now detected many illuminating neutrinos. Pictured in 2010, one of the last of IceCube's detector strings is lowered into the freezing abyss, making IceCube the largest neutrino detector ever created. In recognition of unprecedented discoveries, it was announced earlier this week that a founding leader of the IceCube Collaboration will be awarded the Nobel Prize in Physics.Tomorrow's picture: Moons Planet\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u1kv",
+        "title": "M6.2 Earthquake - 79 km SSE of Panguna, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-11T14:07:23.188000Z",
+        "coordinates": [
+          155.7021,
+          -7.0062
+        ]
+      },
+      {
+        "id": "us6000u1kt",
+        "title": "M5.2 Earthquake - 18 km SSE of Caman\u00e1, Peru",
+        "category": "Earthquake",
+        "date": "2026-10-11T13:42:59.788000Z",
+        "coordinates": [
+          -72.6601,
+          -16.7849
+        ]
+      },
       {
         "id": "us6000u1i6",
         "title": "M5.2 Earthquake - 180 km S of Pelabuhanratu, Indonesia",
@@ -134,26 +159,6 @@
           -80.5491,
           7.4734
         ]
-      },
-      {
-        "id": "us6000u19h",
-        "title": "M5.2 Earthquake - 11 km SE of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T19:48:55.624000Z",
-        "coordinates": [
-          -81.2677,
-          7.6417
-        ]
-      },
-      {
-        "id": "us6000u197",
-        "title": "M5.0 Earthquake - 14 km SE of R\u00edo Grande, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T19:04:49.305000Z",
-        "coordinates": [
-          -81.2492,
-          7.6161
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 17.6,
-    "feels_c": 17.1,
+    "temp_c": 15.8,
+    "feels_c": 15.1,
     "humidity": 63,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 5.5
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-11",
-    "city": "Zagreb",
-    "temp_min_c": 12.9,
-    "temp_max_c": 17.6,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_min_c": 14.8,
+    "temp_max_c": 15.8,
+    "humidity": 64,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 5.7,
-    "samples": 5
+    "icon": "01n",
+    "wind_kmh": 5.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-12",
-    "city": "Zagreb",
-    "temp_min_c": 9.4,
-    "temp_max_c": 14.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.7,
+    "temp_max_c": 14.3,
     "humidity": 89,
-    "condition": "Rain",
-    "description": "moderate rain",
+    "condition": "Clouds",
+    "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.2
+    "wind_kmh": 4.5
   },
   "forecast_day_after": {
     "date": "2026-10-13",
-    "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 14.2,
-    "humidity": 74,
-    "condition": "Clouds",
+    "city": "City of Zagreb",
+    "temp_min_c": 7.7,
+    "temp_max_c": 14.5,
+    "humidity": 76,
+    "condition": "Clear",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.8
+    "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 3.5,
-    "band": "moderate",
-    "daily_max": 3.5,
-    "peak_time": "2026-10-11T13:00",
-    "safe_minutes": 48,
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 3.7,
+    "peak_time": "2026-10-11T14:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -335,11 +340,11 @@
       },
       {
         "time": "2026-10-11T10:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-10-11T11:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-10-11T12:00",
@@ -347,11 +352,11 @@
       },
       {
         "time": "2026-10-11T13:00",
-        "uv": 3.5
+        "uv": 3.6
       },
       {
         "time": "2026-10-11T14:00",
-        "uv": 3.5
+        "uv": 3.7
       },
       {
         "time": "2026-10-11T15:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-11T12:35:19+02:00"
+    "fetched_at": "2026-10-11T18:32:05+02:00"
   }
 }
