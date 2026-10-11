@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-11",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-11",
+    "explanation": "Tidally locked in synchronous rotation, the Moon always presents its familiar nearside to denizens of planet Earth. From lunar orbit, the Moon's farside can become familiar, though. In fact this sharp picture, a mosaic from the Lunar Reconnaissance Orbiter's wide angle camera, is centered on the lunar farside. Part of a global mosaic of over 15,000 images acquired between November 2009 and February 2011, the highest resolution version shows features at a scale of 100 meters per pixel. Surprisingly, the rough and battered surface of the farside looks very different from the nearside covered with smooth dark lunar maria. A likely explanation is that the farside crust is thicker, making it harder for molten material from the interior to flow to the surface and form dark, smooth maria.Tomorrow's picture: Sunday's Childe\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u1i6",
+        "title": "M5.2 Earthquake - 180 km S of Pelabuhanratu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-11T03:30:17.430000Z",
+        "coordinates": [
+          106.526,
+          -8.6161
+        ]
+      },
+      {
+        "id": "us6000u1hw",
+        "title": "M5.0 Earthquake - 3 km NW of Flores, Panama",
+        "category": "Earthquake",
+        "date": "2026-10-11T01:50:52.299000Z",
+        "coordinates": [
+          -80.4283,
+          7.5139
+        ]
+      },
       {
         "id": "us6000u1gs",
         "title": "M5.3 Earthquake - southeast of Easter Island",
@@ -134,79 +159,11 @@
           -81.2492,
           7.6161
         ]
-      },
-      {
-        "id": "us6000u194",
-        "title": "M5.0 Earthquake - 18 km S of Los Asientos, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T18:50:12.134000Z",
-        "coordinates": [
-          -80.1178,
-          7.3504
-        ]
-      },
-      {
-        "id": "us6000u195",
-        "title": "M5.0 Earthquake - 19 km S of Leones Arriba, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T18:47:04.065000Z",
-        "coordinates": [
-          -81.0943,
-          7.5783
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 SD8)",
-        "hazardous": false,
-        "diameter_m": 20,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 7162671,
-        "velocity_kmh": 34285
-      },
-      {
-        "name": "(2020 DT2)",
-        "hazardous": false,
-        "diameter_m": 18,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 20410341,
-        "velocity_kmh": 58730
-      },
-      {
-        "name": "(2020 BN10)",
-        "hazardous": true,
-        "diameter_m": 377,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 22350835,
-        "velocity_kmh": 65867
-      },
-      {
-        "name": "(2013 RX80)",
-        "hazardous": false,
-        "diameter_m": 1493,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 36110935,
-        "velocity_kmh": 92907
-      },
-      {
-        "name": "(2017 SV14)",
-        "hazardous": false,
-        "diameter_m": 132,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 42766098,
-        "velocity_kmh": 36368
-      },
-      {
-        "name": "(2016 UW80)",
-        "hazardous": false,
-        "diameter_m": 98,
-        "close_approach_date": "2026-10-10",
-        "miss_distance_km": 48924375,
-        "velocity_kmh": 27578
-      },
       {
         "name": "(2017 HE49)",
         "hazardous": false,
@@ -238,57 +195,105 @@
         "close_approach_date": "2026-10-11",
         "miss_distance_km": 66930582,
         "velocity_kmh": 60196
+      },
+      {
+        "name": "(2015 TW237)",
+        "hazardous": false,
+        "diameter_m": 136,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 67180123,
+        "velocity_kmh": 17922
+      },
+      {
+        "name": "(2017 VB13)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 69327480,
+        "velocity_kmh": 55544
+      },
+      {
+        "name": "(2015 TM143)",
+        "hazardous": false,
+        "diameter_m": 116,
+        "close_approach_date": "2026-10-11",
+        "miss_distance_km": 73712838,
+        "velocity_kmh": 78724
+      },
+      {
+        "name": "164207 Cardea (2004 GU9)",
+        "hazardous": true,
+        "diameter_m": 344,
+        "close_approach_date": "2026-10-12",
+        "miss_distance_km": 29671918,
+        "velocity_kmh": 26375
+      },
+      {
+        "name": "(2015 XK55)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-10-12",
+        "miss_distance_km": 51746936,
+        "velocity_kmh": 55420
+      },
+      {
+        "name": "(2012 WH1)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-10-13",
+        "miss_distance_km": 15346503,
+        "velocity_kmh": 25052
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.1,
-    "feels_c": 12.9,
+    "temp_c": 12.6,
+    "feels_c": 12.3,
     "humidity": 93,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 5.5
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-11",
     "city": "Zagreb",
-    "temp_min_c": 13.1,
-    "temp_max_c": 19.1,
+    "temp_min_c": 12.6,
+    "temp_max_c": 17.0,
     "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "10n",
-    "wind_kmh": 4.8,
-    "samples": 9
+    "icon": "04n",
+    "wind_kmh": 5.7,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-12",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 15.5,
-    "humidity": 85,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
+    "temp_min_c": 8.2,
+    "temp_max_c": 15.3,
+    "humidity": 86,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
     "wind_kmh": 3.5
   },
   "forecast_day_after": {
     "date": "2026-10-13",
     "city": "Zagreb",
     "temp_min_c": 6.4,
-    "temp_max_c": 14.1,
-    "humidity": 74,
-    "condition": "Clear",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.3
+    "temp_max_c": 13.8,
+    "humidity": 72,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 7.8
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.5,
+    "daily_max": 3.4,
     "peak_time": "2026-10-11T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -331,15 +336,15 @@
       },
       {
         "time": "2026-10-11T09:00",
-        "uv": 0.8
+        "uv": 0.7
       },
       {
         "time": "2026-10-11T10:00",
-        "uv": 1.6
+        "uv": 1.4
       },
       {
         "time": "2026-10-11T11:00",
-        "uv": 2.5
+        "uv": 2.2
       },
       {
         "time": "2026-10-11T12:00",
@@ -347,7 +352,7 @@
       },
       {
         "time": "2026-10-11T13:00",
-        "uv": 3.5
+        "uv": 3.4
       },
       {
         "time": "2026-10-11T14:00",
@@ -355,19 +360,19 @@
       },
       {
         "time": "2026-10-11T15:00",
-        "uv": 3.0
+        "uv": 2.8
       },
       {
         "time": "2026-10-11T16:00",
-        "uv": 2.2
+        "uv": 1.4
       },
       {
         "time": "2026-10-11T17:00",
-        "uv": 1.1
+        "uv": 0.8
       },
       {
         "time": "2026-10-11T18:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-10-11T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-11T01:12:04+02:00"
+    "fetched_at": "2026-10-11T05:53:36+02:00"
   }
 }
