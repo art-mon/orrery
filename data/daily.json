@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000u1rh",
+        "title": "M5.4 Earthquake - Mid-Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-12T11:28:43.398000Z",
+        "coordinates": [
+          67.3909,
+          -8.873
+        ]
+      },
+      {
         "id": "us6000u1pl",
         "title": "M5.5 Earthquake - 122 km W of Neiafu, Tonga",
         "category": "Earthquake",
@@ -17,12 +27,12 @@
       },
       {
         "id": "us6000u1mj",
-        "title": "M5.3 Earthquake - 150 km W of Gorontalo, Indonesia",
+        "title": "M5.2 Earthquake - 152 km W of Gorontalo, Indonesia",
         "category": "Earthquake",
-        "date": "2026-10-11T21:34:53.822000Z",
+        "date": "2026-10-11T21:34:53.947000Z",
         "coordinates": [
-          121.7071,
-          0.49
+          121.697,
+          0.5235
         ]
       },
       {
@@ -144,16 +154,6 @@
           -80.0968,
           7.4366
         ]
-      },
-      {
-        "id": "us6000u1ax",
-        "title": "M5.0 Earthquake - 8 km ESE of La Tronosa, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T23:10:02.875000Z",
-        "coordinates": [
-          -80.5284,
-          7.3962
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 12.1,
-    "humidity": 83,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10d",
-    "wind_kmh": 14.8
+    "temp_c": 13.1,
+    "feels_c": 12.6,
+    "humidity": 81,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-12",
     "city": "Zagreb",
-    "temp_min_c": 9.6,
-    "temp_max_c": 15.7,
-    "humidity": 86,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 5.0,
-    "samples": 6
+    "temp_min_c": 12.2,
+    "temp_max_c": 13.1,
+    "humidity": 83,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "02n",
+    "wind_kmh": 3.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-13",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 18.5,
+    "temp_min_c": 8.4,
+    "temp_max_c": 18.2,
     "humidity": 77,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
     "wind_kmh": 4.7
   },
   "forecast_day_after": {
     "date": "2026-10-14",
     "city": "Zagreb",
-    "temp_min_c": 6.1,
-    "temp_max_c": 14.7,
-    "humidity": 72,
+    "temp_min_c": 9.8,
+    "temp_max_c": 14.0,
+    "humidity": 74,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.2
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 1.4,
-    "peak_time": "2026-10-12T14:00",
-    "safe_minutes": 1111,
+    "daily_max": 1.7,
+    "peak_time": "2026-10-12T13:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,27 +343,27 @@
       },
       {
         "time": "2026-10-12T12:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-10-12T13:00",
         "uv": 1.1
       },
       {
+        "time": "2026-10-12T13:00",
+        "uv": 1.7
+      },
+      {
         "time": "2026-10-12T14:00",
-        "uv": 1.4
+        "uv": 1.1
       },
       {
         "time": "2026-10-12T15:00",
-        "uv": 1.4
+        "uv": 0.6
       },
       {
         "time": "2026-10-12T16:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-10-12T17:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-10-12T18:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-12T08:56:40+02:00"
+    "fetched_at": "2026-10-12T18:31:55+02:00"
   }
 }
