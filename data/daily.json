@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000u1ye",
+        "title": "M5.1 Earthquake - 119 km SSW of Gambiran Satu, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-13T04:00:15.768000Z",
+        "coordinates": [
+          113.8887,
+          -9.4473
+        ]
+      },
+      {
+        "id": "us6000u1wn",
+        "title": "M6.1 Earthquake - 17 km W of R\u00edo Grande, Panama",
+        "category": "Earthquake",
+        "date": "2026-10-12T23:20:36.003000Z",
+        "coordinates": [
+          -81.4896,
+          7.6896
+        ]
+      },
+      {
         "id": "us6000u1rh",
         "title": "M5.4 Earthquake - Mid-Indian Ridge",
         "category": "Earthquake",
@@ -134,47 +154,11 @@
           -80.4348,
           7.4178
         ]
-      },
-      {
-        "id": "us6000u1bs",
-        "title": "M5.1 Earthquake - 133 km WNW of Ternate, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-10T02:00:42.634000Z",
-        "coordinates": [
-          126.3601,
-          1.416
-        ]
-      },
-      {
-        "id": "us6000u1ay",
-        "title": "M5.4 Earthquake - 9 km SSE of Los Asientos, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-09T23:12:37.790000Z",
-        "coordinates": [
-          -80.0968,
-          7.4366
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "164207 Cardea (2004 GU9)",
-        "hazardous": true,
-        "diameter_m": 344,
-        "close_approach_date": "2026-10-12",
-        "miss_distance_km": 29671918,
-        "velocity_kmh": 26375
-      },
-      {
-        "name": "(2015 XK55)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-10-12",
-        "miss_distance_km": 51746936,
-        "velocity_kmh": 55420
-      },
       {
         "name": "(2012 WH1)",
         "hazardous": false,
@@ -238,52 +222,68 @@
         "close_approach_date": "2026-10-14",
         "miss_distance_km": 8427648,
         "velocity_kmh": 47601
+      },
+      {
+        "name": "678976 (2018 EH4)",
+        "hazardous": true,
+        "diameter_m": 274,
+        "close_approach_date": "2026-10-14",
+        "miss_distance_km": 8427728,
+        "velocity_kmh": 47601
+      },
+      {
+        "name": "(2016 UZ41)",
+        "hazardous": false,
+        "diameter_m": 513,
+        "close_approach_date": "2026-10-14",
+        "miss_distance_km": 29796273,
+        "velocity_kmh": 54978
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 8.7,
-    "feels_c": 8.1,
-    "humidity": 89,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "city": "City of Zagreb",
+    "temp_c": 7.6,
+    "feels_c": 7.6,
+    "humidity": 91,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-13",
     "city": "Zagreb",
-    "temp_min_c": 8.4,
-    "temp_max_c": 18.1,
+    "temp_min_c": 7.6,
+    "temp_max_c": 15.4,
     "humidity": 77,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 5.1,
-    "samples": 9
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "03d",
+    "wind_kmh": 4.7,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-14",
     "city": "Zagreb",
-    "temp_min_c": 10.2,
-    "temp_max_c": 18.6,
-    "humidity": 72,
+    "temp_min_c": 9.8,
+    "temp_max_c": 16.6,
+    "humidity": 73,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.4
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 3.3
   },
   "forecast_day_after": {
     "date": "2026-10-15",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 16.5,
-    "humidity": 76,
+    "temp_min_c": 7.9,
+    "temp_max_c": 15.6,
+    "humidity": 75,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.8
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 2.9
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-13T01:28:15+02:00"
+    "fetched_at": "2026-10-13T07:24:00+02:00"
   }
 }
