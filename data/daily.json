@@ -1,23 +1,48 @@
 {
   "generated": "2026-10-13",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-13",
-    "explanation": "This stairway in Chile brings you only a little bit closer to heaven. But ooh, the sky above it makes you wonder. For example, you may wonder about the dark lane of our own Milky Way galaxy rising behind the expansive Atacama Desert in Chile, the band of zodiacal light on the upper left, the green and red airglow just above the horizon, the star Spica in the zodiacal light stripe, and, at the very top on the right, the Small Magellanic Cloud galaxy. The Desert Staircase sculpture is in the foreground, and this image was timed to catch the picturesque peering perch just in front of the near-vertical Milky Way band. Upon close inspection of the horizon you can find, left to right, some Andes Mountains, the Licancabur volcano, and the town lights of San Pedro de Atacama. The featured wide-angle composite was captured in July 2025.Tomorrow's picture: open space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
       {
-        "id": "us6000u214",
-        "title": "M6.9 Earthquake - central Mid-Atlantic Ridge",
+        "id": "us6000u24c",
+        "title": "M6.0 Earthquake - 126 km S of Kokopo, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-10-13T12:23:07.383000Z",
+        "date": "2026-10-13T18:45:03.231000Z",
         "coordinates": [
-          -19.4151,
-          -0.4016
+          152.1364,
+          -5.4832
+        ]
+      },
+      {
+        "id": "us6000u23d",
+        "title": "M5.1 Earthquake - 119 km S of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-13T16:28:14.303000Z",
+        "coordinates": [
+          152.1142,
+          -5.4162
+        ]
+      },
+      {
+        "id": "us6000u21s",
+        "title": "M5.3 Earthquake - 122 km S of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-13T14:36:10.660000Z",
+        "coordinates": [
+          152.1255,
+          -5.4448
+        ]
+      },
+      {
+        "id": "us6000u214",
+        "title": "M6.8 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-13T12:23:07.248000Z",
+        "coordinates": [
+          -19.4308,
+          -0.4085
         ]
       },
       {
@@ -129,36 +154,6 @@
           106.526,
           -8.6161
         ]
-      },
-      {
-        "id": "us6000u1hw",
-        "title": "M5.0 Earthquake - 3 km NW of Flores, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-11T01:50:52.299000Z",
-        "coordinates": [
-          -80.4283,
-          7.5139
-        ]
-      },
-      {
-        "id": "us6000u1gs",
-        "title": "M5.3 Earthquake - southeast of Easter Island",
-        "category": "Earthquake",
-        "date": "2026-10-10T21:34:02.337000Z",
-        "coordinates": [
-          -95.2667,
-          -37.1165
-        ]
-      },
-      {
-        "id": "us6000u1cv",
-        "title": "M5.0 Earthquake - 141 km E of Bitung, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-10T05:32:01.552000Z",
-        "coordinates": [
-          126.3886,
-          1.6248
-        ]
       }
     ]
   },
@@ -248,30 +243,30 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 16.5,
-    "feels_c": 15.5,
-    "humidity": 50,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 16.7
+    "temp_c": 10.5,
+    "feels_c": 9.5,
+    "humidity": 73,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-13",
     "city": "Zagreb",
-    "temp_min_c": 11.7,
-    "temp_max_c": 17.0,
-    "humidity": 56,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 6.8,
-    "samples": 4
+    "temp_min_c": 9.8,
+    "temp_max_c": 10.5,
+    "humidity": 74,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 3.2,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-10-14",
     "city": "Zagreb",
-    "temp_min_c": 7.6,
+    "temp_min_c": 9.1,
     "temp_max_c": 16.3,
     "humidity": 72,
     "condition": "Clouds",
@@ -291,11 +286,11 @@
     "wind_kmh": 3.1
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 3.8,
     "peak_time": "2026-10-13T13:00",
-    "safe_minutes": 74,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-13T15:31:39+02:00"
+    "fetched_at": "2026-10-13T22:04:02+02:00"
   }
 }
