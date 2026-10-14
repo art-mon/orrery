@@ -1,7 +1,12 @@
 {
-  "generated": "2026-10-14",
+  "generated": "2026-10-15",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-14",
+    "explanation": "What a cosmic coincidence! In today\u2019s image, Mars joins the Beehive cluster (M44 or Praesepe) below an auroral curtain and above a horizon of happy little trees near Lansj\u00e4rv, Sweden. An eruption off the Sun reached Earth on October 10th, 2026 causing strong disturbances in Earth\u2019s magnetic field. Energetic particles from the eruption collide with and energize the molecules in Earth\u2019s atmosphere, which release that extra energy as the colorful aurora captured here. Auroras, or guovssahasat in North S\u00e1mi, is traditionally viewed with respect by the S\u00e1mi people indigenous to Sweden and other Arctic regions. Coincidentally, Mars appeared closest to the center of the Beehive cluster in the sky at the time. Although bees have been to space, the Beehive cluster is actually a swarm of young stars. Their rotation periods have helped humanity learn about how stars spin slower over time as they lose mass through their stellar winds.Tomorrow's picture: open space\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -243,153 +248,153 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.2,
-    "feels_c": 11.5,
-    "humidity": 77,
+    "temp_c": 10.9,
+    "feels_c": 10.2,
+    "humidity": 81,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
+    "description": "broken clouds",
+    "icon": "04n",
     "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "city": "Zagreb",
-    "temp_min_c": 12.0,
-    "temp_max_c": 12.2,
+    "temp_min_c": 10.1,
+    "temp_max_c": 19.5,
     "humidity": 77,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 1.4,
-    "samples": 2
+    "icon": "04n",
+    "wind_kmh": 2.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-10-15",
-    "city": "Zagreb",
-    "temp_min_c": 9.8,
-    "temp_max_c": 19.7,
-    "humidity": 77,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.6
-  },
-  "forecast_day_after": {
     "date": "2026-10-16",
     "city": "Zagreb",
-    "temp_min_c": 8.0,
-    "temp_max_c": 15.7,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "broken clouds",
+    "temp_min_c": 8.8,
+    "temp_max_c": 18.9,
+    "humidity": 81,
+    "condition": "Clear",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.5
+    "wind_kmh": 2.2
+  },
+  "forecast_day_after": {
+    "date": "2026-10-17",
+    "city": "Zagreb",
+    "temp_min_c": 5.9,
+    "temp_max_c": 14.1,
+    "humidity": 81,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 1.9
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.3,
-    "peak_time": "2026-10-14T14:00",
+    "daily_max": 3.1,
+    "peak_time": "2026-10-15T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-14T00:00",
+        "time": "2026-10-15T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T01:00",
+        "time": "2026-10-15T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T02:00",
+        "time": "2026-10-15T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T03:00",
+        "time": "2026-10-15T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T04:00",
+        "time": "2026-10-15T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T05:00",
+        "time": "2026-10-15T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T06:00",
+        "time": "2026-10-15T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T07:00",
+        "time": "2026-10-15T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T08:00",
-        "uv": 0.0
+        "time": "2026-10-15T08:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-10-14T09:00",
-        "uv": 0.3
+        "time": "2026-10-15T09:00",
+        "uv": 0.5
       },
       {
-        "time": "2026-10-14T10:00",
-        "uv": 1.1
+        "time": "2026-10-15T10:00",
+        "uv": 1.4
       },
       {
-        "time": "2026-10-14T11:00",
-        "uv": 0.8
+        "time": "2026-10-15T11:00",
+        "uv": 2.2
       },
       {
-        "time": "2026-10-14T12:00",
-        "uv": 3.2
-      },
-      {
-        "time": "2026-10-14T13:00",
+        "time": "2026-10-15T12:00",
         "uv": 2.9
       },
       {
-        "time": "2026-10-14T14:00",
-        "uv": 3.3
+        "time": "2026-10-15T13:00",
+        "uv": 3.1
       },
       {
-        "time": "2026-10-14T15:00",
+        "time": "2026-10-15T14:00",
         "uv": 3.0
       },
       {
-        "time": "2026-10-14T16:00",
-        "uv": 2.0
+        "time": "2026-10-15T15:00",
+        "uv": 2.7
       },
       {
-        "time": "2026-10-14T17:00",
+        "time": "2026-10-15T16:00",
+        "uv": 1.9
+      },
+      {
+        "time": "2026-10-15T17:00",
         "uv": 1.1
       },
       {
-        "time": "2026-10-14T18:00",
+        "time": "2026-10-15T18:00",
         "uv": 0.3
       },
       {
-        "time": "2026-10-14T19:00",
+        "time": "2026-10-15T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T20:00",
+        "time": "2026-10-15T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T21:00",
+        "time": "2026-10-15T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T22:00",
+        "time": "2026-10-15T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-14T23:00",
+        "time": "2026-10-15T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-14T22:26:01+02:00"
+    "fetched_at": "2026-10-15T01:39:36+02:00"
   }
 }
