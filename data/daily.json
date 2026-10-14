@@ -1,10 +1,25 @@
 {
   "generated": "2026-10-14",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-14",
+    "explanation": "What a cosmic coincidence! In today\u2019s image, Mars joins the Beehive cluster (M44 or Praesepe) below an auroral curtain and above a horizon of happy little trees near Lansj\u00e4rv, Sweden. An eruption off the Sun reached Earth on October 10th, 2026 causing strong disturbances in Earth\u2019s magnetic field. Energetic particles from the eruption collide with and energize the molecules in Earth\u2019s atmosphere, which release that extra energy as the colorful aurora captured here. Auroras, or guovssahasat in North S\u00e1mi, is traditionally viewed with respect by the S\u00e1mi people indigenous to Sweden and other Arctic regions. Coincidentally, Mars appeared closest to the center of the Beehive cluster in the sky at the time. Although bees have been to space, the Beehive cluster is actually a swarm of young stars. Their rotation periods have helped humanity learn about how stars spin slower over time as they lose mass through their stellar winds.Tomorrow's picture: open space\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u28y",
+        "title": "M5.9 Earthquake - Fiji region",
+        "category": "Earthquake",
+        "date": "2026-10-14T10:49:47.588000Z",
+        "coordinates": [
+          -178.7711,
+          -20.9899
+        ]
+      },
       {
         "id": "us6000u26f",
         "title": "M5.0 Earthquake - 98 km NW of Coquimbo, Chile",
@@ -144,16 +159,6 @@
           155.7863,
           49.7885
         ]
-      },
-      {
-        "id": "us6000u1kv",
-        "title": "M6.2 Earthquake - 79 km SSE of Panguna, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-11T14:07:23.188000Z",
-        "coordinates": [
-          155.7021,
-          -7.0062
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 8.7,
-    "feels_c": 8.1,
-    "humidity": 84,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.5
+    "city": "Zagreb",
+    "temp_c": 17.0,
+    "feels_c": 16.3,
+    "humidity": 57,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-14",
-    "city": "Donji grad",
-    "temp_min_c": 8.7,
-    "temp_max_c": 17.4,
-    "humidity": 76,
+    "city": "Zagreb",
+    "temp_min_c": 11.5,
+    "temp_max_c": 17.1,
+    "humidity": 63,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.0,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 3.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-15",
-    "city": "Donji grad",
-    "temp_min_c": 10.0,
-    "temp_max_c": 18.6,
-    "humidity": 76,
+    "city": "Zagreb",
+    "temp_min_c": 9.9,
+    "temp_max_c": 18.8,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 2.8
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.5
   },
   "forecast_day_after": {
     "date": "2026-10-16",
-    "city": "Donji grad",
-    "temp_min_c": 7.8,
-    "temp_max_c": 15.3,
+    "city": "Zagreb",
+    "temp_min_c": 7.7,
+    "temp_max_c": 15.7,
     "humidity": 81,
     "condition": "Clear",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.0
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.6,
+    "band": "moderate",
     "daily_max": 3.7,
     "peak_time": "2026-10-14T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 46,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-14T07:46:48+02:00"
+    "fetched_at": "2026-10-14T13:08:31+02:00"
   }
 }
