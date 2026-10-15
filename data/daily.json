@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-15",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-15",
+    "explanation": "The city lights outshine the stars in the City That Never Sleeps. Who would have thought that the Milky Way could be visible in this sky? This image was taken with a filter that blocks most visible light, capturing instead only light in the near-infrared region of the electromagnetic spectrum (with lower energy than visible light). The astrophotographer's clever setup blocks most of the light pollution from the city: old incandescent light bulbs and some neon lights are still bright in the near-infrared, but fluorescent and LED light bulbs are not. Of course, stars are also bright in the near-infrared! This image is a reminder that we all live under the same sky, and astronomy allows all of us to learn more about humanity's place in the Cosmos.",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u2ev",
+        "title": "M5.3 Earthquake - 43 km SSE of Otorohanga, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-10-15T05:25:31.942000Z",
+        "coordinates": [
+          175.3814,
+          -38.5478
+        ]
+      },
+      {
+        "id": "us6000u2ec",
+        "title": "M5.1 Earthquake - 36 km E of Safotu, Samoa",
+        "category": "Earthquake",
+        "date": "2026-10-15T03:36:29.038000Z",
+        "coordinates": [
+          -172.0686,
+          -13.409
+        ]
+      },
       {
         "id": "us6000u28y",
         "title": "M5.9 Earthquake - Fiji region",
@@ -134,26 +159,6 @@
           -175.1452,
           -18.723
         ]
-      },
-      {
-        "id": "us6000u1mj",
-        "title": "M5.2 Earthquake - 152 km W of Gorontalo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-11T21:34:53.947000Z",
-        "coordinates": [
-          121.697,
-          0.5235
-        ]
-      },
-      {
-        "id": "us6000u1ld",
-        "title": "M5.2 Earthquake - 101 km SSW of Severo-Kuril\u2019sk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-11T17:00:29.277000Z",
-        "coordinates": [
-          155.7863,
-          49.7885
-        ]
       }
     ]
   },
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.2,
-    "feels_c": 8.8,
-    "humidity": 87,
+    "temp_c": 14.2,
+    "feels_c": 13.7,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 5.5
+    "icon": "04d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-10-15",
     "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 21.3,
-    "humidity": 78,
+    "temp_min_c": 12.2,
+    "temp_max_c": 18.1,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.0,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 2.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-16",
     "city": "Zagreb",
-    "temp_min_c": 9.3,
-    "temp_max_c": 20.7,
-    "humidity": 81,
+    "temp_min_c": 9.9,
+    "temp_max_c": 20.9,
+    "humidity": 80,
     "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
@@ -279,18 +284,18 @@
     "city": "Zagreb",
     "temp_min_c": 6.3,
     "temp_max_c": 14.2,
-    "humidity": 82,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 1.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.3,
     "band": "low",
-    "daily_max": 3.1,
+    "daily_max": 3.2,
     "peak_time": "2026-10-15T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 72,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,15 +348,15 @@
       },
       {
         "time": "2026-10-15T12:00",
-        "uv": 2.9
+        "uv": 3.0
       },
       {
         "time": "2026-10-15T13:00",
-        "uv": 3.1
+        "uv": 3.2
       },
       {
         "time": "2026-10-15T14:00",
-        "uv": 2.5
+        "uv": 3.1
       },
       {
         "time": "2026-10-15T15:00",
@@ -359,7 +364,7 @@
       },
       {
         "time": "2026-10-15T16:00",
-        "uv": 1.9
+        "uv": 2.0
       },
       {
         "time": "2026-10-15T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-15T05:07:28+02:00"
+    "fetched_at": "2026-10-15T10:49:30+02:00"
   }
 }
