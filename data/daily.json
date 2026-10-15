@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-15",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-14",
-    "explanation": "What a cosmic coincidence! In today\u2019s image, Mars joins the Beehive cluster (M44 or Praesepe) below an auroral curtain and above a horizon of happy little trees near Lansj\u00e4rv, Sweden. An eruption off the Sun reached Earth on October 10th, 2026 causing strong disturbances in Earth\u2019s magnetic field. Energetic particles from the eruption collide with and energize the molecules in Earth\u2019s atmosphere, which release that extra energy as the colorful aurora captured here. Auroras, or guovssahasat in North S\u00e1mi, is traditionally viewed with respect by the S\u00e1mi people indigenous to Sweden and other Arctic regions. Coincidentally, Mars appeared closest to the center of the Beehive cluster in the sky at the time. Although bees have been to space, the Beehive cluster is actually a swarm of young stars. Their rotation periods have helped humanity learn about how stars spin slower over time as they lose mass through their stellar winds.Tomorrow's picture: open space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
@@ -165,38 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2018 EH4)",
-        "hazardous": true,
-        "diameter_m": 275,
-        "close_approach_date": "2026-10-14",
-        "miss_distance_km": 8427648,
-        "velocity_kmh": 47601
-      },
-      {
-        "name": "678976 (2018 EH4)",
-        "hazardous": true,
-        "diameter_m": 274,
-        "close_approach_date": "2026-10-14",
-        "miss_distance_km": 8427728,
-        "velocity_kmh": 47601
-      },
-      {
-        "name": "(2016 UZ41)",
-        "hazardous": false,
-        "diameter_m": 513,
-        "close_approach_date": "2026-10-14",
-        "miss_distance_km": 29796273,
-        "velocity_kmh": 54978
-      },
-      {
-        "name": "(2019 SB1)",
-        "hazardous": false,
-        "diameter_m": 605,
-        "close_approach_date": "2026-10-14",
-        "miss_distance_km": 37592118,
-        "velocity_kmh": 80832
-      },
-      {
         "name": "(2009 TK8)",
         "hazardous": false,
         "diameter_m": 550,
@@ -243,52 +206,84 @@
         "close_approach_date": "2026-10-16",
         "miss_distance_km": 8244155,
         "velocity_kmh": 36517
+      },
+      {
+        "name": "(2015 XN128)",
+        "hazardous": false,
+        "diameter_m": 69,
+        "close_approach_date": "2026-10-16",
+        "miss_distance_km": 59500842,
+        "velocity_kmh": 5875
+      },
+      {
+        "name": "(2015 HH10)",
+        "hazardous": false,
+        "diameter_m": 1381,
+        "close_approach_date": "2026-10-16",
+        "miss_distance_km": 64935264,
+        "velocity_kmh": 75214
+      },
+      {
+        "name": "(2005 VS)",
+        "hazardous": false,
+        "diameter_m": 212,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 15738548,
+        "velocity_kmh": 24090
+      },
+      {
+        "name": "(2016 LC9)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 16990663,
+        "velocity_kmh": 13007
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 10.2,
-    "humidity": 81,
+    "temp_c": 9.2,
+    "feels_c": 8.8,
+    "humidity": 87,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 1.8
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-15",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 19.5,
-    "humidity": 77,
+    "temp_min_c": 9.2,
+    "temp_max_c": 21.3,
+    "humidity": 78,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 2.4,
-    "samples": 9
+    "wind_kmh": 3.0,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-16",
     "city": "Zagreb",
-    "temp_min_c": 8.8,
-    "temp_max_c": 18.9,
+    "temp_min_c": 9.3,
+    "temp_max_c": 20.7,
     "humidity": 81,
     "condition": "Clear",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.4
   },
   "forecast_day_after": {
     "date": "2026-10-17",
     "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 14.1,
-    "humidity": 81,
+    "temp_min_c": 6.3,
+    "temp_max_c": 14.2,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.9
+    "wind_kmh": 1.8
   },
   "uv": {
     "uv": 0.0,
@@ -336,7 +331,7 @@
       },
       {
         "time": "2026-10-15T09:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-10-15T10:00",
@@ -356,11 +351,11 @@
       },
       {
         "time": "2026-10-15T14:00",
-        "uv": 3.0
+        "uv": 2.5
       },
       {
         "time": "2026-10-15T15:00",
-        "uv": 2.7
+        "uv": 2.6
       },
       {
         "time": "2026-10-15T16:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-15T01:39:36+02:00"
+    "fetched_at": "2026-10-15T05:07:28+02:00"
   }
 }
