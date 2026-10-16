@@ -1,10 +1,20 @@
 {
   "generated": "2026-10-16",
   "apod": {
-    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u2mq",
+        "title": "M6.9 Earthquake - 76 km NE of Ozernovskiy, Russia",
+        "category": "Earthquake",
+        "date": "2026-10-16T03:35:31.925000Z",
+        "coordinates": [
+          157.2701,
+          51.9848
+        ]
+      },
       {
         "id": "us6000u2hv",
         "title": "M5.2 Earthquake - 107 km NNE of Hihifo, Tonga",
@@ -144,16 +154,6 @@
           -19.8598,
           0.1685
         ]
-      },
-      {
-        "id": "us6000u1ye",
-        "title": "M5.1 Earthquake - 119 km SSW of Gambiran Satu, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-13T04:00:15.768000Z",
-        "coordinates": [
-          113.8887,
-          -9.4473
-        ]
       }
     ]
   },
@@ -242,48 +242,48 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 12.2,
-    "feels_c": 11.6,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 0.0
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-16",
-    "city": "Donji grad",
-    "temp_min_c": 9.9,
-    "temp_max_c": 19.9,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_min_c": 10.0,
+    "temp_max_c": 18.7,
+    "humidity": 79,
     "condition": "Clear",
     "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 2.3,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 3.1,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-17",
-    "city": "Donji grad",
-    "temp_min_c": 7.5,
+    "city": "City of Zagreb",
+    "temp_min_c": 7.1,
     "temp_max_c": 18.8,
-    "humidity": 78,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.6
+    "wind_kmh": 1.5
   },
   "forecast_day_after": {
     "date": "2026-10-18",
-    "city": "Donji grad",
-    "temp_min_c": 7.5,
-    "temp_max_c": 16.4,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.1,
+    "temp_max_c": 17.0,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 1.8
+    "wind_kmh": 1.9
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-16T02:04:03+02:00"
+    "fetched_at": "2026-10-16T07:25:06+02:00"
   }
 }
