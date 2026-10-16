@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-15",
+  "generated": "2026-10-16",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -160,30 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2009 TK8)",
-        "hazardous": false,
-        "diameter_m": 550,
-        "close_approach_date": "2026-10-15",
-        "miss_distance_km": 12187273,
-        "velocity_kmh": 53681
-      },
-      {
-        "name": "(2013 JR22)",
-        "hazardous": false,
-        "diameter_m": 398,
-        "close_approach_date": "2026-10-15",
-        "miss_distance_km": 18290738,
-        "velocity_kmh": 75524
-      },
-      {
-        "name": "(2017 TM6)",
-        "hazardous": false,
-        "diameter_m": 130,
-        "close_approach_date": "2026-10-15",
-        "miss_distance_km": 58678323,
-        "velocity_kmh": 56055
-      },
-      {
         "name": "(2000 SZ162)",
         "hazardous": false,
         "diameter_m": 21,
@@ -238,45 +214,58 @@
         "close_approach_date": "2026-10-17",
         "miss_distance_km": 16990663,
         "velocity_kmh": 13007
+      },
+      {
+        "name": "(2015 HR11)",
+        "hazardous": true,
+        "diameter_m": 391,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 26601231,
+        "velocity_kmh": 63958
+      },
+      {
+        "name": "144900 (2004 VG64)",
+        "hazardous": true,
+        "diameter_m": 1318,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 26873815,
+        "velocity_kmh": 80990
+      },
+      {
+        "name": "(2018 PZ21)",
+        "hazardous": false,
+        "diameter_m": 27,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 29282896,
+        "velocity_kmh": 42636
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 14.2,
-    "feels_c": 13.7,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5
+    "city": "Zagreb",
+    "temp_c": 12.2,
+    "feels_c": 11.6,
+    "humidity": 82,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 0.0
   },
   "forecast_today": {
-    "date": "2026-10-15",
-    "city": "Zagreb",
-    "temp_min_c": 14.2,
-    "temp_max_c": 14.2,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-10-16",
-    "city": "Zagreb",
-    "temp_min_c": 9.3,
+    "city": "Donji grad",
+    "temp_min_c": 9.9,
     "temp_max_c": 19.9,
     "humidity": 78,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 2.4
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 2.3,
+    "samples": 8
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-10-17",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 7.5,
     "temp_max_c": 18.8,
     "humidity": 78,
@@ -285,111 +274,122 @@
     "icon": "04d",
     "wind_kmh": 1.6
   },
+  "forecast_day_after": {
+    "date": "2026-10-18",
+    "city": "Donji grad",
+    "temp_min_c": 7.5,
+    "temp_max_c": 16.4,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 1.8
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.3,
-    "peak_time": "2026-10-15T14:00",
+    "daily_max": 3.5,
+    "peak_time": "2026-10-16T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-10-15T00:00",
+        "time": "2026-10-16T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T01:00",
+        "time": "2026-10-16T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T02:00",
+        "time": "2026-10-16T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T03:00",
+        "time": "2026-10-16T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T04:00",
+        "time": "2026-10-16T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T05:00",
+        "time": "2026-10-16T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T06:00",
+        "time": "2026-10-16T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T07:00",
+        "time": "2026-10-16T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T08:00",
+        "time": "2026-10-16T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-10-15T09:00",
-        "uv": 0.6
+        "time": "2026-10-16T09:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-10-15T10:00",
-        "uv": 1.4
+        "time": "2026-10-16T10:00",
+        "uv": 1.6
       },
       {
-        "time": "2026-10-15T11:00",
-        "uv": 2.2
-      },
-      {
-        "time": "2026-10-15T12:00",
-        "uv": 3.0
-      },
-      {
-        "time": "2026-10-15T13:00",
-        "uv": 3.1
-      },
-      {
-        "time": "2026-10-15T14:00",
-        "uv": 3.3
-      },
-      {
-        "time": "2026-10-15T15:00",
+        "time": "2026-10-16T11:00",
         "uv": 2.6
       },
       {
-        "time": "2026-10-15T16:00",
+        "time": "2026-10-16T12:00",
+        "uv": 3.3
+      },
+      {
+        "time": "2026-10-16T13:00",
+        "uv": 3.5
+      },
+      {
+        "time": "2026-10-16T14:00",
+        "uv": 3.2
+      },
+      {
+        "time": "2026-10-16T15:00",
+        "uv": 2.5
+      },
+      {
+        "time": "2026-10-16T16:00",
         "uv": 2.0
       },
       {
-        "time": "2026-10-15T17:00",
+        "time": "2026-10-16T17:00",
         "uv": 1.1
       },
       {
-        "time": "2026-10-15T18:00",
-        "uv": 0.3
+        "time": "2026-10-16T18:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-10-15T19:00",
+        "time": "2026-10-16T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T20:00",
+        "time": "2026-10-16T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T21:00",
+        "time": "2026-10-16T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T22:00",
+        "time": "2026-10-16T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-10-15T23:00",
+        "time": "2026-10-16T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-15T23:15:06+02:00"
+    "fetched_at": "2026-10-16T02:04:03+02:00"
   }
 }
