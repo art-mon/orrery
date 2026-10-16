@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000u2q5",
+        "title": "M5.0 Earthquake - Auckland Islands, New Zealand region",
+        "category": "Earthquake",
+        "date": "2026-10-16T14:09:54.288000Z",
+        "coordinates": [
+          163.4041,
+          -49.8826
+        ]
+      },
+      {
         "id": "us6000u2mq",
         "title": "M6.9 Earthquake - 76 km NE of Ozernovskiy, Russia",
         "category": "Earthquake",
@@ -33,6 +43,16 @@
         "coordinates": [
           166.0921,
           -13.8878
+        ]
+      },
+      {
+        "id": "us6000u2gd",
+        "title": "M5.4 Earthquake - off the coast of Ecuador",
+        "category": "Earthquake",
+        "date": "2026-10-15T11:16:43.668000Z",
+        "coordinates": [
+          -85.3587,
+          0.9022
         ]
       },
       {
@@ -134,26 +154,6 @@
           -19.4308,
           -0.4085
         ]
-      },
-      {
-        "id": "us6000u207",
-        "title": "M5.3 Earthquake - southern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-13T08:38:28.325000Z",
-        "coordinates": [
-          -12.5205,
-          -28.556
-        ]
-      },
-      {
-        "id": "us6000u1z5",
-        "title": "M6.7 Earthquake - central Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-13T05:44:46.919000Z",
-        "coordinates": [
-          -19.8598,
-          0.1685
-        ]
       }
     ]
   },
@@ -243,32 +243,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 18.1,
-    "feels_c": 17.3,
-    "humidity": 48,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
+    "temp_c": 18.7,
+    "feels_c": 17.9,
+    "humidity": 50,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-16",
     "city": "Zagreb",
-    "temp_min_c": 11.1,
-    "temp_max_c": 18.2,
-    "humidity": 60,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03d",
+    "temp_min_c": 13.6,
+    "temp_max_c": 18.7,
+    "humidity": 59,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
     "wind_kmh": 3.7,
-    "samples": 5
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-17",
     "city": "Zagreb",
-    "temp_min_c": 6.9,
-    "temp_max_c": 19.2,
-    "humidity": 78,
+    "temp_min_c": 8.1,
+    "temp_max_c": 19.7,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-10-18",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
-    "temp_max_c": 17.0,
-    "humidity": 78,
+    "temp_min_c": 11.1,
+    "temp_max_c": 17.4,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.0
+    "wind_kmh": 2.6
   },
   "uv": {
-    "uv": 3.0,
-    "band": "moderate",
-    "daily_max": 3.2,
+    "uv": 0.7,
+    "band": "low",
+    "daily_max": 3.0,
     "peak_time": "2026-10-16T12:00",
-    "safe_minutes": 55,
+    "safe_minutes": 238,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,7 +343,7 @@
       },
       {
         "time": "2026-10-16T12:00",
-        "uv": 3.2
+        "uv": 3.0
       },
       {
         "time": "2026-10-16T13:00",
@@ -351,11 +351,11 @@
       },
       {
         "time": "2026-10-16T14:00",
-        "uv": 2.8
+        "uv": 3.0
       },
       {
         "time": "2026-10-16T15:00",
-        "uv": 2.6
+        "uv": 2.9
       },
       {
         "time": "2026-10-16T16:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-16T12:39:40+02:00"
+    "fetched_at": "2026-10-16T17:10:36+02:00"
   }
 }
