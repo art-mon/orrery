@@ -1,7 +1,12 @@
 {
   "generated": "2026-10-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-17",
+    "explanation": "Put on your red/blue glasses and float next to the jagged and double-lobed nucleus of Churyumov-Gerasimenko, also known as Comet 67P . The stereo anaglyph was created by combining two images from the Rosetta spacecraft's narrow angle OSIRIS camera taken on July 25, 2015 from a distance of 184 kilometers. Numerous jets are emanating from the small solar system world's active surface near its closest approach to the Sun. The larger lobe is around 4 kilometers in diameter, joined to a smaller, 2.5 kilometer diameter lobe by a narrow neck. Rosetta's mission to the comet ended in September 2016 when the spacecraft was commanded to a controlled impact with the comet's surface . Keep those 3D glasses on though. You can check out a catalog of nearly 1400 stereo anaglyphs created from Rosetta image data on this website.Tomorrow's picture: open space",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 7.0,
-    "feels_c": 7.0,
-    "humidity": 91,
+    "temp_c": 18.7,
+    "feels_c": 18.1,
+    "humidity": 56,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.7
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-17",
-    "city": "Zagreb",
-    "temp_min_c": 7.0,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.4,
     "temp_max_c": 18.7,
-    "humidity": 77,
+    "humidity": 62,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 2.4,
-    "samples": 6
+    "icon": "04d",
+    "wind_kmh": 2.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-18",
-    "city": "Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 20.8,
-    "humidity": 76,
-    "condition": "Clear",
+    "city": "City of Zagreb",
+    "temp_min_c": 9.6,
+    "temp_max_c": 20.5,
+    "humidity": 78,
+    "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.7
+    "wind_kmh": 2.0
   },
   "forecast_day_after": {
     "date": "2026-10-19",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 15.4,
-    "humidity": 80,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.1,
+    "temp_max_c": 15.6,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.8
+    "wind_kmh": 3.1
   },
   "uv": {
-    "uv": 0.6,
-    "band": "low",
+    "uv": 3.3,
+    "band": "moderate",
     "daily_max": 3.5,
     "peak_time": "2026-10-17T13:00",
-    "safe_minutes": 278,
+    "safe_minutes": 51,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-17T08:31:59+02:00"
+    "fetched_at": "2026-10-17T13:20:24+02:00"
   }
 }
