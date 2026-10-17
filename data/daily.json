@@ -1,15 +1,20 @@
 {
   "generated": "2026-10-17",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-17",
-    "explanation": "Put on your red/blue glasses and float next to the jagged and double-lobed nucleus of Churyumov-Gerasimenko, also known as Comet 67P . The stereo anaglyph was created by combining two images from the Rosetta spacecraft's narrow angle OSIRIS camera taken on July 25, 2015 from a distance of 184 kilometers. Numerous jets are emanating from the small solar system world's active surface near its closest approach to the Sun. The larger lobe is around 4 kilometers in diameter, joined to a smaller, 2.5 kilometer diameter lobe by a narrow neck. Rosetta's mission to the comet ended in September 2016 when the spacecraft was commanded to a controlled impact with the comet's surface . Keep those 3D glasses on though. You can check out a catalog of nearly 1400 stereo anaglyphs created from Rosetta image data on this website.Tomorrow's picture: open space",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u309",
+        "title": "M5.2 Earthquake - 86 km SW of Brisas Barra de Suchiate, Mexico",
+        "category": "Earthquake",
+        "date": "2026-10-17T13:59:34.575000Z",
+        "coordinates": [
+          -92.8552,
+          14.0469
+        ]
+      },
       {
         "id": "us6000u2y1",
         "title": "M5.7 Earthquake - 48 km WNW of Khuzdar, Pakistan",
@@ -149,16 +154,6 @@
           152.1364,
           -5.4832
         ]
-      },
-      {
-        "id": "us6000u23d",
-        "title": "M5.1 Earthquake - 123 km S of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-13T16:28:15.172000Z",
-        "coordinates": [
-          152.1025,
-          -5.4453
-        ]
       }
     ]
   },
@@ -250,52 +245,52 @@
     "city": "City of Zagreb",
     "temp_c": 18.7,
     "feels_c": 18.1,
-    "humidity": 56,
+    "humidity": 57,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-17",
     "city": "City of Zagreb",
-    "temp_min_c": 11.4,
-    "temp_max_c": 18.7,
-    "humidity": 62,
+    "temp_min_c": 13.5,
+    "temp_max_c": 18.8,
+    "humidity": 60,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04d",
-    "wind_kmh": 2.9,
-    "samples": 5
+    "wind_kmh": 2.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-18",
     "city": "City of Zagreb",
-    "temp_min_c": 9.6,
-    "temp_max_c": 20.5,
-    "humidity": 78,
+    "temp_min_c": 8.9,
+    "temp_max_c": 20.4,
+    "humidity": 77,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 2.0
   },
   "forecast_day_after": {
     "date": "2026-10-19",
     "city": "City of Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 15.6,
-    "humidity": 81,
+    "temp_min_c": 9.3,
+    "temp_max_c": 15.5,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.1
+    "wind_kmh": 3.5
   },
   "uv": {
-    "uv": 3.3,
-    "band": "moderate",
-    "daily_max": 3.5,
+    "uv": 0.8,
+    "band": "low",
+    "daily_max": 3.2,
     "peak_time": "2026-10-17T13:00",
-    "safe_minutes": 51,
+    "safe_minutes": 222,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,23 +339,23 @@
       },
       {
         "time": "2026-10-17T11:00",
-        "uv": 2.6
+        "uv": 2.5
       },
       {
         "time": "2026-10-17T12:00",
-        "uv": 3.2
+        "uv": 3.0
       },
       {
         "time": "2026-10-17T13:00",
-        "uv": 3.5
+        "uv": 3.2
       },
       {
         "time": "2026-10-17T14:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-10-17T15:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-10-17T16:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-17T13:20:24+02:00"
+    "fetched_at": "2026-10-17T16:55:28+02:00"
   }
 }
