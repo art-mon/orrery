@@ -1,7 +1,7 @@
 {
   "generated": "2026-10-17",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -160,46 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2000 SZ162)",
-        "hazardous": false,
-        "diameter_m": 21,
-        "close_approach_date": "2026-10-16",
-        "miss_distance_km": 7622018,
-        "velocity_kmh": 20486
-      },
-      {
-        "name": "679786 (2020 QG3)",
-        "hazardous": true,
-        "diameter_m": 339,
-        "close_approach_date": "2026-10-16",
-        "miss_distance_km": 8244147,
-        "velocity_kmh": 36517
-      },
-      {
-        "name": "(2020 QG3)",
-        "hazardous": true,
-        "diameter_m": 339,
-        "close_approach_date": "2026-10-16",
-        "miss_distance_km": 8244155,
-        "velocity_kmh": 36517
-      },
-      {
-        "name": "(2015 XN128)",
-        "hazardous": false,
-        "diameter_m": 69,
-        "close_approach_date": "2026-10-16",
-        "miss_distance_km": 59500842,
-        "velocity_kmh": 5875
-      },
-      {
-        "name": "(2015 HH10)",
-        "hazardous": false,
-        "diameter_m": 1381,
-        "close_approach_date": "2026-10-16",
-        "miss_distance_km": 64935264,
-        "velocity_kmh": 75214
-      },
-      {
         "name": "(2005 VS)",
         "hazardous": false,
         "diameter_m": 212,
@@ -238,34 +198,74 @@
         "close_approach_date": "2026-10-17",
         "miss_distance_km": 29282896,
         "velocity_kmh": 42636
+      },
+      {
+        "name": "(2008 TC4)",
+        "hazardous": true,
+        "diameter_m": 278,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 45552721,
+        "velocity_kmh": 90045
+      },
+      {
+        "name": "614134 (2008 TC4)",
+        "hazardous": true,
+        "diameter_m": 278,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 45552721,
+        "velocity_kmh": 90045
+      },
+      {
+        "name": "(2016 TQ54)",
+        "hazardous": false,
+        "diameter_m": 22,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 63040348,
+        "velocity_kmh": 79139
+      },
+      {
+        "name": "(2014 JR24)",
+        "hazardous": false,
+        "diameter_m": 8,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 65155068,
+        "velocity_kmh": 60072
+      },
+      {
+        "name": "(2017 MA4)",
+        "hazardous": false,
+        "diameter_m": 1133,
+        "close_approach_date": "2026-10-17",
+        "miss_distance_km": 70436910,
+        "velocity_kmh": 97430
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.5,
-    "humidity": 79,
+    "city": "City of Zagreb",
+    "temp_c": 8.7,
+    "feels_c": 8.7,
+    "humidity": 83,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-17",
-    "city": "Zagreb",
-    "temp_min_c": 7.8,
+    "city": "Donji grad",
+    "temp_min_c": 8.1,
     "temp_max_c": 19.5,
     "humidity": 76,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 2.0,
-    "samples": 9
+    "wind_kmh": 1.9,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-18",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 10.4,
     "temp_max_c": 21.8,
     "humidity": 76,
@@ -276,7 +276,7 @@
   },
   "forecast_day_after": {
     "date": "2026-10-19",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.2,
     "temp_max_c": 16.1,
     "humidity": 83,
@@ -335,7 +335,7 @@
       },
       {
         "time": "2026-10-17T10:00",
-        "uv": 1.6
+        "uv": 1.5
       },
       {
         "time": "2026-10-17T11:00",
@@ -359,7 +359,7 @@
       },
       {
         "time": "2026-10-17T16:00",
-        "uv": 1.7
+        "uv": 1.6
       },
       {
         "time": "2026-10-17T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-17T00:29:40+02:00"
+    "fetched_at": "2026-10-17T03:01:38+02:00"
   }
 }
