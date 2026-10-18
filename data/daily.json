@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-18",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-18",
-    "explanation": "Yes, but have you ever experienced the Eagle Nebula with your ears? The famous nebula M16 is best known for the feast it gives your eyes, highlighting bright young stars forming deep inside dark towering structures. These light-years long columns of cold gas and dust are some 6,500 light-years distant toward the constellation of the Serpent (Serpens). Sculpted and eroded by the energetic ultraviolet light and powerful winds from M16's cluster of massive stars, the cosmic pillars themselves are destined for destruction. But the turbulent environment of star formation within M16, whose spectacular details are captured in this combined Hubble (visible) and Chandra (X-ray) image, is likely similar to the environment that formed our own Sun. In the featured video, listen for stars and dust sounding off as the line of sonification moves left to right, with vertical position determining pitch.Tomorrow's picture: what could it be?\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -248,25 +243,25 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 20.9,
-    "feels_c": 20.6,
-    "humidity": 57,
+    "temp_c": 16.5,
+    "feels_c": 16.1,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 3.7
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-18",
     "city": "Zagreb",
-    "temp_min_c": 14.4,
-    "temp_max_c": 20.9,
-    "humidity": 63,
+    "temp_min_c": 14.8,
+    "temp_max_c": 16.5,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 1.5,
-    "samples": 4
+    "icon": "02n",
+    "wind_kmh": 2.3,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-19",
@@ -291,11 +286,11 @@
     "wind_kmh": 3.2
   },
   "uv": {
-    "uv": 1.4,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 3.5,
     "peak_time": "2026-10-18T13:00",
-    "safe_minutes": 123,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-18T16:16:59+02:00"
+    "fetched_at": "2026-10-18T19:48:16+02:00"
   }
 }
