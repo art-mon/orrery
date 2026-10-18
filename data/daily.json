@@ -1,10 +1,20 @@
 {
   "generated": "2026-10-18",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u34e",
+        "title": "M5.2 Earthquake - 55 km NNW of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-18T08:00:06.054000Z",
+        "coordinates": [
+          120.2734,
+          -8.1449
+        ]
+      },
       {
         "id": "us6000u309",
         "title": "M5.2 Earthquake - 86 km SW of Brisas Barra de Suchiate, Mexico",
@@ -144,16 +154,6 @@
           -71.8024,
           -29.2155
         ]
-      },
-      {
-        "id": "us6000u24c",
-        "title": "M6.0 Earthquake - 126 km S of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-13T18:45:03.231000Z",
-        "coordinates": [
-          152.1364,
-          -5.4832
-        ]
       }
     ]
   },
@@ -243,32 +243,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 8.7,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 0.0
+    "temp_c": 19.8,
+    "feels_c": 19.4,
+    "humidity": 60,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-18",
     "city": "Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 19.8,
-    "humidity": 81,
+    "temp_min_c": 11.3,
+    "temp_max_c": 20.0,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 1.4,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 1.5,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-19",
     "city": "Zagreb",
-    "temp_min_c": 8.7,
+    "temp_min_c": 9.0,
     "temp_max_c": 19.8,
-    "humidity": 82,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-10-20",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 15.4,
+    "temp_min_c": 6.6,
+    "temp_max_c": 15.2,
     "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.6
+    "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.5,
+    "band": "moderate",
     "daily_max": 3.5,
     "peak_time": "2026-10-18T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 48,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-18T07:24:32+02:00"
+    "fetched_at": "2026-10-18T12:21:44+02:00"
   }
 }
