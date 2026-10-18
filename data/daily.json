@@ -160,108 +160,108 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2005 VS)",
+        "name": "509505 (2007 VL8)",
         "hazardous": false,
-        "diameter_m": 212,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 15738548,
-        "velocity_kmh": 24090
+        "diameter_m": 336,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 19404413,
+        "velocity_kmh": 35203
       },
       {
-        "name": "(2016 LC9)",
+        "name": "(2014 TG17)",
         "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 16990663,
-        "velocity_kmh": 13007
+        "diameter_m": 192,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 21778489,
+        "velocity_kmh": 38246
       },
       {
-        "name": "(2015 HR11)",
-        "hazardous": true,
-        "diameter_m": 391,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 26601231,
-        "velocity_kmh": 63958
+        "name": "(2016 JG38)",
+        "hazardous": false,
+        "diameter_m": 93,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 23576778,
+        "velocity_kmh": 56963
       },
       {
-        "name": "144900 (2004 VG64)",
-        "hazardous": true,
-        "diameter_m": 1318,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 26873815,
-        "velocity_kmh": 80990
+        "name": "(2013 AH53)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 27484782,
+        "velocity_kmh": 32904
       },
       {
-        "name": "(2018 PZ21)",
+        "name": "(2016 UR5)",
         "hazardous": false,
         "diameter_m": 27,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 29282896,
-        "velocity_kmh": 42636
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 33259564,
+        "velocity_kmh": 38342
       },
       {
-        "name": "(2008 TC4)",
-        "hazardous": true,
-        "diameter_m": 278,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 45552721,
-        "velocity_kmh": 90045
-      },
-      {
-        "name": "614134 (2008 TC4)",
-        "hazardous": true,
-        "diameter_m": 278,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 45552721,
-        "velocity_kmh": 90045
-      },
-      {
-        "name": "(2016 TQ54)",
+        "name": "(2017 ST20)",
         "hazardous": false,
-        "diameter_m": 22,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 63040348,
-        "velocity_kmh": 79139
+        "diameter_m": 177,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 35370562,
+        "velocity_kmh": 29273
       },
       {
-        "name": "(2014 JR24)",
+        "name": "(2013 RC30)",
         "hazardous": false,
-        "diameter_m": 8,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 65155068,
-        "velocity_kmh": 60072
+        "diameter_m": 237,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 44748317,
+        "velocity_kmh": 19328
       },
       {
-        "name": "(2017 MA4)",
+        "name": "(2007 VK3)",
         "hazardous": false,
-        "diameter_m": 1133,
-        "close_approach_date": "2026-10-17",
-        "miss_distance_km": 70436910,
-        "velocity_kmh": 97430
+        "diameter_m": 248,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 55288223,
+        "velocity_kmh": 46870
+      },
+      {
+        "name": "(2019 WK)",
+        "hazardous": false,
+        "diameter_m": 143,
+        "close_approach_date": "2026-10-18",
+        "miss_distance_km": 66558570,
+        "velocity_kmh": 59197
+      },
+      {
+        "name": "(2017 SL16)",
+        "hazardous": false,
+        "diameter_m": 39,
+        "close_approach_date": "2026-10-19",
+        "miss_distance_km": 25200605,
+        "velocity_kmh": 18304
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 11.5,
-    "feels_c": 10.8,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_c": 10.9,
+    "feels_c": 10.3,
+    "humidity": 85,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 7.4
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-18",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
+    "temp_min_c": 9.9,
     "temp_max_c": 20.5,
-    "humidity": 79,
-    "condition": "Clouds",
-    "description": "clouds",
+    "humidity": 80,
+    "condition": "Clear",
+    "description": "clear",
     "icon": "01n",
-    "wind_kmh": 2.6,
-    "samples": 9
+    "wind_kmh": 2.7,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-19",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-18T00:52:16+02:00"
+    "fetched_at": "2026-10-18T02:37:26+02:00"
   }
 }
