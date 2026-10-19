@@ -11,6 +11,66 @@
   "events": {
     "events": [
       {
+        "id": "us6000u3c7",
+        "title": "M5.0 Earthquake - 31 km NW of Jiangyou, China",
+        "category": "Earthquake",
+        "date": "2026-10-19T10:57:08.127000Z",
+        "coordinates": [
+          104.4577,
+          31.948
+        ]
+      },
+      {
+        "id": "us6000u3c6",
+        "title": "M5.4 Earthquake - 196 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-19T10:40:21.108000Z",
+        "coordinates": [
+          165.5687,
+          -14.0378
+        ]
+      },
+      {
+        "id": "us6000u3bk",
+        "title": "M5.2 Earthquake - 211 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-19T08:21:47.100000Z",
+        "coordinates": [
+          165.3343,
+          -14.155
+        ]
+      },
+      {
+        "id": "us6000u3bi",
+        "title": "M5.4 Earthquake - 184 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-19T08:12:38.235000Z",
+        "coordinates": [
+          165.6383,
+          -14.1387
+        ]
+      },
+      {
+        "id": "us6000u3be",
+        "title": "M5.3 Earthquake - 188 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-19T07:55:36.888000Z",
+        "coordinates": [
+          165.6995,
+          -13.9824
+        ]
+      },
+      {
+        "id": "us6000u3bc",
+        "title": "M6.0 Earthquake - 186 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-19T07:49:04.900000Z",
+        "coordinates": [
+          165.6761,
+          -14.0533
+        ]
+      },
+      {
         "id": "us6000u38g",
         "title": "M5.1 Earthquake - 129 km SSE of Kokopo, Papua New Guinea",
         "category": "Earthquake",
@@ -98,66 +158,6 @@
         "coordinates": [
           -173.4439,
           -15.0429
-        ]
-      },
-      {
-        "id": "us6000u2hp",
-        "title": "M5.2 Earthquake - 157 km W of Sola, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-15T13:06:51.678000Z",
-        "coordinates": [
-          166.0921,
-          -13.8878
-        ]
-      },
-      {
-        "id": "us6000u2gd",
-        "title": "M5.4 Earthquake - off the coast of Ecuador",
-        "category": "Earthquake",
-        "date": "2026-10-15T11:16:43.668000Z",
-        "coordinates": [
-          -85.3587,
-          0.9022
-        ]
-      },
-      {
-        "id": "aka2026ukynnb",
-        "title": "M5.6 Earthquake - 43 km NNW of Lake Minchumina, Alaska",
-        "category": "Earthquake",
-        "date": "2026-10-15T11:07:01.800000Z",
-        "coordinates": [
-          -152.746,
-          64.22
-        ]
-      },
-      {
-        "id": "us6000u2ev",
-        "title": "M5.3 Earthquake - 43 km SSE of Otorohanga, New Zealand",
-        "category": "Earthquake",
-        "date": "2026-10-15T05:25:31.942000Z",
-        "coordinates": [
-          175.3814,
-          -38.5478
-        ]
-      },
-      {
-        "id": "us6000u2ec",
-        "title": "M5.1 Earthquake - 36 km E of Safotu, Samoa",
-        "category": "Earthquake",
-        "date": "2026-10-15T03:36:29.038000Z",
-        "coordinates": [
-          -172.0686,
-          -13.409
-        ]
-      },
-      {
-        "id": "us6000u28y",
-        "title": "M5.9 Earthquake - Fiji region",
-        "category": "Earthquake",
-        "date": "2026-10-14T10:49:47.588000Z",
-        "coordinates": [
-          -178.7711,
-          -20.9899
         ]
       }
     ]
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 8.7,
-    "humidity": 88,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "temp_c": 19.8,
+    "feels_c": 19.2,
+    "humidity": 53,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-19",
-    "city": "Zagreb",
-    "temp_min_c": 8.2,
-    "temp_max_c": 17.7,
-    "humidity": 80,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.6,
+    "temp_max_c": 19.8,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 3.6,
-    "samples": 7
+    "icon": "02d",
+    "wind_kmh": 5.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-20",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 19.5,
-    "humidity": 83,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.2
+    "city": "City of Zagreb",
+    "temp_min_c": 7.0,
+    "temp_max_c": 19.4,
+    "humidity": 82,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-10-21",
-    "city": "Zagreb",
+    "city": "City of Zagreb",
     "temp_min_c": 8.8,
-    "temp_max_c": 14.9,
+    "temp_max_c": 15.0,
     "humidity": 92,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.8
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
+    "uv": 3.2,
+    "band": "moderate",
     "daily_max": 3.5,
     "peak_time": "2026-10-19T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 52,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,7 +348,7 @@
       },
       {
         "time": "2026-10-19T12:00",
-        "uv": 3.1
+        "uv": 3.2
       },
       {
         "time": "2026-10-19T13:00",
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-10-19T16:00",
-        "uv": 1.9
+        "uv": 1.8
       },
       {
         "time": "2026-10-19T17:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-10-19T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-19T07:41:58+02:00"
+    "fetched_at": "2026-10-19T14:04:28+02:00"
   }
 }
