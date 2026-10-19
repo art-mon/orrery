@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000u3ft",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-10-19T17:45:50.479000Z",
+        "coordinates": [
+          -27.0851,
+          -56.3542
+        ]
+      },
+      {
+        "id": "us6000u3ct",
+        "title": "M5.3 Earthquake - 116 km WNW of H\u00f6fn, Iceland",
+        "category": "Earthquake",
+        "date": "2026-10-19T14:44:24.015000Z",
+        "coordinates": [
+          -17.5136,
+          64.5774
+        ]
+      },
+      {
         "id": "us6000u3c7",
         "title": "M5.0 Earthquake - 31 km NW of Jiangyou, China",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           163.4041,
           -49.8826
         ]
-      },
-      {
-        "id": "us6000u2mq",
-        "title": "M6.9 Earthquake - 76 km NE of Ozernovskiy, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-16T03:35:31.925000Z",
-        "coordinates": [
-          157.2701,
-          51.9848
-        ]
-      },
-      {
-        "id": "us6000u2hv",
-        "title": "M5.2 Earthquake - 107 km NNE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-10-15T13:29:31.862000Z",
-        "coordinates": [
-          -173.4439,
-          -15.0429
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.8,
-    "feels_c": 19.2,
-    "humidity": 53,
+    "temp_c": 15.4,
+    "feels_c": 14.7,
+    "humidity": 65,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 9.3
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-19",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.6,
-    "temp_max_c": 19.8,
-    "humidity": 67,
+    "city": "Zagreb",
+    "temp_min_c": 13.4,
+    "temp_max_c": 15.4,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 5.6,
-    "samples": 4
+    "icon": "04n",
+    "wind_kmh": 6.0,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-10-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.0,
-    "temp_max_c": 19.4,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
+    "city": "Zagreb",
+    "temp_min_c": 6.4,
+    "temp_max_c": 19.3,
+    "humidity": 81,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
     "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-10-21",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.8,
-    "temp_max_c": 15.0,
-    "humidity": 92,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 8.2,
+    "temp_max_c": 16.3,
+    "humidity": 91,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 5.1
+    "wind_kmh": 4.7
   },
   "uv": {
-    "uv": 3.2,
-    "band": "moderate",
+    "uv": 0.0,
+    "band": "low",
     "daily_max": 3.5,
     "peak_time": "2026-10-19T13:00",
-    "safe_minutes": 52,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-19T14:04:28+02:00"
+    "fetched_at": "2026-10-19T20:58:53+02:00"
   }
 }
