@@ -1,10 +1,20 @@
 {
   "generated": "2026-10-19",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u38g",
+        "title": "M5.1 Earthquake - 129 km SSE of Kokopo, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-18T22:31:43.272000Z",
+        "coordinates": [
+          152.6162,
+          -5.4567
+        ]
+      },
       {
         "id": "us6000u37h",
         "title": "M5.2 Earthquake - 71 km ESE of \u2018Ohonua, Tonga",
@@ -144,93 +154,11 @@
           -178.7711,
           -20.9899
         ]
-      },
-      {
-        "id": "us6000u26f",
-        "title": "M5.0 Earthquake - 98 km NW of Coquimbo, Chile",
-        "category": "Earthquake",
-        "date": "2026-10-14T00:36:45.416000Z",
-        "coordinates": [
-          -71.9168,
-          -29.219
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "509505 (2007 VL8)",
-        "hazardous": false,
-        "diameter_m": 336,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 19404413,
-        "velocity_kmh": 35203
-      },
-      {
-        "name": "(2014 TG17)",
-        "hazardous": false,
-        "diameter_m": 192,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 21778489,
-        "velocity_kmh": 38246
-      },
-      {
-        "name": "(2016 JG38)",
-        "hazardous": false,
-        "diameter_m": 93,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 23576778,
-        "velocity_kmh": 56963
-      },
-      {
-        "name": "(2013 AH53)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 27484782,
-        "velocity_kmh": 32904
-      },
-      {
-        "name": "(2016 UR5)",
-        "hazardous": false,
-        "diameter_m": 27,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 33259564,
-        "velocity_kmh": 38342
-      },
-      {
-        "name": "(2017 ST20)",
-        "hazardous": false,
-        "diameter_m": 177,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 35370562,
-        "velocity_kmh": 29273
-      },
-      {
-        "name": "(2013 RC30)",
-        "hazardous": false,
-        "diameter_m": 237,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 44748317,
-        "velocity_kmh": 19328
-      },
-      {
-        "name": "(2007 VK3)",
-        "hazardous": false,
-        "diameter_m": 248,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 55288223,
-        "velocity_kmh": 46870
-      },
-      {
-        "name": "(2019 WK)",
-        "hazardous": false,
-        "diameter_m": 143,
-        "close_approach_date": "2026-10-18",
-        "miss_distance_km": 66558570,
-        "velocity_kmh": 59197
-      },
       {
         "name": "(2017 SL16)",
         "hazardous": false,
@@ -238,18 +166,90 @@
         "close_approach_date": "2026-10-19",
         "miss_distance_km": 25200605,
         "velocity_kmh": 18304
+      },
+      {
+        "name": "(2009 UY17)",
+        "hazardous": true,
+        "diameter_m": 389,
+        "close_approach_date": "2026-10-19",
+        "miss_distance_km": 26198831,
+        "velocity_kmh": 85025
+      },
+      {
+        "name": "(2011 TK5)",
+        "hazardous": false,
+        "diameter_m": 156,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 21904144,
+        "velocity_kmh": 39128
+      },
+      {
+        "name": "(2018 VA2)",
+        "hazardous": false,
+        "diameter_m": 23,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 30075577,
+        "velocity_kmh": 44792
+      },
+      {
+        "name": "(2019 UN4)",
+        "hazardous": false,
+        "diameter_m": 164,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 31456933,
+        "velocity_kmh": 40611
+      },
+      {
+        "name": "(2019 US10)",
+        "hazardous": true,
+        "diameter_m": 435,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 41672105,
+        "velocity_kmh": 53235
+      },
+      {
+        "name": "(2002 GR)",
+        "hazardous": false,
+        "diameter_m": 136,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 43535973,
+        "velocity_kmh": 21071
+      },
+      {
+        "name": "(2019 TD8)",
+        "hazardous": false,
+        "diameter_m": 75,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 55996035,
+        "velocity_kmh": 62001
+      },
+      {
+        "name": "(2014 TL)",
+        "hazardous": false,
+        "diameter_m": 16,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 59813436,
+        "velocity_kmh": 81714
+      },
+      {
+        "name": "423100 (2004 BX1)",
+        "hazardous": false,
+        "diameter_m": 1214,
+        "close_approach_date": "2026-10-20",
+        "miss_distance_km": 65943991,
+        "velocity_kmh": 136322
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 12.0,
-    "feels_c": 11.5,
-    "humidity": 85,
+    "temp_c": 10.9,
+    "feels_c": 10.3,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-19",
@@ -260,8 +260,8 @@
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.8,
-    "samples": 9
+    "wind_kmh": 3.6,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-20",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-19T00:45:01+02:00"
+    "fetched_at": "2026-10-19T02:47:16+02:00"
   }
 }
