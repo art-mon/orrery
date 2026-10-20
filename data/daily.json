@@ -2,184 +2,17 @@
   "generated": "2026-10-20",
   "apod": {
     "title": "NASA Science",
-    "date": "2026-10-19",
+    "date": "2026-10-20",
     "explanation": "What is Treble Clef? This unusual radio structure extends over 2 million light-years and resembles a common musical symbol -- but has its visible light hidden by our own Milky Way Galaxy. Examined in 2004, the nature of VLSS J0318.9+5755, dubbed Treble Clef, remained unknown. Recent observations by the Chandra X-ray Observatory and eROSITA, however, have led to the hypothesis that the Treble Clef central cloud of charged particles was originally expelled by a supermassive black hole at the center of a galaxy. After the radio emission from those particles faded, they may have been reinvigorated by a shock wave from the collision of two clusters of galaxies. The featured composite image shows radio emission in red, while recently discovered X-rays are shown in blue. Unusual objects like Treble Clef give humanity unexpected clues about how whole clusters of galaxies interact as well as the general evolution of our universe.Tomorrow's picture: backwards rainbow\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
-    "events": [
-      {
-        "id": "us6000u3ge",
-        "title": "M5.7 Earthquake - 203 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T18:55:37.471000Z",
-        "coordinates": [
-          165.4974,
-          -14.0266
-        ]
-      },
-      {
-        "id": "us6000u3ga",
-        "title": "M5.7 Earthquake - 198 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T18:52:36.659000Z",
-        "coordinates": [
-          165.5508,
-          -14.0371
-        ]
-      },
-      {
-        "id": "us6000u3ft",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-10-19T17:45:50.479000Z",
-        "coordinates": [
-          -27.0851,
-          -56.3542
-        ]
-      },
-      {
-        "id": "us6000u3ct",
-        "title": "M5.3 Earthquake - 116 km WNW of H\u00f6fn, Iceland",
-        "category": "Earthquake",
-        "date": "2026-10-19T14:44:24.015000Z",
-        "coordinates": [
-          -17.5136,
-          64.5774
-        ]
-      },
-      {
-        "id": "us6000u3c7",
-        "title": "M5.0 Earthquake - 31 km NW of Jiangyou, China",
-        "category": "Earthquake",
-        "date": "2026-10-19T10:57:08.127000Z",
-        "coordinates": [
-          104.4577,
-          31.948
-        ]
-      },
-      {
-        "id": "us6000u3c6",
-        "title": "M5.4 Earthquake - 196 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T10:40:21.108000Z",
-        "coordinates": [
-          165.5687,
-          -14.0378
-        ]
-      },
-      {
-        "id": "us6000u3bk",
-        "title": "M5.2 Earthquake - 211 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T08:21:47.100000Z",
-        "coordinates": [
-          165.3343,
-          -14.155
-        ]
-      },
-      {
-        "id": "us6000u3bi",
-        "title": "M5.4 Earthquake - 184 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T08:12:38.235000Z",
-        "coordinates": [
-          165.6383,
-          -14.1387
-        ]
-      },
-      {
-        "id": "us6000u3be",
-        "title": "M5.3 Earthquake - 188 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T07:55:36.888000Z",
-        "coordinates": [
-          165.6995,
-          -13.9824
-        ]
-      },
-      {
-        "id": "us6000u3bc",
-        "title": "M6.0 Earthquake - 186 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T07:49:04.900000Z",
-        "coordinates": [
-          165.6761,
-          -14.0533
-        ]
-      },
-      {
-        "id": "us6000u38g",
-        "title": "M5.1 Earthquake - 129 km SSE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-18T22:31:43.272000Z",
-        "coordinates": [
-          152.6162,
-          -5.4567
-        ]
-      },
-      {
-        "id": "us6000u37h",
-        "title": "M5.2 Earthquake - 71 km ESE of \u2018Ohonua, Tonga",
-        "category": "Earthquake",
-        "date": "2026-10-18T19:32:28.734000Z",
-        "coordinates": [
-          -174.2956,
-          -21.541
-        ]
-      },
-      {
-        "id": "us6000u34e",
-        "title": "M5.2 Earthquake - 55 km NNW of Ruteng, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-18T08:00:06.054000Z",
-        "coordinates": [
-          120.2734,
-          -8.1449
-        ]
-      },
-      {
-        "id": "us6000u309",
-        "title": "M5.2 Earthquake - 86 km SW of Brisas Barra de Suchiate, Mexico",
-        "category": "Earthquake",
-        "date": "2026-10-17T13:59:34.575000Z",
-        "coordinates": [
-          -92.8552,
-          14.0469
-        ]
-      },
-      {
-        "id": "us6000u2y1",
-        "title": "M5.7 Earthquake - 48 km WNW of Khuzdar, Pakistan",
-        "category": "Earthquake",
-        "date": "2026-10-17T05:06:57.657000Z",
-        "coordinates": [
-          66.1708,
-          28.0179
-        ]
-      }
-    ]
+    "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 SL16)",
-        "hazardous": false,
-        "diameter_m": 39,
-        "close_approach_date": "2026-10-19",
-        "miss_distance_km": 25200605,
-        "velocity_kmh": 18304
-      },
-      {
-        "name": "(2009 UY17)",
-        "hazardous": true,
-        "diameter_m": 389,
-        "close_approach_date": "2026-10-19",
-        "miss_distance_km": 26198831,
-        "velocity_kmh": 85025
-      },
       {
         "name": "(2011 TK5)",
         "hazardous": false,
@@ -243,34 +76,50 @@
         "close_approach_date": "2026-10-20",
         "miss_distance_km": 65943991,
         "velocity_kmh": 136322
+      },
+      {
+        "name": "(2016 LN1)",
+        "hazardous": true,
+        "diameter_m": 628,
+        "close_approach_date": "2026-10-21",
+        "miss_distance_km": 30294985,
+        "velocity_kmh": 50814
+      },
+      {
+        "name": "(2019 BZ)",
+        "hazardous": false,
+        "diameter_m": 18,
+        "close_approach_date": "2026-10-21",
+        "miss_distance_km": 33875928,
+        "velocity_kmh": 27859
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 12.0,
-    "feels_c": 11.4,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 84,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
+    "description": "scattered clouds",
+    "icon": "03n",
     "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-20",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.1,
+    "city": "Zagreb",
+    "temp_min_c": 9.2,
     "temp_max_c": 19.6,
-    "humidity": 80,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.1,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 3.2,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-21",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 11.1,
     "temp_max_c": 21.3,
     "humidity": 91,
@@ -281,7 +130,7 @@
   },
   "forecast_day_after": {
     "date": "2026-10-22",
-    "city": "City of Zagreb",
+    "city": "Zagreb",
     "temp_min_c": 8.4,
     "temp_max_c": 11.9,
     "humidity": 81,
@@ -293,7 +142,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.4,
+    "daily_max": 3.5,
     "peak_time": "2026-10-20T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -352,7 +201,7 @@
       },
       {
         "time": "2026-10-20T13:00",
-        "uv": 3.4
+        "uv": 3.5
       },
       {
         "time": "2026-10-20T14:00",
@@ -395,6 +244,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-20T00:51:12+02:00"
+    "fetched_at": "2026-10-20T03:33:23+02:00"
   }
 }
