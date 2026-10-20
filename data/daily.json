@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-20",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-20",
-    "explanation": "What is Treble Clef? This unusual radio structure extends over 2 million light-years and resembles a common musical symbol -- but has its visible light hidden by our own Milky Way Galaxy. Examined in 2004, the nature of VLSS J0318.9+5755, dubbed Treble Clef, remained unknown. Recent observations by the Chandra X-ray Observatory and eROSITA, however, have led to the hypothesis that the Treble Clef central cloud of charged particles was originally expelled by a supermassive black hole at the center of a galaxy. After the radio emission from those particles faded, they may have been reinvigorated by a shock wave from the collision of two clusters of galaxies. The featured composite image shows radio emission in red, while recently discovered X-rays are shown in blue. Unusual objects like Treble Clef give humanity unexpected clues about how whole clusters of galaxies interact as well as the general evolution of our universe.Tomorrow's picture: backwards rainbow\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "error": "503 Server Error: Service Unavailable for url: https://api.nasa.gov/EONET/v3/events?status=open&limit=20&api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
@@ -98,53 +93,53 @@
   "weather": {
     "city": "Zagreb",
     "temp_c": 10.4,
-    "feels_c": 9.7,
-    "humidity": 84,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 3.7
+    "feels_c": 9.6,
+    "humidity": 83,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-10-20",
     "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 19.6,
+    "temp_min_c": 10.4,
+    "temp_max_c": 19.4,
     "humidity": 81,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 3.2,
-    "samples": 8
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01d",
+    "wind_kmh": 3.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-21",
     "city": "Zagreb",
-    "temp_min_c": 11.1,
-    "temp_max_c": 21.3,
-    "humidity": 91,
-    "condition": "Clouds",
+    "temp_min_c": 11.8,
+    "temp_max_c": 21.2,
+    "humidity": 88,
+    "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.0
+    "wind_kmh": 5.6
   },
   "forecast_day_after": {
     "date": "2026-10-22",
     "city": "Zagreb",
-    "temp_min_c": 8.4,
-    "temp_max_c": 11.9,
+    "temp_min_c": 8.1,
+    "temp_max_c": 12.3,
     "humidity": 81,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 8.5
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.9
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.9,
     "band": "low",
     "daily_max": 3.5,
     "peak_time": "2026-10-20T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 175,
     "skin_type": 2,
     "hourly": [
       {
@@ -244,6 +239,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-20T03:33:23+02:00"
+    "fetched_at": "2026-10-20T09:08:17+02:00"
   }
 }
