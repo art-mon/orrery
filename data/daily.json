@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000u3ue",
+        "title": "M5.0 Earthquake - 194 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-21T14:56:27.447000Z",
+        "coordinates": [
+          165.5402,
+          -14.105
+        ]
+      },
+      {
         "id": "us6000u3t6",
         "title": "M5.2 Earthquake - 68 km NE of Cabatuan, Philippines",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           165.4974,
           -14.0266
         ]
-      },
-      {
-        "id": "us6000u3ga",
-        "title": "M5.7 Earthquake - 198 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-19T18:52:36.659000Z",
-        "coordinates": [
-          165.5508,
-          -14.0371
-        ]
       }
     ]
   },
@@ -242,33 +242,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 17.2,
-    "feels_c": 16.7,
-    "humidity": 69,
+    "city": "Donji grad",
+    "temp_c": 15.9,
+    "feels_c": 15.8,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 9.3
+    "description": "few clouds",
+    "icon": "02n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-21",
     "city": "Zagreb",
-    "temp_min_c": 12.3,
-    "temp_max_c": 17.6,
-    "humidity": 81,
+    "temp_min_c": 15.0,
+    "temp_max_c": 15.9,
+    "humidity": 86,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 5.7,
-    "samples": 4
+    "icon": "02n",
+    "wind_kmh": 4.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-10-22",
     "city": "Zagreb",
     "temp_min_c": 8.8,
     "temp_max_c": 17.2,
-    "humidity": 88,
+    "humidity": 87,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
@@ -277,20 +277,20 @@
   "forecast_day_after": {
     "date": "2026-10-23",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
-    "temp_max_c": 12.2,
-    "humidity": 84,
+    "temp_min_c": 7.8,
+    "temp_max_c": 10.5,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.1
+    "wind_kmh": 2.7
   },
   "uv": {
-    "uv": 0.7,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 1.8,
     "peak_time": "2026-10-21T12:00",
-    "safe_minutes": 238,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,11 +355,11 @@
       },
       {
         "time": "2026-10-21T15:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-10-21T16:00",
-        "uv": 0.8
+        "uv": 0.6
       },
       {
         "time": "2026-10-21T17:00",
@@ -367,7 +367,7 @@
       },
       {
         "time": "2026-10-21T18:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-10-21T19:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-21T15:24:11+02:00"
+    "fetched_at": "2026-10-21T20:21:09+02:00"
   }
 }
