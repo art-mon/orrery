@@ -1,10 +1,20 @@
 {
   "generated": "2026-10-22",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u3yp",
+        "title": "M5.0 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-21T21:58:48.618000Z",
+        "coordinates": [
+          -34.1306,
+          56.863
+        ]
+      },
       {
         "id": "us6000u3yj",
         "title": "M5.3 Earthquake - Reykjanes Ridge",
@@ -144,108 +154,98 @@
           165.5874,
           -13.857
         ]
-      },
-      {
-        "id": "us6000u3jl",
-        "title": "M6.3 Earthquake - 197 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-20T04:20:38.737000Z",
-        "coordinates": [
-          165.5892,
-          -13.9906
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2016 LN1)",
-        "hazardous": true,
-        "diameter_m": 628,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 30294985,
-        "velocity_kmh": 50814
-      },
-      {
-        "name": "(2019 BZ)",
+        "name": "(2017 UX7)",
         "hazardous": false,
-        "diameter_m": 18,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 33875928,
-        "velocity_kmh": 27859
+        "diameter_m": 45,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 6500634,
+        "velocity_kmh": 37186
       },
       {
-        "name": "(2018 VO9)",
+        "name": "(2019 UO5)",
         "hazardous": false,
-        "diameter_m": 25,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 36128411,
-        "velocity_kmh": 37244
+        "diameter_m": 45,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 16658936,
+        "velocity_kmh": 39147
       },
       {
-        "name": "(2020 BW)",
+        "name": "(2015 UH52)",
+        "hazardous": false,
+        "diameter_m": 37,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 20622252,
+        "velocity_kmh": 55785
+      },
+      {
+        "name": "(2019 UG2)",
         "hazardous": false,
         "diameter_m": 82,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 38529546,
-        "velocity_kmh": 65285
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 32868548,
+        "velocity_kmh": 44367
       },
       {
-        "name": "(2018 ER1)",
+        "name": "(2017 VE2)",
         "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 46282382,
-        "velocity_kmh": 46586
+        "diameter_m": 57,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 44337975,
+        "velocity_kmh": 54156
       },
       {
-        "name": "(2019 BG3)",
+        "name": "(2014 QS295)",
         "hazardous": false,
-        "diameter_m": 36,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 47200339,
-        "velocity_kmh": 132951
+        "diameter_m": 231,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 46868765,
+        "velocity_kmh": 34371
       },
       {
-        "name": "(2007 TH1)",
-        "hazardous": true,
-        "diameter_m": 250,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 52891436,
-        "velocity_kmh": 89382
-      },
-      {
-        "name": "(2017 WG28)",
+        "name": "(2012 UA174)",
         "hazardous": false,
-        "diameter_m": 136,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 55560445,
-        "velocity_kmh": 28776
+        "diameter_m": 156,
+        "close_approach_date": "2026-10-22",
+        "miss_distance_km": 53636583,
+        "velocity_kmh": 40390
       },
       {
-        "name": "(2017 KU4)",
+        "name": "(2007 US12)",
         "hazardous": false,
-        "diameter_m": 103,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 57376893,
-        "velocity_kmh": 67296
+        "diameter_m": 223,
+        "close_approach_date": "2026-10-23",
+        "miss_distance_km": 28651195,
+        "velocity_kmh": 43016
       },
       {
-        "name": "(2018 GT3)",
+        "name": "(2019 UT8)",
         "hazardous": false,
-        "diameter_m": 220,
-        "close_approach_date": "2026-10-21",
-        "miss_distance_km": 59698211,
-        "velocity_kmh": 67443
+        "diameter_m": 22,
+        "close_approach_date": "2026-10-23",
+        "miss_distance_km": 31767006,
+        "velocity_kmh": 39684
+      },
+      {
+        "name": "(2007 UP6)",
+        "hazardous": false,
+        "diameter_m": 149,
+        "close_approach_date": "2026-10-23",
+        "miss_distance_km": 34512867,
+        "velocity_kmh": 40249
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 14.8,
-    "feels_c": 14.7,
-    "humidity": 89,
+    "city": "Zagreb",
+    "temp_c": 13.7,
+    "feels_c": 13.5,
+    "humidity": 91,
     "condition": "Mist",
     "description": "mist",
     "icon": "50n",
@@ -261,7 +261,7 @@
     "description": "clouds",
     "icon": "50n",
     "wind_kmh": 5.7,
-    "samples": 9
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-23",
@@ -280,7 +280,7 @@
     "temp_min_c": 7.4,
     "temp_max_c": 10.2,
     "humidity": 82,
-    "condition": "Rain",
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
     "wind_kmh": 8.5
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-22T00:04:43+02:00"
+    "fetched_at": "2026-10-22T03:11:13+02:00"
   }
 }
