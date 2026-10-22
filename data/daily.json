@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-22",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-22",
+    "explanation": "Star light, star bright: is there a green star out tonight? Other than the Sun, all stars are so far from Earth that they appear as points in the sky. They are mostly white, but sometimes noticeably red or blue. This color typically relates to the temperature: blue stars are hotter than red stars. What about other colors? The featured image is an illustration showing WD J1330+6435, a white dwarf star, surrounded by an accretion disk with gas and rocks orbiting the star. White dwarfs are small, faint stars that are left over when a star like the Sun exhausts its nuclear fuel. Astronomers recently found that some white dwarf stars, despite their name, would appear yellow, green, cyan, pink, or purple. In these cases, trace elements that were accreted to these stars interact with the stellar atmosphere and shift its normally white color. But, alas! I wish I may, I wish I might, but they are too faint to see tonight...",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u44n",
+        "title": "M5.2 Earthquake - 201 km ENE of Nagqu, China",
+        "category": "Earthquake",
+        "date": "2026-10-22T15:12:04.462000Z",
+        "coordinates": [
+          93.8669,
+          32.4401
+        ]
+      },
+      {
+        "id": "us6000u43g",
+        "title": "M7.0 Earthquake - 191 km ENE of Nagqu, China",
+        "category": "Earthquake",
+        "date": "2026-10-22T14:33:40.353000Z",
+        "coordinates": [
+          93.7797,
+          32.3805
+        ]
+      },
       {
         "id": "us6000u3yp",
         "title": "M5.0 Earthquake - Reykjanes Ridge",
@@ -29,30 +54,30 @@
         "id": "us6000u3x2",
         "title": "M5.0 Earthquake - Reykjanes Ridge",
         "category": "Earthquake",
-        "date": "2026-10-21T19:06:06.706000Z",
+        "date": "2026-10-21T19:06:05.512000Z",
         "coordinates": [
-          -33.9973,
-          57.1591
+          -34.2256,
+          56.9507
         ]
       },
       {
         "id": "us6000u3xx",
-        "title": "M5.0 Earthquake - 198 km WNW of Port-Olry, Vanuatu",
+        "title": "M5.0 Earthquake - 190 km WNW of Port-Olry, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-10-21T18:41:04.974000Z",
+        "date": "2026-10-21T18:41:04.960000Z",
         "coordinates": [
-          165.4616,
-          -14.1796
+          165.5779,
+          -14.1213
         ]
       },
       {
         "id": "us6000u3wh",
         "title": "M5.1 Earthquake - south of Africa",
         "category": "Earthquake",
-        "date": "2026-10-21T18:12:35.440000Z",
+        "date": "2026-10-21T18:12:35.474000Z",
         "coordinates": [
-          27.5329,
-          -52.8338
+          27.4604,
+          -52.8118
         ]
       },
       {
@@ -133,26 +158,6 @@
         "coordinates": [
           -160.3291,
           54.6088
-        ]
-      },
-      {
-        "id": "us6000u3ka",
-        "title": "M5.1 Earthquake - 263 km WSW of Yanglong, China",
-        "category": "Earthquake",
-        "date": "2026-10-20T06:41:23.116000Z",
-        "coordinates": [
-          95.6436,
-          37.9037
-        ]
-      },
-      {
-        "id": "us6000u3k5",
-        "title": "M5.2 Earthquake - 206 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-20T06:29:22.432000Z",
-        "coordinates": [
-          165.5874,
-          -13.857
         ]
       }
     ]
@@ -243,31 +248,31 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 13.7,
-    "feels_c": 13.4,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.4
+    "temp_c": 12.6,
+    "feels_c": 12.2,
+    "humidity": 87,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-10-22",
     "city": "Zagreb",
-    "temp_min_c": 10.7,
-    "temp_max_c": 14.1,
-    "humidity": 86,
+    "temp_min_c": 11.8,
+    "temp_max_c": 12.6,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 3.8,
-    "samples": 4
+    "icon": "50n",
+    "wind_kmh": 1.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-10-23",
     "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 15.6,
+    "temp_min_c": 7.7,
+    "temp_max_c": 15.0,
     "humidity": 84,
     "condition": "Clouds",
     "description": "overcast clouds",
@@ -277,20 +282,20 @@
   "forecast_day_after": {
     "date": "2026-10-24",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 9.6,
-    "humidity": 94,
+    "temp_min_c": 5.1,
+    "temp_max_c": 11.9,
+    "humidity": 92,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.3
+    "wind_kmh": 7.4
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 0.6,
+    "daily_max": 1.1,
     "peak_time": "2026-10-22T16:00",
-    "safe_minutes": 303,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,15 +360,15 @@
       },
       {
         "time": "2026-10-22T15:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-10-22T16:00",
-        "uv": 0.6
+        "uv": 1.1
       },
       {
         "time": "2026-10-22T17:00",
-        "uv": 0.3
+        "uv": 0.5
       },
       {
         "time": "2026-10-22T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-22T15:25:23+02:00"
+    "fetched_at": "2026-10-22T20:15:37+02:00"
   }
 }
