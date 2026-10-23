@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000u4e2",
+        "title": "M5.1 Earthquake - 72 km ENE of Noda, Japan",
+        "category": "Earthquake",
+        "date": "2026-10-23T16:07:51.754000Z",
+        "coordinates": [
+          142.572,
+          40.4159
+        ]
+      },
+      {
+        "id": "us6000u4dc",
+        "title": "M5.2 Earthquake - 50 km WNW of Malfa, Italy",
+        "category": "Earthquake",
+        "date": "2026-10-23T13:55:36.149000Z",
+        "coordinates": [
+          14.315,
+          38.7787
+        ]
+      },
+      {
         "id": "us6000u4bk",
         "title": "M5.7 Earthquake - 61 km WNW of Leni, Italy",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           128.1355,
           -7.5619
         ]
-      },
-      {
-        "id": "us6000u3rr",
-        "title": "M5.0 Earthquake - south of Panama",
-        "category": "Earthquake",
-        "date": "2026-10-21T01:20:02.961000Z",
-        "coordinates": [
-          -82.7031,
-          4.5985
-        ]
-      },
-      {
-        "id": "us6000u3p1",
-        "title": "M5.1 Earthquake - 39 km W of Mosteiros, Portugal",
-        "category": "Earthquake",
-        "date": "2026-10-20T18:07:18.131000Z",
-        "coordinates": [
-          -26.2588,
-          37.9575
-        ]
       }
     ]
   },
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 11.6,
-    "feels_c": 10.9,
-    "humidity": 78,
+    "city": "City of Zagreb",
+    "temp_c": 10.5,
+    "feels_c": 9.8,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
+    "description": "few clouds",
+    "icon": "02n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-23",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 12.3,
-    "humidity": 80,
+    "temp_min_c": 10.0,
+    "temp_max_c": 10.5,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03d",
-    "wind_kmh": 2.9,
-    "samples": 4
+    "icon": "02n",
+    "wind_kmh": 2.5,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-24",
     "city": "Zagreb",
-    "temp_min_c": 6.2,
-    "temp_max_c": 11.7,
-    "humidity": 94,
+    "temp_min_c": 6.5,
+    "temp_max_c": 12.4,
+    "humidity": 93,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.6
+    "wind_kmh": 6.5
   },
   "forecast_day_after": {
     "date": "2026-10-25",
     "city": "Zagreb",
-    "temp_min_c": 3.3,
-    "temp_max_c": 10.7,
-    "humidity": 85,
+    "temp_min_c": 5.0,
+    "temp_max_c": 10.6,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.5
+    "wind_kmh": 5.1
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.6,
     "peak_time": "2026-10-23T12:00",
-    "safe_minutes": 76,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-23T14:23:43+02:00"
+    "fetched_at": "2026-10-23T19:41:06+02:00"
   }
 }
