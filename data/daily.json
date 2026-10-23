@@ -1,7 +1,12 @@
 {
   "generated": "2026-10-23",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-23",
+    "explanation": "Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though. And in this telephoto scene from October 10/11, multiple exposures were used to reveal the spiral galaxy in tantalizing detail as it climbed above rolling Australian hills. Also known as M31, the Andromeda Galaxy is one of the brightest objects in the Messier catalog, but is only visible to the unaided eye as a small, faint, fuzzy patch. Digitally tracked and stacked frames were combined with a foreground shot in the deep astro-image composite to reveal the galaxy's greater extent in planet Earth's night. In the springtime night skyscape,the closest large spiral galaxy spans nearly 6 full moons.Tomorrow's picture: pixels in space",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 7.8,
-    "feels_c": 7.8,
-    "humidity": 91,
+    "city": "Zagreb",
+    "temp_c": 6.5,
+    "feels_c": 5.6,
+    "humidity": 93,
     "condition": "Fog",
     "description": "fog",
-    "icon": "50n",
-    "wind_kmh": 1.8
+    "icon": "50d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-23",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.8,
-    "temp_max_c": 15.7,
-    "humidity": 86,
+    "city": "Zagreb",
+    "temp_min_c": 6.5,
+    "temp_max_c": 14.4,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "50n",
-    "wind_kmh": 2.4,
-    "samples": 8
+    "icon": "50d",
+    "wind_kmh": 3.3,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-24",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.8,
-    "temp_max_c": 12.3,
-    "humidity": 90,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 5.9,
+    "temp_max_c": 11.4,
+    "humidity": 93,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.8
+    "wind_kmh": 8.2
   },
   "forecast_day_after": {
     "date": "2026-10-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 4.0,
-    "temp_max_c": 10.8,
-    "humidity": 83,
+    "city": "Zagreb",
+    "temp_min_c": 3.9,
+    "temp_max_c": 10.9,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 4.0
+    "wind_kmh": 5.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.7,
     "band": "low",
     "daily_max": 2.9,
     "peak_time": "2026-10-23T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 256,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,7 +344,7 @@
       },
       {
         "time": "2026-10-23T11:00",
-        "uv": 2.4
+        "uv": 2.3
       },
       {
         "time": "2026-10-23T12:00",
@@ -347,15 +352,15 @@
       },
       {
         "time": "2026-10-23T13:00",
-        "uv": 2.1
+        "uv": 2.4
       },
       {
         "time": "2026-10-23T14:00",
-        "uv": 1.9
+        "uv": 2.2
       },
       {
         "time": "2026-10-23T15:00",
-        "uv": 2.0
+        "uv": 2.4
       },
       {
         "time": "2026-10-23T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-23T03:10:50+02:00"
+    "fetched_at": "2026-10-23T08:55:25+02:00"
   }
 }
