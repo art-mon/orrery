@@ -1,15 +1,20 @@
 {
   "generated": "2026-10-23",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-23",
-    "explanation": "Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though. And in this telephoto scene from October 10/11, multiple exposures were used to reveal the spiral galaxy in tantalizing detail as it climbed above rolling Australian hills. Also known as M31, the Andromeda Galaxy is one of the brightest objects in the Messier catalog, but is only visible to the unaided eye as a small, faint, fuzzy patch. Digitally tracked and stacked frames were combined with a foreground shot in the deep astro-image composite to reveal the galaxy's greater extent in planet Earth's night. In the springtime night skyscape,the closest large spiral galaxy spans nearly 6 full moons.Tomorrow's picture: pixels in space",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u4bk",
+        "title": "M5.7 Earthquake - 61 km WNW of Leni, Italy",
+        "category": "Earthquake",
+        "date": "2026-10-23T10:19:16.729000Z",
+        "coordinates": [
+          14.152,
+          38.7199
+        ]
+      },
       {
         "id": "us6000u473",
         "title": "M5.0 Earthquake - 153 km S of Kokopo, Papua New Guinea",
@@ -149,16 +154,6 @@
           -26.2588,
           37.9575
         ]
-      },
-      {
-        "id": "us6000u3nl",
-        "title": "M5.4 Earthquake - 192 km S of Burica, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-20T17:05:48.338000Z",
-        "coordinates": [
-          -82.5693,
-          6.3226
-        ]
       }
     ]
   },
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 6.5,
-    "feels_c": 5.6,
-    "humidity": 93,
-    "condition": "Fog",
-    "description": "fog",
-    "icon": "50d",
+    "temp_c": 11.6,
+    "feels_c": 10.9,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-23",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 14.4,
-    "humidity": 85,
+    "temp_min_c": 10.1,
+    "temp_max_c": 12.3,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "50d",
-    "wind_kmh": 3.3,
-    "samples": 6
+    "icon": "03d",
+    "wind_kmh": 2.9,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-24",
     "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 11.4,
-    "humidity": 93,
+    "temp_min_c": 6.2,
+    "temp_max_c": 11.7,
+    "humidity": 94,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.2
+    "wind_kmh": 7.6
   },
   "forecast_day_after": {
     "date": "2026-10-25",
     "city": "Zagreb",
-    "temp_min_c": 3.9,
-    "temp_max_c": 10.9,
-    "humidity": 84,
+    "temp_min_c": 3.3,
+    "temp_max_c": 10.7,
+    "humidity": 85,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.0
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.7,
+    "uv": 2.2,
     "band": "low",
-    "daily_max": 2.9,
+    "daily_max": 2.6,
     "peak_time": "2026-10-23T12:00",
-    "safe_minutes": 256,
+    "safe_minutes": 76,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,27 +339,27 @@
       },
       {
         "time": "2026-10-23T11:00",
-        "uv": 2.3
-      },
-      {
-        "time": "2026-10-23T12:00",
-        "uv": 2.9
-      },
-      {
-        "time": "2026-10-23T13:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-10-23T14:00",
         "uv": 2.2
       },
       {
+        "time": "2026-10-23T12:00",
+        "uv": 2.6
+      },
+      {
+        "time": "2026-10-23T13:00",
+        "uv": 2.2
+      },
+      {
+        "time": "2026-10-23T14:00",
+        "uv": 2.1
+      },
+      {
         "time": "2026-10-23T15:00",
-        "uv": 2.4
+        "uv": 2.2
       },
       {
         "time": "2026-10-23T16:00",
-        "uv": 1.8
+        "uv": 1.7
       },
       {
         "time": "2026-10-23T17:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-23T08:55:25+02:00"
+    "fetched_at": "2026-10-23T14:23:43+02:00"
   }
 }
