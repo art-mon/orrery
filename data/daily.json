@@ -49,20 +49,20 @@
         "id": "us6000u3yp",
         "title": "M5.0 Earthquake - Reykjanes Ridge",
         "category": "Earthquake",
-        "date": "2026-10-21T21:58:48.618000Z",
+        "date": "2026-10-21T21:58:47.741000Z",
         "coordinates": [
-          -34.1306,
-          56.863
+          -34.2021,
+          56.8448
         ]
       },
       {
         "id": "us6000u3yj",
         "title": "M5.3 Earthquake - Reykjanes Ridge",
         "category": "Earthquake",
-        "date": "2026-10-21T21:38:55.441000Z",
+        "date": "2026-10-21T21:38:54.807000Z",
         "coordinates": [
-          -34.1689,
-          56.8137
+          -34.1745,
+          56.7805
         ]
       },
       {
@@ -160,62 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2017 UX7)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 6500634,
-        "velocity_kmh": 37186
-      },
-      {
-        "name": "(2019 UO5)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 16658936,
-        "velocity_kmh": 39147
-      },
-      {
-        "name": "(2015 UH52)",
-        "hazardous": false,
-        "diameter_m": 37,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 20622252,
-        "velocity_kmh": 55785
-      },
-      {
-        "name": "(2019 UG2)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 32868548,
-        "velocity_kmh": 44367
-      },
-      {
-        "name": "(2017 VE2)",
-        "hazardous": false,
-        "diameter_m": 57,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 44337975,
-        "velocity_kmh": 54156
-      },
-      {
-        "name": "(2014 QS295)",
-        "hazardous": false,
-        "diameter_m": 231,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 46868765,
-        "velocity_kmh": 34371
-      },
-      {
-        "name": "(2012 UA174)",
-        "hazardous": false,
-        "diameter_m": 156,
-        "close_approach_date": "2026-10-22",
-        "miss_distance_km": 53636583,
-        "velocity_kmh": 40390
-      },
-      {
         "name": "(2007 US12)",
         "hazardous": false,
         "diameter_m": 223,
@@ -238,14 +182,70 @@
         "close_approach_date": "2026-10-23",
         "miss_distance_km": 34512867,
         "velocity_kmh": 40249
+      },
+      {
+        "name": "(2019 FF)",
+        "hazardous": false,
+        "diameter_m": 33,
+        "close_approach_date": "2026-10-23",
+        "miss_distance_km": 41016225,
+        "velocity_kmh": 31145
+      },
+      {
+        "name": "(2019 HK)",
+        "hazardous": false,
+        "diameter_m": 86,
+        "close_approach_date": "2026-10-23",
+        "miss_distance_km": 58303042,
+        "velocity_kmh": 80214
+      },
+      {
+        "name": "(2004 HX53)",
+        "hazardous": false,
+        "diameter_m": 113,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 13765535,
+        "velocity_kmh": 45400
+      },
+      {
+        "name": "(2019 CJ4)",
+        "hazardous": false,
+        "diameter_m": 47,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 35522681,
+        "velocity_kmh": 35556
+      },
+      {
+        "name": "(2002 CW11)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 44177376,
+        "velocity_kmh": 30421
+      },
+      {
+        "name": "(2019 LB1)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 44675303,
+        "velocity_kmh": 44091
+      },
+      {
+        "name": "(2013 SN24)",
+        "hazardous": false,
+        "diameter_m": 59,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 45633715,
+        "velocity_kmh": 54418
       }
     ]
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 9.2,
-    "feels_c": 9.2,
-    "humidity": 89,
+    "temp_c": 7.8,
+    "feels_c": 7.8,
+    "humidity": 91,
     "condition": "Fog",
     "description": "fog",
     "icon": "50n",
@@ -253,21 +253,21 @@
   },
   "forecast_today": {
     "date": "2026-10-23",
-    "city": "Zagreb",
-    "temp_min_c": 8.4,
-    "temp_max_c": 15.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 7.8,
+    "temp_max_c": 15.7,
     "humidity": 86,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "50n",
-    "wind_kmh": 2.6,
-    "samples": 9
+    "wind_kmh": 2.4,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-24",
-    "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 11.8,
+    "city": "City of Zagreb",
+    "temp_min_c": 6.8,
+    "temp_max_c": 12.3,
     "humidity": 90,
     "condition": "Clouds",
     "description": "light rain",
@@ -276,10 +276,10 @@
   },
   "forecast_day_after": {
     "date": "2026-10-25",
-    "city": "Zagreb",
-    "temp_min_c": 3.6,
-    "temp_max_c": 10.0,
-    "humidity": 82,
+    "city": "City of Zagreb",
+    "temp_min_c": 4.0,
+    "temp_max_c": 10.8,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
@@ -339,7 +339,7 @@
       },
       {
         "time": "2026-10-23T11:00",
-        "uv": 2.1
+        "uv": 2.4
       },
       {
         "time": "2026-10-23T12:00",
@@ -347,7 +347,7 @@
       },
       {
         "time": "2026-10-23T13:00",
-        "uv": 2.3
+        "uv": 2.1
       },
       {
         "time": "2026-10-23T14:00",
@@ -355,7 +355,7 @@
       },
       {
         "time": "2026-10-23T15:00",
-        "uv": 1.9
+        "uv": 2.0
       },
       {
         "time": "2026-10-23T16:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-23T00:03:54+02:00"
+    "fetched_at": "2026-10-23T03:10:50+02:00"
   }
 }
