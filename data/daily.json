@@ -1,10 +1,35 @@
 {
   "generated": "2026-10-24",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-24",
+    "explanation": "Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though. And in this telephoto scene from October 10/11, multiple exposures were used to reveal the spiral galaxy in tantalizing detail as it climbed above rolling Australian hills. Also known as M31, the Andromeda Galaxy is one of the brightest objects in the Messier catalog, but is only visible to the unaided eye as a small, faint, fuzzy patch. Digitally tracked and stacked frames were combined with a foreground shot in the deep astro-image composite to reveal the galaxy's greater extent in planet Earth's night. In the springtime night skyscape,the closest large spiral galaxy spans nearly 6 full moons.Tomorrow's picture: pixels in space",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u4jb",
+        "title": "M6.3 Earthquake - 170 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T02:35:57.362000Z",
+        "coordinates": [
+          165.8666,
+          -14.0424
+        ]
+      },
+      {
+        "id": "us6000u4j2",
+        "title": "M6.9 Earthquake - 197 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T02:31:28.641000Z",
+        "coordinates": [
+          165.5455,
+          -14.0558
+        ]
+      },
       {
         "id": "us6000u4h7",
         "title": "M5.1 Earthquake - 203 km NW of Port-Olry, Vanuatu",
@@ -134,71 +159,11 @@
           165.5779,
           -14.1213
         ]
-      },
-      {
-        "id": "us6000u3wh",
-        "title": "M5.1 Earthquake - south of Africa",
-        "category": "Earthquake",
-        "date": "2026-10-21T18:12:35.474000Z",
-        "coordinates": [
-          27.4604,
-          -52.8118
-        ]
-      },
-      {
-        "id": "us6000u3ue",
-        "title": "M5.0 Earthquake - 194 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-21T14:56:27.447000Z",
-        "coordinates": [
-          165.5402,
-          -14.105
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2007 US12)",
-        "hazardous": false,
-        "diameter_m": 223,
-        "close_approach_date": "2026-10-23",
-        "miss_distance_km": 28651195,
-        "velocity_kmh": 43016
-      },
-      {
-        "name": "(2019 UT8)",
-        "hazardous": false,
-        "diameter_m": 22,
-        "close_approach_date": "2026-10-23",
-        "miss_distance_km": 31767006,
-        "velocity_kmh": 39684
-      },
-      {
-        "name": "(2007 UP6)",
-        "hazardous": false,
-        "diameter_m": 149,
-        "close_approach_date": "2026-10-23",
-        "miss_distance_km": 34512867,
-        "velocity_kmh": 40249
-      },
-      {
-        "name": "(2019 FF)",
-        "hazardous": false,
-        "diameter_m": 33,
-        "close_approach_date": "2026-10-23",
-        "miss_distance_km": 41016225,
-        "velocity_kmh": 31145
-      },
-      {
-        "name": "(2019 HK)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-10-23",
-        "miss_distance_km": 58303042,
-        "velocity_kmh": 80214
-      },
       {
         "name": "(2004 HX53)",
         "hazardous": false,
@@ -238,52 +203,92 @@
         "close_approach_date": "2026-10-24",
         "miss_distance_km": 45633715,
         "velocity_kmh": 54418
+      },
+      {
+        "name": "529819 (2010 PM58)",
+        "hazardous": false,
+        "diameter_m": 400,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 45930920,
+        "velocity_kmh": 46215
+      },
+      {
+        "name": "(2007 UH)",
+        "hazardous": false,
+        "diameter_m": 237,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 47686497,
+        "velocity_kmh": 33604
+      },
+      {
+        "name": "(2012 VC26)",
+        "hazardous": false,
+        "diameter_m": 11,
+        "close_approach_date": "2026-10-24",
+        "miss_distance_km": 74781125,
+        "velocity_kmh": 74414
+      },
+      {
+        "name": "(2017 UQ7)",
+        "hazardous": false,
+        "diameter_m": 53,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 10212926,
+        "velocity_kmh": 57766
+      },
+      {
+        "name": "(2018 UX1)",
+        "hazardous": false,
+        "diameter_m": 91,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 15412396,
+        "velocity_kmh": 38987
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
     "temp_c": 9.8,
-    "feels_c": 9.4,
-    "humidity": 88,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 5.5
+    "feels_c": 8.9,
+    "humidity": 91,
+    "condition": "Mist",
+    "description": "mist",
+    "icon": "50n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-24",
-    "city": "Zagreb",
-    "temp_min_c": 5.6,
-    "temp_max_c": 11.8,
-    "humidity": 90,
+    "city": "Donji grad",
+    "temp_min_c": 4.8,
+    "temp_max_c": 12.0,
+    "humidity": 88,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 6.3,
-    "samples": 9
+    "icon": "50n",
+    "wind_kmh": 6.5,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-25",
-    "city": "Zagreb",
-    "temp_min_c": 4.6,
+    "city": "Donji grad",
+    "temp_min_c": 4.4,
     "temp_max_c": 14.2,
-    "humidity": 85,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.7
+    "wind_kmh": 4.8
   },
   "forecast_day_after": {
     "date": "2026-10-26",
-    "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 14.0,
-    "humidity": 74,
+    "city": "Donji grad",
+    "temp_min_c": 6.2,
+    "temp_max_c": 13.5,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.1
+    "wind_kmh": 3.2
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-24T01:46:45+02:00"
+    "fetched_at": "2026-10-24T05:12:32+02:00"
   }
 }
