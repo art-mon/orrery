@@ -3,13 +3,123 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-10-24",
-    "explanation": "Looking toward the north from Mullion, New South Wales, Australia, the Andromeda Galaxy never gets more than a few degrees above the horizon. During the southern hemisphere spring, Andromeda is highest in the sky around midnight though. And in this telephoto scene from October 10/11, multiple exposures were used to reveal the spiral galaxy in tantalizing detail as it climbed above rolling Australian hills. Also known as M31, the Andromeda Galaxy is one of the brightest objects in the Messier catalog, but is only visible to the unaided eye as a small, faint, fuzzy patch. Digitally tracked and stacked frames were combined with a foreground shot in the deep astro-image composite to reveal the galaxy's greater extent in planet Earth's night. In the springtime night skyscape,the closest large spiral galaxy spans nearly 6 full moons.Tomorrow's picture: pixels in space",
+    "explanation": "This Rosetta spacecraft selfie was snapped on October 7th, 2014. At the time the comet-chasing spacecraft was about 472 million kilometers from planet Earth, but only 16 kilometers from the surface of comet 67P/Churyumov-Gerasimenko. Looming beyond the spacecraft near the top of the frame, dust and gas stream away from the comet's curious double-lobed nucleus. Bright sunlight glints off one of Rosetta's 14 meter long solar arrays. In fact, two exposures, one short and one long, were combined to record the dramatic high contrast scene using the CIVA camera system on Rosetta's still-attached Philae lander. Its chosen primary landing site was on the visible hemisphere of the smaller lobe of the nucleus. This was the last image from Philae's camera before the lander separated from Rosetta on November 12. Shortly after separation Philae took another image looking back toward the orbiter and began its descent to the nucleus of the comet.Tomorrow's picture: dark matters",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u4ku",
+        "title": "M5.0 Earthquake - 219 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T06:52:04.142000Z",
+        "coordinates": [
+          165.4237,
+          -13.8777
+        ]
+      },
+      {
+        "id": "us6000u4kq",
+        "title": "M5.5 Earthquake - 55 km NNE of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T06:43:09.602000Z",
+        "coordinates": [
+          167.3063,
+          -14.5918
+        ]
+      },
+      {
+        "id": "us6000u4kj",
+        "title": "M5.3 Earthquake - 174 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T06:04:16.367000Z",
+        "coordinates": [
+          165.7535,
+          -14.1278
+        ]
+      },
+      {
+        "id": "us6000u4k6",
+        "title": "M5.8 Earthquake - 182 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T05:23:40.747000Z",
+        "coordinates": [
+          165.6982,
+          -14.0833
+        ]
+      },
+      {
+        "id": "us6000u4k1",
+        "title": "M5.1 Earthquake - 217 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T04:49:21.707000Z",
+        "coordinates": [
+          165.4673,
+          -13.8521
+        ]
+      },
+      {
+        "id": "us6000u4k2",
+        "title": "M5.0 Earthquake - 161 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T04:44:45.324000Z",
+        "coordinates": [
+          165.8739,
+          -14.165
+        ]
+      },
+      {
+        "id": "us6000u4jy",
+        "title": "M5.3 Earthquake - 216 km W of Sola, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T04:19:38.628000Z",
+        "coordinates": [
+          165.551,
+          -13.7325
+        ]
+      },
+      {
+        "id": "us6000u4jw",
+        "title": "M5.8 Earthquake - 203 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T04:12:05.337000Z",
+        "coordinates": [
+          165.5967,
+          -13.9017
+        ]
+      },
+      {
+        "id": "us6000u4ju",
+        "title": "M5.7 Earthquake - 205 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T04:05:36.800000Z",
+        "coordinates": [
+          165.5627,
+          -13.9084
+        ]
+      },
+      {
+        "id": "us6000u4jl",
+        "title": "M5.2 Earthquake - 202 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T03:17:55.755000Z",
+        "coordinates": [
+          165.6161,
+          -13.8805
+        ]
+      },
+      {
+        "id": "us6000u4ji",
+        "title": "M5.1 Earthquake - 170 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T03:08:45.463000Z",
+        "coordinates": [
+          165.8052,
+          -14.1211
+        ]
+      },
       {
         "id": "us6000u4jb",
         "title": "M6.3 Earthquake - 170 km NW of Port-Olry, Vanuatu",
@@ -48,116 +158,6 @@
         "coordinates": [
           142.572,
           40.4159
-        ]
-      },
-      {
-        "id": "us6000u4dc",
-        "title": "M5.2 Earthquake - 50 km WNW of Malfa, Italy",
-        "category": "Earthquake",
-        "date": "2026-10-23T13:55:36.149000Z",
-        "coordinates": [
-          14.315,
-          38.7787
-        ]
-      },
-      {
-        "id": "us6000u4bk",
-        "title": "M5.7 Earthquake - 61 km WNW of Leni, Italy",
-        "category": "Earthquake",
-        "date": "2026-10-23T10:19:16.729000Z",
-        "coordinates": [
-          14.152,
-          38.7199
-        ]
-      },
-      {
-        "id": "us6000u473",
-        "title": "M5.0 Earthquake - 153 km S of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-22T20:05:04.207000Z",
-        "coordinates": [
-          152.2646,
-          -5.728
-        ]
-      },
-      {
-        "id": "us6000u45j",
-        "title": "M5.0 Earthquake - 207 km ENE of Nagqu, China",
-        "category": "Earthquake",
-        "date": "2026-10-22T18:06:44.294000Z",
-        "coordinates": [
-          93.9886,
-          32.3707
-        ]
-      },
-      {
-        "id": "us6000u44n",
-        "title": "M5.2 Earthquake - 201 km ENE of Nagqu, China",
-        "category": "Earthquake",
-        "date": "2026-10-22T15:12:04.462000Z",
-        "coordinates": [
-          93.8669,
-          32.4401
-        ]
-      },
-      {
-        "id": "us6000u43g",
-        "title": "M7.0 Earthquake - 191 km ENE of Nagqu, China",
-        "category": "Earthquake",
-        "date": "2026-10-22T14:33:40.353000Z",
-        "coordinates": [
-          93.7797,
-          32.3805
-        ]
-      },
-      {
-        "id": "us6000u3zp",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-10-22T00:25:38.898000Z",
-        "coordinates": [
-          -27.0602,
-          -55.9673
-        ]
-      },
-      {
-        "id": "us6000u3yp",
-        "title": "M5.0 Earthquake - Reykjanes Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-21T21:58:47.741000Z",
-        "coordinates": [
-          -34.2021,
-          56.8448
-        ]
-      },
-      {
-        "id": "us6000u3yj",
-        "title": "M5.3 Earthquake - Reykjanes Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-21T21:38:54.807000Z",
-        "coordinates": [
-          -34.1745,
-          56.7805
-        ]
-      },
-      {
-        "id": "us6000u3x2",
-        "title": "M5.0 Earthquake - Reykjanes Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-21T19:06:05.512000Z",
-        "coordinates": [
-          -34.2256,
-          56.9507
-        ]
-      },
-      {
-        "id": "us6000u3xx",
-        "title": "M5.0 Earthquake - 190 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-21T18:41:04.960000Z",
-        "coordinates": [
-          165.5779,
-          -14.1213
         ]
       }
     ]
@@ -248,29 +248,29 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.8,
-    "feels_c": 8.9,
-    "humidity": 91,
-    "condition": "Mist",
-    "description": "mist",
-    "icon": "50n",
-    "wind_kmh": 7.4
+    "temp_c": 10.4,
+    "feels_c": 9.6,
+    "humidity": 82,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-10-24",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 4.8,
-    "temp_max_c": 12.0,
-    "humidity": 88,
+    "temp_max_c": 11.5,
+    "humidity": 86,
     "condition": "Rain",
     "description": "rain",
-    "icon": "50n",
-    "wind_kmh": 6.5,
-    "samples": 7
+    "icon": "04d",
+    "wind_kmh": 8.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-25",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 4.4,
     "temp_max_c": 14.2,
     "humidity": 82,
@@ -281,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-10-26",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 6.2,
     "temp_max_c": 13.5,
     "humidity": 73,
@@ -291,11 +291,11 @@
     "wind_kmh": 3.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.3,
     "band": "low",
-    "daily_max": 0.8,
+    "daily_max": 0.7,
     "peak_time": "2026-10-24T13:00",
-    "safe_minutes": null,
+    "safe_minutes": 556,
     "skin_type": 2,
     "hourly": [
       {
@@ -340,7 +340,7 @@
       },
       {
         "time": "2026-10-24T10:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-10-24T11:00",
@@ -348,31 +348,31 @@
       },
       {
         "time": "2026-10-24T12:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-10-24T13:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-10-24T14:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-10-24T15:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-10-24T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-10-24T17:00",
         "uv": 0.2
       },
       {
-        "time": "2026-10-24T18:00",
+        "time": "2026-10-24T13:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-10-24T14:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-10-24T15:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-10-24T16:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-10-24T17:00",
         "uv": 0.1
+      },
+      {
+        "time": "2026-10-24T18:00",
+        "uv": 0.0
       },
       {
         "time": "2026-10-24T19:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-24T05:12:32+02:00"
+    "fetched_at": "2026-10-24T10:36:54+02:00"
   }
 }
