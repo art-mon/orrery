@@ -1,10 +1,40 @@
 {
   "generated": "2026-10-25",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u4qq",
+        "title": "M5.3 Earthquake - 44 km ESE of Miyazaki, Japan",
+        "category": "Earthquake",
+        "date": "2026-10-24T23:59:36.599000Z",
+        "coordinates": [
+          131.873,
+          31.8226
+        ]
+      },
+      {
+        "id": "us6000u4qp",
+        "title": "M5.0 Earthquake - 192 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T23:44:57.729000Z",
+        "coordinates": [
+          165.7311,
+          -13.9002
+        ]
+      },
+      {
+        "id": "us6000u4q8",
+        "title": "M5.0 Earthquake - 210 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-24T22:47:08.577000Z",
+        "coordinates": [
+          165.534,
+          -13.8678
+        ]
+      },
       {
         "id": "us6000u4pa",
         "title": "M5.3 Earthquake - 101 km SSE of Vilyuchinsk, Russia",
@@ -124,105 +154,11 @@
           165.6982,
           -14.0833
         ]
-      },
-      {
-        "id": "us6000u4k1",
-        "title": "M5.1 Earthquake - 217 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T04:49:21.707000Z",
-        "coordinates": [
-          165.4673,
-          -13.8521
-        ]
-      },
-      {
-        "id": "us6000u4k2",
-        "title": "M5.0 Earthquake - 161 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T04:44:45.324000Z",
-        "coordinates": [
-          165.8739,
-          -14.165
-        ]
-      },
-      {
-        "id": "us6000u4jy",
-        "title": "M5.3 Earthquake - 216 km W of Sola, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T04:19:38.628000Z",
-        "coordinates": [
-          165.551,
-          -13.7325
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2004 HX53)",
-        "hazardous": false,
-        "diameter_m": 113,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 13765535,
-        "velocity_kmh": 45400
-      },
-      {
-        "name": "(2019 CJ4)",
-        "hazardous": false,
-        "diameter_m": 47,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 35522681,
-        "velocity_kmh": 35556
-      },
-      {
-        "name": "(2002 CW11)",
-        "hazardous": false,
-        "diameter_m": 36,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 44177376,
-        "velocity_kmh": 30421
-      },
-      {
-        "name": "(2019 LB1)",
-        "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 44675303,
-        "velocity_kmh": 44091
-      },
-      {
-        "name": "(2013 SN24)",
-        "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 45633715,
-        "velocity_kmh": 54418
-      },
-      {
-        "name": "529819 (2010 PM58)",
-        "hazardous": false,
-        "diameter_m": 400,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 45930920,
-        "velocity_kmh": 46215
-      },
-      {
-        "name": "(2007 UH)",
-        "hazardous": false,
-        "diameter_m": 237,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 47686497,
-        "velocity_kmh": 33604
-      },
-      {
-        "name": "(2012 VC26)",
-        "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-10-24",
-        "miss_distance_km": 74781125,
-        "velocity_kmh": 74414
-      },
       {
         "name": "(2017 UQ7)",
         "hazardous": false,
@@ -238,30 +174,94 @@
         "close_approach_date": "2026-10-25",
         "miss_distance_km": 15412396,
         "velocity_kmh": 38987
+      },
+      {
+        "name": "(2017 TK6)",
+        "hazardous": false,
+        "diameter_m": 70,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 18428131,
+        "velocity_kmh": 54214
+      },
+      {
+        "name": "(2002 CN15)",
+        "hazardous": false,
+        "diameter_m": 411,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 22219932,
+        "velocity_kmh": 95921
+      },
+      {
+        "name": "(2017 TJ2)",
+        "hazardous": false,
+        "diameter_m": 61,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 39203869,
+        "velocity_kmh": 49612
+      },
+      {
+        "name": "(2020 BD11)",
+        "hazardous": false,
+        "diameter_m": 82,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 39945037,
+        "velocity_kmh": 25576
+      },
+      {
+        "name": "(2006 FL10)",
+        "hazardous": false,
+        "diameter_m": 298,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 49844898,
+        "velocity_kmh": 34920
+      },
+      {
+        "name": "(2018 DA2)",
+        "hazardous": false,
+        "diameter_m": 131,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 58890104,
+        "velocity_kmh": 53013
+      },
+      {
+        "name": "(2015 HJ)",
+        "hazardous": false,
+        "diameter_m": 24,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 59933041,
+        "velocity_kmh": 32438
+      },
+      {
+        "name": "(1998 WL4)",
+        "hazardous": false,
+        "diameter_m": 752,
+        "close_approach_date": "2026-10-25",
+        "miss_distance_km": 60313373,
+        "velocity_kmh": 128914
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.9,
-    "feels_c": 7.9,
-    "humidity": 100,
+    "temp_c": 9.4,
+    "feels_c": 8.9,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-25",
     "city": "Zagreb",
-    "temp_min_c": 7.4,
+    "temp_min_c": 7,
     "temp_max_c": 13.2,
-    "humidity": 84,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 4.7,
-    "samples": 9
+    "wind_kmh": 5.0,
+    "samples": 8
   },
   "forecast": {
     "date": "2026-10-26",
@@ -288,7 +288,7 @@
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 3.0,
+    "daily_max": 2.8,
     "peak_time": "2026-10-25T13:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -331,7 +331,7 @@
       },
       {
         "time": "2026-10-25T09:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-10-25T10:00",
@@ -339,19 +339,19 @@
       },
       {
         "time": "2026-10-25T11:00",
-        "uv": 1.8
+        "uv": 1.4
       },
       {
         "time": "2026-10-25T12:00",
-        "uv": 2.0
+        "uv": 2.1
       },
       {
         "time": "2026-10-25T13:00",
-        "uv": 3.0
+        "uv": 2.8
       },
       {
         "time": "2026-10-25T14:00",
-        "uv": 2.6
+        "uv": 2.5
       },
       {
         "time": "2026-10-25T15:00",
@@ -359,7 +359,7 @@
       },
       {
         "time": "2026-10-25T16:00",
-        "uv": 1.3
+        "uv": 1.4
       },
       {
         "time": "2026-10-25T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-25T00:52:26+02:00"
+    "fetched_at": "2026-10-25T02:47:55+02:00"
   }
 }
