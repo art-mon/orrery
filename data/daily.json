@@ -6,6 +6,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000u4ty",
+        "title": "M5.9 Earthquake - 218 km ENE of Nagqu, China",
+        "category": "Earthquake",
+        "date": "2026-10-25T11:25:57.101000Z",
+        "coordinates": [
+          94.0534,
+          32.4625
+        ]
+      },
+      {
+        "id": "us6000u4tx",
+        "title": "M5.1 Earthquake - 199 km ENE of Nagqu, China",
+        "category": "Earthquake",
+        "date": "2026-10-25T11:24:14.089000Z",
+        "coordinates": [
+          93.8872,
+          32.3695
+        ]
+      },
+      {
+        "id": "us6000u4tq",
+        "title": "M5.4 Earthquake - 33 km ESE of Ambunti, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-25T10:30:27.588000Z",
+        "coordinates": [
+          143.0843,
+          -4.3644
+        ]
+      },
+      {
         "id": "us6000u4tc",
         "title": "M5.4 Earthquake - 205 km NW of Port-Olry, Vanuatu",
         "category": "Earthquake",
@@ -124,36 +154,6 @@
           7.0149,
           -54.0304
         ]
-      },
-      {
-        "id": "us6000u4lp",
-        "title": "M5.0 Earthquake - 219 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T09:07:00.782000Z",
-        "coordinates": [
-          165.2758,
-          -14.1064
-        ]
-      },
-      {
-        "id": "us6000u4lm",
-        "title": "M5.9 Earthquake - 196 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T08:56:28.815000Z",
-        "coordinates": [
-          165.6471,
-          -13.9418
-        ]
-      },
-      {
-        "id": "us6000u4lg",
-        "title": "M5.3 Earthquake - 223 km ENE of Nagqu, China",
-        "category": "Earthquake",
-        "date": "2026-10-24T08:39:53.139000Z",
-        "coordinates": [
-          94.048,
-          32.5629
-        ]
       }
     ]
   },
@@ -242,9 +242,9 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.3,
+    "city": "Donji grad",
+    "temp_c": 13.1,
+    "feels_c": 12.1,
     "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
@@ -253,44 +253,44 @@
   },
   "forecast_today": {
     "date": "2026-10-25",
-    "city": "Zagreb",
-    "temp_min_c": 11.0,
-    "temp_max_c": 14.2,
-    "humidity": 71,
+    "city": "Donji grad",
+    "temp_min_c": 11.6,
+    "temp_max_c": 13.1,
+    "humidity": 69,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 7.0,
-    "samples": 5
+    "wind_kmh": 6.0,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-26",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.3,
-    "temp_max_c": 15.4,
-    "humidity": 74,
+    "temp_max_c": 15.5,
+    "humidity": 77,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 3.5
+    "wind_kmh": 3.6
   },
   "forecast_day_after": {
     "date": "2026-10-27",
-    "city": "Zagreb",
-    "temp_min_c": 4.4,
+    "city": "Donji grad",
+    "temp_min_c": 5.6,
     "temp_max_c": 13.0,
-    "humidity": 72,
+    "humidity": 73,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.7
+    "wind_kmh": 3.0
   },
   "uv": {
-    "uv": 2.7,
+    "uv": 0.6,
     "band": "low",
     "daily_max": 2.8,
     "peak_time": "2026-10-25T12:00",
-    "safe_minutes": 62,
+    "safe_minutes": 303,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,15 +331,15 @@
       },
       {
         "time": "2026-10-25T09:00",
-        "uv": 1.0
+        "uv": 1.1
       },
       {
         "time": "2026-10-25T10:00",
-        "uv": 1.4
+        "uv": 1.5
       },
       {
         "time": "2026-10-25T11:00",
-        "uv": 2.1
+        "uv": 2.4
       },
       {
         "time": "2026-10-25T12:00",
@@ -347,7 +347,7 @@
       },
       {
         "time": "2026-10-25T13:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-10-25T14:00",
@@ -355,7 +355,7 @@
       },
       {
         "time": "2026-10-25T15:00",
-        "uv": 1.5
+        "uv": 1.4
       },
       {
         "time": "2026-10-25T16:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-25T11:40:52+01:00"
+    "fetched_at": "2026-10-25T15:46:37+01:00"
   }
 }
