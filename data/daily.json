@@ -1,10 +1,65 @@
 {
   "generated": "2026-10-25",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-25",
+    "explanation": "This Rosetta spacecraft selfie was snapped on October 7th, 2014. At the time the comet-chasing spacecraft was about 472 million kilometers from planet Earth, but only 16 kilometers from the surface of comet 67P/Churyumov-Gerasimenko. Looming beyond the spacecraft near the top of the frame, dust and gas stream away from the comet's curious double-lobed nucleus. Bright sunlight glints off one of Rosetta's 14 meter long solar arrays. In fact, two exposures, one short and one long, were combined to record the dramatic high contrast scene using the CIVA camera system on Rosetta's still-attached Philae lander. Its chosen primary landing site was on the visible hemisphere of the smaller lobe of the nucleus. This was the last image from Philae's camera before the lander separated from Rosetta on November 12. Shortly after separation Philae took another image looking back toward the orbiter and began its descent to the nucleus of the comet.Tomorrow's picture: dark matters",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000u4s5",
+        "title": "M5.2 Earthquake - 63 km NNE of Lae, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-25T03:29:10.551000Z",
+        "coordinates": [
+          147.1659,
+          -6.1737
+        ]
+      },
+      {
+        "id": "us6000u4rf",
+        "title": "M6.1 Earthquake - 25 km ENE of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-25T02:24:00.476000Z",
+        "coordinates": [
+          167.3039,
+          -14.9964
+        ]
+      },
+      {
+        "id": "us6000u4r9",
+        "title": "M6.5 Earthquake - Bonin Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-10-25T02:09:23.818000Z",
+        "coordinates": [
+          139.6184,
+          27.7953
+        ]
+      },
+      {
+        "id": "us6000u4r7",
+        "title": "M5.1 Earthquake - 161 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-25T02:06:10.299000Z",
+        "coordinates": [
+          165.7028,
+          -14.4542
+        ]
+      },
+      {
+        "id": "us6000u4r3",
+        "title": "M5.1 Earthquake - 166 km WNW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-25T01:46:23.382000Z",
+        "coordinates": [
+          165.6863,
+          -14.3846
+        ]
+      },
       {
         "id": "us6000u4qq",
         "title": "M5.3 Earthquake - 44 km ESE of Miyazaki, Japan",
@@ -104,56 +159,6 @@
           165.6088,
           -13.7972
         ]
-      },
-      {
-        "id": "us6000u4l9",
-        "title": "M5.1 Earthquake - 218 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T08:22:46.296000Z",
-        "coordinates": [
-          165.4664,
-          -13.833
-        ]
-      },
-      {
-        "id": "us6000u4ku",
-        "title": "M5.0 Earthquake - 219 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T06:52:04.142000Z",
-        "coordinates": [
-          165.4237,
-          -13.8777
-        ]
-      },
-      {
-        "id": "us6000u4kq",
-        "title": "M5.5 Earthquake - 55 km NNE of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T06:43:09.602000Z",
-        "coordinates": [
-          167.3063,
-          -14.5918
-        ]
-      },
-      {
-        "id": "us6000u4kj",
-        "title": "M5.3 Earthquake - 174 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T06:04:16.367000Z",
-        "coordinates": [
-          165.7535,
-          -14.1278
-        ]
-      },
-      {
-        "id": "us6000u4k6",
-        "title": "M5.8 Earthquake - 182 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T05:23:40.747000Z",
-        "coordinates": [
-          165.6982,
-          -14.0833
-        ]
       }
     ]
   },
@@ -243,32 +248,32 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.4,
-    "feels_c": 8.9,
-    "humidity": 84,
+    "temp_c": 7.2,
+    "feels_c": 5.1,
+    "humidity": 86,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "icon": "01d",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-10-25",
     "city": "Zagreb",
-    "temp_min_c": 7,
-    "temp_max_c": 13.2,
+    "temp_min_c": 7.0,
+    "temp_max_c": 13.6,
     "humidity": 82,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 5.0,
-    "samples": 8
+    "icon": "01d",
+    "wind_kmh": 5.9,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-26",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 16.1,
-    "humidity": 74,
+    "temp_min_c": 8,
+    "temp_max_c": 15.7,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
@@ -277,19 +282,19 @@
   "forecast_day_after": {
     "date": "2026-10-27",
     "city": "Zagreb",
-    "temp_min_c": 4.3,
-    "temp_max_c": 12.8,
-    "humidity": 74,
+    "temp_min_c": 4.5,
+    "temp_max_c": 13.0,
+    "humidity": 73,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 2.5
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 2.7
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 2.8,
-    "peak_time": "2026-10-25T13:00",
+    "peak_time": "2026-10-25T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -323,51 +328,51 @@
       },
       {
         "time": "2026-10-25T07:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-10-25T08:00",
-        "uv": 0.1
+        "uv": 0.4
       },
       {
         "time": "2026-10-25T09:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-10-25T10:00",
         "uv": 1.0
       },
       {
-        "time": "2026-10-25T11:00",
+        "time": "2026-10-25T10:00",
         "uv": 1.4
       },
       {
-        "time": "2026-10-25T12:00",
+        "time": "2026-10-25T11:00",
         "uv": 2.1
       },
       {
-        "time": "2026-10-25T13:00",
+        "time": "2026-10-25T12:00",
         "uv": 2.8
       },
       {
-        "time": "2026-10-25T14:00",
+        "time": "2026-10-25T13:00",
         "uv": 2.5
       },
       {
-        "time": "2026-10-25T15:00",
+        "time": "2026-10-25T14:00",
         "uv": 1.9
       },
       {
-        "time": "2026-10-25T16:00",
-        "uv": 1.4
+        "time": "2026-10-25T15:00",
+        "uv": 1.5
       },
       {
-        "time": "2026-10-25T17:00",
+        "time": "2026-10-25T16:00",
         "uv": 0.7
       },
       {
-        "time": "2026-10-25T18:00",
+        "time": "2026-10-25T17:00",
         "uv": 0.1
+      },
+      {
+        "time": "2026-10-25T18:00",
+        "uv": 0.0
       },
       {
         "time": "2026-10-25T19:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-25T02:47:55+02:00"
+    "fetched_at": "2026-10-25T06:39:21+01:00"
   }
 }
