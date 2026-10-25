@@ -1,12 +1,7 @@
 {
   "generated": "2026-10-25",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-25",
-    "explanation": "Is our universe haunted? It might look that way on this dark matter map. The gravity of unseen dark matter is the leading explanation for why galaxies rotate so fast, why galaxies orbit clusters so fast, why gravitational lenses so strongly deflect light, and how visible matter is distributed. The featured image from the American Museum of Natural History's Hayden Planetarium Space Show, Dark Universe, highlights one example of how pervasive dark matter might haunt our universe. In this frame from a detailed computer simulation, complex filaments of dark matter, shown in black, are strewn about the universe like spider webs, while the relatively rare clumps of familiar baryonic matter are colored orange. These simulations are good statistical matches to astronomical observations. In what is perhaps a scarier turn of events, dark matter -- although quite strange and in an unknown form -- is no longer thought to be the strangest source of gravity in the universe. That honor now falls to dark energy, a more uniform source of repulsive gravity that seems to now dominate the expansion of the entire universe.Tomorrow's picture: Orion the Great\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -247,48 +242,48 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 12.2,
-    "feels_c": 11.4,
-    "humidity": 73,
-    "condition": "Rain",
-    "description": "heavy intensity rain",
-    "icon": "10n",
-    "wind_kmh": 3.7
+    "city": "Zagreb",
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 84,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-25",
-    "city": "Donji grad",
-    "temp_min_c": 11.8,
-    "temp_max_c": 12.2,
-    "humidity": 76,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 4.1,
-    "samples": 2
+    "city": "City of Zagreb",
+    "temp_min_c": 10.4,
+    "temp_max_c": 10.4,
+    "humidity": 84,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 5.5,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-10-26",
-    "city": "Donji grad",
-    "temp_min_c": 8.8,
-    "temp_max_c": 16,
-    "humidity": 76,
+    "city": "City of Zagreb",
+    "temp_min_c": 7.7,
+    "temp_max_c": 15.6,
+    "humidity": 77,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 3.8
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.3
   },
   "forecast_day_after": {
     "date": "2026-10-27",
-    "city": "Donji grad",
-    "temp_min_c": 5.9,
-    "temp_max_c": 13.7,
+    "city": "City of Zagreb",
+    "temp_min_c": 5.6,
+    "temp_max_c": 15,
     "humidity": 74,
     "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.2
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.1
   },
   "uv": {
     "uv": 0.0,
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-25T19:05:50+01:00"
+    "fetched_at": "2026-10-25T22:24:15+01:00"
   }
 }
