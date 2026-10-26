@@ -9,10 +9,10 @@
         "id": "us6000u4we",
         "title": "M5.3 Earthquake - Bonin Islands, Japan region",
         "category": "Earthquake",
-        "date": "2026-10-25T22:14:15.949000Z",
+        "date": "2026-10-25T22:14:16.010000Z",
         "coordinates": [
-          139.6752,
-          27.8376
+          139.6916,
+          27.8572
         ]
       },
       {
@@ -160,130 +160,130 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2017 UQ7)",
+        "name": "516803 (2010 JG88)",
         "hazardous": false,
-        "diameter_m": 53,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 10212926,
-        "velocity_kmh": 57766
+        "diameter_m": 741,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 12978707,
+        "velocity_kmh": 73446
       },
       {
-        "name": "(2018 UX1)",
+        "name": "(2002 TA69)",
         "hazardous": false,
-        "diameter_m": 91,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 15412396,
-        "velocity_kmh": 38987
+        "diameter_m": 1164,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 13378773,
+        "velocity_kmh": 83219
       },
       {
-        "name": "(2017 TK6)",
+        "name": "(2018 GZ)",
         "hazardous": false,
-        "diameter_m": 70,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 18428131,
-        "velocity_kmh": 54214
+        "diameter_m": 16,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 21164665,
+        "velocity_kmh": 12565
       },
       {
-        "name": "(2002 CN15)",
+        "name": "(2017 RJ15)",
         "hazardous": false,
-        "diameter_m": 411,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 22219932,
-        "velocity_kmh": 95921
+        "diameter_m": 254,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 37859887,
+        "velocity_kmh": 31052
       },
       {
-        "name": "(2017 TJ2)",
-        "hazardous": false,
-        "diameter_m": 61,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 39203869,
-        "velocity_kmh": 49612
+        "name": "(2018 UA1)",
+        "hazardous": true,
+        "diameter_m": 619,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 45093385,
+        "velocity_kmh": 73474
       },
       {
-        "name": "(2020 BD11)",
+        "name": "(2019 UM6)",
         "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 39945037,
-        "velocity_kmh": 25576
+        "diameter_m": 175,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 46355018,
+        "velocity_kmh": 32270
       },
       {
-        "name": "(2006 FL10)",
+        "name": "(2009 WM105)",
         "hazardous": false,
-        "diameter_m": 298,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 49844898,
-        "velocity_kmh": 34920
+        "diameter_m": 149,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 53924010,
+        "velocity_kmh": 56160
       },
       {
-        "name": "(2018 DA2)",
+        "name": "(2016 XD2)",
         "hazardous": false,
-        "diameter_m": 131,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 58890104,
-        "velocity_kmh": 53013
+        "diameter_m": 92,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 64867720,
+        "velocity_kmh": 71372
       },
       {
-        "name": "(2015 HJ)",
+        "name": "488509 (2000 UW13)",
         "hazardous": false,
-        "diameter_m": 24,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 59933041,
-        "velocity_kmh": 32438
+        "diameter_m": 449,
+        "close_approach_date": "2026-10-26",
+        "miss_distance_km": 66425279,
+        "velocity_kmh": 67073
       },
       {
-        "name": "(1998 WL4)",
+        "name": "(2018 VX1)",
         "hazardous": false,
-        "diameter_m": 752,
-        "close_approach_date": "2026-10-25",
-        "miss_distance_km": 60313373,
-        "velocity_kmh": 128914
+        "diameter_m": 19,
+        "close_approach_date": "2026-10-27",
+        "miss_distance_km": 13818178,
+        "velocity_kmh": 31449
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 9.9,
-    "humidity": 71,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 9.3
+    "temp_c": 8.7,
+    "feels_c": 8.7,
+    "humidity": 81,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-26",
     "city": "Zagreb",
-    "temp_min_c": 8.8,
-    "temp_max_c": 15.6,
-    "humidity": 73,
+    "temp_min_c": 8.1,
+    "temp_max_c": 17.1,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 4.9,
-    "samples": 9
+    "icon": "01n",
+    "wind_kmh": 2.7,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-27",
     "city": "Zagreb",
-    "temp_min_c": 5.6,
-    "temp_max_c": 15,
+    "temp_min_c": 5.8,
+    "temp_max_c": 16.5,
     "humidity": 74,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
-    "wind_kmh": 3.1
+    "wind_kmh": 2.1
   },
   "forecast_day_after": {
     "date": "2026-10-28",
     "city": "Zagreb",
-    "temp_min_c": 3.2,
-    "temp_max_c": 12.4,
-    "humidity": 79,
+    "temp_min_c": 2.8,
+    "temp_max_c": 11.9,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 2.7
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 2.9
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-26T00:47:02+01:00"
+    "fetched_at": "2026-10-26T04:07:55+01:00"
   }
 }
