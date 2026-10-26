@@ -1,7 +1,12 @@
 {
   "generated": "2026-10-26",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-26",
+    "explanation": "The Great Nebula in Orion, an immense, nearby starbirth region, is one of the most famous of all astronomical nebulas. Here, glowing gas surrounds hot young stars at the edge of an immense interstellar molecular cloud only 1500 light-years away. In the featured deep image in assigned colors highlighted by emission in hydrogen, wisps and sheets of dust and gas are particularly evident. The Great Nebula in Orion can be found with the unaided eye near the easily identifiable belt of three stars in the popular constellation Orion. In addition to housing a bright open cluster of stars known as the Trapezium, the Orion Nebula contains many stellar nurseries. These nurseries contain much hydrogen gas, hot young stars, proplyds, and stellar jets spewing material at high speeds. Also known as M42, the Orion Nebula spans about 40 light years and is located in the same spiral arm of our Galaxy as the Sun.Tomorrow's picture: open space\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,48 +247,48 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 13.3,
-    "humidity": 62,
+    "city": "City of Zagreb",
+    "temp_c": 11.1,
+    "feels_c": 10.0,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 3.7
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-10-26",
-    "city": "Zagreb",
-    "temp_min_c": 11.5,
-    "temp_max_c": 14.2,
-    "humidity": 65,
+    "city": "City of Zagreb",
+    "temp_min_c": 11.1,
+    "temp_max_c": 11.1,
+    "humidity": 66,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 3.1,
-    "samples": 3
+    "wind_kmh": 11.1,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-10-27",
-    "city": "Zagreb",
-    "temp_min_c": 6.1,
-    "temp_max_c": 16.0,
-    "humidity": 76,
+    "city": "City of Zagreb",
+    "temp_min_c": 6.0,
+    "temp_max_c": 16.4,
+    "humidity": 74,
     "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 1.8
+    "wind_kmh": 2.3
   },
   "forecast_day_after": {
     "date": "2026-10-28",
-    "city": "Zagreb",
-    "temp_min_c": 5.2,
-    "temp_max_c": 12.4,
+    "city": "City of Zagreb",
+    "temp_min_c": 5.3,
+    "temp_max_c": 16.6,
     "humidity": 78,
-    "condition": "Clouds",
-    "description": "overcast clouds",
+    "condition": "Clear",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.7
   },
   "uv": {
     "uv": 0.0,
@@ -351,7 +356,7 @@
       },
       {
         "time": "2026-10-26T14:00",
-        "uv": 2.5
+        "uv": 2.4
       },
       {
         "time": "2026-10-26T15:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-26T17:27:52+01:00"
+    "fetched_at": "2026-10-26T22:19:22+01:00"
   }
 }
