@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us6000u4y1",
+        "title": "M5.0 Earthquake - 45 km NNW of Ende, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-10-26T04:53:40.479000Z",
+        "coordinates": [
+          121.5729,
+          -8.443
+        ]
+      },
+      {
         "id": "us6000u4we",
         "title": "M5.3 Earthquake - Bonin Islands, Japan region",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           165.534,
           -13.8678
         ]
-      },
-      {
-        "id": "us6000u4pa",
-        "title": "M5.3 Earthquake - 101 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-24T20:35:04.576000Z",
-        "coordinates": [
-          159.1963,
-          52.1565
-        ]
       }
     ]
   },
@@ -164,7 +164,7 @@
         "hazardous": false,
         "diameter_m": 741,
         "close_approach_date": "2026-10-26",
-        "miss_distance_km": 12978707,
+        "miss_distance_km": 12978706,
         "velocity_kmh": 73446
       },
       {
@@ -243,36 +243,36 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 8.7,
-    "humidity": 81,
+    "temp_c": 15.9,
+    "feels_c": 15.1,
+    "humidity": 57,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "icon": "01d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-10-26",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 17.1,
-    "humidity": 75,
+    "temp_min_c": 10.2,
+    "temp_max_c": 15.9,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 2.7,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 4.6,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-27",
     "city": "Zagreb",
-    "temp_min_c": 5.8,
-    "temp_max_c": 16.5,
-    "humidity": 74,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
-    "wind_kmh": 2.1
+    "temp_min_c": 6.9,
+    "temp_max_c": 16.2,
+    "humidity": 75,
+    "condition": "Clear",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 1.9
   },
   "forecast_day_after": {
     "date": "2026-10-28",
@@ -283,14 +283,14 @@
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.9
+    "wind_kmh": 2.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.8,
     "band": "low",
-    "daily_max": 3.1,
+    "daily_max": 3.0,
     "peak_time": "2026-10-26T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 61,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,7 +343,7 @@
       },
       {
         "time": "2026-10-26T12:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-10-26T13:00",
@@ -351,7 +351,7 @@
       },
       {
         "time": "2026-10-26T14:00",
-        "uv": 2.4
+        "uv": 2.5
       },
       {
         "time": "2026-10-26T15:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-26T04:07:55+01:00"
+    "fetched_at": "2026-10-26T10:40:00+01:00"
   }
 }
