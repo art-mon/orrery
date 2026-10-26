@@ -6,6 +6,36 @@
   "events": {
     "events": [
       {
+        "id": "us6000u4zb",
+        "title": "M5.2 Earthquake - 205 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-26T12:13:30.652000Z",
+        "coordinates": [
+          165.6029,
+          -13.8613
+        ]
+      },
+      {
+        "id": "us6000u4z6",
+        "title": "M5.0 Earthquake - 218 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-26T11:17:55.055000Z",
+        "coordinates": [
+          165.3858,
+          -13.9396
+        ]
+      },
+      {
+        "id": "us6000u4yr",
+        "title": "M5.5 Earthquake - 283 km E of Levuka, Fiji",
+        "category": "Earthquake",
+        "date": "2026-10-26T10:13:01.234000Z",
+        "coordinates": [
+          -178.0109,
+          -18.283
+        ]
+      },
+      {
         "id": "us6000u4y1",
         "title": "M5.0 Earthquake - 45 km NNW of Ende, Indonesia",
         "category": "Earthquake",
@@ -124,36 +154,6 @@
           165.6863,
           -14.3846
         ]
-      },
-      {
-        "id": "us6000u4qq",
-        "title": "M5.3 Earthquake - 44 km ESE of Miyazaki, Japan",
-        "category": "Earthquake",
-        "date": "2026-10-24T23:59:36.599000Z",
-        "coordinates": [
-          131.873,
-          31.8226
-        ]
-      },
-      {
-        "id": "us6000u4qp",
-        "title": "M5.0 Earthquake - 192 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T23:44:57.729000Z",
-        "coordinates": [
-          165.7311,
-          -13.9002
-        ]
-      },
-      {
-        "id": "us6000u4q8",
-        "title": "M5.0 Earthquake - 210 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-24T22:47:08.577000Z",
-        "coordinates": [
-          165.534,
-          -13.8678
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 15.9,
-    "feels_c": 15.1,
-    "humidity": 57,
+    "temp_c": 14.2,
+    "feels_c": 13.3,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 9.3
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-26",
     "city": "Zagreb",
-    "temp_min_c": 10.2,
-    "temp_max_c": 15.9,
-    "humidity": 66,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 4.6,
-    "samples": 5
+    "temp_min_c": 11.5,
+    "temp_max_c": 14.2,
+    "humidity": 65,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 3.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-27",
     "city": "Zagreb",
-    "temp_min_c": 6.9,
-    "temp_max_c": 16.2,
-    "humidity": 75,
+    "temp_min_c": 6.1,
+    "temp_max_c": 16.0,
+    "humidity": 76,
     "condition": "Clear",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 1.9
+    "wind_kmh": 1.8
   },
   "forecast_day_after": {
     "date": "2026-10-28",
     "city": "Zagreb",
-    "temp_min_c": 2.8,
-    "temp_max_c": 11.9,
+    "temp_min_c": 5.2,
+    "temp_max_c": 12.4,
     "humidity": 78,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 2.8,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 3.0,
+    "daily_max": 3.1,
     "peak_time": "2026-10-26T12:00",
-    "safe_minutes": 61,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -343,7 +343,7 @@
       },
       {
         "time": "2026-10-26T12:00",
-        "uv": 3.0
+        "uv": 3.1
       },
       {
         "time": "2026-10-26T13:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-26T10:40:00+01:00"
+    "fetched_at": "2026-10-26T17:27:52+01:00"
   }
 }
