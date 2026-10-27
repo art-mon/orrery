@@ -1,10 +1,60 @@
 {
   "generated": "2026-10-27",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ttfk",
+        "title": "M5.2 Earthquake - 191 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-27T10:50:35.418000Z",
+        "coordinates": [
+          165.6479,
+          -14.0067
+        ]
+      },
+      {
+        "id": "us7000ttfj",
+        "title": "M5.0 Earthquake - 184 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-27T10:06:31.916000Z",
+        "coordinates": [
+          165.7876,
+          -13.9437
+        ]
+      },
+      {
+        "id": "us7000ttfe",
+        "title": "M5.0 Earthquake - 206 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-27T09:20:55.730000Z",
+        "coordinates": [
+          165.5556,
+          -13.9006
+        ]
+      },
+      {
+        "id": "us7000ttfc",
+        "title": "M5.0 Earthquake - 95 km NNE of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-10-27T09:07:45.122000Z",
+        "coordinates": [
+          -173.4094,
+          -15.1739
+        ]
+      },
+      {
+        "id": "us7000ttfb",
+        "title": "M5.8 Earthquake - 196 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-27T08:55:23.290000Z",
+        "coordinates": [
+          165.6671,
+          -13.9141
+        ]
+      },
       {
         "id": "us6000u4zb",
         "title": "M5.2 Earthquake - 205 km NW of Port-Olry, Vanuatu",
@@ -104,56 +154,6 @@
           165.5769,
           -13.8848
         ]
-      },
-      {
-        "id": "us6000u4s5",
-        "title": "M5.2 Earthquake - 63 km NNE of Lae, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-10-25T03:29:10.551000Z",
-        "coordinates": [
-          147.1659,
-          -6.1737
-        ]
-      },
-      {
-        "id": "us6000u4rf",
-        "title": "M6.1 Earthquake - 25 km ENE of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-25T02:24:00.476000Z",
-        "coordinates": [
-          167.3039,
-          -14.9964
-        ]
-      },
-      {
-        "id": "us6000u4r9",
-        "title": "M6.5 Earthquake - Bonin Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-10-25T02:09:23.818000Z",
-        "coordinates": [
-          139.6184,
-          27.7953
-        ]
-      },
-      {
-        "id": "us6000u4r7",
-        "title": "M5.1 Earthquake - 161 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-25T02:06:10.299000Z",
-        "coordinates": [
-          165.7028,
-          -14.4542
-        ]
-      },
-      {
-        "id": "us6000u4r3",
-        "title": "M5.1 Earthquake - 166 km WNW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-25T01:46:23.382000Z",
-        "coordinates": [
-          165.6863,
-          -14.3846
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.0,
-    "feels_c": 6.2,
-    "humidity": 81,
+    "temp_c": 15.9,
+    "feels_c": 14.8,
+    "humidity": 46,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-27",
     "city": "Zagreb",
-    "temp_min_c": 7.0,
-    "temp_max_c": 14.9,
-    "humidity": 78,
+    "temp_min_c": 9.0,
+    "temp_max_c": 15.9,
+    "humidity": 55,
     "condition": "Clear",
     "description": "clear",
     "icon": "01d",
-    "wind_kmh": 2.3,
-    "samples": 6
+    "wind_kmh": 2.6,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-28",
     "city": "Zagreb",
-    "temp_min_c": 5.2,
-    "temp_max_c": 17.1,
-    "humidity": 78,
+    "temp_min_c": 1.0,
+    "temp_max_c": 16.1,
+    "humidity": 79,
     "condition": "Clear",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.0
+    "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-10-29",
     "city": "Zagreb",
-    "temp_min_c": 8.3,
-    "temp_max_c": 12.9,
-    "humidity": 81,
+    "temp_min_c": 6.8,
+    "temp_max_c": 13.1,
+    "humidity": 78,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 5.2
+    "wind_kmh": 7.5
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 1.5,
     "band": "low",
     "daily_max": 3.1,
     "peak_time": "2026-10-27T12:00",
-    "safe_minutes": 175,
+    "safe_minutes": 111,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-27T08:16:12+01:00"
+    "fetched_at": "2026-10-27T14:56:03+01:00"
   }
 }
