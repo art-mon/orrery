@@ -1,18 +1,83 @@
 {
   "generated": "2026-10-28",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-10-28",
+    "explanation": "\u00a0Sometimes it's night on the ground but day in the air. As the Earth rotates to eclipse the Sun,\u00a0sunset rises up from the ground. Therefore, at sunset on the ground, sunlight still shines on\u00a0clouds\u00a0above. Under\u00a0usual circumstances, a pretty sunset might be visible, but unusual\u00a0noctilucent clouds\u00a0float so high up they can be seen well after dark. Normally too dim to be seen,\u00a0they\u00a0may become visible just after sunset during the summer when illuminated by sunlight from below the horizon.\u00a0Noctilucent clouds are the highest clouds and are known more technically as\u00a0polar mesospheric clouds. Featured here as they appeared in early August 2026, a network of blue noctilucent clouds was captured in the distant sky above a field of green grass near\u00a0Link\u00f6ping,\u00a0Sweden, with trees in\u00a0stark silhouette\u00a0across the horizon. Much about\u00a0noctilucent clouds\u00a0has been\u00a0discovered\u00a0only in the past two decades, and\u00a0how they form and evolve\u00a0remains a topic of\u00a0active research.Tomorrow's picture:\u00a0round and round\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
       {
-        "id": "us7000ttke",
-        "title": "M5.4 Earthquake - 197 km WSW of Merizo Village, Guam",
+        "id": "us7000ttlt",
+        "title": "M5.6 Earthquake - 174 km NW of Port-Olry, Vanuatu",
         "category": "Earthquake",
-        "date": "2026-10-27T23:14:16.760000Z",
+        "date": "2026-10-28T02:59:48.387000Z",
         "coordinates": [
-          142.9431,
-          12.6981
+          165.8001,
+          -14.0693
+        ]
+      },
+      {
+        "id": "us7000ttlm",
+        "title": "M6.0 Earthquake - 214 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-28T02:21:45.806000Z",
+        "coordinates": [
+          165.446,
+          -13.9312
+        ]
+      },
+      {
+        "id": "us7000ttlk",
+        "title": "M5.2 Earthquake - 220 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-28T02:17:15.975000Z",
+        "coordinates": [
+          165.4612,
+          -13.8123
+        ]
+      },
+      {
+        "id": "us7000ttld",
+        "title": "M5.5 Earthquake - 221 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-28T01:39:11.004000Z",
+        "coordinates": [
+          165.389,
+          -13.8946
+        ]
+      },
+      {
+        "id": "us7000ttlc",
+        "title": "M5.2 Earthquake - 6 km NW of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-28T01:11:54.979000Z",
+        "coordinates": [
+          125.3054,
+          5.6079
+        ]
+      },
+      {
+        "id": "us7000ttkk",
+        "title": "M5.1 Earthquake - 7 km N of Balangonan, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-27T23:43:51.480000Z",
+        "coordinates": [
+          125.3536,
+          5.6402
+        ]
+      },
+      {
+        "id": "us7000ttke",
+        "title": "M5.4 Earthquake - 193 km WSW of Merizo Village, Guam",
+        "category": "Earthquake",
+        "date": "2026-10-27T23:14:17.420000Z",
+        "coordinates": [
+          142.9938,
+          12.6676
         ]
       },
       {
@@ -94,111 +159,11 @@
           -173.4094,
           -15.1739
         ]
-      },
-      {
-        "id": "us7000ttfb",
-        "title": "M5.8 Earthquake - 196 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-27T08:55:23.290000Z",
-        "coordinates": [
-          165.6671,
-          -13.9141
-        ]
-      },
-      {
-        "id": "us6000u4zb",
-        "title": "M5.2 Earthquake - 205 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-26T12:13:30.652000Z",
-        "coordinates": [
-          165.6029,
-          -13.8613
-        ]
-      },
-      {
-        "id": "us6000u4z6",
-        "title": "M5.0 Earthquake - 218 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-26T11:17:55.055000Z",
-        "coordinates": [
-          165.3858,
-          -13.9396
-        ]
-      },
-      {
-        "id": "us6000u4yr",
-        "title": "M5.5 Earthquake - 283 km E of Levuka, Fiji",
-        "category": "Earthquake",
-        "date": "2026-10-26T10:13:01.234000Z",
-        "coordinates": [
-          -178.0109,
-          -18.283
-        ]
-      },
-      {
-        "id": "us6000u4y1",
-        "title": "M5.0 Earthquake - 45 km NNW of Ende, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-26T04:53:40.479000Z",
-        "coordinates": [
-          121.5729,
-          -8.443
-        ]
-      },
-      {
-        "id": "us6000u4we",
-        "title": "M5.3 Earthquake - Bonin Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-10-25T22:14:16.010000Z",
-        "coordinates": [
-          139.6916,
-          27.8572
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2018 VX1)",
-        "hazardous": false,
-        "diameter_m": 19,
-        "close_approach_date": "2026-10-27",
-        "miss_distance_km": 13818178,
-        "velocity_kmh": 31449
-      },
-      {
-        "name": "(2017 UP6)",
-        "hazardous": false,
-        "diameter_m": 36,
-        "close_approach_date": "2026-10-27",
-        "miss_distance_km": 36538923,
-        "velocity_kmh": 71618
-      },
-      {
-        "name": "(2019 UQ6)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-10-27",
-        "miss_distance_km": 43622914,
-        "velocity_kmh": 71377
-      },
-      {
-        "name": "(2011 OB57)",
-        "hazardous": false,
-        "diameter_m": 38,
-        "close_approach_date": "2026-10-27",
-        "miss_distance_km": 56389129,
-        "velocity_kmh": 65326
-      },
-      {
-        "name": "(2010 AL30)",
-        "hazardous": false,
-        "diameter_m": 22,
-        "close_approach_date": "2026-10-27",
-        "miss_distance_km": 56901417,
-        "velocity_kmh": 31490
-      },
       {
         "name": "(2018 GS1)",
         "hazardous": false,
@@ -238,14 +203,54 @@
         "close_approach_date": "2026-10-28",
         "miss_distance_km": 58487173,
         "velocity_kmh": 52896
+      },
+      {
+        "name": "(2014 JS57)",
+        "hazardous": false,
+        "diameter_m": 200,
+        "close_approach_date": "2026-10-28",
+        "miss_distance_km": 65569041,
+        "velocity_kmh": 40395
+      },
+      {
+        "name": "(2016 XB2)",
+        "hazardous": false,
+        "diameter_m": 292,
+        "close_approach_date": "2026-10-29",
+        "miss_distance_km": 26226892,
+        "velocity_kmh": 47311
+      },
+      {
+        "name": "(2017 UL44)",
+        "hazardous": false,
+        "diameter_m": 103,
+        "close_approach_date": "2026-10-29",
+        "miss_distance_km": 34840714,
+        "velocity_kmh": 50906
+      },
+      {
+        "name": "(2020 CB)",
+        "hazardous": false,
+        "diameter_m": 17,
+        "close_approach_date": "2026-10-29",
+        "miss_distance_km": 42675136,
+        "velocity_kmh": 35759
+      },
+      {
+        "name": "(2017 SF14)",
+        "hazardous": false,
+        "diameter_m": 76,
+        "close_approach_date": "2026-10-29",
+        "miss_distance_km": 63615116,
+        "velocity_kmh": 57866
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 6.5,
-    "feels_c": 5.0,
-    "humidity": 82,
+    "temp_c": 4.2,
+    "feels_c": 2.4,
+    "humidity": 86,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
@@ -254,36 +259,36 @@
   "forecast_today": {
     "date": "2026-10-28",
     "city": "Zagreb",
-    "temp_min_c": 5.2,
-    "temp_max_c": 15.6,
-    "humidity": 79,
-    "condition": "Clear",
-    "description": "clear",
+    "temp_min_c": 4.2,
+    "temp_max_c": 16.3,
+    "humidity": 78,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "01n",
-    "wind_kmh": 3.3,
-    "samples": 9
+    "wind_kmh": 3.4,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-10-29",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 15.2,
+    "temp_min_c": 5.8,
+    "temp_max_c": 16.4,
     "humidity": 85,
-    "condition": "Clouds",
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.0
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-10-30",
     "city": "Zagreb",
-    "temp_min_c": 6.9,
-    "temp_max_c": 10.0,
-    "humidity": 78,
+    "temp_min_c": 7.0,
+    "temp_max_c": 10.3,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.4
+    "wind_kmh": 9.3
   },
   "uv": {
     "uv": 0.0,
@@ -347,11 +352,11 @@
       },
       {
         "time": "2026-10-28T13:00",
-        "uv": 2.6
+        "uv": 2.5
       },
       {
         "time": "2026-10-28T14:00",
-        "uv": 2.2
+        "uv": 2.1
       },
       {
         "time": "2026-10-28T15:00",
@@ -359,11 +364,11 @@
       },
       {
         "time": "2026-10-28T16:00",
-        "uv": 0.2
+        "uv": 0.6
       },
       {
         "time": "2026-10-28T17:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-10-28T18:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-28T00:28:11+01:00"
+    "fetched_at": "2026-10-28T04:54:48+01:00"
   }
 }
