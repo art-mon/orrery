@@ -1,15 +1,50 @@
 {
   "generated": "2026-10-28",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-28",
-    "explanation": "To view this video please enable JavaScript, and consider upgrading to a web browser that \t\t\t\t\tsupports HTML5 vide",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ttpe",
+        "title": "M5.5 Earthquake - 5 km ESE of Asahi, Japan",
+        "category": "Earthquake",
+        "date": "2026-10-28T15:07:52.050000Z",
+        "coordinates": [
+          140.7059,
+          35.7015
+        ]
+      },
+      {
+        "id": "us7000ttnz",
+        "title": "M5.0 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-28T12:47:08.927000Z",
+        "coordinates": [
+          -32.3348,
+          58.2153
+        ]
+      },
+      {
+        "id": "us7000ttnk",
+        "title": "M5.0 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-28T11:56:17.454000Z",
+        "coordinates": [
+          -32.2398,
+          58.3556
+        ]
+      },
+      {
+        "id": "us7000ttnc",
+        "title": "M5.5 Earthquake - Reykjanes Ridge",
+        "category": "Earthquake",
+        "date": "2026-10-28T11:37:49.980000Z",
+        "coordinates": [
+          -32.1508,
+          58.1005
+        ]
+      },
       {
         "id": "us7000ttmb",
         "title": "M5.0 Earthquake - 205 km SSE of Vilyuchinsk, Russia",
@@ -111,53 +146,13 @@
         ]
       },
       {
-        "id": "us7000ttgq",
-        "title": "M5.0 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-10-27T15:31:42.073000Z",
-        "coordinates": [
-          -179.7358,
-          -23.7469
-        ]
-      },
-      {
         "id": "us7000ttgm",
-        "title": "M5.0 Earthquake - 27 km W of R\u00edo Grande, Panama",
+        "title": "M5.0 Earthquake - 29 km W of R\u00edo Grande, Panama",
         "category": "Earthquake",
-        "date": "2026-10-27T15:26:02.987000Z",
+        "date": "2026-10-27T15:26:03.024000Z",
         "coordinates": [
-          -81.584,
-          7.706
-        ]
-      },
-      {
-        "id": "us7000ttgf",
-        "title": "M5.4 Earthquake - 128 km S of Pundong, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-27T14:44:00.933000Z",
-        "coordinates": [
-          110.3305,
-          -9.1162
-        ]
-      },
-      {
-        "id": "us7000ttfk",
-        "title": "M5.2 Earthquake - 191 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-27T10:50:35.418000Z",
-        "coordinates": [
-          165.6479,
-          -14.0067
-        ]
-      },
-      {
-        "id": "us7000ttfj",
-        "title": "M5.0 Earthquake - 184 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-27T10:06:31.916000Z",
-        "coordinates": [
-          165.7876,
-          -13.9437
+          -81.6012,
+          7.684
         ]
       }
     ]
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 14.4,
-    "feels_c": 13.4,
-    "humidity": 60,
+    "city": "Donji grad",
+    "temp_c": 13.7,
+    "feels_c": 12.7,
+    "humidity": 62,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 7.4
+    "icon": "01n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-10-28",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 14.4,
-    "humidity": 71,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 3.4,
-    "samples": 5
+    "city": "City of Zagreb",
+    "temp_min_c": 11.6,
+    "temp_max_c": 13.8,
+    "humidity": 64,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 2.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-29",
-    "city": "Zagreb",
-    "temp_min_c": 5.8,
-    "temp_max_c": 16.0,
-    "humidity": 86,
+    "city": "City of Zagreb",
+    "temp_min_c": 6.7,
+    "temp_max_c": 16.2,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 6.8
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.3
   },
   "forecast_day_after": {
     "date": "2026-10-30",
-    "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 9.5,
-    "humidity": 81,
+    "city": "City of Zagreb",
+    "temp_min_c": 6.4,
+    "temp_max_c": 10.5,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 9.2
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 9.0
   },
   "uv": {
-    "uv": 3.0,
-    "band": "moderate",
-    "daily_max": 3.1,
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 3.0,
     "peak_time": "2026-10-28T12:00",
-    "safe_minutes": 55,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,11 +343,11 @@
       },
       {
         "time": "2026-10-28T12:00",
-        "uv": 3.1
+        "uv": 3.0
       },
       {
         "time": "2026-10-28T13:00",
-        "uv": 2.8
+        "uv": 2.6
       },
       {
         "time": "2026-10-28T14:00",
@@ -364,11 +359,11 @@
       },
       {
         "time": "2026-10-28T16:00",
-        "uv": 0.3
+        "uv": 0.7
       },
       {
         "time": "2026-10-28T17:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-10-28T18:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-28T11:19:47+01:00"
+    "fetched_at": "2026-10-28T17:58:13+01:00"
   }
 }
