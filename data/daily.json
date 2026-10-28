@@ -3,13 +3,33 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-10-28",
-    "explanation": "\u00a0Sometimes it's night on the ground but day in the air. As the Earth rotates to eclipse the Sun,\u00a0sunset rises up from the ground. Therefore, at sunset on the ground, sunlight still shines on\u00a0clouds\u00a0above. Under\u00a0usual circumstances, a pretty sunset might be visible, but unusual\u00a0noctilucent clouds\u00a0float so high up they can be seen well after dark. Normally too dim to be seen,\u00a0they\u00a0may become visible just after sunset during the summer when illuminated by sunlight from below the horizon.\u00a0Noctilucent clouds are the highest clouds and are known more technically as\u00a0polar mesospheric clouds. Featured here as they appeared in early August 2026, a network of blue noctilucent clouds was captured in the distant sky above a field of green grass near\u00a0Link\u00f6ping,\u00a0Sweden, with trees in\u00a0stark silhouette\u00a0across the horizon. Much about\u00a0noctilucent clouds\u00a0has been\u00a0discovered\u00a0only in the past two decades, and\u00a0how they form and evolve\u00a0remains a topic of\u00a0active research.Tomorrow's picture:\u00a0round and round\t\t\t\t\t\t",
+    "explanation": "To view this video please enable JavaScript, and consider upgrading to a web browser that \t\t\t\t\tsupports HTML5 vide",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ttmb",
+        "title": "M5.0 Earthquake - 205 km SSE of Vilyuchinsk, Russia",
+        "category": "Earthquake",
+        "date": "2026-10-28T06:12:47.777000Z",
+        "coordinates": [
+          159.5373,
+          51.2258
+        ]
+      },
+      {
+        "id": "us7000ttm2",
+        "title": "M5.0 Earthquake - 200 km W of Sola, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-10-28T04:31:04.089000Z",
+        "coordinates": [
+          165.7007,
+          -13.7421
+        ]
+      },
       {
         "id": "us7000ttlt",
         "title": "M5.6 Earthquake - 174 km NW of Port-Olry, Vanuatu",
@@ -139,26 +159,6 @@
           165.7876,
           -13.9437
         ]
-      },
-      {
-        "id": "us7000ttfe",
-        "title": "M5.0 Earthquake - 206 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-27T09:20:55.730000Z",
-        "coordinates": [
-          165.5556,
-          -13.9006
-        ]
-      },
-      {
-        "id": "us7000ttfc",
-        "title": "M5.0 Earthquake - 95 km NNE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-10-27T09:07:45.122000Z",
-        "coordinates": [
-          -173.4094,
-          -15.1739
-        ]
       }
     ]
   },
@@ -248,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 4.2,
-    "feels_c": 2.4,
-    "humidity": 86,
+    "temp_c": 14.4,
+    "feels_c": 13.4,
+    "humidity": 60,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-10-28",
     "city": "Zagreb",
-    "temp_min_c": 4.2,
-    "temp_max_c": 16.3,
-    "humidity": 78,
+    "temp_min_c": 6.7,
+    "temp_max_c": 14.4,
+    "humidity": 71,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
+    "icon": "01d",
     "wind_kmh": 3.4,
-    "samples": 7
+    "samples": 5
   },
   "forecast": {
     "date": "2026-10-29",
     "city": "Zagreb",
     "temp_min_c": 5.8,
-    "temp_max_c": 16.4,
-    "humidity": 85,
-    "condition": "Rain",
+    "temp_max_c": 16.0,
+    "humidity": 86,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.8
+    "wind_kmh": 6.8
   },
   "forecast_day_after": {
     "date": "2026-10-30",
     "city": "Zagreb",
-    "temp_min_c": 7.0,
-    "temp_max_c": 10.3,
-    "humidity": 80,
+    "temp_min_c": 6.3,
+    "temp_max_c": 9.5,
+    "humidity": 81,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 9.3
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 9.2
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 3.0,
+    "uv": 3.0,
+    "band": "moderate",
+    "daily_max": 3.1,
     "peak_time": "2026-10-28T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 55,
     "skin_type": 2,
     "hourly": [
       {
@@ -348,11 +348,11 @@
       },
       {
         "time": "2026-10-28T12:00",
-        "uv": 3.0
+        "uv": 3.1
       },
       {
         "time": "2026-10-28T13:00",
-        "uv": 2.5
+        "uv": 2.8
       },
       {
         "time": "2026-10-28T14:00",
@@ -364,11 +364,11 @@
       },
       {
         "time": "2026-10-28T16:00",
-        "uv": 0.6
+        "uv": 0.3
       },
       {
         "time": "2026-10-28T17:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-10-28T18:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-28T04:54:48+01:00"
+    "fetched_at": "2026-10-28T11:19:47+01:00"
   }
 }
