@@ -1,10 +1,75 @@
 {
   "generated": "2026-10-29",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-29",
+    "explanation": "That's no moon. But you could be forgiven for thinking it was a crescent Moon in the sky. It is a lesser known fact that Venus also has phases. (What about other planets?) The featured image shows Venus seen almost directly between the Sun and the Earth. This happens once every year and a half, and it is like the alignment that happens every month during a new Moon. But the new Moon is dark, while Venus' backlit atmosphere refracts and scatters the sunlight, creating a glowing crescent arc that extends beyond 180 degrees: the tips of this arc are called the \"horns\". The crescent can be seen with a small telescope or binoculars during twilight, but those with exceptionally acute eyesight may be able to see it with the unaided eye. Ancient Babylonian astronomers may have been the first to study Venus' brightness changes, which are related to its phases. Many other cultures have similar astronomical records, including the oldest surviving Maya book.",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ttxn",
+        "title": "M5.4 Earthquake - 114 km ENE of Barcelona, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-29T07:31:30.432000Z",
+        "coordinates": [
+          127.4269,
+          8.4677
+        ]
+      },
+      {
+        "id": "us7000ttx8",
+        "title": "M5.1 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-10-29T05:33:36.298000Z",
+        "coordinates": [
+          161.1643,
+          -61.3277
+        ]
+      },
+      {
+        "id": "us7000ttx0",
+        "title": "M5.6 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-10-29T05:06:48.297000Z",
+        "coordinates": [
+          -28.0139,
+          -60.3419
+        ]
+      },
+      {
+        "id": "us7000ttw5",
+        "title": "M5.7 Earthquake - 82 km NE of Kiunga, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-10-29T03:26:42.275000Z",
+        "coordinates": [
+          141.9018,
+          -5.6991
+        ]
+      },
+      {
+        "id": "us7000ttw3",
+        "title": "M5.8 Earthquake - 110 km ENE of Barcelona, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-29T03:19:05.288000Z",
+        "coordinates": [
+          127.4204,
+          8.3638
+        ]
+      },
+      {
+        "id": "us7000ttw2",
+        "title": "M5.4 Earthquake - 113 km ENE of Barcelona, Philippines",
+        "category": "Earthquake",
+        "date": "2026-10-29T03:17:54.507000Z",
+        "coordinates": [
+          127.4427,
+          8.3695
+        ]
+      },
       {
         "id": "us7000ttvf",
         "title": "M5.4 Earthquake - 109 km ENE of Luganville, Vanuatu",
@@ -93,66 +158,6 @@
         "coordinates": [
           159.5373,
           51.2258
-        ]
-      },
-      {
-        "id": "us7000ttm2",
-        "title": "M5.0 Earthquake - 200 km W of Sola, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-28T04:31:04.089000Z",
-        "coordinates": [
-          165.7007,
-          -13.7421
-        ]
-      },
-      {
-        "id": "us7000ttlt",
-        "title": "M5.6 Earthquake - 174 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-28T02:59:48.387000Z",
-        "coordinates": [
-          165.8001,
-          -14.0693
-        ]
-      },
-      {
-        "id": "us7000ttlm",
-        "title": "M6.0 Earthquake - 214 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-28T02:21:45.806000Z",
-        "coordinates": [
-          165.446,
-          -13.9312
-        ]
-      },
-      {
-        "id": "us7000ttlk",
-        "title": "M5.2 Earthquake - 220 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-28T02:17:15.975000Z",
-        "coordinates": [
-          165.4612,
-          -13.8123
-        ]
-      },
-      {
-        "id": "us7000ttld",
-        "title": "M5.5 Earthquake - 221 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-28T01:39:11.004000Z",
-        "coordinates": [
-          165.389,
-          -13.8946
-        ]
-      },
-      {
-        "id": "us7000ttlc",
-        "title": "M5.2 Earthquake - 6 km NW of Balangonan, Philippines",
-        "category": "Earthquake",
-        "date": "2026-10-28T01:11:54.979000Z",
-        "coordinates": [
-          125.3054,
-          5.6079
         ]
       }
     ]
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 10.2,
-    "humidity": 80,
+    "temp_c": 11.7,
+    "feels_c": 11.1,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "few clouds",
-    "icon": "02n",
-    "wind_kmh": 3.7
+    "icon": "02d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-10-29",
     "city": "Zagreb",
-    "temp_min_c": 7.7,
-    "temp_max_c": 16.6,
+    "temp_min_c": 8,
+    "temp_max_c": 14.3,
     "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02n",
-    "wind_kmh": 8.2,
-    "samples": 8
+    "icon": "02d",
+    "wind_kmh": 9.6,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-10-30",
     "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 15.1,
-    "humidity": 78,
+    "temp_min_c": 6.8,
+    "temp_max_c": 14.2,
+    "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.6
+    "wind_kmh": 9.7
   },
   "forecast_day_after": {
     "date": "2026-10-31",
     "city": "Zagreb",
-    "temp_min_c": 5.3,
-    "temp_max_c": 10.3,
-    "humidity": 78,
+    "temp_min_c": 5.4,
+    "temp_max_c": 9.9,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.9
+    "wind_kmh": 8.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
-    "daily_max": 1.1,
+    "daily_max": 0.8,
     "peak_time": "2026-10-29T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -335,27 +340,27 @@
       },
       {
         "time": "2026-10-29T10:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-10-29T11:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-10-29T12:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-10-29T13:00",
         "uv": 0.7
       },
       {
-        "time": "2026-10-29T14:00",
+        "time": "2026-10-29T12:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-10-29T13:00",
         "uv": 0.6
       },
       {
+        "time": "2026-10-29T14:00",
+        "uv": 0.7
+      },
+      {
         "time": "2026-10-29T15:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-10-29T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-29T02:31:09+01:00"
+    "fetched_at": "2026-10-29T08:59:20+01:00"
   }
 }
