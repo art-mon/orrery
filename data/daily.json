@@ -1,15 +1,30 @@
 {
   "generated": "2026-10-29",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-10-29",
-    "explanation": "That's no moon. But you could be forgiven for thinking it was a crescent Moon in the sky. It is a lesser known fact that Venus also has phases. (What about other planets?) The featured image shows Venus seen almost directly between the Sun and the Earth. This happens once every year and a half, and it is like the alignment that happens every month during a new Moon. But the new Moon is dark, while Venus' backlit atmosphere refracts and scatters the sunlight, creating a glowing crescent arc that extends beyond 180 degrees: the tips of this arc are called the \"horns\". The crescent can be seen with a small telescope or binoculars during twilight, but those with exceptionally acute eyesight may be able to see it with the unaided eye. Ancient Babylonian astronomers may have been the first to study Venus' brightness changes, which are related to its phases. Many other cultures have similar astronomical records, including the oldest surviving Maya book.",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tty7",
+        "title": "M5.1 Earthquake - 218 km NNW of Bamboo Flat, India",
+        "category": "Earthquake",
+        "date": "2026-10-29T08:49:42.448000Z",
+        "coordinates": [
+          91.6593,
+          13.3785
+        ]
+      },
+      {
+        "id": "us7000ttxz",
+        "title": "M6.4 Earthquake - southeast of Easter Island",
+        "category": "Earthquake",
+        "date": "2026-10-29T07:49:50.928000Z",
+        "coordinates": [
+          -98.0489,
+          -36.4058
+        ]
+      },
       {
         "id": "us7000ttxn",
         "title": "M5.4 Earthquake - 114 km ENE of Barcelona, Philippines",
@@ -32,12 +47,12 @@
       },
       {
         "id": "us7000ttx0",
-        "title": "M5.6 Earthquake - South Sandwich Islands region",
+        "title": "M5.4 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
-        "date": "2026-10-29T05:06:48.297000Z",
+        "date": "2026-10-29T05:06:48.289000Z",
         "coordinates": [
-          -28.0139,
-          -60.3419
+          -27.9532,
+          -60.2079
         ]
       },
       {
@@ -139,26 +154,6 @@
           -32.2398,
           58.3556
         ]
-      },
-      {
-        "id": "us7000ttnc",
-        "title": "M5.5 Earthquake - Reykjanes Ridge",
-        "category": "Earthquake",
-        "date": "2026-10-28T11:37:49.980000Z",
-        "coordinates": [
-          -32.1508,
-          58.1005
-        ]
-      },
-      {
-        "id": "us7000ttmb",
-        "title": "M5.0 Earthquake - 205 km SSE of Vilyuchinsk, Russia",
-        "category": "Earthquake",
-        "date": "2026-10-28T06:12:47.777000Z",
-        "coordinates": [
-          159.5373,
-          51.2258
-        ]
       }
     ]
   },
@@ -248,53 +243,53 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 11.7,
-    "feels_c": 11.1,
-    "humidity": 82,
+    "temp_c": 14.9,
+    "feels_c": 14.3,
+    "humidity": 69,
     "condition": "Clouds",
     "description": "few clouds",
     "icon": "02d",
-    "wind_kmh": 5.5
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-10-29",
     "city": "Zagreb",
-    "temp_min_c": 8,
-    "temp_max_c": 14.3,
-    "humidity": 80,
+    "temp_min_c": 12.5,
+    "temp_max_c": 14.9,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "02d",
-    "wind_kmh": 9.6,
-    "samples": 6
+    "wind_kmh": 15.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-10-30",
     "city": "Zagreb",
-    "temp_min_c": 6.8,
-    "temp_max_c": 14.2,
-    "humidity": 76,
+    "temp_min_c": 7.7,
+    "temp_max_c": 15.5,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 9.7
+    "wind_kmh": 9.5
   },
   "forecast_day_after": {
     "date": "2026-10-31",
     "city": "Zagreb",
-    "temp_min_c": 5.4,
-    "temp_max_c": 9.9,
-    "humidity": 75,
+    "temp_min_c": 5.0,
+    "temp_max_c": 9.3,
+    "humidity": 80,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 8.7
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 7.6
   },
   "uv": {
     "uv": 0.1,
     "band": "low",
     "daily_max": 0.8,
-    "peak_time": "2026-10-29T12:00",
+    "peak_time": "2026-10-29T11:00",
     "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
@@ -344,7 +339,7 @@
       },
       {
         "time": "2026-10-29T11:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-10-29T12:00",
@@ -352,11 +347,11 @@
       },
       {
         "time": "2026-10-29T13:00",
-        "uv": 0.6
+        "uv": 0.7
       },
       {
         "time": "2026-10-29T14:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-10-29T15:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-29T08:59:20+01:00"
+    "fetched_at": "2026-10-29T16:08:52+01:00"
   }
 }
