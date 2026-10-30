@@ -1,10 +1,25 @@
 {
   "generated": "2026-10-30",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-10-30",
+    "explanation": "Spooky shapes seem to haunt this dusty expanse, drifting through the night in the royal constellation Cepheus. Of course, the shapes are cosmic dust clouds visible in dimly reflected starlight. Far from your own neighborhood, they lurk above the plane of the Milky Way at the edge of the Cepheus Flare molecular cloud complex some 1,200 light-years away. Over 2 light-years across and brighter than most of the other ghostly apparitions, vdB 141 or Sh2-136 is also known as the Ghost Nebula. It lies at lower right in the starry field of view. Inside the Ghost Nebula are reddish telltale signs of dense cores collapsing in the early stages of star formation. With the eerie hue of interstellar dust reflecting bluish light from hot young stars of NGC 7023, the Iris Nebula stands out against the dark just left of center. In the broad telescopic frame, these fertile interstellar dust fields stretch almost six full moons across the sky.Tomorrow's picture: night on a spooky planet\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tu7j",
+        "title": "M5.1 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-10-30T10:12:28.219000Z",
+        "coordinates": [
+          155.2618,
+          -62.4457
+        ]
+      },
       {
         "id": "us7000tu5q",
         "title": "M5.1 Earthquake - 97 km NNE of Finschhafen, Papua New Guinea",
@@ -144,16 +159,6 @@
           130.3957,
           -6.3231
         ]
-      },
-      {
-        "id": "us7000tttl",
-        "title": "M5.3 Earthquake - 159 km WNW of Tobelo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-28T19:56:47.711000Z",
-        "coordinates": [
-          126.7587,
-          2.4277
-        ]
       }
     ]
   },
@@ -236,61 +241,61 @@
         "hazardous": true,
         "diameter_m": 421,
         "close_approach_date": "2026-11-01",
-        "miss_distance_km": 9300212,
+        "miss_distance_km": 9300213,
         "velocity_kmh": 45617
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 11.7,
-    "feels_c": 10.7,
-    "humidity": 70,
+    "city": "City of Zagreb",
+    "temp_c": 13.3,
+    "feels_c": 12.4,
+    "humidity": 66,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 11.1
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-10-30",
     "city": "Donji grad",
-    "temp_min_c": 10.4,
-    "temp_max_c": 12.4,
-    "humidity": 73,
+    "temp_min_c": 12.3,
+    "temp_max_c": 13.3,
+    "humidity": 67,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 8.1,
-    "samples": 6
+    "icon": "04d",
+    "wind_kmh": 9.4,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-10-31",
     "city": "Donji grad",
-    "temp_min_c": 4.9,
-    "temp_max_c": 13.2,
+    "temp_min_c": 8.4,
+    "temp_max_c": 13.7,
     "humidity": 76,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.4
+    "wind_kmh": 8.5
   },
   "forecast_day_after": {
     "date": "2026-11-01",
     "city": "Donji grad",
-    "temp_min_c": 4.4,
-    "temp_max_c": 8.2,
-    "humidity": 89,
+    "temp_min_c": 5.1,
+    "temp_max_c": 8.6,
+    "humidity": 84,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 14.1
+    "wind_kmh": 14.8
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.9,
     "band": "low",
-    "daily_max": 1.2,
-    "peak_time": "2026-10-30T13:00",
-    "safe_minutes": null,
+    "daily_max": 1.8,
+    "peak_time": "2026-10-30T14:00",
+    "safe_minutes": 185,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,7 +336,7 @@
       },
       {
         "time": "2026-10-30T09:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-10-30T10:00",
@@ -343,7 +348,7 @@
       },
       {
         "time": "2026-10-30T12:00",
-        "uv": 0.6
+        "uv": 0.8
       },
       {
         "time": "2026-10-30T13:00",
@@ -351,15 +356,15 @@
       },
       {
         "time": "2026-10-30T14:00",
-        "uv": 1.1
+        "uv": 1.8
       },
       {
         "time": "2026-10-30T15:00",
-        "uv": 0.7
+        "uv": 1.0
       },
       {
         "time": "2026-10-30T16:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-10-30T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-10-30T07:46:20+01:00"
+    "fetched_at": "2026-10-30T14:49:04+01:00"
   }
 }
