@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tuqx",
+        "title": "M5.0 Earthquake - Mid-Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-01T18:34:39.200000Z",
+        "coordinates": [
+          69.5217,
+          -23.8735
+        ]
+      },
+      {
         "id": "us7000tuqk",
         "title": "M5.1 Earthquake - South Sandwich Islands region",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           -163.0279,
           53.5843
         ]
-      },
-      {
-        "id": "us7000tty7",
-        "title": "M5.1 Earthquake - 218 km NNW of Bamboo Flat, India",
-        "category": "Earthquake",
-        "date": "2026-10-29T08:49:42.448000Z",
-        "coordinates": [
-          91.6593,
-          13.3785
-        ]
       }
     ]
   },
@@ -243,47 +243,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.1,
+    "temp_c": 8.7,
     "feels_c": 5.2,
-    "humidity": 84,
+    "humidity": 83,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "light rain",
     "icon": "10n",
-    "wind_kmh": 18.5
+    "wind_kmh": 25.9
   },
   "forecast_today": {
     "date": "2026-11-01",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 9.1,
-    "humidity": 85,
+    "temp_min_c": 8.7,
+    "temp_max_c": 8.7,
+    "humidity": 83,
     "condition": "Rain",
     "description": "rain",
     "icon": "10n",
-    "wind_kmh": 18.2,
-    "samples": 3
+    "wind_kmh": 25.9,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-11-02",
     "city": "Zagreb",
-    "temp_min_c": 8.2,
-    "temp_max_c": 11.9,
-    "humidity": 86,
+    "temp_min_c": 8.9,
+    "temp_max_c": 11.4,
+    "humidity": 88,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 17.8
+    "wind_kmh": 17.9
   },
   "forecast_day_after": {
     "date": "2026-11-03",
     "city": "Zagreb",
-    "temp_min_c": 6.5,
-    "temp_max_c": 12.2,
+    "temp_min_c": 5.7,
+    "temp_max_c": 11.7,
     "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 12.2
+    "wind_kmh": 13.5
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-01T18:37:16+01:00"
+    "fetched_at": "2026-11-01T22:40:29+01:00"
   }
 }
