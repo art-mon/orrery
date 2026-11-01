@@ -6,6 +6,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tuqk",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-01T17:11:56.053000Z",
+        "coordinates": [
+          -27.1985,
+          -56.2566
+        ]
+      },
+      {
+        "id": "us7000tupl",
+        "title": "M6.0 Earthquake - 165 km NW of Port-Olry, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-11-01T11:47:03.778000Z",
+        "coordinates": [
+          165.8242,
+          -14.1689
+        ]
+      },
+      {
         "id": "us7000tund",
         "title": "M5.1 Earthquake - 201 km NW of Port-Olry, Vanuatu",
         "category": "Earthquake",
@@ -134,26 +154,6 @@
           91.6593,
           13.3785
         ]
-      },
-      {
-        "id": "us7000ttxz",
-        "title": "M6.4 Earthquake - southeast of Easter Island",
-        "category": "Earthquake",
-        "date": "2026-10-29T07:49:50.928000Z",
-        "coordinates": [
-          -98.0489,
-          -36.4058
-        ]
-      },
-      {
-        "id": "us7000ttxn",
-        "title": "M5.4 Earthquake - 114 km ENE of Barcelona, Philippines",
-        "category": "Earthquake",
-        "date": "2026-10-29T07:31:30.432000Z",
-        "coordinates": [
-          127.4269,
-          8.4677
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 9.8,
-    "humidity": 65,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 24.1
+    "temp_c": 8.1,
+    "feels_c": 5.2,
+    "humidity": 84,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10n",
+    "wind_kmh": 18.5
   },
   "forecast_today": {
     "date": "2026-11-01",
     "city": "Zagreb",
-    "temp_min_c": 10.1,
-    "temp_max_c": 10.9,
-    "humidity": 76,
+    "temp_min_c": 8.1,
+    "temp_max_c": 9.1,
+    "humidity": 85,
     "condition": "Rain",
     "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 19.0,
-    "samples": 5
+    "icon": "10n",
+    "wind_kmh": 18.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-02",
     "city": "Zagreb",
-    "temp_min_c": 6.4,
-    "temp_max_c": 11.3,
-    "humidity": 88,
+    "temp_min_c": 8.2,
+    "temp_max_c": 11.9,
+    "humidity": 86,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 17.5
+    "wind_kmh": 17.8
   },
   "forecast_day_after": {
     "date": "2026-11-03",
     "city": "Zagreb",
-    "temp_min_c": 4.9,
-    "temp_max_c": 9.5,
+    "temp_min_c": 6.5,
+    "temp_max_c": 12.2,
     "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 13.5
+    "wind_kmh": 12.2
   },
   "uv": {
-    "uv": 1.4,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.0,
     "peak_time": "2026-11-01T11:00",
-    "safe_minutes": 115,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,11 +355,11 @@
       },
       {
         "time": "2026-11-01T15:00",
-        "uv": 0.7
+        "uv": 0.8
       },
       {
         "time": "2026-11-01T16:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-11-01T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-01T12:39:43+01:00"
+    "fetched_at": "2026-11-01T18:37:16+01:00"
   }
 }
