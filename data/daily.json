@@ -1,23 +1,38 @@
 {
   "generated": "2026-11-02",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-02",
-    "explanation": "What color is the Moon? It depends on the night -- and the time. Outside of the Earth's atmosphere, the dark Moon, which shines by reflected sunlight, appears a magnificently brown-tinged gray. The featured image highlights a collection of apparent colors of the full moon on Earth, documented by one astrophotographer over 10 years from different locations across Italy. A red- or yellow-colored moon usually indicates a moon seen near the horizon. There, some of the blue light has been scattered away by a long path through the Earth's atmosphere, sometimes laden with fine dust. A blue-colored moon is more rare and can indicate an atmosphere carrying larger dust particles. What created the purple moon is unclear -- it may be a combination of several effects. The last image captures the total lunar eclipse of 2018 July -- where the moon, in Earth's shadow, appeared a faint red -- due to light refracted through air around the Earth. Have you ever seen an unusually colorful Moon?Tomorrow's picture: open space",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
       {
+        "id": "us7000tuuy",
+        "title": "M5.1 Earthquake - 19 km WNW of Tomohon, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-02T08:13:14.014000Z",
+        "coordinates": [
+          124.6476,
+          1.392
+        ]
+      },
+      {
+        "id": "us7000tut4",
+        "title": "M5.1 Earthquake - Kermadec Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-02T01:18:16.369000Z",
+        "coordinates": [
+          -177.7236,
+          -31.2244
+        ]
+      },
+      {
         "id": "us7000tusv",
         "title": "M5.1 Earthquake - Banda Sea",
         "category": "Earthquake",
-        "date": "2026-11-02T00:53:09.703000Z",
+        "date": "2026-11-02T00:53:10.555000Z",
         "coordinates": [
-          129.9364,
-          -6.9736
+          129.9514,
+          -6.9205
         ]
       },
       {
@@ -139,26 +154,6 @@
           148.3151,
           -5.8137
         ]
-      },
-      {
-        "id": "us7000tu4f",
-        "title": "M6.2 Earthquake - 43 km ESE of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-29T21:46:44.786000Z",
-        "coordinates": [
-          167.4523,
-          -15.1891
-        ]
-      },
-      {
-        "id": "us7000tu3u",
-        "title": "M5.0 Earthquake - 131 km NNW of Tual, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-10-29T20:32:11.667000Z",
-        "coordinates": [
-          132.4922,
-          -4.4698
-        ]
       }
     ]
   },
@@ -249,53 +244,53 @@
   "weather": {
     "city": "Zagreb",
     "temp_c": 8.7,
-    "feels_c": 5.5,
-    "humidity": 81,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10n",
-    "wind_kmh": 22.2
+    "feels_c": 5.2,
+    "humidity": 79,
+    "condition": "Drizzle",
+    "description": "light intensity drizzle",
+    "icon": "09d",
+    "wind_kmh": 25.9
   },
   "forecast_today": {
     "date": "2026-11-02",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.7,
-    "temp_max_c": 11.4,
-    "humidity": 86,
+    "temp_max_c": 9.2,
+    "humidity": 79,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 18.4,
-    "samples": 8
+    "icon": "09d",
+    "wind_kmh": 18.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-11-03",
-    "city": "Zagreb",
-    "temp_min_c": 5.7,
-    "temp_max_c": 11.7,
-    "humidity": 79,
+    "city": "Donji grad",
+    "temp_min_c": 8.6,
+    "temp_max_c": 12.2,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 13.5
+    "wind_kmh": 13.9
   },
   "forecast_day_after": {
     "date": "2026-11-04",
-    "city": "Zagreb",
-    "temp_min_c": 5.0,
-    "temp_max_c": 8.7,
-    "humidity": 76,
+    "city": "Donji grad",
+    "temp_min_c": 4.6,
+    "temp_max_c": 11.7,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 7.3
+    "wind_kmh": 7.0
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.1,
     "band": "low",
     "daily_max": 0.2,
     "peak_time": "2026-11-02T11:00",
-    "safe_minutes": null,
+    "safe_minutes": 1111,
     "skin_type": 2,
     "hourly": [
       {
@@ -352,11 +347,11 @@
       },
       {
         "time": "2026-11-02T13:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-02T14:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-02T15:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-02T02:14:07+01:00"
+    "fetched_at": "2026-11-02T09:51:19+01:00"
   }
 }
