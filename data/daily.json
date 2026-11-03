@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 8.1,
-    "feels_c": 5,
+    "city": "Donji grad",
+    "temp_c": 8.9,
+    "feels_c": 5.8,
     "humidity": 73,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 20.4
+    "icon": "04d",
+    "wind_kmh": 22.2
   },
   "forecast_today": {
     "date": "2026-11-03",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.9,
-    "temp_max_c": 9.0,
-    "humidity": 80,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 14.4,
-    "samples": 8
+    "city": "Zagreb",
+    "temp_min_c": 8.3,
+    "temp_max_c": 8.9,
+    "humidity": 82,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04d",
+    "wind_kmh": 14.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-11-04",
-    "city": "City of Zagreb",
-    "temp_min_c": 4.4,
-    "temp_max_c": 10.5,
-    "humidity": 81,
-    "condition": "Clouds",
+    "city": "Zagreb",
+    "temp_min_c": 6.2,
+    "temp_max_c": 10.7,
+    "humidity": 85,
+    "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.0
+    "wind_kmh": 8.5
   },
   "forecast_day_after": {
     "date": "2026-11-05",
-    "city": "City of Zagreb",
-    "temp_min_c": 2.2,
-    "temp_max_c": 9.2,
+    "city": "Zagreb",
+    "temp_min_c": 1.8,
+    "temp_max_c": 9.1,
     "humidity": 80,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 4.5
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 4.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.2,
     "band": "low",
-    "daily_max": 0.5,
-    "peak_time": "2026-11-03T13:00",
-    "safe_minutes": null,
+    "daily_max": 0.2,
+    "peak_time": "2026-11-03T11:00",
+    "safe_minutes": 833,
     "skin_type": 2,
     "hourly": [
       {
@@ -335,7 +335,7 @@
       },
       {
         "time": "2026-11-03T10:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-11-03T11:00",
@@ -343,19 +343,19 @@
       },
       {
         "time": "2026-11-03T12:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-03T13:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-11-03T14:00",
-        "uv": 0.4
+        "uv": 0.2
       },
       {
         "time": "2026-11-03T15:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-03T16:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-03T02:59:00+01:00"
+    "fetched_at": "2026-11-03T10:19:55+01:00"
   }
 }
