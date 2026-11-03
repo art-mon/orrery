@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us7000tvtj",
+        "title": "M5.2 Earthquake - 91 km ESE of Kyzyl-Eshme, Kyrgyzstan",
+        "category": "Earthquake",
+        "date": "2026-11-03T21:34:08.654000Z",
+        "coordinates": [
+          73.3023,
+          39.3619
+        ]
+      },
+      {
+        "id": "us7000tvs3",
+        "title": "M5.2 Earthquake - Mid-Indian Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-03T18:21:13.036000Z",
+        "coordinates": [
+          78.3027,
+          -35.5195
+        ]
+      },
+      {
         "id": "us7000tvie",
         "title": "M5.2 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           165.6456,
           -13.8729
         ]
-      },
-      {
-        "id": "us7000tuku",
-        "title": "M6.0 Earthquake - 58 km SSE of Shima, Japan",
-        "category": "Earthquake",
-        "date": "2026-10-31T22:15:02.901000Z",
-        "coordinates": [
-          136.9854,
-          33.822
-        ]
-      },
-      {
-        "id": "us7000tukm",
-        "title": "M5.0 Earthquake - 115 km SE of Bushehr, Iran",
-        "category": "Earthquake",
-        "date": "2026-10-31T21:20:39.173000Z",
-        "coordinates": [
-          51.5076,
-          28.114
-        ]
       }
     ]
   },
@@ -247,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 8.1,
-    "feels_c": 5.9,
-    "humidity": 75,
+    "city": "Donji grad",
+    "temp_c": 7.6,
+    "feels_c": 6.3,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 13.0
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-11-03",
-    "city": "Donji grad",
-    "temp_min_c": 8.1,
-    "temp_max_c": 8.1,
-    "humidity": 76,
+    "city": "Zagreb",
+    "temp_min_c": 7.6,
+    "temp_max_c": 7.6,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 12.1,
-    "samples": 3
+    "wind_kmh": 7.4,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-11-04",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 7.3,
-    "temp_max_c": 10.3,
-    "humidity": 84,
+    "temp_max_c": 9.9,
+    "humidity": 87,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
@@ -281,11 +281,11 @@
   },
   "forecast_day_after": {
     "date": "2026-11-05",
-    "city": "Donji grad",
-    "temp_min_c": 3.2,
-    "temp_max_c": 9.1,
+    "city": "Zagreb",
+    "temp_min_c": 3.5,
+    "temp_max_c": 11.7,
     "humidity": 79,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.5
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-03T18:30:57+01:00"
+    "fetched_at": "2026-11-03T23:52:38+01:00"
   }
 }
