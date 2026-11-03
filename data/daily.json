@@ -1,10 +1,35 @@
 {
   "generated": "2026-11-03",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-03",
+    "explanation": "\u00a0Did this meteor come from that comet? Probably not. Although many\u00a0meteors\u00a0do originate from comets, there are\u00a0thousands\u00a0of\u00a0comets\u00a0that have visited the inner\u00a0Solar System\u00a0recently, and matching meteors to them can be tricky. And to be clear, the\u00a0pictured comet\u00a0is far behind the\u00a0streaking meteor. Comet\u00a0C/2025 R3 (PanSTARRS)\u00a0was captured from\u00a0Hautacam,\u00a0France\u00a0in April when the\u00a0giant space iceberg\u00a0sported impressive\u00a0ion\u00a0(blue) and dust\u00a0tails. Sand-sized rocky debris that enters\u00a0Earth\u2019s atmosphere\u00a0typically appears as\u00a0meteors, while the\u00a0colorful foreground streak\u00a0here may indicate a complicated composition. This month three\u00a0notable meteor showers\u00a0will reach their peaks. Over the next few days, the Southern\u00a0Taurids\u00a0will be reaching their apex, while the Northern\u00a0Taurids\u00a0will top out about a week later. Both originate from\u00a0Comet 2P/Encke. November is most famous for the\u00a0Leonids Meteor Shower, though, which originates from\u00a0Comet 55P/Tempel-Tuttle\u00a0and will\u00a0reach its crescendo\u00a0in about two weeks.Tomorrow's picture:\u00a0a hidden gem\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tvie",
+        "title": "M5.2 Earthquake - Volcano Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-11-03T16:48:13.110000Z",
+        "coordinates": [
+          141.6725,
+          24.1441
+        ]
+      },
+      {
+        "id": "us7000tv4i",
+        "title": "M5.4 Earthquake - 24 km NNW of Rioblanco, Colombia",
+        "category": "Earthquake",
+        "date": "2026-11-03T09:13:14.972000Z",
+        "coordinates": [
+          -75.7198,
+          3.7386
+        ]
+      },
       {
         "id": "us7000tuxy",
         "title": "M5.3 Earthquake - 81 km SSE of Palekastro, Greece",
@@ -134,26 +159,6 @@
           51.5076,
           28.114
         ]
-      },
-      {
-        "id": "us7000tujf",
-        "title": "M5.2 Earthquake - 4 km S of Bajo Corral, Panama",
-        "category": "Earthquake",
-        "date": "2026-10-31T15:50:18.909000Z",
-        "coordinates": [
-          -80.2547,
-          7.5692
-        ]
-      },
-      {
-        "id": "us7000tuif",
-        "title": "M5.0 Earthquake - 196 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-31T11:31:12.352000Z",
-        "coordinates": [
-          165.6759,
-          -13.9069
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 8.9,
-    "feels_c": 5.8,
-    "humidity": 73,
+    "city": "Zagreb",
+    "temp_c": 8.1,
+    "feels_c": 5.9,
+    "humidity": 75,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 22.2
+    "icon": "04n",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-11-03",
-    "city": "Zagreb",
-    "temp_min_c": 8.3,
-    "temp_max_c": 8.9,
-    "humidity": 82,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "04d",
-    "wind_kmh": 14.9,
-    "samples": 5
+    "city": "Donji grad",
+    "temp_min_c": 8.1,
+    "temp_max_c": 8.1,
+    "humidity": 76,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04n",
+    "wind_kmh": 12.1,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-04",
-    "city": "Zagreb",
-    "temp_min_c": 6.2,
-    "temp_max_c": 10.7,
-    "humidity": 85,
+    "city": "Donji grad",
+    "temp_min_c": 7.3,
+    "temp_max_c": 10.3,
+    "humidity": 84,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 8.5
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 8.0
   },
   "forecast_day_after": {
     "date": "2026-11-05",
-    "city": "Zagreb",
-    "temp_min_c": 1.8,
+    "city": "Donji grad",
+    "temp_min_c": 3.2,
     "temp_max_c": 9.1,
-    "humidity": 80,
+    "humidity": 79,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.4
+    "wind_kmh": 4.5
   },
   "uv": {
-    "uv": 0.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 0.2,
     "peak_time": "2026-11-03T11:00",
-    "safe_minutes": 833,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -355,7 +360,7 @@
       },
       {
         "time": "2026-11-03T15:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-11-03T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-03T10:19:55+01:00"
+    "fetched_at": "2026-11-03T18:30:57+01:00"
   }
 }
