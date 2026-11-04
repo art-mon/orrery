@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000tvwj",
+        "title": "M5.0 Earthquake - 207 km ESE of Sarangani, Philippines",
+        "category": "Earthquake",
+        "date": "2026-11-04T07:40:12.288000Z",
+        "coordinates": [
+          127.0325,
+          4.3895
+        ]
+      },
+      {
         "id": "us7000tvtj",
         "title": "M5.2 Earthquake - 91 km ESE of Kyzyl-Eshme, Kyrgyzstan",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           165.6167,
           -13.8672
         ]
-      },
-      {
-        "id": "us7000tuky",
-        "title": "M5.2 Earthquake - 200 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-10-31T22:42:39.540000Z",
-        "coordinates": [
-          165.6456,
-          -13.8729
-        ]
       }
     ]
   },
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 7.0,
-    "feels_c": 7.0,
-    "humidity": 90,
+    "city": "Zagreb",
+    "temp_c": 8.1,
+    "feels_c": 6.6,
+    "humidity": 82,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 1.8
+    "icon": "04d",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-11-04",
-    "city": "Donji grad",
-    "temp_min_c": 7.0,
-    "temp_max_c": 9.3,
-    "humidity": 86,
+    "city": "Zagreb",
+    "temp_min_c": 7.4,
+    "temp_max_c": 8.6,
+    "humidity": 87,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 6.4,
-    "samples": 8
+    "icon": "04d",
+    "wind_kmh": 6.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-11-05",
-    "city": "Donji grad",
-    "temp_min_c": 3.1,
+    "city": "Zagreb",
+    "temp_min_c": 5.3,
     "temp_max_c": 11.5,
     "humidity": 80,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 4.5
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-11-06",
-    "city": "Donji grad",
-    "temp_min_c": 0.3,
-    "temp_max_c": 8.5,
-    "humidity": 83,
+    "city": "Zagreb",
+    "temp_min_c": 0.4,
+    "temp_max_c": 8.7,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.1,
     "band": "low",
-    "daily_max": 0.6,
+    "daily_max": 1.2,
     "peak_time": "2026-11-04T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 159,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,35 +331,35 @@
       },
       {
         "time": "2026-11-04T09:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-04T10:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-04T11:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-11-04T12:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-11-04T13:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-11-04T14:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-11-04T15:00",
+        "time": "2026-11-04T10:00",
         "uv": 0.3
       },
       {
+        "time": "2026-11-04T11:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-11-04T12:00",
+        "uv": 1.2
+      },
+      {
+        "time": "2026-11-04T13:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-11-04T14:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-11-04T15:00",
+        "uv": 0.5
+      },
+      {
         "time": "2026-11-04T16:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-04T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-04T03:54:00+01:00"
+    "fetched_at": "2026-11-04T11:26:06+01:00"
   }
 }
