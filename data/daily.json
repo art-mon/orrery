@@ -1,12 +1,7 @@
 {
-  "generated": "2026-11-03",
+  "generated": "2026-11-04",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-03",
-    "explanation": "\u00a0Did this meteor come from that comet? Probably not. Although many\u00a0meteors\u00a0do originate from comets, there are\u00a0thousands\u00a0of\u00a0comets\u00a0that have visited the inner\u00a0Solar System\u00a0recently, and matching meteors to them can be tricky. And to be clear, the\u00a0pictured comet\u00a0is far behind the\u00a0streaking meteor. Comet\u00a0C/2025 R3 (PanSTARRS)\u00a0was captured from\u00a0Hautacam,\u00a0France\u00a0in April when the\u00a0giant space iceberg\u00a0sported impressive\u00a0ion\u00a0(blue) and dust\u00a0tails. Sand-sized rocky debris that enters\u00a0Earth\u2019s atmosphere\u00a0typically appears as\u00a0meteors, while the\u00a0colorful foreground streak\u00a0here may indicate a complicated composition. This month three\u00a0notable meteor showers\u00a0will reach their peaks. Over the next few days, the Southern\u00a0Taurids\u00a0will be reaching their apex, while the Northern\u00a0Taurids\u00a0will top out about a week later. Both originate from\u00a0Comet 2P/Encke. November is most famous for the\u00a0Leonids Meteor Shower, though, which originates from\u00a0Comet 55P/Tempel-Tuttle\u00a0and will\u00a0reach its crescendo\u00a0in about two weeks.Tomorrow's picture:\u00a0a hidden gem\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -165,46 +160,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2019 VQ1)",
-        "hazardous": false,
-        "diameter_m": 143,
-        "close_approach_date": "2026-11-03",
-        "miss_distance_km": 14487336,
-        "velocity_kmh": 87791
-      },
-      {
-        "name": "(2014 RC)",
-        "hazardous": false,
-        "diameter_m": 25,
-        "close_approach_date": "2026-11-03",
-        "miss_distance_km": 26136325,
-        "velocity_kmh": 30012
-      },
-      {
-        "name": "(2005 VL1)",
-        "hazardous": false,
-        "diameter_m": 30,
-        "close_approach_date": "2026-11-03",
-        "miss_distance_km": 36385930,
-        "velocity_kmh": 50584
-      },
-      {
-        "name": "(2015 KU121)",
-        "hazardous": false,
-        "diameter_m": 156,
-        "close_approach_date": "2026-11-03",
-        "miss_distance_km": 64474219,
-        "velocity_kmh": 64996
-      },
-      {
-        "name": "(2013 FY13)",
-        "hazardous": false,
-        "diameter_m": 459,
-        "close_approach_date": "2026-11-03",
-        "miss_distance_km": 68853080,
-        "velocity_kmh": 35148
-      },
-      {
         "name": "(2014 UV115)",
         "hazardous": false,
         "diameter_m": 170,
@@ -243,158 +198,198 @@
         "close_approach_date": "2026-11-04",
         "miss_distance_km": 56821340,
         "velocity_kmh": 64236
+      },
+      {
+        "name": "(2019 QV5)",
+        "hazardous": false,
+        "diameter_m": 575,
+        "close_approach_date": "2026-11-04",
+        "miss_distance_km": 57960864,
+        "velocity_kmh": 12813
+      },
+      {
+        "name": "(2019 VL3)",
+        "hazardous": false,
+        "diameter_m": 130,
+        "close_approach_date": "2026-11-04",
+        "miss_distance_km": 65269891,
+        "velocity_kmh": 106435
+      },
+      {
+        "name": "(2017 WJ2)",
+        "hazardous": false,
+        "diameter_m": 197,
+        "close_approach_date": "2026-11-05",
+        "miss_distance_km": 5983816,
+        "velocity_kmh": 42403
+      },
+      {
+        "name": "(2016 VZ1)",
+        "hazardous": false,
+        "diameter_m": 36,
+        "close_approach_date": "2026-11-05",
+        "miss_distance_km": 7657095,
+        "velocity_kmh": 48537
+      },
+      {
+        "name": "(2004 VJ1)",
+        "hazardous": false,
+        "diameter_m": 90,
+        "close_approach_date": "2026-11-05",
+        "miss_distance_km": 14904793,
+        "velocity_kmh": 14177
       }
     ]
   },
   "weather": {
     "city": "Donji grad",
-    "temp_c": 7.6,
-    "feels_c": 6.3,
-    "humidity": 88,
+    "temp_c": 7.0,
+    "feels_c": 7.0,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 7.4
+    "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-11-03",
-    "city": "Zagreb",
-    "temp_min_c": 7.6,
-    "temp_max_c": 7.6,
-    "humidity": 88,
+    "date": "2026-11-04",
+    "city": "Donji grad",
+    "temp_min_c": 7.0,
+    "temp_max_c": 9.3,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 7.4,
-    "samples": 1
+    "wind_kmh": 6.4,
+    "samples": 8
   },
   "forecast": {
-    "date": "2026-11-04",
-    "city": "Zagreb",
-    "temp_min_c": 7.3,
-    "temp_max_c": 9.9,
-    "humidity": 87,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 8.0
-  },
-  "forecast_day_after": {
     "date": "2026-11-05",
-    "city": "Zagreb",
-    "temp_min_c": 3.5,
-    "temp_max_c": 11.7,
-    "humidity": 79,
-    "condition": "Clouds",
+    "city": "Donji grad",
+    "temp_min_c": 3.1,
+    "temp_max_c": 11.5,
+    "humidity": 80,
+    "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 4.5
   },
+  "forecast_day_after": {
+    "date": "2026-11-06",
+    "city": "Donji grad",
+    "temp_min_c": 0.3,
+    "temp_max_c": 8.5,
+    "humidity": 83,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 2.2
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 0.2,
-    "peak_time": "2026-11-03T11:00",
+    "daily_max": 0.6,
+    "peak_time": "2026-11-04T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-03T00:00",
+        "time": "2026-11-04T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T01:00",
+        "time": "2026-11-04T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T02:00",
+        "time": "2026-11-04T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T03:00",
+        "time": "2026-11-04T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T04:00",
+        "time": "2026-11-04T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T05:00",
+        "time": "2026-11-04T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T06:00",
+        "time": "2026-11-04T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T07:00",
+        "time": "2026-11-04T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T08:00",
+        "time": "2026-11-04T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-03T09:00",
+        "time": "2026-11-04T09:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-03T10:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-03T11:00",
+        "time": "2026-11-04T10:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-03T12:00",
-        "uv": 0.2
+        "time": "2026-11-04T11:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-11-03T13:00",
-        "uv": 0.2
+        "time": "2026-11-04T12:00",
+        "uv": 0.6
       },
       {
-        "time": "2026-11-03T14:00",
-        "uv": 0.2
+        "time": "2026-11-04T13:00",
+        "uv": 0.6
       },
       {
-        "time": "2026-11-03T15:00",
+        "time": "2026-11-04T14:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-11-04T15:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-11-04T16:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-03T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-03T17:00",
+        "time": "2026-11-04T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T18:00",
+        "time": "2026-11-04T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T19:00",
+        "time": "2026-11-04T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T20:00",
+        "time": "2026-11-04T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T21:00",
+        "time": "2026-11-04T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T22:00",
+        "time": "2026-11-04T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-03T23:00",
+        "time": "2026-11-04T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-03T23:52:38+01:00"
+    "fetched_at": "2026-11-04T03:54:00+01:00"
   }
 }
