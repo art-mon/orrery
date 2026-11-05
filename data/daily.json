@@ -1,15 +1,20 @@
 {
   "generated": "2026-11-05",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-05",
-    "explanation": "One of our Solar System's most tantalizing worlds, Enceladus is backlit by the Sun in this Cassini spacecraft image from November 1, 2009. The dramatic illumination reveals the plumes that continuously spew into space from the south pole of Saturn's 500 kilometer diameter moon. Discovered by Cassini in 2005, the icy plumes are likely connected to an ocean beneath the ice shell of Enceladus. They supply material directly to Saturn's outer, tenuous E ring and make the surface of Enceladus as reflective as snow. Across the scene, Saturn's icy rings scatter sunlight toward Cassini's cameras. Beyond the rings (lower right), the night side of 80 kilometer diameter moon Pandora is faintly lit by Saturnlight.Tomorrow's picture: pixels in space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tw76",
+        "title": "M5.1 Earthquake - 19 km NNW of Masumbwe, Tanzania",
+        "category": "Earthquake",
+        "date": "2026-11-05T09:22:32.714000Z",
+        "coordinates": [
+          32.149,
+          -3.4641
+        ]
+      },
       {
         "id": "us7000tvwj",
         "title": "M5.0 Earthquake - 207 km ESE of Sarangani, Philippines",
@@ -149,16 +154,6 @@
           165.6455,
           -13.8611
         ]
-      },
-      {
-        "id": "us7000tun8",
-        "title": "M5.4 Earthquake - 203 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-11-01T06:26:42.287000Z",
-        "coordinates": [
-          165.6167,
-          -13.8672
-        ]
       }
     ]
   },
@@ -248,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.8,
-    "feels_c": 7.4,
-    "humidity": 77,
+    "temp_c": 10.4,
+    "feels_c": 9.3,
+    "humidity": 70,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 9.3
+    "description": "overcast clouds",
+    "icon": "04n",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-11-05",
     "city": "Zagreb",
-    "temp_min_c": 5.7,
-    "temp_max_c": 9.9,
-    "humidity": 77,
+    "temp_min_c": 8.1,
+    "temp_max_c": 10.4,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 4.9,
-    "samples": 6
+    "icon": "04n",
+    "wind_kmh": 3.8,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-06",
     "city": "Zagreb",
-    "temp_min_c": 2.9,
-    "temp_max_c": 11.1,
-    "humidity": 82,
+    "temp_min_c": 3.2,
+    "temp_max_c": 11.3,
+    "humidity": 79,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.3
+    "wind_kmh": 2.6
   },
   "forecast_day_after": {
     "date": "2026-11-07",
     "city": "Zagreb",
-    "temp_min_c": -0.1,
-    "temp_max_c": 7.4,
-    "humidity": 82,
+    "temp_min_c": 0.8,
+    "temp_max_c": 7.7,
+    "humidity": 80,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 5.4
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.6,
     "peak_time": "2026-11-05T12:00",
-    "safe_minutes": 185,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-05T08:41:05+01:00"
+    "fetched_at": "2026-11-05T17:04:58+01:00"
   }
 }
