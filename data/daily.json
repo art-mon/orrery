@@ -1,10 +1,35 @@
 {
   "generated": "2026-11-05",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-05",
+    "explanation": "One of our Solar System's most tantalizing worlds, Enceladus is backlit by the Sun in this Cassini spacecraft image from November 1, 2009. The dramatic illumination reveals the plumes that continuously spew into space from the south pole of Saturn's 500 kilometer diameter moon. Discovered by Cassini in 2005, the icy plumes are likely connected to an ocean beneath the ice shell of Enceladus. They supply material directly to Saturn's outer, tenuous E ring and make the surface of Enceladus as reflective as snow. Across the scene, Saturn's icy rings scatter sunlight toward Cassini's cameras. Beyond the rings (lower right), the night side of 80 kilometer diameter moon Pandora is faintly lit by Saturnlight.Tomorrow's picture: pixels in space\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tw8r",
+        "title": "M6.1 Earthquake - Fiji region",
+        "category": "Earthquake",
+        "date": "2026-11-05T17:21:45.305000Z",
+        "coordinates": [
+          -178.7145,
+          -21.1984
+        ]
+      },
+      {
+        "id": "us7000tw8p",
+        "title": "M5.0 Earthquake - 130 km NE of Thang, India",
+        "category": "Earthquake",
+        "date": "2026-11-05T16:56:25.875000Z",
+        "coordinates": [
+          77.9399,
+          35.6318
+        ]
+      },
       {
         "id": "us7000tw76",
         "title": "M5.1 Earthquake - 19 km NNW of Masumbwe, Tanzania",
@@ -49,10 +74,20 @@
         "id": "us7000tvie",
         "title": "M5.2 Earthquake - Volcano Islands, Japan region",
         "category": "Earthquake",
-        "date": "2026-11-03T16:48:13.110000Z",
+        "date": "2026-11-03T16:48:12.006000Z",
         "coordinates": [
-          141.6725,
-          24.1441
+          141.6688,
+          24.1773
+        ]
+      },
+      {
+        "id": "us7000tv5i",
+        "title": "M5.0 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-03T13:34:04.565000Z",
+        "coordinates": [
+          -26.2903,
+          -58.7979
         ]
       },
       {
@@ -123,36 +158,6 @@
         "coordinates": [
           69.5217,
           -23.8735
-        ]
-      },
-      {
-        "id": "us7000tuqk",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-11-01T17:11:56.053000Z",
-        "coordinates": [
-          -27.1985,
-          -56.2566
-        ]
-      },
-      {
-        "id": "us7000tupl",
-        "title": "M6.0 Earthquake - 165 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-11-01T11:47:03.778000Z",
-        "coordinates": [
-          165.8242,
-          -14.1689
-        ]
-      },
-      {
-        "id": "us7000tund",
-        "title": "M5.1 Earthquake - 201 km NW of Port-Olry, Vanuatu",
-        "category": "Earthquake",
-        "date": "2026-11-01T07:00:54.331000Z",
-        "coordinates": [
-          165.6455,
-          -13.8611
         ]
       }
     ]
@@ -243,47 +248,47 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.3,
-    "humidity": 70,
+    "temp_c": 7.7,
+    "feels_c": 7.7,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 1.8
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-11-05",
     "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 10.4,
-    "humidity": 73,
+    "temp_min_c": 7.7,
+    "temp_max_c": 7.7,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.8,
-    "samples": 3
+    "wind_kmh": 3.7,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-11-06",
     "city": "Zagreb",
-    "temp_min_c": 3.2,
-    "temp_max_c": 11.3,
+    "temp_min_c": 5.7,
+    "temp_max_c": 11.2,
     "humidity": 79,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.6
+    "wind_kmh": 2.4
   },
   "forecast_day_after": {
     "date": "2026-11-07",
     "city": "Zagreb",
     "temp_min_c": 0.8,
-    "temp_max_c": 7.7,
+    "temp_max_c": 9.6,
     "humidity": 80,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 5.4
+    "wind_kmh": 5.9
   },
   "uv": {
     "uv": 0.0,
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-05T17:04:58+01:00"
+    "fetched_at": "2026-11-05T23:30:43+01:00"
   }
 }
