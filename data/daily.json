@@ -7,12 +7,12 @@
     "events": [
       {
         "id": "us7000twg9",
-        "title": "M6.1 Earthquake - 156 km SE of Hasaki, Japan",
+        "title": "M6.1 Earthquake - 144 km SE of Hasaki, Japan",
         "category": "Earthquake",
-        "date": "2026-11-06T10:39:24.800000Z",
+        "date": "2026-11-06T10:39:27.869000Z",
         "coordinates": [
-          142.2425,
-          34.924
+          142.1175,
+          34.9677
         ]
       },
       {
@@ -242,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.2,
-    "humidity": 68,
+    "city": "City of Zagreb",
+    "temp_c": 9.9,
+    "feels_c": 9.9,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
+    "icon": "04n",
     "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-11-06",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 10.4,
-    "humidity": 73,
+    "city": "Donji grad",
+    "temp_min_c": 9.4,
+    "temp_max_c": 9.9,
+    "humidity": 74,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 3.9,
-    "samples": 5
+    "icon": "04n",
+    "wind_kmh": 3.8,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-07",
-    "city": "City of Zagreb",
-    "temp_min_c": 5.2,
-    "temp_max_c": 8.9,
+    "city": "Donji grad",
+    "temp_min_c": 5.3,
+    "temp_max_c": 8.7,
     "humidity": 79,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.2
+    "wind_kmh": 5.7
   },
   "forecast_day_after": {
     "date": "2026-11-08",
-    "city": "City of Zagreb",
-    "temp_min_c": -0.3,
+    "city": "Donji grad",
+    "temp_min_c": 3.6,
     "temp_max_c": 7.2,
     "humidity": 84,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.2
+    "wind_kmh": 2.3
   },
   "uv": {
-    "uv": 2.2,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.6,
     "peak_time": "2026-11-06T12:00",
-    "safe_minutes": 74,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -351,19 +351,19 @@
       },
       {
         "time": "2026-11-06T14:00",
-        "uv": 1.8
-      },
-      {
-        "time": "2026-11-06T15:00",
         "uv": 1.2
       },
       {
+        "time": "2026-11-06T15:00",
+        "uv": 0.6
+      },
+      {
         "time": "2026-11-06T16:00",
-        "uv": 0.5
+        "uv": 0.1
       },
       {
         "time": "2026-11-06T17:00",
-        "uv": 0.1
+        "uv": 0.0
       },
       {
         "time": "2026-11-06T18:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-06T12:47:14+01:00"
+    "fetched_at": "2026-11-06T19:52:07+01:00"
   }
 }
