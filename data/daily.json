@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000twg9",
+        "title": "M6.1 Earthquake - 156 km SE of Hasaki, Japan",
+        "category": "Earthquake",
+        "date": "2026-11-06T10:39:24.800000Z",
+        "coordinates": [
+          142.2425,
+          34.924
+        ]
+      },
+      {
         "id": "us7000tw8r",
         "title": "M6.1 Earthquake - Fiji region",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           129.9514,
           -6.9205
         ]
-      },
-      {
-        "id": "us7000tuqx",
-        "title": "M5.0 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-11-01T18:34:39.200000Z",
-        "coordinates": [
-          69.5217,
-          -23.8735
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 6.7,
-    "feels_c": 6.7,
-    "humidity": 81,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 3.7
-  },
-  "forecast_today": {
-    "date": "2026-11-06",
-    "city": "Zagreb",
-    "temp_min_c": 6.7,
-    "temp_max_c": 10.9,
-    "humidity": 76,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 3.5,
-    "samples": 7
-  },
-  "forecast": {
-    "date": "2026-11-07",
-    "city": "Zagreb",
-    "temp_min_c": 1.2,
-    "temp_max_c": 8.6,
-    "humidity": 80,
+    "temp_c": 10.4,
+    "feels_c": 9.2,
+    "humidity": 68,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.0
+    "wind_kmh": 1.8
+  },
+  "forecast_today": {
+    "date": "2026-11-06",
+    "city": "City of Zagreb",
+    "temp_min_c": 8.1,
+    "temp_max_c": 10.4,
+    "humidity": 73,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 3.9,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-11-07",
+    "city": "City of Zagreb",
+    "temp_min_c": 5.2,
+    "temp_max_c": 8.9,
+    "humidity": 79,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 6.2
   },
   "forecast_day_after": {
     "date": "2026-11-08",
-    "city": "Zagreb",
-    "temp_min_c": -0.5,
-    "temp_max_c": 7.3,
+    "city": "City of Zagreb",
+    "temp_min_c": -0.3,
+    "temp_max_c": 7.2,
     "humidity": 84,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.3
+    "wind_kmh": 2.2
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.2,
     "band": "low",
     "daily_max": 2.6,
     "peak_time": "2026-11-06T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 74,
     "skin_type": 2,
     "hourly": [
       {
@@ -347,19 +347,19 @@
       },
       {
         "time": "2026-11-06T13:00",
-        "uv": 2.5
+        "uv": 2.3
       },
       {
         "time": "2026-11-06T14:00",
-        "uv": 2.0
+        "uv": 1.8
       },
       {
         "time": "2026-11-06T15:00",
-        "uv": 1.3
+        "uv": 1.2
       },
       {
         "time": "2026-11-06T16:00",
-        "uv": 0.6
+        "uv": 0.5
       },
       {
         "time": "2026-11-06T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-06T04:07:24+01:00"
+    "fetched_at": "2026-11-06T12:47:14+01:00"
   }
 }
