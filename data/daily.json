@@ -1,7 +1,12 @@
 {
   "generated": "2026-11-07",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-11-07",
+    "explanation": "It is time to say goodbye to NASA's Neil Gehrels Swift Observatory. After nearly 22 years of service, the satellite re-entered Earth's atmosphere on November 4 at 7:39 EST over the North Sumatra region of Indonesia. The featured image is a mosaic created in 2018 using some of the first million images captured by the satellite's Ultraviolet/Optical Telescope. Swift had a combination of instruments, including an X-ray telescope and a gamma-ray telescope, that worked together to enable humanity to study, in unprecedented detail, the fastest and most energetic explosions in the universe. The most recent solar maximum accelerated the decay of the satellite's orbit. An innovative mission to rescue Swift by boosting its orbit was not successful. Swift burned on reentry like a shooting star, but the impressive data acquired by the telescope over its mission will continue to bring light to the mysteries of the cosmos for years to come. May it keep inspiring new missions to boldly go into space, explore new data and seek out new science.",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -160,62 +165,6 @@
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2001 KF54)",
-        "hazardous": true,
-        "diameter_m": 649,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 7243784,
-        "velocity_kmh": 59130
-      },
-      {
-        "name": "(2016 WU1)",
-        "hazardous": false,
-        "diameter_m": 101,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 14523427,
-        "velocity_kmh": 64876
-      },
-      {
-        "name": "(2014 DF23)",
-        "hazardous": false,
-        "diameter_m": 69,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 19028641,
-        "velocity_kmh": 19704
-      },
-      {
-        "name": "418416 (2008 LV16)",
-        "hazardous": true,
-        "diameter_m": 520,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 19223110,
-        "velocity_kmh": 44666
-      },
-      {
-        "name": "(2018 WU)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 26151400,
-        "velocity_kmh": 54521
-      },
-      {
-        "name": "(2017 UR5)",
-        "hazardous": false,
-        "diameter_m": 11,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 41775936,
-        "velocity_kmh": 54124
-      },
-      {
-        "name": "(2013 NG10)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-11-06",
-        "miss_distance_km": 65204888,
-        "velocity_kmh": 51282
-      },
-      {
         "name": "(2007 VV83)",
         "hazardous": false,
         "diameter_m": 68,
@@ -238,57 +187,113 @@
         "close_approach_date": "2026-11-07",
         "miss_distance_km": 33598737,
         "velocity_kmh": 65255
+      },
+      {
+        "name": "(2019 BU3)",
+        "hazardous": false,
+        "diameter_m": 9,
+        "close_approach_date": "2026-11-07",
+        "miss_distance_km": 33895583,
+        "velocity_kmh": 15319
+      },
+      {
+        "name": "(2013 EC20)",
+        "hazardous": false,
+        "diameter_m": 9,
+        "close_approach_date": "2026-11-07",
+        "miss_distance_km": 36405548,
+        "velocity_kmh": 17158
+      },
+      {
+        "name": "(2019 UC11)",
+        "hazardous": false,
+        "diameter_m": 67,
+        "close_approach_date": "2026-11-07",
+        "miss_distance_km": 44311329,
+        "velocity_kmh": 98222
+      },
+      {
+        "name": "(2016 WB10)",
+        "hazardous": false,
+        "diameter_m": 400,
+        "close_approach_date": "2026-11-07",
+        "miss_distance_km": 49630513,
+        "velocity_kmh": 58380
+      },
+      {
+        "name": "138175 (2000 EE104)",
+        "hazardous": true,
+        "diameter_m": 474,
+        "close_approach_date": "2026-11-08",
+        "miss_distance_km": 13672705,
+        "velocity_kmh": 26190
+      },
+      {
+        "name": "(2016 JN5)",
+        "hazardous": false,
+        "diameter_m": 104,
+        "close_approach_date": "2026-11-08",
+        "miss_distance_km": 51746409,
+        "velocity_kmh": 79212
+      },
+      {
+        "name": "462238 (2008 CN1)",
+        "hazardous": true,
+        "diameter_m": 439,
+        "close_approach_date": "2026-11-08",
+        "miss_distance_km": 60587240,
+        "velocity_kmh": 39729
       }
     ]
   },
   "weather": {
     "city": "City of Zagreb",
-    "temp_c": 9.2,
-    "feels_c": 7.6,
-    "humidity": 68,
+    "temp_c": 7.6,
+    "feels_c": 5.3,
+    "humidity": 72,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 11.1
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-11-07",
-    "city": "Donji grad",
-    "temp_min_c": 7.0,
-    "temp_max_c": 9.4,
-    "humidity": 74,
+    "city": "Zagreb",
+    "temp_min_c": 6.3,
+    "temp_max_c": 8.2,
+    "humidity": 73,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 6.2,
-    "samples": 9
+    "icon": "03n",
+    "wind_kmh": 6.4,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-11-08",
-    "city": "Donji grad",
-    "temp_min_c": 4.5,
-    "temp_max_c": 10.1,
+    "city": "Zagreb",
+    "temp_min_c": 3.8,
+    "temp_max_c": 9.0,
     "humidity": 83,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 2.2
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.1
   },
   "forecast_day_after": {
     "date": "2026-11-09",
-    "city": "Donji grad",
-    "temp_min_c": 1.7,
-    "temp_max_c": 9.8,
-    "humidity": 86,
+    "city": "Zagreb",
+    "temp_min_c": 1.2,
+    "temp_max_c": 8.9,
+    "humidity": 87,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.3
+    "wind_kmh": 2.5
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 2.1,
+    "daily_max": 2.2,
     "peak_time": "2026-11-07T12:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -335,15 +340,15 @@
       },
       {
         "time": "2026-11-07T10:00",
-        "uv": 1.4
+        "uv": 1.5
       },
       {
         "time": "2026-11-07T11:00",
-        "uv": 1.9
+        "uv": 2.1
       },
       {
         "time": "2026-11-07T12:00",
-        "uv": 2.1
+        "uv": 2.2
       },
       {
         "time": "2026-11-07T13:00",
@@ -355,11 +360,11 @@
       },
       {
         "time": "2026-11-07T15:00",
-        "uv": 0.9
+        "uv": 1.0
       },
       {
         "time": "2026-11-07T16:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-11-07T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-07T00:38:43+01:00"
+    "fetched_at": "2026-11-07T05:34:47+01:00"
   }
 }
