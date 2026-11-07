@@ -1,15 +1,20 @@
 {
   "generated": "2026-11-07",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-07",
-    "explanation": "It is time to say goodbye to NASA's Neil Gehrels Swift Observatory. After nearly 22 years of service, the satellite re-entered Earth's atmosphere on November 4 at 7:39 EST over the North Sumatra region of Indonesia. The featured image is a mosaic created in 2018 using some of the first million images captured by the satellite's Ultraviolet/Optical Telescope. Swift had a combination of instruments, including an X-ray telescope and a gamma-ray telescope, that worked together to enable humanity to study, in unprecedented detail, the fastest and most energetic explosions in the universe. The most recent solar maximum accelerated the decay of the satellite's orbit. An innovative mission to rescue Swift by boosting its orbit was not successful. Swift burned on reentry like a shooting star, but the impressive data acquired by the telescope over its mission will continue to bring light to the mysteries of the cosmos for years to come. May it keep inspiring new missions to boldly go into space, explore new data and seek out new science.",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000twrq",
+        "title": "M5.5 Earthquake - 74 km NE of Hasaki, Japan",
+        "category": "Earthquake",
+        "date": "2026-11-07T11:07:43.355000Z",
+        "coordinates": [
+          141.4404,
+          36.1884
+        ]
+      },
       {
         "id": "us7000twg9",
         "title": "M6.1 Earthquake - 144 km SE of Hasaki, Japan",
@@ -149,16 +154,6 @@
           -177.7236,
           -31.2244
         ]
-      },
-      {
-        "id": "us7000tusv",
-        "title": "M5.1 Earthquake - Banda Sea",
-        "category": "Earthquake",
-        "date": "2026-11-02T00:53:10.555000Z",
-        "coordinates": [
-          129.9514,
-          -6.9205
-        ]
       }
     ]
   },
@@ -247,55 +242,55 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 7.6,
-    "feels_c": 5.3,
-    "humidity": 72,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 13.0
+    "city": "Zagreb",
+    "temp_c": 9.9,
+    "feels_c": 7.9,
+    "humidity": 58,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-11-07",
     "city": "Zagreb",
-    "temp_min_c": 6.3,
-    "temp_max_c": 8.2,
-    "humidity": 73,
+    "temp_min_c": 4.8,
+    "temp_max_c": 9.9,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 6.4,
-    "samples": 7
+    "icon": "01d",
+    "wind_kmh": 7.0,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-11-08",
     "city": "Zagreb",
     "temp_min_c": 3.8,
-    "temp_max_c": 9.0,
-    "humidity": 83,
+    "temp_max_c": 8.7,
+    "humidity": 84,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 2.1
+    "wind_kmh": 1.8
   },
   "forecast_day_after": {
     "date": "2026-11-09",
     "city": "Zagreb",
-    "temp_min_c": 1.2,
+    "temp_min_c": 2.4,
     "temp_max_c": 8.9,
     "humidity": 87,
-    "condition": "Clear",
+    "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
     "wind_kmh": 2.5
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 2.3,
     "band": "low",
-    "daily_max": 2.2,
+    "daily_max": 2.4,
     "peak_time": "2026-11-07T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 72,
     "skin_type": 2,
     "hourly": [
       {
@@ -336,11 +331,11 @@
       },
       {
         "time": "2026-11-07T09:00",
-        "uv": 0.8
+        "uv": 0.9
       },
       {
         "time": "2026-11-07T10:00",
-        "uv": 1.5
+        "uv": 1.6
       },
       {
         "time": "2026-11-07T11:00",
@@ -348,11 +343,11 @@
       },
       {
         "time": "2026-11-07T12:00",
-        "uv": 2.2
+        "uv": 2.4
       },
       {
         "time": "2026-11-07T13:00",
-        "uv": 2.0
+        "uv": 2.1
       },
       {
         "time": "2026-11-07T14:00",
@@ -360,7 +355,7 @@
       },
       {
         "time": "2026-11-07T15:00",
-        "uv": 1.0
+        "uv": 0.9
       },
       {
         "time": "2026-11-07T16:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-07T05:34:47+01:00"
+    "fetched_at": "2026-11-07T12:29:12+01:00"
   }
 }
