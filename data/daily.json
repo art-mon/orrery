@@ -6,6 +6,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000twt0",
+        "title": "M5.5 Earthquake - 10 km NW of Hamakita, Japan",
+        "category": "Earthquake",
+        "date": "2026-11-07T16:04:35.125000Z",
+        "coordinates": [
+          137.691,
+          34.8611
+        ]
+      },
+      {
         "id": "us7000twrq",
         "title": "M5.5 Earthquake - 74 km NE of Hasaki, Japan",
         "category": "Earthquake",
@@ -144,16 +154,6 @@
           124.6476,
           1.392
         ]
-      },
-      {
-        "id": "us7000tut4",
-        "title": "M5.1 Earthquake - Kermadec Islands region",
-        "category": "Earthquake",
-        "date": "2026-11-02T01:18:16.369000Z",
-        "coordinates": [
-          -177.7236,
-          -31.2244
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.9,
-    "feels_c": 7.9,
-    "humidity": 58,
+    "temp_c": 8.7,
+    "feels_c": 8.1,
+    "humidity": 64,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 14.8
+    "icon": "01n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-11-07",
     "city": "Zagreb",
-    "temp_min_c": 4.8,
-    "temp_max_c": 9.9,
+    "temp_min_c": 7.4,
+    "temp_max_c": 8.7,
     "humidity": 66,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 7.0,
-    "samples": 5
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 4.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-08",
     "city": "Zagreb",
-    "temp_min_c": 3.8,
-    "temp_max_c": 8.7,
-    "humidity": 84,
+    "temp_min_c": 4.2,
+    "temp_max_c": 8.4,
+    "humidity": 83,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 1.8
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 2.0
   },
   "forecast_day_after": {
     "date": "2026-11-09",
     "city": "Zagreb",
-    "temp_min_c": 2.4,
+    "temp_min_c": 4.3,
     "temp_max_c": 8.9,
-    "humidity": 87,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.5
+    "wind_kmh": 2.9
   },
   "uv": {
-    "uv": 2.3,
+    "uv": 0.0,
     "band": "low",
     "daily_max": 2.4,
     "peak_time": "2026-11-07T12:00",
-    "safe_minutes": 72,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-07T12:29:12+01:00"
+    "fetched_at": "2026-11-07T18:23:59+01:00"
   }
 }
