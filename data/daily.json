@@ -1,7 +1,12 @@
 {
   "generated": "2026-11-08",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-08",
+    "explanation": "The sky glows with soft pinkish colors of fading twilight in this serendipitous mountaintop vista. Taken in subfreezing temperatures, the thoughtfully composed photo shows snowy, rugged peaks seen from a mountain pass on 2017 November 14. Below lies the village of La Villa, Alta Badia in Italy's Dolomite Alps. Above the nestled village lights, the constellation Ursa Major hangs over the northern horizon. But most stunning is the intense fireball meteor. It was captured during the camera's exposure by chance as it flashed east to west across the northern horizon, under Ursa Major's familiar Big Dipper asterism. Sightings of this major fireball meteor were widely reported in European skies, making it one of the most reported fireball events ever for planet Earth's American Meteor Society and the International Meteor Organization. The meteor's measured track over Germany is consistent with its origin near the active radiant of November's Northern Taurid Meteor Shower, a shower associated with dust from Encke's comet.Tomorrow's picture: witch sky?\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,33 +247,33 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.8,
-    "feels_c": 9.4,
-    "humidity": 62,
+    "city": "Zagreb",
+    "temp_c": 7.6,
+    "feels_c": 7.6,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04n",
-    "wind_kmh": 5.5
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-11-08",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.0,
-    "temp_max_c": 9.8,
-    "humidity": 71,
+    "city": "Donji grad",
+    "temp_min_c": 7.6,
+    "temp_max_c": 7.6,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 3.2,
-    "samples": 3
+    "wind_kmh": 2.1,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-09",
-    "city": "City of Zagreb",
-    "temp_min_c": 3.5,
+    "city": "Donji grad",
+    "temp_min_c": 4.9,
     "temp_max_c": 10.4,
-    "humidity": 93,
+    "humidity": 91,
     "condition": "Clouds",
     "description": "scattered clouds",
     "icon": "03d",
@@ -276,7 +281,7 @@
   },
   "forecast_day_after": {
     "date": "2026-11-10",
-    "city": "City of Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 8.5,
     "temp_max_c": 12.4,
     "humidity": 91,
@@ -355,11 +360,11 @@
       },
       {
         "time": "2026-11-08T15:00",
-        "uv": 1.1
+        "uv": 1.0
       },
       {
         "time": "2026-11-08T16:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-11-08T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-08T16:45:59+01:00"
+    "fetched_at": "2026-11-08T21:09:33+01:00"
   }
 }
