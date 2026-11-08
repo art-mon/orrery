@@ -1,15 +1,30 @@
 {
-  "generated": "2026-11-07",
+  "generated": "2026-11-08",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-07",
-    "explanation": "De Gerlache-Kocher massif looms on the visible horizon in this close-up of the edge of the Moon. The mountainous formation rises about 4 kilometers above its surroundings and is located very close to the lunar south pole. Boasting permanently shadowed crater floors that likely contain deposits of water ice and peaks that receive almost continuous sunlight for solar power generation, the south polar region is consider a prime location for the first human settlement on the Moon. In fact, De Gerlache-Kocher massif itself has been considered as a potential landing site for future crewed Artemis missions to the Moon. The remarkable telescopic image of the massif at the lunar limb was captured on October 31. Then, a favorable libration angle or lunar wobble enhanced this oblique view across the Moon's south pole.Tomorrow's picture: meteoric\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000twus",
+        "title": "M5.1 Earthquake - 91 km ENE of Hihifo, Tonga",
+        "category": "Earthquake",
+        "date": "2026-11-07T23:27:09.444000Z",
+        "coordinates": [
+          -172.9847,
+          -15.6837
+        ]
+      },
+      {
+        "id": "us7000twun",
+        "title": "M5.9 Earthquake - central Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-07T23:17:06.073000Z",
+        "coordinates": [
+          -36.9727,
+          7.3411
+        ]
+      },
       {
         "id": "us7000twt0",
         "title": "M5.5 Earthquake - 10 km NW of Hamakita, Japan",
@@ -139,87 +154,11 @@
           26.4694,
           34.4807
         ]
-      },
-      {
-        "id": "us7000tuxg",
-        "title": "M5.1 Earthquake - 50 km WSW of Huarmey, Peru",
-        "category": "Earthquake",
-        "date": "2026-11-02T15:28:13.954000Z",
-        "coordinates": [
-          -78.5994,
-          -10.1699
-        ]
-      },
-      {
-        "id": "us7000tuuy",
-        "title": "M5.1 Earthquake - 19 km WNW of Tomohon, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-02T08:13:14.014000Z",
-        "coordinates": [
-          124.6476,
-          1.392
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2007 VV83)",
-        "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 8343148,
-        "velocity_kmh": 19841
-      },
-      {
-        "name": "(2012 PP28)",
-        "hazardous": true,
-        "diameter_m": 832,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 30294800,
-        "velocity_kmh": 45282
-      },
-      {
-        "name": "(2009 WA)",
-        "hazardous": false,
-        "diameter_m": 344,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 33598737,
-        "velocity_kmh": 65255
-      },
-      {
-        "name": "(2019 BU3)",
-        "hazardous": false,
-        "diameter_m": 9,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 33895583,
-        "velocity_kmh": 15319
-      },
-      {
-        "name": "(2013 EC20)",
-        "hazardous": false,
-        "diameter_m": 9,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 36405548,
-        "velocity_kmh": 17158
-      },
-      {
-        "name": "(2019 UC11)",
-        "hazardous": false,
-        "diameter_m": 67,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 44311329,
-        "velocity_kmh": 98222
-      },
-      {
-        "name": "(2016 WB10)",
-        "hazardous": false,
-        "diameter_m": 400,
-        "close_approach_date": "2026-11-07",
-        "miss_distance_km": 49630513,
-        "velocity_kmh": 58380
-      },
       {
         "name": "138175 (2000 EE104)",
         "hazardous": true,
@@ -243,43 +182,88 @@
         "close_approach_date": "2026-11-08",
         "miss_distance_km": 60587240,
         "velocity_kmh": 39729
+      },
+      {
+        "name": "(2012 KT12)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-11-08",
+        "miss_distance_km": 65984706,
+        "velocity_kmh": 26299
+      },
+      {
+        "name": "(2016 LC11)",
+        "hazardous": false,
+        "diameter_m": 738,
+        "close_approach_date": "2026-11-08",
+        "miss_distance_km": 69147005,
+        "velocity_kmh": 103599
+      },
+      {
+        "name": "(2016 AB9)",
+        "hazardous": false,
+        "diameter_m": 68,
+        "close_approach_date": "2026-11-09",
+        "miss_distance_km": 26690209,
+        "velocity_kmh": 27864
+      },
+      {
+        "name": "(1998 VE31)",
+        "hazardous": false,
+        "diameter_m": 377,
+        "close_approach_date": "2026-11-09",
+        "miss_distance_km": 26702924,
+        "velocity_kmh": 43652
+      },
+      {
+        "name": "(2008 BT2)",
+        "hazardous": false,
+        "diameter_m": 73,
+        "close_approach_date": "2026-11-09",
+        "miss_distance_km": 37081521,
+        "velocity_kmh": 14289
+      },
+      {
+        "name": "(2015 FV284)",
+        "hazardous": true,
+        "diameter_m": 393,
+        "close_approach_date": "2026-11-09",
+        "miss_distance_km": 38504606,
+        "velocity_kmh": 56071
+      },
+      {
+        "name": "(2019 VK5)",
+        "hazardous": false,
+        "diameter_m": 171,
+        "close_approach_date": "2026-11-09",
+        "miss_distance_km": 45166513,
+        "velocity_kmh": 13886
       }
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 7.6,
-    "feels_c": 7.6,
-    "humidity": 70,
+    "city": "Donji grad",
+    "temp_c": 6.6,
+    "feels_c": 6.6,
+    "humidity": 74,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
     "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-11-07",
-    "city": "Zagreb",
-    "temp_min_c": 7.6,
-    "temp_max_c": 7.6,
-    "humidity": 70,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 1.8,
-    "samples": 1
-  },
-  "forecast": {
     "date": "2026-11-08",
     "city": "Zagreb",
-    "temp_min_c": 4.5,
+    "temp_min_c": 5.2,
     "temp_max_c": 9.5,
-    "humidity": 82,
+    "humidity": 80,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 1.8
+    "description": "clouds",
+    "icon": "01n",
+    "wind_kmh": 1.7,
+    "samples": 8
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-11-09",
     "city": "Zagreb",
     "temp_min_c": 4.2,
@@ -290,111 +274,122 @@
     "icon": "01d",
     "wind_kmh": 2.8
   },
+  "forecast_day_after": {
+    "date": "2026-11-10",
+    "city": "Zagreb",
+    "temp_min_c": 6.5,
+    "temp_max_c": 13.2,
+    "humidity": 91,
+    "condition": "Clouds",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.7
+  },
   "uv": {
     "uv": 0.0,
     "band": "low",
     "daily_max": 2.4,
-    "peak_time": "2026-11-07T12:00",
+    "peak_time": "2026-11-08T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-07T00:00",
+        "time": "2026-11-08T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T01:00",
+        "time": "2026-11-08T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T02:00",
+        "time": "2026-11-08T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T03:00",
+        "time": "2026-11-08T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T04:00",
+        "time": "2026-11-08T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T05:00",
+        "time": "2026-11-08T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T06:00",
+        "time": "2026-11-08T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T07:00",
+        "time": "2026-11-08T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T08:00",
+        "time": "2026-11-08T08:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-07T09:00",
-        "uv": 0.9
+        "time": "2026-11-08T09:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-11-07T10:00",
-        "uv": 1.6
+        "time": "2026-11-08T10:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-11-07T11:00",
-        "uv": 2.1
+        "time": "2026-11-08T11:00",
+        "uv": 0.8
       },
       {
-        "time": "2026-11-07T12:00",
+        "time": "2026-11-08T12:00",
         "uv": 2.4
       },
       {
-        "time": "2026-11-07T13:00",
-        "uv": 2.1
+        "time": "2026-11-08T13:00",
+        "uv": 2.2
       },
       {
-        "time": "2026-11-07T14:00",
-        "uv": 1.6
+        "time": "2026-11-08T14:00",
+        "uv": 1.1
       },
       {
-        "time": "2026-11-07T15:00",
-        "uv": 1.0
+        "time": "2026-11-08T15:00",
+        "uv": 0.9
       },
       {
-        "time": "2026-11-07T16:00",
-        "uv": 0.5
+        "time": "2026-11-08T16:00",
+        "uv": 0.3
       },
       {
-        "time": "2026-11-07T17:00",
+        "time": "2026-11-08T17:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-07T18:00",
+        "time": "2026-11-08T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T19:00",
+        "time": "2026-11-08T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T20:00",
+        "time": "2026-11-08T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T21:00",
+        "time": "2026-11-08T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T22:00",
+        "time": "2026-11-08T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-07T23:00",
+        "time": "2026-11-08T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-07T22:25:37+01:00"
+    "fetched_at": "2026-11-08T02:03:26+01:00"
   }
 }
