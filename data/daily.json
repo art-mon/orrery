@@ -1,10 +1,45 @@
 {
   "generated": "2026-11-09",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-11-09",
+    "explanation": "Does the blue nebula look like the head of a witch? The nebula is known popularly as the Witch Head Nebula because, it is said, the nebula's shape resembles a Halloween-style caricature of a witch's head. Exactly how, though, can be a topic of imaginative speculation. What is clear is that IC 2118 is about 50 light-years across and made of gas and dust that points to -- because it has been partly eroded by -- the nearby star Rigel. One of the brighter stars in the constellation Orion, Rigel lies just below the center of the featured image. The blue color of the Witch Head Nebula and is caused not only by Rigel's intense blue starlight but also because the dust grains scatter blue light more efficiently than red. The same physical process causes Earth's daytime sky to appear blue, although the scatterers in planet Earth's atmosphere are molecules of nitrogen and oxygen.Tomorrow's picture: suddenly Saturn\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tx1f",
+        "title": "M5.7 Earthquake - 106 km ENE of Hasaki, Japan",
+        "category": "Earthquake",
+        "date": "2026-11-09T04:52:51.519000Z",
+        "coordinates": [
+          141.8299,
+          36.2471
+        ]
+      },
+      {
+        "id": "us7000tx16",
+        "title": "M6.4 Earthquake - 30 km WSW of Lata, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-11-09T03:34:59.466000Z",
+        "coordinates": [
+          165.5616,
+          -10.8669
+        ]
+      },
+      {
+        "id": "us7000tx0f",
+        "title": "M5.1 Earthquake - south of the Fiji Islands",
+        "category": "Earthquake",
+        "date": "2026-11-09T00:46:59.021000Z",
+        "coordinates": [
+          179.2119,
+          -23.6774
+        ]
+      },
       {
         "id": "us7000twus",
         "title": "M5.1 Earthquake - 91 km ENE of Hihifo, Tonga",
@@ -124,36 +159,6 @@
           141.6688,
           24.1773
         ]
-      },
-      {
-        "id": "us7000tv5i",
-        "title": "M5.0 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-11-03T13:34:04.565000Z",
-        "coordinates": [
-          -26.2903,
-          -58.7979
-        ]
-      },
-      {
-        "id": "us7000tv4i",
-        "title": "M5.4 Earthquake - 24 km NNW of Rioblanco, Colombia",
-        "category": "Earthquake",
-        "date": "2026-11-03T09:13:14.972000Z",
-        "coordinates": [
-          -75.7198,
-          3.7386
-        ]
-      },
-      {
-        "id": "us7000tuxy",
-        "title": "M5.3 Earthquake - 81 km SSE of Palekastro, Greece",
-        "category": "Earthquake",
-        "date": "2026-11-02T16:49:17.895000Z",
-        "coordinates": [
-          26.4694,
-          34.4807
-        ]
       }
     ]
   },
@@ -243,54 +248,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.0,
-    "feels_c": 6.2,
-    "humidity": 83,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 5.5
+    "temp_c": 5.4,
+    "feels_c": 5.4,
+    "humidity": 86,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50d",
+    "wind_kmh": 1.8
   },
   "forecast_today": {
     "date": "2026-11-09",
     "city": "Zagreb",
-    "temp_min_c": 5.2,
-    "temp_max_c": 11.4,
+    "temp_min_c": 4.8,
+    "temp_max_c": 9.2,
     "humidity": 88,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "01n",
-    "wind_kmh": 3.2,
-    "samples": 8
+    "icon": "50d",
+    "wind_kmh": 3.0,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-11-10",
     "city": "Zagreb",
-    "temp_min_c": 8.9,
-    "temp_max_c": 14.3,
-    "humidity": 94,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 5.4
+    "temp_min_c": 9.5,
+    "temp_max_c": 15.6,
+    "humidity": 91,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 5.3
   },
   "forecast_day_after": {
     "date": "2026-11-11",
     "city": "Zagreb",
-    "temp_min_c": 8.2,
-    "temp_max_c": 12.8,
-    "humidity": 94,
+    "temp_min_c": 8.4,
+    "temp_max_c": 12.9,
+    "humidity": 93,
     "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.4
+    "wind_kmh": 3.7
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.8,
     "band": "low",
     "daily_max": 2.5,
     "peak_time": "2026-11-09T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 196,
     "skin_type": 2,
     "hourly": [
       {
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-09T01:30:20+01:00"
+    "fetched_at": "2026-11-09T08:37:56+01:00"
   }
 }
