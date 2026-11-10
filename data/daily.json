@@ -1,15 +1,30 @@
 {
-  "generated": "2026-11-09",
+  "generated": "2026-11-10",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-09",
-    "explanation": "Does the blue nebula look like the head of a witch? The nebula is known popularly as the Witch Head Nebula because, it is said, the nebula's shape resembles a Halloween-style caricature of a witch's head. Exactly how, though, can be a topic of imaginative speculation. What is clear is that IC 2118 is about 50 light-years across and made of gas and dust that points to -- because it has been partly eroded by -- the nearby star Rigel. One of the brighter stars in the constellation Orion, Rigel lies just below the center of the featured image. The blue color of the Witch Head Nebula and is caused not only by Rigel's intense blue starlight but also because the dust grains scatter blue light more efficiently than red. The same physical process causes Earth's daytime sky to appear blue, although the scatterers in planet Earth's atmosphere are molecules of nitrogen and oxygen.Tomorrow's picture: suddenly Saturn\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tx38",
+        "title": "M5.3 Earthquake - 80 km ENE of Lagunas, Peru",
+        "category": "Earthquake",
+        "date": "2026-11-09T10:23:53.528000Z",
+        "coordinates": [
+          -75.0002,
+          -4.9495
+        ]
+      },
+      {
+        "id": "us7000tx32",
+        "title": "M5.4 Earthquake - 160 km E of Masohi, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-09T09:48:27.794000Z",
+        "coordinates": [
+          130.3905,
+          -3.0627
+        ]
+      },
       {
         "id": "us7000tx1f",
         "title": "M5.7 Earthquake - 106 km ENE of Hasaki, Japan",
@@ -139,262 +154,242 @@
           73.3023,
           39.3619
         ]
-      },
-      {
-        "id": "us7000tvs3",
-        "title": "M5.2 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-11-03T18:21:13.036000Z",
-        "coordinates": [
-          78.3027,
-          -35.5195
-        ]
-      },
-      {
-        "id": "us7000tvie",
-        "title": "M5.2 Earthquake - Volcano Islands, Japan region",
-        "category": "Earthquake",
-        "date": "2026-11-03T16:48:12.006000Z",
-        "coordinates": [
-          141.6688,
-          24.1773
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
       {
-        "name": "(2016 AB9)",
+        "name": "(2015 VH65)",
         "hazardous": false,
-        "diameter_m": 68,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 26690209,
-        "velocity_kmh": 27864
+        "diameter_m": 17,
+        "close_approach_date": "2026-11-10",
+        "miss_distance_km": 3726300,
+        "velocity_kmh": 28711
       },
       {
-        "name": "(1998 VE31)",
+        "name": "(2012 YD7)",
         "hazardous": false,
-        "diameter_m": 377,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 26702924,
-        "velocity_kmh": 43652
+        "diameter_m": 82,
+        "close_approach_date": "2026-11-10",
+        "miss_distance_km": 7120799,
+        "velocity_kmh": 26871
       },
       {
-        "name": "(2008 BT2)",
+        "name": "(2000 AH205)",
         "hazardous": false,
-        "diameter_m": 73,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 37081521,
-        "velocity_kmh": 14289
+        "diameter_m": 179,
+        "close_approach_date": "2026-11-10",
+        "miss_distance_km": 39535508,
+        "velocity_kmh": 37180
       },
       {
-        "name": "(2015 FV284)",
+        "name": "499998 (2011 PT)",
+        "hazardous": false,
+        "diameter_m": 94,
+        "close_approach_date": "2026-11-10",
+        "miss_distance_km": 53616454,
+        "velocity_kmh": 47326
+      },
+      {
+        "name": "(2019 UF5)",
+        "hazardous": false,
+        "diameter_m": 45,
+        "close_approach_date": "2026-11-10",
+        "miss_distance_km": 58336261,
+        "velocity_kmh": 24974
+      },
+      {
+        "name": "(2013 VO5)",
         "hazardous": true,
-        "diameter_m": 393,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 38504606,
-        "velocity_kmh": 56071
+        "diameter_m": 318,
+        "close_approach_date": "2026-11-11",
+        "miss_distance_km": 20596821,
+        "velocity_kmh": 98907
       },
       {
-        "name": "(2019 VK5)",
+        "name": "138852 (2000 WN10)",
         "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 45166513,
-        "velocity_kmh": 13886
+        "diameter_m": 520,
+        "close_approach_date": "2026-11-11",
+        "miss_distance_km": 27496686,
+        "velocity_kmh": 59268
       },
       {
-        "name": "(2018 VE5)",
+        "name": "(2019 UD13)",
         "hazardous": false,
-        "diameter_m": 113,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 45739505,
-        "velocity_kmh": 40066
+        "diameter_m": 119,
+        "close_approach_date": "2026-11-11",
+        "miss_distance_km": 46622658,
+        "velocity_kmh": 91383
       },
       {
-        "name": "(2017 BR6)",
+        "name": "(2018 LW5)",
         "hazardous": false,
-        "diameter_m": 16,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 53367182,
-        "velocity_kmh": 38180
+        "diameter_m": 439,
+        "close_approach_date": "2026-11-11",
+        "miss_distance_km": 57950883,
+        "velocity_kmh": 50118
       },
       {
-        "name": "(2017 FG1)",
+        "name": "(2015 TJ1)",
         "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 54813065,
-        "velocity_kmh": 47103
-      },
-      {
-        "name": "(2018 VH2)",
-        "hazardous": false,
-        "diameter_m": 451,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 57459647,
-        "velocity_kmh": 124097
-      },
-      {
-        "name": "(2015 TH238)",
-        "hazardous": false,
-        "diameter_m": 249,
-        "close_approach_date": "2026-11-09",
-        "miss_distance_km": 74692127,
-        "velocity_kmh": 51577
+        "diameter_m": 174,
+        "close_approach_date": "2026-11-11",
+        "miss_distance_km": 66107678,
+        "velocity_kmh": 62849
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 5.4,
-    "feels_c": 5.4,
-    "humidity": 86,
-    "condition": "Fog",
-    "description": "fog",
-    "icon": "50d",
-    "wind_kmh": 1.8
+    "temp_c": 9.2,
+    "feels_c": 8.8,
+    "humidity": 90,
+    "condition": "Mist",
+    "description": "mist",
+    "icon": "50n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
-    "date": "2026-11-09",
-    "city": "Zagreb",
-    "temp_min_c": 4.8,
-    "temp_max_c": 9.2,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "50d",
-    "wind_kmh": 3.0,
-    "samples": 6
-  },
-  "forecast": {
     "date": "2026-11-10",
     "city": "Zagreb",
-    "temp_min_c": 9.5,
-    "temp_max_c": 15.6,
-    "humidity": 91,
+    "temp_min_c": 8.7,
+    "temp_max_c": 17.6,
+    "humidity": 90,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 5.3
+    "description": "clouds",
+    "icon": "50n",
+    "wind_kmh": 5.6,
+    "samples": 8
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-11-11",
     "city": "Zagreb",
-    "temp_min_c": 8.4,
-    "temp_max_c": 12.9,
-    "humidity": 93,
+    "temp_min_c": 8.9,
+    "temp_max_c": 15.8,
+    "humidity": 95,
     "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.7
+    "wind_kmh": 2.9
+  },
+  "forecast_day_after": {
+    "date": "2026-11-12",
+    "city": "Zagreb",
+    "temp_min_c": 9.4,
+    "temp_max_c": 15,
+    "humidity": 90,
+    "condition": "Clouds",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 6.7
   },
   "uv": {
-    "uv": 0.8,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 2.5,
-    "peak_time": "2026-11-09T12:00",
-    "safe_minutes": 196,
+    "daily_max": 0.3,
+    "peak_time": "2026-11-10T10:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-09T00:00",
+        "time": "2026-11-10T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T01:00",
+        "time": "2026-11-10T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T02:00",
+        "time": "2026-11-10T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T03:00",
+        "time": "2026-11-10T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T04:00",
+        "time": "2026-11-10T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T05:00",
+        "time": "2026-11-10T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T06:00",
+        "time": "2026-11-10T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T07:00",
+        "time": "2026-11-10T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T08:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-11-09T09:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-11-09T10:00",
-        "uv": 1.6
-      },
-      {
-        "time": "2026-11-09T11:00",
-        "uv": 2.2
-      },
-      {
-        "time": "2026-11-09T12:00",
-        "uv": 2.5
-      },
-      {
-        "time": "2026-11-09T13:00",
-        "uv": 2.4
-      },
-      {
-        "time": "2026-11-09T14:00",
-        "uv": 1.9
-      },
-      {
-        "time": "2026-11-09T15:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-11-09T16:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-11-09T17:00",
+        "time": "2026-11-10T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-09T18:00",
+        "time": "2026-11-10T09:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-10T10:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-11-10T11:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-11-10T12:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-10T13:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-10T14:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-10T15:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-10T16:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-10T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T19:00",
+        "time": "2026-11-10T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T20:00",
+        "time": "2026-11-10T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T21:00",
+        "time": "2026-11-10T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T22:00",
+        "time": "2026-11-10T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-09T23:00",
+        "time": "2026-11-10T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-10T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-09T08:37:56+01:00"
+    "fetched_at": "2026-11-10T02:52:44+01:00"
   }
 }
