@@ -1,10 +1,35 @@
 {
   "generated": "2026-11-10",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-10",
+    "explanation": "Sometimes Saturn disappears. It doesn't really go away, of course -- it just\u00a0disappears\u00a0from our view when\u00a0Earth's Moon\u00a0moves in front. Such a\u00a0Saturnian eclipse, more formally called an\u00a0occultation, was visible in early 2025 along a small\u00a0swath\u00a0of\u00a0Earth\u00a0-- from\u00a0Greenland\u00a0through central\u00a0Europe\u00a0and into northern\u00a0Africa. The\u00a0featured image\u00a0is a digital fusion of three images, the first of just\u00a0Saturn\u00a0before it disappeared, and then two more of the Moon with\u00a0different exposure\u00a0lengths. The images were taken from\u00a0Sardinia,\u00a0Italy, after sunset. The bright dot near Saturn is not a\u00a0moon of Saturn, but rather the star\u00a085 Aquarii, which is further behind Saturn than Saturn is behind the Moon. The next time the\u00a0Moon\u00a0moves in front of Saturn, as visible from\u00a0some place on Earth, will be in 2031.\u00a0Tomorrow's picture:\u00a0small but mighty\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000txbi",
+        "title": "M5.2 Earthquake - 140 km ESE of Labuha, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-10T15:51:35.737000Z",
+        "coordinates": [
+          128.7092,
+          -0.9226
+        ]
+      },
+      {
+        "id": "us7000txb8",
+        "title": "M5.6 Earthquake - 43 km S of Puerto San Jos\u00e9, Guatemala",
+        "category": "Earthquake",
+        "date": "2026-11-10T14:54:17.647000Z",
+        "coordinates": [
+          -90.8798,
+          13.5381
+        ]
+      },
       {
         "id": "us7000tx9z",
         "title": "M5.0 Earthquake - 58 km NE of Fef, Indonesia",
@@ -134,26 +159,6 @@
           142.1175,
           34.9677
         ]
-      },
-      {
-        "id": "us7000tw8r",
-        "title": "M6.1 Earthquake - Fiji region",
-        "category": "Earthquake",
-        "date": "2026-11-05T17:21:45.305000Z",
-        "coordinates": [
-          -178.7145,
-          -21.1984
-        ]
-      },
-      {
-        "id": "us7000tw8p",
-        "title": "M5.0 Earthquake - 130 km NE of Thang, India",
-        "category": "Earthquake",
-        "date": "2026-11-05T16:56:25.875000Z",
-        "coordinates": [
-          77.9399,
-          35.6318
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.8,
-    "humidity": 90,
-    "condition": "Mist",
-    "description": "mist",
-    "icon": "50d",
+    "city": "Donji grad",
+    "temp_c": 11.7,
+    "feels_c": 11.4,
+    "humidity": 94,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04n",
     "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-11-10",
     "city": "Zagreb",
-    "temp_min_c": 10.4,
-    "temp_max_c": 13.7,
-    "humidity": 92,
+    "temp_min_c": 11.7,
+    "temp_max_c": 11.9,
+    "humidity": 94,
     "condition": "Rain",
     "description": "rain",
-    "icon": "50d",
-    "wind_kmh": 4.3,
-    "samples": 5
+    "icon": "04n",
+    "wind_kmh": 4.6,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-11",
     "city": "Zagreb",
-    "temp_min_c": 10.3,
-    "temp_max_c": 16.2,
+    "temp_min_c": 8.8,
+    "temp_max_c": 15.0,
     "humidity": 94,
     "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.5
+    "wind_kmh": 2.9
   },
   "forecast_day_after": {
     "date": "2026-11-12",
     "city": "Zagreb",
-    "temp_min_c": 10.3,
-    "temp_max_c": 14.2,
-    "humidity": 92,
+    "temp_min_c": 11.7,
+    "temp_max_c": 13.4,
+    "humidity": 94,
     "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 6.2
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 6.1
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 0.4,
+    "daily_max": 0.5,
     "peak_time": "2026-11-10T10:00",
-    "safe_minutes": 476,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,11 +336,11 @@
       },
       {
         "time": "2026-11-10T09:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-10T10:00",
-        "uv": 0.4
+        "uv": 0.5
       },
       {
         "time": "2026-11-10T11:00",
@@ -343,7 +348,7 @@
       },
       {
         "time": "2026-11-10T12:00",
-        "uv": 0.3
+        "uv": 0.4
       },
       {
         "time": "2026-11-10T13:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-10T10:12:47+01:00"
+    "fetched_at": "2026-11-10T18:28:11+01:00"
   }
 }
