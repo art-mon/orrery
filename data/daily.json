@@ -1,10 +1,50 @@
 {
   "generated": "2026-11-11",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000txm8",
+        "title": "M5.1 Earthquake - 82 km W of Panguna, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-11-11T17:38:23.985000Z",
+        "coordinates": [
+          154.7371,
+          -6.3016
+        ]
+      },
+      {
+        "id": "us7000txjg",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-11T15:39:25.949000Z",
+        "coordinates": [
+          -27.7366,
+          -56.0247
+        ]
+      },
+      {
+        "id": "us7000txis",
+        "title": "M5.1 Earthquake - 27 km WSW of Calama, Chile",
+        "category": "Earthquake",
+        "date": "2026-11-11T11:36:51.281000Z",
+        "coordinates": [
+          -69.1693,
+          -22.5427
+        ]
+      },
+      {
+        "id": "us7000txir",
+        "title": "M5.1 Earthquake - Pulau Pulau Tanimbar, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-11T11:32:24.685000Z",
+        "coordinates": [
+          130.2513,
+          -7.9445
+        ]
+      },
       {
         "id": "us7000txhi",
         "title": "M5.1 Earthquake - Balleny Islands region",
@@ -47,22 +87,22 @@
       },
       {
         "id": "us7000txbi",
-        "title": "M5.2 Earthquake - 140 km ESE of Labuha, Indonesia",
+        "title": "M5.1 Earthquake - 139 km ESE of Labuha, Indonesia",
         "category": "Earthquake",
-        "date": "2026-11-10T15:51:35.737000Z",
+        "date": "2026-11-10T15:51:35.658000Z",
         "coordinates": [
-          128.7092,
-          -0.9226
+          128.701,
+          -0.9034
         ]
       },
       {
         "id": "us7000txb8",
-        "title": "M5.6 Earthquake - 43 km S of Puerto San Jos\u00e9, Guatemala",
+        "title": "M5.5 Earthquake - 40 km S of Puerto San Jos\u00e9, Guatemala",
         "category": "Earthquake",
-        "date": "2026-11-10T14:54:17.647000Z",
+        "date": "2026-11-10T14:54:19.977000Z",
         "coordinates": [
-          -90.8798,
-          13.5381
+          -90.8534,
+          13.5622
         ]
       },
       {
@@ -113,46 +153,6 @@
         "coordinates": [
           130.3905,
           -3.0627
-        ]
-      },
-      {
-        "id": "us7000tx1f",
-        "title": "M5.7 Earthquake - 106 km ENE of Hasaki, Japan",
-        "category": "Earthquake",
-        "date": "2026-11-09T04:52:51.519000Z",
-        "coordinates": [
-          141.8299,
-          36.2471
-        ]
-      },
-      {
-        "id": "us7000tx16",
-        "title": "M6.4 Earthquake - 30 km WSW of Lata, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-11-09T03:34:59.466000Z",
-        "coordinates": [
-          165.5616,
-          -10.8669
-        ]
-      },
-      {
-        "id": "us7000tx0f",
-        "title": "M5.1 Earthquake - south of the Fiji Islands",
-        "category": "Earthquake",
-        "date": "2026-11-09T00:46:59.021000Z",
-        "coordinates": [
-          179.2119,
-          -23.6774
-        ]
-      },
-      {
-        "id": "us7000twus",
-        "title": "M5.1 Earthquake - 91 km ENE of Hihifo, Tonga",
-        "category": "Earthquake",
-        "date": "2026-11-07T23:27:09.444000Z",
-        "coordinates": [
-          -172.9847,
-          -15.6837
         ]
       }
     ]
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 7.6,
-    "humidity": 89,
+    "temp_c": 9.8,
+    "feels_c": 9.8,
+    "humidity": 90,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 7.4
+    "description": "broken clouds",
+    "icon": "04n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-11-11",
     "city": "Zagreb",
-    "temp_min_c": 8.7,
-    "temp_max_c": 10.9,
-    "humidity": 92,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 2.4,
-    "samples": 5
+    "temp_min_c": 9.8,
+    "temp_max_c": 10.4,
+    "humidity": 91,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "04n",
+    "wind_kmh": 2.9,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-12",
     "city": "Zagreb",
-    "temp_min_c": 11.0,
-    "temp_max_c": 12.9,
+    "temp_min_c": 10.8,
+    "temp_max_c": 16.8,
     "humidity": 95,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 4.9
+    "wind_kmh": 4.4
   },
   "forecast_day_after": {
     "date": "2026-11-13",
     "city": "Zagreb",
-    "temp_min_c": 6,
-    "temp_max_c": 14.0,
-    "humidity": 80,
-    "condition": "Clouds",
+    "temp_min_c": 5.6,
+    "temp_max_c": 13.4,
+    "humidity": 82,
+    "condition": "Rain",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 8.7
+    "wind_kmh": 8.6
   },
   "uv": {
-    "uv": 0.3,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 0.9,
+    "daily_max": 1.1,
     "peak_time": "2026-11-11T13:00",
-    "safe_minutes": 556,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -339,7 +339,7 @@
       },
       {
         "time": "2026-11-11T11:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-11T12:00",
@@ -347,7 +347,7 @@
       },
       {
         "time": "2026-11-11T13:00",
-        "uv": 0.9
+        "uv": 1.1
       },
       {
         "time": "2026-11-11T14:00",
@@ -355,7 +355,7 @@
       },
       {
         "time": "2026-11-11T15:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-11-11T16:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-11T11:17:13+01:00"
+    "fetched_at": "2026-11-11T19:21:03+01:00"
   }
 }
