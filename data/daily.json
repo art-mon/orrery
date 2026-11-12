@@ -1,7 +1,12 @@
 {
   "generated": "2026-11-12",
   "apod": {
-    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
+    "title": "NASA Science",
+    "date": "2026-11-12",
+    "explanation": "Not all those who wander are lost. A night sky example is that planets wander, and in fact the very word \"planet\" comes from \"wandering star\" in Greek. As planets shift relative to fixed stars, they may appear from our perspective to get closer to other astronomical objects. Such meetings are called conjunctions. They don't happen by chance, but follow the precise laws of celestial mechanics. This peaceful image, captured in Poland, shows the crescent Moon above the Tatra Mountains, and bright Venus close by, a little lower in the horizon. The bright star to the left of Venus is Spica in the constellation of Virgo, the Maiden. Spica is one of the brightest stars in the sky, only about 250 light-years away. It was found in 1890 that Spica is a binary star: two massive blue stars orbiting each other every 4 days. But earlier this year it was reported that Spica, the current companion of wandering Venus, is actually a triple system.Tomorrow's picture: what's next?\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,154 +247,50 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 12.6,
-    "feels_c": 12.4,
+    "city": "City of Zagreb",
+    "temp_c": 14.8,
+    "feels_c": 14.8,
     "humidity": 94,
     "condition": "Rain",
     "description": "light rain",
-    "icon": "10d",
+    "icon": "10n",
     "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-11-12",
-    "city": "Donji grad",
-    "temp_min_c": 12.3,
-    "temp_max_c": 13.6,
-    "humidity": 96,
+    "city": "Zagreb",
+    "temp_min_c": 14.1,
+    "temp_max_c": 14.8,
+    "humidity": 94,
     "condition": "Rain",
     "description": "rain",
-    "icon": "10d",
-    "wind_kmh": 5.9,
-    "samples": 5
+    "icon": "10n",
+    "wind_kmh": 7.2,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-13",
-    "city": "Donji grad",
-    "temp_min_c": 5.0,
-    "temp_max_c": 12.2,
-    "humidity": 82,
+    "city": "Zagreb",
+    "temp_min_c": 5.9,
+    "temp_max_c": 13.1,
+    "humidity": 84,
     "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 9.1
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 9.4
   },
   "forecast_day_after": {
     "date": "2026-11-14",
-    "city": "Donji grad",
-    "temp_min_c": 1.2,
-    "temp_max_c": 7.8,
-    "humidity": 76,
+    "city": "Zagreb",
+    "temp_min_c": 1.6,
+    "temp_max_c": 7.7,
+    "humidity": 77,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.8
+    "wind_kmh": 2.7
   },
   "uv": {
-    "uv": 0.6,
-    "band": "low",
-    "daily_max": 1.0,
-    "peak_time": "2026-11-12T12:00",
-    "safe_minutes": 303,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-11-12T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T06:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T07:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T08:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-12T09:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-12T10:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-11-12T11:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-11-12T12:00",
-        "uv": 1.0
-      },
-      {
-        "time": "2026-11-12T13:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-11-12T14:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-12T15:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-12T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-12T17:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T18:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T19:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T20:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T21:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-12T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-11-12T10:15:47+01:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
