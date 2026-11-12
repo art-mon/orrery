@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12",
+  "generated": "2026-11-13",
   "apod": {
     "title": "NASA Science",
     "date": "2026-11-12",
@@ -10,6 +10,26 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000txwp",
+        "title": "M5.8 Earthquake - 148 km NW of Kavieng, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-11-12T22:04:06.729000Z",
+        "coordinates": [
+          149.8877,
+          -1.5882
+        ]
+      },
+      {
+        "id": "us7000txw9",
+        "title": "M5.1 Earthquake - western Indian-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-12T21:09:14.685000Z",
+        "coordinates": [
+          139.5909,
+          -51.4273
+        ]
+      },
       {
         "id": "us7000txqr",
         "title": "M5.4 Earthquake - South Sandwich Islands region",
@@ -139,26 +159,6 @@
           132.859,
           -0.4928
         ]
-      },
-      {
-        "id": "us7000tx8s",
-        "title": "M5.2 Earthquake - 19 km WSW of Lata, Solomon Islands",
-        "category": "Earthquake",
-        "date": "2026-11-10T03:37:46.152000Z",
-        "coordinates": [
-          165.6239,
-          -10.7818
-        ]
-      },
-      {
-        "id": "us7000tx8d",
-        "title": "M5.4 Earthquake - Pulau Pulau Tanimbar, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-10T01:53:24.195000Z",
-        "coordinates": [
-          130.2935,
-          -7.8742
-        ]
       }
     ]
   },
@@ -247,50 +247,154 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 14.8,
-    "feels_c": 14.8,
+    "city": "Zagreb",
+    "temp_c": 14.2,
+    "feels_c": 14.2,
     "humidity": 94,
     "condition": "Rain",
     "description": "light rain",
     "icon": "10n",
-    "wind_kmh": 5.5
+    "wind_kmh": 11.1
   },
   "forecast_today": {
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "city": "Zagreb",
-    "temp_min_c": 14.1,
-    "temp_max_c": 14.8,
-    "humidity": 94,
+    "temp_min_c": 4.7,
+    "temp_max_c": 14.2,
+    "humidity": 83,
     "condition": "Rain",
     "description": "rain",
     "icon": "10n",
-    "wind_kmh": 7.2,
-    "samples": 3
+    "wind_kmh": 9.1,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-11-13",
-    "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 13.1,
-    "humidity": 84,
-    "condition": "Rain",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 9.4
-  },
-  "forecast_day_after": {
     "date": "2026-11-14",
     "city": "Zagreb",
-    "temp_min_c": 1.6,
-    "temp_max_c": 7.7,
-    "humidity": 77,
+    "temp_min_c": 1.5,
+    "temp_max_c": 7.8,
+    "humidity": 75,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.7
+    "wind_kmh": 3.5
+  },
+  "forecast_day_after": {
+    "date": "2026-11-15",
+    "city": "Zagreb",
+    "temp_min_c": -0.1,
+    "temp_max_c": 6.3,
+    "humidity": 82,
+    "condition": "Clouds",
+    "description": "broken clouds",
+    "icon": "04d",
+    "wind_kmh": 2.1
   },
   "uv": {
-    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 0.8,
+    "peak_time": "2026-11-13T12:00",
+    "safe_minutes": null,
+    "skin_type": 2,
+    "hourly": [
+      {
+        "time": "2026-11-13T00:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T01:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T02:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T03:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T04:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T05:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T06:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T07:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T08:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T09:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-13T10:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-13T11:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-11-13T12:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-11-13T13:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-11-13T14:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-11-13T15:00",
+        "uv": 0.3
+      },
+      {
+        "time": "2026-11-13T16:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-13T17:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T18:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T19:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T20:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T21:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T23:00",
+        "uv": 0.0
+      }
+    ],
+    "fetched_at": "2026-11-13T00:11:09+01:00"
   }
 }
