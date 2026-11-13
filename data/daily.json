@@ -2,7 +2,7 @@
   "generated": "2026-11-13",
   "apod": {
     "title": "NASA Science",
-    "date": "2026-11-12",
+    "date": "2026-11-13",
     "explanation": "Not all those who wander are lost. A night sky example is that planets wander, and in fact the very word \"planet\" comes from \"wandering star\" in Greek. As planets shift relative to fixed stars, they may appear from our perspective to get closer to other astronomical objects. Such meetings are called conjunctions. They don't happen by chance, but follow the precise laws of celestial mechanics. This peaceful image, captured in Poland, shows the crescent Moon above the Tatra Mountains, and bright Venus close by, a little lower in the horizon. The bright star to the left of Venus is Spica in the constellation of Virgo, the Maiden. Spica is one of the brightest stars in the sky, only about 250 light-years away. It was found in 1890 that Spica is a binary star: two massive blue stars orbiting each other every 4 days. But earlier this year it was reported that Spica, the current companion of wandering Venus, is actually a triple system.Tomorrow's picture: what's next?\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
@@ -10,6 +10,26 @@
   },
   "events": {
     "events": [
+      {
+        "id": "us7000txxl",
+        "title": "M5.0 Earthquake - 85 km W of Mwene-Ditu, Democratic Republic of the Congo",
+        "category": "Earthquake",
+        "date": "2026-11-13T01:12:46.186000Z",
+        "coordinates": [
+          22.68,
+          -6.9392
+        ]
+      },
+      {
+        "id": "us7000txx9",
+        "title": "M5.1 Earthquake - 39 km S of Mo\u00edres, Greece",
+        "category": "Earthquake",
+        "date": "2026-11-13T00:05:04.104000Z",
+        "coordinates": [
+          24.8798,
+          34.6967
+        ]
+      },
       {
         "id": "us7000txwp",
         "title": "M5.8 Earthquake - 148 km NW of Kavieng, Papua New Guinea",
@@ -139,63 +159,11 @@
           128.701,
           -0.9034
         ]
-      },
-      {
-        "id": "us7000txb8",
-        "title": "M5.5 Earthquake - 40 km S of Puerto San Jos\u00e9, Guatemala",
-        "category": "Earthquake",
-        "date": "2026-11-10T14:54:19.977000Z",
-        "coordinates": [
-          -90.8534,
-          13.5622
-        ]
-      },
-      {
-        "id": "us7000tx9z",
-        "title": "M5.0 Earthquake - 58 km NE of Fef, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-10T08:34:07.131000Z",
-        "coordinates": [
-          132.859,
-          -0.4928
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2017 VK1)",
-        "hazardous": false,
-        "diameter_m": 451,
-        "close_approach_date": "2026-11-12",
-        "miss_distance_km": 31036480,
-        "velocity_kmh": 55409
-      },
-      {
-        "name": "(2014 XQ3)",
-        "hazardous": false,
-        "diameter_m": 721,
-        "close_approach_date": "2026-11-12",
-        "miss_distance_km": 39453272,
-        "velocity_kmh": 56407
-      },
-      {
-        "name": "(2019 CO5)",
-        "hazardous": false,
-        "diameter_m": 330,
-        "close_approach_date": "2026-11-12",
-        "miss_distance_km": 61804959,
-        "velocity_kmh": 57793
-      },
-      {
-        "name": "(2017 WY)",
-        "hazardous": false,
-        "diameter_m": 156,
-        "close_approach_date": "2026-11-12",
-        "miss_distance_km": 71098940,
-        "velocity_kmh": 34330
-      },
       {
         "name": "363790 (2005 JE46)",
         "hazardous": true,
@@ -243,36 +211,68 @@
         "close_approach_date": "2026-11-13",
         "miss_distance_km": 58726203,
         "velocity_kmh": 21882
+      },
+      {
+        "name": "(2007 WX4)",
+        "hazardous": false,
+        "diameter_m": 522,
+        "close_approach_date": "2026-11-13",
+        "miss_distance_km": 71107175,
+        "velocity_kmh": 51407
+      },
+      {
+        "name": "(2016 ED156)",
+        "hazardous": false,
+        "diameter_m": 115,
+        "close_approach_date": "2026-11-13",
+        "miss_distance_km": 72990676,
+        "velocity_kmh": 69655
+      },
+      {
+        "name": "218017 (2001 XV266)",
+        "hazardous": false,
+        "diameter_m": 646,
+        "close_approach_date": "2026-11-14",
+        "miss_distance_km": 15974992,
+        "velocity_kmh": 26163
+      },
+      {
+        "name": "274138 (2008 FU6)",
+        "hazardous": false,
+        "diameter_m": 1660,
+        "close_approach_date": "2026-11-14",
+        "miss_distance_km": 24877673,
+        "velocity_kmh": 62555
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 14.2,
-    "feels_c": 14.2,
-    "humidity": 94,
+    "temp_c": 12.6,
+    "feels_c": 12.3,
+    "humidity": 92,
     "condition": "Rain",
-    "description": "light rain",
+    "description": "moderate rain",
     "icon": "10n",
-    "wind_kmh": 11.1
+    "wind_kmh": 14.8
   },
   "forecast_today": {
     "date": "2026-11-13",
-    "city": "Zagreb",
-    "temp_min_c": 4.7,
-    "temp_max_c": 14.2,
-    "humidity": 83,
+    "city": "Donji grad",
+    "temp_min_c": 5.4,
+    "temp_max_c": 12.6,
+    "humidity": 81,
     "condition": "Rain",
     "description": "rain",
     "icon": "10n",
-    "wind_kmh": 9.1,
-    "samples": 9
+    "wind_kmh": 9.6,
+    "samples": 7
   },
   "forecast": {
     "date": "2026-11-14",
-    "city": "Zagreb",
-    "temp_min_c": 1.5,
-    "temp_max_c": 7.8,
+    "city": "Donji grad",
+    "temp_min_c": 1.6,
+    "temp_max_c": 9.2,
     "humidity": 75,
     "condition": "Clear",
     "description": "clear sky",
@@ -281,20 +281,20 @@
   },
   "forecast_day_after": {
     "date": "2026-11-15",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": -0.1,
-    "temp_max_c": 6.3,
-    "humidity": 82,
+    "temp_max_c": 5.3,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "broken clouds",
+    "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 2.1
+    "wind_kmh": 1.9
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 0.8,
-    "peak_time": "2026-11-13T12:00",
+    "daily_max": 0.9,
+    "peak_time": "2026-11-13T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -340,7 +340,7 @@
       },
       {
         "time": "2026-11-13T10:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-11-13T11:00",
@@ -348,23 +348,23 @@
       },
       {
         "time": "2026-11-13T12:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-11-13T13:00",
         "uv": 0.4
       },
       {
+        "time": "2026-11-13T13:00",
+        "uv": 0.9
+      },
+      {
         "time": "2026-11-13T14:00",
-        "uv": 0.3
+        "uv": 0.7
       },
       {
         "time": "2026-11-13T15:00",
-        "uv": 0.3
+        "uv": 0.6
       },
       {
         "time": "2026-11-13T16:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-11-13T17:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-13T00:11:09+01:00"
+    "fetched_at": "2026-11-13T05:58:50+01:00"
   }
 }
