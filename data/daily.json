@@ -1,15 +1,50 @@
 {
   "generated": "2026-11-13",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-13",
-    "explanation": "The large stellar association cataloged as NGC 206 is nestled within the dusty arms of the neighboring Andromeda galaxy along with the galaxy's pinkish star-forming regions. Also known as M31, the spiral galaxy is a mere 2.5 million light-years away. NGC 206 is found at the center of this sharp and detailed close-up of the southwestern extent of Andromeda's disk. The bright, blue stars of NGC 206 indicate its youth. In fact, its youngest massive stars are less than 10 million years old. Much larger than the open or galactic clusters of young stars in the disk of our Milky Way galaxy, NGC 206 spans about 4,000 light-years. That's comparable in size to the giant stellar nurseries NGC 604 in nearby spiral M33 and the Tarantula Nebula in the Large Magellanic Cloud.Tomorrow's picture: pixels in space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000ty3q",
+        "title": "M5.1 Earthquake - South Sandwich Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-13T19:04:07.703000Z",
+        "coordinates": [
+          -25.7253,
+          -58.962
+        ]
+      },
+      {
+        "id": "us7000ty1a",
+        "title": "M5.8 Earthquake - 79 km WSW of Changuillo, Peru",
+        "category": "Earthquake",
+        "date": "2026-11-13T16:43:02.131000Z",
+        "coordinates": [
+          -75.8807,
+          -14.9934
+        ]
+      },
+      {
+        "id": "us7000ty14",
+        "title": "M5.2 Earthquake - 79 km NE of Kuqa, China",
+        "category": "Earthquake",
+        "date": "2026-11-13T16:17:51.680000Z",
+        "coordinates": [
+          83.6657,
+          42.1734
+        ]
+      },
+      {
+        "id": "us7000ty0s",
+        "title": "M5.2 Earthquake - West Chile Rise",
+        "category": "Earthquake",
+        "date": "2026-11-13T14:12:47.843000Z",
+        "coordinates": [
+          -97.9785,
+          -36.4434
+        ]
+      },
       {
         "id": "us7000txxl",
         "title": "M5.0 Earthquake - 85 km W of Mwene-Ditu, Democratic Republic of the Congo",
@@ -61,23 +96,13 @@
         ]
       },
       {
-        "id": "us7000txmq",
-        "title": "M5.0 Earthquake - 48 km NW of Ancud, Chile",
-        "category": "Earthquake",
-        "date": "2026-11-11T19:21:17.374000Z",
-        "coordinates": [
-          -74.1759,
-          -41.5234
-        ]
-      },
-      {
         "id": "us7000txm8",
-        "title": "M5.1 Earthquake - 80 km W of Panguna, Papua New Guinea",
+        "title": "M5.1 Earthquake - 81 km W of Panguna, Papua New Guinea",
         "category": "Earthquake",
-        "date": "2026-11-11T17:38:22.582000Z",
+        "date": "2026-11-11T17:38:24.225000Z",
         "coordinates": [
-          154.7612,
-          -6.3288
+          154.7513,
+          -6.3292
         ]
       },
       {
@@ -128,36 +153,6 @@
         "coordinates": [
           149.4063,
           44.3915
-        ]
-      },
-      {
-        "id": "us7000txc0",
-        "title": "M5.2 Earthquake - 21 km WNW of Popondetta, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-11-10T17:36:49.391000Z",
-        "coordinates": [
-          148.0429,
-          -8.7206
-        ]
-      },
-      {
-        "id": "us7000txc3",
-        "title": "M5.2 Earthquake - Mid-Indian Ridge",
-        "category": "Earthquake",
-        "date": "2026-11-10T17:36:28.861000Z",
-        "coordinates": [
-          68.4755,
-          -20.7528
-        ]
-      },
-      {
-        "id": "us7000txbi",
-        "title": "M5.1 Earthquake - 139 km ESE of Labuha, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-10T15:51:35.658000Z",
-        "coordinates": [
-          128.701,
-          -0.9034
         ]
       }
     ]
@@ -247,50 +242,154 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 9.8,
-    "feels_c": 8.0,
-    "humidity": 65,
+    "city": "Zagreb",
+    "temp_c": 5.9,
+    "feels_c": 4.4,
+    "humidity": 81,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 13.0
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-11-13",
-    "city": "City of Zagreb",
-    "temp_min_c": 6.4,
-    "temp_max_c": 9.8,
-    "humidity": 74,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "01d",
-    "wind_kmh": 5.7,
-    "samples": 4
+    "city": "Zagreb",
+    "temp_min_c": 5.9,
+    "temp_max_c": 5.9,
+    "humidity": 81,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "01n",
+    "wind_kmh": 4.8,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-14",
-    "city": "City of Zagreb",
-    "temp_min_c": 1.8,
+    "city": "Zagreb",
+    "temp_min_c": 1.9,
     "temp_max_c": 9.1,
-    "humidity": 75,
+    "humidity": 76,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.3
+    "wind_kmh": 3.2
   },
   "forecast_day_after": {
     "date": "2026-11-15",
-    "city": "City of Zagreb",
-    "temp_min_c": -0.2,
-    "temp_max_c": 6.1,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_min_c": 0.7,
+    "temp_max_c": 4.8,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.5
+    "wind_kmh": 1.9
   },
   "uv": {
-    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 1.4,
+    "peak_time": "2026-11-13T13:00",
+    "safe_minutes": null,
+    "skin_type": 2,
+    "hourly": [
+      {
+        "time": "2026-11-13T00:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T01:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T02:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T03:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T04:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T05:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T06:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T07:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T08:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T09:00",
+        "uv": 0.1
+      },
+      {
+        "time": "2026-11-13T10:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-11-13T11:00",
+        "uv": 0.6
+      },
+      {
+        "time": "2026-11-13T12:00",
+        "uv": 0.5
+      },
+      {
+        "time": "2026-11-13T13:00",
+        "uv": 1.4
+      },
+      {
+        "time": "2026-11-13T14:00",
+        "uv": 0.7
+      },
+      {
+        "time": "2026-11-13T15:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-13T16:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-13T17:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T18:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T19:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T20:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T21:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-13T23:00",
+        "uv": 0.0
+      }
+    ],
+    "fetched_at": "2026-11-13T21:21:09+01:00"
   }
 }
