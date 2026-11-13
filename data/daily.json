@@ -3,7 +3,7 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-11-13",
-    "explanation": "Not all those who wander are lost. A night sky example is that planets wander, and in fact the very word \"planet\" comes from \"wandering star\" in Greek. As planets shift relative to fixed stars, they may appear from our perspective to get closer to other astronomical objects. Such meetings are called conjunctions. They don't happen by chance, but follow the precise laws of celestial mechanics. This peaceful image, captured in Poland, shows the crescent Moon above the Tatra Mountains, and bright Venus close by, a little lower in the horizon. The bright star to the left of Venus is Spica in the constellation of Virgo, the Maiden. Spica is one of the brightest stars in the sky, only about 250 light-years away. It was found in 1890 that Spica is a binary star: two massive blue stars orbiting each other every 4 days. But earlier this year it was reported that Spica, the current companion of wandering Venus, is actually a triple system.Tomorrow's picture: what's next?\t\t\t\t\t\t",
+    "explanation": "The large stellar association cataloged as NGC 206 is nestled within the dusty arms of the neighboring Andromeda galaxy along with the galaxy's pinkish star-forming regions. Also known as M31, the spiral galaxy is a mere 2.5 million light-years away. NGC 206 is found at the center of this sharp and detailed close-up of the southwestern extent of Andromeda's disk. The bright, blue stars of NGC 206 indicate its youth. In fact, its youngest massive stars are less than 10 million years old. Much larger than the open or galactic clusters of young stars in the disk of our Milky Way galaxy, NGC 206 spans about 4,000 light-years. That's comparable in size to the giant stellar nurseries NGC 604 in nearby spiral M33 and the Tarantula Nebula in the Large Magellanic Cloud.Tomorrow's picture: pixels in space\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
@@ -247,154 +247,50 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 12.6,
-    "feels_c": 12.3,
-    "humidity": 92,
-    "condition": "Rain",
-    "description": "moderate rain",
-    "icon": "10n",
-    "wind_kmh": 14.8
+    "city": "City of Zagreb",
+    "temp_c": 9.8,
+    "feels_c": 8.0,
+    "humidity": 65,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01d",
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-11-13",
-    "city": "Donji grad",
-    "temp_min_c": 5.4,
-    "temp_max_c": 12.6,
-    "humidity": 81,
-    "condition": "Rain",
-    "description": "rain",
-    "icon": "10n",
-    "wind_kmh": 9.6,
-    "samples": 7
+    "city": "City of Zagreb",
+    "temp_min_c": 6.4,
+    "temp_max_c": 9.8,
+    "humidity": 74,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "01d",
+    "wind_kmh": 5.7,
+    "samples": 4
   },
   "forecast": {
     "date": "2026-11-14",
-    "city": "Donji grad",
-    "temp_min_c": 1.6,
-    "temp_max_c": 9.2,
+    "city": "City of Zagreb",
+    "temp_min_c": 1.8,
+    "temp_max_c": 9.1,
     "humidity": 75,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 3.5
+    "wind_kmh": 3.3
   },
   "forecast_day_after": {
     "date": "2026-11-15",
-    "city": "Donji grad",
-    "temp_min_c": -0.1,
-    "temp_max_c": 5.3,
-    "humidity": 85,
+    "city": "City of Zagreb",
+    "temp_min_c": -0.2,
+    "temp_max_c": 6.1,
+    "humidity": 81,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.9
+    "wind_kmh": 1.5
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 0.9,
-    "peak_time": "2026-11-13T13:00",
-    "safe_minutes": null,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-11-13T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T06:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T07:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T08:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T09:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-13T10:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-11-13T11:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-11-13T12:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-11-13T13:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-11-13T14:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-11-13T15:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-11-13T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-13T17:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T18:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T19:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T20:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T21:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-13T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-11-13T05:58:50+01:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
