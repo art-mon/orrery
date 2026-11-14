@@ -1,12 +1,7 @@
 {
   "generated": "2026-11-14",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-14",
-    "explanation": "Put on your red/blue glasses and gaze across the western Ocean of Storms on the surface of the Moon. The 3D anaglyph shows Apollo 12 astronaut Pete Conrad visiting the Surveyor 3 spacecraft in November of 1969. Surveyor 3 had landedat the site on the inside slope of a small crater about 2 1/2 years earlier in April of 1967. Visible on the horizon beyond the far crater wall, Apollo 12's Lunar Module Intrepid touched down less than 200 meters (650 feet) away, easy moonwalking distance from the robotic Surveyor spacecraft. This stereo image was carefully created from two separate pictures (AS12-48-7133, AS12-48-7134) captured on the lunar surface. They depict the scene from only slightly different viewpoints, approximating the separation between human eyes.Tomorrow's picture: meteors through Orion\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
@@ -247,26 +242,26 @@
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 8.7,
-    "feels_c": 7.6,
-    "humidity": 63,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 7.4
+    "city": "Zagreb",
+    "temp_c": 3.7,
+    "feels_c": 2.4,
+    "humidity": 83,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50n",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-11-14",
     "city": "Donji grad",
-    "temp_min_c": 5.2,
-    "temp_max_c": 8.7,
-    "humidity": 69,
-    "condition": "Clear",
-    "description": "clear",
-    "icon": "01n",
-    "wind_kmh": 4.7,
-    "samples": 3
+    "temp_min_c": 3.7,
+    "temp_max_c": 3.7,
+    "humidity": 83,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50n",
+    "wind_kmh": 4.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-15",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-14T16:31:34+01:00"
+    "fetched_at": "2026-11-14T21:23:42+01:00"
   }
 }
