@@ -11,6 +11,16 @@
   "events": {
     "events": [
       {
+        "id": "us7000ty84",
+        "title": "M5.5 Earthquake - northern Mid-Atlantic Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-14T09:26:13.073000Z",
+        "coordinates": [
+          -42.6346,
+          30.122
+        ]
+      },
+      {
         "id": "us7000ty7d",
         "title": "M5.2 Earthquake - State of Yap, Federated States of Micronesia",
         "category": "Earthquake",
@@ -149,16 +159,6 @@
           -27.7366,
           -56.0247
         ]
-      },
-      {
-        "id": "us7000txis",
-        "title": "M5.1 Earthquake - 27 km WSW of Calama, Chile",
-        "category": "Earthquake",
-        "date": "2026-11-11T11:36:51.281000Z",
-        "coordinates": [
-          -69.1693,
-          -22.5427
-        ]
       }
     ]
   },
@@ -247,50 +247,154 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 0.7,
-    "feels_c": -1.7,
-    "humidity": 100,
-    "condition": "Fog",
-    "description": "fog",
-    "icon": "50d",
+    "city": "City of Zagreb",
+    "temp_c": 8.7,
+    "feels_c": 7.6,
+    "humidity": 63,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
     "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-11-14",
     "city": "Donji grad",
-    "temp_min_c": 0.7,
-    "temp_max_c": 5.6,
-    "humidity": 89,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "50d",
-    "wind_kmh": 3.7,
-    "samples": 6
+    "temp_min_c": 5.2,
+    "temp_max_c": 8.7,
+    "humidity": 69,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 4.7,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-15",
     "city": "Donji grad",
-    "temp_min_c": 1.8,
-    "temp_max_c": 8.0,
-    "humidity": 82,
+    "temp_min_c": 1.5,
+    "temp_max_c": 6.7,
+    "humidity": 83,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 1.9
+    "wind_kmh": 1.8
   },
   "forecast_day_after": {
     "date": "2026-11-16",
     "city": "Donji grad",
-    "temp_min_c": 3.6,
-    "temp_max_c": 7.3,
-    "humidity": 93,
+    "temp_min_c": 5.0,
+    "temp_max_c": 8.2,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 3.0
+    "wind_kmh": 4.2
   },
   "uv": {
-    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
+    "uv": 0.0,
+    "band": "low",
+    "daily_max": 2.4,
+    "peak_time": "2026-11-14T12:00",
+    "safe_minutes": null,
+    "skin_type": 2,
+    "hourly": [
+      {
+        "time": "2026-11-14T00:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T01:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T02:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T03:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T04:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T05:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T06:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T07:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T08:00",
+        "uv": 0.2
+      },
+      {
+        "time": "2026-11-14T09:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-11-14T10:00",
+        "uv": 1.6
+      },
+      {
+        "time": "2026-11-14T11:00",
+        "uv": 2.1
+      },
+      {
+        "time": "2026-11-14T12:00",
+        "uv": 2.4
+      },
+      {
+        "time": "2026-11-14T13:00",
+        "uv": 2.2
+      },
+      {
+        "time": "2026-11-14T14:00",
+        "uv": 1.8
+      },
+      {
+        "time": "2026-11-14T15:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-11-14T16:00",
+        "uv": 0.4
+      },
+      {
+        "time": "2026-11-14T17:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T18:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T19:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T20:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T21:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T22:00",
+        "uv": 0.0
+      },
+      {
+        "time": "2026-11-14T23:00",
+        "uv": 0.0
+      }
+    ],
+    "fetched_at": "2026-11-14T16:31:34+01:00"
   }
 }
