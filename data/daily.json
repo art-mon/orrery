@@ -1,15 +1,20 @@
 {
-  "generated": "2026-11-15",
+  "generated": "2026-11-16",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-15",
-    "explanation": "Where will the next meteor appear? Even during a meteor shower, it is practically impossible to know. Therefore, a good way to enjoy a meteor shower is to find a place where you can sit comfortably and monitor a great expanse of dark sky. And it may be satisfying to share this experience with a friend. The meteor shower depicted was the 2022 Leonids and the view is from Hainan, China looking out over the South China Sea. Meteor streaks captured over a few hours were isolated and added to a foreground image recorded earlier. Leonid meteor streaks trace back to the constellation of Leo and were here seen streaking across the constellation of Orion. The bright red planet Mars appears near the top of the image. The Leonids peak in mid-November every year and so will peak again this week. Bonding over their love of astronomy, the two pictured meteor enthusiasts, shown celebrating their common birthday this month, were later married.Tomorrow's picture: open space",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tyg6",
+        "title": "M5.0 Earthquake - 256 km SSE of Ambon, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-15T20:51:56.298000Z",
+        "coordinates": [
+          128.7523,
+          -5.9449
+        ]
+      },
       {
         "id": "us7000tyfh",
         "title": "M5.0 Earthquake - 74 km N of P\u0101r\u016bn, Afghanistan",
@@ -149,29 +154,11 @@
           24.8798,
           34.6967
         ]
-      },
-      {
-        "id": "us7000txwp",
-        "title": "M5.8 Earthquake - 148 km NW of Kavieng, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-11-12T22:04:06.729000Z",
-        "coordinates": [
-          149.8877,
-          -1.5882
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 HW3)",
-        "hazardous": false,
-        "diameter_m": 59,
-        "close_approach_date": "2026-11-15",
-        "miss_distance_km": 18114579,
-        "velocity_kmh": 31907
-      },
       {
         "name": "(2005 WD)",
         "hazardous": true,
@@ -243,158 +230,62 @@
         "close_approach_date": "2026-11-17",
         "miss_distance_km": 67478263,
         "velocity_kmh": 73078
+      },
+      {
+        "name": "(2005 GR33)",
+        "hazardous": false,
+        "diameter_m": 222,
+        "close_approach_date": "2026-11-17",
+        "miss_distance_km": 71243086,
+        "velocity_kmh": 83399
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 4.8,
+    "temp_c": 3.7,
     "feels_c": 3.7,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03n",
-    "wind_kmh": 5.5
+    "humidity": 89,
+    "condition": "Fog",
+    "description": "fog",
+    "icon": "50n",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
-    "date": "2026-11-15",
-    "city": "Zagreb",
-    "temp_min_c": 4.8,
-    "temp_max_c": 4.8,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "03n",
-    "wind_kmh": 4.2,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-11-16",
     "city": "Zagreb",
-    "temp_min_c": 2.1,
-    "temp_max_c": 10.6,
-    "humidity": 88,
+    "temp_min_c": 3.3,
+    "temp_max_c": 8.6,
+    "humidity": 92,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 2.9
+    "description": "clouds",
+    "icon": "50n",
+    "wind_kmh": 2.5,
+    "samples": 8
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-11-17",
     "city": "Zagreb",
-    "temp_min_c": 5.1,
-    "temp_max_c": 13.8,
-    "humidity": 89,
+    "temp_min_c": 4.4,
+    "temp_max_c": 13.3,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.9
+    "wind_kmh": 11.5
+  },
+  "forecast_day_after": {
+    "date": "2026-11-18",
+    "city": "Zagreb",
+    "temp_min_c": 7.1,
+    "temp_max_c": 14.1,
+    "humidity": 87,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 4.0
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 1.2,
-    "peak_time": "2026-11-15T11:00",
-    "safe_minutes": null,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-11-15T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T06:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T07:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T08:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-11-15T09:00",
-        "uv": 0.7
-      },
-      {
-        "time": "2026-11-15T10:00",
-        "uv": 1.1
-      },
-      {
-        "time": "2026-11-15T11:00",
-        "uv": 1.2
-      },
-      {
-        "time": "2026-11-15T12:00",
-        "uv": 0.6
-      },
-      {
-        "time": "2026-11-15T13:00",
-        "uv": 0.3
-      },
-      {
-        "time": "2026-11-15T14:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-11-15T15:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-15T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-15T17:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T18:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T19:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T20:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T21:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-15T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-11-15T21:47:47+01:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
