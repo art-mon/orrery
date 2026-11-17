@@ -1,15 +1,20 @@
 {
   "generated": "2026-11-17",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-17",
-    "explanation": "Are these two giant arches battling for control of the sky? No, but it sure looks like it! The arch on the left is the central band of our\u00a0Milky Way Galaxy, an ancient system of stars, gas, and dust that predates\u00a0our Earth\u00a0and is very far away. The arch on the right, by contrast, is an\u00a0auroral ribbon\u00a0that is only hours old, composed of energized\u00a0atoms and molecules, and is close by -- right in\u00a0Earth's upper atmosphere. These chance-superposed\u00a0titans have\u00a0our Sun\u00a0in common, a\u00a0stellar member\u00a0of the\u00a0Milky Way\u00a0that ejects energetic particles which create\u00a0auroras. Far behind the middle of the\u00a0auroral arch\u00a0is the\u00a0Big Dipper. Even farther in the distance is the\u00a0Andromeda galaxy\u00a0-- the bright spot near the top of the frame, just left of center. The\u00a0featured image\u00a0was taken about a month ago from\u00a0Kval\u00f8ya\u00a0in northern\u00a0Norway.Tomorrow's picture:\u00a0open space\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tysq",
+        "title": "M5.2 Earthquake - south of the Kermadec Islands",
+        "category": "Earthquake",
+        "date": "2026-11-17T14:20:36.814000Z",
+        "coordinates": [
+          179.8423,
+          -32.3057
+        ]
+      },
       {
         "id": "us7000tyq5",
         "title": "M5.0 Earthquake - 137 km SSE of Kirakira, Solomon Islands",
@@ -149,16 +154,6 @@
           149.92,
           -1.5038
         ]
-      },
-      {
-        "id": "us7000ty3q",
-        "title": "M5.1 Earthquake - South Sandwich Islands region",
-        "category": "Earthquake",
-        "date": "2026-11-13T19:04:07.703000Z",
-        "coordinates": [
-          -25.7253,
-          -58.962
-        ]
       }
     ]
   },
@@ -248,53 +243,53 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 9.9,
-    "feels_c": 9.5,
-    "humidity": 88,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 5.5
+    "temp_c": 14.2,
+    "feels_c": 13.7,
+    "humidity": 77,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-11-17",
-    "city": "Zagreb",
-    "temp_min_c": 8.1,
-    "temp_max_c": 10.5,
-    "humidity": 87,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 12.7,
-    "samples": 5
+    "city": "City of Zagreb",
+    "temp_min_c": 14.2,
+    "temp_max_c": 14.8,
+    "humidity": 76,
+    "condition": "Rain",
+    "description": "rain",
+    "icon": "10n",
+    "wind_kmh": 8.4,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-18",
-    "city": "Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 14.7,
-    "humidity": 88,
+    "city": "City of Zagreb",
+    "temp_min_c": 8.7,
+    "temp_max_c": 14.1,
+    "humidity": 91,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 7.1
+    "wind_kmh": 6.4
   },
   "forecast_day_after": {
     "date": "2026-11-19",
-    "city": "Zagreb",
-    "temp_min_c": 6.6,
-    "temp_max_c": 13.6,
-    "humidity": 88,
+    "city": "City of Zagreb",
+    "temp_min_c": 7.0,
+    "temp_max_c": 12.1,
+    "humidity": 92,
     "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 9.1
+    "wind_kmh": 5.0
   },
   "uv": {
-    "uv": 0.1,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 0.7,
-    "peak_time": "2026-11-17T09:00",
+    "daily_max": 1.0,
+    "peak_time": "2026-11-17T10:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
@@ -340,11 +335,11 @@
       },
       {
         "time": "2026-11-17T10:00",
-        "uv": 0.7
+        "uv": 1.0
       },
       {
         "time": "2026-11-17T11:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-17T12:00",
@@ -352,7 +347,7 @@
       },
       {
         "time": "2026-11-17T13:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-17T14:00",
@@ -364,7 +359,7 @@
       },
       {
         "time": "2026-11-17T16:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-17T17:00",
@@ -395,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-17T11:08:42+01:00"
+    "fetched_at": "2026-11-17T20:35:17+01:00"
   }
 }
