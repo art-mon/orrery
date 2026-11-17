@@ -1,10 +1,20 @@
 {
-  "generated": "2026-11-16",
+  "generated": "2026-11-17",
   "apod": {
     "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tymu",
+        "title": "M6.6 Earthquake - 148 km WSW of Tual, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-16T21:11:20.515000Z",
+        "coordinates": [
+          131.4868,
+          -6.0804
+        ]
+      },
       {
         "id": "us7000tykh",
         "title": "M5.4 Earthquake - 95 km WSW of Changuillo, Peru",
@@ -144,37 +154,11 @@
           -75.8807,
           -14.9934
         ]
-      },
-      {
-        "id": "us7000ty14",
-        "title": "M5.2 Earthquake - 79 km NE of Kuqa, China",
-        "category": "Earthquake",
-        "date": "2026-11-13T16:17:51.680000Z",
-        "coordinates": [
-          83.6657,
-          42.1734
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2005 WD)",
-        "hazardous": true,
-        "diameter_m": 244,
-        "close_approach_date": "2026-11-16",
-        "miss_distance_km": 19492290,
-        "velocity_kmh": 65429
-      },
-      {
-        "name": "(2019 HK4)",
-        "hazardous": false,
-        "diameter_m": 327,
-        "close_approach_date": "2026-11-16",
-        "miss_distance_km": 21212582,
-        "velocity_kmh": 79447
-      },
       {
         "name": "(2019 XL)",
         "hazardous": false,
@@ -238,158 +222,174 @@
         "close_approach_date": "2026-11-17",
         "miss_distance_km": 71243086,
         "velocity_kmh": 83399
+      },
+      {
+        "name": "(2019 WT1)",
+        "hazardous": false,
+        "diameter_m": 26,
+        "close_approach_date": "2026-11-18",
+        "miss_distance_km": 7541684,
+        "velocity_kmh": 35086
+      },
+      {
+        "name": "(2009 WD54)",
+        "hazardous": false,
+        "diameter_m": 12,
+        "close_approach_date": "2026-11-18",
+        "miss_distance_km": 9415085,
+        "velocity_kmh": 33744
       }
     ]
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 7.6,
-    "feels_c": 5.9,
-    "humidity": 91,
+    "temp_c": 6.5,
+    "feels_c": 6.5,
+    "humidity": 93,
     "condition": "Fog",
     "description": "fog",
     "icon": "50n",
-    "wind_kmh": 9.3
+    "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-11-16",
-    "city": "City of Zagreb",
-    "temp_min_c": 7.0,
-    "temp_max_c": 7.7,
-    "humidity": 92,
+    "date": "2026-11-17",
+    "city": "Zagreb",
+    "temp_min_c": 5.8,
+    "temp_max_c": 16.0,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "50n",
-    "wind_kmh": 3.7,
-    "samples": 3
+    "wind_kmh": 9.3,
+    "samples": 8
   },
   "forecast": {
-    "date": "2026-11-17",
-    "city": "City of Zagreb",
-    "temp_min_c": 5.6,
-    "temp_max_c": 12.7,
-    "humidity": 87,
+    "date": "2026-11-18",
+    "city": "Zagreb",
+    "temp_min_c": 7.8,
+    "temp_max_c": 14.4,
+    "humidity": 90,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 11.3
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.9
   },
   "forecast_day_after": {
-    "date": "2026-11-18",
-    "city": "City of Zagreb",
-    "temp_min_c": 8.2,
-    "temp_max_c": 15.6,
-    "humidity": 88,
+    "date": "2026-11-19",
+    "city": "Zagreb",
+    "temp_min_c": 6.6,
+    "temp_max_c": 12.1,
+    "humidity": 91,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 5.8
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 5.6
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 0.8,
-    "peak_time": "2026-11-16T15:00",
+    "daily_max": 1.3,
+    "peak_time": "2026-11-17T10:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-16T00:00",
+        "time": "2026-11-17T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T01:00",
+        "time": "2026-11-17T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T02:00",
+        "time": "2026-11-17T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T03:00",
+        "time": "2026-11-17T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T04:00",
+        "time": "2026-11-17T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T05:00",
+        "time": "2026-11-17T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T06:00",
+        "time": "2026-11-17T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T07:00",
+        "time": "2026-11-17T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T08:00",
+        "time": "2026-11-17T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-16T09:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-16T10:00",
+        "time": "2026-11-17T09:00",
         "uv": 0.7
       },
       {
-        "time": "2026-11-16T11:00",
+        "time": "2026-11-17T10:00",
+        "uv": 1.3
+      },
+      {
+        "time": "2026-11-17T11:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-16T12:00",
-        "uv": 0.3
+        "time": "2026-11-17T12:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-11-16T13:00",
-        "uv": 0.3
+        "time": "2026-11-17T13:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-11-16T14:00",
-        "uv": 0.3
+        "time": "2026-11-17T14:00",
+        "uv": 0.2
       },
       {
-        "time": "2026-11-16T15:00",
-        "uv": 0.8
+        "time": "2026-11-17T15:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-11-16T16:00",
-        "uv": 0.3
+        "time": "2026-11-17T16:00",
+        "uv": 0.1
       },
       {
-        "time": "2026-11-16T17:00",
+        "time": "2026-11-17T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T18:00",
+        "time": "2026-11-17T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T19:00",
+        "time": "2026-11-17T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T20:00",
+        "time": "2026-11-17T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T21:00",
+        "time": "2026-11-17T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T22:00",
+        "time": "2026-11-17T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-16T23:00",
+        "time": "2026-11-17T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-16T18:54:35+01:00"
+    "fetched_at": "2026-11-17T02:32:45+01:00"
   }
 }
