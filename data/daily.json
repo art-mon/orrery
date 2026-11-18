@@ -1,10 +1,50 @@
 {
   "generated": "2026-11-18",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us7000tz37",
+        "title": "M6.1 Earthquake - Pacific-Antarctic Ridge",
+        "category": "Earthquake",
+        "date": "2026-11-18T19:14:23.713000Z",
+        "coordinates": [
+          -146.746,
+          -57.7514
+        ]
+      },
+      {
+        "id": "us7000tz2w",
+        "title": "M5.0 Earthquake - 46 km NNE of Kilimatinde, Tanzania",
+        "category": "Earthquake",
+        "date": "2026-11-18T18:08:00.785000Z",
+        "coordinates": [
+          35.1065,
+          -5.4599
+        ]
+      },
+      {
+        "id": "us7000tz1n",
+        "title": "M5.3 Earthquake - 4 km NNW of Tsunagi, Japan",
+        "category": "Earthquake",
+        "date": "2026-11-18T17:22:23.454000Z",
+        "coordinates": [
+          130.4609,
+          32.2779
+        ]
+      },
+      {
+        "id": "us7000tz1a",
+        "title": "M5.3 Earthquake - 149 km SSW of Merizo Village, Guam",
+        "category": "Earthquake",
+        "date": "2026-11-18T16:06:51.220000Z",
+        "coordinates": [
+          143.9927,
+          12.0918
+        ]
+      },
       {
         "id": "us7000tyyw",
         "title": "M5.2 Earthquake - 86 km NW of Ry\u014dtsu-minato, Japan",
@@ -114,46 +154,6 @@
           162.5497,
           -11.5293
         ]
-      },
-      {
-        "id": "us7000tymu",
-        "title": "M6.6 Earthquake - 148 km WSW of Tual, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-16T21:11:20.376000Z",
-        "coordinates": [
-          131.4868,
-          -6.0602
-        ]
-      },
-      {
-        "id": "us7000tykh",
-        "title": "M5.4 Earthquake - 95 km WSW of Changuillo, Peru",
-        "category": "Earthquake",
-        "date": "2026-11-16T16:16:45.265000Z",
-        "coordinates": [
-          -76.0259,
-          -15.0306
-        ]
-      },
-      {
-        "id": "us7000tyil",
-        "title": "M5.0 Earthquake - 68 km S of Sarangani, Philippines",
-        "category": "Earthquake",
-        "date": "2026-11-16T07:14:14.483000Z",
-        "coordinates": [
-          125.4267,
-          4.7842
-        ]
-      },
-      {
-        "id": "us7000tyhr",
-        "title": "M5.4 Earthquake - 20 km NW of Anamizu, Japan",
-        "category": "Earthquake",
-        "date": "2026-11-16T04:24:11.718000Z",
-        "coordinates": [
-          136.7444,
-          37.3664
-        ]
       }
     ]
   },
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 19.7,
-    "feels_c": 19.1,
-    "humidity": 52,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 29.6
+    "temp_c": 11.7,
+    "feels_c": 11.1,
+    "humidity": 82,
+    "condition": "Clear",
+    "description": "clear sky",
+    "icon": "01n",
+    "wind_kmh": 7.4
   },
   "forecast_today": {
     "date": "2026-11-18",
-    "city": "Zagreb",
-    "temp_min_c": 12.4,
-    "temp_max_c": 19.7,
-    "humidity": 66,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "02d",
-    "wind_kmh": 11.2,
-    "samples": 5
+    "city": "Donji grad",
+    "temp_min_c": 11.7,
+    "temp_max_c": 11.7,
+    "humidity": 82,
+    "condition": "Clear",
+    "description": "clear",
+    "icon": "01n",
+    "wind_kmh": 7.2,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-19",
-    "city": "Zagreb",
-    "temp_min_c": 8.5,
-    "temp_max_c": 12.8,
-    "humidity": 93,
-    "condition": "Clouds",
+    "city": "Donji grad",
+    "temp_min_c": 8.9,
+    "temp_max_c": 12.4,
+    "humidity": 92,
+    "condition": "Rain",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 7.8
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-11-20",
-    "city": "Zagreb",
-    "temp_min_c": 4.9,
+    "city": "Donji grad",
+    "temp_min_c": 6.7,
     "temp_max_c": 13.2,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "scattered clouds",
-    "icon": "03d",
+    "humidity": 83,
+    "condition": "Clear",
+    "description": "broken clouds",
+    "icon": "04d",
     "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 1.4,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 1.5,
-    "peak_time": "2026-11-18T11:00",
-    "safe_minutes": 115,
+    "daily_max": 1.7,
+    "peak_time": "2026-11-18T12:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,35 +331,35 @@
       },
       {
         "time": "2026-11-18T09:00",
-        "uv": 0.3
+        "uv": 0.7
       },
       {
         "time": "2026-11-18T10:00",
-        "uv": 0.8
+        "uv": 1.1
       },
       {
         "time": "2026-11-18T11:00",
-        "uv": 1.5
+        "uv": 1.1
       },
       {
         "time": "2026-11-18T12:00",
-        "uv": 1.4
+        "uv": 1.7
       },
       {
         "time": "2026-11-18T13:00",
-        "uv": 1.5
+        "uv": 1.3
       },
       {
         "time": "2026-11-18T14:00",
-        "uv": 1.4
+        "uv": 0.7
       },
       {
         "time": "2026-11-18T15:00",
-        "uv": 0.2
+        "uv": 0.8
       },
       {
         "time": "2026-11-18T16:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-18T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-18T12:05:19+01:00"
+    "fetched_at": "2026-11-18T20:57:00+01:00"
   }
 }
