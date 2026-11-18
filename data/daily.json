@@ -6,13 +6,93 @@
   "events": {
     "events": [
       {
-        "id": "us7000tyw8",
-        "title": "M5.3 Earthquake - 16 km W of Nereju Mic, Romania",
+        "id": "us7000tyyw",
+        "title": "M5.2 Earthquake - 86 km NW of Ry\u014dtsu-minato, Japan",
         "category": "Earthquake",
-        "date": "2026-11-18T00:48:56.322000Z",
+        "date": "2026-11-18T09:37:00.617000Z",
         "coordinates": [
-          26.4891,
-          45.6796
+          137.8725,
+          38.7192
+        ]
+      },
+      {
+        "id": "us7000tyy8",
+        "title": "M5.9 Earthquake - 85 km WNW of San Juan, Peru",
+        "category": "Earthquake",
+        "date": "2026-11-18T06:07:42.780000Z",
+        "coordinates": [
+          -75.9238,
+          -15.1438
+        ]
+      },
+      {
+        "id": "us7000tyxz",
+        "title": "M5.2 Earthquake - Galapagos Triple Junction region",
+        "category": "Earthquake",
+        "date": "2026-11-18T05:25:43.280000Z",
+        "coordinates": [
+          -103.0838,
+          0.4346
+        ]
+      },
+      {
+        "id": "us7000tyxi",
+        "title": "M5.8 Earthquake - 40 km N of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-18T04:41:32.015000Z",
+        "coordinates": [
+          120.5285,
+          -8.2501
+        ]
+      },
+      {
+        "id": "us7000tyxc",
+        "title": "M5.2 Earthquake - 54 km NNE of Ruteng, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-18T04:21:35.658000Z",
+        "coordinates": [
+          120.6489,
+          -8.151
+        ]
+      },
+      {
+        "id": "us7000tyx2",
+        "title": "M5.8 Earthquake - 99 km ESE of Madang, Papua New Guinea",
+        "category": "Earthquake",
+        "date": "2026-11-18T03:42:34.269000Z",
+        "coordinates": [
+          146.5479,
+          -5.7009
+        ]
+      },
+      {
+        "id": "us7000tywi",
+        "title": "M5.8 Earthquake - 150 km SW of Merizo Village, Guam",
+        "category": "Earthquake",
+        "date": "2026-11-18T02:22:56.671000Z",
+        "coordinates": [
+          143.8866,
+          12.1387
+        ]
+      },
+      {
+        "id": "us7000tyw8",
+        "title": "M5.3 Earthquake - 16 km ESE of Comand\u0103u, Romania",
+        "category": "Earthquake",
+        "date": "2026-11-18T00:48:56.089000Z",
+        "coordinates": [
+          26.452,
+          45.6863
+        ]
+      },
+      {
+        "id": "us7000tyw6",
+        "title": "M5.3 Earthquake - 7 km SE of Karakenja, Tajikistan",
+        "category": "Earthquake",
+        "date": "2026-11-18T00:46:31.418000Z",
+        "coordinates": [
+          71.5875,
+          39.1912
         ]
       },
       {
@@ -73,86 +153,6 @@
         "coordinates": [
           136.7444,
           37.3664
-        ]
-      },
-      {
-        "id": "us7000tyg6",
-        "title": "M5.0 Earthquake - 256 km SSE of Ambon, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-15T20:51:56.298000Z",
-        "coordinates": [
-          128.7523,
-          -5.9449
-        ]
-      },
-      {
-        "id": "us7000tyfh",
-        "title": "M5.0 Earthquake - 74 km N of P\u0101r\u016bn, Afghanistan",
-        "category": "Earthquake",
-        "date": "2026-11-15T17:48:36.959000Z",
-        "coordinates": [
-          70.9503,
-          36.0947
-        ]
-      },
-      {
-        "id": "us7000tyf4",
-        "title": "M5.1 Earthquake - 169 km NW of Gorontalo, Indonesia",
-        "category": "Earthquake",
-        "date": "2026-11-15T15:41:14.978000Z",
-        "coordinates": [
-          122.1345,
-          1.7527
-        ]
-      },
-      {
-        "id": "us7000tyek",
-        "title": "M5.5 Earthquake - 9 km E of Union, Philippines",
-        "category": "Earthquake",
-        "date": "2026-11-15T13:41:35.701000Z",
-        "coordinates": [
-          126.2,
-          9.7595
-        ]
-      },
-      {
-        "id": "us7000tyca",
-        "title": "M5.5 Earthquake - Fiji region",
-        "category": "Earthquake",
-        "date": "2026-11-15T05:15:02.697000Z",
-        "coordinates": [
-          -177.8215,
-          -19.5554
-        ]
-      },
-      {
-        "id": "us7000ty84",
-        "title": "M5.5 Earthquake - northern Mid-Atlantic Ridge",
-        "category": "Earthquake",
-        "date": "2026-11-14T09:26:13.073000Z",
-        "coordinates": [
-          -42.6346,
-          30.122
-        ]
-      },
-      {
-        "id": "us7000ty7d",
-        "title": "M5.2 Earthquake - State of Yap, Federated States of Micronesia",
-        "category": "Earthquake",
-        "date": "2026-11-14T06:52:26.706000Z",
-        "coordinates": [
-          147.3631,
-          9.7032
-        ]
-      },
-      {
-        "id": "us7000ty6n",
-        "title": "M5.2 Earthquake - off the west coast of northern Sumatra",
-        "category": "Earthquake",
-        "date": "2026-11-14T02:59:29.180000Z",
-        "coordinates": [
-          92.8261,
-          3.304
         ]
       }
     ]
@@ -243,54 +243,54 @@
   },
   "weather": {
     "city": "Zagreb",
-    "temp_c": 10.9,
-    "feels_c": 10.4,
-    "humidity": 91,
-    "condition": "Fog",
-    "description": "fog",
-    "icon": "50n",
-    "wind_kmh": 9.3
+    "temp_c": 19.7,
+    "feels_c": 19.1,
+    "humidity": 52,
+    "condition": "Clouds",
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 29.6
   },
   "forecast_today": {
     "date": "2026-11-18",
     "city": "Zagreb",
-    "temp_min_c": 9.7,
-    "temp_max_c": 17.3,
-    "humidity": 85,
+    "temp_min_c": 12.4,
+    "temp_max_c": 19.7,
+    "humidity": 66,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "50n",
-    "wind_kmh": 9.0,
-    "samples": 8
+    "icon": "02d",
+    "wind_kmh": 11.2,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-11-19",
     "city": "Zagreb",
-    "temp_min_c": 6.2,
-    "temp_max_c": 11.6,
+    "temp_min_c": 8.5,
+    "temp_max_c": 12.8,
     "humidity": 93,
     "condition": "Clouds",
     "description": "moderate rain",
     "icon": "10d",
-    "wind_kmh": 8.3
+    "wind_kmh": 7.8
   },
   "forecast_day_after": {
     "date": "2026-11-20",
     "city": "Zagreb",
-    "temp_min_c": 4.6,
-    "temp_max_c": 13.0,
-    "humidity": 88,
+    "temp_min_c": 4.9,
+    "temp_max_c": 13.2,
+    "humidity": 85,
     "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 3.3
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.4
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 1.4,
     "band": "low",
-    "daily_max": 1.9,
+    "daily_max": 1.5,
     "peak_time": "2026-11-18T11:00",
-    "safe_minutes": null,
+    "safe_minutes": 115,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,35 +331,35 @@
       },
       {
         "time": "2026-11-18T09:00",
-        "uv": 0.5
+        "uv": 0.3
       },
       {
         "time": "2026-11-18T10:00",
-        "uv": 1.4
+        "uv": 0.8
       },
       {
         "time": "2026-11-18T11:00",
-        "uv": 1.9
+        "uv": 1.5
       },
       {
         "time": "2026-11-18T12:00",
-        "uv": 1.8
+        "uv": 1.4
       },
       {
         "time": "2026-11-18T13:00",
-        "uv": 1.9
+        "uv": 1.5
       },
       {
         "time": "2026-11-18T14:00",
-        "uv": 0.6
+        "uv": 1.4
       },
       {
         "time": "2026-11-18T15:00",
-        "uv": 0.6
+        "uv": 0.2
       },
       {
         "time": "2026-11-18T16:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-11-18T17:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-18T03:05:09+01:00"
+    "fetched_at": "2026-11-18T12:05:19+01:00"
   }
 }
