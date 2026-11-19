@@ -1,10 +1,25 @@
 {
   "generated": "2026-11-19",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-19",
+    "explanation": "Today's image could have been a painting. But what do these colors mean? The brightest star, left of the center, is blue Alnitak (the Girdle): a triple star system best known for being the easternmost star in Orion's Belt. The instantly recognizable shape of a dark horse's head at the center is the aptly named Horsehead Nebula. It is about five light-years tall and lies approximately 1,500 light-years away. It is made of dust and gas that obscure the red glow behind it, which is caused by hydrogen gas being ionized by the bright star Sigma Orionis at the top. The orange nebula with dark filaments on the left is the Flame Nebula. Closer to the Horsehead, the blue reflection nebula NGC 2023 is actively forming stars. The data for this \"painting\" were collected for almost six hours at the Utah Desert Remote Observatories, but the equipment was remotely controlled by the astrophotographer from his home, over 2,000 km away in Illinois.Tomorrow's picture: what's next?\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ubxb",
+        "title": "M5.2 Earthquake - 130 km W of Teluk Dalam, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-19T01:34:48.394000Z",
+        "coordinates": [
+          96.6318,
+          0.5027
+        ]
+      },
       {
         "id": "us6000ubw3",
         "title": "M5.2 Earthquake - 169 km S of Attu Station, Alaska",
@@ -144,16 +159,6 @@
           71.5875,
           39.1912
         ]
-      },
-      {
-        "id": "us7000tysq",
-        "title": "M5.2 Earthquake - south of the Kermadec Islands",
-        "category": "Earthquake",
-        "date": "2026-11-17T14:20:36.814000Z",
-        "coordinates": [
-          179.8423,
-          -32.3057
-        ]
       }
     ]
   },
@@ -242,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 9.2,
-    "feels_c": 9.2,
-    "humidity": 86,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 3.7
+    "city": "Donji grad",
+    "temp_c": 10.4,
+    "feels_c": 9.7,
+    "humidity": 87,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10d",
+    "wind_kmh": 5.5
   },
   "forecast_today": {
     "date": "2026-11-19",
-    "city": "Zagreb",
-    "temp_min_c": 9.2,
-    "temp_max_c": 13.7,
-    "humidity": 91,
+    "city": "Donji grad",
+    "temp_min_c": 10.4,
+    "temp_max_c": 14.2,
+    "humidity": 92,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01n",
-    "wind_kmh": 6.3,
-    "samples": 8
+    "icon": "10d",
+    "wind_kmh": 7.9,
+    "samples": 5
   },
   "forecast": {
     "date": "2026-11-20",
-    "city": "Zagreb",
-    "temp_min_c": 5.5,
-    "temp_max_c": 14.2,
-    "humidity": 86,
+    "city": "Donji grad",
+    "temp_min_c": 7.3,
+    "temp_max_c": 17.1,
+    "humidity": 87,
     "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 3.6
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 3.9
   },
   "forecast_day_after": {
     "date": "2026-11-21",
-    "city": "Zagreb",
-    "temp_min_c": 3.7,
-    "temp_max_c": 11.6,
-    "humidity": 84,
+    "city": "Donji grad",
+    "temp_min_c": 4.4,
+    "temp_max_c": 12.0,
+    "humidity": 82,
     "condition": "Clouds",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 6.1
+    "description": "few clouds",
+    "icon": "02d",
+    "wind_kmh": 6.3
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.7,
     "band": "low",
-    "daily_max": 0.5,
-    "peak_time": "2026-11-19T10:00",
-    "safe_minutes": null,
+    "daily_max": 0.7,
+    "peak_time": "2026-11-19T11:00",
+    "safe_minutes": 238,
     "skin_type": 2,
     "hourly": [
       {
@@ -331,7 +336,7 @@
       },
       {
         "time": "2026-11-19T09:00",
-        "uv": 0.2
+        "uv": 0.3
       },
       {
         "time": "2026-11-19T10:00",
@@ -339,11 +344,11 @@
       },
       {
         "time": "2026-11-19T11:00",
-        "uv": 0.3
+        "uv": 0.7
       },
       {
         "time": "2026-11-19T12:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-11-19T13:00",
@@ -351,15 +356,15 @@
       },
       {
         "time": "2026-11-19T14:00",
-        "uv": 0.4
+        "uv": 0.3
       },
       {
         "time": "2026-11-19T15:00",
-        "uv": 0.2
+        "uv": 0.1
       },
       {
         "time": "2026-11-19T16:00",
-        "uv": 0.0
+        "uv": 0.1
       },
       {
         "time": "2026-11-19T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-19T02:45:14+01:00"
+    "fetched_at": "2026-11-19T10:51:06+01:00"
   }
 }
