@@ -1,7 +1,12 @@
 {
   "generated": "2026-11-21",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-21",
+    "explanation": "Cruising through the outer solar system, the Voyager 2 spacecraft made its closest approach to Neptune on August 25, 1989, the only spacecraft to visit the most distant ice giant planet. Based on the images recorded during its close encounter and in the following days, this inspired composited scene covers the dim outer planet, largest moon Triton, and faint system of rings. From just beyond Neptune's orbit, the interplanetary perspective looks back toward the Sun, capturing the planet and Triton as thin sunlit crescents. Cirrus clouds and a dark band circle Neptune's south polar region, with a cloudy vortex above the pole itself. Parts of the very faint ring system along with the three bright ring arcs were first imaged by Voyager during the fly-by, though the faintest segments are modeled in this composited picture. Spanning 7.5 degrees, the background starfield is composed from sky survey data centered on the constellation Camelopardalis, corresponding to the outbound Voyager's view of the magnificent Neptunian system. Still cruising in 2026, the Voyager 2 spacecraft is now in interstellar space.Tomorrow's picture: swirling\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
@@ -242,48 +247,48 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 9.7,
-    "feels_c": 8.1,
-    "humidity": 66,
+    "city": "Donji grad",
+    "temp_c": 8.7,
+    "feels_c": 6.6,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01n",
-    "wind_kmh": 11.1
+    "wind_kmh": 13.0
   },
   "forecast_today": {
     "date": "2026-11-21",
-    "city": "Zagreb",
-    "temp_min_c": 7.2,
-    "temp_max_c": 9.7,
-    "humidity": 72,
+    "city": "Donji grad",
+    "temp_min_c": 8.7,
+    "temp_max_c": 8.7,
+    "humidity": 65,
     "condition": "Clear",
     "description": "clear",
     "icon": "01n",
-    "wind_kmh": 8.7,
-    "samples": 3
+    "wind_kmh": 13.0,
+    "samples": 1
   },
   "forecast": {
     "date": "2026-11-22",
-    "city": "Zagreb",
-    "temp_min_c": 2.7,
-    "temp_max_c": 10.9,
-    "humidity": 87,
+    "city": "Donji grad",
+    "temp_min_c": 3.8,
+    "temp_max_c": 11.2,
+    "humidity": 86,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 6.3
+    "wind_kmh": 5.8
   },
   "forecast_day_after": {
     "date": "2026-11-23",
-    "city": "Zagreb",
+    "city": "Donji grad",
     "temp_min_c": 0.2,
-    "temp_max_c": 6.2,
-    "humidity": 79,
+    "temp_max_c": 9.3,
+    "humidity": 80,
     "condition": "Clouds",
     "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.8
+    "wind_kmh": 7.4
   },
   "uv": {
     "uv": 0.0,
@@ -355,11 +360,11 @@
       },
       {
         "time": "2026-11-21T15:00",
-        "uv": 0.8
+        "uv": 0.7
       },
       {
         "time": "2026-11-21T16:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-21T17:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-21T16:58:07+01:00"
+    "fetched_at": "2026-11-21T22:30:57+01:00"
   }
 }
