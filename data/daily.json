@@ -1,10 +1,25 @@
 {
-  "generated": "2026-11-20",
+  "generated": "2026-11-21",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-21",
+    "explanation": "On November 17, fans of interstellar spaceflight around planet Earth were invited to shine a message into the night sky. Traced by a flashlight beam switched on and off, the dashes and dots of a Morse code message captured in this time exposure from the Emirates Astronomical Observatory are read V-G-R. That's a call sign for the Voyager 1 spacecraft currently in interstellar space some 26 billion kilometers away. How long did it take the message to reach humanity's most distant interstellar spacecraft? Traveling at the speed of light, the answer is one day. In fact, the Voyager 1 spacecraft was confirmed to reach its one light-day distance milestone on November 18, at 10:16:07 UTC, nearly 50 years after launch in 1977. For extra credit, fans of math can calculate that at one light-day per 50 years, Voyager 1 will reach its one light-year (365 light-days) distance milestone in about 18,250 years.Tomorrow's picture: cruising\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ucfm",
+        "title": "M6.7 Earthquake - 9 km NE of Carhuamayo, Peru",
+        "category": "Earthquake",
+        "date": "2026-11-21T00:09:19.667000Z",
+        "coordinates": [
+          -75.9779,
+          -10.8548
+        ]
+      },
       {
         "id": "us6000ucd6",
         "title": "M5.1 Earthquake - 32 km NE of Port-Olry, Vanuatu",
@@ -144,53 +159,11 @@
           130.4701,
           32.3069
         ]
-      },
-      {
-        "id": "us7000tz1a",
-        "title": "M5.3 Earthquake - 149 km SSW of Merizo Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-11-18T16:06:51.220000Z",
-        "coordinates": [
-          143.9927,
-          12.0918
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2019 VF1)",
-        "hazardous": false,
-        "diameter_m": 149,
-        "close_approach_date": "2026-11-20",
-        "miss_distance_km": 8981854,
-        "velocity_kmh": 71400
-      },
-      {
-        "name": "(2019 WG)",
-        "hazardous": false,
-        "diameter_m": 86,
-        "close_approach_date": "2026-11-20",
-        "miss_distance_km": 21806106,
-        "velocity_kmh": 54913
-      },
-      {
-        "name": "(2016 JC6)",
-        "hazardous": true,
-        "diameter_m": 316,
-        "close_approach_date": "2026-11-20",
-        "miss_distance_km": 61175992,
-        "velocity_kmh": 53296
-      },
-      {
-        "name": "(2013 AZ52)",
-        "hazardous": false,
-        "diameter_m": 625,
-        "close_approach_date": "2026-11-20",
-        "miss_distance_km": 62720241,
-        "velocity_kmh": 56343
-      },
       {
         "name": "(2017 WR28)",
         "hazardous": false,
@@ -238,158 +211,190 @@
         "close_approach_date": "2026-11-23",
         "miss_distance_km": 31460548,
         "velocity_kmh": 21375
+      },
+      {
+        "name": "(2006 KK89)",
+        "hazardous": false,
+        "diameter_m": 175,
+        "close_approach_date": "2026-11-24",
+        "miss_distance_km": 16685425,
+        "velocity_kmh": 39212
+      },
+      {
+        "name": "481442 (2006 WO3)",
+        "hazardous": false,
+        "diameter_m": 287,
+        "close_approach_date": "2026-11-24",
+        "miss_distance_km": 20152442,
+        "velocity_kmh": 49733
+      },
+      {
+        "name": "(2005 UX5)",
+        "hazardous": false,
+        "diameter_m": 344,
+        "close_approach_date": "2026-11-24",
+        "miss_distance_km": 36576877,
+        "velocity_kmh": 46204
+      },
+      {
+        "name": "(2017 RK15)",
+        "hazardous": false,
+        "diameter_m": 43,
+        "close_approach_date": "2026-11-24",
+        "miss_distance_km": 44352994,
+        "velocity_kmh": 74534
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 10.4,
-    "feels_c": 9.7,
-    "humidity": 85,
+    "city": "Donji grad",
+    "temp_c": 6.6,
+    "feels_c": 5.2,
+    "humidity": 91,
     "condition": "Fog",
     "description": "fog",
     "icon": "50n",
-    "wind_kmh": 5.5
+    "wind_kmh": 7.4
   },
   "forecast_today": {
-    "date": "2026-11-20",
-    "city": "Zagreb",
-    "temp_min_c": 9.4,
-    "temp_max_c": 10.4,
-    "humidity": 86,
-    "condition": "Fog",
-    "description": "fog",
+    "date": "2026-11-21",
+    "city": "Donji grad",
+    "temp_min_c": 5.8,
+    "temp_max_c": 16.0,
+    "humidity": 81,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "50n",
-    "wind_kmh": 4.8,
-    "samples": 2
+    "wind_kmh": 7.4,
+    "samples": 8
   },
   "forecast": {
-    "date": "2026-11-21",
-    "city": "Zagreb",
-    "temp_min_c": 4.8,
-    "temp_max_c": 14.1,
-    "humidity": 82,
-    "condition": "Clouds",
-    "description": "few clouds",
-    "icon": "02d",
-    "wind_kmh": 7.1
-  },
-  "forecast_day_after": {
     "date": "2026-11-22",
-    "city": "Zagreb",
-    "temp_min_c": 3.2,
-    "temp_max_c": 6.5,
-    "humidity": 92,
-    "condition": "Rain",
+    "city": "Donji grad",
+    "temp_min_c": 3.7,
+    "temp_max_c": 8.3,
+    "humidity": 90,
+    "condition": "Clouds",
     "description": "light rain",
     "icon": "10d",
-    "wind_kmh": 6.0
+    "wind_kmh": 5.7
+  },
+  "forecast_day_after": {
+    "date": "2026-11-23",
+    "city": "Donji grad",
+    "temp_min_c": 1.8,
+    "temp_max_c": 6.5,
+    "humidity": 80,
+    "condition": "Clouds",
+    "description": "scattered clouds",
+    "icon": "03d",
+    "wind_kmh": 8.1
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.8,
-    "peak_time": "2026-11-20T12:00",
+    "daily_max": 2.0,
+    "peak_time": "2026-11-21T12:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-20T00:00",
+        "time": "2026-11-21T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T01:00",
+        "time": "2026-11-21T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T02:00",
+        "time": "2026-11-21T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T03:00",
+        "time": "2026-11-21T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T04:00",
+        "time": "2026-11-21T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T05:00",
+        "time": "2026-11-21T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T06:00",
+        "time": "2026-11-21T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T07:00",
+        "time": "2026-11-21T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T08:00",
+        "time": "2026-11-21T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-20T09:00",
-        "uv": 0.7
+        "time": "2026-11-21T09:00",
+        "uv": 0.4
       },
       {
-        "time": "2026-11-20T10:00",
-        "uv": 1.1
+        "time": "2026-11-21T10:00",
+        "uv": 1.2
       },
       {
-        "time": "2026-11-20T11:00",
-        "uv": 1.4
+        "time": "2026-11-21T11:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-11-20T12:00",
-        "uv": 1.8
+        "time": "2026-11-21T12:00",
+        "uv": 2.0
       },
       {
-        "time": "2026-11-20T13:00",
-        "uv": 1.6
+        "time": "2026-11-21T13:00",
+        "uv": 1.9
       },
       {
-        "time": "2026-11-20T14:00",
-        "uv": 1.4
+        "time": "2026-11-21T14:00",
+        "uv": 1.5
       },
       {
-        "time": "2026-11-20T15:00",
+        "time": "2026-11-21T15:00",
         "uv": 0.9
       },
       {
-        "time": "2026-11-20T16:00",
+        "time": "2026-11-21T16:00",
         "uv": 0.3
       },
       {
-        "time": "2026-11-20T17:00",
+        "time": "2026-11-21T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T18:00",
+        "time": "2026-11-21T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T19:00",
+        "time": "2026-11-21T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T20:00",
+        "time": "2026-11-21T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T21:00",
+        "time": "2026-11-21T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T22:00",
+        "time": "2026-11-21T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-20T23:00",
+        "time": "2026-11-21T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-20T19:16:09+01:00"
+    "fetched_at": "2026-11-21T01:35:21+01:00"
   }
 }
