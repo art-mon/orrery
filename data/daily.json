@@ -1,15 +1,20 @@
 {
-  "generated": "2026-11-22",
+  "generated": "2026-11-23",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-22",
-    "explanation": "What creates the colors in Jupiter's clouds? No one is sure. The thick atmosphere of Jupiter is mostly hydrogen and helium, elements which are colorless at the low temperatures of the Jovian cloud tops. Which trace molecules provide the colors remains a topic of research, although small amounts of ammonium hydrosulfide are one leading candidate. What is clear from the featured color-enhanced image -- and many similar images -- is that lighter clouds are typically higher up than darker ones. Pictured, light clouds swirl around reddish regions toward the lower right, while they appear to cover over some darker domains on the upper right. The featured image was taken by the robotic Juno spacecraft in 2018 during its 14th low pass over Jupiter. Juno continues in its looping elliptical orbit, swooping near the huge planet every 33 days and exploring a slightly different sector each time around.Tomorrow's picture: emerging darkness\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ucuf",
+        "title": "M5.4 Earthquake - 9 km N of Carhuamayo, Peru",
+        "category": "Earthquake",
+        "date": "2026-11-22T21:35:31.763000Z",
+        "coordinates": [
+          -76.0169,
+          -10.8345
+        ]
+      },
       {
         "id": "us6000ucrp",
         "title": "M5.1 Earthquake - 45 km SE of \u00dcr\u00fcmqi, China",
@@ -149,16 +154,6 @@
           -33.5069,
           -55.0035
         ]
-      },
-      {
-        "id": "us6000uc2t",
-        "title": "M5.0 Earthquake - central East Pacific Rise",
-        "category": "Earthquake",
-        "date": "2026-11-19T20:07:09.754000Z",
-        "coordinates": [
-          -109.9127,
-          -9.1894
-        ]
       }
     ]
   },
@@ -247,154 +242,154 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 5.9,
-    "feels_c": 3.5,
+    "city": "City of Zagreb",
+    "temp_c": 4.9,
+    "feels_c": 0.5,
     "humidity": 89,
     "condition": "Rain",
-    "description": "moderate rain",
+    "description": "heavy intensity rain",
     "icon": "10n",
-    "wind_kmh": 11.1
+    "wind_kmh": 24.1
   },
   "forecast_today": {
-    "date": "2026-11-22",
-    "city": "Zagreb",
-    "temp_min_c": 5.9,
-    "temp_max_c": 6.8,
-    "humidity": 90,
-    "condition": "Rain",
-    "description": "rain",
+    "date": "2026-11-23",
+    "city": "Donji grad",
+    "temp_min_c": 0.9,
+    "temp_max_c": 8.8,
+    "humidity": 81,
+    "condition": "Clouds",
+    "description": "clouds",
     "icon": "10n",
-    "wind_kmh": 13.5,
-    "samples": 3
+    "wind_kmh": 8.4,
+    "samples": 9
   },
   "forecast": {
-    "date": "2026-11-23",
-    "city": "Zagreb",
-    "temp_min_c": 2.9,
-    "temp_max_c": 10.7,
-    "humidity": 79,
-    "condition": "Clouds",
-    "description": "broken clouds",
-    "icon": "04d",
-    "wind_kmh": 7.5
-  },
-  "forecast_day_after": {
     "date": "2026-11-24",
-    "city": "Zagreb",
-    "temp_min_c": -1.2,
-    "temp_max_c": 4.6,
-    "humidity": 83,
+    "city": "Donji grad",
+    "temp_min_c": -1.1,
+    "temp_max_c": 6.7,
+    "humidity": 84,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 2.1
+    "wind_kmh": 2.0
+  },
+  "forecast_day_after": {
+    "date": "2026-11-25",
+    "city": "Donji grad",
+    "temp_min_c": -1.0,
+    "temp_max_c": 2.6,
+    "humidity": 89,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 4.4
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.0,
-    "peak_time": "2026-11-22T12:00",
+    "daily_max": 1.8,
+    "peak_time": "2026-11-23T11:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-22T00:00",
+        "time": "2026-11-23T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T01:00",
+        "time": "2026-11-23T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T02:00",
+        "time": "2026-11-23T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T03:00",
+        "time": "2026-11-23T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T04:00",
+        "time": "2026-11-23T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T05:00",
+        "time": "2026-11-23T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T06:00",
+        "time": "2026-11-23T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T07:00",
+        "time": "2026-11-23T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T08:00",
+        "time": "2026-11-23T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-22T09:00",
-        "uv": 0.1
+        "time": "2026-11-23T09:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-11-22T10:00",
-        "uv": 0.8
+        "time": "2026-11-23T10:00",
+        "uv": 1.3
       },
       {
-        "time": "2026-11-22T11:00",
+        "time": "2026-11-23T11:00",
+        "uv": 1.8
+      },
+      {
+        "time": "2026-11-23T12:00",
+        "uv": 1.2
+      },
+      {
+        "time": "2026-11-23T13:00",
+        "uv": 1.1
+      },
+      {
+        "time": "2026-11-23T14:00",
         "uv": 0.9
       },
       {
-        "time": "2026-11-22T12:00",
-        "uv": 1.0
+        "time": "2026-11-23T15:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-11-22T13:00",
+        "time": "2026-11-23T16:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-22T14:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-11-22T15:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-11-22T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-22T17:00",
+        "time": "2026-11-23T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T18:00",
+        "time": "2026-11-23T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T19:00",
+        "time": "2026-11-23T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T20:00",
+        "time": "2026-11-23T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T21:00",
+        "time": "2026-11-23T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T22:00",
+        "time": "2026-11-23T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-22T23:00",
+        "time": "2026-11-23T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-22T18:36:05+01:00"
+    "fetched_at": "2026-11-23T00:12:27+01:00"
   }
 }
