@@ -1,10 +1,25 @@
 {
   "generated": "2026-11-22",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-22",
+    "explanation": "What creates the colors in Jupiter's clouds? No one is sure. The thick atmosphere of Jupiter is mostly hydrogen and helium, elements which are colorless at the low temperatures of the Jovian cloud tops. Which trace molecules provide the colors remains a topic of research, although small amounts of ammonium hydrosulfide are one leading candidate. What is clear from the featured color-enhanced image -- and many similar images -- is that lighter clouds are typically higher up than darker ones. Pictured, light clouds swirl around reddish regions toward the lower right, while they appear to cover over some darker domains on the upper right. The featured image was taken by the robotic Juno spacecraft in 2018 during its 14th low pass over Jupiter. Juno continues in its looping elliptical orbit, swooping near the huge planet every 33 days and exploring a slightly different sector each time around.Tomorrow's picture: emerging darkness\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ucrp",
+        "title": "M5.1 Earthquake - 45 km SE of \u00dcr\u00fcmqi, China",
+        "category": "Earthquake",
+        "date": "2026-11-22T09:08:28.009000Z",
+        "coordinates": [
+          87.9381,
+          43.4743
+        ]
+      },
       {
         "id": "us6000ucrb",
         "title": "M5.4 Earthquake - 224 km NE of Bitung, Indonesia",
@@ -144,16 +159,6 @@
           -109.9127,
           -9.1894
         ]
-      },
-      {
-        "id": "us6000uc1x",
-        "title": "M5.1 Earthquake - 99 km WSW of Illapel, Chile",
-        "category": "Earthquake",
-        "date": "2026-11-19T18:09:46.530000Z",
-        "coordinates": [
-          -72.1843,
-          -31.8465
-        ]
       }
     ]
   },
@@ -244,53 +249,53 @@
   "weather": {
     "city": "Donji grad",
     "temp_c": 5.9,
-    "feels_c": 5.9,
-    "humidity": 77,
-    "condition": "Clear",
-    "description": "clear sky",
-    "icon": "01d",
-    "wind_kmh": 3.7
+    "feels_c": 3.5,
+    "humidity": 89,
+    "condition": "Rain",
+    "description": "moderate rain",
+    "icon": "10n",
+    "wind_kmh": 11.1
   },
   "forecast_today": {
     "date": "2026-11-22",
-    "city": "Donji grad",
+    "city": "Zagreb",
     "temp_min_c": 5.9,
-    "temp_max_c": 9.7,
-    "humidity": 88,
+    "temp_max_c": 6.8,
+    "humidity": 90,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01d",
-    "wind_kmh": 8.2,
-    "samples": 5
+    "icon": "10n",
+    "wind_kmh": 13.5,
+    "samples": 3
   },
   "forecast": {
     "date": "2026-11-23",
-    "city": "Donji grad",
-    "temp_min_c": 3.9,
-    "temp_max_c": 11.3,
-    "humidity": 77,
+    "city": "Zagreb",
+    "temp_min_c": 2.9,
+    "temp_max_c": 10.7,
+    "humidity": 79,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 8.5
+    "wind_kmh": 7.5
   },
   "forecast_day_after": {
     "date": "2026-11-24",
-    "city": "Donji grad",
-    "temp_min_c": -1.8,
-    "temp_max_c": 4.3,
+    "city": "Zagreb",
+    "temp_min_c": -1.2,
+    "temp_max_c": 4.6,
     "humidity": 83,
     "condition": "Clear",
     "description": "clear sky",
     "icon": "01d",
-    "wind_kmh": 1.5
+    "wind_kmh": 2.1
   },
   "uv": {
-    "uv": 0.6,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 0.8,
-    "peak_time": "2026-11-22T14:00",
-    "safe_minutes": 278,
+    "daily_max": 1.0,
+    "peak_time": "2026-11-22T12:00",
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -335,19 +340,19 @@
       },
       {
         "time": "2026-11-22T10:00",
-        "uv": 0.6
+        "uv": 0.8
       },
       {
         "time": "2026-11-22T11:00",
-        "uv": 0.6
+        "uv": 0.9
       },
       {
         "time": "2026-11-22T12:00",
-        "uv": 0.6
+        "uv": 1.0
       },
       {
         "time": "2026-11-22T13:00",
-        "uv": 0.5
+        "uv": 0.2
       },
       {
         "time": "2026-11-22T14:00",
@@ -355,7 +360,7 @@
       },
       {
         "time": "2026-11-22T15:00",
-        "uv": 0.1
+        "uv": 0.2
       },
       {
         "time": "2026-11-22T16:00",
@@ -390,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-22T10:19:05+01:00"
+    "fetched_at": "2026-11-22T18:36:05+01:00"
   }
 }
