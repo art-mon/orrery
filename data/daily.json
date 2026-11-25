@@ -1,10 +1,20 @@
 {
   "generated": "2026-11-25",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "error": "HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=10)"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000udd1",
+        "title": "M5.9 Earthquake - Balleny Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-25T01:38:45.672000Z",
+        "coordinates": [
+          170.9371,
+          -63.0918
+        ]
+      },
       {
         "id": "us6000udbn",
         "title": "M5.0 Earthquake - 209 km SE of Kokopo, Papua New Guinea",
@@ -144,77 +154,11 @@
           96.6398,
           37.1958
         ]
-      },
-      {
-        "id": "us6000ucky",
-        "title": "M5.2 Earthquake - 112 km SSE of Tateyama, Japan",
-        "category": "Earthquake",
-        "date": "2026-11-21T10:09:05.474000Z",
-        "coordinates": [
-          140.2109,
-          34.0109
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2006 KK89)",
-        "hazardous": false,
-        "diameter_m": 175,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 16685425,
-        "velocity_kmh": 39212
-      },
-      {
-        "name": "481442 (2006 WO3)",
-        "hazardous": false,
-        "diameter_m": 287,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 20152442,
-        "velocity_kmh": 49733
-      },
-      {
-        "name": "(2005 UX5)",
-        "hazardous": false,
-        "diameter_m": 344,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 36576877,
-        "velocity_kmh": 46204
-      },
-      {
-        "name": "(2017 RK15)",
-        "hazardous": false,
-        "diameter_m": 43,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 44352994,
-        "velocity_kmh": 74534
-      },
-      {
-        "name": "(2015 NG3)",
-        "hazardous": false,
-        "diameter_m": 272,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 51265373,
-        "velocity_kmh": 55018
-      },
-      {
-        "name": "(2018 YG)",
-        "hazardous": false,
-        "diameter_m": 82,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 58286693,
-        "velocity_kmh": 67882
-      },
-      {
-        "name": "(2010 GK65)",
-        "hazardous": false,
-        "diameter_m": 75,
-        "close_approach_date": "2026-11-24",
-        "miss_distance_km": 70436856,
-        "velocity_kmh": 70299
-      },
       {
         "name": "(2018 VL8)",
         "hazardous": false,
@@ -238,57 +182,113 @@
         "close_approach_date": "2026-11-25",
         "miss_distance_km": 24137401,
         "velocity_kmh": 25145
+      },
+      {
+        "name": "(2003 UY12)",
+        "hazardous": false,
+        "diameter_m": 132,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 30285832,
+        "velocity_kmh": 58512
+      },
+      {
+        "name": "(2015 BG4)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 53055212,
+        "velocity_kmh": 1477
+      },
+      {
+        "name": "(2016 WD10)",
+        "hazardous": false,
+        "diameter_m": 298,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 58068022,
+        "velocity_kmh": 43722
+      },
+      {
+        "name": "(2014 MW26)",
+        "hazardous": false,
+        "diameter_m": 161,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 58891661,
+        "velocity_kmh": 28019
+      },
+      {
+        "name": "(2019 AS)",
+        "hazardous": false,
+        "diameter_m": 28,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 63898382,
+        "velocity_kmh": 49428
+      },
+      {
+        "name": "455659 (2005 BO1)",
+        "hazardous": false,
+        "diameter_m": 284,
+        "close_approach_date": "2026-11-25",
+        "miss_distance_km": 72735858,
+        "velocity_kmh": 91515
+      },
+      {
+        "name": "(2018 XP3)",
+        "hazardous": false,
+        "diameter_m": 160,
+        "close_approach_date": "2026-11-26",
+        "miss_distance_km": 24149953,
+        "velocity_kmh": 34425
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 4.2,
-    "feels_c": 4.2,
-    "humidity": 78,
+    "city": "Zagreb",
+    "temp_c": 3.7,
+    "feels_c": 3.7,
+    "humidity": 71,
     "condition": "Clear",
     "description": "clear sky",
-    "icon": "01n",
-    "wind_kmh": 1.8
+    "icon": "01d",
+    "wind_kmh": 3.7
   },
   "forecast_today": {
     "date": "2026-11-25",
-    "city": "City of Zagreb",
-    "temp_min_c": 3.5,
-    "temp_max_c": 7.5,
-    "humidity": 84,
+    "city": "Zagreb",
+    "temp_min_c": 3.7,
+    "temp_max_c": 8.1,
+    "humidity": 82,
     "condition": "Rain",
     "description": "rain",
-    "icon": "01n",
-    "wind_kmh": 4.4,
-    "samples": 9
+    "icon": "01d",
+    "wind_kmh": 4.5,
+    "samples": 6
   },
   "forecast": {
     "date": "2026-11-26",
-    "city": "City of Zagreb",
-    "temp_min_c": 0.6,
-    "temp_max_c": 6.3,
+    "city": "Zagreb",
+    "temp_min_c": 0.1,
+    "temp_max_c": 6.7,
     "humidity": 93,
-    "condition": "Clouds",
+    "condition": "Rain",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.5
+    "wind_kmh": 8.3
   },
   "forecast_day_after": {
     "date": "2026-11-27",
-    "city": "City of Zagreb",
-    "temp_min_c": -0.3,
-    "temp_max_c": 1.4,
-    "humidity": 94,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 2.6
+    "city": "Zagreb",
+    "temp_min_c": -0.2,
+    "temp_max_c": 1.0,
+    "humidity": 95,
+    "condition": "Rain",
+    "description": "light rain",
+    "icon": "10d",
+    "wind_kmh": 3.4
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 1.6,
+    "daily_max": 1.2,
     "peak_time": "2026-11-25T12:00",
     "safe_minutes": null,
     "skin_type": 2,
@@ -335,19 +335,19 @@
       },
       {
         "time": "2026-11-25T10:00",
-        "uv": 0.8
+        "uv": 0.7
       },
       {
         "time": "2026-11-25T11:00",
-        "uv": 1.2
+        "uv": 0.9
       },
       {
         "time": "2026-11-25T12:00",
-        "uv": 1.6
+        "uv": 1.2
       },
       {
         "time": "2026-11-25T13:00",
-        "uv": 0.5
+        "uv": 0.6
       },
       {
         "time": "2026-11-25T14:00",
@@ -390,6 +390,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-25T00:44:36+01:00"
+    "fetched_at": "2026-11-25T07:56:11+01:00"
   }
 }
