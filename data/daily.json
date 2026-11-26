@@ -3,13 +3,53 @@
   "apod": {
     "title": "NASA Science",
     "date": "2026-11-26",
-    "explanation": "To view this video please enable JavaScript, and consider upgrading to a web browser that \t\t\t\t\tsupports HTML5 vide",
+    "explanation": "Beauty is in the eye of the beholder. And there is much to behold in today's featured image. The Milky Way shines bright in the sky of Brazil, over the white sand dunes and dark lagoons of Len\u00e7\u00f3is Maranhenses National Park. We can see different parts of the Milky Way as it apparently rotates in the sky every night and throughout the year. This composite image was taken later in the night in July from a latitude of approximately 2\u00ba south. It shows some prominent Milky Way features, such as dark dust lanes and colorful nebulas. But does the Galaxy really appear arched like a rainbow in the sky? No, this is an artifact of a picture taken with a wide-angle lens. As the Galaxy was artfully framed by the photographer, it matches the contour of the dark lagoon creating the illusion of a cosmic eye, half in space and half on the ground. Is this eye in the sky looking back at you?Tomorrow's picture: what's next?\t\t\t\t\t\t",
     "media_type": "image",
     "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
     "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000udmc",
+        "title": "M5.2 Earthquake - 265 km WNW of Houma, Tonga",
+        "category": "Earthquake",
+        "date": "2026-11-26T09:22:45.352000Z",
+        "coordinates": [
+          -177.7629,
+          -20.5363
+        ]
+      },
+      {
+        "id": "us6000udm8",
+        "title": "M5.5 Earthquake - 204 km S of Taliwang, Indonesia",
+        "category": "Earthquake",
+        "date": "2026-11-26T09:08:40.640000Z",
+        "coordinates": [
+          117.1955,
+          -10.5618
+        ]
+      },
+      {
+        "id": "us6000udjz",
+        "title": "M5.0 Earthquake - 184 km N of Hicks Bay, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-11-26T02:09:17.972000Z",
+        "coordinates": [
+          178.26,
+          -35.934
+        ]
+      },
+      {
+        "id": "us6000udjx",
+        "title": "M5.2 Earthquake - 183 km N of Hicks Bay, New Zealand",
+        "category": "Earthquake",
+        "date": "2026-11-26T01:48:44.213000Z",
+        "coordinates": [
+          178.6429,
+          -35.9665
+        ]
+      },
       {
         "id": "us6000udf2",
         "title": "M5.0 Earthquake - 67 km NNE of Luwuk, Indonesia",
@@ -119,46 +159,6 @@
           128.2414,
           -7.4408
         ]
-      },
-      {
-        "id": "us6000ucwd",
-        "title": "M5.0 Earthquake - 159 km ESE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-11-23T04:18:19.641000Z",
-        "coordinates": [
-          153.6467,
-          -4.7591
-        ]
-      },
-      {
-        "id": "us6000ucvm",
-        "title": "M6.5 Earthquake - Vanuatu region",
-        "category": "Earthquake",
-        "date": "2026-11-23T02:40:58.052000Z",
-        "coordinates": [
-          172.2672,
-          -13.5846
-        ]
-      },
-      {
-        "id": "us6000ucuf",
-        "title": "M5.4 Earthquake - 9 km N of Carhuamayo, Peru",
-        "category": "Earthquake",
-        "date": "2026-11-22T21:35:31.763000Z",
-        "coordinates": [
-          -76.0169,
-          -10.8345
-        ]
-      },
-      {
-        "id": "us6000ucrp",
-        "title": "M5.1 Earthquake - 45 km SE of \u00dcr\u00fcmqi, China",
-        "category": "Earthquake",
-        "date": "2026-11-22T09:08:28.009000Z",
-        "coordinates": [
-          87.9381,
-          43.4743
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 3.8,
-    "feels_c": -0.2,
-    "humidity": 85,
-    "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 18.5
-  },
-  "forecast_today": {
-    "date": "2026-11-26",
-    "city": "Donji grad",
-    "temp_min_c": 3.7,
-    "temp_max_c": 6.8,
-    "humidity": 86,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 10.0,
-    "samples": 8
-  },
-  "forecast": {
-    "date": "2026-11-27",
-    "city": "Donji grad",
-    "temp_min_c": 0.2,
-    "temp_max_c": 6.1,
+    "city": "Zagreb",
+    "temp_c": 2.8,
+    "feels_c": -0.6,
     "humidity": 91,
-    "condition": "Rain",
-    "description": "light rain",
-    "icon": "10d",
-    "wind_kmh": 4.5
-  },
-  "forecast_day_after": {
-    "date": "2026-11-28",
-    "city": "Donji grad",
-    "temp_min_c": -0.1,
-    "temp_max_c": 2.4,
-    "humidity": 87,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 9.5
+    "wind_kmh": 13.0
+  },
+  "forecast_today": {
+    "date": "2026-11-26",
+    "city": "Zagreb",
+    "temp_min_c": 2.8,
+    "temp_max_c": 3.4,
+    "humidity": 91,
+    "condition": "Clouds",
+    "description": "clouds",
+    "icon": "04d",
+    "wind_kmh": 7.8,
+    "samples": 5
+  },
+  "forecast": {
+    "date": "2026-11-27",
+    "city": "Zagreb",
+    "temp_min_c": 2.0,
+    "temp_max_c": 3.9,
+    "humidity": 92,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 3.8
+  },
+  "forecast_day_after": {
+    "date": "2026-11-28",
+    "city": "Zagreb",
+    "temp_min_c": -1.3,
+    "temp_max_c": 1.4,
+    "humidity": 93,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 7.8
   },
   "uv": {
-    "uv": 0.0,
+    "uv": 0.9,
     "band": "low",
-    "daily_max": 1.4,
+    "daily_max": 1.1,
     "peak_time": "2026-11-26T12:00",
-    "safe_minutes": null,
+    "safe_minutes": 185,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,19 +344,19 @@
       },
       {
         "time": "2026-11-26T11:00",
-        "uv": 0.5
+        "uv": 0.4
       },
       {
         "time": "2026-11-26T12:00",
-        "uv": 1.4
+        "uv": 1.1
       },
       {
         "time": "2026-11-26T13:00",
-        "uv": 0.9
+        "uv": 0.8
       },
       {
         "time": "2026-11-26T14:00",
-        "uv": 0.7
+        "uv": 0.3
       },
       {
         "time": "2026-11-26T15:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-26T02:31:32+01:00"
+    "fetched_at": "2026-11-26T11:25:40+01:00"
   }
 }
