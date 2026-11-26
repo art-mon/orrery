@@ -11,6 +11,26 @@
   "events": {
     "events": [
       {
+        "id": "us6000udry",
+        "title": "M5.1 Earthquake - Bonin Islands, Japan region",
+        "category": "Earthquake",
+        "date": "2026-11-26T19:33:08.628000Z",
+        "coordinates": [
+          141.2639,
+          28.3661
+        ]
+      },
+      {
+        "id": "us6000udq5",
+        "title": "M5.7 Earthquake - Revilla Gigedo Islands region",
+        "category": "Earthquake",
+        "date": "2026-11-26T15:26:44.294000Z",
+        "coordinates": [
+          -109.2958,
+          19.8135
+        ]
+      },
+      {
         "id": "us6000udmc",
         "title": "M5.2 Earthquake - 265 km WNW of Houma, Tonga",
         "category": "Earthquake",
@@ -139,26 +159,6 @@
           87.9467,
           27.8328
         ]
-      },
-      {
-        "id": "us6000ucxi",
-        "title": "M5.5 Earthquake - west of Macquarie Island",
-        "category": "Earthquake",
-        "date": "2026-11-23T08:01:26.457000Z",
-        "coordinates": [
-          153.8482,
-          -60.6317
-        ]
-      },
-      {
-        "id": "us6000ucx6",
-        "title": "M5.4 Earthquake - 181 km NE of Lospalos, Timor Leste",
-        "category": "Earthquake",
-        "date": "2026-11-23T07:36:21.052000Z",
-        "coordinates": [
-          128.2414,
-          -7.4408
-        ]
       }
     ]
   },
@@ -247,55 +247,55 @@
     ]
   },
   "weather": {
-    "city": "Zagreb",
-    "temp_c": 2.8,
-    "feels_c": -0.6,
-    "humidity": 91,
+    "city": "Donji grad",
+    "temp_c": 2.7,
+    "feels_c": 0.1,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "overcast clouds",
-    "icon": "04d",
-    "wind_kmh": 13.0
+    "icon": "04n",
+    "wind_kmh": 9.3
   },
   "forecast_today": {
     "date": "2026-11-26",
     "city": "Zagreb",
-    "temp_min_c": 2.8,
-    "temp_max_c": 3.4,
-    "humidity": 91,
+    "temp_min_c": 2.6,
+    "temp_max_c": 2.7,
+    "humidity": 88,
     "condition": "Clouds",
     "description": "clouds",
-    "icon": "04d",
-    "wind_kmh": 7.8,
-    "samples": 5
+    "icon": "04n",
+    "wind_kmh": 6.6,
+    "samples": 2
   },
   "forecast": {
     "date": "2026-11-27",
     "city": "Zagreb",
-    "temp_min_c": 2.0,
-    "temp_max_c": 3.9,
+    "temp_min_c": 1.5,
+    "temp_max_c": 5.1,
     "humidity": 92,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.8
+    "wind_kmh": 3.3
   },
   "forecast_day_after": {
     "date": "2026-11-28",
     "city": "Zagreb",
-    "temp_min_c": -1.3,
-    "temp_max_c": 1.4,
-    "humidity": 93,
+    "temp_min_c": 0.0,
+    "temp_max_c": 2.3,
+    "humidity": 94,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
     "wind_kmh": 7.8
   },
   "uv": {
-    "uv": 0.9,
+    "uv": 0.0,
     "band": "low",
-    "daily_max": 1.1,
+    "daily_max": 0.9,
     "peak_time": "2026-11-26T12:00",
-    "safe_minutes": 185,
+    "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
@@ -344,23 +344,23 @@
       },
       {
         "time": "2026-11-26T11:00",
-        "uv": 0.4
+        "uv": 0.2
       },
       {
         "time": "2026-11-26T12:00",
-        "uv": 1.1
+        "uv": 0.9
       },
       {
         "time": "2026-11-26T13:00",
-        "uv": 0.8
+        "uv": 0.5
       },
       {
         "time": "2026-11-26T14:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-26T15:00",
-        "uv": 0.3
+        "uv": 0.2
       },
       {
         "time": "2026-11-26T16:00",
@@ -395,6 +395,6 @@
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-26T11:25:40+01:00"
+    "fetched_at": "2026-11-26T20:58:11+01:00"
   }
 }
