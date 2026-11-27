@@ -1,15 +1,30 @@
 {
-  "generated": "2026-11-26",
+  "generated": "2026-11-27",
   "apod": {
-    "title": "NASA Science",
-    "date": "2026-11-26",
-    "explanation": "Beauty is in the eye of the beholder. And there is much to behold in today's featured image. The Milky Way shines bright in the sky of Brazil, over the white sand dunes and dark lagoons of Len\u00e7\u00f3is Maranhenses National Park. We can see different parts of the Milky Way as it apparently rotates in the sky every night and throughout the year. This composite image was taken later in the night in July from a latitude of approximately 2\u00ba south. It shows some prominent Milky Way features, such as dark dust lanes and colorful nebulas. But does the Galaxy really appear arched like a rainbow in the sky? No, this is an artifact of a picture taken with a wide-angle lens. As the Galaxy was artfully framed by the photographer, it matches the contour of the dark lagoon creating the illusion of a cosmic eye, half in space and half on the ground. Is this eye in the sky looking back at you?Tomorrow's picture: what's next?\t\t\t\t\t\t",
-    "media_type": "image",
-    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
-    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
+    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000udtu",
+        "title": "M5.0 Earthquake - 89 km SSE of Sola, Vanuatu",
+        "category": "Earthquake",
+        "date": "2026-11-27T02:13:21.018000Z",
+        "coordinates": [
+          167.8571,
+          -14.6253
+        ]
+      },
+      {
+        "id": "us6000udt9",
+        "title": "M5.1 Earthquake - 107 km SSE of Auki, Solomon Islands",
+        "category": "Earthquake",
+        "date": "2026-11-27T00:07:00.857000Z",
+        "coordinates": [
+          161.2358,
+          -9.5793
+        ]
+      },
       {
         "id": "us6000udry",
         "title": "M5.1 Earthquake - Bonin Islands, Japan region",
@@ -139,63 +154,11 @@
           -93.2417,
           14.442
         ]
-      },
-      {
-        "id": "us6000ud6h",
-        "title": "M6.4 Earthquake - Mauritius - Reunion region",
-        "category": "Earthquake",
-        "date": "2026-11-24T11:06:14.036000Z",
-        "coordinates": [
-          65.6995,
-          -17.7049
-        ]
-      },
-      {
-        "id": "us6000ud3i",
-        "title": "M5.3 Earthquake - 67 km WNW of Mangan, India",
-        "category": "Earthquake",
-        "date": "2026-11-24T01:32:42.417000Z",
-        "coordinates": [
-          87.9467,
-          27.8328
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2018 XP3)",
-        "hazardous": false,
-        "diameter_m": 160,
-        "close_approach_date": "2026-11-26",
-        "miss_distance_km": 24149953,
-        "velocity_kmh": 34425
-      },
-      {
-        "name": "(2014 QR295)",
-        "hazardous": false,
-        "diameter_m": 1247,
-        "close_approach_date": "2026-11-26",
-        "miss_distance_km": 41849568,
-        "velocity_kmh": 61875
-      },
-      {
-        "name": "612197 (2000 WP19)",
-        "hazardous": false,
-        "diameter_m": 154,
-        "close_approach_date": "2026-11-26",
-        "miss_distance_km": 62049457,
-        "velocity_kmh": 77656
-      },
-      {
-        "name": "(2000 WP19)",
-        "hazardous": false,
-        "diameter_m": 171,
-        "close_approach_date": "2026-11-26",
-        "miss_distance_km": 62049461,
-        "velocity_kmh": 77656
-      },
       {
         "name": "(2010 RJ43)",
         "hazardous": false,
@@ -243,158 +206,190 @@
         "close_approach_date": "2026-11-27",
         "miss_distance_km": 63684838,
         "velocity_kmh": 53764
+      },
+      {
+        "name": "(2007 CM26)",
+        "hazardous": false,
+        "diameter_m": 57,
+        "close_approach_date": "2026-11-27",
+        "miss_distance_km": 68759730,
+        "velocity_kmh": 69730
+      },
+      {
+        "name": "217628 Lugh (1990 HA)",
+        "hazardous": true,
+        "diameter_m": 2742,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 10586567,
+        "velocity_kmh": 63754
+      },
+      {
+        "name": "(2011 UE305)",
+        "hazardous": true,
+        "diameter_m": 337,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 22973338,
+        "velocity_kmh": 71797
+      },
+      {
+        "name": "(2005 JQ81)",
+        "hazardous": false,
+        "diameter_m": 565,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 33956055,
+        "velocity_kmh": 79193
       }
     ]
   },
   "weather": {
-    "city": "Donji grad",
-    "temp_c": 2.7,
-    "feels_c": 0.1,
-    "humidity": 88,
+    "city": "Zagreb",
+    "temp_c": 2.0,
+    "feels_c": 2.0,
+    "humidity": 90,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04n",
-    "wind_kmh": 9.3
+    "wind_kmh": 1.8
   },
   "forecast_today": {
-    "date": "2026-11-26",
+    "date": "2026-11-27",
     "city": "Zagreb",
-    "temp_min_c": 2.6,
-    "temp_max_c": 2.7,
-    "humidity": 88,
+    "temp_min_c": 2.0,
+    "temp_max_c": 4.2,
+    "humidity": 89,
     "condition": "Clouds",
     "description": "clouds",
     "icon": "04n",
-    "wind_kmh": 6.6,
-    "samples": 2
+    "wind_kmh": 4.3,
+    "samples": 8
   },
   "forecast": {
-    "date": "2026-11-27",
+    "date": "2026-11-28",
     "city": "Zagreb",
-    "temp_min_c": 1.5,
-    "temp_max_c": 5.1,
+    "temp_min_c": 0.3,
+    "temp_max_c": 3.5,
     "humidity": 92,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 3.3
+    "wind_kmh": 8.6
   },
   "forecast_day_after": {
-    "date": "2026-11-28",
+    "date": "2026-11-29",
     "city": "Zagreb",
-    "temp_min_c": 0.0,
-    "temp_max_c": 2.3,
-    "humidity": 94,
+    "temp_min_c": -0.1,
+    "temp_max_c": 1.4,
+    "humidity": 89,
     "condition": "Clouds",
-    "description": "overcast clouds",
+    "description": "broken clouds",
     "icon": "04d",
-    "wind_kmh": 7.8
+    "wind_kmh": 7.7
   },
   "uv": {
     "uv": 0.0,
     "band": "low",
-    "daily_max": 0.9,
-    "peak_time": "2026-11-26T12:00",
+    "daily_max": 1.3,
+    "peak_time": "2026-11-27T13:00",
     "safe_minutes": null,
     "skin_type": 2,
     "hourly": [
       {
-        "time": "2026-11-26T00:00",
+        "time": "2026-11-27T00:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T01:00",
+        "time": "2026-11-27T01:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T02:00",
+        "time": "2026-11-27T02:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T03:00",
+        "time": "2026-11-27T03:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T04:00",
+        "time": "2026-11-27T04:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T05:00",
+        "time": "2026-11-27T05:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T06:00",
+        "time": "2026-11-27T06:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T07:00",
+        "time": "2026-11-27T07:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T08:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-26T09:00",
+        "time": "2026-11-27T08:00",
         "uv": 0.1
       },
       {
-        "time": "2026-11-26T10:00",
-        "uv": 0.1
+        "time": "2026-11-27T09:00",
+        "uv": 0.3
       },
       {
-        "time": "2026-11-26T11:00",
-        "uv": 0.2
+        "time": "2026-11-27T10:00",
+        "uv": 0.7
       },
       {
-        "time": "2026-11-26T12:00",
+        "time": "2026-11-27T11:00",
+        "uv": 0.8
+      },
+      {
+        "time": "2026-11-27T12:00",
         "uv": 0.9
       },
       {
-        "time": "2026-11-26T13:00",
-        "uv": 0.5
+        "time": "2026-11-27T13:00",
+        "uv": 1.3
       },
       {
-        "time": "2026-11-26T14:00",
+        "time": "2026-11-27T14:00",
+        "uv": 1.0
+      },
+      {
+        "time": "2026-11-27T15:00",
+        "uv": 0.6
+      },
+      {
+        "time": "2026-11-27T16:00",
         "uv": 0.2
       },
       {
-        "time": "2026-11-26T15:00",
-        "uv": 0.2
-      },
-      {
-        "time": "2026-11-26T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-26T17:00",
+        "time": "2026-11-27T17:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T18:00",
+        "time": "2026-11-27T18:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T19:00",
+        "time": "2026-11-27T19:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T20:00",
+        "time": "2026-11-27T20:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T21:00",
+        "time": "2026-11-27T21:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T22:00",
+        "time": "2026-11-27T22:00",
         "uv": 0.0
       },
       {
-        "time": "2026-11-26T23:00",
+        "time": "2026-11-27T23:00",
         "uv": 0.0
       }
     ],
-    "fetched_at": "2026-11-26T20:58:11+01:00"
+    "fetched_at": "2026-11-27T03:42:56+01:00"
   }
 }
