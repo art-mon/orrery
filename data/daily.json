@@ -1,10 +1,35 @@
 {
-  "generated": "2026-11-27",
+  "generated": "2026-11-28",
   "apod": {
-    "error": "500 Server Error: Internal Server Error for url: https://api.nasa.gov/planetary/apod?api_key=yfd7roIVefAGFw0bhPilw6Wnby8oweeCEga8asPl"
+    "title": "NASA Science",
+    "date": "2026-11-28",
+    "explanation": "On November 24, all denizens of our fair planet could watch the Moon rise opposite the setting Sun. Easy to spot in twilight skies above fields, fences, backyards, and even stone walls, the Moon was big and bright, and at its full phase. Known to some as a Beaver Moon, November's Full Moon was also near perigee, the closest point in its elliptical orbit around planet Earth. That made it one of the biggest and brightest Full Moons, also known as a supermoon. In fact, November's Full Moon was the first in a series of four consecutive Full Moons near perigee. So your next chance to watch a supermoon rise will be when the Cold Moon rises on December 23.Tomorrow's picture: remember where you parked\t\t\t\t\t\t",
+    "media_type": "image",
+    "url": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png",
+    "hdurl": "https://science.nasa.gov/wp-content/themes/nasa-child/assets/images/nasa-logo@2x.png"
   },
   "events": {
     "events": [
+      {
+        "id": "us6000ue1h",
+        "title": "M5.2 Earthquake - 93 km W of San Antonio de los Cobres, Argentina",
+        "category": "Earthquake",
+        "date": "2026-11-28T02:25:05.520000Z",
+        "coordinates": [
+          -67.2363,
+          -24.299
+        ]
+      },
+      {
+        "id": "us6000ue1b",
+        "title": "M5.1 Earthquake - 73 km NNW of Ph\u00f4ngsali, Laos",
+        "category": "Earthquake",
+        "date": "2026-11-28T01:17:42.722000Z",
+        "coordinates": [
+          101.7463,
+          22.2546
+        ]
+      },
       {
         "id": "us6000udua",
         "title": "M5.0 Earthquake - Off the coast of Aisen, Chile",
@@ -134,87 +159,11 @@
           170.9371,
           -63.0918
         ]
-      },
-      {
-        "id": "us6000udbn",
-        "title": "M5.0 Earthquake - 209 km SE of Kokopo, Papua New Guinea",
-        "category": "Earthquake",
-        "date": "2026-11-24T21:11:41.618000Z",
-        "coordinates": [
-          153.6843,
-          -5.6002
-        ]
-      },
-      {
-        "id": "us6000ud73",
-        "title": "M5.0 Earthquake - 24 km WNW of Piti Village, Guam",
-        "category": "Earthquake",
-        "date": "2026-11-24T11:55:13.018000Z",
-        "coordinates": [
-          144.4957,
-          13.5637
-        ]
       }
     ]
   },
   "asteroids": {
     "asteroids": [
-      {
-        "name": "(2010 RJ43)",
-        "hazardous": false,
-        "diameter_m": 108,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 20445653,
-        "velocity_kmh": 61403
-      },
-      {
-        "name": "706765 (2010 TK7)",
-        "hazardous": false,
-        "diameter_m": 415,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 40546290,
-        "velocity_kmh": 58085
-      },
-      {
-        "name": "(2010 TK7)",
-        "hazardous": false,
-        "diameter_m": 415,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 40546291,
-        "velocity_kmh": 58085
-      },
-      {
-        "name": "(2017 KA5)",
-        "hazardous": false,
-        "diameter_m": 45,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 45320479,
-        "velocity_kmh": 37477
-      },
-      {
-        "name": "(2018 TX4)",
-        "hazardous": false,
-        "diameter_m": 1038,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 45782233,
-        "velocity_kmh": 103116
-      },
-      {
-        "name": "(2017 WW12)",
-        "hazardous": false,
-        "diameter_m": 494,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 63684838,
-        "velocity_kmh": 53764
-      },
-      {
-        "name": "(2007 CM26)",
-        "hazardous": false,
-        "diameter_m": 57,
-        "close_approach_date": "2026-11-27",
-        "miss_distance_km": 68759730,
-        "velocity_kmh": 69730
-      },
       {
         "name": "217628 Lugh (1990 HA)",
         "hazardous": true,
@@ -238,158 +187,110 @@
         "close_approach_date": "2026-11-28",
         "miss_distance_km": 33956055,
         "velocity_kmh": 79193
+      },
+      {
+        "name": "(2015 FU284)",
+        "hazardous": false,
+        "diameter_m": 13,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 47173474,
+        "velocity_kmh": 95059
+      },
+      {
+        "name": "(2016 CN248)",
+        "hazardous": false,
+        "diameter_m": 21,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 66246803,
+        "velocity_kmh": 40022
+      },
+      {
+        "name": "(2008 WK60)",
+        "hazardous": false,
+        "diameter_m": 197,
+        "close_approach_date": "2026-11-28",
+        "miss_distance_km": 72250447,
+        "velocity_kmh": 84099
+      },
+      {
+        "name": "(2019 WU1)",
+        "hazardous": false,
+        "diameter_m": 31,
+        "close_approach_date": "2026-11-29",
+        "miss_distance_km": 23795825,
+        "velocity_kmh": 34810
+      },
+      {
+        "name": "(2015 HZ116)",
+        "hazardous": false,
+        "diameter_m": 78,
+        "close_approach_date": "2026-11-29",
+        "miss_distance_km": 34230527,
+        "velocity_kmh": 39562
+      },
+      {
+        "name": "(2018 VY5)",
+        "hazardous": false,
+        "diameter_m": 297,
+        "close_approach_date": "2026-11-29",
+        "miss_distance_km": 45000054,
+        "velocity_kmh": 35950
+      },
+      {
+        "name": "(2016 CE30)",
+        "hazardous": false,
+        "diameter_m": 268,
+        "close_approach_date": "2026-11-29",
+        "miss_distance_km": 48520536,
+        "velocity_kmh": 9715
       }
     ]
   },
   "weather": {
-    "city": "City of Zagreb",
-    "temp_c": 2.7,
-    "feels_c": -0.7,
-    "humidity": 81,
+    "city": "Zagreb",
+    "temp_c": 2.0,
+    "feels_c": -1.9,
+    "humidity": 78,
     "condition": "Clouds",
-    "description": "overcast clouds",
-    "icon": "04n",
-    "wind_kmh": 13.0
+    "description": "scattered clouds",
+    "icon": "03n",
+    "wind_kmh": 14.8
   },
   "forecast_today": {
-    "date": "2026-11-27",
-    "city": "Zagreb",
-    "temp_min_c": 2.7,
-    "temp_max_c": 2.7,
-    "humidity": 81,
-    "condition": "Clouds",
-    "description": "clouds",
-    "icon": "04n",
-    "wind_kmh": 8.9,
-    "samples": 2
-  },
-  "forecast": {
     "date": "2026-11-28",
     "city": "Zagreb",
-    "temp_min_c": 1.4,
-    "temp_max_c": 3.4,
-    "humidity": 91,
+    "temp_min_c": 1.1,
+    "temp_max_c": 2.7,
+    "humidity": 88,
     "condition": "Clouds",
-    "description": "light snow",
-    "icon": "13d",
-    "wind_kmh": 7.4
+    "description": "clouds",
+    "icon": "03n",
+    "wind_kmh": 10.6,
+    "samples": 7
   },
-  "forecast_day_after": {
+  "forecast": {
     "date": "2026-11-29",
     "city": "Zagreb",
-    "temp_min_c": -0.6,
-    "temp_max_c": 2.7,
-    "humidity": 91,
+    "temp_min_c": -1.3,
+    "temp_max_c": 2.4,
+    "humidity": 93,
     "condition": "Clouds",
     "description": "overcast clouds",
     "icon": "04d",
-    "wind_kmh": 8.0
+    "wind_kmh": 7.9
+  },
+  "forecast_day_after": {
+    "date": "2026-11-30",
+    "city": "Zagreb",
+    "temp_min_c": -4.3,
+    "temp_max_c": 0.2,
+    "humidity": 92,
+    "condition": "Clouds",
+    "description": "overcast clouds",
+    "icon": "04d",
+    "wind_kmh": 8.2
   },
   "uv": {
-    "uv": 0.0,
-    "band": "low",
-    "daily_max": 0.9,
-    "peak_time": "2026-11-27T12:00",
-    "safe_minutes": null,
-    "skin_type": 2,
-    "hourly": [
-      {
-        "time": "2026-11-27T00:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T01:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T02:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T03:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T04:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T05:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T06:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T07:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T08:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T09:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-27T10:00",
-        "uv": 0.4
-      },
-      {
-        "time": "2026-11-27T11:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-11-27T12:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-11-27T13:00",
-        "uv": 0.9
-      },
-      {
-        "time": "2026-11-27T14:00",
-        "uv": 0.8
-      },
-      {
-        "time": "2026-11-27T15:00",
-        "uv": 0.5
-      },
-      {
-        "time": "2026-11-27T16:00",
-        "uv": 0.1
-      },
-      {
-        "time": "2026-11-27T17:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T18:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T19:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T20:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T21:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T22:00",
-        "uv": 0.0
-      },
-      {
-        "time": "2026-11-27T23:00",
-        "uv": 0.0
-      }
-    ],
-    "fetched_at": "2026-11-27T21:39:40+01:00"
+    "error": "open-meteo request failed: HTTPSConnectionPool(host='api.open-meteo.com', port=443): Read timed out. (read timeout=10)"
   }
 }
